@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageLayout: [load](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-load-member(1))
+  - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [load](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-load-member(1))
 
 isPreview: false
 isDeprecated: false

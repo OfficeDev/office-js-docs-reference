@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TextRange: [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)
+  - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)
 
   #### Examples
 

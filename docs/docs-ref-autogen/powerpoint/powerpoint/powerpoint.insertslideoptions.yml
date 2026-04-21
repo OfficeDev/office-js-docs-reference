@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [insertSlidesFromBase64](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-insertslidesfrombase64-member(1))
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [insertSlidesFromBase64](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-insertslidesfrombase64-member(1))
 
   #### Examples
 

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarNegativeFormat: [set](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-set-member(1))
+  - [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat): [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat):
+  [set](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

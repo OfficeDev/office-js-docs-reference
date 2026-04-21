@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Graphic: [load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
+  - [PowerPoint.Graphic](/javascript/api/powerpoint/powerpoint.graphic): [load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
 
 isPreview: true
 isDeprecated: false

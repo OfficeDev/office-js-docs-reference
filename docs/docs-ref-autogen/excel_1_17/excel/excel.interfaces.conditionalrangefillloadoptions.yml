@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeFill: [load](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-load-member(1))
+  - [Excel.ConditionalRangeFill](/javascript/api/excel/excel.conditionalrangefill): [Excel.ConditionalRangeFill](/javascript/api/excel/excel.conditionalrangefill):
+  [load](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

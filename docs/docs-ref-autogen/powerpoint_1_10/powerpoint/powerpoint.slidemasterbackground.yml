@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideMaster: [background](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-background-member)
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [background](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-background-member)
 
 isPreview: false
 isDeprecated: false

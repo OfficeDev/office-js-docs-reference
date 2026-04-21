@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CheckboxContentControl: [toJSON](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-tojson-member(1))
+  - [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol): [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol):
+  [toJSON](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableScopedCollection: [toJSON](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-tojson-member(1))
+  - [Excel.TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection): [Excel.TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection):
+  [toJSON](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfFigures: [load](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-load-member(1))
+  - [Word.TableOfFigures](/javascript/api/word/word.tableoffigures): [load](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextFrame: [set](/javascript/api/excel/excel.textframe#excel-excel-textframe-set-member(1))
+  - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [set](/javascript/api/excel/excel.textframe#excel-excel-textframe-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NamedItem: [set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(1))
+  - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(1))
 
 isPreview: false
 isDeprecated: false

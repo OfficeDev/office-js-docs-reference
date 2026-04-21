@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BasicViewLayouts: [card](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-card-member)
+  - [Excel.BasicViewLayouts](/javascript/api/excel/excel.basicviewlayouts): [card](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-card-member)
 
 isPreview: false
 isDeprecated: false

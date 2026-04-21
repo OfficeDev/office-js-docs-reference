@@ -35,17 +35,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [categories](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-categories-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [categories](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-categories-member)
 
-  - Office.AppointmentRead: [categories](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-categories-member)
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [categories](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-categories-member)
 
-  - Office.LoadedMessageCompose: [categories](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-categories-member)
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [categories](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-categories-member)
 
-  - Office.LoadedMessageRead: [categories](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-categories-member)
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [categories](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-categories-member)
 
-  - Office.MessageCompose: [categories](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-categories-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [categories](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-categories-member)
 
-  - Office.MessageRead: [categories](/javascript/api/outlook/office.messageread#outlook-office-messageread-categories-member)
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [categories](/javascript/api/outlook/office.messageread#outlook-office-messageread-categories-member)
 
 isPreview: false
 isDeprecated: false

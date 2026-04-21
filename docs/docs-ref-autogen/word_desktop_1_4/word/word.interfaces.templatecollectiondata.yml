@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TemplateCollection: [toJSON](/javascript/api/word/word.templatecollection#word-word-templatecollection-tojson-member(1))
+  - [Word.TemplateCollection](/javascript/api/word/word.templatecollection): [toJSON](/javascript/api/word/word.templatecollection#word-word-templatecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfAuthoritiesCollection: [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1)),
-  [items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
+  - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection):
+  [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1)), [items](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-items-member)
 
 isPreview: false
 isDeprecated: false

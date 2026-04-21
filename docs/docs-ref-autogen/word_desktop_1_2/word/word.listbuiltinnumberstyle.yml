@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListLevel: [numberStyle](/javascript/api/word/word.listlevel#word-word-listlevel-numberstyle-member)
+  - [Word.ListLevel](/javascript/api/word/word.listlevel): [numberStyle](/javascript/api/word/word.listlevel#word-word-listlevel-numberstyle-member)
 
   #### Examples
 

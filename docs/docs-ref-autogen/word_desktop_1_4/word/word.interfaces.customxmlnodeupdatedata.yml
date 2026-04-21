@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlNode: [set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(1))
+  - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(1))
 
 isPreview: false
 isDeprecated: false

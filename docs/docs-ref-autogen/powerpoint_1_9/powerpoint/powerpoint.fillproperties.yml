@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCellProperties: [fill](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-fill-member)
+  - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties):
+  [fill](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-fill-member)
 
   #### Examples
 

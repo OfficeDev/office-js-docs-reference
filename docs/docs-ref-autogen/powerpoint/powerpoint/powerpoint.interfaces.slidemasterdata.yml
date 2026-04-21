@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideMaster: [toJSON](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-tojson-member(1))
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [toJSON](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

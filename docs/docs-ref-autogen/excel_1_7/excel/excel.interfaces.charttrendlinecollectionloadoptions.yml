@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendlineCollection: [load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(1))
+  - [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection): [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection):
+  [load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

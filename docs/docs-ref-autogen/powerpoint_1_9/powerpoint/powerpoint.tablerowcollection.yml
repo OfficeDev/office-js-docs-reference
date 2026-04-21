@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Table: [rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)
+  - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [rows](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-rows-member)
 
 isPreview: false
 isDeprecated: false

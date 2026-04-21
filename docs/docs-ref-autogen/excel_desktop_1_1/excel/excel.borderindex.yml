@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeBorder: [sideIndex](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-sideindex-member)
+  - [Excel.RangeBorder](/javascript/api/excel/excel.rangeborder): [sideIndex](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-sideindex-member)
 
-  - Excel.RangeBorderCollection: [getItem](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitem-member(1))
+  - [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection): [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection):
+  [getItem](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitem-member(1))
 
 isPreview: false
 isDeprecated: false

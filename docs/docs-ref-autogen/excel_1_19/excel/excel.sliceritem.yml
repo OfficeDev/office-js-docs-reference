@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerItemCollection: [getItem](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-items-member)
+  - [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection): [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection):
+  [getItem](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TextFrame: [set](/javascript/api/word/word.textframe#word-word-textframe-set-member(1))
+  - [Word.TextFrame](/javascript/api/word/word.textframe): [set](/javascript/api/word/word.textframe#word-word-textframe-set-member(1))
 
 isPreview: false
 isDeprecated: false

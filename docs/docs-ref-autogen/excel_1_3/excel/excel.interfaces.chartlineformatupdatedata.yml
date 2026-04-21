@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLineFormat: [set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(1))
+  - [Excel.ChartLineFormat](/javascript/api/excel/excel.chartlineformat): [set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

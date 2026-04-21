@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListTemplateGalleryCollection: [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1)),
-  [items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)
+  - [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection): [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection):
+  [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1)), [items](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-items-member)
 
 isPreview: false
 isDeprecated: false

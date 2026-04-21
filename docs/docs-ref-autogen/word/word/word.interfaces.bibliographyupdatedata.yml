@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Bibliography: [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(1))
+  - [Word.Bibliography](/javascript/api/word/word.bibliography): [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundFill: [getPictureOrTextureFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpictureortexturefillornullobject-member(1))
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill):
+  [getPictureOrTextureFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpictureortexturefillornullobject-member(1))
 
   #### Examples
 

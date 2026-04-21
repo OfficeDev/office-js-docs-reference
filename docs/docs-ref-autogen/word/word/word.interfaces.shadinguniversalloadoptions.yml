@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ShadingUniversal: [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1))
+  - [Word.ShadingUniversal](/javascript/api/word/word.shadinguniversal): [load](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-load-member(1))
 
 isPreview: false
 isDeprecated: false

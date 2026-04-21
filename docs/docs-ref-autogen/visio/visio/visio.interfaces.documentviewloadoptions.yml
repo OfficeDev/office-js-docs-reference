@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.DocumentView: [load](/javascript/api/visio/visio.documentview#visio-visio-documentview-load-member(1))
+  - [Visio.DocumentView](/javascript/api/visio/visio.documentview): [load](/javascript/api/visio/visio.documentview#visio-visio-documentview-load-member(1))
 
 isPreview: false
 isDeprecated: false

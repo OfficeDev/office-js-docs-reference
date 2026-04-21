@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.GeometricShape: [toJSON](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-tojson-member(1))
+  - [Excel.GeometricShape](/javascript/api/excel/excel.geometricshape): [toJSON](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

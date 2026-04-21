@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthoringLockCollection: [add](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-add-member(1)),
-  [items](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-items-member)
+  - [Word.CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection): [Word.CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection):
+  [add](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-add-member(1)), [items](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-items-member)
 
 isPreview: false
 isDeprecated: false

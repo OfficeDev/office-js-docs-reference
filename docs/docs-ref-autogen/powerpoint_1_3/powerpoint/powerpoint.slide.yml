@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)),
-  [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
 
   #### Examples
 

@@ -11,7 +11,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Document: [customXmlParts](/javascript/api/office/office.document#office-office-document-customxmlparts-member)
+  - [Office.Document](/javascript/api/office/office.document): [customXmlParts](/javascript/api/office/office.document#office-office-document-customxmlparts-member)
 
 isPreview: false
 isDeprecated: false

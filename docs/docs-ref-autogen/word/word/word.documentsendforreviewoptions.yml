@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [sendForReview](/javascript/api/word/word.document#word-word-document-sendforreview-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [sendForReview](/javascript/api/word/word.document#word-word-document-sendforreview-member(1))
 
 isPreview: true
 isDeprecated: false

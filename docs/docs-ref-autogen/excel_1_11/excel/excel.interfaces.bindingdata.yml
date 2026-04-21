@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Binding: [toJSON](/javascript/api/excel/excel.binding#excel-excel-binding-tojson-member(1))
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [toJSON](/javascript/api/excel/excel.binding#excel-excel-binding-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

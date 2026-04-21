@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [gradientMaximumType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientmaximumtype-member),
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [gradientMaximumType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientmaximumtype-member),
   [gradientMidpointType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientmidpointtype-member), [gradientMinimumType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientminimumtype-member)
 
 isPreview: false

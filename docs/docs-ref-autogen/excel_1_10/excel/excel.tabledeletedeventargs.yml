@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableCollection: [onDeleted](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-ondeleted-member)
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onDeleted](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-ondeleted-member)
 
 isPreview: false
 isDeprecated: false

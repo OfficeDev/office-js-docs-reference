@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [save](/javascript/api/word/word.document#word-word-document-save-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [save](/javascript/api/word/word.document#word-word-document-save-member(1))
 
-  - Word.DocumentCreated: [save](/javascript/api/word/word.documentcreated#word-word-documentcreated-save-member(1))
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [save](/javascript/api/word/word.documentcreated#word-word-documentcreated-save-member(1))
 
   #### Examples
 

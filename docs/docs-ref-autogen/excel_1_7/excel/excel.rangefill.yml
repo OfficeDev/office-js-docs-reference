@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeFormat: [fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
+  - [Excel.RangeFormat](/javascript/api/excel/excel.rangeformat): [fill](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-fill-member)
 
-  - Excel.Style: [fill](/javascript/api/excel/excel.style#excel-excel-style-fill-member)
+  - [Excel.Style](/javascript/api/excel/excel.style): [fill](/javascript/api/excel/excel.style#excel-excel-style-fill-member)
 
 isPreview: false
 isDeprecated: false

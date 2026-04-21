@@ -14,9 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.HeaderFooterPicture: [colorType](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-colortype-member)
+  - [Excel.HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture): [Excel.HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture):
+  [colorType](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-colortype-member)
 
-  - Excel.Image: [colorType](/javascript/api/excel/excel.image#excel-excel-image-colortype-member)
+  - [Excel.Image](/javascript/api/excel/excel.image): [colorType](/javascript/api/excel/excel.image#excel-excel-image-colortype-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Window: [windowState](/javascript/api/excel/excel.window#excel-excel-window-windowstate-member)
+  - [Excel.Window](/javascript/api/excel/excel.window): [windowState](/javascript/api/excel/excel.window#excel-excel-window-windowstate-member)
 
 isPreview: false
 isDeprecated: false

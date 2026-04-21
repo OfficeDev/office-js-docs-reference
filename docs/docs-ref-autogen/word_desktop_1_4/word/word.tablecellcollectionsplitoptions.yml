@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCellCollection: [split](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-split-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [split](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-split-member(1))
 
 isPreview: false
 isDeprecated: false

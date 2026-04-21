@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.EmailAddressDetails: [appointmentResponse](/javascript/api/outlook/office.emailaddressdetails#outlook-office-emailaddressdetails-appointmentresponse-member)
+  - [Office.EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails): [Office.EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails):
+  [appointmentResponse](/javascript/api/outlook/office.emailaddressdetails#outlook-office-emailaddressdetails-appointmentresponse-member)
 
   #### Examples
 

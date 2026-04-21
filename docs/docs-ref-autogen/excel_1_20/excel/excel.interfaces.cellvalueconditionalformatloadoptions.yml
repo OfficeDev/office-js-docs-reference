@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellValueConditionalFormat: [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1))
+  - [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat): [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat):
+  [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

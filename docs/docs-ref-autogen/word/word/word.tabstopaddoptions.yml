@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TabStopCollection: [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
+  - [Word.TabStopCollection](/javascript/api/word/word.tabstopcollection): [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

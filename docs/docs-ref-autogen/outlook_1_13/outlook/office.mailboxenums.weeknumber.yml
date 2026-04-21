@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.RecurrenceProperties: [weekNumber](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-weeknumber-member)
+  - [Office.RecurrenceProperties](/javascript/api/outlook/office.recurrenceproperties): [Office.RecurrenceProperties](/javascript/api/outlook/office.recurrenceproperties):
+  [weekNumber](/javascript/api/outlook/office.recurrenceproperties#outlook-office-recurrenceproperties-weeknumber-member)
 
   #### Examples
 

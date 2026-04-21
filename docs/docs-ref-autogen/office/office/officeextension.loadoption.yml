@@ -40,8 +40,8 @@ remarks: >-
   #### Used by
 
 
-  - OfficeExtension.ClientRequestContext: [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)),
-  [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext):
+  [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)), [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
 
   #### Examples
 

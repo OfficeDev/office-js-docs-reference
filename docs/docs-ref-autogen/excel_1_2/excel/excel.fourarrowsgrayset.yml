@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.IconCollections: [fourArrowsGray](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fourarrowsgray-member)
+  - [Excel.IconCollections](/javascript/api/excel/excel.iconcollections): [fourArrowsGray](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fourarrowsgray-member)
 
 isPreview: false
 isDeprecated: false

@@ -8,15 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlCollection: [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection):
+  [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
-  - Word.InlinePictureCollection: [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection):
+  [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
 
-  - Word.ParagraphCollection: [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
 
-  - Word.RangeCollection: [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
 
-  - Word.SectionCollection: [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

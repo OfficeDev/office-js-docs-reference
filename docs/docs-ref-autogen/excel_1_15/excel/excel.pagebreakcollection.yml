@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member),
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member),
   [verticalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-verticalpagebreaks-member)
 
 isPreview: false

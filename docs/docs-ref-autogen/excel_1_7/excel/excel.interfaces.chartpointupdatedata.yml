@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPoint: [set](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-set-member(1))
+  - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [set](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-set-member(1))
 
 isPreview: false
 isDeprecated: false

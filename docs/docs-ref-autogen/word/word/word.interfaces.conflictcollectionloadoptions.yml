@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ConflictCollection: [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(1))
+  - [Word.ConflictCollection](/javascript/api/word/word.conflictcollection): [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

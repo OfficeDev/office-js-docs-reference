@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Range: [toJSON](/javascript/api/word/word.range#word-word-range-tojson-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [toJSON](/javascript/api/word/word.range#word-word-range-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

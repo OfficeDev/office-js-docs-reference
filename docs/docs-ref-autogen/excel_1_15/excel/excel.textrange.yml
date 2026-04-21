@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextFrame: [textRange](/javascript/api/excel/excel.textframe#excel-excel-textframe-textrange-member)
+  - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [textRange](/javascript/api/excel/excel.textframe#excel-excel-textframe-textrange-member)
 
 isPreview: false
 isDeprecated: false

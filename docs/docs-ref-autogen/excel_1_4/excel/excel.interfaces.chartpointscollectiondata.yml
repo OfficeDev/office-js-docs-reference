@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPointsCollection: [toJSON](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-tojson-member(1))
+  - [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection): [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection):
+  [toJSON](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Template: [set](/javascript/api/word/word.template#word-word-template-set-member(1))
+  - [Word.Template](/javascript/api/word/word.template): [set](/javascript/api/word/word.template#word-word-template-set-member(1))
 
 isPreview: false
 isDeprecated: false

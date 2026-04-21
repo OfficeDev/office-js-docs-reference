@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TrackedChangeCollection: [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
+  - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection):
+  [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

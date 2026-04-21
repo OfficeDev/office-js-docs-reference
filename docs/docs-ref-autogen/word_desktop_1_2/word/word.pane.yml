@@ -16,10 +16,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.PaneCollection: [getFirst](/javascript/api/word/word.panecollection#word-word-panecollection-getfirst-member(1)),
+  - [Word.PaneCollection](/javascript/api/word/word.panecollection): [getFirst](/javascript/api/word/word.panecollection#word-word-panecollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.panecollection#word-word-panecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.panecollection#word-word-panecollection-items-member)
 
-  - Word.Window: [activePane](/javascript/api/word/word.window#word-word-window-activepane-member)
+  - [Word.Window](/javascript/api/word/word.window): [activePane](/javascript/api/word/word.window#word-word-window-activepane-member)
 
   #### Examples
 

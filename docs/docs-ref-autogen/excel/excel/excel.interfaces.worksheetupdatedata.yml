@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(1))
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(1))
 
 isPreview: false
 isDeprecated: false

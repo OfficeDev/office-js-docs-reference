@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SearchCriteria: [searchDirection](/javascript/api/excel/excel.searchcriteria#excel-excel-searchcriteria-searchdirection-member)
+  - [Excel.SearchCriteria](/javascript/api/excel/excel.searchcriteria): [searchDirection](/javascript/api/excel/excel.searchcriteria#excel-excel-searchcriteria-searchdirection-member)
 
   #### Examples
 

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Section: [pages](/javascript/api/onenote/onenote.section#onenote-onenote-section-pages-member)
+  - [OneNote.Section](/javascript/api/onenote/onenote.section): [pages](/javascript/api/onenote/onenote.section#onenote-onenote-section-pages-member)
 
 isPreview: false
 isDeprecated: false

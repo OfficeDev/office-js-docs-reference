@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Coauthor: [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1))
+  - [Word.Coauthor](/javascript/api/word/word.coauthor): [load](/javascript/api/word/word.coauthor#word-word-coauthor-load-member(1))
 
 isPreview: false
 isDeprecated: false

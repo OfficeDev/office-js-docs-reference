@@ -18,7 +18,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.NotificationMessageDetails: [type](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-type-member)
+  - [Office.NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails): [Office.NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails):
+  [type](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-type-member)
 
   #### Examples
 

@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)
+  - [Word.Document](/javascript/api/word/word.document): [activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)
 
-  - Word.WindowCollection: [getFirst](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1)),
+  - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [getFirst](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.windowcollection#word-word-windowcollection-items-member)
 
   #### Examples

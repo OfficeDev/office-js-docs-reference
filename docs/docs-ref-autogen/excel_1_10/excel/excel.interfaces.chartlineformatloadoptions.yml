@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLineFormat: [load](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-load-member(1))
+  - [Excel.ChartLineFormat](/javascript/api/excel/excel.chartlineformat): [load](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

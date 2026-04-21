@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Reviewer: [toJSON](/javascript/api/word/word.reviewer#word-word-reviewer-tojson-member(1))
+  - [Word.Reviewer](/javascript/api/word/word.reviewer): [toJSON](/javascript/api/word/word.reviewer#word-word-reviewer-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TimelineStyle: [load](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-load-member(1))
+  - [Excel.TimelineStyle](/javascript/api/excel/excel.timelinestyle): [load](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-load-member(1))
 
 isPreview: false
 isDeprecated: false

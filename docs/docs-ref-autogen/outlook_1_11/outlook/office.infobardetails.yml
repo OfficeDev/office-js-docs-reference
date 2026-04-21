@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.InfobarClickedEventArgs: [infobarDetails](/javascript/api/outlook/office.infobarclickedeventargs#outlook-office-infobarclickedeventargs-infobardetails-member)
+  - [Office.InfobarClickedEventArgs](/javascript/api/outlook/office.infobarclickedeventargs): [Office.InfobarClickedEventArgs](/javascript/api/outlook/office.infobarclickedeventargs):
+  [infobarDetails](/javascript/api/outlook/office.infobarclickedeventargs#outlook-office-infobarclickedeventargs-infobardetails-member)
 
   #### Examples
 

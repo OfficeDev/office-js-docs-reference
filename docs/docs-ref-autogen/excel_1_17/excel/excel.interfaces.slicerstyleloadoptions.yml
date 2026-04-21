@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerStyle: [load](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-load-member(1))
+  - [Excel.SlicerStyle](/javascript/api/excel/excel.slicerstyle): [load](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabel: [getSubstring](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))
+  - [Excel.ChartDataLabel](/javascript/api/excel/excel.chartdatalabel): [getSubstring](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-getsubstring-member(1))
 
-  - Excel.ChartTitle: [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
+  - [Excel.ChartTitle](/javascript/api/excel/excel.charttitle): [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
 
 isPreview: false
 isDeprecated: false

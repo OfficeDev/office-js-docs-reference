@@ -11,7 +11,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Diagnostics: [OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)
+  - [Office.Diagnostics](/javascript/api/outlook/office.diagnostics): [OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)
 
   #### Examples
 

@@ -13,12 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.ComboBoxContentControl: [addListItem](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-addlistitem-member(1))
+  - [Word.ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol): [Word.ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol):
+  [addListItem](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-addlistitem-member(1))
 
-  - Word.ContentControlListItemCollection: [getFirst](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirst-member(1)),
-  [getFirstOrNullObject](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-items-member)
+  - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection):
+  [getFirst](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-items-member)
 
-  - Word.DropDownListContentControl: [addListItem](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-addlistitem-member(1))
+  - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol):
+  [addListItem](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-addlistitem-member(1))
 
   #### Examples
 

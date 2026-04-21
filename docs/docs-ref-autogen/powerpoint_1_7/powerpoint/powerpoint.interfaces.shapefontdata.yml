@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeFont: [toJSON](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-tojson-member(1))
+  - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [toJSON](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

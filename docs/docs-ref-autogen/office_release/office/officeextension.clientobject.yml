@@ -12,13 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - OfficeExtension.ClientRequestContext: [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)),
-  [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext):
+  [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)), [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
 
-  - OfficeExtension.RunOptions: [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
+  - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions):
+  [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
 
-  - OfficeExtension.TrackedObjects: [add](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-add-member(1)),
-  [remove](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-remove-member(1))
+  - [OfficeExtension.TrackedObjects](/javascript/api/office/officeextension.trackedobjects): [OfficeExtension.TrackedObjects](/javascript/api/office/officeextension.trackedobjects):
+  [add](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-add-member(1)), [remove](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-remove-member(1))
 
 isPreview: false
 isDeprecated: false

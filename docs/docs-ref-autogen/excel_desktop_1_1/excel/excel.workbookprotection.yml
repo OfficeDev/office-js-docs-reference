@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [protection](/javascript/api/excel/excel.workbook#excel-excel-workbook-protection-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [protection](/javascript/api/excel/excel.workbook#excel-excel-workbook-protection-member)
 
 isPreview: false
 isDeprecated: false

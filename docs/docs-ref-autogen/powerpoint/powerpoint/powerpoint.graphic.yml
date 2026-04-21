@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [getGraphicOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getgraphicornullobject-member(1))
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getGraphicOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getgraphicornullobject-member(1))
 
 isPreview: true
 isDeprecated: false

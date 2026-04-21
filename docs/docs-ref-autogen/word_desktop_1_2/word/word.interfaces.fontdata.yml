@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Font: [toJSON](/javascript/api/word/word.font#word-word-font-tojson-member(1))
+  - [Word.Font](/javascript/api/word/word.font): [toJSON](/javascript/api/word/word.font#word-word-font-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendlineCollection: [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1)),
-  [getItem](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-getitem-member(1)), [items](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-items-member)
+  - [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection): [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection):
+  [add](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-add-member(1)), [getItem](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-getitem-member(1)), [items](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-items-member)
 
 isPreview: false
 isDeprecated: false

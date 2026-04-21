@@ -15,13 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
+  - [Word.Body](/javascript/api/word/word.body): [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
 
-  - Word.ContentControl: [insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
 
-  - Word.ParagraphCollection: [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
 
-  - Word.Range: [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
 
   #### Examples
 

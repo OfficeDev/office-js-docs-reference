@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [shapes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-shapes-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [shapes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-shapes-member)
 
 isPreview: false
 isDeprecated: false

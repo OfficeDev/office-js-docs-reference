@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NamedItem: [load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
+  - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [load](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-load-member(1))
 
 isPreview: false
 isDeprecated: false

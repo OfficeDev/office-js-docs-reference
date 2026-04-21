@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Table: [onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)
 
-  - Excel.TableCollection: [onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)
 
 isPreview: true
 isDeprecated: false

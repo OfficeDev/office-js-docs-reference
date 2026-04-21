@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideLayout: [toJSON](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-tojson-member(1))
+  - [PowerPoint.SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout): [toJSON](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

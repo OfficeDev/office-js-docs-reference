@@ -25,21 +25,21 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [fields](/javascript/api/word/word.body#word-word-body-fields-member)
+  - [Word.Body](/javascript/api/word/word.body): [fields](/javascript/api/word/word.body#word-word-body-fields-member)
 
-  - Word.ContentControl: [fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)
 
-  - Word.Document: [fields](/javascript/api/word/word.document#word-word-document-fields-member)
+  - [Word.Document](/javascript/api/word/word.document): [fields](/javascript/api/word/word.document#word-word-document-fields-member)
 
-  - Word.Paragraph: [fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)
 
-  - Word.Range: [fields](/javascript/api/word/word.range#word-word-range-fields-member)
+  - [Word.Range](/javascript/api/word/word.range): [fields](/javascript/api/word/word.range#word-word-range-fields-member)
 
-  - Word.Selection: [fields](/javascript/api/word/word.selection#word-word-selection-fields-member)
+  - [Word.Selection](/javascript/api/word/word.selection): [fields](/javascript/api/word/word.selection#word-word-selection-fields-member)
 
-  - Word.Table: [fields](/javascript/api/word/word.table#word-word-table-fields-member)
+  - [Word.Table](/javascript/api/word/word.table): [fields](/javascript/api/word/word.table#word-word-table-fields-member)
 
-  - Word.TableRow: [fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)
 
   #### Examples
 

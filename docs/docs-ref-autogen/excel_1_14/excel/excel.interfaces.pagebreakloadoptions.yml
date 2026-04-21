@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageBreak: [load](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-load-member(1))
+  - [Excel.PageBreak](/javascript/api/excel/excel.pagebreak): [load](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-load-member(1))
 
 isPreview: false
 isDeprecated: false

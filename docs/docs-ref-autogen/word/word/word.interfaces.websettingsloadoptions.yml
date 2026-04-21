@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.WebSettings: [load](/javascript/api/word/word.websettings#word-word-websettings-load-member(1))
+  - [Word.WebSettings](/javascript/api/word/word.websettings): [load](/javascript/api/word/word.websettings#word-word-websettings-load-member(1))
 
 isPreview: false
 isDeprecated: false

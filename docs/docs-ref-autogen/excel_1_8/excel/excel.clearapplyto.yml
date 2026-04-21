@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
 
   #### Examples
 

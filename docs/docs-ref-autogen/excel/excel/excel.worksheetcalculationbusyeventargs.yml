@@ -14,9 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member)
 
-  - Excel.WorksheetCollection: [onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member)
 
 isPreview: true
 isDeprecated: false

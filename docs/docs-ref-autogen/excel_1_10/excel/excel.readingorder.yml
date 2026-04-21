@@ -13,11 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesFormat: [readingOrder](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-readingorder-member)
+  - [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat): [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat):
+  [readingOrder](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-readingorder-member)
 
-  - Excel.RangeFormat: [readingOrder](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-readingorder-member)
+  - [Excel.RangeFormat](/javascript/api/excel/excel.rangeformat): [readingOrder](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-readingorder-member)
 
-  - Excel.Style: [readingOrder](/javascript/api/excel/excel.style#excel-excel-style-readingorder-member)
+  - [Excel.Style](/javascript/api/excel/excel.style): [readingOrder](/javascript/api/excel/excel.style#excel-excel-style-readingorder-member)
 
   #### Examples
 

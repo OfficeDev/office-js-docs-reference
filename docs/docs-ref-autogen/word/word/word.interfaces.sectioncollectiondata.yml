@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.SectionCollection: [toJSON](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-tojson-member(1))
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [toJSON](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

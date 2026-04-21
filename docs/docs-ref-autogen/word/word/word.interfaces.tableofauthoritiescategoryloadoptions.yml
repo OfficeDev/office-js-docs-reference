@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfAuthoritiesCategory: [load](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-load-member(1))
+  - [Word.TableOfAuthoritiesCategory](/javascript/api/word/word.tableofauthoritiescategory): [Word.TableOfAuthoritiesCategory](/javascript/api/word/word.tableofauthoritiescategory):
+  [load](/javascript/api/word/word.tableofauthoritiescategory#word-word-tableofauthoritiescategory-load-member(1))
 
 isPreview: false
 isDeprecated: false

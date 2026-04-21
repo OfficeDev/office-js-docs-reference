@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Font: [set](/javascript/api/word/word.font#word-word-font-set-member(1))
+  - [Word.Font](/javascript/api/word/word.font): [set](/javascript/api/word/word.font#word-word-font-set-member(1))
 
 isPreview: false
 isDeprecated: false

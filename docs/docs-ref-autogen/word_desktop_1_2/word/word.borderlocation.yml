@@ -13,13 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Border: [location](/javascript/api/word/word.border#word-word-border-location-member)
+  - [Word.Border](/javascript/api/word/word.border): [location](/javascript/api/word/word.border#word-word-border-location-member)
 
-  - Word.Table: [getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))
+  - [Word.Table](/javascript/api/word/word.table): [getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))
 
-  - Word.TableCell: [getBorder](/javascript/api/word/word.tablecell#word-word-tablecell-getborder-member(1))
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [getBorder](/javascript/api/word/word.tablecell#word-word-tablecell-getborder-member(1))
 
-  - Word.TableRow: [getBorder](/javascript/api/word/word.tablerow#word-word-tablerow-getborder-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [getBorder](/javascript/api/word/word.tablerow#word-word-tablerow-getborder-member(1))
 
   #### Examples
 

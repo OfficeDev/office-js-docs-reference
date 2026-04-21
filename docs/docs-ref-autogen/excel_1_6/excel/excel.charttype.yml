@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
 
   #### Examples
 

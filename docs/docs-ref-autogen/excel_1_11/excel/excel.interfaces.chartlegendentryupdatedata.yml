@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLegendEntry: [set](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-set-member(1))
+  - [Excel.ChartLegendEntry](/javascript/api/excel/excel.chartlegendentry): [set](/javascript/api/excel/excel.chartlegendentry#excel-excel-chartlegendentry-set-member(1))
 
 isPreview: false
 isDeprecated: false

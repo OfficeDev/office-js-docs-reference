@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataTableFormat: [toJSON](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-tojson-member(1))
+  - [Excel.ChartDataTableFormat](/javascript/api/excel/excel.chartdatatableformat): [Excel.ChartDataTableFormat](/javascript/api/excel/excel.chartdatatableformat):
+  [toJSON](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

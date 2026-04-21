@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Slide: [toJSON](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tojson-member(1))
+  - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [toJSON](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

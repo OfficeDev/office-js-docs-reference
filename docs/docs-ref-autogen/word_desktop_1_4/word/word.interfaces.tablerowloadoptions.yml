@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableRow: [load](/javascript/api/word/word.tablerow#word-word-tablerow-load-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [load](/javascript/api/word/word.tablerow#word-word-tablerow-load-member(1))
 
 isPreview: false
 isDeprecated: false

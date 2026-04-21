@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetCollection: [onAdded](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onadded-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [onAdded](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onadded-member)
 
 isPreview: false
 isDeprecated: false

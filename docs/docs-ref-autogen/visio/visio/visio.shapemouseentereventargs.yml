@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onShapeMouseEnter](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseenter-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onShapeMouseEnter](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseenter-member)
 
   #### Examples
 

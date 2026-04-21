@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableRowCollection: [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
+  - [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection): [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection):
+  [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

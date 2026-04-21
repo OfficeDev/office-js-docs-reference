@@ -15,9 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangeDirectionState: [insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#excel-excel-changedirectionstate-insertshiftdirection-member)
+  - [Excel.ChangeDirectionState](/javascript/api/excel/excel.changedirectionstate): [Excel.ChangeDirectionState](/javascript/api/excel/excel.changedirectionstate):
+  [insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#excel-excel-changedirectionstate-insertshiftdirection-member)
 
-  - Excel.Range: [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
 
   #### Examples
 

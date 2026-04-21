@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideMaster: [load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
 
 isPreview: false
 isDeprecated: false

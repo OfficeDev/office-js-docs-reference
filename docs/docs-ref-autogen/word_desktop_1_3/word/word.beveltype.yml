@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ThreeDimensionalFormat: [bevelBottomType](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-bevelbottomtype-member),
-  [bevelTopType](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-beveltoptype-member)
+  - [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat): [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat):
+  [bevelBottomType](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-bevelbottomtype-member), [bevelTopType](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-beveltoptype-member)
 
 isPreview: false
 isDeprecated: false

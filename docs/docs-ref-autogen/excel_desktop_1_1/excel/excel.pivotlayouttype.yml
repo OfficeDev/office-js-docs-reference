@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotLayout: [layoutType](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-layouttype-member)
+  - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [layoutType](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-layouttype-member)
 
 isPreview: false
 isDeprecated: false

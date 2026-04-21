@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.BreakCollection: [items](/javascript/api/word/word.breakcollection#word-word-breakcollection-items-member)
+  - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [items](/javascript/api/word/word.breakcollection#word-word-breakcollection-items-member)
 
 isPreview: false
 isDeprecated: false

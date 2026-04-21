@@ -15,11 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)
+  - [Word.Document](/javascript/api/word/word.document): [listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)
 
-  - Word.ListTemplateGallery: [listTemplates](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-listtemplates-member)
+  - [Word.ListTemplateGallery](/javascript/api/word/word.listtemplategallery): [listTemplates](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-listtemplates-member)
 
-  - Word.Template: [listTemplates](/javascript/api/word/word.template#word-word-template-listtemplates-member)
+  - [Word.Template](/javascript/api/word/word.template): [listTemplates](/javascript/api/word/word.template#word-word-template-listtemplates-member)
 
 isPreview: false
 isDeprecated: false

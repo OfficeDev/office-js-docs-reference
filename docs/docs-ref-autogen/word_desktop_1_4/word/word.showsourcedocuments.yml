@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Window: [showSourceDocuments](/javascript/api/word/word.window#word-word-window-showsourcedocuments-member)
+  - [Word.Window](/javascript/api/word/word.window): [showSourceDocuments](/javascript/api/word/word.window#word-word-window-showsourcedocuments-member)
 
 isPreview: false
 isDeprecated: false

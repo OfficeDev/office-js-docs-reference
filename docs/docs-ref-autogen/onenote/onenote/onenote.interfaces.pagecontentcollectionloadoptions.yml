@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.PageContentCollection: [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+  - [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection): [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection):
+  [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

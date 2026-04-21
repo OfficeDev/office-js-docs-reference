@@ -12,14 +12,15 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangedEventDetail: [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member),
+  - [Excel.ChangedEventDetail](/javascript/api/excel/excel.changedeventdetail): [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member),
   [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
 
-  - Excel.NamedItemArrayValues: [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
+  - [Excel.NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues): [Excel.NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues):
+  [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
 
-  - Excel.Range: [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
+  - [Excel.Range](/javascript/api/excel/excel.range): [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
 
-  - Excel.RangeView: [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
+  - [Excel.RangeView](/javascript/api/excel/excel.rangeview): [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
 
 isPreview: false
 isDeprecated: false

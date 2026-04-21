@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [findAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findall-member(1)),
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [findAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findall-member(1)),
   [findAllOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findallornullobject-member(1))
 
 isPreview: false

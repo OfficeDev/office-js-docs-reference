@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ParagraphFormat: [bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-bulletformat-member)
+  - [PowerPoint.ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat): [PowerPoint.ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat):
+  [bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-bulletformat-member)
 
   #### Examples
 

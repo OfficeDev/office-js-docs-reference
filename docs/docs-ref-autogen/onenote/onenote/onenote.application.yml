@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.RequestContext: [application](/javascript/api/onenote/onenote.requestcontext#onenote-onenote-requestcontext-application-member)
+  - [OneNote.RequestContext](/javascript/api/onenote/onenote.requestcontext): [application](/javascript/api/onenote/onenote.requestcontext#onenote-onenote-requestcontext-application-member)
 
 isPreview: false
 isDeprecated: false

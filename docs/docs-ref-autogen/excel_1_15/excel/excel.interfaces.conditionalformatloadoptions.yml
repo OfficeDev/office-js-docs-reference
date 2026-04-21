@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1))
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [load](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

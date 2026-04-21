@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shape: [set](/javascript/api/word/word.shape#word-word-shape-set-member(1))
+  - [Word.Shape](/javascript/api/word/word.shape): [set](/javascript/api/word/word.shape#word-word-shape-set-member(1))
 
 isPreview: false
 isDeprecated: false

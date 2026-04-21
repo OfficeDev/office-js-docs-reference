@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions: [specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-specificcellproperties-member),
-  [uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-uniformcellproperties-member)
+  - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions):
+  [specificCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-specificcellproperties-member), [uniformCellProperties](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-uniformcellproperties-member)
 
   #### Examples
 

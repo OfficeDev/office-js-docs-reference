@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabels: [leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)
+  - [Excel.ChartDataLabels](/javascript/api/excel/excel.chartdatalabels): [leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)
 
   #### Examples
 

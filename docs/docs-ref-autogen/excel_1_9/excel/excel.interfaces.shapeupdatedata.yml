@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(1))
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [set](/javascript/api/excel/excel.shape#excel-excel-shape-set-member(1))
 
 isPreview: false
 isDeprecated: false

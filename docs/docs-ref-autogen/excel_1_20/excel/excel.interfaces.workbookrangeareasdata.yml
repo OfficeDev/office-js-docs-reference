@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorkbookRangeAreas: [toJSON](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-tojson-member(1))
+  - [Excel.WorkbookRangeAreas](/javascript/api/excel/excel.workbookrangeareas): [toJSON](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableBorder: [load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1))
+  - [Word.TableBorder](/javascript/api/word/word.tableborder): [load](/javascript/api/word/word.tableborder#word-word-tableborder-load-member(1))
 
 isPreview: false
 isDeprecated: false

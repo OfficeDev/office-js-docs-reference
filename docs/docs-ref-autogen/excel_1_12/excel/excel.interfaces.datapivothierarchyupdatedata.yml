@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataPivotHierarchy: [set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(1))
+  - [Excel.DataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy): [set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

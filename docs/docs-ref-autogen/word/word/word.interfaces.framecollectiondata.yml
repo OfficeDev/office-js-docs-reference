@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.FrameCollection: [toJSON](/javascript/api/word/word.framecollection#word-word-framecollection-tojson-member(1))
+  - [Word.FrameCollection](/javascript/api/word/word.framecollection): [toJSON](/javascript/api/word/word.framecollection#word-word-framecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

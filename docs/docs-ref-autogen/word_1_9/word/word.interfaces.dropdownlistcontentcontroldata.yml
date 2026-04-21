@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DropDownListContentControl: [toJSON](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-tojson-member(1))
+  - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol):
+  [toJSON](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shape: [relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)
+  - [Word.Shape](/javascript/api/word/word.shape): [relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)
 
   #### Examples
 

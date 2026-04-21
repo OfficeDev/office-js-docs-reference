@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotFieldCollection: [toJSON](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-tojson-member(1))
+  - [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection): [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection):
+  [toJSON](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

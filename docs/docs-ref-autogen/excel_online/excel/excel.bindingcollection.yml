@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [bindings](/javascript/api/excel/excel.workbook#excel-excel-workbook-bindings-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [bindings](/javascript/api/excel/excel.workbook#excel-excel-workbook-bindings-member)
 
 isPreview: false
 isDeprecated: false

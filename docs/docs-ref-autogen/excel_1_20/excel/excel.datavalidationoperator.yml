@@ -13,9 +13,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BasicDataValidation: [operator](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-operator-member)
+  - [Excel.BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation): [Excel.BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation):
+  [operator](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-operator-member)
 
-  - Excel.DateTimeDataValidation: [operator](/javascript/api/excel/excel.datetimedatavalidation#excel-excel-datetimedatavalidation-operator-member)
+  - [Excel.DateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation): [Excel.DateTimeDataValidation](/javascript/api/excel/excel.datetimedatavalidation):
+  [operator](/javascript/api/excel/excel.datetimedatavalidation#excel-excel-datetimedatavalidation-operator-member)
 
   #### Examples
 

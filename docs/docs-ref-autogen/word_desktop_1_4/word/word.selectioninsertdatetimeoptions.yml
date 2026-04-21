@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [insertDateTime](/javascript/api/word/word.selection#word-word-selection-insertdatetime-member(1))
+  - [Word.Selection](/javascript/api/word/word.selection): [insertDateTime](/javascript/api/word/word.selection#word-word-selection-insertdatetime-member(1))
 
 isPreview: false
 isDeprecated: false

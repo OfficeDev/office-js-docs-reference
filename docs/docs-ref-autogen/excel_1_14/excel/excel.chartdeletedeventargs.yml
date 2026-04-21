@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartCollection: [onDeleted](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-ondeleted-member)
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [onDeleted](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-ondeleted-member)
 
 isPreview: false
 isDeprecated: false

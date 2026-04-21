@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListTemplateGalleryCollection: [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
+  - [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection): [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection):
+  [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
 
 isPreview: false
 isDeprecated: false

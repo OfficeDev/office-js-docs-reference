@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TrackedChangeCollection: [toJSON](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-tojson-member(1))
+  - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection):
+  [toJSON](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

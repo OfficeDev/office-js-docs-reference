@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.HtmlDivisionCollection: [toJSON](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-tojson-member(1))
+  - [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection): [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection):
+  [toJSON](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

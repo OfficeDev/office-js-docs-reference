@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.NoteItem: [set](/javascript/api/word/word.noteitem#word-word-noteitem-set-member(1))
+  - [Word.NoteItem](/javascript/api/word/word.noteitem): [set](/javascript/api/word/word.noteitem#word-word-noteitem-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Application: [createDocument](/javascript/api/word/word.application#word-word-application-createdocument-member(1))
+  - [Word.Application](/javascript/api/word/word.application): [createDocument](/javascript/api/word/word.application#word-word-application-createdocument-member(1))
 
   #### Examples
 

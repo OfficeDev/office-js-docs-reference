@@ -32,7 +32,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Mailbox: [masterCategories](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-mastercategories-member)
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [masterCategories](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-mastercategories-member)
 
 isPreview: false
 isDeprecated: false

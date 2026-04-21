@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableRowCollection: [add](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1)),
+  - [Excel.TableRowCollection](/javascript/api/excel/excel.tablerowcollection): [add](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1)),
   [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1)), [deleteRows](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-deleterows-member(1)), [getItemAt](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-items-member)
 
 isPreview: false

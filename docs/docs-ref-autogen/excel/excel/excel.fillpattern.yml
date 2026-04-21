@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesFill: [pattern](/javascript/api/excel/excel.cellpropertiesfill#excel-excel-cellpropertiesfill-pattern-member)
+  - [Excel.CellPropertiesFill](/javascript/api/excel/excel.cellpropertiesfill): [pattern](/javascript/api/excel/excel.cellpropertiesfill#excel-excel-cellpropertiesfill-pattern-member)
 
-  - Excel.RangeFill: [pattern](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-pattern-member)
+  - [Excel.RangeFill](/javascript/api/excel/excel.rangefill): [pattern](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-pattern-member)
 
   #### Examples
 

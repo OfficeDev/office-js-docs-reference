@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentAddedEventArgs: [commentDetails](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-commentdetails-member)
+  - [Excel.CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs): [Excel.CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs):
+  [commentDetails](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-commentdetails-member)
 
-  - Excel.CommentChangedEventArgs: [commentDetails](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-commentdetails-member)
+  - [Excel.CommentChangedEventArgs](/javascript/api/excel/excel.commentchangedeventargs): [Excel.CommentChangedEventArgs](/javascript/api/excel/excel.commentchangedeventargs):
+  [commentDetails](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-commentdetails-member)
 
-  - Excel.CommentDeletedEventArgs: [commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-commentdetails-member)
+  - [Excel.CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs): [Excel.CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs):
+  [commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-commentdetails-member)
 
 isPreview: false
 isDeprecated: false

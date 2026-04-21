@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarNegativeFormat: [load](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-load-member(1))
+  - [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat): [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat):
+  [load](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

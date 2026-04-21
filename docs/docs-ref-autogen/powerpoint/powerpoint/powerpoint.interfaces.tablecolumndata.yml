@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableColumn: [toJSON](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-tojson-member(1))
+  - [PowerPoint.TableColumn](/javascript/api/powerpoint/powerpoint.tablecolumn): [toJSON](/javascript/api/powerpoint/powerpoint.tablecolumn#powerpoint-powerpoint-tablecolumn-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CommentCollection: [toJSON](/javascript/api/word/word.commentcollection#word-word-commentcollection-tojson-member(1))
+  - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [toJSON](/javascript/api/word/word.commentcollection#word-word-commentcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

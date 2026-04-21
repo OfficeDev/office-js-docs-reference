@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.DocumentProperties: [load](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-load-member(1))
+  - [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties): [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties):
+  [load](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListFormat: [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))
+  - [Word.ListFormat](/javascript/api/word/word.listformat): [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1))
 
 isPreview: false
 isDeprecated: false

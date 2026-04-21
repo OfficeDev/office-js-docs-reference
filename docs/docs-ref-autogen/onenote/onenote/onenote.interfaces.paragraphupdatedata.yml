@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Paragraph: [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(1))
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(1))
 
 isPreview: false
 isDeprecated: false

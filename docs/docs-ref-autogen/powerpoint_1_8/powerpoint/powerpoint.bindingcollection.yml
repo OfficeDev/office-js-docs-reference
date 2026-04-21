@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [bindings](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-bindings-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [bindings](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-bindings-member)
 
   #### Examples
 

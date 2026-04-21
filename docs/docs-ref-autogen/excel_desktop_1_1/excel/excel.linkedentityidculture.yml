@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityLoadServiceRequest: [entities](/javascript/api/excel/excel.linkedentityloadservicerequest#excel-excel-linkedentityloadservicerequest-entities-member)
+  - [Excel.LinkedEntityLoadServiceRequest](/javascript/api/excel/excel.linkedentityloadservicerequest): [Excel.LinkedEntityLoadServiceRequest](/javascript/api/excel/excel.linkedentityloadservicerequest):
+  [entities](/javascript/api/excel/excel.linkedentityloadservicerequest#excel-excel-linkedentityloadservicerequest-entities-member)
 
 isPreview: false
 isDeprecated: false

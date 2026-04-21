@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.BreakCollection: [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1))
+  - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

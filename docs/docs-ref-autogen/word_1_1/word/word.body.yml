@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [body](/javascript/api/word/word.document#word-word-document-body-member)
+  - [Word.Document](/javascript/api/word/word.document): [body](/javascript/api/word/word.document#word-word-document-body-member)
 
-  - Word.Section: [body](/javascript/api/word/word.section#word-word-section-body-member),
+  - [Word.Section](/javascript/api/word/word.section): [body](/javascript/api/word/word.section#word-word-section-body-member),
   [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1)), [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
 
   #### Examples

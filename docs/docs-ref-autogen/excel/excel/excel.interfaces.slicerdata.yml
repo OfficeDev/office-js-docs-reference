@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Slicer: [toJSON](/javascript/api/excel/excel.slicer#excel-excel-slicer-tojson-member(1))
+  - [Excel.Slicer](/javascript/api/excel/excel.slicer): [toJSON](/javascript/api/excel/excel.slicer#excel-excel-slicer-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

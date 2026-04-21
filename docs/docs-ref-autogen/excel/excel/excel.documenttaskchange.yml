@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentTaskChangeCollection: [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)),
-  [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
+  - [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection): [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection):
+  [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 
 isPreview: true
 isDeprecated: false

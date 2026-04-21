@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundSolidFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-load-member(1))
+  - [PowerPoint.SlideBackgroundSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill): [PowerPoint.SlideBackgroundSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill):
+  [load](/javascript/api/powerpoint/powerpoint.slidebackgroundsolidfill#powerpoint-powerpoint-slidebackgroundsolidfill-load-member(1))
 
 isPreview: false
 isDeprecated: false

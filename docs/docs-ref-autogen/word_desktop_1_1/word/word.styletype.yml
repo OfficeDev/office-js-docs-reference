@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
 
-  - Word.Style: [type](/javascript/api/word/word.style#word-word-style-type-member)
+  - [Word.Style](/javascript/api/word/word.style): [type](/javascript/api/word/word.style#word-word-style-type-member)
 
   #### Examples
 

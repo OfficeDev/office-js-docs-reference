@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLegendFormat: [toJSON](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-tojson-member(1))
+  - [Excel.ChartLegendFormat](/javascript/api/excel/excel.chartlegendformat): [toJSON](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

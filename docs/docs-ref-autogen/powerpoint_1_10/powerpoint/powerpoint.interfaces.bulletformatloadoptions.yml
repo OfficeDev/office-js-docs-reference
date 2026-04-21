@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.BulletFormat: [load](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-load-member(1))
+  - [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat): [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat):
+  [load](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

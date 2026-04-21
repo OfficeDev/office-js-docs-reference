@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeFont: [underline](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-underline-member)
+  - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [underline](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-underline-member)
 
   #### Examples
 

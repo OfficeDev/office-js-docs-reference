@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlock: [set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(1))
+  - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(1))
 
 isPreview: false
 isDeprecated: false

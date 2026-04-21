@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Template: [buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)
+  - [Word.Template](/javascript/api/word/word.template): [buildingBlockEntries](/javascript/api/word/word.template#word-word-template-buildingblockentries-member)
 
 isPreview: false
 isDeprecated: false

@@ -643,7 +643,13 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
         }
     }
 
-    let cleanYml = schemaComment + jsyaml.dump(apiYaml);
+    let cleanYml = schemaComment + jsyaml.dump(apiYaml, {
+        lineWidth: -1,
+        noRefs: true,
+        sortKeys: false,
+        noCompatMode: true,
+        flowLevel: -1
+    });
 
     // Fix YAML formatting issue: yaml.dump() sometimes puts markdown list bullets on separate lines
     // Convert "  -\n  [Text](url)" to "  - [Text](url)"

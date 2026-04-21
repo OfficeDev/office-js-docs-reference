@@ -13,29 +13,29 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [insertTable](/javascript/api/word/word.body#word-word-body-inserttable-member(1))
+  - [Word.Body](/javascript/api/word/word.body): [insertTable](/javascript/api/word/word.body#word-word-body-inserttable-member(1))
 
-  - Word.ContentControl: [insertTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1)),
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [insertTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1)),
   [parentTable](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parenttableornullobject-member)
 
-  - Word.Field: [parentTable](/javascript/api/word/word.field#word-word-field-parenttable-member),
+  - [Word.Field](/javascript/api/word/word.field): [parentTable](/javascript/api/word/word.field#word-word-field-parenttable-member),
   [parentTableOrNullObject](/javascript/api/word/word.field#word-word-field-parenttableornullobject-member)
 
-  - Word.InlinePicture: [parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member),
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member),
   [parentTableOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttableornullobject-member)
 
-  - Word.Paragraph: [insertTable](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1)),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertTable](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1)),
   [parentTable](/javascript/api/word/word.paragraph#word-word-paragraph-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parenttableornullobject-member)
 
-  - Word.Range: [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1)),
+  - [Word.Range](/javascript/api/word/word.range): [insertTable](/javascript/api/word/word.range#word-word-range-inserttable-member(1)),
   [parentTable](/javascript/api/word/word.range#word-word-range-parenttable-member), [parentTableOrNullObject](/javascript/api/word/word.range#word-word-range-parenttableornullobject-member)
 
-  - Word.TableCell: [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
 
-  - Word.TableCollection: [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)),
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.tablecollection#word-word-tablecollection-items-member)
 
-  - Word.TableRow: [parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
 
   #### Examples
 

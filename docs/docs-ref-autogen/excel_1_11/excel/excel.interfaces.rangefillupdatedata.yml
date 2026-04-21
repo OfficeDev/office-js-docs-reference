@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeFill: [set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(1))
+  - [Excel.RangeFill](/javascript/api/excel/excel.rangefill): [set](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-set-member(1))
 
 isPreview: false
 isDeprecated: false

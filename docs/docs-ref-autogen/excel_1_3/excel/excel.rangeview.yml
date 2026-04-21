@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getVisibleView](/javascript/api/excel/excel.range#excel-excel-range-getvisibleview-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [getVisibleView](/javascript/api/excel/excel.range#excel-excel-range-getvisibleview-member(1))
 
-  - Excel.RangeViewCollection: [getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1)),
-  [items](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-items-member)
+  - [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection): [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection):
+  [getItemAt](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-items-member)
 
 isPreview: false
 isDeprecated: false

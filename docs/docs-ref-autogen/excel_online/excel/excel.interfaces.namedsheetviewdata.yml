@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NamedSheetView: [toJSON](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-tojson-member(1))
+  - [Excel.NamedSheetView](/javascript/api/excel/excel.namedsheetview): [toJSON](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

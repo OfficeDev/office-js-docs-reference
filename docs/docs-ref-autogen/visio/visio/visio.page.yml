@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [getActivePage](/javascript/api/visio/visio.document#visio-visio-document-getactivepage-member(1))
+  - [Visio.Document](/javascript/api/visio/visio.document): [getActivePage](/javascript/api/visio/visio.document#visio-visio-document-getactivepage-member(1))
 
-  - Visio.PageCollection: [getItem](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-getitem-member(1)),
+  - [Visio.PageCollection](/javascript/api/visio/visio.pagecollection): [getItem](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-getitem-member(1)),
   [items](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-items-member)
 
 isPreview: false

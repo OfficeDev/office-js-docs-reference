@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPlotAreaFormat: [set](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-set-member(1))
+  - [Excel.ChartPlotAreaFormat](/javascript/api/excel/excel.chartplotareaformat): [Excel.ChartPlotAreaFormat](/javascript/api/excel/excel.chartplotareaformat):
+  [set](/javascript/api/excel/excel.chartplotareaformat#excel-excel-chartplotareaformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

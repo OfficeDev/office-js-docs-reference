@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [onSlideSelectionChanged](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-onslideselectionchanged-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [onSlideSelectionChanged](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-onslideselectionchanged-member)
 
 isPreview: true
 isDeprecated: false

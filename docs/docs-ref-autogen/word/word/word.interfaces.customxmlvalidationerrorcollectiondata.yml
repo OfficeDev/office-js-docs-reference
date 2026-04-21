@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlValidationErrorCollection: [toJSON](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-tojson-member(1))
+  - [Word.CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection): [Word.CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection):
+  [toJSON](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

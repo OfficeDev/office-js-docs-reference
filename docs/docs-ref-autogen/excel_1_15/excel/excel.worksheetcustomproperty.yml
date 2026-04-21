@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetCustomPropertyCollection: [add](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-add-member(1)),
-  [getItem](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-items-member)
+  - [Excel.WorksheetCustomPropertyCollection](/javascript/api/excel/excel.worksheetcustompropertycollection): [Excel.WorksheetCustomPropertyCollection](/javascript/api/excel/excel.worksheetcustompropertycollection):
+  [add](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-add-member(1)), [getItem](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-items-member)
 
 isPreview: false
 isDeprecated: false

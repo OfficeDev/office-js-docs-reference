@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)
 
 isPreview: false
 isDeprecated: false

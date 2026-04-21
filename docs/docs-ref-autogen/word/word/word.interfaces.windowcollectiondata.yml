@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.WindowCollection: [toJSON](/javascript/api/word/word.windowcollection#word-word-windowcollection-tojson-member(1))
+  - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [toJSON](/javascript/api/word/word.windowcollection#word-word-windowcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

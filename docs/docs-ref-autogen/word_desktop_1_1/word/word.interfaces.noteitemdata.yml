@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.NoteItem: [toJSON](/javascript/api/word/word.noteitem#word-word-noteitem-tojson-member(1))
+  - [Word.NoteItem](/javascript/api/word/word.noteitem): [toJSON](/javascript/api/word/word.noteitem#word-word-noteitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

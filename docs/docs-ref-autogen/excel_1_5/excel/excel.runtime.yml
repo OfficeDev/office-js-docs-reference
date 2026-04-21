@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RequestContext: [runtime](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-runtime-member)
+  - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [runtime](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-runtime-member)
 
 isPreview: false
 isDeprecated: false

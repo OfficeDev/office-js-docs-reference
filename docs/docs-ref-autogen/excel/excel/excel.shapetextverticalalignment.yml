@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextFrame: [verticalAlignment](/javascript/api/excel/excel.textframe#excel-excel-textframe-verticalalignment-member)
+  - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [verticalAlignment](/javascript/api/excel/excel.textframe#excel-excel-textframe-verticalalignment-member)
 
 isPreview: false
 isDeprecated: false

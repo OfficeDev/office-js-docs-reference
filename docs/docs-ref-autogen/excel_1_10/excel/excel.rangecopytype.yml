@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
 
-  - Excel.RangeAreas: [copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
 
   #### Examples
 

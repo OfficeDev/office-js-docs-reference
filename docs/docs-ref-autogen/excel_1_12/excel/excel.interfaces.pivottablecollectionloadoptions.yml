@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableCollection: [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+  - [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection): [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection):
+  [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

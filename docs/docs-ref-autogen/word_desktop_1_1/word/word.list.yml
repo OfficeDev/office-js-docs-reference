@@ -15,10 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListCollection: [getById](/javascript/api/word/word.listcollection#word-word-listcollection-getbyid-member(1)),
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [getById](/javascript/api/word/word.listcollection#word-word-listcollection-getbyid-member(1)),
   [getByIdOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1)), [getFirst](/javascript/api/word/word.listcollection#word-word-listcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1)), [getItem](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1)), [items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)
 
-  - Word.Paragraph: [attachToList](/javascript/api/word/word.paragraph#word-word-paragraph-attachtolist-member(1)),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [attachToList](/javascript/api/word/word.paragraph#word-word-paragraph-attachtolist-member(1)),
   [list](/javascript/api/word/word.paragraph#word-word-paragraph-list-member), [listOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listornullobject-member), [startNewList](/javascript/api/word/word.paragraph#word-word-paragraph-startnewlist-member(1))
 
   #### Examples

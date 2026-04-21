@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableStyle: [set](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-set-member(1))
+  - [Excel.TableStyle](/javascript/api/excel/excel.tablestyle): [set](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

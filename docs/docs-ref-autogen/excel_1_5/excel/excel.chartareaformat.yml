@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [format](/javascript/api/excel/excel.chart#excel-excel-chart-format-member)
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [format](/javascript/api/excel/excel.chart#excel-excel-chart-format-member)
 
 isPreview: false
 isDeprecated: false

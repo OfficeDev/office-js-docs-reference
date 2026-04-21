@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.PaneCollection: [toJSON](/javascript/api/word/word.panecollection#word-word-panecollection-tojson-member(1))
+  - [Word.PaneCollection](/javascript/api/word/word.panecollection): [toJSON](/javascript/api/word/word.panecollection#word-word-panecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

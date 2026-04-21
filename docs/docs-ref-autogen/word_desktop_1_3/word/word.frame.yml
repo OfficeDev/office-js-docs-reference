@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.FrameCollection: [add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1)),
+  - [Word.FrameCollection](/javascript/api/word/word.framecollection): [add](/javascript/api/word/word.framecollection#word-word-framecollection-add-member(1)),
   [getItem](/javascript/api/word/word.framecollection#word-word-framecollection-getitem-member(1)), [items](/javascript/api/word/word.framecollection#word-word-framecollection-items-member)
 
-  - Word.Style: [frame](/javascript/api/word/word.style#word-word-style-frame-member)
+  - [Word.Style](/javascript/api/word/word.style): [frame](/javascript/api/word/word.style#word-word-style-frame-member)
 
 isPreview: false
 isDeprecated: false

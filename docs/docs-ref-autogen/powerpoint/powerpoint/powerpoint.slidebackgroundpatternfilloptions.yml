@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundFill: [setPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setpatternfill-member(1))
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill):
+  [setPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setpatternfill-member(1))
 
   #### Examples
 

@@ -17,8 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NamedItemCollection: [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1)),
-  [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
+  - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection):
+  [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1)), [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
 
   #### Examples
 

@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentLibraryVersionCollection: [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
+  - [Word.DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection): [Word.DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection):
+  [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAxis: [baseTimeUnit](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-basetimeunit-member),
+  - [Excel.ChartAxis](/javascript/api/excel/excel.chartaxis): [baseTimeUnit](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-basetimeunit-member),
   [majorTimeUnitScale](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-majortimeunitscale-member), [minorTimeUnitScale](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-minortimeunitscale-member)
 
 isPreview: false

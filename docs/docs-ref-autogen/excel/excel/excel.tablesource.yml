@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Table: [source](/javascript/api/excel/excel.table#excel-excel-table-source-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [source](/javascript/api/excel/excel.table#excel-excel-table-source-member)
 
 isPreview: true
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.PageSetup: [lineNumbering](/javascript/api/word/word.pagesetup#word-word-pagesetup-linenumbering-member)
+  - [Word.PageSetup](/javascript/api/word/word.pagesetup): [lineNumbering](/javascript/api/word/word.pagesetup#word-word-pagesetup-linenumbering-member)
 
 isPreview: false
 isDeprecated: false

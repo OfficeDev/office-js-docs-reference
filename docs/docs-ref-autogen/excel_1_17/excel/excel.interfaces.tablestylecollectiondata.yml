@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableStyleCollection: [toJSON](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-tojson-member(1))
+  - [Excel.TableStyleCollection](/javascript/api/excel/excel.tablestylecollection): [Excel.TableStyleCollection](/javascript/api/excel/excel.tablestylecollection):
+  [toJSON](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

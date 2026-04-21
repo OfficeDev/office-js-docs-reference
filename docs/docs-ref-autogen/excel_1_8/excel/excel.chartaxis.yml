@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAxes: [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member),
+  - [Excel.ChartAxes](/javascript/api/excel/excel.chartaxes): [categoryAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-categoryaxis-member),
   [getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1)), [seriesAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-seriesaxis-member), [valueAxis](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-valueaxis-member)
 
 isPreview: false

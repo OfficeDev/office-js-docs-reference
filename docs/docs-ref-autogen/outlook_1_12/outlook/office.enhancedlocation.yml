@@ -31,9 +31,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [enhancedLocation](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-enhancedlocation-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [enhancedLocation](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-enhancedlocation-member)
 
-  - Office.AppointmentRead: [enhancedLocation](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-enhancedlocation-member)
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [enhancedLocation](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-enhancedlocation-member)
 
 isPreview: false
 isDeprecated: false

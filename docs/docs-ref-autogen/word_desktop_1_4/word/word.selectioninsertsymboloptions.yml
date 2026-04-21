@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [insertSymbol](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))
+  - [Word.Selection](/javascript/api/word/word.selection): [insertSymbol](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))
 
   #### Examples
 

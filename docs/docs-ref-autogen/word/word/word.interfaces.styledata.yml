@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Style: [toJSON](/javascript/api/word/word.style#word-word-style-tojson-member(1))
+  - [Word.Style](/javascript/api/word/word.style): [toJSON](/javascript/api/word/word.style#word-word-style-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

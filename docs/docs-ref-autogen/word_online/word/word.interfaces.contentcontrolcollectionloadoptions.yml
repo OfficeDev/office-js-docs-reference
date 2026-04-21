@@ -19,7 +19,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlCollection: [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection):
+  [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Page: [toJSON](/javascript/api/visio/visio.page#visio-visio-page-tojson-member(1))
+  - [Visio.Page](/javascript/api/visio/visio.page): [toJSON](/javascript/api/visio/visio.page#visio-visio-page-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeView: [rows](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-rows-member)
+  - [Excel.RangeView](/javascript/api/excel/excel.rangeview): [rows](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-rows-member)
 
 isPreview: false
 isDeprecated: false

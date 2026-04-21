@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListLevelCollection: [toJSON](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-tojson-member(1))
+  - [Word.ListLevelCollection](/javascript/api/word/word.listlevelcollection): [toJSON](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

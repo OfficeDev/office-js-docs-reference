@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideLayout: [load](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-load-member(1))
+  - [PowerPoint.SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout): [load](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-load-member(1))
 
 isPreview: false
 isDeprecated: false

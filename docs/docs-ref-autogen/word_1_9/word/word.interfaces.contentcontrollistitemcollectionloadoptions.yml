@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlListItemCollection: [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+  - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection):
+  [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

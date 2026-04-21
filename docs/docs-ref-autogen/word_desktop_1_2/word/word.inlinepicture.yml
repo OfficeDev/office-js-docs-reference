@@ -13,16 +13,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [insertInlinePictureFromBase64](/javascript/api/word/word.body#word-word-body-insertinlinepicturefrombase64-member(1))
+  - [Word.Body](/javascript/api/word/word.body): [insertInlinePictureFromBase64](/javascript/api/word/word.body#word-word-body-insertinlinepicturefrombase64-member(1))
 
-  - Word.ContentControl: [insertInlinePictureFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertinlinepicturefrombase64-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [insertInlinePictureFromBase64](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertinlinepicturefrombase64-member(1))
 
-  - Word.InlinePictureCollection: [getFirst](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirst-member(1)),
-  [getFirstOrNullObject](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection):
+  [getFirst](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
 
-  - Word.Paragraph: [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
 
-  - Word.Range: [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
 
   #### Examples
 

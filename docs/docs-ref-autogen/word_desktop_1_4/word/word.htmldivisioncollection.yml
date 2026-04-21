@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.HtmlDivision: [htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)
+  - [Word.HtmlDivision](/javascript/api/word/word.htmldivision): [htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)
 
 isPreview: false
 isDeprecated: false

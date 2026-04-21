@@ -12,11 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlock: [type](/javascript/api/word/word.buildingblock#word-word-buildingblock-type-member)
+  - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [type](/javascript/api/word/word.buildingblock#word-word-buildingblock-type-member)
 
-  - Word.BuildingBlockCategory: [type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)
+  - [Word.BuildingBlockCategory](/javascript/api/word/word.buildingblockcategory): [Word.BuildingBlockCategory](/javascript/api/word/word.buildingblockcategory):
+  [type](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-type-member)
 
-  - Word.BuildingBlockTypeItemCollection: [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
+  - [Word.BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection): [Word.BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection):
+  [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomConditionalFormat: [load](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-load-member(1))
+  - [Excel.CustomConditionalFormat](/javascript/api/excel/excel.customconditionalformat): [Excel.CustomConditionalFormat](/javascript/api/excel/excel.customconditionalformat):
+  [load](/javascript/api/excel/excel.customconditionalformat#excel-excel-customconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

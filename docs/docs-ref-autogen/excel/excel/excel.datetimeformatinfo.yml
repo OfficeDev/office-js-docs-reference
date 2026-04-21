@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CultureInfo: [datetimeFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-datetimeformat-member)
+  - [Excel.CultureInfo](/javascript/api/excel/excel.cultureinfo): [datetimeFormat](/javascript/api/excel/excel.cultureinfo#excel-excel-cultureinfo-datetimeformat-member)
 
 isPreview: false
 isDeprecated: false

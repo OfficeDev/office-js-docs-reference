@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthoringUpdateCollection: [items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)
+  - [Word.CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection): [Word.CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection):
+  [items](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-items-member)
 
 isPreview: false
 isDeprecated: false

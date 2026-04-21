@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AllowEditRangeCollection: [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
+  - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection):
+  [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

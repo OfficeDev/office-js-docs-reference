@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member),
   [textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparisonornullobject-member)
 
 isPreview: false

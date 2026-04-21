@@ -24,9 +24,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.LoadedMessageCompose: [delayDeliveryTime](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-delaydeliverytime-member)
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [delayDeliveryTime](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-delaydeliverytime-member)
 
-  - Office.MessageCompose: [delayDeliveryTime](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-delaydeliverytime-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [delayDeliveryTime](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-delaydeliverytime-member)
 
 isPreview: false
 isDeprecated: false

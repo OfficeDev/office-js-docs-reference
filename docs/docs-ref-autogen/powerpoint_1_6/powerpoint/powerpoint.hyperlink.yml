@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.HyperlinkCollection: [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1)),
-  [items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection):
+  [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-items-member)
 
   #### Examples
 

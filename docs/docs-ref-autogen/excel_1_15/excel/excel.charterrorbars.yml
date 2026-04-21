@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [xErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-xerrorbars-member),
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [xErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-xerrorbars-member),
   [yErrorBars](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-yerrorbars-member)
 
 isPreview: false

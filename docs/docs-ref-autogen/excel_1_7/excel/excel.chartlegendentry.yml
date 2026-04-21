@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLegendEntryCollection: [getItemAt](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-getitemat-member(1)),
-  [items](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-items-member)
+  - [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection): [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection):
+  [getItemAt](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-items-member)
 
 isPreview: false
 isDeprecated: false

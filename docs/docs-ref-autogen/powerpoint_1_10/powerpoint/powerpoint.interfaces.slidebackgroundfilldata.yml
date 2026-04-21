@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundFill: [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-tojson-member(1))
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill):
+  [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

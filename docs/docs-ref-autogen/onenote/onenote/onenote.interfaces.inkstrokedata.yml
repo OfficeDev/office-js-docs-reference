@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkStroke: [toJSON](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-tojson-member(1))
+  - [OneNote.InkStroke](/javascript/api/onenote/onenote.inkstroke): [toJSON](/javascript/api/onenote/onenote.inkstroke#onenote-onenote-inkstroke-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

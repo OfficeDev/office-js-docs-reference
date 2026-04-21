@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Style: [shading](/javascript/api/word/word.style#word-word-style-shading-member)
+  - [Word.Style](/javascript/api/word/word.style): [shading](/javascript/api/word/word.style#word-word-style-shading-member)
 
-  - Word.TableStyle: [shading](/javascript/api/word/word.tablestyle#word-word-tablestyle-shading-member)
+  - [Word.TableStyle](/javascript/api/word/word.tablestyle): [shading](/javascript/api/word/word.tablestyle#word-word-tablestyle-shading-member)
 
   #### Examples
 

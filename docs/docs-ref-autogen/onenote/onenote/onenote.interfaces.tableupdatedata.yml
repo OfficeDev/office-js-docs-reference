@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Table: [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(1))
+  - [OneNote.Table](/javascript/api/onenote/onenote.table): [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(1))
 
 isPreview: false
 isDeprecated: false

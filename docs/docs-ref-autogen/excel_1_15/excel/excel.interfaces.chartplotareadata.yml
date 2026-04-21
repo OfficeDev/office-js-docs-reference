@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPlotArea: [toJSON](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-tojson-member(1))
+  - [Excel.ChartPlotArea](/javascript/api/excel/excel.chartplotarea): [toJSON](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

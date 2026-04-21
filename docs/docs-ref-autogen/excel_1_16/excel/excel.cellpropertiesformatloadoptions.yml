@@ -13,11 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesLoadOptions: [format](/javascript/api/excel/excel.cellpropertiesloadoptions#excel-excel-cellpropertiesloadoptions-format-member)
+  - [Excel.CellPropertiesLoadOptions](/javascript/api/excel/excel.cellpropertiesloadoptions): [Excel.CellPropertiesLoadOptions](/javascript/api/excel/excel.cellpropertiesloadoptions):
+  [format](/javascript/api/excel/excel.cellpropertiesloadoptions#excel-excel-cellpropertiesloadoptions-format-member)
 
-  - Excel.ColumnPropertiesLoadOptions: [format](/javascript/api/excel/excel.columnpropertiesloadoptions#excel-excel-columnpropertiesloadoptions-format-member)
+  - [Excel.ColumnPropertiesLoadOptions](/javascript/api/excel/excel.columnpropertiesloadoptions): [Excel.ColumnPropertiesLoadOptions](/javascript/api/excel/excel.columnpropertiesloadoptions):
+  [format](/javascript/api/excel/excel.columnpropertiesloadoptions#excel-excel-columnpropertiesloadoptions-format-member)
 
-  - Excel.RowPropertiesLoadOptions: [format](/javascript/api/excel/excel.rowpropertiesloadoptions#excel-excel-rowpropertiesloadoptions-format-member)
+  - [Excel.RowPropertiesLoadOptions](/javascript/api/excel/excel.rowpropertiesloadoptions): [Excel.RowPropertiesLoadOptions](/javascript/api/excel/excel.rowpropertiesloadoptions):
+  [format](/javascript/api/excel/excel.rowpropertiesloadoptions#excel-excel-rowpropertiesloadoptions-format-member)
 
 isPreview: false
 isDeprecated: false

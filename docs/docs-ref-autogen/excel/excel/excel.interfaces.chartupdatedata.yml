@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(1))
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [set](/javascript/api/excel/excel.chart#excel-excel-chart-set-member(1))
 
 isPreview: false
 isDeprecated: false

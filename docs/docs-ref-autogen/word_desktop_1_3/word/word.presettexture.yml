@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [presetTexture](/javascript/api/word/word.fillformat#word-word-fillformat-presettexture-member),
+  - [Word.FillFormat](/javascript/api/word/word.fillformat): [presetTexture](/javascript/api/word/word.fillformat#word-word-fillformat-presettexture-member),
   [setPresetTextured](/javascript/api/word/word.fillformat#word-word-fillformat-setpresettextured-member(1))
 
 isPreview: false

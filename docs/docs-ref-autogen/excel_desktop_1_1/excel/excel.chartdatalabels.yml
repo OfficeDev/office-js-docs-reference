@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [dataLabels](/javascript/api/excel/excel.chart#excel-excel-chart-datalabels-member)
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [dataLabels](/javascript/api/excel/excel.chart#excel-excel-chart-datalabels-member)
 
-  - Excel.ChartSeries: [dataLabels](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-datalabels-member)
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [dataLabels](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-datalabels-member)
 
 isPreview: false
 isDeprecated: false

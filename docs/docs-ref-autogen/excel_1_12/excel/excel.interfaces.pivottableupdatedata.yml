@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTable: [set](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-set-member(1))
+  - [Excel.PivotTable](/javascript/api/excel/excel.pivottable): [set](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-set-member(1))
 
 isPreview: false
 isDeprecated: false

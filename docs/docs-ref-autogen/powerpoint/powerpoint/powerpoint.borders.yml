@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCell: [borders](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-borders-member)
+  - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [borders](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-borders-member)
 
 isPreview: false
 isDeprecated: false

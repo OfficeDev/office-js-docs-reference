@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.HeaderFooterGroup: [defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member),
+  - [Excel.HeaderFooterGroup](/javascript/api/excel/excel.headerfootergroup): [defaultForAllPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-defaultforallpages-member),
   [evenPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-evenpages-member), [firstPage](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-firstpage-member), [oddPages](/javascript/api/excel/excel.headerfootergroup#excel-excel-headerfootergroup-oddpages-member)
 
 isPreview: false

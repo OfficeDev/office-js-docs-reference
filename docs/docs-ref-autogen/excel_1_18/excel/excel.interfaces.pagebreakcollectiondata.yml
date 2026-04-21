@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageBreakCollection: [toJSON](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-tojson-member(1))
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection):
+  [toJSON](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

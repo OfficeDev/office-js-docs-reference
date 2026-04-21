@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.HyperlinkCollection: [toJSON](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-tojson-member(1))
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection):
+  [toJSON](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

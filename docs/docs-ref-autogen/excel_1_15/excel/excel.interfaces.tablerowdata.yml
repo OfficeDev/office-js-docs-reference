@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableRow: [toJSON](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-tojson-member(1))
+  - [Excel.TableRow](/javascript/api/excel/excel.tablerow): [toJSON](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

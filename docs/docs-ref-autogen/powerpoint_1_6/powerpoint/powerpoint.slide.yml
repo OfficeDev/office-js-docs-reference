@@ -13,14 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [getParentSlide](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslide-member(1)),
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getParentSlide](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslide-member(1)),
   [getParentSlideOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslideornullobject-member(1))
 
-  - PowerPoint.SlideCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)),
-  [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [getItem](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-items-member)
 
-  - PowerPoint.SlideScopedCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-items-member)
+  - [PowerPoint.SlideScopedCollection](/javascript/api/powerpoint/powerpoint.slidescopedcollection): [PowerPoint.SlideScopedCollection](/javascript/api/powerpoint/powerpoint.slidescopedcollection):
+  [getItem](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-items-member)
 
   #### Examples
 

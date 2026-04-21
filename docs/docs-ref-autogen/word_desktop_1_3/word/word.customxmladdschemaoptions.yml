@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlSchemaCollection: [add](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-add-member(1))
+  - [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection): [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection):
+  [add](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

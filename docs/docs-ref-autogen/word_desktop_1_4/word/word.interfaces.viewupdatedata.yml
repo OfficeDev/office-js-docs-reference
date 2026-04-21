@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.View: [set](/javascript/api/word/word.view#word-word-view-set-member(1))
+  - [Word.View](/javascript/api/word/word.view): [set](/javascript/api/word/word.view#word-word-view-set-member(1))
 
 isPreview: false
 isDeprecated: false

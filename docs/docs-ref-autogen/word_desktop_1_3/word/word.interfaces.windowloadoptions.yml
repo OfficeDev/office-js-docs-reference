@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Window: [load](/javascript/api/word/word.window#word-word-window-load-member(1))
+  - [Word.Window](/javascript/api/word/word.window): [load](/javascript/api/word/word.window#word-word-window-load-member(1))
 
 isPreview: false
 isDeprecated: false

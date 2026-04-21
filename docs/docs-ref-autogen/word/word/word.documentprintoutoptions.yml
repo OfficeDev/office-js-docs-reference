@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [printOut](/javascript/api/word/word.document#word-word-document-printout-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [printOut](/javascript/api/word/word.document#word-word-document-printout-member(1))
 
 isPreview: true
 isDeprecated: false

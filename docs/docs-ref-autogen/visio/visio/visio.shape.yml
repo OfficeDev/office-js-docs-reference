@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Visio.PageView: [isShapeInViewport](/javascript/api/visio/visio.pageview#visio-visio-pageview-isshapeinviewport-member(1))
+  - [Visio.PageView](/javascript/api/visio/visio.pageview): [isShapeInViewport](/javascript/api/visio/visio.pageview#visio-visio-pageview-isshapeinviewport-member(1))
 
-  - Visio.ShapeCollection: [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1)),
+  - [Visio.ShapeCollection](/javascript/api/visio/visio.shapecollection): [getItem](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-getitem-member(1)),
   [items](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-items-member)
 
 isPreview: false

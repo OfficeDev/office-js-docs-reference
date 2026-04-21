@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTitle: [set](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-set-member(1))
+  - [Excel.ChartTitle](/javascript/api/excel/excel.charttitle): [set](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-set-member(1))
 
 isPreview: false
 isDeprecated: false

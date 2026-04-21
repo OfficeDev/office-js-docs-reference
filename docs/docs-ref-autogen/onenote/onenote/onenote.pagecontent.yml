@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.FloatingInk: [pageContent](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-pagecontent-member)
+  - [OneNote.FloatingInk](/javascript/api/onenote/onenote.floatingink): [pageContent](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-pagecontent-member)
 
-  - OneNote.Image: [pageContent](/javascript/api/onenote/onenote.image#onenote-onenote-image-pagecontent-member)
+  - [OneNote.Image](/javascript/api/onenote/onenote.image): [pageContent](/javascript/api/onenote/onenote.image#onenote-onenote-image-pagecontent-member)
 
-  - OneNote.Outline: [pageContent](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-pagecontent-member)
+  - [OneNote.Outline](/javascript/api/onenote/onenote.outline): [pageContent](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-pagecontent-member)
 
-  - OneNote.PageContentCollection: [getItem](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-items-member)
+  - [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection): [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection):
+  [getItem](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-items-member)
 
 isPreview: false
 isDeprecated: false

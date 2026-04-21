@@ -12,12 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Page: [allShapes](/javascript/api/visio/visio.page#visio-visio-page-allshapes-member),
+  - [Visio.Page](/javascript/api/visio/visio.page): [allShapes](/javascript/api/visio/visio.page#visio-visio-page-allshapes-member),
   [shapes](/javascript/api/visio/visio.page#visio-visio-page-shapes-member)
 
-  - Visio.Selection: [shapes](/javascript/api/visio/visio.selection#visio-visio-selection-shapes-member)
+  - [Visio.Selection](/javascript/api/visio/visio.selection): [shapes](/javascript/api/visio/visio.selection#visio-visio-selection-shapes-member)
 
-  - Visio.Shape: [subShapes](/javascript/api/visio/visio.shape#visio-visio-shape-subshapes-member)
+  - [Visio.Shape](/javascript/api/visio/visio.shape): [subShapes](/javascript/api/visio/visio.shape#visio-visio-shape-subshapes-member)
 
 isPreview: false
 isDeprecated: false

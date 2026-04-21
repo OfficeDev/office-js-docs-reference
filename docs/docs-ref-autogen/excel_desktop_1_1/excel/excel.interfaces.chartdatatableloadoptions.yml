@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataTable: [load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
+  - [Excel.ChartDataTable](/javascript/api/excel/excel.chartdatatable): [load](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-load-member(1))
 
 isPreview: false
 isDeprecated: false

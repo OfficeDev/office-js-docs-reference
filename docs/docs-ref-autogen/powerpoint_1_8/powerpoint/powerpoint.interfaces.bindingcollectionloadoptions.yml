@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.BindingCollection: [load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection):
+  [load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

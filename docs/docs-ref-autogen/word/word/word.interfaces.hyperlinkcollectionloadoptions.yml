@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.HyperlinkCollection: [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

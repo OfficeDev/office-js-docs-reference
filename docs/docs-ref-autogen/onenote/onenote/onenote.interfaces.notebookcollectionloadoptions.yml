@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.NotebookCollection: [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
+  - [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection): [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection):
+  [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

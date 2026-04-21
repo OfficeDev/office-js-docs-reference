@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.PageSetup: [layoutMode](/javascript/api/word/word.pagesetup#word-word-pagesetup-layoutmode-member)
+  - [Word.PageSetup](/javascript/api/word/word.pagesetup): [layoutMode](/javascript/api/word/word.pagesetup#word-word-pagesetup-layoutmode-member)
 
 isPreview: false
 isDeprecated: false

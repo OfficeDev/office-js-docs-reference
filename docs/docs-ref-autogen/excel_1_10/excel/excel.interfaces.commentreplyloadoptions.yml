@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentReply: [load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [load](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-load-member(1))
 
 isPreview: false
 isDeprecated: false

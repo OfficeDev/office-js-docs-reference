@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [tables](/javascript/api/excel/excel.workbook#excel-excel-workbook-tables-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [tables](/javascript/api/excel/excel.workbook#excel-excel-workbook-tables-member)
 
-  - Excel.Worksheet: [tables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tables-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [tables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tables-member)
 
   #### Examples
 

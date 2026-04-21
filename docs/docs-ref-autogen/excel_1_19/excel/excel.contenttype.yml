@@ -13,13 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Comment: [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
 
-  - Excel.CommentCollection: [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
 
-  - Excel.CommentReply: [contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
 
-  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection):
+  [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
   #### Examples
 

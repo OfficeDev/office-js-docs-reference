@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.IterativeCalculation: [set](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-set-member(1))
+  - [Excel.IterativeCalculation](/javascript/api/excel/excel.iterativecalculation): [Excel.IterativeCalculation](/javascript/api/excel/excel.iterativecalculation):
+  [set](/javascript/api/excel/excel.iterativecalculation#excel-excel-iterativecalculation-set-member(1))
 
 isPreview: false
 isDeprecated: false

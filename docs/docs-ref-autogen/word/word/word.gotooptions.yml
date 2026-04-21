@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [goTo](/javascript/api/word/word.document#word-word-document-goto-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [goTo](/javascript/api/word/word.document#word-word-document-goto-member(1))
 
-  - Word.Selection: [goTo](/javascript/api/word/word.selection#word-word-selection-goto-member(1))
+  - [Word.Selection](/javascript/api/word/word.selection): [goTo](/javascript/api/word/word.selection#word-word-selection-goto-member(1))
 
 isPreview: true
 isDeprecated: false

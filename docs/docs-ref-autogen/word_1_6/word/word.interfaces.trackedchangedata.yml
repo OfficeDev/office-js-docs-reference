@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TrackedChange: [toJSON](/javascript/api/word/word.trackedchange#word-word-trackedchange-tojson-member(1))
+  - [Word.TrackedChange](/javascript/api/word/word.trackedchange): [toJSON](/javascript/api/word/word.trackedchange#word-word-trackedchange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

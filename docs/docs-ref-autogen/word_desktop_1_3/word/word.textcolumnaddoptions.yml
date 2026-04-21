@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TextColumnCollection: [add](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-add-member(1))
+  - [Word.TextColumnCollection](/javascript/api/word/word.textcolumncollection): [add](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

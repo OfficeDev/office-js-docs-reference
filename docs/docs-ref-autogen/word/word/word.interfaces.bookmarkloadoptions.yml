@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Bookmark: [load](/javascript/api/word/word.bookmark#word-word-bookmark-load-member(1))
+  - [Word.Bookmark](/javascript/api/word/word.bookmark): [load](/javascript/api/word/word.bookmark#word-word-bookmark-load-member(1))
 
 isPreview: false
 isDeprecated: false

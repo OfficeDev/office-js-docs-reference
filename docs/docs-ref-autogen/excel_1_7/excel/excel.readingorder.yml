@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Style: [readingOrder](/javascript/api/excel/excel.style#excel-excel-style-readingorder-member)
+  - [Excel.Style](/javascript/api/excel/excel.style): [readingOrder](/javascript/api/excel/excel.style#excel-excel-style-readingorder-member)
 
   #### Examples
 

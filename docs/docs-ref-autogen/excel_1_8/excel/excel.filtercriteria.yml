@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Filter: [apply](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1)),
+  - [Excel.Filter](/javascript/api/excel/excel.filter): [apply](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1)),
   [criteria](/javascript/api/excel/excel.filter#excel-excel-filter-criteria-member)
 
 isPreview: false

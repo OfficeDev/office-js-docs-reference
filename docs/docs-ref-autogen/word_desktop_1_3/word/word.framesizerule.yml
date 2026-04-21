@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Frame: [heightRule](/javascript/api/word/word.frame#word-word-frame-heightrule-member),
+  - [Word.Frame](/javascript/api/word/word.frame): [heightRule](/javascript/api/word/word.frame#word-word-frame-heightrule-member),
   [widthRule](/javascript/api/word/word.frame#word-word-frame-widthrule-member)
 
 isPreview: false

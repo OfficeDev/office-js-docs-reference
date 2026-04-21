@@ -18,21 +18,21 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
 
-  - Excel.NamedItem: [worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member),
+  - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [worksheet](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheet-member),
   [worksheetOrNullObject](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-worksheetornullobject-member)
 
-  - Excel.PivotTable: [worksheet](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-worksheet-member)
+  - [Excel.PivotTable](/javascript/api/excel/excel.pivottable): [worksheet](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-worksheet-member)
 
-  - Excel.Range: [worksheet](/javascript/api/excel/excel.range#excel-excel-range-worksheet-member)
+  - [Excel.Range](/javascript/api/excel/excel.range): [worksheet](/javascript/api/excel/excel.range#excel-excel-range-worksheet-member)
 
-  - Excel.RangeAreas: [worksheet](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-worksheet-member)
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [worksheet](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-worksheet-member)
 
-  - Excel.Table: [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
 
-  - Excel.WorksheetCollection: [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)),
-  [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 
   #### Examples
 

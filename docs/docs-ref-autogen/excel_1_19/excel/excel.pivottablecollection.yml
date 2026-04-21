@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [pivotTables](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottables-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [pivotTables](/javascript/api/excel/excel.workbook#excel-excel-workbook-pivottables-member)
 
-  - Excel.Worksheet: [pivotTables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pivottables-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [pivotTables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-pivottables-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarPositiveFormat: [set](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-set-member(1))
+  - [Excel.ConditionalDataBarPositiveFormat](/javascript/api/excel/excel.conditionaldatabarpositiveformat): [Excel.ConditionalDataBarPositiveFormat](/javascript/api/excel/excel.conditionaldatabarpositiveformat):
+  [set](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

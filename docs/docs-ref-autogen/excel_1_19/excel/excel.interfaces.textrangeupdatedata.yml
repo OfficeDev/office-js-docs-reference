@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextRange: [set](/javascript/api/excel/excel.textrange#excel-excel-textrange-set-member(1))
+  - [Excel.TextRange](/javascript/api/excel/excel.textrange): [set](/javascript/api/excel/excel.textrange#excel-excel-textrange-set-member(1))
 
 isPreview: false
 isDeprecated: false

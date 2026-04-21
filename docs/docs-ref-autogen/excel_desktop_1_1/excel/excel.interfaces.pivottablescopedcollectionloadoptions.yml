@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableScopedCollection: [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
+  - [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection): [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection):
+  [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

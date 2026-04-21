@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartGridlinesFormat: [set](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-set-member(1))
+  - [Excel.ChartGridlinesFormat](/javascript/api/excel/excel.chartgridlinesformat): [Excel.ChartGridlinesFormat](/javascript/api/excel/excel.chartgridlinesformat):
+  [set](/javascript/api/excel/excel.chartgridlinesformat#excel-excel-chartgridlinesformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

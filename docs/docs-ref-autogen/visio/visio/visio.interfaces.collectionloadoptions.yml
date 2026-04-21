@@ -8,15 +8,17 @@ remarks: >-
   #### Used by
 
 
-  - Visio.CommentCollection: [load](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-load-member(1))
+  - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [load](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-load-member(1))
 
-  - Visio.HyperlinkCollection: [load](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-load-member(1))
+  - [Visio.HyperlinkCollection](/javascript/api/visio/visio.hyperlinkcollection): [Visio.HyperlinkCollection](/javascript/api/visio/visio.hyperlinkcollection):
+  [load](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-load-member(1))
 
-  - Visio.PageCollection: [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(1))
+  - [Visio.PageCollection](/javascript/api/visio/visio.pagecollection): [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(1))
 
-  - Visio.ShapeCollection: [load](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-load-member(1))
+  - [Visio.ShapeCollection](/javascript/api/visio/visio.shapecollection): [load](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-load-member(1))
 
-  - Visio.ShapeDataItemCollection: [load](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-load-member(1))
+  - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection):
+  [load](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

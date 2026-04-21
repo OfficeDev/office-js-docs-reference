@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotDateFilter: [condition](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-condition-member)
+  - [Excel.PivotDateFilter](/javascript/api/excel/excel.pivotdatefilter): [condition](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-condition-member)
 
   #### Examples
 

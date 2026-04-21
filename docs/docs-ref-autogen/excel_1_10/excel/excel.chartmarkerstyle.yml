@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPoint: [markerStyle](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-markerstyle-member)
+  - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [markerStyle](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-markerstyle-member)
 
-  - Excel.ChartSeries: [markerStyle](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-markerstyle-member)
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [markerStyle](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-markerstyle-member)
 
 isPreview: false
 isDeprecated: false

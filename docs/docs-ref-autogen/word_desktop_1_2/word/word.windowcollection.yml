@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [windows](/javascript/api/word/word.document#word-word-document-windows-member)
+  - [Word.Document](/javascript/api/word/word.document): [windows](/javascript/api/word/word.document#word-word-document-windows-member)
 
   #### Examples
 

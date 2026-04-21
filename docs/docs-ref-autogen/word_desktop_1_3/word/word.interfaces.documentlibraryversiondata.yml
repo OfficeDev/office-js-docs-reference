@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentLibraryVersion: [toJSON](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-tojson-member(1))
+  - [Word.DocumentLibraryVersion](/javascript/api/word/word.documentlibraryversion): [Word.DocumentLibraryVersion](/javascript/api/word/word.documentlibraryversion):
+  [toJSON](/javascript/api/word/word.documentlibraryversion#word-word-documentlibraryversion-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.FontProperties: [underline](/javascript/api/powerpoint/powerpoint.fontproperties#powerpoint-powerpoint-fontproperties-underline-member)
+  - [PowerPoint.FontProperties](/javascript/api/powerpoint/powerpoint.fontproperties): [PowerPoint.FontProperties](/javascript/api/powerpoint/powerpoint.fontproperties):
+  [underline](/javascript/api/powerpoint/powerpoint.fontproperties#powerpoint-powerpoint-fontproperties-underline-member)
 
-  - PowerPoint.ShapeFont: [underline](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-underline-member)
+  - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [underline](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-underline-member)
 
   #### Examples
 

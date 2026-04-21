@@ -53,17 +53,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-loadcustompropertiesasync-member(1))
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-loadcustompropertiesasync-member(1))
 
-  - Office.AppointmentRead: [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))
 
-  - Office.LoadedMessageCompose: [loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-loadcustompropertiesasync-member(1))
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-loadcustompropertiesasync-member(1))
 
-  - Office.LoadedMessageRead: [loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-loadcustompropertiesasync-member(1))
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [loadCustomPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-loadcustompropertiesasync-member(1))
 
-  - Office.MessageCompose: [loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-loadcustompropertiesasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-loadcustompropertiesasync-member(1))
 
-  - Office.MessageRead: [loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShowAsRule: [calculation](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-calculation-member)
+  - [Excel.ShowAsRule](/javascript/api/excel/excel.showasrule): [calculation](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-calculation-member)
 
   #### Examples
 

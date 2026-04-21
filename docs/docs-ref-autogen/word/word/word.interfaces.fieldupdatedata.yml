@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Field: [set](/javascript/api/word/word.field#word-word-field-set-member(1))
+  - [Word.Field](/javascript/api/word/word.field): [set](/javascript/api/word/word.field#word-word-field-set-member(1))
 
 isPreview: false
 isDeprecated: false

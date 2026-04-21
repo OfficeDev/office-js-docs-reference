@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PaneCollection: [toJSON](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-tojson-member(1))
+  - [Excel.PaneCollection](/javascript/api/excel/excel.panecollection): [toJSON](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

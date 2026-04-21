@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Template: [farEastLineBreakLevel](/javascript/api/word/word.template#word-word-template-fareastlinebreaklevel-member)
+  - [Word.Template](/javascript/api/word/word.template): [farEastLineBreakLevel](/javascript/api/word/word.template#word-word-template-fareastlinebreaklevel-member)
 
 isPreview: false
 isDeprecated: false

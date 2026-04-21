@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCell: [margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)
+  - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)
 
 isPreview: false
 isDeprecated: false

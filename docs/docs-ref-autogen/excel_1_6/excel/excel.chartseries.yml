@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeriesCollection: [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)),
-  [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
+  - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection):
+  [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
 
   #### Examples
 

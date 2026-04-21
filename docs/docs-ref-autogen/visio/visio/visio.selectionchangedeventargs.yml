@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onSelectionChanged](/javascript/api/visio/visio.document#visio-visio-document-onselectionchanged-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onSelectionChanged](/javascript/api/visio/visio.document#visio-visio-document-onselectionchanged-member)
 
   #### Examples
 

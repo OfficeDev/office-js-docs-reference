@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableSort: [toJSON](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-tojson-member(1))
+  - [Excel.TableSort](/javascript/api/excel/excel.tablesort): [toJSON](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

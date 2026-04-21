@@ -11,7 +11,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.CustomXmlPart: [namespaceManager](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-namespacemanager-member)
+  - [Office.CustomXmlPart](/javascript/api/office/office.customxmlpart): [namespaceManager](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-namespacemanager-member)
 
 isPreview: false
 isDeprecated: false

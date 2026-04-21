@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RowColumnPivotHierarchyCollection: [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
+  - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection):
+  [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

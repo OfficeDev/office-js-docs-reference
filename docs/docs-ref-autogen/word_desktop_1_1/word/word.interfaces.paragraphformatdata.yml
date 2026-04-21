@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ParagraphFormat: [toJSON](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-tojson-member(1))
+  - [Word.ParagraphFormat](/javascript/api/word/word.paragraphformat): [toJSON](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

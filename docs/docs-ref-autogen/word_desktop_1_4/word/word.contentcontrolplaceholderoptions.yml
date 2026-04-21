@@ -12,15 +12,19 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlockGalleryContentControl: [setPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol):
+  [setPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))
 
-  - Word.DatePickerContentControl: [setPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [setPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))
 
-  - Word.GroupContentControl: [setPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))
+  - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [setPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))
 
-  - Word.PictureContentControl: [setPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))
+  - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol):
+  [setPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))
 
-  - Word.RepeatingSectionContentControl: [setPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))
+  - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol):
+  [setPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetChangedEventArgs: [triggerSource](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-triggersource-member)
+  - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs):
+  [triggerSource](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-triggersource-member)
 
 isPreview: false
 isDeprecated: false

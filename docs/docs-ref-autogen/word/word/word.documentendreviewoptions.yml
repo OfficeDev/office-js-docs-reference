@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [endReview](/javascript/api/word/word.document#word-word-document-endreview-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [endReview](/javascript/api/word/word.document#word-word-document-endreview-member(1))
 
 isPreview: true
 isDeprecated: false

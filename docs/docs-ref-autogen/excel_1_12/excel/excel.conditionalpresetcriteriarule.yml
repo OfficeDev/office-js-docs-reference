@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PresetCriteriaConditionalFormat: [rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-rule-member)
+  - [Excel.PresetCriteriaConditionalFormat](/javascript/api/excel/excel.presetcriteriaconditionalformat): [Excel.PresetCriteriaConditionalFormat](/javascript/api/excel/excel.presetcriteriaconditionalformat):
+  [rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-rule-member)
 
 isPreview: false
 isDeprecated: false

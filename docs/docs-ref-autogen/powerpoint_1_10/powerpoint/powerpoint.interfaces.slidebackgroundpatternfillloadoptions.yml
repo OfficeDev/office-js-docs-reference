@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundPatternFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-load-member(1))
+  - [PowerPoint.SlideBackgroundPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill): [PowerPoint.SlideBackgroundPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill):
+  [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-load-member(1))
 
 isPreview: false
 isDeprecated: false

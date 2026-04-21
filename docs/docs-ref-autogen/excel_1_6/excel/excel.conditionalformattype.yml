@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [type](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-type-member)
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [type](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-type-member)
 
-  - Excel.ConditionalFormatCollection: [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))
+  - [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection): [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection):
+  [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))
 
   #### Examples
 

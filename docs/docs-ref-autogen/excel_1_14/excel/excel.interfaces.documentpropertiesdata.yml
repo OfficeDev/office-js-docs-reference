@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentProperties: [toJSON](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-tojson-member(1))
+  - [Excel.DocumentProperties](/javascript/api/excel/excel.documentproperties): [toJSON](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

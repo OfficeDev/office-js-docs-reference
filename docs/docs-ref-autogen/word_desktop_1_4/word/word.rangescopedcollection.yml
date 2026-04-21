@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [characters](/javascript/api/word/word.document#word-word-document-characters-member),
+  - [Word.Document](/javascript/api/word/word.document): [characters](/javascript/api/word/word.document#word-word-document-characters-member),
   [sentences](/javascript/api/word/word.document#word-word-document-sentences-member), [words](/javascript/api/word/word.document#word-word-document-words-member)
 
-  - Word.Selection: [characters](/javascript/api/word/word.selection#word-word-selection-characters-member),
+  - [Word.Selection](/javascript/api/word/word.selection): [characters](/javascript/api/word/word.selection#word-word-selection-characters-member),
   [sentences](/javascript/api/word/word.selection#word-word-selection-sentences-member), [words](/javascript/api/word/word.selection#word-word-selection-words-member)
 
 isPreview: false

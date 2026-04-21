@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.RequestContext: [application](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-application-member)
+  - [PowerPoint.RequestContext](/javascript/api/powerpoint/powerpoint.requestcontext): [PowerPoint.RequestContext](/javascript/api/powerpoint/powerpoint.requestcontext):
+  [application](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-application-member)
 
 isPreview: false
 isDeprecated: false

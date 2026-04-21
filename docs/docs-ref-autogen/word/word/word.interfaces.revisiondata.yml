@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Revision: [toJSON](/javascript/api/word/word.revision#word-word-revision-tojson-member(1))
+  - [Word.Revision](/javascript/api/word/word.revision): [toJSON](/javascript/api/word/word.revision#word-word-revision-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

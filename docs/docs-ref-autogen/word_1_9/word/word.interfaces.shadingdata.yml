@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shading: [toJSON](/javascript/api/word/word.shading#word-word-shading-tojson-member(1))
+  - [Word.Shading](/javascript/api/word/word.shading): [toJSON](/javascript/api/word/word.shading#word-word-shading-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

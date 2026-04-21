@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.ShapeDataItem: [toJSON](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-tojson-member(1))
+  - [Visio.ShapeDataItem](/javascript/api/visio/visio.shapedataitem): [toJSON](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

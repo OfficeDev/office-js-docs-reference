@@ -53,13 +53,14 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-loadcustompropertiesasync-member(1))
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-loadcustompropertiesasync-member(1))
 
-  - Office.AppointmentRead: [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))
 
-  - Office.MessageCompose: [loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-loadcustompropertiesasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-loadcustompropertiesasync-member(1))
 
-  - Office.MessageRead: [loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedWorkbook: [toJSON](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-tojson-member(1))
+  - [Excel.LinkedWorkbook](/javascript/api/excel/excel.linkedworkbook): [toJSON](/javascript/api/excel/excel.linkedworkbook#excel-excel-linkedworkbook-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

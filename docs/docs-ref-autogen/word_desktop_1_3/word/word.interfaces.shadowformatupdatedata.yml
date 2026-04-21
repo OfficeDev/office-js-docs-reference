@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ShadowFormat: [set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(1))
+  - [Word.ShadowFormat](/javascript/api/word/word.shadowformat): [set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

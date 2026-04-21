@@ -14,14 +14,14 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Outline: [appendImage](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendimage-member(1))
+  - [OneNote.Outline](/javascript/api/onenote/onenote.outline): [appendImage](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendimage-member(1))
 
-  - OneNote.PageContent: [image](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-image-member)
+  - [OneNote.PageContent](/javascript/api/onenote/onenote.pagecontent): [image](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-image-member)
 
-  - OneNote.Paragraph: [image](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-image-member),
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [image](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-image-member),
   [insertImageAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertimageassibling-member(1))
 
-  - OneNote.TableCell: [appendImage](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendimage-member(1))
+  - [OneNote.TableCell](/javascript/api/onenote/onenote.tablecell): [appendImage](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendimage-member(1))
 
 isPreview: false
 isDeprecated: false

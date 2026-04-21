@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Window: [set](/javascript/api/excel/excel.window#excel-excel-window-set-member(1))
+  - [Excel.Window](/javascript/api/excel/excel.window): [set](/javascript/api/excel/excel.window#excel-excel-window-set-member(1))
 
 isPreview: false
 isDeprecated: false

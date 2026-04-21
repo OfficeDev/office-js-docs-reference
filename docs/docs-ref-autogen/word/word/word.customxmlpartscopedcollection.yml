@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlPartCollection: [getByNamespace](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getbynamespace-member(1))
+  - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection):
+  [getByNamespace](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getbynamespace-member(1))
 
   #### Examples
 

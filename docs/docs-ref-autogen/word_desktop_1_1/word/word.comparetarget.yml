@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCompareOptions: [compareTarget](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-comparetarget-member)
+  - [Word.DocumentCompareOptions](/javascript/api/word/word.documentcompareoptions): [Word.DocumentCompareOptions](/javascript/api/word/word.documentcompareoptions):
+  [compareTarget](/javascript/api/word/word.documentcompareoptions#word-word-documentcompareoptions-comparetarget-member)
 
   #### Examples
 

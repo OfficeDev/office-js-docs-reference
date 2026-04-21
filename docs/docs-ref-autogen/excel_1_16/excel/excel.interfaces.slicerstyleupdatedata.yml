@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerStyle: [set](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-set-member(1))
+  - [Excel.SlicerStyle](/javascript/api/excel/excel.slicerstyle): [set](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -20,19 +20,19 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member),
+  - [Word.Body](/javascript/api/word/word.body): [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))
 
-  - Word.ContentControl: [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member),
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))
 
-  - Word.Document: [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member),
+  - [Word.Document](/javascript/api/word/word.document): [contentControls](/javascript/api/word/word.document#word-word-document-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))
 
-  - Word.Paragraph: [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))
 
-  - Word.Range: [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member),
+  - [Word.Range](/javascript/api/word/word.range): [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member),
   [getContentControls](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))
 
   #### Examples

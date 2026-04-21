@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Hyperlink: [set](/javascript/api/word/word.hyperlink#word-word-hyperlink-set-member(1))
+  - [Word.Hyperlink](/javascript/api/word/word.hyperlink): [set](/javascript/api/word/word.hyperlink#word-word-hyperlink-set-member(1))
 
 isPreview: false
 isDeprecated: false

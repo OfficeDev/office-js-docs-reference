@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataBarConditionalFormat: [lowerBoundRule](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-lowerboundrule-member),
-  [upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-upperboundrule-member)
+  - [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat): [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat):
+  [lowerBoundRule](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-lowerboundrule-member), [upperBoundRule](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-upperboundrule-member)
 
 isPreview: false
 isDeprecated: false

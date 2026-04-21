@@ -19,7 +19,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.ContextMenuUpdaterData: [controls](/javascript/api/office/office.contextmenuupdaterdata#office-office-contextmenuupdaterdata-controls-member)
+  - [Office.ContextMenuUpdaterData](/javascript/api/office/office.contextmenuupdaterdata): [Office.ContextMenuUpdaterData](/javascript/api/office/office.contextmenuupdaterdata):
+  [controls](/javascript/api/office/office.contextmenuupdaterdata#office-office-contextmenuupdaterdata-controls-member)
 
   #### Examples
 

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.RangeCollection: [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeBorder: [toJSON](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-tojson-member(1))
+  - [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder): [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder):
+  [toJSON](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

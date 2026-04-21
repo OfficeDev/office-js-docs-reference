@@ -15,12 +15,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)),
+  - [Word.Document](/javascript/api/word/word.document): [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)),
   [sections](/javascript/api/word/word.document#word-word-document-sections-member)
 
-  - Word.Range: [sections](/javascript/api/word/word.range#word-word-range-sections-member)
+  - [Word.Range](/javascript/api/word/word.range): [sections](/javascript/api/word/word.range#word-word-range-sections-member)
 
-  - Word.Selection: [sections](/javascript/api/word/word.selection#word-word-selection-sections-member)
+  - [Word.Selection](/javascript/api/word/word.selection): [sections](/javascript/api/word/word.selection#word-word-selection-sections-member)
 
   #### Examples
 

@@ -15,17 +15,19 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAreaFormat: [font](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-font-member)
+  - [Excel.ChartAreaFormat](/javascript/api/excel/excel.chartareaformat): [font](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-font-member)
 
-  - Excel.ChartAxisFormat: [font](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-font-member)
+  - [Excel.ChartAxisFormat](/javascript/api/excel/excel.chartaxisformat): [font](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-font-member)
 
-  - Excel.ChartAxisTitleFormat: [font](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-font-member)
+  - [Excel.ChartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat): [Excel.ChartAxisTitleFormat](/javascript/api/excel/excel.chartaxistitleformat):
+  [font](/javascript/api/excel/excel.chartaxistitleformat#excel-excel-chartaxistitleformat-font-member)
 
-  - Excel.ChartDataLabelFormat: [font](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-font-member)
+  - [Excel.ChartDataLabelFormat](/javascript/api/excel/excel.chartdatalabelformat): [Excel.ChartDataLabelFormat](/javascript/api/excel/excel.chartdatalabelformat):
+  [font](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-font-member)
 
-  - Excel.ChartLegendFormat: [font](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-font-member)
+  - [Excel.ChartLegendFormat](/javascript/api/excel/excel.chartlegendformat): [font](/javascript/api/excel/excel.chartlegendformat#excel-excel-chartlegendformat-font-member)
 
-  - Excel.ChartTitleFormat: [font](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-font-member)
+  - [Excel.ChartTitleFormat](/javascript/api/excel/excel.charttitleformat): [font](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-font-member)
 
   #### Examples
 

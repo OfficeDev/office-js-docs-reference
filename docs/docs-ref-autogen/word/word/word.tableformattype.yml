@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.SelectionConvertToTableOptions: [format](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-format-member)
+  - [Word.SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions): [Word.SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions):
+  [format](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-format-member)
 
-  - Word.TableAutoFormatOptions: [format](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-format-member)
+  - [Word.TableAutoFormatOptions](/javascript/api/word/word.tableautoformatoptions): [Word.TableAutoFormatOptions](/javascript/api/word/word.tableautoformatoptions):
+  [format](/javascript/api/word/word.tableautoformatoptions#word-word-tableautoformatoptions-format-member)
 
 isPreview: false
 isDeprecated: false

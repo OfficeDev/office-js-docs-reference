@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.FrameCollection: [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
+  - [Word.FrameCollection](/javascript/api/word/word.framecollection): [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

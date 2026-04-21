@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Font: [line](/javascript/api/word/word.font#word-word-font-line-member)
+  - [Word.Font](/javascript/api/word/word.font): [line](/javascript/api/word/word.font#word-word-font-line-member)
 
 isPreview: false
 isDeprecated: false

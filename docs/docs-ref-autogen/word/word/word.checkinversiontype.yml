@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCheckInWithVersionOptions: [versionType](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-versiontype-member)
+  - [Word.DocumentCheckInWithVersionOptions](/javascript/api/word/word.documentcheckinwithversionoptions): [Word.DocumentCheckInWithVersionOptions](/javascript/api/word/word.documentcheckinwithversionoptions):
+  [versionType](/javascript/api/word/word.documentcheckinwithversionoptions#word-word-documentcheckinwithversionoptions-versiontype-member)
 
 isPreview: false
 isDeprecated: false

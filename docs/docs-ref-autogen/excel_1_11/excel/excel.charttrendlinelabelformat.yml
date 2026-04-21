@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendlineLabel: [format](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-format-member)
+  - [Excel.ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel): [Excel.ChartTrendlineLabel](/javascript/api/excel/excel.charttrendlinelabel):
+  [format](/javascript/api/excel/excel.charttrendlinelabel#excel-excel-charttrendlinelabel-format-member)
 
 isPreview: false
 isDeprecated: false

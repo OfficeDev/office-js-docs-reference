@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPivotOptions: [toJSON](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-tojson-member(1))
+  - [Excel.ChartPivotOptions](/javascript/api/excel/excel.chartpivotoptions): [toJSON](/javascript/api/excel/excel.chartpivotoptions#excel-excel-chartpivotoptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

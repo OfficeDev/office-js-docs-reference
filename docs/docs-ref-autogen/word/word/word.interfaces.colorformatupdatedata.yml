@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ColorFormat: [set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(1))
+  - [Word.ColorFormat](/javascript/api/word/word.colorformat): [set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [points](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-points-member)
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [points](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-points-member)
 
   #### Examples
 

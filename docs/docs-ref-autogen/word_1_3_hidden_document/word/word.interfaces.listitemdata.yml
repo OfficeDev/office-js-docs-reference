@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListItem: [toJSON](/javascript/api/word/word.listitem#word-word-listitem-tojson-member(1))
+  - [Word.ListItem](/javascript/api/word/word.listitem): [toJSON](/javascript/api/word/word.listitem#word-word-listitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

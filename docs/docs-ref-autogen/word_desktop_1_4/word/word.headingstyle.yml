@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.HeadingStyleCollection: [add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1)),
-  [items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
+  - [Word.HeadingStyleCollection](/javascript/api/word/word.headingstylecollection): [Word.HeadingStyleCollection](/javascript/api/word/word.headingstylecollection):
+  [add](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-add-member(1)), [items](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-items-member)
 
 isPreview: false
 isDeprecated: false

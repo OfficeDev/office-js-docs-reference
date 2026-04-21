@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Adjustments: [toJSON](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-tojson-member(1))
+  - [PowerPoint.Adjustments](/javascript/api/powerpoint/powerpoint.adjustments): [toJSON](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

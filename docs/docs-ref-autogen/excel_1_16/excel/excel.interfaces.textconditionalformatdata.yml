@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextConditionalFormat: [toJSON](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-tojson-member(1))
+  - [Excel.TextConditionalFormat](/javascript/api/excel/excel.textconditionalformat): [Excel.TextConditionalFormat](/javascript/api/excel/excel.textconditionalformat):
+  [toJSON](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

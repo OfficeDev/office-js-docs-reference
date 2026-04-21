@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Paragraph: [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [addNoteTag](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-addnotetag-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotField: [subtotals](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-subtotals-member)
+  - [Excel.PivotField](/javascript/api/excel/excel.pivotfield): [subtotals](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-subtotals-member)
 
 isPreview: false
 isDeprecated: false

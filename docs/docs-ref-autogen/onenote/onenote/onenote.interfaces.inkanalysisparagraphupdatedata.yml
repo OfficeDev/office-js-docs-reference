@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisParagraph: [set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(1))
+  - [OneNote.InkAnalysisParagraph](/javascript/api/onenote/onenote.inkanalysisparagraph): [OneNote.InkAnalysisParagraph](/javascript/api/onenote/onenote.inkanalysisparagraph):
+  [set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(1))
 
 isPreview: false
 isDeprecated: false

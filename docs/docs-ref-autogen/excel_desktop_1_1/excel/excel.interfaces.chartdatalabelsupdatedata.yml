@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabels: [set](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-set-member(1))
+  - [Excel.ChartDataLabels](/javascript/api/excel/excel.chartdatalabels): [set](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-set-member(1))
 
 isPreview: false
 isDeprecated: false

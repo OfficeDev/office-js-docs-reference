@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAxisTitle: [toJSON](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-tojson-member(1))
+  - [Excel.ChartAxisTitle](/javascript/api/excel/excel.chartaxistitle): [toJSON](/javascript/api/excel/excel.chartaxistitle#excel-excel-chartaxistitle-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

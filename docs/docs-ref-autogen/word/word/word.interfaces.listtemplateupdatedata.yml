@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListTemplate: [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(1))
+  - [Word.ListTemplate](/javascript/api/word/word.listtemplate): [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(1))
 
 isPreview: false
 isDeprecated: false

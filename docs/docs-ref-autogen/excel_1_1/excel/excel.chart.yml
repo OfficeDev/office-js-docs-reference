@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartCollection: [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1)),
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-items-member)
 
 isPreview: false

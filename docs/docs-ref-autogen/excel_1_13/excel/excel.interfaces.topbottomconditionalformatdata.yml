@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TopBottomConditionalFormat: [toJSON](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-tojson-member(1))
+  - [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat): [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat):
+  [toJSON](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

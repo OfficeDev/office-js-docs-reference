@@ -64,9 +64,9 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead: [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1))
 
-  - Office.MessageRead: [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1))
 
 isPreview: false
 isDeprecated: true

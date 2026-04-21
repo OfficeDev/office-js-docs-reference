@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeFill: [toJSON](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-tojson-member(1))
+  - [Excel.ConditionalRangeFill](/javascript/api/excel/excel.conditionalrangefill): [Excel.ConditionalRangeFill](/javascript/api/excel/excel.conditionalrangefill):
+  [toJSON](/javascript/api/excel/excel.conditionalrangefill#excel-excel-conditionalrangefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

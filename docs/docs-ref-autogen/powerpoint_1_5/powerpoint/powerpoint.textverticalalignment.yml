@@ -23,7 +23,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TextFrame: [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
+  - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
 
   #### Examples
 

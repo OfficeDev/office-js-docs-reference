@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConnectErrorCellValue: [errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)
+  - [Excel.ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue): [Excel.ConnectErrorCellValue](/javascript/api/excel/excel.connecterrorcellvalue):
+  [errorSubType](/javascript/api/excel/excel.connecterrorcellvalue#excel-excel-connecterrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

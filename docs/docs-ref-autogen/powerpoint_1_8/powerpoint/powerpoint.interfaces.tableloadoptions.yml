@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Table: [load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
+  - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
 
 isPreview: false
 isDeprecated: false

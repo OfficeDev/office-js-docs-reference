@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Filter: [applyDynamicFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applydynamicfilter-member(1))
+  - [Excel.Filter](/javascript/api/excel/excel.filter): [applyDynamicFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applydynamicfilter-member(1))
 
-  - Excel.FilterCriteria: [dynamicCriteria](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-dynamiccriteria-member)
+  - [Excel.FilterCriteria](/javascript/api/excel/excel.filtercriteria): [dynamicCriteria](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-dynamiccriteria-member)
 
   #### Examples
 

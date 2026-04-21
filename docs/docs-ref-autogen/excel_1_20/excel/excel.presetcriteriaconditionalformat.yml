@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [preset](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-preset-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [preset](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-preset-member),
   [presetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-presetornullobject-member)
 
 isPreview: false

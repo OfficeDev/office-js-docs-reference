@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListFormat: [listType](/javascript/api/word/word.listformat#word-word-listformat-listtype-member)
+  - [Word.ListFormat](/javascript/api/word/word.listformat): [listType](/javascript/api/word/word.listformat#word-word-listformat-listtype-member)
 
 isPreview: false
 isDeprecated: false

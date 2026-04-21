@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Binding: [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)
 
-  - Excel.BindingCollection: [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1)),
+  - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1)),
   [addFromNamedItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromnameditem-member(1)), [addFromSelection](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromselection-member(1))
 
   #### Examples

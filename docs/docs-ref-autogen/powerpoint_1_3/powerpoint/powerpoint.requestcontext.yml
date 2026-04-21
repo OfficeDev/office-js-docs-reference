@@ -15,29 +15,35 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Application: [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
+  - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - PowerPoint.Presentation: [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
 
-  - PowerPoint.Shape: [context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [context](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-context-member)
 
-  - PowerPoint.ShapeCollection: [context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
+  - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection):
+  [context](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-context-member)
 
-  - PowerPoint.Slide: [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
+  - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
 
-  - PowerPoint.SlideCollection: [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
 
-  - PowerPoint.SlideLayout: [context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
+  - [PowerPoint.SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout): [context](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-context-member)
 
-  - PowerPoint.SlideLayoutCollection: [context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection):
+  [context](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-context-member)
 
-  - PowerPoint.SlideMaster: [context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [context](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-context-member)
 
-  - PowerPoint.SlideMasterCollection: [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
+  - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection):
+  [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
 
-  - PowerPoint.Tag: [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
+  - [PowerPoint.Tag](/javascript/api/powerpoint/powerpoint.tag): [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
 
-  - PowerPoint.TagCollection: [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection):
+  [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
 
   #### Examples
 

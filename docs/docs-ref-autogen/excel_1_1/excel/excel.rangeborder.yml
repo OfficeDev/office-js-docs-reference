@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeBorderCollection: [getItem](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitem-member(1)),
-  [getItemAt](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitemat-member(1)), [items](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-items-member)
+  - [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection): [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection):
+  [getItem](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-getitemat-member(1)), [items](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-items-member)
 
 isPreview: false
 isDeprecated: false

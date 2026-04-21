@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataValidationRule: [list](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-list-member)
+  - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [list](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-list-member)
 
 isPreview: false
 isDeprecated: false

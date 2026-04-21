@@ -30,17 +30,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [notificationMessages](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-notificationmessages-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [notificationMessages](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-notificationmessages-member)
 
-  - Office.AppointmentRead: [notificationMessages](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-notificationmessages-member)
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [notificationMessages](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-notificationmessages-member)
 
-  - Office.LoadedMessageCompose: [notificationMessages](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-notificationmessages-member)
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [notificationMessages](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-notificationmessages-member)
 
-  - Office.LoadedMessageRead: [notificationMessages](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-notificationmessages-member)
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [notificationMessages](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-notificationmessages-member)
 
-  - Office.MessageCompose: [notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)
 
-  - Office.MessageRead: [notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)
 
 isPreview: false
 isDeprecated: false

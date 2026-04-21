@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Table: [onChanged](/javascript/api/excel/excel.table#excel-excel-table-onchanged-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [onChanged](/javascript/api/excel/excel.table#excel-excel-table-onchanged-member)
 
-  - Excel.TableCollection: [onChanged](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onchanged-member)
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onChanged](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onchanged-member)
 
 isPreview: false
 isDeprecated: false

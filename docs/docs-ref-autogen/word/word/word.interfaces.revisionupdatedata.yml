@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Revision: [set](/javascript/api/word/word.revision#word-word-revision-set-member(1))
+  - [Word.Revision](/javascript/api/word/word.revision): [set](/javascript/api/word/word.revision#word-word-revision-set-member(1))
 
 isPreview: false
 isDeprecated: false

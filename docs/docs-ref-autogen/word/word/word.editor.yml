@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.EditorCollection: [addById](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbyid-member(1)),
+  - [Word.EditorCollection](/javascript/api/word/word.editorcollection): [addById](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbyid-member(1)),
   [addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1)), [getItemAt](/javascript/api/word/word.editorcollection#word-word-editorcollection-getitemat-member(1))
 
 isPreview: false

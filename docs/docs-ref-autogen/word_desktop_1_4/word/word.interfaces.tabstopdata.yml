@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TabStop: [toJSON](/javascript/api/word/word.tabstop#word-word-tabstop-tojson-member(1))
+  - [Word.TabStop](/javascript/api/word/word.tabstop): [toJSON](/javascript/api/word/word.tabstop#word-word-tabstop-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

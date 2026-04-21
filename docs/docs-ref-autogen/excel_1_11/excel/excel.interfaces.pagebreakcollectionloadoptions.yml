@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageBreakCollection: [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection):
+  [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

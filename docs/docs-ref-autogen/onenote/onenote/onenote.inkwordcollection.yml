@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Paragraph: [inkWords](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inkwords-member)
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [inkWords](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inkwords-member)
 
 isPreview: false
 isDeprecated: false

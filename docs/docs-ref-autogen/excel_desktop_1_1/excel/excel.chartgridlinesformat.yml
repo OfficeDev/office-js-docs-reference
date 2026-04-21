@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartGridlines: [format](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-format-member)
+  - [Excel.ChartGridlines](/javascript/api/excel/excel.chartgridlines): [format](/javascript/api/excel/excel.chartgridlines#excel-excel-chartgridlines-format-member)
 
 isPreview: false
 isDeprecated: false

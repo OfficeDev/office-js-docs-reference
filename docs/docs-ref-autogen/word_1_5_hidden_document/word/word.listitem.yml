@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Paragraph: [listItem](/javascript/api/word/word.paragraph#word-word-paragraph-listitem-member),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [listItem](/javascript/api/word/word.paragraph#word-word-paragraph-listitem-member),
   [listItemOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listitemornullobject-member)
 
   #### Examples

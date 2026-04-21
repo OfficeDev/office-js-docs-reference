@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.HyperlinkCollection: [add](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1)),
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [add](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1)),
   [items](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-items-member)
 
 isPreview: false

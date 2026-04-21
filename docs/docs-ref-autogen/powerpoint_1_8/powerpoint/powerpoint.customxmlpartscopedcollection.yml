@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomXmlPartCollection: [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
+  - [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection): [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection):
+  [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerCollection: [load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
+  - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

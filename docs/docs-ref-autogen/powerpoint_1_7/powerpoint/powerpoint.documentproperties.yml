@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)
 
 isPreview: false
 isDeprecated: false

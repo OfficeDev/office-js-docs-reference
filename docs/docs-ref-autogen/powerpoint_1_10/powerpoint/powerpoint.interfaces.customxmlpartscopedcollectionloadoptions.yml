@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomXmlPartScopedCollection: [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
+  - [PowerPoint.CustomXmlPartScopedCollection](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection): [PowerPoint.CustomXmlPartScopedCollection](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection):
+  [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1))
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [load](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-load-member(1))
 
 isPreview: false
 isDeprecated: false

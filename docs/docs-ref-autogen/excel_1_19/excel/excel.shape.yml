@@ -17,22 +17,22 @@ remarks: >-
   #### Used by
 
 
-  - Excel.GeometricShape: [shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
+  - [Excel.GeometricShape](/javascript/api/excel/excel.geometricshape): [shape](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-shape-member)
 
-  - Excel.GroupShapeCollection: [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1)),
-  [getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
+  - [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection): [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection):
+  [getItem](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-items-member)
 
-  - Excel.Image: [shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
+  - [Excel.Image](/javascript/api/excel/excel.image): [shape](/javascript/api/excel/excel.image#excel-excel-image-shape-member)
 
-  - Excel.Line: [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member),
+  - [Excel.Line](/javascript/api/excel/excel.line): [beginConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-beginconnectedshape-member),
   [connectBeginShape](/javascript/api/excel/excel.line#excel-excel-line-connectbeginshape-member(1)), [connectEndShape](/javascript/api/excel/excel.line#excel-excel-line-connectendshape-member(1)), [endConnectedShape](/javascript/api/excel/excel.line#excel-excel-line-endconnectedshape-member), [shape](/javascript/api/excel/excel.line#excel-excel-line-shape-member)
 
-  - Excel.ShapeCollection: [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1)),
+  - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1)),
   [addGroup](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgroup-member(1)), [addImage](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addimage-member(1)), [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1)), [addTextBox](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addtextbox-member(1)), [getItem](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-items-member)
 
-  - Excel.ShapeGroup: [shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
+  - [Excel.ShapeGroup](/javascript/api/excel/excel.shapegroup): [shape](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-shape-member)
 
-  - Excel.Workbook: [getActiveShape](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshape-member(1)),
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getActiveShape](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshape-member(1)),
   [getActiveShapeOrNullObject](/javascript/api/excel/excel.workbook#excel-excel-workbook-getactiveshapeornullobject-member(1))
 
 isPreview: false

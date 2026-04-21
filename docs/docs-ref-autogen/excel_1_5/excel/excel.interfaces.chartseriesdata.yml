@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeries: [toJSON](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-tojson-member(1))
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [toJSON](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

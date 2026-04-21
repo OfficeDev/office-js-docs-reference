@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getTables](/javascript/api/excel/excel.range#excel-excel-range-gettables-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [getTables](/javascript/api/excel/excel.range#excel-excel-range-gettables-member(1))
 
-  - Excel.RangeAreas: [getTables](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-gettables-member(1))
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [getTables](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-gettables-member(1))
 
 isPreview: false
 isDeprecated: false

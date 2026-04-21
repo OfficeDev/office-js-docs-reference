@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormatRule: [set](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-set-member(1))
+  - [Excel.ConditionalFormatRule](/javascript/api/excel/excel.conditionalformatrule): [Excel.ConditionalFormatRule](/javascript/api/excel/excel.conditionalformatrule):
+  [set](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-set-member(1))
 
 isPreview: false
 isDeprecated: false

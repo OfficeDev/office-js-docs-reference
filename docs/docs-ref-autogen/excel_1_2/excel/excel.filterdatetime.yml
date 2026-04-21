@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Filter: [applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
+  - [Excel.Filter](/javascript/api/excel/excel.filter): [applyValuesFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))
 
-  - Excel.FilterCriteria: [values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
+  - [Excel.FilterCriteria](/javascript/api/excel/excel.filtercriteria): [values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)
 
 isPreview: false
 isDeprecated: false

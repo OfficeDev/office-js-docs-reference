@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ThemeColorScheme: [getThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-getthemecolor-member(1)),
-  [setThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-setthemecolor-member(1))
+  - [PowerPoint.ThemeColorScheme](/javascript/api/powerpoint/powerpoint.themecolorscheme): [PowerPoint.ThemeColorScheme](/javascript/api/powerpoint/powerpoint.themecolorscheme):
+  [getThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-getthemecolor-member(1)), [setThemeColor](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-setthemecolor-member(1))
 
   #### Examples
 

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FormatProtection: [set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(1))
+  - [Excel.FormatProtection](/javascript/api/excel/excel.formatprotection): [set](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-set-member(1))
 
 isPreview: false
 isDeprecated: false

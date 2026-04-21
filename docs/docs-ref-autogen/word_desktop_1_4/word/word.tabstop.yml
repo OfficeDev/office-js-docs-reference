@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TabStopCollection: [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1)),
+  - [Word.TabStopCollection](/javascript/api/word/word.tabstopcollection): [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1)),
   [after](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-after-member(1)), [before](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-before-member(1)), [items](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-items-member)
 
 isPreview: false

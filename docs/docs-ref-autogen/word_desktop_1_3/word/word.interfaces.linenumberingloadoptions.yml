@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.LineNumbering: [load](/javascript/api/word/word.linenumbering#word-word-linenumbering-load-member(1))
+  - [Word.LineNumbering](/javascript/api/word/word.linenumbering): [load](/javascript/api/word/word.linenumbering#word-word-linenumbering-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DatePickerContentControl: [load](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-load-member(1))
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [load](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-load-member(1))
 
 isPreview: false
 isDeprecated: false

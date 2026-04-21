@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Section: [set](/javascript/api/word/word.section#word-word-section-set-member(1))
+  - [Word.Section](/javascript/api/word/word.section): [set](/javascript/api/word/word.section#word-word-section-set-member(1))
 
 isPreview: false
 isDeprecated: false

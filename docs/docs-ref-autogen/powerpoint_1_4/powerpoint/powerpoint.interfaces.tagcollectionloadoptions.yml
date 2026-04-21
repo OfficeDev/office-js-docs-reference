@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TagCollection: [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection):
+  [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

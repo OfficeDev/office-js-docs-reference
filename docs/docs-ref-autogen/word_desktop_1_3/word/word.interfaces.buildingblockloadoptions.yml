@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlock: [load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1))
+  - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [load](/javascript/api/word/word.buildingblock#word-word-buildingblock-load-member(1))
 
 isPreview: false
 isDeprecated: false

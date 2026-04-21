@@ -15,16 +15,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
+  - [Word.Body](/javascript/api/word/word.body): [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
 
-  - Word.ContentControl: [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
 
-  - Word.List: [getLevelParagraphs](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1)),
+  - [Word.List](/javascript/api/word/word.list): [getLevelParagraphs](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1)),
   [paragraphs](/javascript/api/word/word.list#word-word-list-paragraphs-member)
 
-  - Word.ListItem: [getDescendants](/javascript/api/word/word.listitem#word-word-listitem-getdescendants-member(1))
+  - [Word.ListItem](/javascript/api/word/word.listitem): [getDescendants](/javascript/api/word/word.listitem#word-word-listitem-getdescendants-member(1))
 
-  - Word.Range: [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
+  - [Word.Range](/javascript/api/word/word.range): [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
 
   #### Examples
 

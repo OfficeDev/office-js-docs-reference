@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarRule: [type](/javascript/api/excel/excel.conditionaldatabarrule#excel-excel-conditionaldatabarrule-type-member)
+  - [Excel.ConditionalDataBarRule](/javascript/api/excel/excel.conditionaldatabarrule): [Excel.ConditionalDataBarRule](/javascript/api/excel/excel.conditionaldatabarrule):
+  [type](/javascript/api/excel/excel.conditionaldatabarrule#excel-excel-conditionaldatabarrule-type-member)
 
 isPreview: false
 isDeprecated: false

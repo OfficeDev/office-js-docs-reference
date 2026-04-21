@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartBorder: [set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(1))
+  - [Excel.ChartBorder](/javascript/api/excel/excel.chartborder): [set](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

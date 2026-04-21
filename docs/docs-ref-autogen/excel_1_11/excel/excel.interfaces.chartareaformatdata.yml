@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAreaFormat: [toJSON](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-tojson-member(1))
+  - [Excel.ChartAreaFormat](/javascript/api/excel/excel.chartareaformat): [toJSON](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

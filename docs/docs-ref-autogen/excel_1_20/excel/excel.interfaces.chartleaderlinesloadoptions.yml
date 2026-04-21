@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLeaderLines: [load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
+  - [Excel.ChartLeaderLines](/javascript/api/excel/excel.chartleaderlines): [load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
 
 isPreview: false
 isDeprecated: false

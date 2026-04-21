@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthoringLock: [set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(1))
+  - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(1))
 
 isPreview: false
 isDeprecated: false

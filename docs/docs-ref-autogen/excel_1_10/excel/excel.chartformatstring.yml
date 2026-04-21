@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTitle: [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
+  - [Excel.ChartTitle](/javascript/api/excel/excel.charttitle): [getSubstring](/javascript/api/excel/excel.charttitle#excel-excel-charttitle-getsubstring-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Coauthor: [locks](/javascript/api/word/word.coauthor#word-word-coauthor-locks-member)
+  - [Word.Coauthor](/javascript/api/word/word.coauthor): [locks](/javascript/api/word/word.coauthor#word-word-coauthor-locks-member)
 
-  - Word.Coauthoring: [locks](/javascript/api/word/word.coauthoring#word-word-coauthoring-locks-member)
+  - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [locks](/javascript/api/word/word.coauthoring#word-word-coauthoring-locks-member)
 
 isPreview: false
 isDeprecated: false

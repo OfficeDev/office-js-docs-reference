@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListFormat: [countNumberedItems](/javascript/api/word/word.listformat#word-word-listformat-countnumbereditems-member(1))
+  - [Word.ListFormat](/javascript/api/word/word.listformat): [countNumberedItems](/javascript/api/word/word.listformat#word-word-listformat-countnumbereditems-member(1))
 
   #### Examples
 

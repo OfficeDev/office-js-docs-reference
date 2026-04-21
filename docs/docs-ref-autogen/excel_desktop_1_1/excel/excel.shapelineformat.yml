@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [lineFormat](/javascript/api/excel/excel.shape#excel-excel-shape-lineformat-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [lineFormat](/javascript/api/excel/excel.shape#excel-excel-shape-lineformat-member)
 
 isPreview: false
 isDeprecated: false

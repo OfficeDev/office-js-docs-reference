@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [getSelectedInkStrokes](/javascript/api/onenote/onenote.application#onenote-onenote-application-getselectedinkstrokes-member(1))
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [getSelectedInkStrokes](/javascript/api/onenote/onenote.application#onenote-onenote-application-getselectedinkstrokes-member(1))
 
-  - OneNote.FloatingInk: [inkStrokes](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-inkstrokes-member)
+  - [OneNote.FloatingInk](/javascript/api/onenote/onenote.floatingink): [inkStrokes](/javascript/api/onenote/onenote.floatingink#onenote-onenote-floatingink-inkstrokes-member)
 
 isPreview: false
 isDeprecated: false

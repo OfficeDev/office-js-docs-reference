@@ -13,17 +13,17 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [getComments](/javascript/api/word/word.body#word-word-body-getcomments-member(1))
+  - [Word.Body](/javascript/api/word/word.body): [getComments](/javascript/api/word/word.body#word-word-body-getcomments-member(1))
 
-  - Word.ContentControl: [getComments](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [getComments](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))
 
-  - Word.Document: [comments](/javascript/api/word/word.document#word-word-document-comments-member)
+  - [Word.Document](/javascript/api/word/word.document): [comments](/javascript/api/word/word.document#word-word-document-comments-member)
 
-  - Word.Paragraph: [getComments](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [getComments](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))
 
-  - Word.Range: [getComments](/javascript/api/word/word.range#word-word-range-getcomments-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [getComments](/javascript/api/word/word.range#word-word-range-getcomments-member(1))
 
-  - Word.Selection: [comments](/javascript/api/word/word.selection#word-word-selection-comments-member)
+  - [Word.Selection](/javascript/api/word/word.selection): [comments](/javascript/api/word/word.selection#word-word-selection-comments-member)
 
   #### Examples
 

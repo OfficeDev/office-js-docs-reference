@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [namedSheetViews](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-namedsheetviews-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [namedSheetViews](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-namedsheetviews-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Ribbon: [requestUpdate](/javascript/api/office/office.ribbon#office-office-ribbon-requestupdate-member(1))
+  - [Office.Ribbon](/javascript/api/office/office.ribbon): [requestUpdate](/javascript/api/office/office.ribbon#office-office-ribbon-requestupdate-member(1))
 
 isPreview: false
 isDeprecated: false

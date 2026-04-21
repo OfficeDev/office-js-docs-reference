@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAxes: [set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(1))
+  - [Excel.ChartAxes](/javascript/api/excel/excel.chartaxes): [set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(1))
 
 isPreview: false
 isDeprecated: false

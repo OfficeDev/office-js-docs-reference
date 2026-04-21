@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeBorder: [sideIndex](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-sideindex-member)
+  - [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder): [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder):
+  [sideIndex](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-sideindex-member)
 
-  - Excel.ConditionalRangeBorderCollection: [getItem](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-getitem-member(1))
+  - [Excel.ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection): [Excel.ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection):
+  [getItem](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-getitem-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LocalImageCellValue: [image](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-image-member)
+  - [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue): [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue):
+  [image](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-image-member)
 
 isPreview: true
 isDeprecated: false

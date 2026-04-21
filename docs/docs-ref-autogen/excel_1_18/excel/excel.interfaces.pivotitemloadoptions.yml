@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotItem: [load](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-load-member(1))
+  - [Excel.PivotItem](/javascript/api/excel/excel.pivotitem): [load](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-load-member(1))
 
 isPreview: false
 isDeprecated: false

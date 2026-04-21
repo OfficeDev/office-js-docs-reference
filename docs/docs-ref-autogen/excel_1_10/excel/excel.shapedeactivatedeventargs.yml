@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [onDeactivated](/javascript/api/excel/excel.shape#excel-excel-shape-ondeactivated-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [onDeactivated](/javascript/api/excel/excel.shape#excel-excel-shape-ondeactivated-member)
 
 isPreview: false
 isDeprecated: false

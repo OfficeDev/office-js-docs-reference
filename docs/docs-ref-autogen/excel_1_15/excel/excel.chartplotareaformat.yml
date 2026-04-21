@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPlotArea: [format](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-format-member)
+  - [Excel.ChartPlotArea](/javascript/api/excel/excel.chartplotarea): [format](/javascript/api/excel/excel.chartplotarea#excel-excel-chartplotarea-format-member)
 
 isPreview: false
 isDeprecated: false

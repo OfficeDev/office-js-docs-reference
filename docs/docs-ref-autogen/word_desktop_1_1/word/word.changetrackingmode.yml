@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)
+  - [Word.Document](/javascript/api/word/word.document): [changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)
 
   #### Examples
 

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.HyperlinkCollection: [toJSON](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-tojson-member(1))
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [toJSON](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

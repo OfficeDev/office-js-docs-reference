@@ -12,20 +12,23 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChangedEventDetail: [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member),
+  - [Excel.ChangedEventDetail](/javascript/api/excel/excel.changedeventdetail): [valueTypeAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypeafter-member),
   [valueTypeBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valuetypebefore-member)
 
-  - Excel.NamedItemArrayValues: [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
+  - [Excel.NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues): [Excel.NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues):
+  [types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)
 
-  - Excel.Range: [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
+  - [Excel.Range](/javascript/api/excel/excel.range): [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
 
-  - Excel.RangeView: [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
+  - [Excel.RangeView](/javascript/api/excel/excel.rangeview): [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
 
-  - Excel.ReferenceCellValue: [basicType](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basictype-member)
+  - [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue): [basicType](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basictype-member)
 
-  - Excel.RootReferenceCellValue: [basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)
+  - [Excel.RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue): [Excel.RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue):
+  [basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)
 
-  - Excel.ValueTypeNotAvailableCellValue: [basicType](/javascript/api/excel/excel.valuetypenotavailablecellvalue#excel-excel-valuetypenotavailablecellvalue-basictype-member)
+  - [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue): [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue):
+  [basicType](/javascript/api/excel/excel.valuetypenotavailablecellvalue#excel-excel-valuetypenotavailablecellvalue-basictype-member)
 
 isPreview: false
 isDeprecated: false

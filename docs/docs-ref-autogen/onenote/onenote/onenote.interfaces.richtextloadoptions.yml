@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.RichText: [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1))
+  - [OneNote.RichText](/javascript/api/onenote/onenote.richtext): [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageBreakCollection: [add](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-add-member(1)),
-  [getItem](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-getitem-member(1)), [items](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-items-member)
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection):
+  [add](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-add-member(1)), [getItem](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-getitem-member(1)), [items](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-items-member)
 
 isPreview: false
 isDeprecated: false

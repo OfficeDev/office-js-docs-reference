@@ -13,13 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [lists](/javascript/api/word/word.body#word-word-body-lists-member)
+  - [Word.Body](/javascript/api/word/word.body): [lists](/javascript/api/word/word.body#word-word-body-lists-member)
 
-  - Word.ContentControl: [lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)
 
-  - Word.Document: [lists](/javascript/api/word/word.document#word-word-document-lists-member)
+  - [Word.Document](/javascript/api/word/word.document): [lists](/javascript/api/word/word.document#word-word-document-lists-member)
 
-  - Word.Range: [lists](/javascript/api/word/word.range#word-word-range-lists-member)
+  - [Word.Range](/javascript/api/word/word.range): [lists](/javascript/api/word/word.range#word-word-range-lists-member)
 
   #### Examples
 

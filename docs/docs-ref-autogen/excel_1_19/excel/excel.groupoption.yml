@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [group](/javascript/api/excel/excel.range#excel-excel-range-group-member(1)),
+  - [Excel.Range](/javascript/api/excel/excel.range): [group](/javascript/api/excel/excel.range#excel-excel-range-group-member(1)),
   [hideGroupDetails](/javascript/api/excel/excel.range#excel-excel-range-hidegroupdetails-member(1)), [showGroupDetails](/javascript/api/excel/excel.range#excel-excel-range-showgroupdetails-member(1)), [ungroup](/javascript/api/excel/excel.range#excel-excel-range-ungroup-member(1))
 
   #### Examples

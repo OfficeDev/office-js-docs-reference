@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
 
-  - Word.XmlNode: [attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member),
+  - [Word.XmlNode](/javascript/api/word/word.xmlnode): [attributes](/javascript/api/word/word.xmlnode#word-word-xmlnode-attributes-member),
   [childNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-childnodes-member), [selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
 
 isPreview: false

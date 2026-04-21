@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.EntityPropertyExtraProperties: [propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)
+  - [Excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties): [Excel.EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties):
+  [propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)
 
 isPreview: false
 isDeprecated: false

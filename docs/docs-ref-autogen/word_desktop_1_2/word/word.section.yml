@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member),
+  - [Word.Body](/javascript/api/word/word.body): [parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member),
   [parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)
 
-  - Word.SectionCollection: [getFirst](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1)),
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [getFirst](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1)),
   [getFirstOrNullObject](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
 
   #### Examples

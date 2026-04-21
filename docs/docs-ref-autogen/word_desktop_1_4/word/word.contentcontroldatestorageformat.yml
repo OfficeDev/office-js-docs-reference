@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DatePickerContentControl: [dateStorageFormat](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datestorageformat-member)
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [dateStorageFormat](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datestorageformat-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomPropertyCollection: [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection):
+  [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

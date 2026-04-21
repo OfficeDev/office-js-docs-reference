@@ -12,11 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlockEntryCollection: [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
+  - [Word.BuildingBlockEntryCollection](/javascript/api/word/word.buildingblockentrycollection): [Word.BuildingBlockEntryCollection](/javascript/api/word/word.buildingblockentrycollection):
+  [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
 
-  - Word.BuildingBlockGalleryContentControl: [buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblocktype-member)
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol):
+  [buildingBlockType](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-buildingblocktype-member)
 
-  - Word.BuildingBlockTypeItemCollection: [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
+  - [Word.BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection): [Word.BuildingBlockTypeItemCollection](/javascript/api/word/word.buildingblocktypeitemcollection):
+  [getByType](/javascript/api/word/word.buildingblocktypeitemcollection#word-word-buildingblocktypeitemcollection-getbytype-member(1))
 
 isPreview: false
 isDeprecated: false

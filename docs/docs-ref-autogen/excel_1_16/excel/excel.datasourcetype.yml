@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTable: [getDataSourceType](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcetype-member(1))
+  - [Excel.PivotTable](/javascript/api/excel/excel.pivottable): [getDataSourceType](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcetype-member(1))
 
 isPreview: false
 isDeprecated: false

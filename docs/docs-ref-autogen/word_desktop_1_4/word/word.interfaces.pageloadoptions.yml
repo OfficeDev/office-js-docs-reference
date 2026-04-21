@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Page: [load](/javascript/api/word/word.page#word-word-page-load-member(1))
+  - [Word.Page](/javascript/api/word/word.page): [load](/javascript/api/word/word.page#word-word-page-load-member(1))
 
 isPreview: false
 isDeprecated: false

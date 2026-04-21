@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TextColumn: [set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(1))
+  - [Word.TextColumn](/javascript/api/word/word.textcolumn): [set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(1))
 
 isPreview: false
 isDeprecated: false

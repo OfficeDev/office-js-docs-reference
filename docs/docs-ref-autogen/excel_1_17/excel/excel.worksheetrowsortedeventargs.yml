@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [onRowSorted](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowsorted-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onRowSorted](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowsorted-member)
 
-  - Excel.WorksheetCollection: [onRowSorted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowsorted-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [onRowSorted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowsorted-member)
 
 isPreview: false
 isDeprecated: false

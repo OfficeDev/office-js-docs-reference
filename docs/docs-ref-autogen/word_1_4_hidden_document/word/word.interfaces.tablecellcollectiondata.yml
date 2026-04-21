@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCellCollection: [toJSON](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-tojson-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [toJSON](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

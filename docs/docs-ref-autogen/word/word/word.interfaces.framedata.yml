@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Frame: [toJSON](/javascript/api/word/word.frame#word-word-frame-tojson-member(1))
+  - [Word.Frame](/javascript/api/word/word.frame): [toJSON](/javascript/api/word/word.frame#word-word-frame-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

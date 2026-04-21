@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundPictureOrTextureFill: [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-load-member(1))
+  - [PowerPoint.SlideBackgroundPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill): [PowerPoint.SlideBackgroundPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill):
+  [load](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

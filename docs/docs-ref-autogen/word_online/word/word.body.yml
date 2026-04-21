@@ -13,25 +13,25 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
 
-  - Word.Document: [body](/javascript/api/word/word.document#word-word-document-body-member),
+  - [Word.Document](/javascript/api/word/word.document): [body](/javascript/api/word/word.document#word-word-document-body-member),
   [getEndnoteBody](/javascript/api/word/word.document#word-word-document-getendnotebody-member(1)), [getFootnoteBody](/javascript/api/word/word.document#word-word-document-getfootnotebody-member(1))
 
-  - Word.Field: [parentBody](/javascript/api/word/word.field#word-word-field-parentbody-member)
+  - [Word.Field](/javascript/api/word/word.field): [parentBody](/javascript/api/word/word.field#word-word-field-parentbody-member)
 
-  - Word.NoteItem: [body](/javascript/api/word/word.noteitem#word-word-noteitem-body-member)
+  - [Word.NoteItem](/javascript/api/word/word.noteitem): [body](/javascript/api/word/word.noteitem#word-word-noteitem-body-member)
 
-  - Word.Paragraph: [parentBody](/javascript/api/word/word.paragraph#word-word-paragraph-parentbody-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [parentBody](/javascript/api/word/word.paragraph#word-word-paragraph-parentbody-member)
 
-  - Word.Range: [parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)
+  - [Word.Range](/javascript/api/word/word.range): [parentBody](/javascript/api/word/word.range#word-word-range-parentbody-member)
 
-  - Word.Section: [body](/javascript/api/word/word.section#word-word-section-body-member),
+  - [Word.Section](/javascript/api/word/word.section): [body](/javascript/api/word/word.section#word-word-section-body-member),
   [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1)), [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
 
-  - Word.Table: [parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)
+  - [Word.Table](/javascript/api/word/word.table): [parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)
 
-  - Word.TableCell: [body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)
 
   #### Examples
 

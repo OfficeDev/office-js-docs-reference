@@ -13,9 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.Context: [platform](/javascript/api/office/office.context#office-office-context-platform-member)
+  - [Office.Context](/javascript/api/office/office.context): [platform](/javascript/api/office/office.context#office-office-context-platform-member)
 
-  - Office.ContextInformation: [platform](/javascript/api/office/office.contextinformation#office-office-contextinformation-platform-member)
+  - [Office.ContextInformation](/javascript/api/office/office.contextinformation): [Office.ContextInformation](/javascript/api/office/office.contextinformation):
+  [platform](/javascript/api/office/office.contextinformation#office-office-contextinformation-platform-member)
 
   #### Examples
 

@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))
 
-  - Word.DocumentCreated: [getStyles](/javascript/api/word/word.documentcreated#word-word-documentcreated-getstyles-member(1))
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [getStyles](/javascript/api/word/word.documentcreated#word-word-documentcreated-getstyles-member(1))
 
   #### Examples
 

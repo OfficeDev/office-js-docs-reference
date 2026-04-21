@@ -17,17 +17,21 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlockGalleryContentControl: [xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol):
+  [xmlMapping](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-xmlmapping-member)
 
-  - Word.ContentControl: [xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [xmlMapping](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-xmlmapping-member)
 
-  - Word.DatePickerContentControl: [xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [xmlMapping](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-xmlmapping-member)
 
-  - Word.GroupContentControl: [xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)
+  - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [xmlMapping](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-xmlmapping-member)
 
-  - Word.PictureContentControl: [xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
+  - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol):
+  [xmlMapping](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-xmlmapping-member)
 
-  - Word.RepeatingSectionContentControl: [xmlMapping](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-xmlmapping-member)
+  - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol):
+  [xmlMapping](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-xmlmapping-member)
 
 isPreview: false
 isDeprecated: false

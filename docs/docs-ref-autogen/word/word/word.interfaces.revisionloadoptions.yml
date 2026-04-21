@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Revision: [load](/javascript/api/word/word.revision#word-word-revision-load-member(1))
+  - [Word.Revision](/javascript/api/word/word.revision): [load](/javascript/api/word/word.revision#word-word-revision-load-member(1))
 
 isPreview: false
 isDeprecated: false

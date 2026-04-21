@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartFormatString: [set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(1))
+  - [Excel.ChartFormatString](/javascript/api/excel/excel.chartformatstring): [set](/javascript/api/excel/excel.chartformatstring#excel-excel-chartformatstring-set-member(1))
 
 isPreview: false
 isDeprecated: false

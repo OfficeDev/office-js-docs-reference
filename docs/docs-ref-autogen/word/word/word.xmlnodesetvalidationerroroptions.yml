@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.XmlNode: [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1))
+  - [Word.XmlNode](/javascript/api/word/word.xmlnode): [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlNode: [load](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-load-member(1))
+  - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [load](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Visio.DataRefreshCompleteEventArgs: [document](/javascript/api/visio/visio.datarefreshcompleteeventargs#visio-visio-datarefreshcompleteeventargs-document-member)
+  - [Visio.DataRefreshCompleteEventArgs](/javascript/api/visio/visio.datarefreshcompleteeventargs): [Visio.DataRefreshCompleteEventArgs](/javascript/api/visio/visio.datarefreshcompleteeventargs):
+  [document](/javascript/api/visio/visio.datarefreshcompleteeventargs#visio-visio-datarefreshcompleteeventargs-document-member)
 
-  - Visio.RequestContext: [document](/javascript/api/visio/visio.requestcontext#visio-visio-requestcontext-document-member)
+  - [Visio.RequestContext](/javascript/api/visio/visio.requestcontext): [document](/javascript/api/visio/visio.requestcontext#visio-visio-requestcontext-document-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.SectionCollection: [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection):
+  [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

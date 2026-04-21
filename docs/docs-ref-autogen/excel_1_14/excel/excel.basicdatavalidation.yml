@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataValidationRule: [decimal](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-decimal-member),
+  - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [decimal](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-decimal-member),
   [textLength](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-textlength-member), [wholeNumber](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-wholenumber-member)
 
 isPreview: false

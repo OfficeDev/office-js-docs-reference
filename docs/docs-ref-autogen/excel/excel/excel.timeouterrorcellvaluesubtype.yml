@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TimeoutErrorCellValue: [errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)
+  - [Excel.TimeoutErrorCellValue](/javascript/api/excel/excel.timeouterrorcellvalue): [Excel.TimeoutErrorCellValue](/javascript/api/excel/excel.timeouterrorcellvalue):
+  [errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)
 
 isPreview: true
 isDeprecated: false

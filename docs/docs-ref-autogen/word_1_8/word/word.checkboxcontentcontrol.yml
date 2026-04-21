@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [checkboxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-checkboxcontentcontrol-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [checkboxContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-checkboxcontentcontrol-member)
 
   #### Examples
 

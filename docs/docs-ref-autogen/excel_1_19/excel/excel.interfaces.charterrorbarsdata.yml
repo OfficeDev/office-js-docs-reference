@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartErrorBars: [toJSON](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-tojson-member(1))
+  - [Excel.ChartErrorBars](/javascript/api/excel/excel.charterrorbars): [toJSON](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Border: [width](/javascript/api/word/word.border#word-word-border-width-member)
+  - [Word.Border](/javascript/api/word/word.border): [width](/javascript/api/word/word.border#word-word-border-width-member)
 
-  - Word.BorderCollection: [insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member),
+  - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member),
   [outsideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsideborderwidth-member)
 
   #### Examples

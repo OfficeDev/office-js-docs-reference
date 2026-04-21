@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageLayout: [toJSON](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-tojson-member(1))
+  - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [toJSON](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

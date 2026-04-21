@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Style: [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
+  - [Word.Style](/javascript/api/word/word.style): [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
 
   #### Examples
 

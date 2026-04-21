@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Application: [set](/javascript/api/excel/excel.application#excel-excel-application-set-member(1))
+  - [Excel.Application](/javascript/api/excel/excel.application): [set](/javascript/api/excel/excel.application#excel-excel-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

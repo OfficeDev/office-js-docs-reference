@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Editor: [load](/javascript/api/word/word.editor#word-word-editor-load-member(1))
+  - [Word.Editor](/javascript/api/word/word.editor): [load](/javascript/api/word/word.editor#word-word-editor-load-member(1))
 
 isPreview: false
 isDeprecated: false

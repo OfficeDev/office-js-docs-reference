@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CommentContentRange: [toJSON](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-tojson-member(1))
+  - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [toJSON](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

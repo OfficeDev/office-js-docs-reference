@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Range: [set](/javascript/api/word/word.range#word-word-range-set-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [set](/javascript/api/word/word.range#word-word-range-set-member(1))
 
 isPreview: false
 isDeprecated: false

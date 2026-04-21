@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.HeaderFooter: [set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(1))
+  - [Excel.HeaderFooter](/javascript/api/excel/excel.headerfooter): [set](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-set-member(1))
 
 isPreview: false
 isDeprecated: false

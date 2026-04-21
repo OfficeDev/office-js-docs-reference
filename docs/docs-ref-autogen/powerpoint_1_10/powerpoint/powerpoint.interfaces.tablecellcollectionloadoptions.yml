@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCellCollection: [load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(1))
+  - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection):
+  [load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextFrame: [horizontalAlignment](/javascript/api/excel/excel.textframe#excel-excel-textframe-horizontalalignment-member)
+  - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [horizontalAlignment](/javascript/api/excel/excel.textframe#excel-excel-textframe-horizontalalignment-member)
 
   #### Examples
 

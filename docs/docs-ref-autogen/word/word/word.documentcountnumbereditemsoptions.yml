@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [countNumberedItems](/javascript/api/word/word.document#word-word-document-countnumbereditems-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [countNumberedItems](/javascript/api/word/word.document#word-word-document-countnumbereditems-member(1))
 
 isPreview: true
 isDeprecated: false

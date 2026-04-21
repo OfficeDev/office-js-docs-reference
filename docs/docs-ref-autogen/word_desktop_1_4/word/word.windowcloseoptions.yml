@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Window: [close](/javascript/api/word/word.window#word-word-window-close-member(1))
+  - [Word.Window](/javascript/api/word/word.window): [close](/javascript/api/word/word.window#word-word-window-close-member(1))
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkWordCollection: [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
+  - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection):
+  [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

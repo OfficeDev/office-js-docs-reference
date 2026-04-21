@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideCollection: [add](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-add-member(1))
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [add](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-add-member(1))
 
   #### Examples
 

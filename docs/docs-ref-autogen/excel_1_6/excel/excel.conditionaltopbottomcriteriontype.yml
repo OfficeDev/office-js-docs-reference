@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalTopBottomRule: [type](/javascript/api/excel/excel.conditionaltopbottomrule#excel-excel-conditionaltopbottomrule-type-member)
+  - [Excel.ConditionalTopBottomRule](/javascript/api/excel/excel.conditionaltopbottomrule): [Excel.ConditionalTopBottomRule](/javascript/api/excel/excel.conditionaltopbottomrule):
+  [type](/javascript/api/excel/excel.conditionaltopbottomrule#excel-excel-conditionaltopbottomrule-type-member)
 
 isPreview: false
 isDeprecated: false

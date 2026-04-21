@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.View: [readingLayoutTruncateMargins](/javascript/api/word/word.view#word-word-view-readinglayouttruncatemargins-member)
+  - [Word.View](/javascript/api/word/word.view): [readingLayoutTruncateMargins](/javascript/api/word/word.view#word-word-view-readinglayouttruncatemargins-member)
 
 isPreview: false
 isDeprecated: false

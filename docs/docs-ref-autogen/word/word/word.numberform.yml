@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Font: [numberForm](/javascript/api/word/word.font#word-word-font-numberform-member)
+  - [Word.Font](/javascript/api/word/word.font): [numberForm](/javascript/api/word/word.font#word-word-font-numberform-member)
 
 isPreview: false
 isDeprecated: false

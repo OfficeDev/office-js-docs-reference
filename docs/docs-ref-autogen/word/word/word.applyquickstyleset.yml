@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [applyQuickStyleSet](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [applyQuickStyleSet](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))
 
 isPreview: false
 isDeprecated: false

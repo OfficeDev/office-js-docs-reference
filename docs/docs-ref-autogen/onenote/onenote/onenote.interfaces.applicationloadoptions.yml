@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [load](/javascript/api/onenote/onenote.application#onenote-onenote-application-load-member(1))
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [load](/javascript/api/onenote/onenote.application#onenote-onenote-application-load-member(1))
 
 isPreview: false
 isDeprecated: false

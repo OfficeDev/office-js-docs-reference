@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [load](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-load-member(1))
 
 isPreview: false
 isDeprecated: false

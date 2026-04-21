@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.DocumentProperties: [toJSON](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-tojson-member(1))
+  - [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties): [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties):
+  [toJSON](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

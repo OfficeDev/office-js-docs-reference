@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableRow: [toJSON](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-tojson-member(1))
+  - [PowerPoint.TableRow](/javascript/api/powerpoint/powerpoint.tablerow): [toJSON](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

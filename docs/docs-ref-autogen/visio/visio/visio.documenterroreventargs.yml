@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onDocumentError](/javascript/api/visio/visio.document#visio-visio-document-ondocumenterror-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onDocumentError](/javascript/api/visio/visio.document#visio-visio-document-ondocumenterror-member)
 
 isPreview: false
 isDeprecated: false

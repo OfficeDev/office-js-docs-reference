@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [groupContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-groupcontentcontrol-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.TableCellCollection: [toJSON](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-tojson-member(1))
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection):
+  [toJSON](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideMaster: [layouts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-layouts-member)
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [layouts](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-layouts-member)
 
   #### Examples
 

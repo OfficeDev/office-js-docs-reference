@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableStyle: [load](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-load-member(1))
+  - [Excel.TableStyle](/javascript/api/excel/excel.tablestyle): [load](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-load-member(1))
 
 isPreview: false
 isDeprecated: false

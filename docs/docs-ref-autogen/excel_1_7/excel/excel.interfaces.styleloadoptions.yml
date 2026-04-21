@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Style: [load](/javascript/api/excel/excel.style#excel-excel-style-load-member(1))
+  - [Excel.Style](/javascript/api/excel/excel.style): [load](/javascript/api/excel/excel.style#excel-excel-style-load-member(1))
 
 isPreview: false
 isDeprecated: false

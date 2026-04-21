@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
 
   #### Examples
 

@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)
 
-  - Excel.WorksheetCollection: [onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)
 
 isPreview: true
 isDeprecated: false

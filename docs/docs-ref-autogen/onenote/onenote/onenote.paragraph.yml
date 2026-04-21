@@ -14,19 +14,19 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1)),
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [getActiveParagraph](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraph-member(1)),
   [getActiveParagraphOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactiveparagraphornull-member(1))
 
-  - OneNote.Image: [paragraph](/javascript/api/onenote/onenote.image#onenote-onenote-image-paragraph-member)
+  - [OneNote.Image](/javascript/api/onenote/onenote.image): [paragraph](/javascript/api/onenote/onenote.image#onenote-onenote-image-paragraph-member)
 
-  - OneNote.InkWord: [paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
+  - [OneNote.InkWord](/javascript/api/onenote/onenote.inkword): [paragraph](/javascript/api/onenote/onenote.inkword#onenote-onenote-inkword-paragraph-member)
 
-  - OneNote.ParagraphCollection: [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection):
+  [getItem](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-items-member)
 
-  - OneNote.RichText: [paragraph](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-paragraph-member)
+  - [OneNote.RichText](/javascript/api/onenote/onenote.richtext): [paragraph](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-paragraph-member)
 
-  - OneNote.Table: [paragraph](/javascript/api/onenote/onenote.table#onenote-onenote-table-paragraph-member)
+  - [OneNote.Table](/javascript/api/onenote/onenote.table): [paragraph](/javascript/api/onenote/onenote.table#onenote-onenote-table-paragraph-member)
 
 isPreview: false
 isDeprecated: false

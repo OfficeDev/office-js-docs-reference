@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Application: [activeWindow](/javascript/api/excel/excel.application#excel-excel-application-activewindow-member)
+  - [Excel.Application](/javascript/api/excel/excel.application): [activeWindow](/javascript/api/excel/excel.application#excel-excel-application-activewindow-member)
 
-  - Excel.WindowCollection: [getItemAt](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1)),
+  - [Excel.WindowCollection](/javascript/api/excel/excel.windowcollection): [getItemAt](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-getitemat-member(1)),
   [items](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-items-member)
 
 isPreview: false

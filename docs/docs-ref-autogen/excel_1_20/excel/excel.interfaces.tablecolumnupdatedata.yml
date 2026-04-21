@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableColumn: [set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(1))
+  - [Excel.TableColumn](/javascript/api/excel/excel.tablecolumn): [set](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-set-member(1))
 
 isPreview: false
 isDeprecated: false

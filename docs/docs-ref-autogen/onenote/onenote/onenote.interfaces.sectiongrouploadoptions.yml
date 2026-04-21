@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.SectionGroup: [load](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-load-member(1))
+  - [OneNote.SectionGroup](/javascript/api/onenote/onenote.sectiongroup): [load](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-load-member(1))
 
 isPreview: false
 isDeprecated: false

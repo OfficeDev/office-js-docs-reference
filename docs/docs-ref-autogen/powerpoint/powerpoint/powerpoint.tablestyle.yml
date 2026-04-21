@@ -12,9 +12,11 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions: [style](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-style-member)
+  - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions):
+  [style](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-style-member)
 
-  - PowerPoint.TableStyleSettings: [style](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-style-member)
+  - [PowerPoint.TableStyleSettings](/javascript/api/powerpoint/powerpoint.tablestylesettings): [PowerPoint.TableStyleSettings](/javascript/api/powerpoint/powerpoint.tablestylesettings):
+  [style](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-style-member)
 
 isPreview: false
 isDeprecated: false

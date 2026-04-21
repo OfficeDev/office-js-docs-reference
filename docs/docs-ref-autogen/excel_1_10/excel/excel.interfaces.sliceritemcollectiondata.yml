@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerItemCollection: [toJSON](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-tojson-member(1))
+  - [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection): [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection):
+  [toJSON](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(1))
 
 isPreview: false
 isDeprecated: false

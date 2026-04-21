@@ -13,10 +13,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.Paragraph: [insertCanvas](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1)),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertCanvas](/javascript/api/word/word.paragraph#word-word-paragraph-insertcanvas-member(1)),
   [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1)), [insertPictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertpicturefrombase64-member(1)), [insertTextBox](/javascript/api/word/word.paragraph#word-word-paragraph-inserttextbox-member(1))
 
-  - Word.Range: [insertCanvas](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1)),
+  - [Word.Range](/javascript/api/word/word.range): [insertCanvas](/javascript/api/word/word.range#word-word-range-insertcanvas-member(1)),
   [insertGeometricShape](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1)), [insertPictureFromBase64](/javascript/api/word/word.range#word-word-range-insertpicturefrombase64-member(1)), [insertTextBox](/javascript/api/word/word.range#word-word-range-inserttextbox-member(1))
 
   #### Examples

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataTableFormat: [load](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-load-member(1))
+  - [Excel.ChartDataTableFormat](/javascript/api/excel/excel.chartdatatableformat): [Excel.ChartDataTableFormat](/javascript/api/excel/excel.chartdatatableformat):
+  [load](/javascript/api/excel/excel.chartdatatableformat#excel-excel-chartdatatableformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

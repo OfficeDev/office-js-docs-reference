@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.HtmlDivisionCollection: [getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1)),
-  [items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
+  - [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection): [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection):
+  [getItemAt](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-getitemat-member(1)), [items](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

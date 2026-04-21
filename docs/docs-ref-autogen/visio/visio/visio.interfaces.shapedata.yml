@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Shape: [toJSON](/javascript/api/visio/visio.shape#visio-visio-shape-tojson-member(1))
+  - [Visio.Shape](/javascript/api/visio/visio.shape): [toJSON](/javascript/api/visio/visio.shape#visio-visio-shape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

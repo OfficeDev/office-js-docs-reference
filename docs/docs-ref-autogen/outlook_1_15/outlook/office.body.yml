@@ -41,17 +41,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [body](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-body-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [body](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-body-member)
 
-  - Office.AppointmentRead: [body](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-body-member)
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [body](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-body-member)
 
-  - Office.LoadedMessageCompose: [body](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-body-member)
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [body](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-body-member)
 
-  - Office.LoadedMessageRead: [body](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-body-member)
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [body](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-body-member)
 
-  - Office.MessageCompose: [body](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-body-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [body](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-body-member)
 
-  - Office.MessageRead: [body](/javascript/api/outlook/office.messageread#outlook-office-messageread-body-member)
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [body](/javascript/api/outlook/office.messageread#outlook-office-messageread-body-member)
 
   #### Examples
 

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetCollection: [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection):
+  [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

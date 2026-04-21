@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomProperty: [toJSON](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-tojson-member(1))
+  - [PowerPoint.CustomProperty](/javascript/api/powerpoint/powerpoint.customproperty): [PowerPoint.CustomProperty](/javascript/api/powerpoint/powerpoint.customproperty):
+  [toJSON](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

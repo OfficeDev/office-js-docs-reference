@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member),
   [dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databarornullobject-member)
 
 isPreview: false

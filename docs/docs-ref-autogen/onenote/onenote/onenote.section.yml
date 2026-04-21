@@ -12,18 +12,18 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [getActiveSection](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivesection-member(1)),
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [getActiveSection](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivesection-member(1)),
   [getActiveSectionOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivesectionornull-member(1))
 
-  - OneNote.Notebook: [addSection](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-addsection-member(1))
+  - [OneNote.Notebook](/javascript/api/onenote/onenote.notebook): [addSection](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-addsection-member(1))
 
-  - OneNote.Page: [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)),
+  - [OneNote.Page](/javascript/api/onenote/onenote.page): [copyToSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosection-member(1)),
   [copyToSectionAndSetClassNotebookPageSource](/javascript/api/onenote/onenote.page#onenote-onenote-page-copytosectionandsetclassnotebookpagesource-member(1)), [parentSection](/javascript/api/onenote/onenote.page#onenote-onenote-page-parentsection-member)
 
-  - OneNote.SectionCollection: [getItem](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-items-member)
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection):
+  [getItem](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-items-member)
 
-  - OneNote.SectionGroup: [addSection](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-addsection-member(1))
+  - [OneNote.SectionGroup](/javascript/api/onenote/onenote.sectiongroup): [addSection](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-addsection-member(1))
 
 isPreview: false
 isDeprecated: false

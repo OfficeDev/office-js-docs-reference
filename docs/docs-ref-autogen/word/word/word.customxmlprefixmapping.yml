@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlPrefixMappingCollection: [getItem](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-getitem-member(1)),
-  [items](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-items-member)
+  - [Word.CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection): [Word.CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection):
+  [getItem](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-getitem-member(1)), [items](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-items-member)
 
 isPreview: false
 isDeprecated: false

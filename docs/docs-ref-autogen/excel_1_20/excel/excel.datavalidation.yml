@@ -16,9 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
+  - [Excel.Range](/javascript/api/excel/excel.range): [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
 
-  - Excel.RangeAreas: [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
 
 isPreview: false
 isDeprecated: false

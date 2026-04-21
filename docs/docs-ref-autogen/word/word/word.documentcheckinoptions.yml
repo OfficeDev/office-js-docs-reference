@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [checkIn](/javascript/api/word/word.document#word-word-document-checkin-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [checkIn](/javascript/api/word/word.document#word-word-document-checkin-member(1))
 
 isPreview: true
 isDeprecated: false

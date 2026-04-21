@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableRow: [toJSON](/javascript/api/word/word.tablerow#word-word-tablerow-tojson-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [toJSON](/javascript/api/word/word.tablerow#word-word-tablerow-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

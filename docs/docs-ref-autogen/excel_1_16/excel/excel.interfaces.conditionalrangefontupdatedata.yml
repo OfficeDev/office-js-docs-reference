@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeFont: [set](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-set-member(1))
+  - [Excel.ConditionalRangeFont](/javascript/api/excel/excel.conditionalrangefont): [Excel.ConditionalRangeFont](/javascript/api/excel/excel.conditionalrangefont):
+  [set](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-set-member(1))
 
 isPreview: false
 isDeprecated: false

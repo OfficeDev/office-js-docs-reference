@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlValidationError: [load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1))
+  - [Word.CustomXmlValidationError](/javascript/api/word/word.customxmlvalidationerror): [Word.CustomXmlValidationError](/javascript/api/word/word.customxmlvalidationerror):
+  [load](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-load-member(1))
 
 isPreview: true
 isDeprecated: false

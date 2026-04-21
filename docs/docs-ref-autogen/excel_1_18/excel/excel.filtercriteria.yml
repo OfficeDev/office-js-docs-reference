@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AutoFilter: [apply](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-apply-member(1)),
+  - [Excel.AutoFilter](/javascript/api/excel/excel.autofilter): [apply](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-apply-member(1)),
   [criteria](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-criteria-member)
 
-  - Excel.Filter: [apply](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1)),
+  - [Excel.Filter](/javascript/api/excel/excel.filter): [apply](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1)),
   [criteria](/javascript/api/excel/excel.filter#excel-excel-filter-criteria-member)
 
 isPreview: false

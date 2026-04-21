@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [set](/javascript/api/excel/excel.range#excel-excel-range-set-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [set](/javascript/api/excel/excel.range#excel-excel-range-set-member(1))
 
 isPreview: false
 isDeprecated: false

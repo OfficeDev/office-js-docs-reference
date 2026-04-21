@@ -33,7 +33,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [location](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-location-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [location](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-location-member)
 
 isPreview: false
 isDeprecated: false

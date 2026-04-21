@@ -15,13 +15,15 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Application: [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
+  - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
 
-  - PowerPoint.Presentation: [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
 
-  - PowerPoint.Slide: [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
+  - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
 
-  - PowerPoint.SlideCollection: [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
 
   #### Examples
 

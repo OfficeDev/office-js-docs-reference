@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideLayoutCollection: [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection):
+  [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

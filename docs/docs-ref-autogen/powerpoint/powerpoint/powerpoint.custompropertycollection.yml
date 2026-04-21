@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.DocumentProperties: [customProperties](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-customproperties-member)
+  - [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties): [PowerPoint.DocumentProperties](/javascript/api/powerpoint/powerpoint.documentproperties):
+  [customProperties](/javascript/api/powerpoint/powerpoint.documentproperties#powerpoint-powerpoint-documentproperties-customproperties-member)
 
 isPreview: false
 isDeprecated: false

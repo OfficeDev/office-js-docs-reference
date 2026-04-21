@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ThreeDimensionalFormat: [toJSON](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-tojson-member(1))
+  - [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat): [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat):
+  [toJSON](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

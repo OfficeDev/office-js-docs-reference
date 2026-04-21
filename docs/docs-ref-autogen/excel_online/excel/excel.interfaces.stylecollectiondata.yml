@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.StyleCollection: [toJSON](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-tojson-member(1))
+  - [Excel.StyleCollection](/javascript/api/excel/excel.stylecollection): [toJSON](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

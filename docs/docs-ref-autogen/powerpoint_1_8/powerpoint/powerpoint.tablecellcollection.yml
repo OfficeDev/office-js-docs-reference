@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Table: [getMergedAreas](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getmergedareas-member(1))
+  - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [getMergedAreas](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getmergedareas-member(1))
 
 isPreview: false
 isDeprecated: false

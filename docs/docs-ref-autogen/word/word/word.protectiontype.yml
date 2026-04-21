@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [protect](/javascript/api/word/word.document#word-word-document-protect-member(1)),
+  - [Word.Document](/javascript/api/word/word.document): [protect](/javascript/api/word/word.document#word-word-document-protect-member(1)),
   [protectionType](/javascript/api/word/word.document#word-word-document-protectiontype-member)
 
 isPreview: false

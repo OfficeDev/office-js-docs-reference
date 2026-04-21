@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataBarConditionalFormat: [set](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-set-member(1))
+  - [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat): [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat):
+  [set](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

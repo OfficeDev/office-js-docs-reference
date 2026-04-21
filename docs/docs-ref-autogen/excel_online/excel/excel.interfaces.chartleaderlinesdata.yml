@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLeaderLines: [toJSON](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-tojson-member(1))
+  - [Excel.ChartLeaderLines](/javascript/api/excel/excel.chartleaderlines): [toJSON](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [changeRuleToTopBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletotopbottom-member(1))
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [changeRuleToTopBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletotopbottom-member(1))
 
-  - Excel.TopBottomConditionalFormat: [rule](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-rule-member)
+  - [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat): [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat):
+  [rule](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-rule-member)
 
 isPreview: false
 isDeprecated: false

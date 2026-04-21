@@ -35,14 +35,14 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentRead: [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)),
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)),
   [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))
 
-  - Office.Contact: [phoneNumbers](/javascript/api/outlook/office.contact#outlook-office-contact-phonenumbers-member)
+  - [Office.Contact](/javascript/api/outlook/office.contact): [phoneNumbers](/javascript/api/outlook/office.contact#outlook-office-contact-phonenumbers-member)
 
-  - Office.Entities: [phoneNumbers](/javascript/api/outlook/office.entities#outlook-office-entities-phonenumbers-member)
+  - [Office.Entities](/javascript/api/outlook/office.entities): [phoneNumbers](/javascript/api/outlook/office.entities#outlook-office-entities-phonenumbers-member)
 
-  - Office.MessageRead: [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1)),
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1)),
   [getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#outlook-office-messageread-getfilteredentitiesbyname-member(1))
 
   #### Examples

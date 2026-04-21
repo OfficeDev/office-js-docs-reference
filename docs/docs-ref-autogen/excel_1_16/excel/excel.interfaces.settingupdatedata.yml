@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Setting: [set](/javascript/api/excel/excel.setting#excel-excel-setting-set-member(1))
+  - [Excel.Setting](/javascript/api/excel/excel.setting): [set](/javascript/api/excel/excel.setting#excel-excel-setting-set-member(1))
 
 isPreview: false
 isDeprecated: false

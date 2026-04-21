@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotLayout: [subtotalLocation](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-subtotallocation-member)
+  - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [subtotalLocation](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-subtotallocation-member)
 
 isPreview: false
 isDeprecated: false

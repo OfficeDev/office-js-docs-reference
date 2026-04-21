@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomProperty: [set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(1))
+  - [Excel.CustomProperty](/javascript/api/excel/excel.customproperty): [set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false

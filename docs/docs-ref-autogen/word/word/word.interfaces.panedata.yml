@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Pane: [toJSON](/javascript/api/word/word.pane#word-word-pane-tojson-member(1))
+  - [Word.Pane](/javascript/api/word/word.pane): [toJSON](/javascript/api/word/word.pane#word-word-pane-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

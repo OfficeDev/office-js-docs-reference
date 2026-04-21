@@ -31,9 +31,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.Document: [settings](/javascript/api/office/office.document#office-office-document-settings-member)
+  - [Office.Document](/javascript/api/office/office.document): [settings](/javascript/api/office/office.document#office-office-document-settings-member)
 
-  - Office.SettingsChangedEventArgs: [settings](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-settings-member)
+  - [Office.SettingsChangedEventArgs](/javascript/api/office/office.settingschangedeventargs): [Office.SettingsChangedEventArgs](/javascript/api/office/office.settingschangedeventargs):
+  [settings](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-settings-member)
 
 isPreview: false
 isDeprecated: false

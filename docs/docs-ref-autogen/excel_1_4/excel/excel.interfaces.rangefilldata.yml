@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeFill: [toJSON](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-tojson-member(1))
+  - [Excel.RangeFill](/javascript/api/excel/excel.rangefill): [toJSON](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

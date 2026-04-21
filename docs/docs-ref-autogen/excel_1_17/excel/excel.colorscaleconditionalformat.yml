@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [colorScale](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscale-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [colorScale](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscale-member),
   [colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscaleornullobject-member)
 
 isPreview: false

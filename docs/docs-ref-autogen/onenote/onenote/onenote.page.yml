@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [getActivePage](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepage-member(1)),
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [getActivePage](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepage-member(1)),
   [getActivePageOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivepageornull-member(1)), [navigateToPage](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopage-member(1)), [navigateToPageWithClientUrl](/javascript/api/onenote/onenote.application#onenote-onenote-application-navigatetopagewithclienturl-member(1))
 
-  - OneNote.InkAnalysis: [page](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-page-member)
+  - [OneNote.InkAnalysis](/javascript/api/onenote/onenote.inkanalysis): [page](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-page-member)
 
-  - OneNote.PageCollection: [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)),
+  - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)),
   [getItemAt](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-items-member)
 
-  - OneNote.PageContent: [parentPage](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-parentpage-member)
+  - [OneNote.PageContent](/javascript/api/onenote/onenote.pagecontent): [parentPage](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-parentpage-member)
 
-  - OneNote.Section: [addPage](/javascript/api/onenote/onenote.section#onenote-onenote-section-addpage-member(1))
+  - [OneNote.Section](/javascript/api/onenote/onenote.section): [addPage](/javascript/api/onenote/onenote.section#onenote-onenote-section-addpage-member(1))
 
 isPreview: false
 isDeprecated: false

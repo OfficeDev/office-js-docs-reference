@@ -16,7 +16,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.RequestContext: [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
+  - [Word.RequestContext](/javascript/api/word/word.requestcontext): [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
 
   #### Examples
 

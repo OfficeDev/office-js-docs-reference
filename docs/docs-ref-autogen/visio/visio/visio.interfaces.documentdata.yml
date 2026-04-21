@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [toJSON](/javascript/api/visio/visio.document#visio-visio-document-tojson-member(1))
+  - [Visio.Document](/javascript/api/visio/visio.document): [toJSON](/javascript/api/visio/visio.document#visio-visio-document-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

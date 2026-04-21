@@ -43,15 +43,18 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [recurrence](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-recurrence-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [recurrence](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-recurrence-member)
 
-  - Office.AppointmentRead: [recurrence](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-recurrence-member)
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [recurrence](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-recurrence-member)
 
-  - Office.LoadedMessageRead: [recurrence](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-recurrence-member)
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [recurrence](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-recurrence-member)
 
-  - Office.MessageRead: [recurrence](/javascript/api/outlook/office.messageread#outlook-office-messageread-recurrence-member)
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [recurrence](/javascript/api/outlook/office.messageread#outlook-office-messageread-recurrence-member)
 
-  - Office.RecurrenceChangedEventArgs: [recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#outlook-office-recurrencechangedeventargs-recurrence-member)
+  - [Office.RecurrenceChangedEventArgs](/javascript/api/outlook/office.recurrencechangedeventargs): [Office.RecurrenceChangedEventArgs](/javascript/api/outlook/office.recurrencechangedeventargs):
+  [recurrence](/javascript/api/outlook/office.recurrencechangedeventargs#outlook-office-recurrencechangedeventargs-recurrence-member)
 
 isPreview: false
 isDeprecated: false

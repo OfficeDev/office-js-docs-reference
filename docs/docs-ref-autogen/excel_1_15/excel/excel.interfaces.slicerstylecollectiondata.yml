@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerStyleCollection: [toJSON](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-tojson-member(1))
+  - [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection): [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection):
+  [toJSON](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

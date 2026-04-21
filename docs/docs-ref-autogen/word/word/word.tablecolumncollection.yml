@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Range: [tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)
+  - [Word.Range](/javascript/api/word/word.range): [tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)
 
-  - Word.Table: [columns](/javascript/api/word/word.table#word-word-table-columns-member)
+  - [Word.Table](/javascript/api/word/word.table): [columns](/javascript/api/word/word.table#word-word-table-columns-member)
 
 isPreview: false
 isDeprecated: false

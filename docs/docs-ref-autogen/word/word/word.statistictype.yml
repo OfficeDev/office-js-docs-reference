@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [computeStatistics](/javascript/api/word/word.document#word-word-document-computestatistics-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [computeStatistics](/javascript/api/word/word.document#word-word-document-computestatistics-member(1))
 
 isPreview: false
 isDeprecated: false

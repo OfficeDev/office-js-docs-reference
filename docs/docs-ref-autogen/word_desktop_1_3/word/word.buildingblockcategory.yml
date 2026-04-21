@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlock: [category](/javascript/api/word/word.buildingblock#word-word-buildingblock-category-member)
+  - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [category](/javascript/api/word/word.buildingblock#word-word-buildingblock-category-member)
 
-  - Word.BuildingBlockCategoryCollection: [getItemAt](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-getitemat-member(1))
+  - [Word.BuildingBlockCategoryCollection](/javascript/api/word/word.buildingblockcategorycollection): [Word.BuildingBlockCategoryCollection](/javascript/api/word/word.buildingblockcategorycollection):
+  [getItemAt](/javascript/api/word/word.buildingblockcategorycollection#word-word-buildingblockcategorycollection-getitemat-member(1))
 
 isPreview: false
 isDeprecated: false

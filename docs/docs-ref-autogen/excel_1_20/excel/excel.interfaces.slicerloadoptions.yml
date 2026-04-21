@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Slicer: [load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1))
+  - [Excel.Slicer](/javascript/api/excel/excel.slicer): [load](/javascript/api/excel/excel.slicer#excel-excel-slicer-load-member(1))
 
 isPreview: false
 isDeprecated: false

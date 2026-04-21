@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.GroupShapeCollection: [toJSON](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-tojson-member(1))
+  - [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection): [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection):
+  [toJSON](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

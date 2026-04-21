@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentTaskCollection: [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(1))
+  - [Excel.DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection): [Excel.DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection):
+  [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [moveEnd](/javascript/api/word/word.selection#word-word-selection-moveend-member(1)),
+  - [Word.Selection](/javascript/api/word/word.selection): [moveEnd](/javascript/api/word/word.selection#word-word-selection-moveend-member(1)),
   [moveStart](/javascript/api/word/word.selection#word-word-selection-movestart-member(1))
 
 isPreview: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TagCollection: [toJSON](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-tojson-member(1))
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection):
+  [toJSON](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.InlinePicture: [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
 
 isPreview: false
 isDeprecated: false

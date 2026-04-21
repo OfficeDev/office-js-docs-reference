@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthorCollection: [toJSON](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-tojson-member(1))
+  - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [toJSON](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomXmlPart: [toJSON](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-tojson-member(1))
+  - [PowerPoint.CustomXmlPart](/javascript/api/powerpoint/powerpoint.customxmlpart): [PowerPoint.CustomXmlPart](/javascript/api/powerpoint/powerpoint.customxmlpart):
+  [toJSON](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

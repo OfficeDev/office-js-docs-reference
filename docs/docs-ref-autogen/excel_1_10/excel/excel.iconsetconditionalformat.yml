@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [iconSet](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconset-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [iconSet](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconset-member),
   [iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconsetornullobject-member)
 
 isPreview: false

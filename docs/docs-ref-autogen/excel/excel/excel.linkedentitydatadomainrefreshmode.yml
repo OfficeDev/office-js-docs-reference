@@ -17,12 +17,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityDataDomain: [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member),
-  [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
+  - [Excel.LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain): [Excel.LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain):
+  [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member), [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
 
-  - Excel.LinkedEntityDataDomainCreateOptions: [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)
+  - [Excel.LinkedEntityDataDomainCreateOptions](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions): [Excel.LinkedEntityDataDomainCreateOptions](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions):
+  [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)
 
-  - Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs: [refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-refreshmode-member)
+  - [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs): [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs):
+  [refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-refreshmode-member)
 
 isPreview: false
 isDeprecated: false

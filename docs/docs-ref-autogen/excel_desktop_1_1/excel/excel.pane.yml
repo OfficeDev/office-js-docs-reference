@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PaneCollection: [getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1)),
+  - [Excel.PaneCollection](/javascript/api/excel/excel.panecollection): [getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1)),
   [items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)
 
-  - Excel.Window: [activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)
+  - [Excel.Window](/javascript/api/excel/excel.window): [activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)
 
 isPreview: false
 isDeprecated: false

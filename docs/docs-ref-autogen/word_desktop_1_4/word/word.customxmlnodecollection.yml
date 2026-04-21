@@ -15,10 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlNode: [attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member),
+  - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [attributes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-attributes-member),
   [childNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-childnodes-member), [selectNodes](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-selectnodes-member(1))
 
-  - Word.CustomXmlPart: [selectNodes](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectnodes-member(1))
+  - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [selectNodes](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-selectnodes-member(1))
 
 isPreview: false
 isDeprecated: false

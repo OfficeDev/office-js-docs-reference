@@ -24,7 +24,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Field: [load](/javascript/api/word/word.field#word-word-field-load-member(1))
+  - [Word.Field](/javascript/api/word/word.field): [load](/javascript/api/word/word.field#word-word-field-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onShapeMouseLeave](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseleave-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onShapeMouseLeave](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseleave-member)
 
   #### Examples
 

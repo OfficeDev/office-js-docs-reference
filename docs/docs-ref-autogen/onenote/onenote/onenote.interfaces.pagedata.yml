@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Page: [toJSON](/javascript/api/onenote/onenote.page#onenote-onenote-page-tojson-member(1))
+  - [OneNote.Page](/javascript/api/onenote/onenote.page): [toJSON](/javascript/api/onenote/onenote.page#onenote-onenote-page-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

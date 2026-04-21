@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLegendEntryCollection: [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
+  - [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection): [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection):
+  [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

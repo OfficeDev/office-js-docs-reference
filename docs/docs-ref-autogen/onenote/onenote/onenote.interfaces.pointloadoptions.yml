@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Point: [load](/javascript/api/onenote/onenote.point#onenote-onenote-point-load-member(1))
+  - [OneNote.Point](/javascript/api/onenote/onenote.point): [load](/javascript/api/onenote/onenote.point#onenote-onenote-point-load-member(1))
 
 isPreview: false
 isDeprecated: false

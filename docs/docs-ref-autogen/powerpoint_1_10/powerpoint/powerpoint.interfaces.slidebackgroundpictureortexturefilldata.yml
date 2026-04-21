@@ -11,7 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideBackgroundPictureOrTextureFill: [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-tojson-member(1))
+  - [PowerPoint.SlideBackgroundPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill): [PowerPoint.SlideBackgroundPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill):
+  [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

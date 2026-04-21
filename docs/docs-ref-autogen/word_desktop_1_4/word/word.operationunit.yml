@@ -13,22 +13,27 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)),
+  - [Word.Selection](/javascript/api/word/word.selection): [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)),
   [extend](/javascript/api/word/word.selection#word-word-selection-extend-member(1))
 
-  - Word.SelectionDeleteOptions: [unit](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-unit-member)
+  - [Word.SelectionDeleteOptions](/javascript/api/word/word.selectiondeleteoptions): [Word.SelectionDeleteOptions](/javascript/api/word/word.selectiondeleteoptions):
+  [unit](/javascript/api/word/word.selectiondeleteoptions#word-word-selectiondeleteoptions-unit-member)
 
-  - Word.SelectionMoveLeftRightOptions: [unit](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-unit-member)
+  - [Word.SelectionMoveLeftRightOptions](/javascript/api/word/word.selectionmoveleftrightoptions): [Word.SelectionMoveLeftRightOptions](/javascript/api/word/word.selectionmoveleftrightoptions):
+  [unit](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-unit-member)
 
-  - Word.SelectionMoveOptions: [unit](/javascript/api/word/word.selectionmoveoptions#word-word-selectionmoveoptions-unit-member)
+  - [Word.SelectionMoveOptions](/javascript/api/word/word.selectionmoveoptions): [unit](/javascript/api/word/word.selectionmoveoptions#word-word-selectionmoveoptions-unit-member)
 
-  - Word.SelectionMoveStartEndOptions: [unit](/javascript/api/word/word.selectionmovestartendoptions#word-word-selectionmovestartendoptions-unit-member)
+  - [Word.SelectionMoveStartEndOptions](/javascript/api/word/word.selectionmovestartendoptions): [Word.SelectionMoveStartEndOptions](/javascript/api/word/word.selectionmovestartendoptions):
+  [unit](/javascript/api/word/word.selectionmovestartendoptions#word-word-selectionmovestartendoptions-unit-member)
 
-  - Word.SelectionMoveUpDownOptions: [unit](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-unit-member)
+  - [Word.SelectionMoveUpDownOptions](/javascript/api/word/word.selectionmoveupdownoptions): [Word.SelectionMoveUpDownOptions](/javascript/api/word/word.selectionmoveupdownoptions):
+  [unit](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-unit-member)
 
-  - Word.SelectionNextOptions: [unit](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-unit-member)
+  - [Word.SelectionNextOptions](/javascript/api/word/word.selectionnextoptions): [unit](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-unit-member)
 
-  - Word.SelectionPreviousOptions: [unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)
+  - [Word.SelectionPreviousOptions](/javascript/api/word/word.selectionpreviousoptions): [Word.SelectionPreviousOptions](/javascript/api/word/word.selectionpreviousoptions):
+  [unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)
 
   #### Examples
 

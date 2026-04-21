@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.OleFormat: [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
+  - [Word.OleFormat](/javascript/api/word/word.oleformat): [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

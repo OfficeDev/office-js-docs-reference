@@ -8,33 +8,45 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisLineCollection: [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
+  - [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection): [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection):
+  [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
 
-  - OneNote.InkAnalysisParagraphCollection: [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1))
+  - [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection): [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection):
+  [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1))
 
-  - OneNote.InkAnalysisWordCollection: [load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(1))
+  - [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection): [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection):
+  [load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(1))
 
-  - OneNote.InkStrokeCollection: [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+  - [OneNote.InkStrokeCollection](/javascript/api/onenote/onenote.inkstrokecollection): [OneNote.InkStrokeCollection](/javascript/api/onenote/onenote.inkstrokecollection):
+  [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
 
-  - OneNote.InkWordCollection: [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
+  - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection):
+  [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
 
-  - OneNote.NotebookCollection: [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
+  - [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection): [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection):
+  [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
 
-  - OneNote.PageCollection: [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1))
+  - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1))
 
-  - OneNote.PageContentCollection: [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+  - [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection): [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection):
+  [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
 
-  - OneNote.ParagraphCollection: [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection):
+  [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
 
-  - OneNote.PointCollection: [load](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-load-member(1))
+  - [OneNote.PointCollection](/javascript/api/onenote/onenote.pointcollection): [load](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-load-member(1))
 
-  - OneNote.SectionCollection: [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection):
+  [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
 
-  - OneNote.SectionGroupCollection: [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+  - [OneNote.SectionGroupCollection](/javascript/api/onenote/onenote.sectiongroupcollection): [OneNote.SectionGroupCollection](/javascript/api/onenote/onenote.sectiongroupcollection):
+  [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
 
-  - OneNote.TableCellCollection: [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection):
+  [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
 
-  - OneNote.TableRowCollection: [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
+  - [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection): [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection):
+  [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

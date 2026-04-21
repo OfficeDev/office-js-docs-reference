@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Application: [bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)
+  - [Word.Application](/javascript/api/word/word.application): [bibliography](/javascript/api/word/word.application#word-word-application-bibliography-member)
 
-  - Word.Document: [bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)
+  - [Word.Document](/javascript/api/word/word.document): [bibliography](/javascript/api/word/word.document#word-word-document-bibliography-member)
 
 isPreview: false
 isDeprecated: false

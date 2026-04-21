@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Visio.ShapeDataItemCollection: [getItem](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-getitem-member(1)),
-  [items](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-items-member)
+  - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection):
+  [getItem](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-getitem-member(1)), [items](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-items-member)
 
 isPreview: false
 isDeprecated: false

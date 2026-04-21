@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Window: [largeScroll](/javascript/api/word/word.window#word-word-window-largescroll-member(1)),
+  - [Word.Window](/javascript/api/word/word.window): [largeScroll](/javascript/api/word/word.window#word-word-window-largescroll-member(1)),
   [smallScroll](/javascript/api/word/word.window#word-word-window-smallscroll-member(1))
 
 isPreview: false

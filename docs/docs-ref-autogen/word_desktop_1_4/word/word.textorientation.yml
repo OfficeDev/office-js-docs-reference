@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Selection: [orientation](/javascript/api/word/word.selection#word-word-selection-orientation-member)
+  - [Word.Selection](/javascript/api/word/word.selection): [orientation](/javascript/api/word/word.selection#word-word-selection-orientation-member)
 
 isPreview: false
 isDeprecated: false

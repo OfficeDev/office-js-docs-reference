@@ -12,12 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BindingCollection: [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1)),
+  - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1)),
   [addFromNamedItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromnameditem-member(1)), [addFromSelection](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromselection-member(1)), [getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
 
-  - Excel.BindingDataChangedEventArgs: [binding](/javascript/api/excel/excel.bindingdatachangedeventargs#excel-excel-bindingdatachangedeventargs-binding-member)
+  - [Excel.BindingDataChangedEventArgs](/javascript/api/excel/excel.bindingdatachangedeventargs): [Excel.BindingDataChangedEventArgs](/javascript/api/excel/excel.bindingdatachangedeventargs):
+  [binding](/javascript/api/excel/excel.bindingdatachangedeventargs#excel-excel-bindingdatachangedeventargs-binding-member)
 
-  - Excel.BindingSelectionChangedEventArgs: [binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-binding-member)
+  - [Excel.BindingSelectionChangedEventArgs](/javascript/api/excel/excel.bindingselectionchangedeventargs): [Excel.BindingSelectionChangedEventArgs](/javascript/api/excel/excel.bindingselectionchangedeventargs):
+  [binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-binding-member)
 
 isPreview: false
 isDeprecated: false

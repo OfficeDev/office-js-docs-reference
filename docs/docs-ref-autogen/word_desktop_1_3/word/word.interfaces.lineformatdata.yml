@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.LineFormat: [toJSON](/javascript/api/word/word.lineformat#word-word-lineformat-tojson-member(1))
+  - [Word.LineFormat](/javascript/api/word/word.lineformat): [toJSON](/javascript/api/word/word.lineformat#word-word-lineformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

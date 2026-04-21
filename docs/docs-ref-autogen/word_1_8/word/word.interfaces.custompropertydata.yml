@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomProperty: [toJSON](/javascript/api/word/word.customproperty#word-word-customproperty-tojson-member(1))
+  - [Word.CustomProperty](/javascript/api/word/word.customproperty): [toJSON](/javascript/api/word/word.customproperty#word-word-customproperty-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.List: [toJSON](/javascript/api/word/word.list#word-word-list-tojson-member(1))
+  - [Word.List](/javascript/api/word/word.list): [toJSON](/javascript/api/word/word.list#word-word-list-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

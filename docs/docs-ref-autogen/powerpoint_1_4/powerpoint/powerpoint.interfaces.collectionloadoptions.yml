@@ -8,15 +8,20 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeCollection: [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
+  - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection):
+  [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
 
-  - PowerPoint.SlideCollection: [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection):
+  [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
 
-  - PowerPoint.SlideLayoutCollection: [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection):
+  [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
 
-  - PowerPoint.SlideMasterCollection: [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
+  - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection):
+  [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
 
-  - PowerPoint.TagCollection: [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection):
+  [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

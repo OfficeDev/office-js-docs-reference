@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShapeGroup: [load](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-load-member(1))
+  - [Excel.ShapeGroup](/javascript/api/excel/excel.shapegroup): [load](/javascript/api/excel/excel.shapegroup#excel-excel-shapegroup-load-member(1))
 
 isPreview: false
 isDeprecated: false

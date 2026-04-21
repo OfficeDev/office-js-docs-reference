@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Chart: [title](/javascript/api/excel/excel.chart#excel-excel-chart-title-member)
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [title](/javascript/api/excel/excel.chart#excel-excel-chart-title-member)
 
 isPreview: false
 isDeprecated: false

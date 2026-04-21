@@ -13,8 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPointsCollection: [getItemAt](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-getitemat-member(1)),
-  [items](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-items-member)
+  - [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection): [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection):
+  [getItemAt](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-items-member)
 
   #### Examples
 

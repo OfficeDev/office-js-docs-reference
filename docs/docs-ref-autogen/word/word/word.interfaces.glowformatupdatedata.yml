@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.GlowFormat: [set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(1))
+  - [Word.GlowFormat](/javascript/api/word/word.glowformat): [set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

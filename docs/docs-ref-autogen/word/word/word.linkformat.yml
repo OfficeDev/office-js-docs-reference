@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Field: [linkFormat](/javascript/api/word/word.field#word-word-field-linkformat-member)
+  - [Word.Field](/javascript/api/word/word.field): [linkFormat](/javascript/api/word/word.field#word-word-field-linkformat-member)
 
 isPreview: false
 isDeprecated: false

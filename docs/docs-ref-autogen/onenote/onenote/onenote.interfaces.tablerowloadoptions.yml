@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.TableRow: [load](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-load-member(1))
+  - [OneNote.TableRow](/javascript/api/onenote/onenote.tablerow): [load](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-load-member(1))
 
 isPreview: false
 isDeprecated: false

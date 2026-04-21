@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeAreas: [set](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-set-member(1))
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [set](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getDependents](/javascript/api/excel/excel.range#excel-excel-range-getdependents-member(1)),
+  - [Excel.Range](/javascript/api/excel/excel.range): [getDependents](/javascript/api/excel/excel.range#excel-excel-range-getdependents-member(1)),
   [getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)), [getDirectPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getdirectprecedents-member(1)), [getPrecedents](/javascript/api/excel/excel.range#excel-excel-range-getprecedents-member(1))
 
 isPreview: false

@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.RepeatingSectionItemCollection: [getItemAt](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-getitemat-member(1))
+  - [Word.RepeatingSectionItemCollection](/javascript/api/word/word.repeatingsectionitemcollection): [Word.RepeatingSectionItemCollection](/javascript/api/word/word.repeatingsectionitemcollection):
+  [getItemAt](/javascript/api/word/word.repeatingsectionitemcollection#word-word-repeatingsectionitemcollection-getitemat-member(1))
 
 isPreview: false
 isDeprecated: false

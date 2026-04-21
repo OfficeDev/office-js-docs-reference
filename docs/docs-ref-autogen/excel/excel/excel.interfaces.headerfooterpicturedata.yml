@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.HeaderFooterPicture: [toJSON](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-tojson-member(1))
+  - [Excel.HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture): [Excel.HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture):
+  [toJSON](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

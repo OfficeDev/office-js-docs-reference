@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Comment: [set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(1))
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(1))
 
 isPreview: false
 isDeprecated: false

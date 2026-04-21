@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisWordCollection: [toJSON](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-tojson-member(1))
+  - [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection): [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection):
+  [toJSON](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.PageSetup: [textColumns](/javascript/api/word/word.pagesetup#word-word-pagesetup-textcolumns-member)
+  - [Word.PageSetup](/javascript/api/word/word.pagesetup): [textColumns](/javascript/api/word/word.pagesetup#word-word-pagesetup-textcolumns-member)
 
 isPreview: false
 isDeprecated: false

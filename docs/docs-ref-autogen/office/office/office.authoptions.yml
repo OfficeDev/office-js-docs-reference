@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Auth: [getAccessToken](/javascript/api/office/office.auth#office-office-auth-getaccesstoken-member(1)),
+  - [Office.Auth](/javascript/api/office/office.auth): [getAccessToken](/javascript/api/office/office.auth#office-office-auth-getaccesstoken-member(1)),
   [getAccessTokenAsync](/javascript/api/office/office.auth#office-office-auth-getaccesstokenasync-member(1))
 
 isPreview: false

@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SettingCollection: [add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1)),
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [add](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-items-member)
 
 isPreview: false

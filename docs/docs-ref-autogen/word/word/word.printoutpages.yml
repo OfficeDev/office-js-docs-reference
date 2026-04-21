@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentPrintOutOptions: [pageType](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-pagetype-member)
+  - [Word.DocumentPrintOutOptions](/javascript/api/word/word.documentprintoutoptions): [Word.DocumentPrintOutOptions](/javascript/api/word/word.documentprintoutoptions):
+  [pageType](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-pagetype-member)
 
 isPreview: false
 isDeprecated: false

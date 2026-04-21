@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShapeFill: [toJSON](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-tojson-member(1))
+  - [Excel.ShapeFill](/javascript/api/excel/excel.shapefill): [toJSON](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

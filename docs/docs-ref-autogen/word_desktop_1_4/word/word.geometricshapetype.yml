@@ -15,13 +15,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.Paragraph: [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))
 
-  - Word.Range: [insertGeometricShape](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [insertGeometricShape](/javascript/api/word/word.range#word-word-range-insertgeometricshape-member(1))
 
-  - Word.Shape: [geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)
+  - [Word.Shape](/javascript/api/word/word.shape): [geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)
 
-  - Word.ShapeCollection: [getByGeometricTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))
+  - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [getByGeometricTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))
 
   #### Examples
 

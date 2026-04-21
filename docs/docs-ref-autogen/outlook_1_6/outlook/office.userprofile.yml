@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Mailbox: [userProfile](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-userprofile-member)
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [userProfile](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-userprofile-member)
 
 isPreview: false
 isDeprecated: false

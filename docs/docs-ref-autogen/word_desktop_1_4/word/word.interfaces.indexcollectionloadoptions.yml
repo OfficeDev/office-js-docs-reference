@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.IndexCollection: [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
+  - [Word.IndexCollection](/javascript/api/word/word.indexcollection): [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.RevisionCollection: [items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
+  - [Word.RevisionCollection](/javascript/api/word/word.revisioncollection): [items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
 
 isPreview: false
 isDeprecated: false

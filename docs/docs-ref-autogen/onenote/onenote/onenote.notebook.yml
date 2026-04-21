@@ -12,16 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [getActiveNotebook](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivenotebook-member(1)),
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [getActiveNotebook](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivenotebook-member(1)),
   [getActiveNotebookOrNull](/javascript/api/onenote/onenote.application#onenote-onenote-application-getactivenotebookornull-member(1))
 
-  - OneNote.NotebookCollection: [getItem](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-items-member)
+  - [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection): [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection):
+  [getItem](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-items-member)
 
-  - OneNote.Section: [copyToNotebook](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytonotebook-member(1)),
+  - [OneNote.Section](/javascript/api/onenote/onenote.section): [copyToNotebook](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytonotebook-member(1)),
   [notebook](/javascript/api/onenote/onenote.section#onenote-onenote-section-notebook-member)
 
-  - OneNote.SectionGroup: [notebook](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-notebook-member)
+  - [OneNote.SectionGroup](/javascript/api/onenote/onenote.sectiongroup): [notebook](/javascript/api/onenote/onenote.sectiongroup#onenote-onenote-sectiongroup-notebook-member)
 
 isPreview: false
 isDeprecated: false

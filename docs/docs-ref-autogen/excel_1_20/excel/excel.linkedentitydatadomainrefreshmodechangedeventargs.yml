@@ -17,7 +17,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedEntityDataDomainCollection: [onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshmodechanged-member)
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection):
+  [onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshmodechanged-member)
 
 isPreview: false
 isDeprecated: false

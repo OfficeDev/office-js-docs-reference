@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerItem: [set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(1))
+  - [Excel.SlicerItem](/javascript/api/excel/excel.sliceritem): [set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(1))
 
 isPreview: false
 isDeprecated: false

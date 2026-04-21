@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions: [columns](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-columns-member)
+  - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions):
+  [columns](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-columns-member)
 
   #### Examples
 

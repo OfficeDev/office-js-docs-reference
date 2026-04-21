@@ -14,11 +14,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FilterPivotHierarchy: [fields](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-fields-member)
+  - [Excel.FilterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy): [Excel.FilterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy):
+  [fields](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-fields-member)
 
-  - Excel.PivotHierarchy: [fields](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-fields-member)
+  - [Excel.PivotHierarchy](/javascript/api/excel/excel.pivothierarchy): [fields](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-fields-member)
 
-  - Excel.RowColumnPivotHierarchy: [fields](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-fields-member)
+  - [Excel.RowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy): [Excel.RowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy):
+  [fields](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-fields-member)
 
 isPreview: false
 isDeprecated: false

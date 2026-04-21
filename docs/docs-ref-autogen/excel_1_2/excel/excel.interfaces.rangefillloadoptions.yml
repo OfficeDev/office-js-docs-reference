@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RangeFill: [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
+  - [Excel.RangeFill](/javascript/api/excel/excel.rangefill): [load](/javascript/api/excel/excel.rangefill#excel-excel-rangefill-load-member(1))
 
 isPreview: false
 isDeprecated: false

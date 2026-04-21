@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentTask: [load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
+  - [Excel.DocumentTask](/javascript/api/excel/excel.documenttask): [load](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-load-member(1))
 
 isPreview: true
 isDeprecated: false

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendlineCollection: [toJSON](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-tojson-member(1))
+  - [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection): [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection):
+  [toJSON](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

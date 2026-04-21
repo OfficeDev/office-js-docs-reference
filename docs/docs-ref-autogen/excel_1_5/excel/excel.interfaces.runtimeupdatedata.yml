@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Runtime: [set](/javascript/api/excel/excel.runtime#excel-excel-runtime-set-member(1))
+  - [Excel.Runtime](/javascript/api/excel/excel.runtime): [set](/javascript/api/excel/excel.runtime#excel-excel-runtime-set-member(1))
 
 isPreview: false
 isDeprecated: false

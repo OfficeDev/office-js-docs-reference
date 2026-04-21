@@ -12,13 +12,13 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Paragraph: [parentTableCell](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecell-member),
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [parentTableCell](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecell-member),
   [parentTableCellOrNull](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-parenttablecellornull-member)
 
-  - OneNote.Table: [getCell](/javascript/api/onenote/onenote.table#onenote-onenote-table-getcell-member(1))
+  - [OneNote.Table](/javascript/api/onenote/onenote.table): [getCell](/javascript/api/onenote/onenote.table#onenote-onenote-table-getcell-member(1))
 
-  - OneNote.TableCellCollection: [getItem](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-items-member)
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection):
+  [getItem](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-items-member)
 
 isPreview: false
 isDeprecated: false

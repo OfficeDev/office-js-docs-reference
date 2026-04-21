@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableCollection: [toJSON](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-tojson-member(1))
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [toJSON](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,26 +12,27 @@ remarks: >-
   #### Used by
 
 
-  - Word.Application: [language](/javascript/api/word/word.application#word-word-application-language-member)
+  - [Word.Application](/javascript/api/word/word.application): [language](/javascript/api/word/word.application#word-word-application-language-member)
 
-  - Word.DatePickerContentControl: [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
 
-  - Word.Index: [indexLanguage](/javascript/api/word/word.index#word-word-index-indexlanguage-member)
+  - [Word.Index](/javascript/api/word/word.index): [indexLanguage](/javascript/api/word/word.index#word-word-index-indexlanguage-member)
 
-  - Word.IndexAddOptions: [indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)
+  - [Word.IndexAddOptions](/javascript/api/word/word.indexaddoptions): [indexLanguage](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-indexlanguage-member)
 
-  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
+  - [Word.Range](/javascript/api/word/word.range): [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
 
-  - Word.Selection: [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member),
+  - [Word.Selection](/javascript/api/word/word.selection): [languageId](/javascript/api/word/word.selection#word-word-selection-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.selection#word-word-selection-languageidfareast-member), [languageIdOther](/javascript/api/word/word.selection#word-word-selection-languageidother-member)
 
-  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
+  - [Word.Style](/javascript/api/word/word.style): [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
-  - Word.TableSortOptions: [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
+  - [Word.TableSortOptions](/javascript/api/word/word.tablesortoptions): [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
 
-  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
+  - [Word.Template](/javascript/api/word/word.template): [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false

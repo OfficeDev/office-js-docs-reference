@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlSchemaCollection: [toJSON](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-tojson-member(1))
+  - [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection): [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection):
+  [toJSON](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

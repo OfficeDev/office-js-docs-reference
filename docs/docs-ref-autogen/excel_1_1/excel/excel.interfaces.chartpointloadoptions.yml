@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPoint: [load](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-load-member(1))
+  - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [load](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-load-member(1))
 
 isPreview: false
 isDeprecated: false

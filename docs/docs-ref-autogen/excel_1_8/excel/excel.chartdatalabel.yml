@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPoint: [dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
+  - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
 
   #### Examples
 

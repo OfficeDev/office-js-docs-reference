@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomProperty: [set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(1))
+  - [Word.CustomProperty](/javascript/api/word/word.customproperty): [set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false

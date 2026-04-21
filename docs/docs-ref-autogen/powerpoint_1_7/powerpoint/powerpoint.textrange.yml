@@ -15,10 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1)),
-  [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1)), [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
 
-  - PowerPoint.TextFrame: [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+  - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
 
   #### Examples
 

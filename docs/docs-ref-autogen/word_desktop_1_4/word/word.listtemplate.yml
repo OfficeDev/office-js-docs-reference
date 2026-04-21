@@ -13,12 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListFormat: [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1)),
+  - [Word.ListFormat](/javascript/api/word/word.listformat): [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1)),
   [canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1)), [listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
 
-  - Word.ListTemplateCollection: [items](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-items-member)
+  - [Word.ListTemplateCollection](/javascript/api/word/word.listtemplatecollection): [Word.ListTemplateCollection](/javascript/api/word/word.listtemplatecollection):
+  [items](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-items-member)
 
-  - Word.Style: [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1)),
+  - [Word.Style](/javascript/api/word/word.style): [linkToListTemplate](/javascript/api/word/word.style#word-word-style-linktolisttemplate-member(1)),
   [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
 
   #### Examples

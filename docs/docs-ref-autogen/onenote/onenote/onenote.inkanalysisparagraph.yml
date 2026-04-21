@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisLine: [paragraph](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-paragraph-member)
+  - [OneNote.InkAnalysisLine](/javascript/api/onenote/onenote.inkanalysisline): [paragraph](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-paragraph-member)
 
-  - OneNote.InkAnalysisParagraphCollection: [getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
+  - [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection): [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection):
+  [getItem](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-items-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableColumn: [preferredWidthType](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-preferredwidthtype-member)
+  - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [preferredWidthType](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-preferredwidthtype-member)
 
 isPreview: false
 isDeprecated: false

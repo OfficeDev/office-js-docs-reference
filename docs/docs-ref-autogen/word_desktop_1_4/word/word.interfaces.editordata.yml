@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Editor: [toJSON](/javascript/api/word/word.editor#word-word-editor-tojson-member(1))
+  - [Word.Editor](/javascript/api/word/word.editor): [toJSON](/javascript/api/word/word.editor#word-word-editor-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

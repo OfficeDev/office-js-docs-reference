@@ -14,8 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SlicerStyleCollection: [add](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-add-member(1)),
-  [getDefault](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getdefault-member(1)), [getItem](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-items-member), [setDefault](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-setdefault-member(1))
+  - [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection): [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection):
+  [add](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-add-member(1)), [getDefault](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getdefault-member(1)), [getItem](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-items-member), [setDefault](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-setdefault-member(1))
 
 isPreview: false
 isDeprecated: false

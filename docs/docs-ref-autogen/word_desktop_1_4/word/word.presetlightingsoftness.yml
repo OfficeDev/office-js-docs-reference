@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ThreeDimensionalFormat: [presetLightingSoftness](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetlightingsoftness-member)
+  - [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat): [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat):
+  [presetLightingSoftness](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetlightingsoftness-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.CommentCollection: [getItem](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-getitem-member(1)),
+  - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [getItem](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-getitem-member(1)),
   [items](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-items-member)
 
 isPreview: false

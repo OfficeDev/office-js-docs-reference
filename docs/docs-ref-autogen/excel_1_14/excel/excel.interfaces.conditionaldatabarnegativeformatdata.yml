@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalDataBarNegativeFormat: [toJSON](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-tojson-member(1))
+  - [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat): [Excel.ConditionalDataBarNegativeFormat](/javascript/api/excel/excel.conditionaldatabarnegativeformat):
+  [toJSON](/javascript/api/excel/excel.conditionaldatabarnegativeformat#excel-excel-conditionaldatabarnegativeformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

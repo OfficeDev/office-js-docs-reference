@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Application: [iterativeCalculation](/javascript/api/excel/excel.application#excel-excel-application-iterativecalculation-member)
+  - [Excel.Application](/javascript/api/excel/excel.application): [iterativeCalculation](/javascript/api/excel/excel.application#excel-excel-application-iterativecalculation-member)
 
 isPreview: false
 isDeprecated: false

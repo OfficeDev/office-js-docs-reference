@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeFont: [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
+  - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
 
 isPreview: false
 isDeprecated: false

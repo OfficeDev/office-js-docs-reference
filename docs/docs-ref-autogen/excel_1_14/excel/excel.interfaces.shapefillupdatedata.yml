@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ShapeFill: [set](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-set-member(1))
+  - [Excel.ShapeFill](/javascript/api/excel/excel.shapefill): [set](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-set-member(1))
 
 isPreview: false
 isDeprecated: false

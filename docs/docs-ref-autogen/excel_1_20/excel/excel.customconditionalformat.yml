@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member),
   [customOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-customornullobject-member)
 
 isPreview: false

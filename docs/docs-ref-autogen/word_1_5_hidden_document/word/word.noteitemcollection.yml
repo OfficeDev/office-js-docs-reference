@@ -15,22 +15,22 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member),
+  - [Word.Body](/javascript/api/word/word.body): [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member),
   [footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)
 
-  - Word.ContentControl: [endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member),
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member),
   [footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)
 
-  - Word.Paragraph: [endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member),
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member),
   [footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)
 
-  - Word.Range: [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member),
+  - [Word.Range](/javascript/api/word/word.range): [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member),
   [footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)
 
-  - Word.Table: [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member),
+  - [Word.Table](/javascript/api/word/word.table): [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member),
   [footnotes](/javascript/api/word/word.table#word-word-table-footnotes-member)
 
-  - Word.TableRow: [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member),
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member),
   [footnotes](/javascript/api/word/word.tablerow#word-word-tablerow-footnotes-member)
 
   #### Examples

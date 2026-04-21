@@ -45,7 +45,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Context: [officeTheme](/javascript/api/office/office.context#office-office-context-officetheme-member)
+  - [Office.Context](/javascript/api/office/office.context): [officeTheme](/javascript/api/office/office.context#office-office-context-officetheme-member)
 
   #### Examples
 

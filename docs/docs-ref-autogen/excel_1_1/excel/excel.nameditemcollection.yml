@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
 
 isPreview: false
 isDeprecated: false

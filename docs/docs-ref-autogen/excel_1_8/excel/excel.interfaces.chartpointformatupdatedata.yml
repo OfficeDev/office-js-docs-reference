@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartPointFormat: [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(1))
+  - [Excel.ChartPointFormat](/javascript/api/excel/excel.chartpointformat): [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

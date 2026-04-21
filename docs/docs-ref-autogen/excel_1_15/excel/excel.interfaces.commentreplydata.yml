@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CommentReply: [toJSON](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-tojson-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [toJSON](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

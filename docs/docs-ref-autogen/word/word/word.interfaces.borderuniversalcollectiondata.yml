@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BorderUniversalCollection: [toJSON](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-tojson-member(1))
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection):
+  [toJSON](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

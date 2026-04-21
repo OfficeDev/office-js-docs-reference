@@ -11,7 +11,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.VisibilityModeChangedMessage: [visibilityMode](/javascript/api/office/office.visibilitymodechangedmessage#office-office-visibilitymodechangedmessage-visibilitymode-member)
+  - [Office.VisibilityModeChangedMessage](/javascript/api/office/office.visibilitymodechangedmessage): [Office.VisibilityModeChangedMessage](/javascript/api/office/office.visibilitymodechangedmessage):
+  [visibilityMode](/javascript/api/office/office.visibilitymodechangedmessage#office-office-visibilitymodechangedmessage-visibilitymode-member)
 
   #### Examples
 

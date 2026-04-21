@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions: [rows](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-rows-member)
+  - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions):
+  [rows](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-rows-member)
 
   #### Examples
 

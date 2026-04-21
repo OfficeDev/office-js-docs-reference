@@ -13,13 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabel: [geometricShapeType](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-geometricshapetype-member)
+  - [Excel.ChartDataLabel](/javascript/api/excel/excel.chartdatalabel): [geometricShapeType](/javascript/api/excel/excel.chartdatalabel#excel-excel-chartdatalabel-geometricshapetype-member)
 
-  - Excel.ChartDataLabels: [geometricShapeType](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-geometricshapetype-member)
+  - [Excel.ChartDataLabels](/javascript/api/excel/excel.chartdatalabels): [geometricShapeType](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-geometricshapetype-member)
 
-  - Excel.Shape: [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)
 
-  - Excel.ShapeCollection: [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
+  - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [addGeometricShape](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addgeometricshape-member(1))
 
   #### Examples
 

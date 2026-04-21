@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Annotation: [critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)
+  - [Word.Annotation](/javascript/api/word/word.annotation): [critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)
 
   #### Examples
 

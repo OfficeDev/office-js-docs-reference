@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotHierarchy: [set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(1))
+  - [Excel.PivotHierarchy](/javascript/api/excel/excel.pivothierarchy): [set](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false

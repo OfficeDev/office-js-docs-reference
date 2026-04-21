@@ -23,9 +23,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.EnhancedLocation: [getAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
+  - [Office.EnhancedLocation](/javascript/api/outlook/office.enhancedlocation): [getAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
 
-  - Office.EnhancedLocationsChangedEventArgs: [enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#outlook-office-enhancedlocationschangedeventargs-enhancedlocations-member)
+  - [Office.EnhancedLocationsChangedEventArgs](/javascript/api/outlook/office.enhancedlocationschangedeventargs): [Office.EnhancedLocationsChangedEventArgs](/javascript/api/outlook/office.enhancedlocationschangedeventargs):
+  [enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#outlook-office-enhancedlocationschangedeventargs-enhancedlocations-member)
 
   #### Examples
 

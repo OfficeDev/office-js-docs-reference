@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Style: [load](/javascript/api/word/word.style#word-word-style-load-member(1))
+  - [Word.Style](/javascript/api/word/word.style): [load](/javascript/api/word/word.style#word-word-style-load-member(1))
 
 isPreview: false
 isDeprecated: false

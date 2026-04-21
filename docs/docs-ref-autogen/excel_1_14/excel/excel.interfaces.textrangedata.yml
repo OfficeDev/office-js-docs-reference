@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextRange: [toJSON](/javascript/api/excel/excel.textrange#excel-excel-textrange-tojson-member(1))
+  - [Excel.TextRange](/javascript/api/excel/excel.textrange): [toJSON](/javascript/api/excel/excel.textrange#excel-excel-textrange-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

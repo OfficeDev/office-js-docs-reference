@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CheckboxContentControl: [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1))
+  - [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol): [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol):
+  [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)
 
   #### Examples
 

@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellValueConditionalFormat: [rule](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-rule-member)
+  - [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat): [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat):
+  [rule](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-rule-member)
 
-  - Excel.ConditionalFormat: [changeRuleToCellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocellvalue-member(1))
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [changeRuleToCellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocellvalue-member(1))
 
 isPreview: false
 isDeprecated: false

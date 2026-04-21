@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.DocumentCreated: [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
 
 isPreview: false
 isDeprecated: false

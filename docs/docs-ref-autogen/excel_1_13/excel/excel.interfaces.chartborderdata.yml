@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartBorder: [toJSON](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-tojson-member(1))
+  - [Excel.ChartBorder](/javascript/api/excel/excel.chartborder): [toJSON](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

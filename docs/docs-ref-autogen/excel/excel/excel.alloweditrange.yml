@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AllowEditRangeCollection: [getItem](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitem-member(1)),
-  [getItemAt](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-items-member)
+  - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection):
+  [getItem](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-items-member)
 
 isPreview: false
 isDeprecated: false

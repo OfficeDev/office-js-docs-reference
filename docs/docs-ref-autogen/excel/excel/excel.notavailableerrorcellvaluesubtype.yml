@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NotAvailableErrorCellValue: [errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)
+  - [Excel.NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue): [Excel.NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue):
+  [errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)
 
 isPreview: true
 isDeprecated: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableAddOptions: [mergedAreas](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-mergedareas-member)
+  - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions):
+  [mergedAreas](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-mergedareas-member)
 
   #### Examples
 

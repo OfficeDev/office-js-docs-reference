@@ -15,9 +15,10 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [showTaskPane](/javascript/api/visio/visio.document#visio-visio-document-showtaskpane-member(1))
+  - [Visio.Document](/javascript/api/visio/visio.document): [showTaskPane](/javascript/api/visio/visio.document#visio-visio-document-showtaskpane-member(1))
 
-  - Visio.TaskPaneStateChangedEventArgs: [paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#visio-visio-taskpanestatechangedeventargs-panetype-member)
+  - [Visio.TaskPaneStateChangedEventArgs](/javascript/api/visio/visio.taskpanestatechangedeventargs): [Visio.TaskPaneStateChangedEventArgs](/javascript/api/visio/visio.taskpanestatechangedeventargs):
+  [paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#visio-visio-taskpanestatechangedeventargs-panetype-member)
 
 isPreview: false
 isDeprecated: false

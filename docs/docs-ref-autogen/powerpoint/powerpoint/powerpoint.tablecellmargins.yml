@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCellProperties: [margins](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-margins-member)
+  - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties):
+  [margins](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-margins-member)
 
 isPreview: false
 isDeprecated: false

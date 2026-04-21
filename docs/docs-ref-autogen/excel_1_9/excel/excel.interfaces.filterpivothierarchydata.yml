@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.FilterPivotHierarchy: [toJSON](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-tojson-member(1))
+  - [Excel.FilterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy): [Excel.FilterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy):
+  [toJSON](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

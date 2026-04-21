@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeFill: [toJSON](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-tojson-member(1))
+  - [PowerPoint.ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill): [toJSON](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

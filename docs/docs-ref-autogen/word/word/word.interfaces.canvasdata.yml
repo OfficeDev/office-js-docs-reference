@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Canvas: [toJSON](/javascript/api/word/word.canvas#word-word-canvas-tojson-member(1))
+  - [Word.Canvas](/javascript/api/word/word.canvas): [toJSON](/javascript/api/word/word.canvas#word-word-canvas-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

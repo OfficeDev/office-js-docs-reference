@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.XmlMapping: [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1))
+  - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [load](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-load-member(1))
 
 isPreview: false
 isDeprecated: false

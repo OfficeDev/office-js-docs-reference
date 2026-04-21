@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisLineCollection: [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
+  - [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection): [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection):
+  [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

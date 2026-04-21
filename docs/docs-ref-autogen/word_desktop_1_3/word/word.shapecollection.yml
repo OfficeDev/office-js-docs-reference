@@ -16,15 +16,15 @@ remarks: >-
   #### Used by
 
 
-  - Word.Body: [shapes](/javascript/api/word/word.body#word-word-body-shapes-member)
+  - [Word.Body](/javascript/api/word/word.body): [shapes](/javascript/api/word/word.body#word-word-body-shapes-member)
 
-  - Word.Canvas: [shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)
+  - [Word.Canvas](/javascript/api/word/word.canvas): [shapes](/javascript/api/word/word.canvas#word-word-canvas-shapes-member)
 
-  - Word.Paragraph: [shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
 
-  - Word.Range: [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
+  - [Word.Range](/javascript/api/word/word.range): [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
 
-  - Word.ShapeGroup: [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member),
+  - [Word.ShapeGroup](/javascript/api/word/word.shapegroup): [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member),
   [ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
 
   #### Examples

@@ -28,11 +28,13 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentsasync-member(1))
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentsasync-member(1))
 
-  - Office.LoadedMessageCompose: [getAttachmentsAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getattachmentsasync-member(1))
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [getAttachmentsAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getattachmentsasync-member(1))
 
-  - Office.MessageCompose: [getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentsasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentsasync-member(1))
 
   #### Examples
 

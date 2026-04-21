@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataLabelAnchor: [toJSON](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-tojson-member(1))
+  - [Excel.ChartDataLabelAnchor](/javascript/api/excel/excel.chartdatalabelanchor): [Excel.ChartDataLabelAnchor](/javascript/api/excel/excel.chartdatalabelanchor):
+  [toJSON](/javascript/api/excel/excel.chartdatalabelanchor#excel-excel-chartdatalabelanchor-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

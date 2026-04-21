@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Line: [beginArrowheadStyle](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadstyle-member),
+  - [Excel.Line](/javascript/api/excel/excel.line): [beginArrowheadStyle](/javascript/api/excel/excel.line#excel-excel-line-beginarrowheadstyle-member),
   [endArrowheadStyle](/javascript/api/excel/excel.line#excel-excel-line-endarrowheadstyle-member)
 
   #### Examples

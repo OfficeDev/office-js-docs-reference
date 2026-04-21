@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Application: [showToolbar](/javascript/api/visio/visio.application#visio-visio-application-showtoolbar-member(1))
+  - [Visio.Application](/javascript/api/visio/visio.application): [showToolbar](/javascript/api/visio/visio.application#visio-visio-application-showtoolbar-member(1))
 
 isPreview: false
 isDeprecated: false

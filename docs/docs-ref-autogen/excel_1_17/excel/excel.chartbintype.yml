@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartBinOptions: [type](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-type-member)
+  - [Excel.ChartBinOptions](/javascript/api/excel/excel.chartbinoptions): [type](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-type-member)
 
 isPreview: false
 isDeprecated: false

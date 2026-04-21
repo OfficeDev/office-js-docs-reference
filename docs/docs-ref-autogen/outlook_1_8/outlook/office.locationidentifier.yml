@@ -23,10 +23,10 @@ remarks: >-
   #### Used by
 
 
-  - Office.EnhancedLocation: [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1)),
+  - [Office.EnhancedLocation](/javascript/api/outlook/office.enhancedlocation): [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1)),
   [removeAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-removeasync-member(1))
 
-  - Office.LocationDetails: [locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)
+  - [Office.LocationDetails](/javascript/api/outlook/office.locationdetails): [locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)
 
   #### Examples
 

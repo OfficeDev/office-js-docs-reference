@@ -15,17 +15,23 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlAddedEventArgs: [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
+  - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs):
+  [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
 
-  - Word.ContentControlDataChangedEventArgs: [source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)
+  - [Word.ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs): [Word.ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs):
+  [source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)
 
-  - Word.ContentControlDeletedEventArgs: [source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)
+  - [Word.ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs): [Word.ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs):
+  [source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)
 
-  - Word.ContentControlEnteredEventArgs: [source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
+  - [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs): [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs):
+  [source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
 
-  - Word.ContentControlExitedEventArgs: [source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
+  - [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs): [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs):
+  [source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
 
-  - Word.ContentControlSelectionChangedEventArgs: [source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
+  - [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs): [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs):
+  [source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
 
   #### Examples
 

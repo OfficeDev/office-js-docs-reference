@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartBinOptions: [toJSON](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-tojson-member(1))
+  - [Excel.ChartBinOptions](/javascript/api/excel/excel.chartbinoptions): [toJSON](/javascript/api/excel/excel.chartbinoptions#excel-excel-chartbinoptions-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

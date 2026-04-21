@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PageLayout: [headersFooters](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-headersfooters-member)
+  - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [headersFooters](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-headersfooters-member)
 
 isPreview: false
 isDeprecated: false

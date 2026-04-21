@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomProperty: [load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
+  - [PowerPoint.CustomProperty](/javascript/api/powerpoint/powerpoint.customproperty): [PowerPoint.CustomProperty](/javascript/api/powerpoint/powerpoint.customproperty):
+  [load](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-load-member(1))
 
 isPreview: false
 isDeprecated: false

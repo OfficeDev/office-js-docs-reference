@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.IconSetConditionalFormat: [set](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-set-member(1))
+  - [Excel.IconSetConditionalFormat](/javascript/api/excel/excel.iconsetconditionalformat): [Excel.IconSetConditionalFormat](/javascript/api/excel/excel.iconsetconditionalformat):
+  [set](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

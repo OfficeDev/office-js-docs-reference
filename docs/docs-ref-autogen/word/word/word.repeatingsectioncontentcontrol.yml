@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [repeatingSectionContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-repeatingsectioncontentcontrol-member)
 
 isPreview: false
 isDeprecated: false

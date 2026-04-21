@@ -13,12 +13,14 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControl: [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member),
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member),
   [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
 
-  - Word.ContentControlCollection: [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection):
+  [getByTypes](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))
 
-  - Word.ContentControlOptions: [types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)
+  - [Word.ContentControlOptions](/javascript/api/word/word.contentcontroloptions): [Word.ContentControlOptions](/javascript/api/word/word.contentcontroloptions):
+  [types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)
 
   #### Examples
 

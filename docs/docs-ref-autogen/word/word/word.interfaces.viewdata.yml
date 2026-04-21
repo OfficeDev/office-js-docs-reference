@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.View: [toJSON](/javascript/api/word/word.view#word-word-view-tojson-member(1))
+  - [Word.View](/javascript/api/word/word.view): [toJSON](/javascript/api/word/word.view#word-word-view-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

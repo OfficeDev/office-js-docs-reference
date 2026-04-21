@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Application: [fontNames](/javascript/api/word/word.application#word-word-application-fontnames-member)
+  - [Word.Application](/javascript/api/word/word.application): [fontNames](/javascript/api/word/word.application#word-word-application-fontnames-member)
 
 isPreview: false
 isDeprecated: false

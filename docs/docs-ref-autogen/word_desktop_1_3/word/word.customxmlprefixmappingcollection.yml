@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlPart: [namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)
+  - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)
 
 isPreview: false
 isDeprecated: false

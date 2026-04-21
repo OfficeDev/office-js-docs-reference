@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeBorder: [set](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-set-member(1))
+  - [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder): [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder):
+  [set](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-set-member(1))
 
 isPreview: false
 isDeprecated: false

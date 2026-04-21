@@ -15,8 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlSchemaCollection: [add](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-add-member(1)),
-  [getItem](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-getitem-member(1)), [items](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-items-member)
+  - [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection): [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection):
+  [add](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-add-member(1)), [getItem](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-getitem-member(1)), [items](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-items-member)
 
 isPreview: false
 isDeprecated: false

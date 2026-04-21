@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CritiqueAnnotation: [toJSON](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-tojson-member(1))
+  - [Word.CritiqueAnnotation](/javascript/api/word/word.critiqueannotation): [toJSON](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

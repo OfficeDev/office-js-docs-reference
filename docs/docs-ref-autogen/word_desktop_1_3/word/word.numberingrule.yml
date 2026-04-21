@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.LineNumbering: [restartMode](/javascript/api/word/word.linenumbering#word-word-linenumbering-restartmode-member)
+  - [Word.LineNumbering](/javascript/api/word/word.linenumbering): [restartMode](/javascript/api/word/word.linenumbering#word-word-linenumbering-restartmode-member)
 
 isPreview: false
 isDeprecated: false

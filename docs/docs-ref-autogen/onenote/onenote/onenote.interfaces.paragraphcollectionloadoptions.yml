@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.ParagraphCollection: [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection):
+  [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

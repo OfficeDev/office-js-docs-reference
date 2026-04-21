@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.QueryCollection: [getItem](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-getitem-member(1)),
+  - [Excel.QueryCollection](/javascript/api/excel/excel.querycollection): [getItem](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-getitem-member(1)),
   [items](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-items-member)
 
 isPreview: false

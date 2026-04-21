@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.SlideLayoutBackground: [toJSON](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-tojson-member(1))
+  - [PowerPoint.SlideLayoutBackground](/javascript/api/powerpoint/powerpoint.slidelayoutbackground): [PowerPoint.SlideLayoutBackground](/javascript/api/powerpoint/powerpoint.slidelayoutbackground):
+  [toJSON](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

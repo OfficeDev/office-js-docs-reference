@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [getTable](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettable-member(1))
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getTable](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettable-member(1))
 
   #### Examples
 

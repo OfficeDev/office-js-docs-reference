@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Application: [windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)
+  - [Excel.Application](/javascript/api/excel/excel.application): [windows](/javascript/api/excel/excel.application#excel-excel-application-windows-member)
 
 isPreview: false
 isDeprecated: false

@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.SelectionConvertToTableOptions: [autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-autofitbehavior-member)
+  - [Word.SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions): [Word.SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions):
+  [autoFitBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-autofitbehavior-member)
 
-  - Word.Table: [autoFitBehavior](/javascript/api/word/word.table#word-word-table-autofitbehavior-member(1))
+  - [Word.Table](/javascript/api/word/word.table): [autoFitBehavior](/javascript/api/word/word.table#word-word-table-autofitbehavior-member(1))
 
 isPreview: false
 isDeprecated: false

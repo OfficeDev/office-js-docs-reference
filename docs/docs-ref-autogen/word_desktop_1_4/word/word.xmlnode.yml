@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
 
-  - Word.XmlNodeCollection: [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1)),
+  - [Word.XmlNodeCollection](/javascript/api/word/word.xmlnodecollection): [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1)),
   [items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
 
 isPreview: false

@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Presentation: [getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
+  [getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
 
   #### Examples
 

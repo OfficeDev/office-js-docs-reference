@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Binding: [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)
 
   #### Examples
 

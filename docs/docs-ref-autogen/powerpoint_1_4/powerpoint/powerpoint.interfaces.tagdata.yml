@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Tag: [toJSON](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-tojson-member(1))
+  - [PowerPoint.Tag](/javascript/api/powerpoint/powerpoint.tag): [toJSON](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

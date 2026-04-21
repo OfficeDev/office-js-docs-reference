@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TextColumn: [load](/javascript/api/word/word.textcolumn#word-word-textcolumn-load-member(1))
+  - [Word.TextColumn](/javascript/api/word/word.textcolumn): [load](/javascript/api/word/word.textcolumn#word-word-textcolumn-load-member(1))
 
 isPreview: false
 isDeprecated: false

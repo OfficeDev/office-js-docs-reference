@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Reviewer: [set](/javascript/api/word/word.reviewer#word-word-reviewer-set-member(1))
+  - [Word.Reviewer](/javascript/api/word/word.reviewer): [set](/javascript/api/word/word.reviewer#word-word-reviewer-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Comment: [set](/javascript/api/word/word.comment#word-word-comment-set-member(1))
+  - [Word.Comment](/javascript/api/word/word.comment): [set](/javascript/api/word/word.comment#word-word-comment-set-member(1))
 
 isPreview: false
 isDeprecated: false

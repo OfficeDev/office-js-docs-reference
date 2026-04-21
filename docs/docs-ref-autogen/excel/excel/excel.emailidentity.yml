@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Comment: [assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))
 
-  - Excel.CommentReply: [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))
 
-  - Excel.DocumentTask: [assign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1)),
+  - [Excel.DocumentTask](/javascript/api/excel/excel.documenttask): [assign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1)),
   [assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member), [completedBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completedby-member), [createdBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createdby-member), [unassign](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))
 
-  - Excel.DocumentTaskChange: [assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member),
+  - [Excel.DocumentTaskChange](/javascript/api/excel/excel.documenttaskchange): [assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member),
   [changedBy](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-changedby-member)
 
 isPreview: true

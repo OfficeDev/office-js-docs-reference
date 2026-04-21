@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalPresetCriteriaRule: [criterion](/javascript/api/excel/excel.conditionalpresetcriteriarule#excel-excel-conditionalpresetcriteriarule-criterion-member)
+  - [Excel.ConditionalPresetCriteriaRule](/javascript/api/excel/excel.conditionalpresetcriteriarule): [Excel.ConditionalPresetCriteriaRule](/javascript/api/excel/excel.conditionalpresetcriteriarule):
+  [criterion](/javascript/api/excel/excel.conditionalpresetcriteriarule#excel-excel-conditionalpresetcriteriarule-criterion-member)
 
   #### Examples
 

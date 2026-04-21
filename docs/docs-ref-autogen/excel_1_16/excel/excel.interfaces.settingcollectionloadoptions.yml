@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SettingCollection: [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

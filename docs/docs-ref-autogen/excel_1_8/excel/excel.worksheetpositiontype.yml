@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
 
   #### Examples
 

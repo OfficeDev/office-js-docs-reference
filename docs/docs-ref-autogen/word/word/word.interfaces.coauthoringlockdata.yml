@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CoauthoringLock: [toJSON](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-tojson-member(1))
+  - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [toJSON](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

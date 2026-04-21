@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.ParagraphCollection: [toJSON](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-tojson-member(1))
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection):
+  [toJSON](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

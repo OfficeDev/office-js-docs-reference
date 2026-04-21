@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TrackedChange: [load](/javascript/api/word/word.trackedchange#word-word-trackedchange-load-member(1))
+  - [Word.TrackedChange](/javascript/api/word/word.trackedchange): [load](/javascript/api/word/word.trackedchange#word-word-trackedchange-load-member(1))
 
 isPreview: false
 isDeprecated: false

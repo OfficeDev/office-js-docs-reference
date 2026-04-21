@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.NoteItem: [type](/javascript/api/word/word.noteitem#word-word-noteitem-type-member)
+  - [Word.NoteItem](/javascript/api/word/word.noteitem): [type](/javascript/api/word/word.noteitem#word-word-noteitem-type-member)
 
   #### Examples
 

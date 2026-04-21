@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.DatePickerContentControl: [toJSON](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-tojson-member(1))
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [toJSON](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

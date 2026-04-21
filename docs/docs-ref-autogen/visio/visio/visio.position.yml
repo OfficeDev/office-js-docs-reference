@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.PageView: [getPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-getposition-member(1)),
+  - [Visio.PageView](/javascript/api/visio/visio.pageview): [getPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-getposition-member(1)),
   [setPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-setposition-member(1))
 
 isPreview: false

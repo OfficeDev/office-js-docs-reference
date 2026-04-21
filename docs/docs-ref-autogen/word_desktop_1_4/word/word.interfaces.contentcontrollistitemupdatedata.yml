@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.ContentControlListItem: [set](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-set-member(1))
+  - [Word.ContentControlListItem](/javascript/api/word/word.contentcontrollistitem): [Word.ContentControlListItem](/javascript/api/word/word.contentcontrollistitem):
+  [set](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-set-member(1))
 
 isPreview: false
 isDeprecated: false

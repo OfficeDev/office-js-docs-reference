@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Query: [toJSON](/javascript/api/excel/excel.query#excel-excel-query-tojson-member(1))
+  - [Excel.Query](/javascript/api/excel/excel.query): [toJSON](/javascript/api/excel/excel.query#excel-excel-query-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

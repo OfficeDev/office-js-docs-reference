@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartLegend: [set](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-set-member(1))
+  - [Excel.ChartLegend](/javascript/api/excel/excel.chartlegend): [set](/javascript/api/excel/excel.chartlegend#excel-excel-chartlegend-set-member(1))
 
 isPreview: false
 isDeprecated: false

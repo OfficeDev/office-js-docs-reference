@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.View: [fieldShading](/javascript/api/word/word.view#word-word-view-fieldshading-member)
+  - [Word.View](/javascript/api/word/word.view): [fieldShading](/javascript/api/word/word.view#word-word-view-fieldshading-member)
 
 isPreview: false
 isDeprecated: false

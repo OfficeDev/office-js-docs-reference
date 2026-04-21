@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListTemplate: [toJSON](/javascript/api/word/word.listtemplate#word-word-listtemplate-tojson-member(1))
+  - [Word.ListTemplate](/javascript/api/word/word.listtemplate): [toJSON](/javascript/api/word/word.listtemplate#word-word-listtemplate-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

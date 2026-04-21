@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BorderUniversalCollection: [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection):
+  [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

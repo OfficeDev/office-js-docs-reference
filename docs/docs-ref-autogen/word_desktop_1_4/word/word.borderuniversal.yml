@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BorderUniversalCollection: [items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection):
+  [items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)
 
 isPreview: false
 isDeprecated: false

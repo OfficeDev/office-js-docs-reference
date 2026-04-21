@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DocumentTaskChangeCollection: [toJSON](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-tojson-member(1))
+  - [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection): [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection):
+  [toJSON](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

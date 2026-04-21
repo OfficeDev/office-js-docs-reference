@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlockCategory: [load](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-load-member(1))
+  - [Word.BuildingBlockCategory](/javascript/api/word/word.buildingblockcategory): [Word.BuildingBlockCategory](/javascript/api/word/word.buildingblockcategory):
+  [load](/javascript/api/word/word.buildingblockcategory#word-word-buildingblockcategory-load-member(1))
 
 isPreview: false
 isDeprecated: false

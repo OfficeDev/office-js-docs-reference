@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Range: [listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)
+  - [Word.Range](/javascript/api/word/word.range): [listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)
 
   #### Examples
 

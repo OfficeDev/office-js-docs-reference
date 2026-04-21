@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [setRowProperties](/javascript/api/excel/excel.range#excel-excel-range-setrowproperties-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [setRowProperties](/javascript/api/excel/excel.range#excel-excel-range-setrowproperties-member(1))
 
 isPreview: false
 isDeprecated: false

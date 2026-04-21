@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableRow: [set](/javascript/api/word/word.tablerow#word-word-tablerow-set-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [set](/javascript/api/word/word.tablerow#word-word-tablerow-set-member(1))
 
 isPreview: false
 isDeprecated: false

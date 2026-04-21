@@ -12,9 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableColumn: [setWidth](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-setwidth-member(1))
+  - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [setWidth](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-setwidth-member(1))
 
-  - Word.TableColumnCollection: [setWidth](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection):
+  [setWidth](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))
 
 isPreview: false
 isDeprecated: false

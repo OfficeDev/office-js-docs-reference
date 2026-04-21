@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.ShapeView: [load](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-load-member(1))
+  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [load](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-load-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCellCollection: [delete](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-delete-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [delete](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-delete-member(1))
 
 isPreview: false
 isDeprecated: false

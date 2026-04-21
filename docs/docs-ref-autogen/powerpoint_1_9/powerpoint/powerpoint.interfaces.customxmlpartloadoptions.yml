@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.CustomXmlPart: [load](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-load-member(1))
+  - [PowerPoint.CustomXmlPart](/javascript/api/powerpoint/powerpoint.customxmlpart): [PowerPoint.CustomXmlPart](/javascript/api/powerpoint/powerpoint.customxmlpart):
+  [load](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-load-member(1))
 
 isPreview: false
 isDeprecated: false

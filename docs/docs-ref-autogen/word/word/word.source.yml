@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.SourceCollection: [add](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1)),
+  - [Word.SourceCollection](/javascript/api/word/word.sourcecollection): [add](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-add-member(1)),
   [getItem](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-getitem-member(1)), [items](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-items-member)
 
 isPreview: false

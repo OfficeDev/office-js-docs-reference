@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.BindingCollection: [toJSON](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-tojson-member(1))
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection):
+  [toJSON](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableStyleSettings: [load](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-load-member(1))
+  - [PowerPoint.TableStyleSettings](/javascript/api/powerpoint/powerpoint.tablestylesettings): [PowerPoint.TableStyleSettings](/javascript/api/powerpoint/powerpoint.tablestylesettings):
+  [load](/javascript/api/powerpoint/powerpoint.tablestylesettings#powerpoint-powerpoint-tablestylesettings-load-member(1))
 
 isPreview: false
 isDeprecated: false

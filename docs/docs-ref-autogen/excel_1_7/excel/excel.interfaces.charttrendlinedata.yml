@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendline: [toJSON](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-tojson-member(1))
+  - [Excel.ChartTrendline](/javascript/api/excel/excel.charttrendline): [toJSON](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

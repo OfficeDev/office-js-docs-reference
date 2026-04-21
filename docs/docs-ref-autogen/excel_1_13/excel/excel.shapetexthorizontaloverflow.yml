@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TextFrame: [horizontalOverflow](/javascript/api/excel/excel.textframe#excel-excel-textframe-horizontaloverflow-member)
+  - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [horizontalOverflow](/javascript/api/excel/excel.textframe#excel-excel-textframe-horizontaloverflow-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Application: [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

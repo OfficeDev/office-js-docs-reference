@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.FillFormat: [set](/javascript/api/word/word.fillformat#word-word-fillformat-set-member(1))
+  - [Word.FillFormat](/javascript/api/word/word.fillformat): [set](/javascript/api/word/word.fillformat#word-word-fillformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

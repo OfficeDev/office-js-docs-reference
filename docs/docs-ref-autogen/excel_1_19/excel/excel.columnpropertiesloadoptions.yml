@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [getColumnProperties](/javascript/api/excel/excel.range#excel-excel-range-getcolumnproperties-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [getColumnProperties](/javascript/api/excel/excel.range#excel-excel-range-getcolumnproperties-member(1))
 
 isPreview: false
 isDeprecated: false

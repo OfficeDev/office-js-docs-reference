@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
 
   #### Examples
 

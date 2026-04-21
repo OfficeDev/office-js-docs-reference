@@ -13,9 +13,9 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
 
-  - PowerPoint.TextRange: [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
+  - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
 
   #### Examples
 

@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.BuildingBlockGalleryContentControl: [toJSON](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-tojson-member(1))
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol):
+  [toJSON](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

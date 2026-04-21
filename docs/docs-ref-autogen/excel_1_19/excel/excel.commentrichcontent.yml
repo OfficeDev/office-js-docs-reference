@@ -15,13 +15,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Comment: [updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
 
-  - Excel.CommentCollection: [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
 
-  - Excel.CommentReply: [updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
 
-  - Excel.CommentReplyCollection: [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection):
+  [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

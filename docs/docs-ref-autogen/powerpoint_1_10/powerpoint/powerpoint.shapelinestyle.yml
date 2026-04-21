@@ -13,7 +13,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.ShapeLineFormat: [style](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-style-member)
+  - [PowerPoint.ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat): [PowerPoint.ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat):
+  [style](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-style-member)
 
   #### Examples
 

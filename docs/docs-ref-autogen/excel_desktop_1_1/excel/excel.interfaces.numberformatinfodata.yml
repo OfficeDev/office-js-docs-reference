@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NumberFormatInfo: [toJSON](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-tojson-member(1))
+  - [Excel.NumberFormatInfo](/javascript/api/excel/excel.numberformatinfo): [toJSON](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

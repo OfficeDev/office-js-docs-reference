@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListLevel: [set](/javascript/api/word/word.listlevel#word-word-listlevel-set-member(1))
+  - [Word.ListLevel](/javascript/api/word/word.listlevel): [set](/javascript/api/word/word.listlevel#word-word-listlevel-set-member(1))
 
 isPreview: false
 isDeprecated: false

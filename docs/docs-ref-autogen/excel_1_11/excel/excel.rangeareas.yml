@@ -17,20 +17,20 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [getRanges](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getranges-member(1))
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [getRanges](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getranges-member(1))
 
-  - Excel.DataValidation: [getInvalidCells](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-getinvalidcells-member(1)),
+  - [Excel.DataValidation](/javascript/api/excel/excel.datavalidation): [getInvalidCells](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-getinvalidcells-member(1)),
   [getInvalidCellsOrNullObject](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-getinvalidcellsornullobject-member(1))
 
-  - Excel.PageLayout: [getPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprintarea-member(1)),
+  - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [getPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprintarea-member(1)),
   [getPrintAreaOrNullObject](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprintareaornullobject-member(1)), [setPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-setprintarea-member(1))
 
-  - Excel.Range: [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1)),
+  - [Excel.Range](/javascript/api/excel/excel.range): [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1)),
   [getSpecialCells](/javascript/api/excel/excel.range#excel-excel-range-getspecialcells-member(1)), [getSpecialCellsOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-getspecialcellsornullobject-member(1))
 
-  - Excel.Workbook: [getSelectedRanges](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedranges-member(1))
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getSelectedRanges](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedranges-member(1))
 
-  - Excel.Worksheet: [findAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findall-member(1)),
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [findAll](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findall-member(1)),
   [findAllOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-findallornullobject-member(1)), [getRanges](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getranges-member(1))
 
 isPreview: false

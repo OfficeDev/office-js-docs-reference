@@ -12,17 +12,17 @@ remarks: >-
   #### Used by
 
 
-  - Word.Index: [tabLeader](/javascript/api/word/word.index#word-word-index-tableader-member)
+  - [Word.Index](/javascript/api/word/word.index): [tabLeader](/javascript/api/word/word.index#word-word-index-tableader-member)
 
-  - Word.TabStop: [leader](/javascript/api/word/word.tabstop#word-word-tabstop-leader-member)
+  - [Word.TabStop](/javascript/api/word/word.tabstop): [leader](/javascript/api/word/word.tabstop#word-word-tabstop-leader-member)
 
-  - Word.TabStopAddOptions: [leader](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-leader-member)
+  - [Word.TabStopAddOptions](/javascript/api/word/word.tabstopaddoptions): [leader](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-leader-member)
 
-  - Word.TableOfAuthorities: [tabLeader](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-tableader-member)
+  - [Word.TableOfAuthorities](/javascript/api/word/word.tableofauthorities): [tabLeader](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-tableader-member)
 
-  - Word.TableOfContents: [tabLeader](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tableader-member)
+  - [Word.TableOfContents](/javascript/api/word/word.tableofcontents): [tabLeader](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-tableader-member)
 
-  - Word.TableOfFigures: [tabLeader](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-tableader-member)
+  - [Word.TableOfFigures](/javascript/api/word/word.tableoffigures): [tabLeader](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-tableader-member)
 
 isPreview: false
 isDeprecated: false

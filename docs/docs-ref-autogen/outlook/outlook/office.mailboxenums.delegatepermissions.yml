@@ -20,7 +20,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.SharedProperties: [delegatePermissions](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-delegatepermissions-member)
+  - [Office.SharedProperties](/javascript/api/outlook/office.sharedproperties): [delegatePermissions](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-delegatepermissions-member)
 
   #### Examples
 

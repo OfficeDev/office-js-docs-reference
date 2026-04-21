@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.TableCellCollection: [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection):
+  [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

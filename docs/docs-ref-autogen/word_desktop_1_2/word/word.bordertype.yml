@@ -13,12 +13,12 @@ remarks: >-
   #### Used by
 
 
-  - Word.Border: [type](/javascript/api/word/word.border#word-word-border-type-member)
+  - [Word.Border](/javascript/api/word/word.border): [type](/javascript/api/word/word.border#word-word-border-type-member)
 
-  - Word.BorderCollection: [insideBorderType](/javascript/api/word/word.bordercollection#word-word-bordercollection-insidebordertype-member),
+  - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [insideBorderType](/javascript/api/word/word.bordercollection#word-word-bordercollection-insidebordertype-member),
   [outsideBorderType](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsidebordertype-member)
 
-  - Word.TableBorder: [type](/javascript/api/word/word.tableborder#word-word-tableborder-type-member)
+  - [Word.TableBorder](/javascript/api/word/word.tableborder): [type](/javascript/api/word/word.tableborder#word-word-tableborder-type-member)
 
   #### Examples
 

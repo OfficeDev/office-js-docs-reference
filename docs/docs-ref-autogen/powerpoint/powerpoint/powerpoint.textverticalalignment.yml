@@ -23,11 +23,12 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableCell: [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-verticalalignment-member)
+  - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-verticalalignment-member)
 
-  - PowerPoint.TableCellProperties: [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-verticalalignment-member)
+  - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties):
+  [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-verticalalignment-member)
 
-  - PowerPoint.TextFrame: [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
+  - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
 
   #### Examples
 

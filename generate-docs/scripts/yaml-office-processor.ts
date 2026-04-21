@@ -552,14 +552,26 @@ function generateUsedBySection(references: UsedByReference[]): string {
 
     // Build inline member list with links
     const memberLinks: string[] = [];
+    let classUrl = '';
     for (const ref of members) {
       const url = convertUidToUrl(ref.uid);
       const memberName = ref.name.substring(className.length + 1); // Remove "ClassName." prefix
       memberLinks.push(`[${memberName}](${url})`);
+
+      // Extract package and build class URL from first member's UID
+      if (!classUrl) {
+        const uidParts = ref.uid.split('!');
+        if (uidParts.length === 2) {
+          const packageName = uidParts[0];
+          const classPathLower = className.toLowerCase();
+          classUrl = `/javascript/api/${packageName}/${classPathLower}`;
+        }
+      }
     }
 
-    // Format as: - ClassName: member1, member2, member3
-    lines.push(`- ${className}: ${memberLinks.join(', ')}`);
+    // Format as: - [ClassName](url): member1, member2, member3
+    const classLink = classUrl ? `[${className}](${classUrl})` : className;
+    lines.push(`- ${classLink}: ${memberLinks.join(', ')}`);
   }
 
   return lines.join('\n');

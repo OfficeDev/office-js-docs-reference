@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorkbookRangeAreas: [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1))
+  - [Excel.WorkbookRangeAreas](/javascript/api/excel/excel.workbookrangeareas): [load](/javascript/api/excel/excel.workbookrangeareas#excel-excel-workbookrangeareas-load-member(1))
 
 isPreview: false
 isDeprecated: false

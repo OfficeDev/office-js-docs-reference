@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Shading: [set](/javascript/api/word/word.shading#word-word-shading-set-member(1))
+  - [Word.Shading](/javascript/api/word/word.shading): [set](/javascript/api/word/word.shading#word-word-shading-set-member(1))
 
 isPreview: false
 isDeprecated: false

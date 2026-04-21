@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AutoFilter: [load](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-load-member(1))
+  - [Excel.AutoFilter](/javascript/api/excel/excel.autofilter): [load](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-load-member(1))
 
 isPreview: false
 isDeprecated: false

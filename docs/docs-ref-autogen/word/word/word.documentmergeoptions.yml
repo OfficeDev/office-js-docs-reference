@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [merge](/javascript/api/word/word.document#word-word-document-merge-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [merge](/javascript/api/word/word.document#word-word-document-merge-member(1))
 
 isPreview: true
 isDeprecated: false

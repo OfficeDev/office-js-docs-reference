@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormat: [topBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-topbottom-member),
+  - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [topBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-topbottom-member),
   [topBottomOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-topbottomornullobject-member)
 
 isPreview: false

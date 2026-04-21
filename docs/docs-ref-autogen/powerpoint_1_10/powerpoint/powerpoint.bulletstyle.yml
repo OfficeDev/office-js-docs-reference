@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.BulletFormat: [style](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-style-member)
+  - [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat): [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat):
+  [style](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-style-member)
 
 isPreview: false
 isDeprecated: false

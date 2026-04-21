@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Window: [load](/javascript/api/excel/excel.window#excel-excel-window-load-member(1))
+  - [Excel.Window](/javascript/api/excel/excel.window): [load](/javascript/api/excel/excel.window#excel-excel-window-load-member(1))
 
 isPreview: false
 isDeprecated: false

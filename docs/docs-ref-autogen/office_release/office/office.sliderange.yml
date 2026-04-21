@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Document: [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(4))
+  - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(4))
 
   #### Examples
 

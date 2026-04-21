@@ -14,10 +14,10 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.InkAnalysisLineCollection: [getItem](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-getitem-member(1)),
-  [getItemAt](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-items-member)
+  - [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection): [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection):
+  [getItem](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-items-member)
 
-  - OneNote.InkAnalysisWord: [line](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-line-member)
+  - [OneNote.InkAnalysisWord](/javascript/api/onenote/onenote.inkanalysisword): [line](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-line-member)
 
 isPreview: false
 isDeprecated: false

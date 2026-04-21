@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Range: [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
 
   #### Examples
 

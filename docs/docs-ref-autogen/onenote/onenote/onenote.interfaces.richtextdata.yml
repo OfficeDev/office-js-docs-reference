@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.RichText: [toJSON](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-tojson-member(1))
+  - [OneNote.RichText](/javascript/api/onenote/onenote.richtext): [toJSON](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

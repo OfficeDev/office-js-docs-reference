@@ -16,8 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.LinkedWorkbookCollection: [getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1)),
-  [getItemOrNullObject](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-items-member)
+  - [Excel.LinkedWorkbookCollection](/javascript/api/excel/excel.linkedworkbookcollection): [Excel.LinkedWorkbookCollection](/javascript/api/excel/excel.linkedworkbookcollection):
+  [getItem](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-items-member)
 
 isPreview: false
 isDeprecated: false

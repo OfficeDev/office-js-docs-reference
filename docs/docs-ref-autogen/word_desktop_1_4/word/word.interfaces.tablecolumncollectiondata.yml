@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableColumnCollection: [toJSON](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-tojson-member(1))
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection):
+  [toJSON](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

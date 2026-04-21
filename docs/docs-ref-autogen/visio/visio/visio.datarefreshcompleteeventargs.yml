@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onDataRefreshComplete](/javascript/api/visio/visio.document#visio-visio-document-ondatarefreshcomplete-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onDataRefreshComplete](/javascript/api/visio/visio.document#visio-visio-document-ondatarefreshcomplete-member)
 
   #### Examples
 

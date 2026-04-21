@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataTable: [set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(1))
+  - [Excel.ChartDataTable](/javascript/api/excel/excel.chartdatatable): [set](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -13,13 +13,13 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Shape: [getParentSlideLayout](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayout-member(1)),
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getParentSlideLayout](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayout-member(1)),
   [getParentSlideLayoutOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayoutornullobject-member(1))
 
-  - PowerPoint.Slide: [layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)
+  - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)
 
-  - PowerPoint.SlideLayoutCollection: [getItem](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitem-member(1)),
-  [getItemAt](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-items-member)
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection):
+  [getItem](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-items-member)
 
   #### Examples
 

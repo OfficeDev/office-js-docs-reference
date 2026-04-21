@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.IconCollections: [fourTrafficLights](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fourtrafficlights-member)
+  - [Excel.IconCollections](/javascript/api/excel/excel.iconcollections): [fourTrafficLights](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fourtrafficlights-member)
 
 isPreview: false
 isDeprecated: false

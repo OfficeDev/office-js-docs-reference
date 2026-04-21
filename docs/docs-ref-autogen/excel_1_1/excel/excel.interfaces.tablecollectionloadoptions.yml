@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TableCollection: [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

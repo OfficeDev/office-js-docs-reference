@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.List: [setLevelBullet](/javascript/api/word/word.list#word-word-list-setlevelbullet-member(1))
+  - [Word.List](/javascript/api/word/word.list): [setLevelBullet](/javascript/api/word/word.list#word-word-list-setlevelbullet-member(1))
 
   #### Examples
 

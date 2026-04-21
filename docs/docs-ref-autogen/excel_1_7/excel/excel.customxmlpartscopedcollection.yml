@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CustomXmlPartCollection: [getByNamespace](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getbynamespace-member(1))
+  - [Excel.CustomXmlPartCollection](/javascript/api/excel/excel.customxmlpartcollection): [Excel.CustomXmlPartCollection](/javascript/api/excel/excel.customxmlpartcollection):
+  [getByNamespace](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-getbynamespace-member(1))
 
 isPreview: false
 isDeprecated: false

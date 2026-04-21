@@ -15,9 +15,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfContents: [additionalHeadingStyles](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-additionalheadingstyles-member)
+  - [Word.TableOfContents](/javascript/api/word/word.tableofcontents): [additionalHeadingStyles](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-additionalheadingstyles-member)
 
-  - Word.TableOfFigures: [additionalHeadingStyles](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-additionalheadingstyles-member)
+  - [Word.TableOfFigures](/javascript/api/word/word.tableoffigures): [additionalHeadingStyles](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-additionalheadingstyles-member)
 
 isPreview: false
 isDeprecated: false

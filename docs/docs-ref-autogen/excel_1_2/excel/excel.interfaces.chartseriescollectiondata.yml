@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartSeriesCollection: [toJSON](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-tojson-member(1))
+  - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection):
+  [toJSON](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

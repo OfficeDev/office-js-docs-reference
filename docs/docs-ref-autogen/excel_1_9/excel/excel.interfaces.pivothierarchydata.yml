@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotHierarchy: [toJSON](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-tojson-member(1))
+  - [Excel.PivotHierarchy](/javascript/api/excel/excel.pivothierarchy): [toJSON](/javascript/api/excel/excel.pivothierarchy#excel-excel-pivothierarchy-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -17,9 +17,10 @@ remarks: >-
   #### Used by
 
 
-  - Excel.BasicCompactLayout: [icon](/javascript/api/excel/excel.basiccompactlayout#excel-excel-basiccompactlayout-icon-member)
+  - [Excel.BasicCompactLayout](/javascript/api/excel/excel.basiccompactlayout): [icon](/javascript/api/excel/excel.basiccompactlayout#excel-excel-basiccompactlayout-icon-member)
 
-  - Excel.EntityCompactLayout: [icon](/javascript/api/excel/excel.entitycompactlayout#excel-excel-entitycompactlayout-icon-member)
+  - [Excel.EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout): [Excel.EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout):
+  [icon](/javascript/api/excel/excel.entitycompactlayout#excel-excel-entitycompactlayout-icon-member)
 
   #### Examples
 

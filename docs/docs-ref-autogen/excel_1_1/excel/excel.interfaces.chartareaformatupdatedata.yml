@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartAreaFormat: [set](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-set-member(1))
+  - [Excel.ChartAreaFormat](/javascript/api/excel/excel.chartareaformat): [set](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

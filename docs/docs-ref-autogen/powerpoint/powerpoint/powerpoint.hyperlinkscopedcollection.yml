@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TextRange: [hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-hyperlinks-member)
+  - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-hyperlinks-member)
 
 isPreview: false
 isDeprecated: false

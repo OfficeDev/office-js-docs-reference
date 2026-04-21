@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.RemoveDuplicatesResult: [load](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-load-member(1))
+  - [Excel.RemoveDuplicatesResult](/javascript/api/excel/excel.removeduplicatesresult): [Excel.RemoveDuplicatesResult](/javascript/api/excel/excel.removeduplicatesresult):
+  [load](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-load-member(1))
 
 isPreview: false
 isDeprecated: false

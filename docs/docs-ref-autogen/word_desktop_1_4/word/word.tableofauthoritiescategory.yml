@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfAuthoritiesCategoryCollection: [getItemAt](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1)),
-  [items](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-items-member)
+  - [Word.TableOfAuthoritiesCategoryCollection](/javascript/api/word/word.tableofauthoritiescategorycollection): [Word.TableOfAuthoritiesCategoryCollection](/javascript/api/word/word.tableofauthoritiescategorycollection):
+  [getItemAt](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-getitemat-member(1)), [items](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-items-member)
 
 isPreview: false
 isDeprecated: false

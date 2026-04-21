@@ -22,7 +22,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.DroppedItems: [files](/javascript/api/outlook/office.droppeditems#outlook-office-droppeditems-files-member)
+  - [Office.DroppedItems](/javascript/api/outlook/office.droppeditems): [files](/javascript/api/outlook/office.droppeditems#outlook-office-droppeditems-files-member)
 
   #### Examples
 

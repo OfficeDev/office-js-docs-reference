@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ColorScaleConditionalFormat: [load](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-load-member(1))
+  - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat):
+  [load](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

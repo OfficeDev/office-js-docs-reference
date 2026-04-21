@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.ShapeView: [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(1))
+  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(1))
 
 isPreview: false
 isDeprecated: false

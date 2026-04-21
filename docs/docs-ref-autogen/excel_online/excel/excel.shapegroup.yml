@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [group](/javascript/api/excel/excel.shape#excel-excel-shape-group-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [group](/javascript/api/excel/excel.shape#excel-excel-shape-group-member)
 
 isPreview: false
 isDeprecated: false

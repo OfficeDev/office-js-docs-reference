@@ -12,8 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TableRowCollection: [deleteRows](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-deleterows-member(1)),
-  [getItemAt](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-items-member)
+  - [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection): [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection):
+  [deleteRows](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-deleterows-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-items-member)
 
 isPreview: false
 isDeprecated: false

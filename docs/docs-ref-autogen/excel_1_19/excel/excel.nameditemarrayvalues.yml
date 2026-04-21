@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NamedItem: [arrayValues](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-arrayvalues-member)
+  - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [arrayValues](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-arrayvalues-member)
 
 isPreview: false
 isDeprecated: false

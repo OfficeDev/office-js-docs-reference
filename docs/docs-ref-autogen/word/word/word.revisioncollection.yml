@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [revisions](/javascript/api/word/word.document#word-word-document-revisions-member)
+  - [Word.Document](/javascript/api/word/word.document): [revisions](/javascript/api/word/word.document#word-word-document-revisions-member)
 
-  - Word.Range: [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
+  - [Word.Range](/javascript/api/word/word.range): [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
 
 isPreview: false
 isDeprecated: false

@@ -14,23 +14,23 @@ remarks: >-
   #### Used by
 
 
-  - Word.ConditionalStyle: [borders](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-borders-member)
+  - [Word.ConditionalStyle](/javascript/api/word/word.conditionalstyle): [borders](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-borders-member)
 
-  - Word.Font: [borders](/javascript/api/word/word.font#word-word-font-borders-member)
+  - [Word.Font](/javascript/api/word/word.font): [borders](/javascript/api/word/word.font#word-word-font-borders-member)
 
-  - Word.Frame: [borders](/javascript/api/word/word.frame#word-word-frame-borders-member)
+  - [Word.Frame](/javascript/api/word/word.frame): [borders](/javascript/api/word/word.frame#word-word-frame-borders-member)
 
-  - Word.Paragraph: [borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [borders](/javascript/api/word/word.paragraph#word-word-paragraph-borders-member)
 
-  - Word.Range: [borders](/javascript/api/word/word.range#word-word-range-borders-member)
+  - [Word.Range](/javascript/api/word/word.range): [borders](/javascript/api/word/word.range#word-word-range-borders-member)
 
-  - Word.Section: [borders](/javascript/api/word/word.section#word-word-section-borders-member)
+  - [Word.Section](/javascript/api/word/word.section): [borders](/javascript/api/word/word.section#word-word-section-borders-member)
 
-  - Word.Selection: [borders](/javascript/api/word/word.selection#word-word-selection-borders-member)
+  - [Word.Selection](/javascript/api/word/word.selection): [borders](/javascript/api/word/word.selection#word-word-selection-borders-member)
 
-  - Word.TableColumn: [borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)
+  - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [borders](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-borders-member)
 
-  - Word.TableStyle: [borders](/javascript/api/word/word.tablestyle#word-word-tablestyle-borders-member)
+  - [Word.TableStyle](/javascript/api/word/word.tablestyle): [borders](/javascript/api/word/word.tablestyle#word-word-tablestyle-borders-member)
 
 isPreview: false
 isDeprecated: false

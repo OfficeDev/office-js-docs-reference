@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetChangedEventArgs: [changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-changedirectionstate-member)
+  - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs):
+  [changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-changedirectionstate-member)
 
 isPreview: false
 isDeprecated: false

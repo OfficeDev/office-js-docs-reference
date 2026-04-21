@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TimelineStyleCollection: [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
+  - [Excel.TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection): [Excel.TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection):
+  [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

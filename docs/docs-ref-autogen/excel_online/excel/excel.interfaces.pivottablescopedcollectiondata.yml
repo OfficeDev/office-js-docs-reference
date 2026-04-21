@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableScopedCollection: [toJSON](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-tojson-member(1))
+  - [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection): [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection):
+  [toJSON](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

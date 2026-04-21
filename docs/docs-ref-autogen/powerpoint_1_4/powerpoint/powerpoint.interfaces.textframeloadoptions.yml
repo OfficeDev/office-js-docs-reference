@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.TextFrame: [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
+  - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [load](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-load-member(1))
 
 isPreview: false
 isDeprecated: false

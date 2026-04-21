@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalFormatCollection: [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
+  - [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection): [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection):
+  [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

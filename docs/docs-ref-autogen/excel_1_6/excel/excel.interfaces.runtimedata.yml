@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Runtime: [toJSON](/javascript/api/excel/excel.runtime#excel-excel-runtime-tojson-member(1))
+  - [Excel.Runtime](/javascript/api/excel/excel.runtime): [toJSON](/javascript/api/excel/excel.runtime#excel-excel-runtime-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

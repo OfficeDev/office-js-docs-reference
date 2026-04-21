@@ -17,7 +17,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.SearchOptions: [load](/javascript/api/word/word.searchoptions#word-word-searchoptions-load-member(1))
+  - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [load](/javascript/api/word/word.searchoptions#word-word-searchoptions-load-member(1))
 
 isPreview: false
 isDeprecated: false

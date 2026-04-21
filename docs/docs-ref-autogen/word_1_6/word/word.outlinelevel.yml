@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ParagraphFormat: [outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)
+  - [Word.ParagraphFormat](/javascript/api/word/word.paragraphformat): [outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)
 
   #### Examples
 

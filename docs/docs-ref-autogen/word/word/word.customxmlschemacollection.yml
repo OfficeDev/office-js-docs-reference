@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.CustomXmlPart: [schemaCollection](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-schemacollection-member)
+  - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [schemaCollection](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-schemacollection-member)
 
 isPreview: false
 isDeprecated: false

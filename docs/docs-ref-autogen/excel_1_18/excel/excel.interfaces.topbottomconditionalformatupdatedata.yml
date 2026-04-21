@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.TopBottomConditionalFormat: [set](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-set-member(1))
+  - [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat): [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat):
+  [set](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-set-member(1))
 
 isPreview: false
 isDeprecated: false

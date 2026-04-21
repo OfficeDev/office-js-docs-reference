@@ -37,11 +37,13 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivitylabel-member)
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [sensitivityLabel](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivitylabel-member)
 
-  - Office.LoadedMessageCompose: [sensitivityLabel](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-sensitivitylabel-member)
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [sensitivityLabel](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-sensitivitylabel-member)
 
-  - Office.MessageCompose: [sensitivityLabel](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sensitivitylabel-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [sensitivityLabel](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-sensitivitylabel-member)
 
 isPreview: false
 isDeprecated: false

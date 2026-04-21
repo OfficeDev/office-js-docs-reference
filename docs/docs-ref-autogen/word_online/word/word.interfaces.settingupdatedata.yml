@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Setting: [set](/javascript/api/word/word.setting#word-word-setting-set-member(1))
+  - [Word.Setting](/javascript/api/word/word.setting): [set](/javascript/api/word/word.setting#word-word-setting-set-member(1))
 
 isPreview: false
 isDeprecated: false

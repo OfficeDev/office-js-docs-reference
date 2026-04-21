@@ -12,12 +12,12 @@ remarks: >-
   #### Used by
 
 
-  - OneNote.Outline: [appendRichText](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendrichtext-member(1))
+  - [OneNote.Outline](/javascript/api/onenote/onenote.outline): [appendRichText](/javascript/api/onenote/onenote.outline#onenote-onenote-outline-appendrichtext-member(1))
 
-  - OneNote.Paragraph: [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)),
+  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)),
   [richText](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-richtext-member)
 
-  - OneNote.TableCell: [appendRichText](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendrichtext-member(1))
+  - [OneNote.TableCell](/javascript/api/onenote/onenote.tablecell): [appendRichText](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-appendrichtext-member(1))
 
 isPreview: false
 isDeprecated: false

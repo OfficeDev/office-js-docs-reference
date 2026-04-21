@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)
 
 isPreview: true
 isDeprecated: false

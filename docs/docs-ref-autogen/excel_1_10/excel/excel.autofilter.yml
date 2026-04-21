@@ -14,9 +14,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Table: [autoFilter](/javascript/api/excel/excel.table#excel-excel-table-autofilter-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [autoFilter](/javascript/api/excel/excel.table#excel-excel-table-autofilter-member)
 
-  - Excel.Worksheet: [autoFilter](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-autofilter-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [autoFilter](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-autofilter-member)
 
 isPreview: false
 isDeprecated: false

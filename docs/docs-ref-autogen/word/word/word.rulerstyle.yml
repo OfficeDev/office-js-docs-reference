@@ -12,15 +12,16 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCellCollection: [setWidth](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setwidth-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [setWidth](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setwidth-member(1))
 
-  - Word.TableColumn: [setWidth](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-setwidth-member(1))
+  - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [setWidth](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-setwidth-member(1))
 
-  - Word.TableColumnCollection: [setWidth](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection):
+  [setWidth](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-setwidth-member(1))
 
-  - Word.TableRow: [setLeftIndent](/javascript/api/word/word.tablerow#word-word-tablerow-setleftindent-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [setLeftIndent](/javascript/api/word/word.tablerow#word-word-tablerow-setleftindent-member(1))
 
-  - Word.TableRowCollection: [setLeftIndent](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setleftindent-member(1))
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [setLeftIndent](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setleftindent-member(1))
 
 isPreview: false
 isDeprecated: false

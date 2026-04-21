@@ -12,10 +12,10 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCell: [column](/javascript/api/word/word.tablecell#word-word-tablecell-column-member)
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [column](/javascript/api/word/word.tablecell#word-word-tablecell-column-member)
 
-  - Word.TableColumnCollection: [add](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1)),
-  [items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection):
+  [add](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-add-member(1)), [items](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-items-member)
 
 isPreview: false
 isDeprecated: false

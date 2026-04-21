@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.NameErrorCellValue: [errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)
+  - [Excel.NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue): [errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)
 
 isPreview: true
 isDeprecated: false

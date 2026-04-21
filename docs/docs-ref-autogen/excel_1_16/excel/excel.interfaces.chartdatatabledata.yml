@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartDataTable: [toJSON](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-tojson-member(1))
+  - [Excel.ChartDataTable](/javascript/api/excel/excel.chartdatatable): [toJSON](/javascript/api/excel/excel.chartdatatable#excel-excel-chartdatatable-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

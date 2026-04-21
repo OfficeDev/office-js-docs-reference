@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataValidationErrorAlert: [style](/javascript/api/excel/excel.datavalidationerroralert#excel-excel-datavalidationerroralert-style-member)
+  - [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert): [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert):
+  [style](/javascript/api/excel/excel.datavalidationerroralert#excel-excel-datavalidationerroralert-style-member)
 
   #### Examples
 

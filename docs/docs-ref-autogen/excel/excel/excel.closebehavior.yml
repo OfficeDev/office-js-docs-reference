@@ -13,7 +13,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Workbook: [close](/javascript/api/excel/excel.workbook#excel-excel-workbook-close-member(1))
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [close](/javascript/api/excel/excel.workbook#excel-excel-workbook-close-member(1))
 
   #### Examples
 

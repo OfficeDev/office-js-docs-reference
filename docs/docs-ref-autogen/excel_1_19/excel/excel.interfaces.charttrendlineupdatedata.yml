@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ChartTrendline: [set](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-set-member(1))
+  - [Excel.ChartTrendline](/javascript/api/excel/excel.charttrendline): [set](/javascript/api/excel/excel.charttrendline#excel-excel-charttrendline-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Image: [load](/javascript/api/excel/excel.image#excel-excel-image-load-member(1))
+  - [Excel.Image](/javascript/api/excel/excel.image): [load](/javascript/api/excel/excel.image#excel-excel-image-load-member(1))
 
 isPreview: false
 isDeprecated: false

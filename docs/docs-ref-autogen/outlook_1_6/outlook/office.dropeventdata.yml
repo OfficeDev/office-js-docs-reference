@@ -22,7 +22,8 @@ remarks: >-
   #### Used by
 
 
-  - Office.DragAndDropEventArgs: [dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-draganddropeventdata-member)
+  - [Office.DragAndDropEventArgs](/javascript/api/outlook/office.draganddropeventargs): [Office.DragAndDropEventArgs](/javascript/api/outlook/office.draganddropeventargs):
+  [dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-draganddropeventdata-member)
 
   #### Examples
 

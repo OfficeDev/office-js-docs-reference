@@ -12,14 +12,14 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataPivotHierarchy: [field](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-field-member)
+  - [Excel.DataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy): [field](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-field-member)
 
-  - Excel.PivotFieldCollection: [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)),
-  [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
+  - [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection): [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection):
+  [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
 
-  - Excel.ShowAsRule: [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
+  - [Excel.ShowAsRule](/javascript/api/excel/excel.showasrule): [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
 
-  - Excel.SlicerCollection: [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
+  - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

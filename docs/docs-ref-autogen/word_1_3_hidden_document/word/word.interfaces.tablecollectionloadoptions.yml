@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableCollection: [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

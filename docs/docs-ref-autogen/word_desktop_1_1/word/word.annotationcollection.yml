@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Paragraph: [getAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [getAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-getannotations-member(1))
 
   #### Examples
 

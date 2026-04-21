@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ConditionalRangeFont: [load](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-load-member(1))
+  - [Excel.ConditionalRangeFont](/javascript/api/excel/excel.conditionalrangefont): [Excel.ConditionalRangeFont](/javascript/api/excel/excel.conditionalrangefont):
+  [load](/javascript/api/excel/excel.conditionalrangefont#excel-excel-conditionalrangefont-load-member(1))
 
 isPreview: false
 isDeprecated: false

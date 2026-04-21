@@ -12,17 +12,18 @@ remarks: >-
   #### Used by
 
 
-  - Word.Application: [language](/javascript/api/word/word.application#word-word-application-language-member)
+  - [Word.Application](/javascript/api/word/word.application): [language](/javascript/api/word/word.application#word-word-application-language-member)
 
-  - Word.DatePickerContentControl: [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol):
+  [dateDisplayLocale](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datedisplaylocale-member)
 
-  - Word.Range: [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
+  - [Word.Range](/javascript/api/word/word.range): [languageId](/javascript/api/word/word.range#word-word-range-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.range#word-word-range-languageidfareast-member), [languageIdOther](/javascript/api/word/word.range#word-word-range-languageidother-member)
 
-  - Word.Style: [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
+  - [Word.Style](/javascript/api/word/word.style): [languageId](/javascript/api/word/word.style#word-word-style-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
 
-  - Word.Template: [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
+  - [Word.Template](/javascript/api/word/word.template): [languageId](/javascript/api/word/word.template#word-word-template-languageid-member),
   [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
 
 isPreview: false

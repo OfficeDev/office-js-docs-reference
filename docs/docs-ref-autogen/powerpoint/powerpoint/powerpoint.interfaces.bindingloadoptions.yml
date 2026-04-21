@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - PowerPoint.Binding: [load](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-load-member(1))
+  - [PowerPoint.Binding](/javascript/api/powerpoint/powerpoint.binding): [load](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-load-member(1))
 
 isPreview: false
 isDeprecated: false

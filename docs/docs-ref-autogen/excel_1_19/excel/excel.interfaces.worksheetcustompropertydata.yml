@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetCustomProperty: [toJSON](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-tojson-member(1))
+  - [Excel.WorksheetCustomProperty](/javascript/api/excel/excel.worksheetcustomproperty): [Excel.WorksheetCustomProperty](/javascript/api/excel/excel.worksheetcustomproperty):
+  [toJSON](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

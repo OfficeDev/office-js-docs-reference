@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Note: [set](/javascript/api/excel/excel.note#excel-excel-note-set-member(1))
+  - [Excel.Note](/javascript/api/excel/excel.note): [set](/javascript/api/excel/excel.note#excel-excel-note-set-member(1))
 
 isPreview: false
 isDeprecated: false

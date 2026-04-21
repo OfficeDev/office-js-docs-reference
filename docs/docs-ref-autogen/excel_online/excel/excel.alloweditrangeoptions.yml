@@ -14,7 +14,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.AllowEditRangeCollection: [add](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-add-member(1))
+  - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection):
+  [add](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-add-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfContents: [set](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-set-member(1))
+  - [Word.TableOfContents](/javascript/api/word/word.tableofcontents): [set](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-set-member(1))
 
 isPreview: false
 isDeprecated: false

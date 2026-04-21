@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.ListLevelCollection: [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
+  - [Word.ListLevelCollection](/javascript/api/word/word.listlevelcollection): [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

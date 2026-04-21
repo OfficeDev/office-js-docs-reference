@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Worksheet: [customProperties](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-customproperties-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [customProperties](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-customproperties-member)
 
 isPreview: false
 isDeprecated: false

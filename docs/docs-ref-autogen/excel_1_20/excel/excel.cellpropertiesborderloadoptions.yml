@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesFormatLoadOptions: [borders](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-borders-member)
+  - [Excel.CellPropertiesFormatLoadOptions](/javascript/api/excel/excel.cellpropertiesformatloadoptions): [Excel.CellPropertiesFormatLoadOptions](/javascript/api/excel/excel.cellpropertiesformatloadoptions):
+  [borders](/javascript/api/excel/excel.cellpropertiesformatloadoptions#excel-excel-cellpropertiesformatloadoptions-borders-member)
 
 isPreview: false
 isDeprecated: false

@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.PivotTableStyle: [set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(1))
+  - [Excel.PivotTableStyle](/javascript/api/excel/excel.pivottablestyle): [set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.WorksheetFormulaChangedEventArgs: [formulaDetails](/javascript/api/excel/excel.worksheetformulachangedeventargs#excel-excel-worksheetformulachangedeventargs-formuladetails-member)
+  - [Excel.WorksheetFormulaChangedEventArgs](/javascript/api/excel/excel.worksheetformulachangedeventargs): [Excel.WorksheetFormulaChangedEventArgs](/javascript/api/excel/excel.worksheetformulachangedeventargs):
+  [formulaDetails](/javascript/api/excel/excel.worksheetformulachangedeventargs#excel-excel-worksheetformulachangedeventargs-formuladetails-member)
 
 isPreview: false
 isDeprecated: false

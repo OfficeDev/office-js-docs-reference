@@ -16,9 +16,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Binding: [getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [getTable](/javascript/api/excel/excel.binding#excel-excel-binding-gettable-member(1))
 
-  - Excel.TableCollection: [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1)),
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1)),
   [getItem](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-items-member)
 
 isPreview: false

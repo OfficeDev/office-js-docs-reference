@@ -8,7 +8,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Note: [toJSON](/javascript/api/excel/excel.note#excel-excel-note-tojson-member(1))
+  - [Excel.Note](/javascript/api/excel/excel.note): [toJSON](/javascript/api/excel/excel.note#excel-excel-note-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

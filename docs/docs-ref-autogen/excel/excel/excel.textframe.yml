@@ -12,7 +12,7 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Shape: [textFrame](/javascript/api/excel/excel.shape#excel-excel-shape-textframe-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [textFrame](/javascript/api/excel/excel.shape#excel-excel-shape-textframe-member)
 
 isPreview: false
 isDeprecated: false

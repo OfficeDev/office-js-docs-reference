@@ -10,7 +10,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.ColorScaleConditionalFormat: [toJSON](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-tojson-member(1))
+  - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat):
+  [toJSON](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

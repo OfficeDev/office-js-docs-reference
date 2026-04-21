@@ -14,7 +14,7 @@ remarks: >-
   #### Used by
 
 
-  - Word.Document: [sendFaxOverInternet](/javascript/api/word/word.document#word-word-document-sendfaxoverinternet-member(1))
+  - [Word.Document](/javascript/api/word/word.document): [sendFaxOverInternet](/javascript/api/word/word.document#word-word-document-sendfaxoverinternet-member(1))
 
 isPreview: true
 isDeprecated: false

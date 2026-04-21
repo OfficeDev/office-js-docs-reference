@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.DataBarConditionalFormat: [load](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-load-member(1))
+  - [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat): [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat):
+  [load](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false

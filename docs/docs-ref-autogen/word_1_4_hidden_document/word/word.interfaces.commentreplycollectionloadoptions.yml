@@ -15,7 +15,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.CommentReplyCollection: [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+  - [Word.CommentReplyCollection](/javascript/api/word/word.commentreplycollection): [Word.CommentReplyCollection](/javascript/api/word/word.commentreplycollection):
+  [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false

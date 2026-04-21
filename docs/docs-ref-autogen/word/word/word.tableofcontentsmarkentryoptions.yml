@@ -15,9 +15,11 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableOfContentsCollection: [markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
+  - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection):
+  [markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
 
-  - Word.TableOfFiguresCollection: [markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
+  - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection):
+  [markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
 
 isPreview: false
 isDeprecated: false

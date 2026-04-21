@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.SpillErrorCellValue: [errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-errorsubtype-member)
+  - [Excel.SpillErrorCellValue](/javascript/api/excel/excel.spillerrorcellvalue): [Excel.SpillErrorCellValue](/javascript/api/excel/excel.spillerrorcellvalue):
+  [errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false

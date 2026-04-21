@@ -12,9 +12,9 @@ remarks: >-
   #### Used by
 
 
-  - Excel.Filter: [applyCustomFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applycustomfilter-member(1))
+  - [Excel.Filter](/javascript/api/excel/excel.filter): [applyCustomFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applycustomfilter-member(1))
 
-  - Excel.FilterCriteria: [operator](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-operator-member)
+  - [Excel.FilterCriteria](/javascript/api/excel/excel.filtercriteria): [operator](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-operator-member)
 
 isPreview: false
 isDeprecated: false

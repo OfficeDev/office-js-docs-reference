@@ -12,7 +12,8 @@ remarks: >-
   #### Used by
 
 
-  - Word.TableConvertToTextOptions: [separator](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-separator-member)
+  - [Word.TableConvertToTextOptions](/javascript/api/word/word.tableconverttotextoptions): [Word.TableConvertToTextOptions](/javascript/api/word/word.tableconverttotextoptions):
+  [separator](/javascript/api/word/word.tableconverttotextoptions#word-word-tableconverttotextoptions-separator-member)
 
 isPreview: false
 isDeprecated: false

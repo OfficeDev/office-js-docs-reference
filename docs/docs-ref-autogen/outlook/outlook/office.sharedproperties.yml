@@ -32,17 +32,20 @@ remarks: >-
   #### Used by
 
 
-  - Office.AppointmentCompose: [getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getsharedpropertiesasync-member(1))
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose):
+  [getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getsharedpropertiesasync-member(1))
 
-  - Office.AppointmentRead: [getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getsharedpropertiesasync-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getsharedpropertiesasync-member(1))
 
-  - Office.LoadedMessageCompose: [getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getsharedpropertiesasync-member(1))
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose):
+  [getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getsharedpropertiesasync-member(1))
 
-  - Office.LoadedMessageRead: [getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getsharedpropertiesasync-member(1))
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread):
+  [getSharedPropertiesAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getsharedpropertiesasync-member(1))
 
-  - Office.MessageCompose: [getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getsharedpropertiesasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getSharedPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getsharedpropertiesasync-member(1))
 
-  - Office.MessageRead: [getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getsharedpropertiesasync-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getSharedPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getsharedpropertiesasync-member(1))
 
   #### Examples
 

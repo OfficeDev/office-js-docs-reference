@@ -10,7 +10,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Comment: [toJSON](/javascript/api/visio/visio.comment#visio-visio-comment-tojson-member(1))
+  - [Visio.Comment](/javascript/api/visio/visio.comment): [toJSON](/javascript/api/visio/visio.comment#visio-visio-comment-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -15,7 +15,7 @@ remarks: >-
   #### Used by
 
 
-  - Visio.Document: [onDocumentLoadComplete](/javascript/api/visio/visio.document#visio-visio-document-ondocumentloadcomplete-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onDocumentLoadComplete](/javascript/api/visio/visio.document#visio-visio-document-ondocumentloadcomplete-member)
 
   #### Examples
 

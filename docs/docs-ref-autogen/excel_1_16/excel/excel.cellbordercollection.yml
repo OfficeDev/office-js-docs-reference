@@ -16,7 +16,8 @@ remarks: >-
   #### Used by
 
 
-  - Excel.CellPropertiesFormat: [borders](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-borders-member)
+  - [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat): [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat):
+  [borders](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-borders-member)
 
 isPreview: false
 isDeprecated: false

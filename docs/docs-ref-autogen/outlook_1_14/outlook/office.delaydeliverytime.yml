@@ -24,7 +24,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.MessageCompose: [delayDeliveryTime](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-delaydeliverytime-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [delayDeliveryTime](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-delaydeliverytime-member)
 
 isPreview: false
 isDeprecated: false

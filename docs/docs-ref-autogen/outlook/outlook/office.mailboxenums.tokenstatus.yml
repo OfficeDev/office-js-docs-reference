@@ -30,7 +30,7 @@ remarks: >-
   #### Used by
 
 
-  - Office.Ews: [getTokenStatusAsync](/javascript/api/outlook/office.ews#outlook-office-ews-gettokenstatusasync-member(1))
+  - [Office.Ews](/javascript/api/outlook/office.ews): [getTokenStatusAsync](/javascript/api/outlook/office.ews#outlook-office-ews-gettokenstatusasync-member(1))
 
   #### Examples
 
