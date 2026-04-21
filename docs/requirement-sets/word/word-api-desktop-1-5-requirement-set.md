@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API desktop-only requirement set 1.5
 description: Details about the WordApiDesktop 1.5 requirement set.
-ms.date: 10/30/2025
+ms.date: 04/21/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
