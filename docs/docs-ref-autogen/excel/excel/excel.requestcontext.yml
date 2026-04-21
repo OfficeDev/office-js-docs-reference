@@ -10,6 +10,7 @@ remarks: |-
 
   #### Used by
 
+  - [Excel](/javascript/api/excel/excel): [run](/javascript/api/excel/excel#excel-excel-run-function(1))
   - [Excel.AllowEditRange](/javascript/api/excel/excel.alloweditrange): [context](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-context-member)
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [context](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-context-member)
   - [Excel.Application](/javascript/api/excel/excel.application): [context](/javascript/api/excel/excel.application#excel-excel-application-context-member)

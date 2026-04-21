@@ -5,6 +5,11 @@ package: excel!
 fullName: Excel.RunOptions
 summary: ''
 remarks: |-
+
+
+  #### Used by
+
+  - [Excel](/javascript/api/excel/excel): [run](/javascript/api/excel/excel#excel-excel-run-function(4))
   #### Examples
 
   ```TypeScript

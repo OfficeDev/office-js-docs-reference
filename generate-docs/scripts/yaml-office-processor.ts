@@ -243,6 +243,8 @@ function analyzeMembers(container: ApiJsonMember | ApiJsonFile, index: UsedByInd
  * - Property types
  * - Method return types
  * - Method parameter types
+ * - Function return types
+ * - Function parameter types
  */
 function analyzeMemberTypeReferences(member: ApiJsonMember, index: UsedByIndex, packageName: string): void {
   if (!member.excerptTokens || !member.canonicalReference) {
@@ -255,9 +257,9 @@ function analyzeMemberTypeReferences(member: ApiJsonMember, index: UsedByIndex, 
     analyzeExcerptTokens(member.excerptTokens, member.canonicalReference, 'property type', index, packageName);
   }
 
-  // For methods: analyze return type and parameters
-  // Handle both interface methods (MethodSignature) and class methods (Method)
-  if (member.kind === 'MethodSignature' || member.kind === 'Method') {
+  // For methods and functions: analyze return type and parameters
+  // Handle interface methods (MethodSignature), class methods (Method), and namespace functions (Function)
+  if (member.kind === 'MethodSignature' || member.kind === 'Method' || member.kind === 'Function') {
     // Return type
     if (member.returnTypeTokenRange) {
       const returnTokens = member.excerptTokens.slice(
@@ -326,6 +328,8 @@ function getMemberType(kindOrUID: string): string {
     return 'property';
   } else if (kindOrUID.includes(':method')) {
     return 'method';
+  } else if (kindOrUID.includes(':function')) {
+    return 'function';
   } else if (kindOrUID.includes(':interface')) {
     return 'interface';
   } else if (kindOrUID.includes(':class')) {
@@ -338,6 +342,8 @@ function getMemberType(kindOrUID: string): string {
     return 'property';
   } else if (kindOrUID === 'MethodSignature') {
     return 'method';
+  } else if (kindOrUID === 'Function') {
+    return 'function';
   }
   return 'member';
 }

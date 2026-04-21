@@ -10,6 +10,7 @@ remarks: |-
 
   #### Used by
 
+  - [Word](/javascript/api/word/word): [run](/javascript/api/word/word#word-word-run-function(1))
   - [Word.Annotation](/javascript/api/word/word.annotation): [context](/javascript/api/word/word.annotation#word-word-annotation-context-member)
   - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [context](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-context-member)
   - [Word.Application](/javascript/api/word/word.application): [context](/javascript/api/word/word.application#word-word-application-context-member)
