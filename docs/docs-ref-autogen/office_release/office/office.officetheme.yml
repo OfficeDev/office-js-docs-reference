@@ -18,6 +18,7 @@ remarks: |-
   #### Used by
 
   - [Office.Context](/javascript/api/office/office.context): [officeTheme](/javascript/api/office/office.context#office-office-context-officetheme-member)
+  - [Office.OfficeThemeChangedEventArgs](/javascript/api/outlook/office.officethemechangedeventargs): [officeTheme](/javascript/api/outlook/office.officethemechangedeventargs#outlook-office-officethemechangedeventargs-officetheme-member)
   #### Examples
 
   ```TypeScript

@@ -26,8 +26,13 @@ remarks: |-
 
   #### Used by
 
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getselecteddataasync-member(1))
+  - [Office.Body](/javascript/api/outlook/office.body): [getAsync](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1)), [getTypeAsync](/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1))
+  - [Office.CoercionTypeOptions](/javascript/api/outlook/office.coerciontypeoptions): [coercionType](/javascript/api/outlook/office.coerciontypeoptions#outlook-office-coerciontypeoptions-coerciontype-member)
+  - [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody): [coercionType](/javascript/api/outlook/office.decryptedmessagebody#outlook-office-decryptedmessagebody-coerciontype-member)
   - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(10))
   - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [coercionType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-coerciontype-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getselecteddataasync-member(1))
   - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [coercionType](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-coerciontype-member)
   - [Office.SetSelectedDataOptions](/javascript/api/office/office.setselecteddataoptions): [coercionType](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-coerciontype-member)
   #### Examples

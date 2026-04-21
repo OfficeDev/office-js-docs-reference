@@ -402,10 +402,14 @@ function injectUsedBySection(
     const isCommonApiRef = ['office', 'office-runtime'].includes(refPackage);
     const isCurrentCommonApi = ['office', 'office-runtime'].includes(currentPackage);
 
-    // Allow cross-product references between Common API and product-specific APIs
-    if (isCommonApiRef || isCurrentCommonApi) {
-      // Check if the reference exists in either the current package or Common API
-      return commonApiUIDs.has(ref.uid) || availableUIDs.has(ref.uid);
+    // Common API files should show references from ALL products
+    if (isCurrentCommonApi) {
+      return true;
+    }
+
+    // Product-specific files should show references from Common API
+    if (isCommonApiRef) {
+      return commonApiUIDs.has(ref.uid);
     }
 
     return false;
