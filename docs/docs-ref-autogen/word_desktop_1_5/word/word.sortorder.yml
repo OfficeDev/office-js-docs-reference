@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.SortOrder
+uid: word!Word.SortOrder:enum
+package: word!
+fullName: Word.SortOrder
+summary: Specifies the sort order.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ascending
+    uid: word!Word.SortOrder.ascending:member
+    package: word!
+    summary: |-
+      Sorts in ascending order.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Ascending"'
+  - name: descending
+    uid: word!Word.SortOrder.descending:member
+    package: word!
+    summary: |-
+      Sorts in descending order.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Descending"'

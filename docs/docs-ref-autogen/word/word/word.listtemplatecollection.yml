@@ -8,18 +8,8 @@ summary: >-
   [Word.ListTemplate](xref:word!Word.ListTemplate:class) objects in a document,
   list template gallery, or document template.
 remarks: >-
-  [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-
-  #### Used by
-
-
-  - [Word.Document](/javascript/api/word/word.document): [listTemplates](/javascript/api/word/word.document#word-word-document-listtemplates-member)
-
-  - [Word.ListTemplateGallery](/javascript/api/word/word.listtemplategallery): [listTemplates](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-listtemplates-member)
-
-  - [Word.Template](/javascript/api/word/word.template): [listTemplates](/javascript/api/word/word.template#word-word-template-listtemplates-member)
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -64,10 +54,10 @@ methods:
       [Word.ListTemplateGallery](xref:word!Word.ListTemplateGallery:class)<!--
       -->.
     remarks: >-
-      [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \[ [API set: WordApiDesktop
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'add(options?: Word.ListTemplateAddOptions): Word.ListTemplate;'
@@ -84,8 +74,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a `ListTemplate` object by its index in the collection.
     remarks: >-
-      [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

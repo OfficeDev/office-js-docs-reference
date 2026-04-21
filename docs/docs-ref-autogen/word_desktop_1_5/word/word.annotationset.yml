@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.AnnotationSet
+uid: word!Word.AnnotationSet:interface
+package: word!
+fullName: Word.AnnotationSet
+summary: Annotations set produced by the add-in. Currently supporting only critiques.
+remarks: '\[Api set: WordApi 1.7\]'
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: critiques
+    uid: word!Word.AnnotationSet#critiques:member
+    package: word!
+    fullName: critiques
+    summary: Critiques.
+    remarks: '\[Api set: WordApi 1.7\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'critiques: Word.Critique[];'
+      return:
+        type: <xref uid="word!Word.Critique:interface" />[]

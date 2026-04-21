@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthorCollectionData
+uid: word!Word.Interfaces.CoauthorCollectionData:interface
+package: word!
+fullName: Word.Interfaces.CoauthorCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `coauthorCollection.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.CoauthorCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.CoauthorData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthorData:interface" />[]

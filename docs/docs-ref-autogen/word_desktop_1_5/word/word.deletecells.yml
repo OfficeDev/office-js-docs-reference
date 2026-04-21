@@ -1,0 +1,49 @@
+### YamlMime:TSEnum
+name: Word.DeleteCells
+uid: word!Word.DeleteCells:enum
+package: word!
+fullName: Word.DeleteCells
+summary: >-
+  Specifies a range of cells to be deleted from a table in a delete cells action
+  or the behavior of the remaining cells after the deletion has occurred.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: entireColumn
+    uid: word!Word.DeleteCells.entireColumn:member
+    package: word!
+    summary: |-
+      Delete the entire column of cells from the table.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"EntireColumn"'
+  - name: entireRow
+    uid: word!Word.DeleteCells.entireRow:member
+    package: word!
+    summary: |-
+      Delete the entire row of cells from the table.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"EntireRow"'
+  - name: shiftLeft
+    uid: word!Word.DeleteCells.shiftLeft:member
+    package: word!
+    summary: >-
+      Shift remaining cells left in the row where the deletion occurred after a
+      cell or range of cells has been deleted.
+
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"ShiftLeft"'
+  - name: shiftUp
+    uid: word!Word.DeleteCells.shiftUp:member
+    package: word!
+    summary: >-
+      Shift remaining cells up in the column where the deletion occurred after a
+      cell or range of cells has been deleted.
+
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"ShiftUp"'
