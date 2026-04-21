@@ -7,6 +7,7 @@ summary: The RequestContext object facilitates requests to the Word application.
 remarks: |-
 
 
+
   #### Used by
 
   - [Word.Annotation](/javascript/api/word/word.annotation): [context](/javascript/api/word/word.annotation#word-word-annotation-context-member)

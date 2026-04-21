@@ -359,8 +359,15 @@ function formatDisplayName(uid: string): string {
 /**
  * Injects a "Used By" section into a YAML item if there are references to it.
  * Only includes references to APIs that exist in the current package/version.
+ * Also includes cross-product references between Common API and product-specific APIs.
  */
-function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex, availableUIDs: Set<string>): boolean {
+function injectUsedBySection(
+  item: IYamlItem,
+  usedByIndex: UsedByIndex,
+  availableUIDs: Set<string>,
+  commonApiUIDs: Set<string>,
+  currentPackage: string
+): boolean {
   if (!item.uid) {
     return false;
   }
@@ -383,7 +390,26 @@ function injectUsedBySection(item: IYamlItem, usedByIndex: UsedByIndex, availabl
   }
 
   // Filter to only include references that exist in the current package/version
-  let filteredReferences = references.filter(ref => availableUIDs.has(ref.uid));
+  // Also include cross-product references with Common API
+  let filteredReferences = references.filter(ref => {
+    // Include if the reference exists in current version
+    if (availableUIDs.has(ref.uid)) {
+      return true;
+    }
+
+    // Check for cross-product references with Common API
+    const refPackage = ref.uid.split('!')[0];
+    const isCommonApiRef = ['office', 'office-runtime'].includes(refPackage);
+    const isCurrentCommonApi = ['office', 'office-runtime'].includes(currentPackage);
+
+    // Allow cross-product references between Common API and product-specific APIs
+    if (isCommonApiRef || isCurrentCommonApi) {
+      // Check if the reference exists in either the current package or Common API
+      return commonApiUIDs.has(ref.uid) || availableUIDs.has(ref.uid);
+    }
+
+    return false;
+  });
 
   // Extract the class name from the current item's UID
   // Example: "excel!Excel.AllowEditRange:class" → "Excel.AllowEditRange"
@@ -613,11 +639,23 @@ async function main(): Promise<void> {
   const indexSize = Object.keys(usedByIndex).length;
   console.log(`✓ Built index with ${indexSize} referenced types\n`);
 
+  // Build a global set of UIDs from Common APIs for cross-product references
+  console.log('Building Common API UID index...');
+  const commonApiUIDs = new Set<string>();
+  for (const commonFolder of ['office', 'office_release', 'office-runtime']) {
+    const folderPath = path.join(YAML_BASE_PATH, commonFolder);
+    if (fsx.existsSync(folderPath)) {
+      const uids = buildAvailableUIDs(folderPath);
+      uids.forEach(uid => commonApiUIDs.add(uid));
+    }
+  }
+  console.log(`✓ Built Common API index with ${commonApiUIDs.size} UIDs\n`);
+
   let totalFiles = 0;
   let totalFolders = 0;
 
   for (const folder of PRODUCT_FOLDERS) {
-    const result = await processFolderIfExists(folder, usedByIndex);
+    const result = await processFolderIfExists(folder, usedByIndex, commonApiUIDs);
     if (result) {
       totalFiles += result.filesProcessed;
       totalFolders++;
@@ -683,7 +721,11 @@ function buildAvailableUIDs(folderPath: string): Set<string> {
   return uids;
 }
 
-async function processFolderIfExists(folderName: string, usedByIndex: UsedByIndex): Promise<{ filesProcessed: number } | null> {
+async function processFolderIfExists(
+  folderName: string,
+  usedByIndex: UsedByIndex,
+  commonApiUIDs: Set<string>
+): Promise<{ filesProcessed: number } | null> {
   const folderPath = path.join(YAML_BASE_PATH, folderName);
 
   if (!fsx.existsSync(folderPath)) {
@@ -699,10 +741,13 @@ async function processFolderIfExists(folderName: string, usedByIndex: UsedByInde
   // Build set of UIDs available in this folder to filter "Used By" references
   const availableUIDs = buildAvailableUIDs(folderPath);
 
+  // Get the package name for cross-product reference filtering
+  const currentPackage = getBaseProductName(folderName);
+
   const yamlFiles = findYamlFiles(folderPath);
 
   for (const filePath of yamlFiles) {
-    await processYamlFile(filePath, snippetsAll, usedSnippets, usedByIndex, availableUIDs);
+    await processYamlFile(filePath, snippetsAll, usedSnippets, usedByIndex, availableUIDs, commonApiUIDs, currentPackage);
   }
 
   // Only report unused snippets for preview/main versions, not versioned subsets
@@ -757,7 +802,9 @@ async function processYamlFile(
   snippets: Map<string, string[]>,
   usedSnippets: Set<string>,
   usedByIndex: UsedByIndex,
-  availableUIDs: Set<string>
+  availableUIDs: Set<string>,
+  commonApiUIDs: Set<string>,
+  currentPackage: string
 ): Promise<void> {
   const content = fsx.readFileSync(filePath, 'utf-8');
 
@@ -784,7 +831,7 @@ async function processYamlFile(
   if (doc.uid) {
     modified = injectExamples(doc, snippets, usedSnippets) || modified;
     modified = hyperlinkApiSets(doc) || modified;
-    modified = injectUsedBySection(doc, usedByIndex, availableUIDs) || modified;
+    modified = injectUsedBySection(doc, usedByIndex, availableUIDs, commonApiUIDs, currentPackage) || modified;
   }
 
   // Process nested items in arrays
@@ -798,7 +845,7 @@ async function processYamlFile(
           modified = hyperlinkApiSets(item) || modified;
           // Skip Used By injection for enum fields - OPS doesn't support remarks on enum fields
           if (arrayName !== 'fields') {
-            modified = injectUsedBySection(item, usedByIndex, availableUIDs) || modified;
+            modified = injectUsedBySection(item, usedByIndex, availableUIDs, commonApiUIDs, currentPackage) || modified;
           }
         }
       }
