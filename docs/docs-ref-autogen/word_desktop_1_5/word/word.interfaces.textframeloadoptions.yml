@@ -3,9 +3,7 @@ name: Word.Interfaces.TextFrameLoadOptions
 uid: word!Word.Interfaces.TextFrameLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TextFrameLoadOptions
-summary: >-
-  Represents the text frame of a [Word.Shape](xref:word!Word.Shape:class)
-  object.
+summary: Represents the text frame of a [Word.Shape](xref:word!Word.Shape:class) object.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,11 +27,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#autoSizeSetting:member
     package: word!
     fullName: autoSizeSetting
-    summary: >-
-      Specifies the automatic sizing settings for the text frame. A text frame
-      can be set to automatically fit the text to the text frame, to
-      automatically fit the text frame to the text, or not perform any automatic
-      sizing.
+    summary: Specifies the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -62,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#hasText:member
     package: word!
     fullName: hasText
-    summary: >-
-      Returns `true` if the text frame contains text, otherwise, `false`<!--
-      -->.
+    summary: Returns `true` if the text frame contains text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -90,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#noTextRotation:member
     package: word!
     fullName: noTextRotation
-    summary: >-
-      Specifies whether the text in the text frame shouldn't rotate when the
-      shape is rotated.
+    summary: Specifies whether the text in the text frame shouldn't rotate when the shape is rotated.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -105,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#orientation:member
     package: word!
     fullName: orientation
-    summary: >-
-      Specifies the angle to which the text is oriented for the text frame. See
-      `Word.ShapeTextOrientation` for details.
+    summary: Specifies the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -146,9 +131,7 @@ properties:
     uid: word!Word.Interfaces.TextFrameLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the text frame. See
-      `Word.ShapeTextVerticalAlignment` for details.
+    summary: Specifies the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false

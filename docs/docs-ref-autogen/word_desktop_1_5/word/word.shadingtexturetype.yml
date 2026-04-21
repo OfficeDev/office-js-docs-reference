@@ -3,11 +3,7 @@ name: Word.ShadingTextureType
 uid: word!Word.ShadingTextureType:enum
 package: word!
 fullName: Word.ShadingTextureType
-summary: >-
-  Represents the shading texture. To learn more about how to apply backgrounds
-  like textures, see [Add, change, or delete the background color in
-  Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
-  -->.
+summary: Represents the shading texture. To learn more about how to apply backgrounds like textures, see [Add, change, or delete the background color in Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.1\]'
 
 isPreview: false

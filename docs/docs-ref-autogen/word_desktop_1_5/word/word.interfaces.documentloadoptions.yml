@@ -3,10 +3,7 @@ name: Word.Interfaces.DocumentLoadOptions
 uid: word!Word.Interfaces.DocumentLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.DocumentLoadOptions
-summary: >-
-  The `Document` object is the top level object. A `Document` object contains
-  one or more sections, content controls, and the body that contains the
-  contents of the document.
+summary: The `Document` object is the top level object. A `Document` object contains one or more sections, content controls, and the body that contains the contents of the document.
 remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
@@ -17,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -69,13 +63,10 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.WindowLoadOptions:interface" />
   - name: areFilePropertiesPasswordEncrypted
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#areFilePropertiesPasswordEncrypted:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#areFilePropertiesPasswordEncrypted:member
     package: word!
     fullName: areFilePropertiesPasswordEncrypted
-    summary: >-
-      Gets whether Word encrypts file properties for password-protected
-      documents.
+    summary: Gets whether Word encrypts file properties for password-protected documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -88,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areGrammaticalErrorsShown:member
     package: word!
     fullName: areGrammaticalErrorsShown
-    summary: >-
-      Specifies whether grammatical errors are marked by a wavy green line in
-      the document.
+    summary: Specifies whether grammatical errors are marked by a wavy green line in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -103,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areMathDefaultsUsed:member
     package: word!
     fullName: areMathDefaultsUsed
-    summary: >-
-      Specifies whether to use the default math settings when creating new
-      equations.
+    summary: Specifies whether to use the default math settings when creating new equations.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -118,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areNewerFeaturesDisabled:member
     package: word!
     fullName: areNewerFeaturesDisabled
-    summary: >-
-      Specifies whether to disable features introduced after a specified
-      version.
+    summary: Specifies whether to disable features introduced after a specified version.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -133,9 +118,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areSpellingErrorsShown:member
     package: word!
     fullName: areSpellingErrorsShown
-    summary: >-
-      Specifies whether Microsoft Word underlines spelling errors in the
-      document.
+    summary: Specifies whether Microsoft Word underlines spelling errors in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -148,9 +131,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areStylesUpdatedOnOpen:member
     package: word!
     fullName: areStylesUpdatedOnOpen
-    summary: >-
-      Specifies whether the styles in this document are updated to match the
-      styles in the attached template each time the document is opened.
+    summary: Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -163,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#areTrueTypeFontsEmbedded:member
     package: word!
     fullName: areTrueTypeFontsEmbedded
-    summary: >-
-      Specifies whether Microsoft Word embeds TrueType fonts in the document
-      when it's saved.
+    summary: Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -178,9 +157,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#attachedTemplate:member
     package: word!
     fullName: attachedTemplate
-    summary: >-
-      Specifies a `Template` object that represents the template attached to the
-      document.
+    summary: Specifies a `Template` object that represents the template attached to the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -219,9 +196,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#background:member
     package: word!
     fullName: background
-    summary: >-
-      Gets a `Shape` object that represents the background image for the
-      document.
+    summary: Gets a `Shape` object that represents the background image for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -234,9 +209,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#bibliography:member
     package: word!
     fullName: bibliography
-    summary: >-
-      Returns a `Bibliography` object that represents the bibliography
-      references contained within the document.
+    summary: Returns a `Bibliography` object that represents the bibliography references contained within the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -249,9 +222,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the main document. The body is the text that
-      excludes headers, footers, footnotes, textboxes, etc.
+    summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -264,21 +235,15 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#builtInDocumentProperties:member
     package: word!
     fullName: builtInDocumentProperties
-    summary: >-
-      Gets a `DocumentProperties` object that represents all the built-in
-      document properties for the document.
+    summary: Gets a `DocumentProperties` object that represents all the built-in document properties for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        builtInDocumentProperties?:
-        Word.Interfaces.DocumentPropertiesLoadOptions;
+      content: 'builtInDocumentProperties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
   - name: changeTrackingMode
     uid: word!Word.Interfaces.DocumentLoadOptions#changeTrackingMode:member
     package: word!
@@ -335,9 +300,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#consecutiveHyphensLimit:member
     package: word!
     fullName: consecutiveHyphensLimit
-    summary: >-
-      Specifies the maximum number of consecutive lines that can end with
-      hyphens.
+    summary: Specifies the maximum number of consecutive lines that can end with hyphens.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -376,28 +339,20 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#customDocumentProperties:member
     package: word!
     fullName: customDocumentProperties
-    summary: >-
-      Gets a `DocumentProperties` collection that represents all the custom
-      document properties for the document.
+    summary: Gets a `DocumentProperties` collection that represents all the custom document properties for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        customDocumentProperties?:
-        Word.Interfaces.DocumentPropertiesLoadOptions;
+      content: 'customDocumentProperties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
   - name: defaultTabStop
     uid: word!Word.Interfaces.DocumentLoadOptions#defaultTabStop:member
     package: word!
     fullName: defaultTabStop
-    summary: >-
-      Specifies the interval (in points) between the default tab stops in the
-      document.
+    summary: Specifies the interval (in points) between the default tab stops in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -436,9 +391,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#encryptionProvider:member
     package: word!
     fullName: encryptionProvider
-    summary: >-
-      Specifies the name of the algorithm encryption provider that Microsoft
-      Word uses when encrypting documents.
+    summary: Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -477,9 +430,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#formattingIsNextLevelShown:member
     package: word!
     fullName: formattingIsNextLevelShown
-    summary: >-
-      Specifies whether Word shows the next heading level when the previous is
-      used.
+    summary: Specifies whether Word shows the next heading level when the previous is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -489,8 +440,7 @@ properties:
       return:
         type: boolean
   - name: formattingIsUserStyleNameShown
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#formattingIsUserStyleNameShown:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#formattingIsUserStyleNameShown:member
     package: word!
     fullName: formattingIsUserStyleNameShown
     summary: Specifies whether to show user-defined styles.
@@ -519,10 +469,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#gridDistanceHorizontal:member
     package: word!
     fullName: gridDistanceHorizontal
-    summary: >-
-      Specifies the horizontal space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
+    summary: Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -535,10 +482,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#gridDistanceVertical:member
     package: word!
     fullName: gridDistanceVertical
-    summary: >-
-      Specifies the vertical space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
+    summary: Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -551,9 +495,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#gridIsOriginFromMargin:member
     package: word!
     fullName: gridIsOriginFromMargin
-    summary: >-
-      Specifies whether the character grid starts from the upper-left corner of
-      the page.
+    summary: Specifies whether the character grid starts from the upper-left corner of the page.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -589,13 +531,10 @@ properties:
       return:
         type: boolean
   - name: gridSpaceBetweenHorizontalLines
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#gridSpaceBetweenHorizontalLines:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#gridSpaceBetweenHorizontalLines:member
     package: word!
     fullName: gridSpaceBetweenHorizontalLines
-    summary: >-
-      Specifies the interval for horizontal character gridlines in print layout
-      view.
+    summary: Specifies the interval for horizontal character gridlines in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -605,13 +544,10 @@ properties:
       return:
         type: boolean
   - name: gridSpaceBetweenVerticalLines
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#gridSpaceBetweenVerticalLines:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#gridSpaceBetweenVerticalLines:member
     package: word!
     fullName: gridSpaceBetweenVerticalLines
-    summary: >-
-      Specifies the interval for vertical character gridlines in print layout
-      view.
+    summary: Specifies the interval for vertical character gridlines in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -637,9 +573,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#hasVbProject:member
     package: word!
     fullName: hasVbProject
-    summary: >-
-      Gets whether the document has an attached Microsoft Visual Basic for
-      Applications project.
+    summary: Gets whether the document has an attached Microsoft Visual Basic for Applications project.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -678,9 +612,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isAutoFormatOverrideOn:member
     package: word!
     fullName: isAutoFormatOverrideOn
-    summary: >-
-      Specifies whether automatic formatting options override formatting
-      restrictions.
+    summary: Specifies whether automatic formatting options override formatting restrictions.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -693,9 +625,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isChartDataPointTracked:member
     package: word!
     fullName: isChartDataPointTracked
-    summary: >-
-      Specifies whether charts in the active document use cell-reference
-      data-point tracking.
+    summary: Specifies whether charts in the active document use cell-reference data-point tracking.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -708,9 +638,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isCompatible:member
     package: word!
     fullName: isCompatible
-    summary: >-
-      Specifies whether the compatibility option specified by the `type`
-      property is enabled.
+    summary: Specifies whether the compatibility option specified by the `type` property is enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -736,9 +664,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isFontsSubsetSaved:member
     package: word!
     fullName: isFontsSubsetSaved
-    summary: >-
-      Specifies whether Microsoft Word saves a subset of the embedded TrueType
-      fonts with the document.
+    summary: Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -751,9 +677,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isFormsDataPrinted:member
     package: word!
     fullName: isFormsDataPrinted
-    summary: >-
-      Specifies whether Microsoft Word prints onto a preprinted form only the
-      data entered in the corresponding online form.
+    summary: Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -766,9 +690,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isFormsDataSaved:member
     package: word!
     fullName: isFormsDataSaved
-    summary: >-
-      Specifies whether Microsoft Word saves the data entered in a form as a
-      tab-delimited record for use in a database.
+    summary: Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -794,10 +716,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isInAutoSave:member
     package: word!
     fullName: isInAutoSave
-    summary: >-
-      Gets whether the most recent firing of the
-      `Application.DocumentBeforeSave` event was the result of an automatic save
-      by the document or a manual save by the user.
+    summary: Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -823,9 +742,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isKerningByAlgorithm:member
     package: word!
     fullName: isKerningByAlgorithm
-    summary: >-
-      Specifies whether Word kerns half-width Latin characters and punctuation
-      marks.
+    summary: Specifies whether Word kerns half-width Latin characters and punctuation marks.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -874,15 +791,10 @@ properties:
       return:
         type: boolean
   - name: isPostScriptPrintedOverText
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#isPostScriptPrintedOverText:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#isPostScriptPrintedOverText:member
     package: word!
     fullName: isPostScriptPrintedOverText
-    summary: >-
-      Specifies whether [PRINT
-      field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
-      instructions (such as PostScript commands) in the document are to be
-      printed on top of text and graphics when a PostScript printer is used.
+    summary: Specifies whether [PRINT field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f) instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -908,9 +820,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isReadOnly:member
     package: word!
     fullName: isReadOnly
-    summary: >-
-      Gets whether changes to the document cannot be saved to the original
-      document.
+    summary: Gets whether changes to the document cannot be saved to the original document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -923,9 +833,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isReadOnlyRecommended:member
     package: word!
     fullName: isReadOnlyRecommended
-    summary: >-
-      Specifies whether Microsoft Word displays a message box whenever a user
-      opens the document, suggesting that it be opened as read-only.
+    summary: Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -938,9 +846,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isSnappedToGrid:member
     package: word!
     fullName: isSnappedToGrid
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters are automatically
-      aligned with an invisible grid.
+    summary: Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -953,9 +859,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isSnappedToShapes:member
     package: word!
     fullName: isSnappedToShapes
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters align with invisible
-      gridlines through other shapes.
+    summary: Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -981,9 +885,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#isStyleEnforced:member
     package: word!
     fullName: isStyleEnforced
-    summary: >-
-      Specifies whether formatting restrictions are enforced in a protected
-      document.
+    summary: Specifies whether formatting restrictions are enforced in a protected document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1074,9 +976,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#kind:member
     package: word!
     fullName: kind
-    summary: >-
-      Specifies the format type that Microsoft Word uses when automatically
-      formatting the document.
+    summary: Specifies the format type that Microsoft Word uses when automatically formatting the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1089,9 +989,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#languageDetected:member
     package: word!
     fullName: languageDetected
-    summary: >-
-      Specifies whether Microsoft Word has detected the language of the document
-      text.
+    summary: Specifies whether Microsoft Word has detected the language of the document text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -1179,8 +1077,7 @@ properties:
       return:
         type: boolean
   - name: passwordEncryptionAlgorithm
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#passwordEncryptionAlgorithm:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#passwordEncryptionAlgorithm:member
     package: word!
     fullName: passwordEncryptionAlgorithm
     summary: Gets the algorithm used for password encryption.
@@ -1193,8 +1090,7 @@ properties:
       return:
         type: boolean
   - name: passwordEncryptionKeyLength
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#passwordEncryptionKeyLength:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#passwordEncryptionKeyLength:member
     package: word!
     fullName: passwordEncryptionKeyLength
     summary: Gets the key length used for password encryption.
@@ -1223,9 +1119,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#path:member
     package: word!
     fullName: path
-    summary: >-
-      Gets the disk or the web path to the document (excludes the document
-      name).
+    summary: Gets the disk or the web path to the document (excludes the document name).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1259,9 +1153,7 @@ properties:
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.DocumentPropertiesLoadOptions:interface" />
   - name: protectionType
     uid: word!Word.Interfaces.DocumentLoadOptions#protectionType:member
     package: word!
@@ -1305,9 +1197,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#readingModeIsLayoutFrozen:member
     package: word!
     fullName: readingModeIsLayoutFrozen
-    summary: >-
-      Specifies whether pages in reading layout view are frozen for handwritten
-      markup.
+    summary: Specifies whether pages in reading layout view are frozen for handwritten markup.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1317,8 +1207,7 @@ properties:
       return:
         type: boolean
   - name: removePersonalInformationOnSave
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#removePersonalInformationOnSave:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#removePersonalInformationOnSave:member
     package: word!
     fullName: removePersonalInformationOnSave
     summary: Specifies whether Word removes user information upon saving.
@@ -1347,9 +1236,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#saved:member
     package: word!
     fullName: saved
-    summary: >-
-      Indicates whether the changes in the document have been saved. A value of
-      `true` indicates that the document hasn't changed since it was saved.
+    summary: Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -1388,9 +1275,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#selection:member
     package: word!
     fullName: selection
-    summary: >-
-      Returns a `Selection` object that represents the current selection in the
-      document.
+    summary: Returns a `Selection` object that represents the current selection in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1426,13 +1311,10 @@ properties:
       return:
         type: boolean
   - name: trackedChangesAreDateAndTimeRemoved
-    uid: >-
-      word!Word.Interfaces.DocumentLoadOptions#trackedChangesAreDateAndTimeRemoved:member
+    uid: word!Word.Interfaces.DocumentLoadOptions#trackedChangesAreDateAndTimeRemoved:member
     package: word!
     fullName: trackedChangesAreDateAndTimeRemoved
-    summary: >-
-      Specifies whether to remove or store date and time metadata for tracked
-      changes.
+    summary: Specifies whether to remove or store date and time metadata for tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1523,9 +1405,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#xmlAreAdvancedErrorsShown:member
     package: word!
     fullName: xmlAreAdvancedErrorsShown
-    summary: >-
-      Specifies whether error messages are generated from built-in Word messages
-      or MSXML (Microsoft XML).
+    summary: Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1538,9 +1418,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#xmlIsXsltUsedWhenSaving:member
     package: word!
     fullName: xmlIsXsltUsedWhenSaving
-    summary: >-
-      Specifies whether to save a document through an Extensible Stylesheet
-      Language Transformation (XSLT).
+    summary: Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1553,9 +1431,7 @@ properties:
     uid: word!Word.Interfaces.DocumentLoadOptions#xmlSaveThroughXslt:member
     package: word!
     fullName: xmlSaveThroughXslt
-    summary: >-
-      Specifies the path and file name for the XSLT to apply when saving a
-      document.
+    summary: Specifies the path and file name for the XSLT to apply when saving a document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

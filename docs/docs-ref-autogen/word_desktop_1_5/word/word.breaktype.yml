@@ -44,11 +44,8 @@ fields:
   - name: sectionEven
     uid: word!Word.BreakType.sectionEven:member
     package: word!
-    summary: >-
-      Section break with the next section beginning on the next even-numbered
-      page. If the section break falls on an even-numbered page, Word leaves the
-      next odd-numbered page blank.
-
+    summary: |-
+      Section break with the next section beginning on the next even-numbered page. If the section break falls on an even-numbered page, Word leaves the next odd-numbered page blank.
 
       * \[Api set: WordApi 1.1\]
     value: '"SectionEven"'
@@ -63,11 +60,8 @@ fields:
   - name: sectionOdd
     uid: word!Word.BreakType.sectionOdd:member
     package: word!
-    summary: >-
-      Section break with the next section beginning on the next odd-numbered
-      page. If the section break falls on an odd-numbered page, Word leaves the
-      next even-numbered page blank.
-
+    summary: |-
+      Section break with the next section beginning on the next odd-numbered page. If the section break falls on an odd-numbered page, Word leaves the next even-numbered page blank.
 
       * \[Api set: WordApi 1.1\]
     value: '"SectionOdd"'

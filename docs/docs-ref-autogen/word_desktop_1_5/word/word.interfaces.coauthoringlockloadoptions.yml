@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -43,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `CoauthoringLock` object.
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

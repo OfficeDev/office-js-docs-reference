@@ -3,9 +3,7 @@ name: Word.TextureAlignment
 uid: word!Word.TextureAlignment:enum
 package: word!
 fullName: Word.TextureAlignment
-summary: >-
-  Specifies the alignment (the origin of the coordinate grid) for the tiling of
-  the texture fill.
+summary: Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
@@ -54,10 +52,8 @@ fields:
   - name: mixed
     uid: word!Word.TextureAlignment.mixed:member
     package: word!
-    summary: >-
-      Mixed texture alignment. Used when multiple shapes with different texture
-      alignments are selected.
-
+    summary: |-
+      Mixed texture alignment. Used when multiple shapes with different texture alignments are selected.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'

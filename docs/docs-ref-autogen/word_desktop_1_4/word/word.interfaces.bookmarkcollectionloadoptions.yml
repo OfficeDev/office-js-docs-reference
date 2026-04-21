@@ -3,16 +3,11 @@ name: Word.Interfaces.BookmarkCollectionLoadOptions
 uid: word!Word.Interfaces.BookmarkCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BookmarkCollectionLoadOptions
-summary: >-
-  A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that
-  represent the bookmarks in the specified selection, range, or document.
-remarks: >-
-  [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
+summary: A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that represent the bookmarks in the specified selection, range, or document.
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
   #### Used by
-
 
   - [Word.BookmarkCollection](/javascript/api/word/word.bookmarkcollection): [load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(1))
 
@@ -24,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -40,12 +32,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#end:member
     package: word!
     fullName: end
-    summary: >-
-      For EACH ITEM in the collection: Specifies the ending character position
-      of the bookmark.
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: 'For EACH ITEM in the collection: Specifies the ending character position of the bookmark.'
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -57,12 +45,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#isColumn:member
     package: word!
     fullName: isColumn
-    summary: >-
-      For EACH ITEM in the collection: Returns `true` if the bookmark is a table
-      column.
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: 'For EACH ITEM in the collection: Returns `true` if the bookmark is a table column.'
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +59,7 @@ properties:
     package: word!
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Returns `true` if the bookmark is empty.'
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -89,12 +71,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#name:member
     package: word!
     fullName: name
-    summary: >-
-      For EACH ITEM in the collection: Returns the name of the `Bookmark`
-      object.
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: 'For EACH ITEM in the collection: Returns the name of the `Bookmark` object.'
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -106,12 +84,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      For EACH ITEM in the collection: Returns a `Range` object that represents
-      the portion of the document that's contained in the `Bookmark` object.
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: 'For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that''s contained in the `Bookmark` object.'
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -123,12 +97,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#start:member
     package: word!
     fullName: start
-    summary: >-
-      For EACH ITEM in the collection: Specifies the starting character position
-      of the bookmark.
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: 'For EACH ITEM in the collection: Specifies the starting character position of the bookmark.'
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +111,7 @@ properties:
     package: word!
     fullName: storyType
     summary: 'For EACH ITEM in the collection: Returns the story type for the bookmark.'
-    remarks: >-
-      [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.DropCapLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.DropCapLoadOptions#distanceFromText:member
     package: word!
     fullName: distanceFromText
-    summary: >-
-      Gets the distance (in points) between the dropped capital letter and the
-      paragraph text.
+    summary: Gets the distance (in points) between the dropped capital letter and the paragraph text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

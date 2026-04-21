@@ -3,11 +3,7 @@ name: Word.ShapeTextWrapType
 uid: word!Word.ShapeTextWrapType:enum
 package: word!
 fullName: Word.ShapeTextWrapType
-summary: >-
-  Specifies how to wrap document text around a shape. For more details, see the
-  "Text Wrapping" tab of [Layout
-  options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!--
-  -->.
+summary: Specifies how to wrap document text around a shape. For more details, see the "Text Wrapping" tab of [Layout options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false

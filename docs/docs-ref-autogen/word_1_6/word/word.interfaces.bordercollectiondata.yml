@@ -3,9 +3,7 @@ name: Word.Interfaces.BorderCollectionData
 uid: word!Word.Interfaces.BorderCollectionData:interface
 package: word!
 fullName: Word.Interfaces.BorderCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `borderCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `borderCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

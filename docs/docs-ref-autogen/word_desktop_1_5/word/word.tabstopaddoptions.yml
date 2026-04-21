@@ -3,9 +3,7 @@ name: Word.TabStopAddOptions
 uid: word!Word.TabStopAddOptions:interface
 package: word!
 fullName: Word.TabStopAddOptions
-summary: >-
-  Specifies the options for adding to a
-  [Word.TabStopCollection](xref:word!Word.TabStopCollection:class) object.
+summary: Specifies the options for adding to a [Word.TabStopCollection](xref:word!Word.TabStopCollection:class) object.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -16,37 +14,25 @@ properties:
     uid: word!Word.TabStopAddOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      If provided, specifies the alignment of the tab stop. The default value is
-      `left`<!-- -->.
+    summary: If provided, specifies the alignment of the tab stop. The default value is `left`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal"
-        | "Bar" | "List";
+      content: 'alignment?: Word.TabAlignment | "Left" | "Center" | "Right" | "Decimal" | "Bar" | "List";'
       return:
-        type: >-
-          <xref uid="word!Word.TabAlignment:enum" /> | "Left" | "Center" |
-          "Right" | "Decimal" | "Bar" | "List"
+        type: <xref uid="word!Word.TabAlignment:enum" /> | "Left" | "Center" | "Right" | "Decimal" | "Bar" | "List"
   - name: leader
     uid: word!Word.TabStopAddOptions#leader:member
     package: word!
     fullName: leader
-    summary: >-
-      If provided, specifies the leader character for the tab stop. The default
-      value is `spaces`<!-- -->.
+    summary: If provided, specifies the leader character for the tab stop. The default value is `spaces`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
-        "Heavy" | "MiddleDot";
+      content: 'leader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";'
       return:
-        type: >-
-          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
-          | "Lines" | "Heavy" | "MiddleDot"
+        type: <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot"

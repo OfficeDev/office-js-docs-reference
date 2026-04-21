@@ -3,9 +3,7 @@ name: Word.SelectionInsertSymbolOptions
 uid: word!Word.SelectionInsertSymbolOptions:interface
 package: word!
 fullName: Word.SelectionInsertSymbolOptions
-summary: >-
-  Represents the options for the
-  [Selection.insertSymbol](xref:word!Word.Selection:class) method.
+summary: Represents the options for the [Selection.insertSymbol](xref:word!Word.Selection:class) method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.SelectionInsertSymbolOptions#bias:member
     package: word!
     fullName: bias
-    summary: >-
-      If provided, specifies the font bias for symbols. This argument is useful
-      for setting the correct font bias for East Asian characters. The default
-      value is `standard`<!-- -->.
+    summary: If provided, specifies the font bias for symbols. This argument is useful for setting the correct font bias for East Asian characters. The default value is `standard`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -27,9 +22,7 @@ properties:
     syntax:
       content: 'bias?: Word.FontBias | "Standard" | "FarEast" | "NoSpecified";'
       return:
-        type: >-
-          <xref uid="word!Word.FontBias:enum" /> | "Standard" | "FarEast" |
-          "NoSpecified"
+        type: <xref uid="word!Word.FontBias:enum" /> | "Standard" | "FarEast" | "NoSpecified"
   - name: font
     uid: word!Word.SelectionInsertSymbolOptions#font:member
     package: word!
@@ -47,12 +40,7 @@ properties:
     uid: word!Word.SelectionInsertSymbolOptions#unicode:member
     package: word!
     fullName: unicode
-    summary: >-
-      If provided, specifies whether the character is Unicode. `true` to insert
-      the Unicode character specified by the `characterNumber` property when the
-      `Selection.insertSymbol` method is called; `false` to instead insert the
-      ANSI character specified by the `characterNumber` property. The default
-      value is `false`<!-- -->.
+    summary: If provided, specifies whether the character is Unicode. `true` to insert the Unicode character specified by the `characterNumber` property when the `Selection.insertSymbol` method is called; `false` to instead insert the ANSI character specified by the `characterNumber` property. The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

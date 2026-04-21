@@ -14,9 +14,7 @@ properties:
     uid: word!Word.InsertFileOptions#importChangeTrackingMode:member
     package: word!
     fullName: importChangeTrackingMode
-    summary: >-
-      If provided, specifies whether the change tracking mode status from the
-      source document should be imported.
+    summary: If provided, specifies whether the change tracking mode status from the source document should be imported.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -29,10 +27,7 @@ properties:
     uid: word!Word.InsertFileOptions#importCustomProperties:member
     package: word!
     fullName: importCustomProperties
-    summary: >-
-      If provided, specifies whether the custom properties from the source
-      document should be imported. Overwrites existing properties with the same
-      name.
+    summary: If provided, specifies whether the custom properties from the source document should be imported. Overwrites existing properties with the same name.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -45,9 +40,7 @@ properties:
     uid: word!Word.InsertFileOptions#importCustomXmlParts:member
     package: word!
     fullName: importCustomXmlParts
-    summary: >-
-      If provided, specifies whether the custom XML parts from the source
-      document should be imported.
+    summary: If provided, specifies whether the custom XML parts from the source document should be imported.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -60,9 +53,7 @@ properties:
     uid: word!Word.InsertFileOptions#importDifferentOddEvenPages:member
     package: word!
     fullName: importDifferentOddEvenPages
-    summary: >-
-      If provided, specifies whether to import the Different Odd and Even Pages
-      setting for the header and footer from the source document.
+    summary: If provided, specifies whether to import the Different Odd and Even Pages setting for the header and footer from the source document.
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
@@ -75,9 +66,7 @@ properties:
     uid: word!Word.InsertFileOptions#importPageColor:member
     package: word!
     fullName: importPageColor
-    summary: >-
-      If provided, specifies whether the page color and other background
-      information from the source document should be imported.
+    summary: If provided, specifies whether the page color and other background information from the source document should be imported.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -90,9 +79,7 @@ properties:
     uid: word!Word.InsertFileOptions#importParagraphSpacing:member
     package: word!
     fullName: importParagraphSpacing
-    summary: >-
-      If provided, specifies whether the paragraph spacing from the source
-      document should be imported.
+    summary: If provided, specifies whether the paragraph spacing from the source document should be imported.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -105,9 +92,7 @@ properties:
     uid: word!Word.InsertFileOptions#importStyles:member
     package: word!
     fullName: importStyles
-    summary: >-
-      If provided, specifies whether the styles from the source document should
-      be imported.
+    summary: If provided, specifies whether the styles from the source document should be imported.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -120,9 +105,7 @@ properties:
     uid: word!Word.InsertFileOptions#importTheme:member
     package: word!
     fullName: importTheme
-    summary: >-
-      If provided, specifies whether the theme from the source document should
-      be imported.
+    summary: If provided, specifies whether the theme from the source document should be imported.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false

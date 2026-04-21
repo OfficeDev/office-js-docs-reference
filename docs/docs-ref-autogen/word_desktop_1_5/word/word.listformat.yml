@@ -14,9 +14,7 @@ properties:
     uid: word!Word.ListFormat#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -55,9 +53,7 @@ properties:
     uid: word!Word.ListFormat#list:member
     package: word!
     fullName: list
-    summary: >-
-      Returns a `List` object that represents the first formatted list contained
-      in the `ListFormat` object.
+    summary: Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -70,9 +66,7 @@ properties:
     uid: word!Word.ListFormat#listLevelNumber:member
     package: word!
     fullName: listLevelNumber
-    summary: >-
-      Specifies the list level number for the first paragraph for the
-      `ListFormat` object.
+    summary: Specifies the list level number for the first paragraph for the `ListFormat` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -85,9 +79,7 @@ properties:
     uid: word!Word.ListFormat#listString:member
     package: word!
     fullName: listString
-    summary: >-
-      Gets the string representation of the list value of the first paragraph in
-      the range for the `ListFormat` object.
+    summary: Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -119,22 +111,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly listType: Word.ListType | "ListNoNumbering" | "ListListNumOnly"
-        | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" |
-        "ListMixedNumbering" | "ListPictureBullet";
+      content: 'readonly listType: Word.ListType | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet";'
       return:
-        type: >-
-          <xref uid="word!Word.ListType:enum" /> | "ListNoNumbering" |
-          "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" |
-          "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet"
+        type: <xref uid="word!Word.ListType:enum" /> | "ListNoNumbering" | "ListListNumOnly" | "ListBullet" | "ListSimpleNumbering" | "ListOutlineNumbering" | "ListMixedNumbering" | "ListPictureBullet"
   - name: listValue
     uid: word!Word.ListFormat#listValue:member
     package: word!
     fullName: listValue
-    summary: >-
-      Gets the numeric value of the the first paragraph in the range for the
-      `ListFormat` object.
+    summary: Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -157,9 +141,7 @@ methods:
       content: 'applyBulletDefault(defaultListBehavior: Word.DefaultListBehavior): void;'
       parameters:
         - id: defaultListBehavior
-          description: >-
-            Optional. Specifies the default list behavior. Default is
-            `word97`<!-- -->.
+          description: Optional. Specifies the default list behavior. Default is `word97`<!-- -->.
           type: <xref uid="word!Word.DefaultListBehavior:enum" />
       return:
         type: void
@@ -174,14 +156,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyBulletDefault(defaultListBehavior: "Word97" | "Word2000" |
-        "Word2002"): void;
+      content: 'applyBulletDefault(defaultListBehavior: "Word97" | "Word2000" | "Word2002"): void;'
       parameters:
         - id: defaultListBehavior
-          description: >-
-            Optional. Specifies the default list behavior. Default is
-            `word97`<!-- -->.
+          description: Optional. Specifies the default list behavior. Default is `word97`<!-- -->.
           type: '"Word97" | "Word2000" | "Word2002"'
       return:
         type: void
@@ -190,26 +168,19 @@ methods:
     uid: word!Word.ListFormat#applyListTemplateWithLevel:member(1)
     package: word!
     fullName: applyListTemplateWithLevel(listTemplate, options)
-    summary: >-
-      Applies a list template with a specific level to the paragraphs in the
-      range.
+    summary: Applies a list template with a specific level to the paragraphs in the range.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?:
-        Word.ListTemplateApplyOptions): void;
+      content: 'applyListTemplateWithLevel(listTemplate: Word.ListTemplate, options?: Word.ListTemplateApplyOptions): void;'
       parameters:
         - id: listTemplate
           description: The list template to apply.
           type: <xref uid="word!Word.ListTemplate:class" />
         - id: options
-          description: >-
-            Optional. Options for applying the list template, such as whether to
-            continue the previous list or which part of the list to apply the
-            template to.
+          description: Optional. Options for applying the list template, such as whether to continue the previous list or which part of the list to apply the template to.
           type: <xref uid="word!Word.ListTemplateApplyOptions:interface" />
       return:
         type: void
@@ -242,9 +213,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyNumberDefault(defaultListBehavior: "Word97" | "Word2000" |
-        "Word2002"): void;
+      content: 'applyNumberDefault(defaultListBehavior: "Word97" | "Word2000" | "Word2002"): void;'
       parameters:
         - id: defaultListBehavior
           description: Optional. Specifies the default list behavior.
@@ -262,9 +231,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyOutlineNumberDefault(defaultListBehavior:
-        Word.DefaultListBehavior): void;
+      content: 'applyOutlineNumberDefault(defaultListBehavior: Word.DefaultListBehavior): void;'
       parameters:
         - id: defaultListBehavior
           description: Optional. Specifies the default list behavior.
@@ -282,9 +249,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyOutlineNumberDefault(defaultListBehavior: "Word97" | "Word2000" |
-        "Word2002"): void;
+      content: 'applyOutlineNumberDefault(defaultListBehavior: "Word97" | "Word2000" | "Word2002"): void;'
       parameters:
         - id: defaultListBehavior
           description: Optional. Specifies the default list behavior.
@@ -302,17 +267,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        canContinuePreviousList(listTemplate: Word.ListTemplate):
-        OfficeExtension.ClientResult<Word.Continue>;
+      content: 'canContinuePreviousList(listTemplate: Word.ListTemplate): OfficeExtension.ClientResult<Word.Continue>;'
       parameters:
         - id: listTemplate
           description: The list template to check.
           type: <xref uid="word!Word.ListTemplate:class" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
-          uid="word!Word.Continue:enum" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.Continue:enum" />&gt;
         description: A `Continue` value indicating whether continuation is possible.
   - name: convertNumbersToText(numberType)
     uid: word!Word.ListFormat#convertNumbersToText:member(1)
@@ -342,9 +303,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        convertNumbersToText(numberType: "Paragraph" | "ListNum" |
-        "AllNumbers"): void;
+      content: 'convertNumbersToText(numberType: "Paragraph" | "ListNum" | "AllNumbers"): void;'
       parameters:
         - id: numberType
           description: Optional. The type of number to convert.
@@ -362,17 +321,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        countNumberedItems(options?: Word.ListFormatCountNumberedItemsOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'countNumberedItems(options?: Word.ListFormatCountNumberedItemsOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
-          description: >-
-            Optional. Options for counting numbered items, such as the type of
-            number and the level to count.
-          type: >-
-            <xref uid="word!Word.ListFormatCountNumberedItemsOptions:interface"
-            />
+          description: Optional. Options for counting numbered items, such as the type of number and the level to count.
+          type: <xref uid="word!Word.ListFormatCountNumberedItemsOptions:interface" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of items.
@@ -408,9 +361,7 @@ methods:
     uid: word!Word.ListFormat#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -428,9 +379,7 @@ methods:
     uid: word!Word.ListFormat#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -439,9 +388,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.ListFormat;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.ListFormat:class" />
@@ -450,9 +397,7 @@ methods:
     uid: word!Word.ListFormat#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -465,11 +410,7 @@ methods:
                 }): Word.ListFormat;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -518,29 +459,19 @@ methods:
     uid: word!Word.ListFormat#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ListFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ListFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.ListFormatUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -549,9 +480,7 @@ methods:
     uid: word!Word.ListFormat#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -569,14 +498,7 @@ methods:
     uid: word!Word.ListFormat#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.ListFormat` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.ListFormatData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ListFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -590,16 +512,7 @@ methods:
     uid: word!Word.ListFormat#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -613,14 +526,7 @@ methods:
     uid: word!Word.ListFormat#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

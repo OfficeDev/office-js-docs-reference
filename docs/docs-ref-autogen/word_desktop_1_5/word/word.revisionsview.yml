@@ -3,9 +3,7 @@ name: Word.RevisionsView
 uid: word!Word.RevisionsView:enum
 package: word!
 fullName: Word.RevisionsView
-summary: >-
-  Specifies whether Word displays the original version of a document or a
-  version with revisions and formatting changes applied.
+summary: Specifies whether Word displays the original version of a document or a version with revisions and formatting changes applied.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false

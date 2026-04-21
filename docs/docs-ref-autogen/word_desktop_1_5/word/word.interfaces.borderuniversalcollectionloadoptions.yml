@@ -3,9 +3,7 @@ name: Word.Interfaces.BorderUniversalCollectionLoadOptions
 uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BorderUniversalCollectionLoadOptions
-summary: >-
-  Represents the collection of
-  [Word.BorderUniversal](xref:word!Word.BorderUniversal:class) objects.
+summary: Represents the collection of [Word.BorderUniversal](xref:word!Word.BorderUniversal:class) objects.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#artStyle:member
     package: word!
     fullName: artStyle
-    summary: >-
-      For EACH ITEM in the collection: Specifies the graphical page-border
-      design for the document.
+    summary: 'For EACH ITEM in the collection: Specifies the graphical page-border design for the document.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -47,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#artWidth:member
     package: word!
     fullName: artWidth
-    summary: >-
-      For EACH ITEM in the collection: Specifies the width (in points) of the
-      graphical page border specified in the `artStyle` property.
+    summary: 'For EACH ITEM in the collection: Specifies the width (in points) of the graphical page border specified in the `artStyle` property.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -62,10 +53,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#color:member
     package: word!
     fullName: color
-    summary: >-
-      For EACH ITEM in the collection: Specifies the color for the
-      `BorderUniversal` object. You can provide the value in the '\#RRGGBB'
-      format.
+    summary: 'For EACH ITEM in the collection: Specifies the color for the `BorderUniversal` object. You can provide the value in the ''\#RRGGBB'' format.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -75,13 +63,10 @@ properties:
       return:
         type: boolean
   - name: colorIndex
-    uid: >-
-      word!Word.Interfaces.BorderUniversalCollectionLoadOptions#colorIndex:member
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#colorIndex:member
     package: word!
     fullName: colorIndex
-    summary: >-
-      For EACH ITEM in the collection: Specifies the color for the
-      `BorderUniversal` or [Word.Font](xref:word!Word.Font:class) object.
+    summary: 'For EACH ITEM in the collection: Specifies the color for the `BorderUniversal` or [Word.Font](xref:word!Word.Font:class) object.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -94,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#inside:member
     package: word!
     fullName: inside
-    summary: >-
-      For EACH ITEM in the collection: Returns `true` if an inside border can be
-      applied to the specified object.
+    summary: 'For EACH ITEM in the collection: Returns `true` if an inside border can be applied to the specified object.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -135,9 +118,7 @@ properties:
     uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#lineWidth:member
     package: word!
     fullName: lineWidth
-    summary: >-
-      For EACH ITEM in the collection: Specifies the line width of an object's
-      border.
+    summary: 'For EACH ITEM in the collection: Specifies the line width of an object''s border.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

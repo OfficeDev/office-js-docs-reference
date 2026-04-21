@@ -4,14 +4,10 @@ uid: word!Word.Selection:class
 package: word!
 fullName: Word.Selection
 summary: Represents a selected range or the insertion point in a Word document.
-remarks: >-
+remarks: |-
   \[Api set: WordApiDesktop 1.4\]
 
-
-  Note: [Range](xref:word!Word.Range:class) objects share many of the same
-  methods and properties as `Selection` objects. Using `Range` objects is
-  preferable for manipulating a document when there isn't a reason to physically
-  change the current selection.
+  Note: [Range](xref:word!Word.Range:class) objects share many of the same methods and properties as `Selection` objects. Using `Range` objects is preferable for manipulating a document when there isn't a reason to physically change the current selection.
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,7 @@ properties:
     uid: word!Word.Selection#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders for the objects in the selection.
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders for the objects in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -36,9 +30,7 @@ properties:
     uid: word!Word.Selection#characters:member
     package: word!
     fullName: characters
-    summary: >-
-      Returns a `RangeScopedCollection` object that represents each character in
-      the selection.
+    summary: Returns a `RangeScopedCollection` object that represents each character in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -51,9 +43,7 @@ properties:
     uid: word!Word.Selection#comments:member
     package: word!
     fullName: comments
-    summary: >-
-      Returns a `CommentCollection` object that represents all the comments in
-      the selection.
+    summary: Returns a `CommentCollection` object that represents all the comments in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -66,9 +56,7 @@ properties:
     uid: word!Word.Selection#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -94,9 +82,7 @@ properties:
     uid: word!Word.Selection#fields:member
     package: word!
     fullName: fields
-    summary: >-
-      Returns a `FieldCollection` object that represents all the fields in the
-      selection.
+    summary: Returns a `FieldCollection` object that represents all the fields in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -122,9 +108,7 @@ properties:
     uid: word!Word.Selection#font:member
     package: word!
     fullName: font
-    summary: >-
-      Returns the `Font` object that represents the character formatting of the
-      selection.
+    summary: Returns the `Font` object that represents the character formatting of the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -137,9 +121,7 @@ properties:
     uid: word!Word.Selection#formattedText:member
     package: word!
     fullName: formattedText
-    summary: >-
-      Specifies a `Range` object that includes the formatted text in the range
-      or selection.
+    summary: Specifies a `Range` object that includes the formatted text in the range or selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -152,10 +134,7 @@ properties:
     uid: word!Word.Selection#hasNoProofing:member
     package: word!
     fullName: hasNoProofing
-    summary: >-
-      Returns whether the spelling and grammar checker ignores the selected
-      text. If the selected text contains a mix of proofed and un-proofed
-      content, this API returns `null`<!-- -->.
+    summary: Returns whether the spelling and grammar checker ignores the selected text. If the selected text contains a mix of proofed and un-proofed content, this API returns `null`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -265,106 +244,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly languageId: Word.LanguageId | "Afrikaans" | "Albanian" |
-        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
-        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
-        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
-        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
-        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
-        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
-        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
-        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
-        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
-        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
-        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
-        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
-        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
-        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
-        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-        | "Galician" | "Georgian" | "German" | "GermanAustria" |
-        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
-        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
-        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
-        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
-        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
-        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
-        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
-        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
-        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
-        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
-        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
-        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
-        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
-        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
-        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
-        "Yiddish" | "Yoruba" | "Zulu";
+      content: 'readonly languageId: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";'
       return:
-        type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
-          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
-          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
-          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
-          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
-          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
-          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
-          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
-          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
-          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
-          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
-          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
-          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
-          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
-          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
-          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
-          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" |
-          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
-          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
-          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
-          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
-          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
-          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
-          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
-          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
-          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
-          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
-          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
-          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
-          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
-          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
-          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
-          "Zulu"
+        type: <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
   - name: languageIdFarEast
     uid: word!Word.Selection#languageIdFarEast:member
     package: word!
@@ -375,218 +257,22 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly languageIdFarEast: Word.LanguageId | "Afrikaans" | "Albanian" |
-        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
-        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
-        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
-        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
-        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
-        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
-        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
-        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
-        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
-        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
-        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
-        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
-        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
-        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
-        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-        | "Galician" | "Georgian" | "German" | "GermanAustria" |
-        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
-        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
-        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
-        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
-        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
-        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
-        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
-        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
-        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
-        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
-        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
-        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
-        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
-        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
-        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
-        "Yiddish" | "Yoruba" | "Zulu";
+      content: 'readonly languageIdFarEast: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";'
       return:
-        type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
-          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
-          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
-          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
-          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
-          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
-          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
-          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
-          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
-          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
-          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
-          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
-          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
-          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
-          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
-          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
-          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" |
-          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
-          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
-          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
-          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
-          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
-          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
-          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
-          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
-          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
-          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
-          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
-          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
-          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
-          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
-          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
-          "Zulu"
+        type: <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
   - name: languageIdOther
     uid: word!Word.Selection#languageIdOther:member
     package: word!
     fullName: languageIdOther
-    summary: >-
-      Returns the language for the selection that isn't classified as an East
-      Asian language.
+    summary: Returns the language for the selection that isn't classified as an East Asian language.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly languageIdOther: Word.LanguageId | "Afrikaans" | "Albanian" |
-        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
-        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
-        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
-        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
-        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
-        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
-        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
-        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
-        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
-        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
-        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
-        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
-        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
-        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
-        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-        | "Galician" | "Georgian" | "German" | "GermanAustria" |
-        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
-        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
-        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
-        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
-        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
-        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
-        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
-        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
-        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
-        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
-        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
-        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
-        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
-        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
-        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
-        "Yiddish" | "Yoruba" | "Zulu";
+      content: 'readonly languageIdOther: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";'
       return:
-        type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
-          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
-          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
-          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
-          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
-          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
-          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
-          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
-          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
-          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
-          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
-          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
-          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
-          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
-          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
-          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
-          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" |
-          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
-          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
-          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
-          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
-          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
-          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
-          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
-          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
-          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
-          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
-          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
-          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
-          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
-          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
-          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
-          "Zulu"
+        type: <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
   - name: orientation
     uid: word!Word.Selection#orientation:member
     package: word!
@@ -597,21 +283,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        orientation: Word.TextOrientation | "Horizontal" | "Upward" | "Downward"
-        | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical";
+      content: 'orientation: Word.TextOrientation | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical";'
       return:
-        type: >-
-          <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" |
-          "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast"
-          | "Vertical"
+        type: <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical"
   - name: paragraphs
     uid: word!Word.Selection#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: >-
-      Returns a `ParagraphCollection` object that represents all the paragraphs
-      in the selection.
+    summary: Returns a `ParagraphCollection` object that represents all the paragraphs in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -624,9 +303,7 @@ properties:
     uid: word!Word.Selection#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns the `Range` object for the portion of the document contained in
-      the selection.
+    summary: Returns the `Range` object for the portion of the document contained in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -652,9 +329,7 @@ properties:
     uid: word!Word.Selection#sentences:member
     package: word!
     fullName: sentences
-    summary: >-
-      Returns the `RangeScopedCollection` object for each sentence in the
-      selection.
+    summary: Returns the `RangeScopedCollection` object for each sentence in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -667,9 +342,7 @@ properties:
     uid: word!Word.Selection#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns the `ShadingUniversal` object for the shading formatting for the
-      selection.
+    summary: Returns the `ShadingUniversal` object for the shading formatting for the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -714,23 +387,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly storyType: Word.StoryType | "MainText" | "Footnotes" |
-        "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
-        "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
-        "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
-        "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-        "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-        "EndnoteContinuationNotice";
+      content: 'readonly storyType: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";'
       return:
-        type: >-
-          <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" |
-          "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
-          "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
-          "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
-          "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-          "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-          "EndnoteContinuationNotice"
+        type: <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice"
   - name: tables
     uid: word!Word.Selection#tables:member
     package: word!
@@ -761,9 +420,7 @@ properties:
     uid: word!Word.Selection#topLevelTables:member
     package: word!
     fullName: topLevelTables
-    summary: >-
-      Returns the tables at the outermost nesting level in the current
-      selection.
+    summary: Returns the tables at the outermost nesting level in the current selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -782,22 +439,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Word.SelectionType | "NoSelection" | "InsertionPoint" |
-        "Normal" | "Frame" | "Column" | "Row" | "Block" | "InlineShape" |
-        "SelectionShape";
+      content: 'readonly type: Word.SelectionType | "NoSelection" | "InsertionPoint" | "Normal" | "Frame" | "Column" | "Row" | "Block" | "InlineShape" | "SelectionShape";'
       return:
-        type: >-
-          <xref uid="word!Word.SelectionType:enum" /> | "NoSelection" |
-          "InsertionPoint" | "Normal" | "Frame" | "Column" | "Row" | "Block" |
-          "InlineShape" | "SelectionShape"
+        type: <xref uid="word!Word.SelectionType:enum" /> | "NoSelection" | "InsertionPoint" | "Normal" | "Frame" | "Column" | "Row" | "Block" | "InlineShape" | "SelectionShape"
   - name: words
     uid: word!Word.Selection#words:member
     package: word!
     fullName: words
-    summary: >-
-      Returns the `RangeScopedCollection` object that represents each word in
-      the selection.
+    summary: Returns the `RangeScopedCollection` object that represents each word in the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -825,9 +474,7 @@ methods:
     uid: word!Word.Selection#cancelMode:member(1)
     package: word!
     fullName: cancelMode()
-    summary: >-
-      Cancels a mode such as extend or column select. This is equivalent to
-      pressing the Esc key.
+    summary: Cancels a mode such as extend or column select. This is equivalent to pressing the Esc key.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -975,9 +622,7 @@ methods:
     uid: word!Word.Selection#copyFormat:member(1)
     package: word!
     fullName: copyFormat()
-    summary: >-
-      Copies the character formatting of the first character in the selected
-      text.
+    summary: Copies the character formatting of the first character in the selected text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1019,9 +664,7 @@ methods:
     uid: word!Word.Selection#cut:member(1)
     package: word!
     fullName: cut()
-    summary: >-
-      Removes the selected content from the document and moves it to the
-      Clipboard.
+    summary: Removes the selected content from the document and moves it to the Clipboard.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1041,9 +684,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        delete(options?: Word.SelectionDeleteOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'delete(options?: Word.SelectionDeleteOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for deleting text.
@@ -1093,18 +734,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        expand(unit?: "Character" | "Word" | "Sentence" | "Paragraph" | "Line" |
-        "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" |
-        "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"):
-        OfficeExtension.ClientResult<number>;
+      content: 'expand(unit?: "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: unit
           description: Optional. The unit to expand.
-          type: >-
-            "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" |
-            "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" |
-            "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"
+          type: '"Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters added to the range or selection.
@@ -1126,9 +760,7 @@ methods:
     uid: word!Word.Selection#extend:member(1)
     package: word!
     fullName: extend(character)
-    summary: >-
-      Turns on extend mode, or if extend mode is already on, extends the
-      selection to the next larger unit of text.
+    summary: Turns on extend mode, or if extend mode is already on, extends the selection to the next larger unit of text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1137,11 +769,7 @@ methods:
       content: 'extend(character?: Word.OperationUnit): void;'
       parameters:
         - id: character
-          description: >-
-            Optional. The character through which the selection is extended.
-            This argument is case-sensitive and must evaluate to a string or an
-            error occurs. Also, if the value of this argument is longer than a
-            single character, Microsoft Word ignores the command entirely.
+          description: Optional. The character through which the selection is extended. This argument is case-sensitive and must evaluate to a string or an error occurs. Also, if the value of this argument is longer than a single character, Microsoft Word ignores the command entirely.
           type: <xref uid="word!Word.OperationUnit:enum" />
       return:
         type: void
@@ -1150,30 +778,17 @@ methods:
     uid: word!Word.Selection#extend:member(2)
     package: word!
     fullName: extend(character)
-    summary: >-
-      Turns on extend mode, or if extend mode is already on, extends the
-      selection to the next larger unit of text.
+    summary: Turns on extend mode, or if extend mode is already on, extends the selection to the next larger unit of text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        extend(character?: "Character" | "Word" | "Sentence" | "Paragraph" |
-        "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" |
-        "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"):
-        void;
+      content: 'extend(character?: "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"): void;'
       parameters:
         - id: character
-          description: >-
-            Optional. The character through which the selection is extended.
-            This argument is case-sensitive and must evaluate to a string or an
-            error occurs. Also, if the value of this argument is longer than a
-            single character, Microsoft Word ignores the command entirely.
-          type: >-
-            "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" |
-            "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" |
-            "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"
+          description: Optional. The character through which the selection is extended. This argument is case-sensitive and must evaluate to a string or an error occurs. Also, if the value of this argument is longer than a single character, Microsoft Word ignores the command entirely.
+          type: '"Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"'
       return:
         type: void
         description: ''
@@ -1181,9 +796,7 @@ methods:
     uid: word!Word.Selection#getNextRange:member(1)
     package: word!
     fullName: getNextRange(options)
-    summary: >-
-      Returns a `Range` object that represents the next unit relative to the
-      selection.
+    summary: Returns a `Range` object that represents the next unit relative to the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1196,16 +809,12 @@ methods:
           type: <xref uid="word!Word.SelectionNextOptions:interface" />
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that represents the next unit relative to the
-          selection.
+        description: A `Range` object that represents the next unit relative to the selection.
   - name: getPreviousRange(options)
     uid: word!Word.Selection#getPreviousRange:member(1)
     package: word!
     fullName: getPreviousRange(options)
-    summary: >-
-      Returns a `Range` object that represents the previous unit relative to the
-      selection.
+    summary: Returns a `Range` object that represents the previous unit relative to the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1218,17 +827,12 @@ methods:
           type: <xref uid="word!Word.SelectionPreviousOptions:interface" />
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that represents the previous unit relative to the
-          selection.
+        description: A `Range` object that represents the previous unit relative to the selection.
   - name: goToNext(what)
     uid: word!Word.Selection#goToNext:member(1)
     package: word!
     fullName: goToNext(what)
-    summary: >-
-      Returns a `Range` object that refers to the start position of the next
-      item or location specified by the `what` argument and moves the selection
-      to the specified item.
+    summary: Returns a `Range` object that refers to the start position of the next item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1241,48 +845,30 @@ methods:
           type: <xref uid="word!Word.GoToItem:enum" />
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that refers to the start position of the next item or
-          location specified by the `what` argument.
+        description: A `Range` object that refers to the start position of the next item or location specified by the `what` argument.
   - name: goToNext(what)
     uid: word!Word.Selection#goToNext:member(2)
     package: word!
     fullName: goToNext(what)
-    summary: >-
-      Returns a `Range` object that refers to the start position of the next
-      item or location specified by the `what` argument and moves the selection
-      to the specified item.
+    summary: Returns a `Range` object that refers to the start position of the next item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        goToNext(what: "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote"
-        | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" |
-        "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" |
-        "GrammaticalError" | "ProofreadingError"): Word.Range;
+      content: 'goToNext(what: "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"): Word.Range;'
       parameters:
         - id: what
           description: The item type to go to.
-          type: >-
-            "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" |
-            "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" |
-            "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" |
-            "GrammaticalError" | "ProofreadingError"
+          type: '"Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"'
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that refers to the start position of the next item or
-          location specified by the `what` argument.
+        description: A `Range` object that refers to the start position of the next item or location specified by the `what` argument.
   - name: goToPrevious(what)
     uid: word!Word.Selection#goToPrevious:member(1)
     package: word!
     fullName: goToPrevious(what)
-    summary: >-
-      Returns a `Range` object that refers to the start position of the previous
-      item or location specified by the `what` argument and moves the selection
-      to the specified item.
+    summary: Returns a `Range` object that refers to the start position of the previous item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1295,40 +881,25 @@ methods:
           type: <xref uid="word!Word.GoToItem:enum" />
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that refers to the start position of the previous
-          item or location specified by the `what` argument.
+        description: A `Range` object that refers to the start position of the previous item or location specified by the `what` argument.
   - name: goToPrevious(what)
     uid: word!Word.Selection#goToPrevious:member(2)
     package: word!
     fullName: goToPrevious(what)
-    summary: >-
-      Returns a `Range` object that refers to the start position of the previous
-      item or location specified by the `what` argument and moves the selection
-      to the specified item.
+    summary: Returns a `Range` object that refers to the start position of the previous item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        goToPrevious(what: "Bookmark" | "Comment" | "Endnote" | "Field" |
-        "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" |
-        "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" |
-        "GrammaticalError" | "ProofreadingError"): Word.Range;
+      content: 'goToPrevious(what: "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"): Word.Range;'
       parameters:
         - id: what
           description: The item type to go to.
-          type: >-
-            "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" |
-            "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" |
-            "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" |
-            "GrammaticalError" | "ProofreadingError"
+          type: '"Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"'
       return:
         type: <xref uid="word!Word.Range:class" />
-        description: >-
-          A `Range` object that refers to the start position of the previous
-          item or location specified by the `what` argument.
+        description: A `Range` object that refers to the start position of the previous item or location specified by the `what` argument.
   - name: insertAfter(text)
     uid: word!Word.Selection#insertAfter:member(1)
     package: word!
@@ -1378,10 +949,7 @@ methods:
       content: 'insertCells(shiftCells?: Word.TableCellInsertionLocation): void;'
       parameters:
         - id: shiftCells
-          description: >-
-            Optional. Specifies how to insert the cells into the existing
-            columns and rows of the table. The default value is `shiftDown`<!--
-            -->.
+          description: Optional. Specifies how to insert the cells into the existing columns and rows of the table. The default value is `shiftDown`<!-- -->.
           type: <xref uid="word!Word.TableCellInsertionLocation:enum" />
       return:
         type: void
@@ -1396,15 +964,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertCells(shiftCells?: "ShiftRight" | "ShiftDown" | "ShiftRowDown" |
-        "ShiftColumnRight"): void;
+      content: 'insertCells(shiftCells?: "ShiftRight" | "ShiftDown" | "ShiftRowDown" | "ShiftColumnRight"): void;'
       parameters:
         - id: shiftCells
-          description: >-
-            Optional. Specifies how to insert the cells into the existing
-            columns and rows of the table. The default value is `shiftDown`<!--
-            -->.
+          description: Optional. Specifies how to insert the cells into the existing columns and rows of the table. The default value is `shiftDown`<!-- -->.
           type: '"ShiftRight" | "ShiftDown" | "ShiftRowDown" | "ShiftColumnRight"'
       return:
         type: void
@@ -1441,10 +1004,7 @@ methods:
     uid: word!Word.Selection#insertDateTime:member(1)
     package: word!
     fullName: insertDateTime(options)
-    summary: >-
-      Inserts the current date or time, or both, either as text or as a [TIME
-      field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!--
-      -->.
+    summary: Inserts the current date or time, or both, either as text or as a [TIME field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1462,10 +1022,7 @@ methods:
     uid: word!Word.Selection#insertFormula:member(1)
     package: word!
     fullName: insertFormula(options)
-    summary: >-
-      Inserts a [Formula
-      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
-      at the selection.
+    summary: Inserts a [Formula field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d) at the selection.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1525,9 +1082,7 @@ methods:
     uid: word!Word.Selection#insertParagraphStyleSeparator:member(1)
     package: word!
     fullName: insertParagraphStyleSeparator()
-    summary: >-
-      Inserts a special hidden paragraph mark that allows Word to join
-      paragraphs formatted using different paragraph styles.
+    summary: Inserts a special hidden paragraph mark that allows Word to join paragraphs formatted using different paragraph styles.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1583,9 +1138,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertSymbol(characterNumber: number, options?:
-        Word.SelectionInsertSymbolOptions): void;
+      content: 'insertSymbol(characterNumber: number, options?: Word.SelectionInsertSymbolOptions): void;'
       parameters:
         - id: characterNumber
           description: The character number of the symbol.
@@ -1618,9 +1171,7 @@ methods:
     uid: word!Word.Selection#insertXml:member(1)
     package: word!
     fullName: insertXml(xml, transform)
-    summary: >-
-      Inserts the specified XML into the document at the cursor, replacing any
-      selected text.
+    summary: Inserts the specified XML into the document at the cursor, replacing any selected text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1653,9 +1204,7 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is equal to the specified range.'
   - name: isInRange(range)
     uid: word!Word.Selection#isInRange:member(1)
@@ -1673,9 +1222,7 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is contained within the specified range.'
   - name: isInStory(range)
     uid: word!Word.Selection#isInStory:member(1)
@@ -1693,17 +1240,13 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is in the same story as the specified range.'
   - name: load(options)
     uid: word!Word.Selection#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1721,9 +1264,7 @@ methods:
     uid: word!Word.Selection#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1732,9 +1273,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Selection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Selection:class" />
@@ -1743,9 +1282,7 @@ methods:
     uid: word!Word.Selection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1758,11 +1295,7 @@ methods:
                 }): Word.Selection;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -1775,17 +1308,13 @@ methods:
     uid: word!Word.Selection#move:member(1)
     package: word!
     fullName: move(options)
-    summary: >-
-      Collapses the selection to its start or end position and then moves the
-      collapsed object by the specified number of units.
+    summary: Collapses the selection to its start or end position and then moves the collapsed object by the specified number of units.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        move(options?: Word.SelectionMoveOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'move(options?: Word.SelectionMoveOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving the selection.
@@ -1803,9 +1332,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveDown(options?: Word.SelectionMoveUpDownOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveDown(options?: Word.SelectionMoveUpDownOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving down.
@@ -1823,9 +1350,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveEnd(options?: Word.SelectionMoveStartEndOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveEnd(options?: Word.SelectionMoveStartEndOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving end.
@@ -1837,22 +1362,16 @@ methods:
     uid: word!Word.Selection#moveEndUntil:member(1)
     package: word!
     fullName: moveEndUntil(characters, count)
-    summary: >-
-      Moves the end position of the selection until any of the specified
-      characters are found in the document.
+    summary: Moves the end position of the selection until any of the specified characters are found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveEndUntil(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveEndUntil(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. For example. If you specify "a", the
-            selection moves the end position to before the first "a" character.
+          description: Characters to search for. For example. If you specify "a", the selection moves the end position to before the first "a" character.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -1864,23 +1383,16 @@ methods:
     uid: word!Word.Selection#moveEndWhile:member(1)
     package: word!
     fullName: moveEndWhile(characters, count)
-    summary: >-
-      Moves the ending character position of the selection while any of the
-      specified characters are found in the document.
+    summary: Moves the ending character position of the selection while any of the specified characters are found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveEndWhile(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveEndWhile(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. For example. If you specify "abcd", the
-            selection moves the end position when any letter from "abcd" is
-            found.
+          description: Characters to search for. For example. If you specify "abcd", the selection moves the end position when any letter from "abcd" is found.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -1898,9 +1410,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveLeft(options?: Word.SelectionMoveLeftRightOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveLeft(options?: Word.SelectionMoveLeftRightOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving left.
@@ -1918,9 +1428,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveRight(options?: Word.SelectionMoveLeftRightOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveRight(options?: Word.SelectionMoveLeftRightOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving right.
@@ -1938,9 +1446,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveStart(options?: Word.SelectionMoveStartEndOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveStart(options?: Word.SelectionMoveStartEndOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for the `moveStart` operation.
@@ -1952,22 +1458,16 @@ methods:
     uid: word!Word.Selection#moveStartUntil:member(1)
     package: word!
     fullName: moveStartUntil(characters, count)
-    summary: >-
-      Moves the start position of the selection until one of the specified
-      characters is found in the document.
+    summary: Moves the start position of the selection until one of the specified characters is found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveStartUntil(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveStartUntil(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. If you specify "a", the selection moves
-            the start position to before the first "a" character.
+          description: Characters to search for. If you specify "a", the selection moves the start position to before the first "a" character.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -1979,23 +1479,16 @@ methods:
     uid: word!Word.Selection#moveStartWhile:member(1)
     package: word!
     fullName: moveStartWhile(characters, count)
-    summary: >-
-      Moves the start position of the selection while any of the specified
-      characters are found in the document.
+    summary: Moves the start position of the selection while any of the specified characters are found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveStartWhile(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveStartWhile(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. For example. If you specify "abcd", the
-            selection moves the start position when any letter from "abcd" is
-            found.
+          description: Characters to search for. For example. If you specify "abcd", the selection moves the start position when any letter from "abcd" is found.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -2007,22 +1500,16 @@ methods:
     uid: word!Word.Selection#moveUntil:member(1)
     package: word!
     fullName: moveUntil(characters, count)
-    summary: >-
-      Moves the selection until one of the specified characters is found in the
-      document.
+    summary: Moves the selection until one of the specified characters is found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveUntil(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveUntil(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. For example. If you specify "a", the
-            selection moves to the position before the first "a" character.
+          description: Characters to search for. For example. If you specify "a", the selection moves to the position before the first "a" character.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -2040,9 +1527,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveUp(options?: Word.SelectionMoveUpDownOptions):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveUp(options?: Word.SelectionMoveUpDownOptions): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: options
           description: Optional. Options for moving up.
@@ -2054,23 +1539,16 @@ methods:
     uid: word!Word.Selection#moveWhile:member(1)
     package: word!
     fullName: moveWhile(characters, count)
-    summary: >-
-      Moves the selection while any of the specified characters are found in the
-      document.
+    summary: Moves the selection while any of the specified characters are found in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        moveWhile(characters: string, count?: number):
-        OfficeExtension.ClientResult<number>;
+      content: 'moveWhile(characters: string, count?: number): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: characters
-          description: >-
-            Characters to search for. For example. If you specify "abcd", the
-            selection moves to the position when any letter from "abcd" is
-            found.
+          description: Characters to search for. For example. If you specify "abcd", the selection moves to the position when any letter from "abcd" is found.
           type: string
         - id: count
           description: Optional. Maximum number of characters to search.
@@ -2134,26 +1612,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        pasteAndFormat(type: "PasteDefault" | "SingleCellText" |
-        "SingleCellTable" | "ListContinueNumbering" | "ListRestartNumbering" |
-        "TableAppendTable" | "TableInsertAsRows" | "TableOriginalFormatting" |
-        "ChartPicture" | "Chart" | "ChartLinked" | "FormatOriginalFormatting" |
-        "FormatSurroundingFormattingWithEmphasis" | "FormatPlainText" |
-        "TableOverwriteCells" | "ListCombineWithExistingList" | "ListDontMerge"
-        | "UseDestinationStylesRecovery"): void;
+      content: 'pasteAndFormat(type: "PasteDefault" | "SingleCellText" | "SingleCellTable" | "ListContinueNumbering" | "ListRestartNumbering" | "TableAppendTable" | "TableInsertAsRows" | "TableOriginalFormatting" | "ChartPicture" | "Chart" | "ChartLinked" | "FormatOriginalFormatting" | "FormatSurroundingFormattingWithEmphasis" | "FormatPlainText" | "TableOverwriteCells" | "ListCombineWithExistingList" | "ListDontMerge" | "UseDestinationStylesRecovery"): void;'
       parameters:
         - id: type
           description: The format paste type for table cells.
-          type: >-
-            "PasteDefault" | "SingleCellText" | "SingleCellTable" |
-            "ListContinueNumbering" | "ListRestartNumbering" |
-            "TableAppendTable" | "TableInsertAsRows" | "TableOriginalFormatting"
-            | "ChartPicture" | "Chart" | "ChartLinked" |
-            "FormatOriginalFormatting" |
-            "FormatSurroundingFormattingWithEmphasis" | "FormatPlainText" |
-            "TableOverwriteCells" | "ListCombineWithExistingList" |
-            "ListDontMerge" | "UseDestinationStylesRecovery"
+          type: '"PasteDefault" | "SingleCellText" | "SingleCellTable" | "ListContinueNumbering" | "ListRestartNumbering" | "TableAppendTable" | "TableInsertAsRows" | "TableOriginalFormatting" | "ChartPicture" | "Chart" | "ChartLinked" | "FormatOriginalFormatting" | "FormatSurroundingFormattingWithEmphasis" | "FormatPlainText" | "TableOverwriteCells" | "ListCombineWithExistingList" | "ListDontMerge" | "UseDestinationStylesRecovery"'
       return:
         type: void
         description: ''
@@ -2167,9 +1630,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        pasteExcelTable(linkedToExcel: boolean, wordFormatting: boolean, rtf:
-        boolean): void;
+      content: 'pasteExcelTable(linkedToExcel: boolean, wordFormatting: boolean, rtf: boolean): void;'
       parameters:
         - id: linkedToExcel
           description: Whether the table is linked to Excel.
@@ -2201,9 +1662,7 @@ methods:
     uid: word!Word.Selection#pasteTableCellsAppendTable:member(1)
     package: word!
     fullName: pasteTableCellsAppendTable()
-    summary: >-
-      Merges pasted cells into an existing table by inserting the pasted rows
-      between the selected rows.
+    summary: Merges pasted cells into an existing table by inserting the pasted rows between the selected rows.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2287,9 +1746,7 @@ methods:
     uid: word!Word.Selection#selectCell:member(1)
     package: word!
     fullName: selectCell()
-    summary: >-
-      Selects the entire cell containing the current selection when the
-      selection is in a table.
+    summary: Selects the entire cell containing the current selection when the selection is in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2303,9 +1760,7 @@ methods:
     uid: word!Word.Selection#selectColumn:member(1)
     package: word!
     fullName: selectColumn()
-    summary: >-
-      Selects the column that contains the insertion point, or selects all
-      columns that contain the selection when the selection is in a table.
+    summary: Selects the column that contains the insertion point, or selects all columns that contain the selection when the selection is in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2319,9 +1774,7 @@ methods:
     uid: word!Word.Selection#selectCurrentAlignment:member(1)
     package: word!
     fullName: selectCurrentAlignment()
-    summary: >-
-      Extends the selection forward until text with a different paragraph
-      alignment is encountered.
+    summary: Extends the selection forward until text with a different paragraph alignment is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2335,9 +1788,7 @@ methods:
     uid: word!Word.Selection#selectCurrentColor:member(1)
     package: word!
     fullName: selectCurrentColor()
-    summary: >-
-      Extends the selection forward until text with a different color is
-      encountered.
+    summary: Extends the selection forward until text with a different color is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2351,9 +1802,7 @@ methods:
     uid: word!Word.Selection#selectCurrentFont:member(1)
     package: word!
     fullName: selectCurrentFont()
-    summary: >-
-      Extends the selection forward until text in a different font or font size
-      is encountered.
+    summary: Extends the selection forward until text in a different font or font size is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2367,9 +1816,7 @@ methods:
     uid: word!Word.Selection#selectCurrentIndent:member(1)
     package: word!
     fullName: selectCurrentIndent()
-    summary: >-
-      Extends the selection forward until text with different left or right
-      paragraph indents is encountered.
+    summary: Extends the selection forward until text with different left or right paragraph indents is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2383,9 +1830,7 @@ methods:
     uid: word!Word.Selection#selectCurrentSpacing:member(1)
     package: word!
     fullName: selectCurrentSpacing()
-    summary: >-
-      Extends the selection forward until a paragraph with different line
-      spacing is encountered.
+    summary: Extends the selection forward until a paragraph with different line spacing is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2399,9 +1844,7 @@ methods:
     uid: word!Word.Selection#selectCurrentTabs:member(1)
     package: word!
     fullName: selectCurrentTabs()
-    summary: >-
-      Extends the selection forward until a paragraph with different tab stops
-      is encountered.
+    summary: Extends the selection forward until a paragraph with different tab stops is encountered.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2415,9 +1858,7 @@ methods:
     uid: word!Word.Selection#selectRow:member(1)
     package: word!
     fullName: selectRow()
-    summary: >-
-      Selects the row that contains the insertion point, or selects all rows
-      that contain the selection when the selection is in a table.
+    summary: Selects the row that contains the insertion point, or selects all rows that contain the selection when the selection is in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2431,11 +1872,7 @@ methods:
     uid: word!Word.Selection#setRange:member(1)
     package: word!
     fullName: setRange(start, end)
-    summary: >-
-      Sets the starting and ending character positions for the selection.
-      Character position values start at the beginning of the story, with the
-      first value being 0. All characters are counted, including nonprinting
-      characters. Hidden characters are counted even if they're not displayed.
+    summary: Sets the starting and ending character positions for the selection. Character position values start at the beginning of the story, with the first value being 0. All characters are counted, including nonprinting characters. Hidden characters are counted even if they're not displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2456,10 +1893,7 @@ methods:
     uid: word!Word.Selection#shrink:member(1)
     package: word!
     fullName: shrink()
-    summary: >-
-      Shrinks the selection to the next smaller unit of text. The unit
-      progression for this method is as follows: entire document, section,
-      paragraph, sentence, word, insertion point.
+    summary: 'Shrinks the selection to the next smaller unit of text. The unit progression for this method is as follows: entire document, section, paragraph, sentence, word, insertion point.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2473,9 +1907,7 @@ methods:
     uid: word!Word.Selection#shrinkDiscontiguousSelection:member(1)
     package: word!
     fullName: shrinkDiscontiguousSelection()
-    summary: >-
-      Cancels the selection of all but the most recently selected text when the
-      current selection contains multiple, unconnected selections.
+    summary: Cancels the selection of all but the most recently selected text when the current selection contains multiple, unconnected selections.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2489,10 +1921,7 @@ methods:
     uid: word!Word.Selection#splitTable:member(1)
     package: word!
     fullName: splitTable()
-    summary: >-
-      Inserts an empty paragraph above the first row in the selection. If the
-      selection isn't in the first row of the table, the table is split into two
-      tables. If the selection isn't in a table, an error occurs.
+    summary: Inserts an empty paragraph above the first row in the selection. If the selection isn't in the first row of the table, the table is split into two tables. If the selection isn't in a table, an error occurs.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2506,9 +1935,7 @@ methods:
     uid: word!Word.Selection#toggleCharacterCode:member(1)
     package: word!
     fullName: toggleCharacterCode()
-    summary: >-
-      Switches the selection between a Unicode character and its corresponding
-      hexadecimal value.
+    summary: Switches the selection between a Unicode character and its corresponding hexadecimal value.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2522,14 +1949,7 @@ methods:
     uid: word!Word.Selection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Selection` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.SelectionData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Selection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SelectionData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -2543,16 +1963,7 @@ methods:
     uid: word!Word.Selection#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -2566,9 +1977,7 @@ methods:
     uid: word!Word.Selection#typeBackspace:member(1)
     package: word!
     fullName: typeBackspace()
-    summary: >-
-      Deletes the character preceding the selection (if collapsed) or the
-      insertion point.
+    summary: Deletes the character preceding the selection (if collapsed) or the insertion point.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2582,14 +1991,7 @@ methods:
     uid: word!Word.Selection#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

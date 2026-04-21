@@ -14,20 +14,14 @@ properties:
     uid: word!Word.Font#allCaps:member
     package: word!
     fullName: allCaps
-    summary: >-
-      Specifies whether the font is formatted as all capital letters, which
-      makes lowercase letters appear as uppercase letters. The possible values
-      are as follows:
-
+    summary: |-
+      Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
 
       - `true`<!-- -->: All the text has the **All Caps** attribute.
 
-
       - `false`<!-- -->: None of the text has the **All Caps** attribute.
 
-
-      - `null`<!-- -->: Returned if some, but not all, of the text has the
-      **All Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the **All Caps** attribute.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -40,9 +34,7 @@ properties:
     uid: word!Word.Font#bold:member
     package: word!
     fullName: bold
-    summary: >-
-      Specifies whether the font is bold. `true` if the font is formatted as
-      bold, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font is bold. `true` if the font is formatted as bold, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -55,16 +47,12 @@ properties:
     uid: word!Word.Font#boldBidirectional:member
     package: word!
     fullName: boldBidirectional
-    summary: >-
-      Specifies whether the font is formatted as bold in a right-to-left
-      language document. The possible values are as follows:
-
+    summary: |-
+      Specifies whether the font is formatted as bold in a right-to-left language document. The possible values are as follows:
 
       - `true`<!-- -->: All the text is bold.
 
-
       - `false`<!-- -->: None of the text is bold.
-
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
@@ -79,9 +67,7 @@ properties:
     uid: word!Word.Font#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` object that represents all the
-      borders for the font.
+    summary: Returns a `BorderUniversalCollection` object that represents all the borders for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -94,9 +80,7 @@ properties:
     uid: word!Word.Font#color:member
     package: word!
     fullName: color
-    summary: >-
-      Specifies the color for the font. You can provide the value in the
-      '\#RRGGBB' format or the color name.
+    summary: Specifies the color for the font. You can provide the value in the '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -115,47 +99,27 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" |
-        "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" |
-        "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
-        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+      content: 'colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";'
       return:
-        type: >-
-          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
-          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
-          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
-          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+        type: <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: colorIndexBidirectional
     uid: word!Word.Font#colorIndexBidirectional:member
     package: word!
     fullName: colorIndexBidirectional
-    summary: >-
-      Specifies the color for the `Font` object in a right-to-left language
-      document.
+    summary: Specifies the color for the `Font` object in a right-to-left language document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        colorIndexBidirectional: Word.ColorIndex | "Auto" | "Black" | "Blue" |
-        "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
-        "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
-        "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+      content: 'colorIndexBidirectional: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";'
       return:
-        type: >-
-          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
-          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
-          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
-          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+        type: <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: context
     uid: word!Word.Font#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -181,9 +145,7 @@ properties:
     uid: word!Word.Font#diacriticColor:member
     package: word!
     fullName: diacriticColor
-    summary: >-
-      Specifies the color to be used for diacritics for the `Font` object. You
-      can provide the value in the '\#RRGGBB' format.
+    summary: Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -196,9 +158,7 @@ properties:
     uid: word!Word.Font#disableCharacterSpaceGrid:member
     package: word!
     fullName: disableCharacterSpaceGrid
-    summary: >-
-      Specifies whether Microsoft Word ignores the number of characters per line
-      for the corresponding `Font` object.
+    summary: Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -211,9 +171,7 @@ properties:
     uid: word!Word.Font#doubleStrikeThrough:member
     package: word!
     fullName: doubleStrikeThrough
-    summary: >-
-      Specifies whether the font has a double strikethrough. `true` if the font
-      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font has a double strikethrough. `true` if the font is formatted as double strikethrough text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -226,16 +184,12 @@ properties:
     uid: word!Word.Font#emboss:member
     package: word!
     fullName: emboss
-    summary: >-
-      Specifies whether the font is formatted as embossed. The possible values
-      are as follows:
-
+    summary: |-
+      Specifies whether the font is formatted as embossed. The possible values are as follows:
 
       - `true`<!-- -->: All the text is embossed.
 
-
       - `false`<!-- -->: None of the text is embossed.
-
 
       - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
@@ -250,36 +204,25 @@ properties:
     uid: word!Word.Font#emphasisMark:member
     package: word!
     fullName: emphasisMark
-    summary: >-
-      Specifies an `EmphasisMark` value that represents the emphasis mark for a
-      character or designated character string.
+    summary: Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" |
-        "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";
+      content: 'emphasisMark: Word.EmphasisMark | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle";'
       return:
-        type: >-
-          <xref uid="word!Word.EmphasisMark:enum" /> | "None" |
-          "OverSolidCircle" | "OverComma" | "OverWhiteCircle" |
-          "UnderSolidCircle"
+        type: <xref uid="word!Word.EmphasisMark:enum" /> | "None" | "OverSolidCircle" | "OverComma" | "OverWhiteCircle" | "UnderSolidCircle"
   - name: engrave
     uid: word!Word.Font#engrave:member
     package: word!
     fullName: engrave
-    summary: >-
-      Specifies whether the font is formatted as engraved. The possible values
-      are as follows:
-
+    summary: |-
+      Specifies whether the font is formatted as engraved. The possible values are as follows:
 
       - `true`<!-- -->: All the text is engraved.
 
-
       - `false`<!-- -->: None of the text is engraved.
-
 
       - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
@@ -294,9 +237,7 @@ properties:
     uid: word!Word.Font#fill:member
     package: word!
     fullName: fill
-    summary: >-
-      Returns a `FillFormat` object that contains fill formatting properties for
-      the font used by the range of text.
+    summary: Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -309,9 +250,7 @@ properties:
     uid: word!Word.Font#glow:member
     package: word!
     fullName: glow
-    summary: >-
-      Returns a `GlowFormat` object that represents the glow formatting for the
-      font used by the range of text.
+    summary: Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -324,9 +263,7 @@ properties:
     uid: word!Word.Font#hidden:member
     package: word!
     fullName: hidden
-    summary: >-
-      Specifies whether the font is tagged as hidden. `true` if the font is
-      formatted as hidden text, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font is tagged as hidden. `true` if the font is formatted as hidden text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -339,17 +276,7 @@ properties:
     uid: word!Word.Font#highlightColor:member
     package: word!
     fullName: highlightColor
-    summary: >-
-      Specifies the highlight color. To set it, use a value either in the
-      '\#RRGGBB' format or the color name. To remove highlight color, set it to
-      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
-      format, an empty string for mixed highlight colors, or `null` for no
-      highlight color. Note: Only the default highlight colors are available in
-      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
-      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
-      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
-      for Windows Desktop, any other color is converted to the closest color
-      when applied to the font.
+    summary: 'Specifies the highlight color. To set it, use a value either in the ''\#RRGGBB'' format or the color name. To remove highlight color, set it to `null`<!-- -->. The returned highlight color can be in the ''\#RRGGBB'' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.'
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -362,9 +289,7 @@ properties:
     uid: word!Word.Font#italic:member
     package: word!
     fullName: italic
-    summary: >-
-      Specifies whether the font is italicized. `true` if the font is
-      italicized, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font is italicized. `true` if the font is italicized, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -377,19 +302,14 @@ properties:
     uid: word!Word.Font#italicBidirectional:member
     package: word!
     fullName: italicBidirectional
-    summary: >-
-      Specifies whether the font is italicized in a right-to-left language
-      document. The possible values are as follows:
-
+    summary: |-
+      Specifies whether the font is italicized in a right-to-left language document. The possible values are as follows:
 
       - `true`<!-- -->: All the text is italicized.
 
-
       - `false`<!-- -->: None of the text is italicized.
 
-
-      - `null`<!-- -->: Returned if some, but not all, of the text is
-      italicized.
+      - `null`<!-- -->: Returned if some, but not all, of the text is italicized.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -402,9 +322,7 @@ properties:
     uid: word!Word.Font#kerning:member
     package: word!
     fullName: kerning
-    summary: >-
-      Specifies the minimum font size for which Microsoft Word will adjust
-      kerning automatically.
+    summary: Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -423,24 +341,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        ligature: Word.Ligature | "None" | "Standard" | "Contextual" |
-        "StandardContextual" | "Historical" | "StandardHistorical" |
-        "ContextualHistorical" | "StandardContextualHistorical" | "Discretional"
-        | "StandardDiscretional" | "ContextualDiscretional" |
-        "StandardContextualDiscretional" | "HistoricalDiscretional" |
-        "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" |
-        "All";
+      content: 'ligature: Word.Ligature | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All";'
       return:
-        type: >-
-          <xref uid="word!Word.Ligature:enum" /> | "None" | "Standard" |
-          "Contextual" | "StandardContextual" | "Historical" |
-          "StandardHistorical" | "ContextualHistorical" |
-          "StandardContextualHistorical" | "Discretional" |
-          "StandardDiscretional" | "ContextualDiscretional" |
-          "StandardContextualDiscretional" | "HistoricalDiscretional" |
-          "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional"
-          | "All"
+        type: <xref uid="word!Word.Ligature:enum" /> | "None" | "Standard" | "Contextual" | "StandardContextual" | "Historical" | "StandardHistorical" | "ContextualHistorical" | "StandardContextualHistorical" | "Discretional" | "StandardDiscretional" | "ContextualDiscretional" | "StandardContextualDiscretional" | "HistoricalDiscretional" | "StandardHistoricalDiscretional" | "ContextualHistoricalDiscretional" | "All"
   - name: line
     uid: word!Word.Font#line:member
     package: word!
@@ -471,9 +374,7 @@ properties:
     uid: word!Word.Font#nameAscii:member
     package: word!
     fullName: nameAscii
-    summary: >-
-      Specifies the font used for Latin text (characters with character codes
-      from 0 (zero) through 127).
+    summary: Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -533,9 +434,7 @@ properties:
     syntax:
       content: 'numberForm: Word.NumberForm | "Default" | "Lining" | "OldStyle";'
       return:
-        type: >-
-          <xref uid="word!Word.NumberForm:enum" /> | "Default" | "Lining" |
-          "OldStyle"
+        type: <xref uid="word!Word.NumberForm:enum" /> | "Default" | "Lining" | "OldStyle"
   - name: numberSpacing
     uid: word!Word.Font#numberSpacing:member
     package: word!
@@ -546,27 +445,19 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        numberSpacing: Word.NumberSpacing | "Default" | "Proportional" |
-        "Tabular";
+      content: 'numberSpacing: Word.NumberSpacing | "Default" | "Proportional" | "Tabular";'
       return:
-        type: >-
-          <xref uid="word!Word.NumberSpacing:enum" /> | "Default" |
-          "Proportional" | "Tabular"
+        type: <xref uid="word!Word.NumberSpacing:enum" /> | "Default" | "Proportional" | "Tabular"
   - name: outline
     uid: word!Word.Font#outline:member
     package: word!
     fullName: outline
-    summary: >-
-      Specifies if the font is formatted as outlined. The possible values are as
-      follows:
-
+    summary: |-
+      Specifies if the font is formatted as outlined. The possible values are as follows:
 
       - `true`<!-- -->: All the text is outlined.
 
-
       - `false`<!-- -->: None of the text is outlined.
-
 
       - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
@@ -594,9 +485,7 @@ properties:
     uid: word!Word.Font#reflection:member
     package: word!
     fullName: reflection
-    summary: >-
-      Returns a `ReflectionFormat` object that represents the reflection
-      formatting for a shape.
+    summary: Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -622,16 +511,12 @@ properties:
     uid: word!Word.Font#shadow:member
     package: word!
     fullName: shadow
-    summary: >-
-      Specifies if the font is formatted as shadowed. The possible values are as
-      follows:
-
+    summary: |-
+      Specifies if the font is formatted as shadowed. The possible values are as follows:
 
       - `true`<!-- -->: All the text is shadowed.
 
-
       - `false`<!-- -->: None of the text is shadowed.
-
 
       - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
@@ -672,20 +557,14 @@ properties:
     uid: word!Word.Font#smallCaps:member
     package: word!
     fullName: smallCaps
-    summary: >-
-      Specifies whether the font is formatted as small caps, which makes
-      lowercase letters appear as small uppercase letters. The possible values
-      are as follows:
-
+    summary: |-
+      Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
 
       - `true`<!-- -->: All the text has the **Small Caps** attribute.
 
-
       - `false`<!-- -->: None of the text has the **Small Caps** attribute.
 
-
-      - `null`<!-- -->: Returned if some, but not all, of the text has the
-      **Small Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the **Small Caps** attribute.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -711,9 +590,7 @@ properties:
     uid: word!Word.Font#strikeThrough:member
     package: word!
     fullName: strikeThrough
-    summary: >-
-      Specifies whether the font has a strikethrough. `true` if the font is
-      formatted as strikethrough text, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font has a strikethrough. `true` if the font is formatted as strikethrough text, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -732,24 +609,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        stylisticSet: Word.StylisticSet | "Default" | "Set01" | "Set02" |
-        "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" |
-        "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" |
-        "Set17" | "Set18" | "Set19" | "Set20";
+      content: 'stylisticSet: Word.StylisticSet | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" | "Set18" | "Set19" | "Set20";'
       return:
-        type: >-
-          <xref uid="word!Word.StylisticSet:enum" /> | "Default" | "Set01" |
-          "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" |
-          "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" |
-          "Set16" | "Set17" | "Set18" | "Set19" | "Set20"
+        type: <xref uid="word!Word.StylisticSet:enum" /> | "Default" | "Set01" | "Set02" | "Set03" | "Set04" | "Set05" | "Set06" | "Set07" | "Set08" | "Set09" | "Set10" | "Set11" | "Set12" | "Set13" | "Set14" | "Set15" | "Set16" | "Set17" | "Set18" | "Set19" | "Set20"
   - name: subscript
     uid: word!Word.Font#subscript:member
     package: word!
     fullName: subscript
-    summary: >-
-      Specifies whether the font is a subscript. `true` if the font is formatted
-      as subscript, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font is a subscript. `true` if the font is formatted as subscript, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -762,9 +629,7 @@ properties:
     uid: word!Word.Font#superscript:member
     package: word!
     fullName: superscript
-    summary: >-
-      Specifies whether the font is a superscript. `true` if the font is
-      formatted as superscript, otherwise, `false`<!-- -->.
+    summary: Specifies whether the font is a superscript. `true` if the font is formatted as superscript, otherwise, `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -790,9 +655,7 @@ properties:
     uid: word!Word.Font#textShadow:member
     package: word!
     fullName: textShadow
-    summary: >-
-      Returns a `ShadowFormat` object that specifies the shadow formatting for
-      the font.
+    summary: Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -805,9 +668,7 @@ properties:
     uid: word!Word.Font#threeDimensionalFormat:member
     package: word!
     fullName: threeDimensionalFormat
-    summary: >-
-      Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D)
-      effect formatting properties for the font.
+    summary: Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -826,27 +687,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
-        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
-        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
-        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+      content: 'underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";'
       return:
-        type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
-          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
-          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
-          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
-          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
-          | "WaveHeavy" | "WaveDouble"
+        type: <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
   - name: underlineColor
     uid: word!Word.Font#underlineColor:member
     package: word!
     fullName: underlineColor
-    summary: >-
-      Specifies the color of the underline for the `Font` object. You can
-      provide the value in the '\#RRGGBB' format.
+    summary: Specifies the color of the underline for the `Font` object. You can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -888,9 +736,7 @@ methods:
     uid: word!Word.Font#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -908,9 +754,7 @@ methods:
     uid: word!Word.Font#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -919,9 +763,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Font;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Font:class" />
@@ -930,9 +772,7 @@ methods:
     uid: word!Word.Font#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -945,11 +785,7 @@ methods:
                 }): Word.Font;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -976,29 +812,19 @@ methods:
     uid: word!Word.Font#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.FontUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -1007,9 +833,7 @@ methods:
     uid: word!Word.Font#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -1027,9 +851,7 @@ methods:
     uid: word!Word.Font#setAsTemplateDefault:member(1)
     package: word!
     fullName: setAsTemplateDefault()
-    summary: >-
-      Sets the specified font formatting as the default for the active document
-      and all new documents based on the active template.
+    summary: Sets the specified font formatting as the default for the active document and all new documents based on the active template.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -1043,14 +865,7 @@ methods:
     uid: word!Word.Font#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Font` object is an
-      API object, the `toJSON` method returns a plain JavaScript object (typed
-      as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -1064,16 +879,7 @@ methods:
     uid: word!Word.Font#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -1087,14 +893,7 @@ methods:
     uid: word!Word.Font#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

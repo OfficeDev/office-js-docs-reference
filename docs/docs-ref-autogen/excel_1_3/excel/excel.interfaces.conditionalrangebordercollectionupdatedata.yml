@@ -3,9 +3,7 @@ name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
 uid: excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
-summary: >-
-  An interface for updating data on the `ConditionalRangeBorderCollection`
-  object, for use in `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ConditionalRangeBorderCollection` object, for use in `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member
+    uid: excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member
     package: excel!
     fullName: items
     summary: ''
@@ -25,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]
+        type: <xref uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]

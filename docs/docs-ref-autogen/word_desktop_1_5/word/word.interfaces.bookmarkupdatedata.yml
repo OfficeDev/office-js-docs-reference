@@ -3,9 +3,7 @@ name: Word.Interfaces.BookmarkUpdateData
 uid: word!Word.Interfaces.BookmarkUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkUpdateData
-summary: >-
-  An interface for updating data on the `Bookmark` object, for use in
-  `bookmark.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Bookmark` object, for use in `bookmark.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -29,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.BookmarkUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the `Bookmark` object.
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

@@ -3,9 +3,7 @@ name: Word.Critique
 uid: word!Word.Critique:interface
 package: word!
 fullName: Word.Critique
-summary: >-
-  Critique that will be rendered as underline for the specified part of
-  paragraph in the document.
+summary: Critique that will be rendered as underline for the specified part of paragraph in the document.
 remarks: '\[Api set: WordApi 1.7\]'
 
 isPreview: false
@@ -22,13 +20,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" |
-        "Lavender" | "Berry";
+      content: 'colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";'
       return:
-        type: >-
-          <xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" |
-          "Blue" | "Lavender" | "Berry"
+        type: <xref uid="word!Word.CritiqueColorScheme:enum" /> | "Red" | "Green" | "Blue" | "Lavender" | "Berry"
   - name: length
     uid: word!Word.Critique#length:member
     package: word!

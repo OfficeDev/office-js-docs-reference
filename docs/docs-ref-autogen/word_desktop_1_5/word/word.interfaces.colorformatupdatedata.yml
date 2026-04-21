@@ -3,9 +3,7 @@ name: Word.Interfaces.ColorFormatUpdateData
 uid: word!Word.Interfaces.ColorFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ColorFormatUpdateData
-summary: >-
-  An interface for updating data on the `ColorFormat` object, for use in
-  `colorFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ColorFormat` object, for use in `colorFormat.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatUpdateData#brightness:member
     package: word!
     fullName: brightness
-    summary: >-
-      Specifies the brightness of a specified shape color. Valid values are from
-      `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    summary: Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -37,25 +33,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1"
-        | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" |
-        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" |
-        "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";
+      content: 'objectThemeColor?: Word.ThemeColorIndex | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2";'
       return:
-        type: >-
-          <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" |
-          "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" |
-          "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" |
-          "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" |
-          "Background2" | "Text2"
+        type: <xref uid="word!Word.ThemeColorIndex:enum" /> | "NotThemeColor" | "MainDark1" | "MainLight1" | "MainDark2" | "MainLight2" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Hyperlink" | "HyperlinkFollowed" | "Background1" | "Text1" | "Background2" | "Text2"
   - name: rgb
     uid: word!Word.Interfaces.ColorFormatUpdateData#rgb:member
     package: word!
     fullName: rgb
-    summary: >-
-      Specifies the red-green-blue (RGB) value of the specified color. You can
-      provide the value in the '\#RRGGBB' format.
+    summary: Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -68,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatUpdateData#tintAndShade:member
     package: word!
     fullName: tintAndShade
-    summary: >-
-      Specifies the lightening or darkening of a specified shape's color. Valid
-      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    summary: Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

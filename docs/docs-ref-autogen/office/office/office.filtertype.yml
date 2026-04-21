@@ -3,27 +3,18 @@ name: Office.FilterType
 uid: office!Office.FilterType:enum
 package: office!
 fullName: Office.FilterType
-summary: >-
-  Specifies whether filtering from the Office application is applied when the
-  data is retrieved.
-remarks: >-
+summary: Specifies whether filtering from the Office application is applied when the data is retrieved.
+remarks: |-
 
 
 
   #### Used by
 
-
-  - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions):
-  [filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)
-
-  - [Office.GetSelectedDataOptions](/javascript/api/office/office.getselecteddataoptions): [Office.GetSelectedDataOptions](/javascript/api/office/office.getselecteddataoptions):
-  [filterType](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-filtertype-member)
-
+  - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)
+  - [Office.GetSelectedDataOptions](/javascript/api/office/office.getselecteddataoptions): [filterType](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-filtertype-member)
   #### Examples
 
-
   ```TypeScript
-
   /* Set the selection options. These will:
    - Pass the string "myContext" to the callback.
    - Include both visible and hidden data.
@@ -36,9 +27,7 @@ remarks: >-
       valueFormat: Office.ValueFormat.Formatted
   }
 
-
   // Get the selected data in the Office document as text.
-
   Office.context.document.getSelectedDataAsync(
       Office.CoercionType.Text,
       options,
@@ -49,7 +38,6 @@ remarks: >-
               console.log(`The selected data is "${asyncResult.value}".`);
           }
   });
-
   ```
 
 isPreview: false

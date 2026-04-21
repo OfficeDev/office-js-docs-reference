@@ -3,9 +3,7 @@ name: Word.EditorType
 uid: word!Word.EditorType:enum
 package: word!
 fullName: Word.EditorType
-summary: >-
-  Represents the classes of users who can edit authorized portions of a
-  protected (read-only) document.
+summary: Represents the classes of users who can edit authorized portions of a protected (read-only) document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -22,10 +20,8 @@ fields:
   - name: editors
     uid: word!Word.EditorType.editors:member
     package: word!
-    summary: >-
-      Represents the Editors group for documents that use Information Rights
-      Management.
-
+    summary: |-
+      Represents the Editors group for documents that use Information Rights Management.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"Editors"'
@@ -40,10 +36,8 @@ fields:
   - name: owners
     uid: word!Word.EditorType.owners:member
     package: word!
-    summary: >-
-      Represents the Owners group for documents that use Information Rights
-      Management.
-
+    summary: |-
+      Represents the Owners group for documents that use Information Rights Management.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"Owners"'

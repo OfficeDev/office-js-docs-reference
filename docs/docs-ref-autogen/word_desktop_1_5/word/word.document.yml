@@ -3,10 +3,7 @@ name: Word.Document
 uid: word!Word.Document:class
 package: word!
 fullName: Word.Document
-summary: >-
-  The `Document` object is the top level object. A `Document` object contains
-  one or more sections, content controls, and the body that contains the
-  contents of the document.
+summary: The `Document` object is the top level object. A `Document` object contains one or more sections, content controls, and the body that contains the contents of the document.
 remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
@@ -56,9 +53,7 @@ properties:
     uid: word!Word.Document#areFilePropertiesPasswordEncrypted:member
     package: word!
     fullName: areFilePropertiesPasswordEncrypted
-    summary: >-
-      Gets whether Word encrypts file properties for password-protected
-      documents.
+    summary: Gets whether Word encrypts file properties for password-protected documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -71,9 +66,7 @@ properties:
     uid: word!Word.Document#areGrammaticalErrorsShown:member
     package: word!
     fullName: areGrammaticalErrorsShown
-    summary: >-
-      Specifies whether grammatical errors are marked by a wavy green line in
-      the document.
+    summary: Specifies whether grammatical errors are marked by a wavy green line in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -86,9 +79,7 @@ properties:
     uid: word!Word.Document#areMathDefaultsUsed:member
     package: word!
     fullName: areMathDefaultsUsed
-    summary: >-
-      Specifies whether to use the default math settings when creating new
-      equations.
+    summary: Specifies whether to use the default math settings when creating new equations.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -101,9 +92,7 @@ properties:
     uid: word!Word.Document#areNewerFeaturesDisabled:member
     package: word!
     fullName: areNewerFeaturesDisabled
-    summary: >-
-      Specifies whether to disable features introduced after a specified
-      version.
+    summary: Specifies whether to disable features introduced after a specified version.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -116,9 +105,7 @@ properties:
     uid: word!Word.Document#areSpellingErrorsShown:member
     package: word!
     fullName: areSpellingErrorsShown
-    summary: >-
-      Specifies whether Microsoft Word underlines spelling errors in the
-      document.
+    summary: Specifies whether Microsoft Word underlines spelling errors in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -131,9 +118,7 @@ properties:
     uid: word!Word.Document#areStylesUpdatedOnOpen:member
     package: word!
     fullName: areStylesUpdatedOnOpen
-    summary: >-
-      Specifies whether the styles in this document are updated to match the
-      styles in the attached template each time the document is opened.
+    summary: Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -146,9 +131,7 @@ properties:
     uid: word!Word.Document#areTrueTypeFontsEmbedded:member
     package: word!
     fullName: areTrueTypeFontsEmbedded
-    summary: >-
-      Specifies whether Microsoft Word embeds TrueType fonts in the document
-      when it's saved.
+    summary: Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -161,9 +144,7 @@ properties:
     uid: word!Word.Document#attachedTemplate:member
     package: word!
     fullName: attachedTemplate
-    summary: >-
-      Specifies a `Template` object that represents the template attached to the
-      document.
+    summary: Specifies a `Template` object that represents the template attached to the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -202,9 +183,7 @@ properties:
     uid: word!Word.Document#background:member
     package: word!
     fullName: background
-    summary: >-
-      Gets a `Shape` object that represents the background image for the
-      document.
+    summary: Gets a `Shape` object that represents the background image for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -217,9 +196,7 @@ properties:
     uid: word!Word.Document#bibliography:member
     package: word!
     fullName: bibliography
-    summary: >-
-      Returns a `Bibliography` object that represents the bibliography
-      references contained within the document.
+    summary: Returns a `Bibliography` object that represents the bibliography references contained within the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -232,9 +209,7 @@ properties:
     uid: word!Word.Document#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the main document. The body is the text that
-      excludes headers, footers, footnotes, textboxes, etc.
+    summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -247,9 +222,7 @@ properties:
     uid: word!Word.Document#bookmarks:member
     package: word!
     fullName: bookmarks
-    summary: >-
-      Returns a `BookmarkCollection` object that represents all the bookmarks in
-      the document.
+    summary: Returns a `BookmarkCollection` object that represents all the bookmarks in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -262,9 +235,7 @@ properties:
     uid: word!Word.Document#builtInDocumentProperties:member
     package: word!
     fullName: builtInDocumentProperties
-    summary: >-
-      Gets a `DocumentProperties` object that represents all the built-in
-      document properties for the document.
+    summary: Gets a `DocumentProperties` object that represents all the built-in document properties for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -283,20 +254,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" |
-        "TrackMineOnly";
+      content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
       return:
-        type: >-
-          <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
-          | "TrackMineOnly"
+        type: <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"
   - name: characters
     uid: word!Word.Document#characters:member
     package: word!
     fullName: characters
-    summary: >-
-      Gets the `RangeScopedCollection` object that represents all the characters
-      in the document.
+    summary: Gets the `RangeScopedCollection` object that represents all the characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -335,9 +300,7 @@ properties:
     uid: word!Word.Document#comments:member
     package: word!
     fullName: comments
-    summary: >-
-      Gets a `CommentCollection` object that represents all the comments in the
-      document.
+    summary: Gets a `CommentCollection` object that represents all the comments in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -356,20 +319,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly compatibilityMode: Word.CompatibilityMode | "Word2003" |
-        "Word2007" | "Word2010" | "Word2013" | "Current";
+      content: 'readonly compatibilityMode: Word.CompatibilityMode | "Word2003" | "Word2007" | "Word2010" | "Word2013" | "Current";'
       return:
-        type: >-
-          <xref uid="word!Word.CompatibilityMode:enum" /> | "Word2003" |
-          "Word2007" | "Word2010" | "Word2013" | "Current"
+        type: <xref uid="word!Word.CompatibilityMode:enum" /> | "Word2003" | "Word2007" | "Word2010" | "Word2013" | "Current"
   - name: consecutiveHyphensLimit
     uid: word!Word.Document#consecutiveHyphensLimit:member
     package: word!
     fullName: consecutiveHyphensLimit
-    summary: >-
-      Specifies the maximum number of consecutive lines that can end with
-      hyphens.
+    summary: Specifies the maximum number of consecutive lines that can end with hyphens.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -395,10 +352,7 @@ properties:
     uid: word!Word.Document#contentControls:member
     package: word!
     fullName: contentControls
-    summary: >-
-      Gets the collection of `ContentControl` objects in the document. This
-      includes content controls in the body of the document, headers, footers,
-      textboxes, etc.
+    summary: Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -411,9 +365,7 @@ properties:
     uid: word!Word.Document#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -439,9 +391,7 @@ properties:
     uid: word!Word.Document#customDocumentProperties:member
     package: word!
     fullName: customDocumentProperties
-    summary: >-
-      Gets a `DocumentProperties` collection that represents all the custom
-      document properties for the document.
+    summary: Gets a `DocumentProperties` collection that represents all the custom document properties for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -467,9 +417,7 @@ properties:
     uid: word!Word.Document#defaultTabStop:member
     package: word!
     fullName: defaultTabStop
-    summary: >-
-      Specifies the interval (in points) between the default tab stops in the
-      document.
+    summary: Specifies the interval (in points) between the default tab stops in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -495,10 +443,7 @@ properties:
     uid: word!Word.Document#documentLibraryVersions:member
     package: word!
     fullName: documentLibraryVersions
-    summary: >-
-      Returns a `DocumentLibraryVersionCollection` object that represents the
-      collection of versions of a shared document that has versioning enabled
-      and that's stored in a document library on a server.
+    summary: Returns a `DocumentLibraryVersionCollection` object that represents the collection of versions of a shared document that has versioning enabled and that's stored in a document library on a server.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -524,9 +469,7 @@ properties:
     uid: word!Word.Document#encryptionProvider:member
     package: word!
     fullName: encryptionProvider
-    summary: >-
-      Specifies the name of the algorithm encryption provider that Microsoft
-      Word uses when encrypting documents.
+    summary: Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -545,13 +488,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        farEastLineBreakLanguage: Word.FarEastLineBreakLanguageId |
-        "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+      content: 'farEastLineBreakLanguage: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";'
       return:
-        type: >-
-          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> |
-          "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
+        type: <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
   - name: farEastLineBreakLevel
     uid: word!Word.Document#farEastLineBreakLevel:member
     package: word!
@@ -562,20 +501,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        farEastLineBreakLevel: Word.FarEastLineBreakLevel | "Normal" | "Strict"
-        | "Custom";
+      content: 'farEastLineBreakLevel: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";'
       return:
-        type: >-
-          <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" |
-          "Strict" | "Custom"
+        type: <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" | "Strict" | "Custom"
   - name: fields
     uid: word!Word.Document#fields:member
     package: word!
     fullName: fields
-    summary: >-
-      Gets a `FieldCollection` object that represents all the fields in the
-      document.
+    summary: Gets a `FieldCollection` object that represents all the fields in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -588,9 +521,7 @@ properties:
     uid: word!Word.Document#formattingIsNextLevelShown:member
     package: word!
     fullName: formattingIsNextLevelShown
-    summary: >-
-      Specifies whether Word shows the next heading level when the previous is
-      used.
+    summary: Specifies whether Word shows the next heading level when the previous is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -616,9 +547,7 @@ properties:
     uid: word!Word.Document#frames:member
     package: word!
     fullName: frames
-    summary: >-
-      Returns a `FrameCollection` object that represents all the frames in the
-      document.
+    summary: Returns a `FrameCollection` object that represents all the frames in the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -644,9 +573,7 @@ properties:
     uid: word!Word.Document#grammaticalErrors:member
     package: word!
     fullName: grammaticalErrors
-    summary: >-
-      Gets a `RangeCollection` object that represents the sentences that failed
-      the grammar check in the document.
+    summary: Gets a `RangeCollection` object that represents the sentences that failed the grammar check in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -659,10 +586,7 @@ properties:
     uid: word!Word.Document#gridDistanceHorizontal:member
     package: word!
     fullName: gridDistanceHorizontal
-    summary: >-
-      Specifies the horizontal space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
+    summary: Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -675,10 +599,7 @@ properties:
     uid: word!Word.Document#gridDistanceVertical:member
     package: word!
     fullName: gridDistanceVertical
-    summary: >-
-      Specifies the vertical space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
+    summary: Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -691,9 +612,7 @@ properties:
     uid: word!Word.Document#gridIsOriginFromMargin:member
     package: word!
     fullName: gridIsOriginFromMargin
-    summary: >-
-      Specifies whether the character grid starts from the upper-left corner of
-      the page.
+    summary: Specifies whether the character grid starts from the upper-left corner of the page.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -732,9 +651,7 @@ properties:
     uid: word!Word.Document#gridSpaceBetweenHorizontalLines:member
     package: word!
     fullName: gridSpaceBetweenHorizontalLines
-    summary: >-
-      Specifies the interval for horizontal character gridlines in print layout
-      view.
+    summary: Specifies the interval for horizontal character gridlines in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -747,9 +664,7 @@ properties:
     uid: word!Word.Document#gridSpaceBetweenVerticalLines:member
     package: word!
     fullName: gridSpaceBetweenVerticalLines
-    summary: >-
-      Specifies the interval for vertical character gridlines in print layout
-      view.
+    summary: Specifies the interval for vertical character gridlines in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -775,9 +690,7 @@ properties:
     uid: word!Word.Document#hasVbProject:member
     package: word!
     fullName: hasVbProject
-    summary: >-
-      Gets whether the document has an attached Microsoft Visual Basic for
-      Applications project.
+    summary: Gets whether the document has an attached Microsoft Visual Basic for Applications project.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -790,9 +703,7 @@ properties:
     uid: word!Word.Document#hyperlinks:member
     package: word!
     fullName: hyperlinks
-    summary: >-
-      Returns a `HyperlinkCollection` object that represents all the hyperlinks
-      in the document.
+    summary: Returns a `HyperlinkCollection` object that represents all the hyperlinks in the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -831,9 +742,7 @@ properties:
     uid: word!Word.Document#indexes:member
     package: word!
     fullName: indexes
-    summary: >-
-      Returns an `IndexCollection` object that represents all the indexes in the
-      document.
+    summary: Returns an `IndexCollection` object that represents all the indexes in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -846,9 +755,7 @@ properties:
     uid: word!Word.Document#isAutoFormatOverrideOn:member
     package: word!
     fullName: isAutoFormatOverrideOn
-    summary: >-
-      Specifies whether automatic formatting options override formatting
-      restrictions.
+    summary: Specifies whether automatic formatting options override formatting restrictions.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -861,9 +768,7 @@ properties:
     uid: word!Word.Document#isChartDataPointTracked:member
     package: word!
     fullName: isChartDataPointTracked
-    summary: >-
-      Specifies whether charts in the active document use cell-reference
-      data-point tracking.
+    summary: Specifies whether charts in the active document use cell-reference data-point tracking.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -876,9 +781,7 @@ properties:
     uid: word!Word.Document#isCompatible:member
     package: word!
     fullName: isCompatible
-    summary: >-
-      Specifies whether the compatibility option specified by the `type`
-      property is enabled.
+    summary: Specifies whether the compatibility option specified by the `type` property is enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -904,9 +807,7 @@ properties:
     uid: word!Word.Document#isFontsSubsetSaved:member
     package: word!
     fullName: isFontsSubsetSaved
-    summary: >-
-      Specifies whether Microsoft Word saves a subset of the embedded TrueType
-      fonts with the document.
+    summary: Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -919,9 +820,7 @@ properties:
     uid: word!Word.Document#isFormsDataPrinted:member
     package: word!
     fullName: isFormsDataPrinted
-    summary: >-
-      Specifies whether Microsoft Word prints onto a preprinted form only the
-      data entered in the corresponding online form.
+    summary: Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -934,9 +833,7 @@ properties:
     uid: word!Word.Document#isFormsDataSaved:member
     package: word!
     fullName: isFormsDataSaved
-    summary: >-
-      Specifies whether Microsoft Word saves the data entered in a form as a
-      tab-delimited record for use in a database.
+    summary: Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -962,10 +859,7 @@ properties:
     uid: word!Word.Document#isInAutoSave:member
     package: word!
     fullName: isInAutoSave
-    summary: >-
-      Gets whether the most recent firing of the
-      `Application.DocumentBeforeSave` event was the result of an automatic save
-      by the document or a manual save by the user.
+    summary: Gets whether the most recent firing of the `Application.DocumentBeforeSave` event was the result of an automatic save by the document or a manual save by the user.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -991,9 +885,7 @@ properties:
     uid: word!Word.Document#isKerningByAlgorithm:member
     package: word!
     fullName: isKerningByAlgorithm
-    summary: >-
-      Specifies whether Word kerns half-width Latin characters and punctuation
-      marks.
+    summary: Specifies whether Word kerns half-width Latin characters and punctuation marks.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1045,11 +937,7 @@ properties:
     uid: word!Word.Document#isPostScriptPrintedOverText:member
     package: word!
     fullName: isPostScriptPrintedOverText
-    summary: >-
-      Specifies whether [PRINT
-      field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
-      instructions (such as PostScript commands) in the document are to be
-      printed on top of text and graphics when a PostScript printer is used.
+    summary: Specifies whether [PRINT field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f) instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1075,9 +963,7 @@ properties:
     uid: word!Word.Document#isReadOnly:member
     package: word!
     fullName: isReadOnly
-    summary: >-
-      Gets whether changes to the document cannot be saved to the original
-      document.
+    summary: Gets whether changes to the document cannot be saved to the original document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1090,9 +976,7 @@ properties:
     uid: word!Word.Document#isReadOnlyRecommended:member
     package: word!
     fullName: isReadOnlyRecommended
-    summary: >-
-      Specifies whether Microsoft Word displays a message box whenever a user
-      opens the document, suggesting that it be opened as read-only.
+    summary: Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1105,9 +989,7 @@ properties:
     uid: word!Word.Document#isSnappedToGrid:member
     package: word!
     fullName: isSnappedToGrid
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters are automatically
-      aligned with an invisible grid.
+    summary: Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1120,9 +1002,7 @@ properties:
     uid: word!Word.Document#isSnappedToShapes:member
     package: word!
     fullName: isSnappedToShapes
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters align with invisible
-      gridlines through other shapes.
+    summary: Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1148,9 +1028,7 @@ properties:
     uid: word!Word.Document#isStyleEnforced:member
     package: word!
     fullName: isStyleEnforced
-    summary: >-
-      Specifies whether formatting restrictions are enforced in a protected
-      document.
+    summary: Specifies whether formatting restrictions are enforced in a protected document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1234,20 +1112,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        justificationMode: Word.JustificationMode | "Expand" | "Compress" |
-        "CompressKana";
+      content: 'justificationMode: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";'
       return:
-        type: >-
-          <xref uid="word!Word.JustificationMode:enum" /> | "Expand" |
-          "Compress" | "CompressKana"
+        type: <xref uid="word!Word.JustificationMode:enum" /> | "Expand" | "Compress" | "CompressKana"
   - name: kind
     uid: word!Word.Document#kind:member
     package: word!
     fullName: kind
-    summary: >-
-      Specifies the format type that Microsoft Word uses when automatically
-      formatting the document.
+    summary: Specifies the format type that Microsoft Word uses when automatically formatting the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1255,16 +1127,12 @@ properties:
     syntax:
       content: 'kind: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter"
-          | "Email"
+        type: <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter" | "Email"
   - name: languageDetected
     uid: word!Word.Document#languageDetected:member
     package: word!
     fullName: languageDetected
-    summary: >-
-      Specifies whether Microsoft Word has detected the language of the document
-      text.
+    summary: Specifies whether Microsoft Word has detected the language of the document text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -1277,9 +1145,7 @@ properties:
     uid: word!Word.Document#listParagraphs:member
     package: word!
     fullName: listParagraphs
-    summary: >-
-      Gets a `ParagraphCollection` object that represents all the numbered
-      paragraphs in the document.
+    summary: Gets a `ParagraphCollection` object that represents all the numbered paragraphs in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1292,9 +1158,7 @@ properties:
     uid: word!Word.Document#lists:member
     package: word!
     fullName: lists
-    summary: >-
-      Gets a `ListCollection` object that contains all the formatted lists in
-      the document.
+    summary: Gets a `ListCollection` object that contains all the formatted lists in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1307,9 +1171,7 @@ properties:
     uid: word!Word.Document#listTemplates:member
     package: word!
     fullName: listTemplates
-    summary: >-
-      Returns a `ListTemplateCollection` object that represents all the list
-      templates in the document.
+    summary: Returns a `ListTemplateCollection` object that represents all the list templates in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1354,99 +1216,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly openEncoding: Word.DocumentEncoding | "Thai" |
-        "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-        "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" |
-        "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-        "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-        "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-        "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-        "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-        "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-        "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-        "Iso885915Latin9" | "Iso88598HebrewLogical" |
-        "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-        "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
-        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-        "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" |
-        "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-        "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-        "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
-        "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-        "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-        "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-        "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-        "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-        "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-        "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'readonly openEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: originalDocumentTitle
     uid: word!Word.Document#originalDocumentTitle:member
     package: word!
@@ -1477,9 +1249,7 @@ properties:
     uid: word!Word.Document#paragraphs:member
     package: word!
     fullName: paragraphs
-    summary: >-
-      Gets a `ParagraphCollection` object that represents all the paragraphs in
-      the document.
+    summary: Gets a `ParagraphCollection` object that represents all the paragraphs in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1544,9 +1314,7 @@ properties:
     uid: word!Word.Document#path:member
     package: word!
     fullName: path
-    summary: >-
-      Gets the disk or the web path to the document (excludes the document
-      name).
+    summary: Gets the disk or the web path to the document (excludes the document name).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1591,22 +1359,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly protectionType: Word.ProtectionType | "NoProtection" |
-        "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
-        "AllowOnlyReading";
+      content: 'readonly protectionType: Word.ProtectionType | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading";'
       return:
-        type: >-
-          <xref uid="word!Word.ProtectionType:enum" /> | "NoProtection" |
-          "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" |
-          "AllowOnlyReading"
+        type: <xref uid="word!Word.ProtectionType:enum" /> | "NoProtection" | "AllowOnlyRevisions" | "AllowOnlyComments" | "AllowOnlyFormFields" | "AllowOnlyReading"
   - name: readabilityStatistics
     uid: word!Word.Document#readabilityStatistics:member
     package: word!
     fullName: readabilityStatistics
-    summary: >-
-      Gets a `ReadabilityStatisticCollection` object that represents the
-      readability statistics for the document.
+    summary: Gets a `ReadabilityStatisticCollection` object that represents the readability statistics for the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1645,9 +1405,7 @@ properties:
     uid: word!Word.Document#readingModeIsLayoutFrozen:member
     package: word!
     fullName: readingModeIsLayoutFrozen
-    summary: >-
-      Specifies whether pages in reading layout view are frozen for handwritten
-      markup.
+    summary: Specifies whether pages in reading layout view are frozen for handwritten markup.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1686,9 +1444,7 @@ properties:
     uid: word!Word.Document#revisions:member
     package: word!
     fullName: revisions
-    summary: >-
-      Gets the collection of revisions that represents the tracked changes in
-      the document.
+    summary: Gets the collection of revisions that represents the tracked changes in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1701,9 +1457,7 @@ properties:
     uid: word!Word.Document#saved:member
     package: word!
     fullName: saved
-    summary: >-
-      Indicates whether the changes in the document have been saved. A value of
-      `true` indicates that the document hasn't changed since it was saved.
+    summary: Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -1722,98 +1476,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        saveEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
-        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
-        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
-        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
-        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
-        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
-        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
-        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
-        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
-        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'saveEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: saveFormat
     uid: word!Word.Document#saveFormat:member
     package: word!
@@ -1824,25 +1489,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly saveFormat: Word.FileSaveFormat | "Document" | "Template" |
-        "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" |
-        "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
-        "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
-        "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
-        "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
-        "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
-        "StrictOpenXmlDocument";
+      content: 'readonly saveFormat: Word.FileSaveFormat | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" | "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" | "StrictOpenXmlDocument";'
       return:
-        type: >-
-          <xref uid="word!Word.FileSaveFormat:enum" /> | "Document" | "Template"
-          | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf"
-          | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" |
-          "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" |
-          "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" |
-          "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" |
-          "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" |
-          "StrictOpenXmlDocument"
+        type: <xref uid="word!Word.FileSaveFormat:enum" /> | "Document" | "Template" | "Text" | "TextLineBreaks" | "DosText" | "DosTextLineBreaks" | "Rtf" | "UnicodeText" | "Html" | "WebArchive" | "FilteredHtml" | "Xml" | "XmlDocument" | "XmlDocumentMacroEnabled" | "XmlTemplate" | "XmlTemplateMacroEnabled" | "DocumentDefault" | "Pdf" | "Xps" | "FlatXml" | "FlatXmlMacroEnabled" | "FlatXmlTemplate" | "FlatXmlTemplateMacroEnabled" | "OpenDocumentText" | "StrictOpenXmlDocument"
   - name: sections
     uid: word!Word.Document#sections:member
     package: word!
@@ -1860,9 +1509,7 @@ properties:
     uid: word!Word.Document#selection:member
     package: word!
     fullName: selection
-    summary: >-
-      Returns a `Selection` object that represents the current selection in the
-      document.
+    summary: Returns a `Selection` object that represents the current selection in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1875,9 +1522,7 @@ properties:
     uid: word!Word.Document#sentences:member
     package: word!
     fullName: sentences
-    summary: >-
-      Gets the `RangeScopedCollection` object that represents all the sentences
-      in the document.
+    summary: Gets the `RangeScopedCollection` object that represents all the sentences in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1903,9 +1548,7 @@ properties:
     uid: word!Word.Document#spellingErrors:member
     package: word!
     fullName: spellingErrors
-    summary: >-
-      Gets a `RangeCollection` object that represents the words identified as
-      spelling errors in the document.
+    summary: Gets a `RangeCollection` object that represents the words identified as spelling errors in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1918,9 +1561,7 @@ properties:
     uid: word!Word.Document#storyRanges:member
     package: word!
     fullName: storyRanges
-    summary: >-
-      Gets a `RangeCollection` object that represents all the stories in the
-      document.
+    summary: Gets a `RangeCollection` object that represents all the stories in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1946,26 +1587,20 @@ properties:
     uid: word!Word.Document#tableOfAuthoritiesCategories:member
     package: word!
     fullName: tableOfAuthoritiesCategories
-    summary: >-
-      Returns a `TableOfAuthoritiesCategoryCollection` object that represents
-      the available table of authorities categories in the document.
+    summary: Returns a `TableOfAuthoritiesCategoryCollection` object that represents the available table of authorities categories in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly tableOfAuthoritiesCategories:
-        Word.TableOfAuthoritiesCategoryCollection;
+      content: 'readonly tableOfAuthoritiesCategories: Word.TableOfAuthoritiesCategoryCollection;'
       return:
         type: <xref uid="word!Word.TableOfAuthoritiesCategoryCollection:class" />
   - name: tables
     uid: word!Word.Document#tables:member
     package: word!
     fullName: tables
-    summary: >-
-      Gets a `TableCollection` object that represents all the tables in the
-      document.
+    summary: Gets a `TableCollection` object that represents all the tables in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1978,9 +1613,7 @@ properties:
     uid: word!Word.Document#tablesOfAuthorities:member
     package: word!
     fullName: tablesOfAuthorities
-    summary: >-
-      Returns a `TableOfAuthoritiesCollection` object that represents all the
-      tables of authorities in the document.
+    summary: Returns a `TableOfAuthoritiesCollection` object that represents all the tables of authorities in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -1993,9 +1626,7 @@ properties:
     uid: word!Word.Document#tablesOfContents:member
     package: word!
     fullName: tablesOfContents
-    summary: >-
-      Returns a `TableOfContentsCollection` object that represents all the
-      tables of contents in the document.
+    summary: Returns a `TableOfContentsCollection` object that represents all the tables of contents in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2008,9 +1639,7 @@ properties:
     uid: word!Word.Document#tablesOfFigures:member
     package: word!
     fullName: tablesOfFigures
-    summary: >-
-      Returns a `TableOfFiguresCollection` object that represents all the tables
-      of figures in the document.
+    summary: Returns a `TableOfFiguresCollection` object that represents all the tables of figures in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2029,98 +1658,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        textEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
-        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
-        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
-        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
-        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
-        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
-        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
-        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
-        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
-        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'textEncoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: textLineEnding
     uid: word!Word.Document#textLineEnding:member
     package: word!
@@ -2131,20 +1671,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        textLineEnding: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" |
-        "Lfcr" | "Lsps";
+      content: 'textLineEnding: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";'
       return:
-        type: >-
-          <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" |
-          "LfOnly" | "Lfcr" | "Lsps"
+        type: <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps"
   - name: trackedChangesAreDateAndTimeRemoved
     uid: word!Word.Document#trackedChangesAreDateAndTimeRemoved:member
     package: word!
     fullName: trackedChangesAreDateAndTimeRemoved
-    summary: >-
-      Specifies whether to remove or store date and time metadata for tracked
-      changes.
+    summary: Specifies whether to remove or store date and time metadata for tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2204,9 +1738,7 @@ properties:
     syntax:
       content: 'readonly type: Word.DocumentType | "Document" | "Template" | "Frameset";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentType:enum" /> | "Document" | "Template" |
-          "Frameset"
+        type: <xref uid="word!Word.DocumentType:enum" /> | "Document" | "Template" | "Frameset"
   - name: webSettings
     uid: word!Word.Document#webSettings:member
     package: word!
@@ -2237,9 +1769,7 @@ properties:
     uid: word!Word.Document#words:member
     package: word!
     fullName: words
-    summary: >-
-      Gets the `RangeScopedCollection` object that represents each word in the
-      document.
+    summary: Gets the `RangeScopedCollection` object that represents each word in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2265,9 +1795,7 @@ properties:
     uid: word!Word.Document#xmlAreAdvancedErrorsShown:member
     package: word!
     fullName: xmlAreAdvancedErrorsShown
-    summary: >-
-      Specifies whether error messages are generated from built-in Word messages
-      or MSXML (Microsoft XML).
+    summary: Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2280,9 +1808,7 @@ properties:
     uid: word!Word.Document#xmlIsXsltUsedWhenSaving:member
     package: word!
     fullName: xmlIsXsltUsedWhenSaving
-    summary: >-
-      Specifies whether to save a document through an Extensible Stylesheet
-      Language Transformation (XSLT).
+    summary: Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2295,9 +1821,7 @@ properties:
     uid: word!Word.Document#xmlSaveThroughXslt:member
     package: word!
     fullName: xmlSaveThroughXslt
-    summary: >-
-      Specifies the path and file name for the XSLT to apply when saving a
-      document.
+    summary: Specifies the path and file name for the XSLT to apply when saving a document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2380,9 +1904,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addStyle(name: string, type: "Character" | "List" | "Paragraph" |
-        "Table"): Word.Style;
+      content: 'addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;'
       parameters:
         - id: name
           description: A string representing the style name.
@@ -2397,9 +1919,7 @@ methods:
     uid: word!Word.Document#addToFavorites:member(1)
     package: word!
     fullName: addToFavorites()
-    summary: >-
-      Creates a shortcut to the document or hyperlink and adds it to the
-      **Favorites** folder.
+    summary: Creates a shortcut to the document or hyperlink and adds it to the **Favorites** folder.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2489,17 +2009,13 @@ methods:
     syntax:
       content: 'canCheckin(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the document can be checked in; otherwise, `false`<!-- -->.'
   - name: checkConsistencyJapanese()
     uid: word!Word.Document#checkConsistencyJapanese:member(1)
     package: word!
     fullName: checkConsistencyJapanese()
-    summary: >-
-      Searches all text in a Japanese language document and displays instances
-      where character usage is inconsistent for the same words.
+    summary: Searches all text in a Japanese language document and displays instances where character usage is inconsistent for the same words.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2539,9 +2055,7 @@ methods:
       content: 'close(closeBehavior?: Word.CloseBehavior): void;'
       parameters:
         - id: closeBehavior
-          description: >-
-            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
-            Default value is `save`<!-- -->.
+          description: Optional. The close behavior must be `save` or `skipSave`<!-- -->. Default value is `save`<!-- -->.
           type: <xref uid="word!Word.CloseBehavior:enum" />
       return:
         type: void
@@ -2562,9 +2076,7 @@ methods:
       content: 'close(closeBehavior?: "Save" | "SkipSave"): void;'
       parameters:
         - id: closeBehavior
-          description: >-
-            Optional. The close behavior must be `save` or `skipSave`<!-- -->.
-            Default value is `save`<!-- -->.
+          description: Optional. The close behavior must be `save` or `skipSave`<!-- -->. Default value is `save`<!-- -->.
           type: '"Save" | "SkipSave"'
       return:
         type: void
@@ -2587,27 +2099,19 @@ methods:
     uid: word!Word.Document#compare:member(1)
     package: word!
     fullName: compare(filePath, documentCompareOptions)
-    summary: >-
-      Displays revision marks that indicate where the specified document differs
-      from another document.
+    summary: Displays revision marks that indicate where the specified document differs from another document.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        compare(filePath: string, documentCompareOptions?:
-        Word.DocumentCompareOptions): void;
+      content: 'compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
       parameters:
         - id: filePath
-          description: >-
-            The path of the document with which the specified document is
-            compared.
+          description: The path of the document with which the specified document is compared.
           type: string
         - id: documentCompareOptions
-          description: >-
-            Optional. The additional options that specifies the behavior of
-            comparing document.
+          description: Optional. The additional options that specifies the behavior of comparing document.
           type: <xref uid="word!Word.DocumentCompareOptions:interface" />
       return:
         type: void
@@ -2616,28 +2120,19 @@ methods:
     uid: word!Word.Document#compareFromBase64:member(1)
     package: word!
     fullName: compareFromBase64(base64File, documentCompareOptions)
-    summary: >-
-      Displays revision marks that indicate where the specified document differs
-      from another document.
+    summary: Displays revision marks that indicate where the specified document differs from another document.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        compareFromBase64(base64File: string, documentCompareOptions?:
-        Word.DocumentCompareOptions): void;
+      content: 'compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
       parameters:
         - id: base64File
-          description: >-
-            The Base64-encoded content of the document with which the specified
-            document is compared.
+          description: The Base64-encoded content of the document with which the specified document is compared.
           type: string
         - id: documentCompareOptions
-          description: >-
-            Optional. The additional options that specify the behavior for
-            comparing the documents. Note that the `compareTarget` option isn't
-            allowed to be `compareTargetSelected` in this API.
+          description: Optional. The additional options that specify the behavior for comparing the documents. Note that the `compareTarget` option isn't allowed to be `compareTargetSelected` in this API.
           type: <xref uid="word!Word.DocumentCompareOptions:interface" />
       return:
         type: void
@@ -2674,10 +2169,7 @@ methods:
     uid: word!Word.Document#convertNumbersToText:member(1)
     package: word!
     fullName: convertNumbersToText(numberType)
-    summary: >-
-      Changes the list numbers and [LISTNUM
-      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
-      in the document to text.
+    summary: Changes the list numbers and [LISTNUM fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82) in the document to text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2695,18 +2187,13 @@ methods:
     uid: word!Word.Document#convertNumbersToText:member(2)
     package: word!
     fullName: convertNumbersToText(numberType)
-    summary: >-
-      Changes the list numbers and [LISTNUM
-      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
-      in the document to text.
+    summary: Changes the list numbers and [LISTNUM fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82) in the document to text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        convertNumbersToText(numberType?: "Paragraph" | "ListNum" |
-        "AllNumbers"): void;
+      content: 'convertNumbersToText(numberType?: "Paragraph" | "ListNum" | "AllNumbers"): void;'
       parameters:
         - id: numberType
           description: Optional. The type of numbering to convert.
@@ -2718,9 +2205,7 @@ methods:
     uid: word!Word.Document#convertVietnameseDocument:member(1)
     package: word!
     fullName: convertVietnameseDocument(codePageOrigin)
-    summary: >-
-      Reconverts a Vietnamese document to Unicode using a code page other than
-      the default.
+    summary: Reconverts a Vietnamese document to Unicode using a code page other than the default.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2830,9 +2315,7 @@ methods:
     uid: word!Word.Document#fitToPages:member(1)
     package: word!
     fullName: fitToPages()
-    summary: >-
-      Decreases the font size of text just enough so that the document page
-      count drops by one.
+    summary: Decreases the font size of text just enough so that the document page count drops by one.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -2860,9 +2343,7 @@ methods:
     uid: word!Word.Document#getAnnotationById:member(1)
     package: word!
     fullName: getAnnotationById(id)
-    summary: >-
-      Gets the annotation by ID. Throws an `ItemNotFound` error if annotation
-      isn't found.
+    summary: Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
@@ -2880,9 +2361,7 @@ methods:
     uid: word!Word.Document#getBookmarkRange:member(1)
     package: word!
     fullName: getBookmarkRange(name)
-    summary: >-
-      Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark
-      doesn't exist.
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -2900,12 +2379,7 @@ methods:
     uid: word!Word.Document#getBookmarkRangeOrNullObject:member(1)
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
-    summary: >-
-      Gets a bookmark's range. If the bookmark doesn't exist, then this method
-      will return an object with its `isNullObject` property set to `true`<!--
-      -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -2924,24 +2398,15 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the document.
-    remarks: >-
+    remarks: |-
       \[Api set: WordApi 1.5\]
 
-
-      Important: If specific types are provided in the options parameter, only
-      content controls of supported types are returned. Be aware that an
-      exception will be thrown on using methods of a generic
-      [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
-      relevant for the specific type. With time, additional types of content
-      controls may be supported. Therefore, your add-in should request and
-      handle specific types of content controls.
+      Important: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getContentControls(options?: Word.ContentControlOptions):
-        Word.ContentControlCollection;
+      content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
       parameters:
         - id: options
           description: Optional. Options that define which content controls are returned.
@@ -2953,50 +2418,37 @@ methods:
     uid: word!Word.Document#getCrossReferenceItems:member(1)
     package: word!
     fullName: getCrossReferenceItems(referenceType)
-    summary: >-
-      Returns an array of items that can be cross-referenced based on the
-      specified cross-reference type.
+    summary: Returns an array of items that can be cross-referenced based on the specified cross-reference type.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCrossReferenceItems(referenceType: Word.ReferenceType):
-        OfficeExtension.ClientResult<string[]>;
+      content: 'getCrossReferenceItems(referenceType: Word.ReferenceType): OfficeExtension.ClientResult<string[]>;'
       parameters:
         - id: referenceType
           description: The type of reference.
           type: <xref uid="word!Word.ReferenceType:enum" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: getCrossReferenceItems(referenceType)
     uid: word!Word.Document#getCrossReferenceItems:member(2)
     package: word!
     fullName: getCrossReferenceItems(referenceType)
-    summary: >-
-      Returns an array of items that can be cross-referenced based on the
-      specified cross-reference type.
+    summary: Returns an array of items that can be cross-referenced based on the specified cross-reference type.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCrossReferenceItems(referenceType: "NumberedItem" | "Heading" |
-        "Bookmark" | "Footnote" | "Endnote"):
-        OfficeExtension.ClientResult<string[]>;
+      content: 'getCrossReferenceItems(referenceType: "NumberedItem" | "Heading" | "Bookmark" | "Footnote" | "Endnote"): OfficeExtension.ClientResult<string[]>;'
       parameters:
         - id: referenceType
           description: The type of reference.
           type: '"NumberedItem" | "Heading" | "Bookmark" | "Footnote" | "Endnote"'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: getEndnoteBody()
     uid: word!Word.Document#getEndnoteBody:member(1)
@@ -3030,9 +2482,7 @@ methods:
     uid: word!Word.Document#getParagraphByUniqueLocalId:member(1)
     package: word!
     fullName: getParagraphByUniqueLocalId(id)
-    summary: >-
-      Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error
-      if the collection is empty.
+    summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -3041,9 +2491,7 @@ methods:
       content: 'getParagraphByUniqueLocalId(id: string): Word.Paragraph;'
       parameters:
         - id: id
-          description: >-
-            Unique local ID in standard 8-4-4-4-12 GUID format without curly
-            braces. Note that the ID differs across sessions and coauthors.
+          description: Unique local ID in standard 8-4-4-4-12 GUID format without curly braces. Note that the ID differs across sessions and coauthors.
           type: string
       return:
         type: <xref uid="word!Word.Paragraph:class" />
@@ -3052,9 +2500,7 @@ methods:
     uid: word!Word.Document#getSelection:member(1)
     package: word!
     fullName: getSelection()
-    summary: >-
-      Gets the current selection of the document. Multiple selections aren't
-      supported.
+    summary: Gets the current selection of the document. Multiple selections aren't supported.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -3068,9 +2514,7 @@ methods:
     uid: word!Word.Document#getStyles:member(1)
     package: word!
     fullName: getStyles()
-    summary: >-
-      Gets a `StyleCollection` object that represents the whole style set of the
-      document.
+    summary: Gets a `StyleCollection` object that represents the whole style set of the document.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -3085,111 +2529,72 @@ methods:
     package: word!
     fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     summary: Import styles from a JSON-formatted string.
-    remarks: >-
+    remarks: |-
       \[Api set: WordApi 1.6\]
 
-
-      Note: The `importedStylesConflictBehavior` parameter was introduced in
-      WordApiDesktop 1.1.
+      Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        importStylesFromJson(stylesJson: string,
-        importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior):
-        OfficeExtension.ClientResult<string[]>;
+      content: 'importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;'
       parameters:
         - id: stylesJson
           description: A JSON-formatted string representing the styles.
           type: string
         - id: importedStylesConflictBehavior
-          description: >-
-            Optional. Specifies how to handle any imported styles with the same
-            name as existing styles in the current document. The default value
-            is `ignore`<!-- -->.
+          description: Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document. The default value is `ignore`<!-- -->.
           type: <xref uid="word!Word.ImportedStylesConflictBehavior:enum" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     uid: word!Word.Document#importStylesFromJson:member(2)
     package: word!
     fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     summary: Import styles from a JSON-formatted string.
-    remarks: >-
+    remarks: |-
       \[Api set: WordApi 1.6\]
 
-
-      Note: The `importedStylesConflictBehavior` parameter was introduced in
-      WordApiDesktop 1.1.
+      Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        importStylesFromJson(stylesJson: string,
-        importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"):
-        OfficeExtension.ClientResult<string[]>;
+      content: 'importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;'
       parameters:
         - id: stylesJson
           description: A JSON-formatted string representing the styles.
           type: string
         - id: importedStylesConflictBehavior
-          description: >-
-            Optional. Specifies how to handle any imported styles with the same
-            name as existing styles in the current document. The default value
-            is `ignore`<!-- -->.
+          description: Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document. The default value is `ignore`<!-- -->.
           type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
     uid: word!Word.Document#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
-    summary: >-
-      Inserts a document into the target document at a specific location with
-      additional properties. Headers, footers, watermarks, and other section
-      properties are copied by default.
-    remarks: >-
+    summary: Inserts a document into the target document at a specific location with additional properties. Headers, footers, watermarks, and other section properties are copied by default.
+    remarks: |-
       \[Api set: WordApi 1.5\]
 
-
-      Insertion isn't supported if the document being inserted contains an
-      ActiveX control (likely in a form field). Consider replacing such a form
-      field with a content control or other option appropriate for your
-      scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocation:
-        Word.InsertLocation.replace | Word.InsertLocation.start |
-        Word.InsertLocation.end | "Replace" | "Start" | "End",
-        insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;'
       parameters:
         - id: base64File
           description: The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: >-
-            The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!--
-            -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref
-            uid="word!Word.InsertLocation.start:member" /> | <xref
-            uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" |
-            "End"
+          description: The value must be `replace`<!-- -->, `start`<!-- -->, or `end`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
         - id: insertFileOptions
-          description: >-
-            Optional. The additional properties that should be imported to the
-            destination document.
+          description: Optional. The additional properties that should be imported to the destination document.
           type: <xref uid="word!Word.InsertFileOptions:interface" />
       return:
         type: <xref uid="word!Word.SectionCollection:class" />
@@ -3198,9 +2603,7 @@ methods:
     uid: word!Word.Document#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -3218,9 +2621,7 @@ methods:
     uid: word!Word.Document#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -3229,9 +2630,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Document;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Document:class" />
@@ -3240,9 +2639,7 @@ methods:
     uid: word!Word.Document#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -3255,11 +2652,7 @@ methods:
                 }): Word.Document;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -3368,12 +2761,8 @@ methods:
           description: Optional. The number of actions to redo.
           type: number
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
-        description: >-
-          `true` if the actions were redone successfully; otherwise, `false`<!--
-          -->.
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        description: '`true` if the actions were redone successfully; otherwise, `false`<!-- -->.'
   - name: rejectAllRevisions()
     uid: word!Word.Document#rejectAllRevisions:member(1)
     package: word!
@@ -3406,9 +2795,7 @@ methods:
     uid: word!Word.Document#reload:member(1)
     package: word!
     fullName: reload()
-    summary: >-
-      Reloads a cached document by resolving the hyperlink to the document and
-      downloading it.
+    summary: Reloads a cached document by resolving the hyperlink to the document and downloading it.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -3422,9 +2809,7 @@ methods:
     uid: word!Word.Document#reloadAs:member(1)
     package: word!
     fullName: reloadAs(encoding)
-    summary: >-
-      Reloads the document based on an HTML document, using the document
-      encoding.
+    summary: Reloads the document based on an HTML document, using the document encoding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -3442,109 +2827,17 @@ methods:
     uid: word!Word.Document#reloadAs:member(2)
     package: word!
     fullName: reloadAs(encoding)
-    summary: >-
-      Reloads the document based on an HTML document, using the document
-      encoding.
+    summary: Reloads the document based on an HTML document, using the document encoding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        reloadAs(encoding: "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk"
-        | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" |
-        "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" |
-        "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" |
-        "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-        "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-        "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-        "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-        "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-        "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-        "Iso885915Latin9" | "Iso88598HebrewLogical" |
-        "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-        "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" |
-        "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-        "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" |
-        "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-        "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-        "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
-        "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-        "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-        "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-        "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-        "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-        "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-        "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-        "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8"): void;
+      content: 'reloadAs(encoding: "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"): void;'
       parameters:
         - id: encoding
           description: The encoding to use.
-          type: >-
-            "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-            "TraditionalChineseBig5" | "UnicodeLittleEndian" |
-            "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" |
-            "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese"
-            | "AutoDetect" | "JapaneseAutoDetect" |
-            "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-            "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-            "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-            "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-            "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-            "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-            "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-            "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-            "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-            "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" |
-            "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" |
-            "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" |
-            "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" |
-            "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" |
-            "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-            "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-            "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-            "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-            "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-            "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-            "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-            "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-            "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-            "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-            "EbcdicUsCanadaAndTraditionalChinese" |
-            "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-            "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-            "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-            "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench"
-            | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-            "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-            "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" |
-            "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" |
-            "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" |
-            "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" |
-            "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" |
-            "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" |
-            "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" |
-            "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U"
-            | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" |
-            "Utf7" | "Utf8"
+          type: '"Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"'
       return:
         type: void
         description: ''
@@ -3552,17 +2845,13 @@ methods:
     uid: word!Word.Document#removeDocumentInformation:member(1)
     package: word!
     fullName: removeDocumentInformation(removeDocInfoType)
-    summary: >-
-      Removes sensitive information, properties, comments, and other metadata
-      from the document.
+    summary: Removes sensitive information, properties, comments, and other metadata from the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeDocumentInformation(removeDocInfoType: Word.RemoveDocInfoType):
-        void;
+      content: 'removeDocumentInformation(removeDocInfoType: Word.RemoveDocInfoType): void;'
       parameters:
         - id: removeDocInfoType
           description: The type of document info to remove.
@@ -3574,33 +2863,17 @@ methods:
     uid: word!Word.Document#removeDocumentInformation:member(2)
     package: word!
     fullName: removeDocumentInformation(removeDocInfoType)
-    summary: >-
-      Removes sensitive information, properties, comments, and other metadata
-      from the document.
+    summary: Removes sensitive information, properties, comments, and other metadata from the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeDocumentInformation(removeDocInfoType: "Comments" | "Revisions" |
-        "Versions" | "RemovePersonalInformation" | "EmailHeader" | "RoutingSlip"
-        | "SendForReview" | "DocumentProperties" | "Template" |
-        "DocumentWorkspace" | "InkAnnotations" | "DocumentServerProperties" |
-        "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions" |
-        "AtMentions" | "DocumentTasks" | "DocumentIntelligence" |
-        "CommentReactions" | "All"): void;
+      content: 'removeDocumentInformation(removeDocInfoType: "Comments" | "Revisions" | "Versions" | "RemovePersonalInformation" | "EmailHeader" | "RoutingSlip" | "SendForReview" | "DocumentProperties" | "Template" | "DocumentWorkspace" | "InkAnnotations" | "DocumentServerProperties" | "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions" | "AtMentions" | "DocumentTasks" | "DocumentIntelligence" | "CommentReactions" | "All"): void;'
       parameters:
         - id: removeDocInfoType
           description: The type of document info to remove.
-          type: >-
-            "Comments" | "Revisions" | "Versions" | "RemovePersonalInformation"
-            | "EmailHeader" | "RoutingSlip" | "SendForReview" |
-            "DocumentProperties" | "Template" | "DocumentWorkspace" |
-            "InkAnnotations" | "DocumentServerProperties" |
-            "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions"
-            | "AtMentions" | "DocumentTasks" | "DocumentIntelligence" |
-            "CommentReactions" | "All"
+          type: '"Comments" | "Revisions" | "Versions" | "RemovePersonalInformation" | "EmailHeader" | "RoutingSlip" | "SendForReview" | "DocumentProperties" | "Template" | "DocumentWorkspace" | "InkAnnotations" | "DocumentServerProperties" | "DocumentManagementPolicy" | "ContentType" | "TaskpaneWebExtensions" | "AtMentions" | "DocumentTasks" | "DocumentIntelligence" | "CommentReactions" | "All"'
       return:
         type: void
         description: ''
@@ -3608,9 +2881,7 @@ methods:
     uid: word!Word.Document#removeLockedStyles:member(1)
     package: word!
     fullName: removeLockedStyles()
-    summary: >-
-      Purges the document of locked styles when formatting restrictions have
-      been applied in the document.
+    summary: Purges the document of locked styles when formatting restrictions have been applied in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -3648,9 +2919,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeNumbers(numberType?: "Paragraph" | "ListNum" | "AllNumbers"):
-        void;
+      content: 'removeNumbers(numberType?: "Paragraph" | "ListNum" | "AllNumbers"): void;'
       parameters:
         - id: numberType
           description: Optional. The type of numbering to remove.
@@ -3690,9 +2959,7 @@ methods:
     uid: word!Word.Document#resetFormFields:member(1)
     package: word!
     fullName: resetFormFields()
-    summary: >-
-      Clears all form fields in the document, preparing the form to be filled in
-      again.
+    summary: Clears all form fields in the document, preparing the form to be filled in again.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -3720,9 +2987,7 @@ methods:
     uid: word!Word.Document#runAutoMacro:member(1)
     package: word!
     fullName: runAutoMacro(autoMacro)
-    summary: >-
-      Runs an auto macro that's stored in the document. If the specified auto
-      macro doesn't exist, nothing happens.
+    summary: Runs an auto macro that's stored in the document. If the specified auto macro doesn't exist, nothing happens.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -3740,17 +3005,13 @@ methods:
     uid: word!Word.Document#runAutoMacro:member(2)
     package: word!
     fullName: runAutoMacro(autoMacro)
-    summary: >-
-      Runs an auto macro that's stored in the document. If the specified auto
-      macro doesn't exist, nothing happens.
+    summary: Runs an auto macro that's stored in the document. If the specified auto macro doesn't exist, nothing happens.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        runAutoMacro(autoMacro: "StartWord" | "New" | "Open" | "Close" | "Exit"
-        | "Sync"): void;
+      content: 'runAutoMacro(autoMacro: "StartWord" | "New" | "Open" | "Close" | "Exit" | "Sync"): void;'
       parameters:
         - id: autoMacro
           description: The auto macro to run.
@@ -3763,12 +3024,10 @@ methods:
     package: word!
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
-    remarks: >-
+    remarks: |-
       \[Api set: WordApi 1.1\]
 
-
-      Note: The `saveBehavior` and `fileName` parameters were introduced in
-      WordApi 1.5.
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
 
     isPreview: false
     isDeprecated: false
@@ -3776,14 +3035,10 @@ methods:
       content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: >-
-            Optional. The save behavior must be `save` or `prompt`<!-- -->.
-            Default value is `save`<!-- -->.
+          description: Optional. The save behavior must be `save` or `prompt`<!-- -->. Default value is `save`<!-- -->.
           type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
-          description: >-
-            Optional. The file name (exclude file extension). Only takes effect
-            for a new document.
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
           type: string
       return:
         type: void
@@ -3793,12 +3048,10 @@ methods:
     package: word!
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
-    remarks: >-
+    remarks: |-
       \[Api set: WordApi 1.1\]
 
-
-      Note: The `saveBehavior` and `fileName` parameters were introduced in
-      WordApi 1.5.
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
 
     isPreview: false
     isDeprecated: false
@@ -3806,14 +3059,10 @@ methods:
       content: 'save(saveBehavior?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: >-
-            Optional. The save behavior must be `save` or `prompt`<!-- -->.
-            Default value is `save`<!-- -->.
+          description: Optional. The save behavior must be `save` or `prompt`<!-- -->. Default value is `save`<!-- -->.
           type: '"Save" | "Prompt"'
         - id: fileName
-          description: >-
-            Optional. The file name (exclude file extension). Only takes effect
-            for a new document.
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
           type: string
       return:
         type: void
@@ -3840,9 +3089,7 @@ methods:
     uid: word!Word.Document#search:member(1)
     package: word!
     fullName: search(searchText, searchOptions)
-    summary: >-
-      Performs a search with the specified search options on the scope of the
-      whole document. The search results are a collection of `Range` objects.
+    summary: Performs a search with the specified search options on the scope of the whole document. The search results are a collection of `Range` objects.
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
@@ -3913,17 +3160,13 @@ methods:
     uid: word!Word.Document#selectContentControlsByTitle:member(1)
     package: word!
     fullName: selectContentControlsByTitle(title)
-    summary: >-
-      Returns a `ContentControlCollection` object that represents all the
-      content controls in the document with the specified title.
+    summary: Returns a `ContentControlCollection` object that represents all the content controls in the document with the specified title.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectContentControlsByTitle(title: string):
-        Word.ContentControlCollection;
+      content: 'selectContentControlsByTitle(title: string): Word.ContentControlCollection;'
       parameters:
         - id: title
           description: The title of the content controls.
@@ -3935,17 +3178,13 @@ methods:
     uid: word!Word.Document#selectLinkedControls:member(1)
     package: word!
     fullName: selectLinkedControls(node)
-    summary: >-
-      Returns a `ContentControlCollection` object that represents all content
-      controls in the document that are linked to the specific custom XML node.
+    summary: Returns a `ContentControlCollection` object that represents all content controls in the document that are linked to the specific custom XML node.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectLinkedControls(node: Word.CustomXmlNode):
-        Word.ContentControlCollection;
+      content: 'selectLinkedControls(node: Word.CustomXmlNode): Word.ContentControlCollection;'
       parameters:
         - id: node
           description: The custom XML node.
@@ -3957,18 +3196,13 @@ methods:
     uid: word!Word.Document#selectNodes:member(1)
     package: word!
     fullName: selectNodes(xPath, options)
-    summary: >-
-      Returns an `XmlNodeCollection` object that represents all the nodes that
-      match the XPath parameter in the order in which they appear in the
-      document.
+    summary: Returns an `XmlNodeCollection` object that represents all the nodes that match the XPath parameter in the order in which they appear in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectNodes(xPath: string, options?: Word.SelectNodesOptions):
-        Word.XmlNodeCollection;
+      content: 'selectNodes(xPath: string, options?: Word.SelectNodesOptions): Word.XmlNodeCollection;'
       parameters:
         - id: xPath
           description: The XPath expression.
@@ -3983,17 +3217,13 @@ methods:
     uid: word!Word.Document#selectSingleNode:member(1)
     package: word!
     fullName: selectSingleNode(xPath, options)
-    summary: >-
-      Returns an `XmlNode` object that represents the first node that matches
-      the XPath parameter in the document.
+    summary: Returns an `XmlNode` object that represents the first node that matches the XPath parameter in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions):
-        Word.XmlNode;
+      content: 'selectSingleNode(xPath: string, options?: Word.SelectSingleNodeOptions): Word.XmlNode;'
       parameters:
         - id: xPath
           description: The XPath expression.
@@ -4008,17 +3238,13 @@ methods:
     uid: word!Word.Document#selectUnlinkedControls:member(1)
     package: word!
     fullName: selectUnlinkedControls(stream)
-    summary: >-
-      Returns a `ContentControlCollection` object that represents all content
-      controls in the document that are not linked to an XML node.
+    summary: Returns a `ContentControlCollection` object that represents all content controls in the document that are not linked to an XML node.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectUnlinkedControls(stream?: Word.CustomXmlPart):
-        Word.ContentControlCollection;
+      content: 'selectUnlinkedControls(stream?: Word.CustomXmlPart): Word.ContentControlCollection;'
       parameters:
         - id: stream
           description: Optional. The custom XML part.
@@ -4051,9 +3277,7 @@ methods:
     uid: word!Word.Document#sendMail:member(1)
     package: word!
     fullName: sendMail()
-    summary: >-
-      Opens a message window for sending the document through Microsoft
-      Exchange.
+    summary: Opens a message window for sending the document through Microsoft Exchange.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4067,29 +3291,19 @@ methods:
     uid: word!Word.Document#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.DocumentUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -4098,9 +3312,7 @@ methods:
     uid: word!Word.Document#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -4135,28 +3347,17 @@ methods:
       return:
         type: void
         description: ''
-  - name: >-
-      setPasswordEncryptionOptions(passwordEncryptionProvider,
-      passwordEncryptionAlgorithm, passwordEncryptionKeyLength,
-      passwordEncryptFileProperties)
+  - name: setPasswordEncryptionOptions(passwordEncryptionProvider, passwordEncryptionAlgorithm, passwordEncryptionKeyLength, passwordEncryptFileProperties)
     uid: word!Word.Document#setPasswordEncryptionOptions:member(1)
     package: word!
-    fullName: >-
-      setPasswordEncryptionOptions(passwordEncryptionProvider,
-      passwordEncryptionAlgorithm, passwordEncryptionKeyLength,
-      passwordEncryptFileProperties)
-    summary: >-
-      Sets the options Microsoft Word uses for encrypting documents with
-      passwords.
+    fullName: setPasswordEncryptionOptions(passwordEncryptionProvider, passwordEncryptionAlgorithm, passwordEncryptionKeyLength, passwordEncryptFileProperties)
+    summary: Sets the options Microsoft Word uses for encrypting documents with passwords.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setPasswordEncryptionOptions(passwordEncryptionProvider: string,
-        passwordEncryptionAlgorithm: string, passwordEncryptionKeyLength:
-        number, passwordEncryptFileProperties?: boolean): void;
+      content: 'setPasswordEncryptionOptions(passwordEncryptionProvider: string, passwordEncryptionAlgorithm: string, passwordEncryptionKeyLength: number, passwordEncryptFileProperties?: boolean): void;'
       parameters:
         - id: passwordEncryptionProvider
           description: The encryption provider.
@@ -4191,14 +3392,7 @@ methods:
     uid: word!Word.Document#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Document` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -4212,16 +3406,7 @@ methods:
     uid: word!Word.Document#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -4235,9 +3420,7 @@ methods:
     uid: word!Word.Document#transformDocument:member(1)
     package: word!
     fullName: transformDocument(path, dataOnly)
-    summary: >-
-      Applies the specified Extensible Stylesheet Language Transformation (XSLT)
-      file to this document and replaces the document with the results.
+    summary: Applies the specified Extensible Stylesheet Language Transformation (XSLT) file to this document and replaces the document with the results.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4258,9 +3441,7 @@ methods:
     uid: word!Word.Document#undo:member(1)
     package: word!
     fullName: undo(times)
-    summary: >-
-      Undoes the last action or a sequence of actions, which are displayed in
-      the Undo list.
+    summary: Undoes the last action or a sequence of actions, which are displayed in the Undo list.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4272,12 +3453,8 @@ methods:
           description: Optional. The number of actions to undo.
           type: number
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
-        description: >-
-          `true` if the actions were undone successfully; otherwise, `false`<!--
-          -->.
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        description: '`true` if the actions were undone successfully; otherwise, `false`<!-- -->.'
   - name: undoClear()
     uid: word!Word.Document#undoClear:member(1)
     package: word!
@@ -4314,14 +3491,7 @@ methods:
     uid: word!Word.Document#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false
@@ -4335,9 +3505,7 @@ methods:
     uid: word!Word.Document#updateStyles:member(1)
     package: word!
     fullName: updateStyles()
-    summary: >-
-      Copies all styles from the attached template into the document,
-      overwriting any existing styles in the document that have the same name.
+    summary: Copies all styles from the attached template into the document, overwriting any existing styles in the document that have the same name.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4351,9 +3519,7 @@ methods:
     uid: word!Word.Document#viewCode:member(1)
     package: word!
     fullName: viewCode()
-    summary: >-
-      Displays the code window for the selected Microsoft ActiveX control in the
-      document.
+    summary: Displays the code window for the selected Microsoft ActiveX control in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4367,9 +3533,7 @@ methods:
     uid: word!Word.Document#viewPropertyBrowser:member(1)
     package: word!
     fullName: viewPropertyBrowser()
-    summary: >-
-      Displays the property window for the selected Microsoft ActiveX control in
-      the document.
+    summary: Displays the property window for the selected Microsoft ActiveX control in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4383,9 +3547,7 @@ methods:
     uid: word!Word.Document#webPagePreview:member(1)
     package: word!
     fullName: webPagePreview()
-    summary: >-
-      Displays a preview of the current document as it would look if saved as a
-      webpage.
+    summary: Displays a preview of the current document as it would look if saved as a webpage.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -4400,21 +3562,15 @@ events:
     uid: word!Word.Document#onAnnotationClicked:member
     package: word!
     fullName: onAnnotationClicked
-    summary: >-
-      Occurs when the user clicks an annotation (or selects it using
-      **Alt+Down**).
+    summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAnnotationClicked:
-        OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;
+      content: 'readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
   - name: onAnnotationHovered
     uid: word!Word.Document#onAnnotationHovered:member
     package: word!
@@ -4425,13 +3581,9 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAnnotationHovered:
-        OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;
+      content: 'readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
   - name: onAnnotationInserted
     uid: word!Word.Document#onAnnotationInserted:member
     package: word!
@@ -4442,13 +3594,9 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAnnotationInserted:
-        OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;
+      content: 'readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
   - name: onAnnotationPopupAction
     uid: word!Word.Document#onAnnotationPopupAction:member
     package: word!
@@ -4459,13 +3607,9 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAnnotationPopupAction:
-        OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;
+      content: 'readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
   - name: onAnnotationRemoved
     uid: word!Word.Document#onAnnotationRemoved:member
     package: word!
@@ -4476,32 +3620,22 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAnnotationRemoved:
-        OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;
+      content: 'readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
   - name: onContentControlAdded
     uid: word!Word.Document#onContentControlAdded:member
     package: word!
     fullName: onContentControlAdded
-    summary: >-
-      Occurs when a content control is added. Run context.sync() in the handler
-      to get the new content control's properties.
+    summary: Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onContentControlAdded:
-        OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
   - name: onParagraphAdded
     uid: word!Word.Document#onParagraphAdded:member
     package: word!
@@ -4512,13 +3646,9 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onParagraphAdded:
-        OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;
+      content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
   - name: onParagraphChanged
     uid: word!Word.Document#onParagraphChanged:member
     package: word!
@@ -4529,13 +3659,9 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onParagraphChanged:
-        OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;
+      content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
   - name: onParagraphDeleted
     uid: word!Word.Document#onParagraphDeleted:member
     package: word!
@@ -4546,11 +3672,7 @@ events:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onParagraphDeleted:
-        OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;
+      content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

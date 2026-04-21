@@ -12,10 +12,8 @@ fields:
   - name: shiftColumnRight
     uid: word!Word.TableCellInsertionLocation.shiftColumnRight:member
     package: word!
-    summary: >-
-      Inserts an entire column to the left of the column that contains the
-      selection.
-
+    summary: |-
+      Inserts an entire column to the left of the column that contains the selection.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"ShiftColumnRight"'

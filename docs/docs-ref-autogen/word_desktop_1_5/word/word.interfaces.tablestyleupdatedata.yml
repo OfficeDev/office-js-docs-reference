@@ -3,9 +3,7 @@ name: Word.Interfaces.TableStyleUpdateData
 uid: word!Word.Interfaces.TableStyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableStyleUpdateData
-summary: >-
-  An interface for updating data on the `TableStyle` object, for use in
-  `tableStyle.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -22,20 +20,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
-        "Right" | "Justified";
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: allowBreakAcrossPage
     uid: word!Word.Interfaces.TableStyleUpdateData#allowBreakAcrossPage:member
     package: word!
     fullName: allowBreakAcrossPage
-    summary: >-
-      Specifies whether lines in tables formatted with a style break across
-      pages.
+    summary: Specifies whether lines in tables formatted with a style break across pages.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -48,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#bottomCellMargin:member
     package: word!
     fullName: bottomCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the bottom
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the bottom borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -76,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#columnStripe:member
     package: word!
     fullName: columnStripe
-    summary: >-
-      Specifies the number of columns in the banding when a style specifies odd-
-      or even-column banding.
+    summary: Specifies the number of columns in the banding when a style specifies odd- or even-column banding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -91,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#isBreakAcrossPagesAllowed:member
     package: word!
     fullName: isBreakAcrossPagesAllowed
-    summary: >-
-      Specifies whether Microsoft Word allows to break the specified table
-      across pages.
+    summary: Specifies whether Microsoft Word allows to break the specified table across pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -106,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#leftCellMargin:member
     package: word!
     fullName: leftCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the left
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the left borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -121,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#leftIndent:member
     package: word!
     fullName: leftIndent
-    summary: >-
-      Specifies the left indent value (in points) for the rows in the table
-      style.
+    summary: Specifies the left indent value (in points) for the rows in the table style.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -136,9 +118,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#rightCellMargin:member
     package: word!
     fullName: rightCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the right
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the right borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -151,9 +131,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#rowStripe:member
     package: word!
     fullName: rowStripe
-    summary: >-
-      Specifies the number of rows to include in the banding when the style
-      specifies odd- or even-row banding.
+    summary: Specifies the number of rows to include in the banding when the style specifies odd- or even-row banding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -166,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleUpdateData#tableDirection:member
     package: word!
     fullName: tableDirection
-    summary: >-
-      Specifies the direction in which Microsoft Word orders cells in the table
-      style.
+    summary: Specifies the direction in which Microsoft Word orders cells in the table style.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -176,16 +152,12 @@ properties:
     syntax:
       content: 'tableDirection?: Word.TableDirection | "RightToLeft" | "LeftToRight";'
       return:
-        type: >-
-          <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" |
-          "LeftToRight"
+        type: <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" | "LeftToRight"
   - name: topCellMargin
     uid: word!Word.Interfaces.TableStyleUpdateData#topCellMargin:member
     package: word!
     fullName: topCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the top
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the top borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false

@@ -3,9 +3,7 @@ name: OneNote.Interfaces.InkStrokeCollectionUpdateData
 uid: onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkStrokeCollectionUpdateData
-summary: >-
-  An interface for updating data on the `InkStrokeCollection` object, for use in
-  `inkStrokeCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `InkStrokeCollection` object, for use in `inkStrokeCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

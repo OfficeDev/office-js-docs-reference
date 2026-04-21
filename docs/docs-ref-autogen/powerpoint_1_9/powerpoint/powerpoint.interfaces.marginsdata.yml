@@ -3,12 +3,9 @@ name: PowerPoint.Interfaces.MarginsData
 uid: powerpoint!PowerPoint.Interfaces.MarginsData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.MarginsData
-summary: >-
-  An interface describing the data returned by calling `margins.toJSON()`<!--
-  -->.
-remarks: >-
+summary: An interface describing the data returned by calling `margins.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
-
 
   - [PowerPoint.Margins](/javascript/api/powerpoint/powerpoint.margins): [toJSON](/javascript/api/powerpoint/powerpoint.margins#powerpoint-powerpoint-margins-tojson-member(1))
 
@@ -21,9 +18,7 @@ properties:
     package: powerpoint!
     fullName: bottom
     summary: Specifies the bottom margin in points.
-    remarks: >-
-      [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +31,7 @@ properties:
     package: powerpoint!
     fullName: left
     summary: Specifies the left margin in points.
-    remarks: >-
-      [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +44,7 @@ properties:
     package: powerpoint!
     fullName: right
     summary: Specifies the right margin in points.
-    remarks: >-
-      [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +57,7 @@ properties:
     package: powerpoint!
     fullName: top
     summary: Specifies the top margin in points.
-    remarks: >-
-      [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.ConditionalStyleData
 uid: word!Word.Interfaces.ConditionalStyleData:interface
 package: word!
 fullName: Word.Interfaces.ConditionalStyleData
-summary: >-
-  An interface describing the data returned by calling
-  `conditionalStyle.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `conditionalStyle.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleData#bottomPadding:member
     package: word!
     fullName: bottomPadding
-    summary: >-
-      Specifies the amount of space (in points) to add below the contents of a
-      single cell or all the cells in a table.
+    summary: Specifies the amount of space (in points) to add below the contents of a single cell or all the cells in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -31,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleData#leftPadding:member
     package: word!
     fullName: leftPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the left of the
-      contents of a single cell or all the cells in a table.
+    summary: Specifies the amount of space (in points) to add to the left of the contents of a single cell or all the cells in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -46,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleData#rightPadding:member
     package: word!
     fullName: rightPadding
-    summary: >-
-      Specifies the amount of space (in points) to add to the right of the
-      contents of a single cell or all the cells in a table.
+    summary: Specifies the amount of space (in points) to add to the right of the contents of a single cell or all the cells in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -61,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ConditionalStyleData#topPadding:member
     package: word!
     fullName: topPadding
-    summary: >-
-      Specifies the amount of space (in points) to add above the contents of a
-      single cell or all the cells in a table.
+    summary: Specifies the amount of space (in points) to add above the contents of a single cell or all the cells in a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

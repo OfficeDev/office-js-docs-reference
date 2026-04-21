@@ -27,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.BreakData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the break.
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the break.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

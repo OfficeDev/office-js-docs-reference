@@ -3,9 +3,7 @@ name: Word.Interfaces.SourceCollectionData
 uid: word!Word.Interfaces.SourceCollectionData:interface
 package: word!
 fullName: Word.Interfaces.SourceCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `sourceCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `sourceCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

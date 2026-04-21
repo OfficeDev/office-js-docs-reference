@@ -3,11 +3,7 @@ name: Word.Interfaces.ReviewerCollectionLoadOptions
 uid: word!Word.Interfaces.ReviewerCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ReviewerCollectionLoadOptions
-summary: >-
-  A collection of [Word.Reviewer](xref:word!Word.Reviewer:class) objects that
-  represents the reviewers of one or more documents. The `ReviewerCollection`
-  object contains the names of all reviewers who have reviewed documents opened
-  or edited on a computer.
+summary: A collection of [Word.Reviewer](xref:word!Word.Reviewer:class) objects that represents the reviewers of one or more documents. The `ReviewerCollection` object contains the names of all reviewers who have reviewed documents opened or edited on a computer.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -18,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ReviewerCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ReviewerCollectionLoadOptions#isVisible:member
     package: word!
     fullName: isVisible
-    summary: >-
-      For EACH ITEM in the collection: Specifies if the `Reviewer` object is
-      visible.
+    summary: 'For EACH ITEM in the collection: Specifies if the `Reviewer` object is visible.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

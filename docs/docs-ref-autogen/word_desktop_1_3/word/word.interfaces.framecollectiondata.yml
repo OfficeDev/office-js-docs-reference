@@ -3,12 +3,9 @@ name: Word.Interfaces.FrameCollectionData
 uid: word!Word.Interfaces.FrameCollectionData:interface
 package: word!
 fullName: Word.Interfaces.FrameCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `frameCollection.toJSON()`<!-- -->.
-remarks: >-
+summary: An interface describing the data returned by calling `frameCollection.toJSON()`<!-- -->.
+remarks: |-
   #### Used by
-
 
   - [Word.FrameCollection](/javascript/api/word/word.framecollection): [toJSON](/javascript/api/word/word.framecollection#word-word-framecollection-tojson-member(1))
 

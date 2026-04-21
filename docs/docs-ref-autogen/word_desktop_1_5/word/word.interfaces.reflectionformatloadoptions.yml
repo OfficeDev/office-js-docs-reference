@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#blur:member
     package: word!
     fullName: blur
-    summary: >-
-      Specifies the degree of blur effect applied to the `ReflectionFormat`
-      object as a value between 0.0 and 100.0.
+    summary: Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -45,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#offset:member
     package: word!
     fullName: offset
-    summary: >-
-      Specifies the amount of separation, in points, of the reflected image from
-      the shape.
+    summary: Specifies the amount of separation, in points, of the reflected image from the shape.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -60,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#size:member
     package: word!
     fullName: size
-    summary: >-
-      Specifies the size of the reflection as a percentage of the reflected
-      shape from 0 to 100.
+    summary: Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -75,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#transparency:member
     package: word!
     fullName: transparency
-    summary: >-
-      Specifies the degree of transparency for the reflection effect as a value
-      between 0.0 (opaque) and 1.0 (clear).
+    summary: Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -90,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      Specifies a `ReflectionType` value that represents the type and direction
-      of the lighting for a shape reflection.
+    summary: Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

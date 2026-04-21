@@ -3,37 +3,24 @@ name: PowerPoint.RequestContext
 uid: powerpoint!PowerPoint.RequestContext:class
 package: powerpoint!
 fullName: PowerPoint.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the PowerPoint application.
-  Since the Office add-in and the PowerPoint application run in two different
-  processes, the request context is required to get access to the PowerPoint
-  object model from the add-in.
-remarks: >-
+summary: The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the request context is required to get access to the PowerPoint object model from the add-in.
+remarks: |-
 
 
 
   #### Used by
 
-
   - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
-
-  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation):
-  [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
-
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
   #### Examples
 
-
   ```TypeScript
-
   // *.run methods automatically create an OfficeExtension.ClientRequestContext
-
   // object to work with the Office file.
-
   await PowerPoint.run(async (context) => {
     const presentation = context.presentation;
     // Interact with the PowerPoint presentation...
   });
-
   ```
 
 isPreview: false

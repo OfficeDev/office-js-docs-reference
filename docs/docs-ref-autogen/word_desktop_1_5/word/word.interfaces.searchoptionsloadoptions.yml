@@ -3,12 +3,7 @@ name: Word.Interfaces.SearchOptionsLoadOptions
 uid: word!Word.Interfaces.SearchOptionsLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SearchOptionsLoadOptions
-summary: >-
-  Specifies the options to be included in a search operation. To learn more
-  about how to use search options in the Word JavaScript APIs, read [Use search
-  options to find text in your Word
-  add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
-  -->.
+summary: Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read [Use search options to find text in your Word add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
 remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
@@ -19,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -35,11 +27,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#ignorePunct:member
     package: word!
     fullName: ignorePunct
-    summary: >-
-      If provided, specifies whether to ignore all punctuation characters
-      between words. The default is `false`<!-- -->. Corresponds to the \_Ignore
-      punctuation characters\_ check box in the **Find and Replace** dialog
-      box.
+    summary: If provided, specifies whether to ignore all punctuation characters between words. The default is `false`<!-- -->. Corresponds to the \_Ignore punctuation characters\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -52,10 +40,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#ignoreSpace:member
     package: word!
     fullName: ignoreSpace
-    summary: >-
-      If provided, specifies whether to ignore all whitespace between words. The
-      default is `false`<!-- -->. Corresponds to the \_Ignore white-space
-      characters\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to ignore all whitespace between words. The default is `false`<!-- -->. Corresponds to the \_Ignore white-space characters\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -68,10 +53,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#matchCase:member
     package: word!
     fullName: matchCase
-    summary: >-
-      If provided, specifies whether to perform a case sensitive search. The
-      default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
-      the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to perform a case sensitive search. The default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -84,10 +66,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#matchPrefix:member
     package: word!
     fullName: matchPrefix
-    summary: >-
-      If provided, specifies whether to match words that begin with the search
-      string. The default is `false`<!-- -->. Corresponds to the \_Match
-      prefix\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to match words that begin with the search string. The default is `false`<!-- -->. Corresponds to the \_Match prefix\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -100,10 +79,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#matchSuffix:member
     package: word!
     fullName: matchSuffix
-    summary: >-
-      If provided, specifies whether to match words that end with the search
-      string. The default is `false`<!-- -->. Corresponds to the \_Match
-      suffix\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to match words that end with the search string. The default is `false`<!-- -->. Corresponds to the \_Match suffix\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -116,11 +92,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#matchWholeWord:member
     package: word!
     fullName: matchWholeWord
-    summary: >-
-      If provided, specifies whether to find only entire words, not text that's
-      part of a larger word. The default is `false`<!-- -->. Corresponds to the
-      \_Find whole words only\_ check box in the **Find and Replace** dialog
-      box.
+    summary: If provided, specifies whether to find only entire words, not text that's part of a larger word. The default is `false`<!-- -->. Corresponds to the \_Find whole words only\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -133,10 +105,7 @@ properties:
     uid: word!Word.Interfaces.SearchOptionsLoadOptions#matchWildcards:member
     package: word!
     fullName: matchWildcards
-    summary: >-
-      If provided, specifies whether the search will be performed using special
-      search operators. The default is `false`<!-- -->. Corresponds to the \_Use
-      wildcards\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether the search will be performed using special search operators. The default is `false`<!-- -->. Corresponds to the \_Use wildcards\_ check box in the **Find and Replace** dialog box.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.HtmlDivisionCollectionData
 uid: word!Word.Interfaces.HtmlDivisionCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `htmlDivisionCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `htmlDivisionCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

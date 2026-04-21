@@ -9,7 +9,7 @@ remarks: '\[Api set: WordApi 1.4\]'
 isPreview: false
 isDeprecated: false
 fields:
-  - name: 'off'
+  - name: off
     uid: word!Word.ChangeTrackingMode.off:member
     package: word!
     summary: |-

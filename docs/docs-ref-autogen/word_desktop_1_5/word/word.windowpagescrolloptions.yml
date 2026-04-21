@@ -14,11 +14,7 @@ properties:
     uid: word!Word.WindowPageScrollOptions#down:member
     package: word!
     fullName: down
-    summary: >-
-      If provided, specifies the number of pages to scroll the window down. If
-      `down` and `up` are both provided, the contents of the window are scrolled
-      by the difference of the property values. For example, if `down` is 3 and
-      `up` is 6, the contents are scrolled up three pages.
+    summary: If provided, specifies the number of pages to scroll the window down. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -31,11 +27,7 @@ properties:
     uid: word!Word.WindowPageScrollOptions#up:member
     package: word!
     fullName: up
-    summary: >-
-      If provided, specifies the number of pages to scroll the window up. If
-      `down` and `up` are both provided, the contents of the window are scrolled
-      by the difference of the property values. For example, if `down` is 3 and
-      `up` is 6, the contents are scrolled up three pages.
+    summary: If provided, specifies the number of pages to scroll the window up. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

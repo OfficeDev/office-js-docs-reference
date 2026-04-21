@@ -3,9 +3,7 @@ name: Word.XmlNodeSetValidationErrorOptions
 uid: word!Word.XmlNodeSetValidationErrorOptions:interface
 package: word!
 fullName: Word.XmlNodeSetValidationErrorOptions
-summary: >-
-  Provides configuration options for the
-  [XmlNode.setValidationError](xref:word!Word.XmlNode:class) method.
+summary: Provides configuration options for the [XmlNode.setValidationError](xref:word!Word.XmlNode:class) method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.XmlNodeSetValidationErrorOptions#clearedAutomatically:member
     package: word!
     fullName: clearedAutomatically
-    summary: >-
-      If provided, specifies whether the validation error should be cleared
-      automatically. The default value is `false`<!-- -->.
+    summary: If provided, specifies whether the validation error should be cleared automatically. The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

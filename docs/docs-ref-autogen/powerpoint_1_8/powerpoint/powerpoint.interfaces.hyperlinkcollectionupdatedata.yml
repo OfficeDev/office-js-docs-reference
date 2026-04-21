@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.HyperlinkCollectionUpdateData
 uid: powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkCollectionUpdateData
-summary: >-
-  An interface for updating data on the `HyperlinkCollection` object, for use in
-  `hyperlinkCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData#items:member
+    uid: powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
@@ -25,6 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.HyperlinkData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface" />[]

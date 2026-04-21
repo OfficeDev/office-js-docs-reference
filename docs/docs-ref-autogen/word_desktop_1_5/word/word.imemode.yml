@@ -73,7 +73,7 @@ fields:
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"NoControl"'
-  - name: 'off'
+  - name: off
     uid: word!Word.ImeMode.off:member
     package: word!
     summary: |-
@@ -81,7 +81,7 @@ fields:
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"Off"'
-  - name: 'on'
+  - name: on
     uid: word!Word.ImeMode.on:member
     package: word!
     summary: |-

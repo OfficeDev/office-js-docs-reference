@@ -124,10 +124,8 @@ fields:
   - name: mixed
     uid: word!Word.PresetGradientType.mixed:member
     package: word!
-    summary: >-
-      Mixed gradient type. Used when multiple shapes with different preset
-      gradients are selected.
-
+    summary: |-
+      Mixed gradient type. Used when multiple shapes with different preset gradients are selected.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'

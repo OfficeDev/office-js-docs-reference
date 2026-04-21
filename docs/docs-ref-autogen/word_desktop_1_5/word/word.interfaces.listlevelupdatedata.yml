@@ -3,9 +3,7 @@ name: Word.Interfaces.ListLevelUpdateData
 uid: word!Word.Interfaces.ListLevelUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ListLevelUpdateData
-summary: >-
-  An interface for updating data on the `ListLevel` object, for use in
-  `listLevel.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,28 +14,20 @@ properties:
     uid: word!Word.Interfaces.ListLevelUpdateData#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      Specifies the horizontal alignment of the list level. The value can be
-      `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
+    summary: Specifies the horizontal alignment of the list level. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
-        "Right" | "Justified";
+      content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: font
     uid: word!Word.Interfaces.ListLevelUpdateData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets a `Font` object that represents the character formatting of the
-      `ListLevel` object.
+    summary: Gets a `Font` object that represents the character formatting of the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -76,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelUpdateData#numberPosition:member
     package: word!
     fullName: numberPosition
-    summary: >-
-      Specifies the position (in points) of the number or bullet for the
-      `ListLevel` object.
+    summary: Specifies the position (in points) of the number or bullet for the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -97,50 +85,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" |
-        "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal"
-        | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" |
-        "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" |
-        "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" |
-        "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" |
-        "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" |
-        "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" |
-        "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" |
-        "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" |
-        "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" |
-        "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" |
-        "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" |
-        "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" |
-        "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" |
-        "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal"
-        | "LegalLZ";
+      content: 'numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";'
       return:
-        type: >-
-          <xref uid="word!Word.ListBuiltInNumberStyle:enum" /> | "None" |
-          "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter"
-          | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit"
-          | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" |
-          "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo"
-          | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" |
-          "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" |
-          "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" |
-          "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" |
-          "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" |
-          "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" |
-          "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" |
-          "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" |
-          "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2"
-          | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish"
-          | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" |
-          "Legal" | "LegalLZ"
+        type: <xref uid="word!Word.ListBuiltInNumberStyle:enum" /> | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ"
   - name: resetOnHigher
     uid: word!Word.Interfaces.ListLevelUpdateData#resetOnHigher:member
     package: word!
     fullName: resetOnHigher
-    summary: >-
-      Specifies the list level that must appear before it restarts numbering at
-      1.
+    summary: Specifies the list level that must appear before it restarts numbering at 1.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -179,9 +131,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelUpdateData#textPosition:member
     package: word!
     fullName: textPosition
-    summary: >-
-      Specifies the position (in points) for the second line of wrapping text
-      for the `ListLevel` object.
+    summary: Specifies the position (in points) for the second line of wrapping text for the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -200,10 +150,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        trailingCharacter?: Word.TrailingCharacter | "TrailingTab" |
-        "TrailingSpace" | "TrailingNone";
+      content: 'trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";'
       return:
-        type: >-
-          <xref uid="word!Word.TrailingCharacter:enum" /> | "TrailingTab" |
-          "TrailingSpace" | "TrailingNone"
+        type: <xref uid="word!Word.TrailingCharacter:enum" /> | "TrailingTab" | "TrailingSpace" | "TrailingNone"

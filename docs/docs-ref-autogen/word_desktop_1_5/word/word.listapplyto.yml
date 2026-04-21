@@ -20,10 +20,8 @@ fields:
   - name: thisPointForward
     uid: word!Word.ListApplyTo.thisPointForward:member
     package: word!
-    summary: >-
-      Applies the list template from the cursor insertion point to the end of
-      the list.
-
+    summary: |-
+      Applies the list template from the cursor insertion point to the end of the list.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"ThisPointForward"'

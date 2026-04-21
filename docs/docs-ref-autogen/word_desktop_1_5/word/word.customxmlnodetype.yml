@@ -3,9 +3,7 @@ name: Word.CustomXmlNodeType
 uid: word!Word.CustomXmlNodeType:enum
 package: word!
 fullName: Word.CustomXmlNodeType
-summary: >-
-  Represents the type of a
-  [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class)<!-- -->.
+summary: Represents the type of a [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

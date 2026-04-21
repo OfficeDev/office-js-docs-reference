@@ -3,9 +3,7 @@ name: Word.TableDirection
 uid: word!Word.TableDirection:enum
 package: word!
 fullName: Word.TableDirection
-summary: >-
-  Specifies the direction in which Microsoft Word orders cells in the specified
-  table or row.
+summary: Specifies the direction in which Microsoft Word orders cells in the specified table or row.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false

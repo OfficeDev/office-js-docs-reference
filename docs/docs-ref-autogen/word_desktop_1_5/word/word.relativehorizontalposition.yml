@@ -3,11 +3,7 @@ name: Word.RelativeHorizontalPosition
 uid: word!Word.RelativeHorizontalPosition:enum
 package: word!
 fullName: Word.RelativeHorizontalPosition
-summary: >-
-  Represents what the horizontal position of a shape is relative to. For more
-  information about margins, see [Change the margins in your Word
-  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
-  -->.
+summary: Represents what the horizontal position of a shape is relative to. For more information about margins, see [Change the margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false

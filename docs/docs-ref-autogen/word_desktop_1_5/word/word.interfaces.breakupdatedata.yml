@@ -3,9 +3,7 @@ name: Word.Interfaces.BreakUpdateData
 uid: word!Word.Interfaces.BreakUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BreakUpdateData
-summary: >-
-  An interface for updating data on the `Break` object, for use in `break.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Break` object, for use in `break.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.BreakUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the break.
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the break.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

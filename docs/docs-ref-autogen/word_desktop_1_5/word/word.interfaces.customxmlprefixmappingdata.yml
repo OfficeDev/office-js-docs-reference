@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomXmlPrefixMappingData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPrefixMapping.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPrefixMappingData#namespaceUri:member
     package: word!
     fullName: namespaceUri
-    summary: >-
-      Gets the unique address identifier for the namespace of the
-      `CustomXmlPrefixMapping` object.
+    summary: Gets the unique address identifier for the namespace of the `CustomXmlPrefixMapping` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

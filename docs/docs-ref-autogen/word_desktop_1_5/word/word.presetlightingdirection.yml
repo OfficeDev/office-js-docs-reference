@@ -3,9 +3,7 @@ name: Word.PresetLightingDirection
 uid: word!Word.PresetLightingDirection:enum
 package: word!
 fullName: Word.PresetLightingDirection
-summary: >-
-  Specifies the location of lighting on an extruded (three-dimensional) shape
-  relative to the shape.
+summary: Specifies the location of lighting on an extruded (three-dimensional) shape relative to the shape.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

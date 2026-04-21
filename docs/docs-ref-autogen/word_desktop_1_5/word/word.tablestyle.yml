@@ -20,20 +20,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" |
-        "Right" | "Justified";
+      content: 'alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: allowBreakAcrossPage
     uid: word!Word.TableStyle#allowBreakAcrossPage:member
     package: word!
     fullName: allowBreakAcrossPage
-    summary: >-
-      Specifies whether lines in tables formatted with a style break across
-      pages.
+    summary: Specifies whether lines in tables formatted with a style break across pages.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -46,9 +40,7 @@ properties:
     uid: word!Word.TableStyle#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Returns a `BorderUniversalCollection` that represents all the borders for
-      the table.
+    summary: Returns a `BorderUniversalCollection` that represents all the borders for the table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -61,9 +53,7 @@ properties:
     uid: word!Word.TableStyle#bottomCellMargin:member
     package: word!
     fullName: bottomCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the bottom
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the bottom borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -89,9 +79,7 @@ properties:
     uid: word!Word.TableStyle#columnStripe:member
     package: word!
     fullName: columnStripe
-    summary: >-
-      Specifies the number of columns in the banding when a style specifies odd-
-      or even-column banding.
+    summary: Specifies the number of columns in the banding when a style specifies odd- or even-column banding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -104,9 +92,7 @@ properties:
     uid: word!Word.TableStyle#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -119,9 +105,7 @@ properties:
     uid: word!Word.TableStyle#isBreakAcrossPagesAllowed:member
     package: word!
     fullName: isBreakAcrossPagesAllowed
-    summary: >-
-      Specifies whether Microsoft Word allows to break the specified table
-      across pages.
+    summary: Specifies whether Microsoft Word allows to break the specified table across pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -134,9 +118,7 @@ properties:
     uid: word!Word.TableStyle#leftCellMargin:member
     package: word!
     fullName: leftCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the left
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the left borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -149,9 +131,7 @@ properties:
     uid: word!Word.TableStyle#leftIndent:member
     package: word!
     fullName: leftIndent
-    summary: >-
-      Specifies the left indent value (in points) for the rows in the table
-      style.
+    summary: Specifies the left indent value (in points) for the rows in the table style.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -164,9 +144,7 @@ properties:
     uid: word!Word.TableStyle#rightCellMargin:member
     package: word!
     fullName: rightCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the right
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the right borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -179,9 +157,7 @@ properties:
     uid: word!Word.TableStyle#rowStripe:member
     package: word!
     fullName: rowStripe
-    summary: >-
-      Specifies the number of rows to include in the banding when the style
-      specifies odd- or even-row banding.
+    summary: Specifies the number of rows to include in the banding when the style specifies odd- or even-row banding.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -194,9 +170,7 @@ properties:
     uid: word!Word.TableStyle#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns a `ShadingUniversal` object that refers to the shading formatting
-      for the table style.
+    summary: Returns a `ShadingUniversal` object that refers to the shading formatting for the table style.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -209,9 +183,7 @@ properties:
     uid: word!Word.TableStyle#tableDirection:member
     package: word!
     fullName: tableDirection
-    summary: >-
-      Specifies the direction in which Microsoft Word orders cells in the table
-      style.
+    summary: Specifies the direction in which Microsoft Word orders cells in the table style.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -219,16 +191,12 @@ properties:
     syntax:
       content: 'tableDirection: Word.TableDirection | "RightToLeft" | "LeftToRight";'
       return:
-        type: >-
-          <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" |
-          "LeftToRight"
+        type: <xref uid="word!Word.TableDirection:enum" /> | "RightToLeft" | "LeftToRight"
   - name: topCellMargin
     uid: word!Word.TableStyle#topCellMargin:member
     package: word!
     fullName: topCellMargin
-    summary: >-
-      Specifies the amount of space to add between the contents and the top
-      borders of the cells.
+    summary: Specifies the amount of space to add between the contents and the top borders of the cells.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -242,9 +210,7 @@ methods:
     uid: word!Word.TableStyle#condition:member(1)
     package: word!
     fullName: condition(conditionCode)
-    summary: >-
-      Returns a `ConditionalStyle` object that represents special style
-      formatting for a portion of a table.
+    summary: Returns a `ConditionalStyle` object that represents special style formatting for a portion of a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -262,27 +228,17 @@ methods:
     uid: word!Word.TableStyle#condition:member(2)
     package: word!
     fullName: condition(conditionCode)
-    summary: >-
-      Returns a `ConditionalStyle` object that represents special style
-      formatting for a portion of a table.
+    summary: Returns a `ConditionalStyle` object that represents special style formatting for a portion of a table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        condition(conditionCode: "FirstRow" | "LastRow" | "OddRowBanding" |
-        "EvenRowBanding" | "FirstColumn" | "LastColumn" | "OddColumnBanding" |
-        "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" | "BottomRightCell"
-        | "BottomLeftCell"): Word.ConditionalStyle;
+      content: 'condition(conditionCode: "FirstRow" | "LastRow" | "OddRowBanding" | "EvenRowBanding" | "FirstColumn" | "LastColumn" | "OddColumnBanding" | "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" | "BottomRightCell" | "BottomLeftCell"): Word.ConditionalStyle;'
       parameters:
         - id: conditionCode
           description: The area of the table to which to apply the formatting.
-          type: >-
-            "FirstRow" | "LastRow" | "OddRowBanding" | "EvenRowBanding" |
-            "FirstColumn" | "LastColumn" | "OddColumnBanding" |
-            "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" |
-            "BottomRightCell" | "BottomLeftCell"
+          type: '"FirstRow" | "LastRow" | "OddRowBanding" | "EvenRowBanding" | "FirstColumn" | "LastColumn" | "OddColumnBanding" | "EvenColumnBanding" | "TopRightCell" | "TopLeftCell" | "BottomRightCell" | "BottomLeftCell"'
       return:
         type: <xref uid="word!Word.ConditionalStyle:class" />
         description: ''
@@ -290,9 +246,7 @@ methods:
     uid: word!Word.TableStyle#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -310,9 +264,7 @@ methods:
     uid: word!Word.TableStyle#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -321,9 +273,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.TableStyle;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TableStyle:class" />
@@ -332,9 +282,7 @@ methods:
     uid: word!Word.TableStyle#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -347,11 +295,7 @@ methods:
                 }): Word.TableStyle;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -364,29 +308,19 @@ methods:
     uid: word!Word.TableStyle#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.TableStyleUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TableStyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.TableStyleUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -395,9 +329,7 @@ methods:
     uid: word!Word.TableStyle#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -415,14 +347,7 @@ methods:
     uid: word!Word.TableStyle#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TableStyle` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.TableStyleData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TableStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableStyleData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -436,16 +361,7 @@ methods:
     uid: word!Word.TableStyle#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -459,14 +375,7 @@ methods:
     uid: word!Word.TableStyle#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

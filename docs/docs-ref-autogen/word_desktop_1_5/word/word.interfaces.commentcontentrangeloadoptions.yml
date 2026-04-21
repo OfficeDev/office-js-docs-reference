@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -43,10 +40,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range.
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -111,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#underline:member
     package: word!
     fullName: underline
-    summary: >-
-      Specifies the comment text's underline type. `none` if the comment text
-      isn't underlined.
+    summary: Specifies the comment text's underline type. `none` if the comment text isn't underlined.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false

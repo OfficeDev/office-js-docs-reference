@@ -12,20 +12,16 @@ fields:
   - name: eastAsianHorizontalRotated
     uid: word!Word.ShapeTextOrientation.eastAsianHorizontalRotated:member
     package: word!
-    summary: >-
-      A special version of vertical text, where some fonts are displayed as if
-      rotated.
-
+    summary: |-
+      A special version of vertical text, where some fonts are displayed as if rotated.
 
       * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianHorizontalRotated"'
   - name: eastAsianVertical
     uid: word!Word.ShapeTextOrientation.eastAsianVertical:member
     package: word!
-    summary: >-
-      A special version of vertical text, where some fonts are displayed as if
-      rotated.
-
+    summary: |-
+      A special version of vertical text, where some fonts are displayed as if rotated.
 
       * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianVertical"'
@@ -56,20 +52,16 @@ fields:
   - name: vertical
     uid: word!Word.ShapeTextOrientation.vertical:member
     package: word!
-    summary: >-
-      Determines if all of the text is vertical orientation (each line is 90
-      degrees rotated clockwise).
-
+    summary: |-
+      Determines if all of the text is vertical orientation (each line is 90 degrees rotated clockwise).
 
       * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical"'
   - name: vertical270
     uid: word!Word.ShapeTextOrientation.vertical270:member
     package: word!
-    summary: >-
-      Determines if all of the text is vertical orientation (each line is 270
-      degrees rotated clockwise).
-
+    summary: |-
+      Determines if all of the text is vertical orientation (each line is 270 degrees rotated clockwise).
 
       * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical270"'

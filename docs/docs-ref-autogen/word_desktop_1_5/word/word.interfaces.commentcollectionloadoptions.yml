@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.CommentCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -56,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.CommentCollectionLoadOptions#content:member
     package: word!
     fullName: content
-    summary: >-
-      For EACH ITEM in the collection: Specifies the comment's content as plain
-      text.
+    summary: 'For EACH ITEM in the collection: Specifies the comment''s content as plain text.'
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -79,9 +74,7 @@ properties:
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
   - name: creationDate
     uid: word!Word.Interfaces.CommentCollectionLoadOptions#creationDate:member
     package: word!
@@ -112,10 +105,7 @@ properties:
     uid: word!Word.Interfaces.CommentCollectionLoadOptions#resolved:member
     package: word!
     fullName: resolved
-    summary: >-
-      For EACH ITEM in the collection: Specifies the comment thread's status.
-      Setting to `true` resolves the comment thread. Getting a value of `true`
-      means that the comment thread is resolved.
+    summary: 'For EACH ITEM in the collection: Specifies the comment thread''s status. Setting to `true` resolves the comment thread. Getting a value of `true` means that the comment thread is resolved.'
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false

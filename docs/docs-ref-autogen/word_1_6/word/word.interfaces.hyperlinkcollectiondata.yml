@@ -3,9 +3,7 @@ name: Word.Interfaces.HyperlinkCollectionData
 uid: word!Word.Interfaces.HyperlinkCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `hyperlinkCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `hyperlinkCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

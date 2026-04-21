@@ -12,10 +12,8 @@ fields:
   - name: boundingBox
     uid: word!Word.ContentControlAppearance.boundingBox:member
     package: word!
-    summary: >-
-      Represents a content control shown as a shaded rectangle or bounding box
-      (with optional title).
-
+    summary: |-
+      Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
       * \[Api set: WordApi 1.1\]
     value: '"BoundingBox"'

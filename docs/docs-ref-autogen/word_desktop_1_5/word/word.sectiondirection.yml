@@ -3,9 +3,7 @@ name: Word.SectionDirection
 uid: word!Word.SectionDirection:enum
 package: word!
 fullName: Word.SectionDirection
-summary: >-
-  Specifies how Word displays the reading order and alignment for the specified
-  sections.
+summary: Specifies how Word displays the reading order and alignment for the specified sections.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

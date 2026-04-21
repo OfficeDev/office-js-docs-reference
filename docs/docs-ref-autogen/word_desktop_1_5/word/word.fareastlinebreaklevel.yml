@@ -3,9 +3,7 @@ name: Word.FarEastLineBreakLevel
 uid: word!Word.FarEastLineBreakLevel:enum
 package: word!
 fullName: Word.FarEastLineBreakLevel
-summary: >-
-  Represents the level of line breaking to use for East Asian languages in the
-  specified document or template.
+summary: Represents the level of line breaking to use for East Asian languages in the specified document or template.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

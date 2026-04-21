@@ -3,9 +3,7 @@ name: Word.Interfaces.BookmarkData
 uid: word!Word.Interfaces.BookmarkData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkData
-summary: >-
-  An interface describing the data returned by calling `bookmark.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `bookmark.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -68,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.BookmarkData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the `Bookmark` object.
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -102,20 +98,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" |
-        "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" |
-        "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" |
-        "FirstPageFooter" | "FootnoteSeparator" |
-        "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-        "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-        "EndnoteContinuationNotice";
+      content: 'storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";'
       return:
-        type: >-
-          <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" |
-          "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
-          "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
-          "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
-          "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-          "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-          "EndnoteContinuationNotice"
+        type: <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice"

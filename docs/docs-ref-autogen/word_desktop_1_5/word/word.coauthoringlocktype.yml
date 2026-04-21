@@ -3,9 +3,7 @@ name: Word.CoauthoringLockType
 uid: word!Word.CoauthoringLockType:enum
 package: word!
 fullName: Word.CoauthoringLockType
-summary: >-
-  Represents the types of [coauthoring
-  locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
+summary: Represents the types of [coauthoring locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false

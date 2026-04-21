@@ -3,9 +3,7 @@ name: Excel.Interfaces.TableColumnCollectionUpdateData
 uid: excel!Excel.Interfaces.TableColumnCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.TableColumnCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableColumnCollection` object, for use
-  in `tableColumnCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

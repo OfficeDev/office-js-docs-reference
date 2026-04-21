@@ -3,29 +3,18 @@ name: Excel.DataValidationAlertStyle
 uid: excel!Excel.DataValidationAlertStyle:enum
 package: excel!
 fullName: Excel.DataValidationAlertStyle
-summary: >-
-  Represents the data validation error alert style. The default is `Stop`<!--
-  -->.
-remarks: >-
-  [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
+summary: Represents the data validation error alert style. The default is `Stop`<!-- -->.
+remarks: |-
+  [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
   #### Used by
 
-
-  - [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert): [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert):
-  [style](/javascript/api/excel/excel.datavalidationerroralert#excel-excel-datavalidationerroralert-style-member)
-
+  - [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert): [style](/javascript/api/excel/excel.datavalidationerroralert#excel-excel-datavalidationerroralert-style-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Decision");
@@ -58,7 +47,6 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -67,21 +55,15 @@ fields:
   - name: information
     uid: excel!Excel.DataValidationAlertStyle.information:member
     package: excel!
-    summary: >-
-      * [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    summary: '* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Information"'
   - name: stop
     uid: excel!Excel.DataValidationAlertStyle.stop:member
     package: excel!
-    summary: >-
-      * [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    summary: '* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Stop"'
   - name: warning
     uid: excel!Excel.DataValidationAlertStyle.warning:member
     package: excel!
-    summary: >-
-      * [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    summary: '* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Warning"'
