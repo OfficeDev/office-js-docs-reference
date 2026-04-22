@@ -551,8 +551,12 @@ function convertUidToUrl(uid: string): string {
   // Examples:
   //   excel!Excel:namespace -> /javascript/api/excel
   //   excel!Excel.run:function(1) -> /javascript/api/excel#excel-excel-run-function(1)
+  //   office-runtime!OfficeRuntime.displayWebDialog:function -> /javascript/api/office-runtime#...
   //   excel!Excel.Worksheet.getRange:method -> /javascript/api/excel/excel.worksheet#...
-  const isNamespace = classPathLower === packageName.toLowerCase();
+  // Normalize by removing hyphens for comparison (e.g., office-runtime vs OfficeRuntime)
+  const normalizedClassPath = classPathLower.replace(/-/g, '');
+  const normalizedPackage = packageName.toLowerCase().replace(/-/g, '');
+  const isNamespace = normalizedClassPath === normalizedPackage;
 
   if (isNamespace) {
     return `/javascript/api/${packageName}${anchor}`;
@@ -612,9 +616,12 @@ function generateUsedBySection(references: UsedByReference[]): string {
           const packageName = uidParts[0];
           const classPathLower = className.toLowerCase();
 
-          // For namespace-only references (e.g., Excel, Office), don't duplicate the namespace name
+          // For namespace-only references (e.g., Excel, Office, OfficeRuntime), don't duplicate the namespace name
           // URL should be /javascript/api/excel, not /javascript/api/excel/excel
-          const isNamespaceOnly = classPathLower === packageName.toLowerCase();
+          // Normalize by removing hyphens for comparison (e.g., office-runtime vs OfficeRuntime)
+          const normalizedClassPath = classPathLower.replace(/-/g, '');
+          const normalizedPackage = packageName.toLowerCase().replace(/-/g, '');
+          const isNamespaceOnly = normalizedClassPath === normalizedPackage;
 
           if (isNamespaceOnly) {
             classUrl = `/javascript/api/${packageName}`;

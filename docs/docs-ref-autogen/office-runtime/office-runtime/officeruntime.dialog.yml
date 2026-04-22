@@ -9,7 +9,7 @@ remarks: |-
 
   #### Used by
 
-  - [OfficeRuntime](/javascript/api/office-runtime/officeruntime): [displayWebDialog](/javascript/api/office-runtime/officeruntime#office-runtime-officeruntime-displaywebdialog-function(1))
+  - [OfficeRuntime](/javascript/api/office-runtime): [displayWebDialog](/javascript/api/office-runtime#office-runtime-officeruntime-displaywebdialog-function(1))
   - [OfficeRuntime.DisplayWebDialogOptions](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions): [onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onmessage-member), [onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onruntimeerror-member)
 
 isPreview: false
