@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - [Office](/javascript/api/office/office): [onReady](/javascript/api/office/office#office-office-onready-function(1))
+  - [Office](/javascript/api/office): [onReady](/javascript/api/office/office#office-office-onready-function(1))
   - [Office.Context](/javascript/api/office/office.context): [host](/javascript/api/office/office.context#office-office-context-host-member)
   - [Office.ContextInformation](/javascript/api/office/office.contextinformation): [host](/javascript/api/office/office.contextinformation#office-office-contextinformation-host-member)
   #### Examples

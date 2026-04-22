@@ -22,7 +22,7 @@ remarks: |-
 
   #### Used by
 
-  - [Office](/javascript/api/office/office): [select](/javascript/api/office/office#office-office-select-function(1))
+  - [Office](/javascript/api/office): [select](/javascript/api/office/office#office-office-select-function(1))
   - [Office.BindingDataChangedEventArgs](/javascript/api/office/office.bindingdatachangedeventargs): [binding](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-binding-member)
   - [Office.BindingSelectionChangedEventArgs](/javascript/api/office/office.bindingselectionchangedeventargs): [binding](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-binding-member)
   - [Office.Bindings](/javascript/api/office/office.bindings): [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1)), [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1)), [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1)), [getAllAsync](/javascript/api/office/office.bindings#office-office-bindings-getallasync-member(1)), [getByIdAsync](/javascript/api/office/office.bindings#office-office-bindings-getbyidasync-member(1))

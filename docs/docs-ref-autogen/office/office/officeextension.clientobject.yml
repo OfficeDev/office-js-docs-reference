@@ -7,14 +7,14 @@ summary: An abstract proxy object that represents an object in an Office documen
 remarks: |-
   #### Used by
 
-  - [Excel](/javascript/api/excel/excel): [run](/javascript/api/excel/excel#excel-excel-run-function(2))
+  - [Excel](/javascript/api/excel): [run](/javascript/api/excel/excel#excel-excel-run-function(2))
   - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)), [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
   - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
   - [OfficeExtension.TrackedObjects](/javascript/api/office/officeextension.trackedobjects): [add](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-add-member(1)), [remove](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-remove-member(1))
-  - [OneNote](/javascript/api/onenote/onenote): [run](/javascript/api/onenote/onenote#onenote-onenote-run-function(2))
-  - [PowerPoint](/javascript/api/powerpoint/powerpoint): [run](/javascript/api/powerpoint/powerpoint#powerpoint-powerpoint-run-function(2))
-  - [Visio](/javascript/api/visio/visio): [run](/javascript/api/visio/visio#visio-visio-run-function(2))
-  - [Word](/javascript/api/word/word): [run](/javascript/api/word/word#word-word-run-function(1))
+  - [OneNote](/javascript/api/onenote): [run](/javascript/api/onenote/onenote#onenote-onenote-run-function(2))
+  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint/powerpoint#powerpoint-powerpoint-run-function(2))
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio/visio#visio-visio-run-function(2))
+  - [Word](/javascript/api/word): [run](/javascript/api/word/word#word-word-run-function(1))
 
 isPreview: false
 isDeprecated: false

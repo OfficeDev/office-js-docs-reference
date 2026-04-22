@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - [Word](/javascript/api/word/word): [run](/javascript/api/word/word#word-word-run-function(1))
+  - [Word](/javascript/api/word): [run](/javascript/api/word/word#word-word-run-function(1))
   - [Word.Body](/javascript/api/word/word.body): [context](/javascript/api/word/word.body#word-word-body-context-member)
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [context](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-context-member)
   - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [context](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-context-member)

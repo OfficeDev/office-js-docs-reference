@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - [Visio](/javascript/api/visio/visio): [run](/javascript/api/visio/visio#visio-visio-run-function(1))
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio/visio#visio-visio-run-function(1))
   - [Visio.Application](/javascript/api/visio/visio.application): [context](/javascript/api/visio/visio.application#visio-visio-application-context-member)
   - [Visio.Comment](/javascript/api/visio/visio.comment): [context](/javascript/api/visio/visio.comment#visio-visio-comment-context-member)
   - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [context](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-context-member)

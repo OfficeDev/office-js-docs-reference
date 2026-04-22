@@ -547,6 +547,14 @@ function convertUidToUrl(uid: string): string {
     anchor = `#${anchorBase}${overloadSuffix}`;
   }
 
+  // For namespace-only references (e.g., excel!Excel:namespace), don't duplicate the namespace name
+  // URL should be /javascript/api/excel, not /javascript/api/excel/excel
+  const isNamespaceOnly = !memberPart && classPathLower === packageName.toLowerCase();
+
+  if (isNamespaceOnly) {
+    return `/javascript/api/${packageName}`;
+  }
+
   // Build URL: /javascript/api/<package>/<class-path><anchor>
   return `/javascript/api/${packageName}/${classPathLower}${anchor}`;
 }
@@ -600,7 +608,16 @@ function generateUsedBySection(references: UsedByReference[]): string {
         if (uidParts.length === 2) {
           const packageName = uidParts[0];
           const classPathLower = className.toLowerCase();
-          classUrl = `/javascript/api/${packageName}/${classPathLower}`;
+
+          // For namespace-only references (e.g., Excel, Office), don't duplicate the namespace name
+          // URL should be /javascript/api/excel, not /javascript/api/excel/excel
+          const isNamespaceOnly = classPathLower === packageName.toLowerCase();
+
+          if (isNamespaceOnly) {
+            classUrl = `/javascript/api/${packageName}`;
+          } else {
+            classUrl = `/javascript/api/${packageName}/${classPathLower}`;
+          }
         }
       }
     }
