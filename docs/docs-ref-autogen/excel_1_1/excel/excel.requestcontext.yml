@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - [Excel](/javascript/api/excel): [run](/javascript/api/excel/excel#excel-excel-run-function(1))
+  - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(1))
   - [Excel.Application](/javascript/api/excel/excel.application): [context](/javascript/api/excel/excel.application#excel-excel-application-context-member)
   - [Excel.Binding](/javascript/api/excel/excel.binding): [context](/javascript/api/excel/excel.binding#excel-excel-binding-context-member)
   - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [context](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-context-member)

@@ -547,12 +547,15 @@ function convertUidToUrl(uid: string): string {
     anchor = `#${anchorBase}${overloadSuffix}`;
   }
 
-  // For namespace-only references (e.g., excel!Excel:namespace), don't duplicate the namespace name
-  // URL should be /javascript/api/excel, not /javascript/api/excel/excel
-  const isNamespaceOnly = !memberPart && classPathLower === packageName.toLowerCase();
+  // For namespace references (with or without members), don't duplicate the namespace name in the path
+  // Examples:
+  //   excel!Excel:namespace -> /javascript/api/excel
+  //   excel!Excel.run:function(1) -> /javascript/api/excel#excel-excel-run-function(1)
+  //   excel!Excel.Worksheet.getRange:method -> /javascript/api/excel/excel.worksheet#...
+  const isNamespace = classPathLower === packageName.toLowerCase();
 
-  if (isNamespaceOnly) {
-    return `/javascript/api/${packageName}`;
+  if (isNamespace) {
+    return `/javascript/api/${packageName}${anchor}`;
   }
 
   // Build URL: /javascript/api/<package>/<class-path><anchor>

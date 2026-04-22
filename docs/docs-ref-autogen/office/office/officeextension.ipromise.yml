@@ -7,7 +7,7 @@ summary: ''
 remarks: |-
   #### Used by
 
-  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint/powerpoint#powerpoint-powerpoint-run-function(1))
+  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
 
 isPreview: false
 isDeprecated: false

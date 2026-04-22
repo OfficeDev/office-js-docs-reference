@@ -10,7 +10,7 @@ remarks: |-
 
   #### Used by
 
-  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint/powerpoint#powerpoint-powerpoint-run-function(1))
+  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
   - [PowerPoint.Adjustments](/javascript/api/powerpoint/powerpoint.adjustments): [context](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-context-member)
   - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [context](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-context-member)
   - [PowerPoint.Binding](/javascript/api/powerpoint/powerpoint.binding): [context](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-context-member)

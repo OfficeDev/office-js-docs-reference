@@ -7,7 +7,7 @@ summary: Represents a session of a Visio diagram embedded in a SharePoint page. 
 remarks: |-
   #### Used by
 
-  - [Visio](/javascript/api/visio): [run](/javascript/api/visio/visio#visio-visio-run-function(2))
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(2))
 
 isPreview: false
 isDeprecated: false
