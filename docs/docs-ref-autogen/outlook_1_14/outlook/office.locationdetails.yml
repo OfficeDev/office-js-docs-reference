@@ -4,28 +4,22 @@ uid: outlook!Office.LocationDetails:interface
 package: outlook!
 fullName: Office.LocationDetails
 summary: Represents a location. Read-only.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
-
+  - [Office.EnhancedLocation](/javascript/api/outlook/office.enhancedlocation): [getAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
+  - [Office.EnhancedLocationsChangedEventArgs](/javascript/api/outlook/office.enhancedlocationschangedeventargs): [enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#outlook-office-enhancedlocationschangedeventargs-enhancedlocations-member)
   #### Examples
 
-
   ```TypeScript
-
   Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
 
   function callbackFunction(asyncResult) {
       asyncResult.value.forEach(function (place) {
@@ -36,7 +30,6 @@ remarks: >-
           }
       });
   }
-
   ```
 
 isPreview: false
@@ -60,9 +53,7 @@ properties:
     uid: outlook!Office.LocationDetails#emailAddress:member
     package: outlook!
     fullName: emailAddress
-    summary: >-
-      The email address associated with the location. Only locations of type
-      `Room` have an email address.
+    summary: The email address associated with the location. Only locations of type `Room` have an email address.
     remarks: ''
 
     isPreview: false

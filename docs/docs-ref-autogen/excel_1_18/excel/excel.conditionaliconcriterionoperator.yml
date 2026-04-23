@@ -4,19 +4,17 @@ uid: excel!Excel.ConditionalIconCriterionOperator:enum
 package: excel!
 fullName: Excel.ConditionalIconCriterionOperator
 summary: Represents the operator for each icon criteria.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.ConditionalIconCriterion](/javascript/api/excel/excel.conditionaliconcriterion): [operator](/javascript/api/excel/excel.conditionaliconcriterion#excel-excel-conditionaliconcriterion-operator-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -56,7 +54,6 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -65,21 +62,15 @@ fields:
   - name: greaterThan
     uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"GreaterThan"'
   - name: greaterThanOrEqual
     uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"GreaterThanOrEqual"'
   - name: invalid
     uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Invalid"'

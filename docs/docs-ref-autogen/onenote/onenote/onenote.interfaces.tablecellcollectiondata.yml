@@ -3,10 +3,11 @@ name: OneNote.Interfaces.TableCellCollectionData
 uid: onenote!OneNote.Interfaces.TableCellCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableCellCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableCellCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableCellCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [toJSON](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

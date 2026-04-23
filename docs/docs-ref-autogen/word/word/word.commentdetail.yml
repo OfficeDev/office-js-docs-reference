@@ -4,22 +4,19 @@ uid: word!Word.CommentDetail:interface
 package: word!
 fullName: Word.CommentDetail
 summary: A structure for the ID and reply IDs of this comment.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.CommentEventArgs](/javascript/api/word/word.commenteventargs): [commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.track();
@@ -35,9 +32,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onEventHandler(event: Word.CommentEventArgs) {
     // Handler for all events except onCommentChanged.
@@ -45,7 +40,6 @@ remarks: >-
       console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
     });
   }
-
   ```
 
 isPreview: true
@@ -57,9 +51,7 @@ properties:
     package: word!
     fullName: id
     summary: Represents the ID of this comment.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -72,9 +64,7 @@ properties:
     package: word!
     fullName: replyIds
     summary: Represents the IDs of the replies to this comment.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false

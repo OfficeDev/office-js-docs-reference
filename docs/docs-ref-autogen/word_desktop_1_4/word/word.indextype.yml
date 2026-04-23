@@ -4,9 +4,13 @@ uid: word!Word.IndexType:enum
 package: word!
 fullName: Word.IndexType
 summary: Specifies the type of index to create.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Index](/javascript/api/word/word.index): [type](/javascript/api/word/word.index#word-word-index-type-member)
+  - [Word.IndexAddOptions](/javascript/api/word/word.indexaddoptions): [type](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-type-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +18,16 @@ fields:
   - name: indent
     uid: word!Word.IndexType.indent:member
     package: word!
-    summary: >-
+    summary: |-
       Creates an indented index.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Indent"'
   - name: runin
     uid: word!Word.IndexType.runin:member
     package: word!
-    summary: >-
+    summary: |-
       Creates a run-in index.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Runin"'

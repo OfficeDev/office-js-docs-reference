@@ -4,19 +4,17 @@ uid: excel!Excel.ConditionalFormatIconRuleType:enum
 package: excel!
 fullName: Excel.ConditionalFormatIconRuleType
 summary: Represents the types of icon conditional format.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.ConditionalIconCriterion](/javascript/api/excel/excel.conditionaliconcriterion): [type](/javascript/api/excel/excel.conditionaliconcriterion#excel-excel-conditionaliconcriterion-type-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -56,7 +54,6 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -65,35 +62,25 @@ fields:
   - name: formula
     uid: excel!Excel.ConditionalFormatIconRuleType.formula:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Formula"'
   - name: invalid
     uid: excel!Excel.ConditionalFormatIconRuleType.invalid:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Invalid"'
   - name: number
     uid: excel!Excel.ConditionalFormatIconRuleType.number:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Number"'
   - name: percent
     uid: excel!Excel.ConditionalFormatIconRuleType.percent:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Percent"'
   - name: percentile
     uid: excel!Excel.ConditionalFormatIconRuleType.percentile:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Percentile"'

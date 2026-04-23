@@ -4,23 +4,24 @@ uid: word!Word.ContentControlAppearance:enum
 package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-appearance-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [appearance](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-appearance-member)
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [appearance](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-appearance-member)
+  - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)
+  - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)
+  - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-appearance-member)
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-
-  // Adds title and colors to odd and even content controls and changes their
-  appearance.
-
+  // Adds title and colors to odd and even content controls and changes their appearance.
   await Word.run(async (context) => {
     // Get the complete sentence (as range) associated with the insertion point.
     let evenContentControls = context.document.contentControls.getByTag("even");
@@ -52,7 +53,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -61,31 +61,24 @@ fields:
   - name: boundingBox
     uid: word!Word.ContentControlAppearance.boundingBox:member
     package: word!
-    summary: >-
-      Represents a content control shown as a shaded rectangle or bounding box
-      (with optional title).
+    summary: |-
+      Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control that isn't shown.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control shown as start and end markers.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Tags"'

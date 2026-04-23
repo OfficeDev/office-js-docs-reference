@@ -3,19 +3,34 @@ name: Office.EventType
 uid: office!Office.EventType:enum
 package: office!
 fullName: Office.EventType
-summary: >-
-  Specifies the kind of event that was raised. Returned by the `type` property
-  of an `*EventArgs` object.
+summary: |-
+  Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
 
-
-  Add-ins for Project support the
-  `Office.EventType.ResourceSelectionChanged`<!-- -->,
-  `Office.EventType.TaskSelectionChanged`<!-- -->, and
-  `Office.EventType.ViewSelectionChanged` event types.
-
+  Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`<!-- -->, `Office.EventType.TaskSelectionChanged`<!-- -->, and `Office.EventType.ViewSelectionChanged` event types.
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
 remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [addHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removehandlerasync-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [addHandlerAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-removehandlerasync-member(1))
+  - [Office.Binding](/javascript/api/office/office.binding): [addHandlerAsync](/javascript/api/office/office.binding#office-office-binding-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
+  - [Office.BindingDataChangedEventArgs](/javascript/api/office/office.bindingdatachangedeventargs): [type](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-type-member)
+  - [Office.BindingSelectionChangedEventArgs](/javascript/api/office/office.bindingselectionchangedeventargs): [type](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-type-member)
+  - [Office.CustomXmlPart](/javascript/api/office/office.customxmlpart): [addHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
+  - [Office.Dialog](/javascript/api/office/office.dialog): [addEventHandler](/javascript/api/office/office.dialog#office-office-dialog-addeventhandler-member(1))
+  - [Office.DialogParentMessageReceivedEventArgs](/javascript/api/office/office.dialogparentmessagereceivedeventargs): [type](/javascript/api/office/office.dialogparentmessagereceivedeventargs#office-office-dialogparentmessagereceivedeventargs-type-member)
+  - [Office.Document](/javascript/api/office/office.document): [addHandlerAsync](/javascript/api/office/office.document#office-office-document-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
+  - [Office.DocumentSelectionChangedEventArgs](/javascript/api/office/office.documentselectionchangedeventargs): [type](/javascript/api/office/office.documentselectionchangedeventargs#office-office-documentselectionchangedeventargs-type-member)
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [addHandlerAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-removehandlerasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [addHandlerAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-removehandlerasync-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [addHandlerAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-removehandlerasync-member(1))
+  - [Office.Settings](/javascript/api/office/office.settings): [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
+  - [Office.SettingsChangedEventArgs](/javascript/api/office/office.settingschangedeventargs): [type](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-type-member)
+  - [Office.UI](/javascript/api/office/office.ui): [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
   #### Examples
 
   ```TypeScript
@@ -60,103 +75,60 @@ fields:
   - name: AppointmentTimeChanged
     uid: office!Office.EventType.AppointmentTimeChanged:member
     package: office!
-    summary: >-
-      Occurs when any date or time of the selected appointment or series is
-      changed in Outlook.
+    summary: |-
+      Occurs when any date or time of the selected appointment or series is changed in Outlook.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.AppointmentTimeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!-- -->.
 
-
-      To add an event handler for the `AppointmentTimeChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.AppointmentTimeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: AttachmentsChanged
     uid: office!Office.EventType.AttachmentsChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when an attachment is added to or removed from an item.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.AttachmentsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!-- -->.
 
-
-      To add an event handler for the `AttachmentsChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.AttachmentsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: BindingDataChanged
     uid: office!Office.EventType.BindingDataChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when data within the binding is changed in Excel or Word.
 
-
-      To add an event handler for the `BindingDataChanged` event of a binding,
-      use the `addHandlerAsync` method of the `Binding` object. The event
-      handler receives an argument of type
-      [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)<!--
-      -->.
+      To add an event handler for the `BindingDataChanged` event of a binding, use the `addHandlerAsync` method of the `Binding` object. The event handler receives an argument of type [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)<!-- -->.
   - name: BindingSelectionChanged
     uid: office!Office.EventType.BindingSelectionChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when the selection is changed within the binding in Excel or Word.
 
-
-      To add an event handler for the `BindingSelectionChanged` event of a
-      binding, use the `addHandlerAsync` method of the `Binding` object. The
-      event handler receives an argument of type
-      [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!--
-      -->.
+      To add an event handler for the `BindingSelectionChanged` event of a binding, use the `addHandlerAsync` method of the `Binding` object. The event handler receives an argument of type [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!-- -->.
   - name: DialogEventReceived
     uid: office!Office.EventType.DialogEventReceived:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when a dialog is closed or when dialog navigation failed.
 
-
-      For guidance on how to implement a dialog in your add-in, see [Use the
-      Office dialog API in Office
-      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
-      -->.
+      For guidance on how to implement a dialog in your add-in, see [Use the Office dialog API in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->.
   - name: DialogMessageReceived
     uid: office!Office.EventType.DialogMessageReceived:member
     package: office!
-    summary: >-
-      Occurs when a dialog sends a message using
-      `Office.context.ui.messageParent`<!-- -->.
+    summary: |-
+      Occurs when a dialog sends a message using `Office.context.ui.messageParent`<!-- -->.
 
-
-      For guidance on how to implement a dialog in your add-in, see [Use the
-      Office dialog API in Office
-      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
-      -->.
+      For guidance on how to implement a dialog in your add-in, see [Use the Office dialog API in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->.
   - name: DialogParentMessageReceived
     uid: office!Office.EventType.DialogParentMessageReceived:member
     package: office!
-    summary: >-
-      Occurs when a host page sends a message to a child dialog box with
-      `Dialog.messageChild`<!-- -->.
+    summary: |-
+      Occurs when a host page sends a message to a child dialog box with `Dialog.messageChild`<!-- -->.
 
-
-      For guidance on how to implement a dialog in your add-in, see [Use the
-      Office dialog API in Office
-      Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
-      -->.
+      For guidance on how to implement a dialog in your add-in, see [Use the Office dialog API in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->.
   - name: DocumentSelectionChanged
     uid: office!Office.EventType.DocumentSelectionChanged:member
     package: office!
@@ -164,130 +136,62 @@ fields:
   - name: DragAndDropEvent
     uid: office!Office.EventType.DragAndDropEvent:member
     package: office!
-    summary: >-
-      Occurs in Outlook on the web and the new Outlook on Windows when messages
-      or file attachments in the Outlook client window are dragged then dropped
-      into the task pane of an add-in.
+    summary: |-
+      Occurs in Outlook on the web and the new Outlook on Windows when messages or file attachments in the Outlook client window are dragged then dropped into the task pane of an add-in.
 
+      To add an event handler for the `DragAndDropEvent` event, use the `addHandlerAsync` method of the `Mailbox` object. The event handler receives an argument of type [Office.DragAndDropEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs)<!-- -->.
 
-      To add an event handler for the `DragAndDropEvent` event, use the
-      `addHandlerAsync` method of the `Mailbox` object. The event handler
-      receives an argument of type
-      [Office.DragAndDropEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs)<!--
-      -->.
+      **Important**: The `DragAndDropEvent` event isn't supported in Outlook on Windows (classic) and on Mac. If the `DragAndDropEvent` handler runs on these clients, an error occurs ("This event isn't supported on this platform.").
 
-
-      **Important**: The `DragAndDropEvent` event isn't supported in Outlook
-      on Windows (classic) and on Mac. If the `DragAndDropEvent` handler runs on
-      these clients, an error occurs ("This event isn't supported on this
-      platform.").
-
-
-      \[ [API set: Mailbox
-      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: EnhancedLocationsChanged
     uid: office!Office.EventType.EnhancedLocationsChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when the appointment location is changed in Outlook.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.EnhancedLocationsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!-- -->.
 
-
-      To add an event handler for the `EnhancedLocationsChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.EnhancedLocationsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: InfobarClicked
     uid: office!Office.EventType.InfobarClicked:member
     package: office!
-    summary: >-
-      Occurs in Outlook when an action is selected on a notification message
-      with a defined [custom
-      action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!--
-      -->. Currently, **Dismiss** is the only supported action that fires
-      this event.
+    summary: |-
+      Occurs in Outlook when an action is selected on a notification message with a defined [custom action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->. Currently, **Dismiss** is the only supported action that fires this event.
 
-
-      To add an event handler for the `InfobarClicked` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.InfobarClickedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!--
-      -->.
-
+      To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.InfobarClickedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!-- -->.
 
       **Important**:
 
+      - This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      - This event can only be handled in a task pane. Function commands can't
-      register a handler for this event.
+      - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event. To determine when the **Dismiss** action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead. For more information, see [Activate add-ins with events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events)<!-- -->.
 
-
-      - Although Outlook on Mac supports the `InsightMessage` notification type,
-      it currently doesn't support the `InfobarClicked` event. To determine when
-      the **Dismiss** action is selected from the notification, implement a
-      handler for the `OnInfoBarDismissClicked` event instead. For more
-      information, see [Activate add-ins with
-      events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: InitializationContextChanged
     uid: office!Office.EventType.InitializationContextChanged:member
     package: office!
-    summary: >-
-      Occurs in Outlook when an add-in's task pane is opened from an [actionable
-      message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->,
-      [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
-      notification, [Smart
-      Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
-      dialog, or [integrated
-      spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
-      dialog. This event prevents an add-in from relaunching if its task pane is
-      already open in Outlook.
+    summary: |-
+      Occurs in Outlook when an add-in's task pane is opened from an [actionable message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->, [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields) notification, [Smart Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog. This event prevents an add-in from relaunching if its task pane is already open in Outlook.
 
+      **Important**: The `InitializationContextChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: The `InitializationContextChanged` event can only be
-      handled in a task pane. Function commands can't register a handler for
-      this event.
+      To add an event handler for the `InitializationContextChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.InitializationContextChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15)<!-- -->.
 
-
-      To add an event handler for the `InitializationContextChanged` event, use
-      the `addHandlerAsync` method of the `Item` object. The event handler
-      receives an argument of type
-      [Office.InitializationContextChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.15](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.15](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: ItemChanged
     uid: office!Office.EventType.ItemChanged:member
     package: office!
-    summary: >-
-      Occurs when a different Outlook item is selected for viewing while the
-      task pane is pinned.
+    summary: |-
+      Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
 
-
-      To add an event handler for the `ItemChanged` event, use the
-      `addHandlerAsync` method of the `Mailbox` object.
-
-
-      \[ [API set: Mailbox
-      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: NodeDeleted
     uid: office!Office.EventType.NodeDeleted:member
     package: office!
@@ -303,74 +207,40 @@ fields:
   - name: OfficeThemeChanged
     uid: office!Office.EventType.OfficeThemeChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs when the OfficeTheme is changed in Outlook.
 
-
-      To add an event handler for the `OfficeThemeChanged` event, use the
-      `addHandlerAsync` method of the `Mailbox` object. The event handler
-      receives an argument of type
-      [Office.OfficeThemeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs)<!--
-      -->.
-
+      To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox` object. The event handler receives an argument of type [Office.OfficeThemeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs)<!-- -->.
 
       **Important**:
 
+      - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      - The `OfficeThemeChanged` event can only be handled in a task pane.
-      Function commands can't register a handler for this event.
+      - The `OfficeThemeChanged` event isn't supported in add-ins that implement [event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!-- -->.
 
-
-      - The `OfficeThemeChanged` event isn't supported in add-ins that implement
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: RecipientsChanged
     uid: office!Office.EventType.RecipientsChanged:member
     package: office!
-    summary: >-
-      Occurs when the recipient list of the selected item or the appointment
-      location is changed in Outlook.
+    summary: |-
+      Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.RecipientsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!-- -->.
 
-
-      To add an event handler for the `RecipientsChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.RecipientsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: RecurrenceChanged
     uid: office!Office.EventType.RecurrenceChanged:member
     package: office!
-    summary: >-
-      Occurs when the recurrence pattern of the selected series is changed in
-      Outlook.
+    summary: |-
+      Occurs when the recurrence pattern of the selected series is changed in Outlook.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.RecurrenceChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!-- -->.
 
-
-      To add an event handler for the `RecurrenceChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.RecurrenceChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: ResourceSelectionChanged
     uid: office!Office.EventType.ResourceSelectionChanged:member
     package: office!
@@ -378,59 +248,36 @@ fields:
   - name: SelectedItemsChanged
     uid: office!Office.EventType.SelectedItemsChanged:member
     package: office!
-    summary: >-
+    summary: |-
       Occurs in Outlook when one or more messages are selected or deselected.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
 
-
-      To add an event handler for the `SelectedItemsChanged` event, use the
-      `addHandlerAsync` method of the `Mailbox` object.
-
-
-      \[ [API set: Mailbox
-      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: SensitivityLabelChanged
     uid: office!Office.EventType.SensitivityLabelChanged:member
     package: office!
-    summary: >-
-      Occurs in Outlook when the sensitivity label of a message or appointment
-      changes.
+    summary: |-
+      Occurs in Outlook when the sensitivity label of a message or appointment changes.
 
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      **Important**: This event can only be handled in a task pane. Function
-      commands can't register a handler for this event.
+      To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs)<!-- -->.
 
-
-      To add an event handler for the `SensitivityLabelChanged` event, use the
-      `addHandlerAsync` method of the `Item` object. The event handler receives
-      an argument of type
-      [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs)<!--
-      -->.
-
-
-      \[ [API set: Mailbox
-      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: SettingsChanged
     uid: office!Office.EventType.SettingsChanged:member
     package: office!
-    summary: >-
-      A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or
-      Word.
+    summary: A `Settings.settingsChanged` event was raised in Excel, PowerPoint, or Word.
   - name: SpamReporting
     uid: office!Office.EventType.SpamReporting:member
     package: office!
-    summary: >-
-      Occurs in Outlook when an unsolicited message is reported. The event
-      handler receives an argument of type
-      [Office.SpamReportingEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs)<!--
-      -->.
+    summary: |-
+      Occurs in Outlook when an unsolicited message is reported. The event handler receives an argument of type [Office.SpamReportingEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs)<!-- -->.
 
-
-      \[ [API set: Mailbox
-      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: TaskSelectionChanged
     uid: office!Office.EventType.TaskSelectionChanged:member
     package: office!

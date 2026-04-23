@@ -3,12 +3,13 @@ name: Word.Interfaces.AnnotationCollectionLoadOptions
 uid: word!Word.Interfaces.AnnotationCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.AnnotationCollectionLoadOptions
-summary: >-
-  Contains a collection of [Word.Annotation](xref:word!Word.Annotation:class)
-  objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Contains a collection of [Word.Annotation](xref:word!Word.Annotation:class) objects.
+remarks: |-
+  [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.AnnotationCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -31,33 +29,24 @@ properties:
       return:
         type: boolean
   - name: critiqueAnnotation
-    uid: >-
-      word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member
+    uid: word!Word.Interfaces.AnnotationCollectionLoadOptions#critiqueAnnotation:member
     package: word!
     fullName: critiqueAnnotation
     summary: 'For EACH ITEM in the collection: Gets the `CritiqueAnnotation` object.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
   - name: id
     uid: word!Word.Interfaces.AnnotationCollectionLoadOptions#id:member
     package: word!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets the unique identifier, which is
-      meant to be used for easier tracking of `Annotation` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.'
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +59,7 @@ properties:
     package: word!
     fullName: state
     summary: 'For EACH ITEM in the collection: Gets the state of the annotation.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

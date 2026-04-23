@@ -4,7 +4,23 @@ uid: onenote!OneNote.Interfaces.CollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection): [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(1))
+  - [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection): [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(1))
+  - [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection): [load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(1))
+  - [OneNote.InkStrokeCollection](/javascript/api/onenote/onenote.inkstrokecollection): [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(1))
+  - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(1))
+  - [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection): [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(1))
+  - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(1))
+  - [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection): [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(1))
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(1))
+  - [OneNote.PointCollection](/javascript/api/onenote/onenote.pointcollection): [load](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-load-member(1))
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(1))
+  - [OneNote.SectionGroupCollection](/javascript/api/onenote/onenote.sectiongroupcollection): [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(1))
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
+  - [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection): [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +30,7 @@ properties:
     uid: onenote!OneNote.Interfaces.CollectionLoadOptions#$skip:member
     package: onenote!
     fullName: $skip
-    summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If top is specified, the selection of result
-      will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -30,9 +43,7 @@ properties:
     uid: onenote!OneNote.Interfaces.CollectionLoadOptions#$top:member
     package: onenote!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
 
     isPreview: false

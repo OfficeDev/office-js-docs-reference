@@ -3,10 +3,11 @@ name: Word.Interfaces.NoteItemCollectionData
 uid: word!Word.Interfaces.NoteItemCollectionData:interface
 package: word!
 fullName: Word.Interfaces.NoteItemCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `noteItemCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `noteItemCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.NoteItemCollection](/javascript/api/word/word.noteitemcollection): [toJSON](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

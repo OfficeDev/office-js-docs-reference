@@ -4,7 +4,10 @@ uid: office!Office.AddBindingFromNamedItemOptions:interface
 package: office!
 fullName: Office.AddBindingFromNamedItemOptions
 summary: Provides options for configuring the binding that is created.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Office.Bindings](/javascript/api/office/office.bindings): [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +17,7 @@ properties:
     uid: office!Office.AddBindingFromNamedItemOptions#asyncContext:member
     package: office!
     fullName: asyncContext
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+    summary: A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     remarks: ''
 
     isPreview: false

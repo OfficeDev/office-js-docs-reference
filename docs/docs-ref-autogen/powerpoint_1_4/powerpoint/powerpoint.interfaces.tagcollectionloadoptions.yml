@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagCollectionLoadOptions
 summary: Represents the collection of tags.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,14 +32,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions#key:member
     package: powerpoint!
     fullName: key
-    summary: >-
-      For EACH ITEM in the collection: Gets the unique ID of the tag. The `key`
-      is unique within the owning `TagCollection` and always stored as uppercase
-      letters within the document.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: 'For EACH ITEM in the collection: Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.'
+    remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -53,10 +46,7 @@ properties:
     package: powerpoint!
     fullName: value
     summary: 'For EACH ITEM in the collection: Gets the value of the tag.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

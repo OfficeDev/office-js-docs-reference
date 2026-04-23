@@ -4,22 +4,21 @@ uid: word!Word.NumberType:enum
 package: word!
 fullName: Word.NumberType
 summary: Specifies the type of numbers in a list.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [convertNumbersToText](/javascript/api/word/word.document#word-word-document-convertnumberstotext-member(1)), [removeNumbers](/javascript/api/word/word.document#word-word-document-removenumbers-member(1))
+  - [Word.ListFormat](/javascript/api/word/word.listformat): [convertNumbersToText](/javascript/api/word/word.listformat#word-word-listformat-convertnumberstotext-member(1)), [removeNumbers](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))
+  - [Word.ListFormatCountNumberedItemsOptions](/javascript/api/word/word.listformatcountnumbereditemsoptions): [numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
 
   // Counts only the level-1 (top-level) numbered paragraphs in the body range.
-
   await Word.run(async (context) => {
     const bodyRange: Word.Range = context.document.body.getRange();
     const listFormat: Word.ListFormat = bodyRange.listFormat;
@@ -33,7 +32,6 @@ remarks: >-
 
     console.log(`Level-1 item count: ${count.value}`);
   });
-
   ```
 
 isPreview: false
@@ -42,33 +40,24 @@ fields:
   - name: allNumbers
     uid: word!Word.NumberType.allNumbers:member
     package: word!
-    summary: >-
+    summary: |-
       Default value for all other cases.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AllNumbers"'
   - name: listNum
     uid: word!Word.NumberType.listNum:member
     package: word!
-    summary: >-
-      Default value for [ListNum
-      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)<!--
-      -->.
+    summary: |-
+      Default value for [ListNum fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)<!-- -->.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ListNum"'
   - name: paragraph
     uid: word!Word.NumberType.paragraph:member
     package: word!
-    summary: >-
-      Preset numbers you can add to paragraphs by selecting a template in the
-      **Bullets and Numbering** dialog box.
+    summary: |-
+      Preset numbers you can add to paragraphs by selecting a template in the **Bullets and Numbering** dialog box.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Paragraph"'

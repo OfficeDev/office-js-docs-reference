@@ -3,10 +3,11 @@ name: Excel.Interfaces.SlicerCollectionData
 uid: excel!Excel.Interfaces.SlicerCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.SlicerCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slicerCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `slicerCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [toJSON](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,10 +3,11 @@ name: Excel.Interfaces.StyleCollectionData
 uid: excel!Excel.Interfaces.StyleCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.StyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `styleCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `styleCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.StyleCollection](/javascript/api/excel/excel.stylecollection): [toJSON](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

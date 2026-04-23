@@ -3,25 +3,23 @@ name: Word.TrackedChangeCollection
 uid: word!Word.TrackedChangeCollection:class
 package: word!
 fullName: Word.TrackedChangeCollection
-summary: >-
-  Contains a collection of
-  [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
+remarks: |-
+  [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Body](/javascript/api/word/word.body): [getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [getTrackedChanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [getTrackedChanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
   // Gets the range of the first tracked change.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -34,7 +32,6 @@ remarks: >-
 
     console.log("range.text: " + range.text);
   });
-
   ```
 
 isPreview: false
@@ -45,9 +42,7 @@ properties:
     uid: word!Word.TrackedChangeCollection#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -75,29 +70,21 @@ methods:
     package: word!
     fullName: acceptAll()
     summary: Accepts all the tracked changes in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Accepts all tracked changes.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.acceptAll();
         console.log("Accepted all tracked changes.");
       });
-
       ```
 
     isPreview: false
@@ -111,25 +98,16 @@ methods:
     uid: word!Word.TrackedChangeCollection#getFirst:member(1)
     package: word!
     fullName: getFirst()
-    summary: >-
-      Gets the first TrackedChange in this collection. Throws an `ItemNotFound`
-      error if this collection is empty.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the first TrackedChange in this collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Gets the range of the first tracked change.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -142,7 +120,6 @@ methods:
 
         console.log("range.text: " + range.text);
       });
-
       ```
 
     isPreview: false
@@ -156,16 +133,8 @@ methods:
     uid: word!Word.TrackedChangeCollection#getFirstOrNullObject:member(1)
     package: word!
     fullName: getFirstOrNullObject()
-    summary: >-
-      Gets the first TrackedChange in this collection. If this collection is
-      empty, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the first TrackedChange in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -178,25 +147,17 @@ methods:
     uid: word!Word.TrackedChangeCollection#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TrackedChangeCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.TrackedChangeCollection;
+      content: 'load(options?: Word.Interfaces.TrackedChangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TrackedChangeCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface"
-            /> & <xref
-            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+          type: <xref uid="word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface" /> & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.TrackedChangeCollection:class" />
         description: ''
@@ -204,9 +165,7 @@ methods:
     uid: word!Word.TrackedChangeCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -215,9 +174,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.TrackedChangeCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TrackedChangeCollection:class" />
@@ -226,24 +183,16 @@ methods:
     uid: word!Word.TrackedChangeCollection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.TrackedChangeCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.TrackedChangeCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.TrackedChangeCollection:class" />
@@ -253,29 +202,21 @@ methods:
     package: word!
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Rejects all tracked changes.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.rejectAll();
         console.log("Rejected all tracked changes.");
       });
-
       ```
 
     isPreview: false
@@ -289,16 +230,7 @@ methods:
     uid: word!Word.TrackedChangeCollection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Word.TrackedChangeCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Word.Interfaces.TrackedChangeCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TrackedChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
 
     isPreview: false
@@ -306,24 +238,13 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.TrackedChangeCollectionData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.TrackedChangeCollectionData:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.TrackedChangeCollectionData:interface" />
         description: ''
   - name: track()
     uid: word!Word.TrackedChangeCollection#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -337,14 +258,7 @@ methods:
     uid: word!Word.TrackedChangeCollection#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

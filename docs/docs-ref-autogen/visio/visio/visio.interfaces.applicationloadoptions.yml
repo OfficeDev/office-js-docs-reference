@@ -4,10 +4,12 @@ uid: visio!Visio.Interfaces.ApplicationLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.ApplicationLoadOptions
 summary: Represents the Application.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.Application](/javascript/api/visio/visio.application): [load](/javascript/api/visio/visio.application#visio-visio-application-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: visio!Visio.Interfaces.ApplicationLoadOptions#$all:member
     package: visio!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+    summary: 'Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.: `Range.format.fill.color`<!-- -->).'
     remarks: ''
 
     isPreview: false
@@ -34,10 +33,7 @@ properties:
     package: visio!
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +46,7 @@ properties:
     package: visio!
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

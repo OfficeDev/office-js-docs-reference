@@ -4,22 +4,22 @@ uid: word!Word.CommentEventArgs:interface
 package: word!
 fullName: Word.CommentEventArgs
 summary: Provides information about the comments that raised the comment event.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Body](/javascript/api/word/word.body): [onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member), [onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member), [onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member), [onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member), [onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)
+  - [Word.Range](/javascript/api/word/word.range): [onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.track();
@@ -35,9 +35,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onChangedHandler(event: Word.CommentEventArgs) {
     await Word.run(async (context) => {
@@ -46,7 +44,6 @@ remarks: >-
       );
     });
   }
-
   ```
 
 isPreview: true
@@ -58,31 +55,20 @@ properties:
     package: word!
     fullName: changeType
     summary: Represents how the `commentChanged` event is raised.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        changeType: Word.CommentChangeType | "none" | "edited" | "resolved" |
-        "reopened" | "replyAdded" | "replyDeleted" | "replyEdited";
+      content: 'changeType: Word.CommentChangeType | "none" | "edited" | "resolved" | "reopened" | "replyAdded" | "replyDeleted" | "replyEdited";'
       return:
-        type: >-
-          <xref uid="word!Word.CommentChangeType:enum" /> | "none" | "edited" |
-          "resolved" | "reopened" | "replyAdded" | "replyDeleted" |
-          "replyEdited"
+        type: <xref uid="word!Word.CommentChangeType:enum" /> | "none" | "edited" | "resolved" | "reopened" | "replyAdded" | "replyDeleted" | "replyEdited"
   - name: commentDetails
     uid: word!Word.CommentEventArgs#commentDetails:member
     package: word!
     fullName: commentDetails
-    summary: >-
-      Gets the `CommentDetail` array which contains the IDs and reply IDs of the
-      involved comments.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the `CommentDetail` array which contains the IDs and reply IDs of the involved comments.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -94,12 +80,8 @@ properties:
     uid: word!Word.CommentEventArgs#source:member
     package: word!
     fullName: source
-    summary: >-
-      Specifies the source of the event. It can be local or remote (through
-      coauthoring).
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the source of the event. It can be local or remote (through coauthoring).
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -112,29 +94,11 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        type: Word.EventType | "ContentControlDeleted" |
-        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-        "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
-        "CommentDeselected" | "CommentChanged" | "CommentAdded" |
-        "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-        "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
-        "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
-        "AnnotationPopupAction";
+      content: 'type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";'
       return:
-        type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
-          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-          "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
-          "CommentDeselected" | "CommentChanged" | "CommentAdded" |
-          "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" |
-          "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" |
-          "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" |
-          "AnnotationPopupAction"
+        type: <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"

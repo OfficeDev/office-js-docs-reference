@@ -4,9 +4,12 @@ uid: word!Word.ApplyQuickStyleSet:enum
 package: word!
 fullName: Word.ApplyQuickStyleSet
 summary: Specifies which Quick Style set to apply to the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [applyQuickStyleSet](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,21 +17,16 @@ fields:
   - name: sessionStart
     uid: word!Word.ApplyQuickStyleSet.sessionStart:member
     package: word!
-    summary: >-
-      Resets the Quick Style to the style set in use when the document was
-      opened.
+    summary: |-
+      Resets the Quick Style to the style set in use when the document was opened.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SessionStart"'
   - name: template
     uid: word!Word.ApplyQuickStyleSet.template:member
     package: word!
-    summary: >-
+    summary: |-
       Resets the Quick Style to the style set from the template, if any.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Template"'

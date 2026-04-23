@@ -3,10 +3,11 @@ name: Word.Interfaces.OleFormatUpdateData
 uid: word!Word.Interfaces.OleFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.OleFormatUpdateData
-summary: >-
-  An interface for updating data on the `OleFormat` object, for use in
-  `oleFormat.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `OleFormat` object, for use in `oleFormat.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.OleFormat](/javascript/api/word/word.oleformat): [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: word!
     fullName: classType
     summary: Specifies the class type for the specified OLE object, picture, or field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,12 +30,8 @@ properties:
     uid: word!Word.Interfaces.OleFormatUpdateData#iconIndex:member
     package: word!
     fullName: iconIndex
-    summary: >-
-      Specifies the icon that is used when the `displayAsIcon` property is
-      `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the icon that is used when the `displayAsIcon` property is `true`<!-- -->.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +44,7 @@ properties:
     package: word!
     fullName: iconLabel
     summary: Specifies the text displayed below the icon for the OLE object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +57,7 @@ properties:
     package: word!
     fullName: iconName
     summary: Specifies the program file in which the icon for the OLE object is stored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -75,16 +66,11 @@ properties:
       return:
         type: string
   - name: isFormattingPreservedOnUpdate
-    uid: >-
-      word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
+    uid: word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
     package: word!
     fullName: isFormattingPreservedOnUpdate
-    summary: >-
-      Specifies whether formatting done in Microsoft Word to the linked OLE
-      object is preserved.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

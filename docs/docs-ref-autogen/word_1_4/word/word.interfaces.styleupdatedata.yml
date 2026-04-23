@@ -3,10 +3,11 @@ name: Word.Interfaces.StyleUpdateData
 uid: word!Word.Interfaces.StyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.StyleUpdateData
-summary: >-
-  An interface for updating data on the `Style` object, for use in `style.set({
-  ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Style` object, for use in `style.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Style](/javascript/api/word/word.style): [set](/javascript/api/word/word.style#word-word-style-set-member(1))
 
 isPreview: false
 isDeprecated: false

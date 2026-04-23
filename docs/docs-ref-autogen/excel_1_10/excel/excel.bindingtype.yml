@@ -4,19 +4,18 @@ uid: excel!Excel.BindingType:enum
 package: excel!
 fullName: Excel.BindingType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)
+  - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [add](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1)), [addFromNamedItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromnameditem-member(1)), [addFromSelection](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-addfromselection-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -31,7 +30,6 @@ remarks: >-
       }
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -40,21 +38,15 @@ fields:
   - name: range
     uid: excel!Excel.BindingType.range:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Range"'
   - name: table
     uid: excel!Excel.BindingType.table:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Table"'
   - name: text
     uid: excel!Excel.BindingType.text:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Text"'

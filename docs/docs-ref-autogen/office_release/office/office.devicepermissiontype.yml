@@ -4,44 +4,31 @@ uid: office!Office.DevicePermissionType:enum
 package: office!
 fullName: Office.DevicePermissionType
 summary: Specifies the device capability to which an add-in is requesting access.
-remarks: >-
-  **Applications**: This API is supported by the following Office
-  applications when running in Chromium-based browsers, such as Microsoft Edge
-  and Google Chrome.
-
+remarks: |-
+  **Applications**: This API is supported by the following Office applications when running in Chromium-based browsers, such as Microsoft Edge and Google Chrome.
 
   - Excel on the web
 
-
   - Outlook on the web
-
 
   - PowerPoint on the web
 
-
   - Word on the web
 
+  It's also supported in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
-  It's also supported in [new Outlook on
-  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-  -->.
-
-
-  **Requirement set**: [DevicePermission
-  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
+  **Requirement set**: [DevicePermission 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
 
+  #### Used by
+
+  - [Office.DevicePermission](/javascript/api/office/office.devicepermission): [requestPermissions](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissions-member(1)), [requestPermissionsAsync](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissionsasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
   // Request permission from a user to access their device capabilities.
-
   const host = Office.context.host;
-
-  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint ||
-  host === Office.HostType.Word) {
+  if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
       if (Office.context.platform === Office.PlatformType.OfficeOnline) {
           const deviceCapabilities = [
               Office.DevicePermissionType.camera,
@@ -100,7 +87,6 @@ remarks: >-
   } else {
       console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
   }
-
   ```
 
 isPreview: false
@@ -113,12 +99,10 @@ fields:
   - name: geolocation
     uid: office!Office.DevicePermissionType.geolocation:member
     package: office!
-    summary: >-
+    summary: |-
       The add-in is requesting access to the user's geolocation.
 
-
-      **Important**: Access to a user's geolocation is only supported in
-      Outlook on the web and new Outlook on Windows.
+      **Important**: Access to a user's geolocation is only supported in Outlook on the web and new Outlook on Windows.
   - name: microphone
     uid: office!Office.DevicePermissionType.microphone:member
     package: office!

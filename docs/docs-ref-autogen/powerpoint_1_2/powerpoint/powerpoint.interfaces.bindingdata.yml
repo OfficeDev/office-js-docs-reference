@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.BindingData
 uid: powerpoint!PowerPoint.Interfaces.BindingData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingData
-summary: >-
-  An interface describing the data returned by calling `binding.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `binding.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -3,24 +3,23 @@ name: Office.RequirementSetSupport
 uid: office!Office.RequirementSetSupport:interface
 package: office!
 fullName: Office.RequirementSetSupport
-summary: >-
-  Provides information about which Requirement Sets are supported in the current
-  environment.
-remarks: >-
+summary: Provides information about which Requirement Sets are supported in the current environment.
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.Context](/javascript/api/office/office.context): [requirements](/javascript/api/office/office.context#office-office-context-requirements-member)
   #### Examples
 
-
   ```TypeScript
-
-  const requirements : Office.RequirementSetSupport =
-  Office.context.requirements; 
-
+  const requirements : Office.RequirementSetSupport = Office.context.requirements; 
   if (requirements.isSetSupported('Mailbox', '1.14')) {
       // Code that uses APIs from the 'Mailbox 1.14' requirement set.
   } else {
       // An alternate path (such as a message to the user) when the requirement set isn't supported.
   }
-
   ```
 
 isPreview: false
@@ -31,9 +30,7 @@ methods:
     uid: office!Office.RequirementSetSupport#isSetSupported:member(1)
     package: office!
     fullName: isSetSupported(name, minVersion)
-    summary: >-
-      Check if the specified requirement set is supported by the Office
-      application.
+    summary: Check if the specified requirement set is supported by the Office application.
     remarks: ''
 
     isPreview: false
@@ -54,9 +51,7 @@ methods:
     uid: office!Office.RequirementSetSupport#isSetSupported:member(2)
     package: office!
     fullName: isSetSupported(name, minVersionNumber)
-    summary: >-
-      Check if the specified requirement set is supported by the Office
-      application.
+    summary: Check if the specified requirement set is supported by the Office application.
     remarks: ''
 
     isPreview: false

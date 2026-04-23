@@ -4,22 +4,19 @@ uid: word!Word.AnnotationSet:interface
 package: word!
 fullName: Word.AnnotationSet
 summary: Annotations set produced by the add-in. Currently supporting only critiques.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
   // Adds annotations to the selected paragraph.
-
   await Word.run(async (context) => {
     const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
     const options: Word.CritiquePopupOptions = {
@@ -68,7 +65,6 @@ remarks: >-
 
     console.log("Annotations inserted:", annotationIds.value);
   });
-
   ```
 
 isPreview: false
@@ -80,9 +76,7 @@ properties:
     package: word!
     fullName: critiques
     summary: Critiques.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

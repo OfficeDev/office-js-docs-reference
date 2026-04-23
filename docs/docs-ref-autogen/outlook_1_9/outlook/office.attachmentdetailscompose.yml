@@ -3,35 +3,26 @@ name: Office.AttachmentDetailsCompose
 uid: outlook!Office.AttachmentDetailsCompose:interface
 package: outlook!
 fullName: Office.AttachmentDetailsCompose
-summary: >-
+summary: |-
   Represents an attachment on an item. Compose mode only.
 
+  An array of `AttachmentDetailsCompose` objects is returned by the `getAttachmentsAsync` method.
+remarks: |-
+  [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  An array of `AttachmentDetailsCompose` objects is returned by the
-  `getAttachmentsAsync` method.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
+  #### Used by
 
-
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentsasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentsasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
   Office.context.mailbox.item.getAttachmentsAsync((result) => {
     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -75,7 +66,6 @@ remarks: >-
       console.log("No attachments on this message.");
     }
   });
-
   ```
 
 isPreview: false
@@ -87,70 +77,33 @@ properties:
     package: outlook!
     fullName: attachmentType
     summary: Gets a value that indicates the attachment's type.
-    remarks: >-
+    remarks: |-
       **Important**:
 
+      - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached using drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension is returned in the `name` property. However, a message or appointment that's attached using the **Forward as Attachment** option is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an extension isn't returned in the `name` property.
 
-      - In Outlook on the web and new Outlook on Windows, a message or
-      appointment that's locally saved then attached using drag-and-drop or the
-      **Attach Item** option is of type
-      `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension
-      is returned in the `name` property. However, a message or appointment
-      that's attached using the **Forward as Attachment** option is of type
-      `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an
-      extension isn't returned in the `name` property.
+      - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach File**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name extension isn't returned in the `name` property.
 
-
-      - In classic Outlook on Windows, a message or appointment that's attached
-      using drag-and-drop, **Attach File**, or **Forward as Attachment**
-      is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name
-      extension isn't returned in the `name` property.
-
-
-      - In Outlook on Mac, a message or appointment that's attached using
-      drag-and-drop, **Attach Item**, or **Forward as Attachment** is of
-      type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
-      extension is returned in the `name` property.
+      - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension is returned in the `name` property.
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'attachmentType: MailboxEnums.AttachmentType | string;'
       return:
-        type: >-
-          <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
-          string
+        type: <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> | string
   - name: contentId
     uid: outlook!Office.AttachmentDetailsCompose#contentId:member
     package: outlook!
     fullName: contentId
-    summary: >-
+    summary: |-
       Gets the content identifier of an inline attachment.
-
 
       **Important**:
 
+      - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview). To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000) or later and must be on the Beta Channel. For more information, see [Microsoft 365 Insider Program](https://aka.ms/Msft365InsiderProgram)<!-- -->.
 
-      - The `contentId` property is only supported in Outlook on the web, the
-      new Outlook on Windows, and classic Outlook on Windows (preview). To
-      preview the `contentId` property in classic Outlook on Windows, your
-      Outlook client must run Version 2510 (Build 19312.20000) or later and must
-      be on the Beta Channel. For more information, see [Microsoft 365 Insider
-      Program](https://aka.ms/Msft365InsiderProgram)<!-- -->.
-
-
-      - Changes to how inline images are represented in the HTML body of Outlook
-      emails in Outlook on the web and the new Outlook on Windows released on
-      November 15, 2025. Previously, the attachment ID of the image appeared in
-      the `src` attribute of the applicable `<img>` element. Now, the image is
-      represented by a content ID (`cid`<!-- -->) in the `src` attribute
-      instead. If you parse the attachment ID from the HTML editor or get the
-      Base64-encoded value of the image from the URL in the `src` attribute, you
-      must update your add-in's parsing logic. For more information, see
-      [Changes to inline image representation in Outlook on the web and new
-      Outlook for
-      Windows](https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook)<!--
-      -->.
+      - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025. Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element. Now, the image is represented by a content ID (`cid`<!-- -->) in the `src` attribute instead. If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic. For more information, see [Changes to inline image representation in Outlook on the web and new Outlook for Windows](https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook)<!-- -->.
     remarks: ''
 
     isPreview: false
@@ -163,34 +116,13 @@ properties:
     uid: outlook!Office.AttachmentDetailsCompose#id:member
     package: outlook!
     fullName: id
-    summary: >-
-      Gets the identifier of an attachment. The value varies depending on the
-      Outlook client.
+    summary: |-
+      Gets the identifier of an attachment. The value varies depending on the Outlook client.
 
+      - In Outlook on the web and the new Outlook on Windows, the identifier is the Exchange Web Services (EWS) ID. For inline attachments, the initial identifier is a temporary attachment ID, prefixed with `addinId`<!-- -->, while the attachment is uploaded to the server. Once the upload completes, the attachment receives an EWS ID. For details, see the notes in the Remarks section.
 
-      - In Outlook on the web and the new Outlook on Windows, the identifier is
-      the Exchange Web Services (EWS) ID. For inline attachments, the initial
-      identifier is a temporary attachment ID, prefixed with `addinId`<!-- -->,
-      while the attachment is uploaded to the server. Once the upload completes,
-      the attachment receives an EWS ID. For details, see the notes in the
-      Remarks section.
-
-
-      - In Outlook on Windows (classic) and on Mac, the identifier for inline
-      and non-inline attachments is the index of the attachment.
-    remarks: >-
-      **Important**: Starting March 30, 2026, after the call to
-      `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with
-      `isInline` set to `true` completes, inline images in messages in Outlook
-      on the web and the new Outlook on Windows are locally assigned a temporary
-      attachment ID while they're uploaded to the server. A temporary attachment
-      ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the
-      server, they are then assigned an Exchange Web Services (EWS) ID. The
-      temporary attachment ID is only supported for the duration of the current
-      compose session. For more information on the changes to how inline images
-      are handled, see [Changes to attachment IDs for inline images in Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!--
-      -->.
+      - In Outlook on Windows (classic) and on Mac, the identifier for inline and non-inline attachments is the index of the attachment.
+    remarks: '**Important**: Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they''re uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.'
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +134,7 @@ properties:
     uid: outlook!Office.AttachmentDetailsCompose#isInline:member
     package: outlook!
     fullName: isInline
-    summary: >-
-      Gets a value that indicates whether the attachment appears as an image in
-      the body of the item instead of in the attachment list.
+    summary: Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
     remarks: ''
 
     isPreview: false
@@ -217,32 +147,13 @@ properties:
     uid: outlook!Office.AttachmentDetailsCompose#isServiceAccessible:member
     package: outlook!
     fullName: isServiceAccessible
-    summary: >-
-      In Outlook on the web and the new Outlook on Windows, indicates whether an
-      inline attachment in a message has been uploaded to the server and
-      assigned an Exchange Web Services (EWS) ID.
-    remarks: >-
+    summary: In Outlook on the web and the new Outlook on Windows, indicates whether an inline attachment in a message has been uploaded to the server and assigned an Exchange Web Services (EWS) ID.
+    remarks: |-
       **Important**:
 
+      - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`<!-- -->. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.
 
-      - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or
-      `addFileAttachmentFromBase64Async` with `isInline` set to `true`
-      completes, inline images in Outlook on the web and the new Outlook on
-      Windows are locally assigned a temporary attachment ID while they're
-      uploaded to the server. A temporary attachment ID is prefixed with
-      `addinId`<!-- -->. Once the images are uploaded to the server, they are
-      then assigned an Exchange Web Services (EWS) ID in the `id` property and
-      their `isServiceAccessible` property is set to `true`<!-- -->. The
-      temporary attachment ID is only supported for the duration of the current
-      compose session. For more information on the changes to how inline images
-      are handled, see [Changes to attachment IDs for inline images in Outlook
-      add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!--
-      -->.
-
-
-      - In Outlook on Windows (classic) and on Mac, the `isServiceAccessible`
-      property always returns `false` since the attachment ID is the index of
-      the attachment.
+      - In Outlook on Windows (classic) and on Mac, the `isServiceAccessible` property always returns `false` since the attachment ID is the index of the attachment.
 
     isPreview: false
     isDeprecated: false
@@ -255,35 +166,16 @@ properties:
     package: outlook!
     fullName: name
     summary: Gets the name of the attachment.
-    remarks: >-
+    remarks: |-
       **Important**:
 
+      - An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't return a file name extension in the `name` property.
 
-      - An attachment of type `Office.MailboxEnums.AttachmentType.Item` doesn't
-      return a file name extension in the `name` property.
+      - In Outlook on the web and new Outlook on Windows, a message or appointment that's locally saved then attached using drag-and-drop or the **Attach Item** option is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension is returned in the `name` property. However, a message or appointment that's attached using the **Forward as Attachment** option is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an extension isn't returned in the `name` property.
 
+      - In classic Outlook on Windows, a message or appointment that's attached using drag-and-drop, **Attach Item**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name extension isn't returned in the `name` property. A calendar item that's attached
 
-      - In Outlook on the web and new Outlook on Windows, a message or
-      appointment that's locally saved then attached using drag-and-drop or the
-      **Attach Item** option is of type
-      `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension
-      is returned in the `name` property. However, a message or appointment
-      that's attached using the **Forward as Attachment** option is of type
-      `Office.MailboxEnums.AttachmentType.Item`<!-- -->. In this case, an
-      extension isn't returned in the `name` property.
-
-
-      - In classic Outlook on Windows, a message or appointment that's attached
-      using drag-and-drop, **Attach Item**, or **Forward as Attachment**
-      is of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->. A file name
-      extension isn't returned in the `name` property. A calendar item that's
-      attached
-
-
-      - In Outlook on Mac, a message or appointment that's attached using
-      drag-and-drop, **Attach Item**, or **Forward as Attachment** is of
-      type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name
-      extension is returned in the `name` property.
+      - In Outlook on Mac, a message or appointment that's attached using drag-and-drop, **Attach Item**, or **Forward as Attachment** is of type `Office.MailboxEnums.AttachmentType.File`<!-- -->. The file name extension is returned in the `name` property.
 
     isPreview: false
     isDeprecated: false
@@ -308,9 +200,7 @@ properties:
     uid: outlook!Office.AttachmentDetailsCompose#url:member
     package: outlook!
     fullName: url
-    summary: >-
-      Gets the url of the attachment if its type is
-      `MailboxEnums.AttachmentType.Cloud`<!-- -->.
+    summary: Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
     remarks: ''
 
     isPreview: false

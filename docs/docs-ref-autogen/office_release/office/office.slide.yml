@@ -3,13 +3,11 @@ name: Office.Slide
 uid: office!Office.Slide:interface
 package: office!
 fullName: Office.Slide
-summary: >-
-  Represents a single slide in a PowerPoint presentation. This interface is used
-  as part of the [Office.SlideRange](xref:office!Office.SlideRange:interface)
-  object returned by  when called with
-  [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)<!--
-  -->.
-remarks: ''
+summary: Represents a single slide in a PowerPoint presentation. This interface is used as part of the [Office.SlideRange](xref:office!Office.SlideRange:interface) object returned by  when called with [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Office.SlideRange](/javascript/api/office/office.sliderange): [slides](/javascript/api/office/office.sliderange#office-office-sliderange-slides-member)
 
 isPreview: false
 isDeprecated: false

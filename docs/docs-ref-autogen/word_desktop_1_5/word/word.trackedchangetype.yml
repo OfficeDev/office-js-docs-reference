@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.TrackedChangeType
+uid: word!Word.TrackedChangeType:enum
+package: word!
+fullName: Word.TrackedChangeType
+summary: TrackedChange type.
+remarks: '\[Api set: WordApi 1.6\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: added
+    uid: word!Word.TrackedChangeType.added:member
+    package: word!
+    summary: |-
+      Add change.
+
+      * \[Api set: WordApi 1.6\]
+    value: '"Added"'
+  - name: deleted
+    uid: word!Word.TrackedChangeType.deleted:member
+    package: word!
+    summary: |-
+      Delete change.
+
+      * \[Api set: WordApi 1.6\]
+    value: '"Deleted"'
+  - name: formatted
+    uid: word!Word.TrackedChangeType.formatted:member
+    package: word!
+    summary: |-
+      Format change.
+
+      * \[Api set: WordApi 1.6\]
+    value: '"Formatted"'
+  - name: none
+    uid: word!Word.TrackedChangeType.none:member
+    package: word!
+    summary: |-
+      No revision.
+
+      * \[Api set: WordApi 1.6\]
+    value: '"None"'

@@ -4,17 +4,16 @@ uid: visio!Visio.ShapeMouseEnterEventArgs:interface
 package: visio!
 fullName: Visio.ShapeMouseEnterEventArgs
 summary: Provides information about the shape that raised the ShapeMouseEnter event.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
 
 
+  #### Used by
+
+  - [Visio.Document](/javascript/api/visio/visio.document): [onShapeMouseEnter](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseenter-member)
   #### Examples
 
-
   ```TypeScript
-
   Visio.run(session, function (ctx) {
       const document1= ctx.document;
       eventResult2 = document1.onShapeMouseEnter.add(
@@ -30,7 +29,6 @@ remarks: >-
           console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
   });
-
   ```
 
 isPreview: false
@@ -41,13 +39,8 @@ properties:
     uid: visio!Visio.ShapeMouseEnterEventArgs#pageName:member
     package: visio!
     fullName: pageName
-    summary: >-
-      Gets the name of the page which has the shape object that raised the
-      ShapeMouseEnter event.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -60,10 +53,7 @@ properties:
     package: visio!
     fullName: shapeName
     summary: Gets the name of the shape object that raised the ShapeMouseEnter event.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

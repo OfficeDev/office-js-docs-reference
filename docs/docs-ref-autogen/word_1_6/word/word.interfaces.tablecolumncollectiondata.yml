@@ -3,9 +3,7 @@ name: Word.Interfaces.TableColumnCollectionData
 uid: word!Word.Interfaces.TableColumnCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableColumnCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableColumnCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableColumnCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

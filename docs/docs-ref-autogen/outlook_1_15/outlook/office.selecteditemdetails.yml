@@ -4,33 +4,23 @@ uid: outlook!Office.SelectedItemDetails:interface
 package: outlook!
 fullName: Office.SelectedItemDetails
 summary: Represents the properties of a message that's currently selected in Outlook.
-remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read/write mailbox**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Message Compose, Message Read
-
-
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-getselecteditemsasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-message-properties.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-message-properties.yaml
 
   // Retrieves the selected messages' properties and logs them to the console.
-
   Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
     if (asyncResult.status === Office.AsyncResultStatus.Failed) {
       console.log(asyncResult.error.message);
@@ -47,7 +37,6 @@ remarks: >-
       console.log(`Has attachment: ${message.hasAttachment}`);
     });
   });
-
   ```
 
 isPreview: false
@@ -58,23 +47,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#conversationId:member
     package: outlook!
     fullName: conversationId
-    summary: >-
-      The identifier of the message conversation that contains the message
-      that's currently selected.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: The identifier of the message conversation that contains the message that's currently selected.
+    remarks: |-
+      [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -86,23 +65,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#hasAttachment:member
     package: outlook!
     fullName: hasAttachment
-    summary: >-
-      Returns `true` if the message that's currently selected contains an
-      attachment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: Returns `true` if the message that's currently selected contains an attachment.
+    remarks: |-
+      [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -115,20 +84,12 @@ properties:
     package: outlook!
     fullName: internetMessageId
     summary: The internet message identifier of the message that's currently selected.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -140,23 +101,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#itemId:member
     package: outlook!
     fullName: itemId
-    summary: >-
-      The Exchange Web Services (EWS) item identifier of the message that's
-      currently selected.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: The Exchange Web Services (EWS) item identifier of the message that's currently selected.
+    remarks: |-
+      [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -168,23 +119,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#itemMode:member
     package: outlook!
     fullName: itemMode
-    summary: >-
-      The Outlook mode (`Read` or `Compose`<!-- -->) of the message that's
-      currently selected.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: The Outlook mode (`Read` or `Compose`<!-- -->) of the message that's currently selected.
+    remarks: |-
+      [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -196,23 +137,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#itemType:member
     package: outlook!
     fullName: itemType
-    summary: >-
-      The type of the item that's currently selected. `Message` is the only
-      supported type at this time.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: The type of the item that's currently selected. `Message` is the only supported type at this time.
+    remarks: |-
+      [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false
@@ -224,23 +155,13 @@ properties:
     uid: outlook!Office.SelectedItemDetails#subject:member
     package: outlook!
     fullName: subject
-    summary: >-
-      The description that appears in the subject field of the message that's
-      currently selected.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: The description that appears in the subject field of the message that's currently selected.
+    remarks: |-
+      [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write mailbox**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose, Message Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
     isPreview: false
     isDeprecated: false

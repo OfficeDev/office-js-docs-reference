@@ -3,9 +3,7 @@ name: OneNote.Interfaces.SectionGroupCollectionUpdateData
 uid: onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.SectionGroupCollectionUpdateData
-summary: >-
-  An interface for updating data on the `SectionGroupCollection` object, for use
-  in `sectionGroupCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `SectionGroupCollection` object, for use in `sectionGroupCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

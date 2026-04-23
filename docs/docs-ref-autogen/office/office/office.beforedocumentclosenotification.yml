@@ -3,34 +3,24 @@ name: Office.BeforeDocumentCloseNotification
 uid: office!Office.BeforeDocumentCloseNotification:interface
 package: office!
 fullName: Office.BeforeDocumentCloseNotification
-summary: >-
-  Represents a modal notification dialog that can appear when the user attempts
-  to close a document. The document won't close until the user responds. The
-  notification dialog will allow the user to confirm the request to close the
-  document or cancel the request to close the document. This API is only
-  supported in Excel.
-remarks: >-
-  **Requirement set**: [SharedRuntime
-  1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+summary: Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document. This API is only supported in Excel.
+remarks: |-
+  **Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
 
+  #### Used by
+
+  - [Office.Addin](/javascript/api/office/office.addin): [beforeDocumentCloseNotification](/javascript/api/office/office.addin#office-office-addin-beforedocumentclosenotification-member)
   #### Examples
 
-
   ```TypeScript
-
   // Enable the before document close modal notification dialog. 
-
   async function enableNotification() {
       await Office.addin.beforeDocumentCloseNotification.enable(); 
   }
 
-
-  // Add an event handler to detect when the document close operation is
-  cancelled.
-
-  Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async
-  function () {
+  // Add an event handler to detect when the document close operation is cancelled.
+  Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async function () {
       // When the document close attempt is cancelled, write a message to the active range in the worksheet.
       await Excel.run(async (context) => {
           const range = context.workbook.getSelectedRange();
@@ -38,7 +28,6 @@ remarks: >-
           await context.sync();
       });
   });
-
   ```
 
 isPreview: false
@@ -49,27 +38,17 @@ methods:
     uid: office!Office.BeforeDocumentCloseNotification#disable:member(1)
     package: office!
     fullName: disable()
-    summary: >-
-      Prevents the notification dialog from appearing when the user attempts to
-      close a document. The `BeforeDocumentCloseNotification` API is only
-      supported in Excel.
-    remarks: >-
-      **Requirement set**: [SharedRuntime
-      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
+    summary: Prevents the notification dialog from appearing when the user attempts to close a document. The `BeforeDocumentCloseNotification` API is only supported in Excel.
+    remarks: |-
+      **Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Disable the dialog that pops up when the user tries to close the
-      document.
-
+      // Disable the dialog that pops up when the user tries to close the document.
       async function disableCloseNotification() {
           await Office.addin.beforeDocumentCloseNotification.disable(); 
       }  
-
       ```
 
     isPreview: false
@@ -83,29 +62,17 @@ methods:
     uid: office!Office.BeforeDocumentCloseNotification#enable:member(1)
     package: office!
     fullName: enable()
-    summary: >-
-      Enable a modal notification dialog that appears when the user attempts to
-      close a document. The document won't close until the user responds. This
-      notification dialog asks the user to confirm the request to close the
-      document, or allows the user to cancel the request to close the document.
-      The `BeforeDocumentCloseNotification` API is only supported in Excel.
-    remarks: >-
-      **Requirement set**: [SharedRuntime
-      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
+    summary: Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds. This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document. The `BeforeDocumentCloseNotification` API is only supported in Excel.
+    remarks: |-
+      **Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Enable the dialog that pops up and asks the user for confirmation when
-      they try to close the document.
-
+      // Enable the dialog that pops up and asks the user for confirmation when they try to close the document.
       async function enableCloseNotification() {
           await Office.addin.beforeDocumentCloseNotification.enable(); 
       }   
-
       ```
 
     isPreview: false
@@ -116,29 +83,18 @@ methods:
         type: Promise&lt;void&gt;
         description: ''
   - name: onCloseActionCancelled(handler)
-    uid: >-
-      office!Office.BeforeDocumentCloseNotification#onCloseActionCancelled:member(1)
+    uid: office!Office.BeforeDocumentCloseNotification#onCloseActionCancelled:member(1)
     package: office!
     fullName: onCloseActionCancelled(handler)
-    summary: >-
-      Adds an event handler that detects when the
-      `BeforeDocumentCloseNotification` close operation is cancelled. This event
-      handler will be triggered if both of the following conditions are met.
+    summary: |-
+      Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. This event handler will be triggered if both of the following conditions are met.
 
+      1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
 
-      1. The add-in calls the `enable` method on the
-      `BeforeDocumentCloseNotification` object.
-
-
-      2. When the notification dialog is open, the end user clicks the **Don't
-      close** button within the dialog, clicks the Close button in the upper
-      right corner of the dialog, or presses the <kbd>Esc</kbd> key.
-
+      2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the <kbd>Esc</kbd> key.
 
       The `BeforeDocumentCloseNotification` API is only supported in Excel.
-    remarks: >-
-      **Requirement set**: [SharedRuntime
-      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    remarks: '**Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

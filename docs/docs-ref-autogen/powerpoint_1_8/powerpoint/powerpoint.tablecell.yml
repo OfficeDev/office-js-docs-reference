@@ -4,23 +4,20 @@ uid: powerpoint!PowerPoint.TableCell:class
 package: powerpoint!
 fullName: PowerPoint.TableCell
 summary: Represents a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [getCellOrNullObject](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getcellornullobject-member(1))
+  - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [getItemAtOrNullObject](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-getitematornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-items-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
   // Updates a table's values.
-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -40,7 +37,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -51,13 +47,8 @@ properties:
     uid: powerpoint!PowerPoint.TableCell#columnCount:member
     package: powerpoint!
     fullName: columnCount
-    summary: >-
-      Gets the number of table columns this cell spans across. Will be greater
-      than or equal to 1.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Gets the number of table columns this cell spans across. Will be greater than or equal to 1.
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -70,10 +61,7 @@ properties:
     package: powerpoint!
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +73,7 @@ properties:
     uid: powerpoint!PowerPoint.TableCell#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -100,13 +86,8 @@ properties:
     uid: powerpoint!PowerPoint.TableCell#rowCount:member
     package: powerpoint!
     fullName: rowCount
-    summary: >-
-      Gets the number of table rows this cell spans across. Will be greater than
-      or equal to 1.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Gets the number of table rows this cell spans across. Will be greater than or equal to 1.
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -119,10 +100,7 @@ properties:
     package: powerpoint!
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -135,23 +113,15 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Updates a table's values.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -171,7 +141,6 @@ properties:
 
         await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -185,24 +154,17 @@ methods:
     uid: powerpoint!PowerPoint.TableCell#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.TableCellLoadOptions):
-        PowerPoint.TableCell;
+      content: 'load(options?: PowerPoint.Interfaces.TableCellLoadOptions): PowerPoint.TableCell;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.TableCellLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
         description: ''
@@ -210,9 +172,7 @@ methods:
     uid: powerpoint!PowerPoint.TableCell#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -221,9 +181,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TableCell;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
@@ -232,9 +190,7 @@ methods:
     uid: powerpoint!PowerPoint.TableCell#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -247,11 +203,7 @@ methods:
                 }): PowerPoint.TableCell;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -264,15 +216,7 @@ methods:
     uid: powerpoint!PowerPoint.TableCell#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `PowerPoint.TableCell`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `PowerPoint.Interfaces.TableCellData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -280,8 +224,6 @@ methods:
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TableCellData;'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -3,22 +3,25 @@ name: Word.SelectionMode
 uid: word!Word.SelectionMode:enum
 package: word!
 fullName: Word.SelectionMode
-summary: >-
-  Represents where the cursor (insertion point) is set in the document after a
-  selection.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents where the cursor (insertion point) is set in the document after a selection.
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Body](/javascript/api/word/word.body): [select](/javascript/api/word/word.body#word-word-body-select-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [select](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))
+  - [Word.Field](/javascript/api/word/word.field): [select](/javascript/api/word/word.field#word-word-field-select-member(1))
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [select](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-select-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [select](/javascript/api/word/word.paragraph#word-word-paragraph-select-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [select](/javascript/api/word/word.range#word-word-range-select-member(1))
+  - [Word.Table](/javascript/api/word/word.table): [select](/javascript/api/word/word.table#word-word-table-select-member(1))
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [select](/javascript/api/word/word.tablerow#word-word-tablerow-select-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
   await Word.run(async (context) => {
     // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -26,7 +29,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -35,32 +37,24 @@ fields:
   - name: end
     uid: word!Word.SelectionMode.end:member
     package: word!
-    summary: >-
-      The cursor is at the end of the selection (just after the end of the
-      selected range).
+    summary: |-
+      The cursor is at the end of the selection (just after the end of the selected range).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: >-
+    summary: |-
       The entire range is selected.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
     package: word!
-    summary: >-
-      The cursor is at the beginning of the selection (just before the start of
-      the selected range).
+    summary: |-
+      The cursor is at the beginning of the selection (just before the start of the selected range).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Start"'

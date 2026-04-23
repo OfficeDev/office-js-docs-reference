@@ -3,27 +3,20 @@ name: PowerPoint.SlideBackgroundGradientFill
 uid: powerpoint!PowerPoint.SlideBackgroundGradientFill:class
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundGradientFill
-summary: >-
-  Represents
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  gradient fill properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) gradient fill properties.
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [getGradientFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getgradientfillornullobject-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
 
   // Gets the gradient fill properties of the first selected slide's background.
-
   await PowerPoint.run(async (context) => {
     const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
     const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
@@ -45,7 +38,6 @@ remarks: >-
       console.log("Gradient fill:", `- type: ${gradientFill.type}`);
     }
   });
-
   ```
 
 isPreview: false
@@ -56,9 +48,7 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFill#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -72,46 +62,30 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Specifies the type of gradient fill.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" |
-        "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+      content: 'type: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum"
-          /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" |
-          "ShadeFromTitle"
+        type: <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum" /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle"
 methods:
   - name: load(options)
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFill#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?:
-        PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions):
-        PowerPoint.SlideBackgroundGradientFill;
+      content: 'load(options?: PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions): PowerPoint.SlideBackgroundGradientFill;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill:class" />
         description: ''
@@ -119,22 +93,16 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFill#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        PowerPoint.SlideBackgroundGradientFill;
+      content: 'load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundGradientFill;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFill:class" />
@@ -143,9 +111,7 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFill#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -158,11 +124,7 @@ methods:
                 }): PowerPoint.SlideBackgroundGradientFill;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -175,16 +137,7 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundGradientFill#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `PowerPoint.SlideBackgroundGradientFill` object is an API object, the
-      `toJSON` method returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.SlideBackgroundGradientFillData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SlideBackgroundGradientFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundGradientFillData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -192,9 +145,6 @@ methods:
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideBackgroundGradientFillData;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

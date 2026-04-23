@@ -4,24 +4,21 @@ uid: outlook!Office.EmailUser:interface
 package: outlook!
 fullName: Office.EmailUser
 summary: Represents an email account on an Exchange Server.
-remarks: >-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+remarks: |-
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  #### Used by
 
-
+  - [Office.MeetingSuggestion](/javascript/api/outlook/office.meetingsuggestion): [attendees](/javascript/api/outlook/office.meetingsuggestion#outlook-office-meetingsuggestion-attendees-member)
+  - [Office.Recipients](/javascript/api/outlook/office.recipients): [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1)), [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
+  - [Office.TaskSuggestion](/javascript/api/outlook/office.tasksuggestion): [assignees](/javascript/api/outlook/office.tasksuggestion#outlook-office-tasksuggestion-assignees-member)
   #### Examples
 
-
   ```TypeScript
-
   // Add recipients to the To field of an email.
-
   const recipients: Office.EmailUser[] = [
       {
           "displayName": "Allie Bellew",
@@ -33,7 +30,6 @@ remarks: >-
       }
   ];
 
-
   Office.context.mailbox.item.to.addAsync(recipients, (result) => {
       if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(result.error.message);
@@ -42,7 +38,6 @@ remarks: >-
 
       console.log("Recipients added to the To field.");
   });
-
   ```
 
 isPreview: false

@@ -4,22 +4,21 @@ uid: office!Office.HostType:enum
 package: office!
 fullName: Office.HostType
 summary: Specifies the Office application in which the add-in is running.
-remarks: >-
-  **Important**: In Outlook, this enum is available starting with Mailbox
-  requirement set 1.5.
+remarks: |-
+  **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
 
 
+  #### Used by
+
+  - [Office](/javascript/api/office): [onReady](/javascript/api/office#office-office-onready-function(1))
+  - [Office.Context](/javascript/api/office/office.context): [host](/javascript/api/office/office.context#office-office-context-host-member)
+  - [Office.ContextInformation](/javascript/api/office/office.contextinformation): [host](/javascript/api/office/office.contextinformation#office-office-contextinformation-host-member)
   #### Examples
 
-
   ```TypeScript
-
   const contextInfo = Office.context.diagnostics;
-
   const hostType: Office.HostType = contextInfo.host;
-
   console.log("Office application: " + hostType);
-
   ```
 
 isPreview: false

@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideScopedCollectionData
 uid: powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideScopedCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideScopedCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

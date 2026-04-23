@@ -3,12 +3,30 @@ name: Visio.RequestContext
 uid: visio!Visio.RequestContext:class
 package: visio!
 fullName: Visio.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the Visio application. Since
-  the Office add-in and the Visio application run in two different processes,
-  the request context is required to get access to the Visio object model from
-  the add-in.
+summary: The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
 remarks: |-
+
+
+
+  #### Used by
+
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(1))
+  - [Visio.Application](/javascript/api/visio/visio.application): [context](/javascript/api/visio/visio.application#visio-visio-application-context-member)
+  - [Visio.Comment](/javascript/api/visio/visio.comment): [context](/javascript/api/visio/visio.comment#visio-visio-comment-context-member)
+  - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [context](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-context-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [context](/javascript/api/visio/visio.document#visio-visio-document-context-member)
+  - [Visio.DocumentView](/javascript/api/visio/visio.documentview): [context](/javascript/api/visio/visio.documentview#visio-visio-documentview-context-member)
+  - [Visio.Hyperlink](/javascript/api/visio/visio.hyperlink): [context](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-context-member)
+  - [Visio.HyperlinkCollection](/javascript/api/visio/visio.hyperlinkcollection): [context](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-context-member)
+  - [Visio.Page](/javascript/api/visio/visio.page): [context](/javascript/api/visio/visio.page#visio-visio-page-context-member)
+  - [Visio.PageCollection](/javascript/api/visio/visio.pagecollection): [context](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-context-member)
+  - [Visio.PageView](/javascript/api/visio/visio.pageview): [context](/javascript/api/visio/visio.pageview#visio-visio-pageview-context-member)
+  - [Visio.Selection](/javascript/api/visio/visio.selection): [context](/javascript/api/visio/visio.selection#visio-visio-selection-context-member)
+  - [Visio.Shape](/javascript/api/visio/visio.shape): [context](/javascript/api/visio/visio.shape#visio-visio-shape-context-member)
+  - [Visio.ShapeCollection](/javascript/api/visio/visio.shapecollection): [context](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-context-member)
+  - [Visio.ShapeDataItem](/javascript/api/visio/visio.shapedataitem): [context](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-context-member)
+  - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [context](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-context-member)
+  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [context](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-context-member)
   #### Examples
 
   ```TypeScript

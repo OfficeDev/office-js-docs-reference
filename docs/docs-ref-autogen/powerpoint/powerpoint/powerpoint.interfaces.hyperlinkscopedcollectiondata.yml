@@ -3,18 +3,18 @@ name: PowerPoint.Interfaces.HyperlinkScopedCollectionData
 uid: powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `hyperlinkScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `hyperlinkScopedCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.HyperlinkScopedCollection](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection): [toJSON](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData#items:member
+    uid: powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
@@ -25,6 +25,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.HyperlinkData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface" />[]

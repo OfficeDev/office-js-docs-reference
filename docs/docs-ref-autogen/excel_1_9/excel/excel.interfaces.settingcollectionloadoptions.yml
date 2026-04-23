@@ -3,13 +3,13 @@ name: Excel.Interfaces.SettingCollectionLoadOptions
 uid: excel!Excel.Interfaces.SettingCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.SettingCollectionLoadOptions
-summary: >-
-  Represents a collection of key-value pair setting objects that are part of the
-  workbook. The scope is limited to per file and add-in (task-pane or content)
-  combination.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
+remarks: |-
+  [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -19,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.SettingCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -35,12 +32,8 @@ properties:
     uid: excel!Excel.Interfaces.SettingCollectionLoadOptions#key:member
     package: excel!
     fullName: key
-    summary: >-
-      For EACH ITEM in the collection: The key that represents the ID of the
-      setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: The key that represents the ID of the setting.'
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -52,12 +45,8 @@ properties:
     uid: excel!Excel.Interfaces.SettingCollectionLoadOptions#value:member
     package: excel!
     fullName: value
-    summary: >-
-      For EACH ITEM in the collection: Represents the value stored for this
-      setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Represents the value stored for this setting.'
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

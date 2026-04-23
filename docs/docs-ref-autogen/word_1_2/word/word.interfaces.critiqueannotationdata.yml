@@ -3,9 +3,7 @@ name: Word.Interfaces.CritiqueAnnotationData
 uid: word!Word.Interfaces.CritiqueAnnotationData:interface
 package: word!
 fullName: Word.Interfaces.CritiqueAnnotationData
-summary: >-
-  An interface describing the data returned by calling
-  `critiqueAnnotation.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `critiqueAnnotation.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

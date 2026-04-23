@@ -4,19 +4,21 @@ uid: word!Word.BreakType:enum
 package: word!
 fullName: Word.BreakType
 summary: Specifies the form of a break.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Body](/javascript/api/word/word.body): [insertBreak](/javascript/api/word/word.body#word-word-body-insertbreak-member(1))
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [insertBreak](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertbreak-member(1))
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [insertBreak](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertbreak-member(1))
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertBreak](/javascript/api/word/word.paragraph#word-word-paragraph-insertbreak-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [insertBreak](/javascript/api/word/word.range#word-word-range-insertbreak-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
   await Word.run(async (context) => {
     context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
@@ -24,7 +26,6 @@ remarks: >-
     await context.sync();
     console.log("success");
   });
-
   ```
 
 isPreview: false
@@ -33,74 +34,56 @@ fields:
   - name: line
     uid: word!Word.BreakType.line:member
     package: word!
-    summary: >-
+    summary: |-
       Line break.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Line"'
   - name: next
     uid: word!Word.BreakType.next:member
     package: word!
-    summary: >-
+    summary: |-
       Warning: next has been deprecated. Use sectionNext instead.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Next"'
   - name: page
     uid: word!Word.BreakType.page:member
     package: word!
-    summary: >-
+    summary: |-
       Page break at the insertion point.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Page"'
   - name: sectionContinuous
     uid: word!Word.BreakType.sectionContinuous:member
     package: word!
-    summary: >-
+    summary: |-
       New section without a corresponding page break.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionContinuous"'
   - name: sectionEven
     uid: word!Word.BreakType.sectionEven:member
     package: word!
-    summary: >-
-      Section break with the next section beginning on the next even-numbered
-      page. If the section break falls on an even-numbered page, Word leaves the
-      next odd-numbered page blank.
+    summary: |-
+      Section break with the next section beginning on the next even-numbered page. If the section break falls on an even-numbered page, Word leaves the next odd-numbered page blank.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionEven"'
   - name: sectionNext
     uid: word!Word.BreakType.sectionNext:member
     package: word!
-    summary: >-
+    summary: |-
       Section break on next page.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionNext"'
   - name: sectionOdd
     uid: word!Word.BreakType.sectionOdd:member
     package: word!
-    summary: >-
-      Section break with the next section beginning on the next odd-numbered
-      page. If the section break falls on an odd-numbered page, Word leaves the
-      next even-numbered page blank.
+    summary: |-
+      Section break with the next section beginning on the next odd-numbered page. If the section break falls on an odd-numbered page, Word leaves the next even-numbered page blank.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"SectionOdd"'

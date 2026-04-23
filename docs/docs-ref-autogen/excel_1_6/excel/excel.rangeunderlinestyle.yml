@@ -4,19 +4,17 @@ uid: excel!Excel.RangeUnderlineStyle:enum
 package: excel!
 fullName: Excel.RangeUnderlineStyle
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.RangeFont](/javascript/api/excel/excel.rangefont): [underline](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-underline-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Orders");
@@ -41,7 +39,6 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -50,35 +47,25 @@ fields:
   - name: double
     uid: excel!Excel.RangeUnderlineStyle.double:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Double"'
   - name: doubleAccountant
     uid: excel!Excel.RangeUnderlineStyle.doubleAccountant:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"DoubleAccountant"'
   - name: none
     uid: excel!Excel.RangeUnderlineStyle.none:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"None"'
   - name: single
     uid: excel!Excel.RangeUnderlineStyle.single:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Single"'
   - name: singleAccountant
     uid: excel!Excel.RangeUnderlineStyle.singleAccountant:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"SingleAccountant"'

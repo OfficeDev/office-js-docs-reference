@@ -3,25 +3,29 @@ name: Word.EventSource
 uid: word!Word.EventSource:enum
 package: word!
 fullName: Word.EventSource
-summary: >-
-  An enum that specifies an event's source. It can be local or remote (through
-  coauthoring).
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
+remarks: |-
+  [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.CommentEventArgs](/javascript/api/word/word.commenteventargs): [source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)
+  - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
+  - [Word.ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs): [source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)
+  - [Word.ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs): [source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)
+  - [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs): [source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
+  - [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs): [source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
+  - [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs): [source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
+  - [Word.ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs): [source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)
+  - [Word.ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs): [source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)
+  - [Word.ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs): [source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.track();
@@ -37,9 +41,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onEventHandler(event: Word.CommentEventArgs) {
     // Handler for all events except onCommentChanged.
@@ -47,7 +49,6 @@ remarks: >-
       console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
     });
   }
-
   ```
 
 isPreview: false
@@ -56,20 +57,16 @@ fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: >-
+    summary: |-
       Local source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: >-
+    summary: |-
       Remote source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Remote"'

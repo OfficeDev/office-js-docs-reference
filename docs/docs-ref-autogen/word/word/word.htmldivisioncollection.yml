@@ -3,13 +3,13 @@ name: Word.HtmlDivisionCollection
 uid: word!Word.HtmlDivisionCollection:class
 package: word!
 fullName: Word.HtmlDivisionCollection
-summary: >-
-  Represents a collection of
-  [Word.HtmlDivision](xref:word!Word.HtmlDivision:class) objects in a Word
-  document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents a collection of [Word.HtmlDivision](xref:word!Word.HtmlDivision:class) objects in a Word document.
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.HtmlDivision](/javascript/api/word/word.htmldivision): [htmlDivisions](/javascript/api/word/word.htmldivision#word-word-htmldivision-htmldivisions-member)
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +19,7 @@ properties:
     uid: word!Word.HtmlDivisionCollection#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -48,12 +46,8 @@ methods:
     uid: word!Word.HtmlDivisionCollection#getItemAt:member(1)
     package: word!
     fullName: getItemAt(index)
-    summary: >-
-      Returns an `HtmlDivision` object from the collection based on the
-      specified index.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Returns an `HtmlDivision` object from the collection based on the specified index.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -70,25 +64,17 @@ methods:
     uid: word!Word.HtmlDivisionCollection#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.HtmlDivisionCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.HtmlDivisionCollection;
+      content: 'load(options?: Word.Interfaces.HtmlDivisionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.HtmlDivisionCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions:interface"
-            /> & <xref
-            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+          type: <xref uid="word!Word.Interfaces.HtmlDivisionCollectionLoadOptions:interface" /> & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.HtmlDivisionCollection:class" />
         description: ''
@@ -96,9 +82,7 @@ methods:
     uid: word!Word.HtmlDivisionCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -107,9 +91,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.HtmlDivisionCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.HtmlDivisionCollection:class" />
@@ -118,24 +100,16 @@ methods:
     uid: word!Word.HtmlDivisionCollection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.HtmlDivisionCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.HtmlDivisionCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.HtmlDivisionCollection:class" />
@@ -144,16 +118,7 @@ methods:
     uid: word!Word.HtmlDivisionCollection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Word.HtmlDivisionCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Word.Interfaces.HtmlDivisionCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.HtmlDivisionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.HtmlDivisionCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
 
     isPreview: false
@@ -161,8 +126,6 @@ methods:
     syntax:
       content: 'toJSON(): Word.Interfaces.HtmlDivisionCollectionData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.HtmlDivisionCollectionData:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.HtmlDivisionCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

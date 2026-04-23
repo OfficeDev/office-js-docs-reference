@@ -4,9 +4,13 @@ uid: excel!Excel.BorderWeight:enum
 package: excel!
 fullName: Excel.BorderWeight
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.CellBorder](/javascript/api/excel/excel.cellborder): [weight](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-weight-member)
+  - [Excel.RangeBorder](/javascript/api/excel/excel.rangeborder): [weight](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-weight-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,28 +18,20 @@ fields:
   - name: hairline
     uid: excel!Excel.BorderWeight.hairline:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Hairline"'
   - name: medium
     uid: excel!Excel.BorderWeight.medium:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Medium"'
   - name: thick
     uid: excel!Excel.BorderWeight.thick:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Thick"'
   - name: thin
     uid: excel!Excel.BorderWeight.thin:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Thin"'

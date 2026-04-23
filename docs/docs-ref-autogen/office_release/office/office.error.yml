@@ -3,13 +3,13 @@ name: Office.Error
 uid: office!Office.Error:interface
 package: office!
 fullName: Office.Error
-summary: >-
-  Provides specific information about an error that occurred during an
-  asynchronous data operation.
-remarks: >-
-  The Error object is accessed from the AsyncResult object that is returned in
-  the function passed as the callback argument of an asynchronous data
-  operation, such as the `setSelectedDataAsync` method of the Document object.
+summary: Provides specific information about an error that occurred during an asynchronous data operation.
+remarks: |-
+  The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous data operation, such as the `setSelectedDataAsync` method of the Document object.
+
+  #### Used by
+
+  - [Office.AsyncResult](/javascript/api/office/office.asyncresult): [error](/javascript/api/office/office.asyncresult#office-office-asyncresult-error-member)
 
 isPreview: false
 isDeprecated: false
@@ -19,11 +19,7 @@ properties:
     uid: office!Office.Error#code:member
     package: office!
     fullName: code
-    summary: >-
-      Gets the numeric code of the error. For a list of error codes, see
-      [JavaScript API for Office error
-      codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!--
-      -->.
+    summary: Gets the numeric code of the error. For a list of error codes, see [JavaScript API for Office error codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
     remarks: ''
 
     isPreview: false
@@ -32,17 +28,13 @@ properties:
       content: 'code: number;'
       return:
         type: number
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -53,13 +45,10 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```
   - name: message
     uid: office!Office.Error#message:member
@@ -74,17 +63,13 @@ properties:
       content: 'message: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -95,13 +80,10 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```
   - name: name
     uid: office!Office.Error#name:member
@@ -116,17 +98,13 @@ properties:
       content: 'name: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
+          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
@@ -137,11 +115,8 @@ properties:
                   });
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```

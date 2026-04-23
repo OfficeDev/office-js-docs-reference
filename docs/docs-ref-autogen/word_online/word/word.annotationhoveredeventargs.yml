@@ -4,22 +4,19 @@ uid: word!Word.AnnotationHoveredEventArgs:interface
 package: word!
 fullName: Word.AnnotationHoveredEventArgs
 summary: Holds annotation information that is passed back on annotation hovered event.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [onAnnotationHovered](/javascript/api/word/word.document#word-word-document-onannotationhovered-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
     eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
@@ -35,9 +32,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
     await Word.run(async (context) => {
@@ -49,7 +44,6 @@ remarks: >-
       console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
     });
   }
-
   ```
 
 isPreview: false
@@ -61,9 +55,7 @@ properties:
     package: word!
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

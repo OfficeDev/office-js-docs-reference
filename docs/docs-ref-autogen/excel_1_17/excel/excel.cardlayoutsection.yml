@@ -4,31 +4,25 @@ uid: excel!Excel.CardLayoutSection:type
 package: excel!
 fullName: Excel.CardLayoutSection
 summary: Represents the layout of a section of a card in card view.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.CardLayoutStandardProperties](/javascript/api/excel/excel.cardlayoutstandardproperties): [sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)
 
 
   Learn more about the types in this type alias through the following links. 
 
-
-  [Excel.CardLayoutListSection](/javascript/api/excel/excel.cardlayoutlistsection),
-  [Excel.CardLayoutTableSection](/javascript/api/excel/excel.cardlayouttablesection)
-
+  [Excel.CardLayoutListSection](/javascript/api/excel/excel.cardlayoutlistsection), [Excel.CardLayoutTableSection](/javascript/api/excel/excel.cardlayouttablesection)
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
-
-
-  function makeProductEntity(productID: number, productName: string, product?:
-  any) {
+  function makeProductEntity(productID: number, productName: string, product?: any) {
     const entity: Excel.EntityCellValue = {
       type: Excel.CellValueType.entity,
       text: productName,
@@ -98,11 +92,8 @@ remarks: >-
 
     return entity;
   }
-
   ```
 
 isPreview: false
 isDeprecated: false
-syntax: >-
-  export type CardLayoutSection = CardLayoutListSection |
-  CardLayoutTableSection;
+syntax: export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;

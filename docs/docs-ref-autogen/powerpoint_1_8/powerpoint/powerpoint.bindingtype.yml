@@ -4,23 +4,20 @@ uid: powerpoint!PowerPoint.BindingType:enum
 package: powerpoint!
 fullName: PowerPoint.BindingType
 summary: Represents the possible binding types.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.Binding](/javascript/api/powerpoint/powerpoint.binding): [type](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-type-member)
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1)), [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
 
   // Inserts an image with binding.
-
   await PowerPoint.run(async (context) => {
     const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
     const slide = context.presentation.getSelectedSlides().getItemAt(0);
@@ -49,7 +46,6 @@ remarks: >-
       bindingsDropdown.selectedIndex = foundIndex;
     }
   });
-
   ```
 
 isPreview: false
@@ -58,11 +54,8 @@ fields:
   - name: shape
     uid: powerpoint!PowerPoint.BindingType.shape:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Represents a shape binding.
 
-
-      * \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"Shape"'

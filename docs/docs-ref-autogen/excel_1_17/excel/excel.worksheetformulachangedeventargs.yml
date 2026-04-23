@@ -3,19 +3,18 @@ name: Excel.WorksheetFormulaChangedEventArgs
 uid: excel!Excel.WorksheetFormulaChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetFormulaChangedEventArgs
-summary: >-
-  Provides information about the worksheet and formulas that raised the formula
-  changed event.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Provides information about the worksheet and formulas that raised the formula changed event.
+remarks: |-
+  [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformulachanged-member)
   #### Examples
 
-
   ```TypeScript
-
   async function registerFormulaChangeHandler() {
       await Excel.run(async (context) => {
           // Register the formula changed event handler for the Sample worksheet.
@@ -25,9 +24,7 @@ remarks: >-
       });
   }
 
-
-  async function formulaChangeHandler(event:
-  Excel.WorksheetFormulaChangedEventArgs) {
+  async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
       await Excel.run(async (context) => {
           // Retrieve details about the formula change event.
           const cellAddress = event.formulaDetails[0].cellAddress;
@@ -42,7 +39,6 @@ remarks: >-
           );
       });
   }
-
   ```
 
 isPreview: false
@@ -53,19 +49,11 @@ properties:
     uid: excel!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member
     package: excel!
     fullName: formulaDetails
-    summary: >-
-      Gets an array of `FormulaChangedEventDetail` objects, which contain the
-      details about the all of the changed formulas.
+    summary: |-
+      Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
 
-
-      If the number of changed formulas or the size of the changed formula text
-      exceeds a size limit, `formulaDetails` returns undefined. This indicates
-      that something on the sheet has changed, but the details cannot be
-      reported.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails` returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
+    remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -78,10 +66,7 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -94,10 +79,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -110,10 +92,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the formula changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

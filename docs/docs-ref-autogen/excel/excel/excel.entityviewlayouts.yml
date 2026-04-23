@@ -4,22 +4,20 @@ uid: excel!Excel.EntityViewLayouts:interface
 package: excel!
 fullName: Excel.EntityViewLayouts
 summary: Represents layout information for various views of the entity.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue): [layouts](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-layouts-member)
+  - [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue): [layouts](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-layouts-member)
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
-
-
-  function makeProductEntity(productID: number, productName: string, product?:
-  any) {
+  function makeProductEntity(productID: number, productName: string, product?: any) {
     const entity: Excel.EntityCellValue = {
       type: Excel.CellValueType.entity,
       text: productName,
@@ -89,7 +87,6 @@ remarks: >-
 
     return entity;
   }
-
   ```
 
 isPreview: false
@@ -100,13 +97,8 @@ properties:
     uid: excel!Excel.EntityViewLayouts#card:member
     package: excel!
     fullName: card
-    summary: >-
-      Represents the layout of this entity in card view. If the `CardLayout`
-      object does not have a layout property, it is assumed to be "Entity".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the layout of this entity in card view. If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
+    remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -118,13 +110,8 @@ properties:
     uid: excel!Excel.EntityViewLayouts#compact:member
     package: excel!
     fullName: compact
-    summary: >-
-      Represents the layout used when there is limited space to represent the
-      entity.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the layout used when there is limited space to represent the entity.
+    remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

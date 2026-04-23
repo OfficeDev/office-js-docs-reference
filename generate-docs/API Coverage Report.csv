@@ -1841,7 +1841,7 @@ excel,Excel.ColumnProperties,N/A,Interface,Good,false
 excel,Excel.ColumnProperties,"address",Property,Great,false
 excel,Excel.ColumnProperties,"addressLocal",Property,Great,false
 excel,Excel.ColumnProperties,"columnIndex",Property,Great,false
-excel,Excel.ColumnPropertiesLoadOptions,N/A,Interface,Great,false
+excel,Excel.ColumnPropertiesLoadOptions,N/A,Interface,Good,false
 excel,Excel.ColumnPropertiesLoadOptions,"columnHidden",Property,Excellent,false
 excel,Excel.ColumnPropertiesLoadOptions,"columnIndex",Property,Excellent,false
 excel,Excel.ColumnPropertiesLoadOptions,"format",Property,Excellent,false
@@ -2455,7 +2455,7 @@ excel,Excel.DataValidation,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.DataValidation,"set(properties, options)",Method,Good,false
 excel,Excel.DataValidation,"set(properties)",Method,Fine,false
 excel,Excel.DataValidation,"toJSON()",Method,Excellent,false
-excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,false
+excel,Excel.DataValidationAlertStyle,N/A,Enum,Great,true
 excel,Excel.DataValidationAlertStyle,"information",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"stop",EnumField,Great,false
 excel,Excel.DataValidationAlertStyle,"warning",EnumField,Great,false

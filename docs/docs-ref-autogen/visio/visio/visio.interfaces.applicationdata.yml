@@ -3,10 +3,11 @@ name: Visio.Interfaces.ApplicationData
 uid: visio!Visio.Interfaces.ApplicationData:interface
 package: visio!
 fullName: Visio.Interfaces.ApplicationData
-summary: >-
-  An interface describing the data returned by calling
-  `application.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.Application](/javascript/api/visio/visio.application): [toJSON](/javascript/api/visio/visio.application#visio-visio-application-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: visio!
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

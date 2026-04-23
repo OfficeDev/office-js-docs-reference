@@ -3,39 +3,30 @@ name: Office.RangeCoordinates
 uid: office!Office.RangeCoordinates:interface
 package: office!
 fullName: Office.RangeCoordinates
-summary: >-
-  Specifies a cell, or row, or column, by its zero-based row and/or column
-  number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
-  (zero-based) row in the 4th (zero-based) column.
-remarks: >-
+summary: 'Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.'
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.RangeFormatConfiguration](/javascript/api/office/office.rangeformatconfiguration): [cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)
   #### Examples
 
-
   ```TypeScript
-
   // Use RangeCoordinates to target specific cells when applying formatting.
-
-  // Both row and column are zero-based. Omitting one targets the entire row or
-  column.
-
+  // Both row and column are zero-based. Omitting one targets the entire row or column.
   const specificCell: Office.RangeCoordinates = { row: 0, column: 1 };
-
   const entireRow: Office.RangeCoordinates = { row: 2 };
-
 
   const cellFormats: Office.RangeFormatConfiguration[] = [
       { cells: specificCell, format: { fontStyle: "bold" } },
       { cells: entireRow, format: { fontColor: "red" } }
   ];
 
-
   const tableData = new Office.TableData();
-
   tableData.headers = [["Product", "Price"]];
-
-  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry",
-  "$2.00"]];
-
+  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry", "$2.00"]];
 
   Office.context.document.setSelectedDataAsync(
       tableData,
@@ -46,7 +37,6 @@ remarks: >-
           }
       }
   );
-
   ```
 
 isPreview: false
@@ -57,9 +47,7 @@ properties:
     uid: office!Office.RangeCoordinates#column:member
     package: office!
     fullName: column
-    summary: >-
-      The zero-based column of the range. If not specified, all cells, in the
-      row specified by `row` are included.
+    summary: The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.
     remarks: ''
 
     isPreview: false
@@ -72,9 +60,7 @@ properties:
     uid: office!Office.RangeCoordinates#row:member
     package: office!
     fullName: row
-    summary: >-
-      The zero-based row of the range. If not specified, all cells, in the
-      column specified by `column` are included.
+    summary: The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.
     remarks: ''
 
     isPreview: false

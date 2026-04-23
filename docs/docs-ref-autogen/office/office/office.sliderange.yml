@@ -3,19 +3,18 @@ name: Office.SlideRange
 uid: office!Office.SlideRange:interface
 package: office!
 fullName: Office.SlideRange
-summary: >-
-  Represents the selected slides in a PowerPoint presentation. This object is
-  returned when calling  with
-  [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)
-  in PowerPoint.
-remarks: >-
+summary: Represents the selected slides in a PowerPoint presentation. This object is returned when calling  with [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member) in PowerPoint.
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(4))
   #### Examples
 
-
   ```TypeScript
-
-  Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange,
-  (asyncResult) => {
+  Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, (asyncResult) => {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const slideRange: Office.SlideRange = asyncResult.value;
           console.log(`Selected ${slideRange.slides.length} slide(s)`);
@@ -27,7 +26,6 @@ remarks: >-
           console.error(asyncResult.error.message);
       }
   });
-
   ```
 
 isPreview: false

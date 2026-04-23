@@ -4,27 +4,31 @@ uid: word!Word.EventType:enum
 package: word!
 fullName: Word.EventType
 summary: Provides information about the type of a raised event.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)
+  - [Word.ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs): [eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)
+  - [Word.ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs): [eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)
+  - [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs): [eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)
+  - [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs): [eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)
+  - [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs): [eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)
+  - [Word.ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs): [type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)
+  - [Word.ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs): [type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)
+  - [Word.ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs): [type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
-
-
-  async function contentControlDeleted(event:
-  Word.ContentControlDeletedEventArgs) {
+  async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`, event.ids);
     });
   }
-
   ```
 
 isPreview: false
@@ -33,94 +37,72 @@ fields:
   - name: contentControlAdded
     uid: word!Word.EventType.contentControlAdded:member
     package: word!
-    summary: >-
-      ContentControlAdded represents the event a content control has been added
-      to the document.
+    summary: |-
+      ContentControlAdded represents the event a content control has been added to the document.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: word!Word.EventType.contentControlDataChanged:member
     package: word!
-    summary: >-
-      ContentControlDataChanged represents the event that the data in the
-      content control have been changed.
+    summary: |-
+      ContentControlDataChanged represents the event that the data in the content control have been changed.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: word!Word.EventType.contentControlDeleted:member
     package: word!
-    summary: >-
-      ContentControlDeleted represents the event that the content control has
-      been deleted.
+    summary: |-
+      ContentControlDeleted represents the event that the content control has been deleted.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: word!Word.EventType.contentControlEntered:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been entered.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: word!Word.EventType.contentControlExited:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been exited.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: word!Word.EventType.contentControlSelectionChanged:member
     package: word!
-    summary: >-
-      ContentControlSelectionChanged represents the event that the selection in
-      the content control has been changed.
+    summary: |-
+      ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ContentControlSelectionChanged"'
   - name: paragraphAdded
     uid: word!Word.EventType.paragraphAdded:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that one or more new paragraphs were added.
 
-
-      * \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphAdded"'
   - name: paragraphChanged
     uid: word!Word.EventType.paragraphChanged:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that one or more paragraphs were changed.
 
-
-      * \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphChanged"'
   - name: paragraphDeleted
     uid: word!Word.EventType.paragraphDeleted:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that one or more paragraphs were deleted.
 
-
-      * \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParagraphDeleted"'

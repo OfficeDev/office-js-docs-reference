@@ -3,50 +3,22 @@ name: Office.Context
 uid: office!Office.Context:interface
 package: office!
 fullName: Office.Context
-summary: >-
-  Represents the runtime environment of the add-in and provides access to key
-  objects of the API. The current context exists as a property of Office. It's
-  accessed using `Office.context`<!-- -->.
-remarks: >-
+summary: Represents the runtime environment of the add-in and provides access to key objects of the API. The current context exists as a property of Office. It's accessed using `Office.context`<!-- -->.
+remarks: |-
   **Support details**
 
+  For more information about Office application and server requirements, see [Requirements for running Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
-  For more information about Office application and server requirements, see
-  [Requirements for running Office
-  Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-  -->.
-
-
-  *Supported applications, by platform* <table> <tr><th> </th><th> Office on
-  the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office
-  on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel
-  </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td>
-  Supported </td><td> Not applicable </td></tr> <tr><td><strong> Outlook
-  </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td>
-  Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint
-  </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td>
-  Supported </td><td> Not applicable </td></tr> <tr><td><strong> Project
-  </strong></td><td> Not supported </td><td> Supported </td><td> Supported
-  </td><td> Not supported </td><td> Not applicable </td></tr> <tr><td><strong>
-  Word </strong></td><td> Supported </td><td> Supported </td><td> Supported
-  </td><td> Supported </td><td> Not applicable </td></tr> </table>
-
+  *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Project </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Not applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> </table>
 
   #### Examples
 
-
   ```TypeScript
-
   // Get the Office host, version, and platform in which the add-in is running.
-
   const contextInfo = Office.context.diagnostics;
-
   console.log("Office application: " + contextInfo.host);
-
   console.log("Office version: " + contextInfo.version);
-
   console.log("Platform: " + contextInfo.platform);
-
   ```
 
 isPreview: false
@@ -57,44 +29,26 @@ properties:
     uid: office!Office.Context#commerceAllowed:member
     package: office!
     fullName: commerceAllowed
-    summary: >-
-      True, if the current platform allows the add-in to display a UI for
-      selling or upgrading; otherwise returns False.
-    remarks: >-
+    summary: True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
+    remarks: |-
       **Applications**: Excel, Word
-
 
       `commerceAllowed` is only supported in Office on iPad.
 
-
-      The iOS App Store doesn't support apps with add-ins that provide links to
-      additional payment systems. However, Office Add-ins running in Office on
-      the Windows desktop or in the browser do allow such links. If you want the
-      UI of your add-in to provide a link to an external payment system on
-      platforms other than iOS, you can use the commerceAllowed property to
-      control when that link is displayed.
-
+      The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running in Office on the Windows desktop or in the browser do allow such links. If you want the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
 
       #### Examples
 
-
       ```TypeScript
-
-      // Detect iPad users so your add-in can switch to an iPad-specific
-      experience.
-
+      // Detect iPad users so your add-in can switch to an iPad-specific experience.
       const isTouchEnabled = Office.context.touchEnabled;
-
       const allowCommerce = Office.context.commerceAllowed;
 
-
       // On iPad, touchEnabled returns true and commerceAllowed returns false.
-
       if (isTouchEnabled && !allowCommerce) {
               enableIPadInterface();
               hideCommerceFeatures();
       }
-
       ```
 
     isPreview: false
@@ -107,45 +61,19 @@ properties:
     uid: office!Office.Context#contentLanguage:member
     package: office!
     fullName: contentLanguage
-    summary: >-
-      Gets the locale (language) specified by the user for editing the document
-      or item.
-    remarks: >-
-      The `contentLanguage` value reflects the **Editing Language** setting
-      specified with **File** &gt; **Options** &gt; **Language** in
-      the Office application.
-
+    summary: Gets the locale (language) specified by the user for editing the document or item.
+    remarks: |-
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt; **Options** &gt; **Language** in the Office application.
 
       **Support details**
 
+      For more information about Office application and server requirements, see [Requirements for running Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
-      For more information about Office application and server requirements, see
-      [Requirements for running Office
-      Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
-
-
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office
-      on the web </th><th> Office on Windows </th><th> Office on Mac </th><th>
-      Office on iPad </th><th> Outlook on mobile devices </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported
-      </td><td> Not supported </td><td> Supported </td><td> Not applicable
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td>
-      Supported </td><td> Supported </td><td> Supported </td><td> Supported
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported
-      </td><td> Supported </td><td> Not supported </td><td> Supported </td><td>
-      Not applicable </td></tr> <tr><td><strong> Project </strong></td><td> Not
-      supported </td><td> Supported </td><td> Not supported </td><td> Not
-      supported </td><td> Not applicable </td></tr> <tr><td><strong> Word
-      </strong></td><td> Supported </td><td> Supported </td><td> Not supported
-      </td><td> Supported </td><td> Not applicable </td></tr> </table>
-
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Project </strong></td><td> Not supported </td><td> Supported </td><td> Not supported </td><td> Not supported </td><td> Not applicable </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Supported </td><td> Not applicable </td></tr> </table>
 
       #### Examples
 
-
       ```TypeScript
-
       function sayHelloWithContentLanguage() {
           const myContentLanguage = Office.context.contentLanguage;
           switch (myContentLanguage) {
@@ -157,13 +85,10 @@ properties:
                   break;
           }
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
-
       ```
 
     isPreview: false
@@ -177,27 +102,16 @@ properties:
     package: office!
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
-    remarks: >-
-      **Important**: In Outlook, this property is available starting with
-      Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use
-      the
-      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
-      property to get similar information.
-
+    remarks: |-
+      **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use the [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
       #### Examples
 
-
       ```TypeScript
-
       const contextInfo = Office.context.diagnostics;
-
       console.log("Office application: " + contextInfo.host);
-
       console.log("Office version: " + contextInfo.version);
-
       console.log("Platform: " + contextInfo.platform);
-
       ```
 
     isPreview: false
@@ -210,52 +124,23 @@ properties:
     uid: office!Office.Context#displayLanguage:member
     package: office!
     fullName: displayLanguage
-    summary: >-
-      Gets the locale (language) specified by the user for the UI of the Office
-      application.
-    remarks: >-
-      The returned value is a string in the RFC 1766 Language tag format, such
-      as en-US.
+    summary: Gets the locale (language) specified by the user for the UI of the Office application.
+    remarks: |-
+      The returned value is a string in the RFC 1766 Language tag format, such as en-US.
 
-
-      The `displayLanguage` value reflects the current **Display Language**
-      setting specified with **File** &gt; **Options** &gt;
-      **Language** in the Office application.
-
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File** &gt; **Options** &gt; **Language** in the Office application.
 
       When using in Outlook, the applicable modes are Compose or Read.
 
-
       **Support details**
 
+      For more information about Office application and server requirements, see [Requirements for running Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
-      For more information about Office application and server requirements, see
-      [Requirements for running Office
-      Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
-      -->.
-
-
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office
-      on the web </th><th> Office on Windows </th><th> Office on Mac </th><th>
-      Office on iPad </th><th> Outlook on mobile devices </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> Supported </td><td> Not applicable
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td>
-      Supported </td><td> Supported </td><td> Supported </td><td> Supported
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported
-      </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not
-      applicable </td></tr> <tr><td><strong> Project </strong></td><td> Not
-      supported </td><td> Supported </td><td> Supported </td><td> Not supported
-      </td><td> Not applicable </td></tr> <tr><td><strong> Word
-      </strong></td><td> Not supported </td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> Not applicable </td></tr> </table>
-
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on the web </th><th> Office on Windows </th><th> Office on Mac </th><th> Office on iPad </th><th> Outlook on mobile devices </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> <tr><td><strong> Project </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Not supported </td><td> Not applicable </td></tr> <tr><td><strong> Word </strong></td><td> Not supported </td><td> Supported </td><td> Supported </td><td> Supported </td><td> Not applicable </td></tr> </table>
 
       #### Examples
 
-
       ```TypeScript
-
       function sayHelloWithDisplayLanguage() {
           const myDisplayLanguage = Office.context.displayLanguage;
           switch (myDisplayLanguage) {
@@ -267,13 +152,10 @@ properties:
                   break;
           }
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
-
       ```
 
     isPreview: false
@@ -286,9 +168,7 @@ properties:
     uid: office!Office.Context#document:member
     package: office!
     fullName: document
-    summary: >-
-      Gets an object that represents the document the content or task pane
-      add-in is interacting with.
+    summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     remarks: ''
 
     isPreview: false
@@ -321,29 +201,18 @@ properties:
     package: office!
     fullName: host
     summary: Contains the Office application in which the add-in is running.
-    remarks: >-
-      **Important**: In Outlook, this property is available starting with
-      Mailbox requirement set 1.5. You can also use the
-      `Office.context.diagnostics` property to get the application starting with
-      requirement set 1.5. For all Mailbox requirement sets, you can use the
-      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
-      property to get similar information.
-
+    remarks: |-
+      **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all Mailbox requirement sets, you can use the [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
       #### Examples
 
-
       ```TypeScript
-
       const host = Office.context.host;
-
-      if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint
-      || host === Office.HostType.Word) {
+      if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
           // Do something.
       } else if (host === Office.HostType.Outlook) {
           // Do something.
       }
-
       ```
 
     isPreview: false
@@ -379,47 +248,26 @@ properties:
     package: office!
     fullName: mailbox
     summary: Provides access to the Microsoft Outlook add-in object model.
-    remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+    remarks: |-
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
 
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
-
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
       **Key properties**:
 
+      - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook add-in.
 
-      - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook
-      add-in.
+      - `item`<!-- -->: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
+      - `userProfile`<!-- -->: Provides information about the user in an Outlook add-in.
 
-      - `item`<!-- -->: Provides methods and properties for accessing a message
-      or appointment in an Outlook add-in.
-
-
-      - `userProfile`<!-- -->: Provides information about the user in an Outlook
-      add-in.
-
-
-      To learn more about the `Mailbox` object, see [Outlook add-in
-      APIs](https://learn.microsoft.com/office/dev/add-ins/outlook/apis#mailbox-object)<!--
-      -->.
-
+      To learn more about the `Mailbox` object, see [Outlook add-in APIs](https://learn.microsoft.com/office/dev/add-ins/outlook/apis#mailbox-object)<!-- -->.
 
       #### Examples
 
-
       ```TypeScript
-
-      // The following line of code access the item object of the JavaScript API
-      for Office.
-
+      // The following line of code access the item object of the JavaScript API for Office.
       const item = Office.context.mailbox.item;
-
       ```
 
     isPreview: false
@@ -433,20 +281,12 @@ properties:
     package: office!
     fullName: officeTheme
     summary: Provides access to the properties for Office theme colors.
-    remarks: >-
-      **Important**: In Outlook, `officeTheme` is supported starting in
-      [Mailbox requirement set
-      1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14)<!--
-      -->. It isn't supported in Outlook add-ins that implement [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
-      -->.
-
+    remarks: |-
+      **Important**: In Outlook, `officeTheme` is supported starting in [Mailbox requirement set 1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14)<!-- -->. It isn't supported in Outlook add-ins that implement [event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!-- -->.
 
       #### Examples
 
-
       ```TypeScript
-
       function applyOfficeTheme() {
           // Identify the current Office theme in use.
           const currentOfficeTheme = Office.context.officeTheme.themeId;
@@ -468,7 +308,6 @@ properties:
               $("h1").css("color", controlForegroundColor);
           }
       }
-
       ```
 
     isPreview: false
@@ -481,39 +320,23 @@ properties:
     uid: office!Office.Context#partitionKey:member
     package: office!
     fullName: partitionKey
-    summary: >-
-      Gets a partition key for local storage. Add-ins should use this partition
-      key as part of the storage key to securely store data. The partition key
-      is `undefined` in environments without partitioning, such as the browser
-      controls for Windows applications.
-    remarks: >-
-      See the article [Persist add-in state and
-      settings](https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings)
-      for more information.
-
+    summary: Gets a partition key for local storage. Add-ins should use this partition key as part of the storage key to securely store data. The partition key is `undefined` in environments without partitioning, such as the browser controls for Windows applications.
+    remarks: |-
+      See the article [Persist add-in state and settings](https://learn.microsoft.com/office/dev/add-ins/develop/persisting-add-in-state-and-settings) for more information.
 
       #### Examples
 
-
       ```TypeScript
-
       // Store the value "Hello" in local storage with the key "myKey1".
-
       setInLocalStorage("myKey1", "Hello");
-
 
       // ... 
 
-
       // Retrieve the value stored in local storage under the key "myKey1".
-
       const message = getFromLocalStorage("myKey1");
-
       console.log(message);
 
-
       // ...
-
 
       function setInLocalStorage(key: string, value: string) {
           const myPartitionKey = Office.context.partitionKey;
@@ -527,7 +350,6 @@ properties:
           }
       }
 
-
       function getFromLocalStorage(key: string) {
           const myPartitionKey = Office.context.partitionKey;
 
@@ -538,7 +360,6 @@ properties:
               return localStorage.getItem(key);
           }
       }
-
       ```
 
     isPreview: false
@@ -552,32 +373,17 @@ properties:
     package: office!
     fullName: platform
     summary: Provides the platform on which the add-in is running.
-    remarks: >-
+    remarks: |-
       **Important**:
 
+      - In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox requirement sets, you can use the [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
-      - In Outlook, this property is available starting with Mailbox requirement
-      set 1.5. You can also use the `Office.context.diagnostics` property to get
-      the platform starting with requirement set 1.5. For all Mailbox
-      requirement sets, you can use the
-      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
-      property to get similar information.
-
-
-      - In Outlook, `OfficeOnline` is returned if an add-is is running in
-      Outlook on the web or in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->.
-
+      - In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
       #### Examples
 
-
       ```TypeScript
-
-      // Request permission from a user to access their devices from Office on
-      the web.
-
+      // Request permission from a user to access their devices from Office on the web.
       if (Office.context.platform === Office.PlatformType.OfficeOnline) {
           const deviceCapabilities = [
               Office.DevicePermissionType.camera,
@@ -595,7 +401,6 @@ properties:
                   console.error(error);
               });
       }
-
       ```
 
     isPreview: false
@@ -608,9 +413,7 @@ properties:
     uid: office!Office.Context#requirements:member
     package: office!
     fullName: requirements
-    summary: >-
-      Provides a method for determining what requirement sets are supported on
-      the current Office application and platform.
+    summary: Provides a method for determining what requirement sets are supported on the current Office application and platform.
     remarks: ''
 
     isPreview: false
@@ -619,17 +422,13 @@ properties:
       content: 'requirements: RequirementSetSupport;'
       return:
         type: <xref uid="office!Office.RequirementSetSupport:interface" />
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // To use the setCellProperties API, check if ExcelApi 1.9 is
-          supported.
-
+          // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
           if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
               const cellProperties: Excel.SettableCellProperties[][] =
               colors2D.map(row =>
@@ -645,55 +444,32 @@ properties:
               );
               sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
           }
-
           ...
-
           ```
   - name: roamingSettings
     uid: office!Office.Context#roamingSettings:member
     package: office!
     fullName: roamingSettings
-    summary: >-
-      Gets an object that represents the custom settings or state of a mail
-      add-in saved to a user's mailbox.
+    summary: |-
+      Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
+      The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox, so it's available to that add-in when it is running from any client application used to access that mailbox.
+    remarks: |-
+      [API set: Mailbox 1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
-      The `RoamingSettings` object lets you store and access data for a mail
-      add-in that is stored in a user's mailbox, so it's available to that
-      add-in when it is running from any client application used to access that
-      mailbox.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
 
-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
-
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
       #### Examples
 
-
       ```TypeScript
-
       // Get the current value of the 'myKey' setting.
-
       const value = Office.context.roamingSettings.get('myKey');
-
       // Update the value of the 'myKey' setting.
-
       Office.context.roamingSettings.set('myKey', 'Hello World!');
-
       // Persist the change.
-
       Office.context.roamingSettings.saveAsync();
-
       ```
 
     isPreview: false
@@ -706,35 +482,19 @@ properties:
     uid: office!Office.Context#sensitivityLabelsCatalog:member
     package: office!
     fullName: sensitivityLabelsCatalog
-    summary: >-
-      Gets the object to check the status of the catalog of sensitivity labels
-      in Outlook and retrieve all available sensitivity labels if the catalog is
-      enabled.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available sensitivity labels if the catalog is enabled.
+    remarks: |-
+      [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
       #### Examples
 
-
       ```TypeScript
-
-      // Check if the catalog of sensitivity labels is enabled on the current
-      mailbox.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
+      // Check if the catalog of sensitivity labels is enabled on the current mailbox.
+      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
           // If the catalog is enabled, get all available sensitivity labels.
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value === true) {
               Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
@@ -750,7 +510,6 @@ properties:
               console.log("Action failed with error: " + asyncResult.error.message);
           }
       });
-
       ```
 
     isPreview: false
@@ -763,38 +522,24 @@ properties:
     uid: office!Office.Context#touchEnabled:member
     package: office!
     fullName: touchEnabled
-    summary: >-
-      Specifies whether the platform and device allows touch interaction. True
-      if the add-in is running on a touch device, such as an iPad; false
-      otherwise.
-    remarks: >-
+    summary: Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch device, such as an iPad; false otherwise.
+    remarks: |-
       **Applications**: Excel, PowerPoint, Word
-
 
       `touchEnabled` is only supported in Office on iPad.
 
-
-      Use the touchEnabled property to determine when your add-in is running on
-      a touch device and if necessary, adjust the kind of controls, and size and
-      spacing of elements in your add-in's UI to accommodate touch interactions.
-
+      Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
 
       #### Examples
 
-
       ```TypeScript
-
       // Check if the add-in is running on an iPad.
-
       const allowCommerce = Office.context.commerceAllowed;
-
       const isTouchEnabled = Office.context.touchEnabled;
-
       if (!allowCommerce && isTouchEnabled) {
           // Add-in is running on an iPad.
           // Do something.
       }
-
       ```
 
     isPreview: false
@@ -807,9 +552,7 @@ properties:
     uid: office!Office.Context#ui:member
     package: office!
     fullName: ui
-    summary: >-
-      Provides objects and methods that you can use to create and manipulate UI
-      components, such as dialog boxes.
+    summary: Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
     remarks: ''
 
     isPreview: false
@@ -842,59 +585,30 @@ properties:
     package: office!
     fullName: urls
     summary: Gets the object to retrieve the runtime URLs of an add-in.
-    remarks: >-
-      **Applications**: Outlook on the web and on Windows
-      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
-      and classic clients)
+    remarks: |-
+      **Applications**: Outlook on the web and on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic clients)
 
+      [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office)
 
-      \[ [API set: Mailbox
-      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
 
-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
-
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
       **Important**:
 
+      - In Outlook on the web and new Outlook on Windows, this API isn't supported in add-ins that implement a task pane. On these clients, the API is only supported in add-ins that implement event-based activation or integrated spam reporting.
 
-      - In Outlook on the web and new Outlook on Windows, this API isn't
-      supported in add-ins that implement a task pane. On these clients, the API
-      is only supported in add-ins that implement event-based activation or
-      integrated spam reporting.
-
-
-      - In classic Outlook on Windows, this API is supported in add-ins that
-      implement a task pane, event-based activation, or integrated spam
-      reporting.
-
+      - In classic Outlook on Windows, this API is supported in add-ins that implement a task pane, event-based activation, or integrated spam reporting.
 
       #### Examples
 
-
       ```TypeScript
-
       // Get the value of the first parameter of the JavaScript runtime URL.
-
-      // For example, if the URL is
-      https://wwww.contoso.com/training?key1=value1&key2=value2,
-
-      // the following function logs "First parameter value: value1" to the
-      console.
-
+      // For example, if the URL is https://wwww.contoso.com/training?key1=value1&key2=value2,
+      // the following function logs "First parameter value: value1" to the console.
       const url = Office.context.urls.javascriptRuntimeUrl;
-
       const regex = /=([^&]+)/;
-
       console.log(`First parameter value: ${url.match(regex)[1]}`);
-
       ```
 
     isPreview: false

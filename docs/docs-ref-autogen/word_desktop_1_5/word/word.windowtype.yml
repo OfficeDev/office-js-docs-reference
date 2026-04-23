@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.WindowType
+uid: word!Word.WindowType:enum
+package: word!
+fullName: Word.WindowType
+summary: Specifies the type of the window.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: document
+    uid: word!Word.WindowType.document:member
+    package: word!
+    summary: |-
+      Specifies a document window.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Document"'
+  - name: template
+    uid: word!Word.WindowType.template:member
+    package: word!
+    summary: |-
+      Specifies a template window.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Template"'

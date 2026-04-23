@@ -4,23 +4,19 @@ uid: word!Word.InsertFileOptions:interface
 package: word!
 fullName: Word.InsertFileOptions
 summary: Specifies the options to determine what to copy when inserting a file.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-
-  // Inserts content (applying selected settings) from another document passed
-  in as a Base64-encoded string.
-
+  // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
   await Word.run(async (context) => {
     // Use the Base64-encoded string representation of the selected .docx file.
     context.document.insertFileFromBase64(externalDocument, "Replace", {
@@ -35,7 +31,6 @@ remarks: >-
     });
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -46,12 +41,8 @@ properties:
     uid: word!Word.InsertFileOptions#importChangeTrackingMode:member
     package: word!
     fullName: importChangeTrackingMode
-    summary: >-
-      If provided, specifies whether the change tracking mode status from the
-      source document should be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the change tracking mode status from the source document should be imported.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -63,13 +54,8 @@ properties:
     uid: word!Word.InsertFileOptions#importCustomProperties:member
     package: word!
     fullName: importCustomProperties
-    summary: >-
-      If provided, specifies whether the custom properties from the source
-      document should be imported. Overwrites existing properties with the same
-      name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the custom properties from the source document should be imported. Overwrites existing properties with the same name.
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -81,12 +67,8 @@ properties:
     uid: word!Word.InsertFileOptions#importCustomXmlParts:member
     package: word!
     fullName: importCustomXmlParts
-    summary: >-
-      If provided, specifies whether the custom XML parts from the source
-      document should be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the custom XML parts from the source document should be imported.
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -98,12 +80,8 @@ properties:
     uid: word!Word.InsertFileOptions#importDifferentOddEvenPages:member
     package: word!
     fullName: importDifferentOddEvenPages
-    summary: >-
-      If provided, specifies whether to import the Different Odd and Even Pages
-      setting for the header and footer from the source document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether to import the Different Odd and Even Pages setting for the header and footer from the source document.
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -115,12 +93,8 @@ properties:
     uid: word!Word.InsertFileOptions#importPageColor:member
     package: word!
     fullName: importPageColor
-    summary: >-
-      If provided, specifies whether the page color and other background
-      information from the source document should be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the page color and other background information from the source document should be imported.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -132,12 +106,8 @@ properties:
     uid: word!Word.InsertFileOptions#importParagraphSpacing:member
     package: word!
     fullName: importParagraphSpacing
-    summary: >-
-      If provided, specifies whether the paragraph spacing from the source
-      document should be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the paragraph spacing from the source document should be imported.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -149,12 +119,8 @@ properties:
     uid: word!Word.InsertFileOptions#importStyles:member
     package: word!
     fullName: importStyles
-    summary: >-
-      If provided, specifies whether the styles from the source document should
-      be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the styles from the source document should be imported.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -166,12 +132,8 @@ properties:
     uid: word!Word.InsertFileOptions#importTheme:member
     package: word!
     fullName: importTheme
-    summary: >-
-      If provided, specifies whether the theme from the source document should
-      be imported.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether the theme from the source document should be imported.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

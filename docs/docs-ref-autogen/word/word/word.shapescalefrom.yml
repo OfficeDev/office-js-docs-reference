@@ -3,22 +3,18 @@ name: Word.ShapeScaleFrom
 uid: word!Word.ShapeScaleFrom:enum
 package: word!
 fullName: Word.ShapeScaleFrom
-summary: >-
-  Specifies which part of the shape retains its position when the shape is
-  scaled.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Specifies which part of the shape retains its position when the shape is scaled.
+remarks: |-
+  [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Shape](/javascript/api/word/word.shape): [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1)), [scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
 
   await Word.run(async (context) => {
     // Scales the first set of grouped shapes (including text boxes) found in the document body.
@@ -40,7 +36,6 @@ remarks: >-
 
     console.log("Scaled the first shape group.");
   });
-
   ```
 
 isPreview: false
@@ -49,30 +44,24 @@ fields:
   - name: scaleFromBottomRight
     uid: word!Word.ShapeScaleFrom.scaleFromBottomRight:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the bottom right corner of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromBottomRight"'
   - name: scaleFromMiddle
     uid: word!Word.ShapeScaleFrom.scaleFromMiddle:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the center of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromMiddle"'
   - name: scaleFromTopLeft
     uid: word!Word.ShapeScaleFrom.scaleFromTopLeft:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the top left corner of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ScaleFromTopLeft"'

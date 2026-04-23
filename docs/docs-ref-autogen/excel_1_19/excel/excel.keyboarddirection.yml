@@ -4,19 +4,17 @@ uid: excel!Excel.KeyboardDirection:enum
 package: excel!
 fullName: Excel.KeyboardDirection
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.Range](/javascript/api/excel/excel.range): [getExtendedRange](/javascript/api/excel/excel.range#excel-excel-range-getextendedrange-member(1)), [getRangeEdge](/javascript/api/excel/excel.range#excel-excel-range-getrangeedge-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
 
   await Excel.run(async (context) => {
     // Get the selected range.
@@ -38,7 +36,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -47,32 +44,20 @@ fields:
   - name: down
     uid: excel!Excel.KeyboardDirection.down:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Down"'
   - name: left
     uid: excel!Excel.KeyboardDirection.left:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Left"'
   - name: right
     uid: excel!Excel.KeyboardDirection.right:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Right"'
   - name: up
     uid: excel!Excel.KeyboardDirection.up:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Up"'

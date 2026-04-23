@@ -3,51 +3,181 @@ name: OfficeExtension.LoadOption
 uid: office!OfficeExtension.LoadOption:interface
 package: office!
 fullName: OfficeExtension.LoadOption
-summary: >-
-  Specifies which properties of an object should be loaded. This load happens
-  when the sync() method is executed. This synchronizes the states between
-  Office objects and corresponding JavaScript proxy objects.
-remarks: >-
-  For Word, the preferred method for specifying the properties and paging
-  information is by using a string literal. The first two examples show the
-  preferred way to request the text and font size properties for paragraphs in a
-  paragraph collection:
-
+summary: Specifies which properties of an object should be loaded. This load happens when the sync() method is executed. This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
+remarks: |-
+  For Word, the preferred method for specifying the properties and paging information is by using a string literal. The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:
 
   `context.load(paragraphs, 'text, font/size');`
 
-
   `paragraphs.load('text, font/size');`
-
 
   Here is a similar example using object notation (includes paging):
 
+  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
-  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50,
-  skip: 0});`
+  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
-
-  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip:
-  0});`
+  Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded.
 
 
-  Note that if we don't specify the specific properties on the font object in
-  the select statement, the expand statement by itself would indicate that all
-  of the font properties are loaded.
+  #### Used by
 
-
+  - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(3))
+  - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(3))
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(3))
+  - [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection): [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(3))
+  - [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection): [load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(3))
+  - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(3))
+  - [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection): [load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(3))
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [load](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-load-member(3))
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(3))
+  - [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection): [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(3))
+  - [Excel.ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection): [load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(3))
+  - [Excel.CustomPropertyCollection](/javascript/api/excel/excel.custompropertycollection): [load](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-load-member(3))
+  - [Excel.CustomXmlPartCollection](/javascript/api/excel/excel.customxmlpartcollection): [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(3))
+  - [Excel.CustomXmlPartScopedCollection](/javascript/api/excel/excel.customxmlpartscopedcollection): [load](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-load-member(3))
+  - [Excel.DataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection): [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(3))
+  - [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection): [load](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-load-member(3))
+  - [Excel.DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection): [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(3))
+  - [Excel.FilterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection): [load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(3))
+  - [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection): [load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(3))
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(3))
+  - [Excel.LinkedWorkbookCollection](/javascript/api/excel/excel.linkedworkbookcollection): [load](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-load-member(3))
+  - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(3))
+  - [Excel.NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection): [load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(3))
+  - [Excel.NoteCollection](/javascript/api/excel/excel.notecollection): [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(3))
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(3))
+  - [Excel.PaneCollection](/javascript/api/excel/excel.panecollection): [load](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-load-member(3))
+  - [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection): [load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(3))
+  - [Excel.PivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection): [load](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-load-member(3))
+  - [Excel.PivotItemCollection](/javascript/api/excel/excel.pivotitemcollection): [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(3))
+  - [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection): [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(3))
+  - [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection): [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(3))
+  - [Excel.PivotTableStyleCollection](/javascript/api/excel/excel.pivottablestylecollection): [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(3))
+  - [Excel.QueryCollection](/javascript/api/excel/excel.querycollection): [load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(3))
+  - [Excel.RangeAreasCollection](/javascript/api/excel/excel.rangeareascollection): [load](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-load-member(3))
+  - [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection): [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(3))
+  - [Excel.RangeCollection](/javascript/api/excel/excel.rangecollection): [load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(3))
+  - [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection): [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(3))
+  - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(3))
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(3))
+  - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(3))
+  - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(3))
+  - [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection): [load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(3))
+  - [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection): [load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(3))
+  - [Excel.StyleCollection](/javascript/api/excel/excel.stylecollection): [load](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-load-member(3))
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(3))
+  - [Excel.TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(3))
+  - [Excel.TableRowCollection](/javascript/api/excel/excel.tablerowcollection): [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(3))
+  - [Excel.TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection): [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(3))
+  - [Excel.TableStyleCollection](/javascript/api/excel/excel.tablestylecollection): [load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(3))
+  - [Excel.TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection): [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(3))
+  - [Excel.WindowCollection](/javascript/api/excel/excel.windowcollection): [load](/javascript/api/excel/excel.windowcollection#excel-excel-windowcollection-load-member(3))
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(3))
+  - [Excel.WorksheetCustomPropertyCollection](/javascript/api/excel/excel.worksheetcustompropertycollection): [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(3))
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)), [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+  - [OneNote.InkAnalysisLineCollection](/javascript/api/onenote/onenote.inkanalysislinecollection): [load](/javascript/api/onenote/onenote.inkanalysislinecollection#onenote-onenote-inkanalysislinecollection-load-member(3))
+  - [OneNote.InkAnalysisParagraphCollection](/javascript/api/onenote/onenote.inkanalysisparagraphcollection): [load](/javascript/api/onenote/onenote.inkanalysisparagraphcollection#onenote-onenote-inkanalysisparagraphcollection-load-member(3))
+  - [OneNote.InkAnalysisWordCollection](/javascript/api/onenote/onenote.inkanalysiswordcollection): [load](/javascript/api/onenote/onenote.inkanalysiswordcollection#onenote-onenote-inkanalysiswordcollection-load-member(3))
+  - [OneNote.InkStrokeCollection](/javascript/api/onenote/onenote.inkstrokecollection): [load](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-load-member(3))
+  - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [load](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-load-member(3))
+  - [OneNote.NotebookCollection](/javascript/api/onenote/onenote.notebookcollection): [load](/javascript/api/onenote/onenote.notebookcollection#onenote-onenote-notebookcollection-load-member(3))
+  - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [load](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-load-member(3))
+  - [OneNote.PageContentCollection](/javascript/api/onenote/onenote.pagecontentcollection): [load](/javascript/api/onenote/onenote.pagecontentcollection#onenote-onenote-pagecontentcollection-load-member(3))
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [load](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-load-member(3))
+  - [OneNote.PointCollection](/javascript/api/onenote/onenote.pointcollection): [load](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-load-member(3))
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [load](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-load-member(3))
+  - [OneNote.SectionGroupCollection](/javascript/api/onenote/onenote.sectiongroupcollection): [load](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-load-member(3))
+  - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(3))
+  - [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection): [load](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-load-member(3))
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(3))
+  - [PowerPoint.CustomPropertyCollection](/javascript/api/powerpoint/powerpoint.custompropertycollection): [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(3))
+  - [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection): [load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(3))
+  - [PowerPoint.CustomXmlPartScopedCollection](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection): [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(3))
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(3))
+  - [PowerPoint.HyperlinkScopedCollection](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection): [load](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-load-member(3))
+  - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(3))
+  - [PowerPoint.ShapeScopedCollection](/javascript/api/powerpoint/powerpoint.shapescopedcollection): [load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(3))
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(3))
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(3))
+  - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(3))
+  - [PowerPoint.SlideScopedCollection](/javascript/api/powerpoint/powerpoint.slidescopedcollection): [load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(3))
+  - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(3))
+  - [PowerPoint.TableColumnCollection](/javascript/api/powerpoint/powerpoint.tablecolumncollection): [load](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-load-member(3))
+  - [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection): [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(3))
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(3))
+  - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [load](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-load-member(3))
+  - [Visio.HyperlinkCollection](/javascript/api/visio/visio.hyperlinkcollection): [load](/javascript/api/visio/visio.hyperlinkcollection#visio-visio-hyperlinkcollection-load-member(3))
+  - [Visio.PageCollection](/javascript/api/visio/visio.pagecollection): [load](/javascript/api/visio/visio.pagecollection#visio-visio-pagecollection-load-member(3))
+  - [Visio.ShapeCollection](/javascript/api/visio/visio.shapecollection): [load](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-load-member(3))
+  - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [load](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-load-member(3))
+  - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(3))
+  - [Word.BookmarkCollection](/javascript/api/word/word.bookmarkcollection): [load](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-load-member(3))
+  - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(3))
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(3))
+  - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(3))
+  - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [load](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-load-member(3))
+  - [Word.CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection): [load](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-load-member(3))
+  - [Word.CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection): [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(3))
+  - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(3))
+  - [Word.CommentReplyCollection](/javascript/api/word/word.commentreplycollection): [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(3))
+  - [Word.ConflictCollection](/javascript/api/word/word.conflictcollection): [load](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-load-member(3))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(3))
+  - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(3))
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(3))
+  - [Word.CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection): [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(3))
+  - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(3))
+  - [Word.CustomXmlPartScopedCollection](/javascript/api/word/word.customxmlpartscopedcollection): [load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(3))
+  - [Word.CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection): [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(3))
+  - [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection): [load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(3))
+  - [Word.CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection): [load](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-load-member(3))
+  - [Word.DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection): [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(3))
+  - [Word.FieldCollection](/javascript/api/word/word.fieldcollection): [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(3))
+  - [Word.FrameCollection](/javascript/api/word/word.framecollection): [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(3))
+  - [Word.HeadingStyleCollection](/javascript/api/word/word.headingstylecollection): [load](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-load-member(3))
+  - [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection): [load](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-load-member(3))
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(3))
+  - [Word.IndexCollection](/javascript/api/word/word.indexcollection): [load](/javascript/api/word/word.indexcollection#word-word-indexcollection-load-member(3))
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(3))
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(3))
+  - [Word.ListLevelCollection](/javascript/api/word/word.listlevelcollection): [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(3))
+  - [Word.ListTemplateCollection](/javascript/api/word/word.listtemplatecollection): [load](/javascript/api/word/word.listtemplatecollection#word-word-listtemplatecollection-load-member(3))
+  - [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection): [load](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-load-member(2))
+  - [Word.NoteItemCollection](/javascript/api/word/word.noteitemcollection): [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(3))
+  - [Word.PageCollection](/javascript/api/word/word.pagecollection): [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(3))
+  - [Word.PaneCollection](/javascript/api/word/word.panecollection): [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(3))
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(3))
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(3))
+  - [Word.RangeScopedCollection](/javascript/api/word/word.rangescopedcollection): [load](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-load-member(3))
+  - [Word.ReadabilityStatisticCollection](/javascript/api/word/word.readabilitystatisticcollection): [load](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-load-member(3))
+  - [Word.ReviewerCollection](/javascript/api/word/word.reviewercollection): [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(3))
+  - [Word.RevisionCollection](/javascript/api/word/word.revisioncollection): [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(3))
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(3))
+  - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(3))
+  - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(3))
+  - [Word.SourceCollection](/javascript/api/word/word.sourcecollection): [load](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-load-member(3))
+  - [Word.StyleCollection](/javascript/api/word/word.stylecollection): [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(3))
+  - [Word.TabStopCollection](/javascript/api/word/word.tabstopcollection): [load](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-load-member(3))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(3))
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(3))
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(3))
+  - [Word.TableOfAuthoritiesCategoryCollection](/javascript/api/word/word.tableofauthoritiescategorycollection): [load](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-load-member(3))
+  - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [load](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-load-member(3))
+  - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [load](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-load-member(3))
+  - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [load](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-load-member(3))
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(3))
+  - [Word.TemplateCollection](/javascript/api/word/word.templatecollection): [load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(3))
+  - [Word.TextColumnCollection](/javascript/api/word/word.textcolumncollection): [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(3))
+  - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(3))
+  - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(3))
+  - [Word.XmlNodeCollection](/javascript/api/word/word.xmlnodecollection): [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(3))
   #### Examples
 
-
   ```TypeScript
-
   // This example shows how to get the paragraphs in the Word document
-
   // along with their text and font size properties.
 
-
   // Run a batch operation against the Word object model.
-
   Word.run(function (context) {
       // Create a proxy object for the paragraphs collection.
       const paragraphs = context.document.body.paragraphs;
@@ -63,14 +193,12 @@ remarks: >-
           // Insert code that works with the paragraphs loaded by context.load().
       })
   })
-
   .catch(function (error) {
       console.log('Error: ' + JSON.stringify(error));
       if (error instanceof OfficeExtension.Error) {
           console.log('Debug info: ' + JSON.stringify(error.debugInfo));
       }
   });
-
   ```
 
 isPreview: false
@@ -81,9 +209,7 @@ properties:
     uid: office!OfficeExtension.LoadOption#expand:member
     package: office!
     fullName: expand
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      navigation properties to load.
+    summary: A comma-delimited string, or array of strings, that specifies the navigation properties to load.
     remarks: ''
 
     isPreview: false
@@ -96,9 +222,7 @@ properties:
     uid: office!OfficeExtension.LoadOption#select:member
     package: office!
     fullName: select
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      properties to load.
+    summary: A comma-delimited string, or array of strings, that specifies the properties to load.
     remarks: ''
 
     isPreview: false
@@ -111,11 +235,7 @@ properties:
     uid: office!OfficeExtension.LoadOption#skip:member
     package: office!
     fullName: skip
-    summary: >-
-      Only usable on collection types. Specifies the number of items in the
-      collection that are to be skipped and not included in the result. If top
-      is specified, the result set will start after skipping the specified
-      number of items.
+    summary: Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. If top is specified, the result set will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -128,9 +248,7 @@ properties:
     uid: office!OfficeExtension.LoadOption#top:member
     package: office!
     fullName: top
-    summary: >-
-      Only usable on collection types. Specifies the maximum number of
-      collection items that can be included in the result.
+    summary: Only usable on collection types. Specifies the maximum number of collection items that can be included in the result.
     remarks: ''
 
     isPreview: false
@@ -139,19 +257,14 @@ properties:
       content: 'top?: number;'
       return:
         type: number
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // This OneNote example shows how to get the page title and
-          indentation level
-
+          // This OneNote example shows how to get the page title and indentation level
           // of the top five pages in the current section.
-
           OneNote.run(function (context) {
               // Get the pages in the current section.
               const pages = context.application.getActiveSection().pages;

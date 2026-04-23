@@ -4,40 +4,26 @@ uid: outlook!Office.SensitivityLabelDetails:interface
 package: outlook!
 fullName: Office.SensitivityLabelDetails
 summary: Represents the properties of available sensitivity labels in Outlook.
-remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read/write item**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-
-
-  **Important**: To use the sensitivity label feature in your add-in, you
-  must have a Microsoft 365 E5 subscription.
-
-
-  To learn more about how to manage sensitivity labels in your add-in, see
-  [Manage the sensitivity label of your message or appointment in compose
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
-  -->.
-
-
+  - [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel): [setAsync](/javascript/api/outlook/office.sensitivitylabel#outlook-office-sensitivitylabel-setasync-member(1))
+  - [Office.SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog): [getAsync](/javascript/api/outlook/office.sensitivitylabelscatalog#outlook-office-sensitivitylabelscatalog-getasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Check whether the catalog of sensitivity labels is enabled on the current
-  mailbox.
-
+  // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
   Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
       // If the catalog is enabled, get all available sensitivity labels.
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
@@ -62,7 +48,6 @@ remarks: >-
           console.log("Action failed with error: " + asyncResult.error.message);
       }
   });
-
   ```
 
 isPreview: false
@@ -73,11 +58,7 @@ properties:
     uid: outlook!Office.SensitivityLabelDetails#children:member
     package: outlook!
     fullName: children
-    summary: >-
-      The
-      [sublabels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels)
-      of the sensitivity label. Returns `null` if a label doesn't have any
-      sublabels.
+    summary: The [sublabels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels) of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
     remarks: ''
 
     isPreview: false

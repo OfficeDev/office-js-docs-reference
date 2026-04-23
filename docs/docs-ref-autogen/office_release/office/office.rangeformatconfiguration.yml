@@ -4,33 +4,28 @@ uid: office!Office.RangeFormatConfiguration:interface
 package: office!
 fullName: Office.RangeFormatConfiguration
 summary: Specifies a range and its formatting.
-remarks: >-
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [cellFormat](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-cellformat-member)
+  - [Office.SetSelectedDataOptions](/javascript/api/office/office.setselecteddataoptions): [cellFormat](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-cellformat-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Apply formatting to specific cells when writing table data to the
-  selection.
-
-  // The cells property accepts an Office.Table enum value or a RangeCoordinates
-  object.
-
+  // Apply formatting to specific cells when writing table data to the selection.
+  // The cells property accepts an Office.Table enum value or a RangeCoordinates object.
   // The format property specifies formatting as key-value pairs.
-
   const cellFormats: Office.RangeFormatConfiguration[] = [
       { cells: Office.Table.Headers, format: { fontColor: "red" } },
       { cells: { row: 2, column: 1 }, format: { borderColor: "blue", fontStyle: "bold" } }
   ];
 
-
   const tableData = new Office.TableData();
-
   tableData.headers = [["Product", "Price"]];
-
-  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry",
-  "$2.00"]];
-
+  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry", "$2.00"]];
 
   Office.context.document.setSelectedDataAsync(
       tableData,
@@ -41,7 +36,6 @@ remarks: >-
           }
       }
   );
-
   ```
 
 isPreview: false
@@ -52,10 +46,7 @@ properties:
     uid: office!Office.RangeFormatConfiguration#cells:member
     package: office!
     fullName: cells
-    summary: >-
-      Specifies the range. Example of using Office.Table enum: Office.Table.All.
-      Example of using RangeCoordinates: `{row: 3, column: 4}` specifies the
-      cell in the 3rd (zero-based) row in the 4th (zero-based) column.
+    summary: 'Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates: `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.'
     remarks: ''
 
     isPreview: false
@@ -63,16 +54,12 @@ properties:
     syntax:
       content: 'cells: Office.Table | RangeCoordinates'
       return:
-        type: >-
-          <xref uid="office!Office.Table:enum" /> | <xref
-          uid="office!Office.RangeCoordinates:interface" />
+        type: <xref uid="office!Office.Table:enum" /> | <xref uid="office!Office.RangeCoordinates:interface" />
   - name: format
     uid: office!Office.RangeFormatConfiguration#format:member
     package: office!
     fullName: format
-    summary: >-
-      Specifies the formatting as key-value pairs. Example: `{borderColor:
-      "white", fontStyle: "bold"}`
+    summary: 'Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`'
     remarks: ''
 
     isPreview: false

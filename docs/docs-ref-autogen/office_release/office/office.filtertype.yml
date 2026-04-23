@@ -3,10 +3,15 @@ name: Office.FilterType
 uid: office!Office.FilterType:enum
 package: office!
 fullName: Office.FilterType
-summary: >-
-  Specifies whether filtering from the Office application is applied when the
-  data is retrieved.
+summary: Specifies whether filtering from the Office application is applied when the data is retrieved.
 remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)
+  - [Office.GetSelectedDataOptions](/javascript/api/office/office.getselecteddataoptions): [filterType](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-filtertype-member)
   #### Examples
 
   ```TypeScript

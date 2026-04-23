@@ -3,26 +3,22 @@ name: PowerPoint.HyperlinkAddOptions
 uid: powerpoint!PowerPoint.HyperlinkAddOptions:interface
 package: powerpoint!
 fullName: PowerPoint.HyperlinkAddOptions
-summary: >-
-  Represents the available options when adding a
-  [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)<!-- -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+summary: Represents the available options when adding a [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)<!-- -->.
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
+  - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
 
   // Sets a hyperlink on the selected text range.
-
   await PowerPoint.run(async (context) => {
     const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
     const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
@@ -45,7 +41,6 @@ remarks: >-
       `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the selected text "${textRange.text}".`,
     );
   });
-
   ```
 
 isPreview: false
@@ -56,13 +51,8 @@ properties:
     uid: powerpoint!PowerPoint.HyperlinkAddOptions#address:member
     package: powerpoint!
     fullName: address
-    summary: >-
-      Specifies the address of the hyperlink, which can be a URL, a file name or
-      file path, or an email address with the `mailto` URI scheme.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the address of the hyperlink, which can be a URL, a file name or file path, or an email address with the `mailto` URI scheme.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -75,10 +65,7 @@ properties:
     package: powerpoint!
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

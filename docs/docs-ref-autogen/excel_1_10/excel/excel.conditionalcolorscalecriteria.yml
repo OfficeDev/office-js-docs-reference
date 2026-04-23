@@ -4,19 +4,17 @@ uid: excel!Excel.ConditionalColorScaleCriteria:interface
 package: excel!
 fullName: Excel.ConditionalColorScaleCriteria
 summary: Represents the criteria of the color scale.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [criteria](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-criteria-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -32,7 +30,6 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -44,9 +41,7 @@ properties:
     package: excel!
     fullName: maximum
     summary: The maximum point of the color scale criterion.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -58,12 +53,8 @@ properties:
     uid: excel!Excel.ConditionalColorScaleCriteria#midpoint:member
     package: excel!
     fullName: midpoint
-    summary: >-
-      The midpoint of the color scale criterion, if the color scale is a 3-color
-      scale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: The midpoint of the color scale criterion, if the color scale is a 3-color scale.
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -76,9 +67,7 @@ properties:
     package: excel!
     fullName: minimum
     summary: The minimum point of the color scale criterion.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

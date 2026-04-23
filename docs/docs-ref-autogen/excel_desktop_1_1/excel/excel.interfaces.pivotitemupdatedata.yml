@@ -3,10 +3,11 @@ name: Excel.Interfaces.PivotItemUpdateData
 uid: excel!Excel.Interfaces.PivotItemUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotItemUpdateData
-summary: >-
-  An interface for updating data on the `PivotItem` object, for use in
-  `pivotItem.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `PivotItem` object, for use in `pivotItem.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.PivotItem](/javascript/api/excel/excel.pivotitem): [set](/javascript/api/excel/excel.pivotitem#excel-excel-pivotitem-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.PivotItemUpdateData#isExpanded:member
     package: excel!
     fullName: isExpanded
-    summary: >-
-      Determines whether the item is expanded to show child items or if it's
-      collapsed and child items are hidden.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotItem.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +44,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the PivotItem is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

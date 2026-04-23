@@ -3,12 +3,13 @@ name: Excel.PivotFilters
 uid: excel!Excel.PivotFilters:interface
 package: excel!
 fullName: Excel.PivotFilters
-summary: >-
-  An interface representing all PivotFilters currently applied to a given
-  PivotField.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: An interface representing all PivotFilters currently applied to a given PivotField.
+remarks: |-
+  [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.PivotField](/javascript/api/excel/excel.pivotfield): [applyFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-applyfilter-member(1)), [getFilters](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-getfilters-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -18,23 +19,14 @@ properties:
     uid: excel!Excel.PivotFilters#dateFilter:member
     package: excel!
     fullName: dateFilter
-    summary: >-
-      The PivotField's currently applied date filter. This property is `null` if
-      no value filter is applied.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: The PivotField's currently applied date filter. This property is `null` if no value filter is applied.
+    remarks: |-
+      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
       await Excel.run(async (context) => {
         // Add a date-based PivotFilter.
@@ -63,7 +55,6 @@ properties:
 
         await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -76,23 +67,14 @@ properties:
     uid: excel!Excel.PivotFilters#labelFilter:member
     package: excel!
     fullName: labelFilter
-    summary: >-
-      The PivotField's currently applied label filter. This property is `null`
-      if no value filter is applied.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: The PivotField's currently applied label filter. This property is `null` if no value filter is applied.
+    remarks: |-
+      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter based on the strings of item labels.
@@ -115,7 +97,6 @@ properties:
 
         await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -128,23 +109,14 @@ properties:
     uid: excel!Excel.PivotFilters#manualFilter:member
     package: excel!
     fullName: manualFilter
-    summary: >-
-      The PivotField's currently applied manual filter. This property is `null`
-      if no value filter is applied.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: The PivotField's currently applied manual filter. This property is `null` if no value filter is applied.
+    remarks: |-
+      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter on manually-selected items.
@@ -167,7 +139,6 @@ properties:
 
         await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -180,23 +151,14 @@ properties:
     uid: excel!Excel.PivotFilters#valueFilter:member
     package: excel!
     fullName: valueFilter
-    summary: >-
-      The PivotField's currently applied value filter. This property is `null`
-      if no value filter is applied.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: The PivotField's currently applied value filter. This property is `null` if no value filter is applied.
+    remarks: |-
+      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
       await Excel.run(async (context) => {
         // Add a PivotFilter to filter on the values correlated with a row.
@@ -219,7 +181,6 @@ properties:
 
         await context.sync();
       });
-
       ```
 
     isPreview: false

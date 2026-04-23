@@ -4,19 +4,13 @@ uid: word!Word.ExportOptimizeFor:enum
 package: word!
 fullName: Word.ExportOptimizeFor
 summary: Specifies the optimization target for document export.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
 
   await Word.run(async (context) => {
     const document: Word.Document = context.document;
@@ -35,7 +29,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -44,20 +37,16 @@ fields:
   - name: onScreen
     uid: word!Word.ExportOptimizeFor.onScreen:member
     package: word!
-    summary: >-
+    summary: |-
       Optimizes for on-screen display.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"OnScreen"'
   - name: print
     uid: word!Word.ExportOptimizeFor.print:member
     package: word!
-    summary: >-
+    summary: |-
       Optimizes for print.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Print"'

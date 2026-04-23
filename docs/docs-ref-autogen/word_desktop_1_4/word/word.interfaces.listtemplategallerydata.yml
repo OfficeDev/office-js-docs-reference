@@ -3,10 +3,11 @@ name: Word.Interfaces.ListTemplateGalleryData
 uid: word!Word.Interfaces.ListTemplateGalleryData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateGalleryData
-summary: >-
-  An interface describing the data returned by calling
-  `listTemplateGallery.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `listTemplateGallery.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ListTemplateGallery](/javascript/api/word/word.listtemplategallery): [toJSON](/javascript/api/word/word.listtemplategallery#word-word-listtemplategallery-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

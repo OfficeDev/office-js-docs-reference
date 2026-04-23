@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.CustomXmlPartScopedCollectionData
 uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomXmlPartScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPartScopedCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
@@ -25,7 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.CustomXmlPartData[];'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface" />[]

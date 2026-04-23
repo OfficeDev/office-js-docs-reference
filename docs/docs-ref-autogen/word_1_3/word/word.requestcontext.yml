@@ -3,12 +3,44 @@ name: Word.RequestContext
 uid: word!Word.RequestContext:class
 package: word!
 fullName: Word.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the Word application. Since
-  the Office add-in and the Word application run in two different processes, the
-  request context is required to get access to the Word object model from the
-  add-in.
+summary: The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
 remarks: |-
+
+
+
+  #### Used by
+
+  - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))
+  - [Word.Application](/javascript/api/word/word.application): [context](/javascript/api/word/word.application#word-word-application-context-member)
+  - [Word.Body](/javascript/api/word/word.body): [context](/javascript/api/word/word.body#word-word-body-context-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [context](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-context-member)
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [context](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-context-member)
+  - [Word.CustomProperty](/javascript/api/word/word.customproperty): [context](/javascript/api/word/word.customproperty#word-word-customproperty-context-member)
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [context](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-context-member)
+  - [Word.Document](/javascript/api/word/word.document): [context](/javascript/api/word/word.document#word-word-document-context-member)
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [context](/javascript/api/word/word.documentcreated#word-word-documentcreated-context-member)
+  - [Word.DocumentProperties](/javascript/api/word/word.documentproperties): [context](/javascript/api/word/word.documentproperties#word-word-documentproperties-context-member)
+  - [Word.Font](/javascript/api/word/word.font): [context](/javascript/api/word/word.font#word-word-font-context-member)
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [context](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-context-member)
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [context](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-context-member)
+  - [Word.List](/javascript/api/word/word.list): [context](/javascript/api/word/word.list#word-word-list-context-member)
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [context](/javascript/api/word/word.listcollection#word-word-listcollection-context-member)
+  - [Word.ListItem](/javascript/api/word/word.listitem): [context](/javascript/api/word/word.listitem#word-word-listitem-context-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [context](/javascript/api/word/word.paragraph#word-word-paragraph-context-member)
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [context](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-context-member)
+  - [Word.Range](/javascript/api/word/word.range): [context](/javascript/api/word/word.range#word-word-range-context-member)
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [context](/javascript/api/word/word.rangecollection#word-word-rangecollection-context-member)
+  - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [context](/javascript/api/word/word.searchoptions#word-word-searchoptions-context-member)
+  - [Word.Section](/javascript/api/word/word.section): [context](/javascript/api/word/word.section#word-word-section-context-member)
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
+  - [Word.Style](/javascript/api/word/word.style): [context](/javascript/api/word/word.style#word-word-style-context-member)
+  - [Word.Table](/javascript/api/word/word.table): [context](/javascript/api/word/word.table#word-word-table-context-member)
+  - [Word.TableBorder](/javascript/api/word/word.tableborder): [context](/javascript/api/word/word.tableborder#word-word-tableborder-context-member)
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [context](/javascript/api/word/word.tablecell#word-word-tablecell-context-member)
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [context](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-context-member)
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [context](/javascript/api/word/word.tablecollection#word-word-tablecollection-context-member)
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [context](/javascript/api/word/word.tablerow#word-word-tablerow-context-member)
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [context](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-context-member)
   #### Examples
 
   ```TypeScript
@@ -44,10 +76,7 @@ properties:
     uid: word!Word.RequestContext#application:member
     package: word!
     fullName: application
-    summary: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-      *
+    summary: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) *'
     remarks: ''
 
     isPreview: false

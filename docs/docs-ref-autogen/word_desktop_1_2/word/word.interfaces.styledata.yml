@@ -4,7 +4,10 @@ uid: word!Word.Interfaces.StyleData:interface
 package: word!
 fullName: Word.Interfaces.StyleData
 summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Word.Style](/javascript/api/word/word.style): [toJSON](/javascript/api/word/word.style#word-word-style-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,13 +17,9 @@ properties:
     uid: word!Word.Interfaces.StyleData#baseStyle:member
     package: word!
     fullName: baseStyle
-    summary: >-
-      Specifies the name of an existing style to use as the base formatting of
-      another style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
 
@@ -34,12 +33,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Specifies a `BorderCollection` object that represents all the borders for
-      the style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies a `BorderCollection` object that represents all the borders for the style.
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +47,7 @@ properties:
     package: word!
     fullName: builtIn
     summary: Gets whether the style is a built-in style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,12 +59,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets a `Font` object that represents the character formatting of the
-      style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Font` object that represents the character formatting of the style.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -83,13 +72,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#inUse:member
     package: word!
     fullName: inUse
-    summary: >-
-      Gets whether the style is a built-in style that has been modified or
-      applied in the document or a new style that has been created in the
-      document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets whether the style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -101,12 +85,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#linked:member
     package: word!
     fullName: linked
-    summary: >-
-      Gets whether the style is a linked style that can be used for both
-      paragraph and character formatting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets whether the style is a linked style that can be used for both paragraph and character formatting.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -118,12 +98,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#listTemplate:member
     package: word!
     fullName: listTemplate
-    summary: >-
-      Gets a `ListTemplate` object that represents the list formatting for the
-      style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `ListTemplate` object that represents the list formatting for the style.
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +112,7 @@ properties:
     package: word!
     fullName: nameLocal
     summary: Gets the name of the style in the language of the user.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -150,16 +124,11 @@ properties:
     uid: word!Word.Interfaces.StyleData#nextParagraphStyle:member
     package: word!
     fullName: nextParagraphStyle
-    summary: >-
-      Specifies the name of the style to be applied automatically to a new
-      paragraph that is inserted after a paragraph formatted with the style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the style.
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-      Note: The ability to set `nextParagraphStyle` was introduced in WordApi
-      1.6.
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
 
     isPreview: false
     isDeprecated: false
@@ -171,12 +140,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#paragraphFormat:member
     package: word!
     fullName: paragraphFormat
-    summary: >-
-      Gets a `ParagraphFormat` object that represents the paragraph settings for
-      the style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `ParagraphFormat` object that represents the paragraph settings for the style.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -189,9 +154,7 @@ properties:
     package: word!
     fullName: priority
     summary: Specifies the priority.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -204,9 +167,7 @@ properties:
     package: word!
     fullName: quickStyle
     summary: Specifies whether the style corresponds to an available quick style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -218,12 +179,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Gets a `Shading` object that represents the shading for the style. Not
-      applicable to a style of `List` type.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Shading` object that represents the shading for the style. Not applicable to a style of `List` type.
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -235,12 +192,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#tableStyle:member
     package: word!
     fullName: tableStyle
-    summary: >-
-      Gets a `TableStyle` object representing style properties that can be
-      applied to a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `TableStyle` object representing style properties that can be applied to a table.
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -253,29 +206,20 @@ properties:
     package: word!
     fullName: type
     summary: Gets the style type.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";'
       return:
-        type: >-
-          <xref uid="word!Word.StyleType:enum" /> | "Character" | "List" |
-          "Paragraph" | "Table"
+        type: <xref uid="word!Word.StyleType:enum" /> | "Character" | "List" | "Paragraph" | "Table"
   - name: unhideWhenUsed
     uid: word!Word.Interfaces.StyleData#unhideWhenUsed:member
     package: word!
     fullName: unhideWhenUsed
-    summary: >-
-      Specifies whether the style is made visible as a recommended style in the
-      Styles gallery and in the Styles task pane in Microsoft Word after it's
-      used in the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the style is made visible as a recommended style in the Styles gallery and in the Styles task pane in Microsoft Word after it's used in the document.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -287,12 +231,8 @@ properties:
     uid: word!Word.Interfaces.StyleData#visibility:member
     package: word!
     fullName: visibility
-    summary: >-
-      Specifies whether the style is visible as a recommended style in the
-      Styles gallery and in the Styles task pane.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

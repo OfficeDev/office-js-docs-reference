@@ -3,28 +3,20 @@ name: PowerPoint.SlideBackgroundSolidFillOptions
 uid: powerpoint!PowerPoint.SlideBackgroundSolidFillOptions:interface
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundSolidFillOptions
-summary: >-
-  Represents the available options for setting a
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  solid fill.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+summary: Represents the available options for setting a [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) solid fill.
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [setSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setsolidfill-member(1))
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
-
-  // Sets the background of the first selected slide to a solid orange fill at
-  20% transparency.
-
+  // Sets the background of the first selected slide to a solid orange fill at 20% transparency.
   await PowerPoint.run(async (context) => {
     const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
     slide.background.fill.setSolidFill({
@@ -35,7 +27,6 @@ remarks: >-
 
     console.log("Background set to solid orange fill (20% transparent).");
   });
-
   ```
 
 isPreview: false
@@ -46,13 +37,8 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFillOptions#color:member
     package: powerpoint!
     fullName: color
-    summary: >-
-      If provided, specifies the fill color in HTML color format (e.g.,
-      "\#FFA500" or "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: If provided, specifies the fill color in HTML color format (e.g., "\#FFA500" or "orange").
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -64,13 +50,8 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFillOptions#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: >-
-      If provided, specifies the transparency percentage of the fill as a value
-      from 0.0 (opaque) through 1.0 (clear).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: If provided, specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

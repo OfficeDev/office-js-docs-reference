@@ -4,25 +4,20 @@ uid: powerpoint!PowerPoint.ShapeGetImageFormatType:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeGetImageFormatType
 summary: Represents the format of an image.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.ShapeGetImageOptions](/javascript/api/powerpoint/powerpoint.shapegetimageoptions): [format](/javascript/api/powerpoint/powerpoint.shapegetimageoptions#powerpoint-powerpoint-shapegetimageoptions-format-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
 
   // Gets an image of the first selected shape with all options specified:
-
   // a fixed width, height, and explicit PNG format.
-
   await PowerPoint.run(async (context) => {
     const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
     const shapeCount = shapes.getCount();
@@ -46,7 +41,6 @@ remarks: >-
 
     displayImage(imageResult.value, "PNG, 300x150px");
   });
-
   ```
 
 isPreview: false
@@ -55,11 +49,8 @@ fields:
   - name: png
     uid: powerpoint!PowerPoint.ShapeGetImageFormatType.png:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       The picture is in PNG format.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"Png"'

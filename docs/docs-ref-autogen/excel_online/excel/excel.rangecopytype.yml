@@ -4,19 +4,18 @@ uid: excel!Excel.RangeCopyType:enum
 package: excel!
 fullName: Excel.RangeCopyType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.Range](/javascript/api/excel/excel.range): [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
+  - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -28,7 +27,6 @@ remarks: >-
       sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
       await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -37,35 +35,25 @@ fields:
   - name: all
     uid: excel!Excel.RangeCopyType.all:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"All"'
   - name: formats
     uid: excel!Excel.RangeCopyType.formats:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Formats"'
   - name: formulas
     uid: excel!Excel.RangeCopyType.formulas:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Formulas"'
   - name: link
     uid: excel!Excel.RangeCopyType.link:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Link"'
   - name: values
     uid: excel!Excel.RangeCopyType.values:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Values"'

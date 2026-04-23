@@ -3,10 +3,11 @@ name: Word.Interfaces.CustomPropertyUpdateData
 uid: word!Word.Interfaces.CustomPropertyUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomPropertyUpdateData
-summary: >-
-  An interface for updating data on the `CustomProperty` object, for use in
-  `customProperty.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CustomProperty](/javascript/api/word/word.customproperty): [set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,15 +17,8 @@ properties:
     uid: word!Word.Interfaces.CustomPropertyUpdateData#value:member
     package: word!
     fullName: value
-    summary: >-
-      Specifies the value of the custom property. Note that even though Word on
-      the web and the docx file format allow these properties to be arbitrarily
-      long, the desktop version of Word will truncate string values to 255
-      16-bit chars (possibly creating invalid unicode by breaking up a surrogate
-      pair).
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

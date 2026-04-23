@@ -3,36 +3,31 @@ name: Office.DialogParentMessageReceivedEventArgs
 uid: office!Office.DialogParentMessageReceivedEventArgs:interface
 package: office!
 fullName: Office.DialogParentMessageReceivedEventArgs
-summary: >-
-  Provides information about the message from the parent page that raised the
-  `DialogParentMessageReceived` event.
+summary: |-
+  Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.
+
+  To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the [Office.UI](xref:office!Office.UI:interface) object.
+remarks: |-
 
 
-  To add an event handler for the `DialogParentMessageReceived` event, use the
-  `addHandlerAsync` method of the [Office.UI](xref:office!Office.UI:interface)
-  object.
-remarks: >-
+
+  #### Used by
+
+  - [Office.UI](/javascript/api/office/office.ui): [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // The following example provides information about the message from the
-  parent page.
-
+  // The following example provides information about the message from the parent page.
   Office.onReady(() => {
       Office.context.ui.addHandlerAsync(Office.EventType.DialogMessageReceived, onMessageFromParent);
   });
 
-
-  function onMessageFromParent(args:
-  Office.DialogParentMessageReceivedEventArgs) {
+  function onMessageFromParent(args: Office.DialogParentMessageReceivedEventArgs) {
       const eventType = args.type;
       const origin = args.origin;
       const messageFromParent = args.message;
       console.log(`${eventType} event occurred. Message received from ${origin}: ${messageFromParent}`);
   }
-
   ```
 
 isPreview: false
@@ -43,9 +38,7 @@ properties:
     uid: office!Office.DialogParentMessageReceivedEventArgs#message:member
     package: office!
     fullName: message
-    summary: >-
-      Gets the content of the message sent from the parent page, which can be
-      any string or stringified data.
+    summary: Gets the content of the message sent from the parent page, which can be any string or stringified data.
     remarks: ''
 
     isPreview: false
@@ -58,14 +51,8 @@ properties:
     uid: office!Office.DialogParentMessageReceivedEventArgs#origin:member
     package: office!
     fullName: origin
-    summary: >-
-      Gets the domain of the parent page that called `Dialog.messageChild`<!--
-      -->.
-    remarks: >-
-      **Requirement set**: [DialogOrigin
-      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)<!--
-      -->. The property is `undefined` on clients that do not support this
-      requirement set.
+    summary: Gets the domain of the parent page that called `Dialog.messageChild`<!-- -->.
+    remarks: '**Requirement set**: [DialogOrigin 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)<!-- -->. The property is `undefined` on clients that do not support this requirement set.'
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +64,7 @@ properties:
     uid: office!Office.DialogParentMessageReceivedEventArgs#type:member
     package: office!
     fullName: type
-    summary: >-
-      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration
-      value that identifies the kind of event that was raised.
+    summary: Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event that was raised.
     remarks: ''
 
     isPreview: false

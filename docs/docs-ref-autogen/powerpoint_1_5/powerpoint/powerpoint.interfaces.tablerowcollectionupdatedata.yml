@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.TableRowCollectionUpdateData
 uid: powerpoint!PowerPoint.Interfaces.TableRowCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableRowCollection` object, for use in
-  `tableRowCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,6 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.TableRowData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.TableRowData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.TableRowData:interface" />[]

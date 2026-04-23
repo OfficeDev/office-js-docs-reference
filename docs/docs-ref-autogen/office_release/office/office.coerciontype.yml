@@ -4,59 +4,42 @@ uid: office!Office.CoercionType:enum
 package: office!
 fullName: Office.CoercionType
 summary: Specifies how to coerce data returned or set by the invoked method.
-remarks: >-
-  Application and platform support for each `CoercionType` is specified in the
-  following requirement set descriptions.
+remarks: |-
+  Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.
+
+  - [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!-- -->, (when using `Office.CoercionType.Html`<!-- -->)
+
+  - [ImageCoercion 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (when using `Office.CoercionType.Image`<!-- -->)
+
+  - [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion) (when using `Office.CoercionType.Matrix`<!-- -->)
+
+  - [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion) (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+  - [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+
+  - [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion) (when using `Office.CoercionType.Table`<!-- -->)
+
+  - [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion) (when using `Office.CoercionType.Text`<!-- -->)
+
+  - [ImageCoercion 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12) (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
-  -
-  [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
-  -->, (when using `Office.CoercionType.Html`<!-- -->)
+  #### Used by
 
-
-  - [ImageCoercion
-  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets)
-  (when using `Office.CoercionType.Image`<!-- -->)
-
-
-  -
-  [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
-  (when using `Office.CoercionType.Matrix`<!-- -->)
-
-
-  -
-  [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
-  (when using `Office.CoercionType.Ooxml`<!-- -->)
-
-
-  -
-  [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
-
-
-  -
-  [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
-  (when using `Office.CoercionType.Table`<!-- -->)
-
-
-  -
-  [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
-  (when using `Office.CoercionType.Text`<!-- -->)
-
-
-  - [ImageCoercion
-  1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
-  (when using `Office.CoercionType.XmlSvg`<!-- -->)
-
-
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getselecteddataasync-member(1))
+  - [Office.Body](/javascript/api/outlook/office.body): [getAsync](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1)), [getTypeAsync](/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1))
+  - [Office.CoercionTypeOptions](/javascript/api/outlook/office.coerciontypeoptions): [coercionType](/javascript/api/outlook/office.coerciontypeoptions#outlook-office-coerciontypeoptions-coerciontype-member)
+  - [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody): [coercionType](/javascript/api/outlook/office.decryptedmessagebody#outlook-office-decryptedmessagebody-coerciontype-member)
+  - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(10))
+  - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [coercionType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-coerciontype-member)
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getselecteddataasync-member(1))
+  - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [coercionType](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-coerciontype-member)
+  - [Office.SetSelectedDataOptions](/javascript/api/office/office.setselecteddataoptions): [coercionType](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-coerciontype-member)
   #### Examples
 
-
   ```TypeScript
-
   // This function displays the currently selected text in the console.
-
   // It uses the Common APIs.
-
   function run() {
       Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -66,7 +49,6 @@ remarks: >-
           }
       });
   }
-
   ```
 
 isPreview: false
@@ -75,29 +57,21 @@ fields:
   - name: Html
     uid: office!Office.CoercionType.Html:member
     package: office!
-    summary: >-
+    summary: |-
       Return or set data as HTML.
 
-
-      **Note**: Only applies to data in add-ins for Word and Outlook add-ins
-      for Outlook (compose mode).
+      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     value: '"html"'
   - name: Image
     uid: office!Office.CoercionType.Image:member
     package: office!
-    summary: >-
-      Data is returned or set as an image stream. **Note**: Only applies to
-      data in Excel, Word, and PowerPoint.
+    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
     value: '"image"'
   - name: Matrix
     uid: office!Office.CoercionType.Matrix:member
     package: office!
-    summary: >-
-      Return or set data as tabular data with no headers. Data is returned or
-      set as an array of arrays containing one-dimensional runs of characters.
-      For example, three rows of string values in two columns would be:
-      \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
-
+    summary: |-
+      Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
 
       **Note**: Only applies to data in Excel and Word.
     value: '"matrix"'
@@ -112,40 +86,26 @@ fields:
   - name: SlideRange
     uid: office!Office.CoercionType.SlideRange:member
     package: office!
-    summary: >-
-      Return a JSON object that contains an array of the IDs, titles, and
-      indexes of the selected slides. For example,
-      `{"slides":[{"id":257,"title":"Slide
-      2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
-      two slides.
+    summary: |-
+      Return a JSON object that contains an array of the IDs, titles, and indexes of the selected slides. For example, `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
 
-
-      **Note**: Only applies to data in PowerPoint when calling the
-      [Document](xref:office!Office.Document:interface)<!--
-      -->.getSelectedDataAsync method to get the current slide or selected range
-      of slides.
+      **Note**: Only applies to data in PowerPoint when calling the [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedDataAsync method to get the current slide or selected range of slides.
     value: '"slideRange"'
   - name: Table
     uid: office!Office.CoercionType.Table:member
     package: office!
-    summary: >-
-      Return or set data as tabular data with optional headers. Data is returned
-      or set as an array of arrays with optional headers.
-
+    summary: |-
+      Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
 
       **Note**: Only applies to data in Excel and Word.
     value: '"table"'
   - name: Text
     uid: office!Office.CoercionType.Text:member
     package: office!
-    summary: >-
-      Return or set data as text (string). Data is returned or set as a
-      one-dimensional run of characters.
+    summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
     value: '"text"'
   - name: XmlSvg
     uid: office!Office.CoercionType.XmlSvg:member
     package: office!
-    summary: >-
-      Data is returned or set as XML data containing an SVG image. **Note**:
-      Only applies to data in Excel, Word, and PowerPoint.
+    summary: 'Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
     value: '"xmlSvg"'

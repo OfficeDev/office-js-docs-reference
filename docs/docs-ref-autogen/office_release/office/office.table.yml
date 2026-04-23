@@ -3,12 +3,11 @@ name: Office.Table
 uid: office!Office.Table:enum
 package: office!
 fullName: Office.Table
-summary: >-
-  Specifies enumerated values for the `cells` property in the cellFormat
-  parameter of [table formatting
-  methods](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!--
-  -->.
-remarks: ''
+summary: Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting methods](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Office.RangeFormatConfiguration](/javascript/api/office/office.rangeformatconfiguration): [cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)
 
 isPreview: false
 isDeprecated: false

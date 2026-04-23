@@ -4,15 +4,17 @@ uid: office!Office.FileType:enum
 package: office!
 fullName: Office.FileType
 summary: Specifies the format in which to return the document.
-remarks: >-
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.Document](/javascript/api/office/office.document): [getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-file-as-pdf.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-file-as-pdf.yaml
 
   Office.context.document.getFileAsync(Office.FileType.Pdf, (result) => {
     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -31,7 +33,6 @@ remarks: >-
       myFile.closeAsync();
     }
   });
-
   ```
 
 isPreview: false
@@ -40,19 +41,10 @@ fields:
   - name: Compressed
     uid: office!Office.FileType.Compressed:member
     package: office!
-    summary: >-
-      Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open
-      XML (OOXML) format as a byte array.
+    summary: |-
+      Returns the entire document (.pptx, .docx, .xlsx, or .xlsm) in Office Open XML (OOXML) format as a byte array.
 
-
-      Note: The .xslm file type is supported in Excel on Windows and Mac. It's
-      not supported in Excel on the web. In Excel on Windows, the file slices
-      from the `getFileAsync` method include the VBA signature files for .xslm
-      file types. The VBA signature files are vbaProjectSignature.bin,
-      vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. In Excel on
-      Mac, the file slices from the `getFileAsync` method don't include the VBA
-      signature files, because this platform doesn't support the VBA signature
-      feature.
+      Note: The .xslm file type is supported in Excel on Windows and Mac. It's not supported in Excel on the web. In Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. In Excel on Mac, the file slices from the `getFileAsync` method don't include the VBA signature files, because this platform doesn't support the VBA signature feature.
   - name: Pdf
     uid: office!Office.FileType.Pdf:member
     package: office!

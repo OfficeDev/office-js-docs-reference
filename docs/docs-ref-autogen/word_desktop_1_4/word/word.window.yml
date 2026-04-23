@@ -3,22 +3,19 @@ name: Word.Window
 uid: word!Word.Window:class
 package: word!
 fullName: Word.Window
-summary: >-
-  Represents the window that displays the document. A window can be split to
-  contain multiple reading panes.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents the window that displays the document. A window can be split to contain multiple reading panes.
+remarks: |-
+  [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)
+  - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [getFirst](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.windowcollection#word-word-windowcollection-items-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
 
   await Word.run(async (context) => {
     // Gets the first paragraph of each page.
@@ -64,7 +61,6 @@ remarks: >-
       console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
     }
   });
-
   ```
 
 isPreview: false
@@ -76,19 +72,13 @@ properties:
     package: word!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets the pages enclosing the viewport.
@@ -125,7 +115,6 @@ properties:
           console.log(`Page index: ${pagesIndexes[i].index}`);
         }
       });
-
       ```
 
     isPreview: false
@@ -139,9 +128,7 @@ properties:
     package: word!
     fullName: areRulersDisplayed
     summary: Specifies whether rulers are displayed for the window or pane.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -153,12 +140,8 @@ properties:
     uid: word!Word.Window#areScreenTipsDisplayed:member
     package: word!
     fullName: areScreenTipsDisplayed
-    summary: >-
-      Specifies whether comments, footnotes, endnotes, and hyperlinks are
-      displayed as tips.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -170,12 +153,8 @@ properties:
     uid: word!Word.Window#areThumbnailsDisplayed:member
     package: word!
     fullName: areThumbnailsDisplayed
-    summary: >-
-      Specifies whether thumbnail images of the pages in a document are
-      displayed along the left side of the Microsoft Word document window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -187,12 +166,8 @@ properties:
     uid: word!Word.Window#caption:member
     package: word!
     fullName: caption
-    summary: >-
-      Specifies the caption text for the window that is displayed in the title
-      bar of the document or application window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the caption text for the window that is displayed in the title bar of the document or application window.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -204,9 +179,7 @@ properties:
     uid: word!Word.Window#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -220,9 +193,7 @@ properties:
     package: word!
     fullName: height
     summary: Specifies the height of the window (in points).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -234,12 +205,8 @@ properties:
     uid: word!Word.Window#horizontalPercentScrolled:member
     package: word!
     fullName: horizontalPercentScrolled
-    summary: >-
-      Specifies the horizontal scroll position as a percentage of the document
-      width.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the horizontal scroll position as a percentage of the document width.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -251,33 +218,21 @@ properties:
     uid: word!Word.Window#imeMode:member
     package: word!
     fullName: imeMode
-    summary: >-
-      Specifies the default start-up mode for the Japanese Input Method Editor
-      (IME).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the default start-up mode for the Japanese Input Method Editor (IME).
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        imeMode: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" |
-        "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" |
-        "Hangul";
+      content: 'imeMode: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul";'
       return:
-        type: >-
-          <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" |
-          "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" |
-          "HangulFull" | "Hangul"
+        type: <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul"
   - name: index
     uid: word!Word.Window#index:member
     package: word!
     fullName: index
     summary: Gets the position of an item in a collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -290,9 +245,7 @@ properties:
     package: word!
     fullName: isActive
     summary: Specifies whether the window is active.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -305,9 +258,7 @@ properties:
     package: word!
     fullName: isDocumentMapVisible
     summary: Specifies whether the document map is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -319,12 +270,8 @@ properties:
     uid: word!Word.Window#isEnvelopeVisible:member
     package: word!
     fullName: isEnvelopeVisible
-    summary: >-
-      Specifies whether the email message header is visible in the document
-      window. The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the email message header is visible in the document window. The default value is `false`<!-- -->.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -337,9 +284,7 @@ properties:
     package: word!
     fullName: isHorizontalScrollBarDisplayed
     summary: Specifies whether a horizontal scroll bar is displayed for the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -351,12 +296,8 @@ properties:
     uid: word!Word.Window#isLeftScrollBarDisplayed:member
     package: word!
     fullName: isLeftScrollBarDisplayed
-    summary: >-
-      Specifies whether the vertical scroll bar appears on the left side of the
-      document window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the vertical scroll bar appears on the left side of the document window.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -368,12 +309,8 @@ properties:
     uid: word!Word.Window#isRightRulerDisplayed:member
     package: word!
     fullName: isRightRulerDisplayed
-    summary: >-
-      Specifies whether the vertical ruler appears on the right side of the
-      document window in print layout view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -386,9 +323,7 @@ properties:
     package: word!
     fullName: isSplit
     summary: Specifies whether the window is split into multiple panes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -401,9 +336,7 @@ properties:
     package: word!
     fullName: isVerticalRulerDisplayed
     summary: Specifies whether a vertical ruler is displayed for the window or pane.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -416,9 +349,7 @@ properties:
     package: word!
     fullName: isVerticalScrollBarDisplayed
     summary: Specifies whether a vertical scroll bar is displayed for the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -431,9 +362,7 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the window is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -446,9 +375,7 @@ properties:
     package: word!
     fullName: left
     summary: Specifies the horizontal position of the window, measured in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -461,9 +388,7 @@ properties:
     package: word!
     fullName: next
     summary: Gets the next document window in the collection of open document windows.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -476,19 +401,13 @@ properties:
     package: word!
     fullName: panes
     summary: Gets the collection of panes in the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets all the panes in the active document window.
@@ -502,7 +421,6 @@ properties:
         const panes: Word.PaneCollection = activeWindow.panes;
         console.log(`Number of panes in the current document window: ${panes.items.length}`);
       });
-
       ```
 
     isPreview: false
@@ -516,9 +434,7 @@ properties:
     package: word!
     fullName: previous
     summary: Gets the previous document window in the collection open document windows.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -530,31 +446,21 @@ properties:
     uid: word!Word.Window#showSourceDocuments:member
     package: word!
     fullName: showSourceDocuments
-    summary: >-
-      Specifies how Microsoft Word displays source documents after a compare and
-      merge process.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies how Microsoft Word displays source documents after a compare and merge process.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        showSourceDocuments: Word.ShowSourceDocuments | "None" | "Original" |
-        "Revised" | "Both";
+      content: 'showSourceDocuments: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";'
       return:
-        type: >-
-          <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" |
-          "Original" | "Revised" | "Both"
+        type: <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" | "Original" | "Revised" | "Both"
   - name: splitVertical
     uid: word!Word.Window#splitVertical:member
     package: word!
     fullName: splitVertical
     summary: Specifies the vertical split percentage for the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -567,9 +473,7 @@ properties:
     package: word!
     fullName: styleAreaWidth
     summary: Specifies the width of the style area in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -582,9 +486,7 @@ properties:
     package: word!
     fullName: top
     summary: Specifies the vertical position of the document window, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -597,9 +499,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the window type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -611,12 +511,8 @@ properties:
     uid: word!Word.Window#usableHeight:member
     package: word!
     fullName: usableHeight
-    summary: >-
-      Gets the height (in points) of the active working area in the document
-      window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the height (in points) of the active working area in the document window.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -628,12 +524,8 @@ properties:
     uid: word!Word.Window#usableWidth:member
     package: word!
     fullName: usableWidth
-    summary: >-
-      Gets the width (in points) of the active working area in the document
-      window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the width (in points) of the active working area in the document window.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -645,12 +537,8 @@ properties:
     uid: word!Word.Window#verticalPercentScrolled:member
     package: word!
     fullName: verticalPercentScrolled
-    summary: >-
-      Specifies the vertical scroll position as a percentage of the document
-      length.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the vertical scroll position as a percentage of the document length.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -663,9 +551,7 @@ properties:
     package: word!
     fullName: view
     summary: Gets the `View` object that represents the view for the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -678,9 +564,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width of the document window, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -693,9 +577,7 @@ properties:
     package: word!
     fullName: windowNumber
     summary: Gets an integer that represents the position of the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -709,9 +591,7 @@ methods:
     package: word!
     fullName: activate()
     summary: Activates the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -725,19 +605,13 @@ methods:
     package: word!
     fullName: close(options)
     summary: Closes the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
 
       await Word.run(async (context) => {
         // Closes the document window, prompting to save if this is a new document.
@@ -746,7 +620,6 @@ methods:
         console.log("About to close the document window...");
         window.close(closeOptions);
       });
-
       ```
 
     isPreview: false
@@ -755,9 +628,7 @@ methods:
       content: 'close(options?: Word.WindowCloseOptions): void;'
       parameters:
         - id: options
-          description: >-
-            Optional. The options that define whether to save changes before
-            closing and whether to route the document.
+          description: Optional. The options that define whether to save changes before closing and whether to route the document.
           type: <xref uid="word!Word.WindowCloseOptions:interface" />
       return:
         type: void
@@ -767,9 +638,7 @@ methods:
     package: word!
     fullName: largeScroll(options)
     summary: Scrolls the window by the specified number of screens.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -777,10 +646,7 @@ methods:
       content: 'largeScroll(options?: Word.WindowScrollOptions): void;'
       parameters:
         - id: options
-          description: >-
-            Optional. The options for scrolling the window by the specified
-            number of screens. If no options are specified, the window is
-            scrolled down one screen.
+          description: Optional. The options for scrolling the window by the specified number of screens. If no options are specified, the window is scrolled down one screen.
           type: <xref uid="word!Word.WindowScrollOptions:interface" />
       return:
         type: void
@@ -789,9 +655,7 @@ methods:
     uid: word!Word.Window#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -809,9 +673,7 @@ methods:
     uid: word!Word.Window#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -820,9 +682,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Window;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.Window:class" />
@@ -831,9 +691,7 @@ methods:
     uid: word!Word.Window#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -846,11 +704,7 @@ methods:
                 }): Word.Window;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -864,9 +718,7 @@ methods:
     package: word!
     fullName: pageScroll(options)
     summary: Scrolls through the window page by page.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -883,29 +735,19 @@ methods:
     uid: word!Word.Window#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.WindowUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.WindowUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.WindowUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -914,9 +756,7 @@ methods:
     uid: word!Word.Window#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -935,9 +775,7 @@ methods:
     package: word!
     fullName: setFocus()
     summary: Sets the focus of the document window to the body of an email message.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -950,13 +788,8 @@ methods:
     uid: word!Word.Window#smallScroll:member(1)
     package: word!
     fullName: smallScroll(options)
-    summary: >-
-      Scrolls the window by the specified number of lines. A "line" corresponds
-      to the distance scrolled by clicking the scroll arrow on the scroll bar
-      once.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Scrolls the window by the specified number of lines. A "line" corresponds to the distance scrolled by clicking the scroll arrow on the scroll bar once.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -964,10 +797,7 @@ methods:
       content: 'smallScroll(options?: Word.WindowScrollOptions): void;'
       parameters:
         - id: options
-          description: >-
-            Optional. The options for scrolling the window by the specified
-            number of lines. If no options are specified, the window is scrolled
-            down by one line.
+          description: Optional. The options for scrolling the window by the specified number of lines. If no options are specified, the window is scrolled down by one line.
           type: <xref uid="word!Word.WindowScrollOptions:interface" />
       return:
         type: void
@@ -977,9 +807,7 @@ methods:
     package: word!
     fullName: toggleRibbon()
     summary: Shows or hides the ribbon.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -992,14 +820,7 @@ methods:
     uid: word!Word.Window#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.Window` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.WindowData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Window` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WindowData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -1013,16 +834,7 @@ methods:
     uid: word!Word.Window#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -1036,14 +848,7 @@ methods:
     uid: word!Word.Window#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

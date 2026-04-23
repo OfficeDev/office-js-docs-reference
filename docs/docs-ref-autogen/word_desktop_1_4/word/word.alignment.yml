@@ -4,19 +4,24 @@ uid: word!Word.Alignment:enum
 package: word!
 fullName: Word.Alignment
 summary: Represents the horizontal alignment of text.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.List](/javascript/api/word/word.list): [setLevelAlignment](/javascript/api/word/word.list#word-word-list-setlevelalignment-member(1))
+  - [Word.ListLevel](/javascript/api/word/word.listlevel): [alignment](/javascript/api/word/word.listlevel#word-word-listlevel-alignment-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [alignment](/javascript/api/word/word.paragraph#word-word-paragraph-alignment-member)
+  - [Word.ParagraphFormat](/javascript/api/word/word.paragraphformat): [alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)
+  - [Word.Table](/javascript/api/word/word.table): [alignment](/javascript/api/word/word.table#word-word-table-alignment-member), [horizontalAlignment](/javascript/api/word/word.table#word-word-table-horizontalalignment-member)
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [horizontalAlignment](/javascript/api/word/word.tablecell#word-word-tablecell-horizontalalignment-member)
+  - [Word.TableRow](/javascript/api/word/word.tablerow): [horizontalAlignment](/javascript/api/word/word.tablerow#word-word-tablerow-horizontalalignment-member)
+  - [Word.TableStyle](/javascript/api/word/word.tablestyle): [alignment](/javascript/api/word/word.tablestyle#word-word-tablestyle-alignment-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
@@ -34,7 +39,6 @@ remarks: >-
     body.paragraphs.getFirst().alignment = "Left";
     body.paragraphs.getLast().alignment = Word.Alignment.left;
   });
-
   ```
 
 isPreview: false
@@ -43,60 +47,48 @@ fields:
   - name: centered
     uid: word!Word.Alignment.centered:member
     package: word!
-    summary: >-
+    summary: |-
       Alignment to the center.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Centered"'
   - name: justified
     uid: word!Word.Alignment.justified:member
     package: word!
-    summary: >-
+    summary: |-
       Fully justified alignment.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Justified"'
   - name: left
     uid: word!Word.Alignment.left:member
     package: word!
-    summary: >-
+    summary: |-
       Alignment to the left.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Left"'
   - name: mixed
     uid: word!Word.Alignment.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Mixed horizontal alignment.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Mixed"'
   - name: right
     uid: word!Word.Alignment.right:member
     package: word!
-    summary: >-
+    summary: |-
       Alignment to the right.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Right"'
   - name: unknown
     uid: word!Word.Alignment.unknown:member
     package: word!
-    summary: >-
+    summary: |-
       Unknown alignment.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Unknown"'

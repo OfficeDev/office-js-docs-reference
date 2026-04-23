@@ -4,10 +4,13 @@ uid: powerpoint!PowerPoint.CustomXmlPart:class
 package: powerpoint!
 fullName: PowerPoint.CustomXmlPart
 summary: Represents a custom XML part object.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection): [add](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-add-member(1)), [getItem](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-items-member)
+  - [PowerPoint.CustomXmlPartScopedCollection](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection): [getItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getitemornullobject-member(1)), [getOnlyItem](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitem-member(1)), [getOnlyItemOrNullObject](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-getonlyitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-items-member)
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +20,7 @@ properties:
     uid: powerpoint!PowerPoint.CustomXmlPart#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -33,10 +34,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: The ID of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +47,7 @@ properties:
     package: powerpoint!
     fullName: namespaceUri
     summary: The namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +61,7 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -83,10 +75,7 @@ methods:
     package: powerpoint!
     fullName: getXml()
     summary: Gets the XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -99,24 +88,17 @@ methods:
     uid: powerpoint!PowerPoint.CustomXmlPart#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.CustomXmlPartLoadOptions):
-        PowerPoint.CustomXmlPart;
+      content: 'load(options?: PowerPoint.Interfaces.CustomXmlPartLoadOptions): PowerPoint.CustomXmlPart;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />
         description: ''
@@ -124,9 +106,7 @@ methods:
     uid: powerpoint!PowerPoint.CustomXmlPart#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -135,9 +115,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.CustomXmlPart;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.CustomXmlPart:class" />
@@ -146,9 +124,7 @@ methods:
     uid: powerpoint!PowerPoint.CustomXmlPart#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -161,11 +137,7 @@ methods:
                 }): PowerPoint.CustomXmlPart;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -179,10 +151,7 @@ methods:
     package: powerpoint!
     fullName: setXml(xml)
     summary: Sets the XML content for the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -199,15 +168,7 @@ methods:
     uid: powerpoint!PowerPoint.CustomXmlPart#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `PowerPoint.CustomXmlPart` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -215,8 +176,6 @@ methods:
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.CustomXmlPartData;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

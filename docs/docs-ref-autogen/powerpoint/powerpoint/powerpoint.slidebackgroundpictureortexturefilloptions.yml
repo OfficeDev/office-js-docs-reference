@@ -3,30 +3,21 @@ name: PowerPoint.SlideBackgroundPictureOrTextureFillOptions
 uid: powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundPictureOrTextureFillOptions
-summary: >-
-  Represents
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  picture or texture fill options.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) picture or texture fill options.
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+  #### Used by
+
+  - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [setPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setpictureortexturefill-member(1))
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
-
-  // Sets the background of the first selected slide to a picture fill at 60%
-  transparency.
-
+  // Sets the background of the first selected slide to a picture fill at 60% transparency.
   // Uses a sample image from a Base64-encoded string.
-
   await PowerPoint.run(async (context) => {
     const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
     slide.background.fill.setPictureOrTextureFill({
@@ -37,7 +28,6 @@ remarks: >-
 
     console.log("Background set to picture fill (60% transparent).");
   });
-
   ```
 
 isPreview: false
@@ -45,15 +35,11 @@ isDeprecated: false
 type: interface
 properties:
   - name: imageBase64
-    uid: >-
-      powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#imageBase64:member
+    uid: powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#imageBase64:member
     package: powerpoint!
     fullName: imageBase64
     summary: If provided, specifies the Base64-encoded image data for the fill.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -62,17 +48,11 @@ properties:
       return:
         type: string
   - name: transparency
-    uid: >-
-      powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#transparency:member
+    uid: powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: >-
-      If provided, specifies the transparency percentage of the fill as a value
-      from 0.0 (opaque) through 1.0 (clear).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: If provided, specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

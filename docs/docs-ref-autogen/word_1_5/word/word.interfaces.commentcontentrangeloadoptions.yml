@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.CommentContentRangeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CommentContentRangeLoadOptions
 summary: Represents a content range within a comment.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [load](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +33,7 @@ properties:
     package: word!
     fullName: bold
     summary: Specifies whether the comment text is bold.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,13 +45,8 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets the first hyperlink in the range, or sets a hyperlink on the range.
-      All hyperlinks in the range are deleted when you set a new hyperlink on
-      the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +59,7 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +72,7 @@ properties:
     package: word!
     fullName: italic
     summary: Specifies whether the comment text is italicized.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +85,7 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +98,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the comment range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -125,12 +110,8 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeLoadOptions#underline:member
     package: word!
     fullName: underline
-    summary: >-
-      Specifies the comment text's underline type. `none` if the comment text
-      isn't underlined.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the comment text's underline type. `none` if the comment text isn't underlined.
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

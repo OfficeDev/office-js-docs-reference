@@ -4,19 +4,17 @@ uid: excel!Excel.SortOrientation:enum
 package: excel!
 fullName: Excel.SortOrientation
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.RangeSort](/javascript/api/excel/excel.rangesort): [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
 
   async function sortLeftToRight(criteria: string) {
       await Excel.run(async (context) => {
@@ -42,7 +40,6 @@ remarks: >-
           await context.sync();
       });
   }
-
   ```
 
 isPreview: false
@@ -51,14 +48,10 @@ fields:
   - name: columns
     uid: excel!Excel.SortOrientation.columns:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Columns"'
   - name: rows
     uid: excel!Excel.SortOrientation.rows:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Rows"'

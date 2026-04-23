@@ -3,10 +3,11 @@ name: OneNote.Interfaces.ImageUpdateData
 uid: onenote!OneNote.Interfaces.ImageUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ImageUpdateData
-summary: >-
-  An interface for updating data on the `Image` object, for use in `image.set({
-  ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.Image](/javascript/api/onenote/onenote.image): [set](/javascript/api/onenote/onenote.image#onenote-onenote-image-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: onenote!
     fullName: description
     summary: Gets or sets the description of the Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: onenote!
     fullName: height
     summary: Gets or sets the height of the Image layout.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +44,7 @@ properties:
     package: onenote!
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +57,7 @@ properties:
     package: onenote!
     fullName: width
     summary: Gets or sets the width of the Image layout.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

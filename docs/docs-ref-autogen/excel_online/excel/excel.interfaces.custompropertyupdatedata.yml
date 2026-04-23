@@ -3,10 +3,11 @@ name: Excel.Interfaces.CustomPropertyUpdateData
 uid: excel!Excel.Interfaces.CustomPropertyUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.CustomPropertyUpdateData
-summary: >-
-  An interface for updating data on the `CustomProperty` object, for use in
-  `customProperty.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.CustomProperty](/javascript/api/excel/excel.customproperty): [set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.CustomPropertyUpdateData#value:member
     package: excel!
     fullName: value
-    summary: >-
-      The value of the custom property. The value is limited to 255 characters
-      outside of Excel on the web (larger values are automatically trimmed to
-      255 characters on other platforms).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

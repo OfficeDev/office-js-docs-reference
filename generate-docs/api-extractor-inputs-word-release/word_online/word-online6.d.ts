@@ -3580,7 +3580,13 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly contentControls: Word.ContentControlCollection;
-        
+        /**
+         * Gets the custom XML parts in the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.4]
+         */
+        readonly customXmlParts: Word.CustomXmlPartCollection;
         /**
          * Gets the properties of the document.
          *
@@ -3595,7 +3601,13 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly sections: Word.SectionCollection;
-        
+        /**
+         * Gets the add-in's settings in the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.4]
+         */
+        readonly settings: Word.SettingCollection;
         /**
          * Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
          *
@@ -3613,9 +3625,33 @@ export declare namespace Word {
         set(properties: Word.DocumentCreated): void;
         
         
-        
-        
-        
+        /**
+         * Deletes a bookmark, if it exists, from the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.4]
+         *
+         * @param name - The case-insensitive bookmark name.
+         */
+        deleteBookmark(name: string): void;
+        /**
+         * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.4]
+         *
+         * @param name - The case-insensitive bookmark name.
+         */
+        getBookmarkRange(name: string): Word.Range;
+        /**
+         * Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.4]
+         *
+         * @param name - The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an underscore character. Names can't be longer than 40 characters.
+         */
+        getBookmarkRangeOrNullObject(name: string): Word.Range;
         
         
         
@@ -12855,6 +12891,7 @@ export declare namespace Word {
     
     
     
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -16007,7 +16044,13 @@ export declare namespace Word {
             * [Api set: WordApiHiddenDocument 1.3]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
-            
+            /**
+            * Gets the custom XML parts in the document.
+            *
+            * @remarks
+            * [Api set: WordApiHiddenDocument 1.4]
+            */
+            customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
             * Gets the properties of the document.
             *
@@ -16022,7 +16065,13 @@ export declare namespace Word {
             * [Api set: WordApiHiddenDocument 1.3]
             */
             sections?: Word.Interfaces.SectionData[];
-            
+            /**
+            * Gets the add-in's settings in the document.
+            *
+            * @remarks
+            * [Api set: WordApiHiddenDocument 1.4]
+            */
+            settings?: Word.Interfaces.SettingData[];
             /**
              * Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
              *

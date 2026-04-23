@@ -4,29 +4,22 @@ uid: word!Word.InsertLocation:enum
 package: word!
 fullName: Word.InsertLocation
 summary: Represents the insertion location type.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  To be used with an API call, such as `obj.insertSomething(newStuff, location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new content will be outside of the modified object. If the location is `start` or `end`<!-- -->, the new content will be included as part of the modified object.
 
 
-  To be used with an API call, such as `obj.insertSomething(newStuff,
-  location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new
-  content will be outside of the modified object. If the location is `start` or
-  `end`<!-- -->, the new content will be included as part of the modified
-  object.
+  #### Used by
 
-
+  - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [insertText](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1))
+  - [Word.Range](/javascript/api/word/word.range): [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1)), [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1)), [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1)), [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
   // Inserts a section without an associated page break.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
@@ -35,7 +28,6 @@ remarks: >-
 
     console.log("Inserted section without an associated page break.");
   });
-
   ```
 
 isPreview: false
@@ -44,50 +36,40 @@ fields:
   - name: after
     uid: word!Word.InsertLocation.after:member
     package: word!
-    summary: >-
+    summary: |-
       Add content after the contents of the calling object.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"After"'
   - name: before
     uid: word!Word.InsertLocation.before:member
     package: word!
-    summary: >-
+    summary: |-
       Add content before the contents of the calling object.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Before"'
   - name: end
     uid: word!Word.InsertLocation.end:member
     package: word!
-    summary: >-
+    summary: |-
       Append content to the contents of the calling object.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"End"'
   - name: replace
     uid: word!Word.InsertLocation.replace:member
     package: word!
-    summary: >-
+    summary: |-
       Replace the contents of the current object.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Replace"'
   - name: start
     uid: word!Word.InsertLocation.start:member
     package: word!
-    summary: >-
+    summary: |-
       Prepend content to the contents of the calling object.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Start"'

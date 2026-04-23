@@ -4,7 +4,28 @@ uid: office!OfficeExtension.EventHandlers:class
 package: office!
 fullName: OfficeExtension.EventHandlers
 summary: ''
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [onDataChanged](/javascript/api/excel/excel.binding#excel-excel-binding-ondatachanged-member), [onSelectionChanged](/javascript/api/excel/excel.binding#excel-excel-binding-onselectionchanged-member)
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [onActivated](/javascript/api/excel/excel.chart#excel-excel-chart-onactivated-member), [onDeactivated](/javascript/api/excel/excel.chart#excel-excel-chart-ondeactivated-member)
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [onActivated](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-onactivated-member), [onAdded](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-onadded-member), [onDeactivated](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-ondeactivated-member), [onDeleted](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-ondeleted-member)
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [onAdded](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-onadded-member), [onChanged](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-onchanged-member), [onDeleted](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-ondeleted-member)
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitydatadomainadded-member), [onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member), [onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshmodechanged-member)
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [onSettingsChanged](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-onsettingschanged-member)
+  - [Excel.Shape](/javascript/api/excel/excel.shape): [onActivated](/javascript/api/excel/excel.shape#excel-excel-shape-onactivated-member), [onDeactivated](/javascript/api/excel/excel.shape#excel-excel-shape-ondeactivated-member)
+  - [Excel.Table](/javascript/api/excel/excel.table): [onChanged](/javascript/api/excel/excel.table#excel-excel-table-onchanged-member), [onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member), [onSelectionChanged](/javascript/api/excel/excel.table#excel-excel-table-onselectionchanged-member)
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onAdded](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onadded-member), [onChanged](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onchanged-member), [onDeleted](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-ondeleted-member), [onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [onActivated](/javascript/api/excel/excel.workbook#excel-excel-workbook-onactivated-member), [onAutoSaveSettingChanged](/javascript/api/excel/excel.workbook#excel-excel-workbook-onautosavesettingchanged-member), [onSelectionChanged](/javascript/api/excel/excel.workbook#excel-excel-workbook-onselectionchanged-member)
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onActivated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onactivated-member), [onCalculated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculated-member), [onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member), [onChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onchanged-member), [onColumnSorted](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncolumnsorted-member), [onDeactivated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-ondeactivated-member), [onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member), [onFormatChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformatchanged-member), [onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member), [onNameChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onnamechanged-member), [onProtectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onprotectionchanged-member), [onRowHiddenChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowhiddenchanged-member), [onRowSorted](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onrowsorted-member), [onSelectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onselectionchanged-member), [onSingleClicked](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onsingleclicked-member), [onVisibilityChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onvisibilitychanged-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onActivated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onactivated-member), [onAdded](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onadded-member), [onCalculated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculated-member), [onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member), [onChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onchanged-member), [onColumnSorted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncolumnsorted-member), [onDeactivated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-ondeactivated-member), [onDeleted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-ondeleted-member), [onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member), [onFormatChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformatchanged-member), [onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformulachanged-member), [onMoved](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onmoved-member), [onNameChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onnamechanged-member), [onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onprotectionchanged-member), [onRowHiddenChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowhiddenchanged-member), [onRowSorted](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onrowsorted-member), [onSelectionChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onselectionchanged-member), [onSingleClicked](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onsingleclicked-member), [onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onvisibilitychanged-member)
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [onSlideSelectionChanged](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-onslideselectionchanged-member)
+  - [Visio.Document](/javascript/api/visio/visio.document): [onDataRefreshComplete](/javascript/api/visio/visio.document#visio-visio-document-ondatarefreshcomplete-member), [onDocumentError](/javascript/api/visio/visio.document#visio-visio-document-ondocumenterror-member), [onDocumentLoadComplete](/javascript/api/visio/visio.document#visio-visio-document-ondocumentloadcomplete-member), [onPageLoadComplete](/javascript/api/visio/visio.document#visio-visio-document-onpageloadcomplete-member), [onSelectionChanged](/javascript/api/visio/visio.document#visio-visio-document-onselectionchanged-member), [onShapeMouseEnter](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseenter-member), [onShapeMouseLeave](/javascript/api/visio/visio.document#visio-visio-document-onshapemouseleave-member), [onTaskPaneStateChanged](/javascript/api/visio/visio.document#visio-visio-document-ontaskpanestatechanged-member)
+  - [Word.Body](/javascript/api/word/word.body): [onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member), [onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member), [onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)
+  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member), [onDataChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondatachanged-member), [onDeleted](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondeleted-member), [onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member), [onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member), [onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)
+  - [Word.Document](/javascript/api/word/word.document): [onAnnotationClicked](/javascript/api/word/word.document#word-word-document-onannotationclicked-member), [onAnnotationHovered](/javascript/api/word/word.document#word-word-document-onannotationhovered-member), [onAnnotationInserted](/javascript/api/word/word.document#word-word-document-onannotationinserted-member), [onAnnotationPopupAction](/javascript/api/word/word.document#word-word-document-onannotationpopupaction-member), [onAnnotationRemoved](/javascript/api/word/word.document#word-word-document-onannotationremoved-member), [onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member), [onParagraphAdded](/javascript/api/word/word.document#word-word-document-onparagraphadded-member), [onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member), [onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)
+  - [Word.Paragraph](/javascript/api/word/word.paragraph): [onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member), [onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member), [onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)
+  - [Word.Range](/javascript/api/word/word.range): [onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)
 
 isPreview: false
 isDeprecated: false
@@ -20,9 +41,7 @@ constructors:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        constructor(context: ClientRequestContext, parentObject: ClientObject,
-        name: string, eventInfo: EventInfo<T>);
+      content: 'constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);'
       parameters:
         - id: context
           description: ''
@@ -53,25 +72,16 @@ methods:
           description: A promise-based function that takes in any relevant event arguments.
           type: '(args: T) =&gt; Promise&lt;any&gt;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlerResult:class"
-          />&lt;T&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlerResult:class" />&lt;T&gt;
         description: ''
   - name: remove(handler)
     uid: office!OfficeExtension.EventHandlers#remove:member(1)
     package: office!
     fullName: remove(handler)
-    summary: >-
-      Removes the specified function from the event handler list so that it will
-      not be called on subsequent events.
+    summary: |-
+      Removes the specified function from the event handler list so that it will not be called on subsequent events.
 
-
-      **Note**: The same
-      [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class)
-      object that the handler was added in must be used when removing the
-      handler. More information can be found in [Remove an event
-      handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
-      -->.
+      **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the handler was added in must be used when removing the handler. More information can be found in [Remove an event handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!-- -->.
     remarks: ''
 
     isPreview: false
@@ -80,9 +90,7 @@ methods:
       content: 'remove(handler: (args: T) => Promise<any>): void;'
       parameters:
         - id: handler
-          description: >-
-            A reference to a function previously provided to the `add` method as
-            an event handler.
+          description: A reference to a function previously provided to the `add` method as an event handler.
           type: '(args: T) =&gt; Promise&lt;any&gt;'
       return:
         type: void

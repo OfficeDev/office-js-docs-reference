@@ -3,9 +3,7 @@ name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
 uid: visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemCollectionUpdateData
-summary: >-
-  An interface for updating data on the ShapeDataItemCollection object, for use
-  in `shapeDataItemCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the ShapeDataItemCollection object, for use in `shapeDataItemCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -3,10 +3,11 @@ name: Word.Interfaces.RangeScopedCollectionData
 uid: word!Word.Interfaces.RangeScopedCollectionData:interface
 package: word!
 fullName: Word.Interfaces.RangeScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `rangeScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `rangeScopedCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.RangeScopedCollection](/javascript/api/word/word.rangescopedcollection): [toJSON](/javascript/api/word/word.rangescopedcollection#word-word-rangescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

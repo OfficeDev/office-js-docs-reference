@@ -4,26 +4,25 @@ uid: outlook!Office.AttachmentContent:interface
 package: outlook!
 fullName: Office.AttachmentContent
 summary: Represents the content of an attachment on a message or appointment item.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
-
+  - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentcontentasync-member(1))
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getattachmentcontentasync-member(1))
+  - [Office.LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose): [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-getattachmentcontentasync-member(1))
+  - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getattachmentcontentasync-member(1))
+  - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
   Office.context.mailbox.item.getAttachmentsAsync((result) => {
       if (result.value.length > 0) {
           for (let i = 0 ; i < result.value.length ; i++) {
@@ -31,7 +30,6 @@ remarks: >-
           }
       }
   });
-
 
   function handleAttachmentsCallback(result) {
       // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
@@ -59,7 +57,6 @@ remarks: >-
       // Log the content of the attachments as a string.
       console.log(result.value.content);
   }
-
   ```
 
 isPreview: false
@@ -83,28 +80,16 @@ properties:
     uid: outlook!Office.AttachmentContent#format:member
     package: outlook!
     fullName: format
-    summary: >-
+    summary: |-
       The string format to use for an attachment's content.
-
 
       For file attachments, the formatting is a Base64-encoded string.
 
+      For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting is a string representing an .eml formatted file.
 
-      For item attachments that represent messages and were attached by
-      drag-and-drop or "Attach Item", the formatting is a string representing an
-      .eml formatted file.
+      For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the formatting is a string representing an .icalendar file.
 
-
-      For item attachments that represent calendar items and were attached by
-      drag-and-drop or "Attach Item", the formatting is a string representing an
-      .icalendar file.
-
-
-      **Important**: If a message or calendar item was attached by
-      drag-and-drop in Outlook on the web or [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, then `getAttachmentContentAsync` throws an error.
-
+      **Important**: If a message or calendar item was attached by drag-and-drop in Outlook on the web or [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, then `getAttachmentContentAsync` throws an error.
 
       For cloud attachments, the formatting is a URL string.
     remarks: ''
@@ -114,6 +99,4 @@ properties:
     syntax:
       content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
-        type: >-
-          <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
-          /> | string
+        type: <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum" /> | string

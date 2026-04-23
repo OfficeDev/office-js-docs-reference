@@ -3,10 +3,11 @@ name: OneNote.Interfaces.ApplicationData
 uid: onenote!OneNote.Interfaces.ApplicationData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ApplicationData
-summary: >-
-  An interface describing the data returned by calling
-  `application.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [toJSON](/javascript/api/onenote/onenote.application#onenote-onenote-application-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,14 +17,8 @@ properties:
     uid: onenote!OneNote.Interfaces.ApplicationData#notebooks:member
     package: onenote!
     fullName: notebooks
-    summary: >-
-      Gets the collection of notebooks that are open in the OneNote application
-      instance. In OneNote Online, only one notebook at a time is open in the
-      application instance. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

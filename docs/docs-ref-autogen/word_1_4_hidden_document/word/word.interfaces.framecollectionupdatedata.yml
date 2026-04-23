@@ -3,9 +3,7 @@ name: Word.Interfaces.FrameCollectionUpdateData
 uid: word!Word.Interfaces.FrameCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.FrameCollectionUpdateData
-summary: >-
-  An interface for updating data on the `FrameCollection` object, for use in
-  `frameCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `FrameCollection` object, for use in `frameCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -4,24 +4,21 @@ uid: office!Office.FileProperties:interface
 package: office!
 fullName: Office.FileProperties
 summary: ''
-remarks: >-
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Office.Document](/javascript/api/office/office.document): [getFilePropertiesAsync](/javascript/api/office/office.document#office-office-document-getfilepropertiesasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // To read the URL of the current file, you need to write a callback function
-  that returns the URL.
-
+  // To read the URL of the current file, you need to write a callback function that returns the URL.
   // The following example shows how to:
-
-  // 1. Pass an anonymous callback function that returns the value of the file's
-  URL
-
+  // 1. Pass an anonymous callback function that returns the value of the file's URL
   //    to the callback parameter of the getFilePropertiesAsync method.
-
   // 2. Display the value on the add-in's page.
-
   function getFileUrl() {
       // Get the URL of the current file.
       Office.context.document.getFilePropertiesAsync(function (asyncResult) {
@@ -35,7 +32,6 @@ remarks: >-
           }
       });
   }
-
   ```
 
 isPreview: false

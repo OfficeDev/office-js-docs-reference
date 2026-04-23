@@ -4,19 +4,17 @@ uid: office!Office.File:interface
 package: office!
 fullName: Office.File
 summary: Represents the document file associated with an Office Add-in.
-remarks: >-
-  Access the File object with the AsyncResult.value property in the callback
-  function passed to the Document.getFileAsync method.
+remarks: |-
+  Access the File object with the AsyncResult.value property in the callback function passed to the Document.getFileAsync method.
 
 
+  #### Used by
+
+  - [Office.Document](/javascript/api/office/office.document): [getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
 
   function getCurrentFile() {
       const sliceSize = 4096; /*Bytes*/
@@ -41,7 +39,6 @@ remarks: >-
           // Do something with the file contents.
       }
   }
-
   ```
 
 isPreview: false
@@ -80,30 +77,14 @@ methods:
     package: office!
     fullName: closeAsync(callback)
     summary: Closes the document file.
-    remarks: >-
-      **Requirement set**:
-      [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
+    remarks: |-
+      **Requirement set**: [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
+      No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync method to close the file when you are finished working with it.
 
-      No more than two documents are allowed to be in memory; otherwise the
-      Document.getFileAsync operation will fail. Use the File.closeAsync method
-      to close the file when you are finished working with it.
+      In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following information.
 
-
-      In the callback function passed to the closeAsync method, you can use the
-      properties of the AsyncResult object to return the following information.
-
-
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
-      <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there's no object or data to retrieve.</td>
-      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
-      success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -111,14 +92,8 @@ methods:
       content: 'closeAsync(callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -127,35 +102,17 @@ methods:
     package: office!
     fullName: getSliceAsync(sliceIndex, callback)
     summary: Returns the specified slice.
-    remarks: >-
-      **Requirement set**:
-      [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
+    remarks: |-
+      **Requirement set**: [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
+      In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information.
 
-      In the callback function passed to the getSliceAsync method, you can use
-      the properties of the AsyncResult object to return the following
-      information.
-
-
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
-      <td><code>AsyncResult.value</code></td> <td>Access the Slice object.</td>
-      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
-      success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
-
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access the Slice object.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
 
       function getFileContents(
           file: Office.File,
@@ -201,31 +158,19 @@ methods:
               });
           }
       }
-
       ```
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSliceAsync(sliceIndex: number, callback?: (result:
-        AsyncResult<Office.Slice>) => void): void;
+      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult<Office.Slice>) => void): void;'
       parameters:
         - id: sliceIndex
-          description: >-
-            Specifies the zero-based index of the slice to be retrieved.
-            Required.
+          description: Specifies the zero-based index of the slice to be retrieved. Required.
           type: number
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the
-            [Office.Slice](xref:office!Office.Slice:interface) object.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.Slice:interface" />&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result is the [Office.Slice](xref:office!Office.Slice:interface) object.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Slice:interface" />&gt;) =&gt; void'
       return:
         type: void
         description: ''

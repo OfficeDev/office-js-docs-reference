@@ -4,41 +4,28 @@ uid: outlook!Office.AppointmentForm:interface
 package: outlook!
 fullName: Office.AppointmentForm
 summary: Represents the details of the form for creating a new appointment.
-remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
-
-
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-displaynewappointmentform-member(1)), [displayNewAppointmentFormAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-displaynewappointmentformasync-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
 
   const start = new Date();
-
   const end = new Date();
-
   end.setHours(start.getHours() + 1);
 
-
   // The async version is only available starting with requirement set 1.9,
-
   // and provides a callback when the new appointment form has been created.
-
   Office.context.mailbox.displayNewAppointmentFormAsync(
     {
       requiredAttendees: ["bob@contoso.com"] as any,
@@ -54,7 +41,6 @@ remarks: >-
       console.log(JSON.stringify(asyncResult));
     }
   );
-
   ```
 
 isPreview: false
@@ -66,20 +52,12 @@ properties:
     package: outlook!
     fullName: body
     summary: Sets the body of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -92,20 +70,12 @@ properties:
     package: outlook!
     fullName: end
     summary: Sets the date and time that the appointment is to end.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -118,20 +88,12 @@ properties:
     package: outlook!
     fullName: location
     summary: Sets the location of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -144,76 +106,48 @@ properties:
     package: outlook!
     fullName: optionalAttendees
     summary: Sets the optional attendees of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'optionalAttendees?: string[] | EmailAddressDetails[];'
       return:
-        type: >-
-          string[] | <xref uid="outlook!Office.EmailAddressDetails:interface"
-          />[]
+        type: string[] | <xref uid="outlook!Office.EmailAddressDetails:interface" />[]
   - name: requiredAttendees
     uid: outlook!Office.AppointmentForm#requiredAttendees:member
     package: outlook!
     fullName: requiredAttendees
     summary: Sets the required attendees of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'requiredAttendees?: string[] | EmailAddressDetails[];'
       return:
-        type: >-
-          string[] | <xref uid="outlook!Office.EmailAddressDetails:interface"
-          />[]
+        type: string[] | <xref uid="outlook!Office.EmailAddressDetails:interface" />[]
   - name: resources
     uid: outlook!Office.AppointmentForm#resources:member
     package: outlook!
     fullName: resources
     summary: Sets the resources of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -226,20 +160,12 @@ properties:
     package: outlook!
     fullName: start
     summary: Sets the date and time that the appointment is to begin.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -252,20 +178,12 @@ properties:
     package: outlook!
     fullName: subject
     summary: Sets the description that appears in the Title field of the appointment.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Read
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
     isPreview: false
     isDeprecated: false

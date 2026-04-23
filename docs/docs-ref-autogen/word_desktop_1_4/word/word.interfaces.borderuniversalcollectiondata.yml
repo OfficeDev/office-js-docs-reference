@@ -3,10 +3,11 @@ name: Word.Interfaces.BorderUniversalCollectionData
 uid: word!Word.Interfaces.BorderUniversalCollectionData:interface
 package: word!
 fullName: Word.Interfaces.BorderUniversalCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `borderUniversalCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `borderUniversalCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [toJSON](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

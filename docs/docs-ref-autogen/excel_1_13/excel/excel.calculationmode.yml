@@ -4,19 +4,17 @@ uid: excel!Excel.CalculationMode:enum
 package: excel!
 fullName: Excel.CalculationMode
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Excel.Application](/javascript/api/excel/excel.application): [calculationMode](/javascript/api/excel/excel.application#excel-excel-application-calculationmode-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
 
   await Excel.run(async (context) => {
     context.application.calculationMode = Excel.CalculationMode.manual;
@@ -25,7 +23,6 @@ remarks: >-
 
     console.log("Current calculation mode: " + context.application.calculationMode);
   });
-
   ```
 
 isPreview: false
@@ -34,32 +31,24 @@ fields:
   - name: automatic
     uid: excel!Excel.CalculationMode.automatic:member
     package: excel!
-    summary: >-
-      The default recalculation behavior where Excel calculates new formula
-      results every time the relevant data is changed.
+    summary: |-
+      The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: automaticExceptTables
     uid: excel!Excel.CalculationMode.automaticExceptTables:member
     package: excel!
-    summary: >-
-      Calculates new formula results every time the relevant data is changed,
-      unless the formula is in a data table.
+    summary: |-
+      Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AutomaticExceptTables"'
   - name: manual
     uid: excel!Excel.CalculationMode.manual:member
     package: excel!
-    summary: >-
+    summary: |-
       Calculations only occur when the user or add-in requests them.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Manual"'

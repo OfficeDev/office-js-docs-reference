@@ -4,19 +4,17 @@ uid: word!Word.ExportFormat:enum
 package: word!
 fullName: Word.ExportFormat
 summary: Specifies the export format for a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1)), [exportAsFixedFormat2](/javascript/api/word/word.document#word-word-document-exportasfixedformat2-member(1)), [exportAsFixedFormat3](/javascript/api/word/word.document#word-word-document-exportasfixedformat3-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
 
   await Word.run(async (context) => {
     const document: Word.Document = context.document;
@@ -35,7 +33,6 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
 
 isPreview: false
@@ -44,20 +41,16 @@ fields:
   - name: pdf
     uid: word!Word.ExportFormat.pdf:member
     package: word!
-    summary: >-
+    summary: |-
       PDF export format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Pdf"'
   - name: xps
     uid: word!Word.ExportFormat.xps:member
     package: word!
-    summary: >-
+    summary: |-
       XPS export format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Xps"'

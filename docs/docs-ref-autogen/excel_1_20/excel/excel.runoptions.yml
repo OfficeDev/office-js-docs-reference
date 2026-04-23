@@ -4,19 +4,19 @@ uid: excel!Excel.RunOptions:interface
 package: excel!
 fullName: Excel.RunOptions
 summary: ''
-remarks: >-
+remarks: |-
+
+
+
+  #### Used by
+
+  - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(4))
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-undo-grouping.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-undo-grouping.yaml
-
-
-  // Use the `mergeUndoGroup` property of the `RunOptions` interface to group
-  multiple operations into a single undo action.
-
+  // Use the `mergeUndoGroup` property of the `RunOptions` interface to group multiple operations into a single undo action.
   await Excel.run({ mergeUndoGroup: true }, async (context) => {
     const workbook = context.workbook;
     const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -48,7 +48,6 @@ remarks: >-
 
     console.log("Applied formatting with undo grouping. Use Ctrl+Z (Cmd+Z on Mac) once to undo all changes.");
   });
-
   ```
 
 isPreview: false
@@ -59,18 +58,10 @@ properties:
     uid: excel!Excel.RunOptions#delayForCellEdit:member
     package: excel!
     fullName: delayForCellEdit
-    summary: >-
-      Determines whether Excel will delay the batch request until the user exits
-      cell edit mode.
+    summary: |-
+      Determines whether Excel will delay the batch request until the user exits cell edit mode.
 
-
-      When `false`<!-- -->, if the user is in cell edit when the batch request
-      is processed by the host, the batch automatically fails. When `true`<!--
-      -->, the batch request is executed immediately if the user is not in cell
-      edit mode, but if the user is in cell edit mode then the batch request is
-      delayed until the user exits cell edit mode. The default behavior with no
-      `delayForCellEdit` property specified is equivalent to when it is
-      `false`<!-- -->.
+      When `false`<!-- -->, if the user is in cell edit when the batch request is processed by the host, the batch automatically fails. When `true`<!-- -->, the batch request is executed immediately if the user is not in cell edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit mode. The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`<!-- -->.
     remarks: ''
 
     isPreview: false
@@ -83,17 +74,11 @@ properties:
     uid: excel!Excel.RunOptions#mergeUndoGroup:member
     package: excel!
     fullName: mergeUndoGroup
-    summary: >-
+    summary: |-
       Determines whether the batch requests should be merged to one undo group.
 
-
-      When false, each `context.sync()` call creates an undo record. When true,
-      all `context.sync()` calls in a single `Excel.run` are merged into one
-      `undo` group.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      When false, each `context.sync()` call creates an undo record. When true, all `context.sync()` calls in a single `Excel.run` are merged into one `undo` group.
+    remarks: '[API set: ExcelApi 1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -101,6 +86,4 @@ properties:
       content: 'mergeUndoGroup?: boolean;'
       return:
         type: boolean
-extends: >-
-  <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref
-  uid="excel!Excel.Session:interface" />&gt;
+extends: <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref uid="excel!Excel.Session:interface" />&gt;

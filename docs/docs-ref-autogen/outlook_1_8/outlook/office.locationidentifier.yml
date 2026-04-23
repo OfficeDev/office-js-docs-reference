@@ -4,33 +4,27 @@ uid: outlook!Office.LocationIdentifier:interface
 package: outlook!
 fullName: Office.LocationIdentifier
 summary: Represents the ID of a location.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+  #### Used by
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
-
+  - [Office.EnhancedLocation](/javascript/api/outlook/office.enhancedlocation): [addAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1)), [removeAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-removeasync-member(1))
+  - [Office.LocationDetails](/javascript/api/outlook/office.locationdetails): [locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)
   #### Examples
 
-
   ```TypeScript
-
   const locations = [
       {
           "id": "Contoso",
           "type": Office.MailboxEnums.LocationType.Custom
       }
   ];
-
   ```
 
 isPreview: false

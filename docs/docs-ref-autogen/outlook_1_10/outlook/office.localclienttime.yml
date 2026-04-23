@@ -4,34 +4,23 @@ uid: outlook!Office.LocalClientTime:interface
 package: outlook!
 fullName: Office.LocalClientTime
 summary: Represents a date and time in the local client's time zone. Read mode only.
-remarks: >-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
+remarks: |-
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  #### Used by
 
-
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [convertToLocalClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttolocalclienttime-member(1)), [convertToUtcClientTime](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoutcclienttime-member(1))
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
 
   const time = Office.context.mailbox.item.start;
-
   const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-
-  console.log(`Appointment starts (local): ${localTime.month +
-  1}/${localTime.date}/${localTime.year},
-  ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
-
+  console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
   ```
 
 isPreview: false
@@ -94,9 +83,7 @@ properties:
     uid: outlook!Office.LocalClientTime#month:member
     package: outlook!
     fullName: month
-    summary: >-
-      Integer value representing the month, beginning with 0 for January to 11
-      for December.
+    summary: Integer value representing the month, beginning with 0 for January to 11 for December.
     remarks: ''
 
     isPreview: false
@@ -122,9 +109,7 @@ properties:
     uid: outlook!Office.LocalClientTime#timezoneOffset:member
     package: outlook!
     fullName: timezoneOffset
-    summary: >-
-      Integer value representing the number of minutes difference between the
-      local time zone and UTC.
+    summary: Integer value representing the number of minutes difference between the local time zone and UTC.
     remarks: ''
 
     isPreview: false

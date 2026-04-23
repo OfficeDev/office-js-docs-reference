@@ -4,20 +4,17 @@ uid: outlook!Office.MailboxEnums.ResponseType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ResponseType
 summary: Specifies the type of response to a meeting invitation.
-remarks: >-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+remarks: |-
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
+  #### Used by
+
+  - [Office.EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails): [appointmentResponse](/javascript/api/outlook/office.emailaddressdetails#outlook-office-emailaddressdetails-appointmentresponse-member)
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml
 
   function organizeByResponse(attendees) {
     const accepted = [];
@@ -54,7 +51,6 @@ remarks: >-
     console.log("No response: ");
     printAttendees(noResponse);
   }
-
   ```
 
 isPreview: false
