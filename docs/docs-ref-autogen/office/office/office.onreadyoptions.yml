@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Office.OnReadyOptions
+uid: office!Office.OnReadyOptions:interface
+package: office!
+fullName: Office.OnReadyOptions
+summary: Provides options related to the `onReady` event.
+remarks: ''
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: setRejectionEnabled
+    uid: office!Office.OnReadyOptions#setRejectionEnabled:member
+    package: office!
+    fullName: setRejectionEnabled
+    summary: Enables the behavior that allows the `onReady` promise to be rejected.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setRejectionEnabled?: () => void;'
+      return:
+        type: () =&gt; void

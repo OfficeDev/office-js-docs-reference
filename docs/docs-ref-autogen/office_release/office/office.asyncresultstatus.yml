@@ -8,6 +8,7 @@ remarks: |-
   Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.
 
 
+
   #### Used by
 
   - [Office.AsyncResult](/javascript/api/office/office.asyncresult): [status](/javascript/api/office/office.asyncresult#office-office-asyncresult-status-member)

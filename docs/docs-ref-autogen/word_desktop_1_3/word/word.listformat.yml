@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Range](/javascript/api/word/word.range): [listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)

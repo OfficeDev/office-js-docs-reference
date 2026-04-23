@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [functions](/javascript/api/excel/excel.workbook#excel-excel-workbook-functions-member)
@@ -1818,11 +1819,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
+      content: 'datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
       parameters:
         - id: dateText
           description: Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
-          type: string | number | <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeReference:interface" /> | <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
+          type: string | <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeReference:interface" /> | <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
       return:
         type: <xref uid="excel!Excel.FunctionResult:class" />&lt;number&gt;
         description: ''

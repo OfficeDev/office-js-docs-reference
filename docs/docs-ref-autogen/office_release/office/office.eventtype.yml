@@ -12,7 +12,6 @@ summary: |-
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [addHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removehandlerasync-member(1))

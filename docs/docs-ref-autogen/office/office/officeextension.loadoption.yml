@@ -20,6 +20,7 @@ remarks: |-
   Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded.
 
 
+
   #### Used by
 
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(3))

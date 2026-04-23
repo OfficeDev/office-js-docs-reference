@@ -7,7 +7,6 @@ summary: Provides information about which Requirement Sets are supported in the 
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Context](/javascript/api/office/office.context): [requirements](/javascript/api/office/office.context#office-office-context-requirements-member)

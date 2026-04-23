@@ -7,7 +7,6 @@ summary: Specifies a range and its formatting.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [cellFormat](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-cellformat-member)

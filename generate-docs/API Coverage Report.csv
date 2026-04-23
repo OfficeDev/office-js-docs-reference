@@ -90,7 +90,7 @@ excel,Excel.Application,"suspendApiCalculationUntilNextSync()",Method,Good,false
 excel,Excel.Application,"suspendScreenUpdatingUntilNextSync()",Method,Great,true
 excel,Excel.Application,"toJSON()",Method,Excellent,false
 excel,Excel.Application,"union(firstRange, secondRange, additionalRanges)",Method,Excellent,false
-excel,Excel.ArrayCellValue,N/A,Interface,Fine,false
+excel,Excel.ArrayCellValue,N/A,Interface,Fine,true
 excel,Excel.ArrayCellValue,"basicType",Property,Excellent,false
 excel,Excel.ArrayCellValue,"basicValue",Property,Excellent,false
 excel,Excel.ArrayCellValue,"elements",Property,Excellent,false
@@ -7579,6 +7579,8 @@ office,Office.OfficeTheme,"controlForegroundColor",Property,Excellent,false
 office,Office.OfficeTheme,"fluentThemeData",Property,Good,false
 office,Office.OfficeTheme,"isDarkTheme",Property,Excellent,false
 office,Office.OfficeTheme,"themeId",Property,Great,false
+office,Office.OnReadyOptions,N/A,Interface,Fine,false
+office,Office.OnReadyOptions,"setRejectionEnabled",Property,Excellent,false
 office,Office.PlatformType,N/A,Enum,Great,true
 office,Office.PlatformType,"Android",EnumField,Good,false
 office,Office.PlatformType,"iOS",EnumField,Good,false

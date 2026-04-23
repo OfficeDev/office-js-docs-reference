@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [getReviewedText](/javascript/api/word/word.body#word-word-body-getreviewedtext-member(1))

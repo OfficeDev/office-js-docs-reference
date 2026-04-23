@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.PivotFilters](/javascript/api/excel/excel.pivotfilters): [labelFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-labelfilter-member)

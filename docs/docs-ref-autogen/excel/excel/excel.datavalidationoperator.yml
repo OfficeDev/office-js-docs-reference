@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation): [operator](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-operator-member)

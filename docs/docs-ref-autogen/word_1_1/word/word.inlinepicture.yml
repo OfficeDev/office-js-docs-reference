@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)

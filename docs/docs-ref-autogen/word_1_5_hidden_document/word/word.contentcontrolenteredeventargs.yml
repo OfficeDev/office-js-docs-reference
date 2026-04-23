@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)

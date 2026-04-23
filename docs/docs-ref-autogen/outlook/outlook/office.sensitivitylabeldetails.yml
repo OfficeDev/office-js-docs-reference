@@ -16,6 +16,7 @@ remarks: |-
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel): [setAsync](/javascript/api/outlook/office.sensitivitylabel#outlook-office-sensitivitylabel-setasync-member(1))

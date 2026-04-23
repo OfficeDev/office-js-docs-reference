@@ -8,6 +8,7 @@ remarks: |-
   Returned by the mode property of the [Document](xref:office!Office.Document:interface) object.
 
 
+
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [mode](/javascript/api/office/office.document#office-office-document-mode-member)

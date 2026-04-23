@@ -7,7 +7,6 @@ summary: Provides options to determine the startup behavior of the add-in upon n
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Addin](/javascript/api/office/office.addin): [getStartupBehavior](/javascript/api/office/office.addin#office-office-addin-getstartupbehavior-member(1)), [setStartupBehavior](/javascript/api/office/office.addin#office-office-addin-setstartupbehavior-member(1))

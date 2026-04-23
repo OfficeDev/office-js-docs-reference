@@ -7,7 +7,6 @@ summary: Visibility mode of the add-in.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.VisibilityModeChangedMessage](/javascript/api/office/office.visibilitymodechangedmessage): [visibilityMode](/javascript/api/office/office.visibilitymodechangedmessage#office-office-visibilitymodechangedmessage-visibilitymode-member)

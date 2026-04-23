@@ -18,6 +18,7 @@ remarks: |-
   - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing the item. This must be done before calling `loadItemByIdAsync` on another item.
 
 
+
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [loadItemByIdAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-loaditembyidasync-member(1))

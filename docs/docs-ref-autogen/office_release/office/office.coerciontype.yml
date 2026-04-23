@@ -24,6 +24,7 @@ remarks: |-
   - [ImageCoercion 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12) (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
+
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getselecteddataasync-member(1))

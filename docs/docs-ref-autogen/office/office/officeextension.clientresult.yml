@@ -7,7 +7,6 @@ summary: Contains the result for methods that return primitive types. The object
 remarks: |-
 
 
-
   #### Used by
 
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [getCount](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getcount-member(1))

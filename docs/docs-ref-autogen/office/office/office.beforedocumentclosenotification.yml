@@ -8,6 +8,7 @@ remarks: |-
   **Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
 
+
   #### Used by
 
   - [Office.Addin](/javascript/api/office/office.addin): [beforeDocumentCloseNotification](/javascript/api/office/office.addin#office-office-addin-beforedocumentclosenotification-member)

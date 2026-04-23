@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ShapeTextWrap](/javascript/api/word/word.shapetextwrap): [side](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-side-member)

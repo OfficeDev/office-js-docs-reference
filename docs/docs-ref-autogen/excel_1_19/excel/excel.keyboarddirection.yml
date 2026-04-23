@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [getExtendedRange](/javascript/api/excel/excel.range#excel-excel-range-getextendedrange-member(1)), [getRangeEdge](/javascript/api/excel/excel.range#excel-excel-range-getrangeedge-member(1))

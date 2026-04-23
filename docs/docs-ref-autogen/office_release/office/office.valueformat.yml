@@ -8,6 +8,7 @@ remarks: |-
   For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the Office application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its underlying sequential serial number form.
 
 
+
   #### Used by
 
   - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [valueFormat](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-valueformat-member)

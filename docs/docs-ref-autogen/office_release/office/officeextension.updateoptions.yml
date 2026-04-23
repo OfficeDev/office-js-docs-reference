@@ -7,7 +7,6 @@ summary: Provides an option for suppressing an error when the object that is use
 remarks: |-
 
 
-
   #### Used by
 
   - [Excel.AllowEditRange](/javascript/api/excel/excel.alloweditrange): [set](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-set-member(1))

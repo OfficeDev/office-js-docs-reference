@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Window](/javascript/api/word/word.window): [close](/javascript/api/word/word.window#word-word-window-close-member(1))

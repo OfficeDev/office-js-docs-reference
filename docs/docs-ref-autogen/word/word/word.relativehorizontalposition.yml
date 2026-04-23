@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Frame](/javascript/api/word/word.frame): [relativeHorizontalPosition](/javascript/api/word/word.frame#word-word-frame-relativehorizontalposition-member)

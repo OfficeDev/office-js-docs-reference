@@ -7,7 +7,6 @@ summary: Provides options for how to insert data to the selection.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))

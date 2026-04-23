@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.InsertSlideOptions](/javascript/api/powerpoint/powerpoint.insertslideoptions): [formatting](/javascript/api/powerpoint/powerpoint.insertslideoptions#powerpoint-powerpoint-insertslideoptions-formatting-member)

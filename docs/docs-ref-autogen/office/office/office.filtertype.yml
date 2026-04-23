@@ -7,7 +7,6 @@ summary: Specifies whether filtering from the Office application is applied when
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [filterType](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-filtertype-member)

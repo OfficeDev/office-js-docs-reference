@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.CommentEventArgs](/javascript/api/word/word.commenteventargs): [changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)

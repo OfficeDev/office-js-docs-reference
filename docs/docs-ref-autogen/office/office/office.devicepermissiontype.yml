@@ -20,6 +20,7 @@ remarks: |-
   **Requirement set**: [DevicePermission 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
 
+
   #### Used by
 
   - [Office.DevicePermission](/javascript/api/office/office.devicepermission): [requestPermissions](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissions-member(1)), [requestPermissionsAsync](/javascript/api/office/office.devicepermission#office-office-devicepermission-requestpermissionsasync-member(1))

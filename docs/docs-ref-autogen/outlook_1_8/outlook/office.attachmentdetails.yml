@@ -15,6 +15,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
+
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [attachments](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-attachments-member)

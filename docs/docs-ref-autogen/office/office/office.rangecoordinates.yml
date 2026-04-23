@@ -7,7 +7,6 @@ summary: 'Specifies a cell, or row, or column, by its zero-based row and/or colu
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.RangeFormatConfiguration](/javascript/api/office/office.rangeformatconfiguration): [cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)

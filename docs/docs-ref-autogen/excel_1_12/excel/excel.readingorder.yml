@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat): [readingOrder](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-readingorder-member)

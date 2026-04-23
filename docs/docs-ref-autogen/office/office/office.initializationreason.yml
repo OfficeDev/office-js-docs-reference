@@ -7,7 +7,6 @@ summary: Specifies whether the add-in was just inserted or was already contained
 remarks: |-
 
 
-
   #### Used by
 
   - [Office](/javascript/api/office): [initialize](/javascript/api/office#office-office-initialize-function(1))

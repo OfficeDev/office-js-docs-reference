@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.RangeBorder](/javascript/api/excel/excel.rangeborder): [style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)

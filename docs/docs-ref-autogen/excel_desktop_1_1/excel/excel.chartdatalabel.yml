@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)

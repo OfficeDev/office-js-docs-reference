@@ -7,7 +7,6 @@ summary: Provides options for customizing what data is returned and how it is fo
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1))

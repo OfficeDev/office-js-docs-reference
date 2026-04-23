@@ -7,7 +7,6 @@ summary: ''
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [getFilePropertiesAsync](/javascript/api/office/office.document#office-office-document-getfilepropertiesasync-member(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ConditionalTextComparisonRule](/javascript/api/excel/excel.conditionaltextcomparisonrule): [operator](/javascript/api/excel/excel.conditionaltextcomparisonrule#excel-excel-conditionaltextcomparisonrule-operator-member)

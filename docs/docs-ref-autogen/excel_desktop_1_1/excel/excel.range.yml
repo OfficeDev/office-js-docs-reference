@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Application](/javascript/api/excel/excel.application): [union](/javascript/api/excel/excel.application#excel-excel-application-union-member(1))

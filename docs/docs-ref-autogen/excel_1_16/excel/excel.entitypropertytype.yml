@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue): [properties](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)

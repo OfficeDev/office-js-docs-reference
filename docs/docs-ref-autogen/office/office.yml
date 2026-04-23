@@ -54,6 +54,7 @@ interfaces:
   - office!Office.NodeInsertedEventArgs:interface
   - office!Office.NodeReplacedEventArgs:interface
   - office!Office.OfficeTheme:interface
+  - office!Office.OnReadyOptions:interface
   - office!Office.RangeCoordinates:interface
   - office!Office.RangeFormatConfiguration:interface
   - office!Office.RemoveHandlerOptions:interface

@@ -7,7 +7,6 @@ summary: Represents a slice of a document file. The Slice object is accessed wit
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.File](/javascript/api/office/office.file): [getSliceAsync](/javascript/api/office/office.file#office-office-file-getsliceasync-member(1))

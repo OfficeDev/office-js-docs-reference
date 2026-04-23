@@ -7,7 +7,6 @@ summary: Specifies the format in which to return the document.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.DocumentExportAsFixedFormat2Options](/javascript/api/word/word.documentexportasfixedformat2options): [optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizefor-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [imageFormat](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-imageformat-member)

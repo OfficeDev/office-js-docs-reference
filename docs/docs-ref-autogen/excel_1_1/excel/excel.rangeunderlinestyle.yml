@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.RangeFont](/javascript/api/excel/excel.rangefont): [underline](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-underline-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member), [footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)
