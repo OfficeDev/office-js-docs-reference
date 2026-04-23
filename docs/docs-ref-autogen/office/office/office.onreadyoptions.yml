@@ -14,7 +14,7 @@ properties:
     uid: office!Office.OnReadyOptions#setRejectionEnabled:member
     package: office!
     fullName: setRejectionEnabled
-    summary: Enables the behavior that allows the `onReady` promise to be rejected.
+    summary: Enables the behavior that allows the `onReady` promise to be rejected if failures are encountered. If not passed, then the `onReady` promise won't reject.
     remarks: ''
 
     isPreview: true

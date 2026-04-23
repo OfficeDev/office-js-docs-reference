@@ -9293,7 +9293,8 @@ export declare namespace Office {
      */
     export interface OnReadyOptions {
         /**
-         * Enables the behavior that allows the `onReady` promise to be rejected.
+         * Enables the behavior that allows the `onReady` promise to be rejected if failures are encountered.
+         * If not passed, then the `onReady` promise won't reject.
          */
         setRejectionEnabled?: () => void;
     }
