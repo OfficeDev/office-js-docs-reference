@@ -1,5 +1,7 @@
 Excel.ArrayCellValue:interface:
   - |-
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+    
     // This `EntityCellValue` contains an `ArrayCellValue` with two products and their prices.
     const myEntity: Excel.EntityCellValue = {
         type: Excel.CellValueType.entity,
@@ -36,6 +38,8 @@ Excel.ArrayCellValue:interface:
         basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
         basicValue: "#VALUE!" // A read-only property. Used as a fallback in incompatible scenarios.
     };
+
+    sheet.getCell(0,0).valuesAsJson = [[myEntity]];
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
