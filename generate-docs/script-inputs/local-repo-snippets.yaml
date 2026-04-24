@@ -6021,6 +6021,28 @@ Office.OfficeTheme:interface:
             $("h1").css("color", controlForegroundColor);
         }
     }
+Office.OnReadyOptions:interface:
+  - |-
+    // Enable rejection behavior for the onReady promise.
+    Office.onReadyOptions?.setRejectionEnabled();
+
+    // Now the onReady promise can be rejected if failures are encountered during its setup.
+    Office.onReady((info) => {
+        console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+    }).catch((error) => {
+        console.error("Office.js initialization failed:", error);
+    });
+Office.OnReadyOptions#setRejectionEnabled:member:
+  - |-
+    // Enable rejection behavior for the onReady promise.
+    Office.onReadyOptions?.setRejectionEnabled();
+
+    // Now the onReady promise can be rejected if failures are encountered during its setup.
+    Office.onReady((info) => {
+        console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+    }).catch((error) => {
+        console.error("Office.js initialization failed:", error);
+    });
 Office.PlatformType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;

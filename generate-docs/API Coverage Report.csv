@@ -7579,8 +7579,8 @@ office,Office.OfficeTheme,"controlForegroundColor",Property,Excellent,false
 office,Office.OfficeTheme,"fluentThemeData",Property,Good,false
 office,Office.OfficeTheme,"isDarkTheme",Property,Excellent,false
 office,Office.OfficeTheme,"themeId",Property,Great,false
-office,Office.OnReadyOptions,N/A,Interface,Fine,false
-office,Office.OnReadyOptions,"setRejectionEnabled",Property,Excellent,false
+office,Office.OnReadyOptions,N/A,Interface,Fine,true
+office,Office.OnReadyOptions,"setRejectionEnabled",Property,Excellent,true
 office,Office.PlatformType,N/A,Enum,Great,true
 office,Office.PlatformType,"Android",EnumField,Good,false
 office,Office.PlatformType,"iOS",EnumField,Good,false
