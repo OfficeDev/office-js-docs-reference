@@ -3,9 +3,7 @@ name: Word.GutterStyle
 uid: word!Word.GutterStyle:enum
 package: word!
 fullName: Word.GutterStyle
-summary: >-
-  Specifies whether the gutter style should conform to left-to-right text flow
-  or right-to-left text flow.
+summary: Specifies whether the gutter style should conform to left-to-right text flow or right-to-left text flow.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

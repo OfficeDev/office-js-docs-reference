@@ -3,9 +3,7 @@ name: Word.Interfaces.HeadingStyleCollectionData
 uid: word!Word.Interfaces.HeadingStyleCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `headingStyleCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `headingStyleCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

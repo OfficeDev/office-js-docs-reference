@@ -3,10 +3,7 @@ name: Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData
 uid: word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableOfAuthoritiesCategoryCollection`
-  object, for use in `tableOfAuthoritiesCategoryCollection.set({ ... })`<!--
-  -->.
+summary: An interface for updating data on the `TableOfAuthoritiesCategoryCollection` object, for use in `tableOfAuthoritiesCategoryCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -14,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData#items:member
+    uid: word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
@@ -26,7 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.TableOfAuthoritiesCategoryData[];'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface" />[]

@@ -3,28 +3,21 @@ name: Office.MailboxEnums.EntityType
 uid: outlook!Office.MailboxEnums.EntityType:enum
 package: outlook!
 fullName: Office.MailboxEnums.EntityType
-summary: >-
+summary: |-
   Specifies an entity's type.
 
+  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+remarks: |-
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired.
-  However, regular expression rules are still supported. We recommend updating
-  your contextual add-in to use regular expression rules as an alternative
-  solution. For guidance on how to implement these rules, see [Contextual
-  Outlook
-  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
-  -->.
-remarks: >-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  #### Used by
+
+  - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1))
+  - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1))
 
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: >-
-  Use [regular expression
-  rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
-  instead.
+customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
 fields:
   - name: MeetingSuggestion
     uid: outlook!Office.MailboxEnums.EntityType.MeetingSuggestion:member

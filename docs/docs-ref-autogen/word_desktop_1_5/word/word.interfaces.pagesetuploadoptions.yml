@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -56,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#bookFoldReversePrinting:member
     package: word!
     fullName: bookFoldReversePrinting
-    summary: >-
-      Specifies if Microsoft Word reverses the printing order for book fold
-      printing of bidirectional or Asian language documents.
+    summary: Specifies if Microsoft Word reverses the printing order for book fold printing of bidirectional or Asian language documents.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -71,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#bottomMargin:member
     package: word!
     fullName: bottomMargin
-    summary: >-
-      Specifies the distance (in points) between the bottom edge of the page and
-      the bottom boundary of the body text.
+    summary: Specifies the distance (in points) between the bottom edge of the page and the bottom boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -96,8 +89,7 @@ properties:
       return:
         type: boolean
   - name: differentFirstPageHeaderFooter
-    uid: >-
-      word!Word.Interfaces.PageSetupLoadOptions#differentFirstPageHeaderFooter:member
+    uid: word!Word.Interfaces.PageSetupLoadOptions#differentFirstPageHeaderFooter:member
     package: word!
     fullName: differentFirstPageHeaderFooter
     summary: Specifies whether the first page has a different header and footer.
@@ -113,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#footerDistance:member
     package: word!
     fullName: footerDistance
-    summary: >-
-      Specifies the distance between the footer and the bottom of the page in
-      points.
+    summary: Specifies the distance between the footer and the bottom of the page in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -128,9 +118,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#gutter:member
     package: word!
     fullName: gutter
-    summary: >-
-      Specifies the amount (in points) of extra margin space added to each page
-      in a document or section for binding.
+    summary: Specifies the amount (in points) of extra margin space added to each page in a document or section for binding.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -156,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#gutterStyle:member
     package: word!
     fullName: gutterStyle
-    summary: >-
-      Specifies whether Microsoft Word uses gutters for the current document
-      based on a right-to-left language or a left-to-right language.
+    summary: Specifies whether Microsoft Word uses gutters for the current document based on a right-to-left language or a left-to-right language.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -171,9 +157,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#headerDistance:member
     package: word!
     fullName: headerDistance
-    summary: >-
-      Specifies the distance between the header and the top of the page in
-      points.
+    summary: Specifies the distance between the header and the top of the page in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -199,9 +183,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#leftMargin:member
     package: word!
     fullName: leftMargin
-    summary: >-
-      Specifies the distance (in points) between the left edge of the page and
-      the left boundary of the body text.
+    summary: Specifies the distance (in points) between the left edge of the page and the left boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -214,9 +196,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#lineNumbering:member
     package: word!
     fullName: lineNumbering
-    summary: >-
-      Specifies a `LineNumbering` object that represents the line numbers for
-      the `PageSetup` object.
+    summary: Specifies a `LineNumbering` object that represents the line numbers for the `PageSetup` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -242,9 +222,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#mirrorMargins:member
     package: word!
     fullName: mirrorMargins
-    summary: >-
-      Specifies if the inside and outside margins of facing pages are the same
-      width.
+    summary: Specifies if the inside and outside margins of facing pages are the same width.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -254,8 +232,7 @@ properties:
       return:
         type: boolean
   - name: oddAndEvenPagesHeaderFooter
-    uid: >-
-      word!Word.Interfaces.PageSetupLoadOptions#oddAndEvenPagesHeaderFooter:member
+    uid: word!Word.Interfaces.PageSetupLoadOptions#oddAndEvenPagesHeaderFooter:member
     package: word!
     fullName: oddAndEvenPagesHeaderFooter
     summary: Specifies whether odd and even pages have different headers and footers.
@@ -323,9 +300,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#rightMargin:member
     package: word!
     fullName: rightMargin
-    summary: >-
-      Specifies the distance (in points) between the right edge of the page and
-      the right boundary of the body text.
+    summary: Specifies the distance (in points) between the right edge of the page and the right boundary of the body text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -377,9 +352,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#suppressEndnotes:member
     package: word!
     fullName: suppressEndnotes
-    summary: >-
-      Specifies if endnotes are printed at the end of the next section that
-      doesn't suppress endnotes.
+    summary: Specifies if endnotes are printed at the end of the next section that doesn't suppress endnotes.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -418,9 +391,7 @@ properties:
     uid: word!Word.Interfaces.PageSetupLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of text on each page in a document or
-      section.
+    summary: Specifies the vertical alignment of text on each page in a document or section.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

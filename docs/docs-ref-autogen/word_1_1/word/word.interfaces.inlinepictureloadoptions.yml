@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.InlinePictureLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureLoadOptions
 summary: Represents an inline picture.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [load](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.InlinePictureLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,12 +32,8 @@ properties:
     uid: word!Word.Interfaces.InlinePictureLoadOptions#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: >-
-      Specifies a string that represents the alternative text associated with
-      the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies a string that represents the alternative text associated with the inline image.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: word!
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -79,12 +71,8 @@ properties:
     uid: word!Word.Interfaces.InlinePictureLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Specifies a hyperlink on the image. Use a '\#' to separate the address
-      part from the optional location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -96,12 +84,8 @@ properties:
     uid: word!Word.Interfaces.InlinePictureLoadOptions#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
-    summary: >-
-      Specifies whether the inline image retains its original proportions when
-      you resize it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies whether the inline image retains its original proportions when you resize it.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -113,29 +97,21 @@ properties:
     uid: word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the content control that contains the inline image. Throws an
-      `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: width
     uid: word!Word.Interfaces.InlinePictureLoadOptions#width:member
     package: word!
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

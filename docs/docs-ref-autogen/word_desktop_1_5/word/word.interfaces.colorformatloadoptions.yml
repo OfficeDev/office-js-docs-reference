@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#brightness:member
     package: word!
     fullName: brightness
-    summary: >-
-      Specifies the brightness of a specified shape color. Valid values are from
-      `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    summary: Specifies the brightness of a specified shape color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -58,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#rgb:member
     package: word!
     fullName: rgb
-    summary: >-
-      Specifies the red-green-blue (RGB) value of the specified color. You can
-      provide the value in the '\#RRGGBB' format.
+    summary: Specifies the red-green-blue (RGB) value of the specified color. You can provide the value in the '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -73,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.ColorFormatLoadOptions#tintAndShade:member
     package: word!
     fullName: tintAndShade
-    summary: >-
-      Specifies the lightening or darkening of a specified shape's color. Valid
-      values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
+    summary: Specifies the lightening or darkening of a specified shape's color. Valid values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

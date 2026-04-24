@@ -3,9 +3,7 @@ name: Word.Interfaces.StyleUpdateData
 uid: word!Word.Interfaces.StyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.StyleUpdateData
-summary: >-
-  An interface for updating data on the `Style` object, for use in `style.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Style` object, for use in `style.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#automaticallyUpdate:member
     package: word!
     fullName: automaticallyUpdate
-    summary: >-
-      Specifies whether the style is automatically redefined based on the
-      selection.
+    summary: Specifies whether the style is automatically redefined based on the selection.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -31,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#baseStyle:member
     package: word!
     fullName: baseStyle
-    summary: >-
-      Specifies the name of an existing style to use as the base formatting of
-      another style.
+    summary: Specifies the name of an existing style to use as the base formatting of another style.
     remarks: |-
       \[Api set: WordApi 1.5\]
 
@@ -49,9 +43,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#borders:member
     package: word!
     fullName: borders
-    summary: >-
-      Specifies a `BorderCollection` object that represents all the borders for
-      the style.
+    summary: Specifies a `BorderCollection` object that represents all the borders for the style.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -59,16 +51,12 @@ properties:
     syntax:
       content: 'borders?: Word.Interfaces.BorderCollectionUpdateData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.BorderCollectionUpdateData:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.BorderCollectionUpdateData:interface" />
   - name: font
     uid: word!Word.Interfaces.StyleUpdateData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets a `Font` object that represents the character formatting of the
-      style.
+    summary: Gets a `Font` object that represents the character formatting of the style.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -81,9 +69,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#frame:member
     package: word!
     fullName: frame
-    summary: >-
-      Returns a `Frame` object that represents the frame formatting for the
-      style.
+    summary: Returns a `Frame` object that represents the frame formatting for the style.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -96,9 +82,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#hasProofing:member
     package: word!
     fullName: hasProofing
-    summary: >-
-      Specifies whether the spelling and grammar checker ignores text formatted
-      with this style.
+    summary: Specifies whether the spelling and grammar checker ignores text formatted with this style.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -117,106 +101,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        languageId?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" |
-        "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" |
-        "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
-        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
-        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
-        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
-        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
-        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
-        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
-        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
-        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
-        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
-        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
-        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
-        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
-        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-        | "Galician" | "Georgian" | "German" | "GermanAustria" |
-        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
-        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
-        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
-        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
-        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
-        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
-        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
-        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
-        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
-        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
-        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
-        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
-        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
-        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
-        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
-        "Yiddish" | "Yoruba" | "Zulu";
+      content: 'languageId?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";'
       return:
-        type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
-          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
-          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
-          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
-          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
-          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
-          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
-          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
-          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
-          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
-          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
-          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
-          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
-          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
-          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
-          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
-          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" |
-          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
-          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
-          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
-          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
-          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
-          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
-          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
-          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
-          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
-          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
-          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
-          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
-          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
-          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
-          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
-          "Zulu"
+        type: <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
   - name: languageIdFarEast
     uid: word!Word.Interfaces.StyleUpdateData#languageIdFarEast:member
     package: word!
@@ -227,106 +114,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        languageIdFarEast?: Word.LanguageId | "Afrikaans" | "Albanian" |
-        "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt"
-        | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
-        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
-        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
-        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
-        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
-        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
-        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
-        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
-        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
-        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
-        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
-        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
-        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
-        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
-        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
-        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
-        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-        | "Galician" | "Georgian" | "German" | "GermanAustria" |
-        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
-        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
-        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
-        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
-        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
-        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
-        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
-        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
-        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
-        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
-        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
-        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
-        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
-        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
-        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
-        "Yiddish" | "Yoruba" | "Zulu";
+      content: 'languageIdFarEast?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu";'
       return:
-        type: >-
-          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
-          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
-          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
-          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
-          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
-          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
-          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
-          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
-          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
-          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
-          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
-          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
-          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
-          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
-          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
-          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
-          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
-          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
-          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
-          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
-          | "Galician" | "Georgian" | "German" | "GermanAustria" |
-          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
-          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
-          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
-          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
-          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
-          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
-          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
-          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
-          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
-          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
-          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
-          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
-          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
-          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
-          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
-          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
-          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
-          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
-          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
-          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
-          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
-          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
-          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
-          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
-          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
-          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
-          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
-          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
-          "Zulu"
+        type: <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" | "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino" | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland" | "Galician" | "Georgian" | "German" | "GermanAustria" | "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" | "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" | "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" | "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" | "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" | "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" | "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" | "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" | "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" | "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" | "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" | "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" | "Zulu"
   - name: linkStyle
     uid: word!Word.Interfaces.StyleUpdateData#linkStyle:member
     package: word!
@@ -344,9 +134,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#listTemplate:member
     package: word!
     fullName: listTemplate
-    summary: >-
-      Gets a `ListTemplate` object that represents the list formatting for the
-      style.
+    summary: Gets a `ListTemplate` object that represents the list formatting for the style.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -372,15 +160,11 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#nextParagraphStyle:member
     package: word!
     fullName: nextParagraphStyle
-    summary: >-
-      Specifies the name of the style to be applied automatically to a new
-      paragraph that is inserted after a paragraph formatted with the style.
-    remarks: >-
+    summary: Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the style.
+    remarks: |-
       \[Api set: WordApi 1.5\]
 
-
-      Note: The ability to set `nextParagraphStyle` was introduced in WordApi
-      1.6.
+      Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
 
     isPreview: false
     isDeprecated: false
@@ -389,13 +173,10 @@ properties:
       return:
         type: string
   - name: noSpaceBetweenParagraphsOfSameStyle
-    uid: >-
-      word!Word.Interfaces.StyleUpdateData#noSpaceBetweenParagraphsOfSameStyle:member
+    uid: word!Word.Interfaces.StyleUpdateData#noSpaceBetweenParagraphsOfSameStyle:member
     package: word!
     fullName: noSpaceBetweenParagraphsOfSameStyle
-    summary: >-
-      Specifies whether to remove spacing between paragraphs that are formatted
-      using the same style.
+    summary: Specifies whether to remove spacing between paragraphs that are formatted using the same style.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -408,9 +189,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#paragraphFormat:member
     package: word!
     fullName: paragraphFormat
-    summary: >-
-      Gets a `ParagraphFormat` object that represents the paragraph settings for
-      the style.
+    summary: Gets a `ParagraphFormat` object that represents the paragraph settings for the style.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -418,9 +197,7 @@ properties:
     syntax:
       content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ParagraphFormatUpdateData:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ParagraphFormatUpdateData:interface" />
   - name: priority
     uid: word!Word.Interfaces.StyleUpdateData#priority:member
     package: word!
@@ -451,9 +228,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Gets a `Shading` object that represents the shading for the style. Not
-      applicable to a style of `List` type.
+    summary: Gets a `Shading` object that represents the shading for the style. Not applicable to a style of `List` type.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -466,9 +241,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#tableStyle:member
     package: word!
     fullName: tableStyle
-    summary: >-
-      Gets a `TableStyle` object representing style properties that can be
-      applied to a table.
+    summary: Gets a `TableStyle` object representing style properties that can be applied to a table.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -481,10 +254,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member
     package: word!
     fullName: unhideWhenUsed
-    summary: >-
-      Specifies whether the style is made visible as a recommended style in the
-      Styles gallery and in the Styles task pane in Microsoft Word after it's
-      used in the document.
+    summary: Specifies whether the style is made visible as a recommended style in the Styles gallery and in the Styles task pane in Microsoft Word after it's used in the document.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -497,9 +267,7 @@ properties:
     uid: word!Word.Interfaces.StyleUpdateData#visibility:member
     package: word!
     fullName: visibility
-    summary: >-
-      Specifies whether the style is visible as a recommended style in the
-      Styles gallery and in the Styles task pane.
+    summary: Specifies whether the style is visible as a recommended style in the Styles gallery and in the Styles task pane.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false

@@ -3,10 +3,11 @@ name: Excel.Interfaces.WorkbookUpdateData
 uid: excel!Excel.Interfaces.WorkbookUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.WorkbookUpdateData
-summary: >-
-  An interface for updating data on the `Workbook` object, for use in
-  `workbook.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Workbook` object, for use in `workbook.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [set](/javascript/api/excel/excel.workbook#excel-excel-workbook-set-member(1))
 
 isPreview: false
 isDeprecated: false

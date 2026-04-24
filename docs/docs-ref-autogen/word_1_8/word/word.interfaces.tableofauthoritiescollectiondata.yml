@@ -3,9 +3,7 @@ name: Word.Interfaces.TableOfAuthoritiesCollectionData
 uid: word!Word.Interfaces.TableOfAuthoritiesCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfAuthoritiesCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableOfAuthoritiesCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

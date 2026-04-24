@@ -3,9 +3,7 @@ name: Word.Interfaces.TrackedChangeData
 uid: word!Word.Interfaces.TrackedChangeData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeData
-summary: >-
-  An interface describing the data returned by calling
-  `trackedChange.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `trackedChange.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -61,10 +59,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" |
-        "Formatted";
+      content: 'type?: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
       return:
-        type: >-
-          <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" |
-          "Deleted" | "Formatted"
+        type: <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"

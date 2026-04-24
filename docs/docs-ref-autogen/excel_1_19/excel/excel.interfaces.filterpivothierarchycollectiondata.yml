@@ -3,10 +3,11 @@ name: Excel.Interfaces.FilterPivotHierarchyCollectionData
 uid: excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `filterPivotHierarchyCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `filterPivotHierarchyCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.FilterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection): [toJSON](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.FilterPivotHierarchyData[];'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface"
-          />[]
+        type: <xref uid="excel!Excel.Interfaces.FilterPivotHierarchyData:interface" />[]

@@ -3,9 +3,7 @@ name: Word.EventSource
 uid: word!Word.EventSource:enum
 package: word!
 fullName: Word.EventSource
-summary: >-
-  An enum that specifies an event's source. It can be local or remote (through
-  coauthoring).
+summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
 remarks: '\[Api set: WordApi 1.5\]'
 
 isPreview: false

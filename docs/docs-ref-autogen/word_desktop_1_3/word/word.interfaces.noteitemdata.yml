@@ -3,10 +3,11 @@ name: Word.Interfaces.NoteItemData
 uid: word!Word.Interfaces.NoteItemData:interface
 package: word!
 fullName: Word.Interfaces.NoteItemData
-summary: >-
-  An interface describing the data returned by calling `noteItem.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `noteItem.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.NoteItem](/javascript/api/word/word.noteitem): [toJSON](/javascript/api/word/word.noteitem#word-word-noteitem-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: word!Word.Interfaces.NoteItemData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Represents the body object of the note item. It's the portion of the text
-      within the footnote or endnote.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +31,7 @@ properties:
     package: word!
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +44,7 @@ properties:
     package: word!
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

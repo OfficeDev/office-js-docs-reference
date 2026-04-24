@@ -3,9 +3,7 @@ name: Word.Interfaces.AnnotationData
 uid: word!Word.Interfaces.AnnotationData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationData
-summary: >-
-  An interface describing the data returned by calling `annotation.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `annotation.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.AnnotationData#id:member
     package: word!
     fullName: id
-    summary: >-
-      Gets the unique identifier, which is meant to be used for easier tracking
-      of `Annotation` objects.
+    summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
@@ -39,6 +35,4 @@ properties:
     syntax:
       content: 'state?: Word.AnnotationState | "Created" | "Accepted" | "Rejected";'
       return:
-        type: >-
-          <xref uid="word!Word.AnnotationState:enum" /> | "Created" | "Accepted"
-          | "Rejected"
+        type: <xref uid="word!Word.AnnotationState:enum" /> | "Created" | "Accepted" | "Rejected"

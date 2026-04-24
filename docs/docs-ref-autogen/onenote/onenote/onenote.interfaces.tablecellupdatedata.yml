@@ -3,10 +3,11 @@ name: OneNote.Interfaces.TableCellUpdateData
 uid: onenote!OneNote.Interfaces.TableCellUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableCellUpdateData
-summary: >-
-  An interface for updating data on the `TableCell` object, for use in
-  `tableCell.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.TableCell](/javascript/api/onenote/onenote.tablecell): [set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: onenote!
     fullName: shadingColor
     summary: Gets and sets the shading color of the cell
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

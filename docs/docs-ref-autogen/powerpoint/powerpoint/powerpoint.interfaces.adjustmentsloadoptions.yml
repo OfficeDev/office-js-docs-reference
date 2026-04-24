@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.AdjustmentsLoadOptions
 summary: Represents the adjustment values for a shape.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.Adjustments](/javascript/api/powerpoint/powerpoint.adjustments): [load](/javascript/api/powerpoint/powerpoint.adjustments#powerpoint-powerpoint-adjustments-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: count
     summary: Specifies the number of adjustment points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

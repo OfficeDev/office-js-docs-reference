@@ -3,9 +3,7 @@ name: Word.Interfaces.InlinePictureUpdateData
 uid: word!Word.Interfaces.InlinePictureUpdateData:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureUpdateData
-summary: >-
-  An interface for updating data on the `InlinePicture` object, for use in
-  `inlinePicture.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: >-
-      Specifies a string that represents the alternative text associated with
-      the inline image.
+    summary: Specifies a string that represents the alternative text associated with the inline image.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -57,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Specifies a hyperlink on the image. Use a '\#' to separate the address
-      part from the optional location part.
+    summary: Specifies a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
@@ -72,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
-    summary: >-
-      Specifies whether the inline image retains its original proportions when
-      you resize it.
+    summary: Specifies whether the inline image retains its original proportions when you resize it.
     remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false

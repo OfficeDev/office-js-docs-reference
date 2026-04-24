@@ -3,10 +3,11 @@ name: Word.Interfaces.BreakCollectionData
 uid: word!Word.Interfaces.BreakCollectionData:interface
 package: word!
 fullName: Word.Interfaces.BreakCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `breakCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `breakCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [toJSON](/javascript/api/word/word.breakcollection#word-word-breakcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

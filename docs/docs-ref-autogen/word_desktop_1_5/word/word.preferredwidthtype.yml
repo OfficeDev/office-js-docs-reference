@@ -3,9 +3,7 @@ name: Word.PreferredWidthType
 uid: word!Word.PreferredWidthType:enum
 package: word!
 fullName: Word.PreferredWidthType
-summary: >-
-  Specifies the preferred unit of measure to use when measuring the width of an
-  item.
+summary: Specifies the preferred unit of measure to use when measuring the width of an item.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
@@ -14,10 +12,8 @@ fields:
   - name: auto
     uid: word!Word.PreferredWidthType.auto:member
     package: word!
-    summary: >-
-      Automatically select the unit of measure to use based on the current
-      selection.
-
+    summary: |-
+      Automatically select the unit of measure to use based on the current selection.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"Auto"'

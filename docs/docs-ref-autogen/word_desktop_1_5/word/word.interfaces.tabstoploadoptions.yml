@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.TabStopLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.TabStopLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      Gets a `TabAlignment` value that represents the alignment for the tab
-      stop.
+    summary: Gets a `TabAlignment` value that represents the alignment for the tab stop.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -58,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.TabStopLoadOptions#leader:member
     package: word!
     fullName: leader
-    summary: >-
-      Gets a `TabLeader` value that represents the leader for this `TabStop`
-      object.
+    summary: Gets a `TabLeader` value that represents the leader for this `TabStop` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

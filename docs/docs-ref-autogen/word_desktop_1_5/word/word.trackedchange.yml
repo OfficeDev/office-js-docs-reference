@@ -27,9 +27,7 @@ properties:
     uid: word!Word.TrackedChange#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -74,13 +72,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Word.TrackedChangeType | "None" | "Added" | "Deleted" |
-        "Formatted";
+      content: 'readonly type: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
       return:
-        type: >-
-          <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" |
-          "Deleted" | "Formatted"
+        type: <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"
 methods:
   - name: accept()
     uid: word!Word.TrackedChange#accept:member(1)
@@ -100,9 +94,7 @@ methods:
     uid: word!Word.TrackedChange#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: >-
-      Gets the next tracked change. Throws an `ItemNotFound` error if this
-      tracked change is the last one.
+    summary: Gets the next tracked change. Throws an `ItemNotFound` error if this tracked change is the last one.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -116,12 +108,7 @@ methods:
     uid: word!Word.TrackedChange#getNextOrNullObject:member(1)
     package: word!
     fullName: getNextOrNullObject()
-    summary: >-
-      Gets the next tracked change. If this tracked change is the last one, then
-      this method will return an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets the next tracked change. If this tracked change is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
@@ -141,21 +128,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getRange(rangeLocation?: Word.RangeLocation.whole |
-        Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" |
-        "End"): Word.Range;
+      content: 'getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" | "End"): Word.Range;'
       parameters:
         - id: rangeLocation
-          description: >-
-            Optional. Specifies the part of the tracked change to get the range
-            for. If not specified, the whole range of the tracked change is
-            returned.
-          type: >-
-            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
-            uid="word!Word.RangeLocation.start:member" /> | <xref
-            uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" |
-            "End"
+          description: Optional. Specifies the part of the tracked change to get the range for. If not specified, the whole range of the tracked change is returned.
+          type: <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> | <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -163,23 +140,17 @@ methods:
     uid: word!Word.TrackedChange#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TrackedChangeLoadOptions):
-        Word.TrackedChange;
+      content: 'load(options?: Word.Interfaces.TrackedChangeLoadOptions): Word.TrackedChange;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="word!Word.Interfaces.TrackedChangeLoadOptions:interface"
-            />
+          type: <xref uid="word!Word.Interfaces.TrackedChangeLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.TrackedChange:class" />
         description: ''
@@ -187,9 +158,7 @@ methods:
     uid: word!Word.TrackedChange#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -198,9 +167,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.TrackedChange;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TrackedChange:class" />
@@ -209,9 +176,7 @@ methods:
     uid: word!Word.TrackedChange#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -224,11 +189,7 @@ methods:
                 }): Word.TrackedChange;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -255,15 +216,7 @@ methods:
     uid: word!Word.TrackedChange#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TrackedChange`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.TrackedChangeData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TrackedChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -277,16 +230,7 @@ methods:
     uid: word!Word.TrackedChange#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -300,14 +244,7 @@ methods:
     uid: word!Word.TrackedChange#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

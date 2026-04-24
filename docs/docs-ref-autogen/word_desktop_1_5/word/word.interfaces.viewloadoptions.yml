@@ -3,9 +3,7 @@ name: Word.Interfaces.ViewLoadOptions
 uid: word!Word.Interfaces.ViewLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ViewLoadOptions
-summary: >-
-  Contains the view attributes (such as show all, field shading, and table
-  gridlines) for a window or pane.
+summary: Contains the view attributes (such as show all, field shading, and table gridlines) for a window or pane.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -29,8 +24,7 @@ properties:
       return:
         type: boolean
   - name: areAllNonprintingCharactersDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areAllNonprintingCharactersDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areAllNonprintingCharactersDisplayed:member
     package: word!
     fullName: areAllNonprintingCharactersDisplayed
     summary: Specifies whether all nonprinting characters are displayed.
@@ -46,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areBackgroundsDisplayed:member
     package: word!
     fullName: areBackgroundsDisplayed
-    summary: >-
-      Gets whether background colors and images are shown when the document is
-      displayed in print layout view.
+    summary: Gets whether background colors and images are shown when the document is displayed in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -61,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areBookmarksIndicated:member
     package: word!
     fullName: areBookmarksIndicated
-    summary: >-
-      Gets whether square brackets are displayed at the beginning and end of
-      each bookmark.
+    summary: Gets whether square brackets are displayed at the beginning and end of each bookmark.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -86,13 +76,10 @@ properties:
       return:
         type: boolean
   - name: areConnectingLinesToRevisionsBalloonDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areConnectingLinesToRevisionsBalloonDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areConnectingLinesToRevisionsBalloonDisplayed:member
     package: word!
     fullName: areConnectingLinesToRevisionsBalloonDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays connecting lines from the text
-      to the revision and comment balloons.
+    summary: Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -105,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areCropMarksDisplayed:member
     package: word!
     fullName: areCropMarksDisplayed
-    summary: >-
-      Gets whether crop marks are shown in the corners of pages to indicate
-      where margins are located.
+    summary: Gets whether crop marks are shown in the corners of pages to indicate where margins are located.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -120,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areDrawingsDisplayed:member
     package: word!
     fullName: areDrawingsDisplayed
-    summary: >-
-      Gets whether objects created with the drawing tools are displayed in print
-      layout view.
+    summary: Gets whether objects created with the drawing tools are displayed in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -135,9 +118,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areEditableRangesShaded:member
     package: word!
     fullName: areEditableRangesShaded
-    summary: >-
-      Specifies whether shading is applied to the ranges in the document that
-      users have permission to modify.
+    summary: Specifies whether shading is applied to the ranges in the document that users have permission to modify.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -163,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areFormatChangesDisplayed:member
     package: word!
     fullName: areFormatChangesDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays formatting changes made to the
-      document with Track Changes enabled.
+    summary: Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -188,13 +167,10 @@ properties:
       return:
         type: boolean
   - name: areInsertionsAndDeletionsDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areInsertionsAndDeletionsDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areInsertionsAndDeletionsDisplayed:member
     package: word!
     fullName: areInsertionsAndDeletionsDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays insertions and deletions made to
-      the document with Track Changes enabled.
+    summary: Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -207,9 +183,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areLinesWrappedToWindow:member
     package: word!
     fullName: areLinesWrappedToWindow
-    summary: >-
-      Gets whether lines wrap at the right edge of the document window rather
-      than at the right margin or the right column boundary.
+    summary: Gets whether lines wrap at the right edge of the document window rather than at the right margin or the right column boundary.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -222,9 +196,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areObjectAnchorsDisplayed:member
     package: word!
     fullName: areObjectAnchorsDisplayed
-    summary: >-
-      Gets whether object anchors are displayed next to items that can be
-      positioned in print layout view.
+    summary: Gets whether object anchors are displayed next to items that can be positioned in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -276,9 +248,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#arePageBoundariesDisplayed:member
     package: word!
     fullName: arePageBoundariesDisplayed
-    summary: >-
-      Gets whether the top and bottom margins and the gray area between pages in
-      the document are displayed.
+    summary: Gets whether the top and bottom margins and the gray area between pages in the document are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -301,8 +271,7 @@ properties:
       return:
         type: boolean
   - name: arePicturePlaceholdersDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#arePicturePlaceholdersDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#arePicturePlaceholdersDisplayed:member
     package: word!
     fullName: arePicturePlaceholdersDisplayed
     summary: Gets whether blank boxes are displayed as placeholders for pictures.
@@ -315,13 +284,10 @@ properties:
       return:
         type: boolean
   - name: areRevisionsAndCommentsDisplayed
-    uid: >-
-      word!Word.Interfaces.ViewLoadOptions#areRevisionsAndCommentsDisplayed:member
+    uid: word!Word.Interfaces.ViewLoadOptions#areRevisionsAndCommentsDisplayed:member
     package: word!
     fullName: areRevisionsAndCommentsDisplayed
-    summary: >-
-      Specifies whether Microsoft Word displays revisions and comments made to
-      the document with Track Changes enabled.
+    summary: Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -373,9 +339,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#areTextBoundariesDisplayed:member
     package: word!
     fullName: areTextBoundariesDisplayed
-    summary: >-
-      Gets whether dotted lines are displayed around page margins, text columns,
-      objects, and frames in print layout view.
+    summary: Gets whether dotted lines are displayed around page margins, text columns, objects, and frames in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -414,9 +378,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isDraft:member
     package: word!
     fullName: isDraft
-    summary: >-
-      Specifies whether all the text in a window is displayed in the same
-      sans-serif font with minimal formatting to speed up display.
+    summary: Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -429,9 +391,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isFirstLineOnlyDisplayed:member
     package: word!
     fullName: isFirstLineOnlyDisplayed
-    summary: >-
-      Specifies whether only the first line of body text is shown in outline
-      view.
+    summary: Specifies whether only the first line of body text is shown in outline view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -483,9 +443,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isHighlightingDisplayed:member
     package: word!
     fullName: isHighlightingDisplayed
-    summary: >-
-      Gets whether highlight formatting is displayed and printed with the
-      document.
+    summary: Gets whether highlight formatting is displayed and printed with the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -537,9 +495,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isMailMergeDataView:member
     package: word!
     fullName: isMailMergeDataView
-    summary: >-
-      Specifies whether mail merge data is displayed instead of mail merge
-      fields.
+    summary: Specifies whether mail merge data is displayed instead of mail merge fields.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -552,9 +508,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isMainTextLayerVisible:member
     package: word!
     fullName: isMainTextLayerVisible
-    summary: >-
-      Specifies whether the text in the document is visible when the header and
-      footer areas are displayed.
+    summary: Specifies whether the text in the document is visible when the header and footer areas are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -567,9 +521,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isPointerShownAsMagnifier:member
     package: word!
     fullName: isPointerShownAsMagnifier
-    summary: >-
-      Specifies whether the pointer is displayed as a magnifying glass in print
-      preview.
+    summary: Specifies whether the pointer is displayed as a magnifying glass in print preview.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -582,9 +534,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#isReadingLayoutActualView:member
     package: word!
     fullName: isReadingLayoutActualView
-    summary: >-
-      Specifies whether pages displayed in reading layout view are displayed
-      using the same layout as printed pages.
+    summary: Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -649,9 +599,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#readingLayoutTruncateMargins:member
     package: word!
     fullName: readingLayoutTruncateMargins
-    summary: >-
-      Specifies whether margins are visible or hidden when the document is
-      viewed in Full Screen Reading view.
+    summary: Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -664,9 +612,7 @@ properties:
     uid: word!Word.Interfaces.ViewLoadOptions#revisionsBalloonSide:member
     package: word!
     fullName: revisionsBalloonSide
-    summary: >-
-      Gets whether Word displays revision balloons in the left or right margin
-      in the document.
+    summary: Gets whether Word displays revision balloons in the left or right margin in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -713,9 +659,7 @@ properties:
     syntax:
       content: 'revisionsFilter?: Word.Interfaces.RevisionsFilterLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.RevisionsFilterLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.RevisionsFilterLoadOptions:interface" />
   - name: seekView
     uid: word!Word.Interfaces.ViewLoadOptions#seekView:member
     package: word!

@@ -4,10 +4,12 @@ uid: visio!Visio.DocumentErrorEventArgs:interface
 package: visio!
 fullName: Visio.DocumentErrorEventArgs
 summary: Provides information about DocumentError event.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.Document](/javascript/api/visio/visio.document): [onDocumentError](/javascript/api/visio/visio.document#visio-visio-document-ondocumenterror-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +20,7 @@ properties:
     package: visio!
     fullName: errorCode
     summary: Visio Error code.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -34,10 +33,7 @@ properties:
     package: visio!
     fullName: errorMessage
     summary: Message about error that occurred.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -49,13 +45,8 @@ properties:
     uid: visio!Visio.DocumentErrorEventArgs#isCritical:member
     package: visio!
     fullName: isCritical
-    summary: >-
-      Tells if the error is critical or not. If critical the session cannot
-      continue.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: Tells if the error is critical or not. If critical the session cannot continue.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

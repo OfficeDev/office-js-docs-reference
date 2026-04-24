@@ -12,10 +12,8 @@ fields:
   - name: mixed
     uid: word!Word.GradientColorType.mixed:member
     package: word!
-    summary: >-
-      Mixed gradient color type. Used when multiple shapes with different
-      gradient types are selected.
-
+    summary: |-
+      Mixed gradient color type. Used when multiple shapes with different gradient types are selected.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'

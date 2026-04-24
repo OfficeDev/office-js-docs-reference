@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomXmlPartData
 uid: word!Word.Interfaces.CustomXmlPartData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPart.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -29,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPartData#documentElement:member
     package: word!
     fullName: documentElement
-    summary: >-
-      Gets the root element of a bound region of data in the document. If the
-      region is empty, the property returns `Nothing`<!-- -->.
+    summary: Gets the root element of a bound region of data in the document. If the region is empty, the property returns `Nothing`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -57,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPartData#namespaceManager:member
     package: word!
     fullName: namespaceManager
-    summary: >-
-      Gets the set of namespace prefix mappings used against the current
-      `CustomXmlPart` object.
+    summary: Gets the set of namespace prefix mappings used against the current `CustomXmlPart` object.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -67,9 +61,7 @@ properties:
     syntax:
       content: 'namespaceManager?: Word.Interfaces.CustomXmlPrefixMappingData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface" />[]
   - name: namespaceUri
     uid: word!Word.Interfaces.CustomXmlPartData#namespaceUri:member
     package: word!
@@ -87,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.CustomXmlPartData#schemaCollection:member
     package: word!
     fullName: schemaCollection
-    summary: >-
-      Specifies a `CustomXmlSchemaCollection` object representing the set of
-      schemas attached to a bound region of data in the document.
+    summary: Specifies a `CustomXmlSchemaCollection` object representing the set of schemas attached to a bound region of data in the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false

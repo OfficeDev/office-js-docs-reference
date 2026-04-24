@@ -3,9 +3,7 @@ name: Word.Interfaces.DropCapData
 uid: word!Word.Interfaces.DropCapData:interface
 package: word!
 fullName: Word.Interfaces.DropCapData
-summary: >-
-  An interface describing the data returned by calling `dropCap.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `dropCap.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.DropCapData#distanceFromText:member
     package: word!
     fullName: distanceFromText
-    summary: >-
-      Gets the distance (in points) between the dropped capital letter and the
-      paragraph text.
+    summary: Gets the distance (in points) between the dropped capital letter and the paragraph text.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -65,6 +61,4 @@ properties:
     syntax:
       content: 'position?: Word.DropPosition | "None" | "Normal" | "Margin";'
       return:
-        type: >-
-          <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" |
-          "Margin"
+        type: <xref uid="word!Word.DropPosition:enum" /> | "None" | "Normal" | "Margin"

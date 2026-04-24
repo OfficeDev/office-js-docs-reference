@@ -3,9 +3,7 @@ name: Word.EmphasisMark
 uid: word!Word.EmphasisMark:enum
 package: word!
 fullName: Word.EmphasisMark
-summary: >-
-  Specifies the type of emphasis mark to use for a character or designated
-  character string.
+summary: Specifies the type of emphasis mark to use for a character or designated character string.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

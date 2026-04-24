@@ -3,9 +3,7 @@ name: Word.Interfaces.CoauthoringData
 uid: word!Word.Interfaces.CoauthoringData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoring.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `coauthoring.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringData#authors:member
     package: word!
     fullName: authors
-    summary: >-
-      Gets a `CoauthorCollection` object that represents all the coauthors
-      currently editing the document.
+    summary: Gets a `CoauthorCollection` object that represents all the coauthors currently editing the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -57,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringData#conflicts:member
     package: word!
     fullName: conflicts
-    summary: >-
-      Gets a `ConflictCollection` object that represents all the conflicts in
-      the document.
+    summary: Gets a `ConflictCollection` object that represents all the conflicts in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -72,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringData#locks:member
     package: word!
     fullName: locks
-    summary: >-
-      Gets a `CoauthoringLockCollection` object that represents the locks in the
-      document.
+    summary: Gets a `CoauthoringLockCollection` object that represents the locks in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -113,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringData#updates:member
     package: word!
     fullName: updates
-    summary: >-
-      Gets a `CoauthoringUpdateCollection` object that represents the most
-      recent updates that were merged into the document.
+    summary: Gets a `CoauthoringUpdateCollection` object that represents the most recent updates that were merged into the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

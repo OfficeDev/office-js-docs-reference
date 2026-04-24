@@ -3,10 +3,11 @@ name: Excel.Interfaces.TableCollectionData
 uid: excel!Excel.Interfaces.TableCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.TableCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [toJSON](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

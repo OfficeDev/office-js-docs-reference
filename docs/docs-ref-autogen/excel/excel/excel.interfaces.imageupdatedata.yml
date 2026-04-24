@@ -3,10 +3,11 @@ name: Excel.Interfaces.ImageUpdateData
 uid: excel!Excel.Interfaces.ImageUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ImageUpdateData
-summary: >-
-  An interface for updating data on the `Image` object, for use in `image.set({
-  ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.Image](/javascript/api/excel/excel.image): [set](/javascript/api/excel/excel.image#excel-excel-image-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.ImageUpdateData#brightness:member
     package: excel!
     fullName: brightness
-    summary: >-
-      Specifies the brightness of the image. The value for this property must be
-      a number from 0.0 (dimmest) to 1.0 (brightest).
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,30 +31,20 @@ properties:
     package: excel!
     fullName: colorType
     summary: Specifies the type of color transformation applied to the image.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale"
-        | "BlackAndWhite" | "Watermark";
+      content: 'colorType?: Excel.PictureColorType | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PictureColorType:enum" /> | "Mixed" |
-          "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark"
+        type: <xref uid="excel!Excel.PictureColorType:enum" /> | "Mixed" | "Automatic" | "GrayScale" | "BlackAndWhite" | "Watermark"
   - name: contrast
     uid: excel!Excel.Interfaces.ImageUpdateData#contrast:member
     package: excel!
     fullName: contrast
-    summary: >-
-      Specifies the contrast of the image. The value for this property must be a
-      number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -69,12 +56,8 @@ properties:
     uid: excel!Excel.Interfaces.ImageUpdateData#cropBottom:member
     package: excel!
     fullName: cropBottom
-    summary: >-
-      Specifies the number of points that are cropped off the bottom of the
-      image.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the number of points that are cropped off the bottom of the image.
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -86,12 +69,8 @@ properties:
     uid: excel!Excel.Interfaces.ImageUpdateData#cropLeft:member
     package: excel!
     fullName: cropLeft
-    summary: >-
-      Specifies the number of points that are cropped off the left side of the
-      image.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the number of points that are cropped off the left side of the image.
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -103,12 +82,8 @@ properties:
     uid: excel!Excel.Interfaces.ImageUpdateData#cropRight:member
     package: excel!
     fullName: cropRight
-    summary: >-
-      Specifies the number of points that are cropped off the right side of the
-      image.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the number of points that are cropped off the right side of the image.
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +96,7 @@ properties:
     package: excel!
     fullName: cropTop
     summary: Specifies the number of points that are cropped off the top of the image.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.ShapeCollectionData
 uid: powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [toJSON](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

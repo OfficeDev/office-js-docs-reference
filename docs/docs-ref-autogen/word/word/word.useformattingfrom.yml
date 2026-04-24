@@ -4,9 +4,12 @@ uid: word!Word.UseFormattingFrom:enum
 package: word!
 fullName: Word.UseFormattingFrom
 summary: Specifies the source of formatting to use during document operations.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.DocumentMergeOptions](/javascript/api/word/word.documentmergeoptions): [useFormattingFrom](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-useformattingfrom-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +17,24 @@ fields:
   - name: current
     uid: word!Word.UseFormattingFrom.current:member
     package: word!
-    summary: >-
+    summary: |-
       Represents using formatting from the current document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Current"'
   - name: prompt
     uid: word!Word.UseFormattingFrom.prompt:member
     package: word!
-    summary: >-
+    summary: |-
       Represents prompting the user for formatting preferences.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Prompt"'
   - name: selected
     uid: word!Word.UseFormattingFrom.selected:member
     package: word!
-    summary: >-
+    summary: |-
       Represents using formatting from the selected document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Selected"'

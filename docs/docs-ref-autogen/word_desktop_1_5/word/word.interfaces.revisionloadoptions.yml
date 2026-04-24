@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.RevisionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -82,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.RevisionLoadOptions#movedRange:member
     package: word!
     fullName: movedRange
-    summary: >-
-      Gets a `Range` object that represents the range of text that was moved
-      from one place to another in the document with tracked changes.
+    summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -97,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.RevisionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained within a revision mark.
+    summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

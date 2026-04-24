@@ -3,9 +3,7 @@ name: Word.Interfaces.TrackedChangeCollectionLoadOptions
 uid: word!Word.Interfaces.TrackedChangeCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeCollectionLoadOptions
-summary: >-
-  Contains a collection of
-  [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
+summary: Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedChange:class) objects.
 remarks: '\[Api set: WordApi 1.6\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.TrackedChangeCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false

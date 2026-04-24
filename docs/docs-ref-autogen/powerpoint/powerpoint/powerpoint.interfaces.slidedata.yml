@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.SlideData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideData
 summary: An interface describing the data returned by calling `slide.toJSON()`<!-- -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [toJSON](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -15,10 +18,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -30,13 +30,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideData#index:member
     package: powerpoint!
     fullName: index
-    summary: >-
-      Returns the zero-based index of the slide representing its position in the
-      presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Returns the zero-based index of the slide representing its position in the presentation.
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

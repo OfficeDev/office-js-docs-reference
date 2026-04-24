@@ -12,10 +12,8 @@ fields:
   - name: sessionStart
     uid: word!Word.ApplyQuickStyleSet.sessionStart:member
     package: word!
-    summary: >-
-      Resets the Quick Style to the style set in use when the document was
-      opened.
-
+    summary: |-
+      Resets the Quick Style to the style set in use when the document was opened.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"SessionStart"'

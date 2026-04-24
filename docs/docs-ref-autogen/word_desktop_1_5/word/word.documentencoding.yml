@@ -178,8 +178,7 @@ fields:
       * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicJapaneseKatakanaExtended"'
   - name: ebcdicJapaneseKatakanaExtendedAndJapanese
-    uid: >-
-      word!Word.DocumentEncoding.ebcdicJapaneseKatakanaExtendedAndJapanese:member
+    uid: word!Word.DocumentEncoding.ebcdicJapaneseKatakanaExtendedAndJapanese:member
     package: word!
     summary: |-
       EBCDIC Japanese Katakana Extended and Japanese encoding.
@@ -243,8 +242,7 @@ fields:
       * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicSerbianBulgarian"'
   - name: ebcdicSimplifiedChineseExtendedAndSimplifiedChinese
-    uid: >-
-      word!Word.DocumentEncoding.ebcdicSimplifiedChineseExtendedAndSimplifiedChinese:member
+    uid: word!Word.DocumentEncoding.ebcdicSimplifiedChineseExtendedAndSimplifiedChinese:member
     package: word!
     summary: |-
       EBCDIC Simplified Chinese Extended and Simplified Chinese encoding.
@@ -958,10 +956,8 @@ fields:
   - name: simplifiedChineseGbk
     uid: word!Word.DocumentEncoding.simplifiedChineseGbk:member
     package: word!
-    summary: >-
-      Simplified Chinese Guojia Biaozhun Kuozhan (GBK, which means "National
-      Standard Extended" in Chinese) encoding.
-
+    summary: |-
+      Simplified Chinese Guojia Biaozhun Kuozhan (GBK, which means "National Standard Extended" in Chinese) encoding.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"SimplifiedChineseGbk"'

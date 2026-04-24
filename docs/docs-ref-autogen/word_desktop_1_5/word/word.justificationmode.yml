@@ -20,10 +20,8 @@ fields:
   - name: compressKana
     uid: word!Word.JustificationMode.compressKana:member
     package: word!
-    summary: >-
-      Compresses the character spacing using rules of the kana syllabaries,
-      Hiragana and Katakana.
-
+    summary: |-
+      Compresses the character spacing using rules of the kana syllabaries, Hiragana and Katakana.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"CompressKana"'

@@ -4,7 +4,10 @@ uid: office!OfficeExtension.IPromise:type
 package: office!
 fullName: OfficeExtension.IPromise
 summary: ''
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
 
 isPreview: false
 isDeprecated: false

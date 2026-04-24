@@ -3,10 +3,11 @@ name: OneNote.Interfaces.SectionCollectionData
 uid: onenote!OneNote.Interfaces.SectionCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.SectionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `sectionCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `sectionCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.SectionCollection](/javascript/api/onenote/onenote.sectioncollection): [toJSON](/javascript/api/onenote/onenote.sectioncollection#onenote-onenote-sectioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.SelectionUpdateData
 uid: word!Word.Interfaces.SelectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.SelectionUpdateData
-summary: >-
-  An interface for updating data on the `Selection` object, for use in
-  `selection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Selection` object, for use in `selection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -100,15 +98,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        orientation?: Word.TextOrientation | "Horizontal" | "Upward" |
-        "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" |
-        "Vertical";
+      content: 'orientation?: Word.TextOrientation | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical";'
       return:
-        type: >-
-          <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" |
-          "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast"
-          | "Vertical"
+        type: <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical"
   - name: start
     uid: word!Word.Interfaces.SelectionUpdateData#start:member
     package: word!

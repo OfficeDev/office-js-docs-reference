@@ -3,10 +3,11 @@ name: Excel.Interfaces.PageBreakCollectionData
 uid: excel!Excel.Interfaces.PageBreakCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.PageBreakCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pageBreakCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pageBreakCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [toJSON](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

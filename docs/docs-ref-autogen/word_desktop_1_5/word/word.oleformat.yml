@@ -3,9 +3,7 @@ name: Word.OleFormat
 uid: word!Word.OleFormat:class
 package: word!
 fullName: Word.OleFormat
-summary: >-
-  Represents the OLE characteristics (other than linking) for an OLE object,
-  ActiveX control, or field.
+summary: Represents the OLE characteristics (other than linking) for an OLE object, ActiveX control, or field.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -29,9 +27,7 @@ properties:
     uid: word!Word.OleFormat#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -44,9 +40,7 @@ properties:
     uid: word!Word.OleFormat#iconIndex:member
     package: word!
     fullName: iconIndex
-    summary: >-
-      Specifies the icon that is used when the `displayAsIcon` property is
-      `true`<!-- -->.
+    summary: Specifies the icon that is used when the `displayAsIcon` property is `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -111,9 +105,7 @@ properties:
     uid: word!Word.OleFormat#isFormattingPreservedOnUpdate:member
     package: word!
     fullName: isFormattingPreservedOnUpdate
-    summary: >-
-      Specifies whether formatting done in Microsoft Word to the linked OLE
-      object is preserved.
+    summary: Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -126,9 +118,7 @@ properties:
     uid: word!Word.OleFormat#label:member
     package: word!
     fullName: label
-    summary: >-
-      Gets a string that's used to identify the portion of the source file
-      that's being linked.
+    summary: Gets a string that's used to identify the portion of the source file that's being linked.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -141,9 +131,7 @@ properties:
     uid: word!Word.OleFormat#progId:member
     package: word!
     fullName: progId
-    summary: >-
-      Gets the programmatic identifier (`ProgId`<!-- -->) for the specified OLE
-      object.
+    summary: Gets the programmatic identifier (`ProgId`<!-- -->) for the specified OLE object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -171,9 +159,7 @@ methods:
     uid: word!Word.OleFormat#activateAs:member(1)
     package: word!
     fullName: activateAs(classType)
-    summary: >-
-      Sets the Windows registry value that determines the default application
-      used to activate the specified OLE object.
+    summary: Sets the Windows registry value that determines the default application used to activate the specified OLE object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -215,15 +201,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        doVerb(verbIndex: "Primary" | "Show" | "Open" | "Hide" | "UiActivate" |
-        "InPlaceActivate" | "DiscardUndoState"): void;
+      content: 'doVerb(verbIndex: "Primary" | "Show" | "Open" | "Hide" | "UiActivate" | "InPlaceActivate" | "DiscardUndoState"): void;'
       parameters:
         - id: verbIndex
           description: Optional. The index of the verb to perform.
-          type: >-
-            "Primary" | "Show" | "Open" | "Hide" | "UiActivate" |
-            "InPlaceActivate" | "DiscardUndoState"
+          type: '"Primary" | "Show" | "Open" | "Hide" | "UiActivate" | "InPlaceActivate" | "DiscardUndoState"'
       return:
         type: void
         description: ''
@@ -245,9 +227,7 @@ methods:
     uid: word!Word.OleFormat#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -265,9 +245,7 @@ methods:
     uid: word!Word.OleFormat#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -276,9 +254,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.OleFormat;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.OleFormat:class" />
@@ -287,9 +263,7 @@ methods:
     uid: word!Word.OleFormat#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -302,11 +276,7 @@ methods:
                 }): Word.OleFormat;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -333,29 +303,19 @@ methods:
     uid: word!Word.OleFormat#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.OleFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.OleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.OleFormatUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -364,9 +324,7 @@ methods:
     uid: word!Word.OleFormat#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -384,14 +342,7 @@ methods:
     uid: word!Word.OleFormat#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.OleFormat` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.OleFormatData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.OleFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.OleFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -405,16 +356,7 @@ methods:
     uid: word!Word.OleFormat#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -428,14 +370,7 @@ methods:
     uid: word!Word.OleFormat#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

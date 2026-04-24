@@ -40,9 +40,7 @@ properties:
     uid: word!Word.TableRow#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -81,9 +79,7 @@ properties:
     uid: word!Word.TableRow#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other
-      properties.
+    summary: Gets the font. Use this to get and set font name, size, color, and other properties.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -109,29 +105,20 @@ properties:
     uid: word!Word.TableRow#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      Specifies the horizontal alignment of every cell in the row. The value can
-      be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
-      -->.
+    summary: Specifies the horizontal alignment of every cell in the row. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
+      content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: isHeader
     uid: word!Word.TableRow#isHeader:member
     package: word!
     fullName: isHeader
-    summary: >-
-      Checks whether the row is a header row. To set the number of header rows,
-      use `headerRowCount` on the `Table` object.
+    summary: Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the `Table` object.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -196,9 +183,7 @@ properties:
     uid: word!Word.TableRow#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns the `ShadingUniversal` object that represents the shading of the
-      table row.
+    summary: Returns the `ShadingUniversal` object that represents the shading of the table row.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -211,9 +196,7 @@ properties:
     uid: word!Word.TableRow#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      Specifies the shading color. Color is specified in "\#RRGGBB" format or by
-      using the color name.
+    summary: Specifies the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -239,21 +222,15 @@ properties:
     uid: word!Word.TableRow#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the cells in the row. The value can be
-      `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
+    summary: Specifies the vertical alignment of the cells in the row. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" |
-        "Bottom";
+      content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
+        type: <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" | "Center" | "Bottom"
 methods:
   - name: clear()
     uid: word!Word.TableRow#clear:member(1)
@@ -282,9 +259,7 @@ methods:
       content: 'convertToText(options?: Word.TableConvertToTextOptions): Word.Range;'
       parameters:
         - id: options
-          description: >-
-            Optional. An object that specifies the options for converting the
-            table row to text.
+          description: Optional. An object that specifies the options for converting the table row to text.
           type: <xref uid="word!Word.TableConvertToTextOptions:interface" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -331,16 +306,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" |
-        "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"):
-        Word.TableBorder;
+      content: 'getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;'
       parameters:
         - id: borderLocation
           description: The border location.
-          type: >-
-            "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
-            "InsideVertical" | "Inside" | "Outside" | "All"
+          type: '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
       return:
         type: <xref uid="word!Word.TableBorder:class" />
         description: ''
@@ -354,14 +324,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocation: Word.CellPaddingLocation):
-        OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -376,14 +342,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" |
-        "Right"): OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -392,9 +354,7 @@ methods:
     uid: word!Word.TableRow#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: >-
-      Gets the next row. Throws an `ItemNotFound` error if this row is the last
-      one.
+    summary: Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -408,12 +368,7 @@ methods:
     uid: word!Word.TableRow#getNextOrNullObject:member(1)
     package: word!
     fullName: getNextOrNullObject()
-    summary: >-
-      Gets the next row. If this row is the last one, then this method will
-      return an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -441,34 +396,22 @@ methods:
     uid: word!Word.TableRow#insertRows:member(1)
     package: word!
     fullName: insertRows(insertLocation, rowCount, values)
-    summary: >-
-      Inserts rows using this row as a template. If values are specified,
-      inserts the values into the new rows.
+    summary: Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertRows(insertLocation: Word.InsertLocation.before |
-        Word.InsertLocation.after | "Before" | "After", rowCount: number,
-        values?: string[][]): Word.TableRowCollection;
+      content: 'insertRows(insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", rowCount: number, values?: string[][]): Word.TableRowCollection;'
       parameters:
         - id: insertLocation
-          description: >-
-            Where the new rows should be inserted, relative to the current row.
-            It must be `before` or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.before:member" /> | <xref
-            uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
+          description: Where the new rows should be inserted, relative to the current row. It must be `before` or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
         - id: rowCount
           description: Number of rows to add.
           type: number
         - id: values
-          description: >-
-            Optional. Strings to insert in the new rows, specified as a 2D
-            array. The number of cells in each row must not exceed the number of
-            cells in the existing row.
+          description: Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
           type: string[][]
       return:
         type: <xref uid="word!Word.TableRowCollection:class" />
@@ -477,9 +420,7 @@ methods:
     uid: word!Word.TableRow#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -497,9 +438,7 @@ methods:
     uid: word!Word.TableRow#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -508,9 +447,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.TableRow;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TableRow:class" />
@@ -519,9 +456,7 @@ methods:
     uid: word!Word.TableRow#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -534,11 +469,7 @@ methods:
                 }): Word.TableRow;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -565,9 +496,7 @@ methods:
     uid: word!Word.TableRow#search:member(1)
     package: word!
     fullName: search(searchText, searchOptions)
-    summary: >-
-      Performs a search with the specified search options on the scope of the
-      row. The search results are a collection of `Range` objects.
+    summary: Performs a search with the specified search options on the scope of the row. The search results are a collection of `Range` objects.
     remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
@@ -615,9 +544,7 @@ methods:
       content: 'select(selectionMode?: Word.SelectionMode): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -635,9 +562,7 @@ methods:
       content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -646,29 +571,19 @@ methods:
     uid: word!Word.TableRow#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.TableRowUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.TableRowUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -677,9 +592,7 @@ methods:
     uid: word!Word.TableRow#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -703,14 +616,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocation: Word.CellPaddingLocation,
-        cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
         - id: cellPadding
           description: The cell padding.
@@ -728,14 +637,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right",
-        cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: The cell padding.
@@ -774,9 +679,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" |
-        "Exactly"): void;
+      content: 'setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" | "Exactly"): void;'
       parameters:
         - id: rowHeight
           description: The height of the row, in points.
@@ -800,9 +703,7 @@ methods:
       content: 'setLeftIndent(leftIndent: number, rulerStyle: Word.RulerStyle): void;'
       parameters:
         - id: leftIndent
-          description: >-
-            The distance (in points) between the current left edge of the table
-            row and the desired left edge.
+          description: The distance (in points) between the current left edge of the table row and the desired left edge.
           type: number
         - id: rulerStyle
           description: The ruler style to apply.
@@ -820,14 +721,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setLeftIndent(leftIndent: number, rulerStyle: "None" | "Proportional" |
-        "FirstColumn" | "SameWidth"): void;
+      content: 'setLeftIndent(leftIndent: number, rulerStyle: "None" | "Proportional" | "FirstColumn" | "SameWidth"): void;'
       parameters:
         - id: leftIndent
-          description: >-
-            The distance (in points) between the current left edge of the table
-            row and the desired left edge.
+          description: The distance (in points) between the current left edge of the table row and the desired left edge.
           type: number
         - id: rulerStyle
           description: The ruler style to apply.
@@ -839,14 +736,7 @@ methods:
     uid: word!Word.TableRow#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TableRow` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.TableRowData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -860,16 +750,7 @@ methods:
     uid: word!Word.TableRow#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -883,14 +764,7 @@ methods:
     uid: word!Word.TableRow#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

@@ -3,16 +3,16 @@ name: Office.ContextMenuUpdaterData
 uid: office!Office.ContextMenuUpdaterData:interface
 package: office!
 fullName: Office.ContextMenuUpdaterData
-summary: >-
+summary: |-
   Represents the changes to the context menu.
 
+  To learn more, see [Change the availability of add-in commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!-- -->.
+remarks: |-
+  **Requirement set**: [ContextMenuApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
-  To learn more, see [Change the availability of add-in
-  commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!--
-  -->.
-remarks: >-
-  **Requirement set**: [ContextMenuApi
-  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
+  #### Used by
+
+  - [Office.ContextMenu](/javascript/api/office/office.contextmenu): [requestUpdate](/javascript/api/office/office.contextmenu#office-office-contextmenu-requestupdate-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -22,9 +22,7 @@ properties:
     uid: office!Office.ContextMenuUpdaterData#controls:member
     package: office!
     fullName: controls
-    summary: >-
-      Collection of context menu controls whose state is set using
-      `Office.contextMenu.requestUpdate`<!-- -->.
+    summary: Collection of context menu controls whose state is set using `Office.contextMenu.requestUpdate`<!-- -->.
     remarks: ''
 
     isPreview: false

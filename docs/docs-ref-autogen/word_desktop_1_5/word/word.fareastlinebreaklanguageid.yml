@@ -3,9 +3,7 @@ name: Word.FarEastLineBreakLanguageId
 uid: word!Word.FarEastLineBreakLanguageId:enum
 package: word!
 fullName: Word.FarEastLineBreakLanguageId
-summary: >-
-  Represents the East Asian language to use when breaking lines of text in the
-  specified document or template.
+summary: Represents the East Asian language to use when breaking lines of text in the specified document or template.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

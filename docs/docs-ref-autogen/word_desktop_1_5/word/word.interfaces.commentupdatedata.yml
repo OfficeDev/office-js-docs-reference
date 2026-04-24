@@ -3,9 +3,7 @@ name: Word.Interfaces.CommentUpdateData
 uid: word!Word.Interfaces.CommentUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CommentUpdateData
-summary: >-
-  An interface for updating data on the `Comment` object, for use in
-  `comment.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -37,17 +35,12 @@ properties:
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />
+        type: <xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />
   - name: resolved
     uid: word!Word.Interfaces.CommentUpdateData#resolved:member
     package: word!
     fullName: resolved
-    summary: >-
-      Specifies the comment thread's status. Setting to `true` resolves the
-      comment thread. Getting a value of `true` means that the comment thread is
-      resolved.
+    summary: Specifies the comment thread's status. Setting to `true` resolves the comment thread. Getting a value of `true` means that the comment thread is resolved.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false

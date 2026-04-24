@@ -28,10 +28,8 @@ fields:
   - name: primary
     uid: word!Word.HeaderFooterType.primary:member
     package: word!
-    summary: >-
-      Returns the header or footer on all pages of a section, but excludes the
-      first page or even pages if they are different.
-
+    summary: |-
+      Returns the header or footer on all pages of a section, but excludes the first page or even pages if they are different.
 
       * \[Api set: WordApi 1.1\]
     value: '"Primary"'

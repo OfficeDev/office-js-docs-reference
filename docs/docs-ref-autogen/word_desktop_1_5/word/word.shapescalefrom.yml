@@ -3,9 +3,7 @@ name: Word.ShapeScaleFrom
 uid: word!Word.ShapeScaleFrom:enum
 package: word!
 fullName: Word.ShapeScaleFrom
-summary: >-
-  Specifies which part of the shape retains its position when the shape is
-  scaled.
+summary: Specifies which part of the shape retains its position when the shape is scaled.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false

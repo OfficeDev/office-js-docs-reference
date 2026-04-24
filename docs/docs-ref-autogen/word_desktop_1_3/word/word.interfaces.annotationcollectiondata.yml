@@ -3,10 +3,11 @@ name: Word.Interfaces.AnnotationCollectionData
 uid: word!Word.Interfaces.AnnotationCollectionData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `annotationCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `annotationCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [toJSON](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.BorderLineStyle
 uid: word!Word.BorderLineStyle:enum
 package: word!
 fullName: Word.BorderLineStyle
-summary: >-
-  Specifies the [border](xref:word!Word.BorderUniversal:class) style for an
-  object.
+summary: Specifies the [border](xref:word!Word.BorderUniversal:class) style for an object.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

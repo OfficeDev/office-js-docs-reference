@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.TableRowLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowLoadOptions
 summary: Represents a row in a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.TableRow](/javascript/api/powerpoint/powerpoint.tablerow): [load](/javascript/api/powerpoint/powerpoint.tablerow#powerpoint-powerpoint-tablerow-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: currentHeight
     summary: Retrieves the current height of the row in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,14 +45,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowLoadOptions#height:member
     package: powerpoint!
     fullName: height
-    summary: >-
-      Specifies the height of the row in points. If the set row height is less
-      than the minimum height, the row height will be increased to the minimum
-      height.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -68,13 +58,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowLoadOptions#rowIndex:member
     package: powerpoint!
     fullName: rowIndex
-    summary: >-
-      Returns the index number of the row within the rows collection of the
-      table. Zero-indexed.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Returns the index number of the row within the rows collection of the table. Zero-indexed.
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

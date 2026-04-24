@@ -3,9 +3,7 @@ name: Word.Interfaces.SettingCollectionLoadOptions
 uid: word!Word.Interfaces.SettingCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SettingCollectionLoadOptions
-summary: >-
-  Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
-  objects.
+summary: Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
 remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.SettingCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false

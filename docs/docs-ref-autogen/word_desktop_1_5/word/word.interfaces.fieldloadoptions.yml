@@ -4,20 +4,10 @@ uid: word!Word.Interfaces.FieldLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.FieldLoadOptions
 summary: Represents a field.
-remarks: >-
+remarks: |-
   \[Api set: WordApi 1.4\]
 
-
-  Important: To learn more about which fields can be inserted, see the
-  `Word.Range.insertField` API introduced in requirement set 1.5. Support for
-  managing fields is similar to what's available in the Word UI. However, the
-  Word UI on the web primarily only supports fields as read-only (see [Field
-  codes in Word for the
-  web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!--
-  -->). To learn more about Word UI clients that more fully support fields, see
-  the product list at the beginning of [Insert, edit, and view fields in
-  Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
-  -->.
+  Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->). To learn more about Word UI clients that more fully support fields, see the product list at the beginning of [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!-- -->.
 
 isPreview: false
 isDeprecated: false
@@ -27,10 +17,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -59,10 +46,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#data:member
     package: word!
     fullName: data
-    summary: >-
-      Specifies data in a field of `addin` type. If the field isn't an `addin`
-      type, it's `null` and it will throw a general exception when code attempts
-      to set it.
+    summary: Specifies data in a field of `addin` type. If the field isn't an `addin` type, it's `null` and it will throw a general exception when code attempts to set it.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -101,9 +85,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#locked:member
     package: word!
     fullName: locked
-    summary: >-
-      Specifies whether the field is locked. `true` if the field is locked,
-      `false` otherwise.
+    summary: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
@@ -116,9 +98,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#oleFormat:member
     package: word!
     fullName: oleFormat
-    summary: >-
-      Gets an `OleFormat` object that represents the OLE characteristics (other
-      than linking) for the field.
+    summary: Gets an `OleFormat` object that represents the OLE characteristics (other than linking) for the field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -144,9 +124,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      Gets the content control that contains the field. Throws an `ItemNotFound`
-      error if there isn't a parent content control.
+    summary: Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn't a parent content control.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -154,40 +132,25 @@ properties:
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.FieldLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.FieldLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      Gets the content control that contains the field. If there isn't a parent
-      content control, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets the content control that contains the field. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentTable
     uid: word!Word.Interfaces.FieldLoadOptions#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      Gets the table that contains the field. Throws an `ItemNotFound` error if
-      it isn't contained in a table.
+    summary: Gets the table that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -200,9 +163,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      Gets the table cell that contains the field. Throws an `ItemNotFound`
-      error if it isn't contained in a table cell.
+    summary: Gets the table cell that contains the field. Throws an `ItemNotFound` error if it isn't contained in a table cell.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -215,13 +176,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains the field. If it isn't contained in a
-      table cell, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets the table cell that contains the field. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -234,13 +189,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the field. If it isn't contained in a table,
-      then this method will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
+    summary: Gets the table that contains the field. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
@@ -266,9 +215,7 @@ properties:
     uid: word!Word.Interfaces.FieldLoadOptions#showCodes:member
     package: word!
     fullName: showCodes
-    summary: >-
-      Specifies whether the field codes are displayed for the specified field.
-      `true` if the field codes are displayed, `false` otherwise.
+    summary: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false

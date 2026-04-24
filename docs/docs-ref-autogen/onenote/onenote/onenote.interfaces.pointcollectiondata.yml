@@ -3,10 +3,11 @@ name: OneNote.Interfaces.PointCollectionData
 uid: onenote!OneNote.Interfaces.PointCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PointCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pointCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pointCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.PointCollection](/javascript/api/onenote/onenote.pointcollection): [toJSON](/javascript/api/onenote/onenote.pointcollection#onenote-onenote-pointcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

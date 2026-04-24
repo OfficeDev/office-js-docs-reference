@@ -3,9 +3,7 @@ name: Word.Interfaces.RevisionData
 uid: word!Word.Interfaces.RevisionData:interface
 package: word!
 fullName: Word.Interfaces.RevisionData
-summary: >-
-  An interface describing the data returned by calling `revision.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `revision.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -68,9 +66,7 @@ properties:
     uid: word!Word.Interfaces.RevisionData#movedRange:member
     package: word!
     fullName: movedRange
-    summary: >-
-      Gets a `Range` object that represents the range of text that was moved
-      from one place to another in the document with tracked changes.
+    summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -83,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.RevisionData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained within a revision mark.
+    summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -104,18 +98,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Word.RevisionType | "None" | "Insert" | "Delete" | "Property" |
-        "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style"
-        | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty"
-        | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" |
-        "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" |
-        "ConflictDelete";
+      content: 'type?: Word.RevisionType | "None" | "Insert" | "Delete" | "Property" | "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" | "ConflictDelete";'
       return:
-        type: >-
-          <xref uid="word!Word.RevisionType:enum" /> | "None" | "Insert" |
-          "Delete" | "Property" | "ParagraphNumber" | "DisplayField" |
-          "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" |
-          "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom"
-          | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" |
-          "CellSplit" | "ConflictInsert" | "ConflictDelete"
+        type: <xref uid="word!Word.RevisionType:enum" /> | "None" | "Insert" | "Delete" | "Property" | "ParagraphNumber" | "DisplayField" | "Reconcile" | "Conflict" | "Style" | "Replace" | "ParagraphProperty" | "TableProperty" | "SectionProperty" | "StyleDefinition" | "MovedFrom" | "MovedTo" | "CellInsertion" | "CellDeletion" | "CellMerge" | "CellSplit" | "ConflictInsert" | "ConflictDelete"

@@ -3,9 +3,7 @@ name: Word.Interfaces.OleFormatUpdateData
 uid: word!Word.Interfaces.OleFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.OleFormatUpdateData
-summary: >-
-  An interface for updating data on the `OleFormat` object, for use in
-  `oleFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `OleFormat` object, for use in `oleFormat.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -29,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.OleFormatUpdateData#iconIndex:member
     package: word!
     fullName: iconIndex
-    summary: >-
-      Specifies the icon that is used when the `displayAsIcon` property is
-      `true`<!-- -->.
+    summary: Specifies the icon that is used when the `displayAsIcon` property is `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -67,13 +63,10 @@ properties:
       return:
         type: string
   - name: isFormattingPreservedOnUpdate
-    uid: >-
-      word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
+    uid: word!Word.Interfaces.OleFormatUpdateData#isFormattingPreservedOnUpdate:member
     package: word!
     fullName: isFormattingPreservedOnUpdate
-    summary: >-
-      Specifies whether formatting done in Microsoft Word to the linked OLE
-      object is preserved.
+    summary: Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

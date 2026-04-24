@@ -4,7 +4,58 @@ uid: excel!Excel.Interfaces.CollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
+  - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [load](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-load-member(1))
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
+  - [Excel.ChartLegendEntryCollection](/javascript/api/excel/excel.chartlegendentrycollection): [load](/javascript/api/excel/excel.chartlegendentrycollection#excel-excel-chartlegendentrycollection-load-member(1))
+  - [Excel.ChartPointsCollection](/javascript/api/excel/excel.chartpointscollection): [load](/javascript/api/excel/excel.chartpointscollection#excel-excel-chartpointscollection-load-member(1))
+  - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [load](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-load-member(1))
+  - [Excel.ChartTrendlineCollection](/javascript/api/excel/excel.charttrendlinecollection): [load](/javascript/api/excel/excel.charttrendlinecollection#excel-excel-charttrendlinecollection-load-member(1))
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [load](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-load-member(1))
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [load](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-load-member(1))
+  - [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection): [load](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-load-member(1))
+  - [Excel.ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection): [load](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-load-member(1))
+  - [Excel.CustomPropertyCollection](/javascript/api/excel/excel.custompropertycollection): [load](/javascript/api/excel/excel.custompropertycollection#excel-excel-custompropertycollection-load-member(1))
+  - [Excel.CustomXmlPartCollection](/javascript/api/excel/excel.customxmlpartcollection): [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
+  - [Excel.CustomXmlPartScopedCollection](/javascript/api/excel/excel.customxmlpartscopedcollection): [load](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-load-member(1))
+  - [Excel.DataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection): [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
+  - [Excel.FilterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection): [load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
+  - [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection): [load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))
+  - [Excel.LinkedWorkbookCollection](/javascript/api/excel/excel.linkedworkbookcollection): [load](/javascript/api/excel/excel.linkedworkbookcollection#excel-excel-linkedworkbookcollection-load-member(1))
+  - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [load](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-load-member(1))
+  - [Excel.NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection): [load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(1))
+  - [Excel.NoteCollection](/javascript/api/excel/excel.notecollection): [load](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-load-member(1))
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
+  - [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection): [load](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-load-member(1))
+  - [Excel.PivotHierarchyCollection](/javascript/api/excel/excel.pivothierarchycollection): [load](/javascript/api/excel/excel.pivothierarchycollection#excel-excel-pivothierarchycollection-load-member(1))
+  - [Excel.PivotItemCollection](/javascript/api/excel/excel.pivotitemcollection): [load](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-load-member(1))
+  - [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection): [load](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-load-member(1))
+  - [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection): [load](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-load-member(1))
+  - [Excel.PivotTableStyleCollection](/javascript/api/excel/excel.pivottablestylecollection): [load](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-load-member(1))
+  - [Excel.QueryCollection](/javascript/api/excel/excel.querycollection): [load](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-load-member(1))
+  - [Excel.RangeAreasCollection](/javascript/api/excel/excel.rangeareascollection): [load](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-load-member(1))
+  - [Excel.RangeBorderCollection](/javascript/api/excel/excel.rangebordercollection): [load](/javascript/api/excel/excel.rangebordercollection#excel-excel-rangebordercollection-load-member(1))
+  - [Excel.RangeCollection](/javascript/api/excel/excel.rangecollection): [load](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-load-member(1))
+  - [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection): [load](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-load-member(1))
+  - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [load](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-load-member(1))
+  - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [load](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-load-member(1))
+  - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [load](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-load-member(1))
+  - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [load](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-load-member(1))
+  - [Excel.SlicerItemCollection](/javascript/api/excel/excel.sliceritemcollection): [load](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-load-member(1))
+  - [Excel.SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection): [load](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-load-member(1))
+  - [Excel.StyleCollection](/javascript/api/excel/excel.stylecollection): [load](/javascript/api/excel/excel.stylecollection#excel-excel-stylecollection-load-member(1))
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [load](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-load-member(1))
+  - [Excel.TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
+  - [Excel.TableRowCollection](/javascript/api/excel/excel.tablerowcollection): [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
+  - [Excel.TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection): [load](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-load-member(1))
+  - [Excel.TableStyleCollection](/javascript/api/excel/excel.tablestylecollection): [load](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-load-member(1))
+  - [Excel.TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection): [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
+  - [Excel.WorksheetCustomPropertyCollection](/javascript/api/excel/excel.worksheetcustompropertycollection): [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +65,7 @@ properties:
     uid: excel!Excel.Interfaces.CollectionLoadOptions#$skip:member
     package: excel!
     fullName: $skip
-    summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If top is specified, the selection of result
-      will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -30,9 +78,7 @@ properties:
     uid: excel!Excel.Interfaces.CollectionLoadOptions#$top:member
     package: excel!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
 
     isPreview: false

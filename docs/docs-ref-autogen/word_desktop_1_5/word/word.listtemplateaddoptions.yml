@@ -3,10 +3,7 @@ name: Word.ListTemplateAddOptions
 uid: word!Word.ListTemplateAddOptions:interface
 package: word!
 fullName: Word.ListTemplateAddOptions
-summary: >-
-  Represents the options for the
-  [ListTemplateCollection.add](xref:word!Word.ListTemplateCollection:class)
-  method.
+summary: Represents the options for the [ListTemplateCollection.add](xref:word!Word.ListTemplateCollection:class) method.
 remarks: '\[Api set: WordApiDesktop 1.5\]'
 
 isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.ListTemplateAddOptions#outlineNumbered:member
     package: word!
     fullName: outlineNumbered
-    summary: >-
-      If provided, specifies whether to apply outline numbering to the new list
-      template. The default value is `false`<!-- -->.
+    summary: If provided, specifies whether to apply outline numbering to the new list template. The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.5\]'
 
     isPreview: false

@@ -3,10 +3,11 @@ name: Word.Interfaces.BookmarkData
 uid: word!Word.Interfaces.BookmarkData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkData
-summary: >-
-  An interface describing the data returned by calling `bookmark.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `bookmark.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Bookmark](/javascript/api/word/word.bookmark): [toJSON](/javascript/api/word/word.bookmark#word-word-bookmark-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +31,7 @@ properties:
     package: word!
     fullName: isColumn
     summary: Returns `true` if the bookmark is a table column.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +44,7 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Returns `true` if the bookmark is empty.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +57,7 @@ properties:
     package: word!
     fullName: name
     summary: Returns the name of the `Bookmark` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -76,12 +69,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the `Bookmark` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +83,7 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -109,27 +96,11 @@ properties:
     package: word!
     fullName: storyType
     summary: Returns the story type for the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" |
-        "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" |
-        "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" |
-        "FirstPageFooter" | "FootnoteSeparator" |
-        "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-        "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-        "EndnoteContinuationNotice";
+      content: 'storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice";'
       return:
-        type: >-
-          <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" |
-          "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
-          "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
-          "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
-          "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
-          "EndnoteSeparator" | "EndnoteContinuationSeparator" |
-          "EndnoteContinuationNotice"
+        type: <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" | "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" | "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" | "EndnoteSeparator" | "EndnoteContinuationSeparator" | "EndnoteContinuationNotice"

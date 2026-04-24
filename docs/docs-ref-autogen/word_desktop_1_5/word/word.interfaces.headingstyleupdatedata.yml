@@ -3,9 +3,7 @@ name: Word.Interfaces.HeadingStyleUpdateData
 uid: word!Word.Interfaces.HeadingStyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleUpdateData
-summary: >-
-  An interface for updating data on the `HeadingStyle` object, for use in
-  `headingStyle.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `HeadingStyle` object, for use in `headingStyle.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.HeadingStyleUpdateData#level:member
     package: word!
     fullName: level
-    summary: >-
-      Specifies the level for the heading style in a table of contents or table
-      of figures. Must be a value from 1 to 9.
+    summary: Specifies the level for the heading style in a table of contents or table of figures. Must be a value from 1 to 9.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

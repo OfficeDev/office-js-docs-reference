@@ -3,9 +3,7 @@ name: Word.LineWidth
 uid: word!Word.LineWidth:enum
 package: word!
 fullName: Word.LineWidth
-summary: >-
-  Specifies the width of an object's
-  [border](xref:word!Word.BorderUniversal:class)<!-- -->.
+summary: Specifies the width of an object's [border](xref:word!Word.BorderUniversal:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

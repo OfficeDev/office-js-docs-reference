@@ -3,10 +3,11 @@ name: Word.Interfaces.RevisionUpdateData
 uid: word!Word.Interfaces.RevisionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionUpdateData
-summary: >-
-  An interface for updating data on the `Revision` object, for use in
-  `revision.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Revision` object, for use in `revision.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Revision](/javascript/api/word/word.revision): [set](/javascript/api/word/word.revision#word-word-revision-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: word!Word.Interfaces.RevisionUpdateData#movedRange:member
     package: word!
     fullName: movedRange
-    summary: >-
-      Gets a `Range` object that represents the range of text that was moved
-      from one place to another in the document with tracked changes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,12 +30,8 @@ properties:
     uid: word!Word.Interfaces.RevisionUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained within a revision mark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.AnnotationLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -38,16 +35,12 @@ properties:
     syntax:
       content: 'critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
   - name: id
     uid: word!Word.Interfaces.AnnotationLoadOptions#id:member
     package: word!
     fullName: id
-    summary: >-
-      Gets the unique identifier, which is meant to be used for easier tracking
-      of `Annotation` objects.
+    summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
     remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false

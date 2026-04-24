@@ -3,10 +3,11 @@ name: Word.Interfaces.DocumentLibraryVersionCollectionData
 uid: word!Word.Interfaces.DocumentLibraryVersionCollectionData:interface
 package: word!
 fullName: Word.Interfaces.DocumentLibraryVersionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `documentLibraryVersionCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `documentLibraryVersionCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection): [toJSON](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.DocumentLibraryVersionData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface" />[]

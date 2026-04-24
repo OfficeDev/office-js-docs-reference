@@ -3,9 +3,7 @@ name: Word.Interfaces.CommentCollectionData
 uid: word!Word.Interfaces.CommentCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CommentCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `commentCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `commentCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

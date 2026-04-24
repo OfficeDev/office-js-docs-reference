@@ -3,10 +3,11 @@ name: Excel.Interfaces.RuntimeData
 uid: excel!Excel.Interfaces.RuntimeData:interface
 package: excel!
 fullName: Excel.Interfaces.RuntimeData
-summary: >-
-  An interface describing the data returned by calling `runtime.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `runtime.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.Runtime](/javascript/api/excel/excel.runtime): [toJSON](/javascript/api/excel/excel.runtime#excel-excel-runtime-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: excel!
     fullName: enableEvents
     summary: Toggle JavaScript events in the current task pane or content add-in.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

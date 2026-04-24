@@ -3,13 +3,14 @@ name: Word.SelectNodesOptions
 uid: word!Word.SelectNodesOptions:interface
 package: word!
 fullName: Word.SelectNodesOptions
-summary: >-
-  Provides configuration options for the
-  [XmlNode.selectNodes](xref:word!Word.XmlNode:class) and
-  [Document.selectNodes](xref:word!Word.Document:class) methods.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Provides configuration options for the [XmlNode.selectNodes](xref:word!Word.XmlNode:class) and [Document.selectNodes](xref:word!Word.Document:class) methods.
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
+  - [Word.XmlNode](/javascript/api/word/word.xmlnode): [selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -19,12 +20,8 @@ properties:
     uid: word!Word.SelectNodesOptions#fastSearchSkippingTextNodes:member
     package: word!
     fullName: fastSearchSkippingTextNodes
-    summary: >-
-      If provided, specifies whether to skip text nodes in the search. The
-      default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether to skip text nodes in the search. The default value is `false`<!-- -->.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -36,12 +33,8 @@ properties:
     uid: word!Word.SelectNodesOptions#prefixMapping:member
     package: word!
     fullName: prefixMapping
-    summary: >-
-      If provided, specifies the prefix mapping for the XPath expression. The
-      default value is "" (empty string).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

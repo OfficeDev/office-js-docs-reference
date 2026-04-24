@@ -3,9 +3,7 @@ name: Word.Interfaces.ReflectionFormatUpdateData
 uid: word!Word.Interfaces.ReflectionFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ReflectionFormatUpdateData
-summary: >-
-  An interface for updating data on the `ReflectionFormat` object, for use in
-  `reflectionFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ReflectionFormat` object, for use in `reflectionFormat.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

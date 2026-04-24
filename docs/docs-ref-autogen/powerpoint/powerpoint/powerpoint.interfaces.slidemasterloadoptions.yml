@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterLoadOptions
 summary: Represents the Slide Master of a slide.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [load](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,29 +33,20 @@ properties:
     package: powerpoint!
     fullName: background
     summary: Gets the background of the Slide Master.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'background?: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface" />
   - name: id
     uid: powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions#id:member
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the Slide Master.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +59,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Gets the unique name of the Slide Master.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

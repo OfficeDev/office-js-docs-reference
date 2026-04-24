@@ -27,9 +27,7 @@ properties:
     uid: word!Word.ListFormatCountNumberedItemsOptions#numberType:member
     package: word!
     fullName: numberType
-    summary: >-
-      If provided, specifies the type of number to count. The default value is
-      `paragraph`<!-- -->.
+    summary: If provided, specifies the type of number to count. The default value is `paragraph`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -37,6 +35,4 @@ properties:
     syntax:
       content: 'numberType?: Word.NumberType | "Paragraph" | "ListNum" | "AllNumbers";'
       return:
-        type: >-
-          <xref uid="word!Word.NumberType:enum" /> | "Paragraph" | "ListNum" |
-          "AllNumbers"
+        type: <xref uid="word!Word.NumberType:enum" /> | "Paragraph" | "ListNum" | "AllNumbers"

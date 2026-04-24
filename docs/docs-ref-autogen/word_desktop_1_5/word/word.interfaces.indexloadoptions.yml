@@ -3,10 +3,7 @@ name: Word.Interfaces.IndexLoadOptions
 uid: word!Word.Interfaces.IndexLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.IndexLoadOptions
-summary: >-
-  Represents a single index. The `Index` object is a member of the
-  [Word.IndexCollection](xref:word!Word.IndexCollection:class)<!-- -->. The
-  `IndexCollection` includes all the indexes in the document.
+summary: Represents a single index. The `Index` object is a member of the [Word.IndexCollection](xref:word!Word.IndexCollection:class)<!-- -->. The `IndexCollection` includes all the indexes in the document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -17,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#filter:member
     package: word!
     fullName: filter
-    summary: >-
-      Gets a value that represents how Microsoft Word classifies the first
-      character of entries in the index. See `IndexFilter` for available values.
+    summary: Gets a value that represents how Microsoft Word classifies the first character of entries in the index. See `IndexFilter` for available values.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -48,12 +40,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#headingSeparator:member
     package: word!
     fullName: headingSeparator
-    summary: >-
-      Gets the text between alphabetical groups (entries that start with the
-      same letter) in the index. Corresponds to the **<!-- -->\\<!-- -->h**
-      switch for an [INDEX
-      field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!--
-      -->.
+    summary: Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to the **<!-- -->\\<!-- -->h** switch for an [INDEX field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -66,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#indexLanguage:member
     package: word!
     fullName: indexLanguage
-    summary: >-
-      Gets a `LanguageId` value that represents the sorting language to use for
-      the index.
+    summary: Gets a `LanguageId` value that represents the sorting language to use for the index.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -94,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document that
-      is contained within the index.
+    summary: Returns a `Range` object that represents the portion of the document that is contained within the index.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -119,14 +102,10 @@ properties:
       return:
         type: boolean
   - name: separateAccentedLetterHeadings
-    uid: >-
-      word!Word.Interfaces.IndexLoadOptions#separateAccentedLetterHeadings:member
+    uid: word!Word.Interfaces.IndexLoadOptions#separateAccentedLetterHeadings:member
     package: word!
     fullName: separateAccentedLetterHeadings
-    summary: >-
-      Gets if the index contains separate headings for accented letters (for
-      example, words that begin with "À" are under one heading and words that
-      begin with "A" are under another).
+    summary: Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under one heading and words that begin with "A" are under another).
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
@@ -152,9 +131,7 @@ properties:
     uid: word!Word.Interfaces.IndexLoadOptions#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: >-
-      Specifies the leader character between entries in the index and their
-      associated page numbers.
+    summary: Specifies the leader character between entries in the index and their associated page numbers.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.FrameUpdateData
 uid: word!Word.Interfaces.FrameUpdateData:interface
 package: word!
 fullName: Word.Interfaces.FrameUpdateData
-summary: >-
-  An interface for updating data on the `Frame` object, for use in `frame.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Frame` object, for use in `frame.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -29,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.FrameUpdateData#heightRule:member
     package: word!
     fullName: heightRule
-    summary: >-
-      Specifies a `FrameSizeRule` value that represents the rule for determining
-      the height of the frame.
+    summary: Specifies a `FrameSizeRule` value that represents the rule for determining the height of the frame.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -39,16 +35,12 @@ properties:
     syntax:
       content: 'heightRule?: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
       return:
-        type: >-
-          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
-          "Exact"
+        type: <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" | "Exact"
   - name: horizontalDistanceFromText
     uid: word!Word.Interfaces.FrameUpdateData#horizontalDistanceFromText:member
     package: word!
     fullName: horizontalDistanceFromText
-    summary: >-
-      Specifies the horizontal distance between the frame and the surrounding
-      text, in points.
+    summary: Specifies the horizontal distance between the frame and the surrounding text, in points.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -61,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.FrameUpdateData#horizontalPosition:member
     package: word!
     fullName: horizontalPosition
-    summary: >-
-      Specifies the horizontal distance between the edge of the frame and the
-      item specified by the `relativeHorizontalPosition` property.
+    summary: Specifies the horizontal distance between the edge of the frame and the item specified by the `relativeHorizontalPosition` property.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -89,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.FrameUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained within the frame.
+    summary: Returns a `Range` object that represents the portion of the document that's contained within the frame.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -110,15 +98,9 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin"
-        | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-        "InsideMargin" | "OutsideMargin";
+      content: 'relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";'
       return:
-        type: >-
-          <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" |
-          "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" |
-          "InsideMargin" | "OutsideMargin"
+        type: <xref uid="word!Word.RelativeHorizontalPosition:enum" /> | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin"
   - name: relativeVerticalPosition
     uid: word!Word.Interfaces.FrameUpdateData#relativeVerticalPosition:member
     package: word!
@@ -129,22 +111,14 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" |
-        "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-        "InsideMargin" | "OutsideMargin";
+      content: 'relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";'
       return:
-        type: >-
-          <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" |
-          "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" |
-          "InsideMargin" | "OutsideMargin"
+        type: <xref uid="word!Word.RelativeVerticalPosition:enum" /> | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin"
   - name: shading
     uid: word!Word.Interfaces.FrameUpdateData#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns a `ShadingUniversal` object that refers to the shading formatting
-      for the frame.
+    summary: Returns a `ShadingUniversal` object that refers to the shading formatting for the frame.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -152,9 +126,7 @@ properties:
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalUpdateData;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalUpdateData:interface" />
   - name: textWrap
     uid: word!Word.Interfaces.FrameUpdateData#textWrap:member
     package: word!
@@ -172,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.FrameUpdateData#verticalDistanceFromText:member
     package: word!
     fullName: verticalDistanceFromText
-    summary: >-
-      Specifies the vertical distance (in points) between the frame and the
-      surrounding text.
+    summary: Specifies the vertical distance (in points) between the frame and the surrounding text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -187,9 +157,7 @@ properties:
     uid: word!Word.Interfaces.FrameUpdateData#verticalPosition:member
     package: word!
     fullName: verticalPosition
-    summary: >-
-      Specifies the vertical distance between the edge of the frame and the item
-      specified by the `relativeVerticalPosition` property.
+    summary: Specifies the vertical distance between the edge of the frame and the item specified by the `relativeVerticalPosition` property.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
@@ -223,6 +191,4 @@ properties:
     syntax:
       content: 'widthRule?: Word.FrameSizeRule | "Auto" | "AtLeast" | "Exact";'
       return:
-        type: >-
-          <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" |
-          "Exact"
+        type: <xref uid="word!Word.FrameSizeRule:enum" /> | "Auto" | "AtLeast" | "Exact"

@@ -3,9 +3,7 @@ name: Word.Interfaces.ListTemplateData
 uid: word!Word.Interfaces.ListTemplateData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateData
-summary: >-
-  An interface describing the data returned by calling
-  `listTemplate.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `listTemplate.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.ListTemplateData#listLevels:member
     package: word!
     fullName: listLevels
-    summary: >-
-      Gets a `ListLevelCollection` object that represents all the levels for the
-      list template.
+    summary: Gets a `ListLevelCollection` object that represents all the levels for the list template.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false

@@ -9287,6 +9287,18 @@ export declare namespace Office {
         javascriptRuntimeUrl: string;
     }
     /**
+     * Provides options related to the `onReady` event.
+     * 
+     * @beta
+     */
+    export interface OnReadyOptions {
+        /**
+         * Enables the behavior that allows the `onReady` promise to be rejected if failures are encountered.
+         * If not passed, then the `onReady` promise won't reject.
+         */
+        setRejectionEnabled?: () => void;
+    }
+    /**
      * Message used in the `onVisibilityModeChanged` invocation.
      */
     export interface VisibilityModeChangedMessage {

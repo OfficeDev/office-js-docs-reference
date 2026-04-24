@@ -3,10 +3,11 @@ name: Excel.Interfaces.ChartAxisFormatUpdateData
 uid: excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartAxisFormatUpdateData
-summary: >-
-  An interface for updating data on the `ChartAxisFormat` object, for use in
-  `chartAxisFormat.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `ChartAxisFormat` object, for use in `chartAxisFormat.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.ChartAxisFormat](/javascript/api/excel/excel.chartaxisformat): [set](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.ChartAxisFormatUpdateData#font:member
     package: excel!
     fullName: font
-    summary: >-
-      Specifies the font attributes (font name, font size, color, etc.) for a
-      chart axis element.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,15 +31,11 @@ properties:
     package: excel!
     fullName: line
     summary: Specifies chart line formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface" />

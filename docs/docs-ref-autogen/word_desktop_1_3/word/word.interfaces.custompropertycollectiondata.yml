@@ -3,10 +3,11 @@ name: Word.Interfaces.CustomPropertyCollectionData
 uid: word!Word.Interfaces.CustomPropertyCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CustomPropertyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customPropertyCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `customPropertyCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [toJSON](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

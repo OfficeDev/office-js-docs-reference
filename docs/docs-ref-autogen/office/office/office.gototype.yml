@@ -4,7 +4,10 @@ uid: office!Office.GoToType:enum
 package: office!
 fullName: Office.GoToType
 summary: Specifies the type of place or object to navigate to.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Office.Document](/javascript/api/office/office.document): [goToByIdAsync](/javascript/api/office/office.document#office-office-document-gotobyidasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -19,19 +22,15 @@ fields:
   - name: Index
     uid: office!Office.GoToType.Index:member
     package: office!
-    summary: >-
-      Goes to the specified index by slide number or
-      [Office.Index](xref:office!Office.Index:enum)<!-- -->.
-
+    summary: |-
+      Goes to the specified index by slide number or [Office.Index](xref:office!Office.Index:enum)<!-- -->.
 
       Supported applications: PowerPoint
   - name: NamedItem
     uid: office!Office.GoToType.NamedItem:member
     package: office!
-    summary: >-
-      Goes to a named item using that item's name. In Excel, you can use any
-      structured reference for a named range or table: "Worksheet2!Table1"
-
+    summary: |-
+      Goes to a named item using that item's name. In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"
 
       Supported applications: Excel
   - name: Slide

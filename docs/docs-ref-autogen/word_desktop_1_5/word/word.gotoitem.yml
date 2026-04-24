@@ -3,9 +3,7 @@ name: Word.GoToItem
 uid: word!Word.GoToItem:enum
 package: word!
 fullName: Word.GoToItem
-summary: >-
-  Specifies the item or location to which to move or extend a
-  [selection](xref:word!Word.Selection:class)<!-- -->.
+summary: Specifies the item or location to which to move or extend a [selection](xref:word!Word.Selection:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false

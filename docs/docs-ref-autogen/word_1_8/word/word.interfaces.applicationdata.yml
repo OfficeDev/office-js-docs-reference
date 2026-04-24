@@ -3,10 +3,11 @@ name: Word.Interfaces.ApplicationData
 uid: word!Word.Interfaces.ApplicationData:interface
 package: word!
 fullName: Word.Interfaces.ApplicationData
-summary: >-
-  An interface describing the data returned by calling
-  `application.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Application](/javascript/api/word/word.application): [toJSON](/javascript/api/word/word.application#word-word-application-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

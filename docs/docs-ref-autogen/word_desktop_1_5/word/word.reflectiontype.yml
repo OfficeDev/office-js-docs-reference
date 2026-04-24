@@ -3,9 +3,7 @@ name: Word.ReflectionType
 uid: word!Word.ReflectionType:enum
 package: word!
 fullName: Word.ReflectionType
-summary: >-
-  Specifies the type of the
-  [Word.ReflectionFormat](xref:word!Word.ReflectionFormat:class) object.
+summary: Specifies the type of the [Word.ReflectionFormat](xref:word!Word.ReflectionFormat:class) object.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false

@@ -3,9 +3,7 @@ name: Word.CritiqueColorScheme
 uid: word!Word.CritiqueColorScheme:enum
 package: word!
 fullName: Word.CritiqueColorScheme
-summary: >-
-  Represents the color scheme of a critique in the document, affecting underline
-  and highlight.
+summary: Represents the color scheme of a critique in the document, affecting underline and highlight.
 remarks: '\[Api set: WordApi 1.7\]'
 
 isPreview: false

@@ -14,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -30,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      Specifies the horizontal alignment of the list level. The value can be
-      `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
+    summary: Specifies the horizontal alignment of the list level. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -45,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets a `Font` object that represents the character formatting of the
-      `ListLevel` object.
+    summary: Gets a `Font` object that represents the character formatting of the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -86,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#numberPosition:member
     package: word!
     fullName: numberPosition
-    summary: >-
-      Specifies the position (in points) of the number or bullet for the
-      `ListLevel` object.
+    summary: Specifies the position (in points) of the number or bullet for the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -114,9 +105,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#resetOnHigher:member
     package: word!
     fullName: resetOnHigher
-    summary: >-
-      Specifies the list level that must appear before it restarts numbering at
-      1.
+    summary: Specifies the list level that must appear before it restarts numbering at 1.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
@@ -155,9 +144,7 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#textPosition:member
     package: word!
     fullName: textPosition
-    summary: >-
-      Specifies the position (in points) for the second line of wrapping text
-      for the `ListLevel` object.
+    summary: Specifies the position (in points) for the second line of wrapping text for the `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false

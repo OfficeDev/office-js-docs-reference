@@ -3,10 +3,7 @@ name: Word.Interfaces.ReviewerLoadOptions
 uid: word!Word.Interfaces.ReviewerLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ReviewerLoadOptions
-summary: >-
-  Represents a single reviewer of a document in which changes have been tracked.
-  The `Reviewer` object is a member of the
-  [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
+summary: Represents a single reviewer of a document in which changes have been tracked. The `Reviewer` object is a member of the [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
@@ -17,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ReviewerLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false

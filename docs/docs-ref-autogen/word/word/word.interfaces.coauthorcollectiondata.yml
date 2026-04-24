@@ -3,10 +3,11 @@ name: Word.Interfaces.CoauthorCollectionData
 uid: word!Word.Interfaces.CoauthorCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthorCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `coauthorCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [toJSON](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

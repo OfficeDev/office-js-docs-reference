@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.HyperlinkCollectionData
 uid: powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `hyperlinkCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `hyperlinkCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [toJSON](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.HyperlinkData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface" />[]

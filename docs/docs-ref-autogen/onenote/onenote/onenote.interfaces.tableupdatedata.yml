@@ -3,10 +3,11 @@ name: OneNote.Interfaces.TableUpdateData
 uid: onenote!OneNote.Interfaces.TableUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableUpdateData
-summary: >-
-  An interface for updating data on the `Table` object, for use in `table.set({
-  ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Table` object, for use in `table.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.Table](/javascript/api/onenote/onenote.table): [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +17,8 @@ properties:
     uid: onenote!OneNote.Interfaces.TableUpdateData#borderVisible:member
     package: onenote!
     fullName: borderVisible
-    summary: >-
-      Gets or sets whether the borders are visible or not. True if they are
-      visible, false if they are hidden.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

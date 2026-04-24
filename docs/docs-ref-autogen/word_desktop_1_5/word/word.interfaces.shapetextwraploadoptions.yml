@@ -3,9 +3,7 @@ name: Word.Interfaces.ShapeTextWrapLoadOptions
 uid: word!Word.Interfaces.ShapeTextWrapLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShapeTextWrapLoadOptions
-summary: >-
-  Represents all the properties for wrapping text around a
-  [Word.Shape](xref:word!Word.Shape:class)<!-- -->.
+summary: Represents all the properties for wrapping text around a [Word.Shape](xref:word!Word.Shape:class)<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
@@ -16,10 +14,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#bottomDistance:member
     package: word!
     fullName: bottomDistance
-    summary: >-
-      Specifies the distance (in points) between the document text and the
-      bottom edge of the text-free area surrounding the specified shape.
+    summary: Specifies the distance (in points) between the document text and the bottom edge of the text-free area surrounding the specified shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -47,9 +40,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#leftDistance:member
     package: word!
     fullName: leftDistance
-    summary: >-
-      Specifies the distance (in points) between the document text and the left
-      edge of the text-free area surrounding the specified shape.
+    summary: Specifies the distance (in points) between the document text and the left edge of the text-free area surrounding the specified shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -62,9 +53,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#rightDistance:member
     package: word!
     fullName: rightDistance
-    summary: >-
-      Specifies the distance (in points) between the document text and the right
-      edge of the text-free area surrounding the specified shape.
+    summary: Specifies the distance (in points) between the document text and the right edge of the text-free area surrounding the specified shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -77,10 +66,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#side:member
     package: word!
     fullName: side
-    summary: >-
-      Specifies whether the document text should wrap on both sides of the
-      specified shape, on either the left or right side only, or on the side of
-      the shape that's farthest from the page margin.
+    summary: Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farthest from the page margin.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -93,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#topDistance:member
     package: word!
     fullName: topDistance
-    summary: >-
-      Specifies the distance (in points) between the document text and the top
-      edge of the text-free area surrounding the specified shape.
+    summary: Specifies the distance (in points) between the document text and the top edge of the text-free area surrounding the specified shape.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
@@ -108,9 +92,7 @@ properties:
     uid: word!Word.Interfaces.ShapeTextWrapLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      Specifies the text wrap type around the shape. See
-      `Word.ShapeTextWrapType` for details.
+    summary: Specifies the text wrap type around the shape. See `Word.ShapeTextWrapType` for details.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false

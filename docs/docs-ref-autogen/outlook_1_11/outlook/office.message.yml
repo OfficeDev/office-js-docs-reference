@@ -3,26 +3,20 @@ name: Office.Message
 uid: outlook!Office.Message:interface
 package: outlook!
 fullName: Office.Message
-summary: >-
+summary: |-
   A subclass of [Item](xref:outlook!Office.Item:interface) for messages.
 
-
-  **Important**: This is an internal Outlook object, not directly exposed
-  through existing interfaces. You should treat this as a mode of
-  `Office.context.mailbox.item`<!-- -->. For more information, refer to [Outlook
-  Item object
-  model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model)<!--
-  -->.
-
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to [Outlook Item object model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model)<!-- -->.
 
   Child interfaces:
 
-
   - [MessageCompose](xref:outlook!Office.MessageCompose:interface)
 
-
   - [MessageRead](xref:outlook!Office.MessageRead:interface)
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
 
 isPreview: false
 isDeprecated: false

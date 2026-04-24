@@ -3,10 +3,11 @@ name: Visio.Interfaces.CommentUpdateData
 uid: visio!Visio.Interfaces.CommentUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.CommentUpdateData
-summary: >-
-  An interface for updating data on the Comment object, for use in
-  `comment.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.Comment](/javascript/api/visio/visio.comment): [set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: author
     summary: A string that specifies the name of the author of the comment.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: visio!
     fullName: date
     summary: A string that specifies the date when the comment was created.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +44,7 @@ properties:
     package: visio!
     fullName: text
     summary: A string that contains the comment text.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

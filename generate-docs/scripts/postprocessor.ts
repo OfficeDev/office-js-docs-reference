@@ -643,11 +643,68 @@ function cleanUpYmlFile(ymlFile: string, hostName: string): string {
             apiYaml.remarks += remarks;
         }
     }
-    
-    let cleanYml = schemaComment + jsyaml.dump(apiYaml);
-    
+
+    let cleanYml = schemaComment + jsyaml.dump(apiYaml, {
+        lineWidth: -1,
+        noRefs: true,
+        sortKeys: false,
+        noCompatMode: true,
+        flowLevel: -1
+    });
+
+    // Fix YAML formatting issue: yaml.dump() sometimes puts markdown list bullets on separate lines
+    // Convert "  -\n  [Text](url)" to "  - [Text](url)"
+    const lines = cleanYml.split('\n');
+    const linesToRemove = new Set<number>();
+
+    for (let i = 0; i < lines.length - 1; i++) {
+        // Check if current line ends with just a bullet and next line starts with a markdown link
+        const currentMatch = lines[i].match(/^(\s+)-$/);
+        if (currentMatch && lines[i + 1].match(/^\s+\[.+?\]\(.+?\)/)) {
+            const indent = currentMatch[1];
+            const nextLineContent = lines[i + 1].trim();
+            lines[i] = `${indent}- ${nextLineContent}`;
+            linesToRemove.add(i + 1); // Mark next line for removal
+        }
+    }
+
+    // Fix inline class member lists: join "ClassName:" with member links on next line
+    // Convert "  - ClassName:\n  [member](url)" to "  - ClassName: [member](url)"
+    for (let i = 0; i < lines.length - 1; i++) {
+        if (linesToRemove.has(i)) continue; // Skip already removed lines
+
+        // Check if current line ends with ":" and next line has markdown links
+        const colonMatch = lines[i].match(/^(\s+- .+):$/);
+        if (colonMatch && lines[i + 1].match(/^\s+\[.+?\]\(.+?\)/)) {
+            // Join the lines with a space
+            lines[i] = `${lines[i]} ${lines[i + 1].trim()}`;
+            linesToRemove.add(i + 1);
+        }
+    }
+
+    // Join continuation lines for inline member lists
+    // When a line ends with a comma and next line starts with markdown link, join them
+    for (let i = 0; i < lines.length; i++) {
+        if (linesToRemove.has(i)) continue;
+
+        // If this line ends with a comma, join all continuation lines
+        if (lines[i].match(/,\s*$/)) {
+            let j = i + 1;
+            // Keep joining continuation lines while they exist
+            while (j < lines.length && !linesToRemove.has(j) && lines[j].match(/^\s+\[.+?\]\(.+?\)/)) {
+                lines[i] = `${lines[i]} ${lines[j].trim()}`;
+                linesToRemove.add(j);
+                j++;
+                // If the line no longer ends with comma, we're done
+                if (!lines[i].match(/,\s*$/)) break;
+            }
+        }
+    }
+
+    cleanYml = lines.filter((_, index) => !linesToRemove.has(index)).join('\n');
+
     // Apply cleanup patterns
-    return YML_CLEANUP_PATTERNS.reduce((content, { pattern, replacement }) => 
+    return YML_CLEANUP_PATTERNS.reduce((content, { pattern, replacement }) =>
         content.replace(pattern, replacement), cleanYml);
 }
 

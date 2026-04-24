@@ -3,44 +3,29 @@ name: Office.Binding
 uid: office!Office.Binding:interface
 package: office!
 fullName: Office.Binding
-summary: >-
+summary: |-
   Represents a binding to a section of the document.
 
+  The Binding object exposes the functionality possessed by all bindings regardless of type.
 
-  The Binding object exposes the functionality possessed by all bindings
-  regardless of type.
-
-
-  The Binding object is never called directly. It is the abstract parent class
-  of the objects that represent each type of binding:
-  [Office.MatrixBinding](xref:office!Office.MatrixBinding:interface)<!-- -->,
-  [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->, or
-  [Office.TextBinding](xref:office!Office.TextBinding:interface)<!-- -->. All
-  three of these objects inherit the getDataAsync and setDataAsync methods from
-  the Binding object that enable to you interact with the data in the binding.
-  They also inherit the ID and type properties for querying those property
-  values. Additionally, the MatrixBinding and TableBinding objects expose
-  additional methods for matrix- and table-specific features, such as counting
-  the number of rows and columns.
-remarks: >-
-  **Applications**: Word, Excel (deprecated, use
-  [Excel.Binding](https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview)
-  instead)
-
+  The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding: [Office.MatrixBinding](xref:office!Office.MatrixBinding:interface)<!-- -->, [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->, or [Office.TextBinding](xref:office!Office.TextBinding:interface)<!-- -->. All three of these objects inherit the getDataAsync and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the ID and type properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix- and table-specific features, such as counting the number of rows and columns.
+remarks: |-
+  **Applications**: Word, Excel (deprecated, use [Excel.Binding](https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview) instead)
 
   **Requirement sets**:
 
+  - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
-  -
-  [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+  - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
+  - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
-  -
-  [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+  #### Used by
 
-
-  -
-  [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+  - [Office](/javascript/api/office): [select](/javascript/api/office#office-office-select-function(1))
+  - [Office.BindingDataChangedEventArgs](/javascript/api/office/office.bindingdatachangedeventargs): [binding](/javascript/api/office/office.bindingdatachangedeventargs#office-office-bindingdatachangedeventargs-binding-member)
+  - [Office.BindingSelectionChangedEventArgs](/javascript/api/office/office.bindingselectionchangedeventargs): [binding](/javascript/api/office/office.bindingselectionchangedeventargs#office-office-bindingselectionchangedeventargs-binding-member)
+  - [Office.Bindings](/javascript/api/office/office.bindings): [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1)), [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1)), [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1)), [getAllAsync](/javascript/api/office/office.bindings#office-office-bindings-getallasync-member(1)), [getByIdAsync](/javascript/api/office/office.bindings#office-office-bindings-getbyidasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -59,34 +44,26 @@ properties:
       content: 'document: Office.Document;'
       return:
         type: <xref uid="office!Office.Document:interface" />
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          Office.context.document.bindings.getByIdAsync("myBinding", function
-          (asyncResult) {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write(asyncResult.value.document.url);
           });
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```
   - name: id
     uid: office!Office.Binding#id:member
     package: office!
     fullName: id
-    summary: >-
-      A string that uniquely identifies this binding among the bindings in the
-      same [Office.Document](xref:office!Office.Document:interface) object.
+    summary: A string that uniquely identifies this binding among the bindings in the same [Office.Document](xref:office!Office.Document:interface) object.
     remarks: ''
 
     isPreview: false
@@ -95,26 +72,20 @@ properties:
       content: 'id: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          Office.context.document.bindings.getByIdAsync("myBinding", function
-          (asyncResult) {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write(asyncResult.value.id);
           });
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```
   - name: type
     uid: office!Office.Binding#type:member
@@ -129,81 +100,49 @@ properties:
       content: 'type: Office.BindingType;'
       return:
         type: <xref uid="office!Office.BindingType:enum" />
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          Office.context.document.bindings.getByIdAsync("MyBinding", function
-          (asyncResult) { 
+          Office.context.document.bindings.getByIdAsync("MyBinding", function (asyncResult) { 
               write(asyncResult.value.type); 
           }) 
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message) {
               document.getElementById('message').innerText += message;
           }
-
           ```
 methods:
   - name: addHandlerAsync(eventType, handler, options, callback)
     uid: office!Office.Binding#addHandlerAsync:member(1)
     package: office!
     fullName: addHandlerAsync(eventType, handler, options, callback)
-    summary: >-
-      Adds an event handler to the object for the specified
-      [Office.EventType](xref:office!Office.EventType:enum)<!-- -->. Supported
-      EventTypes are `Office.EventType.BindingDataChanged` and
-      `Office.EventType.BindingSelectionChanged`<!-- -->.
-    remarks: >-
-      **Requirement set**:
-      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+    summary: Adds an event handler to the object for the specified [Office.EventType](xref:office!Office.EventType:enum)<!-- -->. Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!-- -->.
+    remarks: |-
+      **Requirement set**: [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
-
-      You can add multiple event handlers for the specified eventType as long as
-      the name of each event handler function is unique.
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?:
-        Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+      content: 'addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
-          description: >-
-            The event type. For bindings, it can be
-            `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          description: The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`<!-- -->.
           type: <xref uid="office!Office.EventType:enum" />
         - id: handler
-          description: >-
-            The event handler function to add, whose only parameter is of type
-            [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)
-            or
-            [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!--
-            -->.
+          description: The event handler function to add, whose only parameter is of type [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface) or [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!-- -->.
           type: any
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: Provides an option for preserving context data of any type, unchanged, for use in a callback.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -211,110 +150,64 @@ methods:
     uid: office!Office.Binding#addHandlerAsync:member(2)
     package: office!
     fullName: addHandlerAsync(eventType, handler, callback)
-    summary: >-
-      Adds an event handler to the object for the specified
-      [Office.EventType](xref:office!Office.EventType:enum)<!-- -->. Supported
-      EventTypes are `Office.EventType.BindingDataChanged` and
-      `Office.EventType.BindingSelectionChanged`<!-- -->.
-    remarks: >-
-      **Requirement set**:
-      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+    summary: Adds an event handler to the object for the specified [Office.EventType](xref:office!Office.EventType:enum)<!-- -->. Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!-- -->.
+    remarks: |-
+      **Requirement set**: [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
-
-      You can add multiple event handlers for the specified eventType as long as
-      the name of each event handler function is unique.
-
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
 
       #### Examples
 
-
       ```TypeScript
-
-      // The following code sample calls the select function of the Office
-      object to access the binding
-
-      // with ID "MyBinding", and then calls the addHandlerAsync method to add a
-      handler function 
-
+      // The following code sample calls the select function of the Office object to access the binding
+      // with ID "MyBinding", and then calls the addHandlerAsync method to add a handler function 
       // for the bindingDataChanged event of that binding.
-
       function addEventHandlerToBinding() {
           Office.select("bindings#MyBinding").addHandlerAsync(
               Office.EventType.BindingDataChanged, onBindingDataChanged);
       }
 
-
       function onBindingDataChanged(eventArgs) {
           write("Data has changed in binding: " + eventArgs.binding.id);
       }
 
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
-
       ```
-
       ```TypeScript
-
-      // To add an event handler for the BindingSelectionChanged event of a
-      binding, 
-
+      // To add an event handler for the BindingSelectionChanged event of a binding, 
       // use the addHandlerAsync method of the Binding object.
-
-      // The event handler receives an argument of type
-      BindingSelectionChangedEventArgs.
-
+      // The event handler receives an argument of type BindingSelectionChangedEventArgs.
       function addEventHandlerToBinding() {
           Office.select("bindings#MyBinding").addHandlerAsync(
               Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
       }
 
-
       function onBindingSelectionChanged(eventArgs) {
           write(eventArgs.binding.id + " has been selected.");
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
-
       ```
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+      content: 'addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
-          description: >-
-            The event type. For bindings, it can be
-            `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          description: The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`<!-- -->.
           type: <xref uid="office!Office.EventType:enum" />
         - id: handler
-          description: >-
-            The event handler function to add, whose only parameter is of type
-            [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)
-            or
-            [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!--
-            -->.
+          description: The event handler function to add, whose only parameter is of type [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface) or [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!-- -->.
           type: any
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -323,74 +216,38 @@ methods:
     package: office!
     fullName: getDataAsync(options, callback)
     summary: Returns the data contained within the binding.
-    remarks: >-
+    remarks: |-
       **Requirement sets**:
 
+      - [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion) (when using `Office.CoercionType.Html`<!-- -->)
 
-      -
-      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
+      - [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion) (when using `Office.CoercionType.Matrix`<!-- -->)
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion) (when using `Office.CoercionType.Ooxml`<!-- -->)
 
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
-      -
-      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->)
+      - [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion) (when using `Office.CoercionType.Table`<!-- -->)
 
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
-      -
-      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->)
+      - [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion) (when using `Office.CoercionType.Text`<!-- -->)
 
-
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
-
-
-      -
-      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->)
-
-
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
-
-
-      -
-      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
-      (when using `Office.CoercionType.Text`<!-- -->)
-
-
-      When called from a MatrixBinding or TableBinding, the getDataAsync method
-      will return a subset of the bound values if the optional startRow,
-      startColumn, rowCount, and columnCount parameters are specified (and they
-      specify a contiguous and valid range).
+      When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getDataAsync<T>(options?: GetBindingDataOptions, callback?: (result:
-        AsyncResult<T>) => void): void;
+      content: 'getDataAsync<T>(options?: GetBindingDataOptions, callback?: (result: AsyncResult<T>) => void): void;'
       parameters:
         - id: options
           description: Provides options for how to get the data in a binding.
           type: <xref uid="office!Office.GetBindingDataOptions:interface" />
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the values in the
-            specified binding. If the `coercionType` parameter is specified (and
-            the call is successful), the data is returned in the format
-            described in the CoercionType enumeration topic.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;T&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result is the values in the specified binding. If the `coercionType` parameter is specified (and the call is successful), the data is returned in the format described in the CoercionType enumeration topic.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;T&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -399,90 +256,48 @@ methods:
     package: office!
     fullName: getDataAsync(callback)
     summary: Returns the data contained within the binding.
-    remarks: >-
+    remarks: |-
       **Requirement sets**:
 
+      - [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion) (when using `Office.CoercionType.Html`<!-- -->)
 
-      -
-      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
+      - [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion) (when using `Office.CoercionType.Matrix`<!-- -->)
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion) (when using `Office.CoercionType.Ooxml`<!-- -->)
 
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
-      -
-      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->)
+      - [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion) (when using `Office.CoercionType.Table`<!-- -->)
 
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
-      -
-      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->)
+      - [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion) (when using `Office.CoercionType.Text`<!-- -->)
 
-
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
-
-
-      -
-      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->)
-
-
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
-
-
-      -
-      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
-      (when using `Office.CoercionType.Text`<!-- -->)
-
-
-      When called from a MatrixBinding or TableBinding, the getDataAsync method
-      will return a subset of the bound values if the optional startRow,
-      startColumn, rowCount, and columnCount parameters are specified (and they
-      specify a contiguous and valid range).
-
+      When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
 
       #### Examples
 
-
       ```TypeScript
-
       function showBindingData() {
           Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
               write(asyncResult.value)
           });
       }
 
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
 
+      // There is an important difference in behavior between using the "table" and "matrix" coercionType with the
+      // Binding.getDataAsync method, with respect to data formatted with header rows, as shown in the following
+      // two examples. These code examples show event handler functions for the Binding.SelectionChanged event.
 
-      // There is an important difference in behavior between using the "table"
-      and "matrix" coercionType with the
-
-      // Binding.getDataAsync method, with respect to data formatted with header
-      rows, as shown in the following
-
-      // two examples. These code examples show event handler functions for the
-      Binding.SelectionChanged event.
-
-
-      // If you specify the "table" coercionType, the TableData.rows property (
-      result.value.rows in the following
-
-      // code example) returns an array that contains only the body rows of the
-      table. So, its 0th row will be the
-
+      // If you specify the "table" coercionType, the TableData.rows property ( result.value.rows in the following
+      // code example) returns an array that contains only the body rows of the table. So, its 0th row will be the
       // first non-header row in the table.
-
       function selectionChanged(evtArgs) { 
           Office.select("bindings#TableTranslate").getDataAsync(
               { coercionType: 'table', 
@@ -499,23 +314,14 @@ methods:
                   }
           }); 
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
 
-
-      // However, if you specify the "matrix" coercionType, result.value in the
-      following code example returns an array
-
-      // that contains the table header in the 0th row. If the table header
-      contains multiple rows, then these are all
-
-      // included in the result.value matrix as separate rows before the table
-      body rows are included.
-
+      // However, if you specify the "matrix" coercionType, result.value in the following code example returns an array
+      // that contains the table header in the 0th row. If the table header contains multiple rows, then these are all
+      // included in the result.value matrix as separate rows before the table body rows are included.
       function selectionChanged(evtArgs) { 
           Office.select("bindings#TableTranslate").getDataAsync(
               { coercionType: 'matrix', 
@@ -532,13 +338,10 @@ methods:
                   }
           }); 
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
-
       ```
 
     isPreview: false
@@ -547,17 +350,8 @@ methods:
       content: 'getDataAsync<T>(callback?: (result: AsyncResult<T>) => void): void;'
       parameters:
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the values in the
-            specified binding. If the `coercionType` parameter is specified (and
-            the call is successful), the data is returned in the format
-            described in the CoercionType enumeration topic.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;T&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result is the values in the specified binding. If the `coercionType` parameter is specified (and the call is successful), the data is returned in the format described in the CoercionType enumeration topic.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;T&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -565,41 +359,23 @@ methods:
     uid: office!Office.Binding#removeHandlerAsync:member(1)
     package: office!
     fullName: removeHandlerAsync(eventType, options, callback)
-    summary: >-
-      Removes the specified handler from the binding for the specified event
-      type.
-    remarks: >-
-      **Requirement set**:
-      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+    summary: Removes the specified handler from the binding for the specified event type.
+    remarks: '**Requirement set**: [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?:
-        RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+      content: 'removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
-          description: >-
-            The event type. For bindings, it can be
-            `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          description: The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`<!-- -->.
           type: <xref uid="office!Office.EventType:enum" />
         - id: options
-          description: >-
-            Provides options to determine which event handler or handlers are
-            removed.
+          description: Provides options to determine which event handler or handlers are removed.
           type: <xref uid="office!Office.RemoveHandlerOptions:interface" />
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -607,48 +383,30 @@ methods:
     uid: office!Office.Binding#removeHandlerAsync:member(2)
     package: office!
     fullName: removeHandlerAsync(eventType, callback)
-    summary: >-
-      Removes the specified handler from the binding for the specified event
-      type.
-    remarks: >-
-      **Requirement set**:
-      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
-
+    summary: Removes the specified handler from the binding for the specified event type.
+    remarks: |-
+      **Requirement set**: [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
       #### Examples
 
-
       ```TypeScript
-
       function removeEventHandlerFromBinding() {
           Office.select("bindings#MyBinding").removeHandlerAsync(
               Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
       }
-
       ```
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
-          description: >-
-            The event type. For bindings, it can be
-            `Office.EventType.BindingDataChanged` or
-            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          description: The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`<!-- -->.
           type: <xref uid="office!Office.EventType:enum" />
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -656,180 +414,68 @@ methods:
     uid: office!Office.Binding#setDataAsync:member(1)
     package: office!
     fullName: setDataAsync(data, options, callback)
-    summary: >-
-      Writes data to the bound section of the document represented by the
-      specified binding object.
-    remarks: >-
+    summary: Writes data to the bound section of the document represented by the specified binding object.
+    remarks: |-
       **Requirement sets**:
 
+      - [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion) (when using `Office.CoercionType.Html`<!-- -->)
 
-      -
-      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
+      - [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion) (when using `Office.CoercionType.Matrix`<!-- -->)
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion) (when using `Office.CoercionType.Ooxml`<!-- -->)
 
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
-      -
-      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->)
+      - [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion) (when using `Office.CoercionType.Table`<!-- -->)
 
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
-      -
-      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->)
+      - [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion) (when using `Office.CoercionType.Text`<!-- -->)
 
+      The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as described in the following table.
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td> <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: <code>\[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\]</code>. To write a single column of three rows, pass an array like this: <code>\[\["R1C1"\], \["R2C1"\], \["R3C1"\]\]</code>.</td> </tr> <tr> <td>A <code>TableData</code> object</td> <td>A table with headers will be written.</td> </tr> </table>
 
+      Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the binding as follows.
 
-      -
-      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->)
-
-
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
-
-
-      -
-      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
-      (when using `Office.CoercionType.Text`<!-- -->)
-
-
-      The value passed for data contains the data to be written in the binding.
-      The kind of value passed determines what will be written as described in
-      the following table.
-
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>Plain text or anything that can be coerced to a
-      string will be written.</td> </tr> <tr> <td>An array of arrays
-      ("matrix")</td> <td>Tabular data without headers will be written. For
-      example, to write data to three rows in two columns, you can pass an array
-      like this: <code>\[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1",
-      "R3C2"\]\]</code>. To write a single column of three rows, pass an array
-      like this: <code>\[\["R1C1"\], \["R2C1"\], \["R3C1"\]\]</code>.</td> </tr>
-      <tr> <td>A <code>TableData</code> object</td> <td>A table with headers
-      will be written.</td> </tr> </table>
-
-
-      Additionally, these application-specific actions apply when writing data
-      to a binding. For Word, the specified data is written to the binding as
-      follows.
-
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>The specified text is written.</td> </tr> <tr>
-      <td>An array of arrays ("matrix") or a <code>TableData</code> object</td>
-      <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The
-      specified HTML is written. If any of the HTML you write is invalid, Word
-      will not raise an error. Word will write as much of the HTML as it can and
-      will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open
-      XML")</td> <td>The specified the XML is written.</td> </tr> </table>
-
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is written.</td> </tr> <tr> <td>An array of arrays ("matrix") or a <code>TableData</code> object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is written.</td> </tr> </table>
 
       For Excel, the specified data is written to the binding as follows.
 
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>The specified text is inserted as the value of
-      the first bound cell. You can also specify a valid formula to add that
-      formula to the bound cell. For example, setting data to
-      <code>"=SUM(A1:A5)"</code> will total the values in the specified range.
-      However, when you set a formula on the bound cell, after doing so, you
-      can't read the added formula (or any pre-existing formula) from the bound
-      cell. If you call the <code>Binding.getDataAsync</code> method on the
-      bound cell to read its data, the method can return only the data displayed
-      in the cell (the formula's result).</td> </tr> <tr> <td>An array of arrays
-      ("matrix"), and the shape exactly matches the shape of the binding
-      specified</td> <td>The set of rows and columns are written.You can also
-      specify an array of arrays that contain valid formulas to add them to the
-      bound cells. For example, setting data to
-      <code>\[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\]</code> will add those two
-      formulas to a binding that contains two cells. Just as when setting a
-      formula on a single bound cell, you can't read the added formulas (or any
-      pre-existing formulas) from the binding with the
-      <code>Binding.getDataAsync</code> method - it returns only the data
-      displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code>
-      object, and the shape of the table matches the bound table</td> <td>The
-      specified set of rows and/or headers are written, if no other data in
-      surrounding cells will be overwritten. **Note**: If you specify
-      formulas in the <code>TableData</code> object you pass for the *data*
-      parameter, you might not get the results you expect due to the "calculated
-      columns" feature of Excel, which automatically duplicates formulas within
-      a column. To work around this when you want to write *data* that
-      contains formulas to a bound table, try specifying the data as an array of
-      arrays (instead of a <code>TableData</code> object), and specify the
-      *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr>
-      </table>
-
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td> </tr> <tr> <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td> <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting data to <code>\[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\]</code> will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
 
       For Excel on the web:
 
+      - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
 
-      - The total number of cells in the value passed to the data parameter
-      can't exceed 20,000 in a single call to this method.
-
-
-      - The number of formatting groups passed to the cellFormat parameter can't
-      exceed 100. A single formatting group consists of a set of formatting
-      applied to a specified range of cells.
-
+      - The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.
 
       In all other cases, an error is returned.
 
+      The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and startColumn parameters are specified, and they specify a valid range.
 
-      The setDataAsync method will write data in a subset of a table or matrix
-      binding if the optional startRow and startColumn parameters are specified,
-      and they specify a valid range.
+      In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object to return the following information.
 
-
-      In the callback function passed to the setDataAsync method, you can use
-      the properties of the AsyncResult object to return the following
-      information.
-
-
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
-      <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there's no object or data to retrieve.</td>
-      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
-      success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setDataAsync(data: TableData | any, options?: SetBindingDataOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+      content: 'setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: data
-          description: >-
-            The data to be set in the current selection. Possible data types by
-            Office application:
+          description: |-
+            The data to be set in the current selection. Possible data types by Office application:
 
-
-            string: Excel on the web and on Windows, and Word on the web and on
-            Windows only
-
+            string: Excel on the web and on Windows, and Word on the web and on Windows only
 
             array of arrays: Excel and Word only
 
-
-            [Office.TableData](xref:office!Office.TableData:class)<!-- -->:
-            Excel and Word only
-
+            [Office.TableData](xref:office!Office.TableData:class)<!-- -->: Excel and Word only
 
             HTML: Word on the web and on Windows only
-
 
             Office Open XML: Word only
           type: <xref uid="office!Office.TableData:class" /> | any
@@ -837,14 +483,8 @@ methods:
           description: Provides options for how to set the data in a binding.
           type: <xref uid="office!Office.SetBindingDataOptions:interface" />
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -852,174 +492,62 @@ methods:
     uid: office!Office.Binding#setDataAsync:member(2)
     package: office!
     fullName: setDataAsync(data, callback)
-    summary: >-
-      Writes data to the bound section of the document represented by the
-      specified binding object.
-    remarks: >-
+    summary: Writes data to the bound section of the document represented by the specified binding object.
+    remarks: |-
       **Requirement sets**:
 
+      - [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion) (when using `Office.CoercionType.Html`<!-- -->)
 
-      -
-      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->)
+      - [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
+      - [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion) (when using `Office.CoercionType.Matrix`<!-- -->)
 
-      -
-      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      - [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion) (when using `Office.CoercionType.Ooxml`<!-- -->)
 
+      - [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
-      -
-      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->)
+      - [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion) (when using `Office.CoercionType.Table`<!-- -->)
 
+      - [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
-      -
-      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->)
+      - [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion) (when using `Office.CoercionType.Text`<!-- -->)
 
+      The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as described in the following table.
 
-      -
-      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td> <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: <code>\[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\]</code>. To write a single column of three rows, pass an array like this: <code>\[\["R1C1"\], \["R2C1"\], \["R3C1"\]\]</code>.</td> </tr> <tr> <td>A <code>TableData</code> object</td> <td>A table with headers will be written.</td> </tr> </table>
 
+      Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the binding as follows.
 
-      -
-      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->)
-
-
-      -
-      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
-
-
-      -
-      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
-      (when using `Office.CoercionType.Text`<!-- -->)
-
-
-      The value passed for data contains the data to be written in the binding.
-      The kind of value passed determines what will be written as described in
-      the following table.
-
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>Plain text or anything that can be coerced to a
-      string will be written.</td> </tr> <tr> <td>An array of arrays
-      ("matrix")</td> <td>Tabular data without headers will be written. For
-      example, to write data to three rows in two columns, you can pass an array
-      like this: <code>\[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1",
-      "R3C2"\]\]</code>. To write a single column of three rows, pass an array
-      like this: <code>\[\["R1C1"\], \["R2C1"\], \["R3C1"\]\]</code>.</td> </tr>
-      <tr> <td>A <code>TableData</code> object</td> <td>A table with headers
-      will be written.</td> </tr> </table>
-
-
-      Additionally, these application-specific actions apply when writing data
-      to a binding. For Word, the specified data is written to the binding as
-      follows.
-
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>The specified text is written.</td> </tr> <tr>
-      <td>An array of arrays ("matrix") or a <code>TableData</code> object</td>
-      <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The
-      specified HTML is written. If any of the HTML you write is invalid, Word
-      will not raise an error. Word will write as much of the HTML as it can and
-      will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open
-      XML")</td> <td>The specified the XML is written.</td> </tr> </table>
-
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is written.</td> </tr> <tr> <td>An array of arrays ("matrix") or a <code>TableData</code> object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is written.</td> </tr> </table>
 
       For Excel, the specified data is written to the binding as follows.
 
-
-      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr>
-      <tr> <td>A string</td> <td>The specified text is inserted as the value of
-      the first bound cell. You can also specify a valid formula to add that
-      formula to the bound cell. For example, setting data to
-      <code>"=SUM(A1:A5)"</code> will total the values in the specified range.
-      However, when you set a formula on the bound cell, after doing so, you
-      can't read the added formula (or any pre-existing formula) from the bound
-      cell. If you call the <code>Binding.getDataAsync</code> method on the
-      bound cell to read its data, the method can return only the data displayed
-      in the cell (the formula's result).</td> </tr> <tr> <td>An array of arrays
-      ("matrix"), and the shape exactly matches the shape of the binding
-      specified</td> <td>The set of rows and columns are written.You can also
-      specify an array of arrays that contain valid formulas to add them to the
-      bound cells. For example, setting data to
-      <code>\[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\]</code> will add those two
-      formulas to a binding that contains two cells. Just as when setting a
-      formula on a single bound cell, you can't read the added formulas (or any
-      pre-existing formulas) from the binding with the
-      <code>Binding.getDataAsync</code> method - it returns only the data
-      displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code>
-      object, and the shape of the table matches the bound table</td> <td>The
-      specified set of rows and/or headers are written, if no other data in
-      surrounding cells will be overwritten. **Note**: If you specify
-      formulas in the <code>TableData</code> object you pass for the *data*
-      parameter, you might not get the results you expect due to the "calculated
-      columns" feature of Excel, which automatically duplicates formulas within
-      a column. To work around this when you want to write *data* that
-      contains formulas to a bound table, try specifying the data as an array of
-      arrays (instead of a <code>TableData</code> object), and specify the
-      *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr>
-      </table>
-
+      <table> <tr> <th><code>data</code> value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td> </tr> <tr> <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td> <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting data to <code>\[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\]</code> will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
 
       For Excel on the web:
 
+      - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
 
-      - The total number of cells in the value passed to the data parameter
-      can't exceed 20,000 in a single call to this method.
-
-
-      - The number of formatting groups passed to the cellFormat parameter can't
-      exceed 100. A single formatting group consists of a set of formatting
-      applied to a specified range of cells.
-
+      - The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.
 
       In all other cases, an error is returned.
 
+      The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and startColumn parameters are specified, and they specify a valid range.
 
-      The setDataAsync method will write data in a subset of a table or matrix
-      binding if the optional startRow and startColumn parameters are specified,
-      and they specify a valid range.
+      In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object to return the following information.
 
-
-      In the callback function passed to the setDataAsync method, you can use
-      the properties of the AsyncResult object to return the following
-      information.
-
-
-      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
-      <td><code>AsyncResult.value</code></td> <td>Always returns
-      <code>undefined</code> because there's no object or data to retrieve.</td>
-      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
-      success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
-
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns <code>undefined</code> because there's no object or data to retrieve.</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td> </tr> </table>
 
       #### Examples
 
-
       ```TypeScript
-
       function setBindingData() {
           Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
       }
 
-
-      // Specifying the optional coercionType parameter lets you specify the
-      kind of data you want to write to a binding.
-
-      // For example, in Word if you want to write HTML to a text binding, you
-      can specify the coercionType parameter 
-
-      // as "html" as shown in the following example, which uses HTML <b> tags
-      to make "Hello" bold.
-
+      // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a binding.
+      // For example, in Word if you want to write HTML to a text binding, you can specify the coercionType parameter 
+      // as "html" as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
       function writeHtmlData() {
           Office.select("bindings#myBinding").setDataAsync(
               "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
@@ -1029,22 +557,14 @@ methods:
           });
       }
 
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
 
-
-      // In this example, the call to setDataAsync passes the data parameter as
-      an array of arrays
-
-      // (to create a single column of three rows), and specifies the data
-      structure with the 
-
+      // In this example, the call to setDataAsync passes the data parameter as an array of arrays
+      // (to create a single column of three rows), and specifies the data structure with the 
       // coercionType parameter as a "matrix".
-
       function writeBoundDataMatrix() {
           Office.select("bindings#myBinding").setDataAsync(
               [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
@@ -1055,35 +575,19 @@ methods:
               }
           });
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message) {
           document.getElementById('message').innerText += message;
       }
 
-
-      // In the writeBoundDataTable function in this example, the call to
-      setDataAsync passes the data parameter 
-
-      // as a TableData object (to write three columns and three rows), and
-      specifies the data structure
-
+      // In the writeBoundDataTable function in this example, the call to setDataAsync passes the data parameter 
+      // as a TableData object (to write three columns and three rows), and specifies the data structure
       // with the coercionType parameter as a "table".
 
-
-      // In the updateTableData function, the call to setDataAsync again passes
-      the data parameter as a TableData object,
-
-      // but as a single column with a new header and three rows, to update the
-      values in the last column 
-
-      // of the table created with the writeBoundDataTable function. The
-      optional zero-based startColumn parameter 
-
-      // is specified as 2 to replace the values in the third column of the
-      table.
-
+      // In the updateTableData function, the call to setDataAsync again passes the data parameter as a TableData object,
+      // but as a single column with a new header and three rows, to update the values in the last column 
+      // of the table created with the writeBoundDataTable function. The optional zero-based startColumn parameter 
+      // is specified as 2 to replace the values in the third column of the table.
       function writeBoundDataTable() {
           // Create a TableData object.
           const myTable = new Office.TableData();
@@ -1101,9 +605,7 @@ methods:
           });
       }
 
-
       // Replace last column with different data.
-
       function updateTableData() {
           const newTable = new Office.TableData();
           newTable.headers = ["Gender"];
@@ -1118,10 +620,7 @@ methods:
           });
       }
 
-
-      // In this example, the following call passes two formatting groups to
-      cellFormat.
-
+      // In this example, the following call passes two formatting groups to cellFormat.
       Office.select("bindings#myBinding").setDataAsync([['Berlin'],['Munich'],['Duisburg']],
         {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
@@ -1131,40 +630,25 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setDataAsync(data: TableData | any, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: 'setDataAsync(data: TableData | any, callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: data
-          description: >-
-            The data to be set in the current selection. Possible data types by
-            Office application:
+          description: |-
+            The data to be set in the current selection. Possible data types by Office application:
 
-
-            string: Excel on the web and on Windows, and Word on the web and on
-            Windows only
-
+            string: Excel on the web and on Windows, and Word on the web and on Windows only
 
             array of arrays: Excel and Word only
 
-
             `TableData`<!-- -->: Excel and Word only
 
-
             HTML: Word on the web and on Windows only
-
 
             Office Open XML: Word only
           type: <xref uid="office!Office.TableData:class" /> | any
         - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. A function that is invoked when the callback returns, whose only parameter is of type [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

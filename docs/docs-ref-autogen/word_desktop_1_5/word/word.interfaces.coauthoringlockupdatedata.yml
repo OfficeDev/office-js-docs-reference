@@ -3,9 +3,7 @@ name: Word.Interfaces.CoauthoringLockUpdateData
 uid: word!Word.Interfaces.CoauthoringLockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockUpdateData
-summary: >-
-  An interface for updating data on the `CoauthoringLock` object, for use in
-  `coauthoringLock.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CoauthoringLock` object, for use in `coauthoringLock.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `CoauthoringLock` object.
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

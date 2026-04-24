@@ -4,15 +4,10 @@ uid: word!Word.InsertLocation:enum
 package: word!
 fullName: Word.InsertLocation
 summary: Represents the insertion location type.
-remarks: >-
+remarks: |-
   \[Api set: WordApi 1.1\]
 
-
-  To be used with an API call, such as `obj.insertSomething(newStuff,
-  location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new
-  content will be outside of the modified object. If the location is `start` or
-  `end`<!-- -->, the new content will be included as part of the modified
-  object.
+  To be used with an API call, such as `obj.insertSomething(newStuff, location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new content will be outside of the modified object. If the location is `start` or `end`<!-- -->, the new content will be included as part of the modified object.
 
 isPreview: false
 isDeprecated: false

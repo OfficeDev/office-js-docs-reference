@@ -27,9 +27,7 @@ properties:
     uid: word!Word.Interfaces.PaneData#pagesEnclosingViewport:member
     package: word!
     fullName: pagesEnclosingViewport
-    summary: >-
-      Gets the `PageCollection` shown in the viewport of the pane. If a page is
-      partially visible in the pane, the whole page is returned.
+    summary: Gets the `PageCollection` shown in the viewport of the pane. If a page is partially visible in the pane, the whole page is returned.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false

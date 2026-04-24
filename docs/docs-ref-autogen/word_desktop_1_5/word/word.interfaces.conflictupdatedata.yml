@@ -3,9 +3,7 @@ name: Word.Interfaces.ConflictUpdateData
 uid: word!Word.Interfaces.ConflictUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ConflictUpdateData
-summary: >-
-  An interface for updating data on the `Conflict` object, for use in
-  `conflict.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Conflict` object, for use in `conflict.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,9 +14,7 @@ properties:
     uid: word!Word.Interfaces.ConflictUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `Conflict` object.
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `Conflict` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

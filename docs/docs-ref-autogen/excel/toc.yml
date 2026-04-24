@@ -1392,6 +1392,8 @@ items:
                 uid: office!Office.NodeReplacedEventArgs:interface
               - name: OfficeTheme
                 uid: office!Office.OfficeTheme:interface
+              - name: OnReadyOptions
+                uid: office!Office.OnReadyOptions:interface
               - name: RangeCoordinates
                 uid: office!Office.RangeCoordinates:interface
               - name: RangeFormatConfiguration

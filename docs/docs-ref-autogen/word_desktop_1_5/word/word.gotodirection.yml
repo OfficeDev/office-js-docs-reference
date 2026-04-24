@@ -3,9 +3,7 @@ name: Word.GoToDirection
 uid: word!Word.GoToDirection:enum
 package: word!
 fullName: Word.GoToDirection
-summary: >-
-  Specifies the direction in which to move when using the
-  [Selection.goTo](xref:word!Word.Selection:class) method.
+summary: Specifies the direction in which to move when using the [Selection.goTo](xref:word!Word.Selection:class) method.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false

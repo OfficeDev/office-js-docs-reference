@@ -980,10 +980,8 @@ fields:
   - name: noProofing
     uid: word!Word.LanguageId.noProofing:member
     package: word!
-    summary: >-
-      Disables proofing if the language ID identifies a language in which an
-      object is grammatically validated using the Microsoft Word proofing tools.
-
+    summary: |-
+      Disables proofing if the language ID identifies a language in which an object is grammatically validated using the Microsoft Word proofing tools.
 
       * \[Api set: WordApiDesktop 1.3\]
     value: '"NoProofing"'

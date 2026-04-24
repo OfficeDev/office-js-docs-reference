@@ -3,10 +3,11 @@ name: Word.Interfaces.PageCollectionData
 uid: word!Word.Interfaces.PageCollectionData:interface
 package: word!
 fullName: Word.Interfaces.PageCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pageCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pageCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.PageCollection](/javascript/api/word/word.pagecollection): [toJSON](/javascript/api/word/word.pagecollection#word-word-pagecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

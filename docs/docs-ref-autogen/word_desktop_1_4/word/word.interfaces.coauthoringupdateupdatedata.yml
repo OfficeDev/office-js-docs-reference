@@ -3,10 +3,11 @@ name: Word.Interfaces.CoauthoringUpdateUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateUpdateData
-summary: >-
-  An interface for updating data on the `CoauthoringUpdate` object, for use in
-  `coauthoringUpdate.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `CoauthoringUpdate` object, for use in `coauthoringUpdate.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CoauthoringUpdate](/javascript/api/word/word.coauthoringupdate): [set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: word!Word.Interfaces.CoauthoringUpdateUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `CoauthoringUpdate` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate` object.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

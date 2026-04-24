@@ -14,9 +14,7 @@ properties:
     uid: word!Word.CritiquePopupOptions#brandingTextResourceId:member
     package: word!
     fullName: brandingTextResourceId
-    summary: >-
-      Specifies the manifest resource ID of the string to use for branding. This
-      branding text appears next to your add-in icon in the pop-up menu.
+    summary: Specifies the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
     remarks: '\[Api set: WordApi 1.8\]'
 
     isPreview: false

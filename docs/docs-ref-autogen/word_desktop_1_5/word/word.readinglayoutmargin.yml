@@ -12,10 +12,8 @@ fields:
   - name: automatic
     uid: word!Word.ReadingLayoutMargin.automatic:member
     package: word!
-    summary: >-
-      Microsoft Word determines automatically whether to show or hide the
-      margins based on the available space.
-
+    summary: |-
+      Microsoft Word determines automatically whether to show or hide the margins based on the available space.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"Automatic"'

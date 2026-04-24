@@ -3,10 +3,7 @@ name: Word.ShapeTextWrapSide
 uid: word!Word.ShapeTextWrapSide:enum
 package: word!
 fullName: Word.ShapeTextWrapSide
-summary: >-
-  Specifies whether the document text should wrap on both sides of the specified
-  shape, on either the left or right side only, or on the side of the shape
-  that's farther from the respective page margin.
+summary: Specifies whether the document text should wrap on both sides of the specified shape, on either the left or right side only, or on the side of the shape that's farther from the respective page margin.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false

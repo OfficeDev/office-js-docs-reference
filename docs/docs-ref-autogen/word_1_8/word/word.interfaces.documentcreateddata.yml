@@ -3,10 +3,11 @@ name: Word.Interfaces.DocumentCreatedData
 uid: word!Word.Interfaces.DocumentCreatedData:interface
 package: word!
 fullName: Word.Interfaces.DocumentCreatedData
-summary: >-
-  An interface describing the data returned by calling
-  `documentCreated.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `documentCreated.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [toJSON](/javascript/api/word/word.documentcreated#word-word-documentcreated-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

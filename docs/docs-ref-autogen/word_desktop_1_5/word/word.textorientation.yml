@@ -28,10 +28,8 @@ fields:
   - name: horizontalRotatedFarEast
     uid: word!Word.TextOrientation.horizontalRotatedFarEast:member
     package: word!
-    summary: >-
-      Text is horizontal but from right to left to accommodate right-to-left
-      languages.
-
+    summary: |-
+      Text is horizontal but from right to left to accommodate right-to-left languages.
 
       * \[Api set: WordApiDesktop 1.4\]
     value: '"HorizontalRotatedFarEast"'
