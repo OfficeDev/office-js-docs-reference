@@ -4,7 +4,20 @@ uid: office!Office.OnReadyOptions:interface
 package: office!
 fullName: Office.OnReadyOptions
 summary: Provides options related to the `onReady` event.
-remarks: ''
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  // Enable rejection behavior for the onReady promise.
+  Office.onReadyOptions?.setRejectionEnabled();
+
+  // Now the onReady promise can be rejected if failures are encountered during its setup.
+  Office.onReady((info) => {
+      console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+  }).catch((error) => {
+      console.error("Office.js initialization failed:", error);
+  });
+  ```
 
 isPreview: true
 isDeprecated: false
@@ -23,3 +36,19 @@ properties:
       content: 'setRejectionEnabled?: () => void;'
       return:
         type: () =&gt; void
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Enable rejection behavior for the onReady promise.
+          Office.onReadyOptions?.setRejectionEnabled();
+
+          // Now the onReady promise can be rejected if failures are encountered during its setup.
+          Office.onReady((info) => {
+              console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+          }).catch((error) => {
+              console.error("Office.js initialization failed:", error);
+          });
+          ```
