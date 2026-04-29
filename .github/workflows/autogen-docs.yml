@@ -8,6 +8,9 @@ on:
 jobs:
   autogen-docs:
     runs-on: windows-latest
+    strategy:
+      matrix:
+        node-version: [lts, latest]
     permissions:
       contents: write
     defaults:
@@ -24,7 +27,7 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: ${{ matrix.node-version }}
       - name: Run GenerateDocs script
         run: |
           echo "Generating docs"
