@@ -2,6 +2,7 @@ name: autogen-docs
 run-name: Automatically run GenerateDocs
 on:
   schedule:
+    # Run at 10:45 AM UTC on Tuesday and Thursday.
     - cron: '45 10 * * TUE'
     - cron: '45 10 * * THU'
   workflow_dispatch:
@@ -16,15 +17,16 @@ jobs:
         working-directory: ./generate-docs
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Make the script file executable
         run: |
           echo "Making script file executable"
           chmod +x ./GenerateDocs.sh
       - name: Set up node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '18'
+          # Use an Active LTS version of Node.js.
+          node-version: 'lts/*'
       - name: Run GenerateDocs script
         run: |
           echo "Generating docs"
