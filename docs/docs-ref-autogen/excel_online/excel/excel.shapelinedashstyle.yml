@@ -7,9 +7,33 @@ summary: The dash style for a line.
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Excel.ShapeLineFormat](/javascript/api/excel/excel.shapelineformat): [dashStyle](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-dashstyle-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+  await Excel.run(async (context) => {
+      // Apply outline formatting to the shape.
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const badge = sheet.shapes.getItem("Badge");
+      const lineFormat: Excel.ShapeLineFormat = badge.lineFormat;
+      lineFormat.set({
+          color: "#C55A11",
+          dashStyle: Excel.ShapeLineDashStyle.dashDotDot,
+          style: Excel.ShapeLineStyle.thinThick,
+          transparency: 0.2,
+          visible: true,
+          weight: 4
+      });
+
+      await context.sync();
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
