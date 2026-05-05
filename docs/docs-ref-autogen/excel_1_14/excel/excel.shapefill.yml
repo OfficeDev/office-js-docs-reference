@@ -7,9 +7,27 @@ summary: Represents the fill formatting of a shape object.
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Excel.Shape](/javascript/api/excel/excel.shape): [fill](/javascript/api/excel/excel.shape#excel-excel-shape-fill-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+  await Excel.run(async (context) => {
+      // Set fill color and transparency together.
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const badge = sheet.shapes.getItem("Badge");
+      const shapeFill: Excel.ShapeFill = badge.fill;
+      shapeFill.foregroundColor = "#C00000";
+      shapeFill.transparency = 0.25;
+
+      await context.sync();
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -73,7 +91,24 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clears the fill formatting of this shape.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+      await Excel.run(async (context) => {
+          // Remove the shape's fill formatting.
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const badge = sheet.shapes.getItem("Badge");
+          const shapeFill: Excel.ShapeFill = badge.fill;
+          shapeFill.clear();
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +223,24 @@ methods:
     package: excel!
     fullName: setSolidColor(color)
     summary: Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+      await Excel.run(async (context) => {
+          // Apply a solid fill color to the shape.
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const badge = sheet.shapes.getItem("Badge");
+          const shapeFill: Excel.ShapeFill = badge.fill;
+          shapeFill.setSolidColor("#FFE08A");
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
