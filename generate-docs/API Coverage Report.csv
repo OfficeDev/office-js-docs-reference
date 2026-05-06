@@ -5753,7 +5753,7 @@ excel,Excel.Shape,"image",Property,Excellent,false
 excel,Excel.Shape,"left",Property,Excellent,false
 excel,Excel.Shape,"level",Property,Excellent,false
 excel,Excel.Shape,"line",Property,Excellent,true
-excel,Excel.Shape,"lineFormat",Property,Great,false
+excel,Excel.Shape,"lineFormat",Property,Great,true
 excel,Excel.Shape,"lockAspectRatio",Property,Great,true
 excel,Excel.Shape,"name",Property,Good,false
 excel,Excel.Shape,"parentGroup",Property,Great,false
@@ -5817,18 +5817,18 @@ excel,Excel.ShapeDeactivatedEventArgs,N/A,Interface,Fine,false
 excel,Excel.ShapeDeactivatedEventArgs,"shapeId",Property,Great,false
 excel,Excel.ShapeDeactivatedEventArgs,"type",Property,Great,false
 excel,Excel.ShapeDeactivatedEventArgs,"worksheetId",Property,Great,false
-excel,Excel.ShapeFill,N/A,Class,Fine,false
+excel,Excel.ShapeFill,N/A,Class,Fine,true
 excel,Excel.ShapeFill,"context",Property,Excellent,false
 excel,Excel.ShapeFill,"foregroundColor",Property,Great,false
 excel,Excel.ShapeFill,"transparency",Property,Excellent,false
 excel,Excel.ShapeFill,"type",Property,Great,false
-excel,Excel.ShapeFill,"clear()",Method,Fine,false
+excel,Excel.ShapeFill,"clear()",Method,Fine,true
 excel,Excel.ShapeFill,"load(options)",Method,Great,false
 excel,Excel.ShapeFill,"load(propertyNames)",Method,Great,false
 excel,Excel.ShapeFill,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.ShapeFill,"set(properties, options)",Method,Good,false
 excel,Excel.ShapeFill,"set(properties)",Method,Fine,false
-excel,Excel.ShapeFill,"setSolidColor(color)",Method,Fine,false
+excel,Excel.ShapeFill,"setSolidColor(color)",Method,Fine,true
 excel,Excel.ShapeFill,"toJSON()",Method,Excellent,false
 excel,Excel.ShapeFillType,N/A,Enum,Good,false
 excel,Excel.ShapeFillType,"gradient",EnumField,Great,false
@@ -5883,7 +5883,7 @@ excel,Excel.ShapeGroup,"load(propertyNames)",Method,Great,false
 excel,Excel.ShapeGroup,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.ShapeGroup,"toJSON()",Method,Excellent,false
 excel,Excel.ShapeGroup,"ungroup()",Method,Fine,true
-excel,Excel.ShapeLineDashStyle,N/A,Enum,Good,false
+excel,Excel.ShapeLineDashStyle,N/A,Enum,Good,true
 excel,Excel.ShapeLineDashStyle,"dash",EnumField,Great,false
 excel,Excel.ShapeLineDashStyle,"dashDot",EnumField,Great,false
 excel,Excel.ShapeLineDashStyle,"dashDotDot",EnumField,Great,false
@@ -5902,15 +5902,15 @@ excel,Excel.ShapeLineFormat,"context",Property,Excellent,false
 excel,Excel.ShapeLineFormat,"dashStyle",Property,Excellent,false
 excel,Excel.ShapeLineFormat,"style",Property,Excellent,false
 excel,Excel.ShapeLineFormat,"transparency",Property,Excellent,false
-excel,Excel.ShapeLineFormat,"visible",Property,Excellent,false
+excel,Excel.ShapeLineFormat,"visible",Property,Excellent,true
 excel,Excel.ShapeLineFormat,"weight",Property,Excellent,false
 excel,Excel.ShapeLineFormat,"load(options)",Method,Great,false
 excel,Excel.ShapeLineFormat,"load(propertyNames)",Method,Great,false
 excel,Excel.ShapeLineFormat,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.ShapeLineFormat,"set(properties, options)",Method,Good,false
-excel,Excel.ShapeLineFormat,"set(properties)",Method,Fine,false
+excel,Excel.ShapeLineFormat,"set(properties)",Method,Fine,true
 excel,Excel.ShapeLineFormat,"toJSON()",Method,Excellent,false
-excel,Excel.ShapeLineStyle,N/A,Enum,Fine,false
+excel,Excel.ShapeLineStyle,N/A,Enum,Fine,true
 excel,Excel.ShapeLineStyle,"single",EnumField,Great,false
 excel,Excel.ShapeLineStyle,"thickBetweenThin",EnumField,Great,false
 excel,Excel.ShapeLineStyle,"thickThin",EnumField,Great,false
