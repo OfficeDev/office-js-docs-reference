@@ -14,6 +14,7 @@ remarks: |-
   - [OfficeExtension.EventHandlerResult](/javascript/api/office/officeextension.eventhandlerresult): [context](/javascript/api/office/officeextension.eventhandlerresult#office-officeextension-eventhandlerresult-context-member)
   - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
   - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [newObject](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-newobject-member(1))
+  - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [newObject](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-newobject-member(1))
   - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(4))
   - [Word.Application](/javascript/api/word/word.application): [newObject](/javascript/api/word/word.application#word-word-application-newobject-member(1))
   - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [newObject](/javascript/api/word/word.searchoptions#word-word-searchoptions-newobject-member(1))

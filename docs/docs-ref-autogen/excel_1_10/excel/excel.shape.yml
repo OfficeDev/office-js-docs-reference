@@ -83,16 +83,15 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
 
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Shapes");
-          const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
-          shape.left = 300;
-          shape.top = 100;
-          shape.height = 100;
-          shape.width = 100;
-          shape.fill.foregroundColor = "yellow"
+          // Apply a solid fill color to the shape.
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const badge = sheet.shapes.getItem("Badge");
+          const shapeFill: Excel.ShapeFill = badge.fill;
+          shapeFill.setSolidColor("#FFE08A");
+
           await context.sync();
       });
       ```
@@ -263,7 +262,27 @@ properties:
     package: excel!
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+      await Excel.run(async (context) => {
+          // Load and log the shape's fill and outline properties.
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const badge = sheet.shapes.getItem("Badge");
+          badge.fill.load(["foregroundColor", "transparency", "type"]);
+          badge.lineFormat.load(["color", "dashStyle", "style", "transparency", "visible", "weight"]);
+
+          await context.sync();
+
+          console.log("Badge fill: " + JSON.stringify(badge.fill));
+          console.log("Badge line format: " + JSON.stringify(badge.lineFormat));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
