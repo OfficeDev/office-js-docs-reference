@@ -1,0 +1,134 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions
+summary: Represents the collection of [PowerPoint.SensitivityLabelDetails](xref:powerpoint!PowerPoint.SensitivityLabelDetails:class) objects.
+remarks: |-
+  [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.SensitivityLabelDetailsCollection](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection): [load](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#color:member
+    package: powerpoint!
+    fullName: color
+    summary: 'For EACH ITEM in the collection: Gets the color of the sensitivity label.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#id:member
+    package: powerpoint!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets the unique ID of the sensitivity label.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isEnabled
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#isEnabled:member
+    package: powerpoint!
+    fullName: isEnabled
+    summary: 'For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#name:member
+    package: powerpoint!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: Gets the name of the sensitivity label.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: order
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#order:member
+    package: powerpoint!
+    fullName: order
+    summary: 'For EACH ITEM in the collection: Gets the priority of the sensitivity label, with 0 as lowest priority.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'order?: boolean;'
+      return:
+        type: boolean
+  - name: protectionType
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#protectionType:member
+    package: powerpoint!
+    fullName: protectionType
+    summary: 'For EACH ITEM in the collection: Gets a value indicating the protection type provided by this label.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectionType?: boolean;'
+      return:
+        type: boolean
+  - name: siteId
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#siteId:member
+    package: powerpoint!
+    fullName: siteId
+    summary: 'For EACH ITEM in the collection: Gets the unique ID of the tenant which the sensitivity label is belonged.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'siteId?: boolean;'
+      return:
+        type: boolean
+  - name: tooltip
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions#tooltip:member
+    package: powerpoint!
+    fullName: tooltip
+    summary: 'For EACH ITEM in the collection: Gets the description of the sensitivity label.'
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tooltip?: boolean;'
+      return:
+        type: boolean
