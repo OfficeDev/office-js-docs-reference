@@ -9751,15 +9751,6 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Refreshes the query.
-                    This only starts the refresh.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        refresh(): void;
-        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.

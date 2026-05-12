@@ -5207,7 +5207,6 @@ excel,Excel.Query,"delete()",Method,Good,false
 excel,Excel.Query,"load(options)",Method,Great,false
 excel,Excel.Query,"load(propertyNames)",Method,Great,false
 excel,Excel.Query,"load(propertyNamesAndPaths)",Method,Great,false
-excel,Excel.Query,"refresh()",Method,Fine,false
 excel,Excel.Query,"toJSON()",Method,Excellent,false
 excel,Excel.QueryCollection,N/A,Class,Fine,false
 excel,Excel.QueryCollection,"context",Property,Excellent,false
