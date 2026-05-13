@@ -27,6 +27,65 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * Provides methods to check the status of the catalog of sensitivity labels in PowerPoint
+                and retrieve all available sensitivity labels if the catalog is enabled.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelsCatalog extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly getLabelingCapability: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+        /**
+         * Gets sensitivity labels that are available to the current user.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The current  object.
+         */
+        getLabels(): PowerPoint.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SensitivityLabelsCatalogLoadOptions): PowerPoint.SensitivityLabelsCatalog;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SensitivityLabelsCatalog;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SensitivityLabelsCatalog;
+        /**
+         * Create a new instance of the `PowerPoint.SensitivityLabelsCatalog` object.
+         */
+        static newObject(context: OfficeExtension.ClientRequestContext): PowerPoint.SensitivityLabelsCatalog;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.SensitivityLabelsCatalog` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelsCatalogData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.SensitivityLabelsCatalogData;
+    }
+    /**
      * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
                 To learn more about the PowerPoint object model,
                 see {@link https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts | PowerPoint JavaScript object model}.
@@ -65,6 +124,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.7]
          */
         readonly properties: PowerPoint.DocumentProperties;
+        /**
+         * Returns the sensitivity label of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sensitivityLabel: PowerPoint.SensitivityLabel;
         /**
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
@@ -8849,6 +8916,43 @@ export declare namespace PowerPoint {
         targetSlideId?: string;
     }
     /**
+     * Indicates the labeling capability.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LabelingCapability {
+        /**
+         * Represents there's no valid licenses.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noLicense = "NoLicense",
+        /**
+         * Represents labeling being disabled.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingDisabled = "LabelingDisabled",
+        /**
+         * Represents labeling policy not found.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingPolicyNotFound = "LabelingPolicyNotFound",
+        /**
+         * Represents labeling being enabled.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingEnabled = "LabelingEnabled",
+    }
+    /**
      * Represents the page setup information for the presentation.
      *
      * @remarks
@@ -8897,6 +9001,349 @@ export declare namespace PowerPoint {
         * Whereas the original `PowerPoint.PageSetup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PageSetupData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): PowerPoint.Interfaces.PageSetupData;
+    }
+    /**
+     * Represents the collection of {@link PowerPoint.SensitivityLabelDetails} objects.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelDetailsCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.SensitivityLabelDetails[];
+        /**
+         * Gets the number of {@link PowerPoint.SensitivityLabelDetails} objects in this collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The number of `SensitivityLabelDetails` objects.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets the specified `SensitivityLabelDetails` object in this collection. Throws an `ItemNotFound` error if an item with the specified ID isn't found.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - The ID of the sensitivity label.
+         * @returns The specified `SensitivityLabelDetails` object.
+         */
+        getItem(id: string): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Gets the `SensitivityLabelDetails` object at the specified index in this collection. Throws an `IndexOutOfRange` error if the index is out of range.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The index of the item to retrieve. Zero-indexed.
+         * @returns The `SensitivityLabelDetails` object at the specified index.
+         */
+        getItemAt(index: number): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Gets the specified `SensitivityLabelDetails` object in this collection. If an item with the specified ID isn't found, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - The ID of the sensitivity label.
+         * @returns The specified `SensitivityLabelDetails` object.
+         */
+        getItemOrNullObject(id: string): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SensitivityLabelDetailsCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.SensitivityLabelDetailsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData;
+    }
+    /**
+     * Represents the protection type.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SensitivityLabelProtectionType {
+        /**
+         * No protection is applied by this label.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noProtection = "NoProtection",
+        /**
+         * Protection is defined by an administrator.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        adminDefined = "AdminDefined",
+        /**
+         * Protection is defined by the user.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userDefined = "UserDefined",
+    }
+    /**
+     * Represents the properties of available sensitivity labels in PowerPoint.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelDetails extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the sublabels of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly children: PowerPoint.SensitivityLabelDetailsCollection;
+        /**
+         * Gets the color of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly color: string;
+        /**
+         * Gets the unique ID of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Gets a value indicating whether the label is enabled.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isEnabled: boolean;
+        /**
+         * Gets the name of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Gets the priority of the sensitivity label, with 0 as lowest priority.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly order: number;
+        /**
+         * Gets a value indicating the protection type provided by this label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly protectionType: PowerPoint.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";
+        /**
+         * Gets the unique ID of the tenant which the sensitivity label is belonged.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly siteId: string;
+        /**
+         * Gets the description of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tooltip: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.SensitivityLabelDetails;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.SensitivityLabelDetails` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelDetailsData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.SensitivityLabelDetailsData;
+    }
+    /**
+     * Represents the result of updating the sensitivity label on the presentation.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SensitivityLabelUpdateResult {
+        /**
+         * The sensitivity label was successfully updated.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        success = "Success",
+        /**
+         * The update failed due to an unspecified error.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unspecifiedFailure = "UnspecifiedFailure",
+        /**
+         * The specified sensitivity label could not be found.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelNotFound = "LabelNotFound",
+        /**
+         * The presentation is read-only and cannot be modified.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentReadOnly = "DocumentReadOnly",
+        /**
+         * The user does not have sufficient permissions to update the label.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insufficientPermission = "InsufficientPermission",
+        /**
+         * The label update failed due to unsupported Double Key Encryption (DKE).
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedDoubleKeyEncryption = "UnsupportedDoubleKeyEncryption",
+        /**
+         * The label update failed because native labeling is not enabled for the user or installed SKU.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingDisabled = "LabelingDisabled",
+        /**
+         * The label update failed because the user's identity is not valid for applying a label.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userNotFound = "UserNotFound",
+        /**
+         * The label update failed due to unsupported User Defined Permissions (UDP).
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedUdp = "UnsupportedUdp",
+        /**
+         * The label update failed because the specified label is a parent label, which cannot be applied.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parentLabelNotSupported = "ParentLabelNotSupported",
+        /**
+         * The label update failed because the document doesn't belong to the same tenant as the user.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossTenant = "CrossTenant",
+    }
+    /**
+     * Represents the sensitivity label on the presentation.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabel extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the current label information that exists on the presentation for the user.
+                    If there's no sensitivity label on the current presentation, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The current `SensitivityLabelDetails` object.
+         */
+        getCurrentOrNullObject(): PowerPoint.SensitivityLabelDetails;
+        /**
+         * Tries to update to the provided sensitivity label on the presentation for the user.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param labelId - The ID of the label to apply.
+         * @returns The `SensitivityLabelUpdateResult` object.
+         */
+        tryToUpdate(labelId: string): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult>;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.SensitivityLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): {
+            [key: string]: string;
+        };
     }
     /**
      * Represents the collection of slides in the presentation.
@@ -10026,6 +10473,10 @@ export declare namespace PowerPoint {
              */
             slideWidth?: number;
         }
+        /** An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in `sensitivityLabelDetailsCollection.set({ ... })`. */
+        export interface SensitivityLabelDetailsCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SensitivityLabelDetailsData[];
+        }
         /** An interface for updating data on the `SlideCollection` object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -10037,6 +10488,17 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `SlideMasterCollection` object, for use in `slideMasterCollection.set({ ... })`. */
         export interface SlideMasterCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideMasterData[];
+        }
+        /** An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`. */
+        export interface SensitivityLabelsCatalogData {
+            /**
+             * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapability?: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
@@ -11227,6 +11689,77 @@ export declare namespace PowerPoint {
              */
             slideWidth?: number;
         }
+        /** An interface describing the data returned by calling `sensitivityLabelDetailsCollection.toJSON()`. */
+        export interface SensitivityLabelDetailsCollectionData {
+            items?: PowerPoint.Interfaces.SensitivityLabelDetailsData[];
+        }
+        /** An interface describing the data returned by calling `sensitivityLabelDetails.toJSON()`. */
+        export interface SensitivityLabelDetailsData {
+            /**
+             * Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             * Gets the unique ID of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: number;
+            /**
+             * Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: PowerPoint.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";
+            /**
+             * Gets the unique ID of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: string;
+            /**
+             * Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: string;
+        }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -11238,6 +11771,28 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
         export interface SlideMasterCollectionData {
             items?: PowerPoint.Interfaces.SlideMasterData[];
+        }
+        /**
+         * Provides methods to check the status of the catalog of sensitivity labels in PowerPoint
+                    and retrieve all available sensitivity labels if the catalog is enabled.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelsCatalogLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapability?: boolean;
         }
         /**
          * The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation.
@@ -13758,6 +14313,160 @@ export declare namespace PowerPoint {
             slideWidth?: boolean;
         }
         /**
+         * Represents the collection of {@link PowerPoint.SensitivityLabelDetails} objects.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelDetailsCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: boolean;
+        }
+        /**
+         * Represents the properties of available sensitivity labels in PowerPoint.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelDetailsLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             * Gets the unique ID of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: boolean;
+            /**
+             * Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: boolean;
+            /**
+             * Gets the unique ID of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: boolean;
+            /**
+             * Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: boolean;
+        }
+        /**
          * Represents the collection of slides in the presentation.
          *
          * @remarks
@@ -13894,6 +14603,7 @@ export declare namespace PowerPoint {
         constructor(url?: string);
         readonly presentation: Presentation;
         readonly application: Application;
+        readonly sensitivityLabelsCatalog: any;
     }
     /**
      * Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.

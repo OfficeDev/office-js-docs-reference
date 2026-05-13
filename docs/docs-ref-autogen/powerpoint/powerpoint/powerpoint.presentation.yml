@@ -151,6 +151,19 @@ properties:
       content: 'readonly properties: PowerPoint.DocumentProperties;'
       return:
         type: <xref uid="powerpoint!PowerPoint.DocumentProperties:class" />
+  - name: sensitivityLabel
+    uid: powerpoint!PowerPoint.Presentation#sensitivityLabel:member
+    package: powerpoint!
+    fullName: sensitivityLabel
+    summary: Returns the sensitivity label of the presentation.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabel: PowerPoint.SensitivityLabel;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabel:class" />
   - name: slideMasters
     uid: powerpoint!PowerPoint.Presentation#slideMasters:member
     package: powerpoint!

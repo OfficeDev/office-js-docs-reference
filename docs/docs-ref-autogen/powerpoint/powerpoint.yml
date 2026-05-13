@@ -67,6 +67,13 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.PresentationData:interface
   - powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelsCatalogData:interface
+  - powerpoint!PowerPoint.Interfaces.SensitivityLabelsCatalogLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface
@@ -204,6 +211,10 @@ classes:
   - powerpoint!PowerPoint.PlaceholderFormat:class
   - powerpoint!PowerPoint.Presentation:class
   - powerpoint!PowerPoint.RequestContext:class
+  - powerpoint!PowerPoint.SensitivityLabel:class
+  - powerpoint!PowerPoint.SensitivityLabelDetails:class
+  - powerpoint!PowerPoint.SensitivityLabelDetailsCollection:class
+  - powerpoint!PowerPoint.SensitivityLabelsCatalog:class
   - powerpoint!PowerPoint.Shape:class
   - powerpoint!PowerPoint.ShapeCollection:class
   - powerpoint!PowerPoint.ShapeFill:class
@@ -249,8 +260,11 @@ enums:
   - powerpoint!PowerPoint.GeometricShapeType:enum
   - powerpoint!PowerPoint.HyperlinkType:enum
   - powerpoint!PowerPoint.InsertSlideFormatting:enum
+  - powerpoint!PowerPoint.LabelingCapability:enum
   - powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum
   - powerpoint!PowerPoint.PlaceholderType:enum
+  - powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
+  - powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
   - powerpoint!PowerPoint.ShapeAutoSize:enum
   - powerpoint!PowerPoint.ShapeFillType:enum
   - powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum

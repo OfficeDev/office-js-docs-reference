@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript preview APIs
 description: Details about upcoming Excel JavaScript APIs.
-ms.date: 05/13/2025
+ms.date: 05/12/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -11,13 +11,6 @@ ms.localizationpriority: medium
 New Excel JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired.
 
 [!INCLUDE [Information about using preview APIs](../../includes/using-preview-apis-host.md)]
-
-The following table provides a concise summary of the APIs, while the subsequent [API list](#api-list) table gives a detailed list.
-
-| Feature area | Description | Relevant objects |
-|:--- |:--- |:--- |
-| Document tasks | Turn comments into tasks assigned to users. | [DocumentTask](/javascript/api/excel/excel.documenttask), [DocumentTaskChange](/javascript/api/excel/excel.documenttaskchange), [DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection), [DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection) |
-| Table styles | Provides control for font, border, fill color, and other aspects of table styles. | [Table](/javascript/api/excel/excel.table), [PivotTable](/javascript/api/excel/excel.pivottable), [Slicer](/javascript/api/excel/excel.slicer) |
 
 ## API list
 
