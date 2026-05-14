@@ -3,7 +3,7 @@ name: Office.SlideRange
 uid: office!Office.SlideRange:interface
 package: office!
 fullName: Office.SlideRange
-summary: Represents the selected slides in a PowerPoint presentation. This object is returned when calling  with [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member) in PowerPoint.
+summary: Represents the selected slides in a PowerPoint presentation. This object is returned when calling [Office.Document.getSelectedDataAsync](xref:office!Office.Document:interface) with [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member) in PowerPoint.
 remarks: |-
 
 
