@@ -8960,7 +8960,7 @@ export declare namespace Office {
     /**
      * Represents a single slide in a PowerPoint presentation. 
      * This interface is used as part of the {@link Office.SlideRange} object returned by
-     * {@link Office.Document.getSelectedDataAsync} when called with {@link Office.CoercionType.SlideRange}.
+     * {@link Office.Document | Office.Document.getSelectedDataAsync} when called with {@link Office.CoercionType.SlideRange}.
      */
     export interface Slide {
         /**
@@ -8978,7 +8978,7 @@ export declare namespace Office {
     }
     /**
      * Represents the selected slides in a PowerPoint presentation.
-     * This object is returned when calling {@link Office.Document.getSelectedDataAsync} with {@link Office.CoercionType.SlideRange} in PowerPoint.
+     * This object is returned when calling {@link Office.Document | Office.Document.getSelectedDataAsync} with {@link Office.CoercionType.SlideRange} in PowerPoint.
      *
      */
     export interface SlideRange {
