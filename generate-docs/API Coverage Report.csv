@@ -10753,8 +10753,8 @@ powerpoint,PowerPoint.SensitivityLabelUpdateResult,"unsupportedUdp",EnumField,Gr
 powerpoint,PowerPoint.SensitivityLabelUpdateResult,"userNotFound",EnumField,Great,false
 powerpoint,PowerPoint.Shape,N/A,Class,Fine,true
 powerpoint,PowerPoint.Shape,"adjustments",Property,Excellent,false
-powerpoint,PowerPoint.Shape,"altTextDescription",Property,Excellent,false
-powerpoint,PowerPoint.Shape,"altTextTitle",Property,Excellent,false
+powerpoint,PowerPoint.Shape,"altTextDescription",Property,Excellent,true
+powerpoint,PowerPoint.Shape,"altTextTitle",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"context",Property,Excellent,false
 powerpoint,PowerPoint.Shape,"creationId",Property,Excellent,false
 powerpoint,PowerPoint.Shape,"customXmlParts",Property,Great,false
@@ -10762,7 +10762,7 @@ powerpoint,PowerPoint.Shape,"fill",Property,Great,true
 powerpoint,PowerPoint.Shape,"group",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"height",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"id",Property,Good,false
-powerpoint,PowerPoint.Shape,"isDecorative",Property,Excellent,false
+powerpoint,PowerPoint.Shape,"isDecorative",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"left",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"level",Property,Excellent,false
 powerpoint,PowerPoint.Shape,"lineFormat",Property,Great,false
@@ -10813,7 +10813,7 @@ powerpoint,PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeType, opt
 powerpoint,PowerPoint.ShapeCollection,"addGroup(values)",Method,Fine,true
 powerpoint,PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Good,true
 powerpoint,PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Good,false
-powerpoint,PowerPoint.ShapeCollection,"addPicture(base64EncodedImage, options)",Method,Good,false
+powerpoint,PowerPoint.ShapeCollection,"addPicture(base64EncodedImage, options)",Method,Good,true
 powerpoint,PowerPoint.ShapeCollection,"addTable(rowCount, columnCount, options)",Method,Great,true
 powerpoint,PowerPoint.ShapeCollection,"addTextBox(text, options)",Method,Great,true
 powerpoint,PowerPoint.ShapeCollection,"getCount()",Method,Fine,true

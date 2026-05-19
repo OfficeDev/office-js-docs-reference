@@ -39,27 +39,28 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
-      await Excel.run(async (context) => {
-        // Precedents are cells referenced by the formula in a cell.
-        // A "direct precedent" is a cell directly referenced by the selected formula.
-        let range = context.workbook.getActiveCell();
-        let directPrecedents = range.getDirectPrecedents();
-        range.load("address");
-        directPrecedents.areas.load("address");
-        await context.sync();
+      /** Highlight the direct precedents of the active cell. */
+      async function getDirectPrecedents() {
+        await Excel.run(async (context) => {
+          // Precedents are cells referenced by the formula in a cell.
+          // A "direct precedent" is a cell directly referenced by the selected formula.
+          let range = context.workbook.getActiveCell();
+          let directPrecedents = range.getDirectPrecedents();
+          range.load("address");
+          directPrecedents.areas.load("address");
+          await context.sync();
 
-        console.log(`Direct precedent cells of ${range.address}:`);
+          console.log(`Direct precedent cells of ${range.address} (yellow cells):`);
 
-        // Use the direct precedents API to loop through precedents of the active cell.
-        for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-          // Highlight and print out the address of each direct precedent cell.
-          directPrecedents.areas.items[i].format.fill.color = "Yellow";
-          console.log(`  ${directPrecedents.areas.items[i].address}`);
-        }
-        await context.sync();
-      });
+          for (let i = 0; i < directPrecedents.areas.items.length; i++) {
+            // Highlight and print the address of each direct precedent cell.
+            directPrecedents.areas.items[i].format.fill.color = "Yellow";
+            console.log(`  ${directPrecedents.areas.items[i].address}`);
+          }
+          await context.sync();
+        });
       ```
 
     isPreview: false
