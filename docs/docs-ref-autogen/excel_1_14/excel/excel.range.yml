@@ -1293,26 +1293,27 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-direct-dependents.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
-      await Excel.run(async (context) => {
-        // Direct dependents are cells that contain formulas that refer to other cells.
-        let range = context.workbook.getActiveCell();
-        let directDependents = range.getDirectDependents();
-        range.load("address");
-        directDependents.areas.load("address");
-        await context.sync();
-        
-        console.log(`Direct dependent cells of ${range.address}:`);
-        
-        // Use the direct dependents API to loop through direct dependents of the active cell.
-        for (let i = 0; i < directDependents.areas.items.length; i++) {
-          // Highlight and print the address of each dependent cell.
-          directDependents.areas.items[i].format.fill.color = "Yellow";
-          console.log(`  ${directDependents.areas.items[i].address}`);
-        }
-        await context.sync();
-      });
+      /** Highlight the direct dependents of the active cell. */
+      async function getDirectDependents() {
+        await Excel.run(async (context) => {
+          // Direct dependents are cells that contain formulas that directly refer to the active cell.
+          let range = context.workbook.getActiveCell();
+          let directDependents = range.getDirectDependents();
+          range.load("address");
+          directDependents.areas.load("address");
+          await context.sync();
+
+          console.log(`Direct dependent cells of ${range.address} (yellow cells):`);
+
+          for (let i = 0; i < directDependents.areas.items.length; i++) {
+            // Highlight and print the address of each direct dependent cell.
+            directDependents.areas.items[i].format.fill.color = "Yellow";
+            console.log(`  ${directDependents.areas.items[i].address}`);
+          }
+          await context.sync();
+        });
       ```
 
     isPreview: false
@@ -1333,27 +1334,28 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
-      await Excel.run(async (context) => {
-        // Precedents are cells referenced by the formula in a cell.
-        // A "direct precedent" is a cell directly referenced by the selected formula.
-        let range = context.workbook.getActiveCell();
-        let directPrecedents = range.getDirectPrecedents();
-        range.load("address");
-        directPrecedents.areas.load("address");
-        await context.sync();
+      /** Highlight the direct precedents of the active cell. */
+      async function getDirectPrecedents() {
+        await Excel.run(async (context) => {
+          // Precedents are cells referenced by the formula in a cell.
+          // A "direct precedent" is a cell directly referenced by the selected formula.
+          let range = context.workbook.getActiveCell();
+          let directPrecedents = range.getDirectPrecedents();
+          range.load("address");
+          directPrecedents.areas.load("address");
+          await context.sync();
 
-        console.log(`Direct precedent cells of ${range.address}:`);
+          console.log(`Direct precedent cells of ${range.address} (yellow cells):`);
 
-        // Use the direct precedents API to loop through precedents of the active cell.
-        for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-          // Highlight and print out the address of each direct precedent cell.
-          directPrecedents.areas.items[i].format.fill.color = "Yellow";
-          console.log(`  ${directPrecedents.areas.items[i].address}`);
-        }
-        await context.sync();
-      });
+          for (let i = 0; i < directPrecedents.areas.items.length; i++) {
+            // Highlight and print the address of each direct precedent cell.
+            directPrecedents.areas.items[i].format.fill.color = "Yellow";
+            console.log(`  ${directPrecedents.areas.items[i].address}`);
+          }
+          await context.sync();
+        });
       ```
 
     isPreview: false
@@ -1852,26 +1854,27 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
-      await Excel.run(async (context) => {
-        // Precedents are cells referenced by the formula in a cell.
-        let range = context.workbook.getActiveCell();
-        let precedents = range.getPrecedents();
-        range.load("address");
-        precedents.areas.load("address");
-        await context.sync();
+      /** Highlight all precedents (direct and indirect) of the active cell. */
+      async function getAllPrecedents() {
+        await Excel.run(async (context) => {
+          // Precedents are cells referenced by the formula in a cell.
+          let range = context.workbook.getActiveCell();
+          let precedents = range.getPrecedents();
+          range.load("address");
+          precedents.areas.load("address");
+          await context.sync();
 
-        console.log(`All precedent cells of ${range.address}:`);
+          console.log(`All precedent cells of ${range.address} (orange cells):`);
 
-        // Use the precedents API to loop through precedents of the active cell.
-        for (let i = 0; i < precedents.areas.items.length; i++) {
-          // Highlight and print out the address of each precedent cell.
-          precedents.areas.items[i].format.fill.color = "Orange";
-          console.log(`  ${precedents.areas.items[i].address}`);
-        }
-        await context.sync();
-      });
+          for (let i = 0; i < precedents.areas.items.length; i++) {
+            // Highlight and print the address of each precedent cell.
+            precedents.areas.items[i].format.fill.color = "Orange";
+            console.log(`  ${precedents.areas.items[i].address}`);
+          }
+          await context.sync();
+        });
       ```
 
     isPreview: false
