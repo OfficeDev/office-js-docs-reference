@@ -7,9 +7,27 @@ summary: Represents the `Coauthoring` object. This tracks the updates, changes, 
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [coauthoring](/javascript/api/word/word.document#word-word-document-coauthoring-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+  // Gets the coauthoring capabilities and pending-update status of the document.
+  await Word.run(async (context) => {
+    const coauthoring: Word.Coauthoring = context.document.coauthoring;
+    coauthoring.load("canCoauthor,canMerge,pendingUpdates");
+    await context.sync();
+
+    console.log("Can coauthor:", coauthoring.canCoauthor);
+    console.log("Can merge:", coauthoring.canMerge);
+    console.log("Pending updates:", coauthoring.pendingUpdates);
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -59,7 +77,31 @@ properties:
     package: word!
     fullName: conflicts
     summary: Gets a `ConflictCollection` object that represents all the conflicts in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-conflicts.yaml
+
+      // Gets all coauthoring conflicts in the document.
+      await Word.run(async (context) => {
+        const conflicts: Word.ConflictCollection = context.document.coauthoring.conflicts;
+        conflicts.load("items/type");
+        await context.sync();
+
+        if (conflicts.items.length === 0) {
+          console.log("No conflicts found in the document.");
+          return;
+        }
+
+        console.log(`Found ${conflicts.items.length} conflict(s):`);
+        for (let i = 0; i < conflicts.items.length; i++) {
+          console.log(`  Conflict ${i + 1}: type = ${conflicts.items[i].type}`);
+        }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -85,7 +127,33 @@ properties:
     package: word!
     fullName: locks
     summary: Gets a `CoauthoringLockCollection` object that represents the locks in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-locks.yaml
+
+      // Adds a lock to the paragraph at the insertion point.
+      // Requires the document to be saved to OneDrive or SharePoint.
+      await Word.run(async (context) => {
+        const coauthoring: Word.Coauthoring = context.document.coauthoring;
+        coauthoring.load("canCoauthor");
+        await context.sync();
+
+        if (!coauthoring.canCoauthor) {
+          console.warn("This document doesn't support coauthoring. Save it to OneDrive or SharePoint and try again.");
+          return;
+        }
+
+        const locks: Word.CoauthoringLockCollection = coauthoring.locks;
+        locks.add();
+        await context.sync();
+
+        console.log("Lock added.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +166,25 @@ properties:
     package: word!
     fullName: me
     summary: Gets a `Coauthor` object that represents the current user.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+      // Gets the current user's coauthor information.
+      await Word.run(async (context) => {
+        const me: Word.Coauthor = context.document.coauthoring.me;
+        me.load("name,emailAddress,id");
+        await context.sync();
+
+        console.log("Current user:", me.name);
+        console.log("Email:", me.emailAddress);
+        console.log("ID:", me.id);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -124,7 +210,36 @@ properties:
     package: word!
     fullName: updates
     summary: Gets a `CoauthoringUpdateCollection` object that represents the most recent updates that were merged into the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/get-coauthoring-updates.yaml
+
+      // Gets the ranges affected by the most recent coauthoring updates merged into the document.
+      await Word.run(async (context) => {
+        const updates: Word.CoauthoringUpdateCollection = context.document.coauthoring.updates;
+        updates.load("items/range");
+        await context.sync();
+
+        if (updates.items.length === 0) {
+          console.log("No recent coauthoring updates found.");
+          return;
+        }
+
+        console.log(`Found ${updates.items.length} recent update(s).`);
+
+        const ranges = updates.items.map((u) => u.range);
+        ranges.forEach((r) => r.load("text"));
+        await context.sync();
+
+        ranges.forEach((range, i) => {
+          console.log(`  Update ${i + 1}: "${range.text}"`);
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
