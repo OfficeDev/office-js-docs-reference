@@ -312,7 +312,7 @@ Office.Contact:interface:
 Office.DecryptedMessageAttachment:interface:
   - |-
     // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
-    function OnMessageDecryptHandler(event) {
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -370,7 +370,7 @@ Office.DecryptedMessageAttachment:interface:
 Office.DecryptedMessageBody:interface:
   - |-
     // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
-    function OnMessageDecryptHandler(event) {
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -1131,7 +1131,7 @@ Office.MessageCompose#setSelectedDataAsync:member(1):
 Office.MessageDecryptEventCompletedOptions:interface:
   - |-
     // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
-    function OnMessageDecryptHandler(event) {
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
