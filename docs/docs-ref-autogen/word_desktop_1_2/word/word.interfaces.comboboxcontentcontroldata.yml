@@ -3,10 +3,11 @@ name: Word.Interfaces.ComboBoxContentControlData
 uid: word!Word.Interfaces.ComboBoxContentControlData:interface
 package: word!
 fullName: Word.Interfaces.ComboBoxContentControlData
-summary: >-
-  An interface describing the data returned by calling
-  `comboBoxContentControl.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `comboBoxContentControl.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol): [toJSON](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

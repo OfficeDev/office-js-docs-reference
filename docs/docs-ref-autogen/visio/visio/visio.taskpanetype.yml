@@ -3,14 +3,14 @@ name: Visio.TaskPaneType
 uid: visio!Visio.TaskPaneType:enum
 package: visio!
 fullName: Visio.TaskPaneType
-summary: >-
-  TaskPaneType represents the types of the First Party TaskPanes that are
-  supported by Host through APIs. Used in case of Show TaskPane API, TaskPane
-  State Changed, or similar events.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+summary: TaskPaneType represents the types of the First Party TaskPanes that are supported by Host through APIs. Used in case of Show TaskPane API, TaskPane State Changed, or similar events.
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.Document](/javascript/api/visio/visio.document): [showTaskPane](/javascript/api/visio/visio.document#visio-visio-document-showtaskpane-member(1))
+  - [Visio.TaskPaneStateChangedEventArgs](/javascript/api/visio/visio.taskpanestatechangedeventargs): [paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#visio-visio-taskpanestatechangedeventargs-panetype-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,33 +18,24 @@ fields:
   - name: dataVisualizerOrgChartMappings
     uid: visio!Visio.TaskPaneType.dataVisualizerOrgChartMappings:member
     package: visio!
-    summary: >-
+    summary: |-
       Data Visualizer Organization Mapping pane.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
     value: '"DataVisualizerOrgChartMappings"'
   - name: dataVisualizerProcessMappings
     uid: visio!Visio.TaskPaneType.dataVisualizerProcessMappings:member
     package: visio!
-    summary: >-
+    summary: |-
       Data Visualizer Process Mapping pane.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
     value: '"DataVisualizerProcessMappings"'
   - name: none
     uid: visio!Visio.TaskPaneType.none:member
     package: visio!
-    summary: >-
+    summary: |-
       No task pane.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
     value: '"None"'

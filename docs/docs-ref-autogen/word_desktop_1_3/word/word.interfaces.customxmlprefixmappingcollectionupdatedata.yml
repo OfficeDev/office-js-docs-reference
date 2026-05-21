@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlPrefixMappingCollection`
-  object, for use in `customXmlPrefixMappingCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlPrefixMappingCollection` object, for use in `customXmlPrefixMappingCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member
+    uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
@@ -25,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.CustomXmlPrefixMappingData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface" />[]

@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData
+uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData
+summary: An interface describing the data returned by calling `sensitivityLabelDetailsCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.SensitivityLabelDetailsCollection](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection): [toJSON](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData#items:member
+    package: powerpoint!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SensitivityLabelDetailsData[];'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData:interface" />[]

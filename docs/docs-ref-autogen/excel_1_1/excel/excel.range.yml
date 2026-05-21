@@ -3,24 +3,28 @@ name: Excel.Range
 uid: excel!Excel.Range:class
 package: excel!
 fullName: Excel.Range
-summary: >-
-  Range represents a set of one or more contiguous cells such as a cell, a row,
-  a column, or a block of cells. To learn more about how ranges are used
-  throughout the API, start with [Ranges in the Excel JavaScript
-  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!--
-  -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
+  #### Used by
+
+  - [Excel.Binding](/javascript/api/excel/excel.binding): [getRange](/javascript/api/excel/excel.binding#excel-excel-binding-getrange-member(1))
+  - [Excel.Chart](/javascript/api/excel/excel.chart): [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1)), [setPosition](/javascript/api/excel/excel.chart#excel-excel-chart-setposition-member(1))
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+  - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [getRange](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-getrange-member(1))
+  - [Excel.Table](/javascript/api/excel/excel.table): [getDataBodyRange](/javascript/api/excel/excel.table#excel-excel-table-getdatabodyrange-member(1)), [getHeaderRowRange](/javascript/api/excel/excel.table#excel-excel-table-getheaderrowrange-member(1)), [getRange](/javascript/api/excel/excel.table#excel-excel-table-getrange-member(1)), [getTotalRowRange](/javascript/api/excel/excel.table#excel-excel-table-gettotalrowrange-member(1))
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [add](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-add-member(1))
+  - [Excel.TableColumn](/javascript/api/excel/excel.tablecolumn): [getDataBodyRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getdatabodyrange-member(1)), [getHeaderRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getheaderrowrange-member(1)), [getRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-getrange-member(1)), [getTotalRowRange](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-gettotalrowrange-member(1))
+  - [Excel.TableRow](/javascript/api/excel/excel.tablerow): [getRange](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-getrange-member(1))
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getSelectedRange](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedrange-member(1))
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1)), [getRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrange-member(1))
   #### Examples
 
-
   ```TypeScript
-
   // Get a Range object by its address.
-
   await Excel.run(async (context) => {
       const sheetName = "Sheet1";
       const rangeAddress = "A1:F8";
@@ -32,7 +36,6 @@ remarks: >-
       
       console.log(cell.address);
   });
-
   ```
 
 isPreview: false
@@ -43,12 +46,8 @@ properties:
     uid: excel!Excel.Range#address:member
     package: excel!
     fullName: address
-    summary: >-
-      Specifies the range reference in A1-style. Address value contains the
-      sheet reference (e.g., "Sheet1!A1:B4").
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -60,12 +59,8 @@ properties:
     uid: excel!Excel.Range#addressLocal:member
     package: excel!
     fullName: addressLocal
-    summary: >-
-      Represents the range reference for the specified range in the language of
-      the user.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the range reference for the specified range in the language of the user.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -77,12 +72,8 @@ properties:
     uid: excel!Excel.Range#cellCount:member
     package: excel!
     fullName: cellCount
-    summary: >-
-      Specifies the number of cells in the range. This API will return -1 if the
-      cell count exceeds 2^31-1 (2,147,483,647).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +86,7 @@ properties:
     package: excel!
     fullName: columnCount
     summary: Specifies the total number of columns in the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +99,7 @@ properties:
     package: excel!
     fullName: columnIndex
     summary: Specifies the column number of the first cell in the range. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +111,7 @@ properties:
     uid: excel!Excel.Range#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -139,12 +124,8 @@ properties:
     uid: excel!Excel.Range#format:member
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the range's font, fill, borders,
-      alignment, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -156,12 +137,8 @@ properties:
     uid: excel!Excel.Range#formulas:member
     package: excel!
     fullName: formulas
-    summary: >-
-      Represents the formula in A1-style notation. If a cell has no formula, its
-      value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -173,14 +150,8 @@ properties:
     uid: excel!Excel.Range#formulasLocal:member
     package: excel!
     fullName: formulasLocal
-    summary: >-
-      Represents the formula in A1-style notation, in the user's language and
-      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
-      value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -192,24 +163,14 @@ properties:
     uid: excel!Excel.Range#numberFormat:member
     package: excel!
     fullName: numberFormat
-    summary: >-
-      Represents Excel's number format code for the given range. For more
-      information about Excel number formatting, see [Number format
-      codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents Excel's number format code for the given range. For more information about Excel number formatting, see [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Set the text of the chart title to "My Chart" and display it as an
-      overlay on the chart.
-
+      // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "F5:G7";
@@ -225,7 +186,6 @@ properties:
           
           console.log(range.text);
       });
-
       ```
 
     isPreview: false
@@ -239,9 +199,7 @@ properties:
     package: excel!
     fullName: rowCount
     summary: Returns the total number of rows in the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -254,9 +212,7 @@ properties:
     package: excel!
     fullName: rowIndex
     summary: Returns the row number of the first cell in the range. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -268,13 +224,8 @@ properties:
     uid: excel!Excel.Range#text:member
     package: excel!
     fullName: text
-    summary: >-
-      Text values of the specified range. The text value will not depend on the
-      cell width. The number sign (\#) substitution that happens in the Excel UI
-      will not affect the text value returned by the API.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Text values of the specified range. The text value will not depend on the cell width. The number sign (\#) substitution that happens in the Excel UI will not affect the text value returned by the API.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -286,27 +237,16 @@ properties:
     uid: excel!Excel.Range#values:member
     package: excel!
     fullName: values
-    summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be a string, number, or Boolean. Cells that contain an error will return
-      the error string. If the returned value starts with a plus ("+"), minus
-      ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula. Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
 
       // Change the value of the checkbox in B3.
-
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const range = sheet.getRange("B3");
@@ -314,7 +254,6 @@ properties:
         range.values = [["TRUE"]];
         await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -328,9 +267,7 @@ properties:
     package: excel!
     fullName: valueTypes
     summary: Specifies the type of data in each cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -343,9 +280,7 @@ properties:
     package: excel!
     fullName: worksheet
     summary: The worksheet containing the current range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -359,18 +294,13 @@ methods:
     package: excel!
     fullName: clear(applyTo)
     summary: Clear range values and formatting, such as fill and border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       // Clear the format and contents of the range.
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D:F";
@@ -378,7 +308,6 @@ methods:
           range.clear();
           await context.sync(); 
       });
-
       ```
 
     isPreview: false
@@ -387,9 +316,7 @@ methods:
       content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
       parameters:
         - id: applyTo
-          description: >-
-            Optional. Determines the type of clear action. See
-            `Excel.ClearApplyTo` for details.
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
           type: <xref uid="excel!Excel.ClearApplyTo:enum" />
       return:
         type: void
@@ -399,24 +326,16 @@ methods:
     package: excel!
     fullName: clear(applyTo)
     summary: Clear range values and formatting, such as fill and border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" |
-        "RemoveHyperlinks" | "ResetContents"): void;
+      content: 'clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"): void;'
       parameters:
         - id: applyTo
-          description: >-
-            Optional. Determines the type of clear action. See
-            `Excel.ClearApplyTo` for details.
-          type: >-
-            "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" |
-            "ResetContents"
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"'
       return:
         type: void
         description: ''
@@ -425,16 +344,12 @@ methods:
     package: excel!
     fullName: delete(shift)
     summary: Deletes the cells associated with the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D:F";
@@ -442,7 +357,6 @@ methods:
           range.delete("Left");
           await context.sync(); 
       });
-
       ```
 
     isPreview: false
@@ -451,9 +365,7 @@ methods:
       content: 'delete(shift: Excel.DeleteShiftDirection): void;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            `Excel.DeleteShiftDirection` for details.
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
           type: <xref uid="excel!Excel.DeleteShiftDirection:enum" />
       return:
         type: void
@@ -463,9 +375,7 @@ methods:
     package: excel!
     fullName: delete(shift)
     summary: Deletes the cells associated with the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -473,9 +383,7 @@ methods:
       content: 'delete(shift: "Up" | "Left"): void;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            `Excel.DeleteShiftDirection` for details.
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
           type: '"Up" | "Left"'
       return:
         type: void
@@ -484,19 +392,13 @@ methods:
     uid: excel!Excel.Range#getBoundingRect:member(1)
     package: excel!
     fullName: getBoundingRect(anotherRange)
-    summary: >-
-      Gets the smallest range object that encompasses the given ranges. For
-      example, the `GetBoundingRect` of "B2:C5" and "D10:E15" is "B2:E15".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the smallest range object that encompasses the given ranges. For example, the `GetBoundingRect` of "B2:C5" and "D10:E15" is "B2:E15".
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:G6";
@@ -507,7 +409,6 @@ methods:
           
           console.log(range.address); // Prints Sheet1!D4:H8
       });
-
       ```
 
     isPreview: false
@@ -525,21 +426,13 @@ methods:
     uid: excel!Excel.Range#getCell:member(1)
     package: excel!
     fullName: getCell(row, column)
-    summary: >-
-      Gets the range object containing the single cell based on row and column
-      numbers. The cell can be outside the bounds of its parent range, so long
-      as it stays within the worksheet grid. The returned cell is located
-      relative to the top left cell of the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -551,7 +444,6 @@ methods:
           
           console.log(cell.address);
       });
-
       ```
 
     isPreview: false
@@ -573,16 +465,12 @@ methods:
     package: excel!
     fullName: getColumn(column)
     summary: Gets a column contained in the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet19";
           const rangeAddress = "A1:F8";
@@ -592,7 +480,6 @@ methods:
 
           console.log(range.address); // prints Sheet1!B1:B8
       });
-
       ```
 
     isPreview: false
@@ -610,25 +497,15 @@ methods:
     uid: excel!Excel.Range#getEntireColumn:member(1)
     package: excel!
     fullName: getEntireColumn()
-    summary: >-
-      Gets an object that represents the entire column of the range (for
-      example, if the current range represents cells "B4:E11", its
-      `getEntireColumn` is a range that represents columns "B:E").
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Note: the grid properties of the Range (values, numberFormat,
-      formulas) 
-
+      // Note: the grid properties of the Range (values, numberFormat, formulas) 
       // contains null since the Range in question is unbounded.
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D:F";
@@ -639,7 +516,6 @@ methods:
           
           console.log(rangeEC.address);
       });
-
       ```
 
     isPreview: false
@@ -653,26 +529,16 @@ methods:
     uid: excel!Excel.Range#getEntireRow:member(1)
     package: excel!
     fullName: getEntireRow()
-    summary: >-
-      Gets an object that represents the entire row of the range (for example,
-      if the current range represents cells "B4:E11", its `GetEntireRow` is a
-      range that represents rows "4:11").
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       // Gets an object that represents the entire row of the range 
-
       // (for example, if the current range represents cells "B4:E11", 
-
       // its GetEntireRow is a range that represents rows "4:11").
-
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "D:F"; 
@@ -683,7 +549,6 @@ methods:
           
           console.log(rangeER.address);
       });
-
       ```
 
     isPreview: false
@@ -697,19 +562,13 @@ methods:
     uid: excel!Excel.Range#getIntersection:member(1)
     package: excel!
     fullName: getIntersection(anotherRange)
-    summary: >-
-      Gets the range object that represents the rectangular intersection of the
-      given ranges.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the range object that represents the rectangular intersection of the given ranges.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -720,7 +579,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!D4:F6
       });
-
       ```
 
     isPreview: false
@@ -729,9 +587,7 @@ methods:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       parameters:
         - id: anotherRange
-          description: >-
-            The range object or range address that will be used to determine the
-            intersection of ranges.
+          description: The range object or range address that will be used to determine the intersection of ranges.
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: <xref uid="excel!Excel.Range:class" />
@@ -740,19 +596,13 @@ methods:
     uid: excel!Excel.Range#getLastCell:member(1)
     package: excel!
     fullName: getLastCell()
-    summary: >-
-      Gets the last cell within the range. For example, the last cell of "B2:D5"
-      is "D5".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -762,7 +612,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!F8
       });
-
       ```
 
     isPreview: false
@@ -776,19 +625,13 @@ methods:
     uid: excel!Excel.Range#getLastColumn:member(1)
     package: excel!
     fullName: getLastColumn()
-    summary: >-
-      Gets the last column within the range. For example, the last column of
-      "B2:D5" is "D2:D5".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -798,7 +641,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!F1:F8
       });
-
       ```
 
     isPreview: false
@@ -812,19 +654,13 @@ methods:
     uid: excel!Excel.Range#getLastRow:member(1)
     package: excel!
     fullName: getLastRow()
-    summary: >-
-      Gets the last row within the range. For example, the last row of "B2:D5"
-      is "B5:D5".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -834,7 +670,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!A8:F8
       });
-
       ```
 
     isPreview: false
@@ -848,21 +683,13 @@ methods:
     uid: excel!Excel.Range#getOffsetRange:member(1)
     package: excel!
     fullName: getOffsetRange(rowOffset, columnOffset)
-    summary: >-
-      Gets an object which represents a range that's offset from the specified
-      range. The dimension of the returned range will match this range. If the
-      resulting range is forced outside the bounds of the worksheet grid, an
-      error will be thrown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:F6";
@@ -873,7 +700,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!H3:J5
       });
-
       ```
 
     isPreview: false
@@ -882,16 +708,10 @@ methods:
       content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
       parameters:
         - id: rowOffset
-          description: >-
-            The number of rows (positive, negative, or 0) by which the range is
-            to be offset. Positive values are offset downward, and negative
-            values are offset upward.
+          description: The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
           type: number
         - id: columnOffset
-          description: >-
-            The number of columns (positive, negative, or 0) by which the range
-            is to be offset. Positive values are offset to the right, and
-            negative values are offset to the left.
+          description: The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
           type: number
       return:
         type: <xref uid="excel!Excel.Range:class" />
@@ -901,16 +721,12 @@ methods:
     package: excel!
     fullName: getRow(row)
     summary: Gets a row contained in the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -920,7 +736,6 @@ methods:
           
           console.log(range.address); // prints Sheet1!A2:F2
       });
-
       ```
 
     isPreview: false
@@ -938,20 +753,13 @@ methods:
     uid: excel!Excel.Range#insert:member(1)
     package: excel!
     fullName: insert(shift)
-    summary: >-
-      Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new `Range`
-      object at the now blank space.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new `Range` object at the now blank space.
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10";
@@ -959,7 +767,6 @@ methods:
           range.insert(Excel.InsertShiftDirection.down);
           await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -968,9 +775,7 @@ methods:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            `Excel.InsertShiftDirection` for details.
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
           type: <xref uid="excel!Excel.InsertShiftDirection:enum" />
       return:
         type: <xref uid="excel!Excel.Range:class" />
@@ -979,13 +784,8 @@ methods:
     uid: excel!Excel.Range#insert:member(2)
     package: excel!
     fullName: insert(shift)
-    summary: >-
-      Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new `Range`
-      object at the now blank space.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new `Range` object at the now blank space.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -993,9 +793,7 @@ methods:
       content: 'insert(shift: "Down" | "Right"): Excel.Range;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            `Excel.InsertShiftDirection` for details.
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
           type: '"Down" | "Right"'
       return:
         type: <xref uid="excel!Excel.Range:class" />
@@ -1004,9 +802,7 @@ methods:
     uid: excel!Excel.Range#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1024,9 +820,7 @@ methods:
     uid: excel!Excel.Range#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1035,9 +829,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Range;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Range:class" />
@@ -1063,9 +855,7 @@ methods:
     uid: excel!Excel.Range#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -1078,11 +868,7 @@ methods:
                 }): Excel.Range;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -1096,16 +882,12 @@ methods:
     package: excel!
     fullName: select()
     summary: Selects the specified range in the Excel UI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10"; 
@@ -1113,7 +895,6 @@ methods:
           range.select();
           await context.sync(); 
       });
-
       ```
 
     isPreview: false
@@ -1127,29 +908,19 @@ methods:
     uid: excel!Excel.Range#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -1158,9 +929,7 @@ methods:
     uid: excel!Excel.Range#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
 
     isPreview: false
@@ -1173,17 +942,13 @@ methods:
           type: <xref uid="excel!Excel.Range:class" />
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1199,20 +964,12 @@ methods:
               targetRange.format.autofitColumns();
               await context.sync();
           });
-
           ```
   - name: toJSON()
     uid: excel!Excel.Range#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.Range` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -1226,15 +983,7 @@ methods:
     uid: excel!Excel.Range#track:member(1)
     package: excel!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
     remarks: ''
 
     isPreview: false
@@ -1248,14 +997,7 @@ methods:
     uid: excel!Excel.Range#untrack:member(1)
     package: excel!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

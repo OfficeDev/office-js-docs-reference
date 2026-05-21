@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: Office.OnReadyOptions
+uid: office!Office.OnReadyOptions:interface
+package: office!
+fullName: Office.OnReadyOptions
+summary: Provides options related to the `onReady` event.
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  // Enable rejection behavior for the onReady promise.
+  Office.onReadyOptions?.setRejectionEnabled();
+
+  // Now the onReady promise can be rejected if failures are encountered during its setup.
+  Office.onReady((info) => {
+      console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+  }).catch((error) => {
+      console.error("Office.js initialization failed:", error);
+  });
+  ```
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: setRejectionEnabled
+    uid: office!Office.OnReadyOptions#setRejectionEnabled:member
+    package: office!
+    fullName: setRejectionEnabled
+    summary: Enables the behavior that allows the `onReady` promise to be rejected if failures are encountered. If not passed, then the `onReady` promise won't reject.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setRejectionEnabled?: () => void;'
+      return:
+        type: () =&gt; void
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Enable rejection behavior for the onReady promise.
+          Office.onReadyOptions?.setRejectionEnabled();
+
+          // Now the onReady promise can be rejected if failures are encountered during its setup.
+          Office.onReady((info) => {
+              console.log(`Host: ${info.host}, Platform: ${info.platform}`);
+          }).catch((error) => {
+              console.error("Office.js initialization failed:", error);
+          });
+          ```

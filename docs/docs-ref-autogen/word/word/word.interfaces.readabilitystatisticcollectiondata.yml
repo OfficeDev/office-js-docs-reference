@@ -3,10 +3,11 @@ name: Word.Interfaces.ReadabilityStatisticCollectionData
 uid: word!Word.Interfaces.ReadabilityStatisticCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `readabilityStatisticCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `readabilityStatisticCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ReadabilityStatisticCollection](/javascript/api/word/word.readabilitystatisticcollection): [toJSON](/javascript/api/word/word.readabilitystatisticcollection#word-word-readabilitystatisticcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.ReadabilityStatisticData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface" />[]

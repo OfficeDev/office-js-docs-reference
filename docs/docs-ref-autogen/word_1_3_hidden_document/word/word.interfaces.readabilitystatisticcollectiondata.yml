@@ -3,9 +3,7 @@ name: Word.Interfaces.ReadabilityStatisticCollectionData
 uid: word!Word.Interfaces.ReadabilityStatisticCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `readabilityStatisticCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `readabilityStatisticCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.ReadabilityStatisticData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface" />[]

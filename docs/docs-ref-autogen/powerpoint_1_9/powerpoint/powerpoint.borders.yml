@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Borders:class
 package: powerpoint!
 fullName: PowerPoint.Borders
 summary: Represents the borders for a table cell.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [borders](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-borders-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +20,7 @@ properties:
     package: powerpoint!
     fullName: bottom
     summary: Gets the bottom border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,9 +32,7 @@ properties:
     uid: powerpoint!PowerPoint.Borders#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -49,10 +46,7 @@ properties:
     package: powerpoint!
     fullName: diagonalDown
     summary: Gets the diagonal border (top-left to bottom-right).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +59,7 @@ properties:
     package: powerpoint!
     fullName: diagonalUp
     summary: Gets the diagonal border (bottom-left to top-right).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +72,7 @@ properties:
     package: powerpoint!
     fullName: left
     summary: Gets the left border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -97,10 +85,7 @@ properties:
     package: powerpoint!
     fullName: right
     summary: Gets the right border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +98,7 @@ properties:
     package: powerpoint!
     fullName: top
     summary: Gets the top border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -129,24 +111,17 @@ methods:
     uid: powerpoint!PowerPoint.Borders#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.BordersLoadOptions):
-        PowerPoint.Borders;
+      content: 'load(options?: PowerPoint.Interfaces.BordersLoadOptions): PowerPoint.Borders;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.Borders:class" />
         description: ''
@@ -154,9 +129,7 @@ methods:
     uid: powerpoint!PowerPoint.Borders#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -165,9 +138,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Borders;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Borders:class" />
@@ -176,9 +147,7 @@ methods:
     uid: powerpoint!PowerPoint.Borders#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -191,11 +160,7 @@ methods:
                 }): PowerPoint.Borders;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -208,15 +173,7 @@ methods:
     uid: powerpoint!PowerPoint.Borders#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `PowerPoint.Borders`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `PowerPoint.Interfaces.BordersData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Borders` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BordersData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false

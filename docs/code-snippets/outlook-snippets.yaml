@@ -205,17 +205,6 @@ Office.AppointmentTimeChangedEventArgs:interface:
         console.log(`Start time: ${event.start}`);
         console.log(`End time: ${event.end}`);
     }
-Office.AttachmentsChangedEventArgs:interface:
-  - |-
-    // Handles the OnMessageAttachmentsChanged event.
-    function onMessageAttachmentsChangedHandler(event) {
-        console.log(`Event: ${event.type}`);
-
-        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-            const attachment = event.attachmentDetails;
-            // Perform operations on the attachment that was added.
-        }
-    }
 Office.AttachmentContent:interface:
   - |-
     Office.context.mailbox.item.getAttachmentsAsync((result) => {
@@ -251,6 +240,17 @@ Office.AttachmentContent:interface:
 
         // Log the content of the attachments as a string.
         console.log(result.value.content);
+    }
+Office.AttachmentsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageAttachmentsChanged event.
+    function onMessageAttachmentsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = event.attachmentDetails;
+            // Perform operations on the attachment that was added.
+        }
     }
 Office.Body#setAsync:member(1):
   - |-
@@ -327,10 +327,6 @@ Office.DecryptedMessageAttachment:interface:
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
 
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
-
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
         const cloudFileName = "weekly_forecast.xlsx";
@@ -346,12 +342,6 @@ Office.DecryptedMessageAttachment:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
@@ -395,10 +385,6 @@ Office.DecryptedMessageBody:interface:
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
 
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
-
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
         const cloudFileName = "weekly_forecast.xlsx";
@@ -414,12 +400,6 @@ Office.DecryptedMessageBody:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
@@ -574,6 +554,36 @@ Office.InfobarClickedEventArgs:interface:
         const infobarDetails = event.infobarDetails;
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
+    }
+Office.InfobarDetails:interface:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
     }
 Office.InitializationContextChangedEventArgs:interface:
   - |-
@@ -832,36 +842,6 @@ Office.MailboxEnums.DelegatePermissions:enum:
         }
     });
 Office.MailboxEnums.InfobarActionType:enum:
-  - |-
-    /*
-    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-    * The event handler logs the custom action and notification type to the console.
-    */
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
-
-    function eventHandler(event) {
-        const infobarDetails = event.infobarDetails;
-
-        // Log the custom action type.
-        console.log(`Custom action type: ${infobarDetails.actionType}`);
-
-        // Log the notification type.
-        switch (infobarDetails.infobarType) {
-            case Office.MailboxEnums.InfobarType.Error:
-                console.log("Notification type: Error message");
-                break;
-            case Office.MailboxEnums.InfobarType.Informational:
-                console.log("Notification type: Informational message");
-                break;
-            case Office.MailboxEnums.InfobarType.Insight:
-                console.log("Notification type: Informational message with available actions from the task pane");
-                break;
-            case Office.MailboxEnums.InfobarType.ProgressIndicator:
-                console.log("Notification type: Progress indicator");
-                break;
-        }
-    }
-Office.InfobarDetails:interface:
   - |-
     /*
     * This snippet activates when a notification message is dismissed from an Outlook message or appointment.

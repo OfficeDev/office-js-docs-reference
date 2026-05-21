@@ -3,10 +3,11 @@ name: Word.Interfaces.HeadingStyleCollectionData
 uid: word!Word.Interfaces.HeadingStyleCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `headingStyleCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `headingStyleCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.HeadingStyleCollection](/javascript/api/word/word.headingstylecollection): [toJSON](/javascript/api/word/word.headingstylecollection#word-word-headingstylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.SlideCollectionData
 uid: powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `slideCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [toJSON](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

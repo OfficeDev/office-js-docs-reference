@@ -44,6 +44,8 @@ interfaces:
   - outlook!Office.MeetingSuggestion:interface
   - outlook!Office.Message:interface
   - outlook!Office.MessageCompose:interface
+  - outlook!Office.MessageForm:interface
+  - outlook!Office.MessageFormAttachment:interface
   - outlook!Office.MessageRead:interface
   - outlook!Office.NotificationMessageDetails:interface
   - outlook!Office.NotificationMessages:interface

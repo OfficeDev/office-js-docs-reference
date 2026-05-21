@@ -3,10 +3,11 @@ name: Word.Interfaces.CustomXmlPartCollectionData
 uid: word!Word.Interfaces.CustomXmlPartCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPartCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `customXmlPartCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [toJSON](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -4,9 +4,12 @@ uid: excel!Excel.DocumentTaskChange:class
 package: excel!
 fullName: Excel.DocumentTaskChange
 summary: Represents a recorded change to the task.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection): [getItemAt](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)
 
 isPreview: true
 isDeprecated: false
@@ -16,13 +19,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#assignee:member
     package: excel!
     fullName: assignee
-    summary: >-
-      Represents the user assigned to the task for an `assign` change action, or
-      the user unassigned from the task for an `unassign` change action.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -35,10 +33,7 @@ properties:
     package: excel!
     fullName: changedBy
     summary: Represents the identity of the user who made the task change.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -50,13 +45,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#commentId:member
     package: excel!
     fullName: commentId
-    summary: >-
-      Represents the ID of the comment or comment reply to which the task change
-      is anchored.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the ID of the comment or comment reply to which the task change is anchored.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -68,9 +58,7 @@ properties:
     uid: excel!Excel.DocumentTaskChange#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: true
@@ -83,13 +71,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#createdDateTime:member
     package: excel!
     fullName: createdDateTime
-    summary: >-
-      Represents the creation date and time of the task change record. All dates
-      are in UTC.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the creation date and time of the task change record. All dates are in UTC.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -101,15 +84,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#dueDateTime:member
     package: excel!
     fullName: dueDateTime
-    summary: >-
-      Represents the task's due date and time. It is used for the `setSchedule`
-      change action. It is in UTC time zone. It can be set to `null` to remove
-      the due date and time. It should be set together with `startDateTime` to
-      avoid conflicts.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the task's due date and time. It is used for the `setSchedule` change action. It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -122,10 +98,7 @@ properties:
     package: excel!
     fullName: id
     summary: The unique GUID of the task change.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -137,16 +110,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#percentComplete:member
     package: excel!
     fullName: percentComplete
-    summary: >-
-      Represents the task's completion percentage. It is used for the
-      `setPercentComplete` change action. This is a value between 0 and 100,
-      where 100 represents a completed task. Changing this value to 100 also
-      completes the associated comment. Changing the completion from 100 to a
-      lower value reactivates the associated comment.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the task's completion percentage. It is used for the `setPercentComplete` change action. This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -158,14 +123,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#priority:member
     package: excel!
     fullName: priority
-    summary: >-
-      Represents the task's priority. It is used for the `setPriority` change
-      action. This is a value between 0 and 10, with 5 being the default
-      priority if not set, and where 0 represents the highest priority.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the task's priority. It is used for the `setPriority` change action. This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -177,15 +136,8 @@ properties:
     uid: excel!Excel.DocumentTaskChange#startDateTime:member
     package: excel!
     fullName: startDateTime
-    summary: >-
-      Represents the task's start date and time. It is used for the
-      `setSchedule` change action. It is in UTC time zone. It can be set to
-      `null` to remove the start date and time. It should be set together with
-      `dueDateTime` to avoid conflicts.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the task's start date and time. It is used for the `setSchedule` change action. It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -198,10 +150,7 @@ properties:
     package: excel!
     fullName: title
     summary: Represents the task's title. It is used for the `setTitle` change action.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -213,40 +162,21 @@ properties:
     uid: excel!Excel.DocumentTaskChange#type:member
     package: excel!
     fullName: type
-    summary: >-
-      Represents the action type of the task change record. Some examples of
-      action types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!-- -->.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Excel.DocumentTaskChangeAction | "unknown" | "create" |
-        "assign" | "unassign" | "unassignAll" | "setSchedule" |
-        "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle"
-        | "undo";
+      content: 'readonly type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";'
       return:
-        type: >-
-          <xref uid="excel!Excel.DocumentTaskChangeAction:enum" /> | "unknown" |
-          "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" |
-          "setPercentComplete" | "setPriority" | "remove" | "restore" |
-          "setTitle" | "undo"
+        type: <xref uid="excel!Excel.DocumentTaskChangeAction:enum" /> | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo"
   - name: undoChangeId
     uid: excel!Excel.DocumentTaskChange#undoChangeId:member
     package: excel!
     fullName: undoChangeId
-    summary: >-
-      Represents the `DocumentTaskChange.id` property that was undone for the
-      `undo` change action.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -259,24 +189,17 @@ methods:
     uid: excel!Excel.DocumentTaskChange#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DocumentTaskChangeLoadOptions):
-        Excel.DocumentTaskChange;
+      content: 'load(options?: Excel.Interfaces.DocumentTaskChangeLoadOptions): Excel.DocumentTaskChange;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DocumentTaskChangeLoadOptions:interface"
-            />
+          type: <xref uid="excel!Excel.Interfaces.DocumentTaskChangeLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.DocumentTaskChange:class" />
         description: ''
@@ -284,9 +207,7 @@ methods:
     uid: excel!Excel.DocumentTaskChange#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
@@ -295,9 +216,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentTaskChange;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.DocumentTaskChange:class" />
@@ -306,9 +225,7 @@ methods:
     uid: excel!Excel.DocumentTaskChange#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
@@ -321,11 +238,7 @@ methods:
                 }): Excel.DocumentTaskChange;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -344,9 +257,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        static newObject(context: OfficeExtension.ClientRequestContext):
-        Excel.DocumentTaskChange;
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Excel.DocumentTaskChange;'
       parameters:
         - id: context
           description: ''
@@ -358,15 +269,7 @@ methods:
     uid: excel!Excel.DocumentTaskChange#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.DocumentTaskChange` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.DocumentTaskChangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.DocumentTaskChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: true

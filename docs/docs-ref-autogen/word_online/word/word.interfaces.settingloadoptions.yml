@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.SettingLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SettingLoadOptions
 summary: Represents a setting of the add-in.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Setting](/javascript/api/word/word.setting): [load](/javascript/api/word/word.setting#word-word-setting-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.SettingLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +33,7 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +46,7 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the value of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

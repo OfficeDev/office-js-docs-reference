@@ -3,10 +3,11 @@ name: Word.Interfaces.InlinePictureCollectionData
 uid: word!Word.Interfaces.InlinePictureCollectionData:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `inlinePictureCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `inlinePictureCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [toJSON](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

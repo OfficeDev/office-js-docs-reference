@@ -3,9 +3,7 @@ name: Excel.Interfaces.ConditionalFormatCollectionUpdateData
 uid: excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ConditionalFormatCollectionUpdateData
-summary: >-
-  An interface for updating data on the `ConditionalFormatCollection` object,
-  for use in `conditionalFormatCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ConditionalFormatCollection` object, for use in `conditionalFormatCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface"
-          />[]
+        type: <xref uid="excel!Excel.Interfaces.ConditionalFormatData:interface" />[]

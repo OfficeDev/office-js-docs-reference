@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.NoteLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.NoteLoadOptions
 summary: Represents a note in the workbook or worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Note](/javascript/api/excel/excel.note): [load](/javascript/api/excel/excel.note#excel-excel-note-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.NoteLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,10 +33,7 @@ properties:
     package: excel!
     fullName: authorName
     summary: Gets the author of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +46,7 @@ properties:
     package: excel!
     fullName: content
     summary: Specifies the text of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +59,7 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -80,13 +71,8 @@ properties:
     uid: excel!Excel.Interfaces.NoteLoadOptions#visible:member
     package: excel!
     fullName: visible
-    summary: >-
-      Specifies the visibility of the note. A value of `true` means the note is
-      shown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the visibility of the note. A value of `true` means the note is shown.
+    remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +85,7 @@ properties:
     package: excel!
     fullName: width
     summary: Specifies the width of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -4,10 +4,12 @@ uid: visio!Visio.OverlayVerticalAlignment:enum
 package: visio!
 fullName: Visio.OverlayVerticalAlignment
 summary: Represents the Vertical Alignment of the Overlay relative to the shape.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [addOverlay](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-addoverlay-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -15,24 +17,15 @@ fields:
   - name: bottom
     uid: visio!Visio.OverlayVerticalAlignment.bottom:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
     value: '"Bottom"'
   - name: middle
     uid: visio!Visio.OverlayVerticalAlignment.middle:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
     value: '"Middle"'
   - name: top
     uid: visio!Visio.OverlayVerticalAlignment.top:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
     value: '"Top"'

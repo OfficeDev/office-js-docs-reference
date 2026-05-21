@@ -10,3 +10,4 @@
 ||[setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-setselecteddataasync-member(1))|Asynchronously inserts data into the body or subject of a message.|
 |[SourceProperty](/javascript/api/outlook/office.mailboxenums.sourceproperty)|Body|The source of the data is from the body of the item.|
 ||Subject|The source of the data is from the subject of the item.|
+|[ReplyFormData](/javascript/api/outlook/office.replyformdata)|[attachments](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-attachments-member)|An array of ReplyFormAttachment that are Base64-encoded files, Exchange items, or file attachments.|

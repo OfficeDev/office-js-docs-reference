@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [load](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.PageBreakCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,12 +32,8 @@ properties:
     uid: excel!Excel.Interfaces.PageBreakCollectionLoadOptions#columnIndex:member
     package: excel!
     fullName: columnIndex
-    summary: >-
-      For EACH ITEM in the collection: Specifies the column index for the page
-      break.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Specifies the column index for the page break.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,12 +45,8 @@ properties:
     uid: excel!Excel.Interfaces.PageBreakCollectionLoadOptions#rowIndex:member
     package: excel!
     fullName: rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Specifies the row index for the page
-      break.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Specifies the row index for the page break.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

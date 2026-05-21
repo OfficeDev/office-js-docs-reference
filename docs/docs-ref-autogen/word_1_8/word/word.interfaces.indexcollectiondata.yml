@@ -3,9 +3,7 @@ name: Word.Interfaces.IndexCollectionData
 uid: word!Word.Interfaces.IndexCollectionData:interface
 package: word!
 fullName: Word.Interfaces.IndexCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `indexCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `indexCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

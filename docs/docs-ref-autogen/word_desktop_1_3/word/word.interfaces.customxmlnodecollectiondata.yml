@@ -3,10 +3,11 @@ name: Word.Interfaces.CustomXmlNodeCollectionData
 uid: word!Word.Interfaces.CustomXmlNodeCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlNodeCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `customXmlNodeCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection): [toJSON](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

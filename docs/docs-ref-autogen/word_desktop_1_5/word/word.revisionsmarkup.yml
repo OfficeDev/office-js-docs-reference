@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Word.RevisionsMarkup
+uid: word!Word.RevisionsMarkup:enum
+package: word!
+fullName: Word.RevisionsMarkup
+summary: Specifies the extent of markup visible in the document.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: word!Word.RevisionsMarkup.all:member
+    package: word!
+    summary: |-
+      All markup.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"All"'
+  - name: none
+    uid: word!Word.RevisionsMarkup.none:member
+    package: word!
+    summary: |-
+      No markup.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"None"'
+  - name: simple
+    uid: word!Word.RevisionsMarkup.simple:member
+    package: word!
+    summary: |-
+      Simple markup.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Simple"'

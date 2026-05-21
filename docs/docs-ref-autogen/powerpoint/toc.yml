@@ -33,10 +33,16 @@ items:
                 uid: powerpoint!PowerPoint.HyperlinkType:enum
               - name: InsertSlideFormatting
                 uid: powerpoint!PowerPoint.InsertSlideFormatting:enum
+              - name: LabelingCapability
+                uid: powerpoint!PowerPoint.LabelingCapability:enum
               - name: ParagraphHorizontalAlignment
                 uid: powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum
               - name: PlaceholderType
                 uid: powerpoint!PowerPoint.PlaceholderType:enum
+              - name: SensitivityLabelProtectionType
+                uid: powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
+              - name: SensitivityLabelUpdateResult
+                uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
               - name: ShapeAutoSize
                 uid: powerpoint!PowerPoint.ShapeAutoSize:enum
               - name: ShapeFillType
@@ -127,6 +133,14 @@ items:
             uid: powerpoint!PowerPoint.Presentation:class
           - name: RequestContext
             uid: powerpoint!PowerPoint.RequestContext:class
+          - name: SensitivityLabel
+            uid: powerpoint!PowerPoint.SensitivityLabel:class
+          - name: SensitivityLabelDetails
+            uid: powerpoint!PowerPoint.SensitivityLabelDetails:class
+          - name: SensitivityLabelDetailsCollection
+            uid: powerpoint!PowerPoint.SensitivityLabelDetailsCollection:class
+          - name: SensitivityLabelsCatalog
+            uid: powerpoint!PowerPoint.SensitivityLabelsCatalog:class
           - name: Shape
             uid: powerpoint!PowerPoint.Shape:class
           - name: ShapeAddOptions
@@ -395,6 +409,8 @@ items:
                 uid: office!Office.NodeReplacedEventArgs:interface
               - name: OfficeTheme
                 uid: office!Office.OfficeTheme:interface
+              - name: OnReadyOptions
+                uid: office!Office.OnReadyOptions:interface
               - name: RangeCoordinates
                 uid: office!Office.RangeCoordinates:interface
               - name: RangeFormatConfiguration
@@ -915,6 +931,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.5 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1-5-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.4 requirement set
             href: >-

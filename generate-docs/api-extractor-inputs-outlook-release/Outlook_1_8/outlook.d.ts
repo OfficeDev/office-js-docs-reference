@@ -1353,8 +1353,8 @@ export declare namespace Office {
      * The subclass of {@link Office.Item | Item} dealing with appointments.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -1368,8 +1368,8 @@ export declare namespace Office {
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -1731,7 +1731,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -1778,7 +1778,7 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -1788,10 +1788,7 @@ export declare namespace Office {
          */
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1799,6 +1796,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -1810,10 +1809,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1821,6 +1817,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -2008,7 +2006,7 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -2026,7 +2024,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -2312,10 +2310,7 @@ export declare namespace Office {
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2323,6 +2318,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -2332,10 +2329,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2343,6 +2337,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -2499,183 +2495,120 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
-     * The `AppointmentForm` object is used to access the currently selected appointment.
+     * Represents the details of the form for creating a new appointment.
      *
      * @remarks
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     * [Api set: Mailbox 1.1]
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface AppointmentForm {
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
+         * Sets the body of the appointment.
          *
          * @remarks
+         *
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        body: Body | string;
+        body?: string;
         /**
-         * Gets or sets the date and time that the appointment is to end.
-         *
-         * The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to
-         * convert the `end` property value to the client's local date and time.
-         *
-         * *Read mode*
-         *
-         * The `end` property returns a `Date` object.
-         *
-         * *Compose mode*
-         *
-         * The `end` property returns a `Time` object.
-         *
-         * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
-         * the client to UTC for the server.
+         * Sets the date and time that the appointment is to end.
          *
          * @remarks
          *
+        * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        end: Time | Date;
+        end?: Date | number;
         /**
-        * Gets or sets the location of an appointment.
-        *
-        * *Read mode*
-        *
-        * The `location` property returns a string that contains the location of the appointment.
-        *
-        * *Compose mode*
-        *
-        * The `location` property returns a `Location` object that provides methods that are used to get and set the location of the appointment.
+        * Sets the location of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       location: Location | string;
+       location?: string;
        /**
-        * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each optional attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * optional attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the optional attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       optionalAttendees: Recipients[] | EmailAddressDetails[];
+       optionalAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
+        * Sets the resources of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       resources: string[];
+       resources?: string[];
        /**
-        * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each required attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * required attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the required attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       requiredAttendees: Recipients[] | EmailAddressDetails[];
+       requiredAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Gets or sets the date and time that the appointment is to begin.
-        *
-        * The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method
-        * to convert the value to the client's local date and time.
-        *
-        * *Read mode*
-        *
-        * The `start` property returns a `Date` object.
-        *
-        * *Compose mode*
-        *
-        * The `start` property returns a `Time` object.
-        *
-        * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
-        * the client to UTC for the server.
+        * Sets the date and time that the appointment is to begin.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       start: Time | Date;
+       start?: Date | number;
        /**
-        * Gets or sets the description that appears in the subject field of an item.
-        *
-        * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-        *
-        * *Read mode*
-        *
-        * The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-        *
-        * *Compose mode*
-        *
-        * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
+        * Sets the description that appears in the Title field of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       subject: Subject | string;
+       subject?: string;
     }
     /**
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -2998,10 +2931,7 @@ export declare namespace Office {
         subject: string;
         
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3009,6 +2939,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -3020,10 +2952,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3031,6 +2960,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -3464,10 +3395,7 @@ export declare namespace Office {
          */
         loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3475,6 +3403,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -3484,17 +3414,15 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
-         *
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          * @remarks
          * [Api set: Mailbox 1.7]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -3614,13 +3542,43 @@ export declare namespace Office {
          */
         contentId: string;
         /**
-         * Gets the index of the attachment.
+         * Gets the identifier of an attachment. The value varies depending on the Outlook client.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, the identifier is the Exchange Web Services (EWS) ID.
+         * For inline attachments, the initial identifier is a temporary attachment ID, prefixed with `addinId`, while the attachment is uploaded to the server.
+         * Once the upload completes, the attachment receives an EWS ID. For details, see the notes in the Remarks section.
+         *
+         * - In Outlook on Windows (classic) and on Mac, the identifier for inline and non-inline attachments is the index of the attachment.
+         *
+         * @remarks
+         *
+         * **Important**: Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
          */
         id: string;
         /**
          * Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
          */
         isInline: boolean;
+        /**
+         * In Outlook on the web and the new Outlook on Windows, indicates whether an inline attachment in a message has been uploaded to the server and assigned an Exchange Web Services (EWS) ID.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on Windows (classic) and on Mac, the `isServiceAccessible` property always returns `false` since the attachment ID is the index of the attachment.
+         */
+        isServiceAccessible: boolean;
         /**
          * Gets the name of the attachment.
          *
@@ -5548,9 +5506,6 @@ export declare namespace Office {
      * The item namespace is used to access the currently selected message, meeting request, or appointment.
      * You can determine the type of the item by using the `itemType` property.
      *
-     * To see the full member list, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
-     *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
      * - {@link Office.AppointmentCompose | AppointmentCompose}
@@ -5573,8 +5528,8 @@ export declare namespace Office {
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -5588,8 +5543,8 @@ export declare namespace Office {
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -5935,10 +5890,7 @@ export declare namespace Office {
         userProfile: UserProfile;
 
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5946,6 +5898,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+         * </table>
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -5956,10 +5919,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5967,6 +5927,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+         * </table>
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -6174,39 +6145,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
-         * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-         *
-         *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **To** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Cc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Bcc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-         *
-         *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-         *
-         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
-         *
-         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
-         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
-         *
-         *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
-         *
-         *        `attachments.url`: Only used if the attachment type is set to `file`. The URI of the location for the file. **Important**: This link must be
-         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
-         *        be accessible on a private network as long as it doesn't need further authentication.
-         *
-         *        `attachments.isInline`: Only used if the attachment type is set to `file`. If true, indicates that the attachment will be shown inline as an image
-         *        in the message body and won't be displayed in the attachment list.
-         *
-         *        `attachments.itemId`: Only used if the attachment type is set to `item`. The EWS item ID of the existing e-mail you want to attach to the new message.
-         *        This is a string up to 100 characters.
+         * @param parameters - A `MessageForm` object containing the content to be added to the new message form. All properties are optional.
          */
-        displayNewMessageForm(parameters: any): void;
+        displayNewMessageForm(parameters: MessageForm): void;
         
         
         /**
@@ -6548,10 +6489,7 @@ export declare namespace Office {
          */
         makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -6559,6 +6497,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+         * </table>
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -6567,10 +6516,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -6578,6 +6524,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+         * </table>
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -6811,8 +6768,8 @@ export declare namespace Office {
      * A subclass of {@link Office.Item | Item} for messages.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -6828,8 +6785,8 @@ export declare namespace Office {
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -7050,6 +7007,12 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
@@ -7076,9 +7039,10 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
-         *                 the error.
+         *                 type `Office.AsyncResult`. On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -7097,6 +7061,12 @@ export declare namespace Office {
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
          *
          * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
@@ -7121,9 +7091,10 @@ export declare namespace Office {
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
-         *                 the error.
+         *                 type `Office.AsyncResult`. On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -7146,6 +7117,12 @@ export declare namespace Office {
          * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
@@ -7164,14 +7141,16 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                             type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                  If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.
+         *                 On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options: CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -7194,6 +7173,12 @@ export declare namespace Office {
          * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
@@ -7212,18 +7197,17 @@ export declare namespace Office {
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          *
-         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
+         * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 34,865,152 characters. This corresponds to a maximum attachment size of 25 MB before Base64 encoding.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                             type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                  If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.
+         *                 On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7231,6 +7215,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -7242,10 +7228,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7253,6 +7236,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -7376,6 +7361,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -7390,7 +7381,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -7413,6 +7405,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -7427,7 +7425,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
          *                an error code with the reason for the failure.
@@ -7443,14 +7442,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -7463,12 +7470,20 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         
@@ -7816,10 +7831,7 @@ export declare namespace Office {
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7827,6 +7839,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -7836,10 +7850,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7847,6 +7858,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -7999,13 +8012,189 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * Represents the details of the form for composing a new message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.6]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+     */
+    export interface MessageForm {
+        /**
+         * Sets the attachments of the message. An attachment must be a file attachment (`Office.MailboxEnums.AttachmentType.File`) or an Outlook item attachment
+         * (`Office.MailboxEnums.AttachmentType.Item`).
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        attachments?: MessageFormAttachment[];
+        /**
+         * Sets the recipients in the Bcc field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `bccRecipients` array is limited to a maximum of 100 recipients.
+         */
+        bccRecipients?: string[] | EmailAddressDetails[];
+        /**
+         * Sets the recipients in the Cc field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `ccRecipients` array is limited to a maximum of 100 recipients.
+         */
+        ccRecipients?: string[] | EmailAddressDetails[];
+        /**
+         * Sets the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The body content is limited to a maximum size of 32 KB.
+         */
+        htmlBody?: string;
+        /**
+         * Sets the subject of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The subject is limited to a maximum of 255 characters.
+         */
+        subject?: string;
+        /**
+         * Sets the recipients in the To field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `toRecipients` array is limited to a maximum of 100 recipients.
+         */
+        toRecipients?: string[] | EmailAddressDetails[];
+    }
+    /**
+     * A file or Outlook item attachment. Used when displaying a new message form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.6]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+     */
+    export interface MessageFormAttachment {
+        /**
+         * The type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` or `Office.MailboxEnums.AttachmentType.Item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `base64` and `cloud` attachment types aren't supported.
+         */
+        type: MailboxEnums.AttachmentType | string;
+        /**
+         * The name of the attachment. The name can be up to 255 characters in length.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        name: string;
+        /**
+         * The URI of the location for the file. Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.File`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The link must be publicly accessible without need for authentication by Exchange Online servers. However, with
+         * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
+         */
+        url?: string;
+        /**
+         * If true, indicates that the attachment will be shown inline in the message body and won't be displayed in the attachment list.
+         * Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.File`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        isInline?: boolean;
+        /**
+         * The Exchange Web Services (EWS) item ID of the attachment. The item ID is a string of up to 100 characters.
+         * Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.Item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        itemId?: string;
+    }
+    /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -8410,10 +8599,7 @@ export declare namespace Office {
          */
         to: EmailAddressDetails[];
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8421,6 +8607,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -8432,10 +8620,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8443,6 +8628,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -8921,10 +9108,7 @@ export declare namespace Office {
          */
         loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8932,6 +9116,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -8941,10 +9127,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Item object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8952,6 +9135,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: For a list of events supported on a mail item, see {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events | Outlook Item object model}.
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -9972,12 +10157,26 @@ export declare namespace Office {
     }
     /**
      * A file or item attachment. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormAttachment {
         /**
          * Indicates the type of attachment.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**:
          *
@@ -9990,10 +10189,26 @@ export declare namespace Office {
         type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         name: string;
         /**
          * The URI of the location for the file. Only use if `type` is set to `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
@@ -10002,34 +10217,89 @@ export declare namespace Office {
         /**
          * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
          * Only use if `type` is set to `base64` or `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         inLine?: boolean;
         /**
          * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         itemId?: string;
         
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormData {
         /**
          * A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         htmlBody?: string;
         /**
          * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.2]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         attachments?: ReplyFormAttachment[];
         /**
          * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
          * `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;
         /**
-         * An object literal that contains the following property:-
-         * `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object that you want to access in the callback function.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         options?: CommonAPI.AsyncContextOptions;
     }
@@ -10705,7 +10975,6 @@ export declare namespace Office {
         timeZone: string;
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 /////////////////////// End Exchange APIs //////////////////////

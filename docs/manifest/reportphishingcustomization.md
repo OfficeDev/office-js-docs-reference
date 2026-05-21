@@ -1,7 +1,7 @@
 ---
 title: ReportPhishingCustomization element in the manifest file
 description: The ReportPhishingCustomization element configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 05/20/2024
+ms.date: 02/27/2026
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +37,7 @@ None.
 | :------ | :------: | :------ |
 | [Control](control.md) | Yes | Configures and adds the add-in button to the ribbon. The **xsi:type** attribute must be set to `Button` and the **xsi:type** attribute of its **\<Action\>** child element must be set to `ExecuteFunction`. |
 | [PreProcessingDialog](preprocessingdialog.md) | Yes | Configures the preprocessing dialog shown after the add-in button is selected from the ribbon. This dialog allows users to provide additional information about a message they're reporting. |
-| [SourceLocation element (version overrides)](customfunctionssourcelocation.md) | Yes | Specifies the location of the source JavaScript file. |
+| [SourceLocation element (version overrides)](customfunctionssourcelocation.md) | Yes | Specifies the location of the source JavaScript file.<br><br>**Important**: The `resid` value of the **\<SourceLocation\>** element must match the `resid` value of the **\<Runtime\>** element that represents the [browser runtime](/office/dev/add-ins/testing/runtimes#types-of-runtimes). For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>`.|
 
 ## Example
 
@@ -78,6 +78,7 @@ None.
         <MoreInfoUrl resid="MoreInfo.Url"/>
       </MoreInfo>
     </PreProcessingDialog>
+    <!-- Identifies the runtime to be used. The resid value must match the resid value of the Runtime element that represents the browser runtime. -->
     <SourceLocation resid="Commands.Url"/>
   </ReportPhishingCustomization>
 </ExtensionPoint>

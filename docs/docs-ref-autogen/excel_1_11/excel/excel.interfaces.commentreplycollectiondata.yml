@@ -3,10 +3,11 @@ name: Excel.Interfaces.CommentReplyCollectionData
 uid: excel!Excel.Interfaces.CommentReplyCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.CommentReplyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `commentReplyCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `commentReplyCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [toJSON](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

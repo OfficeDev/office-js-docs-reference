@@ -3,10 +3,11 @@ name: Excel.Interfaces.RangeViewCollectionData
 uid: excel!Excel.Interfaces.RangeViewCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeViewCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `rangeViewCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `rangeViewCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection): [toJSON](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

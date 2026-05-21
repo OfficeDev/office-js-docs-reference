@@ -3,10 +3,11 @@ name: Visio.Interfaces.PageUpdateData
 uid: visio!Visio.Interfaces.PageUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.PageUpdateData
-summary: >-
-  An interface for updating data on the Page object, for use in `page.set({ ...
-  })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the Page object, for use in `page.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.Page](/javascript/api/visio/visio.page): [set](/javascript/api/visio/visio.page#visio-visio-page-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the page.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

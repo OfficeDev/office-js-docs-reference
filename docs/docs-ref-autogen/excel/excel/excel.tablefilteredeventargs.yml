@@ -4,9 +4,13 @@ uid: excel!Excel.TableFilteredEventArgs:interface
 package: excel!
 fullName: Excel.TableFilteredEventArgs
 summary: Provides information about the table that raised the filter applied event.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Table](/javascript/api/excel/excel.table): [onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)
+  - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)
 
 isPreview: true
 isDeprecated: false
@@ -17,10 +21,7 @@ properties:
     package: excel!
     fullName: tableId
     summary: Gets the ID of the table in which the filter is applied.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -33,10 +34,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -49,10 +47,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet which contains the table.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false

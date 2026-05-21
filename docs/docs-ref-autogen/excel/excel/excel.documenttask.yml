@@ -4,9 +4,14 @@ uid: excel!Excel.DocumentTask:class
 package: excel!
 fullName: Excel.DocumentTask
 summary: Represents a task.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [assignTask](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1)), [getTask](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1)), [getTaskOrNullObject](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [assignTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1)), [getTask](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1)), [getTaskOrNullObject](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))
+  - [Excel.DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection): [getItem](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)
 
 isPreview: true
 isDeprecated: false
@@ -17,10 +22,7 @@ properties:
     package: excel!
     fullName: assignees
     summary: Returns a collection of assignees of the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -33,10 +35,7 @@ properties:
     package: excel!
     fullName: changes
     summary: Gets the change records of the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -49,10 +48,7 @@ properties:
     package: excel!
     fullName: comment
     summary: Gets the comment associated with the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -65,10 +61,7 @@ properties:
     package: excel!
     fullName: completedBy
     summary: Gets the most recent user to have completed the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -81,10 +74,7 @@ properties:
     package: excel!
     fullName: completedDateTime
     summary: Gets the date and time that the task was completed. All dates are in UTC.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -96,9 +86,7 @@ properties:
     uid: excel!Excel.DocumentTask#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: true
@@ -112,10 +100,7 @@ properties:
     package: excel!
     fullName: createdBy
     summary: Gets the user who created the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -128,10 +113,7 @@ properties:
     package: excel!
     fullName: createdDateTime
     summary: Gets the date and time that the task was created. All dates are in UTC.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -144,10 +126,7 @@ properties:
     package: excel!
     fullName: id
     summary: Gets the ID of the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -159,13 +138,8 @@ properties:
     uid: excel!Excel.DocumentTask#percentComplete:member
     package: excel!
     fullName: percentComplete
-    summary: >-
-      Specifies the completion percentage of the task. This is a value between 0
-      and 100, where 100 represents a completed task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -177,13 +151,8 @@ properties:
     uid: excel!Excel.DocumentTask#priority:member
     package: excel!
     fullName: priority
-    summary: >-
-      Specifies the priority of the task. This is a value between 0 and 10,
-      where 0 represents the highest priority.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -196,10 +165,7 @@ properties:
     package: excel!
     fullName: startAndDueDateTime
     summary: Specifies the date and time the task should start and is due.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -212,10 +178,7 @@ properties:
     package: excel!
     fullName: title
     summary: Specifies title of the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -229,10 +192,7 @@ methods:
     package: excel!
     fullName: assign(assignee)
     summary: Adds the given user to the list of assignees attached to the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -249,23 +209,17 @@ methods:
     uid: excel!Excel.DocumentTask#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DocumentTaskLoadOptions):
-        Excel.DocumentTask;
+      content: 'load(options?: Excel.Interfaces.DocumentTaskLoadOptions): Excel.DocumentTask;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions:interface"
-            />
+          type: <xref uid="excel!Excel.Interfaces.DocumentTaskLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.DocumentTask:class" />
         description: ''
@@ -273,9 +227,7 @@ methods:
     uid: excel!Excel.DocumentTask#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
@@ -284,9 +236,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentTask;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.DocumentTask:class" />
@@ -295,9 +245,7 @@ methods:
     uid: excel!Excel.DocumentTask#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: true
@@ -310,11 +258,7 @@ methods:
                 }): Excel.DocumentTask;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -327,15 +271,7 @@ methods:
     uid: excel!Excel.DocumentTask#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.DocumentTask`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.DocumentTaskData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.DocumentTask` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: true
@@ -350,10 +286,7 @@ methods:
     package: excel!
     fullName: unassign(assignee)
     summary: Removes the given user from the list of assignees attached to the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -371,10 +304,7 @@ methods:
     package: excel!
     fullName: unassignAll()
     summary: Removes all users from the list of assignees attached to the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false

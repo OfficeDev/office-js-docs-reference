@@ -1,11 +1,45 @@
-Excel.run:function(1):
+Excel.ArrayCellValue:interface:
   - |-
-    // *.run methods automatically create an OfficeExtension.ClientRequestContext
-    // object to work with the Office file.
-    await Excel.run(async (context: Excel.RequestContext) => {
-      const workbook = context.workbook;
-      // Interact with the Excel workbook...
-    });
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+    
+    // This `EntityCellValue` contains an `ArrayCellValue` with two products and their prices.
+    const myEntity: Excel.EntityCellValue = {
+        type: Excel.CellValueType.entity,
+        text: "Product Catalog",
+        properties: {
+            items: {
+                type: Excel.CellValueType.array, /* ArrayCellValue */
+                elements: [[
+                    {
+                        type: Excel.CellValueType.string,
+                        basicValue: "Bicycle"
+                    },
+                    {
+                        type: Excel.CellValueType.double,
+                        basicValue: 300,
+                        numberFormat: "$* #,##0.00",
+                    }
+                ],
+                [
+                    {
+                        type: Excel.CellValueType.string,
+                        basicValue: "Helmet"
+                    },
+                    {
+                        type: Excel.CellValueType.double,
+                        basicValue: 25,
+                        numberFormat: "$* #,##0.00",
+                    }           
+                ]],
+                basicType: Excel.RangeValueType.error,
+                basicValue: "#VALUE!"
+            }
+        },
+        basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
+        basicValue: "#VALUE!" // A read-only property. Used as a fallback in incompatible scenarios.
+    };
+
+    sheet.getCell(0,0).valuesAsJson = [[myEntity]];
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
@@ -24,6 +58,14 @@ Excel.createWorkbook:function(1):
 
     // Read in the file as a data URL so we can parse the base64-encoded string.
     reader.readAsDataURL(myFile.files[0]);
+Excel.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
 Excel.Application#calculate:member(2):
   - |-
     await Excel.run(async (context) => {
@@ -136,6 +178,16 @@ Excel.Chart#legend:member:
         
         console.log("Legend Shown ");
     });
+Excel.Chart#load:member(2):
+  - |-
+    // Get a chart named "Chart1".
+    await Excel.run(async (context) => { 
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.load('name');
+        await context.sync();
+
+        console.log(chart.name);
+    });
 Excel.Chart#name:member:
   - |-
     // Rename the chart to new name, resize the chart to 200 points in both height and weight.
@@ -171,16 +223,6 @@ Excel.Chart#setPosition:member(1):
         chart.height = 300;
         chart.setPosition("C2", null);
         await context.sync(); 
-    });
-Excel.Chart#load:member(2):
-  - |-
-    // Get a chart named "Chart1".
-    await Excel.run(async (context) => { 
-        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.load('name');
-        await context.sync();
-
-        console.log(chart.name);
     });
 Excel.ChartAxes#valueAxis:member:
   - |-
@@ -442,6 +484,83 @@ Excel.ChartTitle#load:member(2):
         await context.sync();
         console.log("Char Title Changed");
     });
+Excel.CommentAddedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the onAdded comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onAdded.add(commentAdded);
+            await context.sync();
+        });
+    }
+
+    async function commentAdded(event: Excel.CommentAddedEventArgs) {
+        // Retrieve the added comment using the comment ID.
+        // Note: This function assumes only a single comment is added at a time.
+        await Excel.run(async (context) => {
+            const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the added comment's data.
+            addedComment.load(["content", "authorName", "creationDate"]);
+            await context.sync();
+
+            // Print out the added comment's data.
+            console.log(`A comment was added:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Comment content: ${addedComment.content}`);
+            console.log(`    Comment author: ${addedComment.authorName}`);
+            console.log(`    Creation date: ${addedComment.creationDate}`);
+        });
+    }
+Excel.CommentChangedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the onChanged comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onChanged.add(commentChanged);
+            await context.sync();
+        });
+    }
+
+    async function commentChanged(event: Excel.CommentChangedEventArgs) {
+        // Retrieve the changed comment using the comment ID.
+        // Note: This function assumes only a single comment is changed at a time.
+        await Excel.run(async (context) => {
+            const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the changed comment's data.
+            changedComment.load(["content", "authorName", "creationDate"]);
+            await context.sync();
+
+            // Print out the changed comment's data.
+            console.log(`A comment was changed:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Updated comment content: ${changedComment.content}`);
+            console.log(`    Comment author: ${changedComment.authorName}`);
+            console.log(`    Creation date: ${changedComment.creationDate}`);
+        });
+    }
+Excel.CommentDeletedEventArgs:interface:
+  - |-
+    async function registerEventHandlers() {
+        await Excel.run(async (context) => {
+            // Register the onDeleted comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onDeleted.add(commentDeleted);
+            await context.sync();
+        });
+    }
+
+    async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
+        // Print out the deleted comment's ID.
+        // Note: This function assumes only a single comment is deleted at a time.
+        await Excel.run(async (context) => {
+            console.log(`A comment was deleted:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+        });
+    }
 Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
     await Excel.run(async (context) => {
@@ -480,23 +599,6 @@ Excel.CustomConditionalFormat#rule:member:
         await context.sync()
 
         console.log("Added new custom conditional format highlighting all blank cells.");
-    });
-Excel.FilterOn:enum:
-  - |-
-    // This function adds a custom AutoFilter to the active worksheet 
-    // and applies the filter to a column of the used range.
-    await Excel.run(async (context) => {
-        // Retrieve the active worksheet and the used range on that worksheet.
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const farmData = sheet.getUsedRange();
-
-        // Add a filter that will only show the rows with values that end with the letter "e" in column 1.
-        sheet.autoFilter.apply(farmData, 1, {
-            criterion1: "=*e",
-            filterOn: Excel.FilterOn.custom
-        });
-
-        await context.sync();
     });
 Excel.NamedItem#getRange:member(1):
   - |-
@@ -581,6 +683,17 @@ Excel.Query#rowsLoadedCount:member:
         console.log("Rows loaded from each query: ")
         console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
     });
+Excel.QueryCollection#getCount:member(1):
+  - |-
+    // This function retrieves the query collection in a workbook and then 
+    // logs the number of queries in the collection to the console.
+    await Excel.run(async (context) => { 
+      const queries = context.workbook.queries; 
+      const count = queries.getCount();
+      await context.sync();
+
+      console.log("Query count: " + count.value);
+    });
 Excel.QueryCollection#items:member:
   - |-
     // This function retrieves the query collection in a workbook, 
@@ -593,17 +706,6 @@ Excel.QueryCollection#items:member:
 
         console.log("Name of each query: ")
         console.log("  " + queries.items.map((query) => query.name).join("\n  "));
-    });
-Excel.QueryCollection#getCount:member(1):
-  - |-
-    // This function retrieves the query collection in a workbook and then 
-    // logs the number of queries in the collection to the console.
-    await Excel.run(async (context) => { 
-      const queries = context.workbook.queries; 
-      const count = queries.getCount();
-      await context.sync();
-
-      console.log("Query count: " + count.value);
     });
 Excel.Range:class:
   - |-
@@ -771,6 +873,28 @@ Excel.Range#getRow:member(1):
         
         console.log(range.address); // prints Sheet1!A2:F2
     });
+Excel.Range#insert:member(1):
+  - |-
+    await Excel.run(async (context) => {
+        const sheetName = "Sheet1";
+        const rangeAddress = "F5:F10";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.insert(Excel.InsertShiftDirection.down);
+        await context.sync();
+    });
+Excel.Range#load:member(2):
+  - |-
+    // Use the range address to get the range object.
+    await Excel.run(async (context) => {
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8"; 
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        range.load('cellCount');
+        await context.sync();
+        
+        console.log(range.cellCount);
+    });
 Excel.Range#numberFormat:member:
   - |-
     // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
@@ -788,24 +912,6 @@ Excel.Range#numberFormat:member:
         await context.sync();
         
         console.log(range.text);
-    });
-Excel.Range#insert:member(1):
-  - |-
-    await Excel.run(async (context) => {
-        const sheetName = "Sheet1";
-        const rangeAddress = "F5:F10";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.insert(Excel.InsertShiftDirection.down);
-        await context.sync();
-    });
-Excel.Range#merge:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "A1:C3";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.merge(true);
-        await context.sync(); 
     });
 Excel.Range#select:member(1):
   - |-
@@ -843,19 +949,6 @@ Excel.Range#untrack:member(1):
         }
 
         await context.sync();
-    });
-Excel.Range#load:member(2):
-  - |-
-    // Use the range address to get the range object.
-    await Excel.run(async (context) => {
-        const sheetName = "Sheet1";
-        const rangeAddress = "A1:F8"; 
-        const worksheet = context.workbook.worksheets.getItem(sheetName);
-        const range = worksheet.getRange(rangeAddress);
-        range.load('cellCount');
-        await context.sync();
-        
-        console.log(range.cellCount);
     });
 Excel.RangeBorder#style:member:
   - |-
@@ -980,6 +1073,30 @@ Excel.RequestContext:class:
       const workbook = context.workbook;
       // Interact with the Excel workbook...
     });
+Excel.SettingsChangedEventArgs:interface:
+  - |-
+    async function registerSettingsChangedHandler() {
+        await Excel.run(async (context) => {
+            // Register the onChanged setting event handler on the workbook.
+            const settings = context.workbook.settings; 
+            settings.onSettingsChanged.add(onChangedSetting);
+            await context.sync();
+        });
+    }
+
+    async function onChangedSetting(args: Excel.SettingsChangedEventArgs) {
+        await Excel.run(async (context) => {
+            const changedSetting = args.settings.getItem("NeedsReview");
+            changedSetting.load("value");
+
+            // Must sync with the context in the EventArgs object, 
+            // not the context that Office passes to Excel.run. 
+            await args.settings.context.sync();
+
+            console.log("Setting value is: " + changedSetting.value);
+            await context.sync();
+        });
+    } 
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1074,16 +1191,6 @@ Excel.TableCollection#add:member(1):
         
         console.log(table.name);
     });
-Excel.TableCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const table = context.workbook.tables.getItem(tableName);
-        table.load('name');
-        await context.sync();
-        
-        console.log(table.name);
-    });
 Excel.TableCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1110,17 +1217,6 @@ Excel.TableColumn#delete:member(1):
         const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
         column.delete();
         await context.sync(); 
-    });
-Excel.TableColumn#getDataBodyRange:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        const dataBodyRange = column.getDataBodyRange();
-        dataBodyRange.load('address');
-        await context.sync();
-        
-        console.log(dataBodyRange.address);
     });
 Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
@@ -1175,14 +1271,6 @@ Excel.TableColumnCollection#add:member(1):
         await context.sync();
         
         console.log(column.name);
-    });
-Excel.TableColumnCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
-        tableColumn.load('name');
-        await context.sync();
-        console.log(tableColumn.name);
     });
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
@@ -1285,6 +1373,23 @@ Excel.Workbook#getSelectedRange:member(1):
         await context.sync();
         console.log(selectedRange.address);
     });
+Excel.WorkbookActivatedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the workbook activated event handler.
+            const workbook = context.workbook;
+            workbook.onActivated.add(workbookActivated);
+            await context.sync();
+        });
+    }
+
+    async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
+        await Excel.run(async (context) => {
+            // Callback function for when the workbook is activated.
+            console.log("The workbook was activated.");
+        });
+    }
 Excel.Worksheet:class:
   - |-
     // Get a Worksheet object by its name and activate it.
@@ -1426,6 +1531,20 @@ Excel.Worksheet#position:member:
         worksheet.position = 2;
         await context.sync(); 
     });
+Excel.Worksheet#protection:member:
+  - |-
+    // Unprotecting a worksheet with unprotect() will remove all 
+    // WorksheetProtectionOptions options applied to a worksheet.
+    // To remove only a subset of WorksheetProtectionOptions use the 
+    // protect() method and set the options you wish to remove to true.
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sheet1");
+      sheet.protection.protect({
+        allowInsertRows: false, // Protect row insertion
+        allowDeleteRows: true // Unprotect row deletion
+      });
+    });
+
 Excel.Worksheet#set:member(1):
   - |-
     // Set the color and name of the current worksheet.
@@ -1438,6 +1557,23 @@ Excel.Worksheet#set:member(1):
 
       await context.sync();
     });
+Excel.WorksheetCalculatedEventArgs:interface:
+  - |-
+    async function registerOnCalculatedHandler() {
+        await Excel.run(async (context) => {
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onCalculated.add(onCalculated);
+            await context.sync();
+        });
+    }
+
+    async function onCalculated(event: Excel.WorksheetCalculatedEventArgs) {
+        await Excel.run(async (context) => {
+            // `event.address` returns the address of the range that completed calculation.
+            // If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
+            console.log(`The Range ${event.address} has recalculated.`);
+        });
+    }
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
@@ -1481,16 +1617,55 @@ Excel.WorksheetCollection#load:member(2):
             console.log(worksheets.items[i].name);
         }
     });
-Excel.Worksheet#protection:member:
+Excel.WorksheetFormulaChangedEventArgs:interface:
   - |-
-    // Unprotecting a worksheet with unprotect() will remove all 
-    // WorksheetProtectionOptions options applied to a worksheet.
-    // To remove only a subset of WorksheetProtectionOptions use the 
-    // protect() method and set the options you wish to remove to true.
-    await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sheet1");
-      sheet.protection.protect({
-        allowInsertRows: false, // Protect row insertion
-        allowDeleteRows: true // Unprotect row deletion
-      });
-    });
+    async function registerFormulaChangeHandler() {
+        await Excel.run(async (context) => {
+            // Register the formula changed event handler for the Sample worksheet.
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onFormulaChanged.add(formulaChangeHandler);
+            await context.sync();
+        });
+    }
+
+    async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
+        await Excel.run(async (context) => {
+            // Retrieve details about the formula change event.
+            const cellAddress = event.formulaDetails[0].cellAddress;
+            const previousFormula = event.formulaDetails[0].previousFormula;
+            const source = event.source;
+            
+            // Print out the change event details.
+            console.log(
+                `The formula in cell ${cellAddress} changed. 
+                The previous formula was: ${previousFormula}. 
+                The source of the change was: ${source}.`
+            );
+        });
+    }
+Excel.WorksheetSelectionChangedEventArgs:interface:
+  - |-
+    async function registerEventHandlers() {
+          await Excel.run(async (context) => {
+            // Add a selection changed event handler for the worksheet.
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onSelectionChanged.add(onWorksheetSelectionChange);
+
+            // Add a selection changed event handler for the worksheet collection.
+            context.workbook.worksheets.onSelectionChanged.add(onWorksheetCollectionSelectionChange);
+
+            await context.sync();
+          });
+        }
+
+        async function onWorksheetSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+          await Excel.run(async (context) => {
+            console.log(`Worksheet event: The address of new selection is: ${args.address}`);
+          });
+        }
+
+        async function onWorksheetCollectionSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+          await Excel.run(async (context) => {
+            console.log(`WorksheetCollection event: The address of new selection is: ${args.address}`);
+          });
+        }

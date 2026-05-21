@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.ChartCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartCollectionLoadOptions
 summary: A collection of all the chart objects on a worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [load](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +33,7 @@ properties:
     package: excel!
     fullName: axes
     summary: 'For EACH ITEM in the collection: Represents chart axes.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -48,47 +46,33 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: 'For EACH ITEM in the collection: Represents the data labels on the chart.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
+        type: <xref uid="excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface" />
   - name: format
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: >-
-      For EACH ITEM in the collection: Encapsulates the format properties for
-      the chart area.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Encapsulates the format properties for the chart area.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />
+        type: <xref uid="excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface" />
   - name: height
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#height:member
     package: excel!
     fullName: height
-    summary: >-
-      For EACH ITEM in the collection: Specifies the height, in points, of the
-      chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Specifies the height, in points, of the chart object.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -100,12 +84,8 @@ properties:
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#left:member
     package: excel!
     fullName: left
-    summary: >-
-      For EACH ITEM in the collection: The distance, in points, from the left
-      side of the chart to the worksheet origin.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +98,7 @@ properties:
     package: excel!
     fullName: legend
     summary: 'For EACH ITEM in the collection: Represents the legend for the chart.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -133,9 +111,7 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of a chart object.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -147,33 +123,21 @@ properties:
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#series:member
     package: excel!
     fullName: series
-    summary: >-
-      For EACH ITEM in the collection: Represents either a single series or
-      collection of series in the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface" />
   - name: title
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member
     package: excel!
     fullName: title
-    summary: >-
-      For EACH ITEM in the collection: Represents the title of the specified
-      chart, including the text, visibility, position, and formatting of the
-      title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -185,13 +149,8 @@ properties:
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#top:member
     package: excel!
     fullName: top
-    summary: >-
-      For EACH ITEM in the collection: Specifies the distance, in points, from
-      the top edge of the object to the top of row 1 (on a worksheet) or the top
-      of the chart area (on a chart).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -203,12 +162,8 @@ properties:
     uid: excel!Excel.Interfaces.ChartCollectionLoadOptions#width:member
     package: excel!
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Specifies the width, in points, of the
-      chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Specifies the width, in points, of the chart object.'
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

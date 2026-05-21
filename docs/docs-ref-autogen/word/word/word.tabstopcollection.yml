@@ -3,12 +3,8 @@ name: Word.TabStopCollection
 uid: word!Word.TabStopCollection:class
 package: word!
 fullName: Word.TabStopCollection
-summary: >-
-  Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word
-  document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word document.
+remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
 isPreview: false
 isDeprecated: false
@@ -18,9 +14,7 @@ properties:
     uid: word!Word.TabStopCollection#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -47,12 +41,8 @@ methods:
     uid: word!Word.TabStopCollection#add:member(1)
     package: word!
     fullName: add(position, options)
-    summary: >-
-      Returns a `TabStop` object that represents a custom tab stop added to the
-      paragraph.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Returns a `TabStop` object that represents a custom tab stop added to the paragraph.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +63,7 @@ methods:
     package: word!
     fullName: after(Position)
     summary: Returns the next `TabStop` object to the right of the specified position.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +81,7 @@ methods:
     package: word!
     fullName: before(Position)
     summary: Returns the next `TabStop` object to the left of the specified position.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +99,7 @@ methods:
     package: word!
     fullName: clearAll()
     summary: Clears all the custom tab stops from the paragraph.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +113,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `TabStop` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -148,25 +130,17 @@ methods:
     uid: word!Word.TabStopCollection#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TabStopCollectionLoadOptions &
-        Word.Interfaces.CollectionLoadOptions): Word.TabStopCollection;
+      content: 'load(options?: Word.Interfaces.TabStopCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TabStopCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="word!Word.Interfaces.TabStopCollectionLoadOptions:interface" />
-            & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface"
-            />
+          type: <xref uid="word!Word.Interfaces.TabStopCollectionLoadOptions:interface" /> & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.TabStopCollection:class" />
         description: ''
@@ -174,9 +148,7 @@ methods:
     uid: word!Word.TabStopCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -185,9 +157,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.TabStopCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TabStopCollection:class" />
@@ -196,24 +166,16 @@ methods:
     uid: word!Word.TabStopCollection#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Word.TabStopCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.TabStopCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.TabStopCollection:class" />
@@ -222,15 +184,7 @@ methods:
     uid: word!Word.TabStopCollection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TabStopCollection`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.TabStopCollectionData`<!-- -->) that
-      contains an "items" array with shallow copies of any loaded properties
-      from the collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TabStopCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TabStopCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
 
     isPreview: false
@@ -244,16 +198,7 @@ methods:
     uid: word!Word.TabStopCollection#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -267,14 +212,7 @@ methods:
     uid: word!Word.TabStopCollection#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
 
     isPreview: false

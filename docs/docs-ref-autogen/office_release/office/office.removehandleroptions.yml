@@ -4,7 +4,13 @@ uid: office!Office.RemoveHandlerOptions:interface
 package: office!
 fullName: Office.RemoveHandlerOptions
 summary: Provides options to determine which event handler or handlers are removed.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Office.Binding](/javascript/api/office/office.binding): [removeHandlerAsync](/javascript/api/office/office.binding#office-office-binding-removehandlerasync-member(1))
+  - [Office.CustomXmlPart](/javascript/api/office/office.customxmlpart): [removeHandlerAsync](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-removehandlerasync-member(1))
+  - [Office.Document](/javascript/api/office/office.document): [removeHandlerAsync](/javascript/api/office/office.document#office-office-document-removehandlerasync-member(1))
+  - [Office.Settings](/javascript/api/office/office.settings): [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +20,7 @@ properties:
     uid: office!Office.RemoveHandlerOptions#asyncContext:member
     package: office!
     fullName: asyncContext
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+    summary: A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     remarks: ''
 
     isPreview: false
@@ -30,20 +33,12 @@ properties:
     uid: office!Office.RemoveHandlerOptions#handler:member
     package: office!
     fullName: handler
-    summary: >-
-      The handler to be removed. If a particular handler is not specified, then
-      all handlers for the specified event type are removed.
+    summary: The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        handler?: (eventArgs?: Office.BindingDataChangedEventArgs |
-        Office.BindingSelectionChangedEventArgs) => any
+      content: 'handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any'
       return:
-        type: >-
-          (eventArgs?: <xref
-          uid="office!Office.BindingDataChangedEventArgs:interface" /> | <xref
-          uid="office!Office.BindingSelectionChangedEventArgs:interface" />)
-          =&gt; any
+        type: '(eventArgs?: <xref uid="office!Office.BindingDataChangedEventArgs:interface" /> | <xref uid="office!Office.BindingSelectionChangedEventArgs:interface" />) =&gt; any'

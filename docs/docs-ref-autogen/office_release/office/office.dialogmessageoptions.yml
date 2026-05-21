@@ -3,12 +3,14 @@ name: Office.DialogMessageOptions
 uid: office!Office.DialogMessageOptions:interface
 package: office!
 fullName: Office.DialogMessageOptions
-summary: >-
-  Provides options for how to send messages, in either direction, between a
-  dialog and its parent.
-remarks: >-
-  **Requirement set**: [DialogOrigin
-  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
+summary: Provides options for how to send messages, in either direction, between a dialog and its parent.
+remarks: |-
+  **Requirement set**: [DialogOrigin 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
+
+  #### Used by
+
+  - [Office.Dialog](/javascript/api/office/office.dialog): [messageChild](/javascript/api/office/office.dialog#office-office-dialog-messagechild-member(1))
+  - [Office.UI](/javascript/api/office/office.ui): [messageParent](/javascript/api/office/office.ui#office-office-ui-messageparent-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +20,7 @@ properties:
     uid: office!Office.DialogMessageOptions#targetOrigin:member
     package: office!
     fullName: targetOrigin
-    summary: >-
-      Specifies the intended recipient domain for a message sent, in either
-      direction, between a dialog and its parent. For example,
-      `https://resources.contoso.com`<!-- -->.
+    summary: Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent. For example, `https://resources.contoso.com`<!-- -->.
     remarks: ''
 
     isPreview: false
@@ -30,18 +29,12 @@ properties:
       content: 'targetOrigin: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // The following example shows how to send a message to the domain of
-          the parent runtime.
-
-          Office.context.ui.messageParent("Some message", { targetOrigin:
-          "https://resource.contoso.com" });
-
+          // The following example shows how to send a message to the domain of the parent runtime.
+          Office.context.ui.messageParent("Some message", { targetOrigin: "https://resource.contoso.com" });
           ```

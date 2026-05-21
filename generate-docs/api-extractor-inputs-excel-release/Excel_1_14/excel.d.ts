@@ -4,8 +4,6 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-
-
 export declare namespace Excel {
     
     
@@ -2250,6 +2248,9 @@ export declare namespace Excel {
     export interface WorksheetFormulaChangedEventArgs {
         /**
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
+                    
+                     If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails`
+                     returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -4279,6 +4280,9 @@ export declare namespace Excel {
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
         /**
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
+
+                     The event is only triggered when the cell already contains a formula.
+                     The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -5109,6 +5113,7 @@ export declare namespace Excel {
         /**
          * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                    Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -31062,7 +31067,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -56218,7 +56223,6 @@ export declare namespace Excel {
         }
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////

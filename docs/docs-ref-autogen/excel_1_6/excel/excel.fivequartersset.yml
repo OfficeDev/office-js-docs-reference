@@ -3,10 +3,11 @@ name: Excel.FiveQuartersSet
 uid: excel!Excel.FiveQuartersSet:interface
 package: excel!
 fullName: Excel.FiveQuartersSet
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: ''
+summary: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+remarks: |-
+  #### Used by
+
+  - [Excel.IconCollections](/javascript/api/excel/excel.iconcollections): [fiveQuarters](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-fivequarters-member)
 
 isPreview: false
 isDeprecated: false

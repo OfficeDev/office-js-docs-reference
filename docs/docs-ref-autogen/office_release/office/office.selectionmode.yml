@@ -3,11 +3,11 @@ name: Office.SelectionMode
 uid: office!Office.SelectionMode:enum
 package: office!
 fullName: Office.SelectionMode
-summary: >-
-  Specifies whether to select (highlight) the location to navigate to (when
-  using the [Document](xref:office!Office.Document:interface)<!--
-  -->.goToByIdAsync method).
-remarks: ''
+summary: Specifies whether to select (highlight) the location to navigate to (when using the [Document](xref:office!Office.Document:interface)<!-- -->.goToByIdAsync method).
+remarks: |-
+  #### Used by
+
+  - [Office.GoToByIdOptions](/javascript/api/office/office.gotobyidoptions): [selectionMode](/javascript/api/office/office.gotobyidoptions#office-office-gotobyidoptions-selectionmode-member)
 
 isPreview: false
 isDeprecated: false

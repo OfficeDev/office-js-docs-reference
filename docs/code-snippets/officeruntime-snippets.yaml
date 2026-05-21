@@ -1,28 +1,3 @@
-OfficeRuntime.Auth:interface:
-  - |-
-    // Get the auth context object and use it to get an
-    // access token.
-    const authContext = OfficeRuntime.context.auth;
-    const accessToken = authContext.getAccessTokenAsync();
-OfficeRuntime.Auth#getAccessToken:member(1):
-  - |-
-    async function getUserData() {
-      try {
-          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
-          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
-          console.log(userToken.name); // user name
-          console.log(userToken.preferred_username); // email
-          console.log(userToken.oid); // user id     
-      }
-      catch (exception) {
-          if (exception.code === 13003) {
-              // SSO is not supported for domain user accounts, only
-              // Microsoft 365 Education or work account, or a Microsoft account.
-          } else {
-              // Handle error
-          }
-      }
-    }
 OfficeRuntime.displayWebDialog:function(1):
   - |-
     /**
@@ -66,4 +41,121 @@ OfficeRuntime.displayWebDialog:function(1):
           reject(new Error(`Failed to open dialog: ${error.message}`));
         });
       });
+    }
+OfficeRuntime.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const auth = OfficeRuntime.auth;
+    const accessToken = await auth.getAccessToken();
+OfficeRuntime.Auth#getAccessToken:member(1):
+  - |-
+    async function getUserData() {
+      try {
+          const auth = OfficeRuntime.auth;
+          let userTokenEncoded = await auth.getAccessToken();
+          let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
+          console.log(userToken.name); // user name
+          console.log(userToken.preferred_username); // email
+          console.log(userToken.oid); // user id     
+      }
+      catch (exception) {
+          if (exception.code === 13003) {
+              // SSO is not supported for domain user accounts, only
+              // Microsoft 365 Education or work account, or a Microsoft account.
+          } else {
+              // Handle error
+          }
+      }
+    }
+OfficeRuntime.Storage#getItem:member(1):
+  - |-
+    // Retrieve a value from the shared runtime storage by its key.
+    async function getItem() {
+        const key = document.getElementById('readKey').value.trim();
+
+        const value = await OfficeRuntime.storage.getItem(key);
+
+        if (value === null) {
+            console.log(`Item not found - Key "${key}" not found in storage.`);
+        } else {
+            console.log(`Item retrieved successfully - Key: "${key}"\nValue: "${value}"`);
+        }
+    }
+OfficeRuntime.Storage#getItems:member(1):
+  - |-
+    // Retrieve a set of default values from the shared runtime storage.
+    async function getDefaultSettings() {
+      const keysToRetrieve = [
+          'username',
+          'email',
+          'theme',
+          'lastLogin',
+          'preferences'
+      ];
+
+      const items = await OfficeRuntime.storage.getItems(keysToRetrieve);
+      for (const [key, value] of Object.entries(items)) {
+          console.log(`"${key}": "${value}"`);
+      }
+    }
+OfficeRuntime.Storage#getKeys:member(1):
+  - |-
+    // Retrieve all keys currently stored in the shared runtime storage.
+    async function getAllKeys() {
+      const keys = await OfficeRuntime.storage.getKeys();
+
+      if (keys.length === 0) {
+        console.log('No items in storage.');
+        showStatus('Storage is empty', 'info');
+      } else {
+        console.log(`Found ${keys.length} key(s):\n\n${keys.toString()}`);
+      }
+    }
+OfficeRuntime.Storage#removeItem:member(1):
+  - |-
+    // Delete an item from the shared runtime storage by its key.
+    async function removeItem() {
+        const key = document.getElementById('deleteKey').value.trim();
+            
+        // Check if key exists first.
+        const value = await OfficeRuntime.storage.getItem(key);
+
+        if (value === null) {
+            console.log(`Key "${key}" not found`);
+        } else {
+          await OfficeRuntime.storage.removeItem(key);
+          console.log(`Item "${key}" removed successfully`);
+        }
+    }
+OfficeRuntime.Storage#removeItems:member(1):
+  - |-
+    // Delete all the items from the shared runtime storage.
+    async function clearAllStorage() {
+      const keys = await OfficeRuntime.storage.getKeys();
+      await OfficeRuntime.storage.removeItems(keys);
+      console.log(`All ${keys.length} items cleared from storage`);
+    }
+OfficeRuntime.Storage#setItem:member(1):
+  - |-
+    // Save a key-value pair in the shared runtime storage.
+    async function storeValue() {
+      const key = document.getElementById('createKey').value.trim();
+      const value = document.getElementById('createValue').value.trim();
+
+      await OfficeRuntime.storage.setItem(key, value);
+    }
+OfficeRuntime.Storage#setItems:member(1):
+  - |-
+    // Save multiple key-value pairs in the shared runtime storage.
+    async function setDefaultSettings() {
+      const demoData = {
+          'username': 'JohnDoe',
+          'email': 'john.doe@example.com',
+          'theme': 'dark',
+          'lastLogin': new Date().toISOString(),
+          'preferences': JSON.stringify({ notifications: true, language: 'en' })
+      };
+
+      await OfficeRuntime.storage.setItems(demoData);
     }

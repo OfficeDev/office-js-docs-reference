@@ -3,9 +3,7 @@ name: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
 uid: excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
-summary: >-
-  An interface for updating data on the `RowColumnPivotHierarchyCollection`
-  object, for use in `rowColumnPivotHierarchyCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `RowColumnPivotHierarchyCollection` object, for use in `rowColumnPivotHierarchyCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member
+    uid: excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData#items:member
     package: excel!
     fullName: items
     summary: ''
@@ -25,7 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface"
-          />[]
+        type: <xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface" />[]

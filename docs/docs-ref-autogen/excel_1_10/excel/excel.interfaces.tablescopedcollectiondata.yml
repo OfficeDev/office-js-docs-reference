@@ -3,10 +3,11 @@ name: Excel.Interfaces.TableScopedCollectionData
 uid: excel!Excel.Interfaces.TableScopedCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.TableScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableScopedCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection): [toJSON](/javascript/api/excel/excel.tablescopedcollection#excel-excel-tablescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

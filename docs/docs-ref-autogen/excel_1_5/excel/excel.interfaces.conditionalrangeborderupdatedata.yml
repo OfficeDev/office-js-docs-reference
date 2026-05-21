@@ -3,9 +3,7 @@ name: Excel.Interfaces.ConditionalRangeBorderUpdateData
 uid: excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
-summary: >-
-  An interface for updating data on the `ConditionalRangeBorder` object, for use
-  in `conditionalRangeBorder.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ConditionalRangeBorder` object, for use in `conditionalRangeBorder.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

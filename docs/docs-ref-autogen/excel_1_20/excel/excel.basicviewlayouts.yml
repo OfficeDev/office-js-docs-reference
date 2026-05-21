@@ -3,12 +3,15 @@ name: Excel.BasicViewLayouts
 uid: excel!Excel.BasicViewLayouts:interface
 package: excel!
 fullName: Excel.BasicViewLayouts
-summary: >-
-  Represents layout information for various views of the value and its
-  properties.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Represents layout information for various views of the value and its properties.
+remarks: |-
+  [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue): [layouts](/javascript/api/excel/excel.booleancellvalue#excel-excel-booleancellvalue-layouts-member)
+  - [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue): [layouts](/javascript/api/excel/excel.doublecellvalue#excel-excel-doublecellvalue-layouts-member)
+  - [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue): [layouts](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-layouts-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,14 +21,8 @@ properties:
     uid: excel!Excel.BasicViewLayouts#card:member
     package: excel!
     fullName: card
-    summary: >-
-      Represents the layout of this value and its properties in card view. If
-      the `BasicCardLayout` object does not have a layout property, it is
-      assumed to be "Entity".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the layout of this value and its properties in card view. If the `BasicCardLayout` object does not have a layout property, it is assumed to be "Entity".
+    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -37,13 +34,8 @@ properties:
     uid: excel!Excel.BasicViewLayouts#compact:member
     package: excel!
     fullName: compact
-    summary: >-
-      Represents the layout used when there is limited space to represent the
-      value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Represents the layout used when there is limited space to represent the value.
+    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

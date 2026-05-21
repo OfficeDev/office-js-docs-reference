@@ -4,9 +4,12 @@ uid: excel!Excel.NameErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.NameErrorCellValueSubType
 summary: Represents types of \#NAME? errors.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue): [errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)
 
 isPreview: true
 isDeprecated: false
@@ -14,23 +17,16 @@ fields:
   - name: unknown
     uid: excel!Excel.NameErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#NAME? in Excel.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: unsupportedFunction
     uid: excel!Excel.NameErrorCellValueSubType.unsupportedFunction:member
     package: excel!
-    summary: >-
-      An error caused by a formula containing an unsupported function. Displays
-      as error type \#NAME? in Excel.
+    summary: |-
+      An error caused by a formula containing an unsupported function. Displays as error type \#NAME? in Excel.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnsupportedFunction"'

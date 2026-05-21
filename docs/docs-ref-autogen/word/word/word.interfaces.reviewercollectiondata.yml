@@ -3,10 +3,11 @@ name: Word.Interfaces.ReviewerCollectionData
 uid: word!Word.Interfaces.ReviewerCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `reviewerCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `reviewerCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ReviewerCollection](/javascript/api/word/word.reviewercollection): [toJSON](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

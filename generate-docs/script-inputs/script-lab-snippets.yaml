@@ -474,6 +474,18 @@ Excel.CardLayoutSection:type:
             type: Excel.CellValueType.formattedNumber,
             basicValue: product.unitPrice,
             numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
           }
         },
         layouts: { /* Excel.EntityViewLayouts */
@@ -485,19 +497,180 @@ Excel.CardLayoutSection:type:
                 properties: ["Product ID"]
               },
               {
-                layout: "List",
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
                 title: "Quantity and price",
                 collapsible: true,
                 collapsed: false,
                 properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
               }
             ]
           }
         },
         provider: {
           description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
-          logoSourceAddress: product.sourceAddress, // Source URL of the logo to display.
-          logoTargetAddress: product.targetAddress // Destination URL that the logo navigates to when clicked.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
+        }
+      };
+
+      return entity;
+    }
+Excel.CardLayoutTableSection:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
+
+
+    function makeProductEntity(productID: number, productName: string, product?:
+    any) {
+      const entity: Excel.EntityCellValue = {
+        type: Excel.CellValueType.entity,
+        text: productName,
+        properties: { /* Excel.EntityPropertyType */
+          "Product ID": {
+            type: Excel.CellValueType.string,
+            basicValue: productID.toString() || ""
+          },
+          "Product Name": {
+            type: Excel.CellValueType.string,
+            basicValue: productName || ""
+          },
+          "Quantity Per Unit": {
+            type: Excel.CellValueType.string,
+            basicValue: product.quantityPerUnit || ""
+          },
+          // Add Unit Price as a formatted number.
+          "Unit Price": {
+            type: Excel.CellValueType.formattedNumber,
+            basicValue: product.unitPrice,
+            numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
+          }
+        },
+        layouts: { /* Excel.EntityViewLayouts */
+          card: { /* Excel.EntityCardLayout */
+            title: { property: "Product Name" },
+            sections: [ /* Excel.CardLayoutSection */
+              {
+                layout: "List",
+                properties: ["Product ID"]
+              },
+              {
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
+                title: "Quantity and price",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
+              }
+            ]
+          }
+        },
+        provider: {
+          description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
+        }
+      };
+
+      return entity;
+    }
+Excel.CardLayoutTwoColumnSection:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-attribution.yaml
+
+
+    function makeProductEntity(productID: number, productName: string, product?:
+    any) {
+      const entity: Excel.EntityCellValue = {
+        type: Excel.CellValueType.entity,
+        text: productName,
+        properties: { /* Excel.EntityPropertyType */
+          "Product ID": {
+            type: Excel.CellValueType.string,
+            basicValue: productID.toString() || ""
+          },
+          "Product Name": {
+            type: Excel.CellValueType.string,
+            basicValue: productName || ""
+          },
+          "Quantity Per Unit": {
+            type: Excel.CellValueType.string,
+            basicValue: product.quantityPerUnit || ""
+          },
+          // Add Unit Price as a formatted number.
+          "Unit Price": {
+            type: Excel.CellValueType.formattedNumber,
+            basicValue: product.unitPrice,
+            numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
+          }
+        },
+        layouts: { /* Excel.EntityViewLayouts */
+          card: { /* Excel.EntityCardLayout */
+            title: { property: "Product Name" },
+            sections: [ /* Excel.CardLayoutSection */
+              {
+                layout: "List",
+                properties: ["Product ID"]
+              },
+              {
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
+                title: "Quantity and price",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
+              }
+            ]
+          }
+        },
+        provider: {
+          description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
         }
       };
 
@@ -1412,6 +1585,25 @@ Excel.ChartDataTableFormat#font:member:
       chartDataTableFormat.border.color = "blue";
       await context.sync();
     });
+Excel.ChartFill#getSolidColor:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-point.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+        let point = pointsCollection.getItemAt(2);
+
+        // Get the solid color of the chart point.
+        const colorResult = point.format.fill.getSolidColor();
+
+        await context.sync();
+
+        console.log(`Chart point color: ${colorResult.value}`);
+    });
 Excel.ChartFill#setSolidColor:member(1):
   - >-
     // Link to full sample:
@@ -1427,7 +1619,7 @@ Excel.ChartFill#setSolidColor:member(1):
         // Set color for chart point.
         point.format.fill.setSolidColor('red');
 
-        await context.sync();        
+        await context.sync();
     });
 Excel.ChartLeaderLines:class:
   - >-
@@ -1497,6 +1689,29 @@ Excel.ChartLegendFormat#font:member:
         font.underline = "Single";
 
         await context.sync();
+    });
+Excel.ChartLineStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+    // The following code changes the format of leader lines. It adjusts color,
+    weight, and line style.
+
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem(sheetName);
+      const chart = sheet.charts.getItemAt(0);
+      const series = chart.series.getItemAt(0);
+      const dataLabels = series.dataLabels;
+      const lineFormat = dataLabels.leaderLines.format;
+
+      // Set leader line formatting properties.
+      lineFormat.line.color = "blue";
+      lineFormat.line.weight = 2;
+      lineFormat.line.lineStyle = Excel.ChartLineStyle.dot;
+
+      await context.sync();
     });
 Excel.ChartPoint:class:
   - >-
@@ -2533,6 +2748,46 @@ Excel.ConditionalCellValueRule#operator:member:
             .add(Excel.ConditionalFormatType.cellValue);
         conditionalFormat.cellValue.format.font.color = "red";
         conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+        await context.sync();
+    });
+Excel.ConditionalColorScaleCriteria:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B2:M5");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.colorScale);
+        const criteria = {
+            minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+            midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+            maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+        };
+        conditionalFormat.colorScale.criteria = criteria;
+
+        await context.sync();
+    });
+Excel.ConditionalColorScaleCriterion:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B2:M5");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.colorScale);
+        const criteria = {
+            minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+            midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+            maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+        };
+        conditionalFormat.colorScale.criteria = criteria;
 
         await context.sync();
     });
@@ -3659,43 +3914,6 @@ Excel.DataPivotHierarchy#name:member:
         dataHierarchies.items[1].name = "Wholesale";
         await context.sync();
     });
-Excel.DataValidationErrorAlert:interface:
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Decision");
-        const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
-
-        // When you are developing, it is a good practice to
-        // clear the dataValidation object with each run of your code.
-        rankingRange.dataValidation.clear();
-
-        let greaterThanZeroRule = {
-            wholeNumber: {
-                formula1: 0,
-                operator: Excel.DataValidationOperator.greaterThan
-            }
-        };
-        rankingRange.dataValidation.rule = greaterThanZeroRule;
-
-        rankingRange.dataValidation.prompt = {
-            message: "Please enter a positive number.",
-            showPrompt: true,
-            title: "Positive numbers only."
-        };
-
-        rankingRange.dataValidation.errorAlert = {
-            message: "Sorry, only positive numbers are allowed",
-            showAlert: true,
-            style: "Stop",
-            title: "Negative Number Entered"
-        };
-
-        await context.sync();
-    });
 Excel.DataValidation#errorAlert:member:
   - >-
     // Link to full sample:
@@ -3723,7 +3941,7 @@ Excel.DataValidation#errorAlert:member:
         commentsRange.dataValidation.errorAlert = {
             message: "It is redundant to include the baby name in the comment.",
             showAlert: true,
-            style: "Information",
+            style: Excel.DataValidationAlertStyle.information,
             title: "Baby Name in Comment"
         };
 
@@ -3760,7 +3978,7 @@ Excel.DataValidation#prompt:member:
         rankingRange.dataValidation.errorAlert = {
             message: "Sorry, only positive numbers are allowed",
             showAlert: true,
-            style: "Stop",
+            style: Excel.DataValidationAlertStyle.stop,
             title: "Negative Number Entered"
         };
 
@@ -3790,6 +4008,80 @@ Excel.DataValidation#rule:member:
             }
         };
         nameRange.dataValidation.rule = approvedListRule;
+
+        await context.sync();
+    });
+Excel.DataValidationAlertStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Decision");
+        const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+        // When you are developing, it is a good practice to
+        // clear the dataValidation object with each run of your code.
+        rankingRange.dataValidation.clear();
+
+        let greaterThanZeroRule = {
+            wholeNumber: {
+                formula1: 0,
+                operator: Excel.DataValidationOperator.greaterThan
+            }
+        };
+        rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+        rankingRange.dataValidation.prompt = {
+            message: "Please enter a positive number.",
+            showPrompt: true,
+            title: "Positive numbers only."
+        };
+
+        rankingRange.dataValidation.errorAlert = {
+            message: "Sorry, only positive numbers are allowed",
+            showAlert: true,
+            style: Excel.DataValidationAlertStyle.stop,
+            title: "Negative Number Entered"
+        };
+
+        await context.sync();
+    });
+Excel.DataValidationErrorAlert:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Decision");
+        const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+        // When you are developing, it is a good practice to
+        // clear the dataValidation object with each run of your code.
+        rankingRange.dataValidation.clear();
+
+        let greaterThanZeroRule = {
+            wholeNumber: {
+                formula1: 0,
+                operator: Excel.DataValidationOperator.greaterThan
+            }
+        };
+        rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+        rankingRange.dataValidation.prompt = {
+            message: "Please enter a positive number.",
+            showPrompt: true,
+            title: "Positive numbers only."
+        };
+
+        rankingRange.dataValidation.errorAlert = {
+            message: "Sorry, only positive numbers are allowed",
+            showAlert: true,
+            style: Excel.DataValidationAlertStyle.stop,
+            title: "Negative Number Entered"
+        };
 
         await context.sync();
     });
@@ -3824,7 +4116,7 @@ Excel.DataValidationOperator:enum:
         rankingRange.dataValidation.errorAlert = {
             message: "Sorry, only positive numbers are allowed",
             showAlert: true,
-            style: "Stop",
+            style: Excel.DataValidationAlertStyle.stop,
             title: "Negative Number Entered"
         };
 
@@ -3888,7 +4180,7 @@ Excel.DataValidationRule#wholeNumber:member:
         rankingRange.dataValidation.errorAlert = {
             message: "Sorry, only positive numbers are allowed",
             showAlert: true,
-            style: "Stop",
+            style: Excel.DataValidationAlertStyle.stop,
             title: "Negative Number Entered"
         };
 
@@ -4068,6 +4360,18 @@ Excel.EntityCardLayout:interface:
             type: Excel.CellValueType.formattedNumber,
             basicValue: product.unitPrice,
             numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
           }
         },
         layouts: { /* Excel.EntityViewLayouts */
@@ -4079,19 +4383,26 @@ Excel.EntityCardLayout:interface:
                 properties: ["Product ID"]
               },
               {
-                layout: "List",
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
                 title: "Quantity and price",
                 collapsible: true,
                 collapsed: false,
                 properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
               }
             ]
           }
         },
         provider: {
           description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
-          logoSourceAddress: product.sourceAddress, // Source URL of the logo to display.
-          logoTargetAddress: product.targetAddress // Destination URL that the logo navigates to when clicked.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
         }
       };
 
@@ -4155,6 +4466,18 @@ Excel.EntityPropertyType:type:
             type: Excel.CellValueType.formattedNumber,
             basicValue: product.unitPrice,
             numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
           }
         },
         layouts: { /* Excel.EntityViewLayouts */
@@ -4166,19 +4489,26 @@ Excel.EntityPropertyType:type:
                 properties: ["Product ID"]
               },
               {
-                layout: "List",
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
                 title: "Quantity and price",
                 collapsible: true,
                 collapsed: false,
                 properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
               }
             ]
           }
         },
         provider: {
           description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
-          logoSourceAddress: product.sourceAddress, // Source URL of the logo to display.
-          logoTargetAddress: product.targetAddress // Destination URL that the logo navigates to when clicked.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
         }
       };
 
@@ -4213,6 +4543,18 @@ Excel.EntityViewLayouts:interface:
             type: Excel.CellValueType.formattedNumber,
             basicValue: product.unitPrice,
             numberFormat: "$* #,##0.00"
+          },
+          "Units In Stock": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsInStock
+          },
+          "Units On Order": {
+            type: Excel.CellValueType.double,
+            basicValue: product.unitsOnOrder
+          },
+          "Reorder Level": {
+            type: Excel.CellValueType.double,
+            basicValue: product.reorderLevel
           }
         },
         layouts: { /* Excel.EntityViewLayouts */
@@ -4224,19 +4566,26 @@ Excel.EntityViewLayouts:interface:
                 properties: ["Product ID"]
               },
               {
-                layout: "List",
+                layout: "TwoColumn", /* Excel.CardLayoutTwoColumnSection */
                 title: "Quantity and price",
                 collapsible: true,
                 collapsed: false,
                 properties: ["Quantity Per Unit", "Unit Price"]
+              },
+              {
+                layout: "Table", /* Excel.CardLayoutTableSection */
+                title: "Stock information",
+                collapsible: true,
+                collapsed: false,
+                properties: ["Units In Stock", "Units On Order", "Reorder Level"]
               }
             ]
           }
         },
         provider: {
           description: product.providerName, // Name of the data provider. Displays as a tooltip when hovering over the logo. Also displays as a fallback if the source address for the image is broken.
-          logoSourceAddress: product.sourceAddress, // Source URL of the logo to display.
-          logoTargetAddress: product.targetAddress // Destination URL that the logo navigates to when clicked.
+          logoSourceAddress: product.sourceAddress, // Source URL of the logo.
+          logoTargetAddress: product.targetAddress // URL to open when you select the logo.
         }
       };
 
@@ -4423,6 +4772,31 @@ Excel.FilterDatetimeSpecificity:enum:
 
       await context.sync();
     });
+Excel.FilterOn:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/filter-data.yaml
+
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        const expensesTable = sheet.tables.getItem("ExpensesTable");
+
+        let filter = expensesTable.columns.getItem("Amount").filter;
+        filter.apply({
+            filterOn: Excel.FilterOn.dynamic,
+            dynamicCriteria: Excel.DynamicFilterCriteria.belowAverage
+        });
+
+        filter = expensesTable.columns.getItem("Category").filter;
+        filter.apply({
+                filterOn: Excel.FilterOn.values,
+                values: ["Restaurant", "Groceries"]
+        });
+
+        await context.sync();
+       });
 Excel.Functions:class:
   - >-
     // Link to full sample:
@@ -5370,6 +5744,33 @@ Excel.PivotHierarchy#fields:member:
 
       await context.sync();
     });
+Excel.PivotLabelFilter:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+
+    await Excel.run(async (context) => {
+      // Add a PivotFilter to filter based on the strings of item labels.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // Get the "Type" field.
+      const field = pivotTable.hierarchies.getItem("Type").fields.getItem("Type");
+
+      // Filter out any types that start with "L" ("Lemons" and "Limes" in this case).
+      const filter: Excel.PivotLabelFilter = {
+        condition: Excel.LabelFilterCondition.beginsWith,
+        substring: "L",
+        exclusive: true
+      };
+
+      // Apply the label filter to the field.
+      field.applyFilter({ labelFilter: filter });
+
+      await context.sync();
+    });
 Excel.PivotLayout#getDataBodyRange:member(1):
   - >-
     // Link to full sample:
@@ -5763,6 +6164,33 @@ Excel.PivotTableCollection#getItem:member(1):
       pivotTable.refresh();
       await context.sync();
     });
+Excel.PivotValueFilter:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+
+    await Excel.run(async (context) => {
+      // Add a PivotFilter to filter on the values correlated with a row.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // Get the "Farm" field.
+      const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
+
+      // Filter to only include rows with more than 500 wholesale crates sold.
+      const filter: Excel.PivotValueFilter = {
+        condition: Excel.ValueFilterCondition.greaterThan,
+        comparator: 500,
+        value: "Sum of Crates Sold Wholesale"
+      };
+
+      // Apply the value filter to the field.
+      field.applyFilter({ valueFilter: filter });
+
+      await context.sync();
+    });
 Excel.PresetCriteriaConditionalFormat#rule:member:
   - >-
     // Link to full sample:
@@ -5862,27 +6290,29 @@ Excel.Range#valuesAsJson:member:
 Excel.Range#getDirectDependents:member(1):
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-direct-dependents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
 
-    await Excel.run(async (context) => {
-      // Direct dependents are cells that contain formulas that refer to other cells.
-      let range = context.workbook.getActiveCell();
-      let directDependents = range.getDirectDependents();
-      range.load("address");
-      directDependents.areas.load("address");
-      await context.sync();
-      
-      console.log(`Direct dependent cells of ${range.address}:`);
-      
-      // Use the direct dependents API to loop through direct dependents of the active cell.
-      for (let i = 0; i < directDependents.areas.items.length; i++) {
-        // Highlight and print the address of each dependent cell.
-        directDependents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directDependents.areas.items[i].address}`);
-      }
-      await context.sync();
-    });
+    /** Highlight the direct dependents of the active cell. */
+
+    async function getDirectDependents() {
+      await Excel.run(async (context) => {
+        // Direct dependents are cells that contain formulas that directly refer to the active cell.
+        let range = context.workbook.getActiveCell();
+        let directDependents = range.getDirectDependents();
+        range.load("address");
+        directDependents.areas.load("address");
+        await context.sync();
+
+        console.log(`Direct dependent cells of ${range.address} (yellow cells):`);
+
+        for (let i = 0; i < directDependents.areas.items.length; i++) {
+          // Highlight and print the address of each direct dependent cell.
+          directDependents.areas.items[i].format.fill.color = "Yellow";
+          console.log(`  ${directDependents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
 Excel.Range#sort:member:
   - >-
     // Link to full sample:
@@ -6027,52 +6457,56 @@ Excel.Range#getPivotTables:member(1):
 Excel.Range#getDirectPrecedents:member(1):
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
 
-    await Excel.run(async (context) => {
-      // Precedents are cells referenced by the formula in a cell.
-      // A "direct precedent" is a cell directly referenced by the selected formula.
-      let range = context.workbook.getActiveCell();
-      let directPrecedents = range.getDirectPrecedents();
-      range.load("address");
-      directPrecedents.areas.load("address");
-      await context.sync();
+    /** Highlight the direct precedents of the active cell. */
 
-      console.log(`Direct precedent cells of ${range.address}:`);
+    async function getDirectPrecedents() {
+      await Excel.run(async (context) => {
+        // Precedents are cells referenced by the formula in a cell.
+        // A "direct precedent" is a cell directly referenced by the selected formula.
+        let range = context.workbook.getActiveCell();
+        let directPrecedents = range.getDirectPrecedents();
+        range.load("address");
+        directPrecedents.areas.load("address");
+        await context.sync();
 
-      // Use the direct precedents API to loop through precedents of the active cell.
-      for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-        // Highlight and print out the address of each direct precedent cell.
-        directPrecedents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directPrecedents.areas.items[i].address}`);
-      }
-      await context.sync();
-    });
+        console.log(`Direct precedent cells of ${range.address} (yellow cells):`);
+
+        for (let i = 0; i < directPrecedents.areas.items.length; i++) {
+          // Highlight and print the address of each direct precedent cell.
+          directPrecedents.areas.items[i].format.fill.color = "Yellow";
+          console.log(`  ${directPrecedents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
 Excel.Range#getPrecedents:member(1):
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
 
-    await Excel.run(async (context) => {
-      // Precedents are cells referenced by the formula in a cell.
-      let range = context.workbook.getActiveCell();
-      let precedents = range.getPrecedents();
-      range.load("address");
-      precedents.areas.load("address");
-      await context.sync();
+    /** Highlight all precedents (direct and indirect) of the active cell. */
 
-      console.log(`All precedent cells of ${range.address}:`);
+    async function getAllPrecedents() {
+      await Excel.run(async (context) => {
+        // Precedents are cells referenced by the formula in a cell.
+        let range = context.workbook.getActiveCell();
+        let precedents = range.getPrecedents();
+        range.load("address");
+        precedents.areas.load("address");
+        await context.sync();
 
-      // Use the precedents API to loop through precedents of the active cell.
-      for (let i = 0; i < precedents.areas.items.length; i++) {
-        // Highlight and print out the address of each precedent cell.
-        precedents.areas.items[i].format.fill.color = "Orange";
-        console.log(`  ${precedents.areas.items[i].address}`);
-      }
-      await context.sync();
-    });
+        console.log(`All precedent cells of ${range.address} (orange cells):`);
+
+        for (let i = 0; i < precedents.areas.items.length; i++) {
+          // Highlight and print the address of each precedent cell.
+          precedents.areas.items[i].format.fill.color = "Orange";
+          console.log(`  ${precedents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
 Excel.Range#getSpecialCells:member(1):
   - >-
     // Link to full sample:
@@ -6245,31 +6679,29 @@ Excel.Range#moveTo:member(1):
 Excel.Range#getDependents:member(1):
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-dependents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
 
-    // This function highlights all the dependent cells of the active cell.
+    /** Highlight all dependents (direct and indirect) of the active cell. */
 
-    // Dependent cells contain formulas that refer to other cells.
+    async function getAllDependents() {
+      await Excel.run(async (context) => {
+        // Get addresses of all dependent cells of the active cell.
+        const range = context.workbook.getActiveCell();
+        const dependents = range.getDependents();
+        range.load("address");
+        dependents.areas.load("address");
+        await context.sync();
 
-    await Excel.run(async (context) => {
-      // Get addresses of the active cell's dependent cells.
-      const range = context.workbook.getActiveCell();
-      const dependents = range.getDependents();
-      range.load("address");
-      dependents.areas.load("address");
-      await context.sync();
+        console.log(`All dependent cells of ${range.address} (orange cells):`);
 
-      console.log(`All dependent cells of ${range.address}:`);
-
-      // Use the dependents API to loop through dependents of the active cell.
-      for (let i = 0; i < dependents.areas.items.length; i++) {
-        // Highlight and print out the address of each dependent cell.
-        dependents.areas.items[i].format.fill.color = "Orange";
-        console.log(`  ${dependents.areas.items[i].address}`);
-      }
-      await context.sync();
-    });
+        for (let i = 0; i < dependents.areas.items.length; i++) {
+          // Highlight and print the address of each dependent cell.
+          dependents.areas.items[i].format.fill.color = "Orange";
+          console.log(`  ${dependents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
 Excel.Range#getSpillingToRange:member(1):
   - >-
     // Link to full sample:
@@ -6874,6 +7306,46 @@ Excel.RemoveDuplicatesResult#uniqueRemaining:member:
         console.log(deleteResult.removed + " entries with duplicate names removed.");
         console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
     });
+Excel.RunOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-undo-grouping.yaml
+
+
+    // Use the `mergeUndoGroup` property of the `RunOptions` interface to group
+    multiple operations into a single undo action.
+
+    await Excel.run({ mergeUndoGroup: true }, async (context) => {
+      const workbook = context.workbook;
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+      // Apply formatting to multiple ranges.
+      const headerRange = sheet.getRange("A1:D1");
+      headerRange.format.fill.color = "#4472C4";
+      headerRange.format.font.color = "white";
+      headerRange.format.font.bold = true;
+
+      await context.sync();
+
+      const dataRange = sheet.getRange("A2:D6");
+      dataRange.format.borders.getItem("EdgeTop").style = "Continuous";
+      dataRange.format.borders.getItem("EdgeBottom").style = "Continuous";
+      dataRange.format.borders.getItem("EdgeLeft").style = "Continuous";
+      dataRange.format.borders.getItem("EdgeRight").style = "Continuous";
+
+      await context.sync();
+
+      const totalRow = sheet.getRange("A6:D6");
+      totalRow.format.fill.color = "#D9E1F2";
+      totalRow.format.font.bold = true;
+
+      // Return focus to the workbook.
+      workbook.focus(); // This API is only supported on desktop. In Excel on the web, you must manually return focus to the worksheet after clicking the task pane button.
+
+      await context.sync();
+
+      console.log("Applied formatting with undo grouping. Use Ctrl+Z (Cmd+Z on Mac) once to undo all changes.");
+    });
 Excel.Runtime#enableEvents:member:
   - >-
     // Link to full sample:
@@ -7084,17 +7556,16 @@ Excel.Shape#delete:member(1):
 Excel.Shape#fill:member:
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
 
 
     await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Shapes");
-        const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
-        shape.left = 300;
-        shape.top = 100;
-        shape.height = 100;
-        shape.width = 100;
-        shape.fill.foregroundColor = "yellow"
+        // Apply a solid fill color to the shape.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const shapeFill: Excel.ShapeFill = badge.fill;
+        shapeFill.setSolidColor("#FFE08A");
+
         await context.sync();
     });
 Excel.Shape#rotation:member:
@@ -7238,6 +7709,24 @@ Excel.Shape#setZOrder:member(1):
         shape.setZOrder(Excel.ShapeZOrder.sendBackward);
         await context.sync();
     });
+Excel.Shape#lineFormat:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Load and log the shape's fill and outline properties.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        badge.fill.load(["foregroundColor", "transparency", "type"]);
+        badge.lineFormat.load(["color", "dashStyle", "style", "transparency", "visible", "weight"]);
+
+        await context.sync();
+
+        console.log("Badge fill: " + JSON.stringify(badge.fill));
+        console.log("Badge line format: " + JSON.stringify(badge.lineFormat));
+    });
 Excel.ShapeAutoSize:enum:
   - >-
     // Link to full sample:
@@ -7337,6 +7826,52 @@ Excel.ShapeCollection#addTextBox:member(1):
         textbox.name = "Textbox";
         await context.sync();
     });
+Excel.ShapeFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Set fill color and transparency together.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const shapeFill: Excel.ShapeFill = badge.fill;
+        shapeFill.foregroundColor = "#C00000";
+        shapeFill.transparency = 0.25;
+
+        await context.sync();
+    });
+Excel.ShapeFill#setSolidColor:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Apply a solid fill color to the shape.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const shapeFill: Excel.ShapeFill = badge.fill;
+        shapeFill.setSolidColor("#FFE08A");
+
+        await context.sync();
+    });
+Excel.ShapeFill#clear:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Remove the shape's fill formatting.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const shapeFill: Excel.ShapeFill = badge.fill;
+        shapeFill.clear();
+
+        await context.sync();
+    });
 Excel.ShapeGroup#ungroup:member(1):
   - >-
     // Link to full sample:
@@ -7349,6 +7884,87 @@ Excel.ShapeGroup#ungroup:member(1):
         const shapeGroup = sheet.shapes.getItem("Group").group;
         shapeGroup.ungroup();
         console.log("Shapes ungrouped");
+
+        await context.sync();
+    });
+Excel.ShapeLineFormat#set:member(2):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Apply outline formatting to the shape.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const lineFormat: Excel.ShapeLineFormat = badge.lineFormat;
+        lineFormat.set({
+            color: "#C55A11",
+            dashStyle: Excel.ShapeLineDashStyle.dashDotDot,
+            style: Excel.ShapeLineStyle.thinThick,
+            transparency: 0.2,
+            visible: true,
+            weight: 4
+        });
+
+        await context.sync();
+    });
+Excel.ShapeLineFormat#visible:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Hide the shape's outline.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const lineFormat: Excel.ShapeLineFormat = badge.lineFormat;
+        lineFormat.visible = false;
+
+        await context.sync();
+    });
+Excel.ShapeLineDashStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Apply outline formatting to the shape.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const lineFormat: Excel.ShapeLineFormat = badge.lineFormat;
+        lineFormat.set({
+            color: "#C55A11",
+            dashStyle: Excel.ShapeLineDashStyle.dashDotDot,
+            style: Excel.ShapeLineStyle.thinThick,
+            transparency: 0.2,
+            visible: true,
+            weight: 4
+        });
+
+        await context.sync();
+    });
+Excel.ShapeLineStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-fill-and-line-formatting.yaml
+
+
+    await Excel.run(async (context) => {
+        // Apply outline formatting to the shape.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const badge = sheet.shapes.getItem("Badge");
+        const lineFormat: Excel.ShapeLineFormat = badge.lineFormat;
+        lineFormat.set({
+            color: "#C55A11",
+            dashStyle: Excel.ShapeLineDashStyle.dashDotDot,
+            style: Excel.ShapeLineStyle.thinThick,
+            transparency: 0.2,
+            visible: true,
+            weight: 4
+        });
 
         await context.sync();
     });
@@ -8121,6 +8737,22 @@ Excel.WebImageCellValue#type:member:
 
       await context.sync();
     });
+Excel.Workbook:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
+
+    await Excel.run(async (context) => {
+
+        let myWorkbook = context.workbook;
+        let activeCell = myWorkbook.getActiveCell();
+        activeCell.load("address");
+
+        await context.sync();
+        
+        console.log("The active cell is " + activeCell.address);
+    });
 Excel.Workbook#properties:member:
   - >-
     // Link to full sample:
@@ -8377,28 +9009,30 @@ Excel.WorkbookProtection#unprotect:member(1):
 Excel.WorkbookRangeAreas#areas:member:
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents-and-dependents.yaml
 
 
-    await Excel.run(async (context) => {
-      // Precedents are cells referenced by the formula in a cell.
-      // A "direct precedent" is a cell directly referenced by the selected formula.
-      let range = context.workbook.getActiveCell();
-      let directPrecedents = range.getDirectPrecedents();
-      range.load("address");
-      directPrecedents.areas.load("address");
-      await context.sync();
+    /** Highlight the direct precedents of the active cell. */
 
-      console.log(`Direct precedent cells of ${range.address}:`);
+    async function getDirectPrecedents() {
+      await Excel.run(async (context) => {
+        // Precedents are cells referenced by the formula in a cell.
+        // A "direct precedent" is a cell directly referenced by the selected formula.
+        let range = context.workbook.getActiveCell();
+        let directPrecedents = range.getDirectPrecedents();
+        range.load("address");
+        directPrecedents.areas.load("address");
+        await context.sync();
 
-      // Use the direct precedents API to loop through precedents of the active cell.
-      for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-        // Highlight and print out the address of each direct precedent cell.
-        directPrecedents.areas.items[i].format.fill.color = "Yellow";
-        console.log(`  ${directPrecedents.areas.items[i].address}`);
-      }
-      await context.sync();
-    });
+        console.log(`Direct precedent cells of ${range.address} (yellow cells):`);
+
+        for (let i = 0; i < directPrecedents.areas.items.length; i++) {
+          // Highlight and print the address of each direct precedent cell.
+          directPrecedents.areas.items[i].format.fill.color = "Yellow";
+          console.log(`  ${directPrecedents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
 Excel.Worksheet#customProperties:member:
   - >-
     // Link to full sample:
@@ -8868,34 +9502,6 @@ Excel.WorksheetChangedEventArgs#triggerSource:member:
             }
         });
     }
-Excel.WorksheetMovedEventArgs:interface:
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-
-    async function onWorksheetMoved(event) {
-        await Excel.run(async (context) => {
-            console.log("Handler for worksheet onMoved event has been triggered.");
-            console.log(`    Worksheet ID: ${event.worksheetId}`);
-            console.log(`    Position before move: ${event.positionBefore}`);
-            console.log(`    Position after move: ${event.positionAfter}`);
-            console.log(`    Event source: ${event.source}`);
-        });
-    }
-Excel.WorksheetNameChangedEventArgs:interface:
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-
-    async function onNameChanged(event: Excel.WorksheetNameChangedEventArgs) {
-        await Excel.run(async (context) => {
-            console.log(`Handler for worksheet onNameChanged event has been triggered.`);
-            console.log(`    Name before change: ` + event.nameBefore);
-            console.log(`    Name after change: ` + event.nameAfter);
-        });
-    }  
 Excel.WorksheetCollection#onActivated:member:
   - >-
     // Link to full sample:
@@ -9087,6 +9693,34 @@ Excel.WorksheetFreezePanes#unfreeze:member(1):
 
         await context.sync();
     });
+Excel.WorksheetMovedEventArgs:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+
+    async function onWorksheetMoved(event) {
+        await Excel.run(async (context) => {
+            console.log("Handler for worksheet onMoved event has been triggered.");
+            console.log(`    Worksheet ID: ${event.worksheetId}`);
+            console.log(`    Position before move: ${event.positionBefore}`);
+            console.log(`    Position after move: ${event.positionAfter}`);
+            console.log(`    Event source: ${event.source}`);
+        });
+    }
+Excel.WorksheetNameChangedEventArgs:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+
+    async function onNameChanged(event: Excel.WorksheetNameChangedEventArgs) {
+        await Excel.run(async (context) => {
+            console.log(`Handler for worksheet onNameChanged event has been triggered.`);
+            console.log(`    Name before change: ` + event.nameBefore);
+            console.log(`    Name after change: ` + event.nameAfter);
+        });
+    }  
 Excel.WorksheetPositionType:enum:
   - >-
     // Link to full sample:
@@ -11818,7 +12452,7 @@ Office.DropEventData:interface:
         }
       });
     }
-Office.DroppedItems:interface:
+Office.DroppedItemDetails:interface:
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
@@ -11846,7 +12480,7 @@ Office.DroppedItems:interface:
         }
       });
     }
-Office.DroppedItemDetails:interface:
+Office.DroppedItems:interface:
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
@@ -15901,6 +16535,59 @@ Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2):
         console.log("Action failed with error: " + asyncResult.error.message);
       }
     });
+Office.SeriesTime:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject: Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
+
+    // Set series end date to one year from now.
+
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    const pattern = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+    });
 Office.SessionData#clearAsync:member(1):
   - >-
     // Link to full sample:
@@ -16044,6 +16731,57 @@ Office.Time#setAsync:member(1):
         console.log(`Successfully set end date and time to ${end}`);
       });
     });
+Office.SetSelectedDataOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
+
+
+    async function addImageToCurrentSlide(
+      imageBase64: string,
+      options?: PowerPoint.ShapeAddOptions
+    ): Promise<PowerPoint.Shape> {
+      // Adds an image to the current slide.
+      const setSelectedDataOptions: Office.SetSelectedDataOptions = {
+        coercionType: Office.CoercionType.Image
+      };
+      if (options) {
+        if (options.height) {
+          setSelectedDataOptions.imageHeight = options.height;
+        }
+        if (options.left) {
+          setSelectedDataOptions.imageLeft = options.left;
+        }
+        if (options.top) {
+          setSelectedDataOptions.imageTop = options.top;
+        }
+        if (options.width) {
+          setSelectedDataOptions.imageWidth = options.width;
+        }
+      }
+
+      return new Promise((resolve, reject) => {
+        Office.context.document.setSelectedDataAsync(
+          imageBase64,
+          setSelectedDataOptions,
+          async (result: Office.AsyncResult<void>) => {
+            if (result.error) {
+              console.error(`ERROR in setSelectedDataAsync(): ${result.error}`);
+              reject(result.error);
+            } else {
+              const shape = await PowerPoint.run(async (context) => {
+                const slide = context.presentation.getSelectedSlides().getItemAt(0);
+                slide.shapes.load();
+                await context.sync();
+
+                return slide.shapes.items[slide.shapes.items.length - 1];
+              });
+              resolve(shape);
+            }
+          }
+        );
+      });
+    }
 PowerPoint.AddSlideOptions:interface:
   - >-
     // Link to full sample:
@@ -16344,7 +17082,15 @@ PowerPoint.BulletFormat:class:
     await PowerPoint.run(async (context) => {
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
       await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
 
       console.log("Font properties of selected text range:");
       console.log(`\tallCaps: ${textRange.font.allCaps}`);
@@ -16939,7 +17685,15 @@ PowerPoint.ParagraphFormat:class:
     await PowerPoint.run(async (context) => {
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
       await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
 
       console.log("Font properties of selected text range:");
       console.log(`\tallCaps: ${textRange.font.allCaps}`);
@@ -16982,6 +17736,34 @@ PowerPoint.ParagraphHorizontalAlignment:enum:
           verticalAlignment: PowerPoint.TextVerticalAlignment.middle
         }
       });
+      await context.sync();
+    });
+PowerPoint.PictureAddOptions:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+
+    // Insert a picture on the current slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+
+      // Use PictureAddOptions to control the position and dimensions (in points).
+      const options: PowerPoint.PictureAddOptions = {
+        left: 100,
+        top: 100,
+        width: 250,
+        height: 180,
+      };
+
+      const picture: PowerPoint.Shape = slide.shapes.addPicture(getSampleImageBase64(), options);
+      picture.name = "SamplePicture";
+
+      // Set accessibility properties on the inserted picture.
+      picture.altTextTitle = "Sample image";
+      picture.altTextDescription = "A cartoon dog image used as a sample picture in this add-in.";
+
       await context.sync();
     });
 PowerPoint.PlaceholderFormat:class:
@@ -17447,6 +18229,72 @@ PowerPoint.Shape#delete:member(1):
 
       await context.sync();
     });
+PowerPoint.Shape#getImageAsBase64:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
+
+
+    // Gets an image of the first selected shape using default options
+
+    // (PNG format at the shape's original size).
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      await context.sync();
+
+      if (shapeCount.value === 0) {
+        console.warn("No shapes are selected. Please select a shape and try again.");
+        return;
+      }
+
+      const shape: PowerPoint.Shape = shapes.getItemAt(0);
+      // Call getImageAsBase64 with no options - returns PNG at the shape's true size.
+      const imageResult: OfficeExtension.ClientResult<string> = shape.getImageAsBase64();
+      await context.sync();
+
+      displayImage(imageResult.value, "Default (original size, PNG)");
+    });
+PowerPoint.Shape#getParentSlide:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
+      await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
+    });
 PowerPoint.Shape#getTable:member(1):
   - >-
     // Link to full sample:
@@ -17479,6 +18327,94 @@ PowerPoint.Shape#getTable:member(1):
           console.log("Table RowCount: " + table.rowCount + " and columnCount: " + table.columnCount);
         } else console.log("Selected shape isn't table.");
       } else console.log("No shape selected.");
+    });
+PowerPoint.Shape#altTextDescription:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+
+    // Reads the accessibility properties of the first selected shape.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      await context.sync();
+
+      if (shapeCount.value === 0) {
+        console.warn("No shapes are selected. Select a shape on the slide and try again.");
+        return;
+      }
+
+      const shape: PowerPoint.Shape = shapes.getItemAt(0);
+      shape.load("id,name,altTextTitle,altTextDescription,isDecorative");
+      await context.sync();
+
+      console.log(`Shape ID: ${shape.id}`);
+      console.log(`Name: "${shape.name}"`);
+      console.log(`Alt text title: "${shape.altTextTitle}"`);
+      console.log(`Alt text description: "${shape.altTextDescription}"`);
+      console.log(`Is decorative: ${shape.isDecorative}`);
+    });
+PowerPoint.Shape#altTextTitle:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+
+    // Insert a picture on the current slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+
+      // Use PictureAddOptions to control the position and dimensions (in points).
+      const options: PowerPoint.PictureAddOptions = {
+        left: 100,
+        top: 100,
+        width: 250,
+        height: 180,
+      };
+
+      const picture: PowerPoint.Shape = slide.shapes.addPicture(getSampleImageBase64(), options);
+      picture.name = "SamplePicture";
+
+      // Set accessibility properties on the inserted picture.
+      picture.altTextTitle = "Sample image";
+      picture.altTextDescription = "A cartoon dog image used as a sample picture in this add-in.";
+
+      await context.sync();
+    });
+PowerPoint.Shape#isDecorative:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+
+    // Toggles the isDecorative property on the first selected shape.
+
+    // When isDecorative is true, screen readers announce the shape as
+
+    // decorative, indicating no alt text is needed.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      await context.sync();
+
+      if (shapeCount.value === 0) {
+        console.warn("No shapes are selected. Select a shape on the slide and try again.");
+        return;
+      }
+
+      const shape: PowerPoint.Shape = shapes.getItemAt(0);
+      shape.load("name,isDecorative");
+      await context.sync();
+
+      const wasDecorative = shape.isDecorative;
+      shape.isDecorative = !wasDecorative;
+      await context.sync();
+
+      console.log(`Shape "${shape.name}" isDecorative changed: ${wasDecorative} → ${shape.isDecorative}`);
     });
 PowerPoint.Shape#setHyperlink:member(1):
   - >-
@@ -17994,6 +18930,34 @@ PowerPoint.ShapeCollection#addLine:member(1):
 
       await context.sync();
     });
+PowerPoint.ShapeCollection#addPicture:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+
+    // Insert a picture on the current slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+
+      // Use PictureAddOptions to control the position and dimensions (in points).
+      const options: PowerPoint.PictureAddOptions = {
+        left: 100,
+        top: 100,
+        width: 250,
+        height: 180,
+      };
+
+      const picture: PowerPoint.Shape = slide.shapes.addPicture(getSampleImageBase64(), options);
+      picture.name = "SamplePicture";
+
+      // Set accessibility properties on the inserted picture.
+      picture.altTextTitle = "Sample image";
+      picture.altTextDescription = "A cartoon dog image used as a sample picture in this add-in.";
+
+      await context.sync();
+    });
 PowerPoint.ShapeCollection#addTable:member(1):
   - >-
     // Link to full sample:
@@ -18289,7 +19253,15 @@ PowerPoint.ShapeFont:class:
     await PowerPoint.run(async (context) => {
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
       await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
 
       console.log("Font properties of selected text range:");
       console.log(`\tallCaps: ${textRange.font.allCaps}`);
@@ -18383,6 +19355,72 @@ PowerPoint.ShapeFontUnderlineStyle:enum:
       braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
 
       return context.sync();
+    });
+PowerPoint.ShapeGetImageFormatType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
+
+
+    // Gets an image of the first selected shape with all options specified:
+
+    // a fixed width, height, and explicit PNG format.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      await context.sync();
+
+      if (shapeCount.value === 0) {
+        console.warn("No shapes are selected. Please select a shape and try again.");
+        return;
+      }
+
+      const shape: PowerPoint.Shape = shapes.getItemAt(0);
+      const options: PowerPoint.ShapeGetImageOptions = {
+        format: PowerPoint.ShapeGetImageFormatType.png,
+        width: 300,
+        height: 150,
+        // Both width and height are specified, so the image is scaled to fit within
+        // 300x150 pixels. The image may not fill both dimensions if the aspect ratios differ.
+      };
+      const imageResult: OfficeExtension.ClientResult<string> = shape.getImageAsBase64(options);
+      await context.sync();
+
+      displayImage(imageResult.value, "PNG, 300x150px");
+    });
+PowerPoint.ShapeGetImageOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
+
+
+    // Gets an image of the first selected shape with all options specified:
+
+    // a fixed width, height, and explicit PNG format.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      await context.sync();
+
+      if (shapeCount.value === 0) {
+        console.warn("No shapes are selected. Please select a shape and try again.");
+        return;
+      }
+
+      const shape: PowerPoint.Shape = shapes.getItemAt(0);
+      const options: PowerPoint.ShapeGetImageOptions = {
+        format: PowerPoint.ShapeGetImageFormatType.png,
+        width: 300,
+        height: 150,
+        // Both width and height are specified, so the image is scaled to fit within
+        // 300x150 pixels. The image may not fill both dimensions if the aspect ratios differ.
+      };
+      const imageResult: OfficeExtension.ClientResult<string> = shape.getImageAsBase64(options);
+      await context.sync();
+
+      displayImage(imageResult.value, "PNG, 300x150px");
     });
 PowerPoint.ShapeGroup:class:
   - >-
@@ -18559,6 +19597,41 @@ PowerPoint.ShapeScopedCollection#getCount:member(1):
       const outputSpan = document.getElementById("outputSpan");
       outputSpan.innerHTML = "";
       outputSpan.innerHTML += finalTable;
+    });
+PowerPoint.ShapeScopedCollection#getItemOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-by-id.yaml
+
+
+    // Uses getItemOrNullObject to find a shape by ID within the selected
+    shapes.
+
+    // If the ID is not found in the selected shapes, the returned object's
+    isNullObject property is true.
+
+    await PowerPoint.run(async (context) => {
+      const shapeId = (document.getElementById("shape-id-input") as HTMLInputElement).value.trim();
+      if (!shapeId) {
+        console.log("Enter a shape ID in the text box first.");
+        return;
+      }
+
+      const selectedShapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+
+      // getItemOrNullObject returns a Shape object without throwing if the ID isn't found.
+      const shape: PowerPoint.Shape = selectedShapes.getItemOrNullObject(shapeId);
+      shape.load("id,name,type");
+      await context.sync();
+
+      if (shape.isNullObject) {
+        console.log(`Shape ID "${shapeId}" was not found in the selected shapes.`);
+      } else {
+        console.log(`Shape found in the selected shapes.`);
+        console.log(`  ID: ${shape.id}`);
+        console.log(`  Name: "${shape.name}"`);
+        console.log(`  Type: ${shape.type}`);
+      }
     });
 PowerPoint.ShapeType:enum:
   - >-
@@ -18759,6 +19832,23 @@ PowerPoint.Slide#setSelectedShapes:member(1):
       slide1.setSelectedShapes([shape1.id, shape2.id]);
       await context.sync();
     });
+PowerPoint.Slide#background:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the background fill type of the first selected slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+      console.log(`Background fill type: ${fillType}`);
+    });
 PowerPoint.Slide#hyperlinks:member:
   - >-
     // Link to full sample:
@@ -18786,6 +19876,541 @@ PowerPoint.Slide#hyperlinks:member:
       console.log(
         `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the first selected shape (ID: ${shape.id}, type: ${shape.type}).`,
       );
+    });
+PowerPoint.Slide#themeColorScheme:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
+
+
+    // Gets the theme color scheme for the first slide and logs all theme color
+    values.
+
+    await PowerPoint.run(async (context) => {
+      const slide = context.presentation.slides.getItemAt(0);
+      const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
+
+      // Queue up getThemeColor calls for each theme color.
+      const colorResults = themeColorNames.map((colorName) => colorScheme.getThemeColor(colorName));
+      await context.sync();
+
+      // Display the results.
+      console.log("Theme colors for slide 1:");
+      themeColorNames.forEach((colorName, index) => {
+        console.log(`  ${colorName}: ${colorResults[index].value}`);
+      });
+    });
+PowerPoint.SlideBackground:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the background fill type of the first selected slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+      console.log(`Background fill type: ${fillType}`);
+    });
+PowerPoint.SlideBackground#fill:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the background fill type of the first selected slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+      console.log(`Background fill type: ${fillType}`);
+    });
+PowerPoint.SlideBackgroundFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the background fill type of the first selected slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+      console.log(`Background fill type: ${fillType}`);
+    });
+PowerPoint.SlideBackgroundFill#getGradientFillOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the gradient fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.gradient) {
+        console.warn("The slide background isn't a gradient fill.");
+        return;
+      }
+
+      const gradientFill: PowerPoint.SlideBackgroundGradientFill = slide.background.fill.getGradientFillOrNullObject();
+      gradientFill.load("type");
+      await context.sync();
+
+      if (gradientFill.isNullObject) {
+        console.warn("The slide background isn't a gradient fill.");
+      } else {
+        console.log("Gradient fill:", `- type: ${gradientFill.type}`);
+      }
+    });
+PowerPoint.SlideBackgroundFill#getPatternFillOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the pattern fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.pattern) {
+        console.warn("The slide background isn't a pattern fill.");
+        return;
+      }
+
+      const patternFill: PowerPoint.SlideBackgroundPatternFill = slide.background.fill.getPatternFillOrNullObject();
+      patternFill.load(["foregroundColor", "backgroundColor", "pattern"]);
+      await context.sync();
+
+      if (patternFill.isNullObject) {
+        console.warn("The slide background isn't a pattern fill.");
+      } else {
+        console.log(
+          "Pattern fill:",
+          `- foregroundColor: ${patternFill.foregroundColor}`,
+          `- backgroundColor: ${patternFill.backgroundColor}`,
+          `- pattern: ${patternFill.pattern}`,
+        );
+      }
+    });
+PowerPoint.SlideBackgroundFill#getPictureOrTextureFillOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the picture or texture fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.pictureOrTexture) {
+        console.warn("The slide background isn't a picture or texture fill.");
+        return;
+      }
+
+      const pictureFill: PowerPoint.SlideBackgroundPictureOrTextureFill =
+        slide.background.fill.getPictureOrTextureFillOrNullObject();
+      pictureFill.load("transparency");
+      await context.sync();
+
+      if (pictureFill.isNullObject) {
+        console.warn("The slide background isn't a picture or texture fill.");
+      } else {
+        console.log("Picture or texture fill:", `- transparency: ${pictureFill.transparency}`);
+      }
+    });
+PowerPoint.SlideBackgroundFill#getSolidFillOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the solid fill properties of the first selected slide's background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.solid) {
+        console.warn("The slide background isn't a solid fill.");
+        return;
+      }
+
+      const solidFill: PowerPoint.SlideBackgroundSolidFill = slide.background.fill.getSolidFillOrNullObject();
+      solidFill.load(["color", "transparency"]);
+      await context.sync();
+
+      if (solidFill.isNullObject) {
+        console.warn("The slide background isn't a solid fill.");
+      } else {
+        console.log("Solid fill:", `- color: ${solidFill.color}`, `- transparency: ${solidFill.transparency}`);
+      }
+    });
+PowerPoint.SlideBackgroundFill#setGradientFill:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a linear gradient
+    fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setGradientFill({
+        type: PowerPoint.SlideBackgroundGradientFillType.linear,
+      } as PowerPoint.SlideBackgroundGradientFillOptions);
+      await context.sync();
+
+      console.log("Background set to linear gradient fill.");
+    });
+PowerPoint.SlideBackgroundFill#setPatternFill:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a diagonal cross
+    pattern fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setPatternFill({
+        foregroundColor: "#1F3864",
+        backgroundColor: "#D6E4F7",
+        pattern: PowerPoint.SlideBackgroundPatternFillType.diagonalCross,
+      } as PowerPoint.SlideBackgroundPatternFillOptions);
+      await context.sync();
+
+      console.log("Background set to diagonal cross pattern fill.");
+    });
+PowerPoint.SlideBackgroundFill#setPictureOrTextureFill:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a picture fill at 60%
+    transparency.
+
+    // Uses a sample image from a Base64-encoded string.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setPictureOrTextureFill({
+        imageBase64: getSampleImageAsBase64String(),
+        transparency: 0.6,
+      } as PowerPoint.SlideBackgroundPictureOrTextureFillOptions);
+      await context.sync();
+
+      console.log("Background set to picture fill (60% transparent).");
+    });
+PowerPoint.SlideBackgroundFill#setSolidFill:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a solid orange fill at
+    20% transparency.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setSolidFill({
+        color: "#FF8C00",
+        transparency: 0.2,
+      } as PowerPoint.SlideBackgroundSolidFillOptions);
+      await context.sync();
+
+      console.log("Background set to solid orange fill (20% transparent).");
+    });
+PowerPoint.SlideBackgroundFillType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the background fill type of the first selected slide.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+      console.log(`Background fill type: ${fillType}`);
+    });
+PowerPoint.SlideBackgroundGradientFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the gradient fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.gradient) {
+        console.warn("The slide background isn't a gradient fill.");
+        return;
+      }
+
+      const gradientFill: PowerPoint.SlideBackgroundGradientFill = slide.background.fill.getGradientFillOrNullObject();
+      gradientFill.load("type");
+      await context.sync();
+
+      if (gradientFill.isNullObject) {
+        console.warn("The slide background isn't a gradient fill.");
+      } else {
+        console.log("Gradient fill:", `- type: ${gradientFill.type}`);
+      }
+    });
+PowerPoint.SlideBackgroundGradientFillOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a linear gradient
+    fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setGradientFill({
+        type: PowerPoint.SlideBackgroundGradientFillType.linear,
+      } as PowerPoint.SlideBackgroundGradientFillOptions);
+      await context.sync();
+
+      console.log("Background set to linear gradient fill.");
+    });
+PowerPoint.SlideBackgroundGradientFillType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a linear gradient
+    fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setGradientFill({
+        type: PowerPoint.SlideBackgroundGradientFillType.linear,
+      } as PowerPoint.SlideBackgroundGradientFillOptions);
+      await context.sync();
+
+      console.log("Background set to linear gradient fill.");
+    });
+PowerPoint.SlideBackgroundPatternFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the pattern fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.pattern) {
+        console.warn("The slide background isn't a pattern fill.");
+        return;
+      }
+
+      const patternFill: PowerPoint.SlideBackgroundPatternFill = slide.background.fill.getPatternFillOrNullObject();
+      patternFill.load(["foregroundColor", "backgroundColor", "pattern"]);
+      await context.sync();
+
+      if (patternFill.isNullObject) {
+        console.warn("The slide background isn't a pattern fill.");
+      } else {
+        console.log(
+          "Pattern fill:",
+          `- foregroundColor: ${patternFill.foregroundColor}`,
+          `- backgroundColor: ${patternFill.backgroundColor}`,
+          `- pattern: ${patternFill.pattern}`,
+        );
+      }
+    });
+PowerPoint.SlideBackgroundPatternFillOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a diagonal cross
+    pattern fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setPatternFill({
+        foregroundColor: "#1F3864",
+        backgroundColor: "#D6E4F7",
+        pattern: PowerPoint.SlideBackgroundPatternFillType.diagonalCross,
+      } as PowerPoint.SlideBackgroundPatternFillOptions);
+      await context.sync();
+
+      console.log("Background set to diagonal cross pattern fill.");
+    });
+PowerPoint.SlideBackgroundPatternFillType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a diagonal cross
+    pattern fill.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setPatternFill({
+        foregroundColor: "#1F3864",
+        backgroundColor: "#D6E4F7",
+        pattern: PowerPoint.SlideBackgroundPatternFillType.diagonalCross,
+      } as PowerPoint.SlideBackgroundPatternFillOptions);
+      await context.sync();
+
+      console.log("Background set to diagonal cross pattern fill.");
+    });
+PowerPoint.SlideBackgroundPictureOrTextureFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the picture or texture fill properties of the first selected slide's
+    background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.pictureOrTexture) {
+        console.warn("The slide background isn't a picture or texture fill.");
+        return;
+      }
+
+      const pictureFill: PowerPoint.SlideBackgroundPictureOrTextureFill =
+        slide.background.fill.getPictureOrTextureFillOrNullObject();
+      pictureFill.load("transparency");
+      await context.sync();
+
+      if (pictureFill.isNullObject) {
+        console.warn("The slide background isn't a picture or texture fill.");
+      } else {
+        console.log("Picture or texture fill:", `- transparency: ${pictureFill.transparency}`);
+      }
+    });
+PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a picture fill at 60%
+    transparency.
+
+    // Uses a sample image from a Base64-encoded string.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setPictureOrTextureFill({
+        imageBase64: getSampleImageAsBase64String(),
+        transparency: 0.6,
+      } as PowerPoint.SlideBackgroundPictureOrTextureFillOptions);
+      await context.sync();
+
+      console.log("Background set to picture fill (60% transparent).");
+    });
+PowerPoint.SlideBackgroundSolidFill:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Gets the solid fill properties of the first selected slide's background.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+      fill.load("type");
+      await context.sync();
+
+      if (fill.type !== PowerPoint.SlideBackgroundFillType.solid) {
+        console.warn("The slide background isn't a solid fill.");
+        return;
+      }
+
+      const solidFill: PowerPoint.SlideBackgroundSolidFill = slide.background.fill.getSolidFillOrNullObject();
+      solidFill.load(["color", "transparency"]);
+      await context.sync();
+
+      if (solidFill.isNullObject) {
+        console.warn("The slide background isn't a solid fill.");
+      } else {
+        console.log("Solid fill:", `- color: ${solidFill.color}`, `- transparency: ${solidFill.transparency}`);
+      }
+    });
+PowerPoint.SlideBackgroundSolidFillOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+    // Sets the background of the first selected slide to a solid orange fill at
+    20% transparency.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      slide.background.fill.setSolidFill({
+        color: "#FF8C00",
+        transparency: 0.2,
+      } as PowerPoint.SlideBackgroundSolidFillOptions);
+      await context.sync();
+
+      console.log("Background set to solid orange fill (20% transparent).");
     });
 PowerPoint.SlideCollection:class:
   - >-
@@ -19112,6 +20737,48 @@ PowerPoint.SlideScopedCollection:class:
       shapes.items.map((shape) => {
         savedShapeSelection.push(shape.id);
       });
+    });
+PowerPoint.SlideScopedCollection#getItemOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-slide-by-id.yaml
+
+
+    // Uses getItemOrNullObject to find a slide by ID within the selected
+    slides.
+
+    // If the ID isn't found in the selected slides, the returned object's
+    isNullObject property is true.
+
+    // If the ID is found in the selected slides, presentation displays that
+    slide.
+
+    await PowerPoint.run(async (context) => {
+      const slideId = (document.getElementById("slide-id-input") as HTMLInputElement).value.trim();
+      if (!slideId) {
+        console.log("Enter a slide ID in the text box first.");
+        return;
+      }
+
+      const selectedSlides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
+
+      // getItemOrNullObject returns a Slide object without throwing if the ID isn't found.
+      const slide: PowerPoint.Slide = selectedSlides.getItemOrNullObject(slideId);
+      slide.load("id");
+      await context.sync();
+
+      if (slide.isNullObject) {
+        console.log(`Slide ID "${slideId}" was not found in the selected slides.`);
+      } else {
+        console.log(`Slide found in the selected slides.`);
+        console.log(`  ID: ${slide.id}`);
+
+        // Switch to the slide.
+        context.presentation.setSelectedSlides([slide.id]);
+        await context.sync();
+
+        console.log(`Switched to the slide - ID: ${slide.id}`);
+      }
     });
 PowerPoint.Table:class:
   - >-
@@ -20171,6 +21838,45 @@ PowerPoint.TextFrame:class:
       textRange10.setSelected();
       await context.sync();
     });
+PowerPoint.TextFrame#getParentShape:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
+      await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
+    });
 PowerPoint.TextFrame#autoSizeSetting:member:
   - >-
     // Link to full sample:
@@ -20214,6 +21920,45 @@ PowerPoint.TextRange:class:
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.font.color = "green";
       await context.sync();
+    });
+PowerPoint.TextRange#getParentTextFrame:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
+      await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
     });
 PowerPoint.TextRange#setSelected:member(1):
   - >-
@@ -20290,7 +22035,15 @@ PowerPoint.TextRange#paragraphFormat:member:
     await PowerPoint.run(async (context) => {
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+
+      const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
+      const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
+      const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
+      parentShape.load("id");
+      parentSlide.load("id");
       await context.sync();
+
+      console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
 
       console.log("Font properties of selected text range:");
       console.log(`\tallCaps: ${textRange.font.allCaps}`);
@@ -20389,6 +22142,77 @@ PowerPoint.TextVerticalAlignment:enum:
       braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
 
       return context.sync();
+    });
+PowerPoint.ThemeColor:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
+
+
+    // Sets custom theme colors on the first slide and updates swatches if
+    present.
+
+    await PowerPoint.run(async (context) => {
+      const slide = context.presentation.slides.getItemAt(0);
+      const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
+
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent1, "#C00000");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent2, "#FF6600");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent3, "#FFCC00");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent4, "#92D050");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent5, "#00B0F0");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent6, "#7030A0");
+      await context.sync();
+
+      await updateSwatches(context, slide);
+      console.log("Custom accent colors applied to slide 1.");
+    });
+PowerPoint.ThemeColorScheme:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
+
+
+    // Resets accent colors on the first slide to default Office theme values
+    and updates swatches if present.
+
+    await PowerPoint.run(async (context) => {
+      const slide = context.presentation.slides.getItemAt(0);
+      const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
+
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent1, "#4472C4");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent2, "#ED7D31");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent3, "#A9D18E");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent4, "#FFC000");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent5, "#5B9BD5");
+      colorScheme.setThemeColor(PowerPoint.ThemeColor.accent6, "#70AD47");
+      await context.sync();
+
+      await updateSwatches(context, slide);
+      console.log("Accent colors reset to default Office theme values on slide 1.");
+    });
+Office.FileType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-file-as-pdf.yaml
+
+
+    Office.context.document.getFileAsync(Office.FileType.Pdf, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error("getFileAsync failed:", result.error);
+      } else {
+        const myFile = result.value;
+        const sliceCount = myFile.sliceCount;
+        console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+        // Get the file slices.
+        const docDataSlices = [];
+        let slicesReceived = 0,
+          gotAllSlices = true;
+        getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
+
+        myFile.closeAsync();
+      }
     });
 Word.Alignment:enum:
   - >-
@@ -20999,6 +22823,28 @@ Word.Body#getOoxml:member(1):
       await context.sync();
 
       console.log("Body contents (OOXML): " + bodyOOXML.value);
+    });
+Word.Body#getRange:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Gets the range covering the entire body and reads list formatting
+    properties.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+      listFormat.load("isSingleList, listType, listLevelNumber, listString, listValue");
+      await context.sync();
+
+      console.log("List format info for the body range:");
+      console.log(`- Is single list: ${listFormat.isSingleList}`);
+      console.log(`- List type: ${listFormat.listType}`);
+      console.log(`- List level number (first paragraph): ${listFormat.listLevelNumber}`);
+      console.log(`- List string (first paragraph): "${listFormat.listString}"`);
+      console.log(`- List value (first paragraph): ${listFormat.listValue}`);
     });
 Word.Body#getTrackedChanges:member(1):
   - >-
@@ -21934,7 +23780,12 @@ Word.BorderLocation:enum:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.BorderType:enum:
   - >-
@@ -21952,7 +23803,12 @@ Word.BorderType:enum:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table's first cell:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table's first cell:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.BorderWidth:enum:
   - >-
@@ -22076,7 +23932,7 @@ Word.CellPaddingLocation:enum:
       await context.sync();
 
       console.log(
-        `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`
+        `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`,
       );
     });
 Word.ChangeTrackingMode:enum:
@@ -24885,6 +26741,29 @@ Word.Document#compare:member(1):
 
       console.log("Differences shown in the current document.");
     });
+Word.Document#exportAsFixedFormat:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+    await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+
+      // Export the current document as a PDF saved in your default location, usually Documents.
+      const filename = `exported-doc-${getCurrentDate()}.pdf`;
+      console.log(`File name: ${filename}`);
+      const options: Word.DocumentExportAsFixedFormatOptions = {
+        item: Word.ExportItem.documentContent,
+        openAfterExport: true,
+        optimizeFor: Word.ExportOptimizeFor.onScreen,
+      };
+
+      // If a file with the same name already exists at the default location, it's silently overwritten.
+      document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
+      await context.sync();
+    });
 Word.Document#getContentControls:member(1):
   - >-
     // Link to full sample:
@@ -25397,6 +27276,32 @@ Word.Document#properties:member:
         await context.sync();
         console.log(JSON.stringify(builtInProperties, null, 4));
     });
+Word.Document#selection:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+
+    // Inserts a formula field without specifying the formula expression.
+
+    // Word determines the formula automatically based on adjacent cell values:
+
+    // if there are values above the cell, it inserts =SUM(ABOVE);
+
+    // if there are values to the left, it inserts =SUM(LEFT).
+
+    // The selection must be in a table cell with at least one adjacent cell
+    that contains a value.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertFormulaOptions = {
+        numberFormat: "#,##0.00",
+      };
+      context.document.selection.insertFormula(options);
+      await context.sync();
+
+      console.log("Inserted formula (auto-determined by Word) with number format.");
+    });
 Word.Document#settings:member:
   - >-
     // Link to full sample:
@@ -25484,6 +27389,29 @@ Word.DocumentCreated:class:
       const externalDocBodyText = externalDocBody.text;
       const currentDocBody: Word.Body = context.document.body;
       currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
+      await context.sync();
+    });
+Word.DocumentExportAsFixedFormatOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+    await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+
+      // Export the current document as a PDF saved in your default location, usually Documents.
+      const filename = `exported-doc-${getCurrentDate()}.pdf`;
+      console.log(`File name: ${filename}`);
+      const options: Word.DocumentExportAsFixedFormatOptions = {
+        item: Word.ExportItem.documentContent,
+        openAfterExport: true,
+        optimizeFor: Word.ExportOptimizeFor.onScreen,
+      };
+
+      // If a file with the same name already exists at the default location, it's silently overwritten.
+      document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
       await context.sync();
     });
 Word.DocumentProperties:class:
@@ -25718,6 +27646,75 @@ Word.EventType:enum:
         console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`, event.ids);
       });
     }
+Word.ExportFormat:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+    await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+
+      // Export the current document as a PDF saved in your default location, usually Documents.
+      const filename = `exported-doc-${getCurrentDate()}.pdf`;
+      console.log(`File name: ${filename}`);
+      const options: Word.DocumentExportAsFixedFormatOptions = {
+        item: Word.ExportItem.documentContent,
+        openAfterExport: true,
+        optimizeFor: Word.ExportOptimizeFor.onScreen,
+      };
+
+      // If a file with the same name already exists at the default location, it's silently overwritten.
+      document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
+      await context.sync();
+    });
+Word.ExportItem:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+    await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+
+      // Export the current document as a PDF saved in your default location, usually Documents.
+      const filename = `exported-doc-${getCurrentDate()}.pdf`;
+      console.log(`File name: ${filename}`);
+      const options: Word.DocumentExportAsFixedFormatOptions = {
+        item: Word.ExportItem.documentContent,
+        openAfterExport: true,
+        optimizeFor: Word.ExportOptimizeFor.onScreen,
+      };
+
+      // If a file with the same name already exists at the default location, it's silently overwritten.
+      document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
+      await context.sync();
+    });
+Word.ExportOptimizeFor:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+
+    await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+
+      // Export the current document as a PDF saved in your default location, usually Documents.
+      const filename = `exported-doc-${getCurrentDate()}.pdf`;
+      console.log(`File name: ${filename}`);
+      const options: Word.DocumentExportAsFixedFormatOptions = {
+        item: Word.ExportItem.documentContent,
+        openAfterExport: true,
+        optimizeFor: Word.ExportOptimizeFor.onScreen,
+      };
+
+      // If a file with the same name already exists at the default location, it's silently overwritten.
+      document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
+
+      await context.sync();
+    });
 Word.Field:class:
   - >-
     // Link to full sample:
@@ -26053,6 +28050,31 @@ Word.FieldType:enum:
       } else {
         console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
       }
+    });
+Word.FontBias:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-symbol.yaml
+
+
+    // Inserts a Wingdings checkmark (ANSI character 252) at the selection.
+
+    // The font option selects the symbol font, unicode: false uses the ANSI
+    code point,
+
+    // and bias: Word.FontBias.standard ensures the standard (non-East-Asian)
+    glyph is used.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertSymbolOptions = {
+        font: "Wingdings",
+        unicode: false,
+        bias: Word.FontBias.standard,
+      };
+      context.document.selection.insertSymbol(252, options);
+      await context.sync();
+
+      console.log("Inserted Wingdings checkmark (character 252).");
     });
 Word.GeometricShapeType:enum:
   - >-
@@ -26603,6 +28625,71 @@ Word.ListCollection:class:
         console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
       }
     });
+Word.ListFormat:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Gets the range covering the entire body and reads list formatting
+    properties.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+      listFormat.load("isSingleList, listType, listLevelNumber, listString, listValue");
+      await context.sync();
+
+      console.log("List format info for the body range:");
+      console.log(`- Is single list: ${listFormat.isSingleList}`);
+      console.log(`- List type: ${listFormat.listType}`);
+      console.log(`- List level number (first paragraph): ${listFormat.listLevelNumber}`);
+      console.log(`- List string (first paragraph): "${listFormat.listString}"`);
+      console.log(`- List value (first paragraph): ${listFormat.listValue}`);
+    });
+Word.ListFormat#countNumberedItems:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Counts all numbered items across every level using numberType:
+    AllNumbers.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+
+      const options: Word.ListFormatCountNumberedItemsOptions = {
+        numberType: Word.NumberType.allNumbers,
+      };
+      const count: OfficeExtension.ClientResult<number> = listFormat.countNumberedItems(options);
+      await context.sync();
+
+      console.log(`Total numbered items (all levels): ${count.value}`);
+    });
+Word.ListFormatCountNumberedItemsOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Counts only the level-2 (sub-level) numbered paragraphs in the body
+    range.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+
+      const options: Word.ListFormatCountNumberedItemsOptions = {
+        level: 2,
+        numberType: Word.NumberType.paragraph,
+      };
+      const count: OfficeExtension.ClientResult<number> = listFormat.countNumberedItems(options);
+      await context.sync();
+
+      console.log(`Level-2 item count: ${count.value}`);
+    });
 Word.ListItem:class:
   - >-
     // Link to full sample:
@@ -27052,6 +29139,47 @@ Word.NoteItemType:enum:
       await context.sync();
 
       console.log(`Body type of note: ${item.body.type}`);
+    });
+Word.NumberType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Counts only the level-1 (top-level) numbered paragraphs in the body
+    range.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+
+      const options: Word.ListFormatCountNumberedItemsOptions = {
+        level: 1,
+        numberType: Word.NumberType.paragraph,
+      };
+      const count: OfficeExtension.ClientResult<number> = listFormat.countNumberedItems(options);
+      await context.sync();
+
+      console.log(`Level-1 item count: ${count.value}`);
+    });
+Word.OperationUnit:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+    // Gets the range of the next word relative to the current selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionNextOptions = {
+        unit: Word.OperationUnit.word,
+        count: 1,
+      };
+      const nextRange: Word.Range = context.document.selection.getNextRange(options);
+      nextRange.load("text");
+      await context.sync();
+
+      console.log(`Next word: "${nextRange.text}"`);
     });
 Word.OutlineLevel:enum:
   - >-
@@ -28516,6 +30644,28 @@ Word.Range#footnotes:member:
 
       console.log("Number of footnotes in the selected range: " + footnotes.items.length);
     });
+Word.Range#listFormat:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+    // Gets the range covering the entire body and reads list formatting
+    properties.
+
+    await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const listFormat: Word.ListFormat = bodyRange.listFormat;
+      listFormat.load("isSingleList, listType, listLevelNumber, listString, listValue");
+      await context.sync();
+
+      console.log("List format info for the body range:");
+      console.log(`- Is single list: ${listFormat.isSingleList}`);
+      console.log(`- List type: ${listFormat.listType}`);
+      console.log(`- List level number (first paragraph): ${listFormat.listLevelNumber}`);
+      console.log(`- List string (first paragraph): "${listFormat.listString}"`);
+      console.log(`- List value (first paragraph): ${listFormat.listValue}`);
+    });
 Word.Range#parentContentControl:member:
   - >-
     // Link to full sample:
@@ -28794,6 +30944,153 @@ Word.SectionCollection:class:
 
       console.log("Inserted section break on next even page.");
     });
+Word.Selection:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+
+    // Inserts a formula field without specifying the formula expression.
+
+    // Word determines the formula automatically based on adjacent cell values:
+
+    // if there are values above the cell, it inserts =SUM(ABOVE);
+
+    // if there are values to the left, it inserts =SUM(LEFT).
+
+    // The selection must be in a table cell with at least one adjacent cell
+    that contains a value.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertFormulaOptions = {
+        numberFormat: "#,##0.00",
+      };
+      context.document.selection.insertFormula(options);
+      await context.sync();
+
+      console.log("Inserted formula (auto-determined by Word) with number format.");
+    });
+Word.Selection#getNextRange:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+    // Gets the range of the next paragraph relative to the current selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionNextOptions = {
+        unit: Word.OperationUnit.paragraph,
+        count: 1,
+      };
+      const nextRange: Word.Range = context.document.selection.getNextRange(options);
+      nextRange.load("text");
+      await context.sync();
+
+      console.log(`Next paragraph: "${nextRange.text.trim()}"`);
+    });
+Word.Selection#getPreviousRange:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+    // Gets the range of the previous sentence relative to the current
+    selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionPreviousOptions = {
+        unit: Word.OperationUnit.sentence,
+        count: 1,
+      };
+      const previousRange: Word.Range = context.document.selection.getPreviousRange(options);
+      previousRange.load("text");
+      await context.sync();
+
+      console.log(`Previous sentence: "${previousRange.text.trim()}"`);
+    });
+Word.Selection#insertFormula:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+
+    // Inserts a custom formula at the selection.
+
+    // The selection must be in a table cell.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertFormulaOptions = {
+        formula: "=AVERAGE(ABOVE)",
+        numberFormat: "0.00",
+      };
+      context.document.selection.insertFormula(options);
+      await context.sync();
+
+      console.log("Inserted =AVERAGE(ABOVE) with decimal format.");
+    });
+Word.Selection#insertSymbol:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-symbol.yaml
+
+
+    // Inserts the copyright symbol © (Unicode U+00A9) at the selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertSymbolOptions = {
+        unicode: true,
+      };
+      context.document.selection.insertSymbol(0x00a9, options);
+      await context.sync();
+
+      console.log("Inserted copyright symbol ©.");
+    });
+Word.SelectionInsertFormulaOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+
+    // Inserts a SUM formula with a currency number format at the selection.
+
+    // The selection must be in a table cell.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertFormulaOptions = {
+        formula: "=SUM(ABOVE)",
+        numberFormat: "$#,##0.00",
+      };
+      context.document.selection.insertFormula(options);
+      await context.sync();
+
+      console.log("Inserted =SUM(ABOVE) with currency format.");
+    });
+Word.SelectionInsertSymbolOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-symbol.yaml
+
+
+    // Inserts a Wingdings checkmark (ANSI character 252) at the selection.
+
+    // The font option selects the symbol font, unicode: false uses the ANSI
+    code point,
+
+    // and bias: Word.FontBias.standard ensures the standard (non-East-Asian)
+    glyph is used.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionInsertSymbolOptions = {
+        font: "Wingdings",
+        unicode: false,
+        bias: Word.FontBias.standard,
+      };
+      context.document.selection.insertSymbol(252, options);
+      await context.sync();
+
+      console.log("Inserted Wingdings checkmark (character 252).");
+    });
 Word.SelectionMode:enum:
   - >-
     // Link to full sample:
@@ -28805,6 +31102,44 @@ Word.SelectionMode:enum:
       context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
 
       await context.sync();
+    });
+Word.SelectionNextOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+    // Gets the range of the next word relative to the current selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionNextOptions = {
+        unit: Word.OperationUnit.word,
+        count: 1,
+      };
+      const nextRange: Word.Range = context.document.selection.getNextRange(options);
+      nextRange.load("text");
+      await context.sync();
+
+      console.log(`Next word: "${nextRange.text}"`);
+    });
+Word.SelectionPreviousOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+    // Gets the range of the previous word relative to the current selection.
+
+    await Word.run(async (context) => {
+      const options: Word.SelectionPreviousOptions = {
+        unit: Word.OperationUnit.word,
+        count: 1,
+      };
+      const previousRange: Word.Range = context.document.selection.getPreviousRange(options);
+      previousRange.load("text");
+      await context.sync();
+
+      console.log(`Previous word: "${previousRange.text}"`);
     });
 Word.Setting:class:
   - >-
@@ -30470,7 +32805,12 @@ Word.Table#getBorder:member(1):
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.Table#getCell:member(1):
   - >-
@@ -30502,7 +32842,7 @@ Word.Table#getCellPadding:member(1):
       await context.sync();
 
       console.log(
-        `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`
+        `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`,
       );
     });
 Word.Table#alignment:member:
@@ -30518,7 +32858,12 @@ Word.Table#alignment:member:
       firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table:`,
+        `- Alignment of the table within the containing page column: ${firstTable.alignment}`,
+        `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`,
+      );
     });
 Word.Table#horizontalAlignment:member:
   - >-
@@ -30533,7 +32878,12 @@ Word.Table#horizontalAlignment:member:
       firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table:`,
+        `- Alignment of the table within the containing page column: ${firstTable.alignment}`,
+        `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`,
+      );
     });
 Word.Table#rows:member:
   - >-
@@ -30550,7 +32900,11 @@ Word.Table#rows:member:
       firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first row:`,
+        `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`,
+      );
     });
 Word.Table#verticalAlignment:member:
   - >-
@@ -30565,7 +32919,12 @@ Word.Table#verticalAlignment:member:
       firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table:`,
+        `- Alignment of the table within the containing page column: ${firstTable.alignment}`,
+        `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`,
+      );
     });
 Word.Table:class:
   - >-
@@ -30600,7 +32959,12 @@ Word.TableBorder:class:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableBorder#color:member:
   - >-
@@ -30617,7 +32981,12 @@ Word.TableBorder#color:member:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableBorder#type:member:
   - >-
@@ -30634,7 +33003,12 @@ Word.TableBorder#type:member:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableBorder#width:member:
   - >-
@@ -30651,7 +33025,12 @@ Word.TableBorder#width:member:
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableCell:class:
   - >-
@@ -30669,7 +33048,11 @@ Word.TableCell:class:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableCell#getBorder:member(2):
   - >-
@@ -30687,7 +33070,12 @@ Word.TableCell#getBorder:member(2):
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table's first cell:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table's first cell:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableCell#getCellPadding:member(2):
   - >-
@@ -30706,7 +33094,7 @@ Word.TableCell#getCellPadding:member(2):
       await context.sync();
 
       console.log(
-        `Cell padding details about the ${cellPaddingLocation} border of the first table's first cell: ${cellPadding.value} points`
+        `Cell padding details about the ${cellPaddingLocation} border of the first table's first cell: ${cellPadding.value} points`,
       );
     });
 Word.TableCell#horizontalAlignment:member:
@@ -30725,7 +33113,11 @@ Word.TableCell#horizontalAlignment:member:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableCell#verticalAlignment:member:
   - >-
@@ -30743,7 +33135,11 @@ Word.TableCell#verticalAlignment:member:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableCellCollection:class:
   - >-
@@ -30761,7 +33157,11 @@ Word.TableCellCollection:class:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableCollection:class:
   - >-
@@ -30776,7 +33176,12 @@ Word.TableCollection:class:
       firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table:`,
+        `- Alignment of the table within the containing page column: ${firstTable.alignment}`,
+        `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`,
+      );
     });
 Word.TableCollection#getFirst:member(1):
   - >-
@@ -30809,7 +33214,11 @@ Word.TableRow:class:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableRow#getBorder:member(1):
   - >-
@@ -30828,7 +33237,12 @@ Word.TableRow#getBorder:member(1):
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table's first row:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableRow#getCellPadding:member(1):
   - >-
@@ -30847,7 +33261,7 @@ Word.TableRow#getCellPadding:member(1):
       await context.sync();
 
       console.log(
-        `Cell padding details about the ${cellPaddingLocation} border of the first table's first row: ${cellPadding.value} points`
+        `Cell padding details about the ${cellPaddingLocation} border of the first table's first row: ${cellPadding.value} points`,
       );
     });
 Word.TableRow#cells:member:
@@ -30866,7 +33280,11 @@ Word.TableRow#cells:member:
       firstCell.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first cell:`,
+        `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+        `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      );
     });
 Word.TableRowCollection:class:
   - >-
@@ -30883,7 +33301,11 @@ Word.TableRowCollection:class:
       firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first row:`,
+        `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`,
+      );
     });
 Word.TableRowCollection#getFirst:member(1):
   - >-
@@ -30902,7 +33324,12 @@ Word.TableRowCollection#getFirst:member(1):
       border.load(["type", "color", "width"]);
       await context.sync();
 
-      console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+      console.log(
+        `Details about the ${borderLocation} border of the first table's first row:`,
+        `- Color: ${border.color}`,
+        `- Type: ${border.type}`,
+        `- Width: ${border.width} points`,
+      );
     });
 Word.TableStyle:class:
   - >-
@@ -31280,7 +33707,11 @@ Word.VerticalAlignment:enum:
       firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
       await context.sync();
 
-      console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+      console.log(
+        `Details about the alignment of the first table's first row:`,
+        `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`,
+        `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`,
+      );
     });
 Word.Window:class:
   - >-

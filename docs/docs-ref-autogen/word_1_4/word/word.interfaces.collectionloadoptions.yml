@@ -4,7 +4,25 @@ uid: word!Word.Interfaces.CollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
+  - [Word.CommentReplyCollection](/javascript/api/word/word.commentreplycollection): [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+  - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+  - [Word.CustomXmlPartScopedCollection](/javascript/api/word/word.customxmlpartscopedcollection): [load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
+  - [Word.FieldCollection](/javascript/api/word/word.fieldcollection): [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+  - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +32,7 @@ properties:
     uid: word!Word.Interfaces.CollectionLoadOptions#$skip:member
     package: word!
     fullName: $skip
-    summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If `top` is specified, the selection of result
-      will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -30,9 +45,7 @@ properties:
     uid: word!Word.Interfaces.CollectionLoadOptions#$top:member
     package: word!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
 
     isPreview: false

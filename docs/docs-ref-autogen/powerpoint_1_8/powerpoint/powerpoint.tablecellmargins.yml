@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.TableCellMargins:interface
 package: powerpoint!
 fullName: PowerPoint.TableCellMargins
 summary: Represents the margins of a table cell.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [margins](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-margins-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +20,7 @@ properties:
     package: powerpoint!
     fullName: bottom
     summary: Specifies the bottom margin in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: left
     summary: Specifies the left margin in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +46,7 @@ properties:
     package: powerpoint!
     fullName: right
     summary: Specifies the right margin in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +59,7 @@ properties:
     package: powerpoint!
     fullName: top
     summary: Specifies the top margin in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

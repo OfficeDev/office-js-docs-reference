@@ -175,6 +175,10 @@ items:
             uid: outlook!Office.MessageCompose:interface
           - name: MessageDecryptEventCompletedOptions
             uid: outlook!Office.MessageDecryptEventCompletedOptions:interface
+          - name: MessageForm
+            uid: outlook!Office.MessageForm:interface
+          - name: MessageFormAttachment
+            uid: outlook!Office.MessageFormAttachment:interface
           - name: MessageRead
             uid: outlook!Office.MessageRead:interface
           - name: NotificationMessageAction
@@ -406,6 +410,8 @@ items:
                 uid: office!Office.NodeReplacedEventArgs:interface
               - name: OfficeTheme
                 uid: office!Office.OfficeTheme:interface
+              - name: OnReadyOptions
+                uid: office!Office.OnReadyOptions:interface
               - name: RangeCoordinates
                 uid: office!Office.RangeCoordinates:interface
               - name: RangeFormatConfiguration
@@ -926,6 +932,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.5 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1-5-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.4 requirement set
             href: >-

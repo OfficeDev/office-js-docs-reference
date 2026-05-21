@@ -3,10 +3,11 @@ name: Visio.Interfaces.DocumentData
 uid: visio!Visio.Interfaces.DocumentData:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentData
-summary: >-
-  An interface describing the data returned by calling `document.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.Document](/javascript/api/visio/visio.document): [toJSON](/javascript/api/visio/visio.document#visio-visio-document-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: application
     summary: Represents a Visio application instance that contains this document.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: visio!
     fullName: pages
     summary: Represents a collection of pages associated with the document.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +44,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the DocumentView object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

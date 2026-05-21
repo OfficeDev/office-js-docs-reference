@@ -4,9 +4,45 @@ uid: excel!Excel.CommentAddedEventArgs:interface
 package: excel!
 fullName: Excel.CommentAddedEventArgs
 summary: Provides information about the comments that raised the comment added event.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+
+
+  #### Used by
+
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [onAdded](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-onadded-member)
+  #### Examples
+
+  ```TypeScript
+  async function registerEventHandler() {
+      await Excel.run(async (context) => {
+          // Register the onAdded comment event handler.
+          const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+          comments.onAdded.add(commentAdded);
+          await context.sync();
+      });
+  }
+
+  async function commentAdded(event: Excel.CommentAddedEventArgs) {
+      // Retrieve the added comment using the comment ID.
+      // Note: This function assumes only a single comment is added at a time.
+      await Excel.run(async (context) => {
+          const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+          // Load the added comment's data.
+          addedComment.load(["content", "authorName", "creationDate"]);
+          await context.sync();
+
+          // Print out the added comment's data.
+          console.log(`A comment was added:`);
+          console.log(`    ID: ${event.commentDetails[0].commentId}`);
+          console.log(`    Comment content: ${addedComment.content}`);
+          console.log(`    Comment author: ${addedComment.authorName}`);
+          console.log(`    Creation date: ${addedComment.creationDate}`);
+      });
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +52,8 @@ properties:
     uid: excel!Excel.CommentAddedEventArgs#commentDetails:member
     package: excel!
     fullName: commentDetails
-    summary: >-
-      Gets the `CommentDetail` array that contains the comment ID and IDs of its
-      related replies.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the `CommentDetail` array that contains the comment ID and IDs of its related replies.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -35,10 +66,7 @@ properties:
     package: excel!
     fullName: source
     summary: Specifies the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +79,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +92,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the event happened.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

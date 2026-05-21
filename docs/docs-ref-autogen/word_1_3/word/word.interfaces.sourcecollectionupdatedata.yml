@@ -3,9 +3,7 @@ name: Word.Interfaces.SourceCollectionUpdateData
 uid: word!Word.Interfaces.SourceCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.SourceCollectionUpdateData
-summary: >-
-  An interface for updating data on the `SourceCollection` object, for use in
-  `sourceCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `SourceCollection` object, for use in `sourceCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

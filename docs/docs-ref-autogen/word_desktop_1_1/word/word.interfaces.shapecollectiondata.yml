@@ -3,9 +3,7 @@ name: Word.Interfaces.ShapeCollectionData
 uid: word!Word.Interfaces.ShapeCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ShapeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

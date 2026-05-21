@@ -3,10 +3,11 @@ name: Word.Interfaces.ContentControlListItemCollectionData
 uid: word!Word.Interfaces.ContentControlListItemCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `contentControlListItemCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `contentControlListItemCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [toJSON](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.ContentControlListItemData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlListItemData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.ContentControlListItemData:interface" />[]

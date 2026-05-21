@@ -1,7 +1,7 @@
 ---
 title: LaunchEvents in the manifest file
 description: The LaunchEvents element configures your add-in to activate based on supported events.
-ms.date: 07/02/2025
+ms.date: 02/27/2026
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +26,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
   </LaunchEvents>
-  <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
+  <!-- Identifies the runtime to be used. The resid value must match the resid value of the Runtime element that represents the browser runtime. -->
   <SourceLocation resid="WebViewRuntime.Url"/>
 </ExtensionPoint>
 ```
