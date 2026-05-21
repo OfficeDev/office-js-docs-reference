@@ -7,9 +7,38 @@ summary: Contains a collection of [Word.CoauthoringUpdate](xref:word!Word.Coauth
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [updates](/javascript/api/word/word.coauthoring#word-word-coauthoring-updates-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/get-coauthoring-updates.yaml
+
+  // Gets the ranges affected by the most recent coauthoring updates merged into the document.
+  await Word.run(async (context) => {
+    const updates: Word.CoauthoringUpdateCollection = context.document.coauthoring.updates;
+    updates.load("items/range");
+    await context.sync();
+
+    if (updates.items.length === 0) {
+      console.log("No recent coauthoring updates found.");
+      return;
+    }
+
+    console.log(`Found ${updates.items.length} recent update(s).`);
+
+    const ranges = updates.items.map((u) => u.range);
+    ranges.forEach((r) => r.load("text"));
+    await context.sync();
+
+    ranges.forEach((range, i) => {
+      console.log(`  Update ${i + 1}: "${range.text}"`);
+    });
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

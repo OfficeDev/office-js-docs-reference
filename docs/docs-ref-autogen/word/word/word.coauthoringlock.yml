@@ -59,7 +59,32 @@ properties:
     package: word!
     fullName: type
     summary: Gets a `CoauthoringLockType` value that represents the lock type.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-locks.yaml
+
+      // Gets all coauthoring locks in the document.
+      await Word.run(async (context) => {
+        const locks: Word.CoauthoringLockCollection = context.document.coauthoring.locks;
+        locks.load("items/type");
+        await context.sync();
+
+        if (locks.items.length === 0) {
+          console.log("No locks found in the document.");
+          return;
+        }
+
+        console.log(`Found ${locks.items.length} lock(s) in the document:`);
+        for (let i = 0; i < locks.items.length; i++) {
+          const lock: Word.CoauthoringLock = locks.items[i];
+          console.log(`  Lock ${i + 1}: type = ${lock.type}`);
+        }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +227,31 @@ methods:
     package: word!
     fullName: unlock()
     summary: Removes this lock, even if it belongs to a different user.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-locks.yaml
+
+      // Removes the first coauthoring lock found in the document.
+      await Word.run(async (context) => {
+        const locks: Word.CoauthoringLockCollection = context.document.coauthoring.locks;
+        locks.load("items");
+        await context.sync();
+
+        if (locks.items.length === 0) {
+          console.log("No locks found to remove.");
+          return;
+        }
+
+        locks.items[0].unlock();
+        await context.sync();
+
+        console.log("First lock removed.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

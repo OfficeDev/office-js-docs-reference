@@ -377,7 +377,25 @@ properties:
     package: word!
     fullName: coauthoring
     summary: Gets a `Coauthoring` object for managing coauthoring in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+      // Gets the coauthoring capabilities and pending-update status of the document.
+      await Word.run(async (context) => {
+        const coauthoring: Word.Coauthoring = context.document.coauthoring;
+        coauthoring.load("canCoauthor,canMerge,pendingUpdates");
+        await context.sync();
+
+        console.log("Can coauthor:", coauthoring.canCoauthor);
+        console.log("Can merge:", coauthoring.canMerge);
+        console.log("Pending updates:", coauthoring.pendingUpdates);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
