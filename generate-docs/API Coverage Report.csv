@@ -7226,7 +7226,7 @@ office,Office.Binding,"removeHandlerAsync(eventType, options, callback)",Method,
 office,Office.Binding,"removeHandlerAsync(eventType, callback)",Method,Fine,true
 office,Office.Binding,"setDataAsync(data, options, callback)",Method,Fine,true
 office,Office.Binding,"setDataAsync(data, callback)",Method,Fine,true
-office,Office.BindingDataChangedEventArgs,N/A,Interface,Fine,false
+office,Office.BindingDataChangedEventArgs,N/A,Interface,Fine,true
 office,Office.BindingDataChangedEventArgs,"binding",Property,Excellent,false
 office,Office.BindingDataChangedEventArgs,"type",Property,Excellent,false
 office,Office.Bindings,N/A,Interface,Fine,false
