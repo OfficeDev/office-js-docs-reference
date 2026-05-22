@@ -7,11 +7,35 @@ summary: Represents a coauthor in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)
   - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [me](/javascript/api/word/word.coauthoring#word-word-coauthoring-me-member)
   - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [owner](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-owner-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+  // Gets all coauthors currently editing the document.
+  await Word.run(async (context) => {
+    const authors: Word.CoauthorCollection = context.document.coauthoring.authors;
+    authors.load("items/name,items/emailAddress,items/isMe");
+    await context.sync();
+
+    if (authors.items.length === 0) {
+      console.log("No other coauthors are currently editing this document.");
+      return;
+    }
+
+    console.log(`${authors.items.length} coauthor(s) editing this document:`);
+    authors.items.forEach((author: Word.Coauthor) => {
+      console.log(`  ${author.name} (${author.emailAddress})${author.isMe ? " — that's you" : ""}`);
+    });
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -74,7 +98,41 @@ properties:
     package: word!
     fullName: locks
     summary: Gets a `CoauthoringLockCollection` object that represents the locks in the document that are associated with this coauthor.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+      // Gets the locks held by each coauthor in the document.
+      await Word.run(async (context) => {
+        const authors: Word.CoauthorCollection = context.document.coauthoring.authors;
+        authors.load("items/name");
+        await context.sync();
+
+        if (authors.items.length === 0) {
+          console.log("No coauthors are currently editing this document.");
+          return;
+        }
+
+        authors.items.forEach((author: Word.Coauthor) => {
+          author.locks.load("items/type");
+        });
+        await context.sync();
+
+        authors.items.forEach((author: Word.Coauthor) => {
+          const lockCount = author.locks.items.length;
+          if (lockCount === 0) {
+            console.log(`${author.name}: no locks`);
+          } else {
+            const types = author.locks.items.map((l) => l.type).join(", ");
+            console.log(`${author.name}: ${lockCount} lock(s) — ${types}`);
+          }
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

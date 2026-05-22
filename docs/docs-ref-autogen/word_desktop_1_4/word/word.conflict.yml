@@ -60,7 +60,31 @@ methods:
     package: word!
     fullName: accept()
     summary: Accepts the user's change and removes the conflict.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-conflicts.yaml
+
+      // Accepts the user's change for the first conflict and removes it.
+      await Word.run(async (context) => {
+        const conflicts: Word.ConflictCollection = context.document.coauthoring.conflicts;
+        conflicts.load("items");
+        await context.sync();
+
+        if (conflicts.items.length === 0) {
+          console.log("No conflicts to accept.");
+          return;
+        }
+
+        conflicts.items[0].accept();
+        await context.sync();
+
+        console.log("First conflict accepted (your change kept).");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +160,31 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the user's change, removes the conflict, and accepts the server copy of the change for the conflict.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthoring-conflicts.yaml
+
+      // Rejects the user's change for the first conflict and keeps the server copy.
+      await Word.run(async (context) => {
+        const conflicts: Word.ConflictCollection = context.document.coauthoring.conflicts;
+        conflicts.load("items");
+        await context.sync();
+
+        if (conflicts.items.length === 0) {
+          console.log("No conflicts to reject.");
+          return;
+        }
+
+        conflicts.items[0].reject();
+        await context.sync();
+
+        console.log("First conflict rejected (server copy kept).");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
