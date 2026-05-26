@@ -5,9 +5,36 @@ package: office!
 fullName: Office.BindingDataChangedEventArgs
 summary: Provides information about the binding that raised the DataChanged event.
 remarks: |-
+
+
   #### Used by
 
   - [Office.RemoveHandlerOptions](/javascript/api/office/office.removehandleroptions): [handler](/javascript/api/office/office.removehandleroptions#office-office-removehandleroptions-handler-member)
+  #### Examples
+
+  ```TypeScript
+  // When data in a binding changes, the handler receives a BindingDataChangedEventArgs object
+  // containing the binding that changed and the event type.
+  function addDataChangeHandler() {
+      Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+              asyncResult.value.addHandlerAsync(Office.EventType.BindingDataChanged, onDataChanged);
+          }
+      });
+  }
+
+  function onDataChanged(eventArgs: Office.BindingDataChangedEventArgs) {
+      console.log("Event type: " + eventArgs.type);
+      console.log("Binding ID: " + eventArgs.binding.id);
+      
+      // Refresh data from the binding
+      eventArgs.binding.getDataAsync( { coercionType: Office.CoercionType.Text }, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("Updated data: " + asyncResult.value);
+          }
+      });
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
