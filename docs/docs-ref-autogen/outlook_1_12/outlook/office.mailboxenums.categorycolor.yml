@@ -14,6 +14,7 @@ remarks: |-
   Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors. This has now been fixed starting in Version 16.78. If you've recently updated your Outlook client, you need to adjust the category colors in your add-in to match the updated preset values.
 
 
+
   #### Used by
 
   - [Office.CategoryDetails](/javascript/api/outlook/office.categorydetails): [color](/javascript/api/outlook/office.categorydetails#outlook-office-categorydetails-color-member)

@@ -27,6 +27,7 @@ remarks: |-
   For more information, see [Retirement of entity-based contextual Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))

@@ -28,7 +28,7 @@ remarks: |-
       console.log("Binding ID: " + eventArgs.binding.id);
       
       // Refresh data from the binding
-      eventArgs.binding.getDataAsync(Office.CoercionType.Text, function (asyncResult) {
+      eventArgs.binding.getDataAsync( { coercionType: Office.CoercionType.Text }, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
               console.log("Updated data: " + asyncResult.value);
           }

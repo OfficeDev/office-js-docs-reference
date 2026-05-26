@@ -7,7 +7,6 @@ summary: Provides an option for the data format.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [setSelectedDataAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-setselecteddataasync-member(1))

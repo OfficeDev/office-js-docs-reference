@@ -15,6 +15,7 @@ remarks: |-
   **Important**: This enum can only be used to assign values to the [moveItemTo](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member) property of the [event.completed](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) method. If you're on an Outlook on Windows version that only supports the `postProcessingAction` property, you must assign it different string values. For a list of supported string values, see [Office.SpamReportingEventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.SpamReportingEventCompletedOptions](/javascript/api/outlook/office.spamreportingeventcompletedoptions): [moveItemTo](/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-moveitemto-member)

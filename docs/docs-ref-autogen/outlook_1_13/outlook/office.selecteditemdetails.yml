@@ -12,6 +12,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
 
 
+
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [getSelectedItemsAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-getselecteditemsasync-member(1))
