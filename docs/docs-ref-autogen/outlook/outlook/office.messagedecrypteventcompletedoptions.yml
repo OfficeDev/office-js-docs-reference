@@ -3,7 +3,7 @@ name: Office.MessageDecryptEventCompletedOptions
 uid: outlook!Office.MessageDecryptEventCompletedOptions:interface
 package: outlook!
 fullName: Office.MessageDecryptEventCompletedOptions
-summary: Specifies the behavior of an [encryption add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption) after it completes processing an [OnMessageRead](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields) event.
+summary: Specifies the behavior of an [encryption add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption) after it completes processing an [OnMessageDecrypt](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#outlook-events) event.
 remarks: |-
   [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
@@ -19,8 +19,8 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-  function onMessageReadHandler(event) {
+  // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+  function onMessageDecryptHandler(event) {
       // Your code to decrypt the contents of a message would appear here.
       ...
 
@@ -85,7 +85,7 @@ properties:
     uid: outlook!Office.MessageDecryptEventCompletedOptions#allowEvent:member
     package: outlook!
     fullName: allowEvent
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler, this value indicates if the `OnMessageRead` event should continue to run or be canceled. If the `allowEvent` property is set to `true`<!-- -->, the decrypted contents of the message is displayed.
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler, this value indicates if the `OnMessageDecrypt` event should continue to run or be canceled. If the `allowEvent` property is set to `true`<!-- -->, the decrypted contents of the message is displayed.
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
