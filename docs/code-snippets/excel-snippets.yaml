@@ -1,3 +1,44 @@
+Excel.createWorkbook:function(1):
+  - |-
+    const myFile = <HTMLInputElement>document.getElementById("file");
+    const reader = new FileReader();
+
+    reader.onload = (event) => {
+        Excel.run((context) => {
+        // Remove the metadata before the base64-encoded string.
+        const startIndex = reader.result.toString().indexOf("base64,");
+        const mybase64 = reader.result.toString().substr(startIndex + 7);
+
+        Excel.createWorkbook(mybase64);
+        return context.sync();
+        });
+    };
+
+    // Read in the file as a data URL so we can parse the base64-encoded string.
+    reader.readAsDataURL(myFile.files[0]);
+Excel.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
+Excel.Application#calculate:member(2):
+  - |-
+    await Excel.run(async (context) => {
+        context.workbook.application.calculate('Full');
+        await context.sync();
+    });
+Excel.Application#load:member(2):
+  - |-
+    await Excel.run(async (context) => {
+        const application = context.workbook.application;
+        application.load('calculationMode');
+        await context.sync();
+
+        console.log(application.calculationMode);
+    });
 Excel.ArrayCellValue:interface:
   - |-
     const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -40,47 +81,6 @@ Excel.ArrayCellValue:interface:
     };
 
     sheet.getCell(0,0).valuesAsJson = [[myEntity]];
-Excel.createWorkbook:function(1):
-  - |-
-    const myFile = <HTMLInputElement>document.getElementById("file");
-    const reader = new FileReader();
-
-    reader.onload = (event) => {
-        Excel.run((context) => {
-        // Remove the metadata before the base64-encoded string.
-        const startIndex = reader.result.toString().indexOf("base64,");
-        const mybase64 = reader.result.toString().substr(startIndex + 7);
-
-        Excel.createWorkbook(mybase64);
-        return context.sync();
-        });
-    };
-
-    // Read in the file as a data URL so we can parse the base64-encoded string.
-    reader.readAsDataURL(myFile.files[0]);
-Excel.run:function(1):
-  - |-
-    // *.run methods automatically create an OfficeExtension.ClientRequestContext
-    // object to work with the Office file.
-    await Excel.run(async (context: Excel.RequestContext) => {
-      const workbook = context.workbook;
-      // Interact with the Excel workbook...
-    });
-Excel.Application#calculate:member(2):
-  - |-
-    await Excel.run(async (context) => {
-        context.workbook.application.calculate('Full');
-        await context.sync();
-    });
-Excel.Application#load:member(2):
-  - |-
-    await Excel.run(async (context) => {
-        const application = context.workbook.application;
-        application.load('calculationMode');
-        await context.sync();
-
-        console.log(application.calculationMode);
-    });
 Excel.Binding#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 

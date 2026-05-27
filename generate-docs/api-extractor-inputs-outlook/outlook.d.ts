@@ -12188,7 +12188,7 @@ export declare namespace Office {
     }
     /**
      * Specifies the behavior of an {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | encryption add-in} after it completes processing an
-     * {@link https://learn.microsoft.com/javascript/api/office/office.eventtype#fields | OnMessageRead} event.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#outlook-events | OnMessageDecrypt} event.
      *
      * @remarks
      *
@@ -12203,7 +12203,7 @@ export declare namespace Office {
     export interface MessageDecryptEventCompletedOptions {
         /**
          * When you use the {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1) | completed method} to signal completion of an event handler,
-         * this value indicates if the `OnMessageRead` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted contents of the message is displayed.
+         * this value indicates if the `OnMessageDecrypt` event should continue to run or be canceled. If the `allowEvent` property is set to `true`, the decrypted contents of the message is displayed.
          *
          * @remarks
          *

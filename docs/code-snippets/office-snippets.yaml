@@ -990,6 +990,29 @@ Office.Bindings#releaseByIdAsync:member(2):
     function write(message) {
         document.getElementById('message').innerText += message;
     }
+Office.BindingDataChangedEventArgs:interface:
+  - |-
+    // When data in a binding changes, the handler receives a BindingDataChangedEventArgs object
+    // containing the binding that changed and the event type.
+    function addDataChangeHandler() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                asyncResult.value.addHandlerAsync(Office.EventType.BindingDataChanged, onDataChanged);
+            }
+        });
+    }
+
+    function onDataChanged(eventArgs: Office.BindingDataChangedEventArgs) {
+        console.log("Event type: " + eventArgs.type);
+        console.log("Binding ID: " + eventArgs.binding.id);
+        
+        // Refresh data from the binding
+        eventArgs.binding.getDataAsync( { coercionType: Office.CoercionType.Text }, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("Updated data: " + asyncResult.value);
+            }
+        });
+    }
 Office.BindingSelectionChangedEventArgs#columnCount:member:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.

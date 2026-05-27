@@ -21,8 +21,8 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-  function onMessageReadHandler(event) {
+  // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+  function onMessageDecryptHandler(event) {
       // Your code to decrypt the contents of a message would appear here.
       ...
 

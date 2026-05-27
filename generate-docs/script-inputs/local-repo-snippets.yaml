@@ -165,6 +165,47 @@ CustomFunctions.Invocation#parameterAddresses:member:
       ];
       return addresses;
     }
+Excel.createWorkbook:function(1):
+  - |-
+    const myFile = <HTMLInputElement>document.getElementById("file");
+    const reader = new FileReader();
+
+    reader.onload = (event) => {
+        Excel.run((context) => {
+        // Remove the metadata before the base64-encoded string.
+        const startIndex = reader.result.toString().indexOf("base64,");
+        const mybase64 = reader.result.toString().substr(startIndex + 7);
+
+        Excel.createWorkbook(mybase64);
+        return context.sync();
+        });
+    };
+
+    // Read in the file as a data URL so we can parse the base64-encoded string.
+    reader.readAsDataURL(myFile.files[0]);
+Excel.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
+Excel.Application#calculate:member(2):
+  - |-
+    await Excel.run(async (context) => {
+        context.workbook.application.calculate('Full');
+        await context.sync();
+    });
+Excel.Application#load:member(2):
+  - |-
+    await Excel.run(async (context) => {
+        const application = context.workbook.application;
+        application.load('calculationMode');
+        await context.sync();
+
+        console.log(application.calculationMode);
+    });
 Excel.ArrayCellValue:interface:
   - |-
     const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -207,47 +248,6 @@ Excel.ArrayCellValue:interface:
     };
 
     sheet.getCell(0,0).valuesAsJson = [[myEntity]];
-Excel.createWorkbook:function(1):
-  - |-
-    const myFile = <HTMLInputElement>document.getElementById("file");
-    const reader = new FileReader();
-
-    reader.onload = (event) => {
-        Excel.run((context) => {
-        // Remove the metadata before the base64-encoded string.
-        const startIndex = reader.result.toString().indexOf("base64,");
-        const mybase64 = reader.result.toString().substr(startIndex + 7);
-
-        Excel.createWorkbook(mybase64);
-        return context.sync();
-        });
-    };
-
-    // Read in the file as a data URL so we can parse the base64-encoded string.
-    reader.readAsDataURL(myFile.files[0]);
-Excel.run:function(1):
-  - |-
-    // *.run methods automatically create an OfficeExtension.ClientRequestContext
-    // object to work with the Office file.
-    await Excel.run(async (context: Excel.RequestContext) => {
-      const workbook = context.workbook;
-      // Interact with the Excel workbook...
-    });
-Excel.Application#calculate:member(2):
-  - |-
-    await Excel.run(async (context) => {
-        context.workbook.application.calculate('Full');
-        await context.sync();
-    });
-Excel.Application#load:member(2):
-  - |-
-    await Excel.run(async (context) => {
-        const application = context.workbook.application;
-        application.load('calculationMode');
-        await context.sync();
-
-        console.log(application.calculationMode);
-    });
 Excel.Binding#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -2827,6 +2827,29 @@ Office.Bindings#releaseByIdAsync:member(2):
     // Function that writes to a div with id='message' on the page.
     function write(message) {
         document.getElementById('message').innerText += message;
+    }
+Office.BindingDataChangedEventArgs:interface:
+  - |-
+    // When data in a binding changes, the handler receives a BindingDataChangedEventArgs object
+    // containing the binding that changed and the event type.
+    function addDataChangeHandler() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                asyncResult.value.addHandlerAsync(Office.EventType.BindingDataChanged, onDataChanged);
+            }
+        });
+    }
+
+    function onDataChanged(eventArgs: Office.BindingDataChangedEventArgs) {
+        console.log("Event type: " + eventArgs.type);
+        console.log("Binding ID: " + eventArgs.binding.id);
+        
+        // Refresh data from the binding
+        eventArgs.binding.getDataAsync( { coercionType: Office.CoercionType.Text }, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("Updated data: " + asyncResult.value);
+            }
+        });
     }
 Office.BindingSelectionChangedEventArgs#columnCount:member:
   - |-
@@ -8838,8 +8861,8 @@ Office.Contact:interface:
     */
 Office.DecryptedMessageAttachment:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -8896,8 +8919,8 @@ Office.DecryptedMessageAttachment:interface:
     }
 Office.DecryptedMessageBody:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -9657,8 +9680,8 @@ Office.MessageCompose#setSelectedDataAsync:member(1):
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageDecryptEventCompletedOptions:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
