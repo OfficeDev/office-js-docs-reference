@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the Excel application
 remarks: |-
 
 
-
   #### Used by
 
   - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(1))

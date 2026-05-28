@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Annotation](/javascript/api/word/word.annotation): [state](/javascript/api/word/word.annotation#word-word-annotation-state-member)

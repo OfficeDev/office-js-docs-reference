@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [onAdded](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-onadded-member)

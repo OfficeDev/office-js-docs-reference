@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [control](/javascript/api/excel/excel.range#excel-excel-range-control-member)

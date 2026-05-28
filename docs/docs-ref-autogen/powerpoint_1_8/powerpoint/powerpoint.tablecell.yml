@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [getCellOrNullObject](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getcellornullobject-member(1))

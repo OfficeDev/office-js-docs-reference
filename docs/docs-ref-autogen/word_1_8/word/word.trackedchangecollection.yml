@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))

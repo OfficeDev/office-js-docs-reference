@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Selection](/javascript/api/word/word.selection): [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)), [extend](/javascript/api/word/word.selection#word-word-selection-extend-member(1))

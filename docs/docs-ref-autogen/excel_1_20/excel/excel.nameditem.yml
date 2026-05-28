@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [add](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-add-member(1)), [addFormulaLocal](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-addformulalocal-member(1)), [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)

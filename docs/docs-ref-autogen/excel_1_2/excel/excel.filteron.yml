@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.FilterCriteria](/javascript/api/excel/excel.filtercriteria): [filterOn](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-filteron-member)

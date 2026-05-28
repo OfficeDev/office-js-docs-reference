@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ListLevelCollection](/javascript/api/word/word.listlevelcollection): [getFirst](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-items-member)

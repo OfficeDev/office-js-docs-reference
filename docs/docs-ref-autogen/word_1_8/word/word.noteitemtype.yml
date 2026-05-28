@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.NoteItem](/javascript/api/word/word.noteitem): [type](/javascript/api/word/word.noteitem#word-word-noteitem-type-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Comment](/javascript/api/excel/excel.comment): [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
