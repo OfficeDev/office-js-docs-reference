@@ -1363,8 +1363,31 @@ Office.ContextInformation#platform:member:
     console.log("Platform: " + contextInfo.platform);
 Office.ContextInformation#version:member:
   - |-
-    const contextInfo = Office.context.diagnostics;
-    console.log("Office version: " + contextInfo.version);
+    // Checks whether the Office on Windows version meets a feature's minimum requirements.
+    const clientVersion = Office.context.diagnostics.version;
+
+    // In Office on Windows, the version property is in the format "16.0.<build>.<revision>".
+    // In this example, Version 2603 (Build 19822.20000) is the minimum version required for the feature.
+    // 19822 is the build number and 20000 is the revision number.
+    const minBuildRevision = "19822.20000";
+
+    const [, , clientBuild, clientRevision] = clientVersion.split(".");
+    const [minBuild, minRevision] = minBuildRevision.split(".");
+
+    const clientBuildNumber = parseInt(clientBuild, 10);
+    const clientRevisionNumber = parseInt(clientRevision, 10);
+    const minBuildNumber = parseInt(minBuild, 10);
+    const minRevisionNumber = parseInt(minRevision, 10);
+
+    if (
+        clientBuildNumber > minBuildNumber ||
+        (clientBuildNumber === minBuildNumber && clientRevisionNumber >= minRevisionNumber)
+    ) {
+        console.log("Office version meets the minimum requirements.");
+        // Implement the feature-specific actions here.
+    } else {
+        console.log("Office version doesn't meet the minimum requirements.");
+    }
 Office.ContextMenu#requestUpdate:member(1):
   - |-
     // Change the availability of custom buttons on the context menu.
