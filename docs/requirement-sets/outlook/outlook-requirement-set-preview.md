@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 02/05/2026
+ms.date: 05/27/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -29,6 +29,7 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
+- Added the `OnAttachmentAction` event to run operations when an attachment is opened, saved, or downloaded. For more information, see [Check an attachment before it's opened, saved, or downloaded (preview)](/office/dev/add-ins/outlook/on-attachment-action-event).
 - Added an event and objects to support [decrypting a message and its attachments](/office/dev/add-ins/outlook/encryption-decryption).
 - Extended support for the `contentId` property to get the content identifier of an inline attachment in classic Outlook on Windows.
 - Added a method to check if Exchange Web Services (EWS) tokens are supported in an organization.
