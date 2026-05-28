@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [getFirst](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)

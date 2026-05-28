@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Style](/javascript/api/word/word.style): [borders](/javascript/api/word/word.style#word-word-style-borders-member)

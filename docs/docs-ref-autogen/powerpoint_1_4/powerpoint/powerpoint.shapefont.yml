@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [font](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-font-member)

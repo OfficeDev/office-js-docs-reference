@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the Word application.
 remarks: |-
 
 
-
   #### Used by
 
   - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1)), [sections](/javascript/api/word/word.document#word-word-document-sections-member)

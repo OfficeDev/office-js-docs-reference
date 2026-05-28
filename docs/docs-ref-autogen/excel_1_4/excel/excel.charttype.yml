@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))

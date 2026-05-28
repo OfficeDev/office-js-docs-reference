@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Section](/javascript/api/word/word.section): [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1)), [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))

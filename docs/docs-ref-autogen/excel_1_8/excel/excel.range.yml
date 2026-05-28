@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation): [formula1](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula1-member), [formula2](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula2-member)

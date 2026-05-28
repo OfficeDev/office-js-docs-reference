@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getParentSlideLayout](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayout-member(1)), [getParentSlideLayoutOrNullObject](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getparentslidelayoutornullobject-member(1))

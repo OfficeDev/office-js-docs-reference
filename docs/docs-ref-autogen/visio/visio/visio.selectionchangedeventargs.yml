@@ -8,6 +8,7 @@ remarks: |-
   [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
 
 
+
   #### Used by
 
   - [Visio.Document](/javascript/api/visio/visio.document): [onSelectionChanged](/javascript/api/visio/visio.document#visio-visio-document-onselectionchanged-member)

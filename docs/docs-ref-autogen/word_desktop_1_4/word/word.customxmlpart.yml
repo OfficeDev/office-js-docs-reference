@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)

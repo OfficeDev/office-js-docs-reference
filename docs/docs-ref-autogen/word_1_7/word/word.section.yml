@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [parentSection](/javascript/api/word/word.body#word-word-body-parentsection-member), [parentSectionOrNullObject](/javascript/api/word/word.body#word-word-body-parentsectionornullobject-member)

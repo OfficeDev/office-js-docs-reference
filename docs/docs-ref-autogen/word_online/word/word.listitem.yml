@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [listItem](/javascript/api/word/word.paragraph#word-word-paragraph-listitem-member), [listItemOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-listitemornullobject-member)

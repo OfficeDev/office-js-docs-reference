@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [relativeHorizontalSize](/javascript/api/word/word.shape#word-word-shape-relativehorizontalsize-member), [relativeVerticalSize](/javascript/api/word/word.shape#word-word-shape-relativeverticalsize-member)
