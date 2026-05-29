@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Canvas](/javascript/api/word/word.canvas): [shape](/javascript/api/word/word.canvas#word-word-canvas-shape-member)

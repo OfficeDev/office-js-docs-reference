@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.TableCell](/javascript/api/word/word.tablecell): [parentRow](/javascript/api/word/word.tablecell#word-word-tablecell-parentrow-member)

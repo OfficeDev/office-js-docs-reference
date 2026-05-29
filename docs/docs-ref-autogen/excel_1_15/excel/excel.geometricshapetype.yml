@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Shape](/javascript/api/excel/excel.shape): [geometricShapeType](/javascript/api/excel/excel.shape#excel-excel-shape-geometricshapetype-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.NoteCollection](/javascript/api/excel/excel.notecollection): [add](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-add-member(1)), [getItem](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.notecollection#excel-excel-notecollection-items-member)

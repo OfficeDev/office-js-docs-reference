@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [getStyles](/javascript/api/word/word.document#word-word-document-getstyles-member(1))

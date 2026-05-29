@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Pane](/javascript/api/word/word.pane): [pages](/javascript/api/word/word.pane#word-word-pane-pages-member), [pagesEnclosingViewport](/javascript/api/word/word.pane#word-word-pane-pagesenclosingviewport-member)

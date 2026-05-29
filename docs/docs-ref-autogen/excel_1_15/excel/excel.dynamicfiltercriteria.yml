@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Filter](/javascript/api/excel/excel.filter): [applyDynamicFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applydynamicfilter-member(1))
