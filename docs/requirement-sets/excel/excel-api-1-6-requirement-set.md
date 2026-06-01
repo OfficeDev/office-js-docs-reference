@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.6
 description: Details about the ExcelApi 1.6 requirement set.
-ms.date: 11/09/2020
+ms.date: 01/02/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---

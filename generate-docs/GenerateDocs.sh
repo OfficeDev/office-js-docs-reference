@@ -909,4 +909,10 @@ pushd scripts
 node postprocessor.js
 popd
 
+echo ""
+echo "Updating ms.date in requirement-set pages..."
+pushd scripts
+node update-requirement-set-dates.js
+popd
+
 ./node_modules/.bin/reference-coverage-tester ./configs/reference-coverage-tester.json

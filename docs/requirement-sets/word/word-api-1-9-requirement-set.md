@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.9
 description: Details about the WordApi 1.9 requirement set.
-ms.date: 11/18/2024
+ms.date: 10/14/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---

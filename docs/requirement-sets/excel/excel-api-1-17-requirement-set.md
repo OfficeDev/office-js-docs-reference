@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.17
 description: Details about the ExcelApi 1.17 requirement set.
-ms.date: 05/22/2023
+ms.date: 01/02/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
