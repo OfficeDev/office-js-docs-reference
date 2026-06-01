@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.7
 description: Details about the WordApi 1.7 requirement set.
-ms.date: 01/16/2025
+ms.date: 10/14/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
