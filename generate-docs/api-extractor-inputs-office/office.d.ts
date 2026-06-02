@@ -4876,6 +4876,11 @@ export declare namespace Office {
         platform: Office.PlatformType;
         /**
          * Gets the version of Office on which the add-in is running.
+         *
+         * @remarks
+         * In Office on Windows, the value returned by the `version` property uses the format 16.0.\<build\>.\<revision\>.
+         * To compare a version shown as Version xxxx (Build xxxxx.xxxxx) with the `version` value, use the full build number (\<build\>.\<revision\>).
+         * For example, in Version 2603 (Build 19822.20000), use 19822.20000 for comparison.
          */
         version: string;
     }
