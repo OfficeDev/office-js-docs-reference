@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.8
 description: Details about the ExcelApi 1.8 requirement set.
-ms.date: 09/08/2025
+ms.date: 09/22/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
