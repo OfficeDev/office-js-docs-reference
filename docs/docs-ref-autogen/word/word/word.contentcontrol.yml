@@ -286,7 +286,45 @@ properties:
     package: word!
     fullName: datePickerContentControl
     summary: Gets the date picker-related data if the content control's [Word.ContentControlType](xref:word!Word.ContentControlType:enum) is `datePicker`<!-- -->. It's `null` otherwise.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-date-picker-content-control.yaml
+
+      // Gets and logs the properties of the first date picker content control.
+      await Word.run(async (context) => {
+        let contentControls = context.document.getContentControls({
+          types: [Word.ContentControlType.datePicker]
+        });
+        contentControls.load("items");
+
+        await context.sync();
+
+        if (contentControls.items.length === 0) {
+          console.warn("No date picker content controls found in the document.");
+          return;
+        }
+
+        const firstControl = contentControls.items[0];
+        firstControl.load("datePickerContentControl");
+
+        await context.sync();
+
+        const datePicker: Word.DatePickerContentControl = firstControl.datePickerContentControl;
+        datePicker.load("dateCalendarType, dateDisplayFormat, dateDisplayLocale, dateStorageFormat");
+
+        await context.sync();
+
+        console.log("Date picker content control properties:");
+        console.log("  Calendar type: " + datePicker.dateCalendarType);
+        console.log("  Display format: " + datePicker.dateDisplayFormat);
+        console.log("  Display locale: " + datePicker.dateDisplayLocale);
+        console.log("  Storage format: " + datePicker.dateStorageFormat);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

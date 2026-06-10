@@ -10634,7 +10634,7 @@ powerpoint,PowerPoint.ParagraphHorizontalAlignment,"justifyLow",EnumField,Excell
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"left",EnumField,Great,false
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"right",EnumField,Great,false
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"thaiDistributed",EnumField,Great,false
-powerpoint,PowerPoint.PictureAddOptions,N/A,Interface,Great,false
+powerpoint,PowerPoint.PictureAddOptions,N/A,Interface,Great,true
 powerpoint,PowerPoint.PictureAddOptions,"height",Property,Excellent,false
 powerpoint,PowerPoint.PictureAddOptions,"left",Property,Excellent,false
 powerpoint,PowerPoint.PictureAddOptions,"top",Property,Excellent,false
@@ -12578,7 +12578,7 @@ word,Word.BuiltInStyleName,"toc7",EnumField,Great,false
 word,Word.BuiltInStyleName,"toc8",EnumField,Great,false
 word,Word.BuiltInStyleName,"toc9",EnumField,Great,false
 word,Word.BuiltInStyleName,"tocHeading",EnumField,Great,false
-word,Word.CalendarType,N/A,Enum,Fine,false
+word,Word.CalendarType,N/A,Enum,Fine,true
 word,Word.CalendarType,"arabic",EnumField,Great,false
 word,Word.CalendarType,"hebrew",EnumField,Great,false
 word,Word.CalendarType,"japan",EnumField,Great,false
@@ -12975,7 +12975,7 @@ word,Word.ContentControl,"color",Property,Excellent,false
 word,Word.ContentControl,"comboBoxContentControl",Property,Excellent,true
 word,Word.ContentControl,"contentControls",Property,Great,false
 word,Word.ContentControl,"context",Property,Excellent,false
-word,Word.ContentControl,"datePickerContentControl",Property,Excellent,false
+word,Word.ContentControl,"datePickerContentControl",Property,Excellent,true
 word,Word.ContentControl,"dropDownListContentControl",Property,Excellent,true
 word,Word.ContentControl,"endnotes",Property,Great,false
 word,Word.ContentControl,"fields",Property,Great,false
@@ -13070,7 +13070,7 @@ word,Word.ContentControlDataChangedEventArgs,N/A,Interface,Fine,true
 word,Word.ContentControlDataChangedEventArgs,"eventType",Property,Great,false
 word,Word.ContentControlDataChangedEventArgs,"ids",Property,Good,false
 word,Word.ContentControlDataChangedEventArgs,"source",Property,Excellent,false
-word,Word.ContentControlDateStorageFormat,N/A,Enum,Great,false
+word,Word.ContentControlDateStorageFormat,N/A,Enum,Great,true
 word,Word.ContentControlDateStorageFormat,"date",EnumField,Great,false
 word,Word.ContentControlDateStorageFormat,"dateTime",EnumField,Great,false
 word,Word.ContentControlDateStorageFormat,"text",EnumField,Great,false
@@ -13442,14 +13442,14 @@ word,Word.CustomXmlValidationErrorType,"schemaGenerated",EnumField,Excellent,fal
 word,Word.DateLanguage,N/A,Enum,Good,false
 word,Word.DateLanguage,"bidirectional",EnumField,Great,false
 word,Word.DateLanguage,"latin",EnumField,Great,false
-word,Word.DatePickerContentControl,N/A,Class,Fine,false
+word,Word.DatePickerContentControl,N/A,Class,Fine,true
 word,Word.DatePickerContentControl,"appearance",Property,Great,false
 word,Word.DatePickerContentControl,"color",Property,Excellent,false
 word,Word.DatePickerContentControl,"context",Property,Excellent,false
-word,Word.DatePickerContentControl,"dateCalendarType",Property,Excellent,false
-word,Word.DatePickerContentControl,"dateDisplayFormat",Property,Great,false
-word,Word.DatePickerContentControl,"dateDisplayLocale",Property,Excellent,false
-word,Word.DatePickerContentControl,"dateStorageFormat",Property,Excellent,false
+word,Word.DatePickerContentControl,"dateCalendarType",Property,Excellent,true
+word,Word.DatePickerContentControl,"dateDisplayFormat",Property,Great,true
+word,Word.DatePickerContentControl,"dateDisplayLocale",Property,Excellent,true
+word,Word.DatePickerContentControl,"dateStorageFormat",Property,Excellent,true
 word,Word.DatePickerContentControl,"id",Property,Great,false
 word,Word.DatePickerContentControl,"isTemporary",Property,Excellent,false
 word,Word.DatePickerContentControl,"level",Property,Excellent,false
@@ -15154,7 +15154,7 @@ word,Word.JustificationMode,"expand",EnumField,Great,false
 word,Word.Kana,N/A,Enum,Fine,false
 word,Word.Kana,"hiragana",EnumField,Great,false
 word,Word.Kana,"katakana",EnumField,Great,false
-word,Word.LanguageId,N/A,Enum,Good,false
+word,Word.LanguageId,N/A,Enum,Good,true
 word,Word.LanguageId,"afrikaans",EnumField,Great,false
 word,Word.LanguageId,"albanian",EnumField,Great,false
 word,Word.LanguageId,"amharic",EnumField,Great,false

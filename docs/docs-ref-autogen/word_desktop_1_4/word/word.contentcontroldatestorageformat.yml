@@ -7,9 +7,22 @@ summary: Date storage formats for [Word.DatePickerContentControl](xref:word!Word
 remarks: |-
   [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+
+
   #### Used by
 
   - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [dateStorageFormat](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datestorageformat-member)
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-date-picker-content-control.yaml
+
+  function changeStorageFormat(datePicker: Word.DatePickerContentControl) {
+      // Set the storage format to DateTime, which means the date and time will be stored in ISO format (e.g., "2024-12-31T23:59:00Z"). 
+      // The time portion will be ignored when getting/setting the value of the content control, since it's a date picker.
+      datePicker.dateStorageFormat = Word.ContentControlDateStorageFormat.dateTime;
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

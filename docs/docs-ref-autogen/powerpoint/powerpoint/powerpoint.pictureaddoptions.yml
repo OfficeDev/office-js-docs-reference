@@ -7,9 +7,38 @@ summary: Represents the available options when adding a picture (represented by 
 remarks: |-
   [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
+
+
   #### Used by
 
   - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [addPicture](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addpicture-member(1))
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-picture.yaml
+
+  // Insert a picture on the current slide.
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+
+    // Use PictureAddOptions to control the position and dimensions (in points).
+    const options: PowerPoint.PictureAddOptions = {
+      left: 100,
+      top: 100,
+      width: 250,
+      height: 180,
+    };
+
+    const picture: PowerPoint.Shape = slide.shapes.addPicture(getSampleImageBase64(), options);
+    picture.name = "SamplePicture";
+
+    // Set accessibility properties on the inserted picture.
+    picture.altTextTitle = "Sample image";
+    picture.altTextDescription = "A cartoon dog image used as a sample picture in this add-in.";
+
+    await context.sync();
+  });
+  ```
 
 isPreview: true
 isDeprecated: false
