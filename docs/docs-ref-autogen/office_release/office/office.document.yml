@@ -2632,13 +2632,13 @@ methods:
       // 4. Display the value on the add-in's page.
       function gotoBinding() {
           // Create a new table binding for the selected table.
-          Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                    showMessage("Action failed with error: " + asyncResult.error.message);
-                }
-                else {
-                    showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
-                }
+          Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
+              }
           });
 
           // Go to binding by id.

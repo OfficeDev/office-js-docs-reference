@@ -5,9 +5,113 @@ package: office!
 fullName: Office.GoToType
 summary: Specifies the type of place or object to navigate to.
 remarks: |-
+
+
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [goToByIdAsync](/javascript/api/office/office.document#office-office-document-gotobyidasync-member(1))
+  #### Examples
+
+  ```TypeScript
+  // Go to a binding by id (Word and Excel)
+  // The following example shows how to:
+  // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
+  // 2. Specify that binding as the binding to go to.
+  // 3. Pass an anonymous callback function that returns the status of the operation
+  //    to the callback parameter of the goToByIdAsync method.
+  // 4. Display the value on the add-in's page.
+  function gotoBinding() {
+      // Create a new table binding for the selected table.
+      Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              showMessage("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
+          }
+      });
+
+      // Go to binding by id.
+      Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              showMessage("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              showMessage("Navigation successful");
+          }
+      });
+  }
+
+  // Go to a table in a spreadsheet (Excel)
+  // The following example shows how to:
+  // 1. Specify a table by name as the table to go to.
+  // 2. Pass an anonymous callback function that returns the status of the operation
+  //    to the callback parameter of the goToByIdAsync method.
+  // 3. Display the value on the add-in's page.
+  function goToTable() {
+      Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              showMessage("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              showMessage("Navigation successful");
+          }
+      });
+  }
+
+  // Go to the currently selected slide by id (PowerPoint)
+  // The following example shows how to:
+  // 1. Get the id of the currently selected slides using the getSelectedDataAsync method.
+  // 2. Specify the returned id as the slide to go to.
+  // 3. Pass an anonymous callback function that returns the status of the operation
+  //    to the callback parameter of the goToByIdAsync method.
+  // 4. Display the value of the stringified JSON object returned by asyncResult.value,
+  //    which contains information about the selected slides, on the add-in's page.
+  let firstSlideId = 0;
+  function gotoSelectedSlide() {
+      //Get currently selected slide's id
+      Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              app.showNotification("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              firstSlideId = asyncResult.value.slides[0].id;
+              app.showNotification(JSON.stringify(asyncResult.value));
+          }
+      });
+      //Go to slide by id.
+      Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              app.showNotification("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              app.showNotification("Navigation successful");
+          }
+      });
+  }
+
+  // Go to slide by index (PowerPoint)
+  // The following example shows how to:
+  // 1. Specify the index of the first, last, previous, or next slide to go to.
+  // 2. Pass an anonymous callback function that returns the status of the operation
+  //    to the callback parameter of the goToByIdAsync method.
+  // 3. Display the value on the add-in's page.
+  function goToSlideByIndex() {
+      const goToFirst = Office.Index.First;
+      const goToLast = Office.Index.Last;
+      const goToPrevious = Office.Index.Previous;
+      const goToNext = Office.Index.Next;
+
+      Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              showMessage("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              showMessage("Navigation successful");
+          }
+      });
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

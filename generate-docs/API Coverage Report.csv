@@ -7250,7 +7250,7 @@ office,Office.BindingSelectionChangedEventArgs,"rowCount",Property,Excellent,tru
 office,Office.BindingSelectionChangedEventArgs,"startColumn",Property,Excellent,true
 office,Office.BindingSelectionChangedEventArgs,"startRow",Property,Excellent,true
 office,Office.BindingSelectionChangedEventArgs,"type",Property,Excellent,false
-office,Office.BindingType,N/A,Enum,Good,false
+office,Office.BindingType,N/A,Enum,Good,true
 office,Office.BindingType,"Matrix",EnumField,Great,false
 office,Office.BindingType,"Table",EnumField,Excellent,false
 office,Office.BindingType,"Text",EnumField,Great,false
@@ -7506,7 +7506,7 @@ office,Office.GetSelectedDataOptions,"valueFormat",Property,Excellent,false
 office,Office.GoToByIdOptions,N/A,Interface,Fine,false
 office,Office.GoToByIdOptions,"asyncContext",Property,Excellent,false
 office,Office.GoToByIdOptions,"selectionMode",Property,Excellent,false
-office,Office.GoToType,N/A,Enum,Good,false
+office,Office.GoToType,N/A,Enum,Good,true
 office,Office.GoToType,"Binding",EnumField,Great,false
 office,Office.GoToType,"Index",EnumField,Great,false
 office,Office.GoToType,"NamedItem",EnumField,Great,false
