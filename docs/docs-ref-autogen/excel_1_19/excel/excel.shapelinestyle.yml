@@ -8,7 +8,6 @@ remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
-
   #### Used by
 
   - [Excel.ShapeLineFormat](/javascript/api/excel/excel.shapelineformat): [style](/javascript/api/excel/excel.shapelineformat#excel-excel-shapelineformat-style-member)
