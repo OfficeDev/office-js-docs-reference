@@ -7559,14 +7559,14 @@ office,Office.IPromiseConstructor,"resolve()",Method,Fine,false
 office,Office.MatrixBinding,N/A,Interface,Fine,false
 office,Office.MatrixBinding,"columnCount",Property,Great,true
 office,Office.MatrixBinding,"rowCount",Property,Great,true
-office,Office.NodeDeletedEventArgs,N/A,Interface,Fine,false
+office,Office.NodeDeletedEventArgs,N/A,Interface,Fine,true
 office,Office.NodeDeletedEventArgs,"isUndoRedo",Property,Great,false
 office,Office.NodeDeletedEventArgs,"oldNextSibling",Property,Excellent,false
 office,Office.NodeDeletedEventArgs,"oldNode",Property,Excellent,false
-office,Office.NodeInsertedEventArgs,N/A,Interface,Fine,false
+office,Office.NodeInsertedEventArgs,N/A,Interface,Fine,true
 office,Office.NodeInsertedEventArgs,"isUndoRedo",Property,Great,false
 office,Office.NodeInsertedEventArgs,"newNode",Property,Excellent,false
-office,Office.NodeReplacedEventArgs,N/A,Interface,Fine,false
+office,Office.NodeReplacedEventArgs,N/A,Interface,Fine,true
 office,Office.NodeReplacedEventArgs,"isUndoRedo",Property,Excellent,false
 office,Office.NodeReplacedEventArgs,"newNode",Property,Excellent,false
 office,Office.NodeReplacedEventArgs,"oldNode",Property,Excellent,false

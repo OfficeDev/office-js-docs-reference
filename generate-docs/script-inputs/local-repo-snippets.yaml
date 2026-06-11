@@ -6044,6 +6044,57 @@ Office.MatrixBinding#rowCount:member:
     function write(message) {
         document.getElementById('message').innerText += message;
     }
+Office.NodeDeletedEventArgs:interface:
+  - |-
+    // Event handler for the NodeDeleted event added in CustomXmlPart.addHandlerAsync.
+    function onNodeDeleted(eventArgs: Office.NodeDeletedEventArgs) {
+        // Logs information about the deleted node and its former sibling.
+        console.log("NodeDeleted event fired.");
+        console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
+        eventArgs.oldNode.getXmlAsync((result) => {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("  Deleted node XML: " + result.value);
+            }
+        });
+        if (eventArgs.oldNextSibling) {
+            eventArgs.oldNextSibling.getXmlAsync((result) => {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("  Former next sibling XML: " + result.value);
+                }
+            });
+        }
+    }
+Office.NodeInsertedEventArgs:interface:
+  - |-
+    // Event handler for the NodeInserted event added in CustomXmlPart.addHandlerAsync.
+    function onNodeInserted(eventArgs: Office.NodeInsertedEventArgs) {
+        // Logs information about the inserted node.
+        console.log("NodeInserted event fired.");
+        console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
+        eventArgs.newNode.getXmlAsync((result) => {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("  Inserted node XML: " + result.value);
+            }
+        });
+    }
+Office.NodeReplacedEventArgs:interface:
+  - |-
+    // Event handler for the NodeReplaced event added in CustomXmlPart.addHandlerAsync.
+    function onNodeReplaced(eventArgs: Office.NodeReplacedEventArgs) {
+        // Logs information about the replaced and new nodes.
+        console.log("NodeReplaced event fired.");
+        console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
+        eventArgs.oldNode.getXmlAsync((result) => {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("  Old node XML: " + result.value);
+            }
+        });
+        eventArgs.newNode.getXmlAsync((result) => {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                console.log("  New node XML: " + result.value);
+            }
+        });
+    }
 Office.OfficeTheme:interface:
   - |-
     function applyOfficeTheme() {

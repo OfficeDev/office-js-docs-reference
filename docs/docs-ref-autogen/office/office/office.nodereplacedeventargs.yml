@@ -4,7 +4,27 @@ uid: office!Office.NodeReplacedEventArgs:interface
 package: office!
 fullName: Office.NodeReplacedEventArgs
 summary: Provides information about the replaced node that raised the nodeReplaced event.
-remarks: ''
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  // Event handler for the NodeReplaced event added in CustomXmlPart.addHandlerAsync.
+  function onNodeReplaced(eventArgs: Office.NodeReplacedEventArgs) {
+      // Logs information about the replaced and new nodes.
+      console.log("NodeReplaced event fired.");
+      console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
+      eventArgs.oldNode.getXmlAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("  Old node XML: " + result.value);
+          }
+      });
+      eventArgs.newNode.getXmlAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("  New node XML: " + result.value);
+          }
+      });
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
