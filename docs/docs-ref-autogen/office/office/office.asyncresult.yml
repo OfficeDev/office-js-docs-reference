@@ -171,8 +171,7 @@ properties:
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
-                  }
-                  else {
+                  } else {
                       write(asyncResult.value);
                   }
               });
@@ -205,8 +204,7 @@ properties:
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
-                  }
-                  else {
+                  } else {
                       write(asyncResult.value);
                   }
               });
@@ -233,8 +231,7 @@ properties:
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   write(asyncResult.error.message);
-              }
-              else {
+              } else {
                   write(asyncResult.value);
               }
           });

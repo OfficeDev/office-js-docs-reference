@@ -8,7 +8,6 @@ remarks: |-
   [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [datePickerContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-datepickercontentcontrol-member)

@@ -63,9 +63,9 @@ methods:
               "myRange", "matrix", {id:'myMatrix'}, function (result) {
               if (result.status === Office.AsyncResultStatus.Succeeded) {
                   write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
-                  }
-              else
+              } else {
                   write('Error: ' + result.error.message);
+              }
           });
       }
 
@@ -81,9 +81,9 @@ methods:
               "Table1", "table", {id:'myTable'}, function (result) {
               if (result.status === Office.AsyncResultStatus.Succeeded) {
                   write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
-                  }
-              else
+              } else {
                   write('Error: ' + result.error.message);
+              }
           });
       }
 
@@ -102,7 +102,7 @@ methods:
                       write('Control bound. Binding.id: '
                           + result.value.id + ' Binding.type: ' + result.value.type);
                   } else {
-                      write('Error:', result.error.message);
+                      write('Error: ' + result.error.message);
                   }
           });
       }
@@ -261,7 +261,7 @@ methods:
       function addBindingFromSelection() {
           Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
               function (asyncResult) {
-              write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+                  write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
               }
           );
       }

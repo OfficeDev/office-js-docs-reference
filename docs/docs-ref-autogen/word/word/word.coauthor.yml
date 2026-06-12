@@ -8,7 +8,6 @@ remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
-
   #### Used by
 
   - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)

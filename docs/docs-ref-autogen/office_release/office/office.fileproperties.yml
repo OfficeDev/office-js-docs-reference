@@ -25,8 +25,7 @@ remarks: |-
           const fileUrl = fileProperties.url;
           if (fileUrl === "") {
               showMessage("The file hasn't been saved yet. Save the file and try again");
-          }
-          else {
+          } else {
               showMessage(fileUrl);
           }
       });
