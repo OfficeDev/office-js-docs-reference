@@ -18,9 +18,8 @@ remarks: |-
   Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           showMessage("Action failed with error: " + asyncResult.error.message);
-      }
-      else {
-          showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
+      } else {
+          showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
       }
   });
   ```

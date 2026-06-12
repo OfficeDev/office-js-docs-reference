@@ -292,8 +292,7 @@ functions:
       function startUsingShortNamespace() {
           if (typeof Office === 'undefined') {
               Microsoft.Office.WebExtension.useShortNamespace(true);
-          }
-          else {
+          } else {
               Office.useShortNamespace(true);
           }
           write('Office alias is now ' + typeof Office);
@@ -302,8 +301,7 @@ functions:
       function stopUsingShortNamespace() {
           if (typeof Office === 'undefined') {
               Microsoft.Office.WebExtension.useShortNamespace(false);
-          }
-          else {
+          } else {
               Office.useShortNamespace(false);
           }
           write('Office alias is now ' + typeof Office);
