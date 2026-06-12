@@ -68,6 +68,48 @@ OfficeRuntime.Auth#getAccessToken:member(1):
           }
       }
     }
+OfficeRuntime.AuthOptions:interface:
+  - |-
+    const options: OfficeRuntime.AuthOptions = {
+      allowSignInPrompt: true,
+      allowConsentPrompt: true,
+      forMSGraphAccess: true,
+    };
+    const accessToken = await OfficeRuntime.auth.getAccessToken(options);
+OfficeRuntime.Dialog:interface:
+  - |-
+    const dialogUrl = "https://your-addin-domain.com/dialog.html";
+    const dialogOptions: OfficeRuntime.DisplayWebDialogOptions = {
+      height: "50%",
+      width: "50%",
+      displayInIFrame: false,
+      onMessage: function (message: string, dialog?: OfficeRuntime.Dialog) {
+        dialog?.close();
+        console.log("Dialog result: " + message);
+      },
+      onRuntimeError: function (error: Error, dialog?: OfficeRuntime.Dialog) {
+        dialog?.close();
+        console.log("Dialog error: " + error.message);
+      },
+    }
+    OfficeRuntime.displayWebDialog(dialogUrl, dialogOptions);
+OfficeRuntime.DisplayWebDialogOptions:interface:
+  - |-
+    const dialogUrl = "https://your-addin-domain.com/dialog.html";
+    const dialogOptions: OfficeRuntime.DisplayWebDialogOptions = {
+      height: "50%",
+      width: "50%",
+      displayInIFrame: false,
+      onMessage: function (message: string, dialog?: OfficeRuntime.Dialog) {
+        dialog?.close();
+        console.log("Dialog result: " + message);
+      },
+      onRuntimeError: function (error: Error, dialog?: OfficeRuntime.Dialog) {
+        dialog?.close();
+        console.log("Dialog error: " + error.message);
+      },
+    }
+    OfficeRuntime.displayWebDialog(dialogUrl, dialogOptions);
 OfficeRuntime.Storage#getItem:member(1):
   - |-
     // Retrieve a value from the shared runtime storage by its key.
