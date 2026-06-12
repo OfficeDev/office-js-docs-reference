@@ -4,7 +4,29 @@ uid: office!Office.NodeDeletedEventArgs:interface
 package: office!
 fullName: Office.NodeDeletedEventArgs
 summary: Provides information about the deleted node that raised the nodeDeleted event.
-remarks: ''
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  // Event handler for the NodeDeleted event added in CustomXmlPart.addHandlerAsync.
+  function onNodeDeleted(eventArgs: Office.NodeDeletedEventArgs) {
+      // Logs information about the deleted node and its former sibling.
+      console.log("NodeDeleted event fired.");
+      console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
+      eventArgs.oldNode.getXmlAsync((result) => {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("  Deleted node XML: " + result.value);
+          }
+      });
+      if (eventArgs.oldNextSibling) {
+          eventArgs.oldNextSibling.getXmlAsync((result) => {
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("  Former next sibling XML: " + result.value);
+              }
+          });
+      }
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
