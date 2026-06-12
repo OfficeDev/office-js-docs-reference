@@ -7,9 +7,21 @@ summary: Provides options for the user experience when Office obtains an access 
 remarks: |-
   The methods in this interface are equivalent to those in the `Office.AuthOptions` interface. If new authentication types are added in the future, they will only be added to the `Office.AuthOptions` interface. For simplicity, the code examples throughout the documentation use `Office.AuthOptions`<!-- -->.
 
+
+
   #### Used by
 
   - [OfficeRuntime.Auth](/javascript/api/office-runtime/officeruntime.auth): [getAccessToken](/javascript/api/office-runtime/officeruntime.auth#office-runtime-officeruntime-auth-getaccesstoken-member(1))
+  #### Examples
+
+  ```TypeScript
+  const options: OfficeRuntime.AuthOptions = {
+    allowSignInPrompt: true,
+    allowConsentPrompt: true,
+    forMSGraphAccess: true,
+  };
+  const accessToken = await OfficeRuntime.auth.getAccessToken(options);
+  ```
 
 isPreview: false
 isDeprecated: false

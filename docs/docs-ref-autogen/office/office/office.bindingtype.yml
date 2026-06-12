@@ -7,6 +7,7 @@ summary: Specifies the type of the binding object that should be returned.
 remarks: |-
 
 
+
   #### Used by
 
   - [Office.Binding](/javascript/api/office/office.binding): [type](/javascript/api/office/office.binding#office-office-binding-type-member)

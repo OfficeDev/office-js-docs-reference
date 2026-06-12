@@ -7,9 +7,30 @@ summary: Provides display options and actions a dialog box may take.
 remarks: |-
   [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
+
+
   #### Used by
 
   - [OfficeRuntime](/javascript/api/office-runtime): [displayWebDialog](/javascript/api/office-runtime#office-runtime-officeruntime-displaywebdialog-function(1))
+  #### Examples
+
+  ```TypeScript
+  const dialogUrl = "https://your-addin-domain.com/dialog.html";
+  const dialogOptions: OfficeRuntime.DisplayWebDialogOptions = {
+    height: "50%",
+    width: "50%",
+    displayInIFrame: false,
+    onMessage: function (message: string, dialog?: OfficeRuntime.Dialog) {
+      dialog?.close();
+      console.log("Dialog result: " + message);
+    },
+    onRuntimeError: function (error: Error, dialog?: OfficeRuntime.Dialog) {
+      dialog?.close();
+      console.log("Dialog error: " + error.message);
+    },
+  }
+  OfficeRuntime.displayWebDialog(dialogUrl, dialogOptions);
+  ```
 
 isPreview: false
 isDeprecated: false
