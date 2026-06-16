@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [compare](/javascript/api/word/word.document#word-word-document-compare-member(1)), [compareFromBase64](/javascript/api/word/word.document#word-word-document-comparefrombase64-member(1))

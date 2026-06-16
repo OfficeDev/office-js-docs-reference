@@ -10,6 +10,7 @@ remarks: |-
   **Important**: This enum is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [getIsSaveToLocationAllowed](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-getissavetolocationallowed-member(1))

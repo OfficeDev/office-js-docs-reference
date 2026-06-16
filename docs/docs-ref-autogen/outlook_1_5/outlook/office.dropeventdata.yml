@@ -10,6 +10,7 @@ remarks: |-
   To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.DragAndDropEventArgs](/javascript/api/outlook/office.draganddropeventargs): [dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-draganddropeventdata-member)

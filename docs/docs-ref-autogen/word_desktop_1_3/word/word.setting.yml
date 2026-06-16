@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [add](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1)), [getItem](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.settingcollection#word-word-settingcollection-getitemornullobject-member(1)), [items](/javascript/api/word/word.settingcollection#word-word-settingcollection-items-member)

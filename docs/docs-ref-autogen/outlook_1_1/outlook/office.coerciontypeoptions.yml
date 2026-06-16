@@ -7,7 +7,6 @@ summary: Provides an option for the data format.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Body](/javascript/api/outlook/office.body): [prependAsync](/javascript/api/outlook/office.body#outlook-office-body-prependasync-member(1)), [setSelectedDataAsync](/javascript/api/outlook/office.body#outlook-office-body-setselecteddataasync-member(1))

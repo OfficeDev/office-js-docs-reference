@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [font](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-font-member)

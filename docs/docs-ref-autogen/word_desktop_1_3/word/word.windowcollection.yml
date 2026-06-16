@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [windows](/javascript/api/word/word.document#word-word-document-windows-member)

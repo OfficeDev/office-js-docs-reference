@@ -18,6 +18,7 @@ remarks: |-
   For more information, see [Change how the message list is displayed in Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.Body](/javascript/api/outlook/office.body): [getAsync](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1)), [setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))

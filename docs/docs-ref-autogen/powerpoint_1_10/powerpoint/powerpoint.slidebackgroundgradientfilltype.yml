@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.SlideBackgroundGradientFill](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill): [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-type-member)

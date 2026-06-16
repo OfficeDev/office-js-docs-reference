@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertGeometricShape](/javascript/api/word/word.paragraph#word-word-paragraph-insertgeometricshape-member(1))

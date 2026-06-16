@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.CardLayoutStandardProperties](/javascript/api/excel/excel.cardlayoutstandardproperties): [sections](/javascript/api/excel/excel.cardlayoutstandardproperties#excel-excel-cardlayoutstandardproperties-sections-member)

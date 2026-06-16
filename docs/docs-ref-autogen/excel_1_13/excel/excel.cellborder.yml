@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.CellBorderCollection](/javascript/api/excel/excel.cellbordercollection): [bottom](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-bottom-member), [diagonalDown](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonaldown-member), [diagonalUp](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-diagonalup-member), [horizontal](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-horizontal-member), [left](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-left-member), [right](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-right-member), [top](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-top-member), [vertical](/javascript/api/excel/excel.cellbordercollection#excel-excel-cellbordercollection-vertical-member)

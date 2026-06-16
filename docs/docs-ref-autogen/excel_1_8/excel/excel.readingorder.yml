@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Style](/javascript/api/excel/excel.style): [readingOrder](/javascript/api/excel/excel.style#excel-excel-style-readingorder-member)

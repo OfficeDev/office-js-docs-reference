@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [shapes](/javascript/api/word/word.body#word-word-body-shapes-member)

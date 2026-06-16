@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Binding](/javascript/api/excel/excel.binding): [type](/javascript/api/excel/excel.binding#excel-excel-binding-type-member)

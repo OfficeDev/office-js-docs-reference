@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [onActivated](/javascript/api/excel/excel.workbook#excel-excel-workbook-onactivated-member)

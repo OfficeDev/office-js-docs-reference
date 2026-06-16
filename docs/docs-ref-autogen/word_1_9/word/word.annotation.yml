@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [getFirst](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-items-member)

@@ -12,6 +12,7 @@ remarks: |-
   **Important**: Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using MSAL (Microsoft Authentication Library) and nested app authentication (NAA). Exchange user identity tokens are still supported for Exchange on-premises. For more information, see [Nested app authentication FAQ](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.Ews](/javascript/api/outlook/office.ews): [getTokenStatusAsync](/javascript/api/outlook/office.ews#outlook-office-ews-gettokenstatusasync-member(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.TextFrame](/javascript/api/word/word.textframe): [autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)

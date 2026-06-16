@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [addPicture](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addpicture-member(1))

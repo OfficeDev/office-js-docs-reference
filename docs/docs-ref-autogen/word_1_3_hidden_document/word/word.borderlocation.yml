@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Table](/javascript/api/word/word.table): [getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))

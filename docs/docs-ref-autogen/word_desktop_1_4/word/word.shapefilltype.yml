@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ShapeFill](/javascript/api/word/word.shapefill): [type](/javascript/api/word/word.shapefill#word-word-shapefill-type-member)

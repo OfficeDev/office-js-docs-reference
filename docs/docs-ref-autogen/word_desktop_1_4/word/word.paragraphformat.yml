@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ConditionalStyle](/javascript/api/word/word.conditionalstyle): [paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)

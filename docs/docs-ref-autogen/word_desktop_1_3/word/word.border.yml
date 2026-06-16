@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [getByLocation](/javascript/api/word/word.bordercollection#word-word-bordercollection-getbylocation-member(1)), [getFirst](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.bordercollection#word-word-bordercollection-getfirstornullobject-member(1)), [getItem](/javascript/api/word/word.bordercollection#word-word-bordercollection-getitem-member(1)), [items](/javascript/api/word/word.bordercollection#word-word-bordercollection-items-member)

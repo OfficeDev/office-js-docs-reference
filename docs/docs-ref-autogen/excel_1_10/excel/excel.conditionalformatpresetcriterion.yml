@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ConditionalPresetCriteriaRule](/javascript/api/excel/excel.conditionalpresetcriteriarule): [criterion](/javascript/api/excel/excel.conditionalpresetcriteriarule#excel-excel-conditionalpresetcriteriarule-criterion-member)

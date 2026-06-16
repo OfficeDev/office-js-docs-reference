@@ -12,6 +12,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
 
+
   #### Used by
 
   - [Office.MailboxEvent](/javascript/api/outlook/office.mailboxevent): [completed](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
