@@ -7,13 +7,12 @@ summary: Represents a style in a Word document.
 remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
   - [Word.StyleCollection](/javascript/api/word/word.stylecollection): [getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1)), [getByNameOrNullObject](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1)), [getItem](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1)), [items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
+
   #### Examples
 
   ```TypeScript

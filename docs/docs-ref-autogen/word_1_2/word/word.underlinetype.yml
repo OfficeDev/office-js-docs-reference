@@ -7,11 +7,10 @@ summary: Represents the supported styles for underline format.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Font](/javascript/api/word/word.font): [underline](/javascript/api/word/word.font#word-word-font-underline-member)
+
   #### Examples
 
   ```TypeScript

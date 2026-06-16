@@ -7,11 +7,10 @@ summary: Provides additional details about the notification message that raised 
 remarks: |-
   [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Office.InfobarClickedEventArgs](/javascript/api/outlook/office.infobarclickedeventargs): [infobarDetails](/javascript/api/outlook/office.infobarclickedeventargs#outlook-office-infobarclickedeventargs-infobardetails-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,11 +7,10 @@ summary: Provides information about the content control that raised the `content
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)
+
   #### Examples
 
   ```TypeScript

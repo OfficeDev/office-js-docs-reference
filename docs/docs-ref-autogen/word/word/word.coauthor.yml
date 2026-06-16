@@ -7,13 +7,12 @@ summary: Represents a coauthor in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.CoauthorCollection](/javascript/api/word/word.coauthorcollection): [items](/javascript/api/word/word.coauthorcollection#word-word-coauthorcollection-items-member)
   - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [me](/javascript/api/word/word.coauthoring#word-word-coauthoring-me-member)
   - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [owner](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-owner-member)
+
   #### Examples
 
   ```TypeScript

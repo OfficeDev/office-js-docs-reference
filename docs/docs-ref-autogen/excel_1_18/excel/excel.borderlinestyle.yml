@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.CellBorder](/javascript/api/excel/excel.cellborder): [style](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-style-member)
   - [Excel.RangeBorder](/javascript/api/excel/excel.rangeborder): [style](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-style-member)
+
   #### Examples
 
   ```TypeScript

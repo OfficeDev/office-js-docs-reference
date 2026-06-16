@@ -7,8 +7,6 @@ summary: Represents a content control. Content controls are bounded and potentia
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member)
@@ -16,6 +14,7 @@ remarks: |-
   - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [insertContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member)
   - [Word.Range](/javascript/api/word/word.range): [insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member)
+
   #### Examples
 
   ```TypeScript

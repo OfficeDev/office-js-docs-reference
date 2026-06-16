@@ -7,8 +7,6 @@ summary: An enum that specifies an event's source. It can be local or remote (th
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
@@ -20,6 +18,7 @@ remarks: |-
   - [Word.ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs): [source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)
   - [Word.ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs): [source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)
   - [Word.ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs): [source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)
+
   #### Examples
 
   ```TypeScript

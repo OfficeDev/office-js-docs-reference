@@ -447,13 +447,14 @@ function injectUsedBySection(
   // Generate the "Used By" markdown section
   const usedBySection = generateUsedBySection(deduplicated);
 
-  // Insert before "#### Examples" if it exists, otherwise append
+  // Insert before "#### Examples" if it exists, otherwise append.
+  // Normalize spacing: strip trailing newlines at the insertion point, then add exactly \n\n.
   if (item.remarks.includes('#### Examples')) {
-    item.remarks = item.remarks.replace('#### Examples', usedBySection + '\n#### Examples');
+    item.remarks = item.remarks.replace(/\n*#### Examples/, '\n\n' + usedBySection + '\n\n#### Examples');
   } else if (item.remarks.trim()) {
-    item.remarks += usedBySection;
+    item.remarks = item.remarks.trimEnd() + '\n\n' + usedBySection;
   } else {
-    item.remarks = usedBySection.substring(2); // Remove leading \n\n
+    item.remarks = usedBySection;
   }
 
   return true;
@@ -583,7 +584,7 @@ function generateUsedBySection(references: UsedByReference[]): string {
     return '';
   }
 
-  const lines: string[] = ['\n\n#### Used by\n'];
+  const lines: string[] = ['#### Used by\n'];
 
   // Group by containing class
   const groupedByClass = groupByContainingClass(filteredReferences);

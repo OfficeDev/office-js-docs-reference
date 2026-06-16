@@ -10,6 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.RemoveHandlerOptions](/javascript/api/office/office.removehandleroptions): [handler](/javascript/api/office/office.removehandleroptions#office-office-removehandleroptions-handler-member)
+
   #### Examples
 
   ```TypeScript

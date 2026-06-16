@@ -7,13 +7,12 @@ summary: Represents a comment in the document.
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [getFirst](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)
   - [Word.CommentReply](/javascript/api/word/word.commentreply): [parentComment](/javascript/api/word/word.commentreply#word-word-commentreply-parentcomment-member)
   - [Word.Range](/javascript/api/word/word.range): [insertComment](/javascript/api/word/word.range#word-word-range-insertcomment-member(1))
+
   #### Examples
 
   ```TypeScript

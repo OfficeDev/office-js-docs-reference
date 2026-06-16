@@ -7,11 +7,10 @@ summary: Contains the text that is attached to a shape, in addition to propertie
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+
   #### Examples
 
   ```TypeScript

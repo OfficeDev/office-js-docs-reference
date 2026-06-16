@@ -7,11 +7,10 @@ summary: Represents what the horizontal position of a shape is relative to. For 
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)
+
   #### Examples
 
   ```TypeScript

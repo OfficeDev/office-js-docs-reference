@@ -7,12 +7,11 @@ summary: Represents the text frame of a shape object.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -7,11 +7,10 @@ summary: Provides information about the worksheet that raised the selection chan
 remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onSelectionChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onselectionchanged-member)
+
   #### Examples
 
   ```TypeScript

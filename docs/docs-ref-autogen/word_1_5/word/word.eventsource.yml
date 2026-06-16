@@ -7,8 +7,6 @@ summary: An enum that specifies an event's source. It can be local or remote (th
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)
@@ -17,6 +15,7 @@ remarks: |-
   - [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs): [source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)
   - [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs): [source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)
   - [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs): [source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)
+
   #### Examples
 
   ```TypeScript

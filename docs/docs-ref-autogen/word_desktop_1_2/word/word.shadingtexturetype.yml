@@ -7,11 +7,10 @@ summary: Represents the shading texture. To learn more about how to apply backgr
 remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Shading](/javascript/api/word/word.shading): [texture](/javascript/api/word/word.shading#word-word-shading-texture-member)
+
   #### Examples
 
   ```TypeScript

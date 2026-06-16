@@ -7,11 +7,10 @@ summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.Slid
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [getPatternFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpatternfillornullobject-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -26,6 +26,7 @@ remarks: |-
   - [Visio.ShapeDataItem](/javascript/api/visio/visio.shapedataitem): [context](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-context-member)
   - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [context](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-context-member)
   - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [context](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-context-member)
+
   #### Examples
 
   ```TypeScript

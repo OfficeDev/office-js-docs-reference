@@ -7,11 +7,10 @@ summary: Represents the available options when adding a table.
 remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [addTable](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-addtable-member(1))
+
   #### Examples
 
   ```TypeScript

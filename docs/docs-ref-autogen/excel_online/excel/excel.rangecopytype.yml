@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [copyFrom](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1))
+
   #### Examples
 
   ```TypeScript

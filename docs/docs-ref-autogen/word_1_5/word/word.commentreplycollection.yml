@@ -7,11 +7,10 @@ summary: Contains a collection of [Word.CommentReply](xref:word!Word.CommentRepl
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Comment](/javascript/api/word/word.comment): [replies](/javascript/api/word/word.comment#word-word-comment-replies-member)
+
   #### Examples
 
   ```TypeScript

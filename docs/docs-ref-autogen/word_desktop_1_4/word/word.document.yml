@@ -7,12 +7,11 @@ summary: The `Document` object is the top level object. A `Document` object cont
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.RequestContext](/javascript/api/word/word.requestcontext): [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [ownerDocument](/javascript/api/word/word.xmlnode#word-word-xmlnode-ownerdocument-member)
+
   #### Examples
 
   ```TypeScript

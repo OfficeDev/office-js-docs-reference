@@ -7,13 +7,12 @@ summary: Represents the type of [Word.Field](xref:word!Word.Field:class) object.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Field](/javascript/api/word/word.field): [type](/javascript/api/word/word.field#word-word-field-type-member)
   - [Word.FieldCollection](/javascript/api/word/word.fieldcollection): [getByTypes](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getbytypes-member(1))
   - [Word.Range](/javascript/api/word/word.range): [insertField](/javascript/api/word/word.range#word-word-range-insertfield-member(1))
+
   #### Examples
 
   ```TypeScript

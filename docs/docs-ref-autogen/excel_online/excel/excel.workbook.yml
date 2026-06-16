@@ -7,12 +7,11 @@ summary: Workbook is the top level object which contains related workbook object
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
   - [Excel.SelectionChangedEventArgs](/javascript/api/excel/excel.selectionchangedeventargs): [workbook](/javascript/api/excel/excel.selectionchangedeventargs#excel-excel-selectionchangedeventargs-workbook-member)
+
   #### Examples
 
   ```TypeScript

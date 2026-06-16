@@ -7,11 +7,10 @@ summary: Represents the data specific to content controls of type `dropDownList`
 remarks: |-
   [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [dropDownListContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-dropdownlistcontentcontrol-member)
+
   #### Examples
 
   ```TypeScript

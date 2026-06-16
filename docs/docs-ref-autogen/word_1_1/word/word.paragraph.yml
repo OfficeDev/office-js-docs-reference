@@ -7,14 +7,13 @@ summary: Represents a single paragraph in a selection, range, content control, o
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [insertParagraph](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-insertparagraph-member(1))
   - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
   - [Word.Range](/javascript/api/word/word.range): [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
+
   #### Examples
 
   ```TypeScript

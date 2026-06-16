@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
   - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
   #### Examples
 
   ```TypeScript

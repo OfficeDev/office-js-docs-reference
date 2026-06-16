@@ -7,12 +7,11 @@ summary: Represents the type of style.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
   - [Word.Style](/javascript/api/word/word.style): [type](/javascript/api/word/word.style#word-word-style-type-member)
+
   #### Examples
 
   ```TypeScript

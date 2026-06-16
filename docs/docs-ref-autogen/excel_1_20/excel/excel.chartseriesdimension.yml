@@ -7,11 +7,10 @@ summary: Represents the dimensions when getting values from chart series.
 remarks: |-
   [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [getDimensionDataSourceString](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1)), [getDimensionDataSourceType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1)), [getDimensionValues](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensionvalues-member(1))
+
   #### Examples
 
   ```TypeScript

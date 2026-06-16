@@ -7,11 +7,10 @@ summary: Provides the table row properties.
 remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.TableAddOptions](/javascript/api/powerpoint/powerpoint.tableaddoptions): [rows](/javascript/api/powerpoint/powerpoint.tableaddoptions#powerpoint-powerpoint-tableaddoptions-rows-member)
+
   #### Examples
 
   ```TypeScript

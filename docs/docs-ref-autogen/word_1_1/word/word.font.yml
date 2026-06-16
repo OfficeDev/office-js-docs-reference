@@ -7,14 +7,13 @@ summary: Represents a font.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [font](/javascript/api/word/word.body#word-word-body-font-member)
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [font](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-font-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [font](/javascript/api/word/word.paragraph#word-word-paragraph-font-member)
   - [Word.Range](/javascript/api/word/word.range): [font](/javascript/api/word/word.range#word-word-range-font-member)
+
   #### Examples
 
   ```TypeScript

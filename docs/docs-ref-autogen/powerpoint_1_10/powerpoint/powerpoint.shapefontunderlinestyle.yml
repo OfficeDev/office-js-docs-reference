@@ -7,12 +7,11 @@ summary: The type of underline applied to a font.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.FontProperties](/javascript/api/powerpoint/powerpoint.fontproperties): [underline](/javascript/api/powerpoint/powerpoint.fontproperties#powerpoint-powerpoint-fontproperties-underline-member)
   - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [underline](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-underline-member)
+
   #### Examples
 
   ```TypeScript

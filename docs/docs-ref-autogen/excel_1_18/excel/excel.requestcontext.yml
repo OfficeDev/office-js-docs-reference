@@ -188,6 +188,7 @@ remarks: |-
   - [Excel.WorksheetFormatChangedEventArgs](/javascript/api/excel/excel.worksheetformatchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
+
   #### Examples
 
   ```TypeScript

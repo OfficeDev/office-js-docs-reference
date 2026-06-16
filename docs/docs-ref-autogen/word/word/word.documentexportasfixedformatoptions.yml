@@ -7,11 +7,10 @@ summary: Provides configuration options for the [Document.exportAsFixedFormat](x
 remarks: |-
   [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
+
   #### Examples
 
   ```TypeScript

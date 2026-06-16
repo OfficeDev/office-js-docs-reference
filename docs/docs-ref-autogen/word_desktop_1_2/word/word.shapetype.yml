@@ -7,12 +7,11 @@ summary: Represents the shape type.
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [type](/javascript/api/word/word.shape#word-word-shape-type-member)
   - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [getByTypes](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbytypes-member(1))
+
   #### Examples
 
   ```TypeScript

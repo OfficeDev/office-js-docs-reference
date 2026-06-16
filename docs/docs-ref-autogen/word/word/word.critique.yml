@@ -7,12 +7,11 @@ summary: Critique that will be rendered as underline for the specified part of p
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.AnnotationSet](/javascript/api/word/word.annotationset): [critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)
   - [Word.CritiqueAnnotation](/javascript/api/word/word.critiqueannotation): [critique](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-critique-member)
+
   #### Examples
 
   ```TypeScript

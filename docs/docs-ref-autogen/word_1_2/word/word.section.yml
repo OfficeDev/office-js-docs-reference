@@ -7,11 +7,10 @@ summary: Represents a section in a Word document.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
+
   #### Examples
 
   ```TypeScript
