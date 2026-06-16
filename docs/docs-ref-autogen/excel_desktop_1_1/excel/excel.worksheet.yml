@@ -7,8 +7,6 @@ summary: An Excel worksheet is a grid of cells. It can contain data, tables, cha
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Chart](/javascript/api/excel/excel.chart): [worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)
@@ -23,6 +21,7 @@ remarks: |-
   - [Excel.Table](/javascript/api/excel/excel.table): [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
   - [Excel.Window](/javascript/api/excel/excel.window): [activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
+
   #### Examples
 
   ```TypeScript

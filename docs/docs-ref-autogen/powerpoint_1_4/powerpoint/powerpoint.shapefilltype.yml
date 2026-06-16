@@ -7,11 +7,10 @@ summary: Specifies a shape's fill type.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill): [type](/javascript/api/powerpoint/powerpoint.shapefill#powerpoint-powerpoint-shapefill-type-member)
+
   #### Examples
 
   ```TypeScript

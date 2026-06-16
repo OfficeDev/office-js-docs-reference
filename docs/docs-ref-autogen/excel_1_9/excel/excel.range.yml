@@ -7,8 +7,6 @@ summary: Range represents a set of one or more contiguous cells such as a cell, 
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.AutoFilter](/javascript/api/excel/excel.autofilter): [apply](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-apply-member(1)), [getRange](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrangeornullobject-member(1))
@@ -43,6 +41,7 @@ remarks: |-
   - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFormatChangedEventArgs](/javascript/api/excel/excel.worksheetformatchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [freezeAt](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-freezeat-member(1)), [getLocation](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-getlocation-member(1)), [getLocationOrNullObject](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-getlocationornullobject-member(1))
+
   #### Examples
 
   ```TypeScript

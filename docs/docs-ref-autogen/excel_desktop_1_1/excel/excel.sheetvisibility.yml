@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [visibility](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-visibility-member)
   - [Excel.WorksheetVisibilityChangedEventArgs](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs): [visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilityafter-member), [visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-visibilitybefore-member)
+
   #### Examples
 
   ```TypeScript

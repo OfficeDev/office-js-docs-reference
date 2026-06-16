@@ -7,13 +7,12 @@ summary: Represents the horizontal alignment of the [PowerPoint.TextFrame](xref:
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat): [horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-horizontalalignment-member)
   - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-horizontalalignment-member)
   - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [horizontalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-horizontalalignment-member)
+
   #### Examples
 
   ```TypeScript

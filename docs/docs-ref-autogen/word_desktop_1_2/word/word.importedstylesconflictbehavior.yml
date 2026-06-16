@@ -7,11 +7,10 @@ summary: Specifies how to handle any conflicts, that is, when imported styles ha
 remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [importStylesFromJson](/javascript/api/word/word.document#word-word-document-importstylesfromjson-member(1))
+
   #### Examples
 
   ```TypeScript

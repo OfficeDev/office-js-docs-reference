@@ -7,8 +7,6 @@ summary: Represents a contiguous area in a document.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [getRange](/javascript/api/word/word.body#word-word-body-getrange-member(1)), [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1)), [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
@@ -39,6 +37,7 @@ remarks: |-
   - [Word.RepeatingSectionItem](/javascript/api/word/word.repeatingsectionitem): [range](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-range-member)
   - [Word.Table](/javascript/api/word/word.table): [getRange](/javascript/api/word/word.table#word-word-table-getrange-member(1))
   - [Word.TrackedChange](/javascript/api/word/word.trackedchange): [getRange](/javascript/api/word/word.trackedchange#word-word-trackedchange-getrange-member(1))
+
   #### Examples
 
   ```TypeScript

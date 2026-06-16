@@ -10,6 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.RangeFormatConfiguration](/javascript/api/office/office.rangeformatconfiguration): [cells](/javascript/api/office/office.rangeformatconfiguration#office-office-rangeformatconfiguration-cells-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,14 +7,13 @@ summary: Contains the text that is attached to a shape, in addition to propertie
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.Hyperlink](/javascript/api/powerpoint/powerpoint.hyperlink): [getLinkedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedtextrangeornullobject-member(1))
   - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [add](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-add-member(1))
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [getSelectedTextRange](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrange-member(1)), [getSelectedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedtextrangeornullobject-member(1))
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
+
   #### Examples
 
   ```TypeScript

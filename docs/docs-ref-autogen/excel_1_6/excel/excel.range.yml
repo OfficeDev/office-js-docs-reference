@@ -7,8 +7,6 @@ summary: Range represents a set of one or more contiguous cells such as a cell, 
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Binding](/javascript/api/excel/excel.binding): [getRange](/javascript/api/excel/excel.binding#excel-excel-binding-getrange-member(1))
@@ -26,6 +24,7 @@ remarks: |-
   - [Excel.TableRow](/javascript/api/excel/excel.tablerow): [getRange](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-getrange-member(1))
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getSelectedRange](/javascript/api/excel/excel.workbook#excel-excel-workbook-getselectedrange-member(1))
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1)), [getRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrange-member(1)), [getUsedRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getusedrange-member(1)), [getUsedRangeOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getusedrangeornullobject-member(1))
+
   #### Examples
 
   ```TypeScript

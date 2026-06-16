@@ -7,8 +7,6 @@ summary: Range represents a set of one or more contiguous cells such as a cell, 
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.BasicDataValidation](/javascript/api/excel/excel.basicdatavalidation): [formula1](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula1-member), [formula2](/javascript/api/excel/excel.basicdatavalidation#excel-excel-basicdatavalidation-formula2-member)
@@ -36,6 +34,7 @@ remarks: |-
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [getCell](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getcell-member(1)), [getRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrange-member(1)), [getRangeByIndexes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrangebyindexes-member(1)), [getUsedRange](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getusedrange-member(1)), [getUsedRangeOrNullObject](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getusedrangeornullobject-member(1))
   - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [freezeAt](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-freezeat-member(1)), [getLocation](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-getlocation-member(1)), [getLocationOrNullObject](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-getlocationornullobject-member(1))
+
   #### Examples
 
   ```TypeScript

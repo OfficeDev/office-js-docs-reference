@@ -7,12 +7,11 @@ summary: Represents a custom XML part.
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [add](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1)), [getItem](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getitemornullobject-member(1)), [items](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-items-member)
   - [Word.CustomXmlPartScopedCollection](/javascript/api/word/word.customxmlpartscopedcollection): [getItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitemornullobject-member(1)), [getOnlyItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1)), [getOnlyItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1)), [items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)
+
   #### Examples
 
   ```TypeScript

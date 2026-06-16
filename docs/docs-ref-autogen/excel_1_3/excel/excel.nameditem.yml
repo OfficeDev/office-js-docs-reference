@@ -7,11 +7,10 @@ summary: Represents a defined name for a range of cells or value. Names can be p
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1)), [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
+
   #### Examples
 
   ```TypeScript

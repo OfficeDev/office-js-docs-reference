@@ -7,11 +7,10 @@ summary: Enum representing all accepted conditions by which a date filter can be
 remarks: |-
   [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.PivotDateFilter](/javascript/api/excel/excel.pivotdatefilter): [condition](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-condition-member)
+
   #### Examples
 
   ```TypeScript

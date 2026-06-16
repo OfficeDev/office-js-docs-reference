@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Line](/javascript/api/excel/excel.line): [connectorType](/javascript/api/excel/excel.line#excel-excel-line-connectortype-member)
   - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [addLine](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addline-member(1))
+
   #### Examples
 
   ```TypeScript

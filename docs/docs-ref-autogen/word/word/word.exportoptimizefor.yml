@@ -7,13 +7,12 @@ summary: Specifies the optimization target for document export.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.DocumentExportAsFixedFormat2Options](/javascript/api/word/word.documentexportasfixedformat2options): [optimizeFor](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-optimizefor-member)
   - [Word.DocumentExportAsFixedFormat3Options](/javascript/api/word/word.documentexportasfixedformat3options): [optimizeFor](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-optimizefor-member)
   - [Word.DocumentExportAsFixedFormatOptions](/javascript/api/word/word.documentexportasfixedformatoptions): [optimizeFor](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-optimizefor-member)
+
   #### Examples
 
   ```TypeScript

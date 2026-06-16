@@ -7,12 +7,11 @@ summary: Represents a style of paragraph in a document.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ConditionalStyle](/javascript/api/word/word.conditionalstyle): [paragraphFormat](/javascript/api/word/word.conditionalstyle#word-word-conditionalstyle-paragraphformat-member)
   - [Word.Style](/javascript/api/word/word.style): [paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)
+
   #### Examples
 
   ```TypeScript

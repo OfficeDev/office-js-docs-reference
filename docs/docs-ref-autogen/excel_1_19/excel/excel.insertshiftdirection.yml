@@ -7,12 +7,11 @@ summary: Determines the direction in which existing cells will be shifted to acc
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.ChangeDirectionState](/javascript/api/excel/excel.changedirectionstate): [insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#excel-excel-changedirectionstate-insertshiftdirection-member)
   - [Excel.Range](/javascript/api/excel/excel.range): [insert](/javascript/api/excel/excel.range#excel-excel-range-insert-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -10,6 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(4))
+
   #### Examples
 
   ```TypeScript

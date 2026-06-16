@@ -9,12 +9,11 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
-
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [sensitivity](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-sensitivity-member)
   - [Office.Sensitivity](/javascript/api/outlook/office.sensitivity): [getAsync](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-getasync-member(1)), [setAsync](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-setasync-member(1))
+
   #### Examples
 
   ```TypeScript

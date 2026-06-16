@@ -9,8 +9,6 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
-
   #### Used by
 
   - [Office.AttachmentDetails](/javascript/api/outlook/office.attachmentdetails): [attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)
@@ -18,6 +16,7 @@ remarks: |-
   - [Office.DecryptedMessageAttachment](/javascript/api/outlook/office.decryptedmessageattachment): [attachmentType](/javascript/api/outlook/office.decryptedmessageattachment#outlook-office-decryptedmessageattachment-attachmenttype-member)
   - [Office.MessageFormAttachment](/javascript/api/outlook/office.messageformattachment): [type](/javascript/api/outlook/office.messageformattachment#outlook-office-messageformattachment-type-member)
   - [Office.ReplyFormAttachment](/javascript/api/outlook/office.replyformattachment): [type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)
+
   #### Examples
 
   ```TypeScript

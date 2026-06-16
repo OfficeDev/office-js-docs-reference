@@ -7,12 +7,11 @@ summary: Represents a content range within a comment.
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Comment](/javascript/api/word/word.comment): [contentRange](/javascript/api/word/word.comment#word-word-comment-contentrange-member)
   - [Word.CommentReply](/javascript/api/word/word.commentreply): [contentRange](/javascript/api/word/word.commentreply#word-word-commentreply-contentrange-member)
+
   #### Examples
 
   ```TypeScript

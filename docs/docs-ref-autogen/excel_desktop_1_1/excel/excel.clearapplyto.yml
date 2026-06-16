@@ -7,12 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [clear](/javascript/api/excel/excel.range#excel-excel-range-clear-member(1))
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [clear](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-clear-member(1))
+
   #### Examples
 
   ```TypeScript

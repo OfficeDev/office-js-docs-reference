@@ -7,8 +7,6 @@ summary: Represents an inline picture.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertInlinePictureFromBase64](/javascript/api/word/word.body#word-word-body-insertinlinepicturefrombase64-member(1))
@@ -16,6 +14,7 @@ remarks: |-
   - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [getFirst](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
   - [Word.Range](/javascript/api/word/word.range): [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
+
   #### Examples
 
   ```TypeScript

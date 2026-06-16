@@ -7,11 +7,10 @@ summary: A structure for the ID and reply IDs of this comment.
 remarks: |-
   [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.CommentEventArgs](/javascript/api/word/word.commenteventargs): [commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)
+
   #### Examples
 
   ```TypeScript

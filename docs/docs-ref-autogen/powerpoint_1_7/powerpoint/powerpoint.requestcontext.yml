@@ -39,6 +39,7 @@ remarks: |-
   - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
+
   #### Examples
 
   ```TypeScript

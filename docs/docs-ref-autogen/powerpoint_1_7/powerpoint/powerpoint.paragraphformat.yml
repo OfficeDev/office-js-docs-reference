@@ -7,11 +7,10 @@ summary: Represents the paragraph formatting properties of a text that is attach
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-paragraphformat-member)
+
   #### Examples
 
   ```TypeScript

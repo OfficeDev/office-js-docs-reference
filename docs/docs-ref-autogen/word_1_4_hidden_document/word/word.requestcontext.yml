@@ -52,6 +52,7 @@ remarks: |-
   - [Word.TableCollection](/javascript/api/word/word.tablecollection): [context](/javascript/api/word/word.tablecollection#word-word-tablecollection-context-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [context](/javascript/api/word/word.tablerow#word-word-tablerow-context-member)
   - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [context](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-context-member)
+
   #### Examples
 
   ```TypeScript

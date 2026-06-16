@@ -7,13 +7,12 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Excel.CellPropertiesFormat](/javascript/api/excel/excel.cellpropertiesformat): [verticalAlignment](/javascript/api/excel/excel.cellpropertiesformat#excel-excel-cellpropertiesformat-verticalalignment-member)
   - [Excel.RangeFormat](/javascript/api/excel/excel.rangeformat): [verticalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-verticalalignment-member)
   - [Excel.Style](/javascript/api/excel/excel.style): [verticalAlignment](/javascript/api/excel/excel.style#excel-excel-style-verticalalignment-member)
+
   #### Examples
 
   ```TypeScript

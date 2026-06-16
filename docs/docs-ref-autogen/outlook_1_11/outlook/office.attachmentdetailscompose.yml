@@ -14,12 +14,11 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
-
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getAttachmentsAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentsasync-member(1))
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentsAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentsasync-member(1))
+
   #### Examples
 
   ```TypeScript

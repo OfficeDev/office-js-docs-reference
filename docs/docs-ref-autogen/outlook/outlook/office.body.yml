@@ -17,8 +17,6 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [body](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-body-member)
@@ -27,6 +25,7 @@ remarks: |-
   - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [body](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-body-member)
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [body](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-body-member)
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [body](/javascript/api/outlook/office.messageread#outlook-office-messageread-body-member)
+
   #### Examples
 
   ```TypeScript
