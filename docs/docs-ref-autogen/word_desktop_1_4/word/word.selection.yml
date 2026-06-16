@@ -10,6 +10,7 @@ remarks: |-
   Note: [Range](xref:word!Word.Range:class) objects share many of the same methods and properties as `Selection` objects. Using `Range` objects is preferable for manipulating a document when there isn't a reason to physically change the current selection.
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [selection](/javascript/api/word/word.document#word-word-document-selection-member)

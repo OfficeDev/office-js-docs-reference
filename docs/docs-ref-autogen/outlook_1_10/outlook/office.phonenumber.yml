@@ -15,6 +15,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
+
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))

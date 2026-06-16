@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.Hyperlink](/javascript/api/powerpoint/powerpoint.hyperlink): [getLinkedTextRangeOrNullObject](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-getlinkedtextrangeornullobject-member(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [convertNumbersToText](/javascript/api/word/word.document#word-word-document-convertnumberstotext-member(1)), [removeNumbers](/javascript/api/word/word.document#word-word-document-removenumbers-member(1))

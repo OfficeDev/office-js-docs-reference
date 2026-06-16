@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.AutoFilter](/javascript/api/excel/excel.autofilter): [apply](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-apply-member(1)), [getRange](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrangeornullobject-member(1))

@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.AnnotationSet](/javascript/api/word/word.annotationset): [critiques](/javascript/api/word/word.annotationset#word-word-annotationset-critiques-member)

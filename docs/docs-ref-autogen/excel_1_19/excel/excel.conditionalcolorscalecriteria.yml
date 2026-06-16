@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [criteria](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-criteria-member)

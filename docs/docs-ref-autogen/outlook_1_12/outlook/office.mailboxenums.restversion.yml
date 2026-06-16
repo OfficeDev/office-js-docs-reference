@@ -12,6 +12,7 @@ remarks: |-
   **Important**: The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted add-ins are able to use the REST service until extended support ends for Outlook 2019 on October 14, 2025. Traffic from these add-ins is automatically identified for exemption. This exemption also applies to new add-ins developed after March 31, 2024. Although add-ins are able to use the REST service until 2025, we highly encourage you to migrate your add-ins to use [Microsoft Graph](https://learn.microsoft.com/outlook/rest#outlook-rest-api-via-microsoft-graph)<!-- -->. For guidance, see [Compare Microsoft Graph and Outlook REST API endpoints](https://learn.microsoft.com/outlook/rest/compare-graph)<!-- -->.
 
 
+
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [convertToEwsId](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoewsid-member(1)), [convertToRestId](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttorestid-member(1))

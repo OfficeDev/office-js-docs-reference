@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.CellPropertiesFill](/javascript/api/excel/excel.cellpropertiesfill): [pattern](/javascript/api/excel/excel.cellpropertiesfill#excel-excel-cellpropertiesfill-pattern-member)

@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ConditionalIconCriterion](/javascript/api/excel/excel.conditionaliconcriterion): [operator](/javascript/api/excel/excel.conditionaliconcriterion#excel-excel-conditionaliconcriterion-operator-member)

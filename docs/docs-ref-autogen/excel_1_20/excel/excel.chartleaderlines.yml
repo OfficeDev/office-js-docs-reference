@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.ChartDataLabels](/javascript/api/excel/excel.chartdatalabels): [leaderLines](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-leaderlines-member)

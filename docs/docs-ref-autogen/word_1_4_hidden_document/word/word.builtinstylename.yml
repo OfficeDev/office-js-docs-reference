@@ -10,6 +10,7 @@ remarks: |-
   Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
 
 
+
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)

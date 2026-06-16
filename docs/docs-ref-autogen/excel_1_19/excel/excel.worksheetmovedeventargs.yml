@@ -11,6 +11,7 @@ remarks: |-
   [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onMoved](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onmoved-member)

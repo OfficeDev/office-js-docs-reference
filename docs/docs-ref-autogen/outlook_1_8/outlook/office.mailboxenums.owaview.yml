@@ -7,7 +7,6 @@ summary: Represents the current view of Outlook on the web.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Diagnostics](/javascript/api/outlook/office.diagnostics): [OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)

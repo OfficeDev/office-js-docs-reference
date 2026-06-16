@@ -15,6 +15,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
+
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getSharedPropertiesAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getsharedpropertiesasync-member(1))

@@ -19,6 +19,7 @@ remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
 
+
   #### Used by
 
   - [Office.Context](/javascript/api/office/office.context): [mailbox](/javascript/api/office/office.context#office-office-context-mailbox-member)

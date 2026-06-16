@@ -8,6 +8,7 @@ remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [delete](/javascript/api/excel/excel.range#excel-excel-range-delete-member(1))

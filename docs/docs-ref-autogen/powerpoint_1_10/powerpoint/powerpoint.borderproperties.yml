@@ -8,6 +8,7 @@ remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 
+
   #### Used by
 
   - [PowerPoint.TableCellBorders](/javascript/api/powerpoint/powerpoint.tablecellborders): [bottom](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-bottom-member), [diagonalDown](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-diagonaldown-member), [diagonalUp](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-diagonalup-member), [left](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-left-member), [right](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-right-member), [top](/javascript/api/powerpoint/powerpoint.tablecellborders#powerpoint-powerpoint-tablecellborders-top-member)

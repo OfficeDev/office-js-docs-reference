@@ -8,6 +8,7 @@ remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
 
+
   #### Used by
 
   - [Word.ListFormat](/javascript/api/word/word.listformat): [applyListTemplateWithLevel](/javascript/api/word/word.listformat#word-word-listformat-applylisttemplatewithlevel-member(1)), [canContinuePreviousList](/javascript/api/word/word.listformat#word-word-listformat-cancontinuepreviouslist-member(1)), [listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)
