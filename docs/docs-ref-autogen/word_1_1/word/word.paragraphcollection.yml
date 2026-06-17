@@ -7,13 +7,12 @@ summary: Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:clas
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
   - [Word.Range](/javascript/api/word/word.range): [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
+
   #### Examples
 
   ```TypeScript

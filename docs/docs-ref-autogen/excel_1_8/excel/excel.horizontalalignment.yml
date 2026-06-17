@@ -7,11 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.RangeFormat](/javascript/api/excel/excel.rangeformat): [horizontalAlignment](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-horizontalalignment-member)
   - [Excel.Style](/javascript/api/excel/excel.style): [horizontalAlignment](/javascript/api/excel/excel.style#excel-excel-style-horizontalalignment-member)
+
   #### Examples
 
   ```TypeScript

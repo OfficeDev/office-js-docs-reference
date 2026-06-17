@@ -7,13 +7,12 @@ summary: Represents a list item in a dropdown list or combo box content control.
 remarks: |-
   [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol): [addListItem](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-addlistitem-member(1))
   - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [getFirst](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-items-member)
   - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [addListItem](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-addlistitem-member(1))
+
   #### Examples
 
   ```TypeScript

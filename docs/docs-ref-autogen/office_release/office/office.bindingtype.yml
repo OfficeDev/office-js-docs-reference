@@ -5,10 +5,25 @@ package: office!
 fullName: Office.BindingType
 summary: Specifies the type of the binding object that should be returned.
 remarks: |-
+
+
   #### Used by
 
   - [Office.Binding](/javascript/api/office/office.binding): [type](/javascript/api/office/office.binding#office-office-binding-type-member)
   - [Office.Bindings](/javascript/api/office/office.bindings): [addFromNamedItemAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromnameditemasync-member(1)), [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1)), [addFromSelectionAsync](/javascript/api/office/office.bindings#office-office-bindings-addfromselectionasync-member(1))
+
+  #### Examples
+
+  ```TypeScript
+  // Create a new table binding for the selected table.
+  Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          showMessage("Action failed with error: " + asyncResult.error.message);
+      } else {
+          showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+      }
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

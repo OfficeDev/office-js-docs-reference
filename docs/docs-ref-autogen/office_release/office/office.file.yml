@@ -7,11 +7,10 @@ summary: Represents the document file associated with an Office Add-in.
 remarks: |-
   Access the File object with the AsyncResult.value property in the callback function passed to the Document.getFileAsync method.
 
-
-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [getFileAsync](/javascript/api/office/office.document#office-office-document-getfileasync-member(1))
+
   #### Examples
 
   ```TypeScript

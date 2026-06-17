@@ -7,10 +7,10 @@ summary: Represents the data bar direction within a cell.
 remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.DataBarConditionalFormat](/javascript/api/excel/excel.databarconditionalformat): [barDirection](/javascript/api/excel/excel.databarconditionalformat#excel-excel-databarconditionalformat-bardirection-member)
+
   #### Examples
 
   ```TypeScript

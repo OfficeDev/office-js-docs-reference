@@ -58,6 +58,7 @@ remarks: |-
   - [Office.TableBinding](/javascript/api/office/office.tablebinding): [addColumnsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addcolumnsasync-member(1)), [addRowsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addrowsasync-member(1)), [clearFormatsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-clearformatsasync-member(1)), [deleteAllDataValuesAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-deletealldatavaluesasync-member(1)), [getFormatsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-getformatsasync-member(1)), [setFormatsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-setformatsasync-member(1)), [setTableOptionsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-settableoptionsasync-member(1))
   - [Office.Time](/javascript/api/outlook/office.time): [getAsync](/javascript/api/outlook/office.time#outlook-office-time-getasync-member(1)), [setAsync](/javascript/api/outlook/office.time#outlook-office-time-setasync-member(1))
   - [Office.UI](/javascript/api/office/office.ui): [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1)), [displayDialogAsync](/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1))
+
   #### Examples
 
   ```TypeScript
@@ -171,8 +172,7 @@ properties:
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
-                  }
-                  else {
+                  } else {
                       write(asyncResult.value);
                   }
               });
@@ -205,8 +205,7 @@ properties:
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
-                  }
-                  else {
+                  } else {
                       write(asyncResult.value);
                   }
               });
@@ -233,8 +232,7 @@ properties:
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   write(asyncResult.error.message);
-              }
-              else {
+              } else {
                   write(asyncResult.value);
               }
           });

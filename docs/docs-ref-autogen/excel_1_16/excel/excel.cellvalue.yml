@@ -7,7 +7,6 @@ summary: Represents the value in a cell.
 remarks: |-
   [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue): [elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)
@@ -20,6 +19,7 @@ remarks: |-
   - [Excel.TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): [addAsJson](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))
   - [Excel.TableRow](/javascript/api/excel/excel.tablerow): [valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member), [valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)
   - [Excel.TableRowCollection](/javascript/api/excel/excel.tablerowcollection): [addAsJson](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))
+
 
 
   Learn more about the types in this type alias through the following links. 

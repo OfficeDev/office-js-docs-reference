@@ -7,10 +7,10 @@ summary: Represents the types of color criterion for conditional formatting.
 remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.ConditionalColorScaleCriterion](/javascript/api/excel/excel.conditionalcolorscalecriterion): [type](/javascript/api/excel/excel.conditionalcolorscalecriterion#excel-excel-conditionalcolorscalecriterion-type-member)
+
   #### Examples
 
   ```TypeScript

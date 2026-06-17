@@ -7,12 +7,11 @@ summary: Represents the body of a document or a section.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [body](/javascript/api/word/word.document#word-word-document-body-member)
   - [Word.Section](/javascript/api/word/word.section): [body](/javascript/api/word/word.section#word-word-section-body-member), [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1)), [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
+
   #### Examples
 
   ```TypeScript

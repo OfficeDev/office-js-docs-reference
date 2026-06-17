@@ -7,12 +7,11 @@ summary: Represents a table.
 remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [getCellOrNullObject](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getcellornullobject-member(1))
   - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [getItemAtOrNullObject](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-getitematornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-items-member)
+
   #### Examples
 
   ```TypeScript

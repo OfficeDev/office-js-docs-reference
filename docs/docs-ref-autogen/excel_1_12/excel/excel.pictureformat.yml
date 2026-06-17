@@ -7,11 +7,11 @@ summary: The format of the image.
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Image](/javascript/api/excel/excel.image): [format](/javascript/api/excel/excel.image#excel-excel-image-format-member)
   - [Excel.Shape](/javascript/api/excel/excel.shape): [getAsImage](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))
+
   #### Examples
 
   ```TypeScript

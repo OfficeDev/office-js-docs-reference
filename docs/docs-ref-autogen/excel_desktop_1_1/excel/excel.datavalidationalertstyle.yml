@@ -7,10 +7,10 @@ summary: Represents the data validation error alert style. The default is `Stop`
 remarks: |-
   [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.DataValidationErrorAlert](/javascript/api/excel/excel.datavalidationerroralert): [style](/javascript/api/excel/excel.datavalidationerroralert#excel-excel-datavalidationerroralert-style-member)
+
   #### Examples
 
   ```TypeScript

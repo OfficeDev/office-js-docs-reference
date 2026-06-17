@@ -10,6 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office](/javascript/api/office): [initialize](/javascript/api/office#office-office-initialize-function(1))
+
   #### Examples
 
   ```TypeScript

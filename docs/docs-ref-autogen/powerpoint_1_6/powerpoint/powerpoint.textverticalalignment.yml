@@ -7,11 +7,10 @@ summary: Represents the vertical alignment of a [PowerPoint.TextFrame](xref:powe
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
+
   #### Examples
 
   ```TypeScript

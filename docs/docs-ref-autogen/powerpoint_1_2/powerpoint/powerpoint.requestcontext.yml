@@ -14,6 +14,7 @@ remarks: |-
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [context](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-context-member)
   - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [context](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-context-member)
   - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [context](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-context-member)
+
   #### Examples
 
   ```TypeScript

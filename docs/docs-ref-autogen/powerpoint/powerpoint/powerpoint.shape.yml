@@ -7,8 +7,6 @@ summary: Represents a single shape in the slide.
 remarks: |-
   [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.Binding](/javascript/api/powerpoint/powerpoint.binding): [getShape](/javascript/api/powerpoint/powerpoint.binding#powerpoint-powerpoint-binding-getshape-member(1))
@@ -21,6 +19,7 @@ remarks: |-
   - [PowerPoint.ShapeScopedCollection](/javascript/api/powerpoint/powerpoint.shapescopedcollection): [getItem](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-getitemornullobject-member(1)), [group](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-group-member(1)), [items](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-items-member)
   - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [getShape](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-getshape-member(1))
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [getParentShape](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-getparentshape-member(1))
+
   #### Examples
 
   ```TypeScript

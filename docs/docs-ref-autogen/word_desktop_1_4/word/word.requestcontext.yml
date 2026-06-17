@@ -187,6 +187,7 @@ remarks: |-
   - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [context](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-context-member)
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [context](/javascript/api/word/word.xmlnode#word-word-xmlnode-context-member)
   - [Word.XmlNodeCollection](/javascript/api/word/word.xmlnodecollection): [context](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-context-member)
+
   #### Examples
 
   ```TypeScript

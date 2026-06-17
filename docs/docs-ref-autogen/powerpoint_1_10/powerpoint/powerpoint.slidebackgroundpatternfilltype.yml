@@ -7,12 +7,11 @@ summary: Specifies the pattern fill type for a [PowerPoint.SlideBackgroundPatter
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.SlideBackgroundPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill): [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfill#powerpoint-powerpoint-slidebackgroundpatternfill-pattern-member)
   - [PowerPoint.SlideBackgroundPatternFillOptions](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions): [pattern](/javascript/api/powerpoint/powerpoint.slidebackgroundpatternfilloptions#powerpoint-powerpoint-slidebackgroundpatternfilloptions-pattern-member)
+
   #### Examples
 
   ```TypeScript

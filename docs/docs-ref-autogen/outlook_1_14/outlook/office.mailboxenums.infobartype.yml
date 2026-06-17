@@ -7,11 +7,10 @@ summary: Type of notification allowed by [Office.EventType.InfobarClicked](https
 remarks: |-
   [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Office.InfobarDetails](/javascript/api/outlook/office.infobardetails): [infobarType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-infobartype-member)
+
   #### Examples
 
   ```TypeScript

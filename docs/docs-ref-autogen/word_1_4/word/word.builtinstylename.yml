@@ -9,8 +9,6 @@ remarks: |-
 
   Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)
@@ -18,6 +16,7 @@ remarks: |-
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)
   - [Word.Range](/javascript/api/word/word.range): [styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)
   - [Word.Table](/javascript/api/word/word.table): [styleBuiltIn](/javascript/api/word/word.table#word-word-table-stylebuiltin-member)
+
   #### Examples
 
   ```TypeScript

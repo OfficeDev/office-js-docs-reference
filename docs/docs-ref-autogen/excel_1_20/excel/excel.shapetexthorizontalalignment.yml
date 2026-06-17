@@ -7,10 +7,10 @@ summary: Specifies the horizontal alignment for the text frame in a shape.
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.TextFrame](/javascript/api/excel/excel.textframe): [horizontalAlignment](/javascript/api/excel/excel.textframe#excel-excel-textframe-horizontalalignment-member)
+
   #### Examples
 
   ```TypeScript

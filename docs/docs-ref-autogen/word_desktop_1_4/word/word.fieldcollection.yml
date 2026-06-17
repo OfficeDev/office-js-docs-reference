@@ -9,8 +9,6 @@ remarks: |-
 
   Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, the Word UI on the web primarily only supports fields as read-only (see [Field codes in Word for the web](https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1)<!-- -->). To learn more about Word UI clients that more fully support fields, see the product list at the beginning of [Insert, edit, and view fields in Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!-- -->.
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [fields](/javascript/api/word/word.body#word-word-body-fields-member)
@@ -21,6 +19,7 @@ remarks: |-
   - [Word.Selection](/javascript/api/word/word.selection): [fields](/javascript/api/word/word.selection#word-word-selection-fields-member)
   - [Word.Table](/javascript/api/word/word.table): [fields](/javascript/api/word/word.table#word-word-table-fields-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)
+
   #### Examples
 
   ```TypeScript

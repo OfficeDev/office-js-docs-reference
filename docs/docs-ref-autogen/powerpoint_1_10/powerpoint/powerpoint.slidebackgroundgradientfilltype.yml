@@ -7,12 +7,11 @@ summary: Specifies the gradient fill type for a [PowerPoint.SlideBackgroundGradi
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.SlideBackgroundGradientFill](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill): [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfill#powerpoint-powerpoint-slidebackgroundgradientfill-type-member)
   - [PowerPoint.SlideBackgroundGradientFillOptions](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions): [type](/javascript/api/powerpoint/powerpoint.slidebackgroundgradientfilloptions#powerpoint-powerpoint-slidebackgroundgradientfilloptions-type-member)
+
   #### Examples
 
   ```TypeScript

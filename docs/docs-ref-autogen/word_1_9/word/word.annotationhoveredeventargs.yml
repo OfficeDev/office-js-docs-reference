@@ -7,11 +7,10 @@ summary: Holds annotation information that is passed back on annotation hovered 
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [onAnnotationHovered](/javascript/api/word/word.document#word-word-document-onannotationhovered-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,11 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.ChartBorder](/javascript/api/excel/excel.chartborder): [lineStyle](/javascript/api/excel/excel.chartborder#excel-excel-chartborder-linestyle-member)
   - [Excel.ChartLineFormat](/javascript/api/excel/excel.chartlineformat): [lineStyle](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-linestyle-member)
+
   #### Examples
 
   ```TypeScript

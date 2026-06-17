@@ -24,6 +24,7 @@ remarks: |-
   - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [context](/javascript/api/word/word.searchoptions#word-word-searchoptions-context-member)
   - [Word.Section](/javascript/api/word/word.section): [context](/javascript/api/word/word.section#word-word-section-context-member)
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
+
   #### Examples
 
   ```TypeScript

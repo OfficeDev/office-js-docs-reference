@@ -19,8 +19,6 @@ remarks: |-
 
   Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded.
 
-
-
   #### Used by
 
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(3))
@@ -173,6 +171,7 @@ remarks: |-
   - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(3))
   - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(3))
   - [Word.XmlNodeCollection](/javascript/api/word/word.xmlnodecollection): [load](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-load-member(3))
+
   #### Examples
 
   ```TypeScript

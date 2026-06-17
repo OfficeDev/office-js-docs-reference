@@ -7,11 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.CellPropertiesFont](/javascript/api/excel/excel.cellpropertiesfont): [underline](/javascript/api/excel/excel.cellpropertiesfont#excel-excel-cellpropertiesfont-underline-member)
   - [Excel.RangeFont](/javascript/api/excel/excel.rangefont): [underline](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-underline-member)
+
   #### Examples
 
   ```TypeScript

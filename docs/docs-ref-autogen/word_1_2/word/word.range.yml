@@ -7,8 +7,6 @@ summary: Represents a contiguous area in a document.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertFileFromBase64](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.body#word-word-body-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.body#word-word-body-insertooxml-member(1)), [insertText](/javascript/api/word/word.body#word-word-body-inserttext-member(1))
@@ -17,6 +15,7 @@ remarks: |-
   - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [insertFileFromBase64](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertooxml-member(1)), [insertText](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-inserttext-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertFileFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.paragraph#word-word-paragraph-insertooxml-member(1)), [insertText](/javascript/api/word/word.paragraph#word-word-paragraph-inserttext-member(1))
   - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [items](/javascript/api/word/word.rangecollection#word-word-rangecollection-items-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,8 +7,6 @@ summary: Represents a single paragraph in a selection, range, content control, o
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertParagraph](/javascript/api/word/word.body#word-word-body-insertparagraph-member(1))
@@ -20,6 +18,7 @@ remarks: |-
   - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [add](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-add-member(1)), [getFirst](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getfirstornullobject-member(1)), [getLast](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlast-member(1)), [getLastOrNullObject](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-getlastornullobject-member(1)), [items](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-items-member)
   - [Word.Range](/javascript/api/word/word.range): [insertParagraph](/javascript/api/word/word.range#word-word-range-insertparagraph-member(1))
   - [Word.Table](/javascript/api/word/word.table): [getParagraphAfter](/javascript/api/word/word.table#word-word-table-getparagraphafter-member(1)), [getParagraphAfterOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphafterornullobject-member(1)), [getParagraphBefore](/javascript/api/word/word.table#word-word-table-getparagraphbefore-member(1)), [getParagraphBeforeOrNullObject](/javascript/api/word/word.table#word-word-table-getparagraphbeforeornullobject-member(1)), [insertParagraph](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))
+
   #### Examples
 
   ```TypeScript

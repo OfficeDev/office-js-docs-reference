@@ -22,6 +22,7 @@ remarks: |-
   - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
   - [PowerPoint.Tag](/javascript/api/powerpoint/powerpoint.tag): [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
   - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
+
   #### Examples
 
   ```TypeScript

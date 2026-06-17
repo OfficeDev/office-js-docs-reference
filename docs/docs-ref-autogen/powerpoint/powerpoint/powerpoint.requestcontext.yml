@@ -71,6 +71,7 @@ remarks: |-
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
   - [PowerPoint.ThemeColorScheme](/javascript/api/powerpoint/powerpoint.themecolorscheme): [context](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-context-member)
+
   #### Examples
 
   ```TypeScript

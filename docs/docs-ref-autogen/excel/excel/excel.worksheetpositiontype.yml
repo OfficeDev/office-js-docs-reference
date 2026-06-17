@@ -7,12 +7,12 @@ summary: The position of a worksheet relative to another worksheet or the entire
 remarks: |-
   [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.InsertWorksheetOptions](/javascript/api/excel/excel.insertworksheetoptions): [positionType](/javascript/api/excel/excel.insertworksheetoptions#excel-excel-insertworksheetoptions-positiontype-member)
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [copy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))
+
   #### Examples
 
   ```TypeScript

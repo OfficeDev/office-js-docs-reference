@@ -7,11 +7,10 @@ summary: Represents the `Application` object.
 remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.RequestContext](/javascript/api/word/word.requestcontext): [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
+
   #### Examples
 
   ```TypeScript

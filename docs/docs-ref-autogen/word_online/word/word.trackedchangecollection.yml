@@ -7,14 +7,13 @@ summary: Contains a collection of [Word.TrackedChange](xref:word!Word.TrackedCha
 remarks: |-
   [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [getTrackedChanges](/javascript/api/word/word.body#word-word-body-gettrackedchanges-member(1))
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [getTrackedChanges](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettrackedchanges-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [getTrackedChanges](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))
   - [Word.Range](/javascript/api/word/word.range): [getTrackedChanges](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))
+
   #### Examples
 
   ```TypeScript

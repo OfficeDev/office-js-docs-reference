@@ -7,11 +7,11 @@ summary: Represents a collection of note objects that are part of the workbook.
 remarks: |-
   [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [notes](/javascript/api/excel/excel.workbook#excel-excel-workbook-notes-member)
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [notes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-notes-member)
+
   #### Examples
 
   ```TypeScript

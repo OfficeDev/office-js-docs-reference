@@ -7,8 +7,6 @@ summary: Provides information about the type of a raised event.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.CommentEventArgs](/javascript/api/word/word.commenteventargs): [type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)
@@ -21,6 +19,7 @@ remarks: |-
   - [Word.ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs): [type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)
   - [Word.ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs): [type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)
   - [Word.ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs): [type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)
+
   #### Examples
 
   ```TypeScript

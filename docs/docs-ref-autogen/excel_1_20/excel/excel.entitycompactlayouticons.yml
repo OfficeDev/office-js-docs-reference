@@ -7,11 +7,11 @@ summary: The list of icons available for `EntityCompactLayout`<!-- -->. An icon 
 remarks: |-
   [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.BasicCompactLayout](/javascript/api/excel/excel.basiccompactlayout): [icon](/javascript/api/excel/excel.basiccompactlayout#excel-excel-basiccompactlayout-icon-member)
   - [Excel.EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout): [icon](/javascript/api/excel/excel.entitycompactlayout#excel-excel-entitycompactlayout-icon-member)
+
   #### Examples
 
   ```TypeScript

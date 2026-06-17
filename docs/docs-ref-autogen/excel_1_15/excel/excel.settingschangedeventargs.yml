@@ -7,10 +7,10 @@ summary: Provides information about the setting that raised the settings changed
 remarks: |-
   [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [onSettingsChanged](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-onsettingschanged-member)
+
   #### Examples
 
   ```TypeScript

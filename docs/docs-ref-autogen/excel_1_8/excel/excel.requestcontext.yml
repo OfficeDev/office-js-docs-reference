@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the Excel application
 remarks: |-
 
 
-
   #### Used by
 
   - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(1))
@@ -129,6 +128,7 @@ remarks: |-
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [context](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-context-member)
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
+
   #### Examples
 
   ```TypeScript

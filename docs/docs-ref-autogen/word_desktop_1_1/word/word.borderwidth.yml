@@ -7,12 +7,11 @@ summary: Represents the width of a style's border.
 remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
-
   #### Used by
 
   - [Word.Border](/javascript/api/word/word.border): [width](/javascript/api/word/word.border#word-word-border-width-member)
   - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [insideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-insideborderwidth-member), [outsideBorderWidth](/javascript/api/word/word.bordercollection#word-word-bordercollection-outsideborderwidth-member)
+
   #### Examples
 
   ```TypeScript

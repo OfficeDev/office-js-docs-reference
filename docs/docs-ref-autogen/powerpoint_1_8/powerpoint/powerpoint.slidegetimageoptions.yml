@@ -7,11 +7,10 @@ summary: Represents the available options when getting an image of a slide.
 remarks: |-
   [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
-
   #### Used by
 
   - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [getImageAsBase64](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-getimageasbase64-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -154,6 +154,7 @@ remarks: |-
   - [Word.TemplateCollection](/javascript/api/word/word.templatecollection): [getCount](/javascript/api/word/word.templatecollection#word-word-templatecollection-getcount-member(1))
   - [Word.TextColumnCollection](/javascript/api/word/word.textcolumncollection): [getFlowDirection](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getflowdirection-member(1)), [getHasLineBetween](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-gethaslinebetween-member(1)), [getIsEvenlySpaced](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-getisevenlyspaced-member(1))
   - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [setMapping](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmapping-member(1)), [setMappingByNode](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-setmappingbynode-member(1))
+
   #### Examples
 
   ```TypeScript
