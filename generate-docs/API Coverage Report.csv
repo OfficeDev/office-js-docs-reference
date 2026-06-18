@@ -8316,8 +8316,8 @@ office,N/A,"Office.isSetSupported(name, minVersion)",Method,Deprecated,false
 office,N/A,"Office.onReady(callback)",Method,Excellent,true
 office,N/A,"Office.select(expression, callback)",Method,Great,true
 office,N/A,"Office.useShortNamespace(useShortNamespace)",Method,Fine,true
-office-runtime,OfficeRuntime.ApiInformation,N/A,Interface,Fine,false
-office-runtime,OfficeRuntime.ApiInformation,"isSetSupported(name, minVersion)",Method,Good,false
+office-runtime,OfficeRuntime.ApiInformation,N/A,Interface,Deprecated,false
+office-runtime,OfficeRuntime.ApiInformation,"isSetSupported(name, minVersion)",Method,Deprecated,false
 office-runtime,OfficeRuntime.Auth,N/A,Interface,Fine,true
 office-runtime,OfficeRuntime.Auth,"getAccessToken(options)",Method,Excellent,true
 office-runtime,OfficeRuntime.AuthOptions,N/A,Interface,Great,true
