@@ -8,265 +8,231 @@ items:
       - name: OneNote
         href: /javascript/api/onenote
       - name: Outlook
-        href: /javascript/api/outlook
+        uid: outlook!
+        items:
+          - name: MailboxEnums
+            uid: ''
+            items:
+              - name: ActionType
+                uid: outlook!Office.MailboxEnums.ActionType:enum
+              - name: AppointmentSensitivityType
+                uid: outlook!Office.MailboxEnums.AppointmentSensitivityType:enum
+              - name: AttachmentContentFormat
+                uid: outlook!Office.MailboxEnums.AttachmentContentFormat:enum
+              - name: AttachmentStatus
+                uid: outlook!Office.MailboxEnums.AttachmentStatus:enum
+              - name: AttachmentType
+                uid: outlook!Office.MailboxEnums.AttachmentType:enum
+              - name: BodyMode
+                uid: outlook!Office.MailboxEnums.BodyMode:enum
+              - name: CategoryColor
+                uid: outlook!Office.MailboxEnums.CategoryColor:enum
+              - name: ComposeType
+                uid: outlook!Office.MailboxEnums.ComposeType:enum
+              - name: Days
+                uid: outlook!Office.MailboxEnums.Days:enum
+              - name: DelegatePermissions
+                uid: outlook!Office.MailboxEnums.DelegatePermissions:enum
+              - name: EntityType
+                uid: outlook!Office.MailboxEnums.EntityType:enum
+              - name: InfobarActionType
+                uid: outlook!Office.MailboxEnums.InfobarActionType:enum
+              - name: InfobarType
+                uid: outlook!Office.MailboxEnums.InfobarType:enum
+              - name: ItemNotificationMessageType
+                uid: outlook!Office.MailboxEnums.ItemNotificationMessageType:enum
+              - name: ItemType
+                uid: outlook!Office.MailboxEnums.ItemType:enum
+              - name: LocationType
+                uid: outlook!Office.MailboxEnums.LocationType:enum
+              - name: Month
+                uid: outlook!Office.MailboxEnums.Month:enum
+              - name: MoveSpamItemTo
+                uid: outlook!Office.MailboxEnums.MoveSpamItemTo:enum
+              - name: OpenLocation
+                uid: outlook!Office.MailboxEnums.OpenLocation:enum
+              - name: OWAView
+                uid: outlook!Office.MailboxEnums.OWAView:enum
+              - name: RecipientType
+                uid: outlook!Office.MailboxEnums.RecipientType:enum
+              - name: RecurrenceTimeZone
+                uid: outlook!Office.MailboxEnums.RecurrenceTimeZone:enum
+              - name: RecurrenceType
+                uid: outlook!Office.MailboxEnums.RecurrenceType:enum
+              - name: ResponseType
+                uid: outlook!Office.MailboxEnums.ResponseType:enum
+              - name: RestVersion
+                uid: outlook!Office.MailboxEnums.RestVersion:enum
+              - name: SaveLocation
+                uid: outlook!Office.MailboxEnums.SaveLocation:enum
+              - name: SendModeOverride
+                uid: outlook!Office.MailboxEnums.SendModeOverride:enum
+              - name: SourceProperty
+                uid: outlook!Office.MailboxEnums.SourceProperty:enum
+              - name: WeekNumber
+                uid: outlook!Office.MailboxEnums.WeekNumber:enum
+          - name: AppointmentCompose
+            uid: outlook!Office.AppointmentCompose:interface
+          - name: AppointmentForm
+            uid: outlook!Office.AppointmentForm:interface
+          - name: AppointmentRead
+            uid: outlook!Office.AppointmentRead:interface
+          - name: AppointmentTimeChangedEventArgs
+            uid: outlook!Office.AppointmentTimeChangedEventArgs:interface
+          - name: AttachmentContent
+            uid: outlook!Office.AttachmentContent:interface
+          - name: AttachmentDetails
+            uid: outlook!Office.AttachmentDetails:interface
+          - name: AttachmentDetailsCompose
+            uid: outlook!Office.AttachmentDetailsCompose:interface
+          - name: AttachmentsChangedEventArgs
+            uid: outlook!Office.AttachmentsChangedEventArgs:interface
+          - name: Body
+            uid: outlook!Office.Body:interface
+          - name: Categories
+            uid: outlook!Office.Categories:interface
+          - name: CategoryDetails
+            uid: outlook!Office.CategoryDetails:interface
+          - name: CoercionTypeOptions
+            uid: outlook!Office.CoercionTypeOptions:interface
+          - name: Contact
+            uid: outlook!Office.Contact:interface
+          - name: CustomProperties
+            uid: outlook!Office.CustomProperties:interface
+          - name: DelayDeliveryTime
+            uid: outlook!Office.DelayDeliveryTime:interface
+          - name: Diagnostics
+            uid: outlook!Office.Diagnostics:interface
+          - name: DragAndDropEventArgs
+            uid: outlook!Office.DragAndDropEventArgs:interface
+          - name: DragoverEventData
+            uid: outlook!Office.DragoverEventData:interface
+          - name: DropEventData
+            uid: outlook!Office.DropEventData:interface
+          - name: DroppedItemDetails
+            uid: outlook!Office.DroppedItemDetails:interface
+          - name: DroppedItems
+            uid: outlook!Office.DroppedItems:interface
+          - name: EmailAddressDetails
+            uid: outlook!Office.EmailAddressDetails:interface
+          - name: EmailUser
+            uid: outlook!Office.EmailUser:interface
+          - name: EnhancedLocation
+            uid: outlook!Office.EnhancedLocation:interface
+          - name: EnhancedLocationsChangedEventArgs
+            uid: outlook!Office.EnhancedLocationsChangedEventArgs:interface
+          - name: Entities
+            uid: outlook!Office.Entities:interface
+          - name: From
+            uid: outlook!Office.From:interface
+          - name: InfobarClickedEventArgs
+            uid: outlook!Office.InfobarClickedEventArgs:interface
+          - name: InfobarDetails
+            uid: outlook!Office.InfobarDetails:interface
+          - name: InitializationContextChangedEventArgs
+            uid: outlook!Office.InitializationContextChangedEventArgs:interface
+          - name: InternetHeaders
+            uid: outlook!Office.InternetHeaders:interface
+          - name: Item
+            uid: outlook!Office.Item:interface
+          - name: LoadedMessageCompose
+            uid: outlook!Office.LoadedMessageCompose:interface
+          - name: LoadedMessageRead
+            uid: outlook!Office.LoadedMessageRead:interface
+          - name: LocalClientTime
+            uid: outlook!Office.LocalClientTime:interface
+          - name: Location
+            uid: outlook!Office.Location:interface
+          - name: LocationDetails
+            uid: outlook!Office.LocationDetails:interface
+          - name: LocationIdentifier
+            uid: outlook!Office.LocationIdentifier:interface
+          - name: Mailbox
+            uid: outlook!Office.Mailbox:interface
+          - name: MailboxEvent
+            uid: outlook!Office.MailboxEvent:interface
+          - name: MasterCategories
+            uid: outlook!Office.MasterCategories:interface
+          - name: MeetingSuggestion
+            uid: outlook!Office.MeetingSuggestion:interface
+          - name: MessageCompose
+            uid: outlook!Office.MessageCompose:interface
+          - name: MessageForm
+            uid: outlook!Office.MessageForm:interface
+          - name: MessageFormAttachment
+            uid: outlook!Office.MessageFormAttachment:interface
+          - name: MessageRead
+            uid: outlook!Office.MessageRead:interface
+          - name: NotificationMessageAction
+            uid: outlook!Office.NotificationMessageAction:interface
+          - name: NotificationMessageDetails
+            uid: outlook!Office.NotificationMessageDetails:interface
+          - name: NotificationMessages
+            uid: outlook!Office.NotificationMessages:interface
+          - name: OfficeThemeChangedEventArgs
+            uid: outlook!Office.OfficeThemeChangedEventArgs:interface
+          - name: Organizer
+            uid: outlook!Office.Organizer:interface
+          - name: PhoneNumber
+            uid: outlook!Office.PhoneNumber:interface
+          - name: Recipients
+            uid: outlook!Office.Recipients:interface
+          - name: RecipientsChangedEventArgs
+            uid: outlook!Office.RecipientsChangedEventArgs:interface
+          - name: RecipientsChangedFields
+            uid: outlook!Office.RecipientsChangedFields:interface
+          - name: Recurrence
+            uid: outlook!Office.Recurrence:interface
+          - name: RecurrenceChangedEventArgs
+            uid: outlook!Office.RecurrenceChangedEventArgs:interface
+          - name: RecurrenceProperties
+            uid: outlook!Office.RecurrenceProperties:interface
+          - name: RecurrenceTimeZone
+            uid: outlook!Office.RecurrenceTimeZone:interface
+          - name: ReplyFormAttachment
+            uid: outlook!Office.ReplyFormAttachment:interface
+          - name: ReplyFormData
+            uid: outlook!Office.ReplyFormData:interface
+          - name: RoamingSettings
+            uid: outlook!Office.RoamingSettings:interface
+          - name: SelectedItemDetails
+            uid: outlook!Office.SelectedItemDetails:interface
+          - name: Sensitivity
+            uid: outlook!Office.Sensitivity:interface
+          - name: SensitivityLabel
+            uid: outlook!Office.SensitivityLabel:interface
+          - name: SensitivityLabelChangedEventArgs
+            uid: outlook!Office.SensitivityLabelChangedEventArgs:interface
+          - name: SensitivityLabelDetails
+            uid: outlook!Office.SensitivityLabelDetails:interface
+          - name: SensitivityLabelsCatalog
+            uid: outlook!Office.SensitivityLabelsCatalog:interface
+          - name: SeriesTime
+            uid: outlook!Office.SeriesTime:interface
+          - name: SessionData
+            uid: outlook!Office.SessionData:interface
+          - name: SharedProperties
+            uid: outlook!Office.SharedProperties:interface
+          - name: SmartAlertsEventCompletedOptions
+            uid: outlook!Office.SmartAlertsEventCompletedOptions:interface
+          - name: SpamReportingEventArgs
+            uid: outlook!Office.SpamReportingEventArgs:interface
+          - name: SpamReportingEventCompletedOptions
+            uid: outlook!Office.SpamReportingEventCompletedOptions:interface
+          - name: Subject
+            uid: outlook!Office.Subject:interface
+          - name: TaskSuggestion
+            uid: outlook!Office.TaskSuggestion:interface
+          - name: Time
+            uid: outlook!Office.Time:interface
+          - name: UserProfile
+            uid: outlook!Office.UserProfile:interface
       - name: PowerPoint
         href: /javascript/api/powerpoint
       - name: Visio
         href: /javascript/api/visio
       - name: Word
-        uid: word!
-        items:
-          - name: Enums
-            uid: ''
-            items:
-              - name: Alignment
-                uid: word!Word.Alignment:enum
-              - name: AnnotationState
-                uid: word!Word.AnnotationState:enum
-              - name: BodyType
-                uid: word!Word.BodyType:enum
-              - name: BorderLocation
-                uid: word!Word.BorderLocation:enum
-              - name: BorderType
-                uid: word!Word.BorderType:enum
-              - name: BorderWidth
-                uid: word!Word.BorderWidth:enum
-              - name: BreakType
-                uid: word!Word.BreakType:enum
-              - name: BuiltInStyleName
-                uid: word!Word.BuiltInStyleName:enum
-              - name: CellPaddingLocation
-                uid: word!Word.CellPaddingLocation:enum
-              - name: ChangeTrackingMode
-                uid: word!Word.ChangeTrackingMode:enum
-              - name: ChangeTrackingState
-                uid: word!Word.ChangeTrackingState:enum
-              - name: ChangeTrackingVersion
-                uid: word!Word.ChangeTrackingVersion:enum
-              - name: CloseBehavior
-                uid: word!Word.CloseBehavior:enum
-              - name: CompareTarget
-                uid: word!Word.CompareTarget:enum
-              - name: ContentControlAppearance
-                uid: word!Word.ContentControlAppearance:enum
-              - name: ContentControlType
-                uid: word!Word.ContentControlType:enum
-              - name: CritiqueColorScheme
-                uid: word!Word.CritiqueColorScheme:enum
-              - name: DocumentPropertyType
-                uid: word!Word.DocumentPropertyType:enum
-              - name: ErrorCodes
-                uid: word!Word.ErrorCodes:enum
-              - name: EventSource
-                uid: word!Word.EventSource:enum
-              - name: EventType
-                uid: word!Word.EventType:enum
-              - name: FieldKind
-                uid: word!Word.FieldKind:enum
-              - name: FieldType
-                uid: word!Word.FieldType:enum
-              - name: HeaderFooterType
-                uid: word!Word.HeaderFooterType:enum
-              - name: ImageFormat
-                uid: word!Word.ImageFormat:enum
-              - name: ImportedStylesConflictBehavior
-                uid: word!Word.ImportedStylesConflictBehavior:enum
-              - name: InsertLocation
-                uid: word!Word.InsertLocation:enum
-              - name: ListBuiltInNumberStyle
-                uid: word!Word.ListBuiltInNumberStyle:enum
-              - name: ListBullet
-                uid: word!Word.ListBullet:enum
-              - name: ListLevelType
-                uid: word!Word.ListLevelType:enum
-              - name: ListNumbering
-                uid: word!Word.ListNumbering:enum
-              - name: LocationRelation
-                uid: word!Word.LocationRelation:enum
-              - name: NoteItemType
-                uid: word!Word.NoteItemType:enum
-              - name: OutlineLevel
-                uid: word!Word.OutlineLevel:enum
-              - name: RangeLocation
-                uid: word!Word.RangeLocation:enum
-              - name: SaveBehavior
-                uid: word!Word.SaveBehavior:enum
-              - name: SelectionMode
-                uid: word!Word.SelectionMode:enum
-              - name: ShadingTextureType
-                uid: word!Word.ShadingTextureType:enum
-              - name: StyleType
-                uid: word!Word.StyleType:enum
-              - name: TrackedChangeType
-                uid: word!Word.TrackedChangeType:enum
-              - name: TrailingCharacter
-                uid: word!Word.TrailingCharacter:enum
-              - name: UnderlineType
-                uid: word!Word.UnderlineType:enum
-              - name: VerticalAlignment
-                uid: word!Word.VerticalAlignment:enum
-          - name: Annotation
-            uid: word!Word.Annotation:class
-          - name: AnnotationClickedEventArgs
-            uid: word!Word.AnnotationClickedEventArgs:interface
-          - name: AnnotationCollection
-            uid: word!Word.AnnotationCollection:class
-          - name: AnnotationHoveredEventArgs
-            uid: word!Word.AnnotationHoveredEventArgs:interface
-          - name: AnnotationInsertedEventArgs
-            uid: word!Word.AnnotationInsertedEventArgs:interface
-          - name: AnnotationPopupActionEventArgs
-            uid: word!Word.AnnotationPopupActionEventArgs:interface
-          - name: AnnotationRemovedEventArgs
-            uid: word!Word.AnnotationRemovedEventArgs:interface
-          - name: AnnotationSet
-            uid: word!Word.AnnotationSet:interface
-          - name: Application
-            uid: word!Word.Application:class
-          - name: Body
-            uid: word!Word.Body:class
-          - name: Border
-            uid: word!Word.Border:class
-          - name: BorderCollection
-            uid: word!Word.BorderCollection:class
-          - name: CheckboxContentControl
-            uid: word!Word.CheckboxContentControl:class
-          - name: Comment
-            uid: word!Word.Comment:class
-          - name: CommentCollection
-            uid: word!Word.CommentCollection:class
-          - name: CommentContentRange
-            uid: word!Word.CommentContentRange:class
-          - name: CommentReply
-            uid: word!Word.CommentReply:class
-          - name: CommentReplyCollection
-            uid: word!Word.CommentReplyCollection:class
-          - name: ContentControl
-            uid: word!Word.ContentControl:class
-          - name: ContentControlAddedEventArgs
-            uid: word!Word.ContentControlAddedEventArgs:interface
-          - name: ContentControlCollection
-            uid: word!Word.ContentControlCollection:class
-          - name: ContentControlDataChangedEventArgs
-            uid: word!Word.ContentControlDataChangedEventArgs:interface
-          - name: ContentControlDeletedEventArgs
-            uid: word!Word.ContentControlDeletedEventArgs:interface
-          - name: ContentControlEnteredEventArgs
-            uid: word!Word.ContentControlEnteredEventArgs:interface
-          - name: ContentControlExitedEventArgs
-            uid: word!Word.ContentControlExitedEventArgs:interface
-          - name: ContentControlOptions
-            uid: word!Word.ContentControlOptions:interface
-          - name: ContentControlSelectionChangedEventArgs
-            uid: word!Word.ContentControlSelectionChangedEventArgs:interface
-          - name: Critique
-            uid: word!Word.Critique:interface
-          - name: CritiqueAnnotation
-            uid: word!Word.CritiqueAnnotation:class
-          - name: CritiquePopupOptions
-            uid: word!Word.CritiquePopupOptions:interface
-          - name: CustomProperty
-            uid: word!Word.CustomProperty:class
-          - name: CustomPropertyCollection
-            uid: word!Word.CustomPropertyCollection:class
-          - name: CustomXmlPart
-            uid: word!Word.CustomXmlPart:class
-          - name: CustomXmlPartCollection
-            uid: word!Word.CustomXmlPartCollection:class
-          - name: CustomXmlPartScopedCollection
-            uid: word!Word.CustomXmlPartScopedCollection:class
-          - name: Document
-            uid: word!Word.Document:class
-          - name: DocumentCompareOptions
-            uid: word!Word.DocumentCompareOptions:interface
-          - name: DocumentCreated
-            uid: word!Word.DocumentCreated:class
-          - name: DocumentProperties
-            uid: word!Word.DocumentProperties:class
-          - name: Field
-            uid: word!Word.Field:class
-          - name: FieldCollection
-            uid: word!Word.FieldCollection:class
-          - name: Font
-            uid: word!Word.Font:class
-          - name: GetTextOptions
-            uid: word!Word.GetTextOptions:interface
-          - name: InlinePicture
-            uid: word!Word.InlinePicture:class
-          - name: InlinePictureCollection
-            uid: word!Word.InlinePictureCollection:class
-          - name: InsertFileOptions
-            uid: word!Word.InsertFileOptions:interface
-          - name: List
-            uid: word!Word.List:class
-          - name: ListCollection
-            uid: word!Word.ListCollection:class
-          - name: ListItem
-            uid: word!Word.ListItem:class
-          - name: ListLevel
-            uid: word!Word.ListLevel:class
-          - name: ListLevelCollection
-            uid: word!Word.ListLevelCollection:class
-          - name: ListTemplate
-            uid: word!Word.ListTemplate:class
-          - name: NoteItem
-            uid: word!Word.NoteItem:class
-          - name: NoteItemCollection
-            uid: word!Word.NoteItemCollection:class
-          - name: Paragraph
-            uid: word!Word.Paragraph:class
-          - name: ParagraphAddedEventArgs
-            uid: word!Word.ParagraphAddedEventArgs:interface
-          - name: ParagraphChangedEventArgs
-            uid: word!Word.ParagraphChangedEventArgs:interface
-          - name: ParagraphCollection
-            uid: word!Word.ParagraphCollection:class
-          - name: ParagraphDeletedEventArgs
-            uid: word!Word.ParagraphDeletedEventArgs:interface
-          - name: ParagraphFormat
-            uid: word!Word.ParagraphFormat:class
-          - name: Range
-            uid: word!Word.Range:class
-          - name: RangeCollection
-            uid: word!Word.RangeCollection:class
-          - name: RequestContext
-            uid: word!Word.RequestContext:class
-          - name: SearchOptions
-            uid: word!Word.SearchOptions:class
-          - name: Section
-            uid: word!Word.Section:class
-          - name: SectionCollection
-            uid: word!Word.SectionCollection:class
-          - name: Setting
-            uid: word!Word.Setting:class
-          - name: SettingCollection
-            uid: word!Word.SettingCollection:class
-          - name: Shading
-            uid: word!Word.Shading:class
-          - name: Style
-            uid: word!Word.Style:class
-          - name: StyleCollection
-            uid: word!Word.StyleCollection:class
-          - name: Table
-            uid: word!Word.Table:class
-          - name: TableBorder
-            uid: word!Word.TableBorder:class
-          - name: TableCell
-            uid: word!Word.TableCell:class
-          - name: TableCellCollection
-            uid: word!Word.TableCellCollection:class
-          - name: TableCollection
-            uid: word!Word.TableCollection:class
-          - name: TableRow
-            uid: word!Word.TableRow:class
-          - name: TableRowCollection
-            uid: word!Word.TableRowCollection:class
-          - name: TableStyle
-            uid: word!Word.TableStyle:class
-          - name: TrackedChange
-            uid: word!Word.TrackedChange:class
-          - name: TrackedChangeCollection
-            uid: word!Word.TrackedChangeCollection:class
+        href: /javascript/api/word
       - name: Common APIs
         uid: office!
         items:

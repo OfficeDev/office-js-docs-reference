@@ -69,6 +69,7 @@ npx version-remover api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts api-
 npx version-remover api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts "Api set: ExcelApi 1.2" configs/excel-1_2-config.json
 npx version-remover api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts "Api set: ExcelApi 1.1" configs/excel-1_1-config.json
 
+npx version-remover api-extractor-inputs-outlook-release/outlook_1_16/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts "Api set: Mailbox 1.16" configs/outlook-1.16-config.json
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts "Api set: Mailbox 1.15" configs/outlook-1.15-config.json
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts "Api set: Mailbox 1.14" configs/outlook-1.14-config.json
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts "Api set: Mailbox 1.13" configs/outlook-1.13-config.json
@@ -160,7 +161,8 @@ npx whats-new api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts api-extrac
 npx whats-new api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ../docs/includes/excel-1_2 javascript/api/excel/ configs/excel-1_2-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../docs/includes/excel-1_1 javascript/api/excel/ configs/excel-1_1-config.json
 
-npx whats-new api-extractor-inputs-outlook/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts ../docs/includes/outlook-preview javascript/api/outlook/ configs/outlook-preview-config.json
+npx whats-new api-extractor-inputs-outlook/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_16/outlook.d.ts ../docs/includes/outlook-preview javascript/api/outlook/ configs/outlook-preview-config.json
+npx whats-new api-extractor-inputs-outlook-release/outlook_1_16/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts ../docs/includes/outlook-1_16 javascript/api/outlook/ configs/outlook-1.16-config.json
 npx whats-new api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts ../docs/includes/outlook-1_15 javascript/api/outlook/ configs/outlook-1.15-config.json
 npx whats-new api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../docs/includes/outlook-1_14 javascript/api/outlook/ configs/outlook-1.14-config.json
 npx whats-new api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../docs/includes/outlook-1_13 javascript/api/outlook/ configs/outlook-1.13-config.json
@@ -371,6 +373,12 @@ if [ ! -d "json/outlook" ]; then
     echo Running API Extractor for Outlook preview.
     pushd api-extractor-inputs-outlook
     ../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/outlook_1_16" ]; then
+    echo Running API Extractor for Outlook 1.16.
+    pushd api-extractor-inputs-outlook-release/outlook_1_16
+    ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/outlook_1_15" ]; then
@@ -798,6 +806,9 @@ if [ ! -d "yaml/outlook_1_14" ]; then
 fi
 if [ ! -d "yaml/outlook_1_15" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_15 --output-folder ./yaml/outlook_1_15 
+fi
+if [ ! -d "yaml/outlook_1_16" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_16 --output-folder ./yaml/outlook_1_16 
 fi
 if [ ! -d "yaml/powerpoint" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint --output-folder ./yaml/powerpoint 
