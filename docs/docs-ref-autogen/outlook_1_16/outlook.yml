@@ -19,6 +19,8 @@ interfaces:
   - outlook!Office.CoercionTypeOptions:interface
   - outlook!Office.Contact:interface
   - outlook!Office.CustomProperties:interface
+  - outlook!Office.DecryptedMessageAttachment:interface
+  - outlook!Office.DecryptedMessageBody:interface
   - outlook!Office.DelayDeliveryTime:interface
   - outlook!Office.Diagnostics:interface
   - outlook!Office.DragAndDropEventArgs:interface
@@ -31,6 +33,7 @@ interfaces:
   - outlook!Office.EnhancedLocation:interface
   - outlook!Office.EnhancedLocationsChangedEventArgs:interface
   - outlook!Office.Entities:interface
+  - outlook!Office.Ews:interface
   - outlook!Office.From:interface
   - outlook!Office.InfobarClickedEventArgs:interface
   - outlook!Office.InfobarDetails:interface
@@ -51,6 +54,7 @@ interfaces:
   - outlook!Office.MeetingSuggestion:interface
   - outlook!Office.Message:interface
   - outlook!Office.MessageCompose:interface
+  - outlook!Office.MessageDecryptEventCompletedOptions:interface
   - outlook!Office.MessageForm:interface
   - outlook!Office.MessageFormAttachment:interface
   - outlook!Office.MessageRead:interface
@@ -115,4 +119,5 @@ enums:
   - outlook!Office.MailboxEnums.SaveLocation:enum
   - outlook!Office.MailboxEnums.SendModeOverride:enum
   - outlook!Office.MailboxEnums.SourceProperty:enum
+  - outlook!Office.MailboxEnums.TokenStatus:enum
   - outlook!Office.MailboxEnums.WeekNumber:enum

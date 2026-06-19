@@ -60,15 +60,7 @@ properties:
     summary: |-
       Provides diagnostic information to an Outlook add-in.
 
-      Contains the following members.
-
-      - `hostName` (string): A string that represents the name of the Office application. It should be one of the following values: `Outlook`<!-- -->, `newOutlookWindows`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->, or `OutlookAndroid`<!-- -->. **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on Mac.
-
-      - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0"). If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile devices, the `hostVersion` property returns the version of the Outlook client. In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the property returns the version of the Exchange Server.
-
-      - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web. If the application is not Outlook on the web, then accessing this property results in undefined. Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider, and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns that can be displayed.
-
-      More information is under [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
+      For information about the diagnostic properties you can access, see [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
     remarks: |-
       **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 

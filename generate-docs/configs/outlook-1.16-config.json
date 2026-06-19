@@ -4,6 +4,16 @@
                              "find":  "outlook/requirement-set-1.16",
                              "replace":  "outlook/requirement-set-1.15",
                              "description":  "Fix requirement set references in outlook_1_16 baseline to match filename"
+                         },
+                         {
+                             "find":  "options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions | MessageDecryptEventCompletedOptions",
+                             "replace":  "options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions",
+                             "description":  "Remove Mailbox 1.16-only MessageDecryptEventCompletedOptions when generating outlook_1_15"
+                         },
+                         {
+                             "find":  "@param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or decryption add-in when it completes processing an event.",
+                             "replace":  "@param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.",
+                             "description":  "Remove decryption wording from completed options docs when generating outlook_1_15"
                          }
                      ],
     "includeStaticFields":  false,
