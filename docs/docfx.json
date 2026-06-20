@@ -1057,6 +1057,10 @@
         "dest": "outlook-js-1.15",
         "moniker_range": "outlook-js-1.15"
       },
+      "outlook-js-1.16": {
+        "dest": "outlook-js-1.16",
+        "moniker_range": "outlook-js-1.16"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
