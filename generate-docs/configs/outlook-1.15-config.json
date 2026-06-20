@@ -4,11 +4,6 @@
                              "find":  "outlook/requirement-set-1.15",
                              "replace":  "outlook/requirement-set-1.14",
                              "description":  "Fix requirement set references in outlook_1_15 baseline to match filename"
-                         },
-                         {
-                             "find":  "Indicates that the event-based, spam-reporting, or decryption add-in has completed processing an event.",
-                             "replace":  "Indicates that the event-based or spam-reporting add-in has completed processing an event.",
-                             "description":  "Remove decryption wording from MailboxEvent.completed summary"
                          }
                      ],
     "includeStaticFields":  false,

@@ -7292,7 +7292,7 @@ export declare namespace Office {
          *
          * - Support for the decryption feature was introduced in Mailbox 1.16.
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
+         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
          */
         completed(options?: SmartAlertsEventCompletedOptions): void;
     }
