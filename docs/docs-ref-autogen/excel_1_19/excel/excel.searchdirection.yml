@@ -14,10 +14,27 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const table = sheet.tables.getItem("ExpensesTable");
+      const searchRange = table.getRange();
+      
+      // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+      const searchCriteria: Excel.SearchCriteria = {
+          completeMatch: true,
+          matchCase: false,
+          searchDirection: Excel.SearchDirection.forward
+      };
+      const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+      foundRange.load("address");
+      await context.sync();
 
-  searchDirectionToggle = searchDirectionToggle === Excel.SearchDirection.forward ? Excel.SearchDirection.backwards : Excel.SearchDirection.forward;
-  console.log("Search direction = " + searchDirectionToggle);
+      if (foundRange.isNullObject) {
+          console.log("Text not found");
+      } else {
+          console.log(foundRange.address);
+      }
+  });
   ```
 
 isPreview: false

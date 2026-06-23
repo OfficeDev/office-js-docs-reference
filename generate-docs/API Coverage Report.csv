@@ -5691,7 +5691,7 @@ excel,Excel.SaveBehavior,"save",EnumField,Great,false
 excel,Excel.ScrollWorkbookTabPosition,N/A,Enum,Good,false
 excel,Excel.ScrollWorkbookTabPosition,"first",EnumField,Great,false
 excel,Excel.ScrollWorkbookTabPosition,"last",EnumField,Great,false
-excel,Excel.SearchCriteria,N/A,Interface,Fine,false
+excel,Excel.SearchCriteria,N/A,Interface,Fine,true
 excel,Excel.SearchCriteria,"completeMatch",Property,Excellent,false
 excel,Excel.SearchCriteria,"matchCase",Property,Excellent,false
 excel,Excel.SearchCriteria,"searchDirection",Property,Excellent,false
@@ -8109,7 +8109,7 @@ office,Office.RangeCoordinates,"row",Property,Excellent,false
 office,Office.RangeFormatConfiguration,N/A,Interface,Fine,true
 office,Office.RangeFormatConfiguration,"cells",Property,Excellent,false
 office,Office.RangeFormatConfiguration,"format",Property,Great,false
-office,Office.RemoveHandlerOptions,N/A,Interface,Fine,false
+office,Office.RemoveHandlerOptions,N/A,Interface,Fine,true
 office,Office.RemoveHandlerOptions,"asyncContext",Property,Excellent,false
 office,Office.RemoveHandlerOptions,"handler",Property,Excellent,false
 office,Office.RequirementSetSupport,N/A,Interface,Fine,true
