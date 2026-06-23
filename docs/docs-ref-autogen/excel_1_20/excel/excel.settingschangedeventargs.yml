@@ -35,7 +35,7 @@ remarks: |-
           console.log("Setting value is: " + changedSetting.value);
           await context.sync();
       });
-  } 
+  }
   ```
 
 isPreview: false

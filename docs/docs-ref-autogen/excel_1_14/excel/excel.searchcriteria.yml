@@ -11,6 +11,32 @@ remarks: |-
 
   - [Excel.Range](/javascript/api/excel/excel.range): [find](/javascript/api/excel/excel.range#excel-excel-range-find-member(1)), [findOrNullObject](/javascript/api/excel/excel.range#excel-excel-range-findornullobject-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const table = sheet.tables.getItem("ExpensesTable");
+      const searchRange = table.getRange();
+      
+      // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+      const searchCriteria: Excel.SearchCriteria = {
+          completeMatch: true,
+          matchCase: false,
+          searchDirection: Excel.SearchDirection.forward
+      };
+      const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+      foundRange.load("address");
+      await context.sync();
+
+      if (foundRange.isNullObject) {
+          console.log("Text not found");
+      } else {
+          console.log(foundRange.address);
+      }
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
