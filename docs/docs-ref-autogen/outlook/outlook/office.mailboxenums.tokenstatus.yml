@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.TokenStatus
 summary: Specifies the status of Exchange Web Services (EWS) callback tokens or REST API tokens in an organization.
 remarks: |-
-  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
@@ -42,7 +42,7 @@ remarks: |-
   });
   ```
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 fields:
   - name: Disabled

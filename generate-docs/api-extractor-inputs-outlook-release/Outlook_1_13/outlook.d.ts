@@ -1397,6 +1397,7 @@ export declare namespace Office {
              */
             Subject = "subject"
         }
+        
         /**
          * Specifies the week of the month.
          *
@@ -1673,7 +1674,8 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
          *
          * @remarks
          * [Api set: Mailbox 1.11]
@@ -3011,11 +3013,13 @@ export declare namespace Office {
          * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 attendees
+         * - Windows (classic - Mailbox 1.15 and earlier): 500 attendees
+         *
+         * - Web, Windows (new, classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 attendees
          *
-         * - New Mac UI, web browser: No limit
+         * - New Mac UI: No limit
          *
          * @remarks
          *
@@ -3059,11 +3063,13 @@ export declare namespace Office {
          * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 attendees
+         * - Windows (classic - Mailbox 1.15 and earlier): 500 attendees
+         *
+         * - Web, Windows (new, classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 attendees
          *
-         * - New Mac UI, web browser: No limit
+         * - New Mac UI: No limit
          *
          * @remarks
          *
@@ -3826,22 +3832,7 @@ export declare namespace Office {
          * `Office.MailboxEnums.AttachmentType.File`. The file name extension is returned in the `name` property.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
-        /**
-         * Gets the content identifier of an inline attachment.
-         *
-         * **Important**:
-         *
-         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
-         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
-         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
-         *
-         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
-         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
-         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
-         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
-         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
-         */
-        contentId: string;
+        
         /**
          * Gets the identifier of an attachment. The value varies depending on the Outlook client.
          *
@@ -3928,24 +3919,7 @@ export declare namespace Office {
          * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
-        /**
-         * Gets the content identifier of an inline attachment.
-         *
-         * @remarks
-         *
-         * **Important**:
-         *
-         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
-         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
-         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
-         *
-         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
-         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
-         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
-         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
-         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
-         */
-        contentId: string;
+        
         /**
          * Gets the MIME content type of the attachment.
          *
@@ -5178,6 +5152,8 @@ export declare namespace Office {
          */
         set(name: string, value: string): void;
     }
+    
+    
     /**
      * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
      *
@@ -5304,6 +5280,7 @@ export declare namespace Office {
      * property to get similar information.
      */
     export interface Diagnostics {
+        
         /**
          * Gets a string that represents the type of Outlook client.
          *
@@ -5906,6 +5883,7 @@ export declare namespace Office {
          */
         urls: string[];
     }
+    
     /**
      * Provides a method to get the from value of a message in an Outlook add-in.
      *
@@ -6510,24 +6488,7 @@ export declare namespace Office {
         /**
          * Provides diagnostic information to an Outlook add-in.
          *
-         * Contains the following members.
-         *
-         *  - `hostName` (string): A string that represents the name of the Office application.
-         * It should be one of the following values: `Outlook`, `newOutlookWindows`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
-         * **Note**: The "Outlook" value is returned for Outlook on Windows (classic) and on Mac.
-         *
-         *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
-         * If the mail add-in is running in Outlook on Windows (classic), on Mac, or on mobile devices, the `hostVersion` property returns the version of the
-         * Outlook client. In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
-         * the property returns the version of the Exchange Server.
-         *
-         *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web.
-         * If the application is not Outlook on the web, then accessing this property results in undefined.
-         * Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider,
-         * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns
-         * that can be displayed.
-         *
-         * More information is under {@link Office.Diagnostics}.
+         * For information about the diagnostic properties you can access, see {@link Office.Diagnostics}.
          *
          * @remarks
          *
@@ -7545,8 +7506,9 @@ export declare namespace Office {
     /**
      * The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements
      * {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}, including
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts},
-     * or the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}.
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events | Smart Alerts}, the
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam-reporting feature}, or
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption | decryption}.
      * It allows the add-in to signify to the Outlook client that it has completed processing an event.
      *
      * @remarks
@@ -7560,6 +7522,8 @@ export declare namespace Office {
      *
      * - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
      *
+     * - Support for the decryption feature was introduced in Mailbox 1.16.
+     *
      * - For information about the Event object used by the {@link https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands | function command button},
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins | on-send add-in},
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting | online-meeting provider add-in}, and
@@ -7568,7 +7532,7 @@ export declare namespace Office {
      */
     export interface MailboxEvent {
         /**
-         * Indicates that the event-based or spam-reporting add-in has completed processing an event.
+         * Indicates that the event-based, spam-reporting, or decryption add-in has completed processing an event.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -7583,7 +7547,9 @@ export declare namespace Office {
          *
          * - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
          *
-         * @param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.
+         * - Support for the decryption feature was introduced in Mailbox 1.16.
+         *
+         * @param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.
          */
         completed(options?: SmartAlertsEventCompletedOptions): void;
     }
@@ -8033,7 +7999,8 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
          *
          * @remarks
          * [Api set: Mailbox 1.11]
@@ -9240,6 +9207,7 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * Represents the details of the form for composing a new message.
      *
@@ -9483,11 +9451,13 @@ export declare namespace Office {
          * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
+         *
+         * - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -9812,11 +9782,13 @@ export declare namespace Office {
          * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
+         *
+         * - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -10965,12 +10937,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item at a time in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
-         * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
+         * In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the
+         * new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly,
+         * but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
@@ -11004,12 +10978,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows
+         * With the `addAsync` method, you can add a maximum of 100 recipients to a mail item at a time in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
-         * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
+         * In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the
+         * new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly,
+         * but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
@@ -11043,7 +11019,9 @@ export declare namespace Office {
          *
          * The maximum number of recipients returned by this method varies per Outlook client.
          *
-         * - Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), web browser, Mac (classic UI): 500 recipients
+         * - Windows (classic - Mailbox 1.15 and earlier), Mac (classic UI): 500 recipients
+         *
+         * - Web, Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new}, classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, iOS: 100 recipients
          *
@@ -11097,7 +11075,9 @@ export declare namespace Office {
          *
          * The maximum number of recipients returned by this method varies per Outlook client.
          *
-         * - Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), web browser, Mac (classic UI): 500 recipients
+         * - Windows (classic - Mailbox 1.15 and earlier), Mac (classic UI): 500 recipients
+         *
+         * - Web, Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new}, classic - Mailbox 1.16 and later): 1,000 recipients
          *
          * - Android, iOS: 100 recipients
          *
@@ -11146,12 +11126,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * With the `setAsync` method, you can set a maximum of 100 recipients at a time in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
-         * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
+         * In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the
+         * new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly,
+         * but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
@@ -11188,12 +11170,14 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows
+         * With the `setAsync` method, you can set a maximum of 100 recipients at a time in Outlook on the web, on Windows
          * ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), on Mac (classic UI), on Android, and on iOS.
          * However, take note of the following:
          *
-         * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
-         * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         * - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
+         * In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the
+         * new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly,
+         * but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
@@ -12343,7 +12327,8 @@ export declare namespace Office {
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
      *
-     * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+     * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+     * In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
      */
     export interface SessionData {
         /**
@@ -12447,7 +12432,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
          *
          * @param name - The session data key.
          * @param value - The session data value as a string.
@@ -12467,7 +12453,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
          *
          * @param name - The session data key.
          * @param value - The session data value as a string.
