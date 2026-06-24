@@ -482,11 +482,13 @@ properties:
 
       The `optionalAttendees` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
 
-      - Windows: 500 attendees
+      - Windows (classic - Mailbox 1.15 and earlier): 500 attendees
+
+      - Web, Windows (new, classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 attendees
 
-      - New Mac UI, web browser: No limit
+      - New Mac UI: No limit
     remarks: |-
       **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
@@ -591,11 +593,13 @@ properties:
 
       The `requiredAttendees` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
 
-      - Windows: 500 attendees
+      - Windows (classic - Mailbox 1.15 and earlier): 500 attendees
+
+      - Web, Windows (new, classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 attendees
 
-      - New Mac UI, web browser: No limit
+      - New Mac UI: No limit
     remarks: |-
       **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 

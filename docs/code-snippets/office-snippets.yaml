@@ -4421,6 +4421,22 @@ Office.RangeFormatConfiguration:interface:
             }
         }
     );
+Office.RemoveHandlerOptions:interface:
+  - |-
+    function onBindingDataChanged(eventArgs) {
+        // Handle binding changes.
+    }
+
+    function removeEventHandlerFromBinding() {
+        const options: Office.RemoveHandlerOptions = {
+            handler: onBindingDataChanged
+        };
+
+        Office.select("bindings#MyBinding").removeHandlerAsync(
+            Office.EventType.BindingDataChanged,
+            options
+        );
+    }
 Office.RequirementSetSupport:interface:
   - |-
     const requirements : Office.RequirementSetSupport = Office.context.requirements; 

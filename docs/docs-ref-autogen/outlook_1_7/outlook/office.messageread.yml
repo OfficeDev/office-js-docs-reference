@@ -138,11 +138,13 @@ properties:
 
       The `cc` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
 
-      - classic Windows: 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
+
+      - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-
@@ -806,11 +808,13 @@ properties:
 
       The `to` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
 
-      - classic Windows: 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
+
+      - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-

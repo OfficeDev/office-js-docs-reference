@@ -1240,6 +1240,52 @@ Excel.RequestContext:class:
       const workbook = context.workbook;
       // Interact with the Excel workbook...
     });
+Excel.SearchCriteria:interface:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("ExpensesTable");
+        const searchRange = table.getRange();
+        
+        // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+        const searchCriteria: Excel.SearchCriteria = {
+            completeMatch: true,
+            matchCase: false,
+            searchDirection: Excel.SearchDirection.forward
+        };
+        const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+        foundRange.load("address");
+        await context.sync();
+
+        if (foundRange.isNullObject) {
+            console.log("Text not found");
+        } else {
+            console.log(foundRange.address);
+        }
+    });
+Excel.SearchDirection:enum:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("ExpensesTable");
+        const searchRange = table.getRange();
+        
+        // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+        const searchCriteria: Excel.SearchCriteria = {
+            completeMatch: true,
+            matchCase: false,
+            searchDirection: Excel.SearchDirection.forward
+        };
+        const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+        foundRange.load("address");
+        await context.sync();
+
+        if (foundRange.isNullObject) {
+            console.log("Text not found");
+        } else {
+            console.log(foundRange.address);
+        }
+    });
 Excel.SettingsChangedEventArgs:interface:
   - |-
     async function registerSettingsChangedHandler() {
@@ -1263,7 +1309,7 @@ Excel.SettingsChangedEventArgs:interface:
             console.log("Setting value is: " + changedSetting.value);
             await context.sync();
         });
-    } 
+    }
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -6259,6 +6305,22 @@ Office.RangeFormatConfiguration:interface:
             }
         }
     );
+Office.RemoveHandlerOptions:interface:
+  - |-
+    function onBindingDataChanged(eventArgs) {
+        // Handle binding changes.
+    }
+
+    function removeEventHandlerFromBinding() {
+        const options: Office.RemoveHandlerOptions = {
+            handler: onBindingDataChanged
+        };
+
+        Office.select("bindings#MyBinding").removeHandlerAsync(
+            Office.EventType.BindingDataChanged,
+            options
+        );
+    }
 Office.RequirementSetSupport:interface:
   - |-
     const requirements : Office.RequirementSetSupport = Office.context.requirements; 

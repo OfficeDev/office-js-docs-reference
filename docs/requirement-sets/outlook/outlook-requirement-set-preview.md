@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 03/19/2026
+ms.date: 06/23/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -29,11 +29,6 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
-- Added an event and objects to support [decrypting a message and its attachments](/office/dev/add-ins/outlook/encryption-decryption).
-- Extended support for the `contentId` property to get the content identifier of an inline attachment in classic Outlook on Windows.
-- Added a method to check if Exchange Web Services (EWS) tokens are supported in an organization.
-- Updated the Recipients APIs to increase the maximum number of recipients in a target field to 1,000.
-- Increased the [SessionData](/javascript/api/outlook/office.sessiondata?view=outlook-js-preview&preserve-view=true) object limit to 2,621,440 characters.
 - Extended support for the `errorMessageMarkdown` property of the `event.completed` method to [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins in Outlook on Mac.
 - Added a property to get or set whether an appointment is an all-day event.
 - Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.

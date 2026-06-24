@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.DecryptedMessageBody
 summary: Represents the body of a decrypted message.
 remarks: |-
-  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
   **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
@@ -78,7 +78,7 @@ remarks: |-
   }
   ```
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -88,13 +88,13 @@ properties:
     fullName: coercionType
     summary: Specifies the format of the body of a message. The body of a message can be formatted as `Office.CoercionType.Html` or `Office.CoercionType.Text`<!-- -->.
     remarks: |-
-      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
       **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'coercionType: Office.CoercionType;'
@@ -106,13 +106,13 @@ properties:
     fullName: content
     summary: Specifies the content displayed in the body of the message.
     remarks: |-
-      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
       **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: string;'

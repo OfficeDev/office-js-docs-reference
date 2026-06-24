@@ -812,6 +812,9 @@ items:
           - name: Mailbox preview requirement set
             href: ../../requirement-sets/outlook/outlook-requirement-set-preview.md
             displayName: Outlook
+          - name: Mailbox requirement set 1.16
+            href: ../../requirement-sets/outlook/outlook-requirement-set-1-16.md
+            displayName: Outlook
           - name: Mailbox requirement set 1.15
             href: ../../requirement-sets/outlook/outlook-requirement-set-1-15.md
             displayName: Outlook
