@@ -231,7 +231,7 @@ properties:
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-
@@ -901,7 +901,7 @@ properties:
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-
