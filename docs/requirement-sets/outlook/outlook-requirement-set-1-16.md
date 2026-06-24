@@ -17,7 +17,7 @@ Mailbox requirement set 1.16 includes all of the features of [requirement set 1.
 - Added an event and objects to support [decrypting a message and its attachments](/office/dev/add-ins/outlook/encryption-decryption).
 - Extended support for the `contentId` property to get the content identifier of an inline attachment.
 - Added a method to check if Exchange Web Services (EWS) tokens are supported in an organization.
-- Updated the Recipients APIs to increase the maximum number of recipients in a target field to 1,000.
+- Updated the Recipients APIs to increase the maximum number of recipients you can retrieve from a target field.
 - Increased the [SessionData](/javascript/api/outlook/office.sessiondata) object limit to 2,621,440 characters.
 
 ## API list
