@@ -139,7 +139,7 @@ npx version-remover api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-
 
 
 npx whats-new api-extractor-inputs-excel/excel.d.ts api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts ../docs/includes/excel-preview javascript/api/excel/ configs/excel-preview-config.json
-npx whats-new api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-desktop-1_1 javascript/api/excel/ configs/excel-desktop-1_1-config.json
+npx whats-new api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts api-extractor-inputs-excel-release/Excel_1_21/excel.d.ts ../docs/includes/excel-desktop-1_1 javascript/api/excel/ configs/excel-desktop-1_1-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_online/excel.d.ts api-extractor-inputs-excel-release/Excel_1_21/excel.d.ts ../docs/includes/excel-online javascript/api/excel/ configs/excel-online-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_21/excel.d.ts api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts ../docs/includes/excel-1_21 javascript/api/excel/ configs/excel-1_21-config.json
 npx whats-new api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts ../docs/includes/excel-1_20 javascript/api/excel/ configs/excel-1_20-config.json
