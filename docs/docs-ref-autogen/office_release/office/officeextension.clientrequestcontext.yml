@@ -18,6 +18,7 @@ remarks: |-
   - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(4))
   - [Word.Application](/javascript/api/word/word.application): [newObject](/javascript/api/word/word.application#word-word-application-newobject-member(1))
   - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [newObject](/javascript/api/word/word.searchoptions#word-word-searchoptions-newobject-member(1))
+  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [newObject](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-newobject-member(1))
 
 isPreview: false
 isDeprecated: false

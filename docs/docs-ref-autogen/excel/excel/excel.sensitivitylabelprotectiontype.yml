@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: Excel.SensitivityLabelProtectionType
+uid: excel!Excel.SensitivityLabelProtectionType:enum
+package: excel!
+fullName: Excel.SensitivityLabelProtectionType
+summary: Represents the protection type.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [protectionType](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-protectiontype-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: adminDefined
+    uid: excel!Excel.SensitivityLabelProtectionType.adminDefined:member
+    package: excel!
+    summary: |-
+      Protection is defined by an administrator.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"AdminDefined"'
+  - name: noProtection
+    uid: excel!Excel.SensitivityLabelProtectionType.noProtection:member
+    package: excel!
+    summary: |-
+      No protection is applied by this label.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"NoProtection"'
+  - name: userDefined
+    uid: excel!Excel.SensitivityLabelProtectionType.userDefined:member
+    package: excel!
+    summary: |-
+      Protection is defined by the user.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"UserDefined"'

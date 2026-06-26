@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData
+uid: excel!Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
+package: excel!
+fullName: Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData
+summary: An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in `sensitivityLabelDetailsCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData#items:member
+    package: excel!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.SensitivityLabelDetailsData[];'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.SensitivityLabelDetailsData:interface" />[]
