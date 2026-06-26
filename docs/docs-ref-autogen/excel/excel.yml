@@ -120,6 +120,7 @@ enums:
   - excel!Excel.InsertShiftDirection:enum
   - excel!Excel.KeyboardDirection:enum
   - excel!Excel.LabelFilterCondition:enum
+  - excel!Excel.LabelingCapability:enum
   - excel!Excel.LinkedDataTypeState:enum
   - excel!Excel.LinkedEntityDataDomainRefreshMode:enum
   - excel!Excel.LoadToType:enum
@@ -157,6 +158,8 @@ enums:
   - excel!Excel.SaveBehavior:enum
   - excel!Excel.ScrollWorkbookTabPosition:enum
   - excel!Excel.SearchDirection:enum
+  - excel!Excel.SensitivityLabelProtectionType:enum
+  - excel!Excel.SensitivityLabelUpdateResult:enum
   - excel!Excel.ShapeAutoSize:enum
   - excel!Excel.ShapeFillType:enum
   - excel!Excel.ShapeFontUnderlineStyle:enum
@@ -350,6 +353,10 @@ classes:
   - excel!Excel.RowColumnPivotHierarchy:class
   - excel!Excel.RowColumnPivotHierarchyCollection:class
   - excel!Excel.Runtime:class
+  - excel!Excel.SensitivityLabel:class
+  - excel!Excel.SensitivityLabelDetails:class
+  - excel!Excel.SensitivityLabelDetailsCollection:class
+  - excel!Excel.SensitivityLabelsCatalog:class
   - excel!Excel.Setting:class
   - excel!Excel.SettingCollection:class
   - excel!Excel.Shape:class
@@ -925,6 +932,13 @@ interfaces:
   - excel!Excel.Interfaces.RuntimeData:interface
   - excel!Excel.Interfaces.RuntimeLoadOptions:interface
   - excel!Excel.Interfaces.RuntimeUpdateData:interface
+  - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionData:interface
+  - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
+  - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
+  - excel!Excel.Interfaces.SensitivityLabelDetailsData:interface
+  - excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions:interface
+  - excel!Excel.Interfaces.SensitivityLabelsCatalogData:interface
+  - excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions:interface
   - excel!Excel.Interfaces.SettingCollectionData:interface
   - excel!Excel.Interfaces.SettingCollectionLoadOptions:interface
   - excel!Excel.Interfaces.SettingCollectionUpdateData:interface
@@ -1049,6 +1063,7 @@ interfaces:
   - excel!Excel.Interfaces.WorksheetUpdateData:interface
   - excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
   - excel!Excel.LinkedEntityCellValue:interface
+  - excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainCreateOptions:interface
   - excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface
@@ -1197,43 +1212,6 @@ functions:
           // Read in the file as a data URL so we can parse the base64-encoded string.
           reader.readAsDataURL(myFile.files[0]);
           ```
-  - name: Excel.getDataCommonPostprocess(response, callArgs)
-    uid: excel!Excel.getDataCommonPostprocess:function(1)
-    package: excel!
-    summary: ''
-    remarks: ''
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
-      parameters:
-        - id: response
-          description: ''
-          type: any
-        - id: callArgs
-          description: ''
-          type: any
-      return:
-        type: any
-        description: ''
-  - name: Excel.postprocessBindingDescriptor(response)
-    uid: excel!Excel.postprocessBindingDescriptor:function(1)
-    package: excel!
-    summary: ''
-    remarks: ''
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'export function postprocessBindingDescriptor(response: any): any;'
-      parameters:
-        - id: response
-          description: ''
-          type: any
-      return:
-        type: any
-        description: ''
   - name: Excel.run(batch)
     uid: excel!Excel.run:function(1)
     package: excel!

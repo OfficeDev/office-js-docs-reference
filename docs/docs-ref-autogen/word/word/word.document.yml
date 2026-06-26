@@ -1674,6 +1674,19 @@ properties:
       content: 'readonly selection: Word.Selection;'
       return:
         type: <xref uid="word!Word.Selection:class" />
+  - name: sensitivityLabel
+    uid: word!Word.Document#sensitivityLabel:member
+    package: word!
+    fullName: sensitivityLabel
+    summary: Returns the sensitivity label of the document.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabel: Word.SensitivityLabel;'
+      return:
+        type: <xref uid="word!Word.SensitivityLabel:class" />
   - name: sentences
     uid: word!Word.Document#sentences:member
     package: word!

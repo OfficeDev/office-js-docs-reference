@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: Excel.LinkedEntityCellValueLoadedEventArgs
+uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface
+package: excel!
+fullName: Excel.LinkedEntityCellValueLoadedEventArgs
+summary: Provides information about the `LinkedEntityCellValue` that was requested given a specified `LinkedEntityId`<!-- -->.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onLinkedEntityCellValueLoaded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitycellvalueloaded-member)
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs#error:member
+    package: excel!
+    fullName: error
+    summary: Any error encountered during the request to load the `LinkedEntityCellValue`<!-- -->.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'error?: string;'
+      return:
+        type: string
+  - name: id
+    uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs#id:member
+    package: excel!
+    fullName: id
+    summary: Gets the `LinkedEntityId` of the requested `LinkedEntityCellValue`<!-- -->.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id: LinkedEntityId;'
+      return:
+        type: <xref uid="excel!Excel.LinkedEntityId:interface" />
+  - name: linkedEntityCellValue
+    uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs#linkedEntityCellValue:member
+    package: excel!
+    fullName: linkedEntityCellValue
+    summary: Gets the `LinkedEntityCellValue` of the requested `LinkedEntityId`<!-- -->. If the load operation failed, this property is `null`<!-- -->.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linkedEntityCellValue?: LinkedEntityCellValue;'
+      return:
+        type: <xref uid="excel!Excel.LinkedEntityCellValue:interface" />
+  - name: source
+    uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs#source:member
+    package: excel!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: <xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"
+  - name: type
+    uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs#type:member
+    package: excel!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: "LinkedEntityDataDomainLinkedEntityCellValueLoaded";'
+      return:
+        type: '"LinkedEntityDataDomainLinkedEntityCellValueLoaded"'

@@ -260,6 +260,8 @@ items:
                 uid: excel!Excel.KeyboardDirection:enum
               - name: LabelFilterCondition
                 uid: excel!Excel.LabelFilterCondition:enum
+              - name: LabelingCapability
+                uid: excel!Excel.LabelingCapability:enum
               - name: LinkedDataTypeState
                 uid: excel!Excel.LinkedDataTypeState:enum
               - name: LinkedEntityDataDomainRefreshMode
@@ -334,6 +336,10 @@ items:
                 uid: excel!Excel.ScrollWorkbookTabPosition:enum
               - name: SearchDirection
                 uid: excel!Excel.SearchDirection:enum
+              - name: SensitivityLabelProtectionType
+                uid: excel!Excel.SensitivityLabelProtectionType:enum
+              - name: SensitivityLabelUpdateResult
+                uid: excel!Excel.SensitivityLabelUpdateResult:enum
               - name: ShapeAutoSize
                 uid: excel!Excel.ShapeAutoSize:enum
               - name: ShapeFillType
@@ -867,6 +873,8 @@ items:
             uid: excel!Excel.Line:class
           - name: LinkedEntityCellValue
             uid: excel!Excel.LinkedEntityCellValue:interface
+          - name: LinkedEntityCellValueLoadedEventArgs
+            uid: excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface
           - name: LinkedEntityDataDomain
             uid: excel!Excel.LinkedEntityDataDomain:class
           - name: LinkedEntityDataDomainAddedEventArgs
@@ -1045,6 +1053,14 @@ items:
             uid: excel!Excel.SearchCriteria:interface
           - name: SelectionChangedEventArgs
             uid: excel!Excel.SelectionChangedEventArgs:interface
+          - name: SensitivityLabel
+            uid: excel!Excel.SensitivityLabel:class
+          - name: SensitivityLabelDetails
+            uid: excel!Excel.SensitivityLabelDetails:class
+          - name: SensitivityLabelDetailsCollection
+            uid: excel!Excel.SensitivityLabelDetailsCollection:class
+          - name: SensitivityLabelsCatalog
+            uid: excel!Excel.SensitivityLabelsCatalog:class
           - name: Session
             uid: excel!Excel.Session:interface
           - name: SettableCellProperties

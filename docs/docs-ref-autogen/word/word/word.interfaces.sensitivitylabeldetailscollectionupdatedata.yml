@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData
+uid: word!Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData
+summary: An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in `sensitivityLabelDetailsCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.SensitivityLabelDetailsData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.SensitivityLabelDetailsData:interface" />[]

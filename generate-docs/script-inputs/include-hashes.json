@@ -21,7 +21,7 @@
   "docs/includes/excel-1_9.md": "56b9861503dbfb184ea037024b5898f18a208742b26fa610626e4a121f3056b7",
   "docs/includes/excel-desktop-1_1.md": "591413e2368a42df07c084517952d31b1cd9d0918a858604330607be00a50354",
   "docs/includes/excel-online.md": "199bb50b3b7e587aee3ef861c9e4918bacea6973f01663952ad5a64f329d613c",
-  "docs/includes/excel-preview.md": "fb05d6464e8fcf8b177cabf8d628270df0d980790029c5ea6f64186de2266519",
+  "docs/includes/excel-preview.md": "d0fd78d9007d798a930a9d1f1d26d2ee25082f5da5dab53f10fea54928c8c9db",
   "docs/includes/outlook-1_1.md": "aa79adb10745dbfd377f510a31f82968e63ca5e55307427c3b1b052cf7c97b4e",
   "docs/includes/outlook-1_10.md": "c3bf50e150cacb94f2b58a032050943a4e094a0b89b7f96462780f9e051d038e",
   "docs/includes/outlook-1_11.md": "57d4a4eddd23cf3732aa5f33492720060e1d378a9ac2cff637794ffbfa4cb70d",
@@ -73,5 +73,5 @@
   "docs/includes/word-desktop-1_4.md": "c5e4edd59b4ae08375f036aa6baec9651ba41c9fc44a5babc8ee86c8e06d9ae6",
   "docs/includes/word-desktop-1_5.md": "ad2b6656b6550fe41baeb535303256d2cf2b3b3643d6450820fb30e3f19f3e57",
   "docs/includes/word-online.md": "e645b476195fda983b442e3cc9a606eaf83e4ec837ffb32027e1eed326dc4814",
-  "docs/includes/word-preview.md": "47b20ebc15820d3d9c92cce49e1d792eaded2d12cd82b7beee9262f72b7bfb11"
+  "docs/includes/word-preview.md": "c5d4fe32fb16159648153c967120c50fcfa41534a3a4cdfb4898a934b23d0ef9"
 }
