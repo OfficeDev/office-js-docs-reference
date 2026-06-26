@@ -10,6 +10,8 @@ remarks: |-
   #### Used by
 
   - [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue): [id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)
+  - [Excel.LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs): [id](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-id-member)
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [loadLinkedEntityCellValue](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-loadlinkedentitycellvalue-member(1))
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
 
 isPreview: false

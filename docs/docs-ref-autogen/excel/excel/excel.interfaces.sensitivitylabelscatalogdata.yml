@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SensitivityLabelsCatalogData
+uid: excel!Excel.Interfaces.SensitivityLabelsCatalogData:interface
+package: excel!
+fullName: Excel.Interfaces.SensitivityLabelsCatalogData
+summary: An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [toJSON](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: getLabelingCapability
+    uid: excel!Excel.Interfaces.SensitivityLabelsCatalogData#getLabelingCapability:member
+    package: excel!
+    fullName: getLabelingCapability
+    summary: Gets whether the catalog of sensitivity labels is enabled in Excel.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      return:
+        type: <xref uid="excel!Excel.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"

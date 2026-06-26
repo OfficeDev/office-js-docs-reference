@@ -1,0 +1,134 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelDetailsLoadOptions
+uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelDetailsLoadOptions
+summary: Represents the properties of available sensitivity labels in Word.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails): [load](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#color:member
+    package: word!
+    fullName: color
+    summary: The color of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#id:member
+    package: word!
+    fullName: id
+    summary: The unique identifier (GUID) of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isEnabled
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#isEnabled:member
+    package: word!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: The name of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: order
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#order:member
+    package: word!
+    fullName: order
+    summary: The order of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'order?: boolean;'
+      return:
+        type: boolean
+  - name: protectionType
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#protectionType:member
+    package: word!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectionType?: boolean;'
+      return:
+        type: boolean
+  - name: siteId
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#siteId:member
+    package: word!
+    fullName: siteId
+    summary: The unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'siteId?: boolean;'
+      return:
+        type: boolean
+  - name: tooltip
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#tooltip:member
+    package: word!
+    fullName: tooltip
+    summary: The description of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tooltip?: boolean;'
+      return:
+        type: boolean

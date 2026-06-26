@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelDetailsCollectionData
+uid: word!Word.Interfaces.SensitivityLabelDetailsCollectionData:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelDetailsCollectionData
+summary: An interface describing the data returned by calling `sensitivityLabelDetailsCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SensitivityLabelDetailsCollection](/javascript/api/word/word.sensitivitylabeldetailscollection): [toJSON](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.SensitivityLabelDetailsCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.SensitivityLabelDetailsData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.SensitivityLabelDetailsData:interface" />[]

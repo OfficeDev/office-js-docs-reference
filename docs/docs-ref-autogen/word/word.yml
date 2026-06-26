@@ -102,6 +102,7 @@ enums:
   - word!Word.InsertLocation:enum
   - word!Word.JustificationMode:enum
   - word!Word.Kana:enum
+  - word!Word.LabelingCapability:enum
   - word!Word.LanguageId:enum
   - word!Word.LayoutMode:enum
   - word!Word.Ligature:enum
@@ -174,6 +175,8 @@ enums:
   - word!Word.SeekView:enum
   - word!Word.SelectionMode:enum
   - word!Word.SelectionType:enum
+  - word!Word.SensitivityLabelProtectionType:enum
+  - word!Word.SensitivityLabelUpdateResult:enum
   - word!Word.ShadingTextureType:enum
   - word!Word.ShadowStyle:enum
   - word!Word.ShadowType:enum
@@ -350,6 +353,10 @@ classes:
   - word!Word.Section:class
   - word!Word.SectionCollection:class
   - word!Word.Selection:class
+  - word!Word.SensitivityLabel:class
+  - word!Word.SensitivityLabelDetails:class
+  - word!Word.SensitivityLabelDetailsCollection:class
+  - word!Word.SensitivityLabelsCatalog:class
   - word!Word.Setting:class
   - word!Word.SettingCollection:class
   - word!Word.Shading:class
@@ -799,6 +806,13 @@ interfaces:
   - word!Word.Interfaces.SelectionData:interface
   - word!Word.Interfaces.SelectionLoadOptions:interface
   - word!Word.Interfaces.SelectionUpdateData:interface
+  - word!Word.Interfaces.SensitivityLabelDetailsCollectionData:interface
+  - word!Word.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
+  - word!Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
+  - word!Word.Interfaces.SensitivityLabelDetailsData:interface
+  - word!Word.Interfaces.SensitivityLabelDetailsLoadOptions:interface
+  - word!Word.Interfaces.SensitivityLabelsCatalogData:interface
+  - word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions:interface
   - word!Word.Interfaces.SettingCollectionData:interface
   - word!Word.Interfaces.SettingCollectionLoadOptions:interface
   - word!Word.Interfaces.SettingCollectionUpdateData:interface
