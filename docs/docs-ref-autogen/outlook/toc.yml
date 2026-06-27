@@ -73,6 +73,8 @@ items:
                 uid: outlook!Office.MailboxEnums.TokenStatus:enum
               - name: WeekNumber
                 uid: outlook!Office.MailboxEnums.WeekNumber:enum
+          - name: AccessControls
+            uid: outlook!Office.AccessControls:interface
           - name: AppointmentCompose
             uid: outlook!Office.AppointmentCompose:interface
           - name: AppointmentForm

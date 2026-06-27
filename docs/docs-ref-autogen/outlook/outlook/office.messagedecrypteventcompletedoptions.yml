@@ -80,6 +80,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: accessControls
+    uid: outlook!Office.MessageDecryptEventCompletedOptions#accessControls:member
+    package: outlook!
+    fullName: accessControls
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `true`<!-- -->, this property specifies whether decrypted contents of a message can be copied and pasted, printed, or saved.
+    remarks: '[API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'accessControls?: AccessControls;'
+      return:
+        type: <xref uid="outlook!Office.AccessControls:interface" />
   - name: allowEvent
     uid: outlook!Office.MessageDecryptEventCompletedOptions#allowEvent:member
     package: outlook!
@@ -160,3 +173,25 @@ properties:
       content: 'emailBody?: DecryptedMessageBody;'
       return:
         type: <xref uid="outlook!Office.DecryptedMessageBody:interface" />
+  - name: errorMessage
+    uid: outlook!Office.MessageDecryptEventCompletedOptions#errorMessage:member
+    package: outlook!
+    fullName: errorMessage
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message displayed to the user.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **Important**:
+
+      - The `errorMessage` property is only used when the `allowEvent` property is set to `false`<!-- -->. If you set the `allowEvent` property to `true`<!-- -->, the `errorMessage` property is ignored.
+
+      - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "Error from &lt;<!-- -->add-in name<!-- -->&gt;<!-- -->: Failed to decrypt your message."
+
+      - Your custom error message is automatically prepended with "Error from &lt;<!-- -->add-in name<!-- -->&gt;<!-- -->: " when displayed to the user.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'errorMessage?: string;'
+      return:
+        type: string

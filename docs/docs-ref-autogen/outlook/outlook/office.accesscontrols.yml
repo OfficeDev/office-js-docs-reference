@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Office.AccessControls
+uid: outlook!Office.AccessControls:interface
+package: outlook!
+fullName: Office.AccessControls
+summary: Represents access controls that specify whether the decrypted contents of a message can be copied and pasted, printed, or saved.
+remarks: |-
+  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  #### Used by
+
+  - [Office.MessageDecryptEventCompletedOptions](/javascript/api/outlook/office.messagedecrypteventcompletedoptions): [accessControls](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-accesscontrols-member)
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: allowCopyPaste
+    uid: outlook!Office.AccessControls#allowCopyPaste:member
+    package: outlook!
+    fullName: allowCopyPaste
+    summary: If true, specifies that the decrypted contents of a message can be copied and pasted.
+    remarks: '[API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowCopyPaste: boolean;'
+      return:
+        type: boolean
+  - name: allowPrint
+    uid: outlook!Office.AccessControls#allowPrint:member
+    package: outlook!
+    fullName: allowPrint
+    summary: If true, specifies that the decrypted contents of a message can be printed.
+    remarks: '[API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowPrint: boolean;'
+      return:
+        type: boolean
+  - name: allowSave
+    uid: outlook!Office.AccessControls#allowSave:member
+    package: outlook!
+    fullName: allowSave
+    summary: If true, specifies that the decrypted contents of a message can be saved.
+    remarks: '[API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowSave: boolean;'
+      return:
+        type: boolean

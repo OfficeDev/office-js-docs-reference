@@ -9120,6 +9120,10 @@ onenote,N/A,N/A,Package,Missing,false
 onenote,N/A,"OneNote.run(batch)",Method,Excellent,true
 onenote,N/A,"OneNote.run(object, batch)",Method,Great,false
 onenote,N/A,"OneNote.run(objects, batch)",Method,Great,false
+outlook,Office.AccessControls,N/A,Interface,Good,false
+outlook,Office.AccessControls,"allowCopyPaste",Property,Excellent,false
+outlook,Office.AccessControls,"allowPrint",Property,Great,false
+outlook,Office.AccessControls,"allowSave",Property,Great,false
 outlook,Office.Appointment,N/A,Interface,Great,false
 outlook,Office.AppointmentCompose,N/A,Interface,Great,false
 outlook,Office.AppointmentCompose,"body",Property,Great,true
@@ -9942,10 +9946,12 @@ outlook,Office.MessageCompose,"sendAsync(callback)",Method,Fine,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,true
+outlook,Office.MessageDecryptEventCompletedOptions,"accessControls",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"emailBody",Property,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"errorMessage",Property,Excellent,false
 outlook,Office.MessageForm,N/A,Interface,Fine,false
 outlook,Office.MessageForm,"attachments",Property,Excellent,false
 outlook,Office.MessageForm,"bccRecipients",Property,Great,false

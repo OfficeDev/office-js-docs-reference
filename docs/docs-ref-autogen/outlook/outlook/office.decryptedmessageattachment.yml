@@ -94,7 +94,7 @@ properties:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
 
-      **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported.
+      **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported in production. However, you can preview support for the `MailboxEnums.AttachmentType.Item` type in Outlook on the web and on Windows (new and classic). For classic Outlook on Windows, you must install Version //TODO or later. Then, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748) and select the **Beta Channel** option to access Office beta builds.
 
     isPreview: false
     isDeprecated: false

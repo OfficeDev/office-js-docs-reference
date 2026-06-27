@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/23/2026
+ms.date: 06/26/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
