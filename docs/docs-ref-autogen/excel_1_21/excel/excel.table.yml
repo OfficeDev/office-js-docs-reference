@@ -444,7 +444,7 @@ methods:
           type: <xref uid="excel!Excel.Interfaces.TableUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="excel!~OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -493,7 +493,7 @@ events:
     syntax:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: excel!Excel.Table#onSelectionChanged:member
     package: excel!
@@ -506,5 +506,5 @@ events:
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableSelectionChangedEventArgs:interface" />&gt;
-extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableSelectionChangedEventArgs:interface" />&gt;
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

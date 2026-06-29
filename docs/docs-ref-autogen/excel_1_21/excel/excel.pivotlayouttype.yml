@@ -12,15 +12,24 @@ fields:
   - name: compact
     uid: excel!Excel.PivotLayoutType.compact:member
     package: excel!
-    summary: A horizontally compressed form with labels from the next field in the same column.
+    summary: |-
+      A horizontally compressed form with labels from the next field in the same column.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Compact"'
   - name: outline
     uid: excel!Excel.PivotLayoutType.outline:member
     package: excel!
-    summary: Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
+    summary: |-
+      Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Outline"'
   - name: tabular
     uid: excel!Excel.PivotLayoutType.tabular:member
     package: excel!
-    summary: Inner fields' items are always on a new line relative to the outer fields' items.
+    summary: |-
+      Inner fields' items are always on a new line relative to the outer fields' items.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Tabular"'

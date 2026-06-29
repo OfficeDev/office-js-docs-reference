@@ -12,15 +12,15 @@ fields:
   - name: medium
     uid: excel!Excel.ArrowheadWidth.medium:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Medium"'
   - name: narrow
     uid: excel!Excel.ArrowheadWidth.narrow:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Narrow"'
   - name: wide
     uid: excel!Excel.ArrowheadWidth.wide:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Wide"'

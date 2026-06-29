@@ -12,5 +12,8 @@ fields:
   - name: unknown
     uid: excel!Excel.ExternalErrorCellValueSubType.unknown:member
     package: excel!
-    summary: An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
+    summary: |-
+      An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

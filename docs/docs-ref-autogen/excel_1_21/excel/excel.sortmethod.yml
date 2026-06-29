@@ -12,10 +12,10 @@ fields:
   - name: pinYin
     uid: excel!Excel.SortMethod.pinYin:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"PinYin"'
   - name: strokeCount
     uid: excel!Excel.SortMethod.strokeCount:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"StrokeCount"'

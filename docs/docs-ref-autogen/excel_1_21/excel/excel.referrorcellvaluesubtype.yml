@@ -12,15 +12,24 @@ fields:
   - name: externalLinksCalculatedRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member
     package: excel!
-    summary: An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
+    summary: |-
+      An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member
     package: excel!
-    summary: An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
+    summary: |-
+      An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: excel!Excel.RefErrorCellValueSubType.unknown:member
     package: excel!
-    summary: An unknown type of error. Displays as error type \#REF! in Excel.
+    summary: |-
+      An unknown type of error. Displays as error type \#REF! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

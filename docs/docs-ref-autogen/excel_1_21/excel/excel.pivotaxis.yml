@@ -12,25 +12,40 @@ fields:
   - name: column
     uid: excel!Excel.PivotAxis.column:member
     package: excel!
-    summary: The column axis.
+    summary: |-
+      The column axis.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Column"'
   - name: data
     uid: excel!Excel.PivotAxis.data:member
     package: excel!
-    summary: The data axis.
+    summary: |-
+      The data axis.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Data"'
   - name: filter
     uid: excel!Excel.PivotAxis.filter:member
     package: excel!
-    summary: The filter axis.
+    summary: |-
+      The filter axis.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Filter"'
   - name: row
     uid: excel!Excel.PivotAxis.row:member
     package: excel!
-    summary: The row axis.
+    summary: |-
+      The row axis.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Row"'
   - name: unknown
     uid: excel!Excel.PivotAxis.unknown:member
     package: excel!
-    summary: The axis or region is unknown or unsupported.
+    summary: |-
+      The axis or region is unknown or unsupported.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Unknown"'

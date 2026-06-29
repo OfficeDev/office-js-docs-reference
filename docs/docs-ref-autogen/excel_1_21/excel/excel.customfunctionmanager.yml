@@ -82,7 +82,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: <xref uid="excel!~OfficeExtension.ClientRequestContext:class" />
+          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
       return:
         type: <xref uid="excel!Excel.CustomFunctionManager:class" />
         description: ''
@@ -118,4 +118,4 @@ methods:
       return:
         type: <xref uid="excel!Excel.Interfaces.CustomFunctionManagerData:interface" />
         description: ''
-extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

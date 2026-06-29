@@ -12,10 +12,10 @@ fields:
   - name: clip
     uid: excel!Excel.ShapeTextHorizontalOverflow.clip:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Clip"'
   - name: overflow
     uid: excel!Excel.ShapeTextHorizontalOverflow.overflow:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Overflow"'

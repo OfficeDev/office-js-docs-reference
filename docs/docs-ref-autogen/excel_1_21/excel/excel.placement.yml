@@ -12,15 +12,24 @@ fields:
   - name: absolute
     uid: excel!Excel.Placement.absolute:member
     package: excel!
-    summary: The object is free floating.
+    summary: |-
+      The object is free floating.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"Absolute"'
   - name: oneCell
     uid: excel!Excel.Placement.oneCell:member
     package: excel!
-    summary: The object is moved with the cells.
+    summary: |-
+      The object is moved with the cells.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"OneCell"'
   - name: twoCell
     uid: excel!Excel.Placement.twoCell:member
     package: excel!
-    summary: The object is moved and sized with the cells.
+    summary: |-
+      The object is moved and sized with the cells.
+
+      * \[Api set: ExcelApi 1.9\]
     value: '"TwoCell"'

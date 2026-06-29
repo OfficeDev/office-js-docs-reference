@@ -12,15 +12,24 @@ fields:
   - name: localRange
     uid: excel!Excel.DataSourceType.localRange:member
     package: excel!
-    summary: The data source type is a range in the current workbook.
+    summary: |-
+      The data source type is a range in the current workbook.
+
+      * \[Api set: ExcelApi 1.15\]
     value: '"LocalRange"'
   - name: localTable
     uid: excel!Excel.DataSourceType.localTable:member
     package: excel!
-    summary: The data source type is a table in the current workbook.
+    summary: |-
+      The data source type is a table in the current workbook.
+
+      * \[Api set: ExcelApi 1.15\]
     value: '"LocalTable"'
   - name: unknown
     uid: excel!Excel.DataSourceType.unknown:member
     package: excel!
-    summary: The data source type is unknown or unsupported.
+    summary: |-
+      The data source type is unknown or unsupported.
+
+      * \[Api set: ExcelApi 1.15\]
     value: '"Unknown"'

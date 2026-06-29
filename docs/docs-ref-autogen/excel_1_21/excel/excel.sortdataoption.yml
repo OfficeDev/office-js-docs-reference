@@ -12,10 +12,10 @@ fields:
   - name: normal
     uid: excel!Excel.SortDataOption.normal:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Normal"'
   - name: textAsNumber
     uid: excel!Excel.SortDataOption.textAsNumber:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"TextAsNumber"'

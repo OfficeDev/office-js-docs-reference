@@ -12,20 +12,32 @@ fields:
   - name: checkbox
     uid: excel!Excel.CellControlType.checkbox:member
     package: excel!
-    summary: Type representing a checkbox control.
+    summary: |-
+      Type representing a checkbox control.
+
+      * \[Api set: ExcelApi 1.18\]
     value: '"Checkbox"'
   - name: empty
     uid: excel!Excel.CellControlType.empty:member
     package: excel!
-    summary: Type representing an empty control.
+    summary: |-
+      Type representing an empty control.
+
+      * \[Api set: ExcelApi 1.18\]
     value: '"Empty"'
   - name: mixed
     uid: excel!Excel.CellControlType.mixed:member
     package: excel!
-    summary: Type representing a query that results in a mix of control results.
+    summary: |-
+      Type representing a query that results in a mix of control results.
+
+      * \[Api set: ExcelApi 1.18\]
     value: '"Mixed"'
   - name: unknown
     uid: excel!Excel.CellControlType.unknown:member
     package: excel!
-    summary: Type representing an unknown control. This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+    summary: |-
+      Type representing an unknown control. This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+
+      * \[Api set: ExcelApi 1.18\]
     value: '"Unknown"'

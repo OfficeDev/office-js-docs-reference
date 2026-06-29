@@ -12,20 +12,32 @@ fields:
   - name: manual
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.manual:member
     package: excel!
-    summary: Manual refresh by the user. Refresh is not triggered automatically.
+    summary: |-
+      Manual refresh by the user. Refresh is not triggered automatically.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"Manual"'
   - name: onLoad
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.onLoad:member
     package: excel!
-    summary: Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI. Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
+    summary: |-
+      Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI. Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"OnLoad"'
   - name: periodic
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.periodic:member
     package: excel!
-    summary: Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`<!-- -->. For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened. For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
+    summary: |-
+      Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`<!-- -->. For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened. For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"Periodic"'
   - name: unknown
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.unknown:member
     package: excel!
-    summary: Refresh mode is unknown or unsupported.
+    summary: |-
+      Refresh mode is unknown or unsupported.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"Unknown"'

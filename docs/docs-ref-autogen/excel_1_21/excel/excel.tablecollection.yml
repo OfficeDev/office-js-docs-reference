@@ -83,7 +83,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: getItem(key)
     uid: excel!Excel.TableCollection#getItem:member(1)
@@ -189,7 +189,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="excel!~OfficeExtension.LoadOption:interface" />
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.TableCollection:class" />
         description: ''
@@ -220,7 +220,7 @@ events:
     syntax:
       content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableAddedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableAddedEventArgs:interface" />&gt;
   - name: onChanged
     uid: excel!Excel.TableCollection#onChanged:member
     package: excel!
@@ -233,7 +233,7 @@ events:
     syntax:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: excel!Excel.TableCollection#onDeleted:member
     package: excel!
@@ -246,5 +246,5 @@ events:
     syntax:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableDeletedEventArgs:interface" />&gt;
-extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.TableDeletedEventArgs:interface" />&gt;
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

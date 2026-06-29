@@ -12,20 +12,20 @@ fields:
   - name: cellColor
     uid: excel!Excel.SortOn.cellColor:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"CellColor"'
   - name: fontColor
     uid: excel!Excel.SortOn.fontColor:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"FontColor"'
   - name: icon
     uid: excel!Excel.SortOn.icon:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Icon"'
   - name: value
     uid: excel!Excel.SortOn.value:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Value"'

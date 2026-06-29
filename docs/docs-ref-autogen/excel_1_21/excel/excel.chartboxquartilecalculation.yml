@@ -12,10 +12,10 @@ fields:
   - name: exclusive
     uid: excel!Excel.ChartBoxQuartileCalculation.exclusive:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Exclusive"'
   - name: inclusive
     uid: excel!Excel.ChartBoxQuartileCalculation.inclusive:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Inclusive"'

@@ -67,7 +67,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: getItem(id)
     uid: excel!Excel.LinkedEntityDataDomainCollection#getItem:member(1)
@@ -209,7 +209,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="excel!~OfficeExtension.LoadOption:interface" />
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
         description: ''
@@ -275,7 +275,7 @@ events:
     syntax:
       content: 'readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface" />&gt;
   - name: onLinkedEntityDataDomainAdded
     uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member
     package: excel!
@@ -288,7 +288,7 @@ events:
     syntax:
       content: 'readonly onLinkedEntityDataDomainAdded: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainAddedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface" />&gt;
   - name: onRefreshCompleted
     uid: excel!Excel.LinkedEntityDataDomainCollection#onRefreshCompleted:member
     package: excel!
@@ -301,7 +301,7 @@ events:
     syntax:
       content: 'readonly onRefreshCompleted: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshCompletedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface" />&gt;
   - name: onRefreshModeChanged
     uid: excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member
     package: excel!
@@ -314,5 +314,5 @@ events:
     syntax:
       content: 'readonly onRefreshModeChanged: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface" />&gt;
-extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface" />&gt;
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

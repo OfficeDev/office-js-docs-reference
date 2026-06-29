@@ -12,20 +12,32 @@ fields:
   - name: connectionOnly
     uid: excel!Excel.LoadToType.connectionOnly:member
     package: excel!
-    summary: Load to connection only.
+    summary: |-
+      Load to connection only.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"ConnectionOnly"'
   - name: pivotChart
     uid: excel!Excel.LoadToType.pivotChart:member
     package: excel!
-    summary: Load to PivotChart.
+    summary: |-
+      Load to PivotChart.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"PivotChart"'
   - name: pivotTable
     uid: excel!Excel.LoadToType.pivotTable:member
     package: excel!
-    summary: Load to PivotTable.
+    summary: |-
+      Load to PivotTable.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"PivotTable"'
   - name: table
     uid: excel!Excel.LoadToType.table:member
     package: excel!
-    summary: Load to a table.
+    summary: |-
+      Load to a table.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"Table"'

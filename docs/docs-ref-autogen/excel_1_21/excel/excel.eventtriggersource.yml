@@ -12,10 +12,16 @@ fields:
   - name: thisLocalAddin
     uid: excel!Excel.EventTriggerSource.thisLocalAddin:member
     package: excel!
-    summary: The event is triggered by the Office JS API of the current add-in.
+    summary: |-
+      The event is triggered by the Office JS API of the current add-in.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"ThisLocalAddin"'
   - name: unknown
     uid: excel!Excel.EventTriggerSource.unknown:member
     package: excel!
-    summary: The event trigger source is unknown or currently unsupported.
+    summary: |-
+      The event trigger source is unknown or currently unsupported.
+
+      * \[Api set: ExcelApi 1.14\]
     value: '"Unknown"'

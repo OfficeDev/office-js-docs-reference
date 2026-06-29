@@ -12,30 +12,48 @@ fields:
   - name: all
     uid: excel!Excel.ClearApplyTo.all:member
     package: excel!
-    summary: Clears everything in the range.
+    summary: |-
+      Clears everything in the range.
+
+      * \[Api set: ExcelApi 1.1\]
     value: '"All"'
   - name: contents
     uid: excel!Excel.ClearApplyTo.contents:member
     package: excel!
-    summary: Clears the contents of the range, leaving formatting intact.
+    summary: |-
+      Clears the contents of the range, leaving formatting intact.
+
+      * \[Api set: ExcelApi 1.1\]
     value: '"Contents"'
   - name: formats
     uid: excel!Excel.ClearApplyTo.formats:member
     package: excel!
-    summary: Clears all formatting for the range, leaving values intact.
+    summary: |-
+      Clears all formatting for the range, leaving values intact.
+
+      * \[Api set: ExcelApi 1.1\]
     value: '"Formats"'
   - name: hyperlinks
     uid: excel!Excel.ClearApplyTo.hyperlinks:member
     package: excel!
-    summary: Clears all hyperlinks, but leaves all content and formatting intact.
+    summary: |-
+      Clears all hyperlinks, but leaves all content and formatting intact.
+
+      * \[Api set: ExcelApi 1.7\]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
     package: excel!
-    summary: Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
+    summary: |-
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
+
+      * \[Api set: ExcelApi 1.7\]
     value: '"RemoveHyperlinks"'
   - name: resetContents
     uid: excel!Excel.ClearApplyTo.resetContents:member
     package: excel!
-    summary: Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined by each control. Cells without cell controls are set to blank.
+    summary: |-
+      Sets all cells in the range to their default state. Cells with cell controls are set to the default value defined by each control. Cells without cell controls are set to blank.
+
+      * \[Api set: ExcelApi 1.18\]
     value: '"ResetContents"'

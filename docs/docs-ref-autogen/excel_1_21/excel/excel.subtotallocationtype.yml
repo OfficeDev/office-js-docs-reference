@@ -12,15 +12,24 @@ fields:
   - name: atBottom
     uid: excel!Excel.SubtotalLocationType.atBottom:member
     package: excel!
-    summary: Subtotals are at the bottom.
+    summary: |-
+      Subtotals are at the bottom.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"AtBottom"'
   - name: atTop
     uid: excel!Excel.SubtotalLocationType.atTop:member
     package: excel!
-    summary: Subtotals are at the top.
+    summary: |-
+      Subtotals are at the top.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"AtTop"'
   - name: off
     uid: excel!Excel.SubtotalLocationType.off:member
     package: excel!
-    summary: Subtotals are off.
+    summary: |-
+      Subtotals are off.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Off"'

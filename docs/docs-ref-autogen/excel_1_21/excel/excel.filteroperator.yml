@@ -12,10 +12,10 @@ fields:
   - name: and
     uid: excel!Excel.FilterOperator.and:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"And"'
   - name: or
     uid: excel!Excel.FilterOperator.or:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Or"'

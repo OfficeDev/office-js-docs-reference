@@ -12,15 +12,24 @@ fields:
   - name: externalLinksGeneric
     uid: excel!Excel.BusyErrorCellValueSubType.externalLinksGeneric:member
     package: excel!
-    summary: An error caused by external links. Displays as error type \#BUSY! in Excel.
+    summary: |-
+      An error caused by external links. Displays as error type \#BUSY! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksGeneric"'
   - name: loadingImage
     uid: excel!Excel.BusyErrorCellValueSubType.loadingImage:member
     package: excel!
-    summary: An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.
+    summary: |-
+      An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"LoadingImage"'
   - name: unknown
     uid: excel!Excel.BusyErrorCellValueSubType.unknown:member
     package: excel!
-    summary: An unknown type of error. Displays as error type \#BUSY! in Excel.
+    summary: |-
+      An unknown type of error. Displays as error type \#BUSY! in Excel.
+
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

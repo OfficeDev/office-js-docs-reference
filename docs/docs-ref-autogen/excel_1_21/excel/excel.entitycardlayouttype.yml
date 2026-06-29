@@ -12,5 +12,8 @@ fields:
   - name: entity
     uid: excel!Excel.EntityCardLayoutType.entity:member
     package: excel!
-    summary: Entity layout of the entity card.
+    summary: |-
+      Entity layout of the entity card.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"Entity"'

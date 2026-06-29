@@ -12,10 +12,16 @@ fields:
   - name: ascending
     uid: excel!Excel.SortBy.ascending:member
     package: excel!
-    summary: Ascending sort. Smallest to largest or A to Z.
+    summary: |-
+      Ascending sort. Smallest to largest or A to Z.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Ascending"'
   - name: descending
     uid: excel!Excel.SortBy.descending:member
     package: excel!
-    summary: Descending sort. Largest to smallest or Z to A.
+    summary: |-
+      Descending sort. Largest to smallest or Z to A.
+
+      * \[Api set: ExcelApi 1.8\]
     value: '"Descending"'

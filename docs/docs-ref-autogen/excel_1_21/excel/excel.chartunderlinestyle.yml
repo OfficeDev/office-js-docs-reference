@@ -12,10 +12,10 @@ fields:
   - name: none
     uid: excel!Excel.ChartUnderlineStyle.none:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"None"'
   - name: single
     uid: excel!Excel.ChartUnderlineStyle.single:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Single"'

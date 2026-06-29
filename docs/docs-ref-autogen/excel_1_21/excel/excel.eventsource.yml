@@ -12,10 +12,16 @@ fields:
   - name: local
     uid: excel!Excel.EventSource.local:member
     package: excel!
-    summary: Local means the event comes from a local user session.
+    summary: |-
+      Local means the event comes from a local user session.
+
+      * \[Api set: ExcelApi 1.7\]
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
     package: excel!
-    summary: Remote means the event comes from a remote user session.
+    summary: |-
+      Remote means the event comes from a remote user session.
+
+      * \[Api set: ExcelApi 1.7\]
     value: '"Remote"'

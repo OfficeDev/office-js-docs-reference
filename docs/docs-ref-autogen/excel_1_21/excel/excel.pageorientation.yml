@@ -12,10 +12,10 @@ fields:
   - name: landscape
     uid: excel!Excel.PageOrientation.landscape:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Landscape"'
   - name: portrait
     uid: excel!Excel.PageOrientation.portrait:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Portrait"'

@@ -12,15 +12,15 @@ fields:
   - name: hidden
     uid: excel!Excel.SheetVisibility.hidden:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Hidden"'
   - name: veryHidden
     uid: excel!Excel.SheetVisibility.veryHidden:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"VeryHidden"'
   - name: visible
     uid: excel!Excel.SheetVisibility.visible:member
     package: excel!
-    summary: ''
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Visible"'

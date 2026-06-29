@@ -560,7 +560,7 @@ methods:
     syntax:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: ''
   - name: getLinkedEntityCellValue(linkedEntityCellValueId)
     uid: excel!Excel.Workbook#getLinkedEntityCellValue:member(1)
@@ -578,7 +578,7 @@ methods:
           description: An identifier that specifies an individual `LinkedEntityCellValue`<!-- -->.
           type: <xref uid="excel!Excel.LinkedEntityId:interface" />
       return:
-        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValue:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValue:interface" />&gt;
         description: ''
   - name: getSelectedRange()
     uid: excel!Excel.Workbook#getSelectedRange:member(1)
@@ -633,7 +633,7 @@ methods:
           description: Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
           type: <xref uid="excel!Excel.InsertWorksheetOptions:interface" />
       return:
-        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: An array of IDs corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: excel!Excel.Workbook#load:member(1)
@@ -750,7 +750,7 @@ methods:
           type: <xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="excel!~OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -799,7 +799,7 @@ events:
     syntax:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
   - name: onAutoSaveSettingChanged
     uid: excel!Excel.Workbook#onAutoSaveSettingChanged:member
     package: excel!
@@ -812,7 +812,7 @@ events:
     syntax:
       content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: excel!Excel.Workbook#onSelectionChanged:member
     package: excel!
@@ -825,5 +825,5 @@ events:
     syntax:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
-        type: <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
-extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

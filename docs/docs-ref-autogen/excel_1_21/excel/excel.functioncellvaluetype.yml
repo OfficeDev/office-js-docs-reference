@@ -12,5 +12,8 @@ fields:
   - name: javaScriptReference
     uid: excel!Excel.FunctionCellValueType.javaScriptReference:member
     package: excel!
-    summary: Reference to a JavaScript custom function. For more information, see [Create custom functions in Excel](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)<!-- -->.
+    summary: |-
+      Reference to a JavaScript custom function. For more information, see [Create custom functions in Excel](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)<!-- -->.
+
+      * \[Api set: ExcelApi 1.19\]
     value: '"JavaScriptReference"'
