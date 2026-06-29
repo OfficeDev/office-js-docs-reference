@@ -54,6 +54,8 @@ remarks: |-
   - [Excel.RangeCollection](/javascript/api/excel/excel.rangecollection): [getCount](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-getcount-member(1))
   - [Excel.RangeViewCollection](/javascript/api/excel/excel.rangeviewcollection): [getCount](/javascript/api/excel/excel.rangeviewcollection#excel-excel-rangeviewcollection-getcount-member(1))
   - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [getCount](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-getcount-member(1))
+  - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [tryToUpdate](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))
+  - [Excel.SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection): [getFirstOrNullObject](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirstornullobject-member(1))
   - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [getCount](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-getcount-member(1))
   - [Excel.Shape](/javascript/api/excel/excel.shape): [getAsImage](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))
   - [Excel.ShapeCollection](/javascript/api/excel/excel.shapecollection): [getCount](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-getcount-member(1))
