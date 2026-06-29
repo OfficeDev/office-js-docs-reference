@@ -1,0 +1,16 @@
+### YamlMime:TSEnum
+name: Excel.EntityCardLayoutType
+uid: excel!Excel.EntityCardLayoutType:enum
+package: excel!
+fullName: Excel.EntityCardLayoutType
+summary: Types of entity card layouts.
+remarks: '\[Api set: ExcelApi 1.19\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: entity
+    uid: excel!Excel.EntityCardLayoutType.entity:member
+    package: excel!
+    summary: Entity layout of the entity card.
+    value: '"Entity"'

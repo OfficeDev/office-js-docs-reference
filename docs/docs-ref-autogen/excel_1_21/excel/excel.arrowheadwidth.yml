@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ArrowheadWidth
+uid: excel!Excel.ArrowheadWidth:enum
+package: excel!
+fullName: Excel.ArrowheadWidth
+summary: ''
+remarks: '\[Api set: ExcelApi 1.9\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: medium
+    uid: excel!Excel.ArrowheadWidth.medium:member
+    package: excel!
+    summary: ''
+    value: '"Medium"'
+  - name: narrow
+    uid: excel!Excel.ArrowheadWidth.narrow:member
+    package: excel!
+    summary: ''
+    value: '"Narrow"'
+  - name: wide
+    uid: excel!Excel.ArrowheadWidth.wide:member
+    package: excel!
+    summary: ''
+    value: '"Wide"'

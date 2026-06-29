@@ -218,6 +218,24 @@ methods:
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
         description: ''
+  - name: loadLinkedEntityCellValue(id)
+    uid: excel!Excel.LinkedEntityDataDomainCollection#loadLinkedEntityCellValue:member(1)
+    package: excel!
+    fullName: loadLinkedEntityCellValue(id)
+    summary: Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`<!-- -->. If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
+    remarks: '[API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadLinkedEntityCellValue(id: LinkedEntityId): void;'
+      parameters:
+        - id: id
+          description: A specific `LinkedEntityId`
+          type: <xref uid="excel!Excel.LinkedEntityId:interface" />
+      return:
+        type: void
+        description: ''
   - name: refreshAll()
     uid: excel!Excel.LinkedEntityDataDomainCollection#refreshAll:member(1)
     package: excel!
@@ -247,6 +265,22 @@ methods:
         type: <xref uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface" />
         description: ''
 events:
+  - name: onLinkedEntityCellValueLoaded
+    uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityCellValueLoaded:member
+    package: excel!
+    fullName: onLinkedEntityCellValueLoaded
+    summary: Occurs when the request to load a `LinkedEntityCellValue` is completed.
+    remarks: |-
+      [API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      This event isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;'
+      return:
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface" />&gt;
   - name: onLinkedEntityDataDomainAdded
     uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member
     package: excel!

@@ -999,6 +999,7 @@ interfaces:
   - excel!Excel.Interfaces.WorksheetUpdateData:interface
   - excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
   - excel!Excel.LinkedEntityCellValue:interface
+  - excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainCreateOptions:interface
   - excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface

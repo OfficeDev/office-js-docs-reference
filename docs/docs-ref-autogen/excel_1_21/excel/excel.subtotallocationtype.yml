@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.SubtotalLocationType
+uid: excel!Excel.SubtotalLocationType:enum
+package: excel!
+fullName: Excel.SubtotalLocationType
+summary: ''
+remarks: '\[Api set: ExcelApi 1.8\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: atBottom
+    uid: excel!Excel.SubtotalLocationType.atBottom:member
+    package: excel!
+    summary: Subtotals are at the bottom.
+    value: '"AtBottom"'
+  - name: atTop
+    uid: excel!Excel.SubtotalLocationType.atTop:member
+    package: excel!
+    summary: Subtotals are at the top.
+    value: '"AtTop"'
+  - name: off
+    uid: excel!Excel.SubtotalLocationType.off:member
+    package: excel!
+    summary: Subtotals are off.
+    value: '"Off"'

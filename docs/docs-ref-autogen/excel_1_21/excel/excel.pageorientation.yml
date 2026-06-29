@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.PageOrientation
+uid: excel!Excel.PageOrientation:enum
+package: excel!
+fullName: Excel.PageOrientation
+summary: ''
+remarks: '\[Api set: ExcelApi 1.7\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: landscape
+    uid: excel!Excel.PageOrientation.landscape:member
+    package: excel!
+    summary: ''
+    value: '"Landscape"'
+  - name: portrait
+    uid: excel!Excel.PageOrientation.portrait:member
+    package: excel!
+    summary: ''
+    value: '"Portrait"'

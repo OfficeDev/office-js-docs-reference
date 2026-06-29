@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.ReferenceValueType
+uid: excel!Excel.ReferenceValueType:enum
+package: excel!
+fullName: Excel.ReferenceValueType
+summary: Represents the types of the `ReferenceValue` object.
+remarks: '\[Api set: ExcelApi 1.16\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: array
+    uid: excel!Excel.ReferenceValueType.array:member
+    package: excel!
+    summary: Represents an `ArrayCellValue`<!-- -->.
+    value: '"Array"'
+  - name: boolean
+    uid: excel!Excel.ReferenceValueType.boolean:member
+    package: excel!
+    summary: Represents a `BooleanCellValue`<!-- -->.
+    value: '"Boolean"'
+  - name: double
+    uid: excel!Excel.ReferenceValueType.double:member
+    package: excel!
+    summary: Represents a `DoubleCellValue`<!-- -->.
+    value: '"Double"'
+  - name: entity
+    uid: excel!Excel.ReferenceValueType.entity:member
+    package: excel!
+    summary: Represents an `EntityCellValue`<!-- -->.
+    value: '"Entity"'
+  - name: root
+    uid: excel!Excel.ReferenceValueType.root:member
+    package: excel!
+    summary: Represents a `RootReferenceCellValue`<!-- -->.
+    value: '"Root"'
+  - name: string
+    uid: excel!Excel.ReferenceValueType.string:member
+    package: excel!
+    summary: Represents a `StringCellValue`<!-- -->.
+    value: '"String"'

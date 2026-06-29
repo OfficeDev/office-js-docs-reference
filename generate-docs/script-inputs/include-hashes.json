@@ -12,6 +12,7 @@
   "docs/includes/excel-1_19.md": "ea1858c5a73597b34915b2762d56146ce4fefd95abf727a0610f2c0d52dba999",
   "docs/includes/excel-1_2.md": "a2c41346a77d8c694add2321da68a597eb9a266b0663d638f7c8194dae7e80be",
   "docs/includes/excel-1_20.md": "e9c661d2c6310b67db75a33c8361330e129218eb5fd53961f1e7d68c225bebcd",
+  "docs/includes/excel-1_21.md": "6f0f7e2c3fa85218fb89b714c7ce8257059e556cb7bd329b978da04fe3edf0dc",
   "docs/includes/excel-1_3.md": "9cb2029efc6ad95a3699ed20e2343dc1b076eb1528fce01ab7ea57e7ade9bb3c",
   "docs/includes/excel-1_4.md": "c4d7fd97202186f7e6eda67fdf4e59ada7443e6f80918d39082f11434779fd0d",
   "docs/includes/excel-1_5.md": "2aa55515acef0eb5bfec0be014b7ebae5a335706cf338d7f57200e76fe4a28fd",
@@ -21,7 +22,7 @@
   "docs/includes/excel-1_9.md": "56b9861503dbfb184ea037024b5898f18a208742b26fa610626e4a121f3056b7",
   "docs/includes/excel-desktop-1_1.md": "591413e2368a42df07c084517952d31b1cd9d0918a858604330607be00a50354",
   "docs/includes/excel-online.md": "199bb50b3b7e587aee3ef861c9e4918bacea6973f01663952ad5a64f329d613c",
-  "docs/includes/excel-preview.md": "fb05d6464e8fcf8b177cabf8d628270df0d980790029c5ea6f64186de2266519",
+  "docs/includes/excel-preview.md": "219ce0932293b25e7145cf8f0b82aaa78adab637da7be2fe8bf84ba1819d0390",
   "docs/includes/outlook-1_1.md": "aa79adb10745dbfd377f510a31f82968e63ca5e55307427c3b1b052cf7c97b4e",
   "docs/includes/outlook-1_10.md": "c3bf50e150cacb94f2b58a032050943a4e094a0b89b7f96462780f9e051d038e",
   "docs/includes/outlook-1_11.md": "57d4a4eddd23cf3732aa5f33492720060e1d378a9ac2cff637794ffbfa4cb70d",
@@ -73,5 +74,5 @@
   "docs/includes/word-desktop-1_4.md": "c5e4edd59b4ae08375f036aa6baec9651ba41c9fc44a5babc8ee86c8e06d9ae6",
   "docs/includes/word-desktop-1_5.md": "ad2b6656b6550fe41baeb535303256d2cf2b3b3643d6450820fb30e3f19f3e57",
   "docs/includes/word-online.md": "e645b476195fda983b442e3cc9a606eaf83e4ec837ffb32027e1eed326dc4814",
-  "docs/includes/word-preview.md": "47b20ebc15820d3d9c92cce49e1d792eaded2d12cd82b7beee9262f72b7bfb11"
+  "docs/includes/word-preview.md": "c5d4fe32fb16159648153c967120c50fcfa41534a3a4cdfb4898a934b23d0ef9"
 }

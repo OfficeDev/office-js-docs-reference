@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.DeleteShiftDirection
+uid: excel!Excel.DeleteShiftDirection:enum
+package: excel!
+fullName: Excel.DeleteShiftDirection
+summary: ''
+remarks: '\[Api set: ExcelApi 1.1\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: left
+    uid: excel!Excel.DeleteShiftDirection.left:member
+    package: excel!
+    summary: ''
+    value: '"Left"'
+  - name: up
+    uid: excel!Excel.DeleteShiftDirection.up:member
+    package: excel!
+    summary: ''
+    value: '"Up"'

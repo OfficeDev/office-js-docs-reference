@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartDataSourceType
+uid: excel!Excel.ChartDataSourceType:enum
+package: excel!
+fullName: Excel.ChartDataSourceType
+summary: Specifies the data source type of the chart series.
+remarks: '\[Api set: ExcelApi 1.15\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: externalRange
+    uid: excel!Excel.ChartDataSourceType.externalRange:member
+    package: excel!
+    summary: The data source type of the chart series is an external range.
+    value: '"ExternalRange"'
+  - name: list
+    uid: excel!Excel.ChartDataSourceType.list:member
+    package: excel!
+    summary: The data source type of the chart series is a list.
+    value: '"List"'
+  - name: localRange
+    uid: excel!Excel.ChartDataSourceType.localRange:member
+    package: excel!
+    summary: The data source type of the chart series is a local range.
+    value: '"LocalRange"'
+  - name: unknown
+    uid: excel!Excel.ChartDataSourceType.unknown:member
+    package: excel!
+    summary: The data source type of the chart series is unknown or unsupported.
+    value: '"Unknown"'

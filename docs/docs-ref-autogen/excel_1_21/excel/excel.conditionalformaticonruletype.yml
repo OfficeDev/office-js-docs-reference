@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatIconRuleType
+uid: excel!Excel.ConditionalFormatIconRuleType:enum
+package: excel!
+fullName: Excel.ConditionalFormatIconRuleType
+summary: Represents the types of icon conditional format.
+remarks: '\[Api set: ExcelApi 1.6\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: formula
+    uid: excel!Excel.ConditionalFormatIconRuleType.formula:member
+    package: excel!
+    summary: ''
+    value: '"Formula"'
+  - name: invalid
+    uid: excel!Excel.ConditionalFormatIconRuleType.invalid:member
+    package: excel!
+    summary: ''
+    value: '"Invalid"'
+  - name: number
+    uid: excel!Excel.ConditionalFormatIconRuleType.number:member
+    package: excel!
+    summary: ''
+    value: '"Number"'
+  - name: percent
+    uid: excel!Excel.ConditionalFormatIconRuleType.percent:member
+    package: excel!
+    summary: ''
+    value: '"Percent"'
+  - name: percentile
+    uid: excel!Excel.ConditionalFormatIconRuleType.percentile:member
+    package: excel!
+    summary: ''
+    value: '"Percentile"'

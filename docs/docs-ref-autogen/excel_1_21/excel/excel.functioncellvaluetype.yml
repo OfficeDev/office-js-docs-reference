@@ -1,0 +1,16 @@
+### YamlMime:TSEnum
+name: Excel.FunctionCellValueType
+uid: excel!Excel.FunctionCellValueType:enum
+package: excel!
+fullName: Excel.FunctionCellValueType
+summary: Represents the types of the `FunctionCellValue` object.
+remarks: '\[Api set: ExcelApi 1.19\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: javaScriptReference
+    uid: excel!Excel.FunctionCellValueType.javaScriptReference:member
+    package: excel!
+    summary: Reference to a JavaScript custom function. For more information, see [Create custom functions in Excel](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)<!-- -->.
+    value: '"JavaScriptReference"'
