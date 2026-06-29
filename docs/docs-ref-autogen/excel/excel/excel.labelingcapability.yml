@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: Excel.LabelingCapability
+uid: excel!Excel.LabelingCapability:enum
+package: excel!
+fullName: Excel.LabelingCapability
+summary: Represents the labeling capability status of the sensitivity label catalog.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [getLabelingCapability](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapability-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: labelingDisabled
+    uid: excel!Excel.LabelingCapability.labelingDisabled:member
+    package: excel!
+    summary: |-
+      Sensitivity labeling is disabled for the user or tenant.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"LabelingDisabled"'
+  - name: labelingEnabled
+    uid: excel!Excel.LabelingCapability.labelingEnabled:member
+    package: excel!
+    summary: |-
+      Sensitivity labeling is fully enabled.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"LabelingEnabled"'
+  - name: labelingPolicyNotFound
+    uid: excel!Excel.LabelingCapability.labelingPolicyNotFound:member
+    package: excel!
+    summary: |-
+      No labeling policy was found for the user.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"LabelingPolicyNotFound"'
+  - name: noLicense
+    uid: excel!Excel.LabelingCapability.noLicense:member
+    package: excel!
+    summary: |-
+      No valid license is available for sensitivity labeling.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"NoLicense"'
