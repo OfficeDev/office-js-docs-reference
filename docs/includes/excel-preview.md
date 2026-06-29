@@ -95,7 +95,24 @@
 |[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
 |[Range](/javascript/api/excel/excel.range)|[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
-|[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInSyncExecution: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
+|[RequestContext](/javascript/api/excel/excel.requestcontext)|[sensitivityLabelsCatalog](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-sensitivitylabelscatalog-member)|[Api set: ExcelApi BETA (PREVIEW ONLY)]|
+||[setInvocation(invocation: { invocationId: number isInSyncExecution: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
+|[SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel)|[getCurrentOrNullObject()](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-getcurrentornullobject-member(1))|Gets the current label information that exists on the workbook for the user.|
+||[tryToUpdate(labelId: string)](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))|Tries to update to the provided sensitivity label on the workbook for the user.|
+|[SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails)|[children](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-children-member)|Gets the sublabels of the sensitivity label.|
+||[color](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-color-member)|Gets the color of the sensitivity label.|
+||[id](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-id-member)|Gets the unique identifier (GUID) of the sensitivity label.|
+||[isEnabled](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-isenabled-member)|Gets a value indicating whether the label is enabled.|
+||[name](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-name-member)|Gets the name of the sensitivity label.|
+||[order](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-order-member)|Gets the priority of the sensitivity label, with 0 as lowest priority.|
+||[protectionType](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-protectiontype-member)|Gets a value indicating the protection type provided by this label.|
+||[siteId](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-siteid-member)|Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.|
+||[tooltip](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-tooltip-member)|Gets the description of the sensitivity label.|
+|[SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection)|[getFirst()](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirst-member(1))|Gets the first `SensitivityLabelDetails` object in this collection.|
+||[getFirstOrNullObject()](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirstornullobject-member(1))|Gets the first `SensitivityLabelDetails` object in this collection.|
+||[items](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-items-member)|Gets the loaded child items in this collection.|
+|[SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog)|[getLabelingCapability](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapability-member)|Gets whether the catalog of sensitivity labels is enabled in Excel.|
+||[getLabels()](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabels-member(1))|Gets sensitivity labels that are available to the current user.|
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
 ||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 |[ShapeFont](/javascript/api/excel/excel.shapefont)|[strikethrough](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-strikethrough-member)|Specifies the strikethrough status of font.|
@@ -128,6 +145,7 @@
 ||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[inPreviewMode()](/javascript/api/excel/excel.workbook#excel-excel-workbook-inpreviewmode-member(1))|Returns whether the workbook is currently in preview mode.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
+||[sensitivityLabel](/javascript/api/excel/excel.workbook#excel-excel-workbook-sensitivitylabel-member)|Returns the sensitivity label of the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
