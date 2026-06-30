@@ -31176,6 +31176,49 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
     /**
+     * Provides information about the `LinkedEntityCellValue` that was requested given a specified `LinkedEntityId`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.21]
+     */
+    export interface LinkedEntityCellValueLoadedEventArgs {
+        /**
+         * Any error encountered during the request to load the `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        error?: string;
+        /**
+         * Gets the `LinkedEntityId` of the requested `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        id: LinkedEntityId;
+        /**
+         * Gets the `LinkedEntityCellValue` of the requested `LinkedEntityId`. If the load operation failed, this property is `null`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        linkedEntityCellValue?: LinkedEntityCellValue;
+        /**
+         * Gets the source of the event. See `Excel.EventSource` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         * Gets the type of the event. See `Excel.EventType` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        type: "LinkedEntityDataDomainLinkedEntityCellValueLoaded";
+    }
+    /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
                 A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
                 A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
@@ -31458,6 +31501,16 @@ export declare namespace Excel {
          */
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
+         * Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`.
+                    If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         *
+         * @param id - A specific `LinkedEntityId`
+         */
+        loadLinkedEntityCellValue(id: LinkedEntityId): void;
+        /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
                     The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
@@ -31483,6 +31536,17 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedEntityDataDomainCollection;
+        /**
+         * Occurs when the request to load a `LinkedEntityCellValue` is completed.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         * 
+         * This event isn't supported in Excel on the web.
+         *
+         * @eventproperty
+         */
+        readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;
         /**
          * Occurs when a new linked entity data domain is added to the workbook.
          *
