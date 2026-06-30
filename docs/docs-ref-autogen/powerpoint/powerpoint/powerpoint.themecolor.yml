@@ -137,7 +137,7 @@ fields:
     uid: powerpoint!PowerPoint.ThemeColor.mixed:member
     package: powerpoint!
     summary: |-
-      Specifies a mixed theme color.
+      Specifies a mixed theme color. Not applicable as input to [ThemeColorScheme.getThemeColor](xref:powerpoint!PowerPoint.ThemeColorScheme:class) nor [ThemeColorScheme.setThemeColor](xref:powerpoint!PowerPoint.ThemeColorScheme:class)<!-- -->.
 
       * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"Mixed"'
@@ -145,7 +145,7 @@ fields:
     uid: powerpoint!PowerPoint.ThemeColor.none:member
     package: powerpoint!
     summary: |-
-      Specifies no theme color.
+      Specifies no theme color. Not applicable as input to [ThemeColorScheme.getThemeColor](xref:powerpoint!PowerPoint.ThemeColorScheme:class) nor [ThemeColorScheme.setThemeColor](xref:powerpoint!PowerPoint.ThemeColorScheme:class)<!-- -->.
 
       * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"None"'

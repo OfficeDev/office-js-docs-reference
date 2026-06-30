@@ -67,7 +67,7 @@ methods:
       content: 'getThemeColor(color: PowerPoint.ThemeColor): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: color
-          description: The theme color.
+          description: The theme color. The values `none` and `mixed` are invalid for this API.
           type: <xref uid="powerpoint!PowerPoint.ThemeColor:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -85,7 +85,7 @@ methods:
       content: 'getThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: color
-          description: The theme color.
+          description: The theme color. The values `none` and `mixed` are invalid for this API.
           type: '"Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -103,7 +103,7 @@ methods:
       content: 'setThemeColor(color: PowerPoint.ThemeColor, rgbColor: string): void;'
       parameters:
         - id: color
-          description: The theme color.
+          description: The theme color. The values `none` and `mixed` are invalid for this API.
           type: <xref uid="powerpoint!PowerPoint.ThemeColor:enum" />
         - id: rgbColor
           description: The color value in \#RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
@@ -124,7 +124,7 @@ methods:
       content: 'setThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2", rgbColor: string): void;'
       parameters:
         - id: color
-          description: The theme color.
+          description: The theme color. The values `none` and `mixed` are invalid for this API.
           type: '"Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"'
         - id: rgbColor
           description: The color value in \#RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").

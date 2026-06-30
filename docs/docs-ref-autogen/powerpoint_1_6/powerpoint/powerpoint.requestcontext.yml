@@ -91,4 +91,17 @@ properties:
       content: 'readonly presentation: Presentation;'
       return:
         type: <xref uid="powerpoint!PowerPoint.Presentation:class" />
+  - name: sensitivityLabelsCatalog
+    uid: powerpoint!PowerPoint.RequestContext#sensitivityLabelsCatalog:member
+    package: powerpoint!
+    fullName: sensitivityLabelsCatalog
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabelsCatalog: any;'
+      return:
+        type: any
 extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
