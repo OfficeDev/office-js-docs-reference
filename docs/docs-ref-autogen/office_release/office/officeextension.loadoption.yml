@@ -154,6 +154,7 @@ remarks: |-
   - [Word.ReviewerCollection](/javascript/api/word/word.reviewercollection): [load](/javascript/api/word/word.reviewercollection#word-word-reviewercollection-load-member(3))
   - [Word.RevisionCollection](/javascript/api/word/word.revisioncollection): [load](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-load-member(3))
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(3))
+  - [Word.SensitivityLabelDetailsCollection](/javascript/api/word/word.sensitivitylabeldetailscollection): [load](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-load-member(3))
   - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(3))
   - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(3))
   - [Word.SourceCollection](/javascript/api/word/word.sourcecollection): [load](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-load-member(3))

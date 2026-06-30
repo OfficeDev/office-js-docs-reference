@@ -1,0 +1,254 @@
+### YamlMime:TSType
+name: Word.SensitivityLabelDetails
+uid: word!Word.SensitivityLabelDetails:class
+package: word!
+fullName: Word.SensitivityLabelDetails
+summary: Represents the properties of available sensitivity labels in Word.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [getCurrentOrNullObject](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-getcurrentornullobject-member(1))
+  - [Word.SensitivityLabelDetailsCollection](/javascript/api/word/word.sensitivitylabeldetailscollection): [getFirst](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-getfirstornullobject-member(1)), [getItem](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-getitem-member(1)), [items](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-items-member)
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: children
+    uid: word!Word.SensitivityLabelDetails#children:member
+    package: word!
+    fullName: children
+    summary: The sublabels of the sensitivity label. Returns null if a label doesn't have any sublabels.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly children: Word.SensitivityLabelDetailsCollection;'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetailsCollection:class" />
+  - name: color
+    uid: word!Word.SensitivityLabelDetails#color:member
+    package: word!
+    fullName: color
+    summary: The color of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly color: string;'
+      return:
+        type: string
+  - name: context
+    uid: word!Word.SensitivityLabelDetails#context:member
+    package: word!
+    fullName: context
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: id
+    uid: word!Word.SensitivityLabelDetails#id:member
+    package: word!
+    fullName: id
+    summary: The unique identifier (GUID) of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: isEnabled
+    uid: word!Word.SensitivityLabelDetails#isEnabled:member
+    package: word!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEnabled: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.SensitivityLabelDetails#name:member
+    package: word!
+    fullName: name
+    summary: The name of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: order
+    uid: word!Word.SensitivityLabelDetails#order:member
+    package: word!
+    fullName: order
+    summary: The order of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly order: number;'
+      return:
+        type: number
+  - name: protectionType
+    uid: word!Word.SensitivityLabelDetails#protectionType:member
+    package: word!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly protectionType: Word.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelProtectionType:enum" /> | "NoProtection" | "AdminDefined" | "UserDefined"
+  - name: siteId
+    uid: word!Word.SensitivityLabelDetails#siteId:member
+    package: word!
+    fullName: siteId
+    summary: The unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly siteId: string;'
+      return:
+        type: string
+  - name: tooltip
+    uid: word!Word.SensitivityLabelDetails#tooltip:member
+    package: word!
+    fullName: tooltip
+    summary: The description of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tooltip: string;'
+      return:
+        type: string
+methods:
+  - name: load(options)
+    uid: word!Word.SensitivityLabelDetails#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.SensitivityLabelDetailsLoadOptions): Word.SensitivityLabelDetails;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.SensitivityLabelDetailsLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetails:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.SensitivityLabelDetails#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.SensitivityLabelDetails;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetails:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.SensitivityLabelDetails#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.SensitivityLabelDetails;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetails:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.SensitivityLabelDetails#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.SensitivityLabelDetails` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SensitivityLabelDetailsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.SensitivityLabelDetailsData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.SensitivityLabelDetailsData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.SensitivityLabelDetails#track:member(1)
+    package: word!
+    fullName: track()
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.SensitivityLabelDetails;'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetails:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.SensitivityLabelDetails#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.SensitivityLabelDetails;'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelDetails:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

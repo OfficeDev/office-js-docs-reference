@@ -1,0 +1,132 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelDetailsData
+uid: word!Word.Interfaces.SensitivityLabelDetailsData:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelDetailsData
+summary: An interface describing the data returned by calling `sensitivityLabelDetails.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails): [toJSON](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: children
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#children:member
+    package: word!
+    fullName: children
+    summary: The sublabels of the sensitivity label. Returns null if a label doesn't have any sublabels.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'children?: Word.Interfaces.SensitivityLabelDetailsData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.SensitivityLabelDetailsData:interface" />[]
+  - name: color
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#color:member
+    package: word!
+    fullName: color
+    summary: The color of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: id
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#id:member
+    package: word!
+    fullName: id
+    summary: The unique identifier (GUID) of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isEnabled
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#isEnabled:member
+    package: word!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#name:member
+    package: word!
+    fullName: name
+    summary: The name of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: order
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#order:member
+    package: word!
+    fullName: order
+    summary: The order of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'order?: number;'
+      return:
+        type: number
+  - name: protectionType
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#protectionType:member
+    package: word!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectionType?: Word.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelProtectionType:enum" /> | "NoProtection" | "AdminDefined" | "UserDefined"
+  - name: siteId
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#siteId:member
+    package: word!
+    fullName: siteId
+    summary: The unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'siteId?: string;'
+      return:
+        type: string
+  - name: tooltip
+    uid: word!Word.Interfaces.SensitivityLabelDetailsData#tooltip:member
+    package: word!
+    fullName: tooltip
+    summary: The description of the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tooltip?: string;'
+      return:
+        type: string
