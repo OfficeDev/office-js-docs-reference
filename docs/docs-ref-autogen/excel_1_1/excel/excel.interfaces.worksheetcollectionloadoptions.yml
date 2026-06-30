@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: charts
     summary: 'For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.'
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.'
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: The display name of the worksheet. The name must be fewer than 32 characters.'
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: position
     summary: 'For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.'
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: tables
     summary: 'For EACH ITEM in the collection: Collection of tables that are part of the worksheet.'
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: visibility
     summary: 'For EACH ITEM in the collection: The visibility of the worksheet.'
     remarks: '[API set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

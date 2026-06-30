@@ -13,7 +13,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Table](/javascript/api/excel/excel.table): [rows](/javascript/api/excel/excel.table#excel-excel-table-rows-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -24,7 +24,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +37,7 @@ properties:
     fullName: count
     summary: Returns the number of rows in the table.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,23 +66,8 @@ methods:
       Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
       Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.
-    remarks: |-
-      [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const tables = context.workbook.tables;
-          const values = [["Sample", "Values", "For", "New", "Row"]];
-          const row = tables.getItem("Table1").rows.add(null, values);
-          row.load('index');
-          await context.sync();
-          
-          console.log(row.index);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,20 +93,8 @@ methods:
       Gets a row based on its position in the collection.
 
       Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => {
-          const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
-          tablerow.load('values');
-          await context.sync();
-          console.log(tablerow.values);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +112,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +130,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,30 +141,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableRowCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const tablerows = context.workbook.tables.getItem('Table1').rows;
-              tablerows.load('items');
-              await context.sync();
-              
-              console.log("tablerows Count: " + tablerows.count);
-              for (let i = 0; i < tablerows.items.length; i++) {
-                  console.log(tablerows.items[i].index);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableRowCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,7 +156,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="excel!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.TableRowCollection:class" />
         description: ''
@@ -209,7 +166,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,4 +174,4 @@ methods:
       return:
         type: <xref uid="excel!Excel.Interfaces.TableRowCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />

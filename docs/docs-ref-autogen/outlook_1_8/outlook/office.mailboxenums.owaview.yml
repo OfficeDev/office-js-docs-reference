@@ -5,64 +5,10 @@ package: outlook!
 fullName: Office.MailboxEnums.OWAView
 summary: Represents the current view of Outlook on the web.
 remarks: |-
-
-
   #### Used by
 
   - [Office.Diagnostics](/javascript/api/outlook/office.diagnostics): [OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
-
-  // This function gets a mailbox's diagnostic information, such as Outlook client and version, and logs it to the console.
-  const diagnostics = Office.context.mailbox.diagnostics;
-  console.log(`Client application: ${diagnostics.hostName}`);
-  console.log(`Client version: ${diagnostics.hostVersion}`);
-
-  switch (diagnostics.OWAView) {
-    case undefined:
-      console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
-      break;
-    case Office.MailboxEnums.OWAView.OneColumnNarrow:
-      console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
-      break;
-    case Office.MailboxEnums.OWAView.OneColumn:
-      console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
-      break;
-    case Office.MailboxEnums.OWAView.TwoColumns:
-      console.log("Current view (Outlook on the web only): Viewed from a tablet");
-      break;
-    case Office.MailboxEnums.OWAView.ThreeColumns:
-      console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
-      break;
-  }
-
-  if (Office.context.requirements.isSetSupported("Mailbox", "1.16")) {
-    const ewsTokenStatus = diagnostics.ews;
-    ewsTokenStatus.getTokenStatusAsync({ isRest: false }, (result) => {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        console.log(result.error.message);
-        return;
-      }
-
-      const status = result.value;
-      switch (status) {
-        case Office.MailboxEnums.TokenStatus.Enabled:
-          console.log("EWS token status: EWS callback tokens are enabled.");
-          break;
-        case Office.MailboxEnums.TokenStatus.Disabled:
-          console.log("EWS token status: EWS callback tokens are disabled.");
-          break;
-        case Office.MailboxEnums.TokenStatus.Removed:
-          console.log("EWS token status: The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.");
-          break;
-      }
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -13,28 +13,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [selection](/javascript/api/word/word.document#word-word-document-selection-member)
   - [Word.Pane](/javascript/api/word/word.pane): [selection](/javascript/api/word/word.pane#word-word-pane-selection-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
-
-  // Inserts a formula field without specifying the formula expression.
-  // Word determines the formula automatically based on adjacent cell values:
-  // if there are values above the cell, it inserts =SUM(ABOVE);
-  // if there are values to the left, it inserts =SUM(LEFT).
-  // The selection must be in a table cell with at least one adjacent cell that contains a value.
-  await Word.run(async (context) => {
-    const options: Word.SelectionInsertFormulaOptions = {
-      numberFormat: "#,##0.00",
-    };
-    context.document.selection.insertFormula(options);
-    await context.sync();
-
-    console.log("Inserted formula (auto-determined by Word) with number format.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,7 +24,7 @@ properties:
     fullName: borders
     summary: Returns a `BorderUniversalCollection` object that represents all the borders for the objects in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +37,7 @@ properties:
     fullName: characters
     summary: Returns a `RangeScopedCollection` object that represents each character in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +50,7 @@ properties:
     fullName: comments
     summary: Returns a `CommentCollection` object that represents all the comments in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +63,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +76,7 @@ properties:
     fullName: end
     summary: Specifies the ending character position of the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +89,7 @@ properties:
     fullName: fields
     summary: Returns a `FieldCollection` object that represents all the fields in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +102,7 @@ properties:
     fullName: fitTextWidth
     summary: Specifies the width in which Word fits the text in the current selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +115,7 @@ properties:
     fullName: font
     summary: Returns the `Font` object that represents the character formatting of the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +128,7 @@ properties:
     fullName: formattedText
     summary: Specifies a `Range` object that includes the formatted text in the range or selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +141,7 @@ properties:
     fullName: hasNoProofing
     summary: Returns whether the spelling and grammar checker ignores the selected text. If the selected text contains a mix of proofed and un-proofed content, this API returns `null`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,7 +154,7 @@ properties:
     fullName: isActive
     summary: Returns whether the selection in the specified window or pane is active.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,7 +167,7 @@ properties:
     fullName: isColumnSelectModeActive
     summary: Specifies whether column selection mode is active.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -201,7 +180,7 @@ properties:
     fullName: isEndOfRowMark
     summary: Returns whether the selection is at the end-of-row mark in a table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +193,7 @@ properties:
     fullName: isExtendModeActive
     summary: Specifies whether Extend mode is active.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,7 +206,7 @@ properties:
     fullName: isInsertionPointAtEndOfLine
     summary: Returns whether the insertion point is at the end of a line.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,7 +219,7 @@ properties:
     fullName: isStartActive
     summary: Specifies whether the beginning of the selection is active.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -253,7 +232,7 @@ properties:
     fullName: languageDetected
     summary: Specifies whether Word has detected the language of the selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,7 +245,7 @@ properties:
     fullName: languageId
     summary: Returns the language for the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,7 +258,7 @@ properties:
     fullName: languageIdFarEast
     summary: Returns the East Asian language for the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,7 +271,7 @@ properties:
     fullName: languageIdOther
     summary: Returns the language for the selection that isn't classified as an East Asian language.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,7 +284,7 @@ properties:
     fullName: orientation
     summary: Specifies the orientation of text in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,7 +297,7 @@ properties:
     fullName: paragraphs
     summary: Returns a `ParagraphCollection` object that represents all the paragraphs in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -331,7 +310,7 @@ properties:
     fullName: range
     summary: Returns the `Range` object for the portion of the document contained in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,7 +323,7 @@ properties:
     fullName: sections
     summary: Returns the `SectionCollection` object in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -357,7 +336,7 @@ properties:
     fullName: sentences
     summary: Returns the `RangeScopedCollection` object for each sentence in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,7 +349,7 @@ properties:
     fullName: shading
     summary: Returns the `ShadingUniversal` object for the shading formatting for the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -383,7 +362,7 @@ properties:
     fullName: start
     summary: Specifies the starting character position of the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -396,7 +375,7 @@ properties:
     fullName: storyLength
     summary: Returns the number of characters in the story that contains the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -409,7 +388,7 @@ properties:
     fullName: storyType
     summary: Returns the story type for the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -422,7 +401,7 @@ properties:
     fullName: tables
     summary: Returns the `TableCollection` object in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -435,7 +414,7 @@ properties:
     fullName: text
     summary: Specifies the text in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,7 +427,7 @@ properties:
     fullName: topLevelTables
     summary: Returns the tables at the outermost nesting level in the current selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -461,7 +440,7 @@ properties:
     fullName: type
     summary: Returns the selection type.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -474,7 +453,7 @@ properties:
     fullName: words
     summary: Returns the `RangeScopedCollection` object that represents each word in the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -488,13 +467,13 @@ methods:
     fullName: calculate()
     summary: Calculates the first mathematical expression within the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'calculate(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The result of the calculation.
   - name: cancelMode()
     uid: word!Word.Selection#cancelMode:member(1)
@@ -502,7 +481,7 @@ methods:
     fullName: cancelMode()
     summary: Cancels a mode such as extend or column select. This is equivalent to pressing the Esc key.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -516,7 +495,7 @@ methods:
     fullName: clearCharacterStyleFormatting()
     summary: Removes character formatting applied through character styles.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -530,7 +509,7 @@ methods:
     fullName: clearFormatting()
     summary: Removes character and paragraph formatting from the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -544,7 +523,7 @@ methods:
     fullName: clearManualCharacterFormatting()
     summary: Removes manually applied character formatting from the selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,7 +537,7 @@ methods:
     fullName: clearManualParagraphFormatting()
     summary: Removes manually applied paragraph formatting from the selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -572,7 +551,7 @@ methods:
     fullName: clearParagraphFormatting()
     summary: Removes all paragraph formatting from the selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -586,7 +565,7 @@ methods:
     fullName: clearParagraphStyle()
     summary: Removes paragraph formatting applied through paragraph styles.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -600,7 +579,7 @@ methods:
     fullName: collapse(direction)
     summary: Collapses the selection to the starting or ending position.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -618,7 +597,7 @@ methods:
     fullName: collapse(direction)
     summary: Collapses the selection to the starting or ending position.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -636,7 +615,7 @@ methods:
     fullName: copyAsPictureToClipboard()
     summary: Copies the selection to the Clipboard as a picture.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -650,7 +629,7 @@ methods:
     fullName: copyFormat()
     summary: Copies the character formatting of the first character in the selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -664,7 +643,7 @@ methods:
     fullName: copyToClipboard()
     summary: Copies the selection to the Clipboard.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -678,7 +657,7 @@ methods:
     fullName: createTextBox()
     summary: Adds a default-sized text box around the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -692,7 +671,7 @@ methods:
     fullName: cut()
     summary: Removes the selected content from the document and moves it to the Clipboard.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -706,7 +685,7 @@ methods:
     fullName: delete(options)
     summary: Deletes the specified number of characters or words.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -716,7 +695,7 @@ methods:
           description: Optional. Options for deleting text.
           type: <xref uid="word!Word.SelectionDeleteOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters deleted.
   - name: detectLanguage()
     uid: word!Word.Selection#detectLanguage:member(1)
@@ -724,7 +703,7 @@ methods:
     fullName: detectLanguage()
     summary: Analyzes the selected text to determine the language that it's written in.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -738,7 +717,7 @@ methods:
     fullName: expand(unit)
     summary: Expands the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -748,7 +727,7 @@ methods:
           description: Optional. The unit to expand.
           type: <xref uid="word!Word.OperationUnit:enum" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters added to the range or selection.
   - name: expand(unit)
     uid: word!Word.Selection#expand:member(2)
@@ -756,7 +735,7 @@ methods:
     fullName: expand(unit)
     summary: Expands the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -766,7 +745,7 @@ methods:
           description: Optional. The unit to expand.
           type: '"Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters added to the range or selection.
   - name: expandToWholeStory()
     uid: word!Word.Selection#expandToWholeStory:member(1)
@@ -774,7 +753,7 @@ methods:
     fullName: expandToWholeStory()
     summary: Expands the selection to include the entire story.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -788,7 +767,7 @@ methods:
     fullName: extend(character)
     summary: Turns on extend mode, or if extend mode is already on, extends the selection to the next larger unit of text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -806,7 +785,7 @@ methods:
     fullName: extend(character)
     summary: Turns on extend mode, or if extend mode is already on, extends the selection to the next larger unit of text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -823,28 +802,8 @@ methods:
     package: word!
     fullName: getNextRange(options)
     summary: Returns a `Range` object that represents the next unit relative to the selection.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
-
-      // Gets the range of the next paragraph relative to the current selection.
-      await Word.run(async (context) => {
-        const options: Word.SelectionNextOptions = {
-          unit: Word.OperationUnit.paragraph,
-          count: 1,
-        };
-        const nextRange: Word.Range = context.document.selection.getNextRange(options);
-        nextRange.load("text");
-        await context.sync();
-
-        console.log(`Next paragraph: "${nextRange.text.trim()}"`);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -861,28 +820,8 @@ methods:
     package: word!
     fullName: getPreviousRange(options)
     summary: Returns a `Range` object that represents the previous unit relative to the selection.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
-
-      // Gets the range of the previous sentence relative to the current selection.
-      await Word.run(async (context) => {
-        const options: Word.SelectionPreviousOptions = {
-          unit: Word.OperationUnit.sentence,
-          count: 1,
-        };
-        const previousRange: Word.Range = context.document.selection.getPreviousRange(options);
-        previousRange.load("text");
-        await context.sync();
-
-        console.log(`Previous sentence: "${previousRange.text.trim()}"`);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -900,7 +839,7 @@ methods:
     fullName: goToNext(what)
     summary: Returns a `Range` object that refers to the start position of the next item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -918,7 +857,7 @@ methods:
     fullName: goToNext(what)
     summary: Returns a `Range` object that refers to the start position of the next item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -936,7 +875,7 @@ methods:
     fullName: goToPrevious(what)
     summary: Returns a `Range` object that refers to the start position of the previous item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -954,7 +893,7 @@ methods:
     fullName: goToPrevious(what)
     summary: Returns a `Range` object that refers to the start position of the previous item or location specified by the `what` argument and moves the selection to the specified item.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -972,7 +911,7 @@ methods:
     fullName: insertAfter(text)
     summary: Inserts the specified text at the end of the range or selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -990,7 +929,7 @@ methods:
     fullName: insertBefore(text)
     summary: Inserts the specified text before the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1008,7 +947,7 @@ methods:
     fullName: insertCells(shiftCells)
     summary: Adds cells to an existing table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1026,7 +965,7 @@ methods:
     fullName: insertCells(shiftCells)
     summary: Adds cells to an existing table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1044,7 +983,7 @@ methods:
     fullName: insertColumnsLeft()
     summary: Inserts columns to the left of the column that contains the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1058,7 +997,7 @@ methods:
     fullName: insertColumnsRight()
     summary: Inserts columns to the right of the current selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1072,7 +1011,7 @@ methods:
     fullName: insertDateTime(options)
     summary: Inserts the current date or time, or both, either as text or as a [TIME field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1089,28 +1028,8 @@ methods:
     package: word!
     fullName: insertFormula(options)
     summary: Inserts a [Formula field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d) at the selection.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
-
-      // Inserts a custom formula at the selection.
-      // The selection must be in a table cell.
-      await Word.run(async (context) => {
-        const options: Word.SelectionInsertFormulaOptions = {
-          formula: "=AVERAGE(ABOVE)",
-          numberFormat: "0.00",
-        };
-        context.document.selection.insertFormula(options);
-        await context.sync();
-
-        console.log("Inserted =AVERAGE(ABOVE) with decimal format.");
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1128,7 +1047,7 @@ methods:
     fullName: insertNewPage()
     summary: Inserts a new page at the position of the insertion point.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1142,7 +1061,7 @@ methods:
     fullName: insertParagraphAfter()
     summary: Inserts a paragraph mark after the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1156,7 +1075,7 @@ methods:
     fullName: insertParagraphBefore()
     summary: Inserts a new paragraph before the selection or range.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1170,7 +1089,7 @@ methods:
     fullName: insertParagraphStyleSeparator()
     summary: Inserts a special hidden paragraph mark that allows Word to join paragraphs formatted using different paragraph styles.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1184,7 +1103,7 @@ methods:
     fullName: insertRowsAbove(numRows)
     summary: Inserts rows above the current selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1202,7 +1121,7 @@ methods:
     fullName: insertRowsBelow(numRows)
     summary: Inserts rows below the current selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1219,26 +1138,8 @@ methods:
     package: word!
     fullName: insertSymbol(characterNumber, options)
     summary: Inserts a symbol in place of the specified selection.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-symbol.yaml
-
-      // Inserts the copyright symbol © (Unicode U+00A9) at the selection.
-      await Word.run(async (context) => {
-        const options: Word.SelectionInsertSymbolOptions = {
-          unicode: true,
-        };
-        context.document.selection.insertSymbol(0x00a9, options);
-        await context.sync();
-
-        console.log("Inserted copyright symbol ©.");
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1259,7 +1160,7 @@ methods:
     fullName: insertText(Text)
     summary: Inserts the specified text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1277,7 +1178,7 @@ methods:
     fullName: insertXml(xml, transform)
     summary: Inserts the specified XML into the document at the cursor, replacing any selected text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1298,7 +1199,7 @@ methods:
     fullName: isEqual(range)
     summary: Returns whether the selection is equal to the specified range.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1308,7 +1209,7 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is equal to the specified range.'
   - name: isInRange(range)
     uid: word!Word.Selection#isInRange:member(1)
@@ -1316,7 +1217,7 @@ methods:
     fullName: isInRange(range)
     summary: Returns `true` if the selection is contained within the specified range.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1326,7 +1227,7 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is contained within the specified range.'
   - name: isInStory(range)
     uid: word!Word.Selection#isInStory:member(1)
@@ -1334,7 +1235,7 @@ methods:
     fullName: isInStory(range)
     summary: Returns whether the selection is in the same story as the specified range.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1344,7 +1245,7 @@ methods:
           description: The range to compare.
           type: <xref uid="word!Word.Range:class" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: '`true` if the selection is in the same story as the specified range.'
   - name: load(options)
     uid: word!Word.Selection#load:member(1)
@@ -1352,7 +1253,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1370,7 +1271,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1388,7 +1289,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1414,7 +1315,7 @@ methods:
     fullName: move(options)
     summary: Collapses the selection to its start or end position and then moves the collapsed object by the specified number of units.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1424,7 +1325,7 @@ methods:
           description: Optional. Options for moving the selection.
           type: <xref uid="word!Word.SelectionMoveOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveDown(options)
     uid: word!Word.Selection#moveDown:member(1)
@@ -1432,7 +1333,7 @@ methods:
     fullName: moveDown(options)
     summary: Moves the selection down.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1442,7 +1343,7 @@ methods:
           description: Optional. Options for moving down.
           type: <xref uid="word!Word.SelectionMoveUpDownOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveEnd(options)
     uid: word!Word.Selection#moveEnd:member(1)
@@ -1450,7 +1351,7 @@ methods:
     fullName: moveEnd(options)
     summary: Moves the ending character position of the range or selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1460,7 +1361,7 @@ methods:
           description: Optional. Options for moving end.
           type: <xref uid="word!Word.SelectionMoveStartEndOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveEndUntil(characters, count)
     uid: word!Word.Selection#moveEndUntil:member(1)
@@ -1468,7 +1369,7 @@ methods:
     fullName: moveEndUntil(characters, count)
     summary: Moves the end position of the selection until any of the specified characters are found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1481,7 +1382,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveEndWhile(characters, count)
     uid: word!Word.Selection#moveEndWhile:member(1)
@@ -1489,7 +1390,7 @@ methods:
     fullName: moveEndWhile(characters, count)
     summary: Moves the ending character position of the selection while any of the specified characters are found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1502,7 +1403,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveLeft(options)
     uid: word!Word.Selection#moveLeft:member(1)
@@ -1510,7 +1411,7 @@ methods:
     fullName: moveLeft(options)
     summary: Moves the selection to the left.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1520,7 +1421,7 @@ methods:
           description: Optional. Options for moving left.
           type: <xref uid="word!Word.SelectionMoveLeftRightOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveRight(options)
     uid: word!Word.Selection#moveRight:member(1)
@@ -1528,7 +1429,7 @@ methods:
     fullName: moveRight(options)
     summary: Moves the selection to the right.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1538,7 +1439,7 @@ methods:
           description: Optional. Options for moving right.
           type: <xref uid="word!Word.SelectionMoveLeftRightOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveStart(options)
     uid: word!Word.Selection#moveStart:member(1)
@@ -1546,7 +1447,7 @@ methods:
     fullName: moveStart(options)
     summary: Moves the start position of the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1556,7 +1457,7 @@ methods:
           description: Optional. Options for the `moveStart` operation.
           type: <xref uid="word!Word.SelectionMoveStartEndOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveStartUntil(characters, count)
     uid: word!Word.Selection#moveStartUntil:member(1)
@@ -1564,7 +1465,7 @@ methods:
     fullName: moveStartUntil(characters, count)
     summary: Moves the start position of the selection until one of the specified characters is found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1577,7 +1478,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveStartWhile(characters, count)
     uid: word!Word.Selection#moveStartWhile:member(1)
@@ -1585,7 +1486,7 @@ methods:
     fullName: moveStartWhile(characters, count)
     summary: Moves the start position of the selection while any of the specified characters are found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1598,7 +1499,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveUntil(characters, count)
     uid: word!Word.Selection#moveUntil:member(1)
@@ -1606,7 +1507,7 @@ methods:
     fullName: moveUntil(characters, count)
     summary: Moves the selection until one of the specified characters is found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1619,7 +1520,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveUp(options)
     uid: word!Word.Selection#moveUp:member(1)
@@ -1627,7 +1528,7 @@ methods:
     fullName: moveUp(options)
     summary: Moves the selection up.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1637,7 +1538,7 @@ methods:
           description: Optional. Options for moving up.
           type: <xref uid="word!Word.SelectionMoveUpDownOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: moveWhile(characters, count)
     uid: word!Word.Selection#moveWhile:member(1)
@@ -1645,7 +1546,7 @@ methods:
     fullName: moveWhile(characters, count)
     summary: Moves the selection while any of the specified characters are found in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1658,7 +1559,7 @@ methods:
           description: Optional. Maximum number of characters to search.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of characters by which the selection was moved.
   - name: nextField()
     uid: word!Word.Selection#nextField:member(1)
@@ -1666,7 +1567,7 @@ methods:
     fullName: nextField()
     summary: Selects the next field.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1680,7 +1581,7 @@ methods:
     fullName: nextSubdocument()
     summary: Moves the selection to the next subdocument.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1694,7 +1595,7 @@ methods:
     fullName: pasteAndFormat(type)
     summary: Pastes the content from clipboard and formats them as specified.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1712,7 +1613,7 @@ methods:
     fullName: pasteAndFormat(type)
     summary: Pastes the content from clipboard and formats them as specified.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1730,7 +1631,7 @@ methods:
     fullName: pasteExcelTable(linkedToExcel, wordFormatting, rtf)
     summary: Pastes and formats a Microsoft Excel table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1754,7 +1655,7 @@ methods:
     fullName: pasteFormat()
     summary: Applies formatting copied with the `copyFormat` method to the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1768,7 +1669,7 @@ methods:
     fullName: pasteTableCellsAppendTable()
     summary: Merges pasted cells into an existing table by inserting the pasted rows between the selected rows.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1782,7 +1683,7 @@ methods:
     fullName: pasteTableCellsAsNestedTable()
     summary: Pastes a cell or group of cells as a nested table into the selection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1796,7 +1697,7 @@ methods:
     fullName: previousField()
     summary: Selects and returns the previous field.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1810,7 +1711,7 @@ methods:
     fullName: previousSubdocument()
     summary: Moves the selection to the previous subdocument.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1824,7 +1725,7 @@ methods:
     fullName: replaceParagraph()
     summary: Replaces the selection with a new paragraph.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1838,7 +1739,7 @@ methods:
     fullName: select()
     summary: Selects the current text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1852,7 +1753,7 @@ methods:
     fullName: selectCell()
     summary: Selects the entire cell containing the current selection when the selection is in a table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1866,7 +1767,7 @@ methods:
     fullName: selectColumn()
     summary: Selects the column that contains the insertion point, or selects all columns that contain the selection when the selection is in a table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1880,7 +1781,7 @@ methods:
     fullName: selectCurrentAlignment()
     summary: Extends the selection forward until text with a different paragraph alignment is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1894,7 +1795,7 @@ methods:
     fullName: selectCurrentColor()
     summary: Extends the selection forward until text with a different color is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1908,7 +1809,7 @@ methods:
     fullName: selectCurrentFont()
     summary: Extends the selection forward until text in a different font or font size is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1922,7 +1823,7 @@ methods:
     fullName: selectCurrentIndent()
     summary: Extends the selection forward until text with different left or right paragraph indents is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1936,7 +1837,7 @@ methods:
     fullName: selectCurrentSpacing()
     summary: Extends the selection forward until a paragraph with different line spacing is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1950,7 +1851,7 @@ methods:
     fullName: selectCurrentTabs()
     summary: Extends the selection forward until a paragraph with different tab stops is encountered.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1964,7 +1865,7 @@ methods:
     fullName: selectRow()
     summary: Selects the row that contains the insertion point, or selects all rows that contain the selection when the selection is in a table.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1978,7 +1879,7 @@ methods:
     fullName: setRange(start, end)
     summary: Sets the starting and ending character positions for the selection. Character position values start at the beginning of the story, with the first value being 0. All characters are counted, including nonprinting characters. Hidden characters are counted even if they're not displayed.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1999,7 +1900,7 @@ methods:
     fullName: shrink()
     summary: 'Shrinks the selection to the next smaller unit of text. The unit progression for this method is as follows: entire document, section, paragraph, sentence, word, insertion point.'
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2013,7 +1914,7 @@ methods:
     fullName: shrinkDiscontiguousSelection()
     summary: Cancels the selection of all but the most recently selected text when the current selection contains multiple, unconnected selections.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2027,7 +1928,7 @@ methods:
     fullName: splitTable()
     summary: Inserts an empty paragraph above the first row in the selection. If the selection isn't in the first row of the table, the table is split into two tables. If the selection isn't in a table, an error occurs.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2041,7 +1942,7 @@ methods:
     fullName: toggleCharacterCode()
     summary: Switches the selection between a Unicode character and its corresponding hexadecimal value.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2055,7 +1956,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Selection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SelectionData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2069,7 +1970,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2083,7 +1984,7 @@ methods:
     fullName: typeBackspace()
     summary: Deletes the character preceding the selection (if collapsed) or the insertion point.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2097,7 +1998,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2105,4 +2006,4 @@ methods:
       return:
         type: <xref uid="word!Word.Selection:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

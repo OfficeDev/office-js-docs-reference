@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [margins](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-margins-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: bottom
     summary: Specifies the bottom margin in points.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: left
     summary: Specifies the left margin in points.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: right
     summary: Specifies the right margin in points.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: top
     summary: Specifies the top margin in points.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +105,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +149,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Margins` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.MarginsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,4 +157,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.MarginsData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

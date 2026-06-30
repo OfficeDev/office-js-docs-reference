@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [clear](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-clear-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: all
     summary: Specifies if both values and formatting of the table should be cleared.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: format
     summary: Specifies if the formatting of the table should be cleared.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: text
     summary: Specifies if the values of the table should be cleared.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

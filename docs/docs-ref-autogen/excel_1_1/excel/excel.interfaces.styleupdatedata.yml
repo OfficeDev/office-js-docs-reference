@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.StyleUpdateData
 summary: An interface for updating data on the `Style` object, for use in `style.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

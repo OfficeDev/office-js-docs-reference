@@ -5,8 +5,6 @@ package: word!
 fullName: Word.RequestContext
 summary: The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))
@@ -24,18 +22,7 @@ remarks: |-
   - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [context](/javascript/api/word/word.searchoptions#word-word-searchoptions-context-member)
   - [Word.Section](/javascript/api/word/word.section): [context](/javascript/api/word/word.section#word-word-section-context-member)
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await Word.run(async (context: Word.RequestContext) => {
-    const document = context.document;
-    // Interact with the Word document...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,7 +33,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +49,11 @@ properties:
     fullName: document
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly document: Document;'
       return:
         type: <xref uid="word!Word.Document:class" />
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="word!~OfficeExtension.ClientRequestContext:class" />

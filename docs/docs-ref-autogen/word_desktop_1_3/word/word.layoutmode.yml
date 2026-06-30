@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.PageSetup](/javascript/api/word/word.pagesetup): [layoutMode](/javascript/api/word/word.pagesetup#word-word-pagesetup-layoutmode-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.LayoutMode.default:member
     package: word!
-    summary: |-
-      Default layout mode.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Default layout mode.
     value: '"Default"'
   - name: genko
     uid: word!Word.LayoutMode.genko:member
     package: word!
-    summary: |-
-      Genko layout mode.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Genko layout mode.
     value: '"Genko"'
   - name: grid
     uid: word!Word.LayoutMode.grid:member
     package: word!
-    summary: |-
-      Grid layout mode.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Grid layout mode.
     value: '"Grid"'
   - name: lineGrid
     uid: word!Word.LayoutMode.lineGrid:member
     package: word!
-    summary: |-
-      Line grid layout mode.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Line grid layout mode.
     value: '"LineGrid"'

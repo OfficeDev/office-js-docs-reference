@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.LineFormatUpdateData
 summary: An interface for updating data on the `LineFormat` object, for use in `lineFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

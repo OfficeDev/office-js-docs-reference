@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.IconCollections](/javascript/api/excel/excel.iconcollections): [threeSigns](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threesigns-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: greenCircle
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: redDiamond
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: yellowTriangle
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

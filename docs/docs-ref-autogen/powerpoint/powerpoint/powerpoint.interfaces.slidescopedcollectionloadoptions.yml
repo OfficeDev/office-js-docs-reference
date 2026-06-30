@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideScopedCollection](/javascript/api/powerpoint/powerpoint.slidescopedcollection): [load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: background
     summary: 'For EACH ITEM in the collection: Gets the background of the slide.'
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the slide.'
     remarks: '[API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: index
     summary: 'For EACH ITEM in the collection: Returns the zero-based index of the slide representing its position in the presentation.'
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: layout
     summary: 'For EACH ITEM in the collection: Gets the layout of the slide.'
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: slideMaster
     summary: 'For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide''s default content.'
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

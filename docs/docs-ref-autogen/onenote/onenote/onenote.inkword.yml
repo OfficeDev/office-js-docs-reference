@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [getItem](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: Gets the ID of the InkWord object.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: languageId
     summary: The ID of the recognized language in this ink word.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: paragraph
     summary: The parent paragraph containing the ink word.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: wordAlternates
     summary: The words that were recognized in this ink word, in order of likelihood.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +105,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +149,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `OneNote.InkWord` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkWordData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +163,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +177,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,4 +185,4 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.InkWord:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="onenote!~OfficeExtension.ClientObject:class" />

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Reviewer](/javascript/api/word/word.reviewer): [load](/javascript/api/word/word.reviewer#word-word-reviewer-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [load](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: cellIndex
     summary: 'For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the cell. Read-only.'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: paragraphs
     summary: 'For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: parentRow
     summary: 'For EACH ITEM in the collection: Gets the parent row of the cell.'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: rowIndex
     summary: 'For EACH ITEM in the collection: Gets the index of the cell''s row in the table. Read-only.'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: shadingColor
     summary: 'For EACH ITEM in the collection: Gets and sets the shading color of the cell'
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -12,36 +12,7 @@ remarks: |-
   #### Used by
 
   - [Office.DragAndDropEventArgs](/javascript/api/outlook/office.draganddropeventargs): [dragAndDropEventData](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-draganddropeventdata-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
-
-  function dragAndDropEventHandler(event) {
-      Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
-      console.log(`Event type: ${event.type}`);
-
-      const eventData = event.dragAndDropEventData;
-      console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
-      console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
-
-      if (eventData.type == "drop") {
-        console.log("Items dropped into task pane.");
-        const files = eventData.dataTransfer.files;
-        files.forEach((file) => {
-          const content = file.fileContent;
-          const name = file.name;
-          const fileType = file.type;
-          console.log(`File name: ${name}`);
-          console.log(`File type: ${fileType}`);
-          console.log(`Contents: ${content.text().then((text) => { console.log(text); })}`);
-        });
-      }
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -52,7 +23,7 @@ properties:
     fullName: dataTransfer
     summary: Gets the messages or file attachments being dragged and dropped into an add-in's task pane.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +36,7 @@ properties:
     fullName: pageX
     summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +49,7 @@ properties:
     fullName: pageY
     summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +62,7 @@ properties:
     fullName: taskPaneX
     summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the add-in's task pane.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +75,7 @@ properties:
     fullName: taskPaneY
     summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the add-in's task pane.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +88,7 @@ properties:
     fullName: type
     summary: Gets the type of drag-and-drop event. The `drop` event occurs when messages or file attachments are dropped into an add-in's task pane.
     remarks: '[API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

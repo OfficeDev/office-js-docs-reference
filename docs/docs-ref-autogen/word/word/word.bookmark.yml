@@ -3,14 +3,14 @@ name: Word.Bookmark
 uid: word!Word.Bookmark:class
 package: word!
 fullName: Word.Bookmark
-summary: Represents a single bookmark in a document, selection, or range. The `Bookmark` object is a member of the `Bookmark` collection. The [Word.BookmarkCollection](xref:word!Word.BookmarkCollection:class) includes all the bookmarks listed in the **Bookmark** dialog box (**Insert** menu).
+summary: Represents a single bookmark in a document, selection, or range. The `Bookmark` object is a member of the `Bookmark` collection. The [Word.BookmarkCollection](xref:word!Word.BookmarkCollection:class) includes all the bookmarks listed in the \*\*Bookmark\*\* dialog box (\*\*Insert\*\* menu).
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
   #### Used by
 
   - [Word.BookmarkCollection](/javascript/api/word/word.bookmarkcollection): [add](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-add-member(1)), [getItem](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-getitem-member(1)), [items](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: end
     summary: Specifies the ending character position of the bookmark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: isColumn
     summary: Returns `true` if the bookmark is a table column.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: isEmpty
     summary: Returns `true` if the bookmark is empty.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: name
     summary: Returns the name of the `Bookmark` object.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: range
     summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: start
     summary: Specifies the starting character position of the bookmark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: storyType
     summary: Returns the story type for the bookmark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ methods:
     fullName: copyTo(name)
     summary: Copies this bookmark to the new bookmark specified in the `name` argument and returns a `Bookmark` object.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +144,7 @@ methods:
     fullName: delete()
     summary: Deletes the bookmark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +158,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +176,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,7 +194,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +220,7 @@ methods:
     fullName: select()
     summary: Selects the bookmark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,7 +234,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,7 +245,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.BookmarkUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -255,7 +255,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,7 +273,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Bookmark` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BookmarkData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,7 +287,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +301,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,4 +309,4 @@ methods:
       return:
         type: <xref uid="word!Word.Bookmark:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

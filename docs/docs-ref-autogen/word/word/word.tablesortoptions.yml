@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Table](/javascript/api/word/word.table): [sort](/javascript/api/word/word.table#word-word-table-sort-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: bidirectionalSort
     summary: If provided, specifies whether to use bidirectional sort. `true` means to sort based on right-to-left language rules. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: caseSensitive
     summary: If provided, specifies whether sorting is case-sensitive. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: excludeHeader
     summary: If provided, specifies whether to exclude the header row from the sort operation. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: fieldNumber
     summary: If provided, specifies the first field to sort by. Microsoft Word sorts by `fieldNumber`<!-- -->, then by `fieldNumber2`<!-- -->, and finally by `fieldNumber3`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: fieldNumber2
     summary: If provided, specifies the second field to sort by.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: fieldNumber3
     summary: If provided, specifies the third field to sort by.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: ignoreArabicThe
     summary: If provided, specifies whether to ignore Arabic character alef lam when sorting right-to-left language text. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: ignoreDiacritics
     summary: If provided, specifies whether to ignore bidirectional control characters when sorting right-to-left language text. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: ignoreHebrew
     summary: If provided, specifies whether to ignore Hebrew characters when sorting right-to-left language text. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     fullName: ignoreKashida
     summary: If provided, specifies whether to ignore kashida when sorting right-to-left language text. This property may not be available to you, depending on the language support (U.S. English, for example) that you have selected or installed. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,7 +151,7 @@ properties:
     fullName: languageId
     summary: If provided, specifies the sorting language.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +164,7 @@ properties:
     fullName: sortFieldType
     summary: If provided, specifies the type of the first field to sort by. The default value is `alphanumeric`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +177,7 @@ properties:
     fullName: sortFieldType2
     summary: If provided, specifies the type of the second field to sort by. The default value is `alphanumeric`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,7 +190,7 @@ properties:
     fullName: sortFieldType3
     summary: If provided, specifies the type of the third field to sort by. The default value is `alphanumeric`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,7 +203,7 @@ properties:
     fullName: sortOrder
     summary: If provided, specifies the sort order of the first field to sort by. The default value is `ascending`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,7 +216,7 @@ properties:
     fullName: sortOrder2
     summary: If provided, specifies the sort order of the second field to sort by. The default value is `ascending`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,7 +229,7 @@ properties:
     fullName: sortOrder3
     summary: If provided, specifies the sort order of the third field to sort by. The default value is `ascending`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

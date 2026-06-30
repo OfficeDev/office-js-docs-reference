@@ -18,17 +18,17 @@ summary: |-
 
   When the property arrays are returned by the `getEntitiesByType` method, only the property for the specified entity contains data; all other properties are null.
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: |-
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntities](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentities-member(1))
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getEntities](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentities-member(1))
-
+example: []
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -41,9 +41,9 @@ properties:
     summary: |-
       Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -51,15 +51,6 @@ properties:
       content: 'addresses: string[];'
       return:
         type: string[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-          ```
   - name: contacts
     uid: outlook!Office.Entities#contacts:member
     package: outlook!
@@ -67,9 +58,9 @@ properties:
     summary: |-
       Gets the contacts found in an email address or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -77,15 +68,6 @@ properties:
       content: 'contacts: Contact[];'
       return:
         type: <xref uid="outlook!Office.Contact:interface" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-          ```
   - name: emailAddresses
     uid: outlook!Office.Entities#emailAddresses:member
     package: outlook!
@@ -93,9 +75,9 @@ properties:
     summary: |-
       Gets the email addresses found in an email message or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -103,15 +85,6 @@ properties:
       content: 'emailAddresses: string[];'
       return:
         type: string[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
-          ```
   - name: meetingSuggestions
     uid: outlook!Office.Entities#meetingSuggestions:member
     package: outlook!
@@ -119,9 +92,9 @@ properties:
     summary: |-
       Gets the meeting suggestions found in an email message.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -129,15 +102,6 @@ properties:
       content: 'meetingSuggestions: MeetingSuggestion[];'
       return:
         type: <xref uid="outlook!Office.MeetingSuggestion:interface" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
-          ```
   - name: phoneNumbers
     uid: outlook!Office.Entities#phoneNumbers:member
     package: outlook!
@@ -145,9 +109,9 @@ properties:
     summary: |-
       Gets the phone numbers found in an email message or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -155,15 +119,6 @@ properties:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
         type: <xref uid="outlook!Office.PhoneNumber:interface" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
-          ```
   - name: taskSuggestions
     uid: outlook!Office.Entities#taskSuggestions:member
     package: outlook!
@@ -171,9 +126,9 @@ properties:
     summary: |-
       Gets the task suggestions found in an email message or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -181,15 +136,6 @@ properties:
       content: 'taskSuggestions: string[];'
       return:
         type: string[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
-          ```
   - name: urls
     uid: outlook!Office.Entities#urls:member
     package: outlook!
@@ -197,9 +143,9 @@ properties:
     summary: |-
       Gets the Internet URLs present in an email message or appointment.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -207,12 +153,3 @@ properties:
       content: 'urls: string[];'
       return:
         type: string[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const item = Office.context.mailbox.item;
-          const urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
-          ```

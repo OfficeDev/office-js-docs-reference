@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [set](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: format
     summary: Encapsulates the format properties chart point.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

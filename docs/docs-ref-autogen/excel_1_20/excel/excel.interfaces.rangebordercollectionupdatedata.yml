@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
 summary: An interface for updating data on the `RangeBorderCollection` object, for use in `rangeBorderCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: tintAndShade
     summary: Specifies a double that lightens or darkens a color for range borders. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the entire border collection doesn't have a uniform `tintAndShade` setting.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

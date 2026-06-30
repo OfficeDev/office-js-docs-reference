@@ -5,12 +5,12 @@ package: office!
 fullName: Office.AuthContext
 summary: Represents the user information which can be passed to the Microsoft Authentication Library for JavaScript (MSAL.js).
 remarks: |-
-  **Requirement set**: [NestedAppAuth 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets)
+  \*\*Requirement set\*\*: [NestedAppAuth 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets)
 
   #### Used by
 
   - [Office.Auth](/javascript/api/office/office.auth): [getAuthContext](/javascript/api/office/office.auth#office-office-auth-getauthcontext-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: authorityBaseUrl
     summary: The URL that indicates a directory that MSAL can request tokens from.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: authorityType
     summary: The identity type by its identity provider (IdP) for this account. "aad" represents an organization account and "msa" represents a [Microsoft personal account](https://support.microsoft.com/account-billing/72f10e1e-cab8-4950-a8da-7c45339575b0)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: loginHint
     summary: An optional claim that provides a hint about the user account attempting to sign in.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: tenantId
     summary: The full tenant or organizational ID that this account belongs to.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: userObjectId
     summary: The unique ID of the account.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: userPrincipalName
     summary: The user's internet-style login name, based on the Internet standard RFC. Also known as UPN.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

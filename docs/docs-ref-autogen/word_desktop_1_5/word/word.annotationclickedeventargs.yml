@@ -5,7 +5,7 @@ package: word!
 fullName: Word.AnnotationClickedEventArgs
 summary: Holds annotation information that is passed back on annotation inserted event.
 remarks: '\[Api set: WordApi 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
     remarks: '\[Api set: WordApi 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

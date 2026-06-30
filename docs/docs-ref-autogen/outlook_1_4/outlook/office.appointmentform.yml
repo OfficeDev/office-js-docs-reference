@@ -7,42 +7,14 @@ summary: Represents the details of the form for creating a new appointment.
 remarks: |-
   [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [displayNewAppointmentForm](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-displaynewappointmentform-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
-
-  const start = new Date();
-  const end = new Date();
-  end.setHours(start.getHours() + 1);
-
-  // The async version is only available starting with requirement set 1.9,
-  // and provides a callback when the new appointment form has been created.
-  Office.context.mailbox.displayNewAppointmentFormAsync(
-    {
-      requiredAttendees: ["bob@contoso.com"] as any,
-      optionalAttendees: ["sam@contoso.com"] as any,
-      start: start,
-      end: end,
-      location: "Home",
-      subject: "meeting",
-      resources: ["projector@contoso.com"] as any,
-      body: "Hello World!"
-    },
-    function(asyncResult) {
-      console.log(JSON.stringify(asyncResult));
-    }
-  );
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -55,10 +27,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,10 +45,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,10 +63,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,10 +81,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,10 +99,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,10 +117,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,10 +135,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,10 +153,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

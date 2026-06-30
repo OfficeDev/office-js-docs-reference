@@ -3,9 +3,11 @@ name: Word.Interfaces.RevisionCollectionLoadOptions
 uid: word!Word.Interfaces.RevisionCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RevisionCollectionLoadOptions
-summary: A collection of [Word.Revision](xref:word!Word.Revision:class) objects that represent the changes marked with revision marks in a range or document.
+summary: >-
+  A collection of [Word.Revision](xref:word!Word.Revision:class) objects that represent the changes marked with revision
+  marks in a range or document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.RevisionCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: author
     summary: 'For EACH ITEM in the collection: Gets the name of the user who made the tracked change.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: date
     summary: 'For EACH ITEM in the collection: Gets the date and time when the tracked change was made.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: formatDescription
     summary: 'For EACH ITEM in the collection: Gets the description of tracked formatting changes in the revision.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +72,7 @@ properties:
     fullName: index
     summary: 'For EACH ITEM in the collection: Gets a number that represents the position of this item in a collection.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +83,11 @@ properties:
     uid: word!Word.Interfaces.RevisionCollectionLoadOptions#movedRange:member
     package: word!
     fullName: movedRange
-    summary: 'For EACH ITEM in the collection: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Range` object that represents the range of text that was moved from one
+      place to another in the document with tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +98,11 @@ properties:
     uid: word!Word.Interfaces.RevisionCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: 'For EACH ITEM in the collection: Gets a `Range` object that represents the portion of the document that''s contained within a revision mark.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Range` object that represents the portion of the document that's
+      contained within a revision mark.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +115,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the revision type.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -14,6 +14,7 @@ remarks: |-
   - [Excel.CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs): [source](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-source-member)
   - [Excel.CommentChangedEventArgs](/javascript/api/excel/excel.commentchangedeventargs): [source](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-source-member)
   - [Excel.CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs): [source](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-source-member)
+  - [Excel.LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs): [source](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-source-member)
   - [Excel.TableAddedEventArgs](/javascript/api/excel/excel.tableaddedeventargs): [source](/javascript/api/excel/excel.tableaddedeventargs#excel-excel-tableaddedeventargs-source-member)
   - [Excel.TableChangedEventArgs](/javascript/api/excel/excel.tablechangedeventargs): [source](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-source-member)
   - [Excel.TableDeletedEventArgs](/javascript/api/excel/excel.tabledeletedeventargs): [source](/javascript/api/excel/excel.tabledeletedeventargs#excel-excel-tabledeletedeventargs-source-member)
@@ -26,7 +27,7 @@ remarks: |-
   - [Excel.WorksheetProtectionChangedEventArgs](/javascript/api/excel/excel.worksheetprotectionchangedeventargs): [source](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#excel-excel-worksheetprotectionchangedeventargs-source-member)
   - [Excel.WorksheetRowHiddenChangedEventArgs](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs): [source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-source-member)
   - [Excel.WorksheetRowSortedEventArgs](/javascript/api/excel/excel.worksheetrowsortedeventargs): [source](/javascript/api/excel/excel.worksheetrowsortedeventargs#excel-excel-worksheetrowsortedeventargs-source-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -36,7 +37,7 @@ fields:
     summary: |-
       Local means the event comes from a local user session.
 
-      * [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
@@ -44,5 +45,5 @@ fields:
     summary: |-
       Remote means the event comes from a remote user session.
 
-      * [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Remote"'

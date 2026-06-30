@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CanvasData
 summary: An interface describing the data returned by calling `canvas.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

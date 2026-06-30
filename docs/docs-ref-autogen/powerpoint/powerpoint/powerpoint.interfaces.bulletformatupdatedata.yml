@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.BulletFormatUpdateData
 summary: An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: style
     summary: Specifies the style of the bullets in the paragraph. See [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: type
     summary: Specifies the type of the bullets in the paragraph. See [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: visible
     summary: Specifies if the bullets in the paragraph are visible. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet visibility values.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

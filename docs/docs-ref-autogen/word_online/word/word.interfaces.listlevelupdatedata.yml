@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ListLevelUpdateData
 summary: An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -10,63 +10,42 @@ remarks: |-
   #### Used by
 
   - [Word.IndexCollection](/javascript/api/word/word.indexcollection): [getFormat](/javascript/api/word/word.indexcollection#word-word-indexcollection-getformat-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bulleted
     uid: word!Word.IndexFormat.bulleted:member
     package: word!
-    summary: |-
-      Bulleted format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Bulleted format.
     value: '"Bulleted"'
   - name: classic
     uid: word!Word.IndexFormat.classic:member
     package: word!
-    summary: |-
-      Classic format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Classic format.
     value: '"Classic"'
   - name: fancy
     uid: word!Word.IndexFormat.fancy:member
     package: word!
-    summary: |-
-      Fancy format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Fancy format.
     value: '"Fancy"'
   - name: formal
     uid: word!Word.IndexFormat.formal:member
     package: word!
-    summary: |-
-      Formal format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Formal format.
     value: '"Formal"'
   - name: modern
     uid: word!Word.IndexFormat.modern:member
     package: word!
-    summary: |-
-      Modern format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Modern format.
     value: '"Modern"'
   - name: simple
     uid: word!Word.IndexFormat.simple:member
     package: word!
-    summary: |-
-      Simple format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Simple format.
     value: '"Simple"'
   - name: template
     uid: word!Word.IndexFormat.template:member
     package: word!
-    summary: |-
-      Template format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Template format.
     value: '"Template"'

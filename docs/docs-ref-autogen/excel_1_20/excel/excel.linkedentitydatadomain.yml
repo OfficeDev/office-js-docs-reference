@@ -12,7 +12,7 @@ remarks: |-
   #### Used by
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [getItem](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemat-member(1)), [getItemByName](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembyname-member(1)), [getItemByNameOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembynameornullobject-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -23,7 +23,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,7 +39,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +103,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +119,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,7 +135,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,7 +151,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,7 +167,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +184,7 @@ methods:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This method isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +198,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,7 +216,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,7 +234,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,7 +263,7 @@ methods:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This method isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +277,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.LinkedEntityDataDomain` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedEntityDataDomainData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

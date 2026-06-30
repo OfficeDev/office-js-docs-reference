@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection): [toJSON](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

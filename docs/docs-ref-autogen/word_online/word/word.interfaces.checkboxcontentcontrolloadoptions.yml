@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol): [load](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: isChecked
     summary: Specifies the current state of the checkbox.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

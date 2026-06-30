@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Graphic](/javascript/api/powerpoint/powerpoint.graphic): [load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the graphic.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

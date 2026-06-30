@@ -10,107 +10,62 @@ remarks: |-
   #### Used by
 
   - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [dateCalendarType](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-datecalendartype-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-date-picker-content-control.yaml
-
-  function changeCalendarType(datePicker: Word.DatePickerContentControl) {
-      // The calendar type can only be set to a value compatible with the display locale. 
-      // For the Japanese locale, valid calendar types are Gregorian and Japan.
-      datePicker.dateCalendarType = Word.CalendarType.japan;
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: arabic
     uid: word!Word.CalendarType.arabic:member
     package: word!
-    summary: |-
-      Arabic calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Arabic calendar type.
     value: '"Arabic"'
   - name: hebrew
     uid: word!Word.CalendarType.hebrew:member
     package: word!
-    summary: |-
-      Hebrew calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Hebrew calendar type.
     value: '"Hebrew"'
   - name: japan
     uid: word!Word.CalendarType.japan:member
     package: word!
-    summary: |-
-      Japanese calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Japanese calendar type.
     value: '"Japan"'
   - name: korean
     uid: word!Word.CalendarType.korean:member
     package: word!
-    summary: |-
-      Korean calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Korean calendar type.
     value: '"Korean"'
   - name: sakaEra
     uid: word!Word.CalendarType.sakaEra:member
     package: word!
-    summary: |-
-      Saka Era calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Saka Era calendar type.
     value: '"SakaEra"'
   - name: taiwan
     uid: word!Word.CalendarType.taiwan:member
     package: word!
-    summary: |-
-      Taiwan calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Taiwan calendar type.
     value: '"Taiwan"'
   - name: thai
     uid: word!Word.CalendarType.thai:member
     package: word!
-    summary: |-
-      Thai calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Thai calendar type.
     value: '"Thai"'
   - name: translitEnglish
     uid: word!Word.CalendarType.translitEnglish:member
     package: word!
-    summary: |-
-      Transliterated English calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Transliterated English calendar type.
     value: '"TranslitEnglish"'
   - name: translitFrench
     uid: word!Word.CalendarType.translitFrench:member
     package: word!
-    summary: |-
-      Transliterated French calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Transliterated French calendar type.
     value: '"TranslitFrench"'
   - name: umalqura
     uid: word!Word.CalendarType.umalqura:member
     package: word!
-    summary: |-
-      Umm al-Qura calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Umm al-Qura calendar type.
     value: '"Umalqura"'
   - name: western
     uid: word!Word.CalendarType.western:member
     package: word!
-    summary: |-
-      Western calendar type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Western calendar type.
     value: '"Western"'

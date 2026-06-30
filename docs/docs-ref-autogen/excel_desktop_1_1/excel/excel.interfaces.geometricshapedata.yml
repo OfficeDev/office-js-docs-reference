@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.GeometricShape](/javascript/api/excel/excel.geometricshape): [toJSON](/javascript/api/excel/excel.geometricshape#excel-excel-geometricshape-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: id
     summary: Returns the shape identifier.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

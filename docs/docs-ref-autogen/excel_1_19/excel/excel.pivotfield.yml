@@ -13,7 +13,7 @@ remarks: |-
   - [Excel.PivotFieldCollection](/javascript/api/excel/excel.pivotfieldcollection): [getItem](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotfieldcollection#excel-excel-pivotfieldcollection-items-member)
   - [Excel.ShowAsRule](/javascript/api/excel/excel.showasrule): [baseField](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-basefield-member)
   - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -24,7 +24,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +37,7 @@ properties:
     fullName: id
     summary: ID of the PivotField.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +63,7 @@ properties:
     fullName: name
     summary: Name of the PivotField.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +76,7 @@ properties:
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +89,7 @@ properties:
     fullName: subtotals
     summary: Subtotals of the PivotField.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +103,7 @@ methods:
     fullName: applyFilter(filter)
     summary: Sets one or more of the field's current PivotFilters and applies them to the field. If the provided filters are invalid or cannot be applied, an exception is thrown.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,30 +120,8 @@ methods:
     package: excel!
     fullName: clearAllFilters()
     summary: Clears all criteria from all of the field's filters. This removes any active filtering on the field.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-      await Excel.run(async (context) => {
-        // Clear all the PivotFilters.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-        pivotTable.hierarchies.load("name");
-        await context.sync();
-
-        // Clear the filters on each PivotField.
-        pivotTable.hierarchies.items.forEach((hierarchy) => {
-          hierarchy.fields.getItem(hierarchy.name).clearAllFilters();
-        });
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +135,7 @@ methods:
     fullName: clearFilter(filterType)
     summary: Clears all existing criteria from the field's filter of the given type (if one is currently applied).
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,7 +153,7 @@ methods:
     fullName: clearFilter(filterType)
     summary: Clears all existing criteria from the field's filter of the given type (if one is currently applied).
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,7 +171,7 @@ methods:
     fullName: getFilters()
     summary: Gets all filters currently applied on the field.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +185,7 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,7 +203,7 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,7 +221,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,7 +239,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,7 +257,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,7 +283,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,7 +304,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,7 +322,7 @@ methods:
     fullName: sortByLabels(sortBy)
     summary: Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,7 +340,7 @@ methods:
     fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     summary: Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when there are multiple values from the same DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,7 +364,7 @@ methods:
     fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
     summary: Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when there are multiple values from the same DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +388,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.PivotField` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

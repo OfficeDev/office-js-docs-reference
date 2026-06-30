@@ -13,17 +13,17 @@ remarks: |-
   - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [insertHtmlAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inserthtmlassibling-member(1)), [insertImageAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertimageassibling-member(1)), [insertRichTextAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-insertrichtextassibling-member(1)), [insertTableAsSibling](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-inserttableassibling-member(1))
   - [OneNote.Section](/javascript/api/onenote/onenote.section): [insertSectionAsSibling](/javascript/api/onenote/onenote.section#onenote-onenote-section-insertsectionassibling-member(1))
   - [OneNote.TableRow](/javascript/api/onenote/onenote.tablerow): [insertRowAsSibling](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-insertrowassibling-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: after
     uid: onenote!OneNote.InsertLocation.after:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"After"'
   - name: before
     uid: onenote!OneNote.InsertLocation.before:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"Before"'

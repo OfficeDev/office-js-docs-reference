@@ -11,7 +11,7 @@ remarks: |-
   - [Office.Binding](/javascript/api/office/office.binding): [setDataAsync](/javascript/api/office/office.binding#office-office-binding-setdataasync-member(1))
   - [Office.Document](/javascript/api/office/office.document): [getSelectedDataAsync](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(2)), [setSelectedDataAsync](/javascript/api/office/office.document#office-office-document-setselecteddataasync-member(1))
   - [Office.TableBinding](/javascript/api/office/office.tablebinding): [addColumnsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addcolumnsasync-member(1)), [addRowsAsync](/javascript/api/office/office.tablebinding#office-office-tablebinding-addrowsasync-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ constructors:
     fullName: (constructor)(rows, headers)
     summary: Constructs a new instance of the `TableData` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ constructors:
     fullName: (constructor)()
     summary: Constructs a new instance of the `TableData` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,19 +59,7 @@ properties:
       - If you insert a new table, the default column headers for the table are created.
 
       - If you overwrite or update an existing table, the existing headers are not altered.
-
-      #### Examples
-
-      ```TypeScript
-      // The following example creates a single-column table with a header and three rows.
-      function createTableData() {
-          const tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,19 +79,7 @@ properties:
       - If you insert a new table, a blank row will be inserted.
 
       - If you overwrite or update an existing table, the existing rows are not altered.
-
-      #### Examples
-
-      ```TypeScript
-      // The following example creates a single-column table with a header and three rows.
-      function createTableData() {
-          const tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

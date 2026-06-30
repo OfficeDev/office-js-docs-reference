@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartAxis](/javascript/api/excel/excel.chartaxis): [title](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-title-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: format
     summary: Specifies the formatting of the chart axis title.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: text
     summary: Specifies the axis title.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,29 +59,8 @@ properties:
     package: excel!
     fullName: textOrientation
     summary: Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => {
-        // Get a chart named "Sales Chart" from the "Sample" worksheet.
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        let chart = sheet.charts.getItem("Sales Chart");
-
-        // Set the value axis title to "Profits".
-        chart.axes.valueAxis.title.text = "Profits";
-
-        /* Set the value axis text orientation to 0.
-          For charts with a y-axis, this makes the label on the y-axis horizontal, 
-          instead of the default look of rotated-vertically.
-          */ 
-        chart.axes.valueAxis.title.textOrientation = 0;
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +73,7 @@ properties:
     fullName: visible
     summary: Specifies if the axis title is visible.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +87,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +105,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,28 +116,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartAxisTitle:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Add "Values" as the title for the value Axis.
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
-              chart.axes.valueAxis.title.text = "Values";
-              await context.sync();
-              
-              console.log("Axis Title Added ");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartAxisTitle#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +149,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,7 +170,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,7 +188,7 @@ methods:
     fullName: setFormula(formula)
     summary: A string value that represents the formula of chart axis title using A1-style notation.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,7 +206,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.ChartAxisTitle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

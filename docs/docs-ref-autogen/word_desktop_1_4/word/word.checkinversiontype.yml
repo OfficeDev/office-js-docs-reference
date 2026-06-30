@@ -5,31 +5,22 @@ package: word!
 fullName: Word.CheckInVersionType
 summary: Specifies the version type for document check-in operations.
 remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: major
     uid: word!Word.CheckInVersionType.major:member
     package: word!
-    summary: |-
-      Represents a major version check-in.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a major version check-in.
     value: '"Major"'
   - name: minor
     uid: word!Word.CheckInVersionType.minor:member
     package: word!
-    summary: |-
-      Represents a minor version check-in.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a minor version check-in.
     value: '"Minor"'
   - name: overwrite
     uid: word!Word.CheckInVersionType.overwrite:member
     package: word!
-    summary: |-
-      Represents an overwrite version check-in.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents an overwrite version check-in.
     value: '"Overwrite"'

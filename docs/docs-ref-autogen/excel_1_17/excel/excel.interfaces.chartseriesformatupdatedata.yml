@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartSeriesFormat](/javascript/api/excel/excel.chartseriesformat): [set](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: line
     summary: Represents line formatting.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

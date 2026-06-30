@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [printComments](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printcomments-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Comments will be printed as end notes at the end of the worksheet.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"EndSheet"'
   - name: inPlace
     uid: excel!Excel.PrintComments.inPlace:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       Comments will be printed where they were inserted in the worksheet.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InPlace"'
   - name: noComments
     uid: excel!Excel.PrintComments.noComments:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       Comments will not be printed.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NoComments"'

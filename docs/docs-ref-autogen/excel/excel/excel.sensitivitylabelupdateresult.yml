@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [tryToUpdate](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The label update failed because the document doesn't belong to the same tenant as the user.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CrossTenant"'
   - name: documentReadOnly
     uid: excel!Excel.SensitivityLabelUpdateResult.documentReadOnly:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The document is read-only and cannot be modified.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DocumentReadOnly"'
   - name: insufficientPermission
     uid: excel!Excel.SensitivityLabelUpdateResult.insufficientPermission:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       The user does not have sufficient permissions to update the label.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InsufficientPermission"'
   - name: labelingDisabled
     uid: excel!Excel.SensitivityLabelUpdateResult.labelingDisabled:member
@@ -44,7 +44,7 @@ fields:
     summary: |-
       The label update failed because native labeling is not enabled for the user or installed SKU.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LabelingDisabled"'
   - name: labelNotFound
     uid: excel!Excel.SensitivityLabelUpdateResult.labelNotFound:member
@@ -52,7 +52,7 @@ fields:
     summary: |-
       The specified sensitivity label could not be found.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LabelNotFound"'
   - name: parentLabelNotSupported
     uid: excel!Excel.SensitivityLabelUpdateResult.parentLabelNotSupported:member
@@ -60,7 +60,7 @@ fields:
     summary: |-
       The label update failed because the specified label is a parent label, which cannot be applied.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ParentLabelNotSupported"'
   - name: success
     uid: excel!Excel.SensitivityLabelUpdateResult.success:member
@@ -68,7 +68,7 @@ fields:
     summary: |-
       The sensitivity label was successfully updated.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Success"'
   - name: unspecifiedFailure
     uid: excel!Excel.SensitivityLabelUpdateResult.unspecifiedFailure:member
@@ -76,7 +76,7 @@ fields:
     summary: |-
       The update failed due to an unspecified error.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnspecifiedFailure"'
   - name: unsupportedDoubleKeyEncryption
     uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
@@ -84,7 +84,7 @@ fields:
     summary: |-
       The label update failed due to unsupported Double Key Encryption (DKE).
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnsupportedDoubleKeyEncryption"'
   - name: unsupportedUdp
     uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedUdp:member
@@ -92,7 +92,7 @@ fields:
     summary: |-
       The label update failed due to unsupported User Defined Permissions (UDP).
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnsupportedUdp"'
   - name: userNotFound
     uid: excel!Excel.SensitivityLabelUpdateResult.userNotFound:member
@@ -100,5 +100,5 @@ fields:
     summary: |-
       The label update failed because the user's identity is not valid for applying a label.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UserNotFound"'

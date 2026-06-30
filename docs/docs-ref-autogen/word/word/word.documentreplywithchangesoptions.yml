@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [replyWithChanges](/javascript/api/word/word.document#word-word-document-replywithchanges-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: includeAttachment
     summary: If provided, specifies whether to include the document as an attachment. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: recipients
     summary: If provided, specifies the recipients of the reply. The default value is "" (empty string).
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: showMessage
     summary: If provided, specifies whether to show the message before sending. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: subject
     summary: If provided, specifies the subject of the reply email. The default value is "" (empty string).
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

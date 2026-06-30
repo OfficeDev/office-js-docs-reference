@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [autorunEventCompleted](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: allowEvent
     summary: Specifies whether to allow the event to proceed. The default value is `false`<!-- -->.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: autorunEventType
     summary: Specifies the type of autorun event to be completed if allowed. The default value is `unknown`<!-- -->.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: message
     summary: If provided, specifies an optional error message if the event isn't allowed to proceed. The default value is "" (empty string).
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

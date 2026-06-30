@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.ListLevel](/javascript/api/word/word.listlevel): [toJSON](/javascript/api/word/word.listlevel#word-word-listlevel-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: alignment
     summary: Specifies the horizontal alignment of the list level. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: font
     summary: Gets a `Font` object that represents the character formatting of the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: linkedStyle
     summary: Specifies the name of the style that's linked to the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: numberFormat
     summary: Specifies the number format for the list level.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: numberPosition
     summary: Specifies the position (in points) of the number or bullet for the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: numberStyle
     summary: Specifies the number style for the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ properties:
     fullName: resetOnHigher
     summary: Specifies the list level that must appear before it restarts numbering at 1.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +110,7 @@ properties:
     fullName: startAt
     summary: Specifies the starting number for the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ properties:
     fullName: tabPosition
     summary: Specifies the tab position for the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +136,7 @@ properties:
     fullName: textPosition
     summary: Specifies the position (in points) for the second line of wrapping text for the `ListLevel` object.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +149,7 @@ properties:
     fullName: trailingCharacter
     summary: Specifies the character inserted after the number for the list level.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

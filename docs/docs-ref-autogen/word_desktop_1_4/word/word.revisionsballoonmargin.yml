@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [revisionsBalloonSide](/javascript/api/word/word.view#word-word-view-revisionsballoonside-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: left
     uid: word!Word.RevisionsBalloonMargin.left:member
     package: word!
-    summary: |-
-      Left margin.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Left margin.
     value: '"Left"'
   - name: right
     uid: word!Word.RevisionsBalloonMargin.right:member
     package: word!
-    summary: |-
-      Right margin.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Right margin.
     value: '"Right"'

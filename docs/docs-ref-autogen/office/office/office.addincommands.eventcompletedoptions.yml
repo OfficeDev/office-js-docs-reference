@@ -7,20 +7,20 @@ summary: Specifies the behavior of an [on-send add-in](https://learn.microsoft.c
 remarks: |-
   [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-  **Important**:
+  \*\*Important\*\*:
 
   - Although Outlook on Android and on iOS support up to Mailbox 1.5, the `EventCompletedOptions` object is supported in online-meeting provider and note-logging mobile add-ins. For more information on API support in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-  - [Event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation) and [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) add-ins use a different event object to signal when they've completed processing an event. For more information, see [Office.MailboxEvent](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent)<!-- -->.
+  - [Event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation) and [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) add-ins use a different event object to signal when they've completed processing an event. For more information, see [Outlook.MailboxEvent](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent)<!-- -->.
 
   #### Used by
 
   - [Office.AddinCommands.Event](/javascript/api/office/office.addincommands.event): [completed](/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,29 +33,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office)
 
-      **[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
-
-      #### Examples
-
-      ```TypeScript
-      // In this example, the checkMessage function was registered as an event handler for ItemSend.
-      function checkMessage(event) {
-          // Get the item being sent.
-          const outgoingMsg = Office.context.mailbox.item;
-
-          // Check if subject contains "BLOCK".
-          outgoingMsg.subject.getAsync(function (result) {
-              // Subject is in `result.value`.
-              // If search term "BLOCK" is found, don't send the message.
-              const notFound = -1;
-              const allowEvent = (result.value.indexOf('BLOCK') === notFound);
-              event.completed({ allowEvent: allowEvent });
-          });
-      }
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

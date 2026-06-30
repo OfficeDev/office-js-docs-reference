@@ -5,26 +5,10 @@ package: office!
 fullName: Office.VisibilityModeChangedMessage
 summary: Message used in the `onVisibilityModeChanged` invocation.
 remarks: |-
-
-
   #### Used by
 
   - [Office.Addin](/javascript/api/office/office.addin): [onVisibilityModeChanged](/javascript/api/office/office.addin#office-office-addin-onvisibilitymodechanged-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  Office.onReady(() => {
-      Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
-          if (args.visibilityMode === Office.VisibilityMode.taskpane) {
-              // Do something when the task pane is visible.
-          }
-      });
-
-      // Other startup tasks.
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -35,7 +19,7 @@ properties:
     fullName: visibilityMode
     summary: Visibility changed state.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

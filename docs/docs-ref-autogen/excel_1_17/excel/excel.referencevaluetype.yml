@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ReferenceValueType
 summary: Represents the types of the `ReferenceValue` object.
 remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,7 +15,7 @@ fields:
     summary: |-
       Represents an `ArrayCellValue`<!-- -->.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Array"'
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
@@ -23,7 +23,7 @@ fields:
     summary: |-
       Represents an `EntityCellValue`<!-- -->.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Entity"'
   - name: root
     uid: excel!Excel.ReferenceValueType.root:member
@@ -31,5 +31,5 @@ fields:
     summary: |-
       Represents a `RootReferenceCellValue`<!-- -->.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Root"'

@@ -4,54 +4,8 @@ uid: excel!Excel.ArrayCellValue:interface
 package: excel!
 fullName: Excel.ArrayCellValue
 summary: Represents a 2D array of cell values.
-remarks: |-
-  [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-  #### Examples
-
-  ```TypeScript
-  const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-  // This `EntityCellValue` contains an `ArrayCellValue` with two products and their prices.
-  const myEntity: Excel.EntityCellValue = {
-      type: Excel.CellValueType.entity,
-      text: "Product Catalog",
-      properties: {
-          items: {
-              type: Excel.CellValueType.array, /* ArrayCellValue */
-              elements: [[
-                  {
-                      type: Excel.CellValueType.string,
-                      basicValue: "Bicycle"
-                  },
-                  {
-                      type: Excel.CellValueType.double,
-                      basicValue: 300,
-                      numberFormat: "$* #,##0.00",
-                  }
-              ],
-              [
-                  {
-                      type: Excel.CellValueType.string,
-                      basicValue: "Helmet"
-                  },
-                  {
-                      type: Excel.CellValueType.double,
-                      basicValue: 25,
-                      numberFormat: "$* #,##0.00",
-                  }           
-              ]],
-              basicType: Excel.RangeValueType.error,
-              basicValue: "#VALUE!"
-          }
-      },
-      basicType: Excel.RangeValueType.error, // A read-only property. Used as a fallback in incompatible scenarios.
-      basicValue: "#VALUE!" // A read-only property. Used as a fallback in incompatible scenarios.
-  };
-
-  sheet.getCell(0,0).valuesAsJson = [[myEntity]];
-  ```
-
+remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,7 +16,7 @@ properties:
     fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +29,7 @@ properties:
     fullName: basicValue
     summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +42,7 @@ properties:
     fullName: elements
     summary: Represents the elements of the array. May not directly contain an `ArrayCellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +55,7 @@ properties:
     fullName: referencedValues
     summary: Represents the cell values which are referenced within `ArrayCellValue.elements`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +68,7 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

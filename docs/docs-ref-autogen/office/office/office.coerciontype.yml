@@ -34,23 +34,7 @@ remarks: |-
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getSelectedDataAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getselecteddataasync-member(1))
   - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [coercionType](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-coerciontype-member)
   - [Office.SetSelectedDataOptions](/javascript/api/office/office.setselecteddataoptions): [coercionType](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-coerciontype-member)
-
-  #### Examples
-
-  ```TypeScript
-  // This function displays the currently selected text in the console.
-  // It uses the Common APIs.
-  function run() {
-      Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error(asyncResult.error.message);
-          } else {
-              console.log(`The selected data is "${asyncResult.value}".`);
-          }
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -60,12 +44,12 @@ fields:
     summary: |-
       Return or set data as HTML.
 
-      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+      \*\*Note\*\*: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     value: '"html"'
   - name: Image
     uid: office!Office.CoercionType.Image:member
     package: office!
-    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
+    summary: 'Data is returned or set as an image stream. \*\*Note\*\*: Only applies to data in Excel, Word, and PowerPoint.'
     value: '"image"'
   - name: Matrix
     uid: office!Office.CoercionType.Matrix:member
@@ -73,7 +57,7 @@ fields:
     summary: |-
       Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
 
-      **Note**: Only applies to data in Excel and Word.
+      \*\*Note\*\*: Only applies to data in Excel and Word.
     value: '"matrix"'
   - name: Ooxml
     uid: office!Office.CoercionType.Ooxml:member
@@ -81,7 +65,7 @@ fields:
     summary: |-
       Return or set data as Office Open XML.
 
-      **Note**: Only applies to data in Word.
+      \*\*Note\*\*: Only applies to data in Word.
     value: '"ooxml"'
   - name: SlideRange
     uid: office!Office.CoercionType.SlideRange:member
@@ -89,7 +73,7 @@ fields:
     summary: |-
       Return a JSON object that contains an array of the IDs, titles, and indexes of the selected slides. For example, `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
 
-      **Note**: Only applies to data in PowerPoint when calling the [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedDataAsync method to get the current slide or selected range of slides.
+      \*\*Note\*\*: Only applies to data in PowerPoint when calling the [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedDataAsync method to get the current slide or selected range of slides.
     value: '"slideRange"'
   - name: Table
     uid: office!Office.CoercionType.Table:member
@@ -97,7 +81,7 @@ fields:
     summary: |-
       Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
 
-      **Note**: Only applies to data in Excel and Word.
+      \*\*Note\*\*: Only applies to data in Excel and Word.
     value: '"table"'
   - name: Text
     uid: office!Office.CoercionType.Text:member
@@ -107,5 +91,5 @@ fields:
   - name: XmlSvg
     uid: office!Office.CoercionType.XmlSvg:member
     package: office!
-    summary: 'Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
+    summary: 'Data is returned or set as XML data containing an SVG image. \*\*Note\*\*: Only applies to data in Excel, Word, and PowerPoint.'
     value: '"xmlSvg"'

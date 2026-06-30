@@ -12,30 +12,7 @@ remarks: |-
   - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [themeColorScheme](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-themecolorscheme-member)
   - [PowerPoint.SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout): [themeColorScheme](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-themecolorscheme-member)
   - [PowerPoint.SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster): [themeColorScheme](/javascript/api/powerpoint/powerpoint.slidemaster#powerpoint-powerpoint-slidemaster-themecolorscheme-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
-
-  // Resets accent colors on the first slide to default Office theme values and updates swatches if present.
-  await PowerPoint.run(async (context) => {
-    const slide = context.presentation.slides.getItemAt(0);
-    const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
-
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent1, "#4472C4");
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent2, "#ED7D31");
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent3, "#A9D18E");
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent4, "#FFC000");
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent5, "#5B9BD5");
-    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent6, "#70AD47");
-    await context.sync();
-
-    await updateSwatches(context, slide);
-    console.log("Accent colors reset to default Office theme values on slide 1.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,7 +23,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +37,7 @@ methods:
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +47,7 @@ methods:
           description: The theme color.
           type: <xref uid="powerpoint!PowerPoint.ThemeColor:enum" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: The color value in \#RRGGBB format (e.g., "FFA500").
   - name: getThemeColor(color)
     uid: powerpoint!PowerPoint.ThemeColorScheme#getThemeColor:member(2)
@@ -78,7 +55,7 @@ methods:
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +65,7 @@ methods:
           description: The theme color.
           type: '"Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: The color value in \#RRGGBB format (e.g., "FFA500").
   - name: setThemeColor(color, rgbColor)
     uid: powerpoint!PowerPoint.ThemeColorScheme#setThemeColor:member(1)
@@ -96,7 +73,7 @@ methods:
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +94,7 @@ methods:
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +115,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ThemeColorScheme` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ThemeColorSchemeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,4 +129,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

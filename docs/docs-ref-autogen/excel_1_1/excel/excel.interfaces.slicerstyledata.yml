@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.SlicerStyleData
 summary: An interface describing the data returned by calling `slicerStyle.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -14,33 +14,7 @@ remarks: |-
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
   - [Word.Range](/javascript/api/word/word.range): [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
   - [Word.ShapeGroup](/javascript/api/word/word.shapegroup): [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member), [ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-  await Word.run(async (context) => {
-    // Gets text boxes in the main document.
-    const shapes: Word.ShapeCollection = context.document.body.shapes;
-    shapes.load();
-    await context.sync();
-
-    if (shapes.items.length > 0) {
-      console.log(`Number of shapes found in the main document: ${shapes.items.length}`);
-      shapes.items.forEach(function (shape, index) {
-        if (shape.type === Word.ShapeType.textBox) {
-          console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
-        } else {
-          console.log(`Shape ${index} in the main document doesn't have a text box.`);
-        }
-      });
-    } else {
-      console.log("No shapes found in the main document.");
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -51,7 +25,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +38,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,26 +51,8 @@ methods:
     package: word!
     fullName: getByGeometricTypes(types)
     summary: Gets the shapes that have the specified geometric types. Only applied to geometric shapes.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
-
-      await Word.run(async (context) => {
-        // Gets the moon geometric shapes from the document body.
-        const moons: Word.ShapeCollection = context.document.body.shapes.getByGeometricTypes([
-          Word.GeometricShapeType.moon,
-        ]);
-        moons.load();
-        await context.sync();
-
-        console.log("Moons found in the document body:", moons);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +70,7 @@ methods:
     fullName: getById(id)
     summary: Gets a shape by its identifier. Throws an `ItemNotFound` error if there isn't a shape with the identifier in this collection.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,9 +86,9 @@ methods:
     uid: word!Word.ShapeCollection#getByIdOrNullObject:member(1)
     package: word!
     fullName: getByIdOrNullObject(id)
-    summary: Gets a shape by its identifier. If there isn't a shape with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a shape by its identifier. If there isn't a shape with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +106,7 @@ methods:
     fullName: getByIds(ids)
     summary: Gets the shapes by the identifiers.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +124,7 @@ methods:
     fullName: getByNames(names)
     summary: Gets the shapes that have the specified names.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,29 +141,8 @@ methods:
     package: word!
     fullName: getByTypes(types)
     summary: Gets the shapes that have the specified types.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Sets the properties of the first text box.
-        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst();
-        firstShapeWithTextBox.top = 115;
-        firstShapeWithTextBox.left = 0;
-        firstShapeWithTextBox.width = 50;
-        firstShapeWithTextBox.height = 50;
-        await context.sync();
-
-        console.log("The first text box's properties were updated:", firstShapeWithTextBox);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,31 +159,8 @@ methods:
     package: word!
     fullName: getFirst()
     summary: Gets the first shape in this collection. Throws an `ItemNotFound` error if this collection is empty.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Inserts a content control into the first paragraph in the first text box.
-        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst();
-        firstShapeWithTextBox.load("type/body");
-        await context.sync();
-
-        const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
-        const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
-        newControl.load();
-        await context.sync();
-
-        console.log("New content control properties:", newControl);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,29 +172,9 @@ methods:
     uid: word!Word.ShapeCollection#getFirstOrNullObject:member(1)
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first shape in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Gets text from the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("body/text");
-        await context.sync();
-
-        console.log(
-          shape.isNullObject
-            ? "No shapes with text boxes found in the main document."
-            : `Text in first text box: ${shape.body.text}`
-        );
-      });
-      ```
-
+    summary: Gets the first shape in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,42 +187,8 @@ methods:
     package: word!
     fullName: group()
     summary: Groups floating shapes in this collection, inline shapes will be skipped. Returns a `Shape` object that represents the new group of shapes.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-      await Word.run(async (context) => {
-        // Groups the shapes (including text boxes and pictures) found in the document body.
-        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-          Word.ShapeType.geometricShape,
-          Word.ShapeType.textBox,
-          Word.ShapeType.picture,
-        ]);
-        shapes.load("items");
-        await context.sync();
-
-        const numShapes = shapes.items.length;
-        if (numShapes === 0) {
-          console.log("No shapes found in the document body.");
-          return;
-        }
-
-        console.log(`Number of shapes to group: ${numShapes}`);
-
-        const groupedShape: Word.Shape = shapes.group();
-        groupedShape.load("shapeGroup/shapes");
-        await context.sync();
-
-        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-        console.log("Shapes grouped:", shapeGroup.shapes);
-        groupedShape.select();
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,7 +202,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,7 +220,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -380,7 +238,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,7 +246,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="word!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
         description: ''
@@ -398,7 +256,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,7 +270,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -426,7 +284,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -434,4 +292,4 @@ methods:
       return:
         type: <xref uid="word!Word.ShapeCollection:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

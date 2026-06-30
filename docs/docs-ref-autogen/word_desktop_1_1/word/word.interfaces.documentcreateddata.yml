@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [toJSON](/javascript/api/word/word.documentcreated#word-word-documentcreated-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

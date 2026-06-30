@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.Application](/javascript/api/onenote/onenote.application): [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

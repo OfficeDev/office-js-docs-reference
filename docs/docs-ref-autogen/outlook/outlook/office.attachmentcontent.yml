@@ -7,9 +7,9 @@ summary: Represents the content of an attachment on a message or appointment ite
 remarks: |-
   [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
   #### Used by
 
@@ -19,46 +19,7 @@ remarks: |-
   - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getattachmentcontentasync-member(1))
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  Office.context.mailbox.item.getAttachmentsAsync((result) => {
-      if (result.value.length > 0) {
-          for (let i = 0 ; i < result.value.length ; i++) {
-              Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-          }
-      }
-  });
-
-  function handleAttachmentsCallback(result) {
-      // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
-      switch (result.value.format) {
-          case Office.MailboxEnums.AttachmentContentFormat.Base64:
-              // Handle file attachment.
-              console.log("Attachment is a Base64-encoded string.");
-              break;
-          case Office.MailboxEnums.AttachmentContentFormat.Eml:
-              // Handle email item attachment.
-              console.log("Attachment is a message.");
-              break;
-          case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-              // Handle .icalender attachment.
-              console.log("Attachment is a calendar item.");
-              break;
-          case Office.MailboxEnums.AttachmentContentFormat.Url:
-              // Handle cloud attachment.
-              console.log("Attachment is a cloud attachment.");
-              break;
-          default:
-              // Handle attachment formats that aren't supported.
-      }
-
-      // Log the content of the attachments as a string.
-      console.log(result.value.content);
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -69,7 +30,7 @@ properties:
     fullName: content
     summary: The content of an attachment as a string.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,11 +50,11 @@ properties:
 
       For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the formatting is a string representing an .icalendar file.
 
-      **Important**: If a message or calendar item was attached by drag-and-drop in Outlook on the web or [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, then `getAttachmentContentAsync` throws an error.
+      \*\*Important\*\*: If a message or calendar item was attached by drag-and-drop in Outlook on the web or [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, then `getAttachmentContentAsync` throws an error.
 
       For cloud attachments, the formatting is a URL string.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

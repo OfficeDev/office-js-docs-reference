@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [kind](/javascript/api/word/word.document#word-word-document-kind-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: email
     uid: word!Word.DocumentKind.email:member
     package: word!
-    summary: |-
-      Represents an email document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents an email document.
     value: '"Email"'
   - name: letter
     uid: word!Word.DocumentKind.letter:member
     package: word!
-    summary: |-
-      Represents a letter document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a letter document.
     value: '"Letter"'
   - name: notSpecified
     uid: word!Word.DocumentKind.notSpecified:member
     package: word!
-    summary: |-
-      Represents a document with no specified kind.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a document with no specified kind.
     value: '"NotSpecified"'

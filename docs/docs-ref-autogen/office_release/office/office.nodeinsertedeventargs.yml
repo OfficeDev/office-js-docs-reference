@@ -4,23 +4,8 @@ uid: office!Office.NodeInsertedEventArgs:interface
 package: office!
 fullName: Office.NodeInsertedEventArgs
 summary: Provides information about the inserted node that raised the nodeInserted event.
-remarks: |-
-  #### Examples
-
-  ```TypeScript
-  // Event handler for the NodeInserted event added in CustomXmlPart.addHandlerAsync.
-  function onNodeInserted(eventArgs: Office.NodeInsertedEventArgs) {
-      // Logs information about the inserted node.
-      console.log("NodeInserted event fired.");
-      console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
-      eventArgs.newNode.getXmlAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("  Inserted node XML: " + result.value);
-          }
-      });
-  }
-  ```
-
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -31,7 +16,7 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +32,7 @@ properties:
 
       Note that this node may have children, if a subtree was just added to the document.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

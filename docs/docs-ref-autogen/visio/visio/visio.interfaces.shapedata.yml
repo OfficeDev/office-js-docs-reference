@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Visio.Shape](/javascript/api/visio/visio.shape): [toJSON](/javascript/api/visio/visio.shape#visio-visio-shape-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: id
     summary: Shape's identifier.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: name
     summary: Shape's name.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: select
     summary: Returns true, if shape is selected. User can set true to select the shape explicitly.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ properties:
     fullName: subShapes
     summary: Gets SubShape Collection.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +110,7 @@ properties:
     fullName: text
     summary: Shape's text.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

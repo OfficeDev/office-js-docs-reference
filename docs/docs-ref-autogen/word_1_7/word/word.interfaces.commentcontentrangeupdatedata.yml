@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: bold
     summary: Specifies whether the comment text is bold.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: hyperlink
     summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: italic
     summary: Specifies whether the comment text is italicized.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: underline
     summary: Specifies the comment text's underline type. `none` if the comment text isn't underlined.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

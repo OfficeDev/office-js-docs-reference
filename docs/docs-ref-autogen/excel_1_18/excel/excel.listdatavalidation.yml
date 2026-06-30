@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [list](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-list-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: inCellDropDown
     summary: Specifies whether to display the list in a cell drop-down. The default is `true`<!-- -->.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: source
     summary: Source of the list for data validation When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, Boolean, or date.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

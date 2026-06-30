@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: altTextDescription
     summary: 'For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: altTextTitle
     summary: 'For EACH ITEM in the collection: Specifies a string that contains the title for the inline image.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: height
     summary: 'For EACH ITEM in the collection: Specifies a number that describes the height of the inline image.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: hyperlink
     summary: 'For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: lockAspectRatio
     summary: 'For EACH ITEM in the collection: Specifies whether the inline image retains its original proportions when you resize it.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: paragraph
     summary: 'For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.'
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: parentContentControl
     summary: 'For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn''t a parent content control.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: width
     summary: 'For EACH ITEM in the collection: Specifies a number that describes the width of the inline image.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

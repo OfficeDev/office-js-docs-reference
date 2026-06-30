@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [toJSON](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -12,63 +12,32 @@ remarks: |-
   #### Used by
 
   - [Word.Range](/javascript/api/word/word.range): [insertFileFromBase64](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1)), [insertHtml](/javascript/api/word/word.range#word-word-range-inserthtml-member(1)), [insertOoxml](/javascript/api/word/word.range#word-word-range-insertooxml-member(1)), [insertText](/javascript/api/word/word.range#word-word-range-inserttext-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
-  // Inserts a section without an associated page break.
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
-
-    await context.sync();
-
-    console.log("Inserted section without an associated page break.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: after
     uid: word!Word.InsertLocation.after:member
     package: word!
-    summary: |-
-      Add content after the contents of the calling object.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Add content after the contents of the calling object.
     value: '"After"'
   - name: before
     uid: word!Word.InsertLocation.before:member
     package: word!
-    summary: |-
-      Add content before the contents of the calling object.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Add content before the contents of the calling object.
     value: '"Before"'
   - name: end
     uid: word!Word.InsertLocation.end:member
     package: word!
-    summary: |-
-      Append content to the contents of the calling object.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Append content to the contents of the calling object.
     value: '"End"'
   - name: replace
     uid: word!Word.InsertLocation.replace:member
     package: word!
-    summary: |-
-      Replace the contents of the current object.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Replace the contents of the current object.
     value: '"Replace"'
   - name: start
     uid: word!Word.InsertLocation.start:member
     package: word!
-    summary: |-
-      Prepend content to the contents of the calling object.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Prepend content to the contents of the calling object.
     value: '"Start"'

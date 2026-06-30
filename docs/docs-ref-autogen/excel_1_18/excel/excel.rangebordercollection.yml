@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.RangeFormat](/javascript/api/excel/excel.rangeformat): [borders](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-borders-member)
   - [Excel.Style](/javascript/api/excel/excel.style): [borders](/javascript/api/excel/excel.style#excel-excel-style-borders-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: count
     summary: Number of border objects in the collection.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: tintAndShade
     summary: Specifies a double that lightens or darkens a color for range borders. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the entire border collection doesn't have a uniform `tintAndShade` setting.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,25 +74,8 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => {
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          const border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
-          border.load('style');
-          await context.sync();
-
-          console.log(border.style);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +93,7 @@ methods:
     fullName: getItem(index)
     summary: Gets a border object using its name.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,25 +110,8 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a border object using its index.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          const border = range.format.borders.getItemAt(0);
-          border.load('sideIndex');
-          await context.sync();
-          
-          console.log(border.sideIndex);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +129,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +147,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,34 +158,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeBorderCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "A1:F8";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              const borders = range.format.borders;
-              borders.load('items');
-              await context.sync();
-              
-              console.log(borders.count);
-              for (let i = 0; i < borders.items.length; i++) {
-                  console.log(borders.items[i].sideIndex);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeBorderCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +183,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

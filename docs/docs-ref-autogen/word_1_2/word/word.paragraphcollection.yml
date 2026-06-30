@@ -12,23 +12,7 @@ remarks: |-
   - [Word.Body](/javascript/api/word/word.body): [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)
   - [Word.Range](/javascript/api/word/word.range): [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
-
-  // Inserts an image anchored to the last paragraph.
-  await Word.run(async (context) => {
-    context.document.body.paragraphs
-      .getLast()
-      .insertParagraph("", "After")
-      .insertInlinePictureFromBase64(base64Image, "End");
-
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -39,7 +23,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,47 +36,13 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Word.Paragraph[];'
       return:
         type: <xref uid="word!Word.Paragraph:class" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
-
-          // This example starts a new list with the second paragraph.
-          await Word.run(async (context) => {
-            const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-            paragraphs.load("$none");
-
-            await context.sync();
-
-            // Start new list using the second paragraph.
-            const list: Word.List = paragraphs.items[1].startNewList();
-            list.load("$none");
-
-            await context.sync();
-
-            // To add new items to the list, use Start or End on the insertLocation parameter.
-            list.insertParagraph("New list item at the start of the list", "Start");
-            const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
-
-            // Set up list level for the list item.
-            paragraph.listItem.level = 4;
-
-            // To add paragraphs outside the list, use Before or After.
-            list.insertParagraph("New paragraph goes after (not part of the list)", "After");
-
-            await context.sync();
-          });
-          ```
 methods:
   - name: load(options)
     uid: word!Word.ParagraphCollection#load:member(1)
@@ -100,7 +50,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,40 +61,14 @@ methods:
           type: <xref uid="word!Word.Interfaces.ParagraphCollectionLoadOptions:interface" /> & <xref uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // This example shows how to get the paragraphs in the Word document
-          // along with their text and font size properties.
-          // 
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-
-              // Create a proxy object for the paragraphs collection.
-              const paragraphs = context.document.body.paragraphs;
-
-              // Queue a command to load the text and font properties.
-              // It is best practice to always specify the property set. Otherwise, all properties are
-              // returned in on the object.
-              paragraphs.load('text, font/size');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              await context.sync();
-
-              // Insert code that works with the paragraphs loaded by paragraphs.load().
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: word!Word.ParagraphCollection#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +86,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,7 +94,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="word!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
         description: ''
@@ -180,7 +104,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,7 +118,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,7 +132,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,4 +140,4 @@ methods:
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

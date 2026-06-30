@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ConditionalRangeFormat](/javascript/api/excel/excel.conditionalrangeformat): [set](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: borders
     summary: Collection of border objects that apply to the overall conditional format range.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: fill
     summary: Returns the fill object defined on the overall conditional format range.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: font
     summary: Returns the font object defined on the overall conditional format range.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: numberFormat
     summary: Represents Excel's number format code for the given range. For more information about Excel number formatting, see [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->. Cleared if `null` is passed in.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

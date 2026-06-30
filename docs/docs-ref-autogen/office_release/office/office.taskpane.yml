@@ -5,20 +5,12 @@ package: office!
 fullName: Office.TaskPane
 summary: Provides methods to manage the task pane of an add-in.
 remarks: |-
-  **Requirement set**: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+  \*\*Requirement set\*\*: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
 
   #### Used by
 
   - [Office.ExtensionLifeCycle](/javascript/api/office/office.extensionlifecycle): [taskpane](/javascript/api/office/office.extensionlifecycle#office-office-extensionlifecycle-taskpane-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Adjust the width of the task pane.
-  const width = 500;
-  Office.extensionLifeCycle.taskpane.setWidth(width);
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,18 +21,18 @@ methods:
     fullName: setWidth(width)
     summary: Sets the width of the task pane of an add-in in pixels.
     remarks: |-
-      **Requirement set**: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+      \*\*Requirement set\*\*: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
 
-      **Important**: The default width of the task pane of an add-in varies depending on the platform.
+      \*\*Important\*\*: The default width of the task pane of an add-in varies depending on the platform.
 
-      - **Web (Excel)**: 350 px
+      - \*\*Web (Excel)\*\*: 350 px
 
-      - **Web (Word)**: 330 px
+      - \*\*Web (Word)\*\*: 330 px
 
-      - **Windows, Mac**: 51 px
+      - \*\*Windows, Mac\*\*: 51 px
 
       If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

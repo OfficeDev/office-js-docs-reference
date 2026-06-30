@@ -11,29 +11,7 @@ remarks: |-
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
   - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [fill](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-fill-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-  // Changes the transparency of every geometric shape in the slide.
-  await PowerPoint.run(async (context) => {
-    // Get the type of shape for every shape in the collection.
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    shapes.load("type");
-    await context.sync();
-
-    // Change the shape transparency to be halfway transparent.
-    shapes.items.forEach((shape) => {
-      if (shape.type === PowerPoint.ShapeType.geometricShape) {
-        shape.fill.transparency = 0.5;
-      }
-    });
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,39 +34,8 @@ properties:
     package: powerpoint!
     fullName: foregroundColor
     summary: Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-      // Creates random shapes on the selected slide.
-      await PowerPoint.run(async (context) => {
-        let finalTable = "";
-        const currentSlide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-        const maxNewShapeWidth = 200;
-        const maxNewShapeHeight = 200;
-        const minNewShapeWidth = 50;
-        const minNewShapeHeight = 50;
-        for (let i = 0; i < 20; i++) {
-          const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(
-            PowerPoint.GeometricShapeType.rectangle,
-          );
-          rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
-          rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
-          rectangle.left = getRandomBetween(0, slideWidth - rectangle.width);
-          rectangle.top = getRandomBetween(0, slideHeight - rectangle.height);
-          rectangle.fill.foregroundColor = generateRandomHexColor();
-        }
-        finalTable += "Done<br>";
-        const outputSpan = document.getElementById("outputSpan");
-        outputSpan.innerHTML = "";
-        outputSpan.innerHTML += finalTable;
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,31 +47,8 @@ properties:
     package: powerpoint!
     fullName: transparency
     summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type doesn't support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-      // Changes the transparency of every geometric shape in the slide.
-      await PowerPoint.run(async (context) => {
-        // Get the type of shape for every shape in the collection.
-        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-        shapes.load("type");
-        await context.sync();
-
-        // Change the shape transparency to be halfway transparent.
-        shapes.items.forEach((shape) => {
-          if (shape.type === PowerPoint.ShapeType.geometricShape) {
-            shape.fill.transparency = 0.5;
-          }
-        });
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,29 +60,8 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the fill type of the shape. See [PowerPoint.ShapeFillType](xref:powerpoint!PowerPoint.ShapeFillType:enum) for details.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-      // Changes the selected shapes fill color to red.
-      await PowerPoint.run(async (context) => {
-        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-        const shapeCount = shapes.getCount();
-        shapes.load("items/fill/type");
-        await context.sync();
-        shapes.items.map((shape) => {
-          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
-          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
-          shape.fill.setSolidColor("red");
-        });
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +75,7 @@ methods:
     fullName: clear()
     summary: Clears the fill formatting of this shape.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,7 +89,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,7 +107,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +125,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,45 +150,8 @@ methods:
     package: powerpoint!
     fullName: setImage(base64EncodedImage)
     summary: Sets the fill formatting of the shape to an image. This changes the fill type to `PictureAndTexture`<!-- -->.
-    remarks: |-
-      [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
-
-      // Inserts an image with binding.
-      await PowerPoint.run(async (context) => {
-        const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
-        const slide = context.presentation.getSelectedSlides().getItemAt(0);
-        const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
-          top: 100,
-          left: 30,
-          width: 200,
-          height: 200
-        });
-
-        myShape.fill.setImage(flowerImage);
-        context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
-        await context.sync();
-
-        const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
-
-        const option = new Option(`Binding ${bindingId}`, bindingId);
-
-        // When a binding ID already exists, the binding is updated to refer to the new shape
-        // so select the existing item rather than add a new one.
-        const foundIndex = findDropdownItem(bindingsDropdown, option.text);
-        if (foundIndex < 0) {
-          bindingsDropdown.add(option);
-          bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
-        } else {
-          bindingsDropdown.selectedIndex = foundIndex;
-        }
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,29 +168,8 @@ methods:
     package: powerpoint!
     fullName: setSolidColor(color)
     summary: Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`<!-- -->.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-      // Changes the selected shapes fill color to red.
-      await PowerPoint.run(async (context) => {
-        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-        const shapeCount = shapes.getCount();
-        shapes.load("items/fill/type");
-        await context.sync();
-        shapes.items.map((shape) => {
-          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
-          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
-          shape.fill.setSolidColor("red");
-        });
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -342,7 +187,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ShapeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFillData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,4 +195,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.OleFormatLoadOptions
 summary: Represents the OLE characteristics (other than linking) for an OLE object, ActiveX control, or field.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.OleFormatLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: classType
     summary: Specifies the class type for the specified OLE object, picture, or field.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: iconIndex
     summary: Specifies the icon that is used when the `displayAsIcon` property is `true`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +57,7 @@ properties:
     fullName: iconLabel
     summary: Specifies the text displayed below the icon for the OLE object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +70,7 @@ properties:
     fullName: iconName
     summary: Specifies the program file in which the icon for the OLE object is stored.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +83,7 @@ properties:
     fullName: iconPath
     summary: Gets the path of the file in which the icon for the OLE object is stored.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +96,7 @@ properties:
     fullName: isDisplayedAsIcon
     summary: Gets whether the specified object is displayed as an icon.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +109,7 @@ properties:
     fullName: isFormattingPreservedOnUpdate
     summary: Specifies whether formatting done in Microsoft Word to the linked OLE object is preserved.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +122,7 @@ properties:
     fullName: label
     summary: Gets a string that's used to identify the portion of the source file that's being linked.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +135,7 @@ properties:
     fullName: progId
     summary: Gets the programmatic identifier (`ProgId`<!-- -->) for the specified OLE object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

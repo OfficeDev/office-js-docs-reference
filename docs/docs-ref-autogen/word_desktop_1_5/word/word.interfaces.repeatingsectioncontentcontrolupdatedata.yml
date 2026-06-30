@@ -3,9 +3,11 @@ name: Word.Interfaces.RepeatingSectionContentControlUpdateData
 uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionContentControlUpdateData
-summary: An interface for updating data on the `RepeatingSectionContentControl` object, for use in `repeatingSectionContentControl.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `RepeatingSectionContentControl` object, for use in
+  `repeatingSectionContentControl.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#allowInsertDeleteSection:member
     package: word!
     fullName: allowInsertDeleteSection
-    summary: Specifies whether users can add or remove sections from this repeating section content control by using the user interface.
+    summary: >-
+      Specifies whether users can add or remove sections from this repeating section content control by using the user
+      interface.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +44,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#color:member
     package: word!
     fullName: color
-    summary: Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the '\#RRGGBB' format.
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the
+      '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +59,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#isTemporary:member
     package: word!
     fullName: isTemporary
-    summary: Specifies whether to remove the content control from the active document when the user edits the contents of the control.
+    summary: >-
+      Specifies whether to remove the content control from the active document when the user edits the contents of the
+      control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +74,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#lockContentControl:member
     package: word!
     fullName: lockContentControl
-    summary: Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the active document, `false` means it can be deleted.
+    summary: >-
+      Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the
+      active document, `false` means it can be deleted.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +89,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#lockContents:member
     package: word!
     fullName: lockContents
-    summary: Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the contents, `false` means the contents are editable.
+    summary: >-
+      Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the
+      contents, `false` means the contents are editable.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +106,7 @@ properties:
     fullName: placeholderText
     summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +119,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the contents of the content control in the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +130,11 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionContentControlUpdateData#repeatingSectionItemTitle:member
     package: word!
     fullName: repeatingSectionItemTitle
-    summary: Specifies the name of the repeating section items used in the context menu associated with this repeating section content control.
+    summary: >-
+      Specifies the name of the repeating section items used in the context menu associated with this repeating section
+      content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +147,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +160,7 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

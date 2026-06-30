@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ConditionalStyleUpdateData
 summary: An interface for updating data on the `ConditionalStyle` object, for use in `conditionalStyle.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue): [errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       An error caused by an error from a data provider. Displays as error type \#FIELD! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DataProviderError"'
   - name: richValueRelMissingFilePart
     uid: excel!Excel.FieldErrorCellValueSubType.richValueRelMissingFilePart:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type \#FIELD! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RichValueRelMissingFilePart"'
   - name: unknown
     uid: excel!Excel.FieldErrorCellValueSubType.unknown:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#FIELD! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: webImageMissingFilePart
     uid: excel!Excel.FieldErrorCellValueSubType.webImageMissingFilePart:member
@@ -44,5 +44,5 @@ fields:
     summary: |-
       An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type \#FIELD! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"WebImageMissingFilePart"'

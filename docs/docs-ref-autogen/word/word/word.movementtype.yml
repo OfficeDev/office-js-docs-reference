@@ -11,23 +11,17 @@ remarks: |-
 
   - [Word.SelectionMoveLeftRightOptions](/javascript/api/word/word.selectionmoveleftrightoptions): [extend](/javascript/api/word/word.selectionmoveleftrightoptions#word-word-selectionmoveleftrightoptions-extend-member)
   - [Word.SelectionMoveUpDownOptions](/javascript/api/word/word.selectionmoveupdownoptions): [extend](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-extend-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: extend
     uid: word!Word.MovementType.extend:member
     package: word!
-    summary: |-
-      Extends the selection.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Extends the selection.
     value: '"Extend"'
   - name: move
     uid: word!Word.MovementType.move:member
     package: word!
-    summary: |-
-      Moves the insertion point or selection.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Moves the insertion point or selection.
     value: '"Move"'

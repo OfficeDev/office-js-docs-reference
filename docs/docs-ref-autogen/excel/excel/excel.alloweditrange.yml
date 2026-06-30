@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [getItem](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: address
     summary: Specifies the range associated with the object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the object is password protected.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: title
     summary: Specifies the title of the object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title. If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ methods:
     fullName: delete()
     summary: Deletes the object from the `AllowEditRangeCollection`<!-- -->. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails the delete operation.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +88,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +106,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +124,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +150,7 @@ methods:
     fullName: pauseProtection(password)
     summary: Pauses worksheet protection for the object for the user in the current session. This method does nothing if worksheet protection isn't enabled or is already paused. If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the object. If the password is incorrect, then this method throws a `BadPassword` error and fails to pause protection for the object. If a password is supplied but the object does not require a password, the inputted password will be ignored and the operation will succeed.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +168,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +189,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +207,7 @@ methods:
     fullName: setPassword(password)
     summary: Changes the password associated with the object. Setting the password string as empty ("") or `null` will remove password protection from the object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the set operation fails.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,7 +225,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.AllowEditRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -51,7 +51,7 @@ remarks: |-
   - [Excel.TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection): [load](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-load-member(1))
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
   - [Excel.WorksheetCustomPropertyCollection](/javascript/api/excel/excel.worksheetcustompropertycollection): [load](/javascript/api/excel/excel.worksheetcustompropertycollection#excel-excel-worksheetcustompropertycollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,7 +62,7 @@ properties:
     fullName: $skip
     summary: Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +75,7 @@ properties:
     fullName: $top
     summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

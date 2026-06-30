@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [names](/javascript/api/excel/excel.workbook#excel-excel-workbook-names-member)
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [names](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-names-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,25 +48,8 @@ methods:
     package: excel!
     fullName: add(name, reference, comment)
     summary: Adds a new name to the collection of the given scope.
-    remarks: |-
-      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const headerRange = sheet.getRange("A1:D1");
-
-          sheet.names.add("ExpensesHeader", headerRange);
-          const namedItems = sheet.names.load("name, type");
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +73,7 @@ methods:
     fullName: addFormulaLocal(name, formula, comment)
     summary: Adds a new name to the collection of the given scope using the user's locale for the formula.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +97,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of named items in the collection.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,22 +110,8 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `NamedItem` object using its name.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const sheetName = 'Sheet1';
-          const nameditem = context.workbook.names.getItem(sheetName);
-          nameditem.load('type');
-          await context.sync();
-          
-          console.log(nameditem.type);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,9 +127,9 @@ methods:
     uid: excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +147,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +165,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,29 +176,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.NamedItemCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const nameditems = context.workbook.names;
-              nameditems.load('items');
-              await context.sync();
-
-              for (let i = 0; i < nameditems.items.length; i++) {
-                  console.log(nameditems.items[i].name);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.NamedItemCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,7 +201,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

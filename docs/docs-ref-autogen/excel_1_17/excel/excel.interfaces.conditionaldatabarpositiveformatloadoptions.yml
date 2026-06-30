@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ConditionalDataBarPositiveFormat](/javascript/api/excel/excel.conditionaldatabarpositiveformat): [load](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: borderColor
     summary: HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value is "" (an empty string) if no border is present or set.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: fillColor
     summary: HTML color code representing the fill color, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: gradientFill
     summary: Specifies if the data bar has a gradient.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

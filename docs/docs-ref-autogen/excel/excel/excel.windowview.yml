@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Window](/javascript/api/excel/excel.window): [view](/javascript/api/excel/excel.window#excel-excel-window-view-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The window displays the worksheet in normal view for general data entry and editing.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"normalView"'
   - name: pageBreakPreview
     uid: excel!Excel.WindowView.pageBreakPreview:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The window displays the worksheet in Page Break Preview mode to show where pages will break when printed.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"pageBreakPreview"'
   - name: pageLayoutView
     uid: excel!Excel.WindowView.pageLayoutView:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       The window displays the worksheet in Page Layout view to show how the worksheet will look when printed.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"pageLayoutView"'

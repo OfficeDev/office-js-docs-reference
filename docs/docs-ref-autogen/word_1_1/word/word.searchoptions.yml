@@ -13,39 +13,7 @@ remarks: |-
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
   - [Word.Range](/javascript/api/word/word.range): [search](/javascript/api/word/word.range#word-word-range-search-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Search using a wildcard
-  // Run a batch operation against the Word object model.
-  await Word.run(async (context) => {
-      
-      // Queue a command to search the document with a wildcard
-      // for any string of characters that starts with 'to' and ends with 'n'.
-      const searchResults = context.document.body.search('to*n', {matchWildcards: true});
-
-      // Queue a command to load the search results and get the font property values.
-      searchResults.load('font');
-      
-      // Synchronize the document state by executing the queued commands, 
-      // and return a promise to indicate task completion.
-      await context.sync();
-      console.log('Found count: ' + searchResults.items.length);
-
-      // Queue a set of commands to change the font for each found item.
-      for (let i = 0; i < searchResults.items.length; i++) {
-          searchResults.items[i].font.color = 'purple';
-          searchResults.items[i].font.highlightColor = 'pink';
-          searchResults.items[i].font.bold = true;
-      }
-      
-      // Synchronize the document state by executing the queued commands, 
-      // and return a promise to indicate task completion.
-      await context.sync();
-  }); 
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -56,7 +24,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,9 +35,9 @@ properties:
     uid: word!Word.SearchOptions#ignorePunct:member
     package: word!
     fullName: ignorePunct
-    summary: If provided, specifies whether to ignore all punctuation characters between words. The default is `false`<!-- -->. Corresponds to the \_Ignore punctuation characters\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to ignore all punctuation characters between words. The default is `false`<!-- -->. Corresponds to the \_Ignore punctuation characters\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,9 +48,9 @@ properties:
     uid: word!Word.SearchOptions#ignoreSpace:member
     package: word!
     fullName: ignoreSpace
-    summary: If provided, specifies whether to ignore all whitespace between words. The default is `false`<!-- -->. Corresponds to the \_Ignore white-space characters\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to ignore all whitespace between words. The default is `false`<!-- -->. Corresponds to the \_Ignore white-space characters\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,9 +61,9 @@ properties:
     uid: word!Word.SearchOptions#matchCase:member
     package: word!
     fullName: matchCase
-    summary: If provided, specifies whether to perform a case sensitive search. The default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to perform a case sensitive search. The default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,9 +74,9 @@ properties:
     uid: word!Word.SearchOptions#matchPrefix:member
     package: word!
     fullName: matchPrefix
-    summary: If provided, specifies whether to match words that begin with the search string. The default is `false`<!-- -->. Corresponds to the \_Match prefix\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to match words that begin with the search string. The default is `false`<!-- -->. Corresponds to the \_Match prefix\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,9 +87,9 @@ properties:
     uid: word!Word.SearchOptions#matchSuffix:member
     package: word!
     fullName: matchSuffix
-    summary: If provided, specifies whether to match words that end with the search string. The default is `false`<!-- -->. Corresponds to the \_Match suffix\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to match words that end with the search string. The default is `false`<!-- -->. Corresponds to the \_Match suffix\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,9 +100,9 @@ properties:
     uid: word!Word.SearchOptions#matchWholeWord:member
     package: word!
     fullName: matchWholeWord
-    summary: If provided, specifies whether to find only entire words, not text that's part of a larger word. The default is `false`<!-- -->. Corresponds to the \_Find whole words only\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether to find only entire words, not text that's part of a larger word. The default is `false`<!-- -->. Corresponds to the \_Find whole words only\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,9 +113,9 @@ properties:
     uid: word!Word.SearchOptions#matchWildcards:member
     package: word!
     fullName: matchWildcards
-    summary: If provided, specifies whether the search will be performed using special search operators. The default is `false`<!-- -->. Corresponds to the \_Use wildcards\_ check box in the **Find and Replace** dialog box.
+    summary: If provided, specifies whether the search will be performed using special search operators. The default is `false`<!-- -->. Corresponds to the \_Use wildcards\_ check box in the \*\*Find and Replace\*\* dialog box.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,7 +129,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,130 +140,14 @@ methods:
           type: <xref uid="word!Word.Interfaces.SearchOptionsLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.SearchOptions:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Ignore punctuation search
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-              
-              // Queue a command to search the document and ignore punctuation.
-              const searchResults = context.document.body.search('video you', {ignorePunct: true});
-
-              // Queue a command to load the search results and get the font property values.
-              searchResults.load('font');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (let i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-          });  
-          ```
-          ```TypeScript
-          // Search based on a prefix
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-              
-              // Queue a command to search the document based on a prefix.
-              const searchResults = context.document.body.search('vid', {matchPrefix: true});
-
-              // Queue a command to load the search results and get the font property values.
-              searchResults.load('font');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-
-              // Queue a set of commands to change the font for each found item.
-              for (let i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-          }); 
-          ```
-          ```TypeScript
-          // Search based on a suffix
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-
-              // Queue a command to search the document for any string of characters after 'ly'.
-              const searchResults = context.document.body.search('ly', {matchSuffix: true});
-
-              // Queue a command to load the search results and get the font property values.
-              searchResults.load('font');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (let i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'orange';
-                  searchResults.items[i].font.highlightColor = 'black';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-          });  
-          ```
-          ```TypeScript
-          // Search using a wildcard
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-              
-              // Queue a command to search the document with a wildcard
-              // for any string of characters that starts with 'to' and ends with 'n'.
-              const searchResults = context.document.body.search('to*n', {matchWildcards: true});
-
-              // Queue a command to load the search results and get the font property values.
-              searchResults.load('font');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (let i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = 'pink';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-          }); 
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: word!Word.SearchOptions#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,7 +165,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,7 +191,7 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `Word.SearchOptions` object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -347,7 +199,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+          type: <xref uid="word!~OfficeExtension.ClientRequestContext:class" />
       return:
         type: <xref uid="word!Word.SearchOptions:class" />
         description: ''
@@ -357,7 +209,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -368,7 +220,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -378,7 +230,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -396,7 +248,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.SearchOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,4 +256,4 @@ methods:
       return:
         type: <xref uid="word!Word.Interfaces.SearchOptionsData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

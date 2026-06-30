@@ -469,6 +469,11 @@
 ||[threeTrafficLights1](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights1-member)||
 ||[threeTrafficLights2](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights2-member)||
 ||[threeTriangles](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetriangles-member)||
+|[LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs)|[error](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-error-member)|Any error encountered during the request to load the `LinkedEntityCellValue`.|
+||[id](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-id-member)|Gets the `LinkedEntityId` of the requested `LinkedEntityCellValue`.|
+||[linkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-linkedentitycellvalue-member)|Gets the `LinkedEntityCellValue` of the requested `LinkedEntityId`.|
+||[source](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-source-member)|Gets the source of the event.|
+||[type](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-type-member)|Gets the type of the event.|
 |[Range](/javascript/api/excel/excel.range)|[columnHidden](/javascript/api/excel/excel.range#excel-excel-range-columnhidden-member)|Represents if all columns in the current range are hidden.|
 ||[formulasR1C1](/javascript/api/excel/excel.range#excel-excel-range-formulasr1c1-member)|Represents the formula in R1C1-style notation.|
 ||[getColumnsAfter(count?: number)](/javascript/api/excel/excel.range#excel-excel-range-getcolumnsafter-member(1))|Gets a certain number of columns to the right of the current `Range` object.|

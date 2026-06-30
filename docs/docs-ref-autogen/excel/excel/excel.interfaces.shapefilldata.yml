@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ShapeFill](/javascript/api/excel/excel.shapefill): [toJSON](/javascript/api/excel/excel.shapefill#excel-excel-shapefill-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: foregroundColor
     summary: Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: transparency
     summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: type
     summary: Returns the fill type of the shape. See `Excel.ShapeFillType` for details.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

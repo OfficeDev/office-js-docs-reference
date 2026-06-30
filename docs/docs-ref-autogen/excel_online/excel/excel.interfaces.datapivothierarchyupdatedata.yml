@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DataPivotHierarchy](/javascript/api/excel/excel.datapivothierarchy): [set](/javascript/api/excel/excel.datapivothierarchy#excel-excel-datapivothierarchy-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: field
     summary: Returns the PivotFields associated with the DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: name
     summary: Name of the DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: numberFormat
     summary: Number format of the DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: position
     summary: Position of the DataPivotHierarchy.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: showAs
     summary: Specifies if the data should be shown as a specific summary calculation.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: summarizeBy
     summary: Specifies if all items of the DataPivotHierarchy are shown.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

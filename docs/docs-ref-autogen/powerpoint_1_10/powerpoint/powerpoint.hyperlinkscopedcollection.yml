@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [hyperlinks](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-hyperlinks-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,13 +48,13 @@ methods:
     fullName: getCount()
     summary: Gets the number of hyperlinks in the collection.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of hyperlinks in the collection.
   - name: getItemAt(index)
     uid: powerpoint!PowerPoint.HyperlinkScopedCollection#getItemAt:member(1)
@@ -62,7 +62,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a hyperlink using its zero-based index in the collection. Throws an `InvalidArgument` exception when the index is out of range.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +80,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,7 +98,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +124,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection:class" />
         description: ''
@@ -134,7 +134,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.HyperlinkScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.HyperlinkScopedCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,4 +142,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

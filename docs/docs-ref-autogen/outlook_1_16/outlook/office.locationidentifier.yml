@@ -4,13 +4,19 @@ uid: outlook!Office.LocationIdentifier:interface
 package: outlook!
 fullName: Office.LocationIdentifier
 summary: Represents the ID of a location.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.8\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
+
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -26,7 +32,7 @@ properties:
 
       For `Custom` type, it's the `displayName`<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,7 +45,7 @@ properties:
     fullName: type
     summary: The location's type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

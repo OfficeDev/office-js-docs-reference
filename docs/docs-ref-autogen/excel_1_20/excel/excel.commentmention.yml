@@ -12,7 +12,7 @@ remarks: |-
   - [Excel.Comment](/javascript/api/excel/excel.comment): [mentions](/javascript/api/excel/excel.comment#excel-excel-comment-mentions-member)
   - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [mentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-mentions-member)
   - [Excel.CommentRichContent](/javascript/api/excel/excel.commentrichcontent): [mentions](/javascript/api/excel/excel.commentrichcontent#excel-excel-commentrichcontent-mentions-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +23,7 @@ properties:
     fullName: email
     summary: The email address of the entity that is mentioned in a comment.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: The ID of the entity. The ID matches one of the IDs in `CommentRichContent.richContent`<!-- -->.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +49,7 @@ properties:
     fullName: name
     summary: The name of the entity that is mentioned in a comment.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

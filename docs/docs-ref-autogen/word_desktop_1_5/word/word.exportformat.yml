@@ -5,23 +5,17 @@ package: word!
 fullName: Word.ExportFormat
 summary: Specifies the export format for a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: pdf
     uid: word!Word.ExportFormat.pdf:member
     package: word!
-    summary: |-
-      PDF export format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: PDF export format.
     value: '"Pdf"'
   - name: xps
     uid: word!Word.ExportFormat.xps:member
     package: word!
-    summary: |-
-      XPS export format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: XPS export format.
     value: '"Xps"'

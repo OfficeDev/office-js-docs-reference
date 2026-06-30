@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedSheetView](/javascript/api/excel/excel.namedsheetview): [toJSON](/javascript/api/excel/excel.namedsheetview#excel-excel-namedsheetview-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: name
     summary: Specifies the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view by using the name property causes the sheet view to be saved.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

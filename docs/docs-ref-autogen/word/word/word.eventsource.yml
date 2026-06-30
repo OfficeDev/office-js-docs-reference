@@ -19,54 +19,17 @@ remarks: |-
   - [Word.ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs): [source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)
   - [Word.ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs): [source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)
   - [Word.ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs): [source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
-  // Registers event handlers.
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.track();
-    await context.sync();
-
-    eventContexts[0] = body.onCommentAdded.add(onEventHandler);
-    eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
-    eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
-    eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
-    eventContexts[4] = body.onCommentSelected.add(onEventHandler);
-    await context.sync();
-
-    console.log("Event handlers registered.");
-  });
-
-  ...
-
-  async function onEventHandler(event: Word.CommentEventArgs) {
-    // Handler for all events except onCommentChanged.
-    await Word.run(async (context) => {
-      console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: |-
-      Local source.
-
-      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Local source.
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: |-
-      Remote source.
-
-      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Remote source.
     value: '"Remote"'

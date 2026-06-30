@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.ReadabilityStatistic](/javascript/api/word/word.readabilitystatistic): [toJSON](/javascript/api/word/word.readabilitystatistic#word-word-readabilitystatistic-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: name
     summary: Returns the name of the readability statistic.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: value
     summary: Returns the value of the grammar statistic.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

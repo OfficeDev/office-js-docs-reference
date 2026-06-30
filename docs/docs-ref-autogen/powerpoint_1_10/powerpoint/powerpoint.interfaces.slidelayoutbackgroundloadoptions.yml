@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideLayoutBackground](/javascript/api/powerpoint/powerpoint.slidelayoutbackground): [load](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: areBackgroundGraphicsHidden
     summary: Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of the background.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: isMasterBackgroundFollowed
     summary: Specifies if the slide layout background follows the slide master background.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

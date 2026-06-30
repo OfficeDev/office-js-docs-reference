@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection): [load](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: range
     summary: 'For EACH ITEM in the collection: Gets a `Range` object that represents the portion of the document that''s contained in the `CoauthoringUpdate` object.'
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

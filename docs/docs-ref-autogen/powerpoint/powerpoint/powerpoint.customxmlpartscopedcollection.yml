@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection): [getByNamespace](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-getbynamespace-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,13 +48,13 @@ methods:
     fullName: getCount()
     summary: Gets the number of custom XML parts in this collection.
     remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of custom XML parts in the collection.
   - name: getItem(id)
     uid: powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItem:member(1)
@@ -62,7 +62,7 @@ methods:
     fullName: getItem(id)
     summary: Gets a `CustomXmlPart` based on its ID.
     remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +80,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a `CustomXmlPart` by its zero-based index in the collection. Throws an `InvalidArgument` exception when the index is out of range.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,9 +96,9 @@ methods:
     uid: powerpoint!PowerPoint.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemOrNullObject(id)
-    summary: Gets a `CustomXmlPart` based on its ID. If the `CustomXmlPart` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a `CustomXmlPart` based on its ID. If the `CustomXmlPart` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ methods:
     fullName: getOnlyItem()
     summary: If the collection contains exactly one item, this method returns it. If the collection contains no items or more than one item, then this method returns the `GeneralException` error.
     remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,7 +130,7 @@ methods:
     fullName: getOnlyItemOrNullObject()
     summary: If the collection contains exactly one item, this method returns it. Otherwise, this method returns `null`<!-- -->.
     remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +144,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +162,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +180,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,7 +188,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.CustomXmlPartScopedCollection:class" />
         description: ''
@@ -198,7 +198,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartScopedCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,4 +206,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

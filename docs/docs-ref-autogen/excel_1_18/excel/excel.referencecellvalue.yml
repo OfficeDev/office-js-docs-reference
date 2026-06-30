@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ReferenceCellValue
 summary: Represents a reference into `referencedValues`<!-- -->. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`<!-- -->). Define a cell value object once in `referencedValues`<!-- -->, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
 remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: basicValue
     summary: Represents the value that would be returned by `Range.values` for a cell with this value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: reference
     summary: Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

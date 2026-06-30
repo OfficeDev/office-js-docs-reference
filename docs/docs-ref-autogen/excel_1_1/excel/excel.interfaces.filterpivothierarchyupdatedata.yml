@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
 summary: An interface for updating data on the `FilterPivotHierarchy` object, for use in `filterPivotHierarchy.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

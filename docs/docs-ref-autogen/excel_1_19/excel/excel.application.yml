@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [application](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-application-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [application](/javascript/api/excel/excel.workbook#excel-excel-workbook-application-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: calculationEngineVersion
     summary: Returns the Excel calculation engine version used for the last full recalculation.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: calculationMode
     summary: 'Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`<!-- -->. Possible values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user requests it. This is a runtime property. The `calculationMode` setting is not persisted in the workbook.'
     remarks: '[API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: calculationState
     summary: Returns the calculation state of the application. See `Excel.CalculationState` for details.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: cultureInfo
     summary: Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,39 +86,8 @@ properties:
     package: excel!
     fullName: decimalSeparator
     summary: Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
-    remarks: |-
-      [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info.yaml
-
-      await Excel.run(async (context) => {
-        context.application.load("decimalSeparator,thousandsSeparator");
-        context.application.cultureInfo.numberFormat.load("numberDecimalSeparator,numberGroupSeparator");
-        await context.sync();
-
-        // Local settings are set under the "Options > Advanced" menu.
-        const localDecimalSeparator = context.application.decimalSeparator;
-        const localThousandsSeparator = context.application.thousandsSeparator;
-
-        const systemDecimalSeparator = context.application.cultureInfo.numberFormat.numberDecimalSeparator;
-        const systemThousandsSeparator = context.application.cultureInfo.numberFormat.numberGroupSeparator;
-
-        console.log("Local character settings: ");
-        console.log(`  Local decimal separator: ${localDecimalSeparator}`);
-        console.log(`  Local thousands separator: ${localThousandsSeparator}`);
-
-        console.log("System culture settings: ");
-        console.log(`  System decimal separator: ${systemDecimalSeparator}`);
-        console.log(`  System thousands separator: ${systemThousandsSeparator}`);
-        console.log(`  `);
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +100,7 @@ properties:
     fullName: iterativeCalculation
     summary: Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +113,7 @@ properties:
     fullName: thousandsSeparator
     summary: Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +126,7 @@ properties:
     fullName: useSystemSeparators
     summary: Specifies if the system separators of Excel are enabled. System separators include the decimal separator and thousands separator.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,19 +139,8 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
-
-      await Excel.run(async (context) => {
-        context.application.calculate(Excel.CalculationType.full);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,18 +157,8 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => {
-          context.workbook.application.calculate('Full');
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,7 +176,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +194,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,27 +205,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Application:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => {
-              const application = context.workbook.application;
-              application.load('calculationMode');
-              await context.sync();
-
-              console.log(application.calculationMode);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Application#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -303,7 +238,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -324,7 +259,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -342,7 +277,7 @@ methods:
     fullName: suspendApiCalculationUntilNextSync()
     summary: Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -357,46 +292,9 @@ methods:
     summary: |-
       Suspends screen updating until the next `context.sync()` is called.
 
-      *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
-    remarks: |-
-      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
-
-      await Excel.run(async (context) => {
-        // Recreate the data in the worksheet with random data.
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        const startTime = Date.now();
-        console.log("Starting...");
-
-        // If other parts of the sample have toggled screen painting off, this will stop screen updating until context.sync is called.
-        if (pauseScreenPainting) {
-          context.application.suspendScreenUpdatingUntilNextSync();
-        }
-
-        for (let i = 1; i < ROW_COUNT; i++) {
-          for (let j = 1; j < COLUMN_COUNT; j++) {
-            let cell = sheet.getCell(i, j);
-            cell.values = [[i * j * Math.random()]];
-
-            // If other parts of the sample have toggled tracking off, we will avoid tracking this range and having to manage the proxy objects.
-            // For more information, see https://learn.microsoft.com/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#untrack-unneeded-proxy-objects
-            if (untrack) {
-              cell.untrack();
-            }
-          }
-        }
-
-        await context.sync();
-
-        console.log(`Ending. Adding ${ROW_COUNT * COLUMN_COUNT} cells took ${Date.now() - startTime} milliseconds`);
-      });
-      ```
-
+      \*Note\*\*: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +308,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

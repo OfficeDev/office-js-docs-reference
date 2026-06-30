@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CustomFunctionManager](/javascript/api/excel/excel.customfunctionmanager): [setVisibility](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-setvisibility-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: hide
     summary: A list of custom functions to hide from Excel AutoComplete.
     remarks: '[API set: ExcelApi 1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: show
     summary: A list of custom functions to show in Excel AutoComplete.
     remarks: '[API set: ExcelApi 1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

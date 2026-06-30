@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.RevisionsFilter](/javascript/api/word/word.revisionsfilter): [markup](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-markup-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
     uid: word!Word.RevisionsMarkup.all:member
     package: word!
-    summary: |-
-      All markup.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: All markup.
     value: '"All"'
   - name: none
     uid: word!Word.RevisionsMarkup.none:member
     package: word!
-    summary: |-
-      No markup.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No markup.
     value: '"None"'
   - name: simple
     uid: word!Word.RevisionsMarkup.simple:member
     package: word!
-    summary: |-
-      Simple markup.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Simple markup.
     value: '"Simple"'

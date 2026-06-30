@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont): [load](/javascript/api/powerpoint/powerpoint.shapefont#powerpoint-powerpoint-shapefont-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,15 +33,15 @@ properties:
     package: powerpoint!
     fullName: allCaps
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **All Caps** attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*All Caps\*\* attribute which makes lowercase letters appear as uppercase letters. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **All Caps** attribute.
+      - `true`<!-- -->: All the text has the \*\*All Caps\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **All Caps** attribute.
+      - `false`<!-- -->: None of the text has the \*\*All Caps\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **All Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*All Caps\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: color
     summary: Specifies the HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the `TextRange` contains text fragments with different colors.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,15 +86,15 @@ properties:
     package: powerpoint!
     fullName: doubleStrikethrough
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **Double strikethrough** attribute. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*Double strikethrough\*\* attribute. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Double strikethrough** attribute.
+      - `true`<!-- -->: All the text has the \*\*Double strikethrough\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Double strikethrough** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Double strikethrough\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Double strikethrough** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Double strikethrough\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +114,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is italicized.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +127,7 @@ properties:
     fullName: name
     summary: Specifies the font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it's the Latin font name. Returns `null` if the `TextRange` contains text fragments with different font names.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,7 +140,7 @@ properties:
     fullName: size
     summary: Specifies the font size in points (e.g., 11). Returns `null` if the `TextRange` contains text fragments with different font sizes.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,15 +152,15 @@ properties:
     package: powerpoint!
     fullName: smallCaps
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **Small Caps** attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*Small Caps\*\* attribute which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Small Caps** attribute.
+      - `true`<!-- -->: All the text has the \*\*Small Caps\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Small Caps** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Small Caps\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Small Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Small Caps\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,15 +172,15 @@ properties:
     package: powerpoint!
     fullName: strikethrough
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **Strikethrough** attribute. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*Strikethrough\*\* attribute. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Strikethrough** attribute.
+      - `true`<!-- -->: All the text has the \*\*Strikethrough\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Strikethrough** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Strikethrough\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Strikethrough** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Strikethrough\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,15 +192,15 @@ properties:
     package: powerpoint!
     fullName: subscript
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **Subscript** attribute. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*Subscript\*\* attribute. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Subscript** attribute.
+      - `true`<!-- -->: All the text has the \*\*Subscript\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Subscript** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Subscript\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Subscript** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Subscript\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,15 +212,15 @@ properties:
     package: powerpoint!
     fullName: superscript
     summary: |-
-      Specifies whether the text in the `TextRange` is set to use the **Superscript** attribute. The possible values are as follows:
+      Specifies whether the text in the `TextRange` is set to use the \*\*Superscript\*\* attribute. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Superscript** attribute.
+      - `true`<!-- -->: All the text has the \*\*Superscript\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Superscript** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Superscript\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Superscript** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Superscript\*\* attribute.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,7 +233,7 @@ properties:
     fullName: underline
     summary: Specifies the type of underline applied to the font. Returns `null` if the `TextRange` contains text fragments with different underline styles. See [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

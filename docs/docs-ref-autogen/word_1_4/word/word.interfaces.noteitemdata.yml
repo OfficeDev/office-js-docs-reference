@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.NoteItemData
 summary: An interface describing the data returned by calling `noteItem.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -13,34 +13,17 @@ remarks: |-
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [getReviewedText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getreviewedtext-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [getReviewedText](/javascript/api/word/word.paragraph#word-word-paragraph-getreviewedtext-member(1))
   - [Word.Range](/javascript/api/word/word.range): [getReviewedText](/javascript/api/word/word.range#word-word-range-getreviewedtext-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-  // Gets the reviewed text.
-  await Word.run(async (context) => {
-    const range: Word.Range = context.document.getSelection();
-    const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-    const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
-
-    await context.sync();
-
-    console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: current
     uid: word!Word.ChangeTrackingVersion.current:member
     package: word!
-    summary: '* [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    summary: ''
     value: '"Current"'
   - name: original
     uid: word!Word.ChangeTrackingVersion.original:member
     package: word!
-    summary: '* [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    summary: ''
     value: '"Original"'

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [toJSON](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

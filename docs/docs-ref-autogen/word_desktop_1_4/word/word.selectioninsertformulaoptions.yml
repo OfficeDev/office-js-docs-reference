@@ -10,26 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Selection](/javascript/api/word/word.selection): [insertFormula](/javascript/api/word/word.selection#word-word-selection-insertformula-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
-
-  // Inserts a SUM formula with a currency number format at the selection.
-  // The selection must be in a table cell.
-  await Word.run(async (context) => {
-    const options: Word.SelectionInsertFormulaOptions = {
-      formula: "=SUM(ABOVE)",
-      numberFormat: "$#,##0.00",
-    };
-    context.document.selection.insertFormula(options);
-    await context.sync();
-
-    console.log("Inserted =SUM(ABOVE) with currency format.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -49,7 +30,7 @@ properties:
 
       - If you don't specify the `formula` property and all the cells above and to the left of the insertion point are empty, using the `= (Formula)` field causes an error.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +43,7 @@ properties:
     fullName: numberFormat
     summary: If provided, specifies the format for the result of the `= (Formula)` field.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [checkIn](/javascript/api/word/word.document#word-word-document-checkin-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: comment
     summary: If provided, specifies a comment for the check-in operation.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: makePublic
     summary: If provided, specifies whether to make the document public after check-in. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: saveChanges
     summary: If provided, specifies whether to save changes before checking in. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [toJSON](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: getLabelingCapability
     summary: Gets the labeling capability status of the sensitivity label catalog in Word.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

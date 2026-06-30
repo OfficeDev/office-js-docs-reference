@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [delete](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-delete-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: entireColumn
     uid: word!Word.DeleteCells.entireColumn:member
     package: word!
-    summary: |-
-      Delete the entire column of cells from the table.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Delete the entire column of cells from the table.
     value: '"EntireColumn"'
   - name: entireRow
     uid: word!Word.DeleteCells.entireRow:member
     package: word!
-    summary: |-
-      Delete the entire row of cells from the table.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Delete the entire row of cells from the table.
     value: '"EntireRow"'
   - name: shiftLeft
     uid: word!Word.DeleteCells.shiftLeft:member
     package: word!
-    summary: |-
-      Shift remaining cells left in the row where the deletion occurred after a cell or range of cells has been deleted.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Shift remaining cells left in the row where the deletion occurred after a cell or range of cells has been deleted.
     value: '"ShiftLeft"'
   - name: shiftUp
     uid: word!Word.DeleteCells.shiftUp:member
     package: word!
-    summary: |-
-      Shift remaining cells up in the column where the deletion occurred after a cell or range of cells has been deleted.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Shift remaining cells up in the column where the deletion occurred after a cell or range of cells has been deleted.
     value: '"ShiftUp"'

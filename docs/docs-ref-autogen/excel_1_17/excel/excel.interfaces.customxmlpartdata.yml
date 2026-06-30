@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CustomXmlPart](/javascript/api/excel/excel.customxmlpart): [toJSON](/javascript/api/excel/excel.customxmlpart#excel-excel-customxmlpart-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: id
     summary: The custom XML part's ID.
     remarks: '[API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: namespaceUri
     summary: The custom XML part's namespace URI.
     remarks: '[API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

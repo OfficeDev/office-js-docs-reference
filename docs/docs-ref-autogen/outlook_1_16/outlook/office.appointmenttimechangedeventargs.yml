@@ -3,9 +3,11 @@ name: Office.AppointmentTimeChangedEventArgs
 uid: outlook!Office.AppointmentTimeChangedEventArgs:interface
 package: outlook!
 fullName: Office.AppointmentTimeChangedEventArgs
-summary: Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged` event.
+summary: >-
+  Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged`
+  event.
 remarks: '\[Api set: Mailbox 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: end
     summary: Gets the appointment end date and time.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: start
     summary: Gets the appointment start date and time.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +42,11 @@ properties:
     uid: outlook!Office.AppointmentTimeChangedEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of the event. For details, refer to [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

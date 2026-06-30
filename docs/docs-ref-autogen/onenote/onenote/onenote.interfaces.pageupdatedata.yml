@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.Page](/javascript/api/onenote/onenote.page): [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: inkAnalysisOrNull
     summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

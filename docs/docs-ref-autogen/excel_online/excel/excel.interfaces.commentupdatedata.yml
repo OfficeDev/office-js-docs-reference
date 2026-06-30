@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Comment](/javascript/api/excel/excel.comment): [set](/javascript/api/excel/excel.comment#excel-excel-comment-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: content
     summary: The comment's content. The string is plain text.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: resolved
     summary: The comment thread status. A value of `true` means that the comment thread is resolved.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

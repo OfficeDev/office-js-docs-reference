@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onchanged-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onchanged-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: address
     summary: Gets the range address that represents the changed area of a specific worksheet.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,50 +34,8 @@ properties:
     package: excel!
     fullName: changeDirectionState
     summary: Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or inserted. This includes the following two scenarios. 1. The direction (such as down or to the right) that existing cells will shift when a new cell or cells are inserted into a worksheet. 2. The direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted from a worksheet.
-    remarks: |-
-      [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-      async function onChange(event: Excel.WorksheetChangedEventArgs) {
-          // This function is an event handler that returns the address, trigger source, 
-          // and insert or delete shift directions of the change.
-          await Excel.run(async (context) => {
-              // Return the address where change occurred.
-              console.log(`Handler for worksheet onChanged event has been triggered.`);
-              console.log(`    Data changed address: ` + event.address);
-
-              // Return the source of the event that triggered the change.
-              console.log(`    Data change trigger source: ` + event.triggerSource);
-
-              // Note：insertShiftDirection and deleteShiftDirection are exclusive and both enums can't have a value at the same time. 
-              // If one has a value, then the other will return undefined.
-
-              // If the insert shift direction is defined, return it.
-              if (event.changeDirectionState.insertShiftDirection) {
-                  console.log(`    Cells inserted shift direction: ` + event.changeDirectionState.insertShiftDirection);
-              }
-
-              // If the delete shift direction is defined, return it.
-              if (event.changeDirectionState.deleteShiftDirection) {
-                  console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
-              }
-          });
-      }
-
-      ...
-
-      // This function deletes data from a range and sets the delete shift direction to "up".
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("A5:F5");
-          range.delete(Excel.DeleteShiftDirection.up);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +48,7 @@ properties:
     fullName: changeType
     summary: Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,26 +60,8 @@ properties:
     package: excel!
     fullName: details
     summary: Represents the information about the change detail. This property can be retrieved when the changed event is triggered on a single cell. If the changed event is triggered on multiple cells, this property cannot be retrieved.
-    remarks: |-
-      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // This function would be used as an event handler for the Worksheet.onChanged event.
-      async function onWorksheetChanged(eventArgs) {
-          await Excel.run(async (context) => {
-              const details = eventArgs.details;
-              const address = eventArgs.address;
-
-              // Print the before and after types and values to the console.
-              console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
-                  + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
-              await context.sync();
-          });
-      }
-      ```
-
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,7 +74,7 @@ properties:
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,41 +86,8 @@ properties:
     package: excel!
     fullName: triggerSource
     summary: Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
-    remarks: |-
-      [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-      async function onChange(event: Excel.WorksheetChangedEventArgs) {
-          // This function is an event handler that returns the address, trigger source, 
-          // and insert or delete shift directions of the change.
-          await Excel.run(async (context) => {
-              // Return the address where change occurred.
-              console.log(`Handler for worksheet onChanged event has been triggered.`);
-              console.log(`    Data changed address: ` + event.address);
-
-              // Return the source of the event that triggered the change.
-              console.log(`    Data change trigger source: ` + event.triggerSource);
-
-              // Note：insertShiftDirection and deleteShiftDirection are exclusive and both enums can't have a value at the same time. 
-              // If one has a value, then the other will return undefined.
-
-              // If the insert shift direction is defined, return it.
-              if (event.changeDirectionState.insertShiftDirection) {
-                  console.log(`    Cells inserted shift direction: ` + event.changeDirectionState.insertShiftDirection);
-              }
-
-              // If the delete shift direction is defined, return it.
-              if (event.changeDirectionState.deleteShiftDirection) {
-                  console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
-              }
-          });
-      }
-      ```
-
+    remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,7 +100,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +113,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,7 +130,7 @@ methods:
 
       [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,7 +151,7 @@ methods:
 
       [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

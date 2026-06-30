@@ -3,14 +3,22 @@ name: Office.SeriesTime
 uid: outlook!Office.SeriesTime:interface
 package: outlook!
 fullName: Office.SeriesTime
-summary: The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times of meeting requests in a recurring series.
-remarks: |-
+summary: >-
+  The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and
+  get the dates and times of meeting requests in a recurring series.
+remarks: >-
   \[Api set: Mailbox 1.7\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
+
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,13 +28,19 @@ methods:
     package: outlook!
     fullName: getDuration()
     summary: Gets the duration in minutes of a usual instance in a recurring appointment series.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,14 +52,22 @@ methods:
     uid: outlook!Office.SeriesTime#getEndDate:member(1)
     package: outlook!
     fullName: getEndDate()
-    summary: 'Gets the end date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".'
-    remarks: |-
+    summary: >-
+      Gets the end date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,14 +79,23 @@ methods:
     uid: outlook!Office.SeriesTime#getEndTime:member(1)
     package: outlook!
     fullName: getEndTime()
-    summary: 'Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".'
-    remarks: |-
+    summary: >-
+      Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
+      zone that the user or add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,14 +107,22 @@ methods:
     uid: outlook!Office.SeriesTime#getStartDate:member(1)
     package: outlook!
     fullName: getStartDate()
-    summary: 'Gets the start date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".'
-    remarks: |-
+    summary: >-
+      Gets the start date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,14 +134,23 @@ methods:
     uid: outlook!Office.SeriesTime#getStartTime:member(1)
     package: outlook!
     fullName: getStartTime()
-    summary: 'Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".'
-    remarks: |-
+    summary: >-
+      Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
+      user/add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,14 +162,22 @@ methods:
     uid: outlook!Office.SeriesTime#setDuration:member(1)
     package: outlook!
     fullName: setDuration(minutes)
-    summary: Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern.
-    remarks: |-
+    summary: >-
+      Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
+      recurrence pattern.
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,13 +194,19 @@ methods:
     package: outlook!
     fullName: setEndDate(year, month, day)
     summary: Sets the end date of a recurring appointment series.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,7 +216,9 @@ methods:
           description: The year value of the end date.
           type: number
         - id: month
-          description: The month value of the end date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the 12th month.
+          description: >-
+            The month value of the end date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the
+            12th month.
           type: number
         - id: day
           description: The day value of the end date.
@@ -167,20 +231,28 @@ methods:
     package: outlook!
     fullName: setEndDate(date)
     summary: Sets the end date of a recurring appointment series.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setEndDate(date: string): void;'
       parameters:
         - id: date
-          description: 'End date of the recurring appointment series represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".'
+          description: >-
+            End date of the recurring appointment series represented in the [ISO
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type: string
       return:
         type: void
@@ -190,13 +262,19 @@ methods:
     package: outlook!
     fullName: setStartDate(year, month, day)
     summary: Sets the start date of a recurring appointment series.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +284,9 @@ methods:
           description: The year value of the start date.
           type: number
         - id: month
-          description: The month value of the start date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the 12th month.
+          description: >-
+            The month value of the start date. Valid range is 0-11 where 0 represents the 1st month and 11 represents
+            the 12th month.
           type: number
         - id: day
           description: The day value of the start date.
@@ -219,20 +299,28 @@ methods:
     package: outlook!
     fullName: setStartDate(date)
     summary: Sets the start date of a recurring appointment series.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setStartDate(date:string): void;'
       parameters:
         - id: date
-          description: 'Start date of the recurring appointment series represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".'
+          description: >-
+            Start date of the recurring appointment series represented in the [ISO
+            8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type: string
       return:
         type: void
@@ -241,14 +329,22 @@ methods:
     uid: outlook!Office.SeriesTime#setStartTime:member(1)
     package: outlook!
     fullName: setStartTime(hours, minutes)
-    summary: Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set (the item's time zone is used by default).
-    remarks: |-
+    summary: >-
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,14 +363,22 @@ methods:
     uid: outlook!Office.SeriesTime#setStartTime:member(2)
     package: outlook!
     fullName: setStartTime(time)
-    summary: Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set (the item's time zone is used by default).
-    remarks: |-
+    summary: >-
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
+    remarks: >-
       \[Api set: Mailbox 1.7\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

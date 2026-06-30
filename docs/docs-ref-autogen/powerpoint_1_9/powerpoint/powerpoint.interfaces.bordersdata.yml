@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Borders](/javascript/api/powerpoint/powerpoint.borders): [toJSON](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

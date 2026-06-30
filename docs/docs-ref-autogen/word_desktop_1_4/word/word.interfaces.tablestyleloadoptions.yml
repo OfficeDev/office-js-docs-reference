@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.TableStyle](/javascript/api/word/word.tablestyle): [load](/javascript/api/word/word.tablestyle#word-word-tablestyle-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: alignment
     summary: Specifies the table's alignment against the page margin.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: allowBreakAcrossPage
     summary: Specifies whether lines in tables formatted with a style break across pages.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: bottomCellMargin
     summary: Specifies the amount of space to add between the contents and the bottom borders of the cells.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: cellSpacing
     summary: Specifies the spacing (in points) between the cells in a table style.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: columnStripe
     summary: Specifies the number of columns in the banding when a style specifies odd- or even-column banding.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: isBreakAcrossPagesAllowed
     summary: Specifies whether Microsoft Word allows to break the specified table across pages.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: leftCellMargin
     summary: Specifies the amount of space to add between the contents and the left borders of the cells.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: leftIndent
     summary: Specifies the left indent value (in points) for the rows in the table style.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     fullName: rightCellMargin
     summary: Specifies the amount of space to add between the contents and the right borders of the cells.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,7 +151,7 @@ properties:
     fullName: rowStripe
     summary: Specifies the number of rows to include in the banding when the style specifies odd- or even-row banding.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +164,7 @@ properties:
     fullName: shading
     summary: Returns a `ShadingUniversal` object that refers to the shading formatting for the table style.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +177,7 @@ properties:
     fullName: tableDirection
     summary: Specifies the direction in which Microsoft Word orders cells in the table style.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,7 +190,7 @@ properties:
     fullName: topCellMargin
     summary: Specifies the amount of space to add between the contents and the top borders of the cells.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

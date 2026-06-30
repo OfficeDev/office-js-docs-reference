@@ -3,25 +3,21 @@ name: Word.RevisionsView
 uid: word!Word.RevisionsView:enum
 package: word!
 fullName: Word.RevisionsView
-summary: Specifies whether Word displays the original version of a document or a version with revisions and formatting changes applied.
+summary: >-
+  Specifies whether Word displays the original version of a document or a version with revisions and formatting changes
+  applied.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: final
     uid: word!Word.RevisionsView.final:member
     package: word!
-    summary: |-
-      Final view.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Final view.
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
     package: word!
-    summary: |-
-      Original view.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Original view.
     value: '"Original"'

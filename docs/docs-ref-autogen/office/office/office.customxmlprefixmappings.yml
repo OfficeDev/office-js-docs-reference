@@ -5,12 +5,12 @@ package: office!
 fullName: Office.CustomXmlPrefixMappings
 summary: Represents a collection of CustomXmlPart objects.
 remarks: |-
-  **Applications**: Word
+  \*\*Applications\*\*: Word
 
   #### Used by
 
   - [Office.CustomXmlPart](/javascript/api/office/office.customxmlpart): [namespaceManager](/javascript/api/office/office.customxmlpart#office-office-customxmlpart-namespacemanager-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,10 +21,10 @@ methods:
     fullName: addNamespaceAsync(prefix, ns, options, callback)
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If no namespace is assigned to the requested prefix, the method returns an empty string ("").
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +51,10 @@ methods:
     fullName: addNamespaceAsync(prefix, ns, callback)
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If no namespace is assigned to the requested prefix, the method returns an empty string ("").
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,10 +78,10 @@ methods:
     fullName: getNamespaceAsync(prefix, options, callback)
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one added or used by the data store internally, in which case it will return an error.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,10 +105,10 @@ methods:
     fullName: getNamespaceAsync(prefix, callback)
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one added or used by the data store internally, in which case it will return an error.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,10 +129,10 @@ methods:
     fullName: getPrefixAsync(ns, options, callback)
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the supplied namespace.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,10 +156,10 @@ methods:
     fullName: getPrefixAsync(ns, callback)
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the supplied namespace.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

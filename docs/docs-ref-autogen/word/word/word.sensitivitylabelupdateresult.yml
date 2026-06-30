@@ -10,95 +10,62 @@ remarks: |-
   #### Used by
 
   - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [tryToUpdate](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: crossTenant
     uid: word!Word.SensitivityLabelUpdateResult.crossTenant:member
     package: word!
-    summary: |-
-      The label update failed because the document doesn't belong to the same tenant as the user.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed because the document doesn't belong to the same tenant as the user.
     value: '"CrossTenant"'
   - name: documentReadOnly
     uid: word!Word.SensitivityLabelUpdateResult.documentReadOnly:member
     package: word!
-    summary: |-
-      The document is read-only and cannot be modified.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The document is read-only and cannot be modified.
     value: '"DocumentReadOnly"'
   - name: insufficientPermission
     uid: word!Word.SensitivityLabelUpdateResult.insufficientPermission:member
     package: word!
-    summary: |-
-      The user does not have sufficient permissions to update the label.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The user does not have sufficient permissions to update the label.
     value: '"InsufficientPermission"'
   - name: labelingDisabled
     uid: word!Word.SensitivityLabelUpdateResult.labelingDisabled:member
     package: word!
-    summary: |-
-      The label update failed because native labeling is not enabled for the user or installed SKU.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed because native labeling is not enabled for the user or installed SKU.
     value: '"LabelingDisabled"'
   - name: labelNotFound
     uid: word!Word.SensitivityLabelUpdateResult.labelNotFound:member
     package: word!
-    summary: |-
-      The specified sensitivity label could not be found.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The specified sensitivity label could not be found.
     value: '"LabelNotFound"'
   - name: parentLabelNotSupported
     uid: word!Word.SensitivityLabelUpdateResult.parentLabelNotSupported:member
     package: word!
-    summary: |-
-      The label update failed because the specified label is a parent label, which cannot be applied.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed because the specified label is a parent label, which cannot be applied.
     value: '"ParentLabelNotSupported"'
   - name: success
     uid: word!Word.SensitivityLabelUpdateResult.success:member
     package: word!
-    summary: |-
-      The sensitivity label was successfully updated.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The sensitivity label was successfully updated.
     value: '"Success"'
   - name: unspecifiedFailure
     uid: word!Word.SensitivityLabelUpdateResult.unspecifiedFailure:member
     package: word!
-    summary: |-
-      The update failed due to an unspecified error.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The update failed due to an unspecified error.
     value: '"UnspecifiedFailure"'
   - name: unsupportedDoubleKeyEncryption
     uid: word!Word.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
     package: word!
-    summary: |-
-      The label update failed due to unsupported Double Key Encryption (DKE).
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed due to unsupported Double Key Encryption (DKE).
     value: '"UnsupportedDoubleKeyEncryption"'
   - name: unsupportedUdp
     uid: word!Word.SensitivityLabelUpdateResult.unsupportedUdp:member
     package: word!
-    summary: |-
-      The label update failed due to unsupported Universal Data Protection (UDP).
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed due to unsupported Universal Data Protection (UDP).
     value: '"UnsupportedUdp"'
   - name: userNotFound
     uid: word!Word.SensitivityLabelUpdateResult.userNotFound:member
     package: word!
-    summary: |-
-      The label update failed because the user's identity is not valid for applying a label.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label update failed because the user's identity is not valid for applying a label.
     value: '"UserNotFound"'

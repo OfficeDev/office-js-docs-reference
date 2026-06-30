@@ -11,7 +11,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [selectNodes](/javascript/api/word/word.document#word-word-document-selectnodes-member(1))
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [selectNodes](/javascript/api/word/word.xmlnode#word-word-xmlnode-selectnodes-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: fastSearchSkippingTextNodes
     summary: If provided, specifies whether to skip text nodes in the search. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: prefixMapping
     summary: If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

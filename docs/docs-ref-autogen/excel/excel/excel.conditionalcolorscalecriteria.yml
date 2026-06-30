@@ -10,28 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [criteria](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-criteria-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-      const range = sheet.getRange("B2:M5");
-      const conditionalFormat = range.conditionalFormats
-          .add(Excel.ConditionalFormatType.colorScale);
-      const criteria = {
-          minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
-          midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
-          maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
-      };
-      conditionalFormat.colorScale.criteria = criteria;
-
-      await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,7 +21,7 @@ properties:
     fullName: maximum
     summary: The maximum point of the color scale criterion.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +34,7 @@ properties:
     fullName: midpoint
     summary: The midpoint of the color scale criterion, if the color scale is a 3-color scale.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +47,7 @@ properties:
     fullName: minimum
     summary: The minimum point of the color scale criterion.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

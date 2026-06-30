@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
 summary: An interface for updating data on the `LinkedWorkbookCollection` object, for use in `linkedWorkbookCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: workbookLinksRefreshMode
     summary: Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the workbook.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

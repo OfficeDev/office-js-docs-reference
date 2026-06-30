@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentPrintOutOptions](/javascript/api/word/word.documentprintoutoptions): [pageType](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-pagetype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
     uid: word!Word.PrintOutPages.all:member
     package: word!
-    summary: |-
-      Represents printing all pages.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing all pages.
     value: '"All"'
   - name: evenOnly
     uid: word!Word.PrintOutPages.evenOnly:member
     package: word!
-    summary: |-
-      Represents printing only even-numbered pages.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing only even-numbered pages.
     value: '"EvenOnly"'
   - name: oddOnly
     uid: word!Word.PrintOutPages.oddOnly:member
     package: word!
-    summary: |-
-      Represents printing only odd-numbered pages.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing only odd-numbered pages.
     value: '"OddOnly"'

@@ -10,29 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
-
-  await Word.run(async (context) => {
-    // Inserts a canvas in the document.
-    const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
-    canvasShape.load();
-    await context.sync();
-
-    canvasShape.select();
-    console.log("Inserted canvas:", canvasShape);
-
-    const canvas: Word.Canvas = canvasShape.canvas;
-    canvas.load("shape,shapes");
-    await context.sync();
-
-    console.log("Canvas object:", canvas);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +34,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the canvas identifier.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +47,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,34 +59,8 @@ properties:
     package: word!
     fullName: shapes
     summary: Gets the collection of [Word.Shape](xref:word!Word.Shape:class) objects. Currently, only text boxes, pictures, and geometric shapes are supported.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
-
-      await Word.run(async (context) => {
-        // Gets the first canvas found in the document body.
-        const canvasShape: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.canvas])
-          .getFirstOrNullObject();
-        canvasShape.load();
-        canvasShape.load("canvas/shapes");
-        await context.sync();
-
-        if (canvasShape.isNullObject) {
-          console.log("No canvases found in the document body.");
-          return;
-        }
-
-        console.log("First canvas found in the document body:", canvasShape);
-        console.log("Shapes associated with the first canvas:", canvasShape.canvas.shapes);
-        canvasShape.select();
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +74,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,7 +92,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +110,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +136,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +147,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.CanvasUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -205,7 +157,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,7 +175,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Canvas` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CanvasData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +189,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,7 +203,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,4 +211,4 @@ methods:
       return:
         type: <xref uid="word!Word.Canvas:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

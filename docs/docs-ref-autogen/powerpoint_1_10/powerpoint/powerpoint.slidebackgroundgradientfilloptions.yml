@@ -10,24 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [setGradientFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setgradientfill-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
-  // Sets the background of the first selected slide to a linear gradient fill.
-  await PowerPoint.run(async (context) => {
-    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-    slide.background.fill.setGradientFill({
-      type: PowerPoint.SlideBackgroundGradientFillType.linear,
-    } as PowerPoint.SlideBackgroundGradientFillOptions);
-    await context.sync();
-
-    console.log("Background set to linear gradient fill.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -38,7 +21,7 @@ properties:
     fullName: type
     summary: If provided, specifies the type of gradient fill.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

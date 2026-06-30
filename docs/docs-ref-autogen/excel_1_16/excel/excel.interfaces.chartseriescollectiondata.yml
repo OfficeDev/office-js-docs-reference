@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [toJSON](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

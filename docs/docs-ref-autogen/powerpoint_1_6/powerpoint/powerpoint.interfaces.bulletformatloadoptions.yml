@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat): [load](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: visible
     summary: Specifies if the bullets in the paragraph are visible. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet visibility values.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

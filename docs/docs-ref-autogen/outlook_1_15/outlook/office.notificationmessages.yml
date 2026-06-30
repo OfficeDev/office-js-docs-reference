@@ -7,11 +7,11 @@ summary: The `NotificationMessages` object is returned as the `notificationMessa
 remarks: |-
   [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-  **Important**: To learn about the different types of notification messages you can implement, see [Create notifications for your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!-- -->.
+  \*\*Important\*\*: To learn about the different types of notification messages you can implement, see [Create notifications for your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!-- -->.
 
   #### Used by
 
@@ -21,7 +21,7 @@ remarks: |-
   - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [notificationMessages](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-notificationmessages-member)
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -34,11 +34,11 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - In Outlook on the web, on Windows (new and classic), and on Mac, you can set a maximum of five notifications per message. Setting more returns a `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on iOS, you can only set one notification per message. Setting an additional notification replaces the previous one.
 
@@ -51,87 +51,11 @@ methods:
       - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in Outlook on Android and on iOS all use the same style. The notification message is always prefixed with an informational icon.
 
       - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
-      // Adds a progress indicator to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
-          message: "Progress indicator with id = " + id
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added progress notification with id = ${id}.`);
-      });
-
-      ...
-
-      // Adds an informational notification to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Non-persistent informational notification message with id = " + id,
-          icon: "PG.Icon.16",
-          persistent: false
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added informational notification with id = ${id}.`);
-      });
-
-      ...
-
-      // Adds a persistent information notification to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Persistent informational notification message with id = " + id,
-          icon: "PG.Icon.16",
-          persistent: true
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added persistent informational notification with id = ${id}.`);
-      });
-
-      ...
-
-      // Adds an error notification to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
-          message: "Error notification message with id = " + id
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add error notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added error notification with id = ${id}.`);
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -156,11 +80,11 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - In Outlook on the web, on Windows (new and classic), and on Mac, you can set a maximum of five notifications per message. Setting more returns a `NumberOfNotificationMessagesExceeded` error. In Outlook on Android and on iOS, you can only set one notification per message. Setting an additional notification replaces the previous one.
 
@@ -173,11 +97,11 @@ methods:
       - In compose mode, while the style of each notification type varies on other Outlook clients, notifications in Outlook on Android and on iOS all use the same style. The notification message is always prefixed with an informational icon.
 
       - The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -199,29 +123,14 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
-      // Gets all the notification messages and their keys for the current mail item.
-      Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(asyncResult.error.message);
-          return;
-        }
-        console.log(JSON.stringify(asyncResult.value));
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;'
+      content: 'getAllAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void): void;'
       parameters:
         - id: options
           description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
@@ -240,14 +149,14 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllAsync(callback?: (asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;'
+      content: 'getAllAsync(callback?: (asyncResult: CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void): void;'
       parameters:
         - id: callback
           description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of `NotificationMessageDetails` objects.
@@ -263,32 +172,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
-      // Removes a notification message from the current mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
-          return;
-        }
-        console.log(`Removed notification with id = ${id}.`);
-      });
-      ```
-
+      \*\*Important\*\*: The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(key: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAsync(key: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: The key for the notification message to remove.
@@ -310,16 +203,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
+      \*\*Important\*\*: The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(key: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAsync(key: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: The key for the notification message to remove.
@@ -341,40 +234,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `replaceAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
-      // Replaces a notification message of a given key with another message.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      Office.context.mailbox.item.notificationMessages.replaceAsync(
-        id,
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Notification message with id = " + id + " has been replaced with an informational message.",
-          icon: "icon2",
-          persistent: false
-        },
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
-            return;
-          }
-          console.log(`Replaced notification with id = ${id}.`);
-        });
-      ```
-
+      \*\*Important\*\*: The `replaceAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: The key for the notification message to replace. It can't be longer than 32 characters.
@@ -402,16 +271,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `replaceAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
+      \*\*Important\*\*: The `replaceAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: key
           description: The key for the notification message to replace. It can't be longer than 32 characters.

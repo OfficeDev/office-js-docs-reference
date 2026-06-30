@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ConditionalFormatRule](/javascript/api/excel/excel.conditionalformatrule): [load](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: formula
     summary: The formula, if required, on which to evaluate the conditional format rule.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: formulaLocal
     summary: The formula, if required, on which to evaluate the conditional format rule in the user's language.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: formulaR1C1
     summary: The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

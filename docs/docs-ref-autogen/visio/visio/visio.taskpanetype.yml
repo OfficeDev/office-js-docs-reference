@@ -11,31 +11,22 @@ remarks: |-
 
   - [Visio.Document](/javascript/api/visio/visio.document): [showTaskPane](/javascript/api/visio/visio.document#visio-visio-document-showtaskpane-member(1))
   - [Visio.TaskPaneStateChangedEventArgs](/javascript/api/visio/visio.taskpanestatechangedeventargs): [paneType](/javascript/api/visio/visio.taskpanestatechangedeventargs#visio-visio-taskpanestatechangedeventargs-panetype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: dataVisualizerOrgChartMappings
     uid: visio!Visio.TaskPaneType.dataVisualizerOrgChartMappings:member
     package: visio!
-    summary: |-
-      Data Visualizer Organization Mapping pane.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: Data Visualizer Organization Mapping pane.
     value: '"DataVisualizerOrgChartMappings"'
   - name: dataVisualizerProcessMappings
     uid: visio!Visio.TaskPaneType.dataVisualizerProcessMappings:member
     package: visio!
-    summary: |-
-      Data Visualizer Process Mapping pane.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: Data Visualizer Process Mapping pane.
     value: '"DataVisualizerProcessMappings"'
   - name: none
     uid: visio!Visio.TaskPaneType.none:member
     package: visio!
-    summary: |-
-      No task pane.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: No task pane.
     value: '"None"'

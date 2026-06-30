@@ -10,29 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
-
-  // Registers the onAdded event handler on the document.
-  await Word.run(async (context) => {
-    eventContext = context.document.onContentControlAdded.add(contentControlAdded);
-    await context.sync();
-
-    console.log("Added event handler for when content controls are added.");
-  });
-
-  ...
-
-  async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
-    await Word.run(async (context) => {
-      console.log(`${event.eventType} event detected. IDs of content controls that were added:`, event.ids);
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,7 +21,7 @@ properties:
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +34,7 @@ properties:
     fullName: ids
     summary: Gets the content control IDs.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +47,7 @@ properties:
     fullName: source
     summary: Specifies the source of the event. It can be local or remote (through coauthoring).
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

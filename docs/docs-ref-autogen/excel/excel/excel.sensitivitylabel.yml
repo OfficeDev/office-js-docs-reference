@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [sensitivityLabel](/javascript/api/excel/excel.workbook#excel-excel-workbook-sensitivitylabel-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,9 +33,9 @@ methods:
     uid: excel!Excel.SensitivityLabel#getCurrentOrNullObject:member(1)
     package: excel!
     fullName: getCurrentOrNullObject()
-    summary: Gets the current label information that exists on the workbook for the user. If there's no sensitivity label on the current workbook, an object with an `isNullObject` property set to `true` is returned. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets the current label information that exists on the workbook for the user. If there's no sensitivity label on the current workbook, an object with an `isNullObject` property set to `true` is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,7 +49,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.SensitivityLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -69,7 +69,7 @@ methods:
     fullName: tryToUpdate(labelId)
     summary: Tries to update to the provided sensitivity label on the workbook for the user.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

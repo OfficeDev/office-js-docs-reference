@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.DataPivotHierarchyData
 summary: An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -3,9 +3,11 @@ name: Word.CoauthoringLockAddOptions
 uid: word!Word.CoauthoringLockAddOptions:interface
 package: word!
 fullName: Word.CoauthoringLockAddOptions
-summary: Specifies the options for adding to a [Word.CoauthoringLockCollection](xref:word!Word.CoauthoringLockCollection:class) object.
+summary: >-
+  Specifies the options for adding to a [Word.CoauthoringLockCollection](xref:word!Word.CoauthoringLockCollection:class)
+  object.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.CoauthoringLockAddOptions#range:member
     package: word!
     fullName: range
-    summary: If provided, specifies the range to which the lock is added. If not provided, the new lock is placed on the paragraph that contains the insertion point.
+    summary: >-
+      If provided, specifies the range to which the lock is added. If not provided, the new lock is placed on the
+      paragraph that contains the insertion point.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: type
     summary: If provided, specifies the type of lock. If not provided, the lock type is set to `reservation`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

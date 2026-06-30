@@ -4,28 +4,8 @@ uid: office!Office.NodeReplacedEventArgs:interface
 package: office!
 fullName: Office.NodeReplacedEventArgs
 summary: Provides information about the replaced node that raised the nodeReplaced event.
-remarks: |-
-  #### Examples
-
-  ```TypeScript
-  // Event handler for the NodeReplaced event added in CustomXmlPart.addHandlerAsync.
-  function onNodeReplaced(eventArgs: Office.NodeReplacedEventArgs) {
-      // Logs information about the replaced and new nodes.
-      console.log("NodeReplaced event fired.");
-      console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
-      eventArgs.oldNode.getXmlAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("  Old node XML: " + result.value);
-          }
-      });
-      eventArgs.newNode.getXmlAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("  New node XML: " + result.value);
-          }
-      });
-  }
-  ```
-
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -36,7 +16,7 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the replaced node was inserted as part of an undo or redo operation by the user.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +32,7 @@ properties:
 
       Note that this node may have children, if a subtree was just added to the document.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +43,15 @@ properties:
     uid: office!Office.NodeReplacedEventArgs#oldNode:member
     package: office!
     fullName: oldNode
-    summary: |-
+    summary: >-
       Gets the node which was just deleted (replaced) from the CustomXmlPart object.
 
-      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
-    remarks: ''
 
+      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
+      "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
+      to exist alone.
+    remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

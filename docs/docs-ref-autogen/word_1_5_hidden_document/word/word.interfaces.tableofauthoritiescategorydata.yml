@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCategoryData
 summary: An interface describing the data returned by calling `tableOfAuthoritiesCategory.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

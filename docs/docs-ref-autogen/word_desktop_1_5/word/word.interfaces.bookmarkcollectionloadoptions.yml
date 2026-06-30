@@ -3,9 +3,11 @@ name: Word.Interfaces.BookmarkCollectionLoadOptions
 uid: word!Word.Interfaces.BookmarkCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BookmarkCollectionLoadOptions
-summary: A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that represent the bookmarks in the specified selection, range, or document.
+summary: >-
+  A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that represent the bookmarks in the specified
+  selection, range, or document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: end
     summary: 'For EACH ITEM in the collection: Specifies the ending character position of the bookmark.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: isColumn
     summary: 'For EACH ITEM in the collection: Returns `true` if the bookmark is a table column.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Returns `true` if the bookmark is empty.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +72,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Returns the name of the `Bookmark` object.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +83,11 @@ properties:
     uid: word!Word.Interfaces.BookmarkCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: 'For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that''s contained in the `Bookmark` object.'
+    summary: >-
+      For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that's
+      contained in the `Bookmark` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +100,7 @@ properties:
     fullName: start
     summary: 'For EACH ITEM in the collection: Specifies the starting character position of the bookmark.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +113,7 @@ properties:
     fullName: storyType
     summary: 'For EACH ITEM in the collection: Returns the story type for the bookmark.'
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BorderUniversalData
 summary: An interface describing the data returned by calling `borderUniversal.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

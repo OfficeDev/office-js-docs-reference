@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [markAllCitations](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1)), [markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: category
     summary: If provided, specifies the category number to be associated with the entry. Values 1 through 16 correspond to the items listed in the Category dropdown list of the Mark Citation dialog. The value `1` corresponds to the first category listed, `2` corresponds to the second category, and so on. To learn how to access this through the Word UI, see [Create a table of authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: longCitation
     summary: If provided, specifies the long citation for the entry as it will appear in a table of authorities.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: longCitationAutoText
     summary: If provided, specifies the name of the AutoText entry that contains the text of the long citation as it will appear in a table of authorities.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

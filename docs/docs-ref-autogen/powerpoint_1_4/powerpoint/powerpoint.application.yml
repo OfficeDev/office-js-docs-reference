@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.RequestContext](/javascript/api/powerpoint/powerpoint.requestcontext): [application](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-application-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `PowerPoint.Application` object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,7 +43,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+          type: <xref uid="powerpoint!~OfficeExtension.ClientRequestContext:class" />
       return:
         type: <xref uid="powerpoint!PowerPoint.Application:class" />
         description: ''
@@ -53,7 +53,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,4 +67,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

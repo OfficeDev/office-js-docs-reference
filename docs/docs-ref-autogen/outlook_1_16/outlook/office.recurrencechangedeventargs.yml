@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.RecurrenceChangedEventArgs
 summary: Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
 remarks: '\[Api set: Mailbox 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: recurrence
     summary: Gets the updated recurrence object.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +27,11 @@ properties:
     uid: outlook!Office.RecurrenceChangedEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of the event. For details, refer to [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

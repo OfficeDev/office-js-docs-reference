@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [toJSON](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: name
     summary: The name of the object.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: type
     summary: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
     remarks: '[API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: value
     summary: Represents the value computed by the name's formula. For a named range, it will return the range address. This API returns the \#VALUE! error in the Excel UI if it refers to a user-defined function.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.LinkedEntityDataDomainUpdateData
 summary: An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

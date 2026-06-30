@@ -23,7 +23,7 @@ remarks: |-
   - [PowerPoint.TableColumnCollection](/javascript/api/powerpoint/powerpoint.tablecolumncollection): [load](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-load-member(1))
   - [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection): [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
   - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -34,7 +34,7 @@ properties:
     fullName: $skip
     summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: $top
     summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

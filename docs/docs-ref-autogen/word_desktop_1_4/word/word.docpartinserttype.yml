@@ -12,31 +12,22 @@ remarks: |-
   - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [insertType](/javascript/api/word/word.buildingblock#word-word-buildingblock-inserttype-member)
   - [Word.BuildingBlockCollection](/javascript/api/word/word.buildingblockcollection): [add](/javascript/api/word/word.buildingblockcollection#word-word-buildingblockcollection-add-member(1))
   - [Word.BuildingBlockEntryCollection](/javascript/api/word/word.buildingblockentrycollection): [add](/javascript/api/word/word.buildingblockentrycollection#word-word-buildingblockentrycollection-add-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: content
     uid: word!Word.DocPartInsertType.content:member
     package: word!
-    summary: |-
-      Inserts the content of the building block.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inserts the content of the building block.
     value: '"Content"'
   - name: page
     uid: word!Word.DocPartInsertType.page:member
     package: word!
-    summary: |-
-      Inserts the building block as a page.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inserts the building block as a page.
     value: '"Page"'
   - name: paragraph
     uid: word!Word.DocPartInsertType.paragraph:member
     package: word!
-    summary: |-
-      Inserts the building block as a paragraph.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inserts the building block as a paragraph.
     value: '"Paragraph"'

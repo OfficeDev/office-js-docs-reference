@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Selection](/javascript/api/word/word.selection): [collapse](/javascript/api/word/word.selection#word-word-selection-collapse-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: end
     uid: word!Word.CollapseDirection.end:member
     package: word!
-    summary: |-
-      Collapses the selection to the end position.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Collapses the selection to the end position.
     value: '"End"'
   - name: start
     uid: word!Word.CollapseDirection.start:member
     package: word!
-    summary: |-
-      Collapses the selection to the start position.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Collapses the selection to the start position.
     value: '"Start"'

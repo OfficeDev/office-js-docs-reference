@@ -4,13 +4,19 @@ uid: outlook!Office.SelectedItemDetails:interface
 package: outlook!
 fullName: Office.SelectedItemDetails
 summary: Represents the properties of a message that's currently selected in Outlook.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.13\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read/write mailbox\*\*
 
+
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Message Compose, Message Read
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,13 +26,19 @@ properties:
     package: outlook!
     fullName: conversationId
     summary: The identifier of the message conversation that contains the message that's currently selected.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.14\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,13 +50,19 @@ properties:
     package: outlook!
     fullName: hasAttachment
     summary: Returns `true` if the message that's currently selected contains an attachment.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.14\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,13 +74,19 @@ properties:
     package: outlook!
     fullName: internetMessageId
     summary: The internet message identifier of the message that's currently selected.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.14\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,13 +98,19 @@ properties:
     package: outlook!
     fullName: itemId
     summary: The Exchange Web Services (EWS) item identifier of the message that's currently selected.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.13\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,13 +122,19 @@ properties:
     package: outlook!
     fullName: itemMode
     summary: The Outlook mode (`Read` or `Compose`<!-- -->) of the message that's currently selected.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.13\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,13 +146,19 @@ properties:
     package: outlook!
     fullName: itemType
     summary: The type of the item that's currently selected. `Message` is the only supported type at this time.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.13\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,13 +170,19 @@ properties:
     package: outlook!
     fullName: subject
     summary: The description that appears in the subject field of the message that's currently selected.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.13\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose, Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write mailbox\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose, Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

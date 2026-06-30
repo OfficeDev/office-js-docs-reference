@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CellValuePropertyMetadata](/javascript/api/excel/excel.cellvaluepropertymetadata): [excludeFrom](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-excludefrom-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: autoComplete
     summary: True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: calcCompare
     summary: True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: cardView
     summary: True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: dotNotation
     summary: True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

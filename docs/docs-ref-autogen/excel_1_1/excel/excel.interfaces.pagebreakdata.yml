@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PageBreakData
 summary: An interface describing the data returned by calling `pageBreak.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

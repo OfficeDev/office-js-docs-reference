@@ -3,9 +3,11 @@ name: Word.Interfaces.CommentReplyCollectionLoadOptions
 uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CommentReplyCollectionLoadOptions
-summary: Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment replies in one comment thread.
+summary: >-
+  Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment
+  replies in one comment thread.
 remarks: '\[Api set: WordApi 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment reply''s author.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment reply''s author.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: content
     summary: 'For EACH ITEM in the collection: Specifies the comment reply''s content. The string is plain text.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +72,7 @@ properties:
     fullName: contentRange
     summary: 'For EACH ITEM in the collection: Specifies the commentReply''s content range.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +85,7 @@ properties:
     fullName: creationDate
     summary: 'For EACH ITEM in the collection: Gets the creation date of the comment reply.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +98,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the comment reply.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +111,7 @@ properties:
     fullName: parentComment
     summary: 'For EACH ITEM in the collection: Gets the parent comment of this reply.'
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

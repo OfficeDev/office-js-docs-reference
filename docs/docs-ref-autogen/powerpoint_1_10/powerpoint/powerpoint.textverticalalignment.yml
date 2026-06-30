@@ -12,83 +12,37 @@ remarks: |-
   - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-verticalalignment-member)
   - [PowerPoint.TableCellProperties](/javascript/api/powerpoint/powerpoint.tablecellproperties): [verticalAlignment](/javascript/api/powerpoint/powerpoint.tablecellproperties#powerpoint-powerpoint-tablecellproperties-verticalalignment-member)
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-verticalalignment-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-  // This function gets the collection of shapes on the first slide,
-  // and adds a brace pair, {}, to the collection, while specifying its
-  // location and size. Then it names the shape, sets its text and font
-  // color, and centers it inside the braces.
-  await PowerPoint.run(async (context) => {
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
-      left: 100,
-      top: 400,
-      height: 50,
-      width: 150,
-    });
-    braces.name = "Braces";
-    braces.textFrame.textRange.text = "Shape text";
-    braces.textFrame.textRange.font.color = "purple";
-    braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
-    braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
-    braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
-
-    return context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottom
     uid: powerpoint!PowerPoint.TextVerticalAlignment.bottom:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be bottom aligned to the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be bottom aligned to the `Shape`<!-- -->.
     value: '"Bottom"'
   - name: bottomCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.bottomCentered:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
     value: '"BottomCentered"'
   - name: middle
     uid: powerpoint!PowerPoint.TextVerticalAlignment.middle:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be center aligned to the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be center aligned to the `Shape`<!-- -->.
     value: '"Middle"'
   - name: middleCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.middleCentered:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be center aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be center aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
     value: '"MiddleCentered"'
   - name: top
     uid: powerpoint!PowerPoint.TextVerticalAlignment.top:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be top aligned to the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be top aligned to the `Shape`<!-- -->.
     value: '"Top"'
   - name: topCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.topCentered:member
     package: powerpoint!
-    summary: |-
-      Specifies that the `TextFrame` should be top aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
-
-      * [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the `TextFrame` should be top aligned vertically to the `Shape`<!-- -->. Contents of the `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
     value: '"TopCentered"'

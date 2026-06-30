@@ -10,35 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Application](/javascript/api/word/word.application): [createDocument](/javascript/api/word/word.application#word-word-application-createdocument-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-  // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
-  await Word.run(async (context) => {
-    // Use the Base64-encoded string representation of the selected .docx file.
-    const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
-    await context.sync();
-
-    if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
-      console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
-      return;
-    }
-
-    const externalDocBody: Word.Body = externalDoc.body;
-    externalDocBody.load("text");
-    await context.sync();
-
-    // Insert the external document's text at the beginning of the current document's body.
-    const externalDocBodyText = externalDocBody.text;
-    const currentDocBody: Word.Body = context.document.body;
-    currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -49,7 +21,7 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +34,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +47,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +60,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the document.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +73,7 @@ properties:
     fullName: saved
     summary: Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +86,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +100,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +118,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +136,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,22 +161,8 @@ methods:
     package: word!
     fullName: open()
     summary: Opens the document.
-    remarks: |-
-      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Create and open a new document in a new tab or window.
-      await Word.run(async (context) => {
-          const externalDoc = context.application.createDocument();
-          await context.sync();
-
-          externalDoc.open();
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +179,7 @@ methods:
       [API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,7 +203,7 @@ methods:
       [API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,7 +224,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +235,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.DocumentCreatedUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -287,7 +245,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,7 +263,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.DocumentCreated` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -319,7 +277,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -333,7 +291,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,4 +299,4 @@ methods:
       return:
         type: <xref uid="word!Word.DocumentCreated:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

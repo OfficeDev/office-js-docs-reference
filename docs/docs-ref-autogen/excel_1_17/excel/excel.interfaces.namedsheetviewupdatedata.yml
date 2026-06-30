@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NamedSheetViewUpdateData
 summary: An interface for updating data on the `NamedSheetView` object, for use in `namedSheetView.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

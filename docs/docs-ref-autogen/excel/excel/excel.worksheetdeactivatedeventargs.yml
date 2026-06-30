@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onDeactivated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-ondeactivated-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onDeactivated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-ondeactivated-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet that is deactivated.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

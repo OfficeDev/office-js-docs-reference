@@ -10,48 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [setState](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-setstate-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
-
-  // Sets the state of the first content control.
-  await Word.run(async (context) => {
-    const state = ((document.getElementById("state-to-set") as HTMLSelectElement)
-      .value as unknown) as Word.ContentControlState;
-    let firstContentControl = context.document.contentControls.getFirstOrNullObject();
-    await context.sync();
-
-    if (firstContentControl.isNullObject) {
-      console.warn("There are no content controls in this document.");
-      return;
-    }
-
-    firstContentControl.setState(state);
-    firstContentControl.load("id");
-    await context.sync();
-
-    console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
-  });
-  ```
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: error
     uid: word!Word.ContentControlState.error:member
     package: word!
-    summary: |-
-      Error state.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Error state.
     value: '"Error"'
   - name: warning
     uid: word!Word.ContentControlState.warning:member
     package: word!
-    summary: |-
-      Warning state.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Warning state.
     value: '"Warning"'

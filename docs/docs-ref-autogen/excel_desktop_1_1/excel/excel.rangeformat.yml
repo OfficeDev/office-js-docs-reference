@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Range](/javascript/api/excel/excel.range): [format](/javascript/api/excel/excel.range#excel-excel-range-format-member)
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [format](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-format-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: autoIndent
     summary: Specifies if text is automatically indented when text alignment is set to equal distribution.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: columnWidth
     summary: Specifies the width of all columns within the range. If the column widths are not uniform, `null` will be returned.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: fill
     summary: Returns the fill object defined on the overall range.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
     fullName: font
     summary: Returns the font object defined on the overall range.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +100,7 @@ properties:
     fullName: horizontalAlignment
     summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,7 +113,7 @@ properties:
     fullName: indentLevel
     summary: An integer from 0 to 250 that indicates the indent level.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ properties:
     fullName: protection
     summary: Returns the format protection object for a range.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +139,7 @@ properties:
     fullName: readingOrder
     summary: The reading order for the range.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +152,7 @@ properties:
     fullName: rowHeight
     summary: The height of all rows in the range. If the row heights are not uniform, `null` will be returned.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +165,7 @@ properties:
     fullName: shrinkToFit
     summary: Specifies if text automatically shrinks to fit in the available column width.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,26 +177,8 @@ properties:
     package: excel!
     fullName: textOrientation
     summary: The text orientation of all the cells within the range. The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then `null` will be returned.
-    remarks: |-
-      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-text-orientation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:E2");
-
-          // Set textOrientation to either an integer between -90 and 90
-          // or to 180 for vertically-oriented text.
-          range.format.textOrientation = 90;
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,7 +191,7 @@ properties:
     fullName: useStandardHeight
     summary: 'Determines if the row height of the `Range` object equals the standard height of the sheet. Returns `true` if the row height of the `Range` object equals the standard height of the sheet. Returns `null` if the range contains more than one row and the rows aren''t all the same height. Returns `false` otherwise. Note: This property is only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.'
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +204,7 @@ properties:
     fullName: useStandardWidth
     summary: 'Specifies if the column width of the `Range` object equals the standard width of the sheet. Returns `true` if the column width of the `Range` object equals the standard width of the sheet. Returns `null` if the range contains more than one column and the columns aren''t all the same height. Returns `false` otherwise. Note: This property is only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.'
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,7 +217,7 @@ properties:
     fullName: verticalAlignment
     summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -248,7 +230,7 @@ properties:
     fullName: wrapText
     summary: Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,14 +244,14 @@ methods:
     fullName: adjustIndent(amount)
     summary: Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'adjustIndent(amount: number): void;'
       parameters:
         - id: amount
-          description: 'The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250. **Note**: If the amount would raise the indent level above 250, the indent level stays with 250. Similarly, if the amount would lower the indent level below 0, the indent level stays 0.'
+          description: 'The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250. \*\*Note\*\*: If the amount would raise the indent level above 250, the indent level stays with 250. Similarly, if the amount would lower the indent level below 0, the indent level stays 0.'
           type: number
       return:
         type: void
@@ -280,7 +262,7 @@ methods:
     fullName: autofitColumns()
     summary: Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -294,7 +276,7 @@ methods:
     fullName: autofitRows()
     summary: Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,7 +290,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,7 +308,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,33 +319,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFormat:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Select all of the range's format properties.
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "F:G";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              range.load(["format/*", "format/fill", "format/borders", "format/font"]);
-              await context.sync();
-              
-              console.log(range.format.wrapText);
-              console.log(range.format.fill.color);
-              console.log(range.format.font.name);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeFormat#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,7 +352,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +373,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,7 +391,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.RangeFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

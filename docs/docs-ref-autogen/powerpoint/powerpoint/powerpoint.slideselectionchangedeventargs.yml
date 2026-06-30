@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [onSlideSelectionChanged](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-onslideselectionchanged-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: slideIds
     summary: Gets the array of IDs of the currently selected slides.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

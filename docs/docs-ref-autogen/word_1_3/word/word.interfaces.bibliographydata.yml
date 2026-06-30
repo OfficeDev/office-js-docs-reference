@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BibliographyData
 summary: An interface describing the data returned by calling `bibliography.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

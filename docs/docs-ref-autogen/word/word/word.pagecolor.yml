@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [pageColor](/javascript/api/word/word.view#word-word-view-pagecolor-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: inverse
     uid: word!Word.PageColor.inverse:member
     package: word!
-    summary: |-
-      Inverse.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inverse.
     value: '"Inverse"'
   - name: none
     uid: word!Word.PageColor.none:member
     package: word!
-    summary: |-
-      None.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: None.
     value: '"None"'
   - name: sepia
     uid: word!Word.PageColor.sepia:member
     package: word!
-    summary: |-
-      Sepia.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sepia.
     value: '"Sepia"'

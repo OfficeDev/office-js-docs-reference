@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BuildingBlockData
 summary: An interface describing the data returned by calling `buildingBlock.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

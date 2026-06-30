@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringLockCollectionUpdateData
 uid: word!Word.Interfaces.CoauthoringLockCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockCollectionUpdateData
-summary: An interface for updating data on the `CoauthoringLockCollection` object, for use in `coauthoringLockCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `CoauthoringLockCollection` object, for use in `coauthoringLockCollection.set({
+  ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

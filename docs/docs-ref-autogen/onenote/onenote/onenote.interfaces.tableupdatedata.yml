@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.Table](/javascript/api/onenote/onenote.table): [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: borderVisible
     summary: Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

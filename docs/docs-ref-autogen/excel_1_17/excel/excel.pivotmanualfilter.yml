@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotFilters](/javascript/api/excel/excel.pivotfilters): [manualFilter](/javascript/api/excel/excel.pivotfilters#excel-excel-pivotfilters-manualfilter-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: selectedItems
     summary: A list of selected items to manually filter. These must be existing and valid items from the chosen field.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

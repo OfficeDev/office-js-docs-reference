@@ -5,207 +5,132 @@ package: word!
 fullName: Word.PresetTexture
 summary: Specifies texture to be used to fill a shape.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: blueTissuePaper
     uid: word!Word.PresetTexture.blueTissuePaper:member
     package: word!
-    summary: |-
-      Represents a blue tissue paper texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a blue tissue paper texture.
     value: '"BlueTissuePaper"'
   - name: bouquet
     uid: word!Word.PresetTexture.bouquet:member
     package: word!
-    summary: |-
-      Represents a bouquet texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a bouquet texture.
     value: '"Bouquet"'
   - name: brownMarble
     uid: word!Word.PresetTexture.brownMarble:member
     package: word!
-    summary: |-
-      Represents a brown marble texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a brown marble texture.
     value: '"BrownMarble"'
   - name: canvas
     uid: word!Word.PresetTexture.canvas:member
     package: word!
-    summary: |-
-      Represents a canvas texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a canvas texture.
     value: '"Canvas"'
   - name: cork
     uid: word!Word.PresetTexture.cork:member
     package: word!
-    summary: |-
-      Represents a cork texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a cork texture.
     value: '"Cork"'
   - name: denim
     uid: word!Word.PresetTexture.denim:member
     package: word!
-    summary: |-
-      Represents a denim texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a denim texture.
     value: '"Denim"'
   - name: fishFossil
     uid: word!Word.PresetTexture.fishFossil:member
     package: word!
-    summary: |-
-      Represents a fish fossil texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a fish fossil texture.
     value: '"FishFossil"'
   - name: granite
     uid: word!Word.PresetTexture.granite:member
     package: word!
-    summary: |-
-      Represents a granite texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a granite texture.
     value: '"Granite"'
   - name: greenMarble
     uid: word!Word.PresetTexture.greenMarble:member
     package: word!
-    summary: |-
-      Represents a green marble texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a green marble texture.
     value: '"GreenMarble"'
   - name: mediumWood
     uid: word!Word.PresetTexture.mediumWood:member
     package: word!
-    summary: |-
-      Represents a medium wood texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a medium wood texture.
     value: '"MediumWood"'
   - name: mixed
     uid: word!Word.PresetTexture.mixed:member
     package: word!
-    summary: |-
-      Represents a mixed texture type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a mixed texture type.
     value: '"Mixed"'
   - name: newsprint
     uid: word!Word.PresetTexture.newsprint:member
     package: word!
-    summary: |-
-      Represents a newsprint texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a newsprint texture.
     value: '"Newsprint"'
   - name: oak
     uid: word!Word.PresetTexture.oak:member
     package: word!
-    summary: |-
-      Represents an oak texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents an oak texture.
     value: '"Oak"'
   - name: paperBag
     uid: word!Word.PresetTexture.paperBag:member
     package: word!
-    summary: |-
-      Represents a paper bag texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a paper bag texture.
     value: '"PaperBag"'
   - name: papyrus
     uid: word!Word.PresetTexture.papyrus:member
     package: word!
-    summary: |-
-      Represents a papyrus texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a papyrus texture.
     value: '"Papyrus"'
   - name: parchment
     uid: word!Word.PresetTexture.parchment:member
     package: word!
-    summary: |-
-      Represents a parchment texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a parchment texture.
     value: '"Parchment"'
   - name: pinkTissuePaper
     uid: word!Word.PresetTexture.pinkTissuePaper:member
     package: word!
-    summary: |-
-      Represents a pink tissue paper texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a pink tissue paper texture.
     value: '"PinkTissuePaper"'
   - name: purpleMesh
     uid: word!Word.PresetTexture.purpleMesh:member
     package: word!
-    summary: |-
-      Represents a purple mesh texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a purple mesh texture.
     value: '"PurpleMesh"'
   - name: recycledPaper
     uid: word!Word.PresetTexture.recycledPaper:member
     package: word!
-    summary: |-
-      Represents a recycled paper texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a recycled paper texture.
     value: '"RecycledPaper"'
   - name: sand
     uid: word!Word.PresetTexture.sand:member
     package: word!
-    summary: |-
-      Represents a sand texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a sand texture.
     value: '"Sand"'
   - name: stationery
     uid: word!Word.PresetTexture.stationery:member
     package: word!
-    summary: |-
-      Represents a stationery texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a stationery texture.
     value: '"Stationery"'
   - name: walnut
     uid: word!Word.PresetTexture.walnut:member
     package: word!
-    summary: |-
-      Represents a walnut texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a walnut texture.
     value: '"Walnut"'
   - name: waterDroplets
     uid: word!Word.PresetTexture.waterDroplets:member
     package: word!
-    summary: |-
-      Represents a water droplets texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a water droplets texture.
     value: '"WaterDroplets"'
   - name: whiteMarble
     uid: word!Word.PresetTexture.whiteMarble:member
     package: word!
-    summary: |-
-      Represents a white marble texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a white marble texture.
     value: '"WhiteMarble"'
   - name: wovenMat
     uid: word!Word.PresetTexture.wovenMat:member
     package: word!
-    summary: |-
-      Represents a woven mat texture.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a woven mat texture.
     value: '"WovenMat"'

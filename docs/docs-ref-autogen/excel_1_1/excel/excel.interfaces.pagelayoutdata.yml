@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PageLayoutData
 summary: An interface describing the data returned by calling `pageLayout.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

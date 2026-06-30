@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.QueryUpdateData
 summary: An interface for updating data on the `Query` object, for use in `query.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

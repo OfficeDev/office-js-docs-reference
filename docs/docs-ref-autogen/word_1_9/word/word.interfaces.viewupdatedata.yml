@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ViewUpdateData
 summary: An interface for updating data on the `View` object, for use in `view.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

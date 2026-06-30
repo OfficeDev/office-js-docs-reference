@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Visio.Application](/javascript/api/visio/visio.application): [showToolbar](/javascript/api/visio/visio.application#visio-visio-application-showtoolbar-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: commandBar
     uid: visio!Visio.ToolBarType.commandBar:member
     package: visio!
-    summary: |-
-      The command toolbar type.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: The command toolbar type.
     value: '"CommandBar"'
   - name: pageNavigationBar
     uid: visio!Visio.ToolBarType.pageNavigationBar:member
     package: visio!
-    summary: |-
-      The page navigation toolbar type.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: The page navigation toolbar type.
     value: '"PageNavigationBar"'
   - name: statusBar
     uid: visio!Visio.ToolBarType.statusBar:member
     package: visio!
-    summary: |-
-      The status toolbar type.
-
-      * [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+    summary: The status toolbar type.
     value: '"StatusBar"'

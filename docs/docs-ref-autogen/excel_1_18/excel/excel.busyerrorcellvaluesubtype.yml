@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue): [errorSubType](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       An error caused by external links. Displays as error type \#BUSY! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExternalLinksGeneric"'
   - name: loadingImage
     uid: excel!Excel.BusyErrorCellValueSubType.loadingImage:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LoadingImage"'
   - name: unknown
     uid: excel!Excel.BusyErrorCellValueSubType.unknown:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#BUSY! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

@@ -5,8 +5,6 @@ package: office!
 fullName: OfficeExtension.UpdateOptions
 summary: Provides an option for suppressing an error when the object that is used to set multiple properties tries to set read-only properties.
 remarks: |-
-
-
   #### Used by
 
   - [Excel.AllowEditRange](/javascript/api/excel/excel.alloweditrange): [set](/javascript/api/excel/excel.alloweditrange#excel-excel-alloweditrange-set-member(1))
@@ -121,130 +119,7 @@ remarks: |-
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [set](/javascript/api/excel/excel.workbook#excel-excel-workbook-set-member(1))
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [set](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-set-member(1))
   - [Excel.WorksheetCustomProperty](/javascript/api/excel/excel.worksheetcustomproperty): [set](/javascript/api/excel/excel.worksheetcustomproperty#excel-excel-worksheetcustomproperty-set-member(1))
-  - [OneNote.Application](/javascript/api/onenote/onenote.application): [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
-  - [OneNote.Image](/javascript/api/onenote/onenote.image): [set](/javascript/api/onenote/onenote.image#onenote-onenote-image-set-member(1))
-  - [OneNote.InkAnalysis](/javascript/api/onenote/onenote.inkanalysis): [set](/javascript/api/onenote/onenote.inkanalysis#onenote-onenote-inkanalysis-set-member(1))
-  - [OneNote.InkAnalysisLine](/javascript/api/onenote/onenote.inkanalysisline): [set](/javascript/api/onenote/onenote.inkanalysisline#onenote-onenote-inkanalysisline-set-member(1))
-  - [OneNote.InkAnalysisParagraph](/javascript/api/onenote/onenote.inkanalysisparagraph): [set](/javascript/api/onenote/onenote.inkanalysisparagraph#onenote-onenote-inkanalysisparagraph-set-member(1))
-  - [OneNote.InkAnalysisWord](/javascript/api/onenote/onenote.inkanalysisword): [set](/javascript/api/onenote/onenote.inkanalysisword#onenote-onenote-inkanalysisword-set-member(1))
-  - [OneNote.Page](/javascript/api/onenote/onenote.page): [set](/javascript/api/onenote/onenote.page#onenote-onenote-page-set-member(1))
-  - [OneNote.PageContent](/javascript/api/onenote/onenote.pagecontent): [set](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-set-member(1))
-  - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(1))
-  - [OneNote.Table](/javascript/api/onenote/onenote.table): [set](/javascript/api/onenote/onenote.table#onenote-onenote-table-set-member(1))
-  - [OneNote.TableCell](/javascript/api/onenote/onenote.tablecell): [set](/javascript/api/onenote/onenote.tablecell#onenote-onenote-tablecell-set-member(1))
-  - [Visio.Application](/javascript/api/visio/visio.application): [set](/javascript/api/visio/visio.application#visio-visio-application-set-member(1))
-  - [Visio.Comment](/javascript/api/visio/visio.comment): [set](/javascript/api/visio/visio.comment#visio-visio-comment-set-member(1))
-  - [Visio.Document](/javascript/api/visio/visio.document): [set](/javascript/api/visio/visio.document#visio-visio-document-set-member(1))
-  - [Visio.DocumentView](/javascript/api/visio/visio.documentview): [set](/javascript/api/visio/visio.documentview#visio-visio-documentview-set-member(1))
-  - [Visio.Page](/javascript/api/visio/visio.page): [set](/javascript/api/visio/visio.page#visio-visio-page-set-member(1))
-  - [Visio.PageView](/javascript/api/visio/visio.pageview): [set](/javascript/api/visio/visio.pageview#visio-visio-pageview-set-member(1))
-  - [Visio.Shape](/javascript/api/visio/visio.shape): [set](/javascript/api/visio/visio.shape#visio-visio-shape-set-member(1))
-  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(1))
-  - [Word.Application](/javascript/api/word/word.application): [set](/javascript/api/word/word.application#word-word-application-set-member(1))
-  - [Word.Bibliography](/javascript/api/word/word.bibliography): [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(1))
-  - [Word.Body](/javascript/api/word/word.body): [set](/javascript/api/word/word.body#word-word-body-set-member(1))
-  - [Word.Bookmark](/javascript/api/word/word.bookmark): [set](/javascript/api/word/word.bookmark#word-word-bookmark-set-member(1))
-  - [Word.Border](/javascript/api/word/word.border): [set](/javascript/api/word/word.border#word-word-border-set-member(1))
-  - [Word.BorderUniversal](/javascript/api/word/word.borderuniversal): [set](/javascript/api/word/word.borderuniversal#word-word-borderuniversal-set-member(1))
-  - [Word.Break](/javascript/api/word/word.break): [set](/javascript/api/word/word.break#word-word-break-set-member(1))
-  - [Word.BuildingBlock](/javascript/api/word/word.buildingblock): [set](/javascript/api/word/word.buildingblock#word-word-buildingblock-set-member(1))
-  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [set](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-set-member(1))
-  - [Word.Canvas](/javascript/api/word/word.canvas): [set](/javascript/api/word/word.canvas#word-word-canvas-set-member(1))
-  - [Word.CheckboxContentControl](/javascript/api/word/word.checkboxcontentcontrol): [set](/javascript/api/word/word.checkboxcontentcontrol#word-word-checkboxcontentcontrol-set-member(1))
-  - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(1))
-  - [Word.CoauthoringUpdate](/javascript/api/word/word.coauthoringupdate): [set](/javascript/api/word/word.coauthoringupdate#word-word-coauthoringupdate-set-member(1))
-  - [Word.ColorFormat](/javascript/api/word/word.colorformat): [set](/javascript/api/word/word.colorformat#word-word-colorformat-set-member(1))
-  - [Word.Comment](/javascript/api/word/word.comment): [set](/javascript/api/word/word.comment#word-word-comment-set-member(1))
-  - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [set](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-set-member(1))
-  - [Word.CommentReply](/javascript/api/word/word.commentreply): [set](/javascript/api/word/word.commentreply#word-word-commentreply-set-member(1))
-  - [Word.Conflict](/javascript/api/word/word.conflict): [set](/javascript/api/word/word.conflict#word-word-conflict-set-member(1))
-  - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [set](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-set-member(1))
-  - [Word.ContentControlListItem](/javascript/api/word/word.contentcontrollistitem): [set](/javascript/api/word/word.contentcontrollistitem#word-word-contentcontrollistitem-set-member(1))
-  - [Word.CustomProperty](/javascript/api/word/word.customproperty): [set](/javascript/api/word/word.customproperty#word-word-customproperty-set-member(1))
-  - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [set](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-set-member(1))
-  - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(1))
-  - [Word.CustomXmlValidationError](/javascript/api/word/word.customxmlvalidationerror): [set](/javascript/api/word/word.customxmlvalidationerror#word-word-customxmlvalidationerror-set-member(1))
-  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [set](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-set-member(1))
-  - [Word.Document](/javascript/api/word/word.document): [set](/javascript/api/word/word.document#word-word-document-set-member(1))
-  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
-  - [Word.DocumentProperties](/javascript/api/word/word.documentproperties): [set](/javascript/api/word/word.documentproperties#word-word-documentproperties-set-member(1))
-  - [Word.Editor](/javascript/api/word/word.editor): [set](/javascript/api/word/word.editor#word-word-editor-set-member(1))
-  - [Word.Field](/javascript/api/word/word.field): [set](/javascript/api/word/word.field#word-word-field-set-member(1))
-  - [Word.FillFormat](/javascript/api/word/word.fillformat): [set](/javascript/api/word/word.fillformat#word-word-fillformat-set-member(1))
-  - [Word.Font](/javascript/api/word/word.font): [set](/javascript/api/word/word.font#word-word-font-set-member(1))
-  - [Word.Frame](/javascript/api/word/word.frame): [set](/javascript/api/word/word.frame#word-word-frame-set-member(1))
-  - [Word.GlowFormat](/javascript/api/word/word.glowformat): [set](/javascript/api/word/word.glowformat#word-word-glowformat-set-member(1))
-  - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [set](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-set-member(1))
-  - [Word.HeadingStyle](/javascript/api/word/word.headingstyle): [set](/javascript/api/word/word.headingstyle#word-word-headingstyle-set-member(1))
-  - [Word.Hyperlink](/javascript/api/word/word.hyperlink): [set](/javascript/api/word/word.hyperlink#word-word-hyperlink-set-member(1))
-  - [Word.Index](/javascript/api/word/word.index): [set](/javascript/api/word/word.index#word-word-index-set-member(1))
-  - [Word.InlinePicture](/javascript/api/word/word.inlinepicture): [set](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-set-member(1))
-  - [Word.LineFormat](/javascript/api/word/word.lineformat): [set](/javascript/api/word/word.lineformat#word-word-lineformat-set-member(1))
-  - [Word.LineNumbering](/javascript/api/word/word.linenumbering): [set](/javascript/api/word/word.linenumbering#word-word-linenumbering-set-member(1))
-  - [Word.LinkFormat](/javascript/api/word/word.linkformat): [set](/javascript/api/word/word.linkformat#word-word-linkformat-set-member(1))
-  - [Word.ListFormat](/javascript/api/word/word.listformat): [set](/javascript/api/word/word.listformat#word-word-listformat-set-member(1))
-  - [Word.ListItem](/javascript/api/word/word.listitem): [set](/javascript/api/word/word.listitem#word-word-listitem-set-member(1))
-  - [Word.ListLevel](/javascript/api/word/word.listlevel): [set](/javascript/api/word/word.listlevel#word-word-listlevel-set-member(1))
-  - [Word.ListTemplate](/javascript/api/word/word.listtemplate): [set](/javascript/api/word/word.listtemplate#word-word-listtemplate-set-member(1))
-  - [Word.NoteItem](/javascript/api/word/word.noteitem): [set](/javascript/api/word/word.noteitem#word-word-noteitem-set-member(1))
-  - [Word.OleFormat](/javascript/api/word/word.oleformat): [set](/javascript/api/word/word.oleformat#word-word-oleformat-set-member(1))
-  - [Word.PageSetup](/javascript/api/word/word.pagesetup): [set](/javascript/api/word/word.pagesetup#word-word-pagesetup-set-member(1))
-  - [Word.Paragraph](/javascript/api/word/word.paragraph): [set](/javascript/api/word/word.paragraph#word-word-paragraph-set-member(1))
-  - [Word.ParagraphFormat](/javascript/api/word/word.paragraphformat): [set](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-set-member(1))
-  - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [set](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-set-member(1))
-  - [Word.Range](/javascript/api/word/word.range): [set](/javascript/api/word/word.range#word-word-range-set-member(1))
-  - [Word.ReflectionFormat](/javascript/api/word/word.reflectionformat): [set](/javascript/api/word/word.reflectionformat#word-word-reflectionformat-set-member(1))
-  - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [set](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-set-member(1))
-  - [Word.RepeatingSectionItem](/javascript/api/word/word.repeatingsectionitem): [set](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-set-member(1))
-  - [Word.Reviewer](/javascript/api/word/word.reviewer): [set](/javascript/api/word/word.reviewer#word-word-reviewer-set-member(1))
-  - [Word.Revision](/javascript/api/word/word.revision): [set](/javascript/api/word/word.revision#word-word-revision-set-member(1))
-  - [Word.RevisionsFilter](/javascript/api/word/word.revisionsfilter): [set](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-set-member(1))
-  - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [set](/javascript/api/word/word.searchoptions#word-word-searchoptions-set-member(1))
-  - [Word.Section](/javascript/api/word/word.section): [set](/javascript/api/word/word.section#word-word-section-set-member(1))
-  - [Word.Setting](/javascript/api/word/word.setting): [set](/javascript/api/word/word.setting#word-word-setting-set-member(1))
-  - [Word.Shading](/javascript/api/word/word.shading): [set](/javascript/api/word/word.shading#word-word-shading-set-member(1))
-  - [Word.ShadingUniversal](/javascript/api/word/word.shadinguniversal): [set](/javascript/api/word/word.shadinguniversal#word-word-shadinguniversal-set-member(1))
-  - [Word.ShadowFormat](/javascript/api/word/word.shadowformat): [set](/javascript/api/word/word.shadowformat#word-word-shadowformat-set-member(1))
-  - [Word.Shape](/javascript/api/word/word.shape): [set](/javascript/api/word/word.shape#word-word-shape-set-member(1))
-  - [Word.ShapeFill](/javascript/api/word/word.shapefill): [set](/javascript/api/word/word.shapefill#word-word-shapefill-set-member(1))
-  - [Word.ShapeGroup](/javascript/api/word/word.shapegroup): [set](/javascript/api/word/word.shapegroup#word-word-shapegroup-set-member(1))
-  - [Word.ShapeTextWrap](/javascript/api/word/word.shapetextwrap): [set](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-set-member(1))
-  - [Word.Style](/javascript/api/word/word.style): [set](/javascript/api/word/word.style#word-word-style-set-member(1))
-  - [Word.Table](/javascript/api/word/word.table): [set](/javascript/api/word/word.table#word-word-table-set-member(1))
-  - [Word.TableBorder](/javascript/api/word/word.tableborder): [set](/javascript/api/word/word.tableborder#word-word-tableborder-set-member(1))
-  - [Word.TableCell](/javascript/api/word/word.tablecell): [set](/javascript/api/word/word.tablecell#word-word-tablecell-set-member(1))
-  - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [set](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-set-member(1))
-  - [Word.TableOfAuthorities](/javascript/api/word/word.tableofauthorities): [set](/javascript/api/word/word.tableofauthorities#word-word-tableofauthorities-set-member(1))
-  - [Word.TableOfContents](/javascript/api/word/word.tableofcontents): [set](/javascript/api/word/word.tableofcontents#word-word-tableofcontents-set-member(1))
-  - [Word.TableOfFigures](/javascript/api/word/word.tableoffigures): [set](/javascript/api/word/word.tableoffigures#word-word-tableoffigures-set-member(1))
-  - [Word.TableRow](/javascript/api/word/word.tablerow): [set](/javascript/api/word/word.tablerow#word-word-tablerow-set-member(1))
-  - [Word.TableStyle](/javascript/api/word/word.tablestyle): [set](/javascript/api/word/word.tablestyle#word-word-tablestyle-set-member(1))
-  - [Word.Template](/javascript/api/word/word.template): [set](/javascript/api/word/word.template#word-word-template-set-member(1))
-  - [Word.TextColumn](/javascript/api/word/word.textcolumn): [set](/javascript/api/word/word.textcolumn#word-word-textcolumn-set-member(1))
-  - [Word.TextFrame](/javascript/api/word/word.textframe): [set](/javascript/api/word/word.textframe#word-word-textframe-set-member(1))
-  - [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat): [set](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-set-member(1))
-  - [Word.View](/javascript/api/word/word.view): [set](/javascript/api/word/word.view#word-word-view-set-member(1))
-  - [Word.Window](/javascript/api/word/word.window): [set](/javascript/api/word/word.window#word-word-window-set-member(1))
-  - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [set](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-set-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Update a range in an Excel worksheet using the RangeUpdateData interface.
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-      const range = sheet.getRange("B2:E2");
-
-      // Configure the set operation to still run if a readonly property is included.
-      // All settable properties will be updated.
-      const options: OfficeExtension.UpdateOptions = {throwOnReadOnly: false};
-
-      // Set the range with some data from another source (`updateData` is set elsewhere).
-      range.set(updateData, options);
-      await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -255,7 +130,7 @@ properties:
     fullName: throwOnReadOnly
     summary: Throw an error if the passed-in property list includes read-only properties (default = true).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

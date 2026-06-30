@@ -10,42 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartSeriesCollection](/javascript/api/excel/excel.chartseriescollection): [getItemAt](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-getitemat-member(1)), [items](/javascript/api/excel/excel.chartseriescollection#excel-excel-chartseriescollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-  // The following code adds data labels to the chart and positions them to demonstrate leader lines.
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem(sheetName);
-    const chart = sheet.charts.getItemAt(0);
-    const series = chart.series.getItemAt(0);
-    
-    // Enable data labels for the series. Leader lines are enabled by default.
-    series.hasDataLabels = true;
-    series.points.load("items");
-    await context.sync();
-    
-    // Load the top position for each data label.
-    series.points.items.forEach((point) => point.dataLabel.load("top"));
-    await context.sync();
-
-    // Move some data labels to create distance from their chart points.
-    const point1 = series.points.items[1]; 
-    const point2 = series.points.items[2]; 
-    point1.dataLabel.top -= 50; 
-    point2.dataLabel.top += 50;
-    
-    // Format the data labels.
-    series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
-    series.dataLabels.showCategoryName = true;
-    series.dataLabels.format.border.weight = 1;
-    
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -56,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +34,7 @@ properties:
     fullName: format
     summary: Represents the formatting of a chart series, which includes fill and line formatting.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,7 +47,7 @@ properties:
     fullName: name
     summary: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,44 +59,8 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-      // The following code adds data labels to the chart and positions them to demonstrate leader lines.
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem(sheetName);
-        const chart = sheet.charts.getItemAt(0);
-        const series = chart.series.getItemAt(0);
-        
-        // Enable data labels for the series. Leader lines are enabled by default.
-        series.hasDataLabels = true;
-        series.points.load("items");
-        await context.sync();
-        
-        // Load the top position for each data label.
-        series.points.items.forEach((point) => point.dataLabel.load("top"));
-        await context.sync();
-
-        // Move some data labels to create distance from their chart points.
-        const point1 = series.points.items[1]; 
-        const point2 = series.points.items[2]; 
-        point1.dataLabel.top -= 50; 
-        point2.dataLabel.top += 50;
-        
-        // Format the data labels.
-        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
-        series.dataLabels.showCategoryName = true;
-        series.dataLabels.format.border.weight = 1;
-        
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,7 +74,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +92,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,28 +103,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartSeries:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Rename the 1st series of Chart1 to "New Series Name".
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.series.getItemAt(0).name = "New Series Name";
-              await context.sync();
-
-              console.log("Series1 Renamed");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartSeries#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +136,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,7 +147,7 @@ methods:
           type: <xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="excel!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -242,7 +157,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,7 +175,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.ChartSeries` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,4 +183,4 @@ methods:
       return:
         type: <xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />

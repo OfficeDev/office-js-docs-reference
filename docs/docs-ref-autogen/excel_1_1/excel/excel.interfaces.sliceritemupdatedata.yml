@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.SlicerItemUpdateData
 summary: An interface for updating data on the `SlicerItem` object, for use in `slicerItem.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

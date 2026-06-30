@@ -4,30 +4,8 @@ uid: office!Office.NodeDeletedEventArgs:interface
 package: office!
 fullName: Office.NodeDeletedEventArgs
 summary: Provides information about the deleted node that raised the nodeDeleted event.
-remarks: |-
-  #### Examples
-
-  ```TypeScript
-  // Event handler for the NodeDeleted event added in CustomXmlPart.addHandlerAsync.
-  function onNodeDeleted(eventArgs: Office.NodeDeletedEventArgs) {
-      // Logs information about the deleted node and its former sibling.
-      console.log("NodeDeleted event fired.");
-      console.log("  Is undo/redo: " + eventArgs.isUndoRedo);
-      eventArgs.oldNode.getXmlAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("  Deleted node XML: " + result.value);
-          }
-      });
-      if (eventArgs.oldNextSibling) {
-          eventArgs.oldNextSibling.getXmlAsync((result) => {
-              if (result.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("  Former next sibling XML: " + result.value);
-              }
-          });
-      }
-  }
-  ```
-
+remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -38,7 +16,7 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the node was deleted as part of an Undo/Redo action by the user.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,9 +27,11 @@ properties:
     uid: office!Office.NodeDeletedEventArgs#oldNextSibling:member
     package: office!
     fullName: oldNextSibling
-    summary: Gets the former next sibling of the node that was just deleted from the [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
+    summary: >-
+      Gets the former next sibling of the node that was just deleted from the
+      [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,12 +42,16 @@ properties:
     uid: office!Office.NodeDeletedEventArgs#oldNode:member
     package: office!
     fullName: oldNode
-    summary: |-
-      Gets the node which was just deleted from the [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
+    summary: >-
+      Gets the node which was just deleted from the [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface)
+      object.
 
-      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone.
+
+      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
+      "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
+      to exist alone.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

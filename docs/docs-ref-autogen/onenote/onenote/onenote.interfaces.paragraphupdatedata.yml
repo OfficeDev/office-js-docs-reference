@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [OneNote.Paragraph](/javascript/api/onenote/onenote.paragraph): [set](/javascript/api/onenote/onenote.paragraph#onenote-onenote-paragraph-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: image
     summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: table
     summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

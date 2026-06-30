@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.RevisionsFilter](/javascript/api/word/word.revisionsfilter): [set](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: markup
     summary: Specifies a `RevisionsMarkup` value that represents the extent of reviewer markup displayed in the document.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: view
     summary: Specifies a `RevisionsView` value that represents globally whether Word displays the original version of the document or the final version, which might have revisions and formatting changes applied.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

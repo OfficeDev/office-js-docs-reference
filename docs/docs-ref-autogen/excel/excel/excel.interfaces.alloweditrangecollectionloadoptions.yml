@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.AllowEditRangeCollection](/javascript/api/excel/excel.alloweditrangecollection): [load](/javascript/api/excel/excel.alloweditrangecollection#excel-excel-alloweditrangecollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: address
     summary: 'For EACH ITEM in the collection: Specifies the range associated with the object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.'
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: isPasswordProtected
     summary: 'For EACH ITEM in the collection: Specifies if the object is password protected.'
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: title
     summary: 'For EACH ITEM in the collection: Specifies the title of the object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title. If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.'
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

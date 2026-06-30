@@ -10,67 +10,67 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartDataLabels](/javascript/api/excel/excel.chartdatalabels): [position](/javascript/api/excel/excel.chartdatalabels#excel-excel-chartdatalabels-position-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bestFit
     uid: excel!Excel.ChartDataLabelPosition.bestFit:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"BestFit"'
   - name: bottom
     uid: excel!Excel.ChartDataLabelPosition.bottom:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Bottom"'
   - name: callout
     uid: excel!Excel.ChartDataLabelPosition.callout:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Callout"'
   - name: center
     uid: excel!Excel.ChartDataLabelPosition.center:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Center"'
   - name: insideBase
     uid: excel!Excel.ChartDataLabelPosition.insideBase:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"InsideBase"'
   - name: insideEnd
     uid: excel!Excel.ChartDataLabelPosition.insideEnd:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"InsideEnd"'
   - name: invalid
     uid: excel!Excel.ChartDataLabelPosition.invalid:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Invalid"'
   - name: left
     uid: excel!Excel.ChartDataLabelPosition.left:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Left"'
   - name: none
     uid: excel!Excel.ChartDataLabelPosition.none:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"None"'
   - name: outsideEnd
     uid: excel!Excel.ChartDataLabelPosition.outsideEnd:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"OutsideEnd"'
   - name: right
     uid: excel!Excel.ChartDataLabelPosition.right:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Right"'
   - name: top
     uid: excel!Excel.ChartDataLabelPosition.top:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Top"'

@@ -5,63 +5,42 @@ package: word!
 fullName: Word.FillType
 summary: Specifies a shape's fill type.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: background
     uid: word!Word.FillType.background:member
     package: word!
-    summary: |-
-      Represents a background fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a background fill type.
     value: '"Background"'
   - name: gradient
     uid: word!Word.FillType.gradient:member
     package: word!
-    summary: |-
-      Represents a gradient fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a gradient fill type.
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.FillType.mixed:member
     package: word!
-    summary: |-
-      Represents a mixed fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a mixed fill type.
     value: '"Mixed"'
   - name: patterned
     uid: word!Word.FillType.patterned:member
     package: word!
-    summary: |-
-      Represents a patterned fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a patterned fill type.
     value: '"Patterned"'
   - name: picture
     uid: word!Word.FillType.picture:member
     package: word!
-    summary: |-
-      Represents a picture fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a picture fill type.
     value: '"Picture"'
   - name: solid
     uid: word!Word.FillType.solid:member
     package: word!
-    summary: |-
-      Represents a solid fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a solid fill type.
     value: '"Solid"'
   - name: textured
     uid: word!Word.FillType.textured:member
     package: word!
-    summary: |-
-      Represents a textured fill type.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents a textured fill type.
     value: '"Textured"'

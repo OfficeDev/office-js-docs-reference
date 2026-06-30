@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [merge](/javascript/api/word/word.document#word-word-document-merge-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: addToRecentFiles
     summary: If provided, specifies whether to add the merged document to recent files. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: detectFormatChanges
     summary: If provided, specifies whether to detect format changes during the merge. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: mergeTarget
     summary: If provided, specifies the target of the merge operation. The default value is `current`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: useFormattingFrom
     summary: If provided, specifies the source of formatting to use in the merge. The default value is `current`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

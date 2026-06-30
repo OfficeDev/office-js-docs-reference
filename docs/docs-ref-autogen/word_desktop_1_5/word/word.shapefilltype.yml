@@ -5,63 +5,42 @@ package: word!
 fullName: Word.ShapeFillType
 summary: Specifies a [shape's](xref:word!Word.Shape:class) fill type.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: gradient
     uid: word!Word.ShapeFillType.gradient:member
     package: word!
-    summary: |-
-      Gradient fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Gradient fill.
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.ShapeFillType.mixed:member
     package: word!
-    summary: |-
-      Mixed fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Mixed fill.
     value: '"Mixed"'
   - name: noFill
     uid: word!Word.ShapeFillType.noFill:member
     package: word!
-    summary: |-
-      No fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: No fill.
     value: '"NoFill"'
   - name: pattern
     uid: word!Word.ShapeFillType.pattern:member
     package: word!
-    summary: |-
-      Pattern fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Pattern fill.
     value: '"Pattern"'
   - name: picture
     uid: word!Word.ShapeFillType.picture:member
     package: word!
-    summary: |-
-      Picture fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Picture fill.
     value: '"Picture"'
   - name: solid
     uid: word!Word.ShapeFillType.solid:member
     package: word!
-    summary: |-
-      Solid fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Solid fill.
     value: '"Solid"'
   - name: texture
     uid: word!Word.ShapeFillType.texture:member
     package: word!
-    summary: |-
-      Texture fill.
-
-      * \[Api set: WordApiDesktop 1.2\]
+    summary: Texture fill.
     value: '"Texture"'

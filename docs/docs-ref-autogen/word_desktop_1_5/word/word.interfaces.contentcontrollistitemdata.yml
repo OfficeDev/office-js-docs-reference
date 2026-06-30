@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ContentControlListItemData
 summary: An interface describing the data returned by calling `contentControlListItem.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: displayText
     summary: Specifies the display text of a list item for a dropdown list or combo box content control.
     remarks: '\[Api set: WordApi 1.9\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: index
     summary: Specifies the index location of a content control list item in the collection of list items.
     remarks: '\[Api set: WordApi 1.9\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: value
     summary: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
     remarks: '\[Api set: WordApi 1.9\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

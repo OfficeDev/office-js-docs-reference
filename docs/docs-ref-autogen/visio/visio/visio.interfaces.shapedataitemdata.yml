@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Visio.ShapeDataItem](/javascript/api/visio/visio.shapedataitem): [toJSON](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: format
     summary: A string that specifies the format of the shape data item. Read-only.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: formattedValue
     summary: A string that specifies the formatted value of the shape data item. Read-only.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: label
     summary: A string that specifies the label of the shape data item. Read-only.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: value
     summary: A string that specifies the value of the shape data item. Read-only.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

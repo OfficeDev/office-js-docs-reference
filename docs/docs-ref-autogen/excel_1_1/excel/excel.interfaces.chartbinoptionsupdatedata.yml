@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartBinOptionsUpdateData
 summary: An interface for updating data on the `ChartBinOptions` object, for use in `chartBinOptions.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

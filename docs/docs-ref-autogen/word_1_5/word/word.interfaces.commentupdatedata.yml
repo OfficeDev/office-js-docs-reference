@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Comment](/javascript/api/word/word.comment): [set](/javascript/api/word/word.comment#word-word-comment-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: content
     summary: Specifies the comment's content as plain text.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: contentRange
     summary: Specifies the comment's content range.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: resolved
     summary: Specifies the comment thread's status. Setting to `true` resolves the comment thread. Getting a value of `true` means that the comment thread is resolved.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

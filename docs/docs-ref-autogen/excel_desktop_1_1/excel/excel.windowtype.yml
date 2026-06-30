@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Window](/javascript/api/excel/excel.window): [type](/javascript/api/excel/excel.window#excel-excel-window-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The window displays a chart in its own separate window.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"chartAsWindow"'
   - name: chartInPlace
     uid: excel!Excel.WindowType.chartInPlace:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The window displays a chart embedded within a worksheet.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"chartInPlace"'
   - name: clipboard
     uid: excel!Excel.WindowType.clipboard:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       The window displays the Office clipboard contents.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"clipboard"'
   - name: workbook
     uid: excel!Excel.WindowType.workbook:member
@@ -44,5 +44,5 @@ fields:
     summary: |-
       The window displays a standard Excel workbook.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"workbook"'

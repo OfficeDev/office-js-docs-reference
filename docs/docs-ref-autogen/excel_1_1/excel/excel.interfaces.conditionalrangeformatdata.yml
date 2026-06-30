@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ConditionalRangeFormatData
 summary: An interface describing the data returned by calling `conditionalRangeFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

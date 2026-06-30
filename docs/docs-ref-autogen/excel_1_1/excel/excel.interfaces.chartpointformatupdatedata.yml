@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartPointFormat](/javascript/api/excel/excel.chartpointformat): [set](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

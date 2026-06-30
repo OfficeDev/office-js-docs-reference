@@ -4,11 +4,14 @@ uid: outlook!Office.MailboxEnums.ComposeType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
 summary: Specifies a message's compose type.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.10\]
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose
+example: []
 isPreview: false
 isDeprecated: false
 fields:

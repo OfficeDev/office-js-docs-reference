@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.BindingCollection](/javascript/api/excel/excel.bindingcollection): [getItem](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getitemat-member(1)), [items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `Excel.BindingType` for details.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,22 +60,8 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const range = binding.getRange();
-          range.load('cellCount');
-          await context.sync();
-
-          console.log(range.cellCount);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,22 +74,8 @@ methods:
     package: excel!
     fullName: getTable()
     summary: Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const table = binding.getTable();
-          table.load('name');
-          await context.sync();
-
-          console.log(table.name);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,28 +88,14 @@ methods:
     package: excel!
     fullName: getText()
     summary: Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const text = binding.getText();
-          binding.load('text');
-          await context.sync();
-
-          console.log(text);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: load(options)
     uid: excel!Excel.Binding#load:member(1)
@@ -145,7 +103,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +121,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,27 +132,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Binding:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const binding = context.workbook.bindings.getItemAt(0);
-              binding.load('type');
-              await context.sync();
-
-              console.log(binding.type);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Binding#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +165,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Binding` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,4 +173,4 @@ methods:
       return:
         type: <xref uid="excel!Excel.Interfaces.BindingData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />

@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.HeaderFooterPicture](/javascript/api/excel/excel.headerfooterpicture): [colorType](/javascript/api/excel/excel.headerfooterpicture#excel-excel-headerfooterpicture-colortype-member)
   - [Excel.Image](/javascript/api/excel/excel.image): [colorType](/javascript/api/excel/excel.image#excel-excel-image-colortype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -21,7 +21,7 @@ fields:
     summary: |-
       Default color transformation.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Automatic"'
   - name: blackAndWhite
     uid: excel!Excel.PictureColorType.blackAndWhite:member
@@ -29,7 +29,7 @@ fields:
     summary: |-
       Black-and-white transformation.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BlackAndWhite"'
   - name: grayScale
     uid: excel!Excel.PictureColorType.grayScale:member
@@ -37,7 +37,7 @@ fields:
     summary: |-
       Grayscale transformation.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GrayScale"'
   - name: mixed
     uid: excel!Excel.PictureColorType.mixed:member
@@ -45,7 +45,7 @@ fields:
     summary: |-
       Mixed transformation.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Mixed"'
   - name: watermark
     uid: excel!Excel.PictureColorType.watermark:member
@@ -53,5 +53,5 @@ fields:
     summary: |-
       Watermark transformation.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Watermark"'

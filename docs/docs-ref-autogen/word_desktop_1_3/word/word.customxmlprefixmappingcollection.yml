@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ methods:
     fullName: addNamespace(prefix, namespaceUri)
     summary: Adds a custom namespace/prefix mapping to use when querying an item.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ methods:
           description: The namespace URI to map.
           type: string
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: getCount()
     uid: word!Word.CustomXmlPrefixMappingCollection#getCount:member(1)
@@ -69,13 +69,13 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: load(options)
     uid: word!Word.CustomXmlPrefixMappingCollection#load:member(1)
@@ -83,7 +83,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +101,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +119,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +127,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="word!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.CustomXmlPrefixMappingCollection:class" />
         description: ''
@@ -137,7 +137,7 @@ methods:
     fullName: lookupNamespace(prefix)
     summary: Gets the namespace corresponding to the specified prefix.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,7 +147,7 @@ methods:
           description: The prefix to look up.
           type: string
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: lookupPrefix(namespaceUri)
     uid: word!Word.CustomXmlPrefixMappingCollection#lookupPrefix:member(1)
@@ -155,7 +155,7 @@ methods:
     fullName: lookupPrefix(namespaceUri)
     summary: Gets the prefix corresponding to the specified namespace.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +165,7 @@ methods:
           description: The namespace URI to look up.
           type: string
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: toJSON()
     uid: word!Word.CustomXmlPrefixMappingCollection#toJSON:member(1)
@@ -173,7 +173,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.CustomXmlPrefixMappingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPrefixMappingCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,7 +187,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -201,7 +201,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,4 +209,4 @@ methods:
       return:
         type: <xref uid="word!Word.CustomXmlPrefixMappingCollection:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

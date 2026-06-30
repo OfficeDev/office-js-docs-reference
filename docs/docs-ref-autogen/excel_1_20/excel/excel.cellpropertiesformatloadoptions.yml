@@ -13,7 +13,7 @@ remarks: |-
   - [Excel.CellPropertiesLoadOptions](/javascript/api/excel/excel.cellpropertiesloadoptions): [format](/javascript/api/excel/excel.cellpropertiesloadoptions#excel-excel-cellpropertiesloadoptions-format-member)
   - [Excel.ColumnPropertiesLoadOptions](/javascript/api/excel/excel.columnpropertiesloadoptions): [format](/javascript/api/excel/excel.columnpropertiesloadoptions#excel-excel-columnpropertiesloadoptions-format-member)
   - [Excel.RowPropertiesLoadOptions](/javascript/api/excel/excel.rowpropertiesloadoptions): [format](/javascript/api/excel/excel.rowpropertiesloadoptions#excel-excel-rowpropertiesloadoptions-format-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,7 +27,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,7 +43,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,7 +59,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +75,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +91,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +107,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +139,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +155,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,7 +171,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,7 +187,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,7 +203,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,7 +219,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,7 +235,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

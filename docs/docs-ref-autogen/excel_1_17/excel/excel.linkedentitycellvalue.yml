@@ -9,9 +9,10 @@ remarks: |-
 
   #### Used by
 
+  - [Excel.LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs): [linkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-linkedentitycellvalue-member)
   - [Excel.PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue): [target](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-target-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +23,7 @@ properties:
     fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +36,7 @@ properties:
     fullName: basicValue
     summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +49,7 @@ properties:
     fullName: id
     summary: Represents the service source that provided the information in this value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +62,7 @@ properties:
     fullName: layouts
     summary: Represents layout information for views of this linked entity.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +75,7 @@ properties:
     fullName: properties
     summary: Represents the properties of this linked entity and their metadata.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +94,7 @@ properties:
     fullName: provider
     summary: Represents information that describes the service that provided data in this `LinkedEntityCellValue`<!-- -->. This information can be used for branding in entity cards.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +107,7 @@ properties:
     fullName: text
     summary: Represents the text shown when a cell with this value is rendered.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +120,7 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [protect](/javascript/api/word/word.document#word-word-document-protect-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: enforceStyleLock
     summary: If provided, specifies whether to enforce style lock restrictions. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: noReset
     summary: If provided, specifies whether to reset form fields when protecting the document. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: password
     summary: If provided, specifies the password to apply for document protection. The default value is an empty string.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: useInformationRightsManagement
     summary: If provided, specifies whether to use Information Rights Management (IRM). The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -11,17 +11,17 @@ remarks: |-
 
   - [Excel.Filter](/javascript/api/excel/excel.filter): [applyCustomFilter](/javascript/api/excel/excel.filter#excel-excel-filter-applycustomfilter-member(1))
   - [Excel.FilterCriteria](/javascript/api/excel/excel.filtercriteria): [operator](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-operator-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: and
     uid: excel!Excel.FilterOperator.and:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: '\* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"And"'
   - name: or
     uid: excel!Excel.FilterOperator.or:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: '\* [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Or"'

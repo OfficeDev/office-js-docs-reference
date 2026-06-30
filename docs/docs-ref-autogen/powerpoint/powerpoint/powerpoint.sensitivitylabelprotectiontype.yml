@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SensitivityLabelDetails](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails): [protectionType](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails#powerpoint-powerpoint-sensitivitylabeldetails-protectiontype-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: adminDefined
     uid: powerpoint!PowerPoint.SensitivityLabelProtectionType.adminDefined:member
     package: powerpoint!
-    summary: |-
-      Protection is defined by an administrator.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Protection is defined by an administrator.
     value: '"AdminDefined"'
   - name: noProtection
     uid: powerpoint!PowerPoint.SensitivityLabelProtectionType.noProtection:member
     package: powerpoint!
-    summary: |-
-      No protection is applied by this label.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: No protection is applied by this label.
     value: '"NoProtection"'
   - name: userDefined
     uid: powerpoint!PowerPoint.SensitivityLabelProtectionType.userDefined:member
     package: powerpoint!
-    summary: |-
-      Protection is defined by the user.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Protection is defined by the user.
     value: '"UserDefined"'

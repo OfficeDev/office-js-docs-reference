@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [fieldShading](/javascript/api/word/word.view#word-word-view-fieldshading-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: always
     uid: word!Word.FieldShading.always:member
     package: word!
-    summary: |-
-      Always shade fields.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Always shade fields.
     value: '"Always"'
   - name: never
     uid: word!Word.FieldShading.never:member
     package: word!
-    summary: |-
-      Never shade fields.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Never shade fields.
     value: '"Never"'
   - name: whenSelected
     uid: word!Word.FieldShading.whenSelected:member
     package: word!
-    summary: |-
-      Shade fields when selected.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Shade fields when selected.
     value: '"WhenSelected"'

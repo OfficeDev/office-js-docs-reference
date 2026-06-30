@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: labelingDisabled
     uid: word!Word.LabelingCapability.labelingDisabled:member
     package: word!
-    summary: |-
-      Sensitivity labeling is disabled for the user or tenant.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sensitivity labeling is disabled for the user or tenant.
     value: '"LabelingDisabled"'
   - name: labelingEnabled
     uid: word!Word.LabelingCapability.labelingEnabled:member
     package: word!
-    summary: |-
-      Sensitivity labeling is fully enabled.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sensitivity labeling is fully enabled.
     value: '"LabelingEnabled"'
   - name: labelingPolicyNotFound
     uid: word!Word.LabelingCapability.labelingPolicyNotFound:member
     package: word!
-    summary: |-
-      No labeling policy was found for the user.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No labeling policy was found for the user.
     value: '"LabelingPolicyNotFound"'
   - name: noLicense
     uid: word!Word.LabelingCapability.noLicense:member
     package: word!
-    summary: |-
-      No valid license is available for sensitivity labeling.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No valid license is available for sensitivity labeling.
     value: '"NoLicense"'

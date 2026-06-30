@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ListLevelCollectionLoadOptions
 summary: Contains a collection of [Word.ListLevel](xref:word!Word.ListLevel:class) objects.
 remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.ListLevelCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,11 @@ properties:
     uid: word!Word.Interfaces.ListLevelCollectionLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: 'For EACH ITEM in the collection: Specifies the horizontal alignment of the list level. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the horizontal alignment of the list level. The value can be `left`<!--
+      -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +44,11 @@ properties:
     uid: word!Word.Interfaces.ListLevelCollectionLoadOptions#font:member
     package: word!
     fullName: font
-    summary: 'For EACH ITEM in the collection: Gets a `Font` object that represents the character formatting of the `ListLevel` object.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Font` object that represents the character formatting of the `ListLevel`
+      object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +61,7 @@ properties:
     fullName: linkedStyle
     summary: 'For EACH ITEM in the collection: Specifies the name of the style that''s linked to the `ListLevel` object.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +74,7 @@ properties:
     fullName: numberFormat
     summary: 'For EACH ITEM in the collection: Specifies the number format for the list level.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +85,11 @@ properties:
     uid: word!Word.Interfaces.ListLevelCollectionLoadOptions#numberPosition:member
     package: word!
     fullName: numberPosition
-    summary: 'For EACH ITEM in the collection: Specifies the position (in points) of the number or bullet for the `ListLevel` object.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the position (in points) of the number or bullet for the `ListLevel`
+      object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +102,7 @@ properties:
     fullName: numberStyle
     summary: 'For EACH ITEM in the collection: Specifies the number style for the `ListLevel` object.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +115,7 @@ properties:
     fullName: resetOnHigher
     summary: 'For EACH ITEM in the collection: Specifies the list level that must appear before it restarts numbering at 1.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +128,7 @@ properties:
     fullName: startAt
     summary: 'For EACH ITEM in the collection: Specifies the starting number for the `ListLevel` object.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +141,7 @@ properties:
     fullName: tabPosition
     summary: 'For EACH ITEM in the collection: Specifies the tab position for the `ListLevel` object.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,9 +152,11 @@ properties:
     uid: word!Word.Interfaces.ListLevelCollectionLoadOptions#textPosition:member
     package: word!
     fullName: textPosition
-    summary: 'For EACH ITEM in the collection: Specifies the position (in points) for the second line of wrapping text for the `ListLevel` object.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the position (in points) for the second line of wrapping text for the
+      `ListLevel` object.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +169,7 @@ properties:
     fullName: trailingCharacter
     summary: 'For EACH ITEM in the collection: Specifies the character inserted after the number for the list level.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

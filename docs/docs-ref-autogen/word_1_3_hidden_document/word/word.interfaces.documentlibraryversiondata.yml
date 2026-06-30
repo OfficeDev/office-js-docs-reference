@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.DocumentLibraryVersionData
 summary: An interface describing the data returned by calling `documentLibraryVersion.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

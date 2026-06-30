@@ -4,11 +4,14 @@ uid: outlook!Office.MailboxEnums.DelegatePermissions:enum
 package: outlook!
 fullName: Office.MailboxEnums.DelegatePermissions
 summary: This bitmask represents a delegate's permissions on a shared folder.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.8\]
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+example: []
 isPreview: false
 isDeprecated: false
 fields:

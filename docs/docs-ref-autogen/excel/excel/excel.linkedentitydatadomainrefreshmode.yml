@@ -14,7 +14,7 @@ remarks: |-
   - [Excel.LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain): [refreshMode](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-refreshmode-member), [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-supportedrefreshmodes-member)
   - [Excel.LinkedEntityDataDomainCreateOptions](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions): [supportedRefreshModes](/javascript/api/excel/excel.linkedentitydatadomaincreateoptions#excel-excel-linkedentitydatadomaincreateoptions-supportedrefreshmodes-member)
   - [Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs): [refreshMode](/javascript/api/excel/excel.linkedentitydatadomainrefreshmodechangedeventargs#excel-excel-linkedentitydatadomainrefreshmodechangedeventargs-refreshmode-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -24,7 +24,7 @@ fields:
     summary: |-
       Manual refresh by the user. Refresh is not triggered automatically.
 
-      * [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This field isn't supported in Excel on the web.
     value: '"Manual"'
@@ -34,7 +34,7 @@ fields:
     summary: |-
       Refresh on workbook load, applicable to linked entity data domains defined by service data providers, such as Bing or Power BI. Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
 
-      * [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This field isn't supported in Excel on the web.
     value: '"OnLoad"'
@@ -44,7 +44,7 @@ fields:
     summary: |-
       Refresh automatically based on the frequency, in seconds, specified by `periodicRefreshInterval`<!-- -->. For linked entity data domains defined by service data providers, such as Bing or Power BI, this value also initiates a refresh each time the workbook is opened. For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
 
-      * [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This field isn't supported in Excel on the web.
     value: '"Periodic"'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       Refresh mode is unknown or unsupported.
 
-      * [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This field isn't supported in Excel on the web.
     value: '"Unknown"'

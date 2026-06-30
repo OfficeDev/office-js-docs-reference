@@ -12,7 +12,7 @@ remarks: |-
   - [Excel.CellValuePropertyMetadata](/javascript/api/excel/excel.cellvaluepropertymetadata): [attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-attribution-member)
   - [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue): [attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)
   - [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue): [attribution](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-attribution-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +23,7 @@ properties:
     fullName: licenseAddress
     summary: Represents a URL to a license or source that describes how this property can be used.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     fullName: licenseText
     summary: Represents a name for the license that governs this property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +49,7 @@ properties:
     fullName: sourceAddress
     summary: Represents a URL to the source of the `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +62,7 @@ properties:
     fullName: sourceText
     summary: Represents a name for the source of the `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.SlideScopedCollectionUpdateData
 uid: powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideScopedCollectionUpdateData
-summary: An interface for updating data on the `SlideScopedCollection` object, for use in `slideScopedCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `SlideScopedCollection` object, for use in `slideScopedCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

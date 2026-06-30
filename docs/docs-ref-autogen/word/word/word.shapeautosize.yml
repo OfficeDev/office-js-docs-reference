@@ -10,64 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.TextFrame](/javascript/api/word/word.textframe): [autoSizeSetting](/javascript/api/word/word.textframe#word-word-textframe-autosizesetting-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-  await Word.run(async (context) => {
-    // Sets text frame properties of the first text box in the main document.
-    const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-    shape.load("textFrame");
-    await context.sync();
-
-    if (shape.isNullObject) {
-      console.log("No shapes with text boxes found in the main document.");
-      return;
-    }
-
-    const textFrame: Word.TextFrame = shape.textFrame;
-    textFrame.verticalAlignment = Word.ShapeTextVerticalAlignment.bottom;
-    textFrame.orientation = Word.ShapeTextOrientation.vertical270;
-    textFrame.autoSizeSetting = Word.ShapeAutoSize.shapeToFitText;
-
-    console.log("The first text box's text frame properties were updated:", textFrame);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: mixed
     uid: word!Word.ShapeAutoSize.mixed:member
     package: word!
-    summary: |-
-      A combination of automatic sizing schemes are used.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: A combination of automatic sizing schemes are used.
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeAutoSize.none:member
     package: word!
-    summary: |-
-      No autosizing.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No autosizing.
     value: '"None"'
   - name: shapeToFitText
     uid: word!Word.ShapeAutoSize.shapeToFitText:member
     package: word!
-    summary: |-
-      The shape is adjusted to fit the text.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The shape is adjusted to fit the text.
     value: '"ShapeToFitText"'
   - name: textToFitShape
     uid: word!Word.ShapeAutoSize.textToFitShape:member
     package: word!
-    summary: |-
-      The text is adjusted to fit the shape.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The text is adjusted to fit the shape.
     value: '"TextToFitShape"'

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.RevisionsFilterData
 summary: An interface describing the data returned by calling `revisionsFilter.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

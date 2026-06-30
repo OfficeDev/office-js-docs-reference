@@ -14,7 +14,7 @@ remarks: |-
   - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [getItem](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-items-member)
   - [OneNote.PageContent](/javascript/api/onenote/onenote.pagecontent): [parentPage](/javascript/api/onenote/onenote.pagecontent#onenote-onenote-pagecontent-parentpage-member)
   - [OneNote.Section](/javascript/api/onenote/onenote.section): [addPage](/javascript/api/onenote/onenote.section#onenote-onenote-section-addpage-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -25,7 +25,7 @@ properties:
     fullName: classNotebookPageSource
     summary: Gets the ClassNotebookPageSource to the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,7 +38,7 @@ properties:
     fullName: clientUrl
     summary: The client url of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,7 +51,7 @@ properties:
     fullName: contents
     summary: The collection of PageContent objects on the page. Read only
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +64,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +77,7 @@ properties:
     fullName: id
     summary: Gets the ID of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +90,7 @@ properties:
     fullName: inkAnalysisOrNull
     summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +103,7 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ properties:
     fullName: parentSection
     summary: Gets the section that contains the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,7 +129,7 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,7 +142,7 @@ properties:
     fullName: webUrl
     summary: The web url of the page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,41 +155,8 @@ methods:
     package: onenote!
     fullName: addOutline(left, top, html)
     summary: Adds an Outline to the page at the specified position.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-
-          // Gets the active page.
-          const page = context.application.getActivePage();
-
-          // Queue a command to add an outline with given html.
-          const outline = page.addOutline(200, 200,
-      "<p>Images and a table below:</p> \
-       <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
-       <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
-       <table> \
-         <tr> \
-           <td>Jill</td> \
-           <td>Smith</td> \
-           <td>50</td> \
-         </tr> \
-         <tr> \
-           <td>Eve</td> \
-           <td>Jackson</td> \
-           <td>94</td> \
-         </tr> \
-       </table>"     
-              );
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,13 +180,13 @@ methods:
     fullName: analyzePage()
     summary: Return a JSON string with node ID and content in HTML format.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'analyzePage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: applyTranslation(translatedContent)
     uid: onenote!OneNote.Page#applyTranslation:member(1)
@@ -227,7 +194,7 @@ methods:
     fullName: applyTranslation(translatedContent)
     summary: Inserts a new page with translated content.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,40 +211,8 @@ methods:
     package: onenote!
     fullName: copyToSection(destinationSection)
     summary: Copies this page to specified section.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          
-          // Gets the active notebook.
-          const notebook = app.getActiveNotebook();
-          
-          // Gets the active page.
-          const page = app.getActivePage();
-          
-          // Queue a command to load sections under the notebook.
-          notebook.load('sections');
-          
-          let newPage;
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          const section = notebook.sections.items[0];
-          
-          // Copy page to the section.
-          newPage = page.copyToSection(section);
-          newPage.load('id');
-          await context.sync();
-          
-          console.log(newPage.id);
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +230,7 @@ methods:
     fullName: copyToSectionAndSetClassNotebookPageSource(destinationSection)
     summary: Copies this page to specified section and sets ClassNotebookPageSource.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -312,33 +247,14 @@ methods:
     package: onenote!
     fullName: getRestApiId()
     summary: Gets the REST API ID.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-          // Get the current page.
-          const page = context.application.getActivePage();
-          const restApiId = page.getRestApiId();
-
-          await context.sync();
-          console.log("The REST API ID is " + restApiId.value);
-          // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-          // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-          // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-          // according to the OneNote Development Blog.
-          // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: hasTitleContent()
     uid: onenote!OneNote.Page#hasTitleContent:member(1)
@@ -346,13 +262,13 @@ methods:
     fullName: hasTitleContent()
     summary: Does the page has content title.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'hasTitleContent(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: ''
   - name: insertPageAsSibling(location, title)
     uid: onenote!OneNote.Page#insertPageAsSibling:member(1)
@@ -360,7 +276,7 @@ methods:
     fullName: insertPageAsSibling(location, title)
     summary: Inserts a new page before or after the current page.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -380,29 +296,8 @@ methods:
     package: onenote!
     fullName: insertPageAsSibling(location, title)
     summary: Inserts a new page before or after the current page.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-
-          // Gets the active page.
-          const activePage = context.application.getActivePage();
-
-          // Queue a command to add a new page after the active page.
-          const newPage = activePage.insertPageAsSibling("After", "Next Page");
-
-          // Queue a command to load the newPage to access its data.
-          context.load(newPage);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          console.log("page is created with title: " + newPage.title);
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -423,7 +318,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -441,7 +336,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -452,44 +347,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.Page:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Gets the active page.
-              const activePage = context.application.getActivePage();
-
-              // Queue a command to add a new page after the active page.
-              const pageContents = activePage.contents;
-
-              // Queue a command to load the pageContents to access its data.
-              context.load(pageContents);
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync()
-              for(let i=0; i < pageContents.items.length; i++) {
-                  const pageContent = pageContents.items[i];
-                  if (pageContent.type == "Outline") {
-                      console.log("Found an outline");
-                  } else if (pageContent.type == "Image") {
-                      console.log("Found an image");
-                  } else if (pageContent.type == "Other") {
-                      console.log("Found a type not supported yet.");
-                  }
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.Page#load:member(3)
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -515,7 +380,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -526,7 +391,7 @@ methods:
           type: <xref uid="onenote!OneNote.Interfaces.PageUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="onenote!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -536,7 +401,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -554,7 +419,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `OneNote.Page` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -568,7 +433,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -582,7 +447,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -590,4 +455,4 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Page:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="onenote!~OfficeExtension.ClientObject:class" />

@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: address
     summary: The address of the ranges that began calculation. If multiple ranges began calculation, the string is a comma-separated list of those range addresses.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: worksheetId
     summary: The ID of the worksheet within which the calculation occurred.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

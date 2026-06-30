@@ -11,7 +11,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [goTo](/javascript/api/word/word.document#word-word-document-goto-member(1))
   - [Word.Selection](/javascript/api/word/word.selection): [goTo](/javascript/api/word/word.selection#word-word-selection-goto-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: count
     summary: If provided, specifies the number of the item in the document. Only positive values are valid. The default value is 1.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: direction
     summary: If provided, specifies the direction the range or selection is moved to. The default value is `next`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: item
     summary: If provided, specifies the kind of item the range or selection is moved to. The default value is `page`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: name
     summary: If provided, specifies the name if the `item` property is set to [Word.GoToItem](xref:word!Word.GoToItem:enum) type `bookmark`<!-- -->, `comment`<!-- -->, `field`<!-- -->, or `object`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RangeViewData
 summary: An interface describing the data returned by calling `rangeView.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

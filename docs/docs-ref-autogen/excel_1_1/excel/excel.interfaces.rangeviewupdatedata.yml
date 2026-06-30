@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RangeViewUpdateData
 summary: An interface for updating data on the `RangeView` object, for use in `rangeView.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -4,15 +4,25 @@ uid: outlook!Office.MailboxEnums.CategoryColor:enum
 package: outlook!
 fullName: Office.MailboxEnums.CategoryColor
 summary: Specifies the category color.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.8\]
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-  **Important**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset apply to Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac (starting in Version 16.78).
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
 
-  Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors. This has now been fixed starting in Version 16.78. If you've recently updated your Outlook client, you need to adjust the category colors in your add-in to match the updated preset values.
 
+  \*\*Important\*\*: The actual color depends on how the Outlook client renders it. In this case, the colors noted on
+  each preset apply to Outlook on the web, on Windows
+  ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac (starting
+  in Version 16.78).
+
+
+  Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors. This has now been fixed starting
+  in Version 16.78. If you've recently updated your Outlook client, you need to adjust the category colors in your
+  add-in to match the updated preset values.
+example: []
 isPreview: false
 isDeprecated: false
 fields:

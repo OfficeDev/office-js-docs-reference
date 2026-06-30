@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ReflectionFormatData
 summary: An interface describing the data returned by calling `reflectionFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

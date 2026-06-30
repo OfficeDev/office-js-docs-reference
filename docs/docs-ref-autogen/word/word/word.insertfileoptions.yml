@@ -11,29 +11,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-  // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
-  await Word.run(async (context) => {
-    // Use the Base64-encoded string representation of the selected .docx file.
-    context.document.insertFileFromBase64(externalDocument, "Replace", {
-      importTheme: true,
-      importStyles: true,
-      importParagraphSpacing: true,
-      importPageColor: true,
-      importChangeTrackingMode: true,
-      importCustomProperties: true,
-      importCustomXmlParts: true,
-      importDifferentOddEvenPages: true
-    });
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -44,7 +22,7 @@ properties:
     fullName: importChangeTrackingMode
     summary: If provided, specifies whether the change tracking mode status from the source document should be imported.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +35,7 @@ properties:
     fullName: importCustomProperties
     summary: If provided, specifies whether the custom properties from the source document should be imported. Overwrites existing properties with the same name.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +48,7 @@ properties:
     fullName: importCustomXmlParts
     summary: If provided, specifies whether the custom XML parts from the source document should be imported.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +61,7 @@ properties:
     fullName: importDifferentOddEvenPages
     summary: If provided, specifies whether to import the Different Odd and Even Pages setting for the header and footer from the source document.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +74,7 @@ properties:
     fullName: importPageColor
     summary: If provided, specifies whether the page color and other background information from the source document should be imported.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +87,7 @@ properties:
     fullName: importParagraphSpacing
     summary: If provided, specifies whether the paragraph spacing from the source document should be imported.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +100,7 @@ properties:
     fullName: importStyles
     summary: If provided, specifies whether the styles from the source document should be imported.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,7 +113,7 @@ properties:
     fullName: importTheme
     summary: If provided, specifies whether the theme from the source document should be imported.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

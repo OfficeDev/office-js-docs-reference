@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue): [errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       An error caused by a corrupt formula. Displays as error type \#REF! in Excel.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CorruptCellRef"'
   - name: externalLinksCalculatedRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: excel!Excel.RefErrorCellValueSubType.unknown:member
@@ -44,5 +44,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#REF! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

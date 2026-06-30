@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ImageUpdateData
 summary: An interface for updating data on the `Image` object, for use in `image.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

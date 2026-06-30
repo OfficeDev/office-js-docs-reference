@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.FunctionCellValueType
 summary: Represents the types of the `FunctionCellValue` object.
 remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,5 +15,5 @@ fields:
     summary: |-
       Reference to a JavaScript custom function. For more information, see [Create custom functions in Excel](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)<!-- -->.
 
-      * [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"JavaScriptReference"'

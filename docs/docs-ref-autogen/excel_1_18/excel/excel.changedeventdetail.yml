@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.TableChangedEventArgs](/javascript/api/excel/excel.tablechangedeventargs): [details](/javascript/api/excel/excel.tablechangedeventargs#excel-excel-tablechangedeventargs-details-member)
   - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [details](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-details-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: valueAfter
     summary: Represents the value after the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: valueAsJsonAfter
     summary: Represents the type of value after the change. Unlike `valueAfter`<!-- -->, `valueAsJsonAfter` can represent all cell values, such as formatted number, web image, and entity data types.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: valueAsJsonBefore
     summary: Represents the type of value before the change. Unlike `valueBefore`<!-- -->, `valueAsJsonBefore` can represent all cell values, such as formatted number, web image, and entity data types.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: valueBefore
     summary: Represents the value before the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: valueTypeAfter
     summary: Represents the type of value after the change.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
     fullName: valueTypeBefore
     summary: Represents the type of value before the change.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

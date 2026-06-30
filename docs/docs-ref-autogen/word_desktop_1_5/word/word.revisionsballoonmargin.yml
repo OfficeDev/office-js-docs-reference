@@ -5,23 +5,17 @@ package: word!
 fullName: Word.RevisionsBalloonMargin
 summary: Specifies the margin for revision balloons in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: left
     uid: word!Word.RevisionsBalloonMargin.left:member
     package: word!
-    summary: |-
-      Left margin.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Left margin.
     value: '"Left"'
   - name: right
     uid: word!Word.RevisionsBalloonMargin.right:member
     package: word!
-    summary: |-
-      Right margin.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Right margin.
     value: '"Right"'

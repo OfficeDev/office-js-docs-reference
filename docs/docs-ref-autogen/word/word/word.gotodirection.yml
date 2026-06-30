@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.GoToOptions](/javascript/api/word/word.gotooptions): [direction](/javascript/api/word/word.gotooptions#word-word-gotooptions-direction-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: first
     uid: word!Word.GoToDirection.first:member
     package: word!
-    summary: |-
-      Moves to the first item.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Moves to the first item.
     value: '"First"'
   - name: last
     uid: word!Word.GoToDirection.last:member
     package: word!
-    summary: |-
-      Moves to the last item.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Moves to the last item.
     value: '"Last"'
   - name: next
     uid: word!Word.GoToDirection.next:member
     package: word!
-    summary: |-
-      Moves to the next item.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Moves to the next item.
     value: '"Next"'
   - name: previous
     uid: word!Word.GoToDirection.previous:member
     package: word!
-    summary: |-
-      Moves to the previous item.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Moves to the previous item.
     value: '"Previous"'

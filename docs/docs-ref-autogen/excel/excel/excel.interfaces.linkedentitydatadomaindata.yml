@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.LinkedEntityDataDomain](/javascript/api/excel/excel.linkedentitydatadomain): [toJSON](/javascript/api/excel/excel.linkedentitydatadomain#excel-excel-linkedentitydatadomain-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,7 +38,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +70,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +102,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +118,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,7 +134,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +150,7 @@ properties:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

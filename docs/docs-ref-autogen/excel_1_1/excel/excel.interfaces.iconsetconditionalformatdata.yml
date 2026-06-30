@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.IconSetConditionalFormatData
 summary: An interface describing the data returned by calling `iconSetConditionalFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

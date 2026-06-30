@@ -17,7 +17,7 @@ remarks: |-
   - [Excel.TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): [load](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-load-member(1))
   - [Excel.TableRowCollection](/javascript/api/excel/excel.tablerowcollection): [load](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-load-member(1))
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [load](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,7 +28,7 @@ properties:
     fullName: $skip
     summary: Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,7 +41,7 @@ properties:
     fullName: $top
     summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

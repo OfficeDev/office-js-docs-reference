@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [getPivotItems](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getpivotitems-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The column axis.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Column"'
   - name: data
     uid: excel!Excel.PivotAxis.data:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The data axis.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Data"'
   - name: filter
     uid: excel!Excel.PivotAxis.filter:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       The filter axis.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Filter"'
   - name: row
     uid: excel!Excel.PivotAxis.row:member
@@ -44,7 +44,7 @@ fields:
     summary: |-
       The row axis.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Row"'
   - name: unknown
     uid: excel!Excel.PivotAxis.unknown:member
@@ -52,5 +52,5 @@ fields:
     summary: |-
       The axis or region is unknown or unsupported.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

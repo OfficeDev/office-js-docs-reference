@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection): [toJSON](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

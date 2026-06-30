@@ -10,43 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [placeholderFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-placeholderformat-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-  // Gets the placeholder shapes in the slide.
-  await PowerPoint.run(async (context) => {
-    // Get properties for every shape in the collection.
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    shapes.load("type,name");
-    await context.sync();
-
-    const placeholderShapes = [];
-    console.log(`Number of shapes found: ${shapes.items.length}`);
-    shapes.items.forEach((shape) => {
-      if (shape.type === PowerPoint.ShapeType.placeholder) {
-        // Load placeholderFormat property.
-        // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
-        shape.load("placeholderFormat");
-        placeholderShapes.push(shape);
-      }
-    });
-    await context.sync();
-
-    console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
-    for (let i = 0; i < placeholderShapes.length; i++) {
-      let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
-      let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
-      let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
-      console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
-      console.log(`\ttype: ${placeholderType}`);
-      console.log(`\tcontainedType: ${placeholderContainedType}`);
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -57,7 +21,7 @@ properties:
     fullName: containedType
     summary: Gets the type of the shape contained within the placeholder. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details. Returns `null` if the placeholder is empty.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +47,7 @@ properties:
     fullName: type
     summary: Returns the type of this placeholder. See [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum) for details.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +61,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +79,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +97,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +123,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.PlaceholderFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PlaceholderFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,4 +131,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

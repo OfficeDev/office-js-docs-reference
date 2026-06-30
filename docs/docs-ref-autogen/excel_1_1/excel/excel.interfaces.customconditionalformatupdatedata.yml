@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
 summary: An interface for updating data on the `CustomConditionalFormat` object, for use in `customConditionalFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

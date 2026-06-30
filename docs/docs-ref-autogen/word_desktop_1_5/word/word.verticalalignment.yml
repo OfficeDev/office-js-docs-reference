@@ -5,39 +5,27 @@ package: word!
 fullName: Word.VerticalAlignment
 summary: Represents the vertical alignment of text.
 remarks: '\[Api set: WordApi 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottom
     uid: word!Word.VerticalAlignment.bottom:member
     package: word!
-    summary: |-
-      Bottom vertical alignment.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Bottom vertical alignment.
     value: '"Bottom"'
   - name: center
     uid: word!Word.VerticalAlignment.center:member
     package: word!
-    summary: |-
-      Center vertical alignment.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Center vertical alignment.
     value: '"Center"'
   - name: mixed
     uid: word!Word.VerticalAlignment.mixed:member
     package: word!
-    summary: |-
-      Mixed vertical alignment.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Mixed vertical alignment.
     value: '"Mixed"'
   - name: top
     uid: word!Word.VerticalAlignment.top:member
     package: word!
-    summary: |-
-      Top vertical alignment.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Top vertical alignment.
     value: '"Top"'

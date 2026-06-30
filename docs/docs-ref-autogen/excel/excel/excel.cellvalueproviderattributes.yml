@@ -17,7 +17,7 @@ remarks: |-
   - [Excel.LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue): [provider](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-provider-member)
   - [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue): [provider](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-provider-member)
   - [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue): [provider](/javascript/api/excel/excel.webimagecellvalue#excel-excel-webimagecellvalue-provider-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,7 +28,7 @@ properties:
     fullName: description
     summary: Represents the provider description property that is used in card view if no logo is specified. If a logo is specified, this will be used as tooltip text.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,7 +41,7 @@ properties:
     fullName: logoSourceAddress
     summary: Represents a URL used to download an image that will be used as a logo in card view.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
     fullName: logoTargetAddress
     summary: Represents a URL that is the navigation target if the user clicks on the logo element in card view.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.FilterData
 summary: An interface describing the data returned by calling `filter.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

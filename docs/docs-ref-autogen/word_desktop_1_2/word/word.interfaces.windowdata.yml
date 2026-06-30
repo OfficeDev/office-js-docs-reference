@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Window](/javascript/api/word/word.window): [toJSON](/javascript/api/word/word.window#word-word-window-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.PageSetup](/javascript/api/word/word.pagesetup): [orientation](/javascript/api/word/word.pagesetup#word-word-pagesetup-orientation-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: landscape
     uid: word!Word.PageOrientation.landscape:member
     package: word!
-    summary: |-
-      Landscape orientation.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Landscape orientation.
     value: '"Landscape"'
   - name: portrait
     uid: word!Word.PageOrientation.portrait:member
     package: word!
-    summary: |-
-      Portrait orientation.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Portrait orientation.
     value: '"Portrait"'

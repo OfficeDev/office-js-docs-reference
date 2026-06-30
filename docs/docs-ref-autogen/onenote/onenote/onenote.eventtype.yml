@@ -5,27 +5,27 @@ package: onenote!
 fullName: OneNote.EventType
 summary: ''
 remarks: '[API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: alterationSelected
     uid: onenote!OneNote.EventType.alterationSelected:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"AlterationSelected"'
   - name: inkSelectedForCorrection
     uid: onenote!OneNote.EventType.inkSelectedForCorrection:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"InkSelectedForCorrection"'
   - name: reset
     uid: onenote!OneNote.EventType.reset:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"Reset"'
   - name: restrictionsCalculated
     uid: onenote!OneNote.EventType.restrictionsCalculated:member
     package: onenote!
-    summary: '* [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    summary: ''
     value: '"RestrictionsCalculated"'

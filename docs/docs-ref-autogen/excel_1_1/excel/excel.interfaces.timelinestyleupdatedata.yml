@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.TimelineStyleUpdateData
 summary: An interface for updating data on the `TimelineStyle` object, for use in `timelineStyle.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

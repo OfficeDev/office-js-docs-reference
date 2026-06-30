@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.Hyperlink](/javascript/api/word/word.hyperlink): [type](/javascript/api/word/word.hyperlink#word-word-hyperlink-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: inlineShape
     uid: word!Word.HyperlinkType.inlineShape:member
     package: word!
-    summary: |-
-      Represents a hyperlink to an inline shape in the document.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a hyperlink to an inline shape in the document.
     value: '"InlineShape"'
   - name: range
     uid: word!Word.HyperlinkType.range:member
     package: word!
-    summary: |-
-      Represents a hyperlink to a range in the document.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a hyperlink to a range in the document.
     value: '"Range"'
   - name: shape
     uid: word!Word.HyperlinkType.shape:member
     package: word!
-    summary: |-
-      Represents a hyperlink to a shape in the document.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a hyperlink to a shape in the document.
     value: '"Shape"'

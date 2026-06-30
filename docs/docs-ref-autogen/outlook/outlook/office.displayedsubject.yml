@@ -7,14 +7,14 @@ summary: Provides a method to temporarily set the content displayed in the subje
 remarks: |-
   [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
   #### Used by
 
   - [Office.Display](/javascript/api/outlook/office.display): [subject](/javascript/api/outlook/office.display#outlook-office-display-subject-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -27,11 +27,11 @@ methods:
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the subject field.
 
@@ -40,11 +40,11 @@ methods:
       - If you save a message after calling `setAsync`<!-- -->, the original subject appears in the saved item.
 
       - The `setAsync` method isn't supported on multiple selected messages.
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'setAsync(data: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(data: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.
@@ -66,11 +66,11 @@ methods:
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - If multiple add-ins that implement `setAsync` run simultaneously, the content set by the last add-in that completes the `setAsync` operation is displayed in the subject field.
 
@@ -79,29 +79,11 @@ methods:
       - If you save a message after calling `setAsync`<!-- -->, the original subject appears in the saved item.
 
       - The `setAsync` method isn't supported on multiple selected messages.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
-
-      // This snippet temporarily sets the content displayed in the subject field of a message in read mode.
-      // The set content will remain visible until the user switches to a different message in the Reading Pane or closes the window of the current message.
-      const subjectText = (document.getElementById("subject-text-field") as HTMLInputElement).value;
-      Office.context.mailbox.item.display.subject.setAsync(subjectText, (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Action failed with error: ${asyncResult.error.message}`);
-          return;
-        }
-
-        console.log("Temporarily set the content displayed in the subject field.");
-      });
-      ```
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'setAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.

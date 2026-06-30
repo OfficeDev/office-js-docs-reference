@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [custom](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-custom-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: formula
     summary: A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Identity
 summary: Represents information about a user's identity.
 remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: displayName
     summary: Represents the user's display name.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: id
     summary: Represents the user's unique ID.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

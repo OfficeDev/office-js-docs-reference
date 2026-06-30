@@ -3,9 +3,11 @@ name: Office.MailboxEnums.InfobarActionType
 uid: outlook!Office.MailboxEnums.InfobarActionType:enum
 package: outlook!
 fullName: Office.MailboxEnums.InfobarActionType
-summary: Action types supported by [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+summary: >-
+  Action types supported by
+  [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
 remarks: '\[Api set: Mailbox 1.10\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -15,5 +17,5 @@ fields:
     summary: |-
       Dismiss action was selected.
 
-      * \[Api set: Mailbox 1.10\]
+      \* \[Api set: Mailbox 1.10\]
     value: '1'

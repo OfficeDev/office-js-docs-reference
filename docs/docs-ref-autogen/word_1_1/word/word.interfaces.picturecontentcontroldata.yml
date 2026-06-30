@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.PictureContentControlData
 summary: An interface describing the data returned by calling `pictureContentControl.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

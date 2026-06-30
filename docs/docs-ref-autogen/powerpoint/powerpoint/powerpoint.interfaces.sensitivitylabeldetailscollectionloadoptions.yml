@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SensitivityLabelDetailsCollection](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection): [load](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-load-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: color
     summary: 'For EACH ITEM in the collection: Gets the color of the sensitivity label.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the sensitivity label.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: isEnabled
     summary: 'For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the name of the sensitivity label.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: order
     summary: 'For EACH ITEM in the collection: Gets the priority of the sensitivity label, with 0 as lowest priority.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: protectionType
     summary: 'For EACH ITEM in the collection: Gets a value indicating the protection type provided by this label.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: siteId
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the tenant which the sensitivity label is belonged.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: tooltip
     summary: 'For EACH ITEM in the collection: Gets the description of the sensitivity label.'
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

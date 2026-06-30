@@ -5,8 +5,6 @@ package: powerpoint!
 fullName: PowerPoint.RequestContext
 summary: The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the request context is required to get access to the PowerPoint object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
@@ -71,18 +69,7 @@ remarks: |-
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
   - [PowerPoint.ThemeColorScheme](/javascript/api/powerpoint/powerpoint.themecolorscheme): [context](/javascript/api/powerpoint/powerpoint.themecolorscheme#powerpoint-powerpoint-themecolorscheme-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await PowerPoint.run(async (context) => {
-    const presentation = context.presentation;
-    // Interact with the PowerPoint presentation...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -93,7 +80,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +96,7 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +109,7 @@ properties:
     fullName: presentation
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,11 +122,11 @@ properties:
     fullName: sensitivityLabelsCatalog
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly sensitivityLabelsCatalog: any;'
       return:
         type: any
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientRequestContext:class" />

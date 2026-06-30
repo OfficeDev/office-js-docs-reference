@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.OleFormatData
 summary: An interface describing the data returned by calling `oleFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

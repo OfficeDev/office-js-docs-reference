@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [printOrder](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-printorder-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Process down the rows before processing across pages or page fields to the right.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DownThenOver"'
   - name: overThenDown
     uid: excel!Excel.PrintOrder.overThenDown:member
@@ -28,5 +28,5 @@ fields:
     summary: |-
       Process across pages or page fields to the right before moving down the rows.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OverThenDown"'

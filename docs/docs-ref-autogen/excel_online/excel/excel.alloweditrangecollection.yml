@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [allowEditRanges](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-alloweditranges-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ methods:
     fullName: add(title, rangeAddress, options)
     summary: Adds an `AllowEditRange` object to the worksheet. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the add operation fails.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +72,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of `AllowEditRange` objects in the collection.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ methods:
     fullName: getItem(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +104,7 @@ methods:
     fullName: getItemAt(index)
     summary: Returns an `AllowEditRange` object by its index in the collection.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +122,7 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,14 +133,14 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.AllowEditRange:class" />
-        description: The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+        description: The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
   - name: load(options)
     uid: excel!Excel.AllowEditRangeCollection#load:member(1)
     package: excel!
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +158,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +176,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,7 +194,7 @@ methods:
     fullName: pauseProtection(password)
     summary: Pauses worksheet protection for all `AllowEditRange` objects found in this worksheet that have the given password for the user in the current session. This method does nothing if worksheet protection isn't enabled or is paused. If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the range. If the password does not match any `AllowEditRange` objects in the collection, then this method throws a `BadPassword` error and fails to pause protection for any range in the collection.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,7 +212,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.AllowEditRangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

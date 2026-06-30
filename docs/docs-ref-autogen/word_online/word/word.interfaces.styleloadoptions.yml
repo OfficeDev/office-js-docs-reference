@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Style](/javascript/api/word/word.style): [load](/javascript/api/word/word.style#word-word-style-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +37,7 @@ properties:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     fullName: builtIn
     summary: Gets whether the style is a built-in style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +63,7 @@ properties:
     fullName: font
     summary: Gets a `Font` object that represents the character formatting of the style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +76,7 @@ properties:
     fullName: inUse
     summary: Gets whether the style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +89,7 @@ properties:
     fullName: linked
     summary: Gets whether the style is a linked style that can be used for both paragraph and character formatting.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +102,7 @@ properties:
     fullName: nameLocal
     summary: Gets the name of the style in the language of the user.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +118,7 @@ properties:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +131,7 @@ properties:
     fullName: paragraphFormat
     summary: Gets a `ParagraphFormat` object that represents the paragraph settings for the style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +144,7 @@ properties:
     fullName: priority
     summary: Specifies the priority.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +157,7 @@ properties:
     fullName: quickStyle
     summary: Specifies whether the style corresponds to an available quick style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,7 +170,7 @@ properties:
     fullName: shading
     summary: Gets a `Shading` object that represents the shading for the style. Not applicable to a style of `List` type.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +183,7 @@ properties:
     fullName: tableStyle
     summary: Gets a `TableStyle` object representing style properties that can be applied to a table.
     remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +196,7 @@ properties:
     fullName: type
     summary: Gets the style type.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,7 +209,7 @@ properties:
     fullName: unhideWhenUsed
     summary: Specifies whether the style is made visible as a recommended style in the Styles gallery and in the Styles task pane in Microsoft Word after it's used in the document.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +222,7 @@ properties:
     fullName: visibility
     summary: Specifies whether the style is visible as a recommended style in the Styles gallery and in the Styles task pane.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

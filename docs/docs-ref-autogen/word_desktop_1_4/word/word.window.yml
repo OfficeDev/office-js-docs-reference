@@ -11,58 +11,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [activeWindow](/javascript/api/word/word.document#word-word-document-activewindow-member)
   - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [getFirst](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.windowcollection#word-word-windowcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.windowcollection#word-word-windowcollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-  await Word.run(async (context) => {
-    // Gets the first paragraph of each page.
-    console.log("Getting first paragraph of each page...");
-
-    // Get the active window.
-    const activeWindow: Word.Window = context.document.activeWindow;
-    activeWindow.load();
-
-    // Get the active pane.
-    const activePane: Word.Pane = activeWindow.activePane;
-    activePane.load();
-
-    // Get all pages.
-    const pages: Word.PageCollection = activePane.pages;
-    pages.load();
-
-    await context.sync();
-
-    // Get page index and paragraphs of each page.
-    const pagesIndexes = [];
-    const pagesNumberOfParagraphs = [];
-    const pagesFirstParagraphText = [];
-    for (let i = 0; i < pages.items.length; i++) {
-      const page = pages.items[i];
-      page.load("index");
-      pagesIndexes.push(page);
-
-      const paragraphs = page.getRange().paragraphs;
-      paragraphs.load("items/length");
-      pagesNumberOfParagraphs.push(paragraphs);
-
-      const firstParagraph = paragraphs.getFirst();
-      firstParagraph.load("text");
-      pagesFirstParagraphText.push(firstParagraph);
-    }
-
-    await context.sync();
-
-    for (let i = 0; i < pagesIndexes.length; i++) {
-      console.log(`Page index: ${pagesIndexes[i].index}`);
-      console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
-      console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -72,51 +21,8 @@ properties:
     package: word!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-      await Word.run(async (context) => {
-        // Gets the pages enclosing the viewport.
-
-        // Get the active window.
-        const activeWindow: Word.Window = context.document.activeWindow;
-        activeWindow.load();
-
-        // Get the active pane.
-        const activePane: Word.Pane = activeWindow.activePane;
-        activePane.load();
-
-        // Get pages enclosing the viewport.
-        const pages: Word.PageCollection = activePane.pagesEnclosingViewport;
-        pages.load();
-
-        await context.sync();
-
-        // Log the number of pages.
-        const pageCount = pages.items.length;
-        console.log(`Number of pages enclosing the viewport: ${pageCount}`);
-
-        // Log index info of these pages.
-        const pagesIndexes = [];
-        for (let i = 0; i < pageCount; i++) {
-          const page = pages.items[i];
-          page.load("index");
-          pagesIndexes.push(page);
-        }
-
-        await context.sync();
-
-        for (let i = 0; i < pagesIndexes.length; i++) {
-          console.log(`Page index: ${pagesIndexes[i].index}`);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,7 +35,7 @@ properties:
     fullName: areRulersDisplayed
     summary: Specifies whether rulers are displayed for the window or pane.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,7 +48,7 @@ properties:
     fullName: areScreenTipsDisplayed
     summary: Specifies whether comments, footnotes, endnotes, and hyperlinks are displayed as tips.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +61,7 @@ properties:
     fullName: areThumbnailsDisplayed
     summary: Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +74,7 @@ properties:
     fullName: caption
     summary: Specifies the caption text for the window that is displayed in the title bar of the document or application window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +87,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,7 +100,7 @@ properties:
     fullName: height
     summary: Specifies the height of the window (in points).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +113,7 @@ properties:
     fullName: horizontalPercentScrolled
     summary: Specifies the horizontal scroll position as a percentage of the document width.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +126,7 @@ properties:
     fullName: imeMode
     summary: Specifies the default start-up mode for the Japanese Input Method Editor (IME).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,7 +139,7 @@ properties:
     fullName: index
     summary: Gets the position of an item in a collection.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +152,7 @@ properties:
     fullName: isActive
     summary: Specifies whether the window is active.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,7 +165,7 @@ properties:
     fullName: isDocumentMapVisible
     summary: Specifies whether the document map is visible.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,7 +178,7 @@ properties:
     fullName: isEnvelopeVisible
     summary: Specifies whether the email message header is visible in the document window. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -285,7 +191,7 @@ properties:
     fullName: isHorizontalScrollBarDisplayed
     summary: Specifies whether a horizontal scroll bar is displayed for the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -298,7 +204,7 @@ properties:
     fullName: isLeftScrollBarDisplayed
     summary: Specifies whether the vertical scroll bar appears on the left side of the document window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -311,7 +217,7 @@ properties:
     fullName: isRightRulerDisplayed
     summary: Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -324,7 +230,7 @@ properties:
     fullName: isSplit
     summary: Specifies whether the window is split into multiple panes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,7 +243,7 @@ properties:
     fullName: isVerticalRulerDisplayed
     summary: Specifies whether a vertical ruler is displayed for the window or pane.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,7 +256,7 @@ properties:
     fullName: isVerticalScrollBarDisplayed
     summary: Specifies whether a vertical scroll bar is displayed for the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,7 +269,7 @@ properties:
     fullName: isVisible
     summary: Specifies whether the window is visible.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,7 +282,7 @@ properties:
     fullName: left
     summary: Specifies the horizontal position of the window, measured in points.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,7 +295,7 @@ properties:
     fullName: next
     summary: Gets the next document window in the collection of open document windows.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -401,28 +307,8 @@ properties:
     package: word!
     fullName: panes
     summary: Gets the collection of panes in the window.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-      await Word.run(async (context) => {
-        // Gets all the panes in the active document window.
-
-        // Get the active window.
-        const activeWindow: Word.Window = context.document.activeWindow;
-        activeWindow.load("panes/items/length");
-
-        await context.sync();
-
-        const panes: Word.PaneCollection = activeWindow.panes;
-        console.log(`Number of panes in the current document window: ${panes.items.length}`);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -435,7 +321,7 @@ properties:
     fullName: previous
     summary: Gets the previous document window in the collection open document windows.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,7 +334,7 @@ properties:
     fullName: showSourceDocuments
     summary: Specifies how Microsoft Word displays source documents after a compare and merge process.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -461,7 +347,7 @@ properties:
     fullName: splitVertical
     summary: Specifies the vertical split percentage for the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -474,7 +360,7 @@ properties:
     fullName: styleAreaWidth
     summary: Specifies the width of the style area in points.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -487,7 +373,7 @@ properties:
     fullName: top
     summary: Specifies the vertical position of the document window, in points.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -500,7 +386,7 @@ properties:
     fullName: type
     summary: Gets the window type.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -513,7 +399,7 @@ properties:
     fullName: usableHeight
     summary: Gets the height (in points) of the active working area in the document window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -526,7 +412,7 @@ properties:
     fullName: usableWidth
     summary: Gets the width (in points) of the active working area in the document window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -539,7 +425,7 @@ properties:
     fullName: verticalPercentScrolled
     summary: Specifies the vertical scroll position as a percentage of the document length.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -552,7 +438,7 @@ properties:
     fullName: view
     summary: Gets the `View` object that represents the view for the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,7 +451,7 @@ properties:
     fullName: width
     summary: Specifies the width of the document window, in points.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -578,7 +464,7 @@ properties:
     fullName: windowNumber
     summary: Gets an integer that represents the position of the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -592,7 +478,7 @@ methods:
     fullName: activate()
     summary: Activates the window.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -605,23 +491,8 @@ methods:
     package: word!
     fullName: close(options)
     summary: Closes the window.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
-
-      await Word.run(async (context) => {
-        // Closes the document window, prompting to save if this is a new document.
-        const window: Word.Window = context.document.activeWindow;
-        const closeOptions: Word.WindowCloseOptions = { saveChanges: Word.SaveConfiguration.promptToSaveChanges };
-        console.log("About to close the document window...");
-        window.close(closeOptions);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -639,7 +510,7 @@ methods:
     fullName: largeScroll(options)
     summary: Scrolls the window by the specified number of screens.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -657,7 +528,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -675,7 +546,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -693,7 +564,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -719,7 +590,7 @@ methods:
     fullName: pageScroll(options)
     summary: Scrolls through the window page by page.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -737,7 +608,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -748,7 +619,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.WindowUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -758,7 +629,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -776,7 +647,7 @@ methods:
     fullName: setFocus()
     summary: Sets the focus of the document window to the body of an email message.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -790,7 +661,7 @@ methods:
     fullName: smallScroll(options)
     summary: Scrolls the window by the specified number of lines. A "line" corresponds to the distance scrolled by clicking the scroll arrow on the scroll bar once.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -808,7 +679,7 @@ methods:
     fullName: toggleRibbon()
     summary: Shows or hides the ribbon.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -822,7 +693,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Window` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WindowData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -836,7 +707,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -850,7 +721,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -858,4 +729,4 @@ methods:
       return:
         type: <xref uid="word!Word.Window:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

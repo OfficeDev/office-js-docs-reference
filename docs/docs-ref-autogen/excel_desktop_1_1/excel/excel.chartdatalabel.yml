@@ -10,49 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [dataLabel](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-datalabel-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-labels.yaml
-
-  // This function styles substrings within data label text using font formatting.
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem(sheetName);
-    const chart = sheet.charts.getItemAt(0);
-    await context.sync();
-
-    const series = chart.series.getItemAt(0);
-    series.load("points");
-    await context.sync();
-
-    series.points.load("items");
-    await context.sync();
-
-    // Style a substring in the first data label.
-    let searchString = "sports";
-    let dataLabel = series.points.getItemAt(dataLabelInfo[0].index).dataLabel.load("text");
-    await context.sync();
-    let substringStart = dataLabel.text.indexOf(searchString);
-    let subLabel = dataLabel.getSubstring(substringStart, searchString.length);
-    subLabel.font.size = 13;
-    subLabel.font.bold = true;
-
-    // Style a substring in the second data label.
-    searchString = "'Titanic'";
-    dataLabel = series.points.getItemAt(dataLabelInfo[1].index).dataLabel.load("text");
-    await context.sync();
-
-    substringStart = dataLabel.text.indexOf(searchString);
-    subLabel = dataLabel.getSubstring(substringStart, searchString.length);
-    subLabel.font.name = "Calibri";
-    subLabel.font.size = 13;
-    subLabel.font.italic = true;
-    subLabel.font.color = "blue";
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -63,7 +21,7 @@ properties:
     fullName: autoText
     summary: Specifies if the data label automatically generates appropriate text based on context.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +47,7 @@ properties:
     fullName: format
     summary: Represents the format of chart data label.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +60,7 @@ properties:
     fullName: formula
     summary: String value that represents the formula of chart data label using A1-style notation.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +73,7 @@ properties:
     fullName: geometricShapeType
     summary: Specifies the geometric shape type of the data label. See `Excel.GeometricShapeType` for more details. Value is `null` if the data label is not a geometric shape.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +86,7 @@ properties:
     fullName: height
     summary: Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +99,7 @@ properties:
     fullName: horizontalAlignment
     summary: Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details. This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,7 +112,7 @@ properties:
     fullName: left
     summary: Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Value is `null` if the chart data label is not visible.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,7 +125,7 @@ properties:
     fullName: linkNumberFormat
     summary: Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +138,7 @@ properties:
     fullName: numberFormat
     summary: Specifies the format code for data label.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,7 +151,7 @@ properties:
     fullName: position
     summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +164,7 @@ properties:
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,7 +177,7 @@ properties:
     fullName: showAsStickyCallout
     summary: 'Specifies if the data label is shown as a callout with the tail anchor attached to the data point. If `true`<!-- -->, the callout is one of the following values: "AccentCallout1", "AccentCallout2", "BorderCallout1", "BorderCallout2", "WedgeRectCallout", "WedgeRRectCallout" or "WedgeEllipseCallout". See [GeometricShapeType](xref:excel!Excel.GeometricShapeType:enum) for more details.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,7 +190,7 @@ properties:
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,7 +203,7 @@ properties:
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,7 +216,7 @@ properties:
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +229,7 @@ properties:
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,7 +242,7 @@ properties:
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +255,7 @@ properties:
     fullName: showValue
     summary: Specifies if the data label value is visible.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,7 +268,7 @@ properties:
     fullName: text
     summary: String representing the text of the data label on a chart.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +281,7 @@ properties:
     fullName: textOrientation
     summary: Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +294,7 @@ properties:
     fullName: top
     summary: Represents the distance, in points, from the top edge of chart data label to the top of chart area. Value is `null` if the chart data label is not visible.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -349,7 +307,7 @@ properties:
     fullName: verticalAlignment
     summary: Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This property is valid only when `TextOrientation` of data label is 0.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,7 +320,7 @@ properties:
     fullName: width
     summary: Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,7 +334,7 @@ methods:
     fullName: getSubstring(start, length)
     summary: Returns a substring of the data label. The line break character '<!-- -->\\<!-- -->n' counts as one character.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -397,7 +355,7 @@ methods:
     fullName: getTailAnchor()
     summary: Returns the tail anchor of the data label which is shown as a sticky callout.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -411,7 +369,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -429,7 +387,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -447,7 +405,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -473,7 +431,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -494,7 +452,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -512,7 +470,7 @@ methods:
     fullName: setHeight(height)
     summary: Sets the height of the data label in points.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -530,7 +488,7 @@ methods:
     fullName: setWidth(width)
     summary: Sets the width of the data label in points.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -548,7 +506,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.ChartDataLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,11 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.EntityViewLayouts](/javascript/api/excel/excel.entityviewlayouts): [card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)
-
-  Learn more about the types in this type alias through the following links. 
-
-  [Excel.EntityCardLayout](/javascript/api/excel/excel.entitycardlayout)
-
+example: []
 isPreview: false
 isDeprecated: false
 syntax: export type CardLayout = EntityCardLayout;

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CustomXmlNodeUpdateData
 summary: An interface for updating data on the `CustomXmlNode` object, for use in `customXmlNode.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

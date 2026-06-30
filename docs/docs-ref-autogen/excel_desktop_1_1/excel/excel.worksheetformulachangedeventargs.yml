@@ -11,36 +11,7 @@ remarks: |-
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformulachanged-member)
-
-  #### Examples
-
-  ```TypeScript
-  async function registerFormulaChangeHandler() {
-      await Excel.run(async (context) => {
-          // Register the formula changed event handler for the Sample worksheet.
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          sheet.onFormulaChanged.add(formulaChangeHandler);
-          await context.sync();
-      });
-  }
-
-  async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
-      await Excel.run(async (context) => {
-          // Retrieve details about the formula change event.
-          const cellAddress = event.formulaDetails[0].cellAddress;
-          const previousFormula = event.formulaDetails[0].previousFormula;
-          const source = event.source;
-          
-          // Print out the change event details.
-          console.log(
-              `The formula in cell ${cellAddress} changed. 
-              The previous formula was: ${previousFormula}. 
-              The source of the change was: ${source}.`
-          );
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -54,7 +25,7 @@ properties:
 
       If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails` returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +38,7 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +51,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +64,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the formula changed.
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

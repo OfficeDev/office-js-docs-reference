@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ListFormatUpdateData
 summary: An interface for updating data on the `ListFormat` object, for use in `listFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

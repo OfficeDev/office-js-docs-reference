@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [readingLayoutTruncateMargins](/javascript/api/word/word.view#word-word-view-readinglayouttruncatemargins-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: automatic
     uid: word!Word.ReadingLayoutMargin.automatic:member
     package: word!
-    summary: |-
-      Microsoft Word determines automatically whether to show or hide the margins based on the available space.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Microsoft Word determines automatically whether to show or hide the margins based on the available space.
     value: '"Automatic"'
   - name: full
     uid: word!Word.ReadingLayoutMargin.full:member
     package: word!
-    summary: |-
-      Shows margins.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Shows margins.
     value: '"Full"'
   - name: suppress
     uid: word!Word.ReadingLayoutMargin.suppress:member
     package: word!
-    summary: |-
-      Hides margins.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Hides margins.
     value: '"Suppress"'

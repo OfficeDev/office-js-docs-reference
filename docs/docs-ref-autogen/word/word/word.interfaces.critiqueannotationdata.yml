@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.CritiqueAnnotation](/javascript/api/word/word.critiqueannotation): [toJSON](/javascript/api/word/word.critiqueannotation#word-word-critiqueannotation-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

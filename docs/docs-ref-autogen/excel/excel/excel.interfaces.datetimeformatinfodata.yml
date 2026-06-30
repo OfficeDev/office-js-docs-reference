@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo): [toJSON](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: dateSeparator
     summary: Gets the string used as the date separator. This is based on current system settings.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: longDatePattern
     summary: Gets the format string for a long date value. This is based on current system settings.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: longTimePattern
     summary: Gets the format string for a long time value. This is based on current system settings.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: shortDatePattern
     summary: Gets the format string for a short date value. This is based on current system settings.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: shortDateTimePattern
     summary: Gets the format string for a short date and time value. This is based on current system settings.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: timeSeparator
     summary: Gets the string used as the time separator. This is based on current system settings.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

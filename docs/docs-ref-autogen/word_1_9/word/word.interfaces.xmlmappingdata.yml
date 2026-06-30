@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.XmlMappingData
 summary: An interface describing the data returned by calling `xmlMapping.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

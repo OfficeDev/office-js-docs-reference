@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection): [load](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view by using the name property causes the sheet view to be saved.'
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,23 +5,17 @@ package: word!
 fullName: Word.PageOrientation
 summary: Specifies a page layout orientation.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: landscape
     uid: word!Word.PageOrientation.landscape:member
     package: word!
-    summary: |-
-      Landscape orientation.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Landscape orientation.
     value: '"Landscape"'
   - name: portrait
     uid: word!Word.PageOrientation.portrait:member
     package: word!
-    summary: |-
-      Portrait orientation.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Portrait orientation.
     value: '"Portrait"'

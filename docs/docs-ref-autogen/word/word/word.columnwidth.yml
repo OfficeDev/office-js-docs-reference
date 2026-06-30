@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [columnWidth](/javascript/api/word/word.view#word-word-view-columnwidth-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.ColumnWidth.default:member
     package: word!
-    summary: |-
-      Default column width.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Default column width.
     value: '"Default"'
   - name: narrow
     uid: word!Word.ColumnWidth.narrow:member
     package: word!
-    summary: |-
-      Narrow column width.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Narrow column width.
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ColumnWidth.wide:member
     package: word!
-    summary: |-
-      Wide column width.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Wide column width.
     value: '"Wide"'

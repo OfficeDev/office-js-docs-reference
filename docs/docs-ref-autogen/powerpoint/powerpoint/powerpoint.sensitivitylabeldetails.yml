@@ -11,7 +11,7 @@ remarks: |-
 
   - [PowerPoint.SensitivityLabel](/javascript/api/powerpoint/powerpoint.sensitivitylabel): [getCurrentOrNullObject](/javascript/api/powerpoint/powerpoint.sensitivitylabel#powerpoint-powerpoint-sensitivitylabel-getcurrentornullobject-member(1))
   - [PowerPoint.SensitivityLabelDetailsCollection](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection): [getItem](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetailscollection#powerpoint-powerpoint-sensitivitylabeldetailscollection-items-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: children
     summary: Gets the sublabels of the sensitivity label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: color
     summary: Gets the color of the sensitivity label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the sensitivity label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: isEnabled
     summary: Gets a value indicating whether the label is enabled.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
     fullName: name
     summary: Gets the name of the sensitivity label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -100,7 +100,7 @@ properties:
     fullName: order
     summary: Gets the priority of the sensitivity label, with 0 as lowest priority.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -113,7 +113,7 @@ properties:
     fullName: protectionType
     summary: Gets a value indicating the protection type provided by this label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ properties:
     fullName: siteId
     summary: Gets the unique ID of the tenant which the sensitivity label is belonged.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -139,7 +139,7 @@ properties:
     fullName: tooltip
     summary: Gets the description of the sensitivity label.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -153,7 +153,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -171,7 +171,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -189,7 +189,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -215,7 +215,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SensitivityLabelDetails` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelDetailsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -223,4 +223,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

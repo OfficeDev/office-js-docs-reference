@@ -8,49 +8,18 @@ summary: |-
 
   The list of contacts extracted from the body of an email message or appointment is returned in the `contacts` property of the [Entities](xref:outlook!Office.Entities:interface) object returned by the `getEntities` or `getEntitiesByType` method of the current item.
 
-  **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+  \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
 remarks: |-
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
   #### Used by
 
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [getEntitiesByType](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getfilteredentitiesbyname-member(1))
   - [Office.Entities](/javascript/api/outlook/office.entities): [contacts](/javascript/api/outlook/office.entities#outlook-office-entities-contacts-member)
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getEntitiesByType](/javascript/api/outlook/office.messageread#outlook-office-messageread-getentitiesbytype-member(1)), [getFilteredEntitiesByName](/javascript/api/outlook/office.messageread#outlook-office-messageread-getfilteredentitiesbyname-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  const item = Office.context.mailbox.item;
-  // Get an array of strings that represent contacts in the current item's body.
-  const contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-  console.log("There are " + contacts.length + " contacts.")
-  contacts.forEach(function (contact) {
-      console.log("Person name: " + JSON.stringify(contact.personName));
-      console.log("Business name: " + JSON.stringify(contact.businessName));
-      console.log("Addresses: " + JSON.stringify(contact.addresses));
-      console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
-      console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
-      console.log("Urls: " + JSON.stringify(contact.urls));
-  });
-
-  /* Example email that includes contact details of sender, John Smith:
-  Hi there,
-  I have received the package.
-
-  Thanks.
-  John Smith
-  Account Manager
-  Contoso Corporation
-  1 Contoso Way, Redmond, WA 98052
-  john.smith@contoso.com
-  111-111-1111
-  https://contoso.com/john.smith
-  */
-  ```
-
+example: []
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -63,9 +32,9 @@ properties:
     summary: |-
       An array of strings containing the mailing and street addresses associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -80,9 +49,9 @@ properties:
     summary: |-
       A string containing the name of the business associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -97,9 +66,9 @@ properties:
     summary: |-
       An array of strings containing the SMTP email addresses associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -114,9 +83,9 @@ properties:
     summary: |-
       A string containing the name of the person associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -131,9 +100,9 @@ properties:
     summary: |-
       An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
@@ -148,9 +117,9 @@ properties:
     summary: |-
       An array of strings containing the Internet URLs associated with the contact. Nullable.
 
-      **Warning**: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.

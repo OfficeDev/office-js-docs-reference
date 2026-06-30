@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.TableSortOptions](/javascript/api/word/word.tablesortoptions): [sortOrder](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder-member), [sortOrder2](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder2-member), [sortOrder3](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortorder3-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: ascending
     uid: word!Word.SortOrder.ascending:member
     package: word!
-    summary: |-
-      Sorts in ascending order.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts in ascending order.
     value: '"Ascending"'
   - name: descending
     uid: word!Word.SortOrder.descending:member
     package: word!
-    summary: |-
-      Sorts in descending order.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts in descending order.
     value: '"Descending"'

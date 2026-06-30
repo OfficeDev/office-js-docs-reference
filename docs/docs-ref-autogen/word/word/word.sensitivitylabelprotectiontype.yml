@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails): [protectionType](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-protectiontype-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: adminDefined
     uid: word!Word.SensitivityLabelProtectionType.adminDefined:member
     package: word!
-    summary: |-
-      The label applies admin-defined protection.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label applies admin-defined protection.
     value: '"AdminDefined"'
   - name: noProtection
     uid: word!Word.SensitivityLabelProtectionType.noProtection:member
     package: word!
-    summary: |-
-      The label applies no protection.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label applies no protection.
     value: '"NoProtection"'
   - name: userDefined
     uid: word!Word.SensitivityLabelProtectionType.userDefined:member
     package: word!
-    summary: |-
-      The label applies user-defined protection.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The label applies user-defined protection.
     value: '"UserDefined"'

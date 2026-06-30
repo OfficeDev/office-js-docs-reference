@@ -10,14 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.Document](/javascript/api/office/office.document): [mode](/javascript/api/office/office.document#office-office-document-mode-member)
-
-  #### Examples
-
-  ```TypeScript
-  const mode : Office.DocumentMode = Office.context.document.mode;
-  console.log("Document mode: " + mode);
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

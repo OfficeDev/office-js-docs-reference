@@ -10,8 +10,9 @@ remarks: |-
   #### Used by
 
   - [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue): [id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)
+  - [Excel.LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs): [id](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-id-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +23,7 @@ properties:
     fullName: culture
     summary: Represents which language culture was used to create this `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +36,7 @@ properties:
     fullName: domainId
     summary: Represents a domain specific to a service used to create the `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +49,7 @@ properties:
     fullName: entityId
     summary: Represents an identifier specific to a service used to create the `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +62,7 @@ properties:
     fullName: serviceId
     summary: Represents which service was used to create the `CellValue`<!-- -->.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,31 +5,22 @@ package: word!
 fullName: Word.NumberSpacing
 summary: Specifies the number spacing setting for an OpenType font.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.NumberSpacing.default:member
     package: word!
-    summary: |-
-      Default number spacing setting.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Default number spacing setting.
     value: '"Default"'
   - name: proportional
     uid: word!Word.NumberSpacing.proportional:member
     package: word!
-    summary: |-
-      Proportional number spacing setting.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Proportional number spacing setting.
     value: '"Proportional"'
   - name: tabular
     uid: word!Word.NumberSpacing.tabular:member
     package: word!
-    summary: |-
-      Tabular number spacing setting.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Tabular number spacing setting.
     value: '"Tabular"'

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.GroupContentControlUpdateData
 summary: An interface for updating data on the `GroupContentControl` object, for use in `groupContentControl.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

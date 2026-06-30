@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PresetCriteriaConditionalFormat](/javascript/api/excel/excel.presetcriteriaconditionalformat): [rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-rule-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,26 +20,8 @@ properties:
     package: excel!
     fullName: criterion
     summary: The criterion of the conditional format.
-    remarks: |-
-      [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:M5");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.presetCriteria);
-          conditionalFormat.preset.format.font.color = "white";
-          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

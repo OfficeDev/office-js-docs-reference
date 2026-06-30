@@ -10,17 +10,17 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartBoxwhiskerOptions](/javascript/api/excel/excel.chartboxwhiskeroptions): [quartileCalculation](/javascript/api/excel/excel.chartboxwhiskeroptions#excel-excel-chartboxwhiskeroptions-quartilecalculation-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: exclusive
     uid: excel!Excel.ChartBoxQuartileCalculation.exclusive:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: '\* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Exclusive"'
   - name: inclusive
     uid: excel!Excel.ChartBoxQuartileCalculation.inclusive:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: '\* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Inclusive"'

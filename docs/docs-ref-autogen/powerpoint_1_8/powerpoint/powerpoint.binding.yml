@@ -10,22 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [add](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-add-member(1)), [addFromSelection](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-addfromselection-member(1)), [getItem](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitem-member(1)), [getItemAt](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-getitemornullobject-member(1)), [items](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
-
-  async function getShapeForBindingId(bindingId: string): Promise<PowerPoint.Shape | undefined> {
-    // Gets shape associated with binding ID.
-    return PowerPoint.run(async (context) => {
-      const binding = context.presentation.bindings.getItem(bindingId);
-      const shape = binding.getShape();
-      return shape;
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -36,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +34,7 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +47,7 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +61,7 @@ methods:
     fullName: delete()
     summary: Deletes the binding.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,24 +74,8 @@ methods:
     package: powerpoint!
     fullName: getShape()
     summary: Returns the shape represented by the binding. Throws an error if the binding isn't of the correct type.
-    remarks: |-
-      [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
-
-      async function getShapeForBindingId(bindingId: string): Promise<PowerPoint.Shape | undefined> {
-        // Gets shape associated with binding ID.
-        return PowerPoint.run(async (context) => {
-          const binding = context.presentation.bindings.getItem(bindingId);
-          const shape = binding.getShape();
-          return shape;
-        });
-      }
-      ```
-
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +89,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +107,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +125,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,7 +151,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Binding` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,4 +159,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.BindingData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

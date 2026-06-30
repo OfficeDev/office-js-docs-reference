@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideMasterBackground](/javascript/api/powerpoint/powerpoint.slidemasterbackground): [toJSON](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

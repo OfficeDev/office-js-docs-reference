@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [applyQuickStyleSet](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: sessionStart
     uid: word!Word.ApplyQuickStyleSet.sessionStart:member
     package: word!
-    summary: |-
-      Resets the Quick Style to the style set in use when the document was opened.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Resets the Quick Style to the style set in use when the document was opened.
     value: '"SessionStart"'
   - name: template
     uid: word!Word.ApplyQuickStyleSet.template:member
     package: word!
-    summary: |-
-      Resets the Quick Style to the style set from the template, if any.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Resets the Quick Style to the style set from the template, if any.
     value: '"Template"'

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartTitleFormat](/javascript/api/excel/excel.charttitleformat): [set](/javascript/api/excel/excel.charttitleformat#excel-excel-charttitleformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: font
     summary: Represents the font attributes (such as font name, font size, and color) for an object.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,14 +3,22 @@ name: Office.ReplyFormData
 uid: outlook!Office.ReplyFormData:interface
 package: outlook!
 fullName: Office.ReplyFormData
-summary: A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
-remarks: |-
+summary: >-
+  A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
+  form.
+remarks: >-
   \[Api set: Mailbox 1.1\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
+
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Read
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,14 +27,22 @@ properties:
     uid: outlook!Office.ReplyFormData#attachments:member
     package: outlook!
     fullName: attachments
-    summary: An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are Base64-encoded files, Exchange items, or file attachments.
-    remarks: |-
+    summary: >-
+      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are Base64-encoded
+      files, Exchange items, or file attachments.
+    remarks: >-
       \[Api set: Mailbox 1.2\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,32 +53,48 @@ properties:
     uid: outlook!Office.ReplyFormData#callback:member
     package: outlook!
     fullName: callback
-    summary: When the reply display call completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-    remarks: |-
+    summary: >-
+      When the reply display call completes, the function passed in the callback parameter is called with a single
+      parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+    remarks: >-
       \[Api set: Mailbox 1.1\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
+      content: 'callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;'
       return:
         type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
   - name: htmlBody
     uid: outlook!Office.ReplyFormData#htmlBody:member
     package: outlook!
     fullName: htmlBody
-    summary: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-    remarks: |-
+    summary: >-
+      A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
+      KB.
+    remarks: >-
       \[Api set: Mailbox 1.1\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,17 +105,25 @@ properties:
     uid: outlook!Office.ReplyFormData#options:member
     package: outlook!
     fullName: options
-    summary: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object that you want to access in the callback function.
-    remarks: |-
+    summary: >-
+      An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object
+      that you want to access in the callback function.
+    remarks: >-
       \[Api set: Mailbox 1.1\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'options?: Office.AsyncContextOptions;'
+      content: 'options?: CommonAPI.AsyncContextOptions;'
       return:
         type: <xref uid="office!Office.AsyncContextOptions:interface" />

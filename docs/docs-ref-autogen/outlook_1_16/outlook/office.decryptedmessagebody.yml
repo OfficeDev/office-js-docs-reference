@@ -4,15 +4,23 @@ uid: outlook!Office.DecryptedMessageBody:interface
 package: outlook!
 fullName: Office.DecryptedMessageBody
 summary: Represents the body of a decrypted message.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.16\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read/write item\*\*
 
-  To learn how to develop an encryption add-in in Outlook, see [Create an encryption Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!-- -->.
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Message Read
+
+
+  To learn how to develop an encryption add-in in Outlook, see [Create an encryption Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!-- -->.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,18 +29,26 @@ properties:
     uid: outlook!Office.DecryptedMessageBody#coercionType:member
     package: outlook!
     fullName: coercionType
-    summary: Specifies the format of the body of a message. The body of a message can be formatted as `Office.CoercionType.Html` or `Office.CoercionType.Text`<!-- -->.
-    remarks: |-
+    summary: >-
+      Specifies the format of the body of a message. The body of a message can be formatted as
+      `Office.CoercionType.Html` or `Office.CoercionType.Text`<!-- -->.
+    remarks: >-
       \[Api set: Mailbox 1.16\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'coercionType: Office.CoercionType;'
+      content: 'coercionType: CommonAPI.CoercionType;'
       return:
         type: <xref uid="office!Office.CoercionType:enum" />
   - name: content
@@ -40,13 +56,19 @@ properties:
     package: outlook!
     fullName: content
     summary: Specifies the content displayed in the body of the message.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.16\]
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
+
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,63 +5,42 @@ package: word!
 fullName: Word.ListType
 summary: Represents the list type.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: listBullet
     uid: word!Word.ListType.listBullet:member
     package: word!
-    summary: |-
-      Bulleted list.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Bulleted list.
     value: '"ListBullet"'
   - name: listListNumOnly
     uid: word!Word.ListType.listListNumOnly:member
     package: word!
-    summary: |-
-      ListNum fields that can be used in the body of a paragraph.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: ListNum fields that can be used in the body of a paragraph.
     value: '"ListListNumOnly"'
   - name: listMixedNumbering
     uid: word!Word.ListType.listMixedNumbering:member
     package: word!
-    summary: |-
-      Mixed numeric list.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Mixed numeric list.
     value: '"ListMixedNumbering"'
   - name: listNoNumbering
     uid: word!Word.ListType.listNoNumbering:member
     package: word!
-    summary: |-
-      List with no bullets, numbering, or outlining.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: List with no bullets, numbering, or outlining.
     value: '"ListNoNumbering"'
   - name: listOutlineNumbering
     uid: word!Word.ListType.listOutlineNumbering:member
     package: word!
-    summary: |-
-      Outlined list.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Outlined list.
     value: '"ListOutlineNumbering"'
   - name: listPictureBullet
     uid: word!Word.ListType.listPictureBullet:member
     package: word!
-    summary: |-
-      Picture bulleted list.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Picture bulleted list.
     value: '"ListPictureBullet"'
   - name: listSimpleNumbering
     uid: word!Word.ListType.listSimpleNumbering:member
     package: word!
-    summary: |-
-      Simple numeric list.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Simple numeric list.
     value: '"ListSimpleNumbering"'

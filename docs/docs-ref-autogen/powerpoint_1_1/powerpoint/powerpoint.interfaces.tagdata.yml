@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TagData
 summary: An interface describing the data returned by calling `tag.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

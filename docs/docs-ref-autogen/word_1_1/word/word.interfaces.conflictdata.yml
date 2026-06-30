@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ConflictData
 summary: An interface describing the data returned by calling `conflict.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FillFormatData
 summary: An interface describing the data returned by calling `fillFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

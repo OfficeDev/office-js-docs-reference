@@ -13,28 +13,7 @@ remarks: |-
   - [PowerPoint.HyperlinkScopedCollection](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection): [getItemAt](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-getitemat-member(1)), [items](/javascript/api/powerpoint/powerpoint.hyperlinkscopedcollection#powerpoint-powerpoint-hyperlinkscopedcollection-items-member)
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [setHyperlink](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [setHyperlink](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-sethyperlink-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
-
-  // Gets the hyperlinks found in the first selected slide.
-  await PowerPoint.run(async (context) => {
-    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-    const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks.load("address,screenTip");
-    const hyperlinksCount = hyperlinks.getCount();
-    await context.sync();
-
-    console.log(
-      `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
-    );
-    for (let link of hyperlinks.items) {
-      console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,7 +24,7 @@ properties:
     fullName: address
     summary: Specifies the address of the hyperlink, which can be a URL, a file name or file path, or an email address with the `mailto` URI scheme.
     remarks: '[API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +37,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +50,7 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: '[API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +63,7 @@ properties:
     fullName: type
     summary: Returns the type of object that the hyperlink is applied to. See [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum) for details.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,37 +76,8 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the hyperlink.
-    remarks: |-
-      [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
-
-      // Deletes the first hyperlink found in the selected text on the current slide.
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
-        let hyperlink: PowerPoint.Hyperlink = textRange.hyperlinks.getItemAt(0).load("address,screenTip");
-        try {
-          await context.sync();
-        } catch {
-          console.warn(
-            "Confirm that you have at least one slide and you've selected a contiguous range of text containing at least one hyperlink on the active slide.",
-          );
-          return;
-        }
-
-        console.log(
-          `About to delete first link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") found in the selected text "${textRange.text}".`,
-        );
-
-        hyperlink.delete();
-
-        console.log(`Deleted first link found in the selected text "${textRange.text}".`);
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,9 +89,9 @@ methods:
     uid: powerpoint!PowerPoint.Hyperlink#getLinkedShapeOrNullObject:member(1)
     package: powerpoint!
     fullName: getLinkedShapeOrNullObject()
-    summary: Returns the [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object that the hyperlink is applied to. If the hyperlink is not of type `shape`<!-- -->, or it is within a domain that does not currently support a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Returns the [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object that the hyperlink is applied to. If the hyperlink is not of type `shape`<!-- -->, or it is within a domain that does not currently support a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,9 +103,9 @@ methods:
     uid: powerpoint!PowerPoint.Hyperlink#getLinkedTextRangeOrNullObject:member(1)
     package: powerpoint!
     fullName: getLinkedTextRangeOrNullObject()
-    summary: Returns the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) object that the hyperlink is applied to. If the hyperlink is not of type `textRange`<!-- -->, or it is within a domain that does not currently support a [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Returns the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) object that the hyperlink is applied to. If the hyperlink is not of type `textRange`<!-- -->, or it is within a domain that does not currently support a [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +119,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,7 +137,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,7 +155,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,7 +181,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Hyperlink` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.HyperlinkData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,4 +189,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.SettingData
 summary: An interface describing the data returned by calling `setting.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

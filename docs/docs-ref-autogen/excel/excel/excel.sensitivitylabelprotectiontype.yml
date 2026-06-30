@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [protectionType](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-protectiontype-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Protection is defined by an administrator.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AdminDefined"'
   - name: noProtection
     uid: excel!Excel.SensitivityLabelProtectionType.noProtection:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       No protection is applied by this label.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NoProtection"'
   - name: userDefined
     uid: excel!Excel.SensitivityLabelProtectionType.userDefined:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       Protection is defined by the user.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UserDefined"'

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [printOut](/javascript/api/word/word.document#word-word-document-printout-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: activePrinterMacGX
     summary: If provided, specifies the printer name. The default value is an empty string. This argument is available only in Microsoft Office Macintosh Edition.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: append
     summary: If provided, specifies whether to append to an existing file. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: background
     summary: If provided, specifies whether to print in the background. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: collate
     summary: If provided, specifies whether to collate pages. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: copies
     summary: If provided, specifies the number of copies to print. The default value is `1`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: from
     summary: If provided, specifies the starting page number. The default value is `1`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: item
     summary: If provided, specifies the item to print. The default value is `documentContent`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: manualDuplexPrint
     summary: If provided, specifies whether to manually duplex print. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: outputFileName
     summary: If provided, specifies the name of the output file. The default value is an empty string.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     fullName: pages
     summary: If provided, specifies specific pages to print. The default value is an empty string.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -151,7 +151,7 @@ properties:
     fullName: pageType
     summary: If provided, specifies the page order. The default value is `allPages`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -164,7 +164,7 @@ properties:
     fullName: printToFile
     summary: If provided, specifies whether to print to file. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -177,7 +177,7 @@ properties:
     fullName: printZoomColumn
     summary: If provided, specifies the zoom column setting. The default value is `1`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -190,7 +190,7 @@ properties:
     fullName: printZoomPaperHeight
     summary: If provided, specifies the paper height for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original height).
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -203,7 +203,7 @@ properties:
     fullName: printZoomPaperWidth
     summary: If provided, specifies the paper width for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original width).
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -216,7 +216,7 @@ properties:
     fullName: printZoomRow
     summary: If provided, specifies the zoom row setting. The default value is `1`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -229,7 +229,7 @@ properties:
     fullName: range
     summary: If provided, specifies the range to print. The default value is `allDocument`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -242,7 +242,7 @@ properties:
     fullName: to
     summary: If provided, specifies the ending page number. The default value is the last page of the document.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

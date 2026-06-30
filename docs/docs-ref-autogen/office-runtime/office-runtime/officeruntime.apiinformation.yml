@@ -5,10 +5,12 @@ package: office-runtime!
 fullName: OfficeRuntime.ApiInformation
 summary: Interface that contains methods for checking API requirement-set support.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
+customDeprecatedMessage: >-
+  This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported`
+  instead.
 type: interface
 methods:
   - name: isSetSupported(name, minVersion)
@@ -17,10 +19,12 @@ methods:
     fullName: isSetSupported(name, minVersion)
     summary: Check if the specified requirement set is supported by the Office application.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
+    customDeprecatedMessage: >-
+      This API returns inaccurate values when used on desktop applications. Use
+      `Office.context.requirements.isSetSupported` instead.
     syntax:
       content: 'isSetSupported(name: string, minVersion?: string): boolean;'
       parameters:

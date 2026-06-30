@@ -11,24 +11,7 @@ remarks: |-
 
   - [Excel.Image](/javascript/api/excel/excel.image): [format](/javascript/api/excel/excel.image#excel-excel-image-format-member)
   - [Excel.Shape](/javascript/api/excel/excel.shape): [getAsImage](/javascript/api/excel/excel.shape#excel-excel-shape-getasimage-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Shapes");
-      const shape = sheet.shapes.getItem("Image");
-      const result = shape.getAsImage(Excel.PictureFormat.png);
-      await context.sync();
-
-      const imageString = result.value;
-      // Your add-in would save this string as a .png file.
-      console.log("The image's Base64-encoded string: " + imageString);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -38,7 +21,7 @@ fields:
     summary: |-
       Bitmap image.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BMP"'
   - name: gif
     uid: excel!Excel.PictureFormat.gif:member
@@ -46,7 +29,7 @@ fields:
     summary: |-
       Graphics Interchange Format.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"GIF"'
   - name: jpeg
     uid: excel!Excel.PictureFormat.jpeg:member
@@ -54,7 +37,7 @@ fields:
     summary: |-
       Joint Photographic Experts Group.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"JPEG"'
   - name: png
     uid: excel!Excel.PictureFormat.png:member
@@ -62,7 +45,7 @@ fields:
     summary: |-
       Portable Network Graphics.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PNG"'
   - name: svg
     uid: excel!Excel.PictureFormat.svg:member
@@ -70,10 +53,10 @@ fields:
     summary: |-
       Scalable Vector Graphic.
 
-      * [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SVG"'
   - name: unknown
     uid: excel!Excel.PictureFormat.unknown:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: '\* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"UNKNOWN"'

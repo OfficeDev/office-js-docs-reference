@@ -3,9 +3,11 @@ name: Office.SpamReportingEventArgs
 uid: outlook!Office.SpamReportingEventArgs:interface
 package: outlook!
 fullName: Office.SpamReportingEventArgs
-summary: Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
+summary: >-
+  Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is
+  reported.
 remarks: '\[Api set: Mailbox 1.14\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,13 +17,18 @@ properties:
     package: outlook!
     fullName: freeText
     summary: The text provided by the user in the preprocessing dialog of a spam-reporting add-in.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.14\]
 
-      To add an optional text box to the preprocessing dialog of your spam-reporting add-in, you must configure the [FreeTextLabel](https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog#child-elements) element in the manifest of your add-in.
 
-      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+      To add an optional text box to the preprocessing dialog of your spam-reporting add-in, you must configure the
+      [FreeTextLabel](https://learn.microsoft.com/javascript/api/manifest/preprocessingdialog#child-elements) element in
+      the manifest of your add-in.
 
+
+      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,14 +39,21 @@ properties:
     uid: outlook!Office.SpamReportingEventArgs#options:member
     package: outlook!
     fullName: options
-    summary: Returns `true` for each reporting option selected by the user in the preprocessing dialog of a spam-reporting add-in.
-    remarks: |-
+    summary: >-
+      Returns `true` for each reporting option selected by the user in the preprocessing dialog of a spam-reporting
+      add-in.
+    remarks: >-
       \[Api set: Mailbox 1.14\]
 
-      The order of the booleans in the array corresponds to the order of the reporting options specified in the [ReportingOptions](https://learn.microsoft.com/javascript/api/manifest/reportingoptions) element of your add-in's manifest.
 
-      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+      The order of the booleans in the array corresponds to the order of the reporting options specified in the
+      [ReportingOptions](https://learn.microsoft.com/javascript/api/manifest/reportingoptions) element of your add-in's
+      manifest.
 
+
+      To learn more about how to develop a spam-reporting add-in, see [Implement an integrated spam-reporting
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,9 +64,11 @@ properties:
     uid: outlook!Office.SpamReportingEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: The type of event that was raised. For details, see [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    summary: >-
+      The type of event that was raised. For details, see
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[Api set: Mailbox 1.14\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

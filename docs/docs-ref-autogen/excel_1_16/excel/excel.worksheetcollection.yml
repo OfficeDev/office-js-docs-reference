@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [worksheets](/javascript/api/excel/excel.workbook#excel-excel-workbook-worksheets-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,22 +47,8 @@ methods:
     package: excel!
     fullName: add(name)
     summary: Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call `.activate()` on it.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const wSheetName = 'Sample Name';
-          const worksheet = context.workbook.worksheets.add(wSheetName);
-          worksheet.load('name');
-          await context.sync();
-          
-          console.log(worksheet.name);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,20 +65,8 @@ methods:
     package: excel!
     fullName: getActiveWorksheet()
     summary: Gets the currently active worksheet in the workbook.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => {  
-          const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
-          activeWorksheet.load('name');
-          await context.sync();
-          console.log(activeWorksheet.name);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +80,7 @@ methods:
     fullName: getCount(visibleOnly)
     summary: Gets the number of worksheets in the collection.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,40 +97,8 @@ methods:
     package: excel!
     fullName: getFirst(visibleOnly)
     summary: Gets the first worksheet in the collection.
-    remarks: |-
-      [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
-
-      await Excel.run(async (context) => {
-          const sheets = context.workbook.worksheets;
-
-          // We don't want to include the default worksheet that was created
-          // when the workbook was created, so our "firstSheet" will be the one
-          // after the literal first. Note chaining of navigation methods.
-          const firstSheet = sheets.getFirst().getNext();
-          const lastSheet = sheets.getLast();
-          const firstTaxRateRange = firstSheet.getRange("B2");
-          const lastTaxRateRange = lastSheet.getRange("B2");
-
-          firstSheet.load("name");
-          lastSheet.load("name");
-          firstTaxRateRange.load("text");
-          lastTaxRateRange.load("text");
-
-          await context.sync();
-
-          let firstYear = firstSheet.name.substr(5, 4);
-          let lastYear = lastSheet.name.substr(5, 4);
-          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,7 +116,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a worksheet object using its name or ID.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,9 +132,9 @@ methods:
     uid: excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,40 +151,8 @@ methods:
     package: excel!
     fullName: getLast(visibleOnly)
     summary: Gets the last worksheet in the collection.
-    remarks: |-
-      [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
-
-      await Excel.run(async (context) => {
-          const sheets = context.workbook.worksheets;
-
-          // We don't want to include the default worksheet that was created
-          // when the workbook was created, so our "firstSheet" will be the one
-          // after the literal first. Note chaining of navigation methods.
-          const firstSheet = sheets.getFirst().getNext();
-          const lastSheet = sheets.getLast();
-          const firstTaxRateRange = firstSheet.getRange("B2");
-          const lastTaxRateRange = lastSheet.getRange("B2");
-
-          firstSheet.load("name");
-          lastSheet.load("name");
-          firstTaxRateRange.load("text");
-          lastTaxRateRange.load("text");
-
-          await context.sync();
-
-          let firstYear = firstSheet.name.substr(5, 4);
-          let lastYear = lastSheet.name.substr(5, 4);
-          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,7 +170,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,7 +188,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,29 +199,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.WorksheetCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const worksheets = context.workbook.worksheets;
-              worksheets.load('items');
-              await context.sync();
-              
-              for (let i = 0; i < worksheets.items.length; i++) {
-                  console.log(worksheets.items[i].name);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.WorksheetCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -329,7 +224,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,23 +238,8 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when any worksheet in the workbook is activated.
-    remarks: |-
-      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-      await Excel.run(async (context) => {
-          let sheets = context.workbook.worksheets;
-          sheets.onActivated.add(onActivate);
-
-          await context.sync();
-          console.log("A handler has been registered for the OnActivate event.");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -371,23 +251,8 @@ events:
     package: excel!
     fullName: onAdded
     summary: Occurs when a new worksheet is added to the workbook.
-    remarks: |-
-      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets;
-          sheet.onAdded.add(onWorksheetAdd);
-
-          await context.sync();
-          console.log("A handler has been registered for the OnAdded event.");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -400,7 +265,7 @@ events:
     fullName: onCalculated
     summary: Occurs when any worksheet in the workbook is calculated.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -413,7 +278,7 @@ events:
     fullName: onChanged
     summary: Occurs when any worksheet in the workbook is changed.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -426,7 +291,7 @@ events:
     fullName: onColumnSorted
     summary: Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -438,23 +303,8 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when any worksheet in the workbook is deactivated.
-    remarks: |-
-      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-      await Excel.run(async (context) => {
-          let sheets = context.workbook.worksheets;
-          sheets.onDeactivated.add(onDeactivate);
-
-          await context.sync();
-          console.log("A handler has been registered for the OnDeactivate event.");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -467,7 +317,7 @@ events:
     fullName: onDeleted
     summary: Occurs when a worksheet is deleted from the workbook.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -480,7 +330,7 @@ events:
     fullName: onFormatChanged
     summary: Occurs when any worksheet in the workbook has a format changed.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -493,7 +343,7 @@ events:
     fullName: onFormulaChanged
     summary: Occurs when one or more formulas are changed in any worksheet of this collection. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -506,7 +356,7 @@ events:
     fullName: onProtectionChanged
     summary: Occurs when the worksheet protection state is changed.
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -519,7 +369,7 @@ events:
     fullName: onRowHiddenChanged
     summary: Occurs when the hidden state of one or more rows has changed on a specific worksheet.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,7 +382,7 @@ events:
     fullName: onRowSorted
     summary: Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -545,7 +395,7 @@ events:
     fullName: onSelectionChanged
     summary: Occurs when the selection changes on any worksheet.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,7 +408,7 @@ events:
     fullName: onSingleClicked
     summary: 'Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the mode when cell arguments are selected for formula references.'
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

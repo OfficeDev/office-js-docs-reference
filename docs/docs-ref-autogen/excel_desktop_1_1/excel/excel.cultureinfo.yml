@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Application](/javascript/api/excel/excel.application): [cultureInfo](/javascript/api/excel/excel.application#excel-excel-application-cultureinfo-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,51 +33,8 @@ properties:
     package: excel!
     fullName: datetimeFormat
     summary: Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info-date-time.yaml
-
-      await Excel.run(async (context) => {
-        context.application.cultureInfo.datetimeFormat.load([
-          "longDatePattern",
-          "shortDatePattern",
-          "dateSeparator",
-          "longTimePattern",
-          "timeSeparator"
-        ]);
-        await context.sync();
-
-        // Use the cultural settings API to retrieve the user's system date and time settings.
-        const systemLongDatePattern = context.application.cultureInfo.datetimeFormat.longDatePattern;
-        const systemShortDatePattern = context.application.cultureInfo.datetimeFormat.shortDatePattern;
-        const systemDateSeparator = context.application.cultureInfo.datetimeFormat.dateSeparator;
-        const systemLongTimePattern = context.application.cultureInfo.datetimeFormat.longTimePattern;
-        const systemTimeSeparator = context.application.cultureInfo.datetimeFormat.timeSeparator;
-
-        // Write the date and time settings in your table. 
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const dateTimeData = sheet.getRange("A2:B6");
-        dateTimeData.values = [
-          ["Long date", systemLongDatePattern], 
-          ["Short date", systemShortDatePattern], 
-          ["Date separator", systemDateSeparator], 
-          ["Long time format", systemLongTimePattern],
-          ["Time separator", systemTimeSeparator]
-        ];
-
-        sheet.tables
-          .getItemAt(0)
-          .getRange()
-          .format.autofitColumns();
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +47,7 @@ properties:
     fullName: name
     summary: Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +60,7 @@ properties:
     fullName: numberFormat
     summary: Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +74,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,7 +92,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +110,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,7 +136,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.CultureInfo` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CultureInfoData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

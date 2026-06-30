@@ -5,8 +5,6 @@ package: visio!
 fullName: Visio.RequestContext
 summary: The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(1))
@@ -26,25 +24,7 @@ remarks: |-
   - [Visio.ShapeDataItem](/javascript/api/visio/visio.shapedataitem): [context](/javascript/api/visio/visio.shapedataitem#visio-visio-shapedataitem-context-member)
   - [Visio.ShapeDataItemCollection](/javascript/api/visio/visio.shapedataitemcollection): [context](/javascript/api/visio/visio.shapedataitemcollection#visio-visio-shapedataitemcollection-context-member)
   - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [context](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  Visio.run(session, function (context) {
-      const activePage = context.document.getActivePage();
-      // Interact with the Visio page... 
-
-      return context.sync();
-  }).catch(function(error) {
-      console.log("Error: " + error);
-      if (error instanceof OfficeExtension.Error) {
-          console.log("Debug info: " + JSON.stringify(error.debugInfo));
-      }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -55,7 +35,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +43,7 @@ constructors:
       parameters:
         - id: url
           description: ''
-          type: string | <xref uid="office!OfficeExtension.EmbeddedSession:class" />
+          type: string | <xref uid="visio!~OfficeExtension.EmbeddedSession:class" />
 properties:
   - name: document
     uid: visio!Visio.RequestContext#document:member
@@ -71,11 +51,11 @@ properties:
     fullName: document
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly document: Document;'
       return:
         type: <xref uid="visio!Visio.Document:class" />
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="visio!~OfficeExtension.ClientRequestContext:class" />

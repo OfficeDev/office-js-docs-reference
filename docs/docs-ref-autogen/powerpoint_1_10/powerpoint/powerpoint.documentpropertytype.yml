@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.CustomProperty](/javascript/api/powerpoint/powerpoint.customproperty): [type](/javascript/api/powerpoint/powerpoint.customproperty#powerpoint-powerpoint-customproperty-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: boolean
     uid: powerpoint!PowerPoint.DocumentPropertyType.boolean:member
     package: powerpoint!
-    summary: |-
-      The Boolean document property type.
-
-      * [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: The Boolean document property type.
     value: '"Boolean"'
   - name: date
     uid: powerpoint!PowerPoint.DocumentPropertyType.date:member
     package: powerpoint!
-    summary: |-
-      The Date document property type.
-
-      * [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: The Date document property type.
     value: '"Date"'
   - name: number
     uid: powerpoint!PowerPoint.DocumentPropertyType.number:member
     package: powerpoint!
-    summary: |-
-      The Number document property type.
-
-      * [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: The Number document property type.
     value: '"Number"'
   - name: string
     uid: powerpoint!PowerPoint.DocumentPropertyType.string:member
     package: powerpoint!
-    summary: |-
-      The String document property type.
-
-      * [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: The String document property type.
     value: '"String"'

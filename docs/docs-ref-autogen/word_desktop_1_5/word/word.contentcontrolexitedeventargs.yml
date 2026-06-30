@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ContentControlExitedEventArgs
 summary: Provides information about the content control that raised the `contentControlExited` event.
 remarks: '\[Api set: WordApi 1.5\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,20 +16,28 @@ properties:
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";'
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+        "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+        "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
       return:
-        type: <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" |
+          "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
+          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: ids
     uid: word!Word.ContentControlExitedEventArgs#ids:member
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +50,7 @@ properties:
     fullName: source
     summary: Specifies the source of the event. It can be local or remote (through coauthoring).
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

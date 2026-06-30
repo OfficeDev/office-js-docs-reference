@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the document.
     remarks: '[API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

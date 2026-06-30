@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShapeGroupUpdateData
 summary: An interface for updating data on the `ShapeGroup` object, for use in `shapeGroup.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

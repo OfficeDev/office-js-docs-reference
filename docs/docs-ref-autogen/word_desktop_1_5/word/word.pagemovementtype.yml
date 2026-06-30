@@ -5,23 +5,17 @@ package: word!
 fullName: Word.PageMovementType
 summary: Specifies the page movement type in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: sideToSide
     uid: word!Word.PageMovementType.sideToSide:member
     package: word!
-    summary: |-
-      Side to side.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Side to side.
     value: '"SideToSide"'
   - name: vertical
     uid: word!Word.PageMovementType.vertical:member
     package: word!
-    summary: |-
-      Vertical.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Vertical.
     value: '"Vertical"'

@@ -5,23 +5,17 @@ package: word!
 fullName: Word.EventSource
 summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
 remarks: '\[Api set: WordApi 1.5\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: |-
-      Local source.
-
-      * \[Api set: WordApi 1.5\]
+    summary: Local source.
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: |-
-      Remote source.
-
-      * \[Api set: WordApi 1.5\]
+    summary: Remote source.
     value: '"Remote"'

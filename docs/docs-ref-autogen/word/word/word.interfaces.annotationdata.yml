@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Annotation](/javascript/api/word/word.annotation): [toJSON](/javascript/api/word/word.annotation#word-word-annotation-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: id
     summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: state
     summary: Gets the state of the annotation.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

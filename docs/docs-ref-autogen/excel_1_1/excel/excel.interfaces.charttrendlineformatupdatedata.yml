@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
 summary: An interface for updating data on the `ChartTrendlineFormat` object, for use in `chartTrendlineFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

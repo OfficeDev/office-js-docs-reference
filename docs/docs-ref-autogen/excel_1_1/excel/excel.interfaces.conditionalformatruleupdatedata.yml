@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
 summary: An interface for updating data on the `ConditionalFormatRule` object, for use in `conditionalFormatRule.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

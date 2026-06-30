@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [load](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: font
     summary: Returns a `ShapeFont` object that represents the font attributes for the text range.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: paragraphFormat
     summary: Represents the paragraph format of the text range. See [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ViewUpdateData
 summary: An interface for updating data on the `View` object, for use in `view.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: areAllNonprintingCharactersDisplayed
     summary: Specifies whether all nonprinting characters are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: areBackgroundsDisplayed
     summary: Gets whether background colors and images are shown when the document is displayed in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: areCommentsDisplayed
     summary: Specifies whether Microsoft Word displays the comments in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: areConnectingLinesToRevisionsBalloonDisplayed
     summary: Specifies whether Microsoft Word displays connecting lines from the text to the revision and comment balloons.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ properties:
     fullName: areEditableRangesShaded
     summary: Specifies whether shading is applied to the ranges in the document that users have permission to modify.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ properties:
     fullName: areFieldCodesDisplayed
     summary: Specifies whether field codes are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +94,7 @@ properties:
     fullName: areFormatChangesDisplayed
     summary: Specifies whether Microsoft Word displays formatting changes made to the document with Track Changes enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +107,7 @@ properties:
     fullName: areInkAnnotationsDisplayed
     summary: Specifies whether handwritten ink annotations are shown or hidden.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +118,11 @@ properties:
     uid: word!Word.Interfaces.ViewUpdateData#areInsertionsAndDeletionsDisplayed:member
     package: word!
     fullName: areInsertionsAndDeletionsDisplayed
-    summary: Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes enabled.
+    summary: >-
+      Specifies whether Microsoft Word displays insertions and deletions made to the document with Track Changes
+      enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +135,7 @@ properties:
     fullName: areOtherAuthorsVisible
     summary: Gets whether other authors' presence should be visible in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +148,7 @@ properties:
     fullName: areRevisionsAndCommentsDisplayed
     summary: Specifies whether Microsoft Word displays revisions and comments made to the document with Track Changes enabled.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +161,7 @@ properties:
     fullName: areTableGridlinesDisplayed
     summary: Specifies whether table gridlines are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +174,7 @@ properties:
     fullName: columnWidth
     summary: Specifies the column width in Reading mode.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,9 +185,11 @@ properties:
     uid: word!Word.Interfaces.ViewUpdateData#isDraft:member
     package: word!
     fullName: isDraft
-    summary: Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to speed up display.
+    summary: >-
+      Specifies whether all the text in a window is displayed in the same sans-serif font with minimal formatting to
+      speed up display.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +202,7 @@ properties:
     fullName: isFirstLineOnlyDisplayed
     summary: Specifies whether only the first line of body text is shown in outline view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,7 +215,7 @@ properties:
     fullName: isFormatDisplayed
     summary: Specifies whether character formatting is visible in outline view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +228,7 @@ properties:
     fullName: isFullScreen
     summary: Specifies whether the window is in full-screen view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +241,7 @@ properties:
     fullName: isInConflictMode
     summary: Specifies whether the document is in conflict mode view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,7 +254,7 @@ properties:
     fullName: isInPanning
     summary: Specifies whether Microsoft Word is in Panning mode.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,7 +267,7 @@ properties:
     fullName: isInReadingLayout
     summary: Specifies whether the document is being viewed in reading layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -276,7 +280,7 @@ properties:
     fullName: isMailMergeDataView
     summary: Specifies whether mail merge data is displayed instead of mail merge fields.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,7 +293,7 @@ properties:
     fullName: isMainTextLayerVisible
     summary: Specifies whether the text in the document is visible when the header and footer areas are displayed.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +306,7 @@ properties:
     fullName: isPointerShownAsMagnifier
     summary: Specifies whether the pointer is displayed as a magnifying glass in print preview.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -315,7 +319,7 @@ properties:
     fullName: isReadingLayoutActualView
     summary: Specifies whether pages displayed in reading layout view are displayed using the same layout as printed pages.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,7 +332,7 @@ properties:
     fullName: isXmlMarkupVisible
     summary: Specifies whether XML tags are visible in the document.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,7 +345,7 @@ properties:
     fullName: markupMode
     summary: Specifies the display mode for tracked changes.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -354,7 +358,7 @@ properties:
     fullName: pageColor
     summary: Specifies the page color in Reading mode.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +371,7 @@ properties:
     fullName: pageMovementType
     summary: Specifies the page movement type.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -380,7 +384,7 @@ properties:
     fullName: readingLayoutTruncateMargins
     summary: Specifies whether margins are visible or hidden when the document is viewed in Full Screen Reading view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -393,7 +397,7 @@ properties:
     fullName: revisionsBalloonWidth
     summary: Specifies the width of the revision balloons.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -406,7 +410,7 @@ properties:
     fullName: revisionsBalloonWidthType
     summary: Specifies how Microsoft Word measures the width of revision balloons.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -419,36 +423,56 @@ properties:
     fullName: seekView
     summary: Specifies the document element displayed in print layout view.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'seekView?: Word.SeekView | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" | "CurrentPageFooter";'
+      content: >-
+        seekView?: Word.SeekView | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" |
+        "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" |
+        "CurrentPageFooter";
       return:
-        type: <xref uid="word!Word.SeekView:enum" /> | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "CurrentPageHeader" | "CurrentPageFooter"
+        type: >-
+          <xref uid="word!Word.SeekView:enum" /> | "MainDocument" | "PrimaryHeader" | "FirstPageHeader" |
+          "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" |
+          "CurrentPageHeader" | "CurrentPageFooter"
   - name: splitSpecial
     uid: word!Word.Interfaces.ViewUpdateData#splitSpecial:member
     package: word!
     fullName: splitSpecial
     summary: Specifies the active window pane.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'splitSpecial?: Word.SpecialPane | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" | "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" | "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert";'
+      content: >-
+        splitSpecial?: Word.SpecialPane | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" |
+        "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" |
+        "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" |
+        "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" |
+        "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert";
       return:
-        type: <xref uid="word!Word.SpecialPane:enum" /> | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" | "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" | "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" | "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" | "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert"
+        type: >-
+          <xref uid="word!Word.SpecialPane:enum" /> | "None" | "PrimaryHeader" | "FirstPageHeader" | "EvenPagesHeader" |
+          "PrimaryFooter" | "FirstPageFooter" | "EvenPagesFooter" | "Footnotes" | "Endnotes" |
+          "FootnoteContinuationNotice" | "FootnoteContinuationSeparator" | "FootnoteSeparator" |
+          "EndnoteContinuationNotice" | "EndnoteContinuationSeparator" | "EndnoteSeparator" | "Comments" |
+          "CurrentPageHeader" | "CurrentPageFooter" | "Revisions" | "RevisionsHoriz" | "RevisionsVert"
   - name: type
     uid: word!Word.Interfaces.ViewUpdateData#type:member
     package: word!
     fullName: type
     summary: Specifies the view type.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.ViewType | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" | "Conflict";'
+      content: >-
+        type?: Word.ViewType | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" |
+        "Conflict";
       return:
-        type: <xref uid="word!Word.ViewType:enum" /> | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" | "Reading" | "Conflict"
+        type: >-
+          <xref uid="word!Word.ViewType:enum" /> | "Normal" | "Outline" | "Print" | "PrintPreview" | "Master" | "Web" |
+          "Reading" | "Conflict"

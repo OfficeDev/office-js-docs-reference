@@ -11,11 +11,7 @@ remarks: |-
 
   - [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue): [referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)
   - [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue): [referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)
-
-  Learn more about the types in this type alias through the following links. 
-
-  [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue), [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue), [Excel.RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue), [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue), [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue), [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue)
-
+example: []
 isPreview: false
 isDeprecated: false
 syntax: export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue | DoubleCellValue | StringCellValue | BooleanCellValue;

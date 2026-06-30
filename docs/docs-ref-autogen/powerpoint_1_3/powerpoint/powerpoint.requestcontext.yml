@@ -5,8 +5,6 @@ package: powerpoint!
 fullName: PowerPoint.RequestContext
 summary: The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the request context is required to get access to the PowerPoint object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
@@ -22,18 +20,7 @@ remarks: |-
   - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [context](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-context-member)
   - [PowerPoint.Tag](/javascript/api/powerpoint/powerpoint.tag): [context](/javascript/api/powerpoint/powerpoint.tag#powerpoint-powerpoint-tag-context-member)
   - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await PowerPoint.run(async (context) => {
-    const presentation = context.presentation;
-    // Interact with the PowerPoint presentation...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,7 +31,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +47,7 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +60,11 @@ properties:
     fullName: presentation
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly presentation: Presentation;'
       return:
         type: <xref uid="powerpoint!PowerPoint.Presentation:class" />
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientRequestContext:class" />

@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.RecipientsChangedFields
 summary: Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
 remarks: '\[Api set: Mailbox 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,9 @@ properties:
     uid: outlook!Office.RecipientsChangedFields#bcc:member
     package: outlook!
     fullName: bcc
-    summary: Gets if recipients in the **bcc** field were changed.
+    summary: Gets if recipients in the \*\*bcc\*\* field were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +27,9 @@ properties:
     uid: outlook!Office.RecipientsChangedFields#cc:member
     package: outlook!
     fullName: cc
-    summary: Gets if recipients in the **cc** field were changed.
+    summary: Gets if recipients in the \*\*cc\*\* field were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: optionalAttendees
     summary: Gets if optional attendees were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: requiredAttendees
     summary: Gets if required attendees were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ properties:
     fullName: resources
     summary: Gets if resources were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +79,9 @@ properties:
     uid: outlook!Office.RecipientsChangedFields#to:member
     package: outlook!
     fullName: to
-    summary: Gets if recipients in the **to** field were changed.
+    summary: Gets if recipients in the \*\*to\*\* field were changed.
     remarks: '\[Api set: Mailbox 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

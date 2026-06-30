@@ -5,23 +5,17 @@ package: word!
 fullName: Word.CollapseDirection
 summary: Specifies the direction in which to collapse a selection.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: end
     uid: word!Word.CollapseDirection.end:member
     package: word!
-    summary: |-
-      Collapses the selection to the end position.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Collapses the selection to the end position.
     value: '"End"'
   - name: start
     uid: word!Word.CollapseDirection.start:member
     package: word!
-    summary: |-
-      Collapses the selection to the start position.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Collapses the selection to the start position.
     value: '"Start"'

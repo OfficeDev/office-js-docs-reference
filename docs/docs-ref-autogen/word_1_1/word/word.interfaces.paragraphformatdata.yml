@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ParagraphFormatData
 summary: An interface describing the data returned by calling `paragraphFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -10,23 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [items](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
-  // Inserts a section break on the next page.
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
-
-    await context.sync();
-
-    console.log("Inserted section break on next page.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -37,7 +21,7 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the section. This doesn't include the header, footer, and other section metadata.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,42 +47,8 @@ methods:
     package: word!
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-          
-          // Create a proxy sectionsCollection object.
-          const mySections = context.document.sections;
-          
-          // Queue a command to load the sections.
-          mySections.load('body/style');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-              
-          // Create a proxy object the primary footer of the first section.
-          // Note that the footer is a body object.
-          const myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
-          
-          // Queue a command to insert text at the end of the footer.
-          myFooter.insertText("This is a footer.", Word.InsertLocation.end);
-          
-          // Queue a command to wrap the header in a content control.
-          myFooter.insertContentControl();
-                                  
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log("Added a footer to the first section.");   
-      });  
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,24 +65,8 @@ methods:
     package: word!
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-      await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getFooter("Primary")
-          .insertParagraph("This is a primary footer.", "End");
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,24 +83,8 @@ methods:
     package: word!
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-      await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getHeader(Word.HeaderFooterType.primary)
-          .insertParagraph("This is a primary header.", "End");
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,42 +101,8 @@ methods:
     package: word!
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-          
-          // Create a proxy sectionsCollection object.
-          const mySections = context.document.sections;
-          
-          // Queue a command to load the sections.
-          mySections.load('body/style');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          
-          // Create a proxy object the primary header of the first section.
-          // Note that the header is a body object.
-          const myHeader = mySections.items[0].getHeader("Primary");
-          
-          // Queue a command to insert text at the end of the header.
-          myHeader.insertText("This is a header.", Word.InsertLocation.end);
-          
-          // Queue a command to wrap the header in a content control.
-          myHeader.insertContentControl();
-                                  
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log("Added a header to the first section.");
-      });  
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,7 +120,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,7 +138,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,7 +156,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -298,7 +182,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,7 +193,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.SectionUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -319,7 +203,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,7 +221,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Section` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,7 +235,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -365,7 +249,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,4 +257,4 @@ methods:
       return:
         type: <xref uid="word!Word.Section:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

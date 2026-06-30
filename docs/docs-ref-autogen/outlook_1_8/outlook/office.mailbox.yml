@@ -14,41 +14,14 @@ summary: |-
 
   - `userProfile`<!-- -->: Provides information about the user in an Outlook add-in.
 remarks: |-
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
   #### Used by
 
   - [Office.Context](/javascript/api/office/office.context): [mailbox](/javascript/api/office/office.context#office-office-context-mailbox-member)
-
-  #### Examples
-
-  ```TypeScript
-  Office.onReady(() => {
-      document.addEventListener('DOMContentLoaded', () => {
-          // Get a reference to the mailbox and use it to add an event handler.
-          const mailbox = Office.context.mailbox;
-          mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                  // Handle error.
-              }
-          });
-      });
-  });
-
-  function loadNewItem(eventArgs) {
-      const item = Office.context.mailbox.item;
-
-      // Check that item isn't null.
-      if (item !== null) {
-          // Work with item. For example, define and call a function that
-          // loads the properties of the newly selected item.
-          loadProps(item);
-      }
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,64 +35,12 @@ properties:
 
       For information about the diagnostic properties you can access, see [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
       Starting with Mailbox requirement set 1.5, you can also use the [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member) property to get similar information.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
-
-      // This function gets a mailbox's diagnostic information, such as Outlook client and version, and logs it to the console.
-      const diagnostics = Office.context.mailbox.diagnostics;
-      console.log(`Client application: ${diagnostics.hostName}`);
-      console.log(`Client version: ${diagnostics.hostVersion}`);
-
-      switch (diagnostics.OWAView) {
-        case undefined:
-          console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
-          break;
-        case Office.MailboxEnums.OWAView.OneColumnNarrow:
-          console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
-          break;
-        case Office.MailboxEnums.OWAView.OneColumn:
-          console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
-          break;
-        case Office.MailboxEnums.OWAView.TwoColumns:
-          console.log("Current view (Outlook on the web only): Viewed from a tablet");
-          break;
-        case Office.MailboxEnums.OWAView.ThreeColumns:
-          console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
-          break;
-      }
-
-      if (Office.context.requirements.isSetSupported("Mailbox", "1.16")) {
-        const ewsTokenStatus = diagnostics.ews;
-        ewsTokenStatus.getTokenStatusAsync({ isRest: false }, (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(result.error.message);
-            return;
-          }
-
-          const status = result.value;
-          switch (status) {
-            case Office.MailboxEnums.TokenStatus.Enabled:
-              console.log("EWS token status: EWS callback tokens are enabled.");
-              break;
-            case Office.MailboxEnums.TokenStatus.Disabled:
-              console.log("EWS token status: EWS callback tokens are disabled.");
-              break;
-            case Office.MailboxEnums.TokenStatus.Removed:
-              console.log("EWS token status: The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.");
-              break;
-          }
-        });
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,39 +55,20 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
-      - Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read mode.
+      - Your app must have the \*\*read item\*\* permission specified in its manifest to call the `ewsUrl` member in read mode.
 
-      - In compose mode, you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have **read/write item** permissions to call the `saveAsync` method.
+      - In compose mode, you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have \*\*read/write item\*\* permissions to call the `saveAsync` method.
 
       - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       - The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-      // Get the EWS URL and EWS item ID.
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-      const ewsId = Office.context.mailbox.item.itemId;
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-      // Convert the EWS item ID to a REST-formatted ID.
-      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("REST item ID: " + restId);
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("EWS ID (from REST ID): " + ewsId2);
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,13 +84,13 @@ properties:
 
       [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->, [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->, [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->, [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
-      **Important**:
+      \*\*Important\*\*:
 
       - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on. For guidance on how to configure the Reading Pane, see [Use and configure the Reading Pane to preview messages](https://support.microsoft.com/office/2fd687ed-7fc4-4ae3-8eab-9f9b8c6d53f0)<!-- -->.
 
       - `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see [Implement a pinnable task pane in Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!-- -->.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,59 +105,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write mailbox\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
-          if (categories && categories.length > 0) {
-            console.log("Master categories:");
-            console.log(JSON.stringify(categories));
-          } else {
-            console.log("There are no categories in the master list.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ...
-
-      const masterCategoriesToAdd = [
-        {
-          displayName: "TestCategory",
-          color: Office.MailboxEnums.CategoryColor.Preset0
-        }
-      ];
-
-      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully added categories to master list");
-        } else {
-          console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ...
-
-      const masterCategoriesToRemove = ["TestCategory"];
-
-      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully removed categories from master list");
-        } else {
-          console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -270,26 +123,18 @@ properties:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted add-ins are able to use the REST service until extended support ends for Outlook 2019 on October 14, 2025. Traffic from these add-ins is automatically identified for exemption. This exemption also applies to new add-ins developed after March 31, 2024. Although add-ins are able to use the REST service until 2025, we highly encourage you to migrate your add-ins to use [Microsoft Graph](https://learn.microsoft.com/outlook/rest#outlook-rest-api-via-microsoft-graph)<!-- -->. For guidance, see [Compare Microsoft Graph and Outlook REST API endpoints](https://learn.microsoft.com/outlook/rest/compare-graph)<!-- -->.
 
-      - Your add-in must have the **read item** permission specified in its manifest to call the `restUrl` member in read mode.
+      - Your add-in must have the \*\*read item\*\* permission specified in its manifest to call the `restUrl` member in read mode.
 
-      - In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. Your add-in must have **read/write item** permissions to call the `saveAsync` method. However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the [SharedProperties](https://learn.microsoft.com/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetresturl-member) object (introduced in requirement set 1.8). For more information, see the [shared folders and shared mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-      #### Examples
-
-      ```TypeScript
-      // Get the URL of the REST endpoint.
-      const restUrl = Office.context.mailbox.restUrl;
-      console.log(`REST API URL: ${restUrl}`);
-      ```
-
+      - In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. Your add-in must have \*\*read/write item\*\* permissions to call the `saveAsync` method. However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the [SharedProperties](https://learn.microsoft.com/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetresturl-member) object (introduced in requirement set 1.8). For more information, see the [shared folders and shared mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,7 +150,7 @@ properties:
 
       More information is under [Office.UserProfile](xref:outlook!Office.UserProfile:interface)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,45 +166,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The following events are supported on the `Mailbox` object.
+      \*\*Important\*\*: The following events are supported on the `Mailbox` object.
 
       <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in. This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr> <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr> </table>
-
-      #### Examples
-
-      ```TypeScript
-      Office.onReady(() => {
-          document.addEventListener('DOMContentLoaded', () => {
-              // Get a reference to the mailbox and use it to add an event handler.
-              const mailbox = Office.context.mailbox;
-              mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
-                  if (result.status === Office.AsyncResultStatus.Failed) {
-                      // Handle error.
-                  }
-              });
-          });
-      });
-
-      function loadNewItem(eventArgs) {
-          const item = Office.context.mailbox.item;
-
-          // Check that item isn't null.
-          if (item !== null) {
-              // Work with item. For example, define and call a function that
-              // loads the properties of the newly selected item.
-              loadProps(item);
-          }
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addHandlerAsync(eventType: Office.EventType | string, handler: any, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -384,18 +202,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The following events are supported on the `Mailbox` object.
+      \*\*Important\*\*: The following events are supported on the `Mailbox` object.
 
       <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in. This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr> <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr> </table>
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -417,37 +235,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Legacy Exchange Online [user identity tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and [callback tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!-- -->. Exchange user identity tokens are still supported for Exchange on-premises.
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       - Item IDs retrieved via a REST API (such as [Microsoft Graph](https://graph.microsoft.io/)<!-- -->) use a different format than the format used by EWS. The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-      // Get the EWS URL and EWS item ID.
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-      const ewsId = Office.context.mailbox.item.itemId;
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-      // Convert the EWS item ID to a REST-formatted ID.
-      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("REST item ID: " + restId);
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("EWS ID (from REST ID): " + ewsId2);
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -473,20 +272,10 @@ methods:
 
       In Outlook on Windows (classic) and on Mac, the `convertToLocalClientTime` method returns a dictionary object with the values set to the client computer time zone. In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the `convertToLocalClientTime` method returns a dictionary object with the values set to the time zone specified in the EAC.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
-
-      const time = Office.context.mailbox.item.start;
-      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-      console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -506,35 +295,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       - Item IDs retrieved via Exchange Web Services (EWS) or via the `itemId` property use a different format than the format used by REST APIs (such as [Microsoft Graph](https://graph.microsoft.io/)<!-- -->). The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-      // Get the EWS URL and EWS item ID.
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-      const ewsId = Office.context.mailbox.item.itemId;
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-      // Convert the EWS item ID to a REST-formatted ID.
-      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("REST item ID: " + restId);
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
-      console.log("EWS ID (from REST ID): " + ewsId2);
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,32 +328,10 @@ methods:
 
       The `convertToUtcClientTime` method converts a dictionary containing a local date and time to a `Date` object with the correct values for the local date and time.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Represents 3:37 PM PDT on Monday, August 26, 2019.
-      const input = {
-          date: 26,
-          hours: 15,
-          milliseconds: 2,
-          minutes: 37,
-          month: 7,
-          seconds: 2,
-          timezoneOffset: -420,
-          year: 2019
-      };
-
-      // result should be a Date object.
-      const result = Office.context.mailbox.convertToUtcClientTime(input);
-
-      // Output should be "2019-08-26T22:37:02.002Z".
-      console.log(result.toISOString());
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -612,21 +360,12 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
-
-      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
-      Office.context.mailbox.displayAppointmentForm(itemId);
-      ```
-
+      \*\*Important\*\*: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -653,25 +392,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       - Don't use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
-
-      const itemId = (document.getElementById("itemId") as HTMLInputElement).value;
-      Office.context.mailbox.displayMessageForm(itemId);
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -692,41 +422,20 @@ methods:
 
       The `displayNewAppointmentForm` method opens a form that enables the user to create a new appointment or meeting. If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
 
-      In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, this method always displays a form with an attendees field. If you don't specify any attendees as input arguments, the method displays a form with a **Save** button. If you have specified attendees, the form would include the attendees and a **Send** button.
+      In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, this method always displays a form with an attendees field. If you don't specify any attendees as input arguments, the method displays a form with a \*\*Save\*\* button. If you have specified attendees, the form would include the attendees and a \*\*Send\*\* button.
 
-      In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting form with a **Send** button. If you don't specify any recipients, this method displays an appointment form with a **Save &amp; Close** button.
+      In Outlook on Windows (classic) and on Mac, if you specify any attendees or resources in the `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting form with a \*\*Send\*\* button. If you don't specify any recipients, this method displays an appointment form with a \*\*Save &amp; Close\*\* button.
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
-
-      const start = new Date();
-      const end = new Date();
-      end.setHours(start.getHours() + 1);
-
-      Office.context.mailbox.displayNewAppointmentForm({
-        requiredAttendees: ["bob@contoso.com"] as any,
-        optionalAttendees: ["sam@contoso.com"] as any,
-        start: start,
-        end: end,
-        location: "Home",
-        subject: "meeting",
-        resources: ["projector@contoso.com"] as any,
-        body: "Hello World!"
-      });
-      ```
-
+      \*\*Important\*\*: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -751,31 +460,10 @@ methods:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-message.yaml
-
-      Office.context.mailbox.displayNewMessageForm({
-        toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
-        ccRecipients: ["sam@contoso.com"],
-        subject: "Outlook add-ins are cool!",
-        htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
-        attachments: [
-          {
-            type: "file",
-            name: "image.png",
-            url: "https://i.imgur.com/9S36xvA.jpg",
-            isInline: true
-          }
-        ]
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -800,11 +488,11 @@ methods:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Legacy Exchange Online [user identity tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and [callback tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!-- -->. Exchange user identity tokens are still supported for Exchange on-premises.
 
@@ -816,15 +504,15 @@ methods:
 
       - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
 
-      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of \*\*read item\*\*.
 
-      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of **read/write item**.
+      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of \*\*read/write item\*\*.
 
       - For guidance on delegate or shared scenarios, see the [shared folders and shared mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
-      *REST Tokens*
+      \*REST Tokens\*
 
-      When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token won't work to authenticate EWS calls. The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the **read/write mailbox** permission in its manifest. If the **read/write mailbox** permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts, including the ability to send mail.
+      When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token won't work to authenticate EWS calls. The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the \*\*read/write mailbox\*\* permission in its manifest. If the \*\*read/write mailbox\*\* permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts, including the ability to send mail.
 
       The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
 
@@ -838,7 +526,7 @@ methods:
 
       - `Contacts.ReadWrite`
 
-      *EWS Tokens*
+      \*EWS Tokens\*
 
       When an EWS token is requested (`options.isRest` = `false`<!-- -->), the resulting token won't work to authenticate REST API calls. The token will be limited in scope to accessing the current item.
 
@@ -846,7 +534,7 @@ methods:
 
       You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation) operation or [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation to return an attachment or item. For example, you can create a remote service to [get attachments from the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       If your call fails, use the [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member) property to view details about the error.
 
@@ -857,11 +545,11 @@ methods:
       - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in) as a single sign-on solution for your add-in.
 
       - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'getCallbackTokenAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: options
           description: 'An object literal that contains one or more of the following properties:- `isRest`<!-- -->: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`<!-- -->. `asyncContext`<!-- -->: Any state data that is passed to the asynchronous method.'
@@ -885,19 +573,19 @@ methods:
     remarks: |-
       [API set: All support Read mode; Mailbox 1.3 introduced Compose mode support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Legacy Exchange Online [user identity tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and [callback tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!-- -->. Exchange user identity tokens are still supported for Exchange on-premises.
 
       - You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation) or [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation to return an attachment or item. For example, you can create a remote service to [get attachments from the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
-      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of \*\*read item\*\*.
 
-      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of **read/write item**.
+      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of \*\*read/write item\*\*.
 
       - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running in Outlook on mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -905,7 +593,7 @@ methods:
 
       - For guidance on delegate or shared scenarios, see the [shared folders and shared mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       If your call fails, use the [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member) property to view details about the error.
 
@@ -916,26 +604,11 @@ methods:
       - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in) as a single sign-on solution for your add-in.
 
       - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-callback-token.yaml
-
-      Office.context.mailbox.getCallbackTokenAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`);
-              return;
-          }
-
-          console.log(result.value);
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getCallbackTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
       parameters:
         - id: callback
           description: When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. The token is returned as a string in the `asyncResult.value` property. If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
@@ -952,24 +625,16 @@ methods:
     fullName: getIsIdentityManaged()
     summary: Returns true if the current mailbox is managed by [Microsoft Intune](https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune)<!-- -->.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose, Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose, Read
 
-      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0.To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      \*\*Important\*\*: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0.To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the mobile application management (MAM) policy.
-
-      #### Examples
-
-      ```TypeScript
-      // Checks if the mailbox is managed by Microsoft Intune.
-      const isIdentityManaged = Office.context.mailbox.getIsIdentityManaged();
-      console.log(`Intune-managed mailbox: ${isIdentityManaged}`);
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -983,31 +648,18 @@ methods:
     fullName: getIsOpenFromLocationAllowed(openLocation)
     summary: Returns true if an organization's [Intune mobile application management (MAM) policy](https://learn.microsoft.com/mem/intune/apps/app-management) allows an add-in to access data from the specified location.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose, Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose, Read
 
-      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      \*\*Important\*\*: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidOpenLocationInput`<!-- -->: The value of the specified location is invalid.
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
-
-      #### Examples
-
-      ```TypeScript
-      // Checks if the add-in can access data from the device's photo library.
-      const isOpenFromPhotoLibraryAllowed = Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
-      if (isOpenFromPhotoLibraryAllowed) {
-          console.log("Access to the photo library is allowed.");
-          // Do something.
-      } else {
-          console.log("Access to the photo library isn't allowed.");
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1025,31 +677,18 @@ methods:
     fullName: getIsSaveToLocationAllowed(saveLocation)
     summary: Returns true if an organization's [Intune mobile application management (MAM) policy](https://learn.microsoft.com/mem/intune/apps/app-management) allows an add-in to save data to the specified location.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose, Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose, Read
 
-      **Important**: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      \*\*Important\*\*: This method is only supported in Outlook on Android and on iOS starting in Version 4.2443.0. To learn more about APIs supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidSaveLocationInput`<!-- -->: The value of the specified location is invalid.
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM policy.
-
-      #### Examples
-
-      ```TypeScript
-      // Checks if the add-in can save data to SharePoint.
-      const isSaveToSharePointAllowed = Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
-      if (isSaveToSharePointAllowed) {
-          console.log("Saving to SharePoint is allowed.");
-          // Do something.
-      } else {
-          console.log("Saving to SharePoint isn't allowed.");
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1070,11 +709,11 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Legacy Exchange Online [user identity tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and [callback tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!-- -->. Exchange user identity tokens are still supported for Exchange on-premises.
 
@@ -1082,7 +721,7 @@ methods:
 
       - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       If your call fails, use the [asyncResult.diagnostics](https://learn.microsoft.com/javascript/api/office/office.asyncresult#office-office-asyncresult-diagnostics-member) property to view details about the error.
 
@@ -1093,26 +732,11 @@ methods:
       - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in) as a single sign-on solution for your add-in.
 
       - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-identity-token.yaml
-
-      Office.context.mailbox.getUserIdentityTokenAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`)
-              return;
-          }
-
-          console.log(result.value);
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
       parameters:
         - id: callback
           description: When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. The token is returned as a string in the `asyncResult.value` property. If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
@@ -1134,17 +758,17 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write mailbox**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write mailbox\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Legacy Exchange Online [user identity tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token) and [callback tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens) are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!-- -->. Exchange user identity tokens are still supported for Exchange on-premises.
 
       - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS directory .
 
-      - Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **read/write mailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
+      - Your add-in must have the \*\*read/write mailbox\*\* permission to use the `makeEwsRequestAsync` method. For information about using the \*\*read/write mailbox\*\* permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
 
       - If your add-in needs to access Folder Associated Items or its XML request must specify UTF-8 encoding (`\<?xml version="1.0" encoding="utf-8"?\>`<!-- -->), it must use Microsoft Graph or REST APIs to access the user's mailbox instead.
 
@@ -1153,69 +777,11 @@ methods:
       - This method isn't supported when the add-in is loaded in a Gmail mailbox.
 
       - When you use the `makeEwsRequestAsync` method in add-ins that run in Outlook versions earlier than Version 15.0.4535.1004, you must set the encoding value to ISO-8859-1 (`<?xml version="1.0" encoding="iso-8859-1"?>`<!-- -->). To determine the version of an Outlook client, use the `mailbox.diagnostics.hostVersion` property. You don't need to set the encoding value when your add-in is running in Outlook on the web or [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->. To determine the Outlook client in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/get-icaluid-as-attendee.yaml
-
-      const ewsId = Office.context.mailbox.item.itemId;
-      const request = `<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-            <soap:Header><t:RequestServerVersion Version="Exchange2013" /></soap:Header>
-            <soap:Body>
-              <m:GetItem>
-                <m:ItemShape>
-                  <t:BaseShape>AllProperties</t:BaseShape>
-                </m:ItemShape >
-                <m:ItemIds>
-                  <t:ItemId Id="${ewsId}" />
-                </m:ItemIds>
-              </m:GetItem>
-            </soap:Body>
-          </soap:Envelope>`;
-
-      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(result.error.message);
-          return;
-        }
-
-        console.log(getUID(result.value));
-      });
-
-      ...
-
-      const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
-          '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>' +
-          '  <soap:Body>' +
-          '    <m:CreateItem MessageDisposition="SendAndSaveCopy">' +
-          '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>' +
-          '      <m:Items>' +
-          '        <t:Message>' +
-          '          <t:Subject>Hello, Outlook!</t:Subject>' +
-          '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>' +
-          '          <t:ToRecipients>' +
-          '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>' +
-          '          </t:ToRecipients>' +
-          '        </t:Message>' +
-          '      </m:Items>' +
-          '    </m:CreateItem>' +
-          '  </soap:Body>' +
-          '</soap:Envelope>';
-
-      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.log(`Failed to make EWS request: ${result.error.message}.`);
-              return;
-          }
-          console.log(result.value);
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
       parameters:
         - id: data
           description: The EWS request.
@@ -1237,18 +803,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The following events are supported on the `Mailbox` object.
+      \*\*Important\*\*: The following events are supported on the `Mailbox` object.
 
       <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in. This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr> <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr> </table>
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeHandlerAsync(eventType: Office.EventType | string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -1270,31 +836,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The following events are supported on the `Mailbox` object.
+      \*\*Important\*\*: The following events are supported on the `Mailbox` object.
 
       <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in. This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr> <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr> <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr> </table>
-
-      #### Examples
-
-      ```TypeScript
-      Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error("Failed to remove event handler: " + asyncResult.error.message);
-              return;
-          }
-
-          console.log("Event handler removed successfully.");
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
           description: The event that should revoke the handler.

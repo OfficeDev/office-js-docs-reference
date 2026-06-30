@@ -10,29 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [insertSlidesFromBase64](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-insertslidesfrombase64-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
-
-  await PowerPoint.run(async function(context) {
-      // Get the ID of the first selected slide.
-      const presentation: PowerPoint.Presentation = context.presentation;
-      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
-      selected.load("id");
-      await context.sync();
-
-      // Insert the other presentation after the selected slide.
-      const insertOptions: PowerPoint.InsertSlideOptions = {
-          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
-          targetSlideId: selected.id
-      };
-      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
-      await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,7 +21,7 @@ properties:
     fullName: formatting
     summary: Specifies which formatting to use during slide insertion. The default option is to use "KeepSourceFormatting".
     remarks: '[API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +34,7 @@ properties:
     fullName: sourceSlideIds
     summary: Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is preserved during the insertion. If any of the source slides aren't found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be inserted when `sourceSlideIds` isn't provided (this is the default behavior).
     remarks: '[API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +47,7 @@ properties:
     fullName: targetSlideId
     summary: Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID. If `targetSlideId` isn't provided, the slides will be inserted at the beginning of the presentation. If `targetSlideId` is invalid or if it's pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
     remarks: '[API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

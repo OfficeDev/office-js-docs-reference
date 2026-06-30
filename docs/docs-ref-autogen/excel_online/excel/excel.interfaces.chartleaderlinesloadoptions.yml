@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartLeaderLines](/javascript/api/excel/excel.chartleaderlines): [load](/javascript/api/excel/excel.chartleaderlines#excel-excel-chartleaderlines-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

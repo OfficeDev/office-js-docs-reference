@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [set](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: comment
     summary: Specifies the comment associated with this name.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: formula
     summary: The formula of the named item. Formulas always start with an equal sign ("=").
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

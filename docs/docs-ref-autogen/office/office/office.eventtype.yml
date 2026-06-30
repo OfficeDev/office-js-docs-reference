@@ -10,8 +10,6 @@ summary: |-
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
 remarks: |-
-
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [addHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removehandlerasync-member(1))
@@ -30,41 +28,7 @@ remarks: |-
   - [Office.Settings](/javascript/api/office/office.settings): [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
   - [Office.SettingsChangedEventArgs](/javascript/api/office/office.settingschangedeventargs): [type](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-type-member)
   - [Office.UI](/javascript/api/office/office.ui): [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // This sample shows how to register an event handler in Outlook.
-  Office.onReady(() => {
-      // Registers an event handler to identify when messages are selected.
-      Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, getMessageProperties, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(asyncResult.error.message);
-              return;
-          }
-
-          console.log("Event handler added for the SelectedItemsChanged event.");
-      });
-  });
-
-  function getMessageProperties() {
-      // Retrieves the selected messages' properties and logs them to the console.
-      Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(asyncResult.error.message);
-              return;
-          }
-
-          asyncResult.value.forEach((message) => {
-              console.log(`Item ID: ${message.itemId}`);
-              console.log(`Subject: ${message.subject}`);
-              console.log(`Item type: ${message.itemType}`);
-              console.log(`Item mode: ${message.itemMode}`);
-          });
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -78,7 +42,7 @@ fields:
     summary: |-
       Occurs when any date or time of the selected appointment or series is changed in Outlook.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.AppointmentTimeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!-- -->.
 
@@ -89,7 +53,7 @@ fields:
     summary: |-
       Occurs when an attachment is added to or removed from an item.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.AttachmentsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!-- -->.
 
@@ -141,7 +105,7 @@ fields:
 
       To add an event handler for the `DragAndDropEvent` event, use the `addHandlerAsync` method of the `Mailbox` object. The event handler receives an argument of type [Office.DragAndDropEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.draganddropeventargs)<!-- -->.
 
-      **Important**: The `DragAndDropEvent` event isn't supported in Outlook on Windows (classic) and on Mac. If the `DragAndDropEvent` handler runs on these clients, an error occurs ("This event isn't supported on this platform.").
+      \*\*Important\*\*: The `DragAndDropEvent` event isn't supported in Outlook on Windows (classic) and on Mac. If the `DragAndDropEvent` handler runs on these clients, an error occurs ("This event isn't supported on this platform.").
 
       [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: EnhancedLocationsChanged
@@ -150,7 +114,7 @@ fields:
     summary: |-
       Occurs when the appointment location is changed in Outlook.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.EnhancedLocationsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!-- -->.
 
@@ -159,15 +123,15 @@ fields:
     uid: office!Office.EventType.InfobarClicked:member
     package: office!
     summary: |-
-      Occurs in Outlook when an action is selected on a notification message with a defined [custom action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->. Currently, **Dismiss** is the only supported action that fires this event.
+      Occurs in Outlook when an action is selected on a notification message with a defined [custom action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->. Currently, \*\*Dismiss\*\* is the only supported action that fires this event.
 
       To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.InfobarClickedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!-- -->.
 
-      **Important**:
+      \*\*Important\*\*:
 
       - This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
-      - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event. To determine when the **Dismiss** action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead. For more information, see [Activate add-ins with events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events)<!-- -->.
+      - Although Outlook on Mac supports the `InsightMessage` notification type, it currently doesn't support the `InfobarClicked` event. To determine when the \*\*Dismiss\*\* action is selected from the notification, implement a handler for the `OnInfoBarDismissClicked` event instead. For more information, see [Activate add-ins with events](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation#supported-events)<!-- -->.
 
       [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: InitializationContextChanged
@@ -176,7 +140,7 @@ fields:
     summary: |-
       Occurs in Outlook when an add-in's task pane is opened from an [actionable message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->, [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields) notification, [Smart Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog. This event prevents an add-in from relaunching if its task pane is already open in Outlook.
 
-      **Important**: The `InitializationContextChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: The `InitializationContextChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `InitializationContextChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.InitializationContextChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15)<!-- -->.
 
@@ -187,7 +151,7 @@ fields:
     summary: |-
       Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
 
@@ -212,7 +176,7 @@ fields:
 
       To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox` object. The event handler receives an argument of type [Office.OfficeThemeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs)<!-- -->.
 
-      **Important**:
+      \*\*Important\*\*:
 
       - The `OfficeThemeChanged` event can only be handled in a task pane. Function commands can't register a handler for this event.
 
@@ -225,7 +189,7 @@ fields:
     summary: |-
       Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.RecipientsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!-- -->.
 
@@ -236,7 +200,7 @@ fields:
     summary: |-
       Occurs when the recurrence pattern of the selected series is changed in Outlook.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.RecurrenceChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!-- -->.
 
@@ -251,7 +215,7 @@ fields:
     summary: |-
       Occurs in Outlook when one or more messages are selected or deselected.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
 
@@ -262,7 +226,7 @@ fields:
     summary: |-
       Occurs in Outlook when the sensitivity label of a message or appointment changes.
 
-      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+      \*\*Important\*\*: This event can only be handled in a task pane. Function commands can't register a handler for this event.
 
       To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs)<!-- -->.
 

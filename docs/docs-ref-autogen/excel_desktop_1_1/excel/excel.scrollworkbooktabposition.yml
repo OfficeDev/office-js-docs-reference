@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Window](/javascript/api/excel/excel.window): [scrollWorkbookTabs](/javascript/api/excel/excel.window#excel-excel-window-scrollworkbooktabs-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Scrolls the tab menu to show the first worksheet tab.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"First"'
   - name: last
     uid: excel!Excel.ScrollWorkbookTabPosition.last:member
@@ -28,5 +28,5 @@ fields:
     summary: |-
       Scrolls the tab menu to show the last worksheet tab.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Last"'

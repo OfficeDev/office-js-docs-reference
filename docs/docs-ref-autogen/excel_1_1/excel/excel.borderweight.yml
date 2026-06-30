@@ -10,27 +10,27 @@ remarks: |-
   #### Used by
 
   - [Excel.RangeBorder](/javascript/api/excel/excel.rangeborder): [weight](/javascript/api/excel/excel.rangeborder#excel-excel-rangeborder-weight-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: hairline
     uid: excel!Excel.BorderWeight.hairline:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Hairline"'
   - name: medium
     uid: excel!Excel.BorderWeight.medium:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Medium"'
   - name: thick
     uid: excel!Excel.BorderWeight.thick:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Thick"'
   - name: thin
     uid: excel!Excel.BorderWeight.thin:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Thin"'

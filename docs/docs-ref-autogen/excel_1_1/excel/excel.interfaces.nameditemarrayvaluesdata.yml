@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NamedItemArrayValuesData
 summary: An interface describing the data returned by calling `namedItemArrayValues.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

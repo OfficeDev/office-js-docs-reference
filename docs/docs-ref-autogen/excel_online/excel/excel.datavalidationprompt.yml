@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DataValidation](/javascript/api/excel/excel.datavalidation): [prompt](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-prompt-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: message
     summary: Specifies the message of the prompt.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: showPrompt
     summary: Specifies if a prompt is shown when a user selects a cell with data validation.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: title
     summary: Specifies the title for the prompt.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

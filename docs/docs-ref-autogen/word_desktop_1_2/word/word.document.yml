@@ -10,28 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.RequestContext](/javascript/api/word/word.requestcontext): [document](/javascript/api/word/word.requestcontext#word-word-requestcontext-document-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-  // Gets the current change tracking mode.
-  await Word.run(async (context) => {
-    const document: Word.Document = context.document;
-    document.load("changeTrackingMode");
-    await context.sync();
-
-    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-      console.log("Only my changes are being tracked.");
-    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-      console.log("Everyone's changes are being tracked.");
-    } else {
-      console.log("No changes are being tracked.");
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -41,60 +20,8 @@ properties:
     package: word!
     fullName: activeWindow
     summary: Gets the active window for the document.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-      await Word.run(async (context) => {
-        // Gets the first paragraph of each page.
-        console.log("Getting first paragraph of each page...");
-
-        // Get the active window.
-        const activeWindow: Word.Window = context.document.activeWindow;
-        activeWindow.load();
-
-        // Get the active pane.
-        const activePane: Word.Pane = activeWindow.activePane;
-        activePane.load();
-
-        // Get all pages.
-        const pages: Word.PageCollection = activePane.pages;
-        pages.load();
-
-        await context.sync();
-
-        // Get page index and paragraphs of each page.
-        const pagesIndexes = [];
-        const pagesNumberOfParagraphs = [];
-        const pagesFirstParagraphText = [];
-        for (let i = 0; i < pages.items.length; i++) {
-          const page = pages.items[i];
-          page.load("index");
-          pagesIndexes.push(page);
-
-          const paragraphs = page.getRange().paragraphs;
-          paragraphs.load("items/length");
-          pagesNumberOfParagraphs.push(paragraphs);
-
-          const firstParagraph = paragraphs.getFirst();
-          firstParagraph.load("text");
-          pagesFirstParagraphText.push(firstParagraph);
-        }
-
-        await context.sync();
-
-        for (let i = 0; i < pagesIndexes.length; i++) {
-          console.log(`Page index: ${pagesIndexes[i].index}`);
-          console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
-          console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +34,7 @@ properties:
     fullName: body
     summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,30 +46,8 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
-    remarks: |-
-      [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-      // Gets the current change tracking mode.
-      await Word.run(async (context) => {
-        const document: Word.Document = context.document;
-        document.load("changeTrackingMode");
-        await context.sync();
-
-        if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-          console.log("Only my changes are being tracked.");
-        } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-          console.log("Everyone's changes are being tracked.");
-        } else {
-          console.log("No changes are being tracked.");
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +60,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +73,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +86,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,23 +98,8 @@ properties:
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
-    remarks: |-
-      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
-
-      await Word.run(async (context) => {
-          const builtInProperties: Word.DocumentProperties = context.document.properties;
-          builtInProperties.load("*"); // Let's get all!
-
-          await context.sync();
-          console.log(JSON.stringify(builtInProperties, null, 4));
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +112,7 @@ properties:
     fullName: saved
     summary: Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,7 +125,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,31 +137,8 @@ properties:
     package: word!
     fullName: settings
     summary: Gets the add-in's settings in the document.
-    remarks: |-
-      [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
-
-      // Gets all custom settings this add-in set on this document.
-      await Word.run(async (context) => {
-        const settings: Word.SettingCollection = context.document.settings;
-        settings.load("items");
-        await context.sync();
-
-        if (settings.items.length == 0) {
-          console.log("There are no settings.");
-        } else {
-          console.log("All settings:");
-          for (let i = 0; i < settings.items.length; i++) {
-            console.log(settings.items[i]);
-          }
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -283,25 +150,8 @@ properties:
     package: word!
     fullName: windows
     summary: Gets the collection of `Word.Window` objects for the document.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-      await Word.run(async (context) => {
-        // Gets the document windows.
-        const windows: Word.WindowCollection = context.document.windows;
-        windows.load("windows/items/length");
-
-        await context.sync();
-
-        console.log(`Number of windows for this document: ${windows.items.length}`);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -314,41 +164,8 @@ methods:
     package: word!
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Adds a new style.
-      await Word.run(async (context) => {
-        const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
-        if (newStyleName == "") {
-          console.warn("Enter a style name to add.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
-        style.load();
-        await context.sync();
-
-        if (!style.isNullObject) {
-          console.warn(
-            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
-          );
-          return;
-        }
-
-        const newStyleType = ((document.getElementById("new-style-type") as HTMLSelectElement).value as unknown) as Word.StyleType;
-        context.document.addStyle(newStyleName, newStyleType);
-        await context.sync();
-
-        console.log(newStyleName + " has been added to the style list.");
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -369,7 +186,7 @@ methods:
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,21 +209,8 @@ methods:
       Closes the current document.
 
       Note: This API isn't supported in Word on the web.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
-
-      // Closes the document with default behavior
-      // for current state of the document.
-      await Word.run(async (context) => {
-        context.document.close();
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -427,7 +231,7 @@ methods:
 
       Note: This API isn't supported in Word on the web.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,32 +248,8 @@ methods:
     package: word!
     fullName: compare(filePath, documentCompareOptions)
     summary: Displays revision marks that indicate where the specified document differs from another document.
-    remarks: |-
-      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
-
-      // Compares the current document with a specified external document.
-      await Word.run(async (context) => {
-        // Absolute path of an online or local document.
-        const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
-        // Options that configure the compare operation.
-        const options: Word.DocumentCompareOptions = {
-          compareTarget: Word.CompareTarget.compareTargetCurrent,
-          detectFormatChanges: false
-          // Other options you choose...
-          };
-        context.document.compare(filePath, options);
-
-        await context.sync();
-
-        console.log("Differences shown in the current document.");
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -490,7 +270,7 @@ methods:
     fullName: compareFromBase64(base64File, documentCompareOptions)
     summary: Displays revision marks that indicate where the specified document differs from another document.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -511,7 +291,7 @@ methods:
     fullName: deleteBookmark(name)
     summary: Deletes a bookmark, if it exists, from the document.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -529,7 +309,7 @@ methods:
     fullName: getAnnotationById(id)
     summary: Gets the annotation by ID. Throws an `ItemNotFound` error if annotation isn't found.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -547,7 +327,7 @@ methods:
     fullName: getBookmarkRange(name)
     summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark doesn't exist.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -563,9 +343,9 @@ methods:
     uid: word!Word.Document#getBookmarkRangeOrNullObject:member(1)
     package: word!
     fullName: getBookmarkRangeOrNullObject(name)
-    summary: Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a bookmark's range. If the bookmark doesn't exist, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -586,61 +366,7 @@ methods:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Important: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
-
-      // Toggles the isChecked property on all checkbox content controls.
-      await Word.run(async (context) => {
-        let contentControls = context.document.getContentControls({
-          types: [Word.ContentControlType.checkBox]
-        });
-        contentControls.load("items");
-
-        await context.sync();
-
-        const length = contentControls.items.length;
-        console.log(`Number of checkbox content controls: ${length}`);
-
-        if (length <= 0) {
-          return;
-        }
-
-        const checkboxContentControls = [];
-        for (let i = 0; i < length; i++) {
-          let contentControl = contentControls.items[i];
-          contentControl.load("id,checkboxContentControl/isChecked");
-          checkboxContentControls.push(contentControl);
-        }
-
-        await context.sync();
-
-        console.log("isChecked state before:");
-        const updatedCheckboxContentControls = [];
-        for (let i = 0; i < checkboxContentControls.length; i++) {
-          const currentCheckboxContentControl = checkboxContentControls[i];
-          const isCheckedBefore = currentCheckboxContentControl.checkboxContentControl.isChecked;
-          console.log(`id: ${currentCheckboxContentControl.id} ... isChecked: ${isCheckedBefore}`);
-
-          currentCheckboxContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
-          currentCheckboxContentControl.load("id,checkboxContentControl/isChecked");
-          updatedCheckboxContentControls.push(currentCheckboxContentControl);
-        }
-
-        await context.sync();
-
-        console.log("isChecked state after:");
-        for (let i = 0; i < updatedCheckboxContentControls.length; i++) {
-          const currentCheckboxContentControl = updatedCheckboxContentControls[i];
-          console.log(
-            `id: ${currentCheckboxContentControl.id} ... isChecked: ${currentCheckboxContentControl.checkboxContentControl.isChecked}`
-          );
-        }
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -658,7 +384,7 @@ methods:
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -672,7 +398,7 @@ methods:
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -685,24 +411,8 @@ methods:
     package: word!
     fullName: getParagraphByUniqueLocalId(id)
     summary: Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error if the collection is empty.
-    remarks: |-
-      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
-
-      await Word.run(async (context) => {
-        const paragraphId = (document.getElementById("paragraph-id") as HTMLInputElement).value;
-        const paragraph: Word.Paragraph = context.document.getParagraphByUniqueLocalId(paragraphId);
-        paragraph.load();
-        await paragraph.context.sync();
-
-        console.log(paragraph);
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -719,34 +429,8 @@ methods:
     package: word!
     fullName: getSelection()
     summary: Gets the current selection of the document. Multiple selections aren't supported.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-          
-          const textSample = 'This is an example of the insert text method. This is a method ' + 
-              'which allows users to insert text into a selection. It can insert text into a ' +
-              'relative location or it can overwrite the current selection. Since the ' +
-              'getSelection method returns a range object, look up the range object documentation ' +
-              'for everything you can do with a selection.';
-          
-          // Create a range proxy object for the current selection.
-          const range = context.document.getSelection();
-          
-          // Queue a command to insert text at the end of the selection.
-          range.insertText(textSample, Word.InsertLocation.end);
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Inserted the text at the end of the selection.');
-      });  
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -759,24 +443,8 @@ methods:
     package: word!
     fullName: getStyles()
     summary: Gets a `StyleCollection` object that represents the whole style set of the document.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Gets the number of available styles stored with the document.
-      await Word.run(async (context) => {
-        const styles: Word.StyleCollection = context.document.getStyles();
-        const count = styles.getCount();
-        await context.sync();
-
-        console.log(`Number of styles: ${count.value}`);
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -793,26 +461,7 @@ methods:
       [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
-
-      // Imports styles from JSON.
-      await Word.run(async (context) => {
-        const str =
-          '{"styles":[{"baseStyle":"Default Paragraph Font","builtIn":false,"inUse":true,"linked":false,"nameLocal":"NewCharStyle","priority":2,"quickStyle":true,"type":"Character","unhideWhenUsed":false,"visibility":false,"paragraphFormat":null,"font":{"name":"DengXian Light","size":16.0,"bold":true,"italic":false,"color":"#F1A983","underline":"None","subscript":false,"superscript":true,"strikeThrough":true,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#FF0000"}},{"baseStyle":"Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewParaStyle","nameLocal":"NewParaStyle","priority":1,"quickStyle":true,"type":"Paragraph","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Centered","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":72.0,"lineSpacing":18.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":72.0,"spaceAfter":30.0,"spaceBefore":30.0,"widowControl":true},"font":{"name":"DengXian","size":14.0,"bold":true,"italic":true,"color":"#8DD873","underline":"Single","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":true,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#00FF00"}},{"baseStyle":"Table Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewTableStyle","nameLocal":"NewTableStyle","priority":100,"type":"Table","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Left","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":0.0,"lineSpacing":12.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":0.0,"spaceAfter":0.0,"spaceBefore":0.0,"widowControl":true},"font":{"name":"DengXian","size":20.0,"bold":false,"italic":true,"color":"#D86DCB","underline":"None","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"tableStyle":{"allowBreakAcrossPage":true,"alignment":"Left","bottomCellMargin":0.0,"leftCellMargin":0.08,"rightCellMargin":0.08,"topCellMargin":0.0,"cellSpacing":0.0},"shading":{"backgroundPatternColor":"#60CAF3"}}]}';
-        const styles = context.document.importStylesFromJson(str);
-
-        // If you'd like to set how conflicting styles are handled, use the importedStylesConflictBehavior parameter that was introduced in the Desktop 1.1 requirement set. "Ignore" is the default.
-        ////const styles = context.document.importStylesFromJson(str, Word.ImportedStylesConflictBehavior.Ignore);
-
-        await context.sync();
-        console.log("Styles imported from JSON:", styles);
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -825,7 +474,7 @@ methods:
           description: Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document. The default value is `ignore`<!-- -->.
           type: <xref uid="word!Word.ImportedStylesConflictBehavior:enum" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     uid: word!Word.Document#importStylesFromJson:member(2)
@@ -836,7 +485,7 @@ methods:
       [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -849,7 +498,7 @@ methods:
           description: Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document. The default value is `ignore`<!-- -->.
           type: '"Ignore" | "Overwrite" | "CreateNew"'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
     uid: word!Word.Document#insertFileFromBase64:member(1)
@@ -860,29 +509,7 @@ methods:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-      // Inserts content (applying selected settings) from another document passed in as a Base64-encoded string.
-      await Word.run(async (context) => {
-        // Use the Base64-encoded string representation of the selected .docx file.
-        context.document.insertFileFromBase64(externalDocument, "Replace", {
-          importTheme: true,
-          importStyles: true,
-          importParagraphSpacing: true,
-          importPageColor: true,
-          importChangeTrackingMode: true,
-          importCustomProperties: true,
-          importCustomXmlParts: true,
-          importDifferentOddEvenPages: true
-        });
-        await context.sync();
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -906,7 +533,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -917,42 +544,14 @@ methods:
           type: <xref uid="word!Word.Interfaces.DocumentLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.Document:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Run a batch operation against the Word object model.
-          await Word.run(async (context) => {
-              
-              // Create a proxy object for the document.
-              const thisDocument = context.document;
-              
-              // Queue a command to load content control properties.
-              thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              await context.sync();
-              if (thisDocument.contentControls.items.length !== 0) {
-                  for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
-                      console.log(thisDocument.contentControls.items[i].id);
-                      console.log(thisDocument.contentControls.items[i].text);
-                      console.log(thisDocument.contentControls.items[i].tag);
-                  }
-              } else {
-                  console.log('No content controls in this document.');
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: word!Word.Document#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -970,7 +569,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -999,20 +598,7 @@ methods:
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
-
-      // Saves the document with default behavior
-      // for current state of the document.
-      await Word.run(async (context) => {
-        context.document.save();
-        await context.sync();
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1036,7 +622,7 @@ methods:
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1057,7 +643,7 @@ methods:
     fullName: search(searchText, searchOptions)
     summary: Performs a search with the specified search options on the scope of the whole document. The search results are a collection of `Range` objects.
     remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1096,7 +682,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1107,7 +693,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -1117,7 +703,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1135,7 +721,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1149,7 +735,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1163,7 +749,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1176,395 +762,117 @@ events:
     uid: word!Word.Document#onAnnotationClicked:member
     package: word!
     fullName: onAnnotationClicked
-    summary: Occurs when the user clicks an annotation (or selects it using **Alt+Down**).
-    remarks: |-
-      [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-      // Registers event handlers.
-      await Word.run(async (context) => {
-        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-        await context.sync();
-
-        console.log("Event handlers registered.");
-      });
-
-      ...
-
-      async function onClickedHandler(args: Word.AnnotationClickedEventArgs) {
-        await Word.run(async (context) => {
-          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
-          annotation.load("critiqueAnnotation");
-
-          await context.sync();
-
-          console.log(`AnnotationClicked: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
-        });
-      }
-      ```
-
+    summary: Occurs when the user clicks an annotation (or selects it using \*\*Alt+Down\*\*).
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onAnnotationClicked: OfficeExtension.EventHandlers<Word.AnnotationClickedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationClickedEventArgs:interface" />&gt;
   - name: onAnnotationHovered
     uid: word!Word.Document#onAnnotationHovered:member
     package: word!
     fullName: onAnnotationHovered
     summary: Occurs when the user hovers the cursor over an annotation.
-    remarks: |-
-      [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-      // Registers event handlers.
-      await Word.run(async (context) => {
-        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-        await context.sync();
-
-        console.log("Event handlers registered.");
-      });
-
-      ...
-
-      async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
-        await Word.run(async (context) => {
-          const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
-          annotation.load("critiqueAnnotation");
-
-          await context.sync();
-
-          console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onAnnotationHovered: OfficeExtension.EventHandlers<Word.AnnotationHoveredEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationHoveredEventArgs:interface" />&gt;
   - name: onAnnotationInserted
     uid: word!Word.Document#onAnnotationInserted:member
     package: word!
     fullName: onAnnotationInserted
     summary: Occurs when the user adds one or more annotations.
-    remarks: |-
-      [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-      // Registers event handlers.
-      await Word.run(async (context) => {
-        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-        await context.sync();
-
-        console.log("Event handlers registered.");
-      });
-
-      ...
-
-      async function onInsertedHandler(args: Word.AnnotationInsertedEventArgs) {
-        await Word.run(async (context) => {
-          const annotations = [];
-          for (let i = 0; i < args.ids.length; i++) {
-            let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
-            annotation.load("id,critiqueAnnotation");
-
-            annotations.push(annotation);
-          }
-
-          await context.sync();
-
-          for (let annotation of annotations) {
-            console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
-          }
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onAnnotationInserted: OfficeExtension.EventHandlers<Word.AnnotationInsertedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationInsertedEventArgs:interface" />&gt;
   - name: onAnnotationPopupAction
     uid: word!Word.Document#onAnnotationPopupAction:member
     package: word!
     fullName: onAnnotationPopupAction
     summary: Occurs when the user performs an action in an annotation pop-up menu.
-    remarks: |-
-      [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-      // Registers event handlers.
-      await Word.run(async (context) => {
-        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-        await context.sync();
-
-        console.log("Event handlers registered.");
-      });
-
-      ...
-
-      async function onPopupActionHandler(args: Word.AnnotationPopupActionEventArgs) {
-        await Word.run(async (context) => {
-          let message = `AnnotationPopupAction: ID ${args.id} = `;
-          if (args.action === "Accept") {
-            message += `Accepted: ${args.critiqueSuggestion}`;
-          } else {
-            message += "Rejected";
-          }
-
-          console.log(message);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationPopupActionEventArgs:interface" />&gt;
   - name: onAnnotationRemoved
     uid: word!Word.Document#onAnnotationRemoved:member
     package: word!
     fullName: onAnnotationRemoved
     summary: Occurs when the user deletes one or more annotations.
-    remarks: |-
-      [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-      // Registers event handlers.
-      await Word.run(async (context) => {
-        eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-        eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-        eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-        eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-        eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-        eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-        eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-        await context.sync();
-
-        console.log("Event handlers registered.");
-      });
-
-      ...
-
-      async function onRemovedHandler(args: Word.AnnotationRemovedEventArgs) {
-        await Word.run(async (context) => {
-          for (let id of args.ids) {
-            console.log(`AnnotationRemoved: ID ${id}`);
-          }
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onAnnotationRemoved: OfficeExtension.EventHandlers<Word.AnnotationRemovedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.AnnotationRemovedEventArgs:interface" />&gt;
   - name: onContentControlAdded
     uid: word!Word.Document#onContentControlAdded:member
     package: word!
     fullName: onContentControlAdded
     summary: Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
-
-      // Registers the onAdded event handler on the document.
-      await Word.run(async (context) => {
-        eventContext = context.document.onContentControlAdded.add(contentControlAdded);
-        await context.sync();
-
-        console.log("Added event handler for when content controls are added.");
-      });
-
-      ...
-
-      async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls that were added:`, event.ids);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
   - name: onParagraphAdded
     uid: word!Word.Document#onParagraphAdded:member
     package: word!
     fullName: onParagraphAdded
     summary: Occurs when the user adds new paragraphs.
-    remarks: |-
-      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
-
-      // Registers the onParagraphAdded event handler on the document.
-      await Word.run(async (context) => {
-        eventContext = context.document.onParagraphAdded.add(paragraphAdded);
-        await context.sync();
-
-        console.log("Added event handler for when paragraphs are added.");
-      });
-
-      ...
-
-      async function paragraphAdded(event: Word.ParagraphAddedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs that were added:`, event.uniqueLocalIds);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphAdded: OfficeExtension.EventHandlers<Word.ParagraphAddedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphAddedEventArgs:interface" />&gt;
   - name: onParagraphChanged
     uid: word!Word.Document#onParagraphChanged:member
     package: word!
     fullName: onParagraphChanged
     summary: Occurs when the user changes paragraphs.
-    remarks: |-
-      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onchanged-event.yaml
-
-      // Registers the onParagraphChanged event handler on the document.
-      await Word.run(async (context) => {
-        eventContext = context.document.onParagraphChanged.add(paragraphChanged);
-        await context.sync();
-
-        console.log("Added event handler for when content is changed in paragraphs.");
-      });
-
-      ...
-
-      async function paragraphChanged(event: Word.ParagraphChangedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs where content was changed:`, event.uniqueLocalIds);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphChanged: OfficeExtension.EventHandlers<Word.ParagraphChangedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphChangedEventArgs:interface" />&gt;
   - name: onParagraphDeleted
     uid: word!Word.Document#onParagraphDeleted:member
     package: word!
     fullName: onParagraphDeleted
     summary: Occurs when the user deletes paragraphs.
-    remarks: |-
-      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
-
-      // Registers the onParagraphDeleted event handler on the document.
-      await Word.run(async (context) => {
-        eventContext = context.document.onParagraphDeleted.add(paragraphDeleted);
-        await context.sync();
-
-        console.log("Added event handlers for when paragraphs are deleted.");
-      });
-
-      ...
-
-      async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
-        await Word.run(async (context) => {
-          console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`, event.uniqueLocalIds);
-        });
-      }
-      ```
-
+    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onParagraphDeleted: OfficeExtension.EventHandlers<Word.ParagraphDeletedEventArgs>;'
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+        type: <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.ParagraphDeletedEventArgs:interface" />&gt;
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

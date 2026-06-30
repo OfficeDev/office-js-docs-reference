@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TableColumnUpdateData
 summary: An interface for updating data on the `TableColumn` object, for use in `tableColumn.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

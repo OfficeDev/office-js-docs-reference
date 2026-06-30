@@ -10,47 +10,32 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentPrintOutOptions](/javascript/api/word/word.documentprintoutoptions): [range](/javascript/api/word/word.documentprintoutoptions#word-word-documentprintoutoptions-range-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: allDocument
     uid: word!Word.PrintOutRange.allDocument:member
     package: word!
-    summary: |-
-      Represents printing the entire document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing the entire document.
     value: '"AllDocument"'
   - name: currentPage
     uid: word!Word.PrintOutRange.currentPage:member
     package: word!
-    summary: |-
-      Represents printing the current page.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing the current page.
     value: '"CurrentPage"'
   - name: fromTo
     uid: word!Word.PrintOutRange.fromTo:member
     package: word!
-    summary: |-
-      Represents printing a range from one page to another.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing a range from one page to another.
     value: '"FromTo"'
   - name: rangeOfPages
     uid: word!Word.PrintOutRange.rangeOfPages:member
     package: word!
-    summary: |-
-      Represents printing specific ranges of pages.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing specific ranges of pages.
     value: '"RangeOfPages"'
   - name: selection
     uid: word!Word.PrintOutRange.selection:member
     package: word!
-    summary: |-
-      Represents printing the current selection.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents printing the current selection.
     value: '"Selection"'

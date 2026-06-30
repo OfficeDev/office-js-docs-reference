@@ -4,8 +4,10 @@ uid: office!Office.Addin:interface
 package: office!
 fullName: Office.Addin
 summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
-remarks: '**Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)'
-
+remarks: >-
+  \*\*Requirement set\*\*: [SharedRuntime
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,29 +16,13 @@ properties:
     uid: office!Office.Addin#beforeDocumentCloseNotification:member
     package: office!
     fullName: beforeDocumentCloseNotification
-    summary: Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. This API is only supported in Excel.
-    remarks: |-
-      **Requirement set**: [SharedRuntime 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Enable the before document close modal notification dialog. 
-      async function enableNotification() {
-          await Office.addin.beforeDocumentCloseNotification.enable(); 
-      }
-
-      // Add an event handler to detect when the document close operation is cancelled.
-      Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async function () {
-          // When the document close attempt is cancelled, write a message to the active range in the worksheet.
-          await Excel.run(async (context) => {
-              const range = context.workbook.getSelectedRange();
-              range.values = [["Detected onCloseActionCancelled event."]];
-              await context.sync();
-          });
-      });
-      ```
-
+    summary: >-
+      Represents a modal notification dialog that can appear when the user attempts to close a document. The document
+      won't close until the user responds. This API is only supported in Excel.
+    remarks: >-
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,8 +35,10 @@ methods:
     package: office!
     fullName: getStartupBehavior()
     summary: Gets the current startup behavior for the add-in.
-    remarks: '**Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)'
-
+    remarks: >-
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,8 +51,10 @@ methods:
     package: office!
     fullName: hide()
     summary: Hides the task pane.
-    remarks: '**Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)'
-
+    remarks: >-
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,23 +67,10 @@ methods:
     package: office!
     fullName: onVisibilityModeChanged(handler)
     summary: Adds a handler for the `onVisibilityModeChanged` event.
-    remarks: |-
-      **Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      Office.onReady(() => {
-          Office.addin.onVisibilityModeChanged((args: Office.VisibilityModeChangedMessage) => {
-              if (args.visibilityMode === Office.VisibilityMode.taskpane) {
-                  // Do something when the task pane is visible.
-              }
-          });
-
-          // Other startup tasks.
-      });
-      ```
-
+    remarks: >-
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +80,9 @@ methods:
                 ): Promise<() => Promise<void>>;
       parameters:
         - id: handler
-          description: The handler function that is called when the event is emitted. This function takes in a message for the receiving component.
+          description: >-
+            The handler function that is called when the event is emitted. This function takes in a message for the
+            receiving component.
           type: '(message: <xref uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt; void'
       return:
         type: Promise&lt;() =&gt; Promise&lt;void&gt;&gt;
@@ -113,16 +92,10 @@ methods:
     package: office!
     fullName: setStartupBehavior(behavior)
     summary: Sets the startup behavior for the add-in for when the document is opened next time.
-    remarks: |-
-      **Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Configure your add-in to load and start running when the document is opened.
-      Office.addin.setStartupBehavior(Office.StartupBehavior.load);
-      ```
-
+    remarks: >-
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,11 +112,14 @@ methods:
     package: office!
     fullName: showAsTaskpane()
     summary: Shows the task pane associated with the add-in.
-    remarks: |-
-      This method applies only to centrally deployed or sideloaded add-ins. For add-ins published in the Microsoft Marketplace, the method is ignored and the task pane doesn't open.
+    remarks: >-
+      This method applies only to centrally deployed or sideloaded add-ins. For add-ins published in the Microsoft
+      Marketplace, the method is ignored and the task pane doesn't open.
 
-      **Requirement set**: [SharedRuntime 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
+      \*\*Requirement set\*\*: [SharedRuntime
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

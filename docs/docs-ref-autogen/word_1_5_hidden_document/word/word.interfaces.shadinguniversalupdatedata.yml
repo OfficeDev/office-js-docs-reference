@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShadingUniversalUpdateData
 summary: An interface for updating data on the `ShadingUniversal` object, for use in `shadingUniversal.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

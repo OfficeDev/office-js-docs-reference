@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.HeaderFooterUpdateData
 summary: An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

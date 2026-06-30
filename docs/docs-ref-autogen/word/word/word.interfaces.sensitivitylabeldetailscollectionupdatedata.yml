@@ -3,9 +3,11 @@ name: Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData
 uid: word!Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData
-summary: An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in `sensitivityLabelDetailsCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in
+  `sensitivityLabelDetailsCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

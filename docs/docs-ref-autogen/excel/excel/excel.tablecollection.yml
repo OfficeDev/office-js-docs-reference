@@ -11,27 +11,7 @@ remarks: |-
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [tables](/javascript/api/excel/excel.workbook#excel-excel-workbook-tables-member)
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [tables](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tables-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-  // Add checkboxes to the table.
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-    // Get the second column in the table, without the header.
-    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-    // Change the boolean values to checkboxes.
-    range.control = {
-      type: Excel.CellControlType.checkbox
-    };
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +35,7 @@ properties:
     fullName: count
     summary: Returns the number of tables in the workbook.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +48,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,21 +61,8 @@ methods:
     package: excel!
     fullName: add(address, hasHeaders)
     summary: Creates a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const table = context.workbook.tables.add('Sheet1!A1:E7', true);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +83,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of tables in the collection.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,29 +96,8 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a table by name or ID.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-      // Remove checkboxes from the table.
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        // Get the second column in the table, without the header.
-        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-        // Change the checkboxes back to boolean values.
-        range.control = {
-          type: Excel.CellControlType.empty
-        };
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,21 +114,8 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a table based on its position in the collection.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const table = context.workbook.tables.getItemAt(0);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,9 +131,9 @@ methods:
     uid: excel!Excel.TableCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,7 +151,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,7 +169,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,28 +180,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get the number of tables.
-          await Excel.run(async (context) => { 
-              const tables = context.workbook.tables;
-              tables.load('count');
-              await context.sync();
-              
-              console.log(tables.count);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +205,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +220,7 @@ events:
     fullName: onAdded
     summary: Occurs when a new table is added in a workbook.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,23 +232,8 @@ events:
     package: excel!
     fullName: onChanged
     summary: Occurs when data changes on any table in a workbook, or a worksheet.
-    remarks: |-
-      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
-
-      await Excel.run(async (context) => {
-          let tables = context.workbook.tables;
-          tables.onChanged.add(onChange);
-
-          await context.sync();
-          console.log("A handler has been registered for the table collection onChanged event");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -342,7 +246,7 @@ events:
     fullName: onDeleted
     summary: Occurs when the specified table is deleted in a workbook.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,7 +259,7 @@ events:
     fullName: onFiltered
     summary: Occurs when a filter is applied on any table in a workbook, or a worksheet.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

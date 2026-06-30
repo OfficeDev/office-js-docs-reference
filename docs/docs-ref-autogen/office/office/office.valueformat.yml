@@ -11,35 +11,7 @@ remarks: |-
 
   - [Office.GetBindingDataOptions](/javascript/api/office/office.getbindingdataoptions): [valueFormat](/javascript/api/office/office.getbindingdataoptions#office-office-getbindingdataoptions-valueformat-member)
   - [Office.GetSelectedDataOptions](/javascript/api/office/office.getselecteddataoptions): [valueFormat](/javascript/api/office/office.getselecteddataoptions#office-office-getselecteddataoptions-valueformat-member)
-
-  #### Examples
-
-  ```TypeScript
-  /* Set the selection options. These will:
-   - Pass the string "myContext" to the callback.
-   - Include both visible and hidden data.
-   - Return the formatted values of the selection 
-       (for an Excel date, 1/1/2023 instead of 44928).
-   */  
-  const options: Office.GetSelectedDataOptions = {
-      asyncContext: "myContext",
-      filterType: Office.FilterType.All,
-      valueFormat: Office.ValueFormat.Formatted
-  }
-
-  // Get the selected data in the Office document as text.
-  Office.context.document.getSelectedDataAsync(
-      Office.CoercionType.Text,
-      options,
-      (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
-          } else {
-              console.log(`The selected data is "${asyncResult.value}".`);
-          }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Visio.Document](/javascript/api/visio/visio.document): [onDocumentError](/javascript/api/visio/visio.document#visio-visio-document-ondocumenterror-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: errorCode
     summary: Visio Error code.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: errorMessage
     summary: Message about error that occurred.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: isCritical
     summary: Tells if the error is critical or not. If critical the session cannot continue.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

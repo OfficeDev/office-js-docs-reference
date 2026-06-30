@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [split](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-split-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: mergeBeforeSplit
     summary: If provided, specifies whether to merge the cells with one another before splitting them. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: numColumns
     summary: If provided, specifies the number of columns that the group of cells is to be split into. The default value is 1.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: numRows
     summary: If provided, specifies the number of rows that the group of cells is to be split into. The default value is 1.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

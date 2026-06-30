@@ -3,9 +3,11 @@ name: Word.Interfaces.ContentControlListItemCollectionUpdateData
 uid: word!Word.Interfaces.ContentControlListItemCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemCollectionUpdateData
-summary: An interface for updating data on the `ContentControlListItemCollection` object, for use in `contentControlListItemCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `ContentControlListItemCollection` object, for use in
+  `contentControlListItemCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

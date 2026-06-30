@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.SelectionInsertDateTimeOptions](/javascript/api/word/word.selectioninsertdatetimeoptions): [calendarType](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-calendartype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bidirectional
     uid: word!Word.CalendarTypeBidirectional.bidirectional:member
     package: word!
-    summary: |-
-      Uses the Bidirectional calendar.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Uses the Bidirectional calendar.
     value: '"Bidirectional"'
   - name: gregorian
     uid: word!Word.CalendarTypeBidirectional.gregorian:member
     package: word!
-    summary: |-
-      Uses the Gregorian calendar.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Uses the Gregorian calendar.
     value: '"Gregorian"'

@@ -12,7 +12,7 @@ remarks: |-
   - [OneNote.Notebook](/javascript/api/onenote/onenote.notebook): [addSectionGroup](/javascript/api/onenote/onenote.notebook#onenote-onenote-notebook-addsectiongroup-member(1))
   - [OneNote.Section](/javascript/api/onenote/onenote.section): [copyToSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-copytosectiongroup-member(1)), [parentSectionGroup](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroup-member), [parentSectionGroupOrNull](/javascript/api/onenote/onenote.section#onenote-onenote-section-parentsectiongroupornull-member)
   - [OneNote.SectionGroupCollection](/javascript/api/onenote/onenote.sectiongroupcollection): [getItem](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getitem-member(1)), [getItemAt](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-getitemat-member(1)), [items](/javascript/api/onenote/onenote.sectiongroupcollection#onenote-onenote-sectiongroupcollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -23,7 +23,7 @@ properties:
     fullName: clientUrl
     summary: The client URL of the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +49,7 @@ properties:
     fullName: id
     summary: Gets the ID of the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +62,7 @@ properties:
     fullName: name
     summary: Gets the name of the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +75,7 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +88,7 @@ properties:
     fullName: parentSectionGroup
     summary: Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +101,7 @@ properties:
     fullName: parentSectionGroupOrNull
     summary: Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +114,7 @@ properties:
     fullName: sectionGroups
     summary: The collection of section groups in the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +127,7 @@ properties:
     fullName: sections
     summary: The collection of sections in the section group.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,34 +140,8 @@ methods:
     package: onenote!
     fullName: addSection(title)
     summary: Adds a new section to the end of the section group.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-
-          // Get the section groups that are direct children of the current notebook.
-          const sectionGroups = context.application.getActiveNotebook().sectionGroups;
-          
-          // Queue a command to load the section groups.
-          // For best performance, request specific properties.
-          sectionGroups.load("id");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-                  
-          // Add a section to each section group.
-          $.each(sectionGroups.items, function(index, sectionGroup) {
-              sectionGroup.addSection("Agenda");
-          });
-          
-          // Run the queued commands.
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,40 +158,8 @@ methods:
     package: onenote!
     fullName: addSectionGroup(name)
     summary: Adds a new section group to the end of this sectionGroup.
-    remarks: |-
-      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      await OneNote.run(async (context) => {
-          let sectionGroup;
-          let nestedSectionGroup;
-
-          // Gets the active notebook.
-          const notebook = context.application.getActiveNotebook();
-
-          // Queue a command to add a new section group.
-          const sectionGroups = notebook.sectionGroups;
-
-          // Queue a command to load the new section group.
-          sectionGroups.load();
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          sectionGroup = sectionGroups.items[0];
-          sectionGroup.load();
-          await context.sync();
-
-          nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
-          nestedSectionGroup.load();
-          await context.sync();
-          
-          console.log("New nested section group name is " + nestedSectionGroup.name);
-      });
-      ```
-
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,13 +177,13 @@ methods:
     fullName: getRestApiId()
     summary: Gets the REST API ID.
     remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: load(options)
     uid: onenote!OneNote.SectionGroup#load:member(1)
@@ -249,7 +191,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,7 +209,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,36 +220,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.SectionGroup:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-                  
-              // Get the parent section group that contains the current section.
-              const sectionGroup = context.application.getActiveSection().parentSectionGroup;
-                      
-              // Queue a command to load the section group.
-              // For best performance, request specific properties.
-              sectionGroup.load("id,name");
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-                      
-              // Write the properties.
-              console.log("Section group name: " + sectionGroup.name);
-              console.log("Section group ID: " + sectionGroup.id);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.SectionGroup#load:member(3)
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -333,7 +253,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `OneNote.SectionGroup` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -347,7 +267,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -361,7 +281,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -369,4 +289,4 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.SectionGroup:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="onenote!~OfficeExtension.ClientObject:class" />

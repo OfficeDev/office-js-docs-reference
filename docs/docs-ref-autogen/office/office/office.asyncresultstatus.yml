@@ -10,28 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.AsyncResult](/javascript/api/office/office.asyncresult): [status](/javascript/api/office/office.asyncresult#office-office-asyncresult-status-member)
-
-  #### Examples
-
-  ```TypeScript
-  // The following example logs selected text in a document to the console.
-  Office.context.document.getSelectedDataAsync(
-      Office.CoercionType.Text,
-      {
-          valueFormat: Office.ValueFormat.Unformatted,
-          filterType: Office.FilterType.All
-      },
-      (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.log(result.error.message);
-              return;
-          }
-
-          console.log(`Selected data: ${result.value}`);
-      }
-  );
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

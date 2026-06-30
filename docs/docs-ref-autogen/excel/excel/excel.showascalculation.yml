@@ -10,35 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ShowAsRule](/javascript/api/excel/excel.showasrule): [calculation](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-calculation-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
-
-  await Excel.run(async (context) => {
-      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-      const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
-      const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
-
-      farmDataHierarchy.load("showAs");
-      wholesaleDataHierarchy.load("showAs");
-      await context.sync();
-
-      // Show the crates of each fruit type sold at the farm as a percentage of the column's total.
-      let farmShowAs = farmDataHierarchy.showAs;
-      farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
-      farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
-      farmDataHierarchy.showAs = farmShowAs;
-
-      let wholesaleShowAs = wholesaleDataHierarchy.showAs;
-      wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
-      wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
-      wholesaleDataHierarchy.showAs = wholesaleShowAs;
-      await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -48,7 +20,7 @@ fields:
     summary: |-
       Difference from the specified Base field and Base item.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"DifferenceFrom"'
   - name: index
     uid: excel!Excel.ShowAsCalculation.index:member
@@ -56,7 +28,7 @@ fields:
     summary: |-
       Calculates the values as follows: ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Index"'
   - name: none
     uid: excel!Excel.ShowAsCalculation.none:member
@@ -64,7 +36,7 @@ fields:
     summary: |-
       No calculation is applied.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"None"'
   - name: percentDifferenceFrom
     uid: excel!Excel.ShowAsCalculation.percentDifferenceFrom:member
@@ -72,7 +44,7 @@ fields:
     summary: |-
       Difference from the specified Base field and Base item.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentDifferenceFrom"'
   - name: percentOf
     uid: excel!Excel.ShowAsCalculation.percentOf:member
@@ -80,7 +52,7 @@ fields:
     summary: |-
       Percent of the specified Base field and Base item.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOf"'
   - name: percentOfColumnTotal
     uid: excel!Excel.ShowAsCalculation.percentOfColumnTotal:member
@@ -88,7 +60,7 @@ fields:
     summary: |-
       Percent of the column total.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfColumnTotal"'
   - name: percentOfGrandTotal
     uid: excel!Excel.ShowAsCalculation.percentOfGrandTotal:member
@@ -96,7 +68,7 @@ fields:
     summary: |-
       Percent of the grand total.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfGrandTotal"'
   - name: percentOfParentColumnTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member
@@ -104,7 +76,7 @@ fields:
     summary: |-
       Percent of the column total for the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfParentColumnTotal"'
   - name: percentOfParentRowTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member
@@ -112,7 +84,7 @@ fields:
     summary: |-
       Percent of the row total for the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfParentRowTotal"'
   - name: percentOfParentTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentTotal:member
@@ -120,7 +92,7 @@ fields:
     summary: |-
       Percent of the grand total for the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfParentTotal"'
   - name: percentOfRowTotal
     uid: excel!Excel.ShowAsCalculation.percentOfRowTotal:member
@@ -128,7 +100,7 @@ fields:
     summary: |-
       Percent of the row total.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentOfRowTotal"'
   - name: percentRunningTotal
     uid: excel!Excel.ShowAsCalculation.percentRunningTotal:member
@@ -136,7 +108,7 @@ fields:
     summary: |-
       Percent running total of the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PercentRunningTotal"'
   - name: rankAscending
     uid: excel!Excel.ShowAsCalculation.rankAscending:member
@@ -144,7 +116,7 @@ fields:
     summary: |-
       Ascending rank of the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RankAscending"'
   - name: rankDecending
     uid: excel!Excel.ShowAsCalculation.rankDecending:member
@@ -152,7 +124,7 @@ fields:
     summary: |-
       Descending rank of the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RankDecending"'
   - name: runningTotal
     uid: excel!Excel.ShowAsCalculation.runningTotal:member
@@ -160,7 +132,7 @@ fields:
     summary: |-
       Running total of the specified Base field.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"RunningTotal"'
   - name: unknown
     uid: excel!Excel.ShowAsCalculation.unknown:member
@@ -168,5 +140,5 @@ fields:
     summary: |-
       Calculation is unknown or unsupported.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

@@ -5,63 +5,42 @@ package: word!
 fullName: Word.IndexFilter
 summary: Specifies the filter type for an index.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: aiueo
     uid: word!Word.IndexFilter.aiueo:member
     package: word!
-    summary: |-
-      Aiueo filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Aiueo filter is applied.
     value: '"Aiueo"'
   - name: akasatana
     uid: word!Word.IndexFilter.akasatana:member
     package: word!
-    summary: |-
-      Akasatana filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Akasatana filter is applied.
     value: '"Akasatana"'
   - name: chosung
     uid: word!Word.IndexFilter.chosung:member
     package: word!
-    summary: |-
-      Chosung filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Chosung filter is applied.
     value: '"Chosung"'
   - name: full
     uid: word!Word.IndexFilter.full:member
     package: word!
-    summary: |-
-      Full filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Full filter is applied.
     value: '"Full"'
   - name: low
     uid: word!Word.IndexFilter.low:member
     package: word!
-    summary: |-
-      Low filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Low filter is applied.
     value: '"Low"'
   - name: medium
     uid: word!Word.IndexFilter.medium:member
     package: word!
-    summary: |-
-      Medium filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Medium filter is applied.
     value: '"Medium"'
   - name: none
     uid: word!Word.IndexFilter.none:member
     package: word!
-    summary: |-
-      No filter is applied.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: No filter is applied.
     value: '"None"'

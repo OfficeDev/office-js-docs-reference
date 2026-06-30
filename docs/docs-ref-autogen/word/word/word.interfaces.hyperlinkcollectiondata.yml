@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [toJSON](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

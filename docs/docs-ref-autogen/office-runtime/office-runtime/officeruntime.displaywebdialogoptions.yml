@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [OfficeRuntime](/javascript/api/office-runtime): [displayWebDialog](/javascript/api/office-runtime#office-runtime-officeruntime-displaywebdialog-function(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: displayInIFrame
     summary: Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: height
     summary: 'Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: ''50%'', ''50''.'
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: onClose
     summary: Optional callback that runs when the dialog box is closed.
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: onMessage
     summary: Optional callback that runs when the dialog box sends a message to its parent.
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: onRuntimeError
     summary: Optional callback that runs when the dialog box sends an error.
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: width
     summary: 'Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: ''50%'', ''50''.'
     remarks: '[API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

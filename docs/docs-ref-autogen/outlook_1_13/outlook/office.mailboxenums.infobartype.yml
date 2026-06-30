@@ -10,40 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.InfobarDetails](/javascript/api/outlook/office.infobardetails): [infobarType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-infobartype-member)
-
-  #### Examples
-
-  ```TypeScript
-  /*
-  * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-  * The event handler logs the custom action and notification type to the console.
-  */
-  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
-
-  function eventHandler(event) {
-      const infobarDetails = event.infobarDetails;
-
-      // Log the custom action type.
-      console.log(`Custom action type: ${infobarDetails.actionType}`);
-
-      // Log the notification type.
-      switch (infobarDetails.infobarType) {
-          case Office.MailboxEnums.InfobarType.Error:
-              console.log("Notification type: Error message");
-              break;
-          case Office.MailboxEnums.InfobarType.Informational:
-              console.log("Notification type: Informational message");
-              break;
-          case Office.MailboxEnums.InfobarType.Insight:
-              console.log("Notification type: Informational message with available actions from the task pane");
-              break;
-          case Office.MailboxEnums.InfobarType.ProgressIndicator:
-              console.log("Notification type: Progress indicator");
-              break;
-      }
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -53,7 +20,7 @@ fields:
     summary: |-
       Notification displays an informational message.
 
-      * [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \* [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
     value: '0'
   - name: ProgressIndicator
     uid: outlook!Office.MailboxEnums.InfobarType.ProgressIndicator:member
@@ -61,7 +28,7 @@ fields:
     summary: |-
       Notification displays a progress indicator.
 
-      * [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \* [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
     value: '1'
   - name: Error
     uid: outlook!Office.MailboxEnums.InfobarType.Error:member
@@ -69,7 +36,7 @@ fields:
     summary: |-
       Notification displays an error message.
 
-      * [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \* [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
     value: '2'
   - name: Insight
     uid: outlook!Office.MailboxEnums.InfobarType.Insight:member
@@ -77,5 +44,5 @@ fields:
     summary: |-
       Notification displays an informational message with actions.
 
-      * [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \* [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
     value: '3'

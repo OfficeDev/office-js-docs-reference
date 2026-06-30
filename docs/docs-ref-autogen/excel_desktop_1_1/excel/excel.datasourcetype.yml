@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotTable](/javascript/api/excel/excel.pivottable): [getDataSourceType](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcetype-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The data source type is a range in the current workbook.
 
-      * [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LocalRange"'
   - name: localTable
     uid: excel!Excel.DataSourceType.localTable:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The data source type is a table in the current workbook.
 
-      * [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LocalTable"'
   - name: unknown
     uid: excel!Excel.DataSourceType.unknown:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       The data source type is unknown or unsupported.
 
-      * [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

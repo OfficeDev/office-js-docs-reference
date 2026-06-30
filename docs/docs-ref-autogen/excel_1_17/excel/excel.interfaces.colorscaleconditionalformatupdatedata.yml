@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat): [set](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: criteria
     summary: The criteria of the color scale. Midpoint is optional when using a two point color scale.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

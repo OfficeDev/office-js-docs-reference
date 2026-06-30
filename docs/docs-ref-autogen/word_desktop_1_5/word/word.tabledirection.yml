@@ -5,23 +5,17 @@ package: word!
 fullName: Word.TableDirection
 summary: Specifies the direction in which Microsoft Word orders cells in the specified table or row.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: leftToRight
     uid: word!Word.TableDirection.leftToRight:member
     package: word!
-    summary: |-
-      The table is arranged with the first column in the leftmost position.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: The table is arranged with the first column in the leftmost position.
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.TableDirection.rightToLeft:member
     package: word!
-    summary: |-
-      The table is arranged with the first column in the rightmost position.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: The table is arranged with the first column in the rightmost position.
     value: '"RightToLeft"'

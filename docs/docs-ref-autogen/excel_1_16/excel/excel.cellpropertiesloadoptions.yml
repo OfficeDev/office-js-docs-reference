@@ -11,7 +11,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,45 +25,13 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'address?: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
-
-          await Excel.run(async (context) => {
-              const cell = context.workbook.getActiveCell();
-
-              // Define the cell properties to get by setting the matching LoadOptions to true.
-              const propertiesToGet = cell.getCellProperties({
-                  address: true,
-                  format: {
-                      fill: {
-                          color: true
-                      },
-                      font: {
-                          color: true
-                      }
-                  },
-                  style: true
-              });
-
-              // Sync to get the data from the workbook.
-              await context.sync();
-              const cellProperties = propertiesToGet.value[0][0];
-              console.log(
-                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
-          });
-          ```
   - name: addressLocal
     uid: excel!Excel.CellPropertiesLoadOptions#addressLocal:member
     package: excel!
@@ -73,7 +41,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +57,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +73,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,7 +89,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +105,7 @@ properties:
 
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

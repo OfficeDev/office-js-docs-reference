@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.Template](/javascript/api/word/word.template): [type](/javascript/api/word/word.template#word-word-template-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: attached
     uid: word!Word.TemplateType.attached:member
     package: word!
-    summary: |-
-      Represents the attached template type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the attached template type.
     value: '"Attached"'
   - name: global
     uid: word!Word.TemplateType.global:member
     package: word!
-    summary: |-
-      Represents the global template type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the global template type.
     value: '"Global"'
   - name: normal
     uid: word!Word.TemplateType.normal:member
     package: word!
-    summary: |-
-      Represents the normal template type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the normal template type.
     value: '"Normal"'

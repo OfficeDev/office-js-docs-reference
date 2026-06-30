@@ -11,31 +11,22 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [justificationMode](/javascript/api/word/word.document#word-word-document-justificationmode-member)
   - [Word.Template](/javascript/api/word/word.template): [justificationMode](/javascript/api/word/word.template#word-word-template-justificationmode-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: compress
     uid: word!Word.JustificationMode.compress:member
     package: word!
-    summary: |-
-      Compresses the character spacing.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Compresses the character spacing.
     value: '"Compress"'
   - name: compressKana
     uid: word!Word.JustificationMode.compressKana:member
     package: word!
-    summary: |-
-      Compresses the character spacing using rules of the kana syllabaries, Hiragana and Katakana.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Compresses the character spacing using rules of the kana syllabaries, Hiragana and Katakana.
     value: '"CompressKana"'
   - name: expand
     uid: word!Word.JustificationMode.expand:member
     package: word!
-    summary: |-
-      Expands the character spacing
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Expands the character spacing
     value: '"Expand"'

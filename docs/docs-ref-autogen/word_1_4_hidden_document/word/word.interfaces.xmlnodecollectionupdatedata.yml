@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.XmlNodeCollectionUpdateData
 summary: An interface for updating data on the `XmlNodeCollection` object, for use in `xmlNodeCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

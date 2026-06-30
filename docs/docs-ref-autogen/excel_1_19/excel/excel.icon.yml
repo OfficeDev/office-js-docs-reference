@@ -33,7 +33,7 @@ remarks: |-
   - [Excel.ThreeTrafficLights1Set](/javascript/api/excel/excel.threetrafficlights1set): [greenCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-greencircle-member), [redCircleWithBorder](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-redcirclewithborder-member), [yellowCircle](/javascript/api/excel/excel.threetrafficlights1set#excel-excel-threetrafficlights1set-yellowcircle-member)
   - [Excel.ThreeTrafficLights2Set](/javascript/api/excel/excel.threetrafficlights2set): [greenTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-greentrafficlight-member), [redTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-redtrafficlight-member), [yellowTrafficLight](/javascript/api/excel/excel.threetrafficlights2set#excel-excel-threetrafficlights2set-yellowtrafficlight-member)
   - [Excel.ThreeTrianglesSet](/javascript/api/excel/excel.threetrianglesset): [greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-greenuptriangle-member), [redDownTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-reddowntriangle-member), [yellowDash](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-yellowdash-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -44,7 +44,7 @@ properties:
     fullName: index
     summary: Specifies the index of the icon in the given set.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +57,7 @@ properties:
     fullName: set
     summary: Specifies the set that the icon is part of.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

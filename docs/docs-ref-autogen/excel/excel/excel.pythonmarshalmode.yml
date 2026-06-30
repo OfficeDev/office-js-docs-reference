@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [togglePythonMarshalMode](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Specifies that the result of an =PY formula should be an Excel value.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExcelValue"'
   - name: pythonObject
     uid: excel!Excel.PythonMarshalMode.pythonObject:member
@@ -28,5 +28,5 @@ fields:
     summary: |-
       Specifies that the result of an =PY formula should be a reference to an object in the Python service.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"PythonObject"'

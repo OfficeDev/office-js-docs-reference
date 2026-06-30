@@ -5,8 +5,6 @@ package: excel!
 fullName: Excel.RequestContext
 summary: The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(1))
@@ -214,18 +212,7 @@ remarks: |-
   - [Excel.WorksheetFormatChangedEventArgs](/javascript/api/excel/excel.worksheetformatchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await Excel.run(async (context: Excel.RequestContext) => {
-    const workbook = context.workbook;
-    // Interact with the Excel workbook...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -236,7 +223,7 @@ constructors:
     fullName: (constructor)(url, invocation)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,7 +250,7 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -276,7 +263,7 @@ properties:
     fullName: runtime
     summary: '[API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,7 +276,7 @@ properties:
     fullName: sensitivityLabelsCatalog
     summary: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +289,7 @@ properties:
     fullName: workbook
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,7 +303,7 @@ methods:
     fullName: setInvocation(invocation)
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.GroupContentControl
 summary: Represents the `GroupContentControl` object.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +16,7 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +27,11 @@ properties:
     uid: word!Word.GroupContentControl#color:member
     package: word!
     fullName: color
-    summary: Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the '\#RRGGBB' format.
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the
+      '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +42,11 @@ properties:
     uid: word!Word.GroupContentControl#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: id
     summary: Returns the identification for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +70,11 @@ properties:
     uid: word!Word.GroupContentControl#isTemporary:member
     package: word!
     fullName: isTemporary
-    summary: Specifies whether to remove the content control from the active document when the user edits the contents of the control.
+    summary: >-
+      Specifies whether to remove the content control from the active document when the user edits the contents of the
+      control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +85,11 @@ properties:
     uid: word!Word.GroupContentControl#level:member
     package: word!
     fullName: level
-    summary: Gets the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.
+    summary: >-
+      Gets the level of the content control—whether the content control surrounds text, paragraphs, table cells, or
+      table rows; or if it is inline.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +100,11 @@ properties:
     uid: word!Word.GroupContentControl#lockContentControl:member
     package: word!
     fullName: lockContentControl
-    summary: Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the active document, `false` means it can be deleted.
+    summary: >-
+      Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the
+      active document, `false` means it can be deleted.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +115,11 @@ properties:
     uid: word!Word.GroupContentControl#lockContents:member
     package: word!
     fullName: lockContents
-    summary: Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the contents, `false` means the contents are editable.
+    summary: >-
+      Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the
+      contents, `false` means the contents are editable.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +132,7 @@ properties:
     fullName: placeholderText
     summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +145,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the contents of the content control in the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +158,7 @@ properties:
     fullName: showingPlaceholderText
     summary: Returns whether the placeholder text for the content control is being displayed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +171,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +184,7 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,9 +195,11 @@ properties:
     uid: word!Word.GroupContentControl#xmlMapping:member
     package: word!
     fullName: xmlMapping
-    summary: Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+    summary: >-
+      Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of
+      the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,7 +213,7 @@ methods:
     fullName: copy()
     summary: Copies the content control from the active document to the Clipboard.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,7 +227,7 @@ methods:
     fullName: cut()
     summary: Removes the content control from the active document and moves the content control to the Clipboard.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,7 +241,7 @@ methods:
     fullName: delete(deleteContents)
     summary: Deletes the content control and optionally its contents.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,9 +257,11 @@ methods:
     uid: word!Word.GroupContentControl#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,9 +277,11 @@ methods:
     uid: word!Word.GroupContentControl#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,9 +297,11 @@ methods:
     uid: word!Word.GroupContentControl#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,7 +312,9 @@ methods:
                 }): Word.GroupContentControl;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -305,20 +327,24 @@ methods:
     uid: word!Word.GroupContentControl#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Interfaces.GroupContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: <xref uid="word!Word.Interfaces.GroupContentControlUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -328,7 +354,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -346,7 +372,7 @@ methods:
     fullName: setPlaceholderText(options)
     summary: Sets the placeholder text that displays in the content control until a user enters their own text.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,9 +388,14 @@ methods:
     uid: word!Word.GroupContentControl#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.GroupContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.GroupContentControlData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.GroupContentControl` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.GroupContentControlData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,9 +407,16 @@ methods:
     uid: word!Word.GroupContentControl#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -390,9 +428,11 @@ methods:
     uid: word!Word.GroupContentControl#ungroup:member(1)
     package: word!
     fullName: ungroup()
-    summary: Removes the group content control from the document so that its child content controls are no longer nested and can be freely edited.
+    summary: >-
+      Removes the group content control from the document so that its child content controls are no longer nested and
+      can be freely edited.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,9 +444,13 @@ methods:
     uid: word!Word.GroupContentControl#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -414,4 +458,4 @@ methods:
       return:
         type: <xref uid="word!Word.GroupContentControl:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

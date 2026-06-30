@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [toJSON](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,41 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
-
-  await Word.run(async (context) => {
-    const contentControls: Word.ContentControlCollection = context.document.contentControls;
-    contentControls.load("items");
-    await context.sync();
-
-    // Register the onExited event handler on each content control.
-    if (contentControls.items.length === 0) {
-      console.log("There aren't any content controls in this document so can't register event handlers.");
-    } else {
-      for (let i = 0; i < contentControls.items.length; i++) {
-        eventContexts[i] = contentControls.items[i].onExited.add(contentControlExited);
-        contentControls.items[i].track();
-      }
-
-      await context.sync();
-
-      console.log("Added event handlers for when the cursor is removed from within content controls.");
-    }
-  });
-
-  ...
-
-  async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
-    await Word.run(async (context) => {
-      console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
-    });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -55,7 +21,7 @@ properties:
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +34,7 @@ properties:
     fullName: ids
     summary: Gets the content control IDs.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +47,7 @@ properties:
     fullName: source
     summary: Specifies the source of the event. It can be local or remote (through coauthoring).
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.ThreeDimensionalFormat](/javascript/api/word/word.threedimensionalformat): [presetLightingSoftness](/javascript/api/word/word.threedimensionalformat#word-word-threedimensionalformat-presetlightingsoftness-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bright
     uid: word!Word.PresetLightingSoftness.bright:member
     package: word!
-    summary: |-
-      Represents bright lighting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents bright lighting.
     value: '"Bright"'
   - name: dim
     uid: word!Word.PresetLightingSoftness.dim:member
     package: word!
-    summary: |-
-      Represents dim lighting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents dim lighting.
     value: '"Dim"'
   - name: mixed
     uid: word!Word.PresetLightingSoftness.mixed:member
     package: word!
-    summary: |-
-      Represents a mixed lighting softness.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a mixed lighting softness.
     value: '"Mixed"'
   - name: normal
     uid: word!Word.PresetLightingSoftness.normal:member
     package: word!
-    summary: |-
-      Represents normal lighting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents normal lighting.
     value: '"Normal"'

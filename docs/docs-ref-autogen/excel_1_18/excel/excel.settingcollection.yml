@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.SettingsChangedEventArgs](/javascript/api/excel/excel.settingschangedeventargs): [settings](/javascript/api/excel/excel.settingschangedeventargs#excel-excel-settingschangedeventargs-settings-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [settings](/javascript/api/excel/excel.workbook#excel-excel-workbook-settings-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,23 +48,8 @@ methods:
     package: excel!
     fullName: add(key, value)
     summary: Sets or adds the specified setting to the workbook.
-    remarks: |-
-      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-
-          await context.sync();
-          console.log("Settings changed handler registered.");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +70,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of settings in the collection.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +84,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a setting entry via the key.
     remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,33 +100,9 @@ methods:
     uid: excel!Excel.SettingCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          let needsReview = settings.getItem("NeedsReview");
-          needsReview.delete();
-          needsReview = settings.getItemOrNullObject("NeedsReview");
-
-          await context.sync();
-
-          if (needsReview.isNullObject) {
-              console.log("The setting has been deleted");
-          } else {
-              console.log("The setting was not deleted");
-          }
-
-          await context.sync();
-      });
-      ```
-
+    summary: Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +120,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +138,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +156,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,7 +174,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,23 +188,8 @@ events:
     package: excel!
     fullName: onSettingsChanged
     summary: Occurs when the settings in the document are changed.
-    remarks: |-
-      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-
-          await context.sync();
-          console.log("Settings changed handler registered.");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

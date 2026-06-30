@@ -34,7 +34,7 @@ remarks: |-
   - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
   - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
   - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -45,7 +45,7 @@ properties:
     fullName: $skip
     summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: $top
     summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

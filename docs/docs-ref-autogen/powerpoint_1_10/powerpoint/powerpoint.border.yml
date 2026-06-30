@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Borders](/javascript/api/powerpoint/powerpoint.borders): [bottom](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-bottom-member), [diagonalDown](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonaldown-member), [diagonalUp](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-diagonalup-member), [left](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-left-member), [right](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-right-member), [top](/javascript/api/powerpoint/powerpoint.borders#powerpoint-powerpoint-borders-top-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: color
     summary: Represents the line color in the hexadecimal format \#RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: dashStyle
     summary: Represents the dash style of the line.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: transparency
     summary: Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: weight
     summary: Represents the weight of the line, in points.
     remarks: '[API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +105,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +149,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Border` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.BorderData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,4 +157,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

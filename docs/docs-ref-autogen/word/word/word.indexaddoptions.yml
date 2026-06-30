@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.IndexCollection](/javascript/api/word/word.indexcollection): [add](/javascript/api/word/word.indexcollection#word-word-indexcollection-add-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: headingSeparator
     summary: If provided, specifies the text between alphabetical groups (entries that start with the same letter) in the index. See `HeadingSeparator` for available values. The default value is `blankLine`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: indexLanguage
     summary: If provided, specifies the sorting language to be used for the index being added. See `LanguageId` for available values. The default value is the installed language of the Word application.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: numberOfColumns
     summary: If provided, specifies the number of columns for each page of the index. Specifying 0 (zero) sets the number of columns in the index to the same number as in the document. The default value is 1.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: rightAlignPageNumbers
     summary: If provided, specifies whether the page numbers in the generated index are aligned with the right margin. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: separateAccentedLetterHeadings
     summary: If provided, specifies whether to include separate headings for accented letters in the index. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: sortBy
     summary: 'If provided, specifies the sorting criteria to be used for the index being added. Can be either of the following `IndexSortBy` values: `stroke` or `syllable`<!-- -->. The default value is `stroke`<!-- -->.'
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: type
     summary: 'If provided, specifies whether subentries are on the same line (run-in) as the main entry or on a separate line (indented) from the main entry. Can be either of the following `IndexType` values: `indent` or `runin`<!-- -->. The default value is `indent`<!-- -->.'
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

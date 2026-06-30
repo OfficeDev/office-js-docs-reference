@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.SourceData
 summary: An interface describing the data returned by calling `source.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

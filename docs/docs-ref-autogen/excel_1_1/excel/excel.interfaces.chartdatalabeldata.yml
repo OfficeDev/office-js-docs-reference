@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartDataLabelData
 summary: An interface describing the data returned by calling `chartDataLabel.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

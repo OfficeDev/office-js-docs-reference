@@ -7,14 +7,14 @@ summary: Represents the details of the form for composing a new message.
 remarks: |-
   [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [displayNewMessageForm](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-displaynewmessageform-member(1)), [displayNewMessageFormAsync](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-displaynewmessageformasync-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,10 +27,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,12 +45,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: The `bccRecipients` array is limited to a maximum of 100 recipients.
-
+      \*\*Important\*\*: The `bccRecipients` array is limited to a maximum of 100 recipients.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,12 +65,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: The `ccRecipients` array is limited to a maximum of 100 recipients.
-
+      \*\*Important\*\*: The `ccRecipients` array is limited to a maximum of 100 recipients.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,12 +85,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: The body content is limited to a maximum size of 32 KB.
-
+      \*\*Important\*\*: The body content is limited to a maximum size of 32 KB.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,12 +105,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: The subject is limited to a maximum of 255 characters.
-
+      \*\*Important\*\*: The subject is limited to a maximum of 255 characters.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,12 +125,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
 
-      **Important**: The `toRecipients` array is limited to a maximum of 100 recipients.
-
+      \*\*Important\*\*: The `toRecipients` array is limited to a maximum of 100 recipients.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

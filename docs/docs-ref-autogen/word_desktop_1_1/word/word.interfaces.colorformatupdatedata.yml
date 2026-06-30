@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ColorFormatUpdateData
 summary: An interface for updating data on the `ColorFormat` object, for use in `colorFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

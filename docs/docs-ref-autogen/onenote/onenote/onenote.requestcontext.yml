@@ -5,8 +5,6 @@ package: onenote!
 fullName: OneNote.RequestContext
 summary: ''
 remarks: |-
-
-
   #### Used by
 
   - [OneNote](/javascript/api/onenote): [run](/javascript/api/onenote#onenote-onenote-run-function(1))
@@ -46,18 +44,7 @@ remarks: |-
   - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [context](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-context-member)
   - [OneNote.TableRow](/javascript/api/onenote/onenote.tablerow): [context](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-context-member)
   - [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection): [context](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await OneNote.run(async (context) => {
-      const notebook = context.application.getActiveNotebook();
-      // Interact with the OneNote notebook...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -68,7 +55,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,11 +71,11 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly application: Application;'
       return:
         type: <xref uid="onenote!OneNote.Application:class" />
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="onenote!~OfficeExtension.ClientRequestContext:class" />

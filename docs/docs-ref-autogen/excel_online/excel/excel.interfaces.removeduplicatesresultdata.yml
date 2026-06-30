@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.RemoveDuplicatesResult](/javascript/api/excel/excel.removeduplicatesresult): [toJSON](/javascript/api/excel/excel.removeduplicatesresult#excel-excel-removeduplicatesresult-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: removed
     summary: Number of duplicated rows removed by the operation.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: uniqueRemaining
     summary: Number of remaining unique rows present in the resulting range.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

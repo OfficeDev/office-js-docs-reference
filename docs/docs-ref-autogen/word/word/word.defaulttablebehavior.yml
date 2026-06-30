@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.SelectionConvertToTableOptions](/javascript/api/word/word.selectionconverttotableoptions): [defaultTableBehavior](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-defaulttablebehavior-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
   - name: disableAutoFit
     uid: word!Word.DefaultTableBehavior.disableAutoFit:member
     package: word!
-    summary: |-
-      Disables AutoFit.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Disables AutoFit.
     value: '"DisableAutoFit"'
   - name: enableAutoFit
     uid: word!Word.DefaultTableBehavior.enableAutoFit:member
     package: word!
-    summary: |-
-      Enables AutoFit.
-
-      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Enables AutoFit.
     value: '"EnableAutoFit"'

@@ -5,199 +5,127 @@ package: word!
 fullName: Word.BorderType
 summary: Represents the [border](xref:word!Word.Border:class) type.
 remarks: '\[Api set: WordApi 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: dashDotStroked
     uid: word!Word.BorderType.dashDotStroked:member
     package: word!
-    summary: |-
-      Dash-dot-stroked border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Dash-dot-stroked border.
     value: '"DashDotStroked"'
   - name: dashed
     uid: word!Word.BorderType.dashed:member
     package: word!
-    summary: |-
-      Dashed border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Dashed border.
     value: '"Dashed"'
   - name: dashedSmall
     uid: word!Word.BorderType.dashedSmall:member
     package: word!
-    summary: |-
-      Dashed small border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Dashed small border.
     value: '"DashedSmall"'
   - name: dot2Dashed
     uid: word!Word.BorderType.dot2Dashed:member
     package: word!
-    summary: |-
-      Double dot-dashed border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Double dot-dashed border.
     value: '"Dot2Dashed"'
   - name: dotDashed
     uid: word!Word.BorderType.dotDashed:member
     package: word!
-    summary: |-
-      Dot-dashed border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Dot-dashed border.
     value: '"DotDashed"'
   - name: dotted
     uid: word!Word.BorderType.dotted:member
     package: word!
-    summary: |-
-      Dotted border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Dotted border.
     value: '"Dotted"'
   - name: double
     uid: word!Word.BorderType.double:member
     package: word!
-    summary: |-
-      Double border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Double border.
     value: '"Double"'
   - name: doubleWave
     uid: word!Word.BorderType.doubleWave:member
     package: word!
-    summary: |-
-      Double wave border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Double wave border.
     value: '"DoubleWave"'
   - name: mixed
     uid: word!Word.BorderType.mixed:member
     package: word!
-    summary: |-
-      Mixed border type.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Mixed border type.
     value: '"Mixed"'
   - name: none
     uid: word!Word.BorderType.none:member
     package: word!
-    summary: |-
-      No border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: No border.
     value: '"None"'
   - name: single
     uid: word!Word.BorderType.single:member
     package: word!
-    summary: |-
-      Single border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Single border.
     value: '"Single"'
   - name: thickThinLarge
     uid: word!Word.BorderType.thickThinLarge:member
     package: word!
-    summary: |-
-      Thick-thin large border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thick-thin large border.
     value: '"ThickThinLarge"'
   - name: thickThinMed
     uid: word!Word.BorderType.thickThinMed:member
     package: word!
-    summary: |-
-      Thick-thin medium border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thick-thin medium border.
     value: '"ThickThinMed"'
   - name: thickThinSmall
     uid: word!Word.BorderType.thickThinSmall:member
     package: word!
-    summary: |-
-      Thick-thin small border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thick-thin small border.
     value: '"ThickThinSmall"'
   - name: thinThickLarge
     uid: word!Word.BorderType.thinThickLarge:member
     package: word!
-    summary: |-
-      Thin-thick large border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick large border.
     value: '"ThinThickLarge"'
   - name: thinThickMed
     uid: word!Word.BorderType.thinThickMed:member
     package: word!
-    summary: |-
-      Thin-thick medium border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick medium border.
     value: '"ThinThickMed"'
   - name: thinThickSmall
     uid: word!Word.BorderType.thinThickSmall:member
     package: word!
-    summary: |-
-      Thin-thick small border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick small border.
     value: '"ThinThickSmall"'
   - name: thinThickThinLarge
     uid: word!Word.BorderType.thinThickThinLarge:member
     package: word!
-    summary: |-
-      Thin-thick-thin large border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick-thin large border.
     value: '"ThinThickThinLarge"'
   - name: thinThickThinMed
     uid: word!Word.BorderType.thinThickThinMed:member
     package: word!
-    summary: |-
-      Thin-thick-thin medium border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick-thin medium border.
     value: '"ThinThickThinMed"'
   - name: thinThickThinSmall
     uid: word!Word.BorderType.thinThickThinSmall:member
     package: word!
-    summary: |-
-      Thin-thick-thin small border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Thin-thick-thin small border.
     value: '"ThinThickThinSmall"'
   - name: threeDEmboss
     uid: word!Word.BorderType.threeDEmboss:member
     package: word!
-    summary: |-
-      3D Emboss border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: 3D Emboss border.
     value: '"ThreeDEmboss"'
   - name: threeDEngrave
     uid: word!Word.BorderType.threeDEngrave:member
     package: word!
-    summary: |-
-      3D Engrave border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: 3D Engrave border.
     value: '"ThreeDEngrave"'
   - name: triple
     uid: word!Word.BorderType.triple:member
     package: word!
-    summary: |-
-      Triple border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Triple border.
     value: '"Triple"'
   - name: wave
     uid: word!Word.BorderType.wave:member
     package: word!
-    summary: |-
-      Wave border.
-
-      * \[Api set: WordApi 1.3\]
+    summary: Wave border.
     value: '"Wave"'

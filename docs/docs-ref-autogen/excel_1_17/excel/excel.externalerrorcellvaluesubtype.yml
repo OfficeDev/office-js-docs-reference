@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ExternalErrorCellValue](/javascript/api/excel/excel.externalerrorcellvalue): [errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,5 +20,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

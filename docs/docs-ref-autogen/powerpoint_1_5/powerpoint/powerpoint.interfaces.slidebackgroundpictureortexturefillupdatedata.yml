@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillUpdateData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillUpdateData
-summary: An interface for updating data on the `SlideBackgroundPictureOrTextureFill` object, for use in `slideBackgroundPictureOrTextureFill.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `SlideBackgroundPictureOrTextureFill` object, for use in
+  `slideBackgroundPictureOrTextureFill.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

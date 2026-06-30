@@ -11,47 +11,32 @@ remarks: |-
 
   - [Word.Index](/javascript/api/word/word.index): [headingSeparator](/javascript/api/word/word.index#word-word-index-headingseparator-member)
   - [Word.IndexAddOptions](/javascript/api/word/word.indexaddoptions): [headingSeparator](/javascript/api/word/word.indexaddoptions#word-word-indexaddoptions-headingseparator-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: blankLine
     uid: word!Word.HeadingSeparator.blankLine:member
     package: word!
-    summary: |-
-      A blank line is used as a separator for headings.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: A blank line is used as a separator for headings.
     value: '"BlankLine"'
   - name: letter
     uid: word!Word.HeadingSeparator.letter:member
     package: word!
-    summary: |-
-      A single letter is used as a separator for headings.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: A single letter is used as a separator for headings.
     value: '"Letter"'
   - name: letterFull
     uid: word!Word.HeadingSeparator.letterFull:member
     package: word!
-    summary: |-
-      A full-width letter is used as a separator for headings.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: A full-width letter is used as a separator for headings.
     value: '"LetterFull"'
   - name: letterLow
     uid: word!Word.HeadingSeparator.letterLow:member
     package: word!
-    summary: |-
-      A lowercase letter is used as a separator for headings.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: A lowercase letter is used as a separator for headings.
     value: '"LetterLow"'
   - name: none
     uid: word!Word.HeadingSeparator.none:member
     package: word!
-    summary: |-
-      No separator is used for headings.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No separator is used for headings.
     value: '"None"'

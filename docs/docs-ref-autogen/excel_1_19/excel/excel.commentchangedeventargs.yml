@@ -10,39 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [onChanged](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-onchanged-member)
-
-  #### Examples
-
-  ```TypeScript
-  async function registerEventHandler() {
-      await Excel.run(async (context) => {
-          // Register the onChanged comment event handler.
-          const comments = context.workbook.worksheets.getActiveWorksheet().comments;
-          comments.onChanged.add(commentChanged);
-          await context.sync();
-      });
-  }
-
-  async function commentChanged(event: Excel.CommentChangedEventArgs) {
-      // Retrieve the changed comment using the comment ID.
-      // Note: This function assumes only a single comment is changed at a time.
-      await Excel.run(async (context) => {
-          const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
-
-          // Load the changed comment's data.
-          changedComment.load(["content", "authorName", "creationDate"]);
-          await context.sync();
-
-          // Print out the changed comment's data.
-          console.log(`A comment was changed:`);
-          console.log(`    ID: ${event.commentDetails[0].commentId}`);
-          console.log(`    Updated comment content: ${changedComment.content}`);
-          console.log(`    Comment author: ${changedComment.authorName}`);
-          console.log(`    Creation date: ${changedComment.creationDate}`);
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -53,7 +21,7 @@ properties:
     fullName: changeType
     summary: Gets the change type that represents how the changed event is triggered.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +34,7 @@ properties:
     fullName: commentDetails
     summary: Get the `CommentDetail` array which contains the comment ID and IDs of its related replies.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,7 +47,7 @@ properties:
     fullName: source
     summary: Specifies the source of the event. See `Excel.EventSource` for details.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +60,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +73,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the event happened.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

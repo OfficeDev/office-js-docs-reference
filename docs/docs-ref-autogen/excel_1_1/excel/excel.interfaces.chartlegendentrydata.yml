@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryData
 summary: An interface describing the data returned by calling `chartLegendEntry.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,31 +5,22 @@ package: word!
 fullName: Word.ColumnWidth
 summary: Specifies the column width options in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.ColumnWidth.default:member
     package: word!
-    summary: |-
-      Default column width.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Default column width.
     value: '"Default"'
   - name: narrow
     uid: word!Word.ColumnWidth.narrow:member
     package: word!
-    summary: |-
-      Narrow column width.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Narrow column width.
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ColumnWidth.wide:member
     package: word!
-    summary: |-
-      Wide column width.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Wide column width.
     value: '"Wide"'

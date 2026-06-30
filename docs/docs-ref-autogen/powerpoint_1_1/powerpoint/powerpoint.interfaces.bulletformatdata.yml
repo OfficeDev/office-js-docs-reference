@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.BulletFormatData
 summary: An interface describing the data returned by calling `bulletFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

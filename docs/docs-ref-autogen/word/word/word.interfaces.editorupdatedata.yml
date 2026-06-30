@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Editor](/javascript/api/word/word.editor): [set](/javascript/api/word/word.editor#word-word-editor-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: nextRange
     summary: Gets a `Range` object that represents the next range that the editor has permissions to modify.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

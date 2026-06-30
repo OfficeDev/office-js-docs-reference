@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [toJSON](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

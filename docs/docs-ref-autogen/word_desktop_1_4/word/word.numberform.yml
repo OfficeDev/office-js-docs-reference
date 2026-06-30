@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.Font](/javascript/api/word/word.font): [numberForm](/javascript/api/word/word.font#word-word-font-numberform-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.NumberForm.default:member
     package: word!
-    summary: |-
-      Default number form setting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Default number form setting.
     value: '"Default"'
   - name: lining
     uid: word!Word.NumberForm.lining:member
     package: word!
-    summary: |-
-      Lining number form setting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Lining number form setting.
     value: '"Lining"'
   - name: oldStyle
     uid: word!Word.NumberForm.oldStyle:member
     package: word!
-    summary: |-
-      Old-style number form setting.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Old-style number form setting.
     value: '"OldStyle"'

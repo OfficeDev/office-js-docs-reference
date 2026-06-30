@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartAreaFormat](/javascript/api/excel/excel.chartareaformat): [toJSON](/javascript/api/excel/excel.chartareaformat#excel-excel-chartareaformat-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: font
     summary: Represents the font attributes (font name, font size, color, etc.) for the current object.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,63 +10,42 @@ remarks: |-
   #### Used by
 
   - [Word.FillFormat](/javascript/api/word/word.fillformat): [type](/javascript/api/word/word.fillformat#word-word-fillformat-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: background
     uid: word!Word.FillType.background:member
     package: word!
-    summary: |-
-      Represents a background fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a background fill type.
     value: '"Background"'
   - name: gradient
     uid: word!Word.FillType.gradient:member
     package: word!
-    summary: |-
-      Represents a gradient fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a gradient fill type.
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.FillType.mixed:member
     package: word!
-    summary: |-
-      Represents a mixed fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a mixed fill type.
     value: '"Mixed"'
   - name: patterned
     uid: word!Word.FillType.patterned:member
     package: word!
-    summary: |-
-      Represents a patterned fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a patterned fill type.
     value: '"Patterned"'
   - name: picture
     uid: word!Word.FillType.picture:member
     package: word!
-    summary: |-
-      Represents a picture fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a picture fill type.
     value: '"Picture"'
   - name: solid
     uid: word!Word.FillType.solid:member
     package: word!
-    summary: |-
-      Represents a solid fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a solid fill type.
     value: '"Solid"'
   - name: textured
     uid: word!Word.FillType.textured:member
     package: word!
-    summary: |-
-      Represents a textured fill type.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents a textured fill type.
     value: '"Textured"'

@@ -5,40 +5,22 @@ package: outlook!
 fullName: Office.MailboxEnums.BodyMode
 summary: Specifies the portion of a message's body displayed for replies to a conversation thread with more than one message.
 remarks: |-
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-  **Important**: This enum is only supported in Outlook on the web, on mobile devices (starting in Version 4.2538.0), and in the new Outlook on Windows.
+  \*\*Important\*\*: This enum is only supported in Outlook on the web, on mobile devices (starting in Version 4.2538.0), and in the new Outlook on Windows.
 
-  In Outlook on the web and the new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** &gt; **Mail** &gt; **Layout** &gt; **Message organization**. This user setting affects the portion of the body of a message that's displayed. The `BodyMode` enum supports the following message organization settings on these clients.
+  In Outlook on the web and the new Outlook on Windows, users can organize their messages as conversations or individual messages in \*\*Settings\*\* &gt; \*\*Mail\*\* &gt; \*\*Layout\*\* &gt; \*\*Message organization\*\*. This user setting affects the portion of the body of a message that's displayed. The `BodyMode` enum supports the following message organization settings on these clients.
 
-  - Conversations: **Group messages by conversation** &gt; **All messages from the selected conversation** or **Show email grouped by conversation** &gt; **Newest on top**<!-- -->/<!-- -->**Newest on bottom**
+  - Conversations: \*\*Group messages by conversation\*\* &gt; \*\*All messages from the selected conversation\*\* or \*\*Show email grouped by conversation\*\* &gt; \*\*Newest on top\*\*<!-- -->/<!-- -->\*\*Newest on bottom\*\*
 
-  - Individual messages: **Do not group messages** &gt; **Only a single message** or **Show email as individual messages**
+  - Individual messages: \*\*Do not group messages\*\* &gt; \*\*Only a single message\*\* or \*\*Show email as individual messages\*\*
 
   For more information, see [Change how the message list is displayed in Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!-- -->.
 
   #### Used by
 
   - [Office.Body](/javascript/api/outlook/office.body): [getAsync](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1)), [setAsync](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Get the body of the message based on the user's setting for message organization.
-  Office.context.mailbox.item.body.getAsync(
-    Office.CoercionType.Html,
-    { bodyMode: Office.MailboxEnums.BodyMode.HostConfig },
-    (bodyResult) => {
-      if (bodyResult.status === Office.AsyncResultStatus.Failed) {
-        console.log(`Failed to get body: ${bodyResult.error.message}`);
-        return;
-      }
-
-      const body = bodyResult.value;
-    }
-  );
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

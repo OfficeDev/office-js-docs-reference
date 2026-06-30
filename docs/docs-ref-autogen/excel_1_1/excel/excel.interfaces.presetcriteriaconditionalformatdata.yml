@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
 summary: An interface describing the data returned by calling `presetCriteriaConditionalFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

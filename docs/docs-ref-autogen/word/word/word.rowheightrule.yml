@@ -12,31 +12,22 @@ remarks: |-
   - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [setHeight](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-setheight-member(1))
   - [Word.TableRow](/javascript/api/word/word.tablerow): [setHeight](/javascript/api/word/word.tablerow#word-word-tablerow-setheight-member(1))
   - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [setHeight](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-setheight-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: atLeast
     uid: word!Word.RowHeightRule.atLeast:member
     package: word!
-    summary: |-
-      The row height is set to a minimum value.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The row height is set to a minimum value.
     value: '"AtLeast"'
   - name: auto
     uid: word!Word.RowHeightRule.auto:member
     package: word!
-    summary: |-
-      The row height is adjusted to accommodate the tallest value in the row.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The row height is adjusted to accommodate the tallest value in the row.
     value: '"Auto"'
   - name: exactly
     uid: word!Word.RowHeightRule.exactly:member
     package: word!
-    summary: |-
-      The row height is set to an exact value.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The row height is set to an exact value.
     value: '"Exactly"'

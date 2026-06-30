@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.BasicViewLayouts](/javascript/api/excel/excel.basicviewlayouts): [compact](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-compact-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: icon
     summary: Specifies the name of the icon which is used to open the card.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.TimelineStyle](/javascript/api/excel/excel.timelinestyle): [toJSON](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: name
     summary: Specifies the name of the timeline style.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: readOnly
     summary: Specifies if this `TimelineStyle` object is read-only.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

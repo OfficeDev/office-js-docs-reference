@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CustomXmlPartUpdateData
 summary: An interface for updating data on the `CustomXmlPart` object, for use in `customXmlPart.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

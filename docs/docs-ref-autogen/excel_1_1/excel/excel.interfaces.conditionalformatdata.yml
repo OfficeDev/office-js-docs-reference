@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ConditionalFormatData
 summary: An interface describing the data returned by calling `conditionalFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

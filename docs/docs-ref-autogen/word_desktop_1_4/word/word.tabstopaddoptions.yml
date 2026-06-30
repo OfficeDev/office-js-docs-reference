@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.TabStopCollection](/javascript/api/word/word.tabstopcollection): [add](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-add-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: alignment
     summary: If provided, specifies the alignment of the tab stop. The default value is `left`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: leader
     summary: If provided, specifies the leader character for the tab stop. The default value is `spaces`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

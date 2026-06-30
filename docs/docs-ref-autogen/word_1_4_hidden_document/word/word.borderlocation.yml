@@ -12,101 +12,52 @@ remarks: |-
   - [Word.Table](/javascript/api/word/word.table): [getBorder](/javascript/api/word/word.table#word-word-table-getborder-member(1))
   - [Word.TableCell](/javascript/api/word/word.tablecell): [getBorder](/javascript/api/word/word.tablecell#word-word-tablecell-getborder-member(1))
   - [Word.TableRow](/javascript/api/word/word.tablerow): [getBorder](/javascript/api/word/word.tablerow#word-word-tablerow-getborder-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-  // Gets border details about the first table in the document.
-  await Word.run(async (context) => {
-    const firstTable: Word.Table = context.document.body.tables.getFirst();
-    const borderLocation = Word.BorderLocation.top;
-    const border: Word.TableBorder = firstTable.getBorder(borderLocation);
-    border.load(["type", "color", "width"]);
-    await context.sync();
-
-    console.log(
-      `Details about the ${borderLocation} border of the first table:`,
-      `- Color: ${border.color}`,
-      `- Type: ${border.type}`,
-      `- Width: ${border.width} points`,
-    );
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: all
     uid: word!Word.BorderLocation.all:member
     package: word!
-    summary: |-
-      All borders.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: All borders.
     value: '"All"'
   - name: bottom
     uid: word!Word.BorderLocation.bottom:member
     package: word!
-    summary: |-
-      Bottom border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Bottom border.
     value: '"Bottom"'
   - name: inside
     uid: word!Word.BorderLocation.inside:member
     package: word!
-    summary: |-
-      Inside border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inside border.
     value: '"Inside"'
   - name: insideHorizontal
     uid: word!Word.BorderLocation.insideHorizontal:member
     package: word!
-    summary: |-
-      Inside horizontal border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inside horizontal border.
     value: '"InsideHorizontal"'
   - name: insideVertical
     uid: word!Word.BorderLocation.insideVertical:member
     package: word!
-    summary: |-
-      Inside vertical border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inside vertical border.
     value: '"InsideVertical"'
   - name: left
     uid: word!Word.BorderLocation.left:member
     package: word!
-    summary: |-
-      Left border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Left border.
     value: '"Left"'
   - name: outside
     uid: word!Word.BorderLocation.outside:member
     package: word!
-    summary: |-
-      Outside border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Outside border.
     value: '"Outside"'
   - name: right
     uid: word!Word.BorderLocation.right:member
     package: word!
-    summary: |-
-      Right border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Right border.
     value: '"Right"'
   - name: top
     uid: word!Word.BorderLocation.top:member
     package: word!
-    summary: |-
-      Top border.
-
-      * [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Top border.
     value: '"Top"'

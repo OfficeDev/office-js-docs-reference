@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.AutorunEventCompletedOptions](/javascript/api/excel/excel.autoruneventcompletedoptions): [autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-autoruneventtype-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The autorun event type is triggered when the document is saved.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OnDocumentSave"'
   - name: onDocumentSaveAs
     uid: excel!Excel.AutorunEventType.onDocumentSaveAs:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The autorun event type is triggered when the document is saved as a new file.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"OnDocumentSaveAs"'
   - name: unknown
     uid: excel!Excel.AutorunEventType.unknown:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       The autorun event type is unknown.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

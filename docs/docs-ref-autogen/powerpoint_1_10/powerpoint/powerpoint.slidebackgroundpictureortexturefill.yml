@@ -10,37 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [getPictureOrTextureFillOrNullObject](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-getpictureortexturefillornullobject-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
-  // Gets the picture or texture fill properties of the first selected slide's background.
-  await PowerPoint.run(async (context) => {
-    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
-    fill.load("type");
-    await context.sync();
-
-    if (fill.type !== PowerPoint.SlideBackgroundFillType.pictureOrTexture) {
-      console.warn("The slide background isn't a picture or texture fill.");
-      return;
-    }
-
-    const pictureFill: PowerPoint.SlideBackgroundPictureOrTextureFill =
-      slide.background.fill.getPictureOrTextureFillOrNullObject();
-    pictureFill.load("transparency");
-    await context.sync();
-
-    if (pictureFill.isNullObject) {
-      console.warn("The slide background isn't a picture or texture fill.");
-    } else {
-      console.log("Picture or texture fill:", `- transparency: ${pictureFill.transparency}`);
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -51,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +34,7 @@ properties:
     fullName: transparency
     summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +48,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +66,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +84,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,7 +110,7 @@ methods:
     fullName: setImage(base64EncodedImage)
     summary: Sets the image used to fill.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +128,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SlideBackgroundPictureOrTextureFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,4 +136,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

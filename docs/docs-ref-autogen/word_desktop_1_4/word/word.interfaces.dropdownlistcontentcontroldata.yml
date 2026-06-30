@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [toJSON](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

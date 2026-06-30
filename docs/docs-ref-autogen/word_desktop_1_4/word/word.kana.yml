@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Range](/javascript/api/word/word.range): [kana](/javascript/api/word/word.range#word-word-range-kana-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: hiragana
     uid: word!Word.Kana.hiragana:member
     package: word!
-    summary: |-
-      Hiragana Kana type.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Hiragana Kana type.
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.Kana.katakana:member
     package: word!
-    summary: |-
-      Katakana Kana type.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Katakana Kana type.
     value: '"Katakana"'

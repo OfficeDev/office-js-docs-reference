@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentMergeOptions](/javascript/api/word/word.documentmergeoptions): [useFormattingFrom](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-useformattingfrom-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: current
     uid: word!Word.UseFormattingFrom.current:member
     package: word!
-    summary: |-
-      Represents using formatting from the current document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents using formatting from the current document.
     value: '"Current"'
   - name: prompt
     uid: word!Word.UseFormattingFrom.prompt:member
     package: word!
-    summary: |-
-      Represents prompting the user for formatting preferences.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents prompting the user for formatting preferences.
     value: '"Prompt"'
   - name: selected
     uid: word!Word.UseFormattingFrom.selected:member
     package: word!
-    summary: |-
-      Represents using formatting from the selected document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents using formatting from the selected document.
     value: '"Selected"'

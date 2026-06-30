@@ -10,98 +10,47 @@ remarks: |-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-  await Word.run(async (context) => {
-    // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
-    const firstShapeGroup: Word.Shape = context.document.body.shapes
-      .getByTypes([Word.ShapeType.group])
-      .getFirstOrNullObject();
-    firstShapeGroup.load("shapeGroup/shapes");
-    await context.sync();
-
-    if (firstShapeGroup.isNullObject) {
-      console.log("No shape groups found in the document body.");
-      return;
-    }
-
-    let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-    console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
-    firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
-    firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
-
-    console.log("Changed the position of the first shape group.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottomMargin
     uid: word!Word.RelativeVerticalPosition.bottomMargin:member
     package: word!
-    summary: |-
-      Relative to bottom margin.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to bottom margin.
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeVerticalPosition.insideMargin:member
     package: word!
-    summary: |-
-      Relative to inside margin.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to inside margin.
     value: '"InsideMargin"'
   - name: line
     uid: word!Word.RelativeVerticalPosition.line:member
     package: word!
-    summary: |-
-      Relative to line.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to line.
     value: '"Line"'
   - name: margin
     uid: word!Word.RelativeVerticalPosition.margin:member
     package: word!
-    summary: |-
-      Relative to margin.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to margin.
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeVerticalPosition.outsideMargin:member
     package: word!
-    summary: |-
-      Relative to outside margin.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to outside margin.
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeVerticalPosition.page:member
     package: word!
-    summary: |-
-      Relative to page.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to page.
     value: '"Page"'
   - name: paragraph
     uid: word!Word.RelativeVerticalPosition.paragraph:member
     package: word!
-    summary: |-
-      Relative to paragraph.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to paragraph.
     value: '"Paragraph"'
   - name: topMargin
     uid: word!Word.RelativeVerticalPosition.topMargin:member
     package: word!
-    summary: |-
-      Relative to top margin.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Relative to top margin.
     value: '"TopMargin"'

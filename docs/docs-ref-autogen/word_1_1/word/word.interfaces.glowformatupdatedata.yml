@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.GlowFormatUpdateData
 summary: An interface for updating data on the `GlowFormat` object, for use in `glowFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

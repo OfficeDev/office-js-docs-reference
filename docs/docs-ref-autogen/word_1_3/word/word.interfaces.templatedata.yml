@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.TemplateData
 summary: An interface describing the data returned by calling `template.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

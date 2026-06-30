@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.BasicViewLayouts](/javascript/api/excel/excel.basicviewlayouts): [card](/javascript/api/excel/excel.basicviewlayouts#excel-excel-basicviewlayouts-card-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: layout
     summary: Represents the type of this layout.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

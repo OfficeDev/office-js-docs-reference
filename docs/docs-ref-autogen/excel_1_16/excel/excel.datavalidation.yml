@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Range](/javascript/api/excel/excel.range): [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,43 +34,8 @@ properties:
     package: excel!
     fullName: errorAlert
     summary: Error alert when user enters invalid data.
-    remarks: |-
-      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Decision");
-          const commentsRange = 
-              sheet.tables.getItem("NameOptionsTable").columns.getItem("Comments").getDataBodyRange();
-
-          // When you are developing, it is a good practice to
-          // clear the dataValidation object with each run of your code.
-          commentsRange.dataValidation.clear();   
-
-          // If the value of A2 is contained in the value of C2, then 
-          // SEARCH(A2,C2) returns the number where it begins. Otherwise,
-          // it does not return a number.
-          let redundantStringRule = {
-              custom: {
-                  formula: "=NOT(ISNUMBER(SEARCH(A2,C2)))"
-              }
-          };
-          commentsRange.dataValidation.rule = redundantStringRule;
-          commentsRange.dataValidation.errorAlert = {
-              message: "It is redundant to include the baby name in the comment.",
-              showAlert: true,
-              style: Excel.DataValidationAlertStyle.information,
-              title: "Baby Name in Comment"
-          };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +48,7 @@ properties:
     fullName: ignoreBlanks
     summary: Specifies if data validation will be performed on blank cells. Default is `true`<!-- -->.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,47 +60,8 @@ properties:
     package: excel!
     fullName: prompt
     summary: Prompt when users select a cell.
-    remarks: |-
-      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Decision");
-          const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
-
-          // When you are developing, it is a good practice to
-          // clear the dataValidation object with each run of your code.
-          rankingRange.dataValidation.clear();
-
-          let greaterThanZeroRule = {
-              wholeNumber: {
-                  formula1: 0,
-                  operator: Excel.DataValidationOperator.greaterThan
-              }
-          };
-          rankingRange.dataValidation.rule = greaterThanZeroRule;
-
-          rankingRange.dataValidation.prompt = {
-              message: "Please enter a positive number.",
-              showPrompt: true,
-              title: "Positive numbers only."
-          };
-
-          rankingRange.dataValidation.errorAlert = {
-              message: "Sorry, only positive numbers are allowed",
-              showAlert: true,
-              style: Excel.DataValidationAlertStyle.stop,
-              title: "Negative Number Entered"
-          };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,37 +73,8 @@ properties:
     package: excel!
     fullName: rule
     summary: Data validation rule that contains different type of data validation criteria.
-    remarks: |-
-      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Decision");
-          const nameRange = 
-              sheet.tables.getItem("NameOptionsTable").columns.getItem("Baby Name").getDataBodyRange();
-
-          // When you are developing, it is a good practice to
-          // clear the dataValidation object with each run of your code.
-          nameRange.dataValidation.clear();
-
-          const nameSourceRange = context.workbook.worksheets.getItem("Names").getRange("A1:A3");
-
-          let approvedListRule = {
-              list: {
-                  inCellDropDown: true,
-                  source: nameSourceRange
-              }
-          };
-          nameRange.dataValidation.rule = approvedListRule;
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,7 +87,7 @@ properties:
     fullName: type
     summary: Type of the data validation, see `Excel.DataValidationType` for details.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,7 +100,7 @@ properties:
     fullName: valid
     summary: Represents if all cell values are valid according to the data validation rules. Returns `true` if all cell values are valid, or `false` if all cell values are invalid. Returns `null` if there are both valid and invalid cell values within the range.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +114,7 @@ methods:
     fullName: clear()
     summary: Clears the data validation from the current range.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,7 +128,7 @@ methods:
     fullName: getInvalidCells()
     summary: Returns a `RangeAreas` object, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will throw an `ItemNotFound` error.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,7 +142,7 @@ methods:
     fullName: getInvalidCellsOrNullObject()
     summary: Returns a `RangeAreas` object, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will return `null`<!-- -->.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,7 +156,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +174,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +192,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,7 +218,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -342,7 +239,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -360,7 +257,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.DataValidation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataValidationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

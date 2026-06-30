@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Office.GoToByIdOptions](/javascript/api/office/office.gotobyidoptions): [selectionMode](/javascript/api/office/office.gotobyidoptions#office-office-gotobyidoptions-selectionmode-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

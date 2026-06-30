@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.SelectionInsertDateTimeOptions](/javascript/api/word/word.selectioninsertdatetimeoptions): [dateLanguage](/javascript/api/word/word.selectioninsertdatetimeoptions#word-word-selectioninsertdatetimeoptions-datelanguage-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bidirectional
     uid: word!Word.DateLanguage.bidirectional:member
     package: word!
-    summary: |-
-      Uses the bidirectional date/time format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Uses the bidirectional date/time format.
     value: '"Bidirectional"'
   - name: latin
     uid: word!Word.DateLanguage.latin:member
     package: word!
-    summary: |-
-      Uses the latin date/time format.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Uses the latin date/time format.
     value: '"Latin"'

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CustomProperty](/javascript/api/excel/excel.customproperty): [set](/javascript/api/excel/excel.customproperty#excel-excel-customproperty-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: value
     summary: The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

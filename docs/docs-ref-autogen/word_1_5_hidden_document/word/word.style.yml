@@ -12,42 +12,7 @@ remarks: |-
   - [Word.Document](/javascript/api/word/word.document): [addStyle](/javascript/api/word/word.document#word-word-document-addstyle-member(1))
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [addStyle](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))
   - [Word.StyleCollection](/javascript/api/word/word.stylecollection): [getByName](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1)), [getByNameOrNullObject](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1)), [getItem](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1)), [items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-  // Applies the specified style to a paragraph.
-  await Word.run(async (context) => {
-    const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
-    if (styleName == "") {
-      console.warn("Enter a style name to apply.");
-      return;
-    }
-
-    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
-    await context.sync();
-
-    if (style.isNullObject) {
-      console.warn(`There's no existing style with the name '${styleName}'.`);
-    } else if (style.type != Word.StyleType.paragraph) {
-      console.log(`The '${styleName}' style isn't a paragraph style.`);
-    } else {
-      const body: Word.Body = context.document.body;
-      body.clear();
-      body.insertParagraph(
-        "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-        "Start"
-      );
-      const paragraph: Word.Paragraph = body.paragraphs.getFirst();
-      paragraph.style = style.nameLocal;
-      console.log(`'${styleName}' style applied to first paragraph.`);
-    }
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -61,7 +26,7 @@ properties:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +39,7 @@ properties:
     fullName: builtIn
     summary: Gets whether the style is a built-in style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +52,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,37 +64,8 @@ properties:
     package: word!
     fullName: font
     summary: Gets a `Font` object that represents the character formatting of the style.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Updates font properties (e.g., color, size) of the specified style.
-      await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update font properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
-        await context.sync();
-
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const font: Word.Font = style.font;
-          font.color = "#FF0000";
-          font.size = 20;
-          console.log(`Successfully updated font properties of the '${styleName}' style.`);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,7 +78,7 @@ properties:
     fullName: inUse
     summary: Gets whether the style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +91,7 @@ properties:
     fullName: linked
     summary: Gets whether the style is a linked style that can be used for both paragraph and character formatting.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,44 +103,8 @@ properties:
     package: word!
     fullName: nameLocal
     summary: Gets the name of the style in the language of the user.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Applies the specified style to a paragraph.
-      await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to apply.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
-        await context.sync();
-
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else if (style.type != Word.StyleType.paragraph) {
-          console.log(`The '${styleName}' style isn't a paragraph style.`);
-        } else {
-          const body: Word.Body = context.document.body;
-          body.clear();
-          body.insertParagraph(
-            "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-            "Start"
-          );
-          const paragraph: Word.Paragraph = body.paragraphs.getFirst();
-          paragraph.style = style.nameLocal;
-          console.log(`'${styleName}' style applied to first paragraph.`);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +120,7 @@ properties:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,36 +132,8 @@ properties:
     package: word!
     fullName: paragraphFormat
     summary: Gets a `ParagraphFormat` object that represents the paragraph settings for the style.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
-      await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update its paragraph format.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
-        await context.sync();
-
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          style.paragraphFormat.leftIndent = 30;
-          style.paragraphFormat.alignment = Word.Alignment.centered;
-          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,7 +146,7 @@ properties:
     fullName: priority
     summary: Specifies the priority.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,7 +159,7 @@ properties:
     fullName: quickStyle
     summary: Specifies whether the style corresponds to an available quick style.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -300,7 +172,7 @@ properties:
     fullName: type
     summary: Gets the style type.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,7 +185,7 @@ properties:
     fullName: unhideWhenUsed
     summary: Specifies whether the style is made visible as a recommended style in the Styles gallery and in the Styles task pane in Microsoft Word after it's used in the document.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,7 +198,7 @@ properties:
     fullName: visibility
     summary: Specifies whether the style is visible as a recommended style in the Styles gallery and in the Styles task pane.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,35 +211,8 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the style.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-      // Deletes the custom style.
-      await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to delete.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
-        await context.sync();
-
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          style.delete();
-          console.log(`Successfully deleted custom style '${styleName}'.`);
-        }
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,7 +226,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,7 +244,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -417,7 +262,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -443,7 +288,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -454,7 +299,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.StyleUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -464,7 +309,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -482,7 +327,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Style` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -496,7 +341,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -510,7 +355,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -518,4 +363,4 @@ methods:
       return:
         type: <xref uid="word!Word.Style:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

@@ -5,8 +5,6 @@ package: word!
 fullName: Word.RequestContext
 summary: The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
 remarks: |-
-
-
   #### Used by
 
   - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))
@@ -137,18 +135,7 @@ remarks: |-
   - [Word.Window](/javascript/api/word/word.window): [context](/javascript/api/word/word.window#word-word-window-context-member)
   - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [context](/javascript/api/word/word.windowcollection#word-word-windowcollection-context-member)
   - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [context](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-context-member)
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await Word.run(async (context: Word.RequestContext) => {
-    const document = context.document;
-    // Interact with the Word document...
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -159,7 +146,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,9 +160,9 @@ properties:
     uid: word!Word.RequestContext#application:member
     package: word!
     fullName: application
-    summary: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) *'
+    summary: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \*'
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,11 +175,11 @@ properties:
     fullName: document
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly document: Document;'
       return:
         type: <xref uid="word!Word.Document:class" />
-extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+extends: <xref uid="word!~OfficeExtension.ClientRequestContext:class" />

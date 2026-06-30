@@ -10,28 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Range](/javascript/api/word/word.range): [listFormat](/javascript/api/word/word.range#word-word-range-listformat-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
-
-  // Gets the range covering the entire body and reads list formatting properties.
-  await Word.run(async (context) => {
-    const bodyRange: Word.Range = context.document.body.getRange();
-    const listFormat: Word.ListFormat = bodyRange.listFormat;
-    listFormat.load("isSingleList, listType, listLevelNumber, listString, listValue");
-    await context.sync();
-
-    console.log("List format info for the body range:");
-    console.log(`- Is single list: ${listFormat.isSingleList}`);
-    console.log(`- List type: ${listFormat.listType}`);
-    console.log(`- List level number (first paragraph): ${listFormat.listLevelNumber}`);
-    console.log(`- List string (first paragraph): "${listFormat.listString}"`);
-    console.log(`- List value (first paragraph): ${listFormat.listValue}`);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +34,7 @@ properties:
     fullName: isSingleList
     summary: Indicates whether the `ListFormat` object contains a single list.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +47,7 @@ properties:
     fullName: isSingleListTemplate
     summary: Indicates whether the `ListFormat` object contains a single list template.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +60,7 @@ properties:
     fullName: list
     summary: Returns a `List` object that represents the first formatted list contained in the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +73,7 @@ properties:
     fullName: listLevelNumber
     summary: Specifies the list level number for the first paragraph for the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +86,7 @@ properties:
     fullName: listString
     summary: Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +99,7 @@ properties:
     fullName: listTemplate
     summary: Gets the list template associated with the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +112,7 @@ properties:
     fullName: listType
     summary: Gets the type of the list for the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +125,7 @@ properties:
     fullName: listValue
     summary: Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,7 +139,7 @@ methods:
     fullName: applyBulletDefault(defaultListBehavior)
     summary: Adds bullets and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +157,7 @@ methods:
     fullName: applyBulletDefault(defaultListBehavior)
     summary: Adds bullets and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +175,7 @@ methods:
     fullName: applyListTemplateWithLevel(listTemplate, options)
     summary: Applies a list template with a specific level to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +196,7 @@ methods:
     fullName: applyNumberDefault(defaultListBehavior)
     summary: Adds numbering and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,7 +214,7 @@ methods:
     fullName: applyNumberDefault(defaultListBehavior)
     summary: Adds numbering and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -253,7 +232,7 @@ methods:
     fullName: applyOutlineNumberDefault(defaultListBehavior)
     summary: Adds outline numbering and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +250,7 @@ methods:
     fullName: applyOutlineNumberDefault(defaultListBehavior)
     summary: Adds outline numbering and formatting to the paragraphs in the range.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,7 +268,7 @@ methods:
     fullName: canContinuePreviousList(listTemplate)
     summary: Determines whether the `ListFormat` object can continue a previous list.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,7 +278,7 @@ methods:
           description: The list template to check.
           type: <xref uid="word!Word.ListTemplate:class" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.Continue:enum" />&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.Continue:enum" />&gt;
         description: A `Continue` value indicating whether continuation is possible.
   - name: convertNumbersToText(numberType)
     uid: word!Word.ListFormat#convertNumbersToText:member(1)
@@ -307,7 +286,7 @@ methods:
     fullName: convertNumbersToText(numberType)
     summary: Converts numbers in the list to plain text.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -325,7 +304,7 @@ methods:
     fullName: convertNumbersToText(numberType)
     summary: Converts numbers in the list to plain text.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -342,29 +321,8 @@ methods:
     package: word!
     fullName: countNumberedItems(options)
     summary: Counts the numbered items in the list.
-    remarks: |-
-      [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
-
-      // Counts all numbered items across every level using numberType: AllNumbers.
-      await Word.run(async (context) => {
-        const bodyRange: Word.Range = context.document.body.getRange();
-        const listFormat: Word.ListFormat = bodyRange.listFormat;
-
-        const options: Word.ListFormatCountNumberedItemsOptions = {
-          numberType: Word.NumberType.allNumbers,
-        };
-        const count: OfficeExtension.ClientResult<number> = listFormat.countNumberedItems(options);
-        await context.sync();
-
-        console.log(`Total numbered items (all levels): ${count.value}`);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,7 +332,7 @@ methods:
           description: Optional. Options for counting numbered items, such as the type of number and the level to count.
           type: <xref uid="word!Word.ListFormatCountNumberedItemsOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of items.
   - name: listIndent()
     uid: word!Word.ListFormat#listIndent:member(1)
@@ -382,7 +340,7 @@ methods:
     fullName: listIndent()
     summary: Indents the list by one level.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -396,7 +354,7 @@ methods:
     fullName: listOutdent()
     summary: Outdents the list by one level.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +368,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,7 +386,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -446,7 +404,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -472,7 +430,7 @@ methods:
     fullName: removeNumbers(numberType)
     summary: Removes numbering from the list.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -490,7 +448,7 @@ methods:
     fullName: removeNumbers(numberType)
     summary: Removes numbering from the list.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -508,7 +466,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -519,7 +477,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.ListFormatUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -529,7 +487,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -547,7 +505,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ListFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -561,7 +519,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -575,7 +533,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -583,4 +541,4 @@ methods:
       return:
         type: <xref uid="word!Word.ListFormat:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

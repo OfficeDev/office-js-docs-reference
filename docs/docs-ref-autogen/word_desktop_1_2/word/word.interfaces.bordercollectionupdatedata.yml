@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BorderCollectionUpdateData
 summary: An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: insideBorderColor
     summary: Specifies the 24-bit color of the inside borders. Color is specified in '\#RRGGBB' format or by using the color name.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: insideBorderType
     summary: Specifies the border type of the inside borders.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: insideBorderWidth
     summary: Specifies the width of the inside borders.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ properties:
     fullName: outsideBorderColor
     summary: Specifies the 24-bit color of the outside borders. Color is specified in '\#RRGGBB' format or by using the color name.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ properties:
     fullName: outsideBorderType
     summary: Specifies the border type of the outside borders.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +94,7 @@ properties:
     fullName: outsideBorderWidth
     summary: Specifies the width of the outside borders.
     remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

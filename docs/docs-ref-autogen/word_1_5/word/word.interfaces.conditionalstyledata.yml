@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ConditionalStyleData
 summary: An interface describing the data returned by calling `conditionalStyle.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

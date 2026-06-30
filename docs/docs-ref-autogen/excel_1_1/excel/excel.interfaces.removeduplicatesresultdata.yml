@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RemoveDuplicatesResultData
 summary: An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

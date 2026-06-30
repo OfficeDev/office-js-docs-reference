@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.QueryCollection](/javascript/api/excel/excel.querycollection): [getItem](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-getitem-member(1)), [items](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: error
     summary: Gets the query error message from when the query was last refreshed.
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: loadedTo
     summary: Gets the query loaded to object type.
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: loadedToDataModel
     summary: Specifies if the query loaded to the data model.
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,25 +72,8 @@ properties:
     package: excel!
     fullName: name
     summary: Gets the name of the query. Query names cannot contain periods or quotation marks.
-    remarks: |-
-      [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // This function retrieves the query collection in a workbook, 
-      // loads the query items in that collection, and then
-      // logs the name of each query to the console.
-      await Excel.run(async (context) => {
-          const queries = context.workbook.queries; 
-          queries.load("items"); 
-          await context.sync(); 
-
-          console.log("Name of each query: ")
-          console.log("  " + queries.items.map((query) => query.name).join("\n  "));
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,25 +85,8 @@ properties:
     package: excel!
     fullName: refreshDate
     summary: Gets the date and time when the query was last refreshed.
-    remarks: |-
-      [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // This function retrieves the query collection in a workbook, 
-      // loads the query items in that collection, and then
-      // logs the last refresh date of each query to the console.
-      await Excel.run(async (context) => {
-          const queries = context.workbook.queries; 
-          queries.load("items"); 
-          await context.sync(); 
-
-          console.log("Last refresh date of each query: ")
-          console.log("  " + queries.items.map((query) => query.refreshDate).join("\n  "));
-      });       
-      ```
-
+    remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,25 +98,8 @@ properties:
     package: excel!
     fullName: rowsLoadedCount
     summary: Gets the number of rows that were loaded when the query was last refreshed. If last refresh has errors the value will be -1.
-    remarks: |-
-      [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // This function retrieves the query collection in a workbook, 
-      // loads the query items in that collection, and then
-      // logs the number of rows loaded in each query.
-      await Excel.run(async (context) => {
-          const queries = context.workbook.queries; 
-          queries.load("items"); 
-          await context.sync(); 
-
-          console.log("Rows loaded from each query: ")
-          console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +113,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,7 +131,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +149,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,7 +175,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Query` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.QueryData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

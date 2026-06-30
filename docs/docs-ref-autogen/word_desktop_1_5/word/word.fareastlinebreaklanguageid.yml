@@ -5,39 +5,27 @@ package: word!
 fullName: Word.FarEastLineBreakLanguageId
 summary: Represents the East Asian language to use when breaking lines of text in the specified document or template.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: japanese
     uid: word!Word.FarEastLineBreakLanguageId.japanese:member
     package: word!
-    summary: |-
-      Represents Japanese language.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents Japanese language.
     value: '"Japanese"'
   - name: korean
     uid: word!Word.FarEastLineBreakLanguageId.korean:member
     package: word!
-    summary: |-
-      Represents Korean language.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents Korean language.
     value: '"Korean"'
   - name: simplifiedChinese
     uid: word!Word.FarEastLineBreakLanguageId.simplifiedChinese:member
     package: word!
-    summary: |-
-      Represents Simplified Chinese language.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents Simplified Chinese language.
     value: '"SimplifiedChinese"'
   - name: traditionalChinese
     uid: word!Word.FarEastLineBreakLanguageId.traditionalChinese:member
     package: word!
-    summary: |-
-      Represents Traditional Chinese language.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Represents Traditional Chinese language.
     value: '"TraditionalChinese"'

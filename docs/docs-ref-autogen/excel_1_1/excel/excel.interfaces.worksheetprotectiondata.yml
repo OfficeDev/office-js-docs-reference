@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WorksheetProtectionData
 summary: An interface describing the data returned by calling `worksheetProtection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

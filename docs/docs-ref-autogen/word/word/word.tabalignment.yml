@@ -11,55 +11,37 @@ remarks: |-
 
   - [Word.TabStop](/javascript/api/word/word.tabstop): [alignment](/javascript/api/word/word.tabstop#word-word-tabstop-alignment-member)
   - [Word.TabStopAddOptions](/javascript/api/word/word.tabstopaddoptions): [alignment](/javascript/api/word/word.tabstopaddoptions#word-word-tabstopaddoptions-alignment-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bar
     uid: word!Word.TabAlignment.bar:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the bar.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the bar.
     value: '"Bar"'
   - name: center
     uid: word!Word.TabAlignment.center:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the center.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the center.
     value: '"Center"'
   - name: decimal
     uid: word!Word.TabAlignment.decimal:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the decimal point.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the decimal point.
     value: '"Decimal"'
   - name: left
     uid: word!Word.TabAlignment.left:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the left.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the left.
     value: '"Left"'
   - name: list
     uid: word!Word.TabAlignment.list:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the list.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the list.
     value: '"List"'
   - name: right
     uid: word!Word.TabAlignment.right:member
     package: word!
-    summary: |-
-      Represents that the tab stop is aligned to the right.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents that the tab stop is aligned to the right.
     value: '"Right"'

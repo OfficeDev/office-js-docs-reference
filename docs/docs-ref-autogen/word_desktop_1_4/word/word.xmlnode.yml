@@ -11,7 +11,7 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [selectSingleNode](/javascript/api/word/word.document#word-word-document-selectsinglenode-member(1))
   - [Word.XmlNodeCollection](/javascript/api/word/word.xmlnodecollection): [getItemAt](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-getitemat-member(1)), [items](/javascript/api/word/word.xmlnodecollection#word-word-xmlnodecollection-items-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: attributes
     summary: Gets the attributes for this XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: baseName
     summary: Gets the name of the element without any prefix.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: childNodes
     summary: Gets the child elements of this XML node. Returns an empty collection if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +74,7 @@ properties:
     fullName: firstChild
     summary: Gets the first child node if this is a parent node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
     fullName: hasChildNodes
     summary: Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +100,7 @@ properties:
     fullName: lastChild
     summary: Gets the last child node if this is a parent node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,7 +113,7 @@ properties:
     fullName: level
     summary: Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ properties:
     fullName: namespaceUri
     summary: Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +139,7 @@ properties:
     fullName: nextSibling
     summary: Gets the next element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +152,7 @@ properties:
     fullName: ownerDocument
     summary: Gets the parent document of this XML node.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +165,7 @@ properties:
     fullName: parentNode
     summary: Gets the parent element of this XML node.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +178,7 @@ properties:
     fullName: placeholderText
     summary: Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,7 +191,7 @@ properties:
     fullName: previousSibling
     summary: Gets the previous element in the document that's at the same level as this XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,7 +204,7 @@ properties:
     fullName: range
     summary: Gets the portion of a document that is contained in this XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +217,7 @@ properties:
     fullName: text
     summary: Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,7 +230,7 @@ properties:
     fullName: validationErrorText
     summary: Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,7 +243,7 @@ properties:
     fullName: validationStatus
     summary: Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,7 +257,7 @@ methods:
     fullName: copy()
     summary: Copies this XML node, excluding XML markup, to the Clipboard. For attribute nodes, copies only the attribute value as text.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +271,7 @@ methods:
     fullName: cut()
     summary: Removes this XML node from the document and places it on the Clipboard. For attribute nodes, removes the attribute from its parent element and copies only the attribute value as text to the clipboard.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -285,7 +285,7 @@ methods:
     fullName: delete()
     summary: Deletes the XML node from the XML document. For element nodes, removes the entire element and its content; for attribute nodes, removes the attribute from its parent element.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,7 +299,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -317,7 +317,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -335,7 +335,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -361,7 +361,7 @@ methods:
     fullName: removeChild(childElement)
     summary: Removes a child element from this XML node. This method has no effect if the node type is `attribute` (since attribute nodes have no child elements).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -379,7 +379,7 @@ methods:
     fullName: selectNodes(xPath, options)
     summary: Returns all the child elements that match the XPath parameter, in the order in which they appear within this XML node. Returns `null` if the node type is `attribute` (since attribute nodes have no child elements to search).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -400,7 +400,7 @@ methods:
     fullName: selectSingleNode(xPath, options)
     summary: Returns the first child element that matches the XPath parameter within this XML node. Returns `null` if the node type is `attribute` (since attribute nodes have no child elements to search).
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -421,7 +421,7 @@ methods:
     fullName: setValidationError(status, options)
     summary: Changes the validation error text displayed to a user for this XML node and whether to force Word to report the node as invalid. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,7 +442,7 @@ methods:
     fullName: setValidationError(status, options)
     summary: Changes the validation error text displayed to a user for this XML node and whether to force Word to report the node as invalid. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,7 +463,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.XmlNode` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.XmlNodeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -477,7 +477,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -491,7 +491,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -505,7 +505,7 @@ methods:
     fullName: validate()
     summary: Validates this XML node against the XML schemas that are attached to the document. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -513,4 +513,4 @@ methods:
       return:
         type: void
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

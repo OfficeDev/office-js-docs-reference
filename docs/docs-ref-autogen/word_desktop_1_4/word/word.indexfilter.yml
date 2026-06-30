@@ -10,63 +10,42 @@ remarks: |-
   #### Used by
 
   - [Word.Index](/javascript/api/word/word.index): [filter](/javascript/api/word/word.index#word-word-index-filter-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: aiueo
     uid: word!Word.IndexFilter.aiueo:member
     package: word!
-    summary: |-
-      Aiueo filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Aiueo filter is applied.
     value: '"Aiueo"'
   - name: akasatana
     uid: word!Word.IndexFilter.akasatana:member
     package: word!
-    summary: |-
-      Akasatana filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Akasatana filter is applied.
     value: '"Akasatana"'
   - name: chosung
     uid: word!Word.IndexFilter.chosung:member
     package: word!
-    summary: |-
-      Chosung filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Chosung filter is applied.
     value: '"Chosung"'
   - name: full
     uid: word!Word.IndexFilter.full:member
     package: word!
-    summary: |-
-      Full filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Full filter is applied.
     value: '"Full"'
   - name: low
     uid: word!Word.IndexFilter.low:member
     package: word!
-    summary: |-
-      Low filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Low filter is applied.
     value: '"Low"'
   - name: medium
     uid: word!Word.IndexFilter.medium:member
     package: word!
-    summary: |-
-      Medium filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Medium filter is applied.
     value: '"Medium"'
   - name: none
     uid: word!Word.IndexFilter.none:member
     package: word!
-    summary: |-
-      No filter is applied.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: No filter is applied.
     value: '"None"'

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FieldUpdateData
 summary: An interface for updating data on the `Field` object, for use in `field.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
       \[Api set: WordApi 1.4\]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,9 +30,11 @@ properties:
     uid: word!Word.Interfaces.FieldUpdateData#data:member
     package: word!
     fullName: data
-    summary: Specifies data in a field of `addin` type. If the field isn't an `addin` type, it's `null` and it will throw a general exception when code attempts to set it.
+    summary: >-
+      Specifies data in a field of `addin` type. If the field isn't an `addin` type, it's `null` and it will throw a
+      general exception when code attempts to set it.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +47,7 @@ properties:
     fullName: locked
     summary: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +60,7 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,9 +71,11 @@ properties:
     uid: word!Word.Interfaces.FieldUpdateData#showCodes:member
     package: word!
     fullName: showCodes
-    summary: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    summary: >-
+      Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed,
+      `false` otherwise.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.GetTextOptions
 summary: Specifies the options to be included in a [Paragraph.getText](xref:word!Word.Paragraph:class) operation.
 remarks: '\[Api set: WordApi 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.GetTextOptions#includeHiddenText:member
     package: word!
     fullName: includeHiddenText
-    summary: If provided, specifies whether to include hidden text in the result of the `Paragraph.getText` method. The default value is `false`<!-- -->.
+    summary: >-
+      If provided, specifies whether to include hidden text in the result of the `Paragraph.getText` method. The default
+      value is `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,11 @@ properties:
     uid: word!Word.GetTextOptions#includeTextMarkedAsDeleted:member
     package: word!
     fullName: includeTextMarkedAsDeleted
-    summary: If provided, specifies whether to include text marked as deleted in the result of the `Paragraph.getText` method. The default value is `false`<!-- -->.
+    summary: >-
+      If provided, specifies whether to include text marked as deleted in the result of the `Paragraph.getText` method.
+      The default value is `false`<!-- -->.
     remarks: '\[Api set: WordApi 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

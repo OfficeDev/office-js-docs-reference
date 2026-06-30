@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RuntimeUpdateData
 summary: An interface for updating data on the `Runtime` object, for use in `runtime.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

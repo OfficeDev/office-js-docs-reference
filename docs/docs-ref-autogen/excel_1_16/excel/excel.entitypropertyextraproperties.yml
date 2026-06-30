@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.EntityPropertyExtraProperties
 summary: Properties used by `CellValueAndPropertyMetadata`<!-- -->. These properties refer to the metadata and not to a `CellValue`<!-- -->.
 remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: propertyMetadata
     summary: Represents metadata about the property.
     remarks: '[API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

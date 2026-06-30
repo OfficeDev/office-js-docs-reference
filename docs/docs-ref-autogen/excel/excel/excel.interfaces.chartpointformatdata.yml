@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartPointFormat](/javascript/api/excel/excel.chartpointformat): [toJSON](/javascript/api/excel/excel.chartpointformat#excel-excel-chartpointformat-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: border
     summary: Represents the border format of a chart data point, which includes color, style, and weight information.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

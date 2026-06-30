@@ -7,18 +7,18 @@ summary: The `MailboxEvent` object is passed as an argument to the event handler
 remarks: |-
   [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-  **Important**:
+  \*\*Important\*\*:
 
   - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 
   - Support for the decryption feature was introduced in Mailbox 1.16.
 
   - For information about the Event object used by the [function command button](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands)<!-- -->, [on-send add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)<!-- -->, [online-meeting provider add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting)<!-- -->, and [note-logging mobile add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments)<!-- -->, see [Office.AddinCommands.Event](https://learn.microsoft.com/javascript/api/office/office.addincommands.event)<!-- -->.
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -31,45 +31,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**:
+      \*\*Important\*\*:
 
       - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 
       - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
 
       - Support for the decryption feature was introduced in Mailbox 1.16.
-
-      #### Examples
-
-      ```TypeScript
-      // The following example sets the subject when a new message is composed.
-      function onNewMessageComposeHandler(event) {
-          const subject = "Set by an event-based add-in!";
-          Office.context.mailbox.item.subject.setAsync(
-              subject,
-              {
-                  asyncContext: event,
-              },
-              (asyncResult) => {
-                  const event = asyncResult.asyncContext;
-                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                      console.error("Failed to set subject: " + asyncResult.error.message);
-                      event.completed();
-                      return;
-                  }
-
-                  // Signal to the Outlook client that the event has been processed.
-                  console.log("Successfully set the subject.");
-                  event.completed();
-              }
-          );
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

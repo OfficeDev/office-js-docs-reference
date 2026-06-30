@@ -7,77 +7,16 @@ summary: Represents an attachment in a decrypted message.
 remarks: |-
   [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
   To learn how to develop an encryption add-in in Outlook, see [Create an encryption Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!-- -->.
 
   #### Used by
 
   - [Office.MessageDecryptEventCompletedOptions](/javascript/api/outlook/office.messagedecrypteventcompletedoptions): [attachments](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-attachments-member)
-
-  #### Examples
-
-  ```TypeScript
-  // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
-  function onMessageDecryptHandler(event) {
-      // Your code to decrypt the contents of a message would appear here.
-      ...
-
-      // Use the results from your decryption process to display the decrypted contents of the message body and attachments.
-      const decryptedBodyContent = "<p>Please find attached the recent report and its supporting documentation.</p>";
-      const decryptedBody = {
-          coercionType: Office.CoercionType.Html,
-          content: decryptedBodyContent
-      };
-
-      // Decrypted content and properties of a file attachment.
-      const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
-      const pdfFileName = "Fabrikam_Report_202509";
-
-      // Decrypted properties of a cloud attachment.
-      const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
-      const cloudFileName = "weekly_forecast.xlsx";
-
-      // Decrypted content and properties of an inline image.
-      const decryptedImageFile = "iVBORw0KGgoAAAANSUhEUgAA...";
-      const imageFileName = "banner.png";
-      const imageContentId = "image001.png@01DC1DD9.1A4AA300";
-
-      const decryptedAttachments = [
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.File,
-              content: decryptedPdfFile,
-              isInline: false,
-              name: pdfFileName
-          },
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
-              isInline: false,
-              name: cloudFileName,
-              path: cloudFilePath
-          },
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.File,
-              content: decryptedImageFile,
-              contentId: imageContentId,
-              isInline: true,
-              name: imageFileName
-          }
-      ];
-
-      event.completed(
-          {
-              allowEvent: true,
-              emailBody: decryptedBody,
-              attachments: decryptedAttachments,
-              contextData: { messageType: "ReplyFromDecryptedMessage" }
-          }
-      );
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -90,12 +29,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported.
-
+      \*\*Important\*\*: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,12 +49,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      **Important**: The `content` property isn't supported by attachments of type `MailboxEnums.AttachmentType.Cloud`<!-- -->.
-
+      \*\*Important\*\*: The `content` property isn't supported by attachments of type `MailboxEnums.AttachmentType.Cloud`<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,12 +72,12 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      **Important**: When images are added to a message as inline attachments, they're automatically assigned a content ID. In the body of a message, the content ID of an inline attachment is specified in the `src` attribute of the `<img>` element (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`<!-- -->). To easily identify and provide these inline attachments during decryption, we recommend saving the content IDs of inline attachments to the message header during encryption. Call `Office.context.mailbox.item.getAttachmentsAsync` to get the content ID of an inline attachment. Then, call `Office.context.mailbox.item.internetHeaders.setAsync` to save the ID to the header of the message.
-
+      \*\*Important\*\*: When images are added to a message as inline attachments, they're automatically assigned a content ID. In the body of a message, the content ID of an inline attachment is specified in the `src` attribute of the `<img>` element (for example, `<img width=96 height=96 id="Picture_1" src="cid:image001.png@01DC1E6F.FC7C7410">`<!-- -->). To easily identify and provide these inline attachments during decryption, we recommend saving the content IDs of inline attachments to the message header during encryption. Call `Office.context.mailbox.item.getAttachmentsAsync` to get the content ID of an inline attachment. Then, call `Office.context.mailbox.item.internetHeaders.setAsync` to save the ID to the header of the message.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,10 +92,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,10 +110,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,10 +128,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.16](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

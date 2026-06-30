@@ -3,12 +3,17 @@ name: Office.DragoverEventData
 uid: outlook!Office.DragoverEventData:interface
 package: outlook!
 fullName: Office.DragoverEventData
-summary: Represents the `DragAndDropEventArgs.dragAndDropEventData` object when messages or file attachments are dragged over an add-in's task pane.
-remarks: |-
+summary: >-
+  Represents the `DragAndDropEventArgs.dragAndDropEventData` object when messages or file attachments are dragged over
+  an add-in's task pane.
+remarks: >-
   \[Api set: Mailbox 1.5\]
 
-  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
+  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and
+  drop messages and attachments into the task pane of an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,9 +22,11 @@ properties:
     uid: outlook!Office.DragoverEventData#pageX:member
     package: outlook!
     fullName: pageX
-    summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
+    summary: >-
+      Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is
+      relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,9 +37,11 @@ properties:
     uid: outlook!Office.DragoverEventData#pageY:member
     package: outlook!
     fullName: pageY
-    summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
+    summary: >-
+      Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is
+      relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,9 +52,11 @@ properties:
     uid: outlook!Office.DragoverEventData#taskPaneX:member
     package: outlook!
     fullName: taskPaneX
-    summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the add-in's task pane.
+    summary: >-
+      Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is
+      relative to the left edge of the add-in's task pane.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,9 +67,11 @@ properties:
     uid: outlook!Office.DragoverEventData#taskPaneY:member
     package: outlook!
     fullName: taskPaneY
-    summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the add-in's task pane.
+    summary: >-
+      Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is
+      relative to the top edge of the add-in's task pane.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,9 +82,11 @@ properties:
     uid: outlook!Office.DragoverEventData#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged over an add-in's task pane.
+    summary: >-
+      Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged
+      over an add-in's task pane.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

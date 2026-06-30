@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat): [rule](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-rule-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,26 +20,8 @@ properties:
     package: excel!
     fullName: formula1
     summary: The formula, if required, on which to evaluate the conditional format rule.
-    remarks: |-
-      [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B21:E23");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.cellValue);
-          conditionalFormat.cellValue.format.font.color = "red";
-          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +34,7 @@ properties:
     fullName: formula2
     summary: The formula, if required, on which to evaluate the conditional format rule.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,26 +46,8 @@ properties:
     package: excel!
     fullName: operator
     summary: The operator of the cell value conditional format.
-    remarks: |-
-      [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B21:E23");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.cellValue);
-          conditionalFormat.cellValue.format.font.color = "red";
-          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

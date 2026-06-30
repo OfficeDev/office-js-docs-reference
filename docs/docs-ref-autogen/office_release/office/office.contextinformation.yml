@@ -5,12 +5,12 @@ package: office!
 fullName: Office.ContextInformation
 summary: Provides information about the environment in which the add-in is running.
 remarks: |-
-  **Important**: In Outlook, this object is available starting with Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use the [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
+  \*\*Important\*\*: In Outlook, this object is available starting with Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use the [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
   #### Used by
 
   - [Office.Context](/javascript/api/office/office.context): [diagnostics](/javascript/api/office/office.context#office-office-context-diagnostics-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,37 +21,20 @@ properties:
     fullName: host
     summary: Gets the Office application in which the add-in is running.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'host: Office.HostType;'
       return:
         type: <xref uid="office!Office.HostType:enum" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const contextInfo = Office.context.diagnostics;
-          console.log("Office application: " + contextInfo.host);
-          ```
   - name: platform
     uid: office!Office.ContextInformation#platform:member
     package: office!
     fullName: platform
     summary: Gets the platform on which the add-in is running.
-    remarks: |-
-      **Important**: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      const contextInfo = Office.context.diagnostics;
-      console.log("Platform: " + contextInfo.platform);
-      ```
-
+    remarks: '\*\*Important\*\*: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,39 +46,8 @@ properties:
     package: office!
     fullName: version
     summary: Gets the version of Office on which the add-in is running.
-    remarks: |-
-      In Office on Windows, the value returned by the `version` property uses the format 16.0.<!-- -->&lt;<!-- -->build<!-- -->&gt;<!-- -->.<!-- -->&lt;<!-- -->revision<!-- -->&gt;<!-- -->. To compare a version shown as Version xxxx (Build xxxxx.xxxxx) with the `version` value, use the full build number (<!-- -->&lt;<!-- -->build<!-- -->&gt;<!-- -->.<!-- -->&lt;<!-- -->revision<!-- -->&gt;<!-- -->). For example, in Version 2603 (Build 19822.20000), use 19822.20000 for comparison.
-
-      #### Examples
-
-      ```TypeScript
-      // Checks whether the Office on Windows version meets a feature's minimum requirements.
-      const clientVersion = Office.context.diagnostics.version;
-
-      // In Office on Windows, the version property is in the format "16.0.<build>.<revision>".
-      // In this example, Version 2603 (Build 19822.20000) is the minimum version required for the feature.
-      // 19822 is the build number and 20000 is the revision number.
-      const minBuildRevision = "19822.20000";
-
-      const [, , clientBuild, clientRevision] = clientVersion.split(".");
-      const [minBuild, minRevision] = minBuildRevision.split(".");
-
-      const clientBuildNumber = parseInt(clientBuild, 10);
-      const clientRevisionNumber = parseInt(clientRevision, 10);
-      const minBuildNumber = parseInt(minBuild, 10);
-      const minRevisionNumber = parseInt(minRevision, 10);
-
-      if (
-          clientBuildNumber > minBuildNumber ||
-          (clientBuildNumber === minBuildNumber && clientRevisionNumber >= minRevisionNumber)
-      ) {
-          console.log("Office version meets the minimum requirements.");
-          // Implement the feature-specific actions here.
-      } else {
-          console.log("Office version doesn't meet the minimum requirements.");
-      }
-      ```
-
+    remarks: In Office on Windows, the value returned by the `version` property uses the format 16.0.<!-- -->&lt;<!-- -->build<!-- -->&gt;<!-- -->.<!-- -->&lt;<!-- -->revision<!-- -->&gt;<!-- -->. To compare a version shown as Version xxxx (Build xxxxx.xxxxx) with the `version` value, use the full build number (<!-- -->&lt;<!-- -->build<!-- -->&gt;<!-- -->.<!-- -->&lt;<!-- -->revision<!-- -->&gt;<!-- -->). For example, in Version 2603 (Build 19822.20000), use 19822.20000 for comparison.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

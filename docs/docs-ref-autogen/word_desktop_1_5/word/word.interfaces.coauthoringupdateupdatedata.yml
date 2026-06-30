@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CoauthoringUpdateUpdateData
 summary: An interface for updating data on the `CoauthoringUpdate` object, for use in `coauthoringUpdate.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.CoauthoringUpdateUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate` object.
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate`
+      object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

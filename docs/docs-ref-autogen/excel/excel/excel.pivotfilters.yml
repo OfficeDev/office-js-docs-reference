@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotField](/javascript/api/excel/excel.pivotfield): [applyFilter](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-applyfilter-member(1)), [getFilters](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-getfilters-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,43 +20,8 @@ properties:
     package: excel!
     fullName: dateFilter
     summary: The PivotField's currently applied date filter. This property is `null` if no value filter is applied.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-      await Excel.run(async (context) => {
-        // Add a date-based PivotFilter.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-        // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
-        // If it's not already there, add "Date Updated" to the hierarchies.
-        let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
-        await context.sync();
-        if (dateHierarchy.isNullObject) {
-          dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
-        }
-
-        // Apply a date filter to filter out anything logged before August.
-        const filterField = dateHierarchy.fields.getItem("Date Updated");
-        const dateFilter = {
-          condition: Excel.DateFilterCondition.afterOrEqualTo,
-          comparator: {
-            date: "2020-08-01",
-            specificity: Excel.FilterDatetimeSpecificity.month
-          }
-        };
-        filterField.applyFilter({ dateFilter: dateFilter });
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,37 +33,8 @@ properties:
     package: excel!
     fullName: labelFilter
     summary: The PivotField's currently applied label filter. This property is `null` if no value filter is applied.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-      await Excel.run(async (context) => {
-        // Add a PivotFilter to filter based on the strings of item labels.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-        // Get the "Type" field.
-        const field = pivotTable.hierarchies.getItem("Type").fields.getItem("Type");
-
-        // Filter out any types that start with "L" ("Lemons" and "Limes" in this case).
-        const filter: Excel.PivotLabelFilter = {
-          condition: Excel.LabelFilterCondition.beginsWith,
-          substring: "L",
-          exclusive: true
-        };
-
-        // Apply the label filter to the field.
-        field.applyFilter({ labelFilter: filter });
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,37 +46,8 @@ properties:
     package: excel!
     fullName: manualFilter
     summary: The PivotField's currently applied manual filter. This property is `null` if no value filter is applied.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-      await Excel.run(async (context) => {
-        // Add a PivotFilter to filter on manually-selected items.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-        // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
-        // If it's not already there, add "Classification" to the hierarchies.
-        let classHierarchy = pivotTable.filterHierarchies.getItemOrNullObject("Classification");
-        await context.sync();
-        if (classHierarchy.isNullObject) {
-          classHierarchy = pivotTable.filterHierarchies.add(pivotTable.hierarchies.getItem("Classification"));
-        }
-
-        // Apply a manual filter to include only a specific PivotItem (the string "Organic").
-        const filterField = classHierarchy.fields.getItem("Classification");
-        const manualFilter = { selectedItems: ["Organic"]};
-        filterField.applyFilter({ manualFilter: manualFilter });
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,37 +59,8 @@ properties:
     package: excel!
     fullName: valueFilter
     summary: The PivotField's currently applied value filter. This property is `null` if no value filter is applied.
-    remarks: |-
-      [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-      await Excel.run(async (context) => {
-        // Add a PivotFilter to filter on the values correlated with a row.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-        // Get the "Farm" field.
-        const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
-
-        // Filter to only include rows with more than 500 wholesale crates sold.
-        const filter: Excel.PivotValueFilter = {
-          condition: Excel.ValueFilterCondition.greaterThan,
-          comparator: 500,
-          value: "Sum of Crates Sold Wholesale"
-        };
-
-        // Apply the value filter to the field.
-        field.applyFilter({ valueFilter: filter });
-
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,39 +5,27 @@ package: word!
 fullName: Word.LayoutMode
 summary: Specifies how text is laid out in the layout mode for the current document.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: default
     uid: word!Word.LayoutMode.default:member
     package: word!
-    summary: |-
-      Default layout mode.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Default layout mode.
     value: '"Default"'
   - name: genko
     uid: word!Word.LayoutMode.genko:member
     package: word!
-    summary: |-
-      Genko layout mode.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Genko layout mode.
     value: '"Genko"'
   - name: grid
     uid: word!Word.LayoutMode.grid:member
     package: word!
-    summary: |-
-      Grid layout mode.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Grid layout mode.
     value: '"Grid"'
   - name: lineGrid
     uid: word!Word.LayoutMode.lineGrid:member
     package: word!
-    summary: |-
-      Line grid layout mode.
-
-      * \[Api set: WordApiDesktop 1.3\]
+    summary: Line grid layout mode.
     value: '"LineGrid"'

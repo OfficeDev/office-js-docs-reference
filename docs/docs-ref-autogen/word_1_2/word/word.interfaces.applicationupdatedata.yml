@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ApplicationUpdateData
 summary: An interface for updating data on the `Application` object, for use in `application.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

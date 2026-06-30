@@ -11,7 +11,7 @@ remarks: |-
 
   - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
   - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: entry
     summary: If provided, specifies the text that appears in a table of contents or table of figures. To indicate a subentry, include the main entry text and the subentry text, separated by a colon (":") (e.g., "Introduction:The Product"). When the `entryAutoText` property is set, this property is ignored.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: entryAutoText
     summary: If provided, specifies the AutoText entry name that includes text for the table of figures, or table of contents. When this property is used, the `entry` property is ignored.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: level
     summary: If provided, specifies the level for the entry in a table of contents or table of figures and should be a value from 1 to 9.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +61,7 @@ properties:
     fullName: tableId
     summary: If provided, specifies a one-letter identifier for a table of contents or table of figures (e.g., "i" for an "illustration").
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

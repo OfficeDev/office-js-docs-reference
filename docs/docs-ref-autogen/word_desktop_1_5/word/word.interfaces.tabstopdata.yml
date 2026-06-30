@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.TabStopData
 summary: An interface describing the data returned by calling `tabStop.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: alignment
     summary: Gets a `TabAlignment` value that represents the alignment for the tab stop.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: customTab
     summary: Gets whether this tab stop is a custom tab stop.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: leader
     summary: Gets a `TabLeader` value that represents the leader for this `TabStop` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: position
     summary: Gets the position of the tab stop relative to the left margin.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

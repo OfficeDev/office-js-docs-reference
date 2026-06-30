@@ -10,11 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.EntityViewLayouts](/javascript/api/excel/excel.entityviewlayouts): [compact](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-compact-member)
-
-  Learn more about the types in this type alias through the following links. 
-
-  [Excel.EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout)
-
+example: []
 isPreview: false
 isDeprecated: false
 syntax: export type CompactLayout = EntityCompactLayout;

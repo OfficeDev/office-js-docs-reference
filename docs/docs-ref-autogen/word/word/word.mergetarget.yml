@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.DocumentMergeOptions](/javascript/api/word/word.documentmergeoptions): [mergeTarget](/javascript/api/word/word.documentmergeoptions#word-word-documentmergeoptions-mergetarget-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: current
     uid: word!Word.MergeTarget.current:member
     package: word!
-    summary: |-
-      Represents merging into the current document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents merging into the current document.
     value: '"Current"'
   - name: new
     uid: word!Word.MergeTarget.new:member
     package: word!
-    summary: |-
-      Represents merging into a new document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents merging into a new document.
     value: '"New"'
   - name: selected
     uid: word!Word.MergeTarget.selected:member
     package: word!
-    summary: |-
-      Represents merging into the selected document.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents merging into the selected document.
     value: '"Selected"'

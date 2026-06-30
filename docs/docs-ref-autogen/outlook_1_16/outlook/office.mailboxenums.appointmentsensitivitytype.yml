@@ -4,11 +4,14 @@ uid: outlook!Office.MailboxEnums.AppointmentSensitivityType:enum
 package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
 summary: Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface) of an appointment.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.14\]
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -23,7 +26,7 @@ fields:
     summary: |-
       Treat the item as personal.
 
-      **Important**: The Personal sensitivity level is only supported in Outlook on Windows.
+      \*\*Important\*\*: The Personal sensitivity level is only supported in Outlook on Windows.
     value: '"personal"'
   - name: Private
     uid: outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member
@@ -36,5 +39,5 @@ fields:
     summary: |-
       Treat the item as confidential.
 
-      **Important**: The Confidential sensitivity level is only supported in Outlook on Windows.
+      \*\*Important\*\*: The Confidential sensitivity level is only supported in Outlook on Windows.
     value: '"confidential"'

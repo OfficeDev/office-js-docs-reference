@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Application](/javascript/api/excel/excel.application): [toJSON](/javascript/api/excel/excel.application#excel-excel-application-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: activeWindow
     summary: Returns a `window` object that represents the active window (the window on top). Read-only.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: calculationEngineVersion
     summary: Returns the Excel calculation engine version used for the last full recalculation.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: calculationMode
     summary: 'Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`<!-- -->. Possible values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user requests it. This is a runtime property. The `calculationMode` setting is not persisted in the workbook.'
     remarks: '[API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: calculationState
     summary: Returns the calculation state of the application. See `Excel.CalculationState` for details.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: cultureInfo
     summary: Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: decimalSeparator
     summary: Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ properties:
     fullName: iterativeCalculation
     summary: Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +110,7 @@ properties:
     fullName: thousandsSeparator
     summary: Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +123,7 @@ properties:
     fullName: useSystemSeparators
     summary: Specifies if the system separators of Excel are enabled. System separators include the decimal separator and thousands separator.
     remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +136,7 @@ properties:
     fullName: windows
     summary: Returns all the open Excel windows.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,15 +4,24 @@ uid: outlook!Office.NotificationMessageAction:interface
 package: outlook!
 fullName: Office.NotificationMessageAction
 summary: The definition of the action for a notification message.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.10\]
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
-  **Important**: In modern Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the `NotificationMessageAction` object is available in Compose mode only.
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+
+
+  \*\*Important\*\*: In modern Outlook on the web and [new Outlook on
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the
+  `NotificationMessageAction` object is available in Compose mode only.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +32,7 @@ properties:
     fullName: actionText
     summary: The text of the action link.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +45,7 @@ properties:
     fullName: actionType
     summary: The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +58,7 @@ properties:
     fullName: commandId
     summary: The button defined in the manifest.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,15 +70,24 @@ properties:
     package: outlook!
     fullName: contextData
     summary: Any JSON data the action button needs to pass on to the add-in.
-    remarks: |-
-      **Important**:
+    remarks: >-
+      \*\*Important\*\*:
 
-      - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only the `string` type is supported.
 
-      - To retrieve the JSON data, call `Office.context.mailboxitem.getInitializationContextAsync`<!-- -->. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
+      - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier
+      versions of Outlook on Windows, only the `string` type is supported.
 
-      - To prevent the task pane of a notification message from relaunching if it's already open, implement a handler for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true) to the `contextData` property.
 
+      - To retrieve the JSON data, call `Office.context.mailboxitem.getInitializationContextAsync`<!-- -->. If you
+      create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the
+      string using `JSON.parse()` once you retrieve it.
+
+
+      - To prevent the task pane of a notification message from relaunching if it's already open, implement a handler
+      for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event
+      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
+      to the `contextData` property.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

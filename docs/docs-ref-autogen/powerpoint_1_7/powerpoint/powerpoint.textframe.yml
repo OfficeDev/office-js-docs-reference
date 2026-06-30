@@ -11,41 +11,7 @@ remarks: |-
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [textFrame](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-textframe-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [getParentTextFrame](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-getparenttextframe-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-  // Selects the first 10 characters of the selected shape.
-  await PowerPoint.run(async (context) => {
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    await context.sync();
-    if (shapeCount.value !== 1) {
-      console.warn("You must select only one shape with text in it.");
-      return;
-    }
-    const shape: PowerPoint.Shape = shapes.getItemAt(0);
-    const textFrame: PowerPoint.TextFrame = shape.textFrame.load("textRange,hasText");
-    await context.sync();
-    if (textFrame.hasText != true) {
-      console.warn("You must select only one shape with text in it.");
-      return;
-    }
-    const textRange: PowerPoint.TextRange = textFrame.textRange;
-    textRange.load("text");
-    await context.sync();
-    if (textRange.text.length < 10) {
-      console.warn("You must select only one shape with at least 10 characters in it.");
-      return;
-    }
-    const textRange10 = textRange.getSubstring(0, 10);
-    textRange10.setSelected();
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -55,37 +21,8 @@ properties:
     package: powerpoint!
     fullName: autoSizeSetting
     summary: The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-      // This function gets the collection of shapes on the first slide,
-      // and adds a brace pair, {}, to the collection, while specifying its
-      // location and size. Then it names the shape, sets its text and font
-      // color, and centers it inside the braces.
-      await PowerPoint.run(async (context) => {
-        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-        const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
-          left: 100,
-          top: 400,
-          height: 50,
-          width: 150,
-        });
-        braces.name = "Braces";
-        braces.textFrame.textRange.text = "Shape text";
-        braces.textFrame.textRange.font.color = "purple";
-        braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
-        braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
-        braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
-
-        return context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,7 +35,7 @@ properties:
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,7 +48,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +61,7 @@ properties:
     fullName: hasText
     summary: Specifies if the text frame contains text.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +74,7 @@ properties:
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +87,7 @@ properties:
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +100,7 @@ properties:
     fullName: textRange
     summary: Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +113,7 @@ properties:
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +126,7 @@ properties:
     fullName: verticalAlignment
     summary: Represents the vertical alignment of the text frame. See [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,7 +139,7 @@ properties:
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,7 +153,7 @@ methods:
     fullName: deleteText()
     summary: Deletes all the text in the text frame.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,48 +166,8 @@ methods:
     package: powerpoint!
     fullName: getParentShape()
     summary: Returns the parent [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object that holds this `TextFrame`<!-- -->.
-    remarks: |-
-      [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-      // Gets navigational (complex) properties of the selected text range.
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-        textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
-
-        const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
-        const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
-        const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
-        parentShape.load("id");
-        parentSlide.load("id");
-        await context.sync();
-
-        console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
-
-        console.log("Font properties of selected text range:");
-        console.log(`\tallCaps: ${textRange.font.allCaps}`);
-        console.log(`\tbold: ${textRange.font.bold}`);
-        console.log(`\tcolor: ${textRange.font.color}`);
-        console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
-        console.log(`\titalic: ${textRange.font.italic}`);
-        console.log(`\tname: ${textRange.font.name}`);
-        console.log(`\tsize: ${textRange.font.size}`);
-        console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
-        console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
-        console.log(`\tsubscript: ${textRange.font.subscript}`);
-        console.log(`\tsuperscript: ${textRange.font.superscript}`);
-        console.log(`\tunderline: ${textRange.font.underline}`);
-
-        console.log("Paragraph format properties of selected text range:");
-        console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
-        console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,7 +181,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +199,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -320,7 +217,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -346,7 +243,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -354,4 +251,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.TextFrameData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

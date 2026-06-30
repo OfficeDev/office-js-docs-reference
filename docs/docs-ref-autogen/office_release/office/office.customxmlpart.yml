@@ -5,12 +5,12 @@ package: office!
 fullName: Office.CustomXmlPart
 summary: Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface) collection.
 remarks: |-
-  **Applications**: Word
+  \*\*Applications\*\*: Word
 
   #### Used by
 
   - [Office.CustomXmlParts](/javascript/api/office/office.customxmlparts): [addAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-addasync-member(1)), [getByIdAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbyidasync-member(1)), [getByNamespaceAsync](/javascript/api/office/office.customxmlparts#office-office-customxmlparts-getbynamespaceasync-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,90 +21,39 @@ properties:
     fullName: builtIn
     summary: True, if the custom XML part is built in; otherwise false.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'builtIn: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXMLPartBuiltIn() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  write(xmlPart.builtIn);
-              });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message) {
-              document.getElementById('message').innerText += message;
-          }
-          ```
   - name: id
     uid: office!Office.CustomXmlPart#id:member
     package: office!
     fullName: id
     summary: Gets the GUID of the CustomXMLPart.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXMLPartBuiltId() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  write(xmlPart.id);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message) {
-              document.getElementById('message').innerText += message;
-          }
-          ```
   - name: namespaceManager
     uid: office!Office.CustomXmlPart#namespaceManager:member
     package: office!
     fullName: namespaceManager
     summary: Gets the set of namespace prefix mappings ([Office.CustomXmlPrefixMappings](xref:office!Office.CustomXmlPrefixMappings:interface)<!-- -->) used against the current CustomXmlPart.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'namespaceManager: CustomXmlPrefixMappings;'
       return:
         type: <xref uid="office!Office.CustomXmlPrefixMappings:interface" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function setXMLPartNamespaceManagerNamespace() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
-              });
-          }
-          ```
 methods:
   - name: addHandlerAsync(eventType, handler, options, callback)
     uid: office!Office.CustomXmlPart#addHandlerAsync:member(1)
@@ -112,10 +61,10 @@ methods:
     fullName: addHandlerAsync(eventType, handler, options, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,61 +91,10 @@ methods:
     fullName: addHandlerAsync(eventType, handler, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      \*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
-
-      #### Examples
-
-      ```TypeScript
-      // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
-      function addNodeDeletedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
-                  write("A node has been deleted.");
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-      ```TypeScript
-      // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
-      function addNodeInsertedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
-                  write("A node has been inserted.");
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-      ```TypeScript
-      // To add an event handler for the NodeReplaced event, use the addHandlerAsync method of the CustomXmlPart object.
-      function addNodeReplacedEvent() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
-                  write("A node has been replaced.");
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,8 +117,8 @@ methods:
     package: office!
     fullName: deleteAsync(options, callback)
     summary: Deletes the Custom XML Part.
-    remarks: '**Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,27 +138,8 @@ methods:
     package: office!
     fullName: deleteAsync(callback)
     summary: Deletes the Custom XML Part.
-    remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-      #### Examples
-
-      ```TypeScript
-      function deleteXMLPart() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.deleteAsync(function (eventArgs) {
-                  write("The XML Part has been deleted.");
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,8 +156,8 @@ methods:
     package: office!
     fullName: getNodesAsync(xPath, options, callback)
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
-    remarks: '**Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,30 +180,8 @@ methods:
     package: office!
     fullName: getNodesAsync(xPath, callback)
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
-    remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-      #### Examples
-
-      ```TypeScript
-      function showXmlNodeType() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      write(node.nodeType);
-                  }
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,8 +201,8 @@ methods:
     package: office!
     fullName: getXmlAsync(options, callback)
     summary: Asynchronously gets the XML inside this custom XML part.
-    remarks: '**Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -365,27 +222,8 @@ methods:
     package: office!
     fullName: getXmlAsync(callback)
     summary: Asynchronously gets the XML inside this custom XML part.
-    remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-      #### Examples
-
-      ```TypeScript
-      function showXMLPartInnerXML() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getXmlAsync(function (eventArgs) {
-                  write(eventArgs.value);
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-      ```
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -402,8 +240,8 @@ methods:
     package: office!
     fullName: removeHandlerAsync(eventType, handler, options, callback)
     summary: Removes an event handler for the specified event type.
-    remarks: '**Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -429,22 +267,8 @@ methods:
     package: office!
     fullName: removeHandlerAsync(eventType, handler, callback)
     summary: Removes an event handler for the specified event type.
-    remarks: |-
-      **Requirement set**: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-      #### Examples
-
-      ```TypeScript
-      function removeNodeInsertedEventHandler() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
-              function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
-          });
-      }
-      ```
-
+    remarks: '\*\*Requirement set\*\*: [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

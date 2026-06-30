@@ -3,9 +3,11 @@ name: Word.Interfaces.TrackedChangeCollectionUpdateData
 uid: word!Word.Interfaces.TrackedChangeCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TrackedChangeCollectionUpdateData
-summary: An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

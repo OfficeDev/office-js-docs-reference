@@ -34,7 +34,7 @@ remarks: |-
   - [Excel.WorksheetRowHiddenChangedEventArgs](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs): [source](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-source-member)
   - [Excel.WorksheetRowSortedEventArgs](/javascript/api/excel/excel.worksheetrowsortedeventargs): [source](/javascript/api/excel/excel.worksheetrowsortedeventargs#excel-excel-worksheetrowsortedeventargs-source-member)
   - [Excel.WorksheetVisibilityChangedEventArgs](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs): [source](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#excel-excel-worksheetvisibilitychangedeventargs-source-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -44,7 +44,7 @@ fields:
     summary: |-
       Local means the event comes from a local user session.
 
-      * [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
@@ -52,5 +52,5 @@ fields:
     summary: |-
       Remote means the event comes from a remote user session.
 
-      * [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Remote"'

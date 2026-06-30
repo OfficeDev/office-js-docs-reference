@@ -3,9 +3,11 @@ name: Word.Interfaces.HyperlinkCollectionUpdateData
 uid: word!Word.Interfaces.HyperlinkCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkCollectionUpdateData
-summary: An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `HyperlinkCollection` object, for use in `hyperlinkCollection.set({ ... })`<!--
+  -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

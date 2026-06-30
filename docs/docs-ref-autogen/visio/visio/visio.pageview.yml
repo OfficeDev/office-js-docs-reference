@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Visio.Page](/javascript/api/visio/visio.page): [view](/javascript/api/visio/visio.page#visio-visio-page-view-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,24 +33,8 @@ properties:
     package: visio!
     fullName: zoom
     summary: Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
-    remarks: |-
-      [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-
-      #### Examples
-
-      ```TypeScript
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          activePage.view.zoom = 300;
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,25 +47,8 @@ methods:
     package: visio!
     fullName: centerViewportOnShape(ShapeId)
     summary: Pans the Visio drawing to place the specified shape in the center of the view.
-    remarks: |-
-      [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-
-      #### Examples
-
-      ```TypeScript
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          activePage.view.centerViewportOnShape(shape.Id);
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +66,7 @@ methods:
     fullName: fitToWindow()
     summary: Fit Page to current window.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,13 +80,13 @@ methods:
     fullName: getPosition()
     summary: Returns the position object that specifies the position of the page in the view.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getPosition(): OfficeExtension.ClientResult<Visio.Position>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.Position:interface" />&gt;
+        type: <xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.Position:interface" />&gt;
         description: ''
   - name: getSelection()
     uid: visio!Visio.PageView#getSelection:member(1)
@@ -127,7 +94,7 @@ methods:
     fullName: getSelection()
     summary: Represents the Selection in the page.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +108,7 @@ methods:
     fullName: isShapeInViewport(Shape)
     summary: To check if the shape is in view of the page or not.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,7 +118,7 @@ methods:
           description: Shape to be checked.
           type: <xref uid="visio!Visio.Shape:class" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: <xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: ''
   - name: load(options)
     uid: visio!Visio.PageView#load:member(1)
@@ -159,7 +126,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +144,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +162,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +188,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,7 +199,7 @@ methods:
           type: <xref uid="visio!Visio.Interfaces.PageViewUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="visio!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -242,7 +209,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,7 +227,7 @@ methods:
     fullName: setPosition(Position)
     summary: Sets the position of the page in the view.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,7 +245,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.PageView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageViewData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,4 +253,4 @@ methods:
       return:
         type: <xref uid="visio!Visio.Interfaces.PageViewData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="visio!~OfficeExtension.ClientObject:class" />

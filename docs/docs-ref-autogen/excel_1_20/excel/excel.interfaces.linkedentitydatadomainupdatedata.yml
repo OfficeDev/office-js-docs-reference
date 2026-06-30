@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.LinkedEntityDataDomainUpdateData
 summary: An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: refreshMode
     summary: Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed. If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed. If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

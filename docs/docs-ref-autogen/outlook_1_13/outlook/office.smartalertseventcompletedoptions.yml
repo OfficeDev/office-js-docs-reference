@@ -7,49 +7,14 @@ summary: Specifies the behavior of a [Smart Alerts add-in](https://learn.microso
 remarks: |-
   [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+  \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
   #### Used by
 
   - [Office.MailboxEvent](/javascript/api/outlook/office.mailboxevent): [completed](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // The following example checks whether a location is specified in an appointment before it's sent.
-  function onAppointmentSendHandler(event) {
-      Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
-          const event = asyncResult.asyncContext;
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(asyncResult.error.message);
-              // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
-              event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
-              return;
-          }
-
-          if (asyncResult.value === "") {
-              // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
-              event.completed(
-                  {
-                      allowEvent: false,
-                      cancelLabel: "Add a location",
-                      commandId: "msgComposeOpenPaneButton",
-                      contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
-                      errorMessage: "Don't forget to add a meeting location.",
-                      errorMessageMarkdown: "Don't forget to add a meeting location.\n\n**Tip**: For a list of locations, see [Meeting Locations]("https://www.contoso.com/meeting-locations).",
-                      sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
-                  }
-              );
-          } else {
-              // If a location is specified, the appointment is sent.
-              event.completed({ allowEvent: true });
-          }
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,10 +27,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,16 +45,16 @@ properties:
     remarks: |-
       [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      **Important**:
+      \*\*Important\*\*:
 
       - The error message must be 500 characters or less.
 
       - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "<!-- -->&lt;<!-- -->Add-in name<!-- -->&gt; is preventing this email from being sent."
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

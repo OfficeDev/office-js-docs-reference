@@ -12,7 +12,7 @@ remarks: |-
   - [Excel.CommentAddedEventArgs](/javascript/api/excel/excel.commentaddedeventargs): [commentDetails](/javascript/api/excel/excel.commentaddedeventargs#excel-excel-commentaddedeventargs-commentdetails-member)
   - [Excel.CommentChangedEventArgs](/javascript/api/excel/excel.commentchangedeventargs): [commentDetails](/javascript/api/excel/excel.commentchangedeventargs#excel-excel-commentchangedeventargs-commentdetails-member)
   - [Excel.CommentDeletedEventArgs](/javascript/api/excel/excel.commentdeletedeventargs): [commentDetails](/javascript/api/excel/excel.commentdeletedeventargs#excel-excel-commentdeletedeventargs-commentdetails-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +23,7 @@ properties:
     fullName: commentId
     summary: Represents the ID of the comment.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     fullName: replyIds
     summary: Represents the IDs of the related replies that belong to the comment.
     remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

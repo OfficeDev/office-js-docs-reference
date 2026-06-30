@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.ListItem](/javascript/api/word/word.listitem): [toJSON](/javascript/api/word/word.listitem#word-word-listitem-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: level
     summary: Specifies the level of the item in the list.
     remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: listString
     summary: Gets the list item bullet, number, or picture as a string.
     remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: siblingIndex
     summary: Gets the list item order number in relation to its siblings.
     remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

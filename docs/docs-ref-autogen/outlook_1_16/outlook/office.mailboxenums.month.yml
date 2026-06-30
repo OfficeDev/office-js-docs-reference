@@ -4,11 +4,14 @@ uid: outlook!Office.MailboxEnums.Month:enum
 package: outlook!
 fullName: Office.MailboxEnums.Month
 summary: Specifies the month.
-remarks: |-
+remarks: >-
   \[Api set: Mailbox 1.7\]
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  Compose or Read
+example: []
 isPreview: false
 isDeprecated: false
 fields:

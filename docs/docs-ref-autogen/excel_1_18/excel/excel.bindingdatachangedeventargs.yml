@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Binding](/javascript/api/excel/excel.binding): [onDataChanged](/javascript/api/excel/excel.binding#excel-excel-binding-ondatachanged-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: binding
     summary: Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

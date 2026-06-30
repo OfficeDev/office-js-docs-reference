@@ -5,31 +5,22 @@ package: word!
 fullName: Word.FontBias
 summary: Specifies the font bias to use when formatting East Asian text.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: farEast
     uid: word!Word.FontBias.farEast:member
     package: word!
-    summary: |-
-      Uses the font bias for Far East text.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the font bias for Far East text.
     value: '"FarEast"'
   - name: noSpecified
     uid: word!Word.FontBias.noSpecified:member
     package: word!
-    summary: |-
-      No font bias specified.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: No font bias specified.
     value: '"NoSpecified"'
   - name: standard
     uid: word!Word.FontBias.standard:member
     package: word!
-    summary: |-
-      Uses the default font bias.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the default font bias.
     value: '"Standard"'

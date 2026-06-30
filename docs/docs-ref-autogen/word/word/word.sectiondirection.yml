@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.PageSetup](/javascript/api/word/word.pagesetup): [sectionDirection](/javascript/api/word/word.pagesetup#word-word-pagesetup-sectiondirection-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: leftToRight
     uid: word!Word.SectionDirection.leftToRight:member
     package: word!
-    summary: |-
-      Left-to-right reading order.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Left-to-right reading order.
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.SectionDirection.rightToLeft:member
     package: word!
-    summary: |-
-      Right-to-left reading order.
-
-      * [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Right-to-left reading order.
     value: '"RightToLeft"'

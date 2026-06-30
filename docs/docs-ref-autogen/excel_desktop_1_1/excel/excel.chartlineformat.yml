@@ -15,7 +15,7 @@ remarks: |-
   - [Excel.ChartLeaderLinesFormat](/javascript/api/excel/excel.chartleaderlinesformat): [line](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-line-member)
   - [Excel.ChartSeriesFormat](/javascript/api/excel/excel.chartseriesformat): [line](/javascript/api/excel/excel.chartseriesformat#excel-excel-chartseriesformat-line-member)
   - [Excel.ChartTrendlineFormat](/javascript/api/excel/excel.charttrendlineformat): [line](/javascript/api/excel/excel.charttrendlineformat#excel-excel-charttrendlineformat-line-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -26,7 +26,7 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,7 +39,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +52,7 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +65,7 @@ properties:
     fullName: weight
     summary: Represents weight of the line, in points.
     remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,22 +78,8 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clears the line format of a chart element.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Clear the format of the major gridlines on Chart1. 
-      await Excel.run(async (context) => { 
-          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-          gridlines.format.line.clear();
-          await context.sync();
-          
-          console.log("Chart Major Gridlines Format Cleared");
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +93,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +111,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,28 +122,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartLineFormat:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Set chart major gridlines on value axis to be red.
-          await Excel.run(async (context) => {
-              const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.color = "#FF0000";
-              await context.sync()
-              
-              console.log("Chart Gridlines Color Updated");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartLineFormat#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +155,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,7 +176,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +194,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.ChartLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

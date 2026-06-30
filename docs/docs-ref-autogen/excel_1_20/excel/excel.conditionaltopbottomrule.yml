@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [changeRuleToTopBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletotopbottom-member(1))
   - [Excel.TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat): [rule](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-rule-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: rank
     summary: The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: type
     summary: Format values based on the top or bottom rank.
     remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

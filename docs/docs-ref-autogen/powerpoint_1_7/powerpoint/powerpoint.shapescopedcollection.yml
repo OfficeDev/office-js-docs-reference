@@ -10,27 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [getSelectedShapes](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedshapes-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-  // Changes the selected shapes fill color to red.
-  await PowerPoint.run(async (context) => {
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    shapes.load("items/fill/type");
-    await context.sync();
-    shapes.items.map((shape) => {
-      const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
-      console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
-      shape.fill.setSolidColor("red");
-    });
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -41,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,41 +47,14 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of shapes in the collection.
-    remarks: |-
-      [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-      // Gets the shapes you selected on the slide and displays their IDs on the task pane.
-      await PowerPoint.run(async (context) => {
-        let finalTable = "";
-        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-        const shapeCount = shapes.getCount();
-        await context.sync();
-        finalTable += "<br>getSelectedShapes.getCount returned:<b>" + shapeCount.value + "</b><br>";
-        finalTable +=
-          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
-        shapes.load("items");
-        await context.sync();
-        shapes.items.map((shape, index) => {
-          finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
-        });
-        finalTable += "</table>";
-        const outputSpan = document.getElementById("outputSpan");
-        outputSpan.innerHTML = "";
-        outputSpan.innerHTML += finalTable;
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of shapes in the collection.
   - name: getItem(key)
     uid: powerpoint!PowerPoint.ShapeScopedCollection#getItem:member(1)
@@ -109,7 +62,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a shape using its unique ID. An error is thrown if the shape doesn't exist.
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +80,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,42 +96,9 @@ methods:
     uid: powerpoint!PowerPoint.ShapeScopedCollection#getItemOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemOrNullObject(id)
-    summary: Gets a shape using its unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-by-id.yaml
-
-      // Uses getItemOrNullObject to find a shape by ID within the selected shapes.
-      // If the ID is not found in the selected shapes, the returned object's isNullObject property is true.
-      await PowerPoint.run(async (context) => {
-        const shapeId = (document.getElementById("shape-id-input") as HTMLInputElement).value.trim();
-        if (!shapeId) {
-          console.log("Enter a shape ID in the text box first.");
-          return;
-        }
-
-        const selectedShapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-
-        // getItemOrNullObject returns a Shape object without throwing if the ID isn't found.
-        const shape: PowerPoint.Shape = selectedShapes.getItemOrNullObject(shapeId);
-        shape.load("id,name,type");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log(`Shape ID "${shapeId}" was not found in the selected shapes.`);
-        } else {
-          console.log(`Shape found in the selected shapes.`);
-          console.log(`  ID: ${shape.id}`);
-          console.log(`  Name: "${shape.name}"`);
-          console.log(`  Type: ${shape.type}`);
-        }
-      });
-      ```
-
+    summary: Gets a shape using its unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +116,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +134,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,7 +152,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,7 +160,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeScopedCollection:class" />
         description: ''
@@ -250,7 +170,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ShapeScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeScopedCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,4 +178,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

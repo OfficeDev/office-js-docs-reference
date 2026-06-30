@@ -10,34 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [getSelectedSlides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getselectedslides-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-  // Saves which shapes are selected so that they can be reselected later.
-  await PowerPoint.run(async (context) => {
-    context.presentation.load("slides");
-    await context.sync();
-    const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
-    const slideCount = slides.getCount();
-    slides.load("items");
-    await context.sync();
-    savedSlideSelection = [];
-    slides.items.map((slide) => {
-      savedSlideSelection.push(slide.id);
-    });
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    shapes.load("items");
-    await context.sync();
-    shapes.items.map((shape) => {
-      savedShapeSelection.push(shape.id);
-    });
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -48,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,13 +48,13 @@ methods:
     fullName: getCount()
     summary: Gets the number of slides in the collection.
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of slides in the collection.
   - name: getItem(key)
     uid: powerpoint!PowerPoint.SlideScopedCollection#getItem:member(1)
@@ -89,7 +62,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a slide using its unique ID.
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +80,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a slide using its zero-based index in the collection.
     remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,47 +96,9 @@ methods:
     uid: powerpoint!PowerPoint.SlideScopedCollection#getItemOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemOrNullObject(id)
-    summary: Gets a slide using its unique ID. If such a slide doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-slide-by-id.yaml
-
-      // Uses getItemOrNullObject to find a slide by ID within the selected slides.
-      // If the ID isn't found in the selected slides, the returned object's isNullObject property is true.
-      // If the ID is found in the selected slides, presentation displays that slide.
-      await PowerPoint.run(async (context) => {
-        const slideId = (document.getElementById("slide-id-input") as HTMLInputElement).value.trim();
-        if (!slideId) {
-          console.log("Enter a slide ID in the text box first.");
-          return;
-        }
-
-        const selectedSlides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
-
-        // getItemOrNullObject returns a Slide object without throwing if the ID isn't found.
-        const slide: PowerPoint.Slide = selectedSlides.getItemOrNullObject(slideId);
-        slide.load("id");
-        await context.sync();
-
-        if (slide.isNullObject) {
-          console.log(`Slide ID "${slideId}" was not found in the selected slides.`);
-        } else {
-          console.log(`Slide found in the selected slides.`);
-          console.log(`  ID: ${slide.id}`);
-
-          // Switch to the slide.
-          context.presentation.setSelectedSlides([slide.id]);
-          await context.sync();
-
-          console.log(`Switched to the slide - ID: ${slide.id}`);
-        }
-      });
-      ```
-
+    summary: Gets a slide using its unique ID. If such a slide doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +116,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,7 +134,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +152,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,7 +160,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideScopedCollection:class" />
         description: ''
@@ -235,7 +170,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SlideScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideScopedCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,4 +178,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

@@ -11,7 +11,7 @@ remarks: |-
 
   - [PowerPoint.SensitivityLabelDetails](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails): [children](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails#powerpoint-powerpoint-sensitivitylabeldetails-children-member)
   - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [getLabels](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-getlabels-member(1))
-
+example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +49,13 @@ methods:
     fullName: getCount()
     summary: Gets the number of [PowerPoint.SensitivityLabelDetails](xref:powerpoint!PowerPoint.SensitivityLabelDetails:class) objects in this collection.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: The number of `SensitivityLabelDetails` objects.
   - name: getItem(id)
     uid: powerpoint!PowerPoint.SensitivityLabelDetailsCollection#getItem:member(1)
@@ -63,7 +63,7 @@ methods:
     fullName: getItem(id)
     summary: Gets the specified `SensitivityLabelDetails` object in this collection. Throws an `ItemNotFound` error if an item with the specified ID isn't found.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the `SensitivityLabelDetails` object at the specified index in this collection. Throws an `IndexOutOfRange` error if the index is out of range.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -97,9 +97,9 @@ methods:
     uid: powerpoint!PowerPoint.SensitivityLabelDetailsCollection#getItemOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemOrNullObject(id)
-    summary: Gets the specified `SensitivityLabelDetails` object in this collection. If an item with the specified ID isn't found, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets the specified `SensitivityLabelDetails` object in this collection. If an item with the specified ID isn't found, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -117,7 +117,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -135,7 +135,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -153,7 +153,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -161,7 +161,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.SensitivityLabelDetailsCollection:class" />
         description: ''
@@ -171,7 +171,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SensitivityLabelDetailsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -179,4 +179,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

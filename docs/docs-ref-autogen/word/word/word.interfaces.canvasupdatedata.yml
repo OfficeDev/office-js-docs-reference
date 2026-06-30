@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Canvas](/javascript/api/word/word.canvas): [set](/javascript/api/word/word.canvas#word-word-canvas-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -997,6 +997,7 @@ interfaces:
   - excel!Excel.Interfaces.WorksheetUpdateData:interface
   - excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
   - excel!Excel.LinkedEntityCellValue:interface
+  - excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
   - excel!Excel.LinkedEntityDataDomainCreateOptions:interface
   - excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface
@@ -1104,7 +1105,7 @@ functions:
 
       Note: The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy." [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1115,35 +1116,13 @@ functions:
           type: string
       return:
         type: Promise&lt;void&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const myFile = <HTMLInputElement>document.getElementById("file");
-          const reader = new FileReader();
-
-          reader.onload = (event) => {
-              Excel.run((context) => {
-              // Remove the metadata before the base64-encoded string.
-              const startIndex = reader.result.toString().indexOf("base64,");
-              const mybase64 = reader.result.toString().substr(startIndex + 7);
-
-              Excel.createWorkbook(mybase64);
-              return context.sync();
-              });
-          };
-
-          // Read in the file as a data URL so we can parse the base64-encoded string.
-          reader.readAsDataURL(myFile.files[0]);
-          ```
+        description: ''
   - name: Excel.getDataCommonPostprocess(response, callArgs)
     uid: excel!Excel.getDataCommonPostprocess:function(1)
     package: excel!
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1163,7 +1142,7 @@ functions:
     package: excel!
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1180,7 +1159,7 @@ functions:
     package: excel!
     summary: Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1191,25 +1170,13 @@ functions:
           type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // *.run methods automatically create an OfficeExtension.ClientRequestContext
-          // object to work with the Office file.
-          await Excel.run(async (context: Excel.RequestContext) => {
-            const workbook = context.workbook;
-            // Interact with the Excel workbook...
-          });
-          ```
+        description: ''
   - name: Excel.run(object, batch)
     uid: excel!Excel.run:function(2)
     package: excel!
     summary: Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1229,7 +1196,7 @@ functions:
     package: excel!
     summary: Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1249,7 +1216,7 @@ functions:
     package: excel!
     summary: Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1269,7 +1236,7 @@ functions:
     package: excel!
     summary: Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

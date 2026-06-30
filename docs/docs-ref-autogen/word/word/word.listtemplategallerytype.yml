@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection): [getByType](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-getbytype-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bullets
     uid: word!Word.ListTemplateGalleryType.bullets:member
     package: word!
-    summary: |-
-      Represents the bullet list gallery.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the bullet list gallery.
     value: '"Bullets"'
   - name: number
     uid: word!Word.ListTemplateGalleryType.number:member
     package: word!
-    summary: |-
-      Represents the number list gallery.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the number list gallery.
     value: '"Number"'
   - name: outlineNumbered
     uid: word!Word.ListTemplateGalleryType.outlineNumbered:member
     package: word!
-    summary: |-
-      Represents the outline number list gallery.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Represents the outline number list gallery.
     value: '"OutlineNumbered"'

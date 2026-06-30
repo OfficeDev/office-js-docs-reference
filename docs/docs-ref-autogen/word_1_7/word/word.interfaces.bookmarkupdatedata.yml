@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BookmarkUpdateData
 summary: An interface for updating data on the `Bookmark` object, for use in `bookmark.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

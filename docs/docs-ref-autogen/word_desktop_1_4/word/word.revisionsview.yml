@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.RevisionsFilter](/javascript/api/word/word.revisionsfilter): [view](/javascript/api/word/word.revisionsfilter#word-word-revisionsfilter-view-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: final
     uid: word!Word.RevisionsView.final:member
     package: word!
-    summary: |-
-      Final view.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Final view.
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
     package: word!
-    summary: |-
-      Original view.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Original view.
     value: '"Original"'

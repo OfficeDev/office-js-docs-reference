@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CommentReplyData
 summary: An interface describing the data returned by calling `commentReply.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment reply's author.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     fullName: content
     summary: Specifies the comment reply's content. The string is plain text.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     fullName: contentRange
     summary: Specifies the commentReply's content range.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ properties:
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ properties:
     fullName: id
     summary: Gets the ID of the comment reply.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +94,7 @@ properties:
     fullName: parentComment
     summary: Gets the parent comment of this reply.
     remarks: '\[Api set: WordApi 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

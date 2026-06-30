@@ -14,23 +14,7 @@ remarks: |-
   - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertInlinePictureFromBase64](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))
   - [Word.Range](/javascript/api/word/word.range): [insertInlinePictureFromBase64](/javascript/api/word/word.range#word-word-range-insertinlinepicturefrombase64-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
-
-  // Inserts an image anchored to the last paragraph.
-  await Word.run(async (context) => {
-    context.document.body.paragraphs
-      .getLast()
-      .insertParagraph("", "After")
-      .insertInlinePictureFromBase64(base64Image, "End");
-
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -41,7 +25,7 @@ properties:
     fullName: altTextDescription
     summary: Specifies a string that represents the alternative text associated with the inline image.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +38,7 @@ properties:
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +51,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +64,7 @@ properties:
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +77,7 @@ properties:
     fullName: hyperlink
     summary: Specifies a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +90,7 @@ properties:
     fullName: lockAspectRatio
     summary: Specifies whether the inline image retains its original proportions when you resize it.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +103,7 @@ properties:
     fullName: paragraph
     summary: Gets the parent paragraph that contains the inline image.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +116,7 @@ properties:
     fullName: parentContentControl
     summary: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,7 +129,7 @@ properties:
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +143,7 @@ methods:
     fullName: delete()
     summary: Deletes the inline picture from the document.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,35 +156,14 @@ methods:
     package: word!
     fullName: getBase64ImageSrc()
     summary: Gets the Base64-encoded string representation of the inline image.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
-
-      // Gets the first image in the document.
-      await Word.run(async (context) => {
-        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
-        firstPicture.load("width, height, imageFormat");
-
-        await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
-        // Get the image encoded as Base64.
-        const base64 = firstPicture.getBase64ImageSrc();
-
-        await context.sync();
-        console.log(base64.value);
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: insertBreak(breakType, insertLocation)
     uid: word!Word.InlinePicture#insertBreak:member(1)
@@ -208,7 +171,7 @@ methods:
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,7 +192,7 @@ methods:
     fullName: insertContentControl()
     summary: Wraps the inline picture with a rich text content control.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +209,7 @@ methods:
       [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,7 +230,7 @@ methods:
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -288,7 +251,7 @@ methods:
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts an inline picture at the specified location.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,7 +272,7 @@ methods:
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -330,7 +293,7 @@ methods:
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,7 +314,7 @@ methods:
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -372,7 +335,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -390,7 +353,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -408,7 +371,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -434,7 +397,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -452,7 +415,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
     remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -470,7 +433,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -481,7 +444,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.InlinePictureUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -491,7 +454,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -509,7 +472,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.InlinePicture` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -523,7 +486,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -537,7 +500,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -545,4 +508,4 @@ methods:
       return:
         type: <xref uid="word!Word.InlinePicture:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

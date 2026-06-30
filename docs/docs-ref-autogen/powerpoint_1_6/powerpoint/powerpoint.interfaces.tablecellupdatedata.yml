@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellUpdateData
 summary: An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

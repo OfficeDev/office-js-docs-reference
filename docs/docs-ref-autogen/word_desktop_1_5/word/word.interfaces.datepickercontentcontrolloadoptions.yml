@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.DatePickerContentControlLoadOptions
 summary: Represents the `DatePickerContentControl` object.
 remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +42,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#color:member
     package: word!
     fullName: color
-    summary: Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the '\#RRGGBB' format.
+    summary: >-
+      Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the
+      '\#RRGGBB' format.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: dateCalendarType
     summary: Specifies a `CalendarType` value that represents the calendar type for the date picker content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +72,7 @@ properties:
     fullName: dateDisplayFormat
     summary: Specifies the format in which dates are displayed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +83,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#dateDisplayLocale:member
     package: word!
     fullName: dateDisplayLocale
-    summary: Specifies a `LanguageId` that represents the language format for the date displayed in the date picker content control.
+    summary: >-
+      Specifies a `LanguageId` that represents the language format for the date displayed in the date picker content
+      control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +98,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#dateStorageFormat:member
     package: word!
     fullName: dateStorageFormat
-    summary: Specifies a `ContentControlDateStorageFormat` value that represents the format for storage and retrieval of dates when the date picker content control is bound to the XML data store of the active document.
+    summary: >-
+      Specifies a `ContentControlDateStorageFormat` value that represents the format for storage and retrieval of dates
+      when the date picker content control is bound to the XML data store of the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +115,7 @@ properties:
     fullName: id
     summary: Gets the identification for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +126,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#isTemporary:member
     package: word!
     fullName: isTemporary
-    summary: Specifies whether to remove the content control from the active document when the user edits the contents of the control.
+    summary: >-
+      Specifies whether to remove the content control from the active document when the user edits the contents of the
+      control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +141,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#level:member
     package: word!
     fullName: level
-    summary: Specifies the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.
+    summary: >-
+      Specifies the level of the content control—whether the content control surrounds text, paragraphs, table cells, or
+      table rows; or if it is inline.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,9 +156,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#lockContentControl:member
     package: word!
     fullName: lockContentControl
-    summary: Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the active document, `false` means it can be deleted.
+    summary: >-
+      Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the
+      active document, `false` means it can be deleted.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +171,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#lockContents:member
     package: word!
     fullName: lockContents
-    summary: Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the contents, `false` means the contents are editable.
+    summary: >-
+      Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the
+      contents, `false` means the contents are editable.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +188,7 @@ properties:
     fullName: placeholderText
     summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,7 +201,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the contents of the content control in the active document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +214,7 @@ properties:
     fullName: showingPlaceholderText
     summary: Gets whether the placeholder text for the content control is being displayed.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,7 +227,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +240,7 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,9 +251,11 @@ properties:
     uid: word!Word.Interfaces.DatePickerContentControlLoadOptions#xmlMapping:member
     package: word!
     fullName: xmlMapping
-    summary: Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+    summary: >-
+      Gets an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of
+      the document.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

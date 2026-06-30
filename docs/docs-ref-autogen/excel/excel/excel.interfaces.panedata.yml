@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Pane](/javascript/api/excel/excel.pane): [toJSON](/javascript/api/excel/excel.pane#excel-excel-pane-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: index
     summary: Returns index of the pane.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

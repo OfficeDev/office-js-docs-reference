@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShadingLoadOptions
 summary: Represents the `Shading` object.
 remarks: '\[Api set: WordApi 1.6\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.ShadingLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,11 @@ properties:
     uid: word!Word.Interfaces.ShadingLoadOptions#backgroundPatternColor:member
     package: word!
     fullName: backgroundPatternColor
-    summary: Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the color name.
+    summary: >-
+      Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
     remarks: '\[Api set: WordApi 1.6\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +44,11 @@ properties:
     uid: word!Word.Interfaces.ShadingLoadOptions#foregroundPatternColor:member
     package: word!
     fullName: foregroundPatternColor
-    summary: Specifies the color for the foreground of the object. You can provide the value in the '\#RRGGBB' format or the color name.
+    summary: >-
+      Specifies the color for the foreground of the object. You can provide the value in the '\#RRGGBB' format or the
+      color name.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +59,12 @@ properties:
     uid: word!Word.Interfaces.ShadingLoadOptions#texture:member
     package: word!
     fullName: texture
-    summary: Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see [Add, change, or delete the background color in Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
+    summary: >-
+      Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see [Add,
+      change, or delete the background color in
+      Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

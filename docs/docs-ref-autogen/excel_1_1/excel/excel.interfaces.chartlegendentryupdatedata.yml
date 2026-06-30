@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryUpdateData
 summary: An interface for updating data on the `ChartLegendEntry` object, for use in `chartLegendEntry.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

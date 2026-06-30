@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.WorksheetRowHiddenChangedEventArgs](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs): [changeType](/javascript/api/excel/excel.worksheetrowhiddenchangedeventargs#excel-excel-worksheetrowhiddenchangedeventargs-changetype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       `Hidden` indicates that the row is hidden.
 
-      * [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Hidden"'
   - name: unhidden
     uid: excel!Excel.RowHiddenChangeType.unhidden:member
@@ -28,5 +28,5 @@ fields:
     summary: |-
       `Unhidden` indicates that the row is not hidden.
 
-      * [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unhidden"'

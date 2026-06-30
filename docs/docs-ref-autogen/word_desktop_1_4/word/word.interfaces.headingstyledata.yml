@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.HeadingStyle](/javascript/api/word/word.headingstyle): [toJSON](/javascript/api/word/word.headingstyle#word-word-headingstyle-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: level
     summary: Specifies the level for the heading style in a table of contents or table of figures. Must be a value from 1 to 9.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: name
     summary: Specifies the name of style for a heading.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [toJSON](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: getLabelingCapability
     summary: Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

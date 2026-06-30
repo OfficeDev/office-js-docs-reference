@@ -10,28 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedItemCollection](/javascript/api/excel/excel.nameditemcollection): [getItem](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-getitem-member(1)), [items](/javascript/api/excel/excel.nameditemcollection#excel-excel-nameditemcollection-items-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
-
-  await Excel.run(async (context) => {
-      // Log all the named items in the active worksheet.
-      const namedItems = context.workbook.worksheets.getActiveWorksheet().names.load();
-      await context.sync();
-
-      console.log("This worksheet contains " + namedItems.items.length + " named items.");
-
-      for (let i = 0; i < namedItems.items.length; i++) {
-          const namedItem : Excel.NamedItem = namedItems.items[i];
-          console.log(JSON.stringify(namedItem)) + "\n";
-      }
-
-      await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +34,7 @@ properties:
     fullName: name
     summary: The name of the object.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +47,7 @@ properties:
     fullName: type
     summary: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
     remarks: '[API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +60,7 @@ properties:
     fullName: value
     summary: Represents the value computed by the name's formula. For a named range, it will return the range address. This API returns the \#VALUE! error in the Excel UI if it refers to a user-defined function.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +73,7 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,25 +86,8 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Returns the range object that is associated with the name. Throws an error if the named item's type is not a range.
-    remarks: |-
-      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Returns the Range object that is associated with the name.
-      // Returns `null` if the name is not of type Range.
-      // Note: This API currently supports only the Workbook scoped items.
-      await Excel.run(async (context) => { 
-          const names = context.workbook.names;
-          const range = names.getItem('MyRange').getRange();
-          range.load('address');
-          await context.sync();
-
-          console.log(range.address);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +101,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +119,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,28 +130,14 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.NamedItem:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const names = context.workbook.names;
-              const namedItem = names.getItem('MyRange');
-              namedItem.load('type');
-              await context.sync();
-              
-              console.log(namedItem.type);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.NamedItem#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,7 +163,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,7 +174,7 @@ methods:
           type: <xref uid="excel!Excel.Interfaces.NamedItemUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="excel!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -236,7 +184,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,7 +202,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.NamedItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,4 +210,4 @@ methods:
       return:
         type: <xref uid="excel!Excel.Interfaces.NamedItemData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="excel!~OfficeExtension.ClientObject:class" />

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [setValidationError](/javascript/api/word/word.xmlnode#word-word-xmlnode-setvalidationerror-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: clearedAutomatically
     summary: If provided, specifies whether the validation error should be cleared automatically. The default value is `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: errorText
     summary: If provided, specifies the error text to display for the validation error.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

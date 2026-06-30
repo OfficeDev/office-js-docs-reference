@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue): [errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#NAME? in Excel.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: unsupportedFunction
     uid: excel!Excel.NameErrorCellValueSubType.unsupportedFunction:member
@@ -28,5 +28,5 @@ fields:
     summary: |-
       An error caused by a formula containing an unsupported function. Displays as error type \#NAME? in Excel.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnsupportedFunction"'

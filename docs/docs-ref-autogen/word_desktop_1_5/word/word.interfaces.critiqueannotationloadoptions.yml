@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CritiqueAnnotationLoadOptions
 summary: Represents an annotation wrapper around critique displayed in the document.
 remarks: '\[Api set: WordApi 1.7\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.CritiqueAnnotationLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
     remarks: '\[Api set: WordApi 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: range
     summary: Gets the range of text that is annotated.
     remarks: '\[Api set: WordApi 1.7\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

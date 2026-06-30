@@ -10,39 +10,27 @@ remarks: |-
   #### Used by
 
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [level](/javascript/api/word/word.xmlnode#word-word-xmlnode-level-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: cell
     uid: word!Word.XmlNodeLevel.cell:member
     package: word!
-    summary: |-
-      Cell node level.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Cell node level.
     value: '"Cell"'
   - name: inline
     uid: word!Word.XmlNodeLevel.inline:member
     package: word!
-    summary: |-
-      Inline node level.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inline node level.
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.XmlNodeLevel.paragraph:member
     package: word!
-    summary: |-
-      Paragraph node level.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Paragraph node level.
     value: '"Paragraph"'
   - name: row
     uid: word!Word.XmlNodeLevel.row:member
     package: word!
-    summary: |-
-      Row node level.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Row node level.
     value: '"Row"'

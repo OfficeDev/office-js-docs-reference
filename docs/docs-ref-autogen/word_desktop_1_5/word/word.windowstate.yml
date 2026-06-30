@@ -5,31 +5,22 @@ package: word!
 fullName: Word.WindowState
 summary: Represents the state of the window.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: maximize
     uid: word!Word.WindowState.maximize:member
     package: word!
-    summary: |-
-      Represents the maximized state of the window.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Represents the maximized state of the window.
     value: '"Maximize"'
   - name: minimize
     uid: word!Word.WindowState.minimize:member
     package: word!
-    summary: |-
-      Represents the minimized state of the window.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Represents the minimized state of the window.
     value: '"Minimize"'
   - name: normal
     uid: word!Word.WindowState.normal:member
     package: word!
-    summary: |-
-      Represents the normal state of the window.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Represents the normal state of the window.
     value: '"Normal"'

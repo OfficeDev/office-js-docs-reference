@@ -3,9 +3,15 @@ name: Office.InitializationContextChangedEventArgs
 uid: outlook!Office.InitializationContextChangedEventArgs:interface
 package: outlook!
 fullName: Office.InitializationContextChangedEventArgs
-summary: Provides data from an [actionable message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->, [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields) notification, [Smart Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog when the `Office.EventType.InitializationContextChanged` event occurs.
+summary: >-
+  Provides data from an [actionable message](https://learn.microsoft.com/outlook/actionable-messages)<!-- -->,
+  [InsightMessage](https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
+  notification, [Smart
+  Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) dialog, or
+  [integrated spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) dialog when the
+  `Office.EventType.InitializationContextChanged` event occurs.
 remarks: '\[Api set: Mailbox 1.15\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +20,11 @@ properties:
     uid: outlook!Office.InitializationContextChangedEventArgs#initializationContextData:member
     package: outlook!
     fullName: initializationContextData
-    summary: Represents the data to be passed to an add-in's task pane from an actionable message, notification message, Smart Alerts dialog, or integrated spam-reporting dialog.
+    summary: >-
+      Represents the data to be passed to an add-in's task pane from an actionable message, notification message, Smart
+      Alerts dialog, or integrated spam-reporting dialog.
     remarks: '\[Api set: Mailbox 1.15\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +35,11 @@ properties:
     uid: outlook!Office.InitializationContextChangedEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: Represents the type of the event. For details, refer to [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    summary: >-
+      Represents the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[Api set: Mailbox 1.15\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

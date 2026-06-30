@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Window](/javascript/api/word/word.window): [largeScroll](/javascript/api/word/word.window#word-word-window-largescroll-member(1)), [smallScroll](/javascript/api/word/word.window#word-word-window-smallscroll-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: down
     summary: If provided, specifies the number of units to scroll the window down. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three units.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: left
     summary: If provided, specifies the number of screens to scroll the window to the left. If `left` and `right` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `left` is 3 and `right` is 6, the contents are scrolled to the right three screens.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: right
     summary: If provided, specifies the number of screens to scroll the window to the right. If `left` and `right` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `left` is 3 and `right` is 6, the contents are scrolled to the right three screens.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: up
     summary: If provided, specifies the number of units to scroll the window up. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three units.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

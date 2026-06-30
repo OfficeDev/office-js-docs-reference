@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.SlicerItem](/javascript/api/excel/excel.sliceritem): [set](/javascript/api/excel/excel.sliceritem#excel-excel-sliceritem-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: isSelected
     summary: Value is `true` if the slicer item is selected. Setting this value will not clear the selected state of other slicer items. By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

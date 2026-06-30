@@ -3,9 +3,11 @@ name: Word.Interfaces.CanvasLoadOptions
 uid: word!Word.Interfaces.CanvasLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CanvasLoadOptions
-summary: Represents a canvas in the document. To get the corresponding [Word.Shape](xref:word!Word.Shape:class) object, use `Canvas.shape`<!-- -->.
+summary: >-
+  Represents a canvas in the document. To get the corresponding [Word.Shape](xref:word!Word.Shape:class) object, use
+  `Canvas.shape`<!-- -->.
 remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,11 @@ properties:
     uid: word!Word.Interfaces.CanvasLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the canvas identifier.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

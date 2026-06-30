@@ -13,39 +13,7 @@ remarks: |-
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member), [onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member), [onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)
   - [Word.Range](/javascript/api/word/word.range): [onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member), [onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member), [onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member), [onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
-  // Registers event handlers.
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.track();
-    await context.sync();
-
-    eventContexts[0] = body.onCommentAdded.add(onEventHandler);
-    eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
-    eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
-    eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
-    eventContexts[4] = body.onCommentSelected.add(onEventHandler);
-    await context.sync();
-
-    console.log("Event handlers registered.");
-  });
-
-  ...
-
-  async function onChangedHandler(event: Word.CommentEventArgs) {
-    await Word.run(async (context) => {
-      console.log(
-        `${event.type} event detected. ${event.changeType} change made. Event source: ${event.source}. Comment info:`, event.commentDetails
-      );
-    });
-  }
-  ```
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -56,7 +24,7 @@ properties:
     fullName: changeType
     summary: Represents how the `commentChanged` event is raised.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -69,7 +37,7 @@ properties:
     fullName: commentDetails
     summary: Gets the `CommentDetail` array which contains the IDs and reply IDs of the involved comments.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -82,7 +50,7 @@ properties:
     fullName: source
     summary: Specifies the source of the event. It can be local or remote (through coauthoring).
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -95,7 +63,7 @@ properties:
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

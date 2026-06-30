@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CoauthorData
 summary: An interface describing the data returned by calling `coauthor.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

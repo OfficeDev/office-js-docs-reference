@@ -10,26 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [setPatternFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setpatternfill-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
-
-  // Sets the background of the first selected slide to a diagonal cross pattern fill.
-  await PowerPoint.run(async (context) => {
-    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-    slide.background.fill.setPatternFill({
-      foregroundColor: "#1F3864",
-      backgroundColor: "#D6E4F7",
-      pattern: PowerPoint.SlideBackgroundPatternFillType.diagonalCross,
-    } as PowerPoint.SlideBackgroundPatternFillOptions);
-    await context.sync();
-
-    console.log("Background set to diagonal cross pattern fill.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -40,7 +21,7 @@ properties:
     fullName: backgroundColor
     summary: If provided, specifies the background color in HTML color format (e.g., "\#FFFFFF" or "white").
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +34,7 @@ properties:
     fullName: foregroundColor
     summary: If provided, specifies the foreground color in HTML color format (e.g., "\#FFA500" or "orange").
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +47,7 @@ properties:
     fullName: pattern
     summary: If provided, specifies the pattern type.
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

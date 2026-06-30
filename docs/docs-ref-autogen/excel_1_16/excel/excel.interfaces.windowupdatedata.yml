@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WindowUpdateData
 summary: An interface for updating data on the `Window` object, for use in `window.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

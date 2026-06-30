@@ -5,39 +5,27 @@ package: word!
 fullName: Word.XmlNodeLevel
 summary: Specifies the level of an XML node.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: cell
     uid: word!Word.XmlNodeLevel.cell:member
     package: word!
-    summary: |-
-      Cell node level.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Cell node level.
     value: '"Cell"'
   - name: inline
     uid: word!Word.XmlNodeLevel.inline:member
     package: word!
-    summary: |-
-      Inline node level.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Inline node level.
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.XmlNodeLevel.paragraph:member
     package: word!
-    summary: |-
-      Paragraph node level.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Paragraph node level.
     value: '"Paragraph"'
   - name: row
     uid: word!Word.XmlNodeLevel.row:member
     package: word!
-    summary: |-
-      Row node level.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Row node level.
     value: '"Row"'

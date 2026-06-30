@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Revision](/javascript/api/word/word.revision): [set](/javascript/api/word/word.revision#word-word-revision-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: movedRange
     summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

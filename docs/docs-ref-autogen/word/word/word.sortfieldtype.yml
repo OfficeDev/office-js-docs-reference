@@ -10,63 +10,42 @@ remarks: |-
   #### Used by
 
   - [Word.TableSortOptions](/javascript/api/word/word.tablesortoptions): [sortFieldType](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype-member), [sortFieldType2](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype2-member), [sortFieldType3](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-sortfieldtype3-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: alphanumeric
     uid: word!Word.SortFieldType.alphanumeric:member
     package: word!
-    summary: |-
-      Sorts content alphanumerically.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content alphanumerically.
     value: '"Alphanumeric"'
   - name: date
     uid: word!Word.SortFieldType.date:member
     package: word!
-    summary: |-
-      Sorts content by date.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content by date.
     value: '"Date"'
   - name: japanJis
     uid: word!Word.SortFieldType.japanJis:member
     package: word!
-    summary: |-
-      Sorts content using the Japanese JIS standard.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content using the Japanese JIS standard.
     value: '"JapanJis"'
   - name: koreaKs
     uid: word!Word.SortFieldType.koreaKs:member
     package: word!
-    summary: |-
-      Sorts content using the Korean KS standard.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content using the Korean KS standard.
     value: '"KoreaKs"'
   - name: numeric
     uid: word!Word.SortFieldType.numeric:member
     package: word!
-    summary: |-
-      Sorts content numerically.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content numerically.
     value: '"Numeric"'
   - name: stroke
     uid: word!Word.SortFieldType.stroke:member
     package: word!
-    summary: |-
-      Sorts content by stroke count.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content by stroke count.
     value: '"Stroke"'
   - name: syllable
     uid: word!Word.SortFieldType.syllable:member
     package: word!
-    summary: |-
-      Sorts content by syllables.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Sorts content by syllables.
     value: '"Syllable"'

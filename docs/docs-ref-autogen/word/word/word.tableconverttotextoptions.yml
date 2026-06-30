@@ -12,7 +12,7 @@ remarks: |-
   - [Word.Table](/javascript/api/word/word.table): [convertToText](/javascript/api/word/word.table#word-word-table-converttotext-member(1))
   - [Word.TableRow](/javascript/api/word/word.tablerow): [convertToText](/javascript/api/word/word.tablerow#word-word-tablerow-converttotext-member(1))
   - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [convertToText](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-converttotext-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +23,7 @@ properties:
     fullName: nestedTables
     summary: If provided, specifies whether to convert the nested tables to text. This property is ignored if the `separator` property isn't set to `paragraph`<!-- -->. The default is `true`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     fullName: separator
     summary: If provided, specifies the character that delimits the converted columns (paragraph marks delimit the converted rows). The default is `tab`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

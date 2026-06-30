@@ -10,31 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [exportAsFixedFormat](/javascript/api/word/word.document#word-word-document-exportasfixedformat-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
-
-  await Word.run(async (context) => {
-    const document: Word.Document = context.document;
-
-    // Export the current document as a PDF saved in your default location, usually Documents.
-    const filename = `exported-doc-${getCurrentDate()}.pdf`;
-    console.log(`File name: ${filename}`);
-    const options: Word.DocumentExportAsFixedFormatOptions = {
-      item: Word.ExportItem.documentContent,
-      openAfterExport: true,
-      optimizeFor: Word.ExportOptimizeFor.onScreen,
-    };
-
-    // If a file with the same name already exists at the default location, it's silently overwritten.
-    document.exportAsFixedFormat(filename, Word.ExportFormat.pdf, options);
-
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -45,7 +21,7 @@ properties:
     fullName: bitmapMissingFonts
     summary: If provided, specifies whether to bitmap missing fonts. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -58,7 +34,7 @@ properties:
     fullName: createBookmarks
     summary: If provided, specifies the bookmark creation mode. The default value is `none`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -71,7 +47,7 @@ properties:
     fullName: documentStructureTags
     summary: If provided, specifies whether to include document structure tags. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -84,7 +60,7 @@ properties:
     fullName: fixedFormatExtensionClassPointer
     summary: If provided, specifies the extension class pointer. The default value is `null`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -97,7 +73,7 @@ properties:
     fullName: from
     summary: If provided, specifies the starting page number. The default value is `1`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,7 +86,7 @@ properties:
     fullName: includeDocProps
     summary: If provided, specifies whether to include document properties. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -123,7 +99,7 @@ properties:
     fullName: item
     summary: If provided, specifies the item to export. The default value is `documentContent`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -136,7 +112,7 @@ properties:
     fullName: keepInformationRightsManagement
     summary: If provided, specifies whether to keep Information Rights Management (IRM) settings. The default value is `true`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -149,7 +125,7 @@ properties:
     fullName: openAfterExport
     summary: If provided, specifies whether to open the file after export. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -162,7 +138,7 @@ properties:
     fullName: optimizeFor
     summary: If provided, specifies the optimization target for the export. The default value is `print`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -175,7 +151,7 @@ properties:
     fullName: range
     summary: If provided, specifies the range to export. The default value is `allDocument`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -188,7 +164,7 @@ properties:
     fullName: to
     summary: If provided, specifies the ending page number. The default value is the last page of the document.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -201,7 +177,7 @@ properties:
     fullName: useIso19005_1
     summary: If provided, specifies whether to use [ISO 19005-1 compliance](https://www.iso.org/standard/38920.html)<!-- -->. The default value is `false`<!-- -->.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

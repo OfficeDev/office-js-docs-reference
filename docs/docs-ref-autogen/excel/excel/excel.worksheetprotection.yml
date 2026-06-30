@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [protection](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-protection-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: allowEditRanges
     summary: Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange` objects, which work with worksheet protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: savedOptions
     summary: Specifies the protection options saved in the worksheet. This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ methods:
     fullName: checkPassword(password)
     summary: Specifies if the password can be used to unlock worksheet protection. This method doesn't change the worksheet protection state. If a password is entered but no password is required to unlock worksheet protection, this method will return false.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +144,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +162,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +180,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +206,7 @@ methods:
     fullName: pauseProtection(password)
     summary: Pauses worksheet protection for the given worksheet object for the user in the current session. This method does nothing if worksheet protection isn't enabled or is already paused. If the password is incorrect, then this method throws an `InvalidArgument` error and fails to pause protection. This method does not change the protection state if worksheet protection is not enabled or already paused.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,28 +223,8 @@ methods:
     package: excel!
     fullName: protect(options, password)
     summary: Protects a worksheet. Fails if the worksheet has already been protected.
-    remarks: |-
-      [API set: ExcelApi 1.2 for options; 1.7 for password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-      let password = await passwordHandler();
-      passwordHelper(password);
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.load("protection/protected");
-
-          await context.sync();
-
-          if (!activeSheet.protection.protected) {
-              activeSheet.protection.protect(null, password);
-          }
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.2 for options; 1.7 for password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -265,7 +245,7 @@ methods:
     fullName: resumeProtection()
     summary: Resumes worksheet protection for the given worksheet object for the user in a given session. Worksheet protection must be paused for this method to work. If worksheet protection is not paused, then this method will not change the protection state of the worksheet.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,7 +259,7 @@ methods:
     fullName: setPassword(password)
     summary: Changes the password associated with the `WorksheetProtection` object. Setting the password as an empty string ("") or as `null` will remove password protection from the `WorksheetProtection` object. Worksheet protection must be enabled and paused for this method to work properly. If worksheet protection is disabled, this method throws an `InvalidOperation` error and fails to change the password. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the password.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +277,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.WorksheetProtection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,22 +290,8 @@ methods:
     package: excel!
     fullName: unprotect(password)
     summary: Unprotects a worksheet.
-    remarks: |-
-      [API set: ExcelApi 1.7 for password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-      let password = await passwordHandler();
-      passwordHelper(password);
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.protection.unprotect(password);
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.7 for password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,7 +309,7 @@ methods:
     fullName: updateOptions(options)
     summary: Change the worksheet protection options associated with the `WorksheetProtection` object. Worksheet protection must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the worksheet protection options.
     remarks: '[API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

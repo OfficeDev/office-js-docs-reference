@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.EmptyCellControl
 summary: Represents an empty cell control. This represents the state where a cell does not have a control.
 remarks: '[API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: type
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

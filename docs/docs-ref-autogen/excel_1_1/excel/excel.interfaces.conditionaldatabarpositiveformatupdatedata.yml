@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
 summary: An interface for updating data on the `ConditionalDataBarPositiveFormat` object, for use in `conditionalDataBarPositiveFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

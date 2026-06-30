@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartLeaderLinesFormat](/javascript/api/excel/excel.chartleaderlinesformat): [set](/javascript/api/excel/excel.chartleaderlinesformat#excel-excel-chartleaderlinesformat-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: line
     summary: Gets an object that represents the line formatting of chart leader lines.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

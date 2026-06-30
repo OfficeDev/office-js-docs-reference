@@ -3,12 +3,17 @@ name: Office.DroppedItemDetails
 uid: outlook!Office.DroppedItemDetails:interface
 package: outlook!
 fullName: Office.DroppedItemDetails
-summary: Provides the contents and details of the message or file attachment being dragged and dropped into an add-in's task pane.
-remarks: |-
+summary: >-
+  Provides the contents and details of the message or file attachment being dragged and dropped into an add-in's task
+  pane.
+remarks: >-
   \[Api set: Mailbox 1.5\]
 
-  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
+  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and
+  drop messages and attachments into the task pane of an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,11 +23,13 @@ properties:
     package: outlook!
     fullName: fileContent
     summary: Gets the contents of the file being dragged and dropped.
-    remarks: |-
+    remarks: >-
       \[Api set: Mailbox 1.5\]
 
-      For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File API documentation](https://developer.mozilla.org/docs/Web/API/Blob)<!-- -->.
 
+      For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File API
+      documentation](https://developer.mozilla.org/docs/Web/API/Blob)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +42,7 @@ properties:
     fullName: name
     summary: Gets the name of the file being dragged and dropped.
     remarks: '\[Api set: Mailbox 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,8 +57,8 @@ properties:
     remarks: |-
       \[Api set: Mailbox 1.5\]
 
-      **Important**: When a message is dragged into an add-in's task pane, it's dropped as a .eml file.
-
+      \*\*Important\*\*: When a message is dragged into an add-in's task pane, it's dropped as a .eml file.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

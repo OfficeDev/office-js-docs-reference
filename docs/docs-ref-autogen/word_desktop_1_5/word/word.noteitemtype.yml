@@ -5,23 +5,17 @@ package: word!
 fullName: Word.NoteItemType
 summary: Note item type.
 remarks: '\[Api set: WordApi 1.5\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: endnote
     uid: word!Word.NoteItemType.endnote:member
     package: word!
-    summary: |-
-      Endnote type.
-
-      * \[Api set: WordApi 1.5\]
+    summary: Endnote type.
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.NoteItemType.footnote:member
     package: word!
-    summary: |-
-      Footnote type.
-
-      * \[Api set: WordApi 1.5\]
+    summary: Footnote type.
     value: '"Footnote"'

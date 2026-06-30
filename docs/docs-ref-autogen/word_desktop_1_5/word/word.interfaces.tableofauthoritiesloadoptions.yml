@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesLoadOptions
 summary: Represents a table of authorities in a Word document.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: bookmark
     summary: Specifies the name of the bookmark from which to collect table of authorities entries.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +42,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#category:member
     package: word!
     fullName: category
-    summary: Specifies the category of entries to be included in the table of authorities. Values 0 through 16 correspond to the items listed in the Category box of the Table of Authorities dialog. To learn how to access this through the Word UI, see [Create a table of authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.
+    summary: >-
+      Specifies the category of entries to be included in the table of authorities. Values 0 through 16 correspond to
+      the items listed in the Category box of the Table of Authorities dialog. To learn how to access this through the
+      Word UI, see [Create a table of
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +59,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#entrySeparator:member
     package: word!
     fullName: entrySeparator
-    summary: Specifies a separator of up to five characters. This appears between the table of authorities entry and its page number.
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the table of authorities entry and its page
+      number.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +76,7 @@ properties:
     fullName: isCategoryHeaderIncluded
     summary: Specifies whether the category name for a group of entries appears in the table of authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +89,7 @@ properties:
     fullName: isEntryFormattingKept
     summary: Specifies whether the entries in the table of authorities are displayed with their formatting in the table.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +100,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#isPassimUsed:member
     package: word!
     fullName: isPassimUsed
-    summary: Specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".
+    summary: >-
+      Specifies whether references to the same authority that are repeated on five or more pages are replaced with
+      "Passim".
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +115,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#pageNumberSeparator:member
     package: word!
     fullName: pageNumberSeparator
-    summary: Specifies a separator of up to five characters. This appears between individual page references in the table of authorities.
+    summary: >-
+      Specifies a separator of up to five characters. This appears between individual page references in the table of
+      authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +132,7 @@ properties:
     fullName: pageRangeSeparator
     summary: Specifies a separator of up to five characters. This appears between ranges of pages in the table of authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +145,7 @@ properties:
     fullName: range
     summary: Gets the portion of a document that is this table of authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,9 +156,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#sequenceName:member
     package: word!
     fullName: sequenceName
-    summary: Specifies the [Sequence (SEQ) field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be) identifier for the table of authorities.
+    summary: >-
+      Specifies the [Sequence (SEQ) field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be)
+      identifier for the table of authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +171,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#sequenceSeparator:member
     package: word!
     fullName: sequenceSeparator
-    summary: Specifies a separator of up to five characters. This appears between the sequence number and the page number in the table of authorities.
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the sequence number and the page number in
+      the table of authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,9 +186,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesLoadOptions#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: Specifies the leader character that appears between entries and their associated page numbers in the table of authorities.
+    summary: >-
+      Specifies the leader character that appears between entries and their associated page numbers in the table of
+      authorities.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

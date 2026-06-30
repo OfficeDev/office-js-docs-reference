@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.EditorUpdateData
 summary: An interface for updating data on the `Editor` object, for use in `editor.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: nextRange
     summary: Gets a `Range` object that represents the next range that the editor has permissions to modify.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: range
     summary: Gets a `Range` object that represents the portion of the document that's contained in the `Editor` object.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

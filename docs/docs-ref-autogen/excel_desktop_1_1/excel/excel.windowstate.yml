@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Window](/javascript/api/excel/excel.window): [windowState](/javascript/api/excel/excel.window#excel-excel-window-windowstate-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       The window is maximized to fill the entire screen.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"maximized"'
   - name: minimized
     uid: excel!Excel.WindowState.minimized:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The window is minimized and collapsed to the taskbar.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"minimized"'
   - name: normal
     uid: excel!Excel.WindowState.normal:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       The window is displayed in normal size and can be moved or resized.
 
-      * [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"normal"'

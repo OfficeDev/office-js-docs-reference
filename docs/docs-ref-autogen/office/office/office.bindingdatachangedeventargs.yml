@@ -5,38 +5,10 @@ package: office!
 fullName: Office.BindingDataChangedEventArgs
 summary: Provides information about the binding that raised the DataChanged event.
 remarks: |-
-
-
   #### Used by
 
   - [Office.RemoveHandlerOptions](/javascript/api/office/office.removehandleroptions): [handler](/javascript/api/office/office.removehandleroptions#office-office-removehandleroptions-handler-member)
-
-  #### Examples
-
-  ```TypeScript
-  // When data in a binding changes, the handler receives a BindingDataChangedEventArgs object
-  // containing the binding that changed and the event type.
-  function addDataChangeHandler() {
-      Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              asyncResult.value.addHandlerAsync(Office.EventType.BindingDataChanged, onDataChanged);
-          }
-      });
-  }
-
-  function onDataChanged(eventArgs: Office.BindingDataChangedEventArgs) {
-      console.log("Event type: " + eventArgs.type);
-      console.log("Binding ID: " + eventArgs.binding.id);
-      
-      // Refresh data from the binding
-      eventArgs.binding.getDataAsync( { coercionType: Office.CoercionType.Text }, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("Updated data: " + asyncResult.value);
-          }
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,7 +19,7 @@ properties:
     fullName: binding
     summary: Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the DataChanged event.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +32,7 @@ properties:
     fullName: type
     summary: Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event that was raised.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

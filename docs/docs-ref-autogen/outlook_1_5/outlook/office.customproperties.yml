@@ -18,9 +18,9 @@ remarks: |-
 
   - Outlook on Mac doesn't cache custom properties. If the user's network goes down, mail add-ins can't access their custom properties.
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
   #### Used by
 
@@ -28,7 +28,7 @@ remarks: |-
   - [Office.AppointmentRead](/javascript/api/outlook/office.appointmentread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-loadcustompropertiesasync-member(1))
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [loadCustomPropertiesAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -41,20 +41,10 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-      const propertyName = (document.getElementById("get-property-name") as HTMLInputElement).value;
-      const propertyValue = customProps.get(propertyName);
-      console.log(`The value of custom property "${propertyName}" is "${propertyValue}".`);
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,22 +65,12 @@ methods:
 
       To make the removal of the property permanent, you must call the `saveAsync` method of the `CustomProperties` object.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `remove` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-      const propertyName = (document.getElementById("remove-property-name") as HTMLInputElement).value;
-      customProps.remove(propertyName);
-      console.log(`Custom property "${propertyName}" removed.`);
-      ```
-
+      \*\*Important\*\*: The `remove` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,31 +95,16 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **Important**: In Outlook on Windows, custom properties saved while in compose mode only persist after the item being composed is closed or after `Office.context.mailbox.item.saveAsync` is called.
+      \*\*Important\*\*: In Outlook on Windows, custom properties saved while in compose mode only persist after the item being composed is closed or after `Office.context.mailbox.item.saveAsync` is called.
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-      customProps.saveAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`saveAsync failed with message ${result.error.message}`);
-          return;
-        }
-
-        console.log(`Custom properties saved with status: ${result.status}`);
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'saveAsync(callback: (asyncResult: Office.AsyncResult<void>) => void, asyncContext?: any): void;'
+      content: 'saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<void>) => void, asyncContext?: any): void;'
       parameters:
         - id: callback
           description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
@@ -163,10 +128,10 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,23 +156,12 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-      **Important**: The `set` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-      const propertyName = (document.getElementById("set-property-name") as HTMLInputElement).value;
-      const propertyValue = (document.getElementById("property-value") as HTMLInputElement).value;
-      customProps.set(propertyName, propertyValue);
-      console.log(`Custom property "${propertyName}" set to value "${propertyValue}".`);
-      ```
-
+      \*\*Important\*\*: The `set` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

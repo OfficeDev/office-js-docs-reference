@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.Field](/javascript/api/word/word.field): [set](/javascript/api/word/word.field#word-word-field-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
       [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The ability to set the code was introduced in WordApi 1.5.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

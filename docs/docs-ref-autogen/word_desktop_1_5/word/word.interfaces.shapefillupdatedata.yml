@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShapeFillUpdateData
 summary: An interface for updating data on the `ShapeFill` object, for use in `shapeFill.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: backgroundColor
     summary: Specifies the shape fill background color. You can provide the value in the '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     fullName: foregroundColor
     summary: Specifies the shape fill foreground color. You can provide the value in the '\#RRGGBB' format or the color name.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +40,12 @@ properties:
     uid: word!Word.Interfaces.ShapeFillUpdateData#transparency:member
     package: word!
     fullName: transparency
-    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
     remarks: '\[Api set: WordApiDesktop 1.2\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

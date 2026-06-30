@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.ListTemplateGalleryCollection](/javascript/api/word/word.listtemplategallerycollection): [toJSON](/javascript/api/word/word.listtemplategallerycollection#word-word-listtemplategallerycollection-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

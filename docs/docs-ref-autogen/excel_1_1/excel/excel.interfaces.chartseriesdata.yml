@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [toJSON](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: format
     summary: Represents the formatting of a chart series, which includes fill and line formatting.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: name
     summary: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: points
     summary: Returns a collection of all points in the series.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -13,44 +13,22 @@ remarks: |-
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [select](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [select](/javascript/api/word/word.paragraph#word-word-paragraph-select-member(1))
   - [Word.Range](/javascript/api/word/word.range): [select](/javascript/api/word/word.range#word-word-range-select-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
-
-  await Word.run(async (context) => {
-    // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-    context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
-
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: end
     uid: word!Word.SelectionMode.end:member
     package: word!
-    summary: |-
-      The cursor is at the end of the selection (just after the end of the selected range).
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The cursor is at the end of the selection (just after the end of the selected range).
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: |-
-      The entire range is selected.
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The entire range is selected.
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
     package: word!
-    summary: |-
-      The cursor is at the beginning of the selection (just before the start of the selected range).
-
-      * [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The cursor is at the beginning of the selection (just before the start of the selected range).
     value: '"Start"'

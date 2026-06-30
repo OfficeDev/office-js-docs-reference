@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [load](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of this shape.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: group
     summary: Returns the `ShapeGroup` associated with the shape. If the shape type isn't `group`<!-- -->, then this method returns the `GeneralException` error.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: height
     summary: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape.
     remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: left
     summary: The distance, in points, from the left side of the shape to the left side of the slide.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +106,7 @@ properties:
 
       - A level greater than 1 indicates the shape is a nested group.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +119,7 @@ properties:
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +132,7 @@ properties:
     fullName: name
     summary: Specifies the name of this shape.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,7 +145,7 @@ properties:
     fullName: parentGroup
     summary: Returns the parent group of this shape. If the shape isn't part of a group, then this method returns the `GeneralException` error.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +158,7 @@ properties:
     fullName: placeholderFormat
     summary: Returns the properties that apply specifically to this placeholder. If the shape type isn't `placeholder`<!-- -->, then this method returns the `GeneralException` error.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,7 +171,7 @@ properties:
     fullName: textFrame
     summary: Returns the [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object of this `Shape`<!-- -->. Throws an `InvalidArgument` exception if the shape doesn't support a `TextFrame`<!-- -->.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +184,7 @@ properties:
     fullName: top
     summary: The distance, in points, from the top edge of the shape to the top edge of the slide.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +197,7 @@ properties:
     fullName: type
     summary: Returns the type of this shape. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,7 +210,7 @@ properties:
     fullName: width
     summary: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,7 +223,7 @@ properties:
     fullName: zOrderPosition
     summary: Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
     remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

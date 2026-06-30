@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FrameUpdateData
 summary: An interface for updating data on the `Frame` object, for use in `frame.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

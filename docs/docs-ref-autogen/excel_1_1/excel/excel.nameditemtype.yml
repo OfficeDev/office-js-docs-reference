@@ -10,37 +10,37 @@ remarks: |-
   #### Used by
 
   - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [type](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: boolean
     uid: excel!Excel.NamedItemType.boolean:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.NamedItemType.double:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Double"'
   - name: error
     uid: excel!Excel.NamedItemType.error:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Error"'
   - name: integer
     uid: excel!Excel.NamedItemType.integer:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Integer"'
   - name: range
     uid: excel!Excel.NamedItemType.range:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"Range"'
   - name: string
     uid: excel!Excel.NamedItemType.string:member
     package: excel!
-    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    summary: ''
     value: '"String"'

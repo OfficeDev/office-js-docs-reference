@@ -10,27 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-  await Word.run(async (context) => {
-    // Gets the text frame of the first text box in the main document.
-    const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-    shape.load("textFrame");
-    await context.sync();
-
-    if (shape.isNullObject) {
-      console.log("No shapes with text boxes found in the main document.");
-      return;
-    }
-
-    console.log("Text frame of first text box:", shape.textFrame);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -40,34 +20,8 @@ properties:
     package: word!
     fullName: autoSizeSetting
     summary: Specifies the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Sets text frame properties of the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("textFrame");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log("No shapes with text boxes found in the main document.");
-          return;
-        }
-
-        const textFrame: Word.TextFrame = shape.textFrame;
-        textFrame.verticalAlignment = Word.ShapeTextVerticalAlignment.bottom;
-        textFrame.orientation = Word.ShapeTextOrientation.vertical270;
-        textFrame.autoSizeSetting = Word.ShapeAutoSize.shapeToFitText;
-
-        console.log("The first text box's text frame properties were updated:", textFrame);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +34,7 @@ properties:
     fullName: bottomMargin
     summary: Specifies the bottom margin, in points, of the text frame.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +47,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +60,7 @@ properties:
     fullName: hasText
     summary: Returns `true` if the text frame contains text, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +73,7 @@ properties:
     fullName: leftMargin
     summary: Specifies the left margin, in points, of the text frame.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +86,7 @@ properties:
     fullName: noTextRotation
     summary: Specifies whether the text in the text frame shouldn't rotate when the shape is rotated.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,34 +98,8 @@ properties:
     package: word!
     fullName: orientation
     summary: Specifies the angle to which the text is oriented for the text frame. See `Word.ShapeTextOrientation` for details.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Sets text frame properties of the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("textFrame");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log("No shapes with text boxes found in the main document.");
-          return;
-        }
-
-        const textFrame: Word.TextFrame = shape.textFrame;
-        textFrame.verticalAlignment = Word.ShapeTextVerticalAlignment.bottom;
-        textFrame.orientation = Word.ShapeTextOrientation.vertical270;
-        textFrame.autoSizeSetting = Word.ShapeAutoSize.shapeToFitText;
-
-        console.log("The first text box's text frame properties were updated:", textFrame);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +112,7 @@ properties:
     fullName: rightMargin
     summary: Specifies the right margin, in points, of the text frame.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +125,7 @@ properties:
     fullName: topMargin
     summary: Specifies the top margin, in points, of the text frame.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,34 +137,8 @@ properties:
     package: word!
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text frame. See `Word.ShapeTextVerticalAlignment` for details.
-    remarks: |-
-      [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-      await Word.run(async (context) => {
-        // Sets text frame properties of the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("textFrame");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log("No shapes with text boxes found in the main document.");
-          return;
-        }
-
-        const textFrame: Word.TextFrame = shape.textFrame;
-        textFrame.verticalAlignment = Word.ShapeTextVerticalAlignment.bottom;
-        textFrame.orientation = Word.ShapeTextOrientation.vertical270;
-        textFrame.autoSizeSetting = Word.ShapeAutoSize.shapeToFitText;
-
-        console.log("The first text box's text frame properties were updated:", textFrame);
-      });
-      ```
-
+    remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,7 +151,7 @@ properties:
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,7 +165,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -281,7 +183,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,7 +201,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -325,7 +227,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +238,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.TextFrameUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -346,7 +248,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -364,7 +266,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TextFrame` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -378,7 +280,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,7 +294,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -400,4 +302,4 @@ methods:
       return:
         type: <xref uid="word!Word.TextFrame:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

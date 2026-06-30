@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.WebSettingsUpdateData
 summary: An interface for updating data on the `WebSettings` object, for use in `webSettings.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

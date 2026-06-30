@@ -5,63 +5,42 @@ package: word!
 fullName: Word.IndexFormat
 summary: Specifies the format for an index.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: bulleted
     uid: word!Word.IndexFormat.bulleted:member
     package: word!
-    summary: |-
-      Bulleted format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Bulleted format.
     value: '"Bulleted"'
   - name: classic
     uid: word!Word.IndexFormat.classic:member
     package: word!
-    summary: |-
-      Classic format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Classic format.
     value: '"Classic"'
   - name: fancy
     uid: word!Word.IndexFormat.fancy:member
     package: word!
-    summary: |-
-      Fancy format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Fancy format.
     value: '"Fancy"'
   - name: formal
     uid: word!Word.IndexFormat.formal:member
     package: word!
-    summary: |-
-      Formal format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Formal format.
     value: '"Formal"'
   - name: modern
     uid: word!Word.IndexFormat.modern:member
     package: word!
-    summary: |-
-      Modern format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Modern format.
     value: '"Modern"'
   - name: simple
     uid: word!Word.IndexFormat.simple:member
     package: word!
-    summary: |-
-      Simple format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Simple format.
     value: '"Simple"'
   - name: template
     uid: word!Word.IndexFormat.template:member
     package: word!
-    summary: |-
-      Template format.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Template format.
     value: '"Template"'

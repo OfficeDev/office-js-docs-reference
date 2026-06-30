@@ -11,7 +11,7 @@ remarks: |-
 
   - [Excel.Table](/javascript/api/excel/excel.table): [onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)
   - [Excel.TableCollection](/javascript/api/excel/excel.tablecollection): [onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -22,7 +22,7 @@ properties:
     fullName: tableId
     summary: Gets the ID of the table in which the filter is applied.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet which contains the table.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

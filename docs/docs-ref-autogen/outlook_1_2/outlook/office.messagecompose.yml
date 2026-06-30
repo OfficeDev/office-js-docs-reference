@@ -6,7 +6,7 @@ fullName: Office.MessageCompose
 summary: |-
   The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
-  **Important**:
+  \*\*Important\*\*:
 
   - This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to [Outlook Item object model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model)<!-- -->.
 
@@ -18,32 +18,10 @@ summary: |-
 
   - [Message](xref:outlook!Office.Message:interface)
 remarks: |-
-
-
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-  const attachmentUrl = (document.getElementById("attachmentUrl") as HTMLInputElement).value;
-  Office.context.mailbox.item.addFileAttachmentAsync(
-    attachmentUrl,
-    getFileName(attachmentUrl),
-    { isInline: false },
-    (result) => {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        console.log(`Failed to add attachment: ${result.error.message}.`);
-        return;
-      }
-      console.log(`Added attachment with ID: ${result.value}`);
-    }
-  );
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -53,46 +31,16 @@ properties:
     package: outlook!
     fullName: bcc
     summary: |-
-      Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line of a message.
+      Gets an object that provides methods to get or update the recipients on the \*\*Bcc\*\* (blind carbon copy) line of a message.
 
       Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
-
-      Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const msgBcc = asyncResult.value;
-          console.log("Message being blind-copied to:");
-          for (let i = 0; i < msgBcc.length; i++) {
-            console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ...
-
-      const email = (document.getElementById("emailBcc") as HTMLInputElement).value;
-      const emailArray = [email];
-      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Succeeded in setting Bcc field.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,29 +55,10 @@ properties:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // This example gets the body of the item as plain text.
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of the result parameter passed to the callback function.
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,42 +72,12 @@ properties:
     summary: |-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the current item.
 
-      The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
+      The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the \*\*Cc\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
-
-      Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const msgCc = asyncResult.value;
-          console.log("Message being copied to:");
-          for (let i = 0; i < msgCc.length; i++) {
-            console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ...
-
-      const email = (document.getElementById("emailCc") as HTMLInputElement).value;
-      const emailArray = [email];
-      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Succeeded in setting Cc field.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,18 +95,10 @@ properties:
 
       You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the `conversationId` property will return a value.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
-
-      console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,26 +114,10 @@ properties:
 
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or an appointment.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
-
-      const itemType = Office.context.mailbox.item.itemType;
-      switch (itemType) {
-          case Office.MailboxEnums.ItemType.Appointment:
-              console.log(`Current item is an ${itemType}.`);
-              break;
-          case Office.MailboxEnums.ItemType.Message:
-              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
-              break;
-      }
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,35 +135,10 @@ properties:
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
-
-      Office.context.mailbox.item.subject.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Subject: ${result.value}`);
-      });
-
-      ...
-
-      let subject = "Hello World!";
-      Office.context.mailbox.item.subject.setAsync(subject, (result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Successfully set subject to ${subject}`);
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -300,44 +150,14 @@ properties:
     package: outlook!
     fullName: to
     summary: |-
-      Provides access to the recipients on the **To** line of a message. The type of object and level of access depend on the mode of the current item.
+      Provides access to the recipients on the \*\*To\*\* line of a message. The type of object and level of access depend on the mode of the current item.
 
-      The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
+      The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the \*\*To\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
     remarks: |-
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
-
-      Office.context.mailbox.item.to.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const msgTo = asyncResult.value;
-          console.log("Message being sent to:");
-          for (let i = 0; i < msgTo.length; i++) {
-            console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ...
-
-      const email = (document.getElementById("emailTo") as HTMLInputElement).value;
-      const emailArray = [email];
-      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Succeeded in setting To field.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -356,11 +176,11 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Important**:
+      \*\*Important\*\*:
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -374,38 +194,18 @@ methods:
 
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
 
       - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is not allowed.
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-      const attachmentUrl = (document.getElementById("attachmentUrl") as HTMLInputElement).value;
-      Office.context.mailbox.item.addFileAttachmentAsync(
-        attachmentUrl,
-        getFileName(attachmentUrl),
-        { isInline: false },
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to add attachment: ${result.error.message}.`);
-            return;
-          }
-          console.log(`Added attachment with ID: ${result.value}`);
-        }
-      );
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'addFileAttachmentAsync(uri: string, attachmentName: string, options: CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: uri
           description: The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
@@ -433,11 +233,11 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac, Mailbox 1.8 for Outlook on the web and new Outlook on Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Important**:
+      \*\*Important\*\*:
 
       - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -451,18 +251,18 @@ methods:
 
       - You can use the same URI with the `removeAttachmentAsync` method to remove the attachment in the same session.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
 
       - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is not allowed.
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: uri
           description: The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
@@ -491,43 +291,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
-      #### Examples
-
-      ```TypeScript
-      // The following example adds an existing Outlook item as an attachment
-      // with the name "My Attachment".
-      function addAttachment() {
-          // EWS ID of item to attach (shortened for readability).
-          const itemId = "AAMkADI1...AAA=";
-
-          // The values in asyncContext can be accessed in the callback.
-          const options = { asyncContext: { var1: 1, var2: 2 } };
-
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, (result) => {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                  console.error("Failed to add attachment: " + result.error.message);
-                  return;
-              }
-
-              console.log("Attachment added successfully.");
-              console.log("var1: " + result.asyncContext.var1);
-              console.log("var2: " + result.asyncContext.var2);
-          });
-      }
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -559,18 +334,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: itemId
           description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
@@ -597,28 +372,14 @@ methods:
     remarks: |-
       [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Get selected data.
-      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, { option1: "option1"}, getCallback);
-
-      function getCallback(asyncResult) {
-          const text = asyncResult.value.data;
-          const prop = asyncResult.value.sourceProperty;
-
-          console.log(`Selected text in ${prop}: ${text}`);
-      }
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<any>) => void): void;'
+      content: 'getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;'
       parameters:
         - id: coercionType
           description: Requests a format for the data. If `Text`<!-- -->, the method returns the plain text as a string, removing any HTML tags present. If `Html`<!-- -->, the method returns the selected text, whether it is plaintext or HTML.
@@ -645,30 +406,14 @@ methods:
     remarks: |-
       [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
-
-      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const text = asyncResult.value.data;
-          const prop = asyncResult.value.sourceProperty;
-          console.log("Selected text in " + prop + ": " + text);
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult: Office.AsyncResult<any>) => void): void;'
+      content: 'getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;'
       parameters:
         - id: coercionType
           description: Requests a format for the data. If `Text`<!-- -->, the method returns the plain text as a string, removing any HTML tags present. If `Html`<!-- -->, the method returns the selected text, whether it is plaintext or HTML.
@@ -694,30 +439,14 @@ methods:
 
       To learn more about custom properties, see [Get and set add-in metadata for an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
-          return;
-        }
-
-        customProps = result.value;
-        console.log("Loaded the CustomProperties object.");
-      });
-      ```
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;'
+      content: 'loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;'
       parameters:
         - id: callback
           description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
@@ -739,37 +468,20 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-        (document.getElementById("attachmentId") as HTMLInputElement).value,
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error(result.error.message);
-            return;
-          }
-          console.log(`Attachment removed successfully.`);
-        }
-      );
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAttachmentAsync(attachmentId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: attachmentId
           description: The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows (new and classic).
@@ -794,20 +506,20 @@ methods:
     remarks: |-
       [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
+      \*Important\*\*: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: attachmentId
           description: The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows (new and classic).
@@ -829,38 +541,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-      #### Examples
-
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-      ```
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-      ```
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
-
-      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Selected text has been updated successfully.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-      ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
@@ -885,18 +577,18 @@ methods:
     remarks: |-
       [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
 
-      **Errors**:
+      \*\*Errors\*\*:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.

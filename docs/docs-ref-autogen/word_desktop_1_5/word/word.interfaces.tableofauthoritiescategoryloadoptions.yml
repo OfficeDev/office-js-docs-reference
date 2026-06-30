@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCategoryLoadOptions
 summary: Represents a category used in a table of authorities.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesCategoryLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,12 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesCategoryLoadOptions#name:member
     package: word!
     fullName: name
-    summary: Specifies the name of this table of authorities category. Changing the name of the category doesn't change the index in the collection. The value for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class) will remain the same.
+    summary: >-
+      Specifies the name of this table of authorities category. Changing the name of the category doesn't change the
+      index in the collection. The value for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class) will
+      remain the same.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,27 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [onActivated](/javascript/api/excel/excel.workbook#excel-excel-workbook-onactivated-member)
-
-  #### Examples
-
-  ```TypeScript
-  async function registerEventHandler() {
-      await Excel.run(async (context) => {
-          // Register the workbook activated event handler.
-          const workbook = context.workbook;
-          workbook.onActivated.add(workbookActivated);
-          await context.sync();
-      });
-  }
-
-  async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
-      await Excel.run(async (context) => {
-          // Callback function for when the workbook is activated.
-          console.log("The workbook was activated.");
-      });
-  }
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -41,7 +21,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: '[API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

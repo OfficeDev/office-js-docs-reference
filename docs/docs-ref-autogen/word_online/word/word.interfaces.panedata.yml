@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.PaneData
 summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

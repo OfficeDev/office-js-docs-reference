@@ -10,343 +10,217 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat): [style](/javascript/api/powerpoint/powerpoint.bulletformat#powerpoint-powerpoint-bulletformat-style-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: alphabetLowercaseParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.alphabetLowercaseParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Lowercase alphabetical characters with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase alphabetical characters with both parentheses.
     value: '"AlphabetLowercaseParenthesesBoth"'
   - name: alphabetLowercaseParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.alphabetLowercaseParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Lowercase alphabetical characters with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase alphabetical characters with closing parenthesis.
     value: '"AlphabetLowercaseParenthesisRight"'
   - name: alphabetLowercasePeriod
     uid: powerpoint!PowerPoint.BulletStyle.alphabetLowercasePeriod:member
     package: powerpoint!
-    summary: |-
-      Lowercase alphabetical characters with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase alphabetical characters with a period.
     value: '"AlphabetLowercasePeriod"'
   - name: alphabetUppercaseParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.alphabetUppercaseParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Uppercase alphabetical characters with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase alphabetical characters with both parentheses.
     value: '"AlphabetUppercaseParenthesesBoth"'
   - name: alphabetUppercaseParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.alphabetUppercaseParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Uppercase alphabetical characters with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase alphabetical characters with closing parenthesis.
     value: '"AlphabetUppercaseParenthesisRight"'
   - name: alphabetUppercasePeriod
     uid: powerpoint!PowerPoint.BulletStyle.alphabetUppercasePeriod:member
     package: powerpoint!
-    summary: |-
-      Uppercase alphabetical characters with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase alphabetical characters with a period.
     value: '"AlphabetUppercasePeriod"'
   - name: arabicAbjadDash
     uid: powerpoint!PowerPoint.BulletStyle.arabicAbjadDash:member
     package: powerpoint!
-    summary: |-
-      Arabic Abjad alphabet with a dash.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic Abjad alphabet with a dash.
     value: '"ArabicAbjadDash"'
   - name: arabicAlphabetDash
     uid: powerpoint!PowerPoint.BulletStyle.arabicAlphabetDash:member
     package: powerpoint!
-    summary: |-
-      Arabic alphabet with a dash.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic alphabet with a dash.
     value: '"ArabicAlphabetDash"'
   - name: arabicDoubleBytePeriod
     uid: powerpoint!PowerPoint.BulletStyle.arabicDoubleBytePeriod:member
     package: powerpoint!
-    summary: |-
-      Double-byte Arabic numbering scheme with double-byte period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Double-byte Arabic numbering scheme with double-byte period.
     value: '"ArabicDoubleBytePeriod"'
   - name: arabicDoubleBytePlain
     uid: powerpoint!PowerPoint.BulletStyle.arabicDoubleBytePlain:member
     package: powerpoint!
-    summary: |-
-      Double-byte Arabic numbering scheme (no punctuation).
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Double-byte Arabic numbering scheme (no punctuation).
     value: '"ArabicDoubleBytePlain"'
   - name: arabicNumeralParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.arabicNumeralParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Arabic numerals with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic numerals with both parentheses.
     value: '"ArabicNumeralParenthesesBoth"'
   - name: arabicNumeralParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.arabicNumeralParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Arabic numerals with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic numerals with closing parenthesis.
     value: '"ArabicNumeralParenthesisRight"'
   - name: arabicNumeralPeriod
     uid: powerpoint!PowerPoint.BulletStyle.arabicNumeralPeriod:member
     package: powerpoint!
-    summary: |-
-      Arabic numerals with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic numerals with a period.
     value: '"ArabicNumeralPeriod"'
   - name: arabicNumeralPlain
     uid: powerpoint!PowerPoint.BulletStyle.arabicNumeralPlain:member
     package: powerpoint!
-    summary: |-
-      Arabic numerals.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Arabic numerals.
     value: '"ArabicNumeralPlain"'
   - name: circleNumberDoubleBytePlain
     uid: powerpoint!PowerPoint.BulletStyle.circleNumberDoubleBytePlain:member
     package: powerpoint!
-    summary: |-
-      Double-byte circled number for values up to 10.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Double-byte circled number for values up to 10.
     value: '"CircleNumberDoubleBytePlain"'
   - name: circleNumberWideDoubleByteBlackPlain
     uid: powerpoint!PowerPoint.BulletStyle.circleNumberWideDoubleByteBlackPlain:member
     package: powerpoint!
-    summary: |-
-      Shadow color number with circular background of normal text color.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Shadow color number with circular background of normal text color.
     value: '"CircleNumberWideDoubleByteBlackPlain"'
   - name: circleNumberWideDoubleByteWhitePlain
     uid: powerpoint!PowerPoint.BulletStyle.circleNumberWideDoubleByteWhitePlain:member
     package: powerpoint!
-    summary: |-
-      Text colored number with same color circle drawn around it.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Text colored number with same color circle drawn around it.
     value: '"CircleNumberWideDoubleByteWhitePlain"'
   - name: hebrewAlphabetDash
     uid: powerpoint!PowerPoint.BulletStyle.hebrewAlphabetDash:member
     package: powerpoint!
-    summary: |-
-      Hebrew alphabet with a dash.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Hebrew alphabet with a dash.
     value: '"HebrewAlphabetDash"'
   - name: hindiAlphabet1Period
     uid: powerpoint!PowerPoint.BulletStyle.hindiAlphabet1Period:member
     package: powerpoint!
-    summary: |-
-      Hindi alphabet (consonants) with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Hindi alphabet (consonants) with a period.
     value: '"HindiAlphabet1Period"'
   - name: hindiAlphabetPeriod
     uid: powerpoint!PowerPoint.BulletStyle.hindiAlphabetPeriod:member
     package: powerpoint!
-    summary: |-
-      Hindi alphabet (vowels) with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Hindi alphabet (vowels) with a period.
     value: '"HindiAlphabetPeriod"'
   - name: hindiNumeralParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.hindiNumeralParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Hindi numerals with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Hindi numerals with closing parenthesis.
     value: '"HindiNumeralParenthesisRight"'
   - name: hindiNumeralPeriod
     uid: powerpoint!PowerPoint.BulletStyle.hindiNumeralPeriod:member
     package: powerpoint!
-    summary: |-
-      Hindi numerals with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Hindi numerals with a period.
     value: '"HindiNumeralPeriod"'
   - name: kanjiKoreanPeriod
     uid: powerpoint!PowerPoint.BulletStyle.kanjiKoreanPeriod:member
     package: powerpoint!
-    summary: |-
-      Japanese/Korean numbers with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Japanese/Korean numbers with a period.
     value: '"KanjiKoreanPeriod"'
   - name: kanjiKoreanPlain
     uid: powerpoint!PowerPoint.BulletStyle.kanjiKoreanPlain:member
     package: powerpoint!
-    summary: |-
-      Japanese/Korean numbers without a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Japanese/Korean numbers without a period.
     value: '"KanjiKoreanPlain"'
   - name: kanjiSimplifiedChineseDoubleBytePeriod
     uid: powerpoint!PowerPoint.BulletStyle.kanjiSimplifiedChineseDoubleBytePeriod:member
     package: powerpoint!
-    summary: |-
-      Kanji Simplified Chinese with double-byte period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Kanji Simplified Chinese with double-byte period.
     value: '"KanjiSimplifiedChineseDoubleBytePeriod"'
   - name: romanLowercaseParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.romanLowercaseParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Lowercase Roman numerals with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase Roman numerals with both parentheses.
     value: '"RomanLowercaseParenthesesBoth"'
   - name: romanLowercaseParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.romanLowercaseParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Lowercase Roman numerals with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase Roman numerals with closing parenthesis.
     value: '"RomanLowercaseParenthesisRight"'
   - name: romanLowercasePeriod
     uid: powerpoint!PowerPoint.BulletStyle.romanLowercasePeriod:member
     package: powerpoint!
-    summary: |-
-      Lowercase Roman numerals with period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Lowercase Roman numerals with period.
     value: '"RomanLowercasePeriod"'
   - name: romanUppercaseParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.romanUppercaseParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Uppercase Roman numerals with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase Roman numerals with both parentheses.
     value: '"RomanUppercaseParenthesesBoth"'
   - name: romanUppercaseParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.romanUppercaseParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Uppercase Roman numerals with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase Roman numerals with closing parenthesis.
     value: '"RomanUppercaseParenthesisRight"'
   - name: romanUppercasePeriod
     uid: powerpoint!PowerPoint.BulletStyle.romanUppercasePeriod:member
     package: powerpoint!
-    summary: |-
-      Uppercase Roman numerals with period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Uppercase Roman numerals with period.
     value: '"RomanUppercasePeriod"'
   - name: simplifiedChinesePeriod
     uid: powerpoint!PowerPoint.BulletStyle.simplifiedChinesePeriod:member
     package: powerpoint!
-    summary: |-
-      Simplified Chinese with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Simplified Chinese with a period.
     value: '"SimplifiedChinesePeriod"'
   - name: simplifiedChinesePlain
     uid: powerpoint!PowerPoint.BulletStyle.simplifiedChinesePlain:member
     package: powerpoint!
-    summary: |-
-      Simplified Chinese without a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Simplified Chinese without a period.
     value: '"SimplifiedChinesePlain"'
   - name: thaiAlphabetParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.thaiAlphabetParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Thai alphabet with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai alphabet with both parentheses.
     value: '"ThaiAlphabetParenthesesBoth"'
   - name: thaiAlphabetParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.thaiAlphabetParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Thai alphabet with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai alphabet with closing parenthesis.
     value: '"ThaiAlphabetParenthesisRight"'
   - name: thaiAlphabetPeriod
     uid: powerpoint!PowerPoint.BulletStyle.thaiAlphabetPeriod:member
     package: powerpoint!
-    summary: |-
-      Thai alphabet with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai alphabet with a period.
     value: '"ThaiAlphabetPeriod"'
   - name: thaiNumeralParenthesesBoth
     uid: powerpoint!PowerPoint.BulletStyle.thaiNumeralParenthesesBoth:member
     package: powerpoint!
-    summary: |-
-      Thai numerals with both parentheses.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai numerals with both parentheses.
     value: '"ThaiNumeralParenthesesBoth"'
   - name: thaiNumeralParenthesisRight
     uid: powerpoint!PowerPoint.BulletStyle.thaiNumeralParenthesisRight:member
     package: powerpoint!
-    summary: |-
-      Thai numerals with closing parenthesis.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai numerals with closing parenthesis.
     value: '"ThaiNumeralParenthesisRight"'
   - name: thaiNumeralPeriod
     uid: powerpoint!PowerPoint.BulletStyle.thaiNumeralPeriod:member
     package: powerpoint!
-    summary: |-
-      Thai numerals with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Thai numerals with a period.
     value: '"ThaiNumeralPeriod"'
   - name: traditionalChinesePeriod
     uid: powerpoint!PowerPoint.BulletStyle.traditionalChinesePeriod:member
     package: powerpoint!
-    summary: |-
-      Traditional Chinese with a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Traditional Chinese with a period.
     value: '"TraditionalChinesePeriod"'
   - name: traditionalChinesePlain
     uid: powerpoint!PowerPoint.BulletStyle.traditionalChinesePlain:member
     package: powerpoint!
-    summary: |-
-      Traditional Chinese without a period.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Traditional Chinese without a period.
     value: '"TraditionalChinesePlain"'
   - name: unsupported
     uid: powerpoint!PowerPoint.BulletStyle.unsupported:member
     package: powerpoint!
-    summary: |-
-      Style is unsupported.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Style is unsupported.
     value: '"Unsupported"'

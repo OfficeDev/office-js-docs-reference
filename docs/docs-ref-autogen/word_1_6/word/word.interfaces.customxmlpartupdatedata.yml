@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.CustomXmlPart](/javascript/api/word/word.customxmlpart): [set](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-set-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

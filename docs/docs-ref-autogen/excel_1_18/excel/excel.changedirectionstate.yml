@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs): [changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#excel-excel-worksheetchangedeventargs-changedirectionstate-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: deleteShiftDirection
     summary: 'Represents the direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted. Note: `insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can''t have a value at the same time. If one has a value, then the other will return `undefined`<!-- -->.'
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: insertShiftDirection
     summary: 'Represents the direction (such as down or to the right) that the existing cells will shift when a new cell or cells are inserted. Note: `insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can''t have a value at the same time. If one has a value, then the other will return `undefined`<!-- -->.'
     remarks: '[API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

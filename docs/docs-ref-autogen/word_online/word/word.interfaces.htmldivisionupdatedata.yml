@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.HtmlDivisionUpdateData
 summary: An interface for updating data on the `HtmlDivision` object, for use in `htmlDivision.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

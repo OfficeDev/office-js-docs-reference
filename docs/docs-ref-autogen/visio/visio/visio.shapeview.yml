@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Visio.Shape](/javascript/api/visio/visio.shape): [view](/javascript/api/visio/visio.shape#visio-visio-shape-view-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,25 +33,8 @@ properties:
     package: visio!
     fullName: highlight
     summary: Represents the highlight around the shape.
-    remarks: |-
-      [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-
-      #### Examples
-
-      ```TypeScript
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          shape.view.highlight = { color: "#E7E7E7", width: 100 };
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,25 +47,8 @@ methods:
     package: visio!
     fullName: addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: |-
-      [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-
-      #### Examples
-
-      ```TypeScript
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +73,7 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)
     uid: visio!Visio.ShapeView#addOverlay:member(2)
@@ -115,7 +81,7 @@ methods:
     fullName: addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,7 +106,7 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        type: <xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;number&gt;
         description: ''
   - name: load(options)
     uid: visio!Visio.ShapeView#load:member(1)
@@ -148,7 +114,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,7 +132,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +150,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,25 +175,8 @@ methods:
     package: visio!
     fullName: removeOverlay(OverlayId)
     summary: Removes particular overlay or all overlays on the Shape.
-    remarks: |-
-      [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-
-      #### Examples
-
-      ```TypeScript
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          shape.view.removeOverlay(1);
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,7 +194,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,7 +205,7 @@ methods:
           type: <xref uid="visio!Visio.Interfaces.ShapeViewUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="visio!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -266,7 +215,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,7 +233,7 @@ methods:
     fullName: setText(Text)
     summary: The purpose of SetText API is to update the text inside a Visio Shape in run time. The updated text retains the existing formatting properties of the shape's text.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +251,7 @@ methods:
     fullName: showOverlay(overlayId, show)
     summary: Shows particular overlay on the Shape.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +272,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -331,4 +280,4 @@ methods:
       return:
         type: <xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="visio!~OfficeExtension.ClientObject:class" />

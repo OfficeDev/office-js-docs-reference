@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ChartAxisFormat](/javascript/api/excel/excel.chartaxisformat): [toJSON](/javascript/api/excel/excel.chartaxisformat#excel-excel-chartaxisformat-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: font
     summary: Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: line
     summary: Specifies chart line formatting.
     remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

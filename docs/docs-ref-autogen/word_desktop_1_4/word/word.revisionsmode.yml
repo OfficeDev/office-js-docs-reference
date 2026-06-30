@@ -10,31 +10,22 @@ remarks: |-
   #### Used by
 
   - [Word.View](/javascript/api/word/word.view): [markupMode](/javascript/api/word/word.view#word-word-view-markupmode-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: balloon
     uid: word!Word.RevisionsMode.balloon:member
     package: word!
-    summary: |-
-      Balloon.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Balloon.
     value: '"Balloon"'
   - name: inline
     uid: word!Word.RevisionsMode.inline:member
     package: word!
-    summary: |-
-      Inline.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Inline.
     value: '"Inline"'
   - name: mixed
     uid: word!Word.RevisionsMode.mixed:member
     package: word!
-    summary: |-
-      Mixed.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Mixed.
     value: '"Mixed"'

@@ -13,13 +13,7 @@ remarks: |-
   - [OfficeExtension.ClientObject](/javascript/api/office/officeextension.clientobject): [context](/javascript/api/office/officeextension.clientobject#office-officeextension-clientobject-context-member)
   - [OfficeExtension.EventHandlerResult](/javascript/api/office/officeextension.eventhandlerresult): [context](/javascript/api/office/officeextension.eventhandlerresult#office-officeextension-eventhandlerresult-context-member)
   - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
-  - [PowerPoint.Application](/javascript/api/powerpoint/powerpoint.application): [newObject](/javascript/api/powerpoint/powerpoint.application#powerpoint-powerpoint-application-newobject-member(1))
-  - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [newObject](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-newobject-member(1))
-  - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(4))
-  - [Word.Application](/javascript/api/word/word.application): [newObject](/javascript/api/word/word.application#word-word-application-newobject-member(1))
-  - [Word.SearchOptions](/javascript/api/word/word.searchoptions): [newObject](/javascript/api/word/word.searchoptions#word-word-searchoptions-newobject-member(1))
-  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [newObject](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-newobject-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,7 +24,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `ClientRequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +40,7 @@ properties:
     fullName: debugInfo
     summary: Debug information
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,7 +53,7 @@ properties:
     fullName: requestHeaders
     summary: Request headers
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +66,7 @@ properties:
     fullName: trackedObjects
     summary: Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +80,7 @@ methods:
     fullName: load(object, option)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +104,7 @@ methods:
 
       You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,7 +128,7 @@ methods:
     fullName: sync(passThroughValue)
     summary: Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code. This method returns a promise, which is resolved when the synchronization is complete.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +146,7 @@ methods:
     fullName: trace(message)
     summary: Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

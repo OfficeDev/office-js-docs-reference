@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CustomXmlNodeData
 summary: An interface describing the data returned by calling `customXmlNode.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

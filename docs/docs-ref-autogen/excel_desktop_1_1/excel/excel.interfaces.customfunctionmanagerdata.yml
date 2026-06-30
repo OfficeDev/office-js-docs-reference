@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Excel.CustomFunctionManager](/javascript/api/excel/excel.customfunctionmanager): [toJSON](/javascript/api/excel/excel.customfunctionmanager#excel-excel-customfunctionmanager-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

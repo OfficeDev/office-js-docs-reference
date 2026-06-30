@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Word.XmlNode](/javascript/api/word/word.xmlnode): [toJSON](/javascript/api/word/word.xmlnode#word-word-xmlnode-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: baseName
     summary: Gets the name of the element without any prefix.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ properties:
     fullName: hasChildNodes
     summary: Gets whether this XML node has child nodes. Always returns `false` for attribute nodes since they cannot have children.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     fullName: level
     summary: Gets whether this XML element is part of a paragraph, is a paragraph, or is contained within a table cell or contains a table row. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +58,7 @@ properties:
     fullName: namespaceUri
     summary: Gets the Uniform Resource Identifier (URI) of the schema namespace for this XML node.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +71,7 @@ properties:
     fullName: placeholderText
     summary: Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +84,7 @@ properties:
     fullName: text
     summary: Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ properties:
     fullName: validationErrorText
     summary: Gets the description for a validation error on this `XmlNode` object. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +110,7 @@ properties:
     fullName: validationStatus
     summary: Gets whether this element is valid according to the attached schema. May not be meaningful for attribute nodes.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

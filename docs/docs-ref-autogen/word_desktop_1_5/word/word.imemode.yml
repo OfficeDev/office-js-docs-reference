@@ -5,87 +5,57 @@ package: word!
 fullName: Word.ImeMode
 summary: Specifies the IME (Input Method Editor) mode.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: alpha
     uid: word!Word.ImeMode.alpha:member
     package: word!
-    summary: |-
-      Specifies the half-width alphanumeric IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the half-width alphanumeric IME mode.
     value: '"Alpha"'
   - name: alphaFull
     uid: word!Word.ImeMode.alphaFull:member
     package: word!
-    summary: |-
-      Specifies the full-width alphanumeric IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the full-width alphanumeric IME mode.
     value: '"AlphaFull"'
   - name: hangul
     uid: word!Word.ImeMode.hangul:member
     package: word!
-    summary: |-
-      Specifies the half-width Hangul IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the half-width Hangul IME mode.
     value: '"Hangul"'
   - name: hangulFull
     uid: word!Word.ImeMode.hangulFull:member
     package: word!
-    summary: |-
-      Specifies the full-width Hangul IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the full-width Hangul IME mode.
     value: '"HangulFull"'
   - name: hiragana
     uid: word!Word.ImeMode.hiragana:member
     package: word!
-    summary: |-
-      Specifies the Hiragana IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the Hiragana IME mode.
     value: '"Hiragana"'
   - name: katakana
     uid: word!Word.ImeMode.katakana:member
     package: word!
-    summary: |-
-      Specifies the Katakana (double-byte) IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the Katakana (double-byte) IME mode.
     value: '"Katakana"'
   - name: katakanaHalf
     uid: word!Word.ImeMode.katakanaHalf:member
     package: word!
-    summary: |-
-      Specifies the Katakana (half-width) IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the Katakana (half-width) IME mode.
     value: '"KatakanaHalf"'
   - name: noControl
     uid: word!Word.ImeMode.noControl:member
     package: word!
-    summary: |-
-      Specifies no control over the IME mode.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies no control over the IME mode.
     value: '"NoControl"'
-  - name: off
+  - name: 'off'
     uid: word!Word.ImeMode.off:member
     package: word!
-    summary: |-
-      Specifies the IME mode is off.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the IME mode is off.
     value: '"Off"'
-  - name: on
+  - name: 'on'
     uid: word!Word.ImeMode.on:member
     package: word!
-    summary: |-
-      Specifies the IME mode is on.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Specifies the IME mode is on.
     value: '"On"'

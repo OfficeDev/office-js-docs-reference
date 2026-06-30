@@ -10,20 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [textRange](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-textrange-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-  // Sets the color of the selected text range to green.
-  await PowerPoint.run(async (context) => {
-    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-    textRange.font.color = "green";
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -34,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,22 +33,8 @@ properties:
     package: powerpoint!
     fullName: font
     summary: Returns a `ShapeFont` object that represents the font attributes for the text range.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-      // Sets the color of the selected text range to green.
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-        textRange.font.color = "green";
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,48 +46,8 @@ properties:
     package: powerpoint!
     fullName: paragraphFormat
     summary: Represents the paragraph format of the text range. See [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class) for details.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-      // Gets navigational (complex) properties of the selected text range.
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-        textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
-
-        const parentTextFrame: PowerPoint.TextFrame = textRange.getParentTextFrame();
-        const parentShape: PowerPoint.Shape = parentTextFrame.getParentShape();
-        const parentSlide: PowerPoint.Slide = parentShape.getParentSlide();
-        parentShape.load("id");
-        parentSlide.load("id");
-        await context.sync();
-
-        console.log(`Selected text range found in parent shape with ID ${parentShape.id} on parentSlide with ID ${parentSlide.id}`);
-
-        console.log("Font properties of selected text range:");
-        console.log(`\tallCaps: ${textRange.font.allCaps}`);
-        console.log(`\tbold: ${textRange.font.bold}`);
-        console.log(`\tcolor: ${textRange.font.color}`);
-        console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
-        console.log(`\titalic: ${textRange.font.italic}`);
-        console.log(`\tname: ${textRange.font.name}`);
-        console.log(`\tsize: ${textRange.font.size}`);
-        console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
-        console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
-        console.log(`\tsubscript: ${textRange.font.subscript}`);
-        console.log(`\tsuperscript: ${textRange.font.superscript}`);
-        console.log(`\tunderline: ${textRange.font.underline}`);
-
-        console.log("Paragraph format properties of selected text range:");
-        console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
-        console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +60,7 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +74,7 @@ methods:
     fullName: getSubstring(start, length)
     summary: Returns a `TextRange` object for the substring in the given range.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +95,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +113,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +131,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +157,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.TextRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TextRangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,4 +165,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.TextRangeData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

@@ -5,39 +5,27 @@ package: word!
 fullName: Word.TableFieldSeparator
 summary: Specifies the character used to separate fields in a table.
 remarks: '\[Api set: WordApiDesktop 1.4\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: comma
     uid: word!Word.TableFieldSeparator.comma:member
     package: word!
-    summary: |-
-      Uses the comma.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the comma.
     value: '"Comma"'
   - name: defaultListSeparator
     uid: word!Word.TableFieldSeparator.defaultListSeparator:member
     package: word!
-    summary: |-
-      Uses the default list separator.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the default list separator.
     value: '"DefaultListSeparator"'
   - name: paragraph
     uid: word!Word.TableFieldSeparator.paragraph:member
     package: word!
-    summary: |-
-      Uses the paragraph marker.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the paragraph marker.
     value: '"Paragraph"'
   - name: tab
     uid: word!Word.TableFieldSeparator.tab:member
     package: word!
-    summary: |-
-      Uses the tab.
-
-      * \[Api set: WordApiDesktop 1.4\]
+    summary: Uses the tab.
     value: '"Tab"'

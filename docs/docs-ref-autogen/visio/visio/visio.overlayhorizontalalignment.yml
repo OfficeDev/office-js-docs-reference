@@ -10,22 +10,22 @@ remarks: |-
   #### Used by
 
   - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [addOverlay](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-addoverlay-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: center
     uid: visio!Visio.OverlayHorizontalAlignment.center:member
     package: visio!
-    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    summary: ''
     value: '"Center"'
   - name: left
     uid: visio!Visio.OverlayHorizontalAlignment.left:member
     package: visio!
-    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    summary: ''
     value: '"Left"'
   - name: right
     uid: visio!Visio.OverlayHorizontalAlignment.right:member
     package: visio!
-    summary: '* [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
+    summary: ''
     value: '"Right"'

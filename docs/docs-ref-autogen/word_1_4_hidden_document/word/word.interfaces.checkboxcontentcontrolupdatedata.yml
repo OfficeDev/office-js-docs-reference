@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CheckboxContentControlUpdateData
 summary: An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

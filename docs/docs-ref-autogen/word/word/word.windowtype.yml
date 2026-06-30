@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Window](/javascript/api/word/word.window): [type](/javascript/api/word/word.window#word-word-window-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: document
     uid: word!Word.WindowType.document:member
     package: word!
-    summary: |-
-      Specifies a document window.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Specifies a document window.
     value: '"Document"'
   - name: template
     uid: word!Word.WindowType.template:member
     package: word!
-    summary: |-
-      Specifies a template window.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Specifies a template window.
     value: '"Template"'

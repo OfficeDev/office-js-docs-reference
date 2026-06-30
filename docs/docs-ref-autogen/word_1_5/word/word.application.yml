@@ -10,35 +10,7 @@ remarks: |-
   #### Used by
 
   - [Word.RequestContext](/javascript/api/word/word.requestcontext): [application](/javascript/api/word/word.requestcontext#word-word-requestcontext-application-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-  // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
-  await Word.run(async (context) => {
-    // Use the Base64-encoded string representation of the selected .docx file.
-    const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
-    await context.sync();
-
-    if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
-      console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
-      return;
-    }
-
-    const externalDocBody: Word.Body = externalDoc.body;
-    externalDocBody.load("text");
-    await context.sync();
-
-    // Insert the external document's text at the beginning of the current document's body.
-    const externalDocBodyText = externalDocBody.text;
-    const currentDocBody: Word.Body = context.document.body;
-    currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -49,7 +21,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,37 +34,8 @@ methods:
     package: word!
     fullName: createDocument(base64File)
     summary: Creates a new document by using an optional Base64-encoded .docx file.
-    remarks: |-
-      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
-
-      // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
-      await Word.run(async (context) => {
-        // Use the Base64-encoded string representation of the selected .docx file.
-        const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
-        await context.sync();
-
-        if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
-          console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
-          return;
-        }
-
-        const externalDocBody: Word.Body = externalDoc.body;
-        externalDocBody.load("text");
-        await context.sync();
-
-        // Insert the external document's text at the beginning of the current document's body.
-        const externalDocBodyText = externalDocBody.text;
-        const currentDocBody: Word.Body = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +53,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +71,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +89,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +115,7 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `Word.Application` object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +123,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
+          type: <xref uid="word!~OfficeExtension.ClientRequestContext:class" />
       return:
         type: <xref uid="word!Word.Application:class" />
         description: ''
@@ -189,23 +132,8 @@ methods:
     package: word!
     fullName: retrieveStylesFromBase64(base64File)
     summary: Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
-
-      // Gets style info from another document passed in as a Base64-encoded string.
-      await Word.run(async (context) => {
-        const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
-        await context.sync();
-
-        console.log("Styles from the other document:", retrievedStyles.value);
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,7 +143,7 @@ methods:
           description: The template file.
           type: string
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        type: <xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: ''
   - name: set(properties, options)
     uid: word!Word.Application#set:member(1)
@@ -223,7 +151,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,7 +162,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.ApplicationUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -244,7 +172,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,7 +190,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -270,4 +198,4 @@ methods:
       return:
         type: <xref uid="word!Word.Interfaces.ApplicationData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

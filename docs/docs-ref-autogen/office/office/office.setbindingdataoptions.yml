@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Office.Binding](/javascript/api/office/office.binding): [setDataAsync](/javascript/api/office/office.binding#office-office-binding-setdataasync-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: asyncContext
     summary: A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +37,7 @@ properties:
 
       Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]`
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     fullName: coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +63,7 @@ properties:
     fullName: columns
     summary: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Microsoft Access is no longer supported.
@@ -77,7 +77,7 @@ properties:
     fullName: rows
     summary: Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Microsoft Access is no longer supported.
@@ -91,7 +91,7 @@ properties:
     fullName: startColumn
     summary: Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in the first column.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +104,7 @@ properties:
     fullName: startRow
     summary: Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set starting in the first row.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +117,7 @@ properties:
     fullName: tableOptions
     summary: 'For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`'
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

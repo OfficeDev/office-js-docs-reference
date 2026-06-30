@@ -10,41 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotDateFilter](/javascript/api/excel/excel.pivotdatefilter): [condition](/javascript/api/excel/excel.pivotdatefilter#excel-excel-pivotdatefilter-condition-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-  await Excel.run(async (context) => {
-    // Add a date-based PivotFilter.
-
-    // Get the PivotTable.
-    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-    // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
-    // If it's not already there, add "Date Updated" to the hierarchies.
-    let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
-    await context.sync();
-    if (dateHierarchy.isNullObject) {
-      dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
-    }
-
-    // Apply a date filter to filter out anything logged before August.
-    const filterField = dateHierarchy.fields.getItem("Date Updated");
-    const dateFilter = {
-      condition: Excel.DateFilterCondition.afterOrEqualTo,
-      comparator: {
-        date: "2020-08-01",
-        specificity: Excel.FilterDatetimeSpecificity.month
-      }
-    };
-    filterField.applyFilter({ dateFilter: dateFilter });
-
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -56,7 +22,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"After"'
   - name: afterOrEqualTo
     uid: excel!Excel.DateFilterCondition.afterOrEqualTo:member
@@ -66,7 +32,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AfterOrEqualTo"'
   - name: allDatesInPeriodApril
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodApril:member
@@ -74,7 +40,7 @@ fields:
     summary: |-
       Date is in April.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodApril"'
   - name: allDatesInPeriodAugust
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member
@@ -82,7 +48,7 @@ fields:
     summary: |-
       Date is in August.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodAugust"'
   - name: allDatesInPeriodDecember
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member
@@ -90,7 +56,7 @@ fields:
     summary: |-
       Date is in December.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodDecember"'
   - name: allDatesInPeriodFebruary
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member
@@ -98,7 +64,7 @@ fields:
     summary: |-
       Date is in February.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodFebruary"'
   - name: allDatesInPeriodJanuary
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member
@@ -106,7 +72,7 @@ fields:
     summary: |-
       Date is in January.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodJanuary"'
   - name: allDatesInPeriodJuly
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member
@@ -114,7 +80,7 @@ fields:
     summary: |-
       Date is in July.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodJuly"'
   - name: allDatesInPeriodJune
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodJune:member
@@ -122,7 +88,7 @@ fields:
     summary: |-
       Date is in June.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodJune"'
   - name: allDatesInPeriodMarch
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member
@@ -130,7 +96,7 @@ fields:
     summary: |-
       Date is in March.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodMarch"'
   - name: allDatesInPeriodMay
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodMay:member
@@ -138,7 +104,7 @@ fields:
     summary: |-
       Date is in May.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodMay"'
   - name: allDatesInPeriodNovember
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member
@@ -146,7 +112,7 @@ fields:
     summary: |-
       Date is in November.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodNovember"'
   - name: allDatesInPeriodOctober
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member
@@ -154,7 +120,7 @@ fields:
     summary: |-
       Date is in October.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodOctober"'
   - name: allDatesInPeriodQuarter1
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member
@@ -162,7 +128,7 @@ fields:
     summary: |-
       Date is in Quarter 1.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodQuarter1"'
   - name: allDatesInPeriodQuarter2
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member
@@ -170,7 +136,7 @@ fields:
     summary: |-
       Date is in Quarter 2.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodQuarter2"'
   - name: allDatesInPeriodQuarter3
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member
@@ -178,7 +144,7 @@ fields:
     summary: |-
       Date is in Quarter 3.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodQuarter3"'
   - name: allDatesInPeriodQuarter4
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member
@@ -186,7 +152,7 @@ fields:
     summary: |-
       Date is in Quarter 4.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodQuarter4"'
   - name: allDatesInPeriodSeptember
     uid: excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member
@@ -194,7 +160,7 @@ fields:
     summary: |-
       Date is in September.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AllDatesInPeriodSeptember"'
   - name: before
     uid: excel!Excel.DateFilterCondition.before:member
@@ -204,7 +170,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Before"'
   - name: beforeOrEqualTo
     uid: excel!Excel.DateFilterCondition.beforeOrEqualTo:member
@@ -214,7 +180,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"BeforeOrEqualTo"'
   - name: between
     uid: excel!Excel.DateFilterCondition.between:member
@@ -224,7 +190,7 @@ fields:
 
       Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Between"'
   - name: equals
     uid: excel!Excel.DateFilterCondition.equals:member
@@ -234,7 +200,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Equals"'
   - name: lastMonth
     uid: excel!Excel.DateFilterCondition.lastMonth:member
@@ -242,7 +208,7 @@ fields:
     summary: |-
       Date is last month.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LastMonth"'
   - name: lastQuarter
     uid: excel!Excel.DateFilterCondition.lastQuarter:member
@@ -250,7 +216,7 @@ fields:
     summary: |-
       Date is last quarter.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LastQuarter"'
   - name: lastWeek
     uid: excel!Excel.DateFilterCondition.lastWeek:member
@@ -258,7 +224,7 @@ fields:
     summary: |-
       Date is last week.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LastWeek"'
   - name: lastYear
     uid: excel!Excel.DateFilterCondition.lastYear:member
@@ -266,7 +232,7 @@ fields:
     summary: |-
       Date is last year.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LastYear"'
   - name: nextMonth
     uid: excel!Excel.DateFilterCondition.nextMonth:member
@@ -274,7 +240,7 @@ fields:
     summary: |-
       Date is next month.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NextMonth"'
   - name: nextQuarter
     uid: excel!Excel.DateFilterCondition.nextQuarter:member
@@ -282,7 +248,7 @@ fields:
     summary: |-
       Date is next quarter.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NextQuarter"'
   - name: nextWeek
     uid: excel!Excel.DateFilterCondition.nextWeek:member
@@ -290,7 +256,7 @@ fields:
     summary: |-
       Date is next week.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NextWeek"'
   - name: nextYear
     uid: excel!Excel.DateFilterCondition.nextYear:member
@@ -298,7 +264,7 @@ fields:
     summary: |-
       Date is next year.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"NextYear"'
   - name: thisMonth
     uid: excel!Excel.DateFilterCondition.thisMonth:member
@@ -306,7 +272,7 @@ fields:
     summary: |-
       Date is this month.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThisMonth"'
   - name: thisQuarter
     uid: excel!Excel.DateFilterCondition.thisQuarter:member
@@ -314,7 +280,7 @@ fields:
     summary: |-
       Date is this quarter.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThisQuarter"'
   - name: thisWeek
     uid: excel!Excel.DateFilterCondition.thisWeek:member
@@ -322,7 +288,7 @@ fields:
     summary: |-
       Date is this week.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThisWeek"'
   - name: thisYear
     uid: excel!Excel.DateFilterCondition.thisYear:member
@@ -330,7 +296,7 @@ fields:
     summary: |-
       Date is this year.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ThisYear"'
   - name: today
     uid: excel!Excel.DateFilterCondition.today:member
@@ -338,7 +304,7 @@ fields:
     summary: |-
       Date is today.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Today"'
   - name: tomorrow
     uid: excel!Excel.DateFilterCondition.tomorrow:member
@@ -346,7 +312,7 @@ fields:
     summary: |-
       Date is tomorrow.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Tomorrow"'
   - name: unknown
     uid: excel!Excel.DateFilterCondition.unknown:member
@@ -354,7 +320,7 @@ fields:
     summary: |-
       `DateFilterCondition` is unknown or unsupported.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: yearToDate
     uid: excel!Excel.DateFilterCondition.yearToDate:member
@@ -362,7 +328,7 @@ fields:
     summary: |-
       Date is in the same year to date.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"YearToDate"'
   - name: yesterday
     uid: excel!Excel.DateFilterCondition.yesterday:member
@@ -370,5 +336,5 @@ fields:
     summary: |-
       Date is yesterday.
 
-      * [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Yesterday"'

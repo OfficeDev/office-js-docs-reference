@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.DataValidation](/javascript/api/excel/excel.datavalidation): [rule](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-rule-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: custom
     summary: Custom data validation criteria.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: date
     summary: Date data validation criteria.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: decimal
     summary: Decimal data validation criteria.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,37 +59,8 @@ properties:
     package: excel!
     fullName: list
     summary: List data validation criteria.
-    remarks: |-
-      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Decision");
-          const nameRange = 
-              sheet.tables.getItem("NameOptionsTable").columns.getItem("Baby Name").getDataBodyRange();
-
-          // When you are developing, it is a good practice to
-          // clear the dataValidation object with each run of your code.
-          nameRange.dataValidation.clear();
-
-          const nameSourceRange = context.workbook.worksheets.getItem("Names").getRange("A1:A3");
-
-          let approvedListRule = {
-              list: {
-                  inCellDropDown: true,
-                  source: nameSourceRange
-              }
-          };
-          nameRange.dataValidation.rule = approvedListRule;
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +73,7 @@ properties:
     fullName: textLength
     summary: Text length data validation criteria.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +86,7 @@ properties:
     fullName: time
     summary: Time data validation criteria.
     remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,47 +98,8 @@ properties:
     package: excel!
     fullName: wholeNumber
     summary: Whole number data validation criteria.
-    remarks: |-
-      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Decision");
-          const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
-
-          // When you are developing, it is a good practice to
-          // clear the dataValidation object with each run of your code.
-          rankingRange.dataValidation.clear();
-
-          let greaterThanZeroRule = {
-              wholeNumber: {
-                  formula1: 0,
-                  operator: Excel.DataValidationOperator.greaterThan
-              }
-          };
-          rankingRange.dataValidation.rule = greaterThanZeroRule;
-
-          rankingRange.dataValidation.prompt = {
-              message: "Please enter a positive number.",
-              showPrompt: true,
-              title: "Positive numbers only."
-          };
-
-          rankingRange.dataValidation.errorAlert = {
-              message: "Sorry, only positive numbers are allowed",
-              showAlert: true,
-              style: Excel.DataValidationAlertStyle.stop,
-              title: "Negative Number Entered"
-          };
-
-          await context.sync();
-      });
-      ```
-
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

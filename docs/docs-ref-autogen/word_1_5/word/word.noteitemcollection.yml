@@ -15,20 +15,7 @@ remarks: |-
   - [Word.Range](/javascript/api/word/word.range): [endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member), [footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)
   - [Word.Table](/javascript/api/word/word.table): [endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member), [footnotes](/javascript/api/word/word.table#word-word-table-footnotes-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member), [footnotes](/javascript/api/word/word.tablerow#word-word-tablerow-footnotes-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
-
-  // Gets the first footnote in the document body and select its reference mark.
-  await Word.run(async (context) => {
-    const reference: Word.Range = context.document.body.footnotes.getFirst().reference;
-    reference.select();
-    console.log("The first footnote is selected.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -39,7 +26,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +39,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,22 +52,8 @@ methods:
     package: word!
     fullName: getFirst()
     summary: Gets the first note item in this collection. Throws an `ItemNotFound` error if this collection is empty.
-    remarks: |-
-      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
-
-      // Gets the first footnote in the document body and select its reference mark.
-      await Word.run(async (context) => {
-        const reference: Word.Range = context.document.body.footnotes.getFirst().reference;
-        reference.select();
-        console.log("The first footnote is selected.");
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +65,9 @@ methods:
     uid: word!Word.NoteItemCollection#getFirstOrNullObject:member(1)
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first note item in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    summary: Gets the first note item in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
     remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +81,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +99,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +117,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +125,7 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+          type: <xref uid="word!~OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.NoteItemCollection:class" />
         description: ''
@@ -162,7 +135,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +149,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,7 +163,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,4 +171,4 @@ methods:
       return:
         type: <xref uid="word!Word.NoteItemCollection:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

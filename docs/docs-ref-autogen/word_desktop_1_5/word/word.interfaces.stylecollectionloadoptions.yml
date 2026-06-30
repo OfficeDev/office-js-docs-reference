@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.StyleCollectionLoadOptions
 summary: Contains a collection of [Word.Style](xref:word!Word.Style:class) objects.
 remarks: '\[Api set: WordApi 1.5\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: automaticallyUpdate
     summary: 'For EACH ITEM in the collection: Specifies whether the style is automatically redefined based on the selection.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,12 +42,14 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#baseStyle:member
     package: word!
     fullName: baseStyle
-    summary: 'For EACH ITEM in the collection: Specifies the name of an existing style to use as the base formatting of another style.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of an existing style to use as the base formatting of another
+      style.
     remarks: |-
       \[Api set: WordApi 1.5\]
 
       Note: The ability to set `baseStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,9 +60,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#borders:member
     package: word!
     fullName: borders
-    summary: 'For EACH ITEM in the collection: Specifies a `BorderCollection` object that represents all the borders for the style.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies a `BorderCollection` object that represents all the borders for the
+      style.
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,7 +77,7 @@ properties:
     fullName: builtIn
     summary: 'For EACH ITEM in the collection: Gets whether the style is a built-in style.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +90,7 @@ properties:
     fullName: font
     summary: 'For EACH ITEM in the collection: Gets a `Font` object that represents the character formatting of the style.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +103,7 @@ properties:
     fullName: frame
     summary: 'For EACH ITEM in the collection: Returns a `Frame` object that represents the frame formatting for the style.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,9 +114,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#hasProofing:member
     package: word!
     fullName: hasProofing
-    summary: 'For EACH ITEM in the collection: Specifies whether the spelling and grammar checker ignores text formatted with this style.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the spelling and grammar checker ignores text formatted with
+      this style.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,9 +129,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#inUse:member
     package: word!
     fullName: inUse
-    summary: 'For EACH ITEM in the collection: Gets whether the style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.'
+    summary: >-
+      For EACH ITEM in the collection: Gets whether the style is a built-in style that has been modified or applied in
+      the document or a new style that has been created in the document.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +146,7 @@ properties:
     fullName: languageId
     summary: 'For EACH ITEM in the collection: Specifies a `LanguageId` value that represents the language for the style.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +159,7 @@ properties:
     fullName: languageIdFarEast
     summary: 'For EACH ITEM in the collection: Specifies an East Asian language for the style.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,9 +170,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#linked:member
     package: word!
     fullName: linked
-    summary: 'For EACH ITEM in the collection: Gets whether the style is a linked style that can be used for both paragraph and character formatting.'
+    summary: >-
+      For EACH ITEM in the collection: Gets whether the style is a linked style that can be used for both paragraph and
+      character formatting.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,7 +187,7 @@ properties:
     fullName: linkStyle
     summary: 'For EACH ITEM in the collection: Specifies a link between a paragraph and a character style.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,7 +200,7 @@ properties:
     fullName: listLevelNumber
     summary: 'For EACH ITEM in the collection: Returns the list level for the style.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -201,7 +213,7 @@ properties:
     fullName: listTemplate
     summary: 'For EACH ITEM in the collection: Gets a `ListTemplate` object that represents the list formatting for the style.'
     remarks: '\[Api set: WordApiDesktop 1.1\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +226,7 @@ properties:
     fullName: locked
     summary: 'For EACH ITEM in the collection: Specifies whether the style cannot be changed or edited.'
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,7 +239,7 @@ properties:
     fullName: nameLocal
     summary: 'For EACH ITEM in the collection: Gets the name of the style in the language of the user.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,12 +250,14 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#nextParagraphStyle:member
     package: word!
     fullName: nextParagraphStyle
-    summary: 'For EACH ITEM in the collection: Specifies the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the style.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the name of the style to be applied automatically to a new paragraph
+      that is inserted after a paragraph formatted with the style.
     remarks: |-
       \[Api set: WordApi 1.5\]
 
       Note: The ability to set `nextParagraphStyle` was introduced in WordApi 1.6.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,9 +268,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#noSpaceBetweenParagraphsOfSameStyle:member
     package: word!
     fullName: noSpaceBetweenParagraphsOfSameStyle
-    summary: 'For EACH ITEM in the collection: Specifies whether to remove spacing between paragraphs that are formatted using the same style.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether to remove spacing between paragraphs that are formatted using
+      the same style.
     remarks: '\[Api set: WordApiDesktop 1.3\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,9 +283,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#paragraphFormat:member
     package: word!
     fullName: paragraphFormat
-    summary: 'For EACH ITEM in the collection: Gets a `ParagraphFormat` object that represents the paragraph settings for the style.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `ParagraphFormat` object that represents the paragraph settings for the
+      style.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,7 +300,7 @@ properties:
     fullName: priority
     summary: 'For EACH ITEM in the collection: Specifies the priority.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +313,7 @@ properties:
     fullName: quickStyle
     summary: 'For EACH ITEM in the collection: Specifies whether the style corresponds to an available quick style.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -306,9 +324,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#shading:member
     package: word!
     fullName: shading
-    summary: 'For EACH ITEM in the collection: Gets a `Shading` object that represents the shading for the style. Not applicable to a style of `List` type.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `Shading` object that represents the shading for the style. Not applicable
+      to a style of `List` type.
     remarks: '\[Api set: WordApi 1.6\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -319,9 +339,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#tableStyle:member
     package: word!
     fullName: tableStyle
-    summary: 'For EACH ITEM in the collection: Gets a `TableStyle` object representing style properties that can be applied to a table.'
+    summary: >-
+      For EACH ITEM in the collection: Gets a `TableStyle` object representing style properties that can be applied to a
+      table.
     remarks: '\[Api set: WordApi 1.6\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -334,7 +356,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the style type.'
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,9 +367,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#unhideWhenUsed:member
     package: word!
     fullName: unhideWhenUsed
-    summary: 'For EACH ITEM in the collection: Specifies whether the style is made visible as a recommended style in the Styles gallery and in the Styles task pane in Microsoft Word after it''s used in the document.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the style is made visible as a recommended style in the Styles
+      gallery and in the Styles task pane in Microsoft Word after it's used in the document.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -358,9 +382,11 @@ properties:
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#visibility:member
     package: word!
     fullName: visibility
-    summary: 'For EACH ITEM in the collection: Specifies whether the style is visible as a recommended style in the Styles gallery and in the Styles task pane.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the style is visible as a recommended style in the Styles
+      gallery and in the Styles task pane.
     remarks: '\[Api set: WordApi 1.5\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

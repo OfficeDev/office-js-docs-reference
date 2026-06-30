@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue): [errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CoerceStringToBoolInvalid"'
   - name: coerceStringToInvalidType
     uid: excel!Excel.ValueErrorCellValueSubType.coerceStringToInvalidType:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       An error caused by conversion of a string to a type other than a boolean or number. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CoerceStringToInvalidType"'
   - name: coerceStringToNumberInvalid
     uid: excel!Excel.ValueErrorCellValueSubType.coerceStringToNumberInvalid:member
@@ -36,7 +36,7 @@ fields:
     summary: |-
       An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"CoerceStringToNumberInvalid"'
   - name: hlookupResultNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.hlookupResultNotFound:member
@@ -44,7 +44,7 @@ fields:
     summary: |-
       An error caused by HLOOKUP not finding its lookup\_value parameter. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"HlookupResultNotFound"'
   - name: hlookupRowIndexLessThanOne
     uid: excel!Excel.ValueErrorCellValueSubType.hlookupRowIndexLessThanOne:member
@@ -52,7 +52,7 @@ fields:
     summary: |-
       An error caused by a row\_index\_num parameter of HLOOKUP of less than 1. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"HlookupRowIndexLessThanOne"'
   - name: invalidImageUrl
     uid: excel!Excel.ValueErrorCellValueSubType.invalidImageUrl:member
@@ -60,7 +60,7 @@ fields:
     summary: |-
       An error caused by a `WebImageValue` with an invalid URL. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"InvalidImageUrl"'
   - name: lambdaWrongParamCount
     uid: excel!Excel.ValueErrorCellValueSubType.lambdaWrongParamCount:member
@@ -68,7 +68,7 @@ fields:
     summary: |-
       An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LambdaWrongParamCount"'
   - name: stockHistoryEndBeforeStart
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryEndBeforeStart:member
@@ -76,7 +76,7 @@ fields:
     summary: |-
       An error caused by passing an end\_date parameter that precedes the start\_date parameter to STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryEndBeforeStart"'
   - name: stockHistoryInvalidDate
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryInvalidDate:member
@@ -84,7 +84,7 @@ fields:
     summary: |-
       An error caused by passing an invalid date to STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryInvalidDate"'
   - name: stockHistoryInvalidEnum
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryInvalidEnum:member
@@ -92,7 +92,7 @@ fields:
     summary: |-
       An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryInvalidEnum"'
   - name: stockHistoryNonTradingDays
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNonTradingDays:member
@@ -100,7 +100,7 @@ fields:
     summary: |-
       An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryNonTradingDays"'
   - name: stockHistoryNotAStock
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNotAStock:member
@@ -108,7 +108,7 @@ fields:
     summary: |-
       An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryNotAStock"'
   - name: stockHistoryNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNotFound:member
@@ -116,7 +116,7 @@ fields:
     summary: |-
       An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryNotFound"'
   - name: stockHistoryOnlyDateRequested
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryOnlyDateRequested:member
@@ -124,7 +124,7 @@ fields:
     summary: |-
       An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryOnlyDateRequested"'
   - name: stockHistoryStartInFuture
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryStartInFuture:member
@@ -132,7 +132,7 @@ fields:
     summary: |-
       An error caused by passing a future start\_date parameter to STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"StockHistoryStartInFuture"'
   - name: subArrayStartColumnMissingEndColumnNot
     uid: excel!Excel.ValueErrorCellValueSubType.subArrayStartColumnMissingEndColumnNot:member
@@ -140,7 +140,7 @@ fields:
     summary: |-
       An error caused by SUBARRAY missing a start column. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SubArrayStartColumnMissingEndColumnNot"'
   - name: subArrayStartRowMissingEndRowNot
     uid: excel!Excel.ValueErrorCellValueSubType.subArrayStartRowMissingEndRowNot:member
@@ -148,7 +148,7 @@ fields:
     summary: |-
       An error caused by SUBARRAY missing a start row. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"SubArrayStartRowMissingEndRowNot"'
   - name: unknown
     uid: excel!Excel.ValueErrorCellValueSubType.unknown:member
@@ -156,7 +156,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'
   - name: vlookupColumnIndexLessThanOne
     uid: excel!Excel.ValueErrorCellValueSubType.vlookupColumnIndexLessThanOne:member
@@ -164,7 +164,7 @@ fields:
     summary: |-
       An error caused by a column\_index\_num parameter of VLOOKUP of less than 1. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"VlookupColumnIndexLessThanOne"'
   - name: vlookupResultNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.vlookupResultNotFound:member
@@ -172,5 +172,5 @@ fields:
     summary: |-
       An error caused by VLOOKUP not finding its lookup\_value parameter. Displays as error type \#VALUE! in Excel.
 
-      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"VlookupResultNotFound"'

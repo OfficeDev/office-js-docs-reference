@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.TableStyle](/javascript/api/word/word.tablestyle): [tableDirection](/javascript/api/word/word.tablestyle#word-word-tablestyle-tabledirection-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: leftToRight
     uid: word!Word.TableDirection.leftToRight:member
     package: word!
-    summary: |-
-      The table is arranged with the first column in the leftmost position.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The table is arranged with the first column in the leftmost position.
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.TableDirection.rightToLeft:member
     package: word!
-    summary: |-
-      The table is arranged with the first column in the rightmost position.
-
-      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: The table is arranged with the first column in the rightmost position.
     value: '"RightToLeft"'

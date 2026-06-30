@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.EnhancedLocationsChangedEventArgs
 summary: Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
 remarks: '\[Api set: Mailbox 1.8\]'
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: enhancedLocations
     summary: Gets the set of enhanced locations.
     remarks: '\[Api set: Mailbox 1.8\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +27,11 @@ properties:
     uid: outlook!Office.EnhancedLocationsChangedEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of the event. For details, refer to [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[Api set: Mailbox 1.8\]'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ properties:
     fullName: $all
     summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +34,7 @@ properties:
     fullName: dataProvider
     summary: 'For EACH ITEM in the collection: Gets the name of the data provider for the linked entity data domain. This name can change based on the information provided by the data provider.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +47,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the linked entity data domain defined by Office Add-ins. This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +60,7 @@ properties:
     fullName: lastRefreshed
     summary: 'For EACH ITEM in the collection: Gets the date and time (in the local time zone) since the workbook was opened and the `LinkedEntityCellValue` objects of this linked entity data domain were last refreshed. Returns `undefined` if `LinkedEntityCellValue` objects have not been refreshed since the workbook was opened.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +73,7 @@ properties:
     fullName: loadFunctionId
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom function that is called on demand to resolve or refresh the `LinkedEntityCellValue` objects of the linked entity data domain defined by Office Add-ins. For further information, see [Autogenerate JSON metadata for custom functions: ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!-- -->. This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the name of the linked entity data domain. This name can change based on the information provided by the data provider.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +99,7 @@ properties:
     fullName: periodicRefreshInterval
     summary: 'For EACH ITEM in the collection: Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The refresh interval only applies if the `refreshMode` is set to "Periodic".'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     fullName: refreshMode
     summary: 'For EACH ITEM in the collection: Specifies the refresh mode that defines how and when the `LinkedEntityCellValue` objects of this linked entity data domain are refreshed. If the refresh mode being set is not supported by this linked entity data domain, then the current refresh mode is not changed. If the refresh mode is set to "Periodic", the refresh interval is set to the `periodicRefreshInterval` of this linked entity data domain.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     fullName: serviceId
     summary: 'For EACH ITEM in the collection: Gets the service ID of the linked entity data domain. This ID is a permanently reserved value for all linked entity data domains which are defined by service data providers, such as Bing or Power BI, or defined by Office Add-ins. This ID never changes across user sessions.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     fullName: supportedRefreshModes
     summary: 'For EACH ITEM in the collection: Gets all the refresh modes supported by the linked entity data domain. This array can change based on the information provided by the data provider.'
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

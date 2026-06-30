@@ -10,23 +10,17 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Hyperlink](/javascript/api/powerpoint/powerpoint.hyperlink): [type](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-type-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: shape
     uid: powerpoint!PowerPoint.HyperlinkType.shape:member
     package: powerpoint!
-    summary: |-
-      Specifies that the hyperlink is applied to a Shape.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the hyperlink is applied to a Shape.
     value: '"Shape"'
   - name: textRange
     uid: powerpoint!PowerPoint.HyperlinkType.textRange:member
     package: powerpoint!
-    summary: |-
-      Specifies that the hyperlink is applied to a TextRange.
-
-      * [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    summary: Specifies that the hyperlink is applied to a TextRange.
     value: '"TextRange"'

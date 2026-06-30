@@ -18,27 +18,7 @@ remarks: |-
   - [Word.Style](/javascript/api/word/word.style): [font](/javascript/api/word/word.style#word-word-style-font-member)
   - [Word.Table](/javascript/api/word/word.table): [font](/javascript/api/word/word.table#word-word-table-font-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Change the font color
-  // Run a batch operation against the Word object model.
-  await Word.run(async (context) => {
-
-      // Create a range proxy object for the current selection.
-      const selection = context.document.getSelection();
-
-      // Queue a command to change the font color of the current selection.
-      selection.font.color = 'blue';
-
-      // Synchronize the document state by executing the queued commands,
-      // and return a promise to indicate task completion.
-      await context.sync();
-      console.log('The font color of the selection has been changed.');
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -50,13 +30,13 @@ properties:
     summary: |-
       Specifies whether the font is formatted as all capital letters, which makes lowercase letters appear as uppercase letters. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **All Caps** attribute.
+      - `true`<!-- -->: All the text has the \*\*All Caps\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **All Caps** attribute.
+      - `false`<!-- -->: None of the text has the \*\*All Caps\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **All Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*All Caps\*\* attribute.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,29 +48,8 @@ properties:
     package: word!
     fullName: bold
     summary: Specifies whether the font is bold. `true` if the font is formatted as bold, otherwise, `false`<!-- -->.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Bold format text
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to make the current selection bold.
-          selection.font.bold = true;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The selection is now bold.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +69,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +82,7 @@ properties:
     fullName: borders
     summary: Returns a `BorderUniversalCollection` object that represents all the borders for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,29 +94,8 @@ properties:
     package: word!
     fullName: color
     summary: Specifies the color for the font. You can provide the value in the '\#RRGGBB' format or the color name.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Change the font color
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to change the font color of the current selection.
-          selection.font.color = 'blue';
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The font color of the selection has been changed.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,7 +108,7 @@ properties:
     fullName: colorIndex
     summary: Specifies a `ColorIndex` value that represents the color for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +121,7 @@ properties:
     fullName: colorIndexBidirectional
     summary: Specifies the color for the `Font` object in a right-to-left language document.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +134,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,7 +147,7 @@ properties:
     fullName: contextualAlternates
     summary: Specifies whether contextual alternates are enabled for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +160,7 @@ properties:
     fullName: diacriticColor
     summary: Specifies the color to be used for diacritics for the `Font` object. You can provide the value in the '\#RRGGBB' format.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,7 +173,7 @@ properties:
     fullName: disableCharacterSpaceGrid
     summary: Specifies whether Microsoft Word ignores the number of characters per line for the corresponding `Font` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -248,7 +186,7 @@ properties:
     fullName: doubleStrikeThrough
     summary: Specifies whether the font has a double strikethrough. `true` if the font is formatted as double strikethrough text, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,7 +206,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -281,7 +219,7 @@ properties:
     fullName: emphasisMark
     summary: Specifies an `EmphasisMark` value that represents the emphasis mark for a character or designated character string.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +239,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -314,7 +252,7 @@ properties:
     fullName: fill
     summary: Returns a `FillFormat` object that contains fill formatting properties for the font used by the range of text.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,7 +265,7 @@ properties:
     fullName: glow
     summary: Returns a `GlowFormat` object that represents the glow formatting for the font used by the range of text.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,7 +278,7 @@ properties:
     fullName: hidden
     summary: Specifies whether the font is tagged as hidden. `true` if the font is formatted as hidden text, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -352,29 +290,8 @@ properties:
     package: word!
     fullName: highlightColor
     summary: 'Specifies the highlight color. To set it, use a value either in the ''\#RRGGBB'' format or the color name. To remove highlight color, set it to `null`<!-- -->. The returned highlight color can be in the ''\#RRGGBB'' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.'
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Highlight selected text
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to highlight the current selection.
-          selection.font.highlightColor = '#FFFF00'; // Yellow
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The selection has been highlighted.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -387,7 +304,7 @@ properties:
     fullName: italic
     summary: Specifies whether the font is italicized. `true` if the font is italicized, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -407,7 +324,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is italicized.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -420,7 +337,7 @@ properties:
     fullName: kerning
     summary: Specifies the minimum font size for which Microsoft Word will adjust kerning automatically.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -433,7 +350,7 @@ properties:
     fullName: ligature
     summary: Specifies the ligature setting for the `Font` object.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -446,7 +363,7 @@ properties:
     fullName: line
     summary: Returns a `LineFormat` object that specifies the formatting for a line.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -458,29 +375,8 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the font.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Change the font name
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to change the current selection's font name.
-          selection.font.name = 'Arial';
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The font name has changed.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -493,7 +389,7 @@ properties:
     fullName: nameAscii
     summary: Specifies the font used for Latin text (characters with character codes from 0 (zero) through 127).
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -506,7 +402,7 @@ properties:
     fullName: nameBidirectional
     summary: Specifies the font name in a right-to-left language document.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -519,7 +415,7 @@ properties:
     fullName: nameFarEast
     summary: Specifies the East Asian font name.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,7 +428,7 @@ properties:
     fullName: nameOther
     summary: Specifies the font used for characters with codes from 128 through 255.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -545,7 +441,7 @@ properties:
     fullName: numberForm
     summary: Specifies the number form setting for an OpenType font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,7 +454,7 @@ properties:
     fullName: numberSpacing
     summary: Specifies the number spacing setting for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -578,7 +474,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -591,7 +487,7 @@ properties:
     fullName: position
     summary: Specifies the position of text (in points) relative to the base line.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -604,7 +500,7 @@ properties:
     fullName: reflection
     summary: Returns a `ReflectionFormat` object that represents the reflection formatting for a shape.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -617,7 +513,7 @@ properties:
     fullName: scaling
     summary: Specifies the scaling percentage applied to the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -637,7 +533,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -649,29 +545,8 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the font size in points.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Change the font size
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to change the current selection's font size.
-          selection.font.size = 20;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The font size has changed.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -684,7 +559,7 @@ properties:
     fullName: sizeBidirectional
     summary: Specifies the font size in points for right-to-left text.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -698,13 +573,13 @@ properties:
     summary: |-
       Specifies whether the font is formatted as small caps, which makes lowercase letters appear as small uppercase letters. The possible values are as follows:
 
-      - `true`<!-- -->: All the text has the **Small Caps** attribute.
+      - `true`<!-- -->: All the text has the \*\*Small Caps\*\* attribute.
 
-      - `false`<!-- -->: None of the text has the **Small Caps** attribute.
+      - `false`<!-- -->: None of the text has the \*\*Small Caps\*\* attribute.
 
-      - `null`<!-- -->: Returned if some, but not all, of the text has the **Small Caps** attribute.
+      - `null`<!-- -->: Returned if some, but not all, of the text has the \*\*Small Caps\*\* attribute.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -717,7 +592,7 @@ properties:
     fullName: spacing
     summary: Specifies the spacing between characters.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -729,29 +604,8 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: Specifies whether the font has a strikethrough. `true` if the font is formatted as strikethrough text, otherwise, `false`<!-- -->.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Strike format text
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to strikethrough the font of the current selection.
-          selection.font.strikeThrough = true;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The selection now has a strikethrough.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -764,7 +618,7 @@ properties:
     fullName: stylisticSet
     summary: Specifies the stylistic set for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -777,7 +631,7 @@ properties:
     fullName: subscript
     summary: Specifies whether the font is a subscript. `true` if the font is formatted as subscript, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -790,7 +644,7 @@ properties:
     fullName: superscript
     summary: Specifies whether the font is a superscript. `true` if the font is formatted as superscript, otherwise, `false`<!-- -->.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -803,7 +657,7 @@ properties:
     fullName: textColor
     summary: Returns a `ColorFormat` object that represents the color for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -816,7 +670,7 @@ properties:
     fullName: textShadow
     summary: Returns a `ShadowFormat` object that specifies the shadow formatting for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -829,7 +683,7 @@ properties:
     fullName: threeDimensionalFormat
     summary: Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D) effect formatting properties for the font.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -841,29 +695,8 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
-    remarks: |-
-      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Underline format text
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a range proxy object for the current selection.
-          const selection = context.document.getSelection();
-
-          // Queue a command to underline the current selection.
-          selection.font.underline = Word.UnderlineType.single;
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The selection now has an underline style.');
-      });
-      ```
-
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -876,7 +709,7 @@ properties:
     fullName: underlineColor
     summary: Specifies the color of the underline for the `Font` object. You can provide the value in the '\#RRGGBB' format.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -890,7 +723,7 @@ methods:
     fullName: decreaseFontSize()
     summary: Decreases the font size to the next available size.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -904,7 +737,7 @@ methods:
     fullName: increaseFontSize()
     summary: Increases the font size to the next available size.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -918,7 +751,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -936,7 +769,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -954,7 +787,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -980,7 +813,7 @@ methods:
     fullName: reset()
     summary: Removes manual character formatting.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -994,7 +827,7 @@ methods:
     fullName: set(properties, options)
     summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1005,7 +838,7 @@ methods:
           type: <xref uid="word!Word.Interfaces.FontUpdateData:interface" />
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+          type: <xref uid="word!~OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
         description: ''
@@ -1015,7 +848,7 @@ methods:
     fullName: set(properties)
     summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1033,7 +866,7 @@ methods:
     fullName: setAsTemplateDefault()
     summary: Sets the specified font formatting as the default for the active document and all new documents based on the active template.
     remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1047,7 +880,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1061,7 +894,7 @@ methods:
     fullName: track()
     summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1075,7 +908,7 @@ methods:
     fullName: untrack()
     summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1083,4 +916,4 @@ methods:
       return:
         type: <xref uid="word!Word.Font:class" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="word!~OfficeExtension.ClientObject:class" />

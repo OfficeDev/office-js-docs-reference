@@ -10,30 +10,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [lineFormat](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-lineformat-member)
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-  // Changes the dash style of every line in the slide.
-  await PowerPoint.run(async (context) => {
-    // Get the type of shape for every shape in the collection.
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    shapes.load("type");
-    await context.sync();
-
-    // Change the dash style for shapes of the type `line`.
-    shapes.items.forEach((shape) => {
-      if (shape.type === PowerPoint.ShapeType.line) {
-        shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
-        shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
-      }
-    });
-    await context.sync();
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,7 +21,7 @@ properties:
     fullName: color
     summary: Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +34,7 @@ properties:
     fullName: context
     summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,32 +46,8 @@ properties:
     package: powerpoint!
     fullName: dashStyle
     summary: Represents the dash style of the line. Returns null when the line isn't visible or there are inconsistent dash styles. See [PowerPoint.ShapeLineDashStyle](xref:powerpoint!PowerPoint.ShapeLineDashStyle:enum) for details.
-    remarks: |-
-      [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-      // Changes the dash style of every line in the slide.
-      await PowerPoint.run(async (context) => {
-        // Get the type of shape for every shape in the collection.
-        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-        shapes.load("type");
-        await context.sync();
-
-        // Change the dash style for shapes of the type `line`.
-        shapes.items.forEach((shape) => {
-          if (shape.type === PowerPoint.ShapeType.line) {
-            shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
-            shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
-          }
-        });
-        await context.sync();
-      });
-      ```
-
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +60,7 @@ properties:
     fullName: style
     summary: Represents the line style of the shape. Returns null when the line isn't visible or there are inconsistent styles. See [PowerPoint.ShapeLineStyle](xref:powerpoint!PowerPoint.ShapeLineStyle:enum) for details.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +73,7 @@ properties:
     fullName: transparency
     summary: Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +86,7 @@ properties:
     fullName: visible
     summary: Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +99,7 @@ properties:
     fullName: weight
     summary: Represents the weight of the line, in points. Returns `null` when the line isn't visible or there are inconsistent line weights.
     remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,7 +113,7 @@ methods:
     fullName: load(options)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +131,7 @@ methods:
     fullName: load(propertyNames)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +149,7 @@ methods:
     fullName: load(propertyNamesAndPaths)
     summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +175,7 @@ methods:
     fullName: toJSON()
     summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ShapeLineFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeLineFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,4 +183,4 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface" />
         description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+extends: <xref uid="powerpoint!~OfficeExtension.ClientObject:class" />

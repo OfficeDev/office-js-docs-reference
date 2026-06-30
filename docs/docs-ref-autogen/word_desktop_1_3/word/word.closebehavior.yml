@@ -10,34 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [close](/javascript/api/word/word.document#word-word-document-close-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
-
-  // Closes the document after saving.
-  await Word.run(async (context) => {
-    context.document.close(Word.CloseBehavior.save);
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: save
     uid: word!Word.CloseBehavior.save:member
     package: word!
-    summary: |-
-      Saves the changes before closing the document.
-
-      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Saves the changes before closing the document.
     value: '"Save"'
   - name: skipSave
     uid: word!Word.CloseBehavior.skipSave:member
     package: word!
-    summary: |-
-      Discard the possible changes when closing the document.
-
-      * [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Discard the possible changes when closing the document.
     value: '"SkipSave"'

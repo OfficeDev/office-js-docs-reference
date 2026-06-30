@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.DocumentCreatedUpdateData
 summary: An interface for updating data on the `DocumentCreated` object, for use in `documentCreated.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

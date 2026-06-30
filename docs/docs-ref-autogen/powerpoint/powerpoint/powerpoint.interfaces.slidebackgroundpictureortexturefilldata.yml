@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [PowerPoint.SlideBackgroundPictureOrTextureFill](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill): [toJSON](/javascript/api/powerpoint/powerpoint.slidebackgroundpictureortexturefill#powerpoint-powerpoint-slidebackgroundpictureortexturefill-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: transparency
     summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
     remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

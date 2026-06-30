@@ -10,50 +10,17 @@ remarks: |-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [scaleHeight](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1)), [scaleWidth](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))
-
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-  await Word.run(async (context) => {
-    // Scales the first set of grouped shapes (including text boxes) found in the document body.
-    const firstShapeGroup: Word.Shape = context.document.body.shapes
-      .getByTypes([Word.ShapeType.group])
-      .getFirstOrNullObject();
-    firstShapeGroup.load("shapeGroup/shapes");
-    await context.sync();
-
-    if (firstShapeGroup.isNullObject) {
-      console.log("No shape groups found in the document body.");
-      return;
-    }
-
-    let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-    console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
-    firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
-    firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
-
-    console.log("Scaled the first shape group.");
-  });
-  ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: currentSize
     uid: word!Word.ShapeScaleType.currentSize:member
     package: word!
-    summary: |-
-      Scale from current size of the shape.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Scale from current size of the shape.
     value: '"CurrentSize"'
   - name: originalSize
     uid: word!Word.ShapeScaleType.originalSize:member
     package: word!
-    summary: |-
-      Scale from original size of the shape. It only works for pictures.
-
-      * [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    summary: Scale from original size of the shape. It only works for pictures.
     value: '"OriginalSize"'

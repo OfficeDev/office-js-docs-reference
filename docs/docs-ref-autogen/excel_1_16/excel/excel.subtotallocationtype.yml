@@ -10,7 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [subtotalLocation](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-subtotallocation-member)
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Subtotals are at the bottom.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AtBottom"'
   - name: atTop
     uid: excel!Excel.SubtotalLocationType.atTop:member
@@ -28,7 +28,7 @@ fields:
     summary: |-
       Subtotals are at the top.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AtTop"'
   - name: off
     uid: excel!Excel.SubtotalLocationType.off:member
@@ -36,5 +36,5 @@ fields:
     summary: |-
       Subtotals are off.
 
-      * [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \* [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Off"'

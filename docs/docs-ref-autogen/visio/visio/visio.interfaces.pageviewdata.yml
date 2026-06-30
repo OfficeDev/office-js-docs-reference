@@ -8,7 +8,7 @@ remarks: |-
   #### Used by
 
   - [Visio.PageView](/javascript/api/visio/visio.pageview): [toJSON](/javascript/api/visio/visio.pageview#visio-visio-pageview-tojson-member(1))
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +19,7 @@ properties:
     fullName: zoom
     summary: Gets and sets the page's zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
     remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
