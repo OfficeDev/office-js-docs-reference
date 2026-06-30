@@ -7020,12 +7020,14 @@ export declare namespace PowerPoint {
     enum ThemeColor {
         /**
          * Specifies a mixed theme color.
+                    Not applicable as input to {@link PowerPoint.ThemeColorScheme | ThemeColorScheme.getThemeColor} nor {@link PowerPoint.ThemeColorScheme| ThemeColorScheme.setThemeColor}.
          * @remarks
          * [Api set: PowerPointApi 1.10]
          */
         mixed = "Mixed",
         /**
          * Specifies no theme color.
+                    Not applicable as input to {@link PowerPoint.ThemeColorScheme | ThemeColorScheme.getThemeColor} nor {@link PowerPoint.ThemeColorScheme| ThemeColorScheme.setThemeColor}.
          * @remarks
          * [Api set: PowerPointApi 1.10]
          */
@@ -7118,7 +7120,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.10]
          *
-         * @param color - The theme color.
+         * @param color - The theme color. The values `none` and `mixed` are invalid for this API.
          * @returns The color value in #RRGGBB format (e.g., "FFA500").
          */
         getThemeColor(color: PowerPoint.ThemeColor): OfficeExtension.ClientResult<string>;
@@ -7128,7 +7130,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.10]
          *
-         * @param color - The theme color.
+         * @param color - The theme color. The values `none` and `mixed` are invalid for this API.
          * @returns The color value in #RRGGBB format (e.g., "FFA500").
          */
         getThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"): OfficeExtension.ClientResult<string>;
@@ -7138,7 +7140,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.10]
          *
-         * @param color - The theme color.
+         * @param color - The theme color. The values `none` and `mixed` are invalid for this API.
          * @param rgbColor - The color value in #RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setThemeColor(color: PowerPoint.ThemeColor, rgbColor: string): void;
@@ -7148,7 +7150,7 @@ export declare namespace PowerPoint {
          * @remarks
          * [Api set: PowerPointApi 1.10]
          *
-         * @param color - The theme color.
+         * @param color - The theme color. The values `none` and `mixed` are invalid for this API.
          * @param rgbColor - The color value in #RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2", rgbColor: string): void;
