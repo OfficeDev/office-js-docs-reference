@@ -9,6 +9,7 @@ remarks: |-
 
   #### Used by
 
+  - [Excel.LinkedEntityCellValueLoadedEventArgs](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs): [linkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalueloadedeventargs#excel-excel-linkedentitycellvalueloadedeventargs-linkedentitycellvalue-member)
   - [Excel.LinkedEntityLoadServiceResult](/javascript/api/excel/excel.linkedentityloadserviceresult): [entities](/javascript/api/excel/excel.linkedentityloadserviceresult#excel-excel-linkedentityloadserviceresult-entities-member)
   - [Excel.PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue): [target](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-target-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))

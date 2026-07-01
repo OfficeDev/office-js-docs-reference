@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: excel!Excel.PictureFormat:enum
+package: excel!
+fullName: Excel.PictureFormat
+summary: The format of the image.
+remarks: '\[Api set: ExcelApi 1.9\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bmp
+    uid: excel!Excel.PictureFormat.bmp:member
+    package: excel!
+    summary: |-
+      Bitmap image.
+
+      * \[Api set: ExcelApi 1.9\]
+    value: '"BMP"'
+  - name: gif
+    uid: excel!Excel.PictureFormat.gif:member
+    package: excel!
+    summary: |-
+      Graphics Interchange Format.
+
+      * \[Api set: ExcelApi 1.9\]
+    value: '"GIF"'
+  - name: jpeg
+    uid: excel!Excel.PictureFormat.jpeg:member
+    package: excel!
+    summary: |-
+      Joint Photographic Experts Group.
+
+      * \[Api set: ExcelApi 1.9\]
+    value: '"JPEG"'
+  - name: png
+    uid: excel!Excel.PictureFormat.png:member
+    package: excel!
+    summary: |-
+      Portable Network Graphics.
+
+      * \[Api set: ExcelApi 1.9\]
+    value: '"PNG"'
+  - name: svg
+    uid: excel!Excel.PictureFormat.svg:member
+    package: excel!
+    summary: |-
+      Scalable Vector Graphic.
+
+      * \[Api set: ExcelApi 1.9\]
+    value: '"SVG"'
+  - name: unknown
+    uid: excel!Excel.PictureFormat.unknown:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.9\]'
+    value: '"UNKNOWN"'

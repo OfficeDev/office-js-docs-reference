@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.NamedItemScope
+uid: excel!Excel.NamedItemScope:enum
+package: excel!
+fullName: Excel.NamedItemScope
+summary: ''
+remarks: '\[Api set: ExcelApi 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: workbook
+    uid: excel!Excel.NamedItemScope.workbook:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.4\]'
+    value: '"Workbook"'
+  - name: worksheet
+    uid: excel!Excel.NamedItemScope.worksheet:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.4\]'
+    value: '"Worksheet"'

@@ -30791,6 +30791,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
+    
     /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
                 A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
@@ -31073,6 +31074,7 @@ export declare namespace Excel {
          * @returns The linked entity data domain with the given `id`. If there are multiple linked entity data domains with the same `id`, the one defined by this Office Add-in will be returned.
          */
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
+        
         /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
                     The refresh request can fail if the data providers are busy or temporarily inaccessible.
@@ -31099,6 +31101,7 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedEntityDataDomainCollection;
+        
         /**
          * Occurs when a new linked entity data domain is added to the workbook.
          *

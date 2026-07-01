@@ -5581,6 +5581,7 @@ export declare namespace PowerPoint {
         constructor(url?: string);
         readonly presentation: Presentation;
         readonly application: Application;
+        readonly sensitivityLabelsCatalog: any;
     }
     /**
      * Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.

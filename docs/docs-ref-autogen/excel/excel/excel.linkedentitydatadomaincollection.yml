@@ -246,9 +246,9 @@ methods:
     package: excel!
     fullName: loadLinkedEntityCellValue(id)
     summary: Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`<!-- -->. If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: '[API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadLinkedEntityCellValue(id: LinkedEntityId): void;'
@@ -296,9 +296,12 @@ events:
     package: excel!
     fullName: onLinkedEntityCellValueLoaded
     summary: Occurs when the request to load a `LinkedEntityCellValue` is completed.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-    isPreview: true
+      This event isn't supported in Excel on the web.
+
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;'
