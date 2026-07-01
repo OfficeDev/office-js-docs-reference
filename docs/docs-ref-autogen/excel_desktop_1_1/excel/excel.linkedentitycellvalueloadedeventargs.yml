@@ -11,6 +11,35 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onLinkedEntityCellValueLoaded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitycellvalueloaded-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Registers an event handler for the onLinkedEntityCellValueLoaded event.
+  async function registerEvent() {
+      await Excel.run(async (context) => {
+          const linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+          linkedEntityDataDomains.onLinkedEntityCellValueLoaded.add(handleLoadedLinkedEntity);
+
+          await context.sync();
+          console.log("Event handler registered successfully. You''ll be notified when linked entities are loaded.");
+      });
+  }
+
+  // Handles the onLinkedEntityCellValueLoaded event that occurs when a linked entity cell value is loaded.
+  async function handleLoadedLinkedEntity(event: Excel.LinkedEntityCellValueLoadedEventArgs) {
+      await Excel.run(async (context) => {
+          console.log(`The ${event.type} event occurred from a ${event.source} source.`);
+          console.log(`The linked entity cell value with ID ${event.id} is loaded.`);
+          const loadedLinkedEntityCellValue: Excel.LinkedEntityCellValue = event.linkedEntityCellValue;
+          console.log(`Loaded linked entity cell value: ${loadedLinkedEntityCellValue}`);
+
+          // Queue operations on the loaded entity value here.
+
+          await context.sync();
+      });
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
