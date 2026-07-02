@@ -236,7 +236,7 @@ methods:
               const linkedEntityId: Excel.LinkedEntityId = {
                   entityId: entityId,
                   domainId: domainId,
-                  serviceId: 268436224,
+                  serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
                   culture: "en-US",
               };
 
