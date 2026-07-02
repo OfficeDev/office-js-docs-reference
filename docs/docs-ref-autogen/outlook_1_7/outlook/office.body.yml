@@ -426,27 +426,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // When including links in HTML markup, you can disable online link preview
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-      Office.context.mailbox.item.body.setAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          { 
-              coercionType: Office.CoercionType.Html,
-              asyncContext: "This is passed to the callback"
-          },
-          (result) => {
-              // Process the result.
-          }
-      );
-
-      // The following is an example of the result parameter passed to the callback function.
-      {
-          "value": null,
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
 
       // Get the current body of the message or appointment.
