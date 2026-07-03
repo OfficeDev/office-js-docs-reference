@@ -4466,7 +4466,7 @@ excel,Excel.LinkedEntityCellValue,"properties",Property,Great,false
 excel,Excel.LinkedEntityCellValue,"provider",Property,Excellent,false
 excel,Excel.LinkedEntityCellValue,"text",Property,Great,false
 excel,Excel.LinkedEntityCellValue,"type",Property,Good,false
-excel,Excel.LinkedEntityCellValueLoadedEventArgs,N/A,Interface,Good,false
+excel,Excel.LinkedEntityCellValueLoadedEventArgs,N/A,Interface,Good,true
 excel,Excel.LinkedEntityCellValueLoadedEventArgs,"error",Property,Excellent,false
 excel,Excel.LinkedEntityCellValueLoadedEventArgs,"id",Property,Great,false
 excel,Excel.LinkedEntityCellValueLoadedEventArgs,"linkedEntityCellValue",Property,Excellent,false
@@ -4507,7 +4507,7 @@ excel,Excel.LinkedEntityDataDomainCollection,"getItemOrNullObject(id)",Method,Ex
 excel,Excel.LinkedEntityDataDomainCollection,"load(options)",Method,Great,false
 excel,Excel.LinkedEntityDataDomainCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.LinkedEntityDataDomainCollection,"load(propertyNamesAndPaths)",Method,Great,false
-excel,Excel.LinkedEntityDataDomainCollection,"loadLinkedEntityCellValue(id)",Method,Excellent,false
+excel,Excel.LinkedEntityDataDomainCollection,"loadLinkedEntityCellValue(id)",Method,Excellent,true
 excel,Excel.LinkedEntityDataDomainCollection,"refreshAll()",Method,Great,false
 excel,Excel.LinkedEntityDataDomainCollection,"toJSON()",Method,Excellent,false
 excel,Excel.LinkedEntityDataDomainCreateOptions,N/A,Interface,Good,false

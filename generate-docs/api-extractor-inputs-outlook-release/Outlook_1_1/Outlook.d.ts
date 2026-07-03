@@ -1523,8 +1523,8 @@ export declare namespace Office {
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
          * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
          *
-         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP".
+         * For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
@@ -1573,8 +1573,8 @@ export declare namespace Office {
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
          * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
          *
-         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP".
+         * For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`.
          *
          * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
          * supported. For more information on supported APIs in Outlook mobile, see
@@ -1618,8 +1618,8 @@ export declare namespace Office {
          *
          * **Important*:
          *
-         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP".
+         * For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`.
          *
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *
@@ -1660,8 +1660,8 @@ export declare namespace Office {
          *
          * **Important*:
          *
-         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP".
+         * For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`.
          *
          * - SVG files aren't supported. Use JPG or PNG files instead.
          *

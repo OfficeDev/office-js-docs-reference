@@ -3324,10 +3324,8 @@ export declare namespace Office {
         /**
          * Shows the task pane associated with the add-in.
          * @returns A promise that is resolved when the UI is shown.
-         * 
+         *
          * @remarks
-         * This method applies only to centrally deployed or sideloaded add-ins. For add-ins published in the Microsoft Marketplace, the method is ignored and the task pane doesn't open.
-         * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         showAsTaskpane(): Promise<void>;

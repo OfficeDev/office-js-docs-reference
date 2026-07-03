@@ -406,7 +406,7 @@ methods:
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -487,7 +487,7 @@ methods:
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
@@ -671,7 +671,7 @@ methods:
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
 
@@ -695,27 +695,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // When including links in HTML markup, you can disable online link preview
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-      Office.context.mailbox.item.body.setAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          { 
-              coercionType: Office.CoercionType.Html,
-              asyncContext: "This is passed to the callback"
-          },
-          (result) => {
-              // Process the result.
-          }
-      );
-
-      // The following is an example of the result parameter passed to the callback function.
-      {
-          "value": null,
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
 
@@ -786,7 +765,7 @@ methods:
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
 
@@ -841,7 +820,7 @@ methods:
 
       **Important*:
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
@@ -921,7 +900,7 @@ methods:
 
       **Important*:
 
-      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP". For example, `'<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'`<!-- -->.
 
       - SVG files aren't supported. Use JPG or PNG files instead.
 
