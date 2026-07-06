@@ -4375,7 +4375,7 @@ Office.PlatformType:enum:
     console.log("Platform: " + platformType);
 Office.ProjectTaskFields:enum:
   - |-
-    // Get the GUID of the selected task
+    // Get the GUID of the selected task.
     Office.context.document.getSelectedTaskAsync((result) => {
       let taskGuid;
       if (result.status === Office.AsyncResultStatus.Succeeded) {
