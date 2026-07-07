@@ -11,6 +11,22 @@ remarks: |-
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [list](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-list-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  function applyList(sheet: Excel.Worksheet) {
+      // Value must be chosen from the predefined list.
+      const listRule: Excel.ListDataValidation = {
+          inCellDropDown: true,
+          source: "Apple,Banana,Cherry"
+      };
+      const rule: Excel.DataValidationRule = { list: listRule };
+      sheet.getRange("B4").dataValidation.rule = rule;
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -11,6 +11,23 @@ remarks: |-
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [decimal](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-decimal-member), [textLength](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-textlength-member), [wholeNumber](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-wholenumber-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  function applyDecimal(sheet: Excel.Worksheet) {
+      // Decimal values between 0 and 10 are allowed.
+      const basicRule: Excel.BasicDataValidation = {
+          formula1: 0,
+          formula2: 10,
+          operator: Excel.DataValidationOperator.between
+      };
+      const rule: Excel.DataValidationRule = { decimal: basicRule };
+      sheet.getRange("B3").dataValidation.rule = rule;
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
