@@ -10670,6 +10670,14 @@ export declare namespace Office {
          * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
+         * All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+         *
+         * In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields.
+         * However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated.
+         * If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed.
+         * The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses.
+         * If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
@@ -10710,6 +10718,14 @@ export declare namespace Office {
          *
          * The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
+         * All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+         *
+         * In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields.
+         * However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated.
+         * If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed.
+         * The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses.
+         * If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
          *
          * **Errors**:
          *
@@ -10859,6 +10875,14 @@ export declare namespace Office {
          * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
+         * All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+         *
+         * In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields.
+         * However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated.
+         * If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed.
+         * The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses.
+         * If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
@@ -10902,6 +10926,14 @@ export declare namespace Office {
          *
          * The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+         *
+         * All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+         *
+         * In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields.
+         * However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated.
+         * If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed.
+         * The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses.
+         * If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
          *
          * **Errors**:
          *
