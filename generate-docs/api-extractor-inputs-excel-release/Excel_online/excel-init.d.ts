@@ -9067,7 +9067,7 @@ export declare namespace Excel {
     /**
      * Provides information about the selection that raised the selection changed event.
                 
-                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                 * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -10566,7 +10566,7 @@ export declare namespace Excel {
         /**
          * Suspends screen updating until the next `context.sync()` is called.
                     
-                     **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+                     * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -15313,7 +15313,7 @@ export declare namespace Excel {
         /**
          * Occurs when the selected content in the binding is changed.
                     
-                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                     * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
