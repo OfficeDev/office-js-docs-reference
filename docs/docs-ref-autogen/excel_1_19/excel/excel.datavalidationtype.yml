@@ -11,6 +11,23 @@ remarks: |-
 
   - [Excel.DataValidation](/javascript/api/excel/excel.datavalidation): [type](/javascript/api/excel/excel.datavalidation#excel-excel-datavalidation-type-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  await Excel.run(async (context) => {
+      // Get the data validation type of the currently selected range.
+      const range = context.workbook.getSelectedRange();
+      range.load("address");
+      range.dataValidation.load("type");
+      await context.sync();
+
+      const validationType: Excel.DataValidationType = range.dataValidation.type as Excel.DataValidationType;
+      console.log(`Data validation type for ${range.address}: ${validationType}`);
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:
