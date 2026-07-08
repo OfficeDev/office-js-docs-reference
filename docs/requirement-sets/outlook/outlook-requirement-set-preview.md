@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/23/2026
+ms.date: 07/02/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -33,6 +33,10 @@ The following features are in preview.
 - Added a property to get or set whether an appointment is an all-day event.
 - Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.
 - Added a property and objects to temporarily set the body or subject displayed in read mode.
+- Added support for decrypting Outlook item attachments (`Office.MailboxEnums.AttachmentType.Item`) in an encryption add-in. To learn more, see [Decrypt Outlook item attachments (preview)](/office/dev/add-ins/outlook/encryption-decryption#decrypt-outlook-item-attachments-preview).
+- Added the `errorMessage` property to `MessageDecryptEventCompletedOptions` to allow encryption add-ins to display a custom error message when a decryption operation fails. To learn more, see [Customize error messages for the decryption operation (preview)](/office/dev/add-ins/outlook/encryption-decryption#customize-error-messages-for-the-decryption-operation-preview).
+- Added the `accessControls` property to MessageDecryptEventCompletedOptions and the `AccessControls` object to allow encryption add-ins to restrict printing, copying, and saving of decrypted content. To learn more, see [Manage distribution of decrypted content (preview)](/office/dev/add-ins/outlook/encryption-decryption#manage-distribution-of-decrypted-content-preview).
+- Added a **Retry** action to the decryption timeout notification in encryption add-ins so recipients can retry a failed decryption operation without switching to another message.
 
 ## API list
 
