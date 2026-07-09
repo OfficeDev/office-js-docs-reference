@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/23/2026
+ms.date: 07/14/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -29,6 +29,8 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
+- Added support for the `OnMessageSend` event in Outlook on iOS. For more information, see [Handle OnMessageSend and OnAppointmentSend events in your Outlook add-in with Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events?tabs=windows).
+- Added support for the `Office.context.mailbox.item.getAttachmentContentAsync` and `Office.context.mailbox.item.getAttachmentsAsync` methods in Outlook on iOS. For more information, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
 - Extended support for the `errorMessageMarkdown` property of the `event.completed` method to [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins in Outlook on Mac.
 - Added a property to get or set whether an appointment is an all-day event.
 - Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.
