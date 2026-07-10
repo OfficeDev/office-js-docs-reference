@@ -30,7 +30,7 @@ Mailbox requirement set 1.3 includes all of the features of [requirement set 1.2
 
 The following table lists the APIs introduced in Mailbox requirement set 1.3. To view API reference documentation for all APIs supported by Mailbox requirement set 1.3 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.3&preserve-view=true).
 
-[!INCLUDE [outlook-1_3](../../includes/outlook-1_3.md)]
+[!INCLUDE [outlook-1_3](../../includes/outlook-1-3.md)]
 
 ## See also
 

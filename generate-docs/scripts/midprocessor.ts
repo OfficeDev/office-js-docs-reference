@@ -228,7 +228,7 @@ tryCatch(async () => {
     let filePath = `../../docs/includes/outlook-preview.md`;
     fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        filePath = `../../docs/includes/outlook-1_${i}.md`;
+        filePath = `../../docs/includes/outlook-1-${i}.md`;
         fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     }
 });

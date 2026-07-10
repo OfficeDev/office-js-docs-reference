@@ -15,7 +15,7 @@ PowerPointApi 1.8 added APIs to manage bindings, shapes, and tables in the prese
 The following table lists the PowerPoint JavaScript API requirement set 1.8. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_8.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-8.md)]
 
 ## See also
 

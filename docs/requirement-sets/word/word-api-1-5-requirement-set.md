@@ -14,7 +14,7 @@ WordApi 1.5 added support for footnotes, endnotes, content control events, and s
 
 The following table lists the APIs in Word JavaScript API requirement set 1.5. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.5 or earlier, see [Word APIs in requirement set 1.5 or earlier](/javascript/api/word?view=word-js-1.5&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_5.md)]
+[!INCLUDE[API table](../../includes/word-1-5.md)]
 
 ## See also
 

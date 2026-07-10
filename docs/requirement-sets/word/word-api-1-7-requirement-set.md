@@ -17,7 +17,7 @@ WordApi 1.7 mainly added support for writing assistance.
 
 The following table lists the APIs in Word JavaScript API requirement set 1.7. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.7 or earlier, see [Word APIs in requirement set 1.7 or earlier](/javascript/api/word?view=word-js-1.7&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_7.md)]
+[!INCLUDE[API table](../../includes/word-1-7.md)]
 
 ## See also
 
