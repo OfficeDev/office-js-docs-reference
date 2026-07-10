@@ -7,10 +7,10 @@ summary: Specifies the save options.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.WindowCloseOptions](/javascript/api/word/word.windowcloseoptions): [saveChanges](/javascript/api/word/word.windowcloseoptions#word-word-windowcloseoptions-savechanges-member)
+
   #### Examples
 
   ```TypeScript

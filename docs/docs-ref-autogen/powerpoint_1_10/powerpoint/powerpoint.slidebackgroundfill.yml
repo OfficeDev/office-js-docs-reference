@@ -7,12 +7,12 @@ summary: Represents the fill formatting of a slide background object.
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.SlideBackground](/javascript/api/powerpoint/powerpoint.slidebackground): [fill](/javascript/api/powerpoint/powerpoint.slidebackground#powerpoint-powerpoint-slidebackground-fill-member)
   - [PowerPoint.SlideLayoutBackground](/javascript/api/powerpoint/powerpoint.slidelayoutbackground): [fill](/javascript/api/powerpoint/powerpoint.slidelayoutbackground#powerpoint-powerpoint-slidelayoutbackground-fill-member)
   - [PowerPoint.SlideMasterBackground](/javascript/api/powerpoint/powerpoint.slidemasterbackground): [fill](/javascript/api/powerpoint/powerpoint.slidemasterbackground#powerpoint-powerpoint-slidemasterbackground-fill-member)
+
   #### Examples
 
   ```TypeScript

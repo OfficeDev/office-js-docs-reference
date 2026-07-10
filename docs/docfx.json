@@ -308,6 +308,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "outlook-js-1.16",
+        "src": "docs-ref-autogen/outlook_1_16",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "outlook-js-1.16",
+        "src": "docs-ref-autogen/outlook_1_16",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "excel-js-preview",
         "src": "docs-ref-autogen/excel",
         "dest": "api/office-js-docs-reference"
@@ -556,6 +568,18 @@
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.20",
         "src": "docs-ref-autogen/excel_1_20",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.21",
+        "src": "docs-ref-autogen/excel_1_21",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "excel-js-1.21",
+        "src": "docs-ref-autogen/excel_1_21",
         "dest": "api"
       },
       {
@@ -1045,6 +1069,10 @@
         "dest": "outlook-js-1.15",
         "moniker_range": "outlook-js-1.15"
       },
+      "outlook-js-1.16": {
+        "dest": "outlook-js-1.16",
+        "moniker_range": "outlook-js-1.16"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
@@ -1128,6 +1156,10 @@
       "excel-js-1.20": {
         "dest": "excel-js-1.20",
         "moniker_range": "excel-js-1.20"
+      }, 
+      "excel-js-1.21": {
+        "dest": "excel-js-1.21",
+        "moniker_range": "excel-js-1.21"
       }, 
       "excel-js-desktop-1.1": {
         "dest": "excel-js-desktop-1.1",

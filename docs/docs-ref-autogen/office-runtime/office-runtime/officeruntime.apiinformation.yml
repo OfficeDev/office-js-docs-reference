@@ -7,7 +7,8 @@ summary: Interface that contains methods for checking API requirement-set suppor
 remarks: ''
 
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
 type: interface
 methods:
   - name: isSetSupported(name, minVersion)
@@ -18,7 +19,8 @@ methods:
     remarks: ''
 
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
     syntax:
       content: 'isSetSupported(name: string, minVersion?: string): boolean;'
       parameters:

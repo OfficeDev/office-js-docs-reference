@@ -7,10 +7,10 @@ summary: Represents the options for the [Selection.insertSymbol](xref:word!Word.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Selection](/javascript/api/word/word.selection): [insertSymbol](/javascript/api/word/word.selection#word-word-selection-insertsymbol-member(1))
+
   #### Examples
 
   ```TypeScript

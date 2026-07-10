@@ -20,10 +20,10 @@ summary: |-
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
+
   #### Examples
 
   ```TypeScript
@@ -588,7 +588,7 @@ properties:
     summary: |-
       Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.
 
-      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+      **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in. In clients that support Mailbox 1.16 or later, the character limit per add-in is 2,621,440 characters.
     remarks: |-
       [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
@@ -2387,12 +2387,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-      ```
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
 

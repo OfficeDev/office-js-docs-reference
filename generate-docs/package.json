@@ -2,8 +2,8 @@
   "name": "generate-docs",
   "version": "1.0.0",
   "dependencies": {
-    "@microsoft/api-documenter": "^7.30.5",
-    "@microsoft/api-extractor": "^7.58.7",
+    "@microsoft/api-documenter": "^7.26.34",
+    "@microsoft/api-extractor": "^7.58.9",
     "reference-coverage-tester": "^0.5.1",
     "versioned-d.ts-tools": "^0.8.3"
   }

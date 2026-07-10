@@ -7,10 +7,10 @@ summary: Specifies the options to be included in a [Paragraph.getText](xref:word
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [getText](/javascript/api/word/word.paragraph#word-word-paragraph-gettext-member(1))
+
   #### Examples
 
   ```TypeScript

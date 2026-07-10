@@ -7,7 +7,6 @@ summary: Represents the body of a document or a section.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)
@@ -19,6 +18,7 @@ remarks: |-
   - [Word.Section](/javascript/api/word/word.section): [body](/javascript/api/word/word.section#word-word-section-body-member), [getFooter](/javascript/api/word/word.section#word-word-section-getfooter-member(1)), [getHeader](/javascript/api/word/word.section#word-word-section-getheader-member(1))
   - [Word.Table](/javascript/api/word/word.table): [parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)
   - [Word.TableCell](/javascript/api/word/word.tablecell): [body](/javascript/api/word/word.tablecell#word-word-tablecell-body-member)
+
   #### Examples
 
   ```TypeScript

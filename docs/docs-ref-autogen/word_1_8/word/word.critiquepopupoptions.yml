@@ -7,10 +7,10 @@ summary: Properties defining the behavior of the pop-up menu for a given critiqu
 remarks: |-
   [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Critique](/javascript/api/word/word.critique): [popupOptions](/javascript/api/word/word.critique#word-word-critique-popupoptions-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,11 +7,11 @@ summary: Represents the coauthoring conflicts in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [conflicts](/javascript/api/word/word.coauthoring#word-word-coauthoring-conflicts-member)
   - [Word.Range](/javascript/api/word/word.range): [conflicts](/javascript/api/word/word.range#word-word-range-conflicts-member)
+
   #### Examples
 
   ```TypeScript

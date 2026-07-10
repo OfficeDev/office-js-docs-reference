@@ -7,10 +7,10 @@ summary: Specifies the vertical alignment for the text frame in a shape.
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.TextFrame](/javascript/api/word/word.textframe): [verticalAlignment](/javascript/api/word/word.textframe#word-word-textframe-verticalalignment-member)
+
   #### Examples
 
   ```TypeScript

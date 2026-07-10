@@ -7,7 +7,6 @@ summary: 'Contains a collection of [Word.Shape](xref:word!Word.Shape:class) obje
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [shapes](/javascript/api/word/word.body#word-word-body-shapes-member)
@@ -15,6 +14,7 @@ remarks: |-
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [shapes](/javascript/api/word/word.paragraph#word-word-paragraph-shapes-member)
   - [Word.Range](/javascript/api/word/word.range): [shapes](/javascript/api/word/word.range#word-word-range-shapes-member)
   - [Word.ShapeGroup](/javascript/api/word/word.shapegroup): [shapes](/javascript/api/word/word.shapegroup#word-word-shapegroup-shapes-member), [ungroup](/javascript/api/word/word.shapegroup#word-word-shapegroup-ungroup-member(1))
+
   #### Examples
 
   ```TypeScript

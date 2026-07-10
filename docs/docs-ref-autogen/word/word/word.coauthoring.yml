@@ -7,10 +7,10 @@ summary: Represents the `Coauthoring` object. This tracks the updates, changes, 
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [coauthoring](/javascript/api/word/word.document#word-word-document-coauthoring-member)
+
   #### Examples
 
   ```TypeScript

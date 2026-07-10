@@ -7,7 +7,6 @@ summary: Represents a content control. Content controls are bounded and potentia
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertContentControl](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.body#word-word-body-parentcontentcontrol-member), [parentContentControlOrNullObject](/javascript/api/word/word.body#word-word-body-parentcontentcontrolornullobject-member)
@@ -17,6 +16,7 @@ remarks: |-
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrol-member), [parentContentControlOrNullObject](/javascript/api/word/word.paragraph#word-word-paragraph-parentcontentcontrolornullobject-member)
   - [Word.Range](/javascript/api/word/word.range): [insertContentControl](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.range#word-word-range-parentcontentcontrol-member), [parentContentControlOrNullObject](/javascript/api/word/word.range#word-word-range-parentcontentcontrolornullobject-member)
   - [Word.Table](/javascript/api/word/word.table): [insertContentControl](/javascript/api/word/word.table#word-word-table-insertcontentcontrol-member(1)), [parentContentControl](/javascript/api/word/word.table#word-word-table-parentcontentcontrol-member), [parentContentControlOrNullObject](/javascript/api/word/word.table#word-word-table-parentcontentcontrolornullobject-member)
+
   #### Examples
 
   ```TypeScript

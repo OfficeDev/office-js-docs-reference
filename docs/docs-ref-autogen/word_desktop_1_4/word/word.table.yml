@@ -7,7 +7,6 @@ summary: Represents a table in a Word document.
 remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [insertTable](/javascript/api/word/word.body#word-word-body-inserttable-member(1))
@@ -19,6 +18,7 @@ remarks: |-
   - [Word.TableCell](/javascript/api/word/word.tablecell): [parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)
   - [Word.TableCollection](/javascript/api/word/word.tablecollection): [getFirst](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.tablecollection#word-word-tablecollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.tablecollection#word-word-tablecollection-items-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)
+
   #### Examples
 
   ```TypeScript

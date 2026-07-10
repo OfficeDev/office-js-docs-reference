@@ -7,11 +7,11 @@ summary: Contains a collection of [Word.ContentControlListItem](xref:word!Word.C
 remarks: |-
   [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ComboBoxContentControl](/javascript/api/word/word.comboboxcontentcontrol): [listItems](/javascript/api/word/word.comboboxcontentcontrol#word-word-comboboxcontentcontrol-listitems-member)
   - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [listItems](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-listitems-member)
+
   #### Examples
 
   ```TypeScript

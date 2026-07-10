@@ -7,10 +7,10 @@ summary: Represents the available options when adding a new slide.
 remarks: |-
   [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [add](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-add-member(1))
+
   #### Examples
 
   ```TypeScript

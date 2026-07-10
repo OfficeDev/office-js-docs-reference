@@ -7,11 +7,11 @@ summary: Provides information about the worksheet and formulas that raised the f
 remarks: |-
   [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onformulachanged-member)
+
   #### Examples
 
   ```TypeScript

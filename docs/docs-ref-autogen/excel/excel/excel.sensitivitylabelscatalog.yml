@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: Excel.SensitivityLabelsCatalog
+uid: excel!Excel.SensitivityLabelsCatalog:class
+package: excel!
+fullName: Excel.SensitivityLabelsCatalog
+summary: Provides methods to check the status of the catalog of sensitivity labels in Excel and retrieve all available sensitivity labels if the catalog is enabled.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [sensitivityLabelsCatalog](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-sensitivitylabelscatalog-member)
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: excel!Excel.SensitivityLabelsCatalog#context:member
+    package: excel!
+    fullName: context
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: getLabelingCapability
+    uid: excel!Excel.SensitivityLabelsCatalog#getLabelingCapability:member
+    package: excel!
+    fullName: getLabelingCapability
+    summary: Gets whether the catalog of sensitivity labels is enabled in Excel.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      return:
+        type: <xref uid="excel!Excel.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
+methods:
+  - name: getLabels()
+    uid: excel!Excel.SensitivityLabelsCatalog#getLabels:member(1)
+    package: excel!
+    fullName: getLabels()
+    summary: Gets sensitivity labels that are available to the current user.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabels(): Excel.SensitivityLabelDetailsCollection;'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetailsCollection:class" />
+        description: The current `SensitivityLabelDetailsCollection` object.
+  - name: load(options)
+    uid: excel!Excel.SensitivityLabelsCatalog#load:member(1)
+    package: excel!
+    fullName: load(options)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.SensitivityLabelsCatalogLoadOptions): Excel.SensitivityLabelsCatalog;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions:interface" />
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelsCatalog:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: excel!Excel.SensitivityLabelsCatalog#load:member(2)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SensitivityLabelsCatalog;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelsCatalog:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.SensitivityLabelsCatalog#load:member(3)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.SensitivityLabelsCatalog;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelsCatalog:class" />
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.SensitivityLabelsCatalog#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.SensitivityLabelsCatalog` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelsCatalogData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.SensitivityLabelsCatalogData;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.SensitivityLabelsCatalogData:interface" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

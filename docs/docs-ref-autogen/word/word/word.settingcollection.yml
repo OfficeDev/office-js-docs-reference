@@ -7,11 +7,11 @@ summary: Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [settings](/javascript/api/word/word.document#word-word-document-settings-member)
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [settings](/javascript/api/word/word.documentcreated#word-word-documentcreated-settings-member)
+
   #### Examples
 
   ```TypeScript

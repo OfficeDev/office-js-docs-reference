@@ -4399,6 +4399,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.1]

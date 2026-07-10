@@ -11,11 +11,11 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
   #### Used by
 
   - [Office.EnhancedLocation](/javascript/api/outlook/office.enhancedlocation): [getAsync](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
   - [Office.EnhancedLocationsChangedEventArgs](/javascript/api/outlook/office.enhancedlocationschangedeventargs): [enhancedLocations](/javascript/api/outlook/office.enhancedlocationschangedeventargs#outlook-office-enhancedlocationschangedeventargs-enhancedlocations-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,10 +7,10 @@ summary: Determines the type of automatic sizing allowed.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [autoSizeSetting](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-autosizesetting-member)
+
   #### Examples
 
   ```TypeScript

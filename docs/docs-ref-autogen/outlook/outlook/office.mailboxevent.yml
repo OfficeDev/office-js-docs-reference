@@ -3,7 +3,7 @@ name: Office.MailboxEvent
 uid: outlook!Office.MailboxEvent:interface
 package: outlook!
 fullName: Office.MailboxEvent
-summary: The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements [event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!-- -->, including [Smart Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->, the [integrated spam-reporting feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->, or [decryption](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption) (preview). It allows the add-in to signify to the Outlook client that it has completed processing an event.
+summary: The `MailboxEvent` object is passed as an argument to the event handler of an add-in that implements [event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!-- -->, including [Smart Alerts](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)<!-- -->, the [integrated spam-reporting feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->, or [decryption](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!-- -->. It allows the add-in to signify to the Outlook client that it has completed processing an event.
 remarks: |-
   [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
@@ -15,6 +15,8 @@ remarks: |-
 
   - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 
+  - Support for the decryption feature was introduced in Mailbox 1.16.
+
   - For information about the Event object used by the [function command button](https://learn.microsoft.com/office/dev/add-ins/design/add-in-commands)<!-- -->, [on-send add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins)<!-- -->, [online-meeting provider add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/online-meeting)<!-- -->, and [note-logging mobile add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments)<!-- -->, see [Office.AddinCommands.Event](https://learn.microsoft.com/javascript/api/office/office.addincommands.event)<!-- -->.
 
 isPreview: false
@@ -25,7 +27,7 @@ methods:
     uid: outlook!Office.MailboxEvent#completed:member(1)
     package: outlook!
     fullName: completed(options)
-    summary: Indicates that the event-based, spam-reporting, or decryption (preview) add-in has completed processing an event.
+    summary: Indicates that the event-based, spam-reporting, or decryption add-in has completed processing an event.
     remarks: |-
       [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
@@ -38,6 +40,8 @@ methods:
       - Support for the integrated spam-reporting feature was introduced in Mailbox 1.14.
 
       - Support to assign a `SmartAlertsEventCompletedOptions` object to the `options` parameter was introduced in Mailbox 1.12.
+
+      - Support for the decryption feature was introduced in Mailbox 1.16.
 
       #### Examples
 

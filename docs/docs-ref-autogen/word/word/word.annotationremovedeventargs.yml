@@ -7,10 +7,10 @@ summary: Holds annotation information that is passed back on annotation removed 
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [onAnnotationRemoved](/javascript/api/word/word.document#word-word-document-onannotationremoved-member)
+
   #### Examples
 
   ```TypeScript

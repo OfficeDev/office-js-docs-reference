@@ -34,15 +34,19 @@ methods:
 
       **Important**:
 
-      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item at a time in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
-      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+      - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
       - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't supported when a user replies from the the reply field at the bottom of a message.
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
       The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+      All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+
+      In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields. However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated. If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed. The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses. If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
 
       **Errors**:
 
@@ -104,15 +108,19 @@ methods:
 
       **Important**:
 
-      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      With the `addAsync` method, you can add a maximum of 100 recipients to a mail item at a time in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
-      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+      - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
       - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't supported when a user replies from the the reply field at the bottom of a message.
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
       The `addAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+      All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+
+      In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields. However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated. If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed. The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses. If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
 
       **Errors**:
 
@@ -148,7 +156,9 @@ methods:
 
       The maximum number of recipients returned by this method varies per Outlook client.
 
-      - Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), web browser, Mac (classic UI): 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier), Mac (classic UI): 500 recipients
+
+      - Web, Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, iOS: 100 recipients
 
@@ -204,7 +214,9 @@ methods:
 
       The maximum number of recipients returned by this method varies per Outlook client.
 
-      - Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), web browser, Mac (classic UI): 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier), Mac (classic UI): 500 recipients
+
+      - Web, Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, iOS: 100 recipients
 
@@ -342,15 +354,19 @@ methods:
 
       **Important**:
 
-      With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      With the `setAsync` method, you can set a maximum of 100 recipients at a time in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
-      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+      - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
       - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't supported when a user replies from the the reply field at the bottom of a message.
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
 
       The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+      All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+
+      In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields. However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated. If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed. The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses. If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
 
       **Errors**:
 
@@ -390,9 +406,9 @@ methods:
 
       **Important**:
 
-      With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
+      With the `setAsync` method, you can set a maximum of 100 recipients at a time in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), on Mac (classic UI), on Android, and on iOS. However, take note of the following:
 
-      - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+      - In classic Outlook on Windows (Mailbox 1.15 and earlier) and on Mac (classic UI), you can have a maximum of 500 recipients in a target field. In classic Outlook on Windows, clients that support Mailbox 1.16 and later can have a maximum of 1,000 recipients. Target fields in Outlook on the web and the new Outlook on Windows have no recipient limits. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
       - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't supported when a user replies from the the reply field at the bottom of a message.
 
@@ -400,34 +416,16 @@ methods:
 
       The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
+      All Outlook clients use regular expression rules to resolve email addresses in recipient fields.
+
+      In Outlook on the web and the new Outlook on Windows, `addAsync` and `setAsync` add both resolved and unresolved email addresses to recipient fields. However, unresolved email addresses prevent an item from being sent until they are resolved or successfully validated. If unresolved recipients are added by a Smart Alerts add-in to any recipient field, the send operation is blocked and an error notification is displayed. The error notification identifies the add-in that added the unresolved recipients and lists the affected email addresses. If a Smart Alerts dialog is shown after selecting **Send**, the error notification is displayed after the dialog is dismissed (by selecting **Send Anyway** or **Don't Send**, or by closing the dialog).
+
       **Errors**:
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
 
       #### Examples
 
-      ```TypeScript
-      // The following example creates an array of EmailUser objects and
-      // replaces the CC recipients of the message with the array.
-      const newRecipients = [
-          {
-              "displayName": "Allie Bellew",
-              "emailAddress": "allieb@contoso.com"
-          },
-          {
-              "displayName": "Alex Darrow",
-              "emailAddress": "alexd@contoso.com"
-          }
-      ];
-
-      Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Recipients overwritten");
-          }
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 

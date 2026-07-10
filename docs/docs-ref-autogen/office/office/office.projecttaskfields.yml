@@ -9,6 +9,40 @@ remarks: |-
 
   For more information about working with fields in Project, see the [Available fields](https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460) reference. In Project Help, search for Available fields.
 
+  #### Examples
+
+  ```TypeScript
+  // Get the GUID of the selected task.
+  Office.context.document.getSelectedTaskAsync((result) => {
+    let taskGuid;
+    if (result.status === Office.AsyncResultStatus.Succeeded) {
+      taskGuid = result.value;
+
+      // Set the specified fields for the selected task.
+      const targetFields = [Office.ProjectTaskFields.Name, Office.ProjectTaskFields.Notes];
+      const fieldValues = ["New task name", "Notes for the task."];
+
+      // Set the field value. If the call is successful, set the next field.
+      for (let index = 0; index < targetFields.length; index++) {
+        Office.context.document.setTaskFieldAsync(
+          taskGuid,
+          targetFields[index],
+          fieldValues[index],
+          (result) => {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+              index++;
+            } else {
+              console.log(result.error);
+            }
+          }
+        );
+      }
+    } else {
+      console.log(result.error);
+    }
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -7,10 +7,10 @@ summary: Represents the available options when getting an image of a shape. The 
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [getImageAsBase64](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getimageasbase64-member(1))
+
   #### Examples
 
   ```TypeScript

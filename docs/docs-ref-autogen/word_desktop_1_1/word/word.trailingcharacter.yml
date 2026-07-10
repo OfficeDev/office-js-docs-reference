@@ -7,10 +7,10 @@ summary: Represents the character inserted after the [list item](xref:word!Word.
 remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ListLevel](/javascript/api/word/word.listlevel): [trailingCharacter](/javascript/api/word/word.listlevel#word-word-listlevel-trailingcharacter-member)
+
   #### Examples
 
   ```TypeScript

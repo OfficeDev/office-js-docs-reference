@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalIconCriterionOperator
+uid: excel!Excel.ConditionalIconCriterionOperator:enum
+package: excel!
+fullName: Excel.ConditionalIconCriterionOperator
+summary: Represents the operator for each icon criteria.
+remarks: '\[Api set: ExcelApi 1.6\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: greaterThan
+    uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.6\]'
+    value: '"GreaterThan"'
+  - name: greaterThanOrEqual
+    uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.6\]'
+    value: '"GreaterThanOrEqual"'
+  - name: invalid
+    uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.6\]'
+    value: '"Invalid"'

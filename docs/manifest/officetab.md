@@ -1,7 +1,7 @@
 ---
 title: OfficeTab element in the manifest file
 description: The OfficeTab element defines the ribbon tab where your add-in command appears.
-ms.date: 07/31/2024
+ms.date: 06/18/2026
 ms.localizationpriority: medium
 ---
 
@@ -34,6 +34,9 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 ### id
 
 This attribute specifies the ID of the built-in Office tab. A list of valid `id` values is at [Find the IDs of built-in Office ribbon tabs](/office/dev/add-ins/develop/built-in-ui-ids).
+
+> [!NOTE]
+> In Outlook, only one OfficeTab element with the `TabDefault` ID is supported. Defining more than one OfficeTab element can lead to unsupported and inconsistent ribbon rendering behavior.
 
 ## Child elements
 

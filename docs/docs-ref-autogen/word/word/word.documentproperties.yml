@@ -7,11 +7,11 @@ summary: Represents document properties.
 remarks: |-
   [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [builtInDocumentProperties](/javascript/api/word/word.document#word-word-document-builtindocumentproperties-member), [customDocumentProperties](/javascript/api/word/word.document#word-word-document-customdocumentproperties-member), [properties](/javascript/api/word/word.document#word-word-document-properties-member)
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [properties](/javascript/api/word/word.documentcreated#word-word-documentcreated-properties-member)
+
   #### Examples
 
   ```TypeScript

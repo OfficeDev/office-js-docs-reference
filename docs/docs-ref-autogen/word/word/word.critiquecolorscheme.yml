@@ -7,10 +7,10 @@ summary: Represents the color scheme of a critique in the document, affecting un
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Critique](/javascript/api/word/word.critique): [colorScheme](/javascript/api/word/word.critique#word-word-critique-colorscheme-member)
+
   #### Examples
 
   ```TypeScript

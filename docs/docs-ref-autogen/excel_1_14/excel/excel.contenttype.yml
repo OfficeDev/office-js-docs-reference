@@ -7,13 +7,13 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Comment](/javascript/api/excel/excel.comment): [contentType](/javascript/api/excel/excel.comment#excel-excel-comment-contenttype-member)
   - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
   - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [contentType](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-contenttype-member)
   - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
+
   #### Examples
 
   ```TypeScript

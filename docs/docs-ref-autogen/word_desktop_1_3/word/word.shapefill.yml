@@ -7,10 +7,10 @@ summary: Represents the fill formatting of a [Word.Shape](xref:word!Word.Shape:c
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Shape](/javascript/api/word/word.shape): [fill](/javascript/api/word/word.shape#word-word-shape-fill-member)
+
   #### Examples
 
   ```TypeScript

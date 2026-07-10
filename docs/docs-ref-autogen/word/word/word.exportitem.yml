@@ -7,12 +7,12 @@ summary: Specifies the export item type for a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.DocumentExportAsFixedFormat2Options](/javascript/api/word/word.documentexportasfixedformat2options): [item](/javascript/api/word/word.documentexportasfixedformat2options#word-word-documentexportasfixedformat2options-item-member)
   - [Word.DocumentExportAsFixedFormat3Options](/javascript/api/word/word.documentexportasfixedformat3options): [item](/javascript/api/word/word.documentexportasfixedformat3options#word-word-documentexportasfixedformat3options-item-member)
   - [Word.DocumentExportAsFixedFormatOptions](/javascript/api/word/word.documentexportasfixedformatoptions): [item](/javascript/api/word/word.documentexportasfixedformatoptions#word-word-documentexportasfixedformatoptions-item-member)
+
   #### Examples
 
   ```TypeScript

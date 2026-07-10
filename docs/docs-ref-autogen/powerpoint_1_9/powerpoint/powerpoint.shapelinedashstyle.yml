@@ -7,12 +7,12 @@ summary: Specifies the dash style for a line.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.Border](/javascript/api/powerpoint/powerpoint.border): [dashStyle](/javascript/api/powerpoint/powerpoint.border#powerpoint-powerpoint-border-dashstyle-member)
   - [PowerPoint.BorderProperties](/javascript/api/powerpoint/powerpoint.borderproperties): [dashStyle](/javascript/api/powerpoint/powerpoint.borderproperties#powerpoint-powerpoint-borderproperties-dashstyle-member)
   - [PowerPoint.ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat): [dashStyle](/javascript/api/powerpoint/powerpoint.shapelineformat#powerpoint-powerpoint-shapelineformat-dashstyle-member)
+
   #### Examples
 
   ```TypeScript

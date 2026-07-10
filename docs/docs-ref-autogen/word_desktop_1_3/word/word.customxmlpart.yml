@@ -7,7 +7,6 @@ summary: Represents a custom XML part.
 remarks: |-
   [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.CustomXmlNode](/javascript/api/word/word.customxmlnode): [ownerPart](/javascript/api/word/word.customxmlnode#word-word-customxmlnode-ownerpart-member)
@@ -15,6 +14,7 @@ remarks: |-
   - [Word.CustomXmlPartScopedCollection](/javascript/api/word/word.customxmlpartscopedcollection): [getItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getitemornullobject-member(1)), [getOnlyItem](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1)), [getOnlyItemOrNullObject](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1)), [items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)
   - [Word.XmlMapping](/javascript/api/word/word.xmlmapping): [customXmlPart](/javascript/api/word/word.xmlmapping#word-word-xmlmapping-customxmlpart-member)
   - [Word.XmlSetMappingOptions](/javascript/api/word/word.xmlsetmappingoptions): [source](/javascript/api/word/word.xmlsetmappingoptions#word-word-xmlsetmappingoptions-source-member)
+
   #### Examples
 
   ```TypeScript

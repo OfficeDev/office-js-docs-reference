@@ -7,10 +7,10 @@ summary: Represents the available options for setting a [PowerPoint.SlideBackgro
 remarks: |-
   [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.SlideBackgroundFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill): [setSolidFill](/javascript/api/powerpoint/powerpoint.slidebackgroundfill#powerpoint-powerpoint-slidebackgroundfill-setsolidfill-member(1))
+
   #### Examples
 
   ```TypeScript

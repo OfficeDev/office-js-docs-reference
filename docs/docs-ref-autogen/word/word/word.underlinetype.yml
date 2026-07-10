@@ -7,12 +7,12 @@ summary: Represents the supported styles for underline format.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.CommentContentRange](/javascript/api/word/word.commentcontentrange): [underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)
   - [Word.Font](/javascript/api/word/word.font): [underline](/javascript/api/word/word.font#word-word-font-underline-member)
   - [Word.Range](/javascript/api/word/word.range): [underline](/javascript/api/word/word.range#word-word-range-underline-member)
+
   #### Examples
 
   ```TypeScript

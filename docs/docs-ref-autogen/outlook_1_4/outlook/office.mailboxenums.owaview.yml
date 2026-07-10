@@ -7,10 +7,10 @@ summary: Represents the current view of Outlook on the web.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Diagnostics](/javascript/api/outlook/office.diagnostics): [OWAView](/javascript/api/outlook/office.diagnostics#outlook-office-diagnostics-owaview-member)
+
   #### Examples
 
   ```TypeScript
@@ -37,6 +37,29 @@ remarks: |-
     case Office.MailboxEnums.OWAView.ThreeColumns:
       console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
       break;
+  }
+
+  if (Office.context.requirements.isSetSupported("Mailbox", "1.16")) {
+    const ewsTokenStatus = diagnostics.ews;
+    ewsTokenStatus.getTokenStatusAsync({ isRest: false }, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.log(result.error.message);
+        return;
+      }
+
+      const status = result.value;
+      switch (status) {
+        case Office.MailboxEnums.TokenStatus.Enabled:
+          console.log("EWS token status: EWS callback tokens are enabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Disabled:
+          console.log("EWS token status: EWS callback tokens are disabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Removed:
+          console.log("EWS token status: The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.");
+          break;
+      }
+    });
   }
   ```
 

@@ -1,0 +1,142 @@
+### YamlMime:TSType
+name: Excel.SensitivityLabelDetailsCollection
+uid: excel!Excel.SensitivityLabelDetailsCollection:class
+package: excel!
+fullName: Excel.SensitivityLabelDetailsCollection
+summary: Represents the collection of [Excel.SensitivityLabelDetails](xref:excel!Excel.SensitivityLabelDetails:class) objects.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [children](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-children-member)
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [getLabels](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabels-member(1))
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: excel!Excel.SensitivityLabelDetailsCollection#context:member
+    package: excel!
+    fullName: context
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: items
+    uid: excel!Excel.SensitivityLabelDetailsCollection#items:member
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.SensitivityLabelDetails[];'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />[]
+methods:
+  - name: getFirst()
+    uid: excel!Excel.SensitivityLabelDetailsCollection#getFirst:member(1)
+    package: excel!
+    fullName: getFirst()
+    summary: Gets the first `SensitivityLabelDetails` object in this collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirst(): Excel.SensitivityLabelDetails;'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />
+        description: A new `SensitivityLabelDetails` object.
+  - name: getFirstOrNullObject()
+    uid: excel!Excel.SensitivityLabelDetailsCollection#getFirstOrNullObject:member(1)
+    package: excel!
+    fullName: getFirstOrNullObject()
+    summary: Gets the first `SensitivityLabelDetails` object in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): OfficeExtension.ClientResult<any>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;any&gt;
+        description: The new `SensitivityLabelDetails` object.
+  - name: load(options)
+    uid: excel!Excel.SensitivityLabelDetailsCollection#load:member(1)
+    package: excel!
+    fullName: load(options)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.SensitivityLabelDetailsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SensitivityLabelDetailsCollection;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="excel!Excel.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetailsCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: excel!Excel.SensitivityLabelDetailsCollection#load:member(2)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SensitivityLabelDetailsCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetailsCollection:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.SensitivityLabelDetailsCollection#load:member(3)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SensitivityLabelDetailsCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetailsCollection:class" />
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.SensitivityLabelDetailsCollection#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.SensitivityLabelDetailsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelDetailsCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.SensitivityLabelDetailsCollectionData;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.SensitivityLabelDetailsCollectionData:interface" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

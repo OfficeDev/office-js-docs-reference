@@ -7,10 +7,10 @@ summary: Represents the content control appearance.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [appearance](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-appearance-member)
+
   #### Examples
 
   ```TypeScript

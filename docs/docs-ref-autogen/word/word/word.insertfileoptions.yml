@@ -7,11 +7,11 @@ summary: Specifies the options to determine what to copy when inserting a file.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [insertFileFromBase64](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [insertFileFromBase64](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))
+
   #### Examples
 
   ```TypeScript

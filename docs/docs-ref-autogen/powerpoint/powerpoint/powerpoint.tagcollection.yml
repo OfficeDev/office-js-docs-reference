@@ -7,12 +7,12 @@ summary: Represents the collection of tags.
 remarks: |-
   [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [tags](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tags-member)
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [tags](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-tags-member)
   - [PowerPoint.Slide](/javascript/api/powerpoint/powerpoint.slide): [tags](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tags-member)
+
   #### Examples
 
   ```TypeScript

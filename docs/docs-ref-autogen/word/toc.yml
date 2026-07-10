@@ -215,6 +215,8 @@ items:
                 uid: word!Word.JustificationMode:enum
               - name: Kana
                 uid: word!Word.Kana:enum
+              - name: LabelingCapability
+                uid: word!Word.LabelingCapability:enum
               - name: LanguageId
                 uid: word!Word.LanguageId:enum
               - name: LayoutMode
@@ -359,6 +361,10 @@ items:
                 uid: word!Word.SelectionMode:enum
               - name: SelectionType
                 uid: word!Word.SelectionType:enum
+              - name: SensitivityLabelProtectionType
+                uid: word!Word.SensitivityLabelProtectionType:enum
+              - name: SensitivityLabelUpdateResult
+                uid: word!Word.SensitivityLabelUpdateResult:enum
               - name: ShadingTextureType
                 uid: word!Word.ShadingTextureType:enum
               - name: ShadowStyle
@@ -847,6 +853,14 @@ items:
             uid: word!Word.SelectNodesOptions:interface
           - name: SelectSingleNodeOptions
             uid: word!Word.SelectSingleNodeOptions:interface
+          - name: SensitivityLabel
+            uid: word!Word.SensitivityLabel:class
+          - name: SensitivityLabelDetails
+            uid: word!Word.SensitivityLabelDetails:class
+          - name: SensitivityLabelDetailsCollection
+            uid: word!Word.SensitivityLabelDetailsCollection:class
+          - name: SensitivityLabelsCatalog
+            uid: word!Word.SensitivityLabelsCatalog:class
           - name: Setting
             uid: word!Word.Setting:class
           - name: SettingCollection
@@ -1480,6 +1494,9 @@ items:
             href: >-
               ../../requirement-sets/excel/excel-api-desktop-1-1-requirement-set.md
             displayName: Excel
+          - name: ExcelApi 1.21 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-21-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.20 requirement set
             href: ../../requirement-sets/excel/excel-api-1-20-requirement-set.md
             displayName: Excel
@@ -1555,6 +1572,9 @@ items:
             displayName: Outlook
           - name: Mailbox preview requirement set
             href: ../../requirement-sets/outlook/outlook-requirement-set-preview.md
+            displayName: Outlook
+          - name: Mailbox requirement set 1.16
+            href: ../../requirement-sets/outlook/outlook-requirement-set-1-16.md
             displayName: Outlook
           - name: Mailbox requirement set 1.15
             href: ../../requirement-sets/outlook/outlook-requirement-set-1-15.md

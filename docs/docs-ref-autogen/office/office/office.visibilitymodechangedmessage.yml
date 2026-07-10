@@ -7,10 +7,10 @@ summary: Message used in the `onVisibilityModeChanged` invocation.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Addin](/javascript/api/office/office.addin): [onVisibilityModeChanged](/javascript/api/office/office.addin#office-office-addin-onvisibilitymodechanged-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 04/21/2026
+ms.date: 06/30/2026
 ---
 
 # Office Add-ins JavaScript API reference
@@ -25,6 +25,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <li><a href="/javascript/api/excel?view=excel-js-preview&preserve-view=true">ExcelApi Preview</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-online&preserve-view=true">ExcelApiOnline 1.1</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-desktop-1.1&preserve-view=true">ExcelApiDesktop 1.1</a></li>
+            <li><a href="/javascript/api/excel?view=excel-js-1.21&preserve-view=true">ExcelApi 1.21</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.20&preserve-view=true">ExcelApi 1.20</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.19&preserve-view=true">ExcelApi 1.19</a></li>
             <li><a href="/javascript/api/excel?view=excel-js-1.18&preserve-view=true">ExcelApi 1.18</a></li>
@@ -53,6 +54,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <h3>Outlook APIs</h3>
         <ul>
             <li><a href="/javascript/api/outlook?view=outlook-js-preview&preserve-view=true">Mailbox Preview</a></li>
+            <li><a href="/javascript/api/outlook?view=outlook-js-1.16&preserve-view=true">Mailbox 1.16</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.15&preserve-view=true">Mailbox 1.15</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.14&preserve-view=true">Mailbox 1.14</a></li>
             <li><a href="/javascript/api/outlook?view=outlook-js-1.13&preserve-view=true">Mailbox 1.13</a></li>

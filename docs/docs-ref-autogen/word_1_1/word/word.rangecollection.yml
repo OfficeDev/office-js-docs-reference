@@ -7,13 +7,13 @@ summary: Contains a collection of [Word.Range](xref:word!Word.Range:class) objec
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [search](/javascript/api/word/word.body#word-word-body-search-member(1))
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [search](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [search](/javascript/api/word/word.paragraph#word-word-paragraph-search-member(1))
   - [Word.Range](/javascript/api/word/word.range): [search](/javascript/api/word/word.range#word-word-range-search-member(1))
+
   #### Examples
 
   ```TypeScript

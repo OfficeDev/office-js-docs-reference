@@ -7,11 +7,11 @@ summary: Specifies a range and its formatting.
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.SetBindingDataOptions](/javascript/api/office/office.setbindingdataoptions): [cellFormat](/javascript/api/office/office.setbindingdataoptions#office-office-setbindingdataoptions-cellformat-member)
   - [Office.SetSelectedDataOptions](/javascript/api/office/office.setselecteddataoptions): [cellFormat](/javascript/api/office/office.setselecteddataoptions#office-office-setselecteddataoptions-cellformat-member)
+
   #### Examples
 
   ```TypeScript

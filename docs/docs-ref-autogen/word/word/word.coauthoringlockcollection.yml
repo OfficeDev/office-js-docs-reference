@@ -7,11 +7,11 @@ summary: Represents a collection of coauthoring locks in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Coauthor](/javascript/api/word/word.coauthor): [locks](/javascript/api/word/word.coauthor#word-word-coauthor-locks-member)
   - [Word.Coauthoring](/javascript/api/word/word.coauthoring): [locks](/javascript/api/word/word.coauthoring#word-word-coauthoring-locks-member)
+
   #### Examples
 
   ```TypeScript

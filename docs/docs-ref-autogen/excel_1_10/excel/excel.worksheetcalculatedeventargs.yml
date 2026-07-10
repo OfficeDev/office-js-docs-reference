@@ -7,11 +7,11 @@ summary: Provides information about the worksheet that raised the calculated eve
 remarks: |-
   [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [onCalculated](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculated-member)
   - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [onCalculated](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculated-member)
+
   #### Examples
 
   ```TypeScript

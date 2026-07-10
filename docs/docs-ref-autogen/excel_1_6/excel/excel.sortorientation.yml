@@ -7,10 +7,10 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.RangeSort](/javascript/api/excel/excel.rangesort): [apply](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -7,7 +7,6 @@ summary: Provides information about the type of a raised event.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs): [eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)
@@ -16,6 +15,7 @@ remarks: |-
   - [Word.ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs): [eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)
   - [Word.ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs): [eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)
   - [Word.ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs): [eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)
+
   #### Examples
 
   ```TypeScript

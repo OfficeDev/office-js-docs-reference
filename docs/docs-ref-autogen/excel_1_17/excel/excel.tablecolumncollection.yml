@@ -7,10 +7,10 @@ summary: Represents a collection of all the columns that are part of the table.
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Table](/javascript/api/excel/excel.table): [columns](/javascript/api/excel/excel.table#excel-excel-table-columns-member)
+
   #### Examples
 
   ```TypeScript

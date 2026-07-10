@@ -11,6 +11,23 @@ remarks: |-
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [date](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-date-member), [time](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-time-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  function applyTime(sheet: Excel.Worksheet) {
+      // Time must be between 9:00 AM and 5:00 PM.
+      const basicRule: Excel.DateTimeDataValidation = {
+          formula1: "9:00 AM",
+          formula2: "5:00 PM",
+          operator: Excel.DataValidationOperator.between
+      };
+      const rule: Excel.DataValidationRule = { time: basicRule };
+      sheet.getRange("B6").dataValidation.rule = rule;
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

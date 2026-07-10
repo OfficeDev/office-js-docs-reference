@@ -20,10 +20,10 @@ summary: |-
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
+
   #### Examples
 
   ```TypeScript
@@ -1333,12 +1333,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-      ```
-      ```TypeScript
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
 

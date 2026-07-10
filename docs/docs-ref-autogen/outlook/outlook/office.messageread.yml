@@ -20,10 +20,10 @@ summary: |-
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.Mailbox](/javascript/api/outlook/office.mailbox): [item](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-item-member)
+
   #### Examples
 
   ```TypeScript
@@ -225,13 +225,13 @@ properties:
 
       The `cc` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
 
-      - Windows (classic): 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+      - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-
@@ -931,13 +931,13 @@ properties:
 
       The `to` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
 
-      - Windows (classic): 500 recipients
+      - Windows (classic - Mailbox 1.15 and earlier): 500 recipients
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+      - Windows (classic - Mailbox 1.16 and later): 1,000 recipients
 
       - Android, classic Mac UI, iOS: 100 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 1,000 recipients (expanded view)
 
       - New Mac UI: No limit
     remarks: |-

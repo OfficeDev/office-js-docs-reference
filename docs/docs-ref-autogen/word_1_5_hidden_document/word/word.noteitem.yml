@@ -7,11 +7,11 @@ summary: Represents a footnote or endnote.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.NoteItemCollection](/javascript/api/word/word.noteitemcollection): [getFirst](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-items-member)
   - [Word.Range](/javascript/api/word/word.range): [insertEndnote](/javascript/api/word/word.range#word-word-range-insertendnote-member(1)), [insertFootnote](/javascript/api/word/word.range#word-word-range-insertfootnote-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the Word application.
 remarks: |-
 
 
-
   #### Used by
 
   - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))
@@ -65,6 +64,7 @@ remarks: |-
   - [Word.TableStyle](/javascript/api/word/word.tablestyle): [context](/javascript/api/word/word.tablestyle#word-word-tablestyle-context-member)
   - [Word.TrackedChange](/javascript/api/word/word.trackedchange): [context](/javascript/api/word/word.trackedchange#word-word-trackedchange-context-member)
   - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [context](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-context-member)
+
   #### Examples
 
   ```TypeScript

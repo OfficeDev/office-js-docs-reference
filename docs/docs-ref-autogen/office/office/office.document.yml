@@ -7,13 +7,13 @@ summary: An abstract class that represents the document the add-in is interactin
 remarks: |-
   **Applications**: Excel, PowerPoint, Project, Word
 
-
   #### Used by
 
   - [Office.Binding](/javascript/api/office/office.binding): [document](/javascript/api/office/office.binding#office-office-binding-document-member)
   - [Office.Bindings](/javascript/api/office/office.bindings): [document](/javascript/api/office/office.bindings#office-office-bindings-document-member)
   - [Office.Context](/javascript/api/office/office.context): [document](/javascript/api/office/office.context#office-office-context-document-member)
   - [Office.DocumentSelectionChangedEventArgs](/javascript/api/office/office.documentselectionchangedeventargs): [document](/javascript/api/office/office.documentselectionchangedeventargs#office-office-documentselectionchangedeventargs-document-member)
+
   #### Examples
 
   ```TypeScript

@@ -7,7 +7,6 @@ summary: Represents the language ID of a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Application](/javascript/api/word/word.application): [language](/javascript/api/word/word.application#word-word-application-language-member)
@@ -19,6 +18,7 @@ remarks: |-
   - [Word.Style](/javascript/api/word/word.style): [languageId](/javascript/api/word/word.style#word-word-style-languageid-member), [languageIdFarEast](/javascript/api/word/word.style#word-word-style-languageidfareast-member)
   - [Word.TableSortOptions](/javascript/api/word/word.tablesortoptions): [languageId](/javascript/api/word/word.tablesortoptions#word-word-tablesortoptions-languageid-member)
   - [Word.Template](/javascript/api/word/word.template): [languageId](/javascript/api/word/word.template#word-word-template-languageid-member), [languageIdFarEast](/javascript/api/word/word.template#word-word-template-languageidfareast-member)
+
   #### Examples
 
   ```TypeScript

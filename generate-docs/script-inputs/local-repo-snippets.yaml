@@ -767,6 +767,78 @@ Excel.CustomConditionalFormat#rule:member:
 
         console.log("Added new custom conditional format highlighting all blank cells.");
     });
+Excel.LinkedEntityCellValueLoadedEventArgs:interface:
+  - |-
+    // Registers an event handler for the onLinkedEntityCellValueLoaded event.
+    async function registerEvent() {
+        await Excel.run(async (context) => {
+            const linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+            linkedEntityDataDomains.onLinkedEntityCellValueLoaded.add(handleLoadedLinkedEntity);
+
+            await context.sync();
+            console.log("Event handler registered successfully. You''ll be notified when linked entities are loaded.");
+        });
+    }
+
+    // Handles the onLinkedEntityCellValueLoaded event that occurs when a linked entity cell value is loaded.
+    async function handleLoadedLinkedEntity(event: Excel.LinkedEntityCellValueLoadedEventArgs) {
+        await Excel.run(async (context) => {
+            console.log(`The ${event.type} event occurred from a ${event.source} source.`);
+            console.log(`The linked entity cell value with ID ${event.id} is loaded.`);
+            const loadedLinkedEntityCellValue: Excel.LinkedEntityCellValue = event.linkedEntityCellValue;
+            console.log(`Loaded linked entity cell value: ${loadedLinkedEntityCellValue}`);
+
+            // Queue operations on the loaded entity value here.
+
+            await context.sync();
+        });
+    }
+Excel.LinkedEntityDataDomainCollection#loadLinkedEntityCellValue:member(1):
+  - |-
+    // Loads the linked entity cell value for the specified domain and entity IDs.
+    async function loadLinkedEntity(domainId: string, entityId: string ) {
+        await Excel.run(async (context) => {
+            // Specify the linked entity ID to load.
+            const linkedEntityId: Excel.LinkedEntityId = {
+                entityId: entityId,
+                domainId: domainId,
+                serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
+                culture: "en-US",
+            };
+
+            // Load the linked entity cell value.
+            context.workbook.linkedEntityDataDomains.loadLinkedEntityCellValue(linkedEntityId);
+            await context.sync();
+
+            // The onLinkedEntityCellValueLoaded event occurs once the linked entity cell value is loaded.
+        });
+    }
+Excel.LinkedEntityDataDomainCollection#onLinkedEntityCellValueLoaded:member:
+  - |-
+    // Registers an event handler for the onLinkedEntityCellValueLoaded event.
+    async function registerEvent() {
+        await Excel.run(async (context) => {
+            const linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+            linkedEntityDataDomains.onLinkedEntityCellValueLoaded.add(handleLoadedLinkedEntity);
+
+            await context.sync();
+            console.log("Event handler registered successfully. You''ll be notified when linked entities are loaded.");
+        });
+    }
+
+    // Handles the onLinkedEntityCellValueLoaded event that occurs when a linked entity cell value is loaded.
+    async function handleLoadedLinkedEntity(event: Excel.LinkedEntityCellValueLoadedEventArgs) {
+        await Excel.run(async (context) => {
+            console.log(`The ${event.type} event occurred from a ${event.source} source.`);
+            console.log(`The linked entity cell value with ID ${event.id} is loaded.`);
+            const loadedLinkedEntityCellValue: Excel.LinkedEntityCellValue = event.linkedEntityCellValue;
+            console.log(`Loaded linked entity cell value: ${loadedLinkedEntityCellValue}`);
+
+            // Queue operations on the loaded entity value here.
+
+            await context.sync();
+        });
+    }
 Excel.NamedItem#getRange:member(1):
   - |-
     // Returns the Range object that is associated with the name.
@@ -1240,6 +1312,52 @@ Excel.RequestContext:class:
       const workbook = context.workbook;
       // Interact with the Excel workbook...
     });
+Excel.SearchCriteria:interface:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("ExpensesTable");
+        const searchRange = table.getRange();
+        
+        // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+        const searchCriteria: Excel.SearchCriteria = {
+            completeMatch: true,
+            matchCase: false,
+            searchDirection: Excel.SearchDirection.forward
+        };
+        const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+        foundRange.load("address");
+        await context.sync();
+
+        if (foundRange.isNullObject) {
+            console.log("Text not found");
+        } else {
+            console.log(foundRange.address);
+        }
+    });
+Excel.SearchDirection:enum:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("ExpensesTable");
+        const searchRange = table.getRange();
+        
+        // Search for cells that exactly match "TODO", ignoring case, and starting from the top-left of the range and going forward.
+        const searchCriteria: Excel.SearchCriteria = {
+            completeMatch: true,
+            matchCase: false,
+            searchDirection: Excel.SearchDirection.forward
+        };
+        const foundRange = searchRange.findOrNullObject("TODO", searchCriteria);
+        foundRange.load("address");
+        await context.sync();
+
+        if (foundRange.isNullObject) {
+            console.log("Text not found");
+        } else {
+            console.log(foundRange.address);
+        }
+    });
 Excel.SettingsChangedEventArgs:interface:
   - |-
     async function registerSettingsChangedHandler() {
@@ -1263,7 +1381,7 @@ Excel.SettingsChangedEventArgs:interface:
             console.log("Setting value is: " + changedSetting.value);
             await context.sync();
         });
-    } 
+    }
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -6211,6 +6329,37 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.ProjectTaskFields:enum:
+  - |-
+    // Get the GUID of the selected task.
+    Office.context.document.getSelectedTaskAsync((result) => {
+      let taskGuid;
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+        taskGuid = result.value;
+
+        // Set the specified fields for the selected task.
+        const targetFields = [Office.ProjectTaskFields.Name, Office.ProjectTaskFields.Notes];
+        const fieldValues = ["New task name", "Notes for the task."];
+
+        // Set the field value. If the call is successful, set the next field.
+        for (let index = 0; index < targetFields.length; index++) {
+          Office.context.document.setTaskFieldAsync(
+            taskGuid,
+            targetFields[index],
+            fieldValues[index],
+            (result) => {
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                index++;
+              } else {
+                console.log(result.error);
+              }
+            }
+          );
+        }
+      } else {
+        console.log(result.error);
+      }
+    });
 Office.RangeCoordinates:interface:
   - |-
     // Use RangeCoordinates to target specific cells when applying formatting.
@@ -6259,6 +6408,22 @@ Office.RangeFormatConfiguration:interface:
             }
         }
     );
+Office.RemoveHandlerOptions:interface:
+  - |-
+    function onBindingDataChanged(eventArgs) {
+        // Handle binding changes.
+    }
+
+    function removeEventHandlerFromBinding() {
+        const options: Office.RemoveHandlerOptions = {
+            handler: onBindingDataChanged
+        };
+
+        Office.select("bindings#MyBinding").removeHandlerAsync(
+            Office.EventType.BindingDataChanged,
+            options
+        );
+    }
 Office.RequirementSetSupport:interface:
   - |-
     const requirements : Office.RequirementSetSupport = Office.context.requirements; 
@@ -8832,11 +8997,6 @@ Office.AppointmentCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.AppointmentCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.AppointmentRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -8983,27 +9143,6 @@ Office.AttachmentsChangedEventArgs:interface:
             const attachment = event.attachmentDetails;
             // Perform operations on the attachment that was added.
         }
-    }
-Office.Body#setAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        { 
-            coercionType: Office.CoercionType.Html,
-            asyncContext: "This is passed to the callback"
-        },
-        (result) => {
-            // Process the result.
-        }
-    );
-
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": null,
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
     }
 Office.CategoryDetails:interface:
   - |-
@@ -9855,11 +9994,6 @@ Office.MessageCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.MessageCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageDecryptEventCompletedOptions:interface:
   - |-
     // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
@@ -10040,28 +10174,6 @@ Office.Recipients#addAsync:member(1):
             console.log(result.error);
         } else {
             console.log("Recipients added");
-        }
-    });
-Office.Recipients#setAsync:member(2):
-  - |-
-    // The following example creates an array of EmailUser objects and
-    // replaces the CC recipients of the message with the array.
-    const newRecipients = [
-        {
-            "displayName": "Allie Bellew",
-            "emailAddress": "allieb@contoso.com"
-        },
-        {
-            "displayName": "Alex Darrow",
-            "emailAddress": "alexd@contoso.com"
-        }
-    ];
-
-    Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-        if (result.error) {
-            console.log(result.error);
-        } else {
-            console.log("Recipients overwritten");
         }
     });
 Office.RecipientsChangedEventArgs:interface:

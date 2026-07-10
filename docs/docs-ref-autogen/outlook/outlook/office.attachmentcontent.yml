@@ -11,7 +11,6 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [getAttachmentContentAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-getattachmentcontentasync-member(1))
@@ -20,6 +19,7 @@ remarks: |-
   - [Office.LoadedMessageRead](/javascript/api/outlook/office.loadedmessageread): [getAttachmentContentAsync](/javascript/api/outlook/office.loadedmessageread#outlook-office-loadedmessageread-getattachmentcontentasync-member(1))
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [getAttachmentContentAsync](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getattachmentcontentasync-member(1))
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [getAttachmentContentAsync](/javascript/api/outlook/office.messageread#outlook-office-messageread-getattachmentcontentasync-member(1))
+
   #### Examples
 
   ```TypeScript

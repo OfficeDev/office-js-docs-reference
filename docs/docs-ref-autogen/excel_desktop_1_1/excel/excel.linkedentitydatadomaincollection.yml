@@ -218,6 +218,48 @@ methods:
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
         description: ''
+  - name: loadLinkedEntityCellValue(id)
+    uid: excel!Excel.LinkedEntityDataDomainCollection#loadLinkedEntityCellValue:member(1)
+    package: excel!
+    fullName: loadLinkedEntityCellValue(id)
+    summary: Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`<!-- -->. If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
+    remarks: |-
+      [API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Loads the linked entity cell value for the specified domain and entity IDs.
+      async function loadLinkedEntity(domainId: string, entityId: string ) {
+          await Excel.run(async (context) => {
+              // Specify the linked entity ID to load.
+              const linkedEntityId: Excel.LinkedEntityId = {
+                  entityId: entityId,
+                  domainId: domainId,
+                  serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
+                  culture: "en-US",
+              };
+
+              // Load the linked entity cell value.
+              context.workbook.linkedEntityDataDomains.loadLinkedEntityCellValue(linkedEntityId);
+              await context.sync();
+
+              // The onLinkedEntityCellValueLoaded event occurs once the linked entity cell value is loaded.
+          });
+      }
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadLinkedEntityCellValue(id: LinkedEntityId): void;'
+      parameters:
+        - id: id
+          description: A specific `LinkedEntityId`
+          type: <xref uid="excel!Excel.LinkedEntityId:interface" />
+      return:
+        type: void
+        description: ''
   - name: refreshAll()
     uid: excel!Excel.LinkedEntityDataDomainCollection#refreshAll:member(1)
     package: excel!
@@ -247,6 +289,51 @@ methods:
         type: <xref uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface" />
         description: ''
 events:
+  - name: onLinkedEntityCellValueLoaded
+    uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityCellValueLoaded:member
+    package: excel!
+    fullName: onLinkedEntityCellValueLoaded
+    summary: Occurs when the request to load a `LinkedEntityCellValue` is completed.
+    remarks: |-
+      [API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      This event isn't supported in Excel on the web.
+
+      #### Examples
+
+      ```TypeScript
+      // Registers an event handler for the onLinkedEntityCellValueLoaded event.
+      async function registerEvent() {
+          await Excel.run(async (context) => {
+              const linkedEntityDataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+              linkedEntityDataDomains.onLinkedEntityCellValueLoaded.add(handleLoadedLinkedEntity);
+
+              await context.sync();
+              console.log("Event handler registered successfully. You''ll be notified when linked entities are loaded.");
+          });
+      }
+
+      // Handles the onLinkedEntityCellValueLoaded event that occurs when a linked entity cell value is loaded.
+      async function handleLoadedLinkedEntity(event: Excel.LinkedEntityCellValueLoadedEventArgs) {
+          await Excel.run(async (context) => {
+              console.log(`The ${event.type} event occurred from a ${event.source} source.`);
+              console.log(`The linked entity cell value with ID ${event.id} is loaded.`);
+              const loadedLinkedEntityCellValue: Excel.LinkedEntityCellValue = event.linkedEntityCellValue;
+              console.log(`Loaded linked entity cell value: ${loadedLinkedEntityCellValue}`);
+
+              // Queue operations on the loaded entity value here.
+
+              await context.sync();
+          });
+      }
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;'
+      return:
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityCellValueLoadedEventArgs:interface" />&gt;
   - name: onLinkedEntityDataDomainAdded
     uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member
     package: excel!

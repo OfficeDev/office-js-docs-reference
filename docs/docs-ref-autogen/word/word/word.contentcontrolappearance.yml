@@ -7,7 +7,6 @@ summary: Represents the content control appearance.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [appearance](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-appearance-member)
@@ -16,6 +15,7 @@ remarks: |-
   - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [appearance](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-appearance-member)
   - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [appearance](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-appearance-member)
   - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [appearance](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-appearance-member)
+
   #### Examples
 
   ```TypeScript

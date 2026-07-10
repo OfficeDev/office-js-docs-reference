@@ -9,12 +9,12 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
-
   #### Used by
 
   - [Office.MeetingSuggestion](/javascript/api/outlook/office.meetingsuggestion): [attendees](/javascript/api/outlook/office.meetingsuggestion#outlook-office-meetingsuggestion-attendees-member)
   - [Office.Recipients](/javascript/api/outlook/office.recipients): [addAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1)), [setAsync](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))
   - [Office.TaskSuggestion](/javascript/api/outlook/office.tasksuggestion): [assignees](/javascript/api/outlook/office.tasksuggestion#outlook-office-tasksuggestion-assignees-member)
+
   #### Examples
 
   ```TypeScript

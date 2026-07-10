@@ -7,11 +7,11 @@ summary: Workbook is the top level object which contains related workbook object
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.RequestContext](/javascript/api/excel/excel.requestcontext): [workbook](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-workbook-member)
   - [Excel.SelectionChangedEventArgs](/javascript/api/excel/excel.selectionchangedeventargs): [workbook](/javascript/api/excel/excel.selectionchangedeventargs#excel-excel-selectionchangedeventargs-workbook-member)
+
   #### Examples
 
   ```TypeScript
@@ -410,6 +410,19 @@ properties:
       content: 'readonly readOnly: boolean;'
       return:
         type: boolean
+  - name: sensitivityLabel
+    uid: excel!Excel.Workbook#sensitivityLabel:member
+    package: excel!
+    fullName: sensitivityLabel
+    summary: Returns the sensitivity label of the workbook.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabel: Excel.SensitivityLabel;'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabel:class" />
   - name: settings
     uid: excel!Excel.Workbook#settings:member
     package: excel!

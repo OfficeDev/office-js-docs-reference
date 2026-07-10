@@ -7,10 +7,10 @@ summary: Represents a list template.
 remarks: |-
   [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Style](/javascript/api/word/word.style): [listTemplate](/javascript/api/word/word.style#word-word-style-listtemplate-member)
+
   #### Examples
 
   ```TypeScript

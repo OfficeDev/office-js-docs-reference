@@ -7,7 +7,6 @@ summary: Contains a collection of [Word.ContentControl](xref:word!Word.ContentCo
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [contentControls](/javascript/api/word/word.body#word-word-body-contentcontrols-member)
@@ -16,6 +15,7 @@ remarks: |-
   - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [contentControls](/javascript/api/word/word.documentcreated#word-word-documentcreated-contentcontrols-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [contentControls](/javascript/api/word/word.paragraph#word-word-paragraph-contentcontrols-member)
   - [Word.Range](/javascript/api/word/word.range): [contentControls](/javascript/api/word/word.range#word-word-range-contentcontrols-member)
+
   #### Examples
 
   ```TypeScript

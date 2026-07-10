@@ -7,10 +7,10 @@ summary: Specifies how to wrap document text around a shape. For more details, s
 remarks: |-
   [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ShapeTextWrap](/javascript/api/word/word.shapetextwrap): [type](/javascript/api/word/word.shapetextwrap#word-word-shapetextwrap-type-member)
+
   #### Examples
 
   ```TypeScript

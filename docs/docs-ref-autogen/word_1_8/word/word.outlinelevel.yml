@@ -7,10 +7,10 @@ summary: Represents the outline levels.
 remarks: |-
   [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ParagraphFormat](/javascript/api/word/word.paragraphformat): [outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)
+
   #### Examples
 
   ```TypeScript

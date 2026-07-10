@@ -7,10 +7,10 @@ summary: Represents an annotation wrapper around critique displayed in the docum
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Annotation](/javascript/api/word/word.annotation): [critiqueAnnotation](/javascript/api/word/word.annotation#word-word-annotation-critiqueannotation-member)
+
   #### Examples
 
   ```TypeScript

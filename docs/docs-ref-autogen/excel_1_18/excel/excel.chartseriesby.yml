@@ -7,11 +7,11 @@ summary: Specifies whether the series are by rows or by columns. In Excel on des
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Chart](/javascript/api/excel/excel.chart): [setData](/javascript/api/excel/excel.chart#excel-excel-chart-setdata-member(1))
   - [Excel.ChartCollection](/javascript/api/excel/excel.chartcollection): [add](/javascript/api/excel/excel.chartcollection#excel-excel-chartcollection-add-member(1))
+
   #### Examples
 
   ```TypeScript

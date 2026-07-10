@@ -7,7 +7,6 @@ summary: Represents a font.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [font](/javascript/api/word/word.body#word-word-body-font-member)
@@ -19,6 +18,7 @@ remarks: |-
   - [Word.Style](/javascript/api/word/word.style): [font](/javascript/api/word/word.style#word-word-style-font-member)
   - [Word.Table](/javascript/api/word/word.table): [font](/javascript/api/word/word.table#word-word-table-font-member)
   - [Word.TableRow](/javascript/api/word/word.tablerow): [font](/javascript/api/word/word.tablerow#word-word-tablerow-font-member)
+
   #### Examples
 
   ```TypeScript

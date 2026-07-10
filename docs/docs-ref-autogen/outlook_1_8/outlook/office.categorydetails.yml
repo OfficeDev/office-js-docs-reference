@@ -11,11 +11,11 @@ remarks: |-
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
   #### Used by
 
   - [Office.Categories](/javascript/api/outlook/office.categories): [getAsync](/javascript/api/outlook/office.categories#outlook-office-categories-getasync-member(1))
   - [Office.MasterCategories](/javascript/api/outlook/office.mastercategories): [addAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1)), [getAsync](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-getasync-member(1))
+
   #### Examples
 
   ```TypeScript

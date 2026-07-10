@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the Excel application
 remarks: |-
 
 
-
   #### Used by
 
   - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(1))
@@ -164,6 +163,10 @@ remarks: |-
   - [Excel.RowColumnPivotHierarchy](/javascript/api/excel/excel.rowcolumnpivothierarchy): [context](/javascript/api/excel/excel.rowcolumnpivothierarchy#excel-excel-rowcolumnpivothierarchy-context-member)
   - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [context](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-context-member)
   - [Excel.Runtime](/javascript/api/excel/excel.runtime): [context](/javascript/api/excel/excel.runtime#excel-excel-runtime-context-member)
+  - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [context](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-context-member)
+  - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [context](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-context-member)
+  - [Excel.SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection): [context](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-context-member)
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [context](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-context-member)
   - [Excel.Setting](/javascript/api/excel/excel.setting): [context](/javascript/api/excel/excel.setting#excel-excel-setting-context-member)
   - [Excel.SettingCollection](/javascript/api/excel/excel.settingcollection): [context](/javascript/api/excel/excel.settingcollection#excel-excel-settingcollection-context-member)
   - [Excel.Shape](/javascript/api/excel/excel.shape): [context](/javascript/api/excel/excel.shape#excel-excel-shape-context-member)
@@ -211,6 +214,7 @@ remarks: |-
   - [Excel.WorksheetFormatChangedEventArgs](/javascript/api/excel/excel.worksheetformatchangedeventargs): [getRange](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrange-member(1)), [getRangeOrNullObject](/javascript/api/excel/excel.worksheetformatchangedeventargs#excel-excel-worksheetformatchangedeventargs-getrangeornullobject-member(1))
   - [Excel.WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes): [context](/javascript/api/excel/excel.worksheetfreezepanes#excel-excel-worksheetfreezepanes-context-member)
   - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [context](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-context-member)
+
   #### Examples
 
   ```TypeScript
@@ -279,6 +283,19 @@ properties:
       content: 'readonly runtime: Runtime;'
       return:
         type: <xref uid="excel!Excel.Runtime:class" />
+  - name: sensitivityLabelsCatalog
+    uid: excel!Excel.RequestContext#sensitivityLabelsCatalog:member
+    package: excel!
+    fullName: sensitivityLabelsCatalog
+    summary: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabelsCatalog: SensitivityLabelsCatalog;'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelsCatalog:class" />
   - name: workbook
     uid: excel!Excel.RequestContext#workbook:member
     package: excel!

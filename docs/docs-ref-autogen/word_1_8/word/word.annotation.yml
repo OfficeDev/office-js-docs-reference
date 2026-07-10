@@ -7,11 +7,11 @@ summary: Represents an annotation attached to a paragraph.
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [getFirst](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-getfirstornullobject-member(1)), [items](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-items-member)
   - [Word.Document](/javascript/api/word/word.document): [getAnnotationById](/javascript/api/word/word.document#word-word-document-getannotationbyid-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -7,10 +7,10 @@ summary: Specifies the type of custom action in a notification message.
 remarks: |-
   [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-
   #### Used by
 
   - [Office.NotificationMessageAction](/javascript/api/outlook/office.notificationmessageaction): [actionType](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-actiontype-member)
+
   #### Examples
 
   ```TypeScript

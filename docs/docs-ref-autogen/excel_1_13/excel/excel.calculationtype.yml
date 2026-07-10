@@ -7,10 +7,10 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Application](/javascript/api/excel/excel.application): [calculate](/javascript/api/excel/excel.application#excel-excel-application-calculate-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SensitivityLabelsCatalogLoadOptions
+uid: excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions:interface
+package: excel!
+fullName: Excel.Interfaces.SensitivityLabelsCatalogLoadOptions
+summary: Provides methods to check the status of the catalog of sensitivity labels in Excel and retrieve all available sensitivity labels if the catalog is enabled.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [load](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions#$all:member
+    package: excel!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: getLabelingCapability
+    uid: excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapability:member
+    package: excel!
+    fullName: getLabelingCapability
+    summary: Gets whether the catalog of sensitivity labels is enabled in Excel.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapability?: boolean;'
+      return:
+        type: boolean

@@ -100,11 +100,6 @@ Office.AppointmentCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.AppointmentCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.AppointmentRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -251,27 +246,6 @@ Office.AttachmentsChangedEventArgs:interface:
             const attachment = event.attachmentDetails;
             // Perform operations on the attachment that was added.
         }
-    }
-Office.Body#setAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        { 
-            coercionType: Office.CoercionType.Html,
-            asyncContext: "This is passed to the callback"
-        },
-        (result) => {
-            // Process the result.
-        }
-    );
-
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": null,
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
     }
 Office.CategoryDetails:interface:
   - |-
@@ -1123,11 +1097,6 @@ Office.MessageCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.MessageCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageDecryptEventCompletedOptions:interface:
   - |-
     // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
@@ -1308,28 +1277,6 @@ Office.Recipients#addAsync:member(1):
             console.log(result.error);
         } else {
             console.log("Recipients added");
-        }
-    });
-Office.Recipients#setAsync:member(2):
-  - |-
-    // The following example creates an array of EmailUser objects and
-    // replaces the CC recipients of the message with the array.
-    const newRecipients = [
-        {
-            "displayName": "Allie Bellew",
-            "emailAddress": "allieb@contoso.com"
-        },
-        {
-            "displayName": "Alex Darrow",
-            "emailAddress": "alexd@contoso.com"
-        }
-    ];
-
-    Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-        if (result.error) {
-            console.log(result.error);
-        } else {
-            console.log("Recipients overwritten");
         }
     });
 Office.RecipientsChangedEventArgs:interface:

@@ -7,11 +7,11 @@ summary: ''
 remarks: |-
   [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.ConditionalFormat](/javascript/api/excel/excel.conditionalformat): [type](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-type-member)
   - [Excel.ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection): [add](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))
+
   #### Examples
 
   ```TypeScript

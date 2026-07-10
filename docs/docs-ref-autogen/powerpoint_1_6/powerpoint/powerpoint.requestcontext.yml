@@ -7,7 +7,6 @@ summary: The RequestContext object facilitates requests to the PowerPoint applic
 remarks: |-
 
 
-
   #### Used by
 
   - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(1))
@@ -34,6 +33,7 @@ remarks: |-
   - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [context](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-context-member)
   - [PowerPoint.TextFrame](/javascript/api/powerpoint/powerpoint.textframe): [context](/javascript/api/powerpoint/powerpoint.textframe#powerpoint-powerpoint-textframe-context-member)
   - [PowerPoint.TextRange](/javascript/api/powerpoint/powerpoint.textrange): [context](/javascript/api/powerpoint/powerpoint.textrange#powerpoint-powerpoint-textrange-context-member)
+
   #### Examples
 
   ```TypeScript
@@ -91,4 +91,17 @@ properties:
       content: 'readonly presentation: Presentation;'
       return:
         type: <xref uid="powerpoint!PowerPoint.Presentation:class" />
+  - name: sensitivityLabelsCatalog
+    uid: powerpoint!PowerPoint.RequestContext#sensitivityLabelsCatalog:member
+    package: powerpoint!
+    fullName: sensitivityLabelsCatalog
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sensitivityLabelsCatalog: any;'
+      return:
+        type: any
 extends: <xref uid="office!OfficeExtension.ClientRequestContext:class" />

@@ -7,10 +7,10 @@ summary: Provides information about the paragraphs that raised the `paragraphDel
 remarks: |-
   [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [onParagraphDeleted](/javascript/api/word/word.document#word-word-document-onparagraphdeleted-member)
+
   #### Examples
 
   ```TypeScript

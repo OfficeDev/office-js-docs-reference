@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Excel.GroupOption
+uid: excel!Excel.GroupOption:enum
+package: excel!
+fullName: Excel.GroupOption
+summary: ''
+remarks: '\[Api set: ExcelApi 1.10\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: byColumns
+    uid: excel!Excel.GroupOption.byColumns:member
+    package: excel!
+    summary: |-
+      Group by columns.
+
+      * \[Api set: ExcelApi 1.10\]
+    value: '"ByColumns"'
+  - name: byRows
+    uid: excel!Excel.GroupOption.byRows:member
+    package: excel!
+    summary: |-
+      Group by rows.
+
+      * \[Api set: ExcelApi 1.10\]
+    value: '"ByRows"'

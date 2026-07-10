@@ -7,10 +7,10 @@ summary: Provides information about the paragraphs that raised the `paragraphCha
 remarks: |-
   [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Document](/javascript/api/word/word.document): [onParagraphChanged](/javascript/api/word/word.document#word-word-document-onparagraphchanged-member)
+
   #### Examples
 
   ```TypeScript

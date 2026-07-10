@@ -7,11 +7,11 @@ summary: Represents the fill formatting of a shape object.
 remarks: |-
   [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
-
   #### Used by
 
   - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [fill](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-fill-member)
   - [PowerPoint.TableCell](/javascript/api/powerpoint/powerpoint.tablecell): [fill](/javascript/api/powerpoint/powerpoint.tablecell#powerpoint-powerpoint-tablecell-fill-member)
+
   #### Examples
 
   ```TypeScript

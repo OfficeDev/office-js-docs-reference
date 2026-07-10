@@ -9,6 +9,11 @@
                              "find":  "options?: SmartAlertsEventCompletedOptions | SpamReportingEventCompletedOptions",
                              "replace":  "options?: SmartAlertsEventCompletedOptions",
                              "description":  "Address SpamReportingEventCompletedOptions reference when removing Mailbox 1.14"
+                         },
+                         {
+                             "find":  "@param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event.",
+                             "replace":  "@param options - Optional. An object that specifies the behavior of an event-based add-in when it completes processing an event.",
+                             "description":  "Remove spam-reporting wording from MailboxEvent.completed options parameter docs"
                          }
                      ],
     "includeStaticFields":  false,

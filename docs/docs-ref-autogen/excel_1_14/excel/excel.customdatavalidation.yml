@@ -11,6 +11,21 @@ remarks: |-
 
   - [Excel.DataValidationRule](/javascript/api/excel/excel.datavalidationrule): [custom](/javascript/api/excel/excel.datavalidationrule#excel-excel-datavalidationrule-custom-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  function applyCustom(sheet: Excel.Worksheet) {
+      // Custom formula: Value in B8 must not duplicate any value already in B2:B7.
+      const customRule: Excel.CustomDataValidation = {
+          formula: "=COUNTIF($B$2:$B$7,B8)=0"
+      };
+      const rule: Excel.DataValidationRule = { custom: customRule };
+      sheet.getRange("B8").dataValidation.rule = rule;
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

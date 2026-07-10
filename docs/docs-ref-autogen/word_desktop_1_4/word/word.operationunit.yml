@@ -7,7 +7,6 @@ summary: Specifies the unit of measurement used in Word operations.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Selection](/javascript/api/word/word.selection): [expand](/javascript/api/word/word.selection#word-word-selection-expand-member(1)), [extend](/javascript/api/word/word.selection#word-word-selection-extend-member(1))
@@ -18,6 +17,7 @@ remarks: |-
   - [Word.SelectionMoveUpDownOptions](/javascript/api/word/word.selectionmoveupdownoptions): [unit](/javascript/api/word/word.selectionmoveupdownoptions#word-word-selectionmoveupdownoptions-unit-member)
   - [Word.SelectionNextOptions](/javascript/api/word/word.selectionnextoptions): [unit](/javascript/api/word/word.selectionnextoptions#word-word-selectionnextoptions-unit-member)
   - [Word.SelectionPreviousOptions](/javascript/api/word/word.selectionpreviousoptions): [unit](/javascript/api/word/word.selectionpreviousoptions#word-word-selectionpreviousoptions-unit-member)
+
   #### Examples
 
   ```TypeScript

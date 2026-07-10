@@ -7,11 +7,10 @@ summary: Provides display options and actions a dialog box may take.
 remarks: |-
   [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office)
 
-
-
   #### Used by
 
   - [OfficeRuntime](/javascript/api/office-runtime): [displayWebDialog](/javascript/api/office-runtime#office-runtime-officeruntime-displaywebdialog-function(1))
+
   #### Examples
 
   ```TypeScript

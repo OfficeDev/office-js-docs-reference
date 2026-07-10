@@ -7,12 +7,12 @@ summary: Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePict
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [inlinePictures](/javascript/api/word/word.body#word-word-body-inlinepictures-member)
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [inlinePictures](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inlinepictures-member)
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)
+
   #### Examples
 
   ```TypeScript

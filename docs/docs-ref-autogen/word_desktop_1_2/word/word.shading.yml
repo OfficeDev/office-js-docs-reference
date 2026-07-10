@@ -7,10 +7,10 @@ summary: Represents the `Shading` object.
 remarks: |-
   [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Style](/javascript/api/word/word.style): [shading](/javascript/api/word/word.style#word-word-style-shading-member)
+
   #### Examples
 
   ```TypeScript

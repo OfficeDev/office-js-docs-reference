@@ -30,6 +30,7 @@
         "excel-js-1.18",
         "excel-js-1.19",
         "excel-js-1.20",
+        "excel-js-1.21",
         "excel-js-desktop-1.1",
         "excel-js-online",
         "onenote-js-1.1",
@@ -49,6 +50,7 @@
         "outlook-js-1.13",
         "outlook-js-1.14",
         "outlook-js-1.15",
+        "outlook-js-1.16",
         "powerpoint-js-preview",
         "powerpoint-js-1.1",
         "powerpoint-js-1.2",
@@ -202,6 +204,10 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_16/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
       "ReferenceTOC": "docs/docs-ref-autogen/excel/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
@@ -283,6 +289,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_1_20/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/excel_1_21/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

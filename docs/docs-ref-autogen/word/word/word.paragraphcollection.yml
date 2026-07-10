@@ -7,7 +7,6 @@ summary: Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:clas
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Body](/javascript/api/word/word.body): [paragraphs](/javascript/api/word/word.body#word-word-body-paragraphs-member)
@@ -17,6 +16,7 @@ remarks: |-
   - [Word.ListItem](/javascript/api/word/word.listitem): [getDescendants](/javascript/api/word/word.listitem#word-word-listitem-getdescendants-member(1))
   - [Word.Range](/javascript/api/word/word.range): [paragraphs](/javascript/api/word/word.range#word-word-range-paragraphs-member)
   - [Word.Selection](/javascript/api/word/word.selection): [paragraphs](/javascript/api/word/word.selection#word-word-selection-paragraphs-member)
+
   #### Examples
 
   ```TypeScript

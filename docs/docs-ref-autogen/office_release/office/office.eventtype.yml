@@ -12,7 +12,6 @@ summary: |-
 remarks: |-
 
 
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [addHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removehandlerasync-member(1))
@@ -31,6 +30,7 @@ remarks: |-
   - [Office.Settings](/javascript/api/office/office.settings): [addHandlerAsync](/javascript/api/office/office.settings#office-office-settings-addhandlerasync-member(1)), [removeHandlerAsync](/javascript/api/office/office.settings#office-office-settings-removehandlerasync-member(1))
   - [Office.SettingsChangedEventArgs](/javascript/api/office/office.settingschangedeventargs): [type](/javascript/api/office/office.settingschangedeventargs#office-office-settingschangedeventargs-type-member)
   - [Office.UI](/javascript/api/office/office.ui): [addHandlerAsync](/javascript/api/office/office.ui#office-office-ui-addhandlerasync-member(1))
+
   #### Examples
 
   ```TypeScript

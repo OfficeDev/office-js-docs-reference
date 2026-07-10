@@ -7,10 +7,10 @@ summary: Specifies where in the z-order a shape should be moved relative to othe
 remarks: |-
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
-
   #### Used by
 
   - [Excel.Shape](/javascript/api/excel/excel.shape): [setZOrder](/javascript/api/excel/excel.shape#excel-excel-shape-setzorder-member(1))
+
   #### Examples
 
   ```TypeScript

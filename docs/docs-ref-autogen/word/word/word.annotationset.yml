@@ -7,10 +7,10 @@ summary: Annotations set produced by the add-in. Currently supporting only criti
 remarks: |-
   [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.Paragraph](/javascript/api/word/word.paragraph): [insertAnnotations](/javascript/api/word/word.paragraph#word-word-paragraph-insertannotations-member(1))
+
   #### Examples
 
   ```TypeScript

@@ -7,10 +7,10 @@ summary: Specifies supported content control types and subtypes.
 remarks: |-
   [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-
   #### Used by
 
   - [Word.ContentControl](/javascript/api/word/word.contentcontrol): [type](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-type-member)
+
   #### Examples
 
   ```TypeScript

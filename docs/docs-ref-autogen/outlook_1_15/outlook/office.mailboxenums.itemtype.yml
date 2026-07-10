@@ -7,7 +7,6 @@ summary: Specifies an item's type.
 remarks: |-
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose or Read
 
-
   #### Used by
 
   - [Office.AppointmentCompose](/javascript/api/outlook/office.appointmentcompose): [itemType](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-itemtype-member)
@@ -17,6 +16,7 @@ remarks: |-
   - [Office.MessageCompose](/javascript/api/outlook/office.messagecompose): [itemType](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-itemtype-member)
   - [Office.MessageRead](/javascript/api/outlook/office.messageread): [itemType](/javascript/api/outlook/office.messageread#outlook-office-messageread-itemtype-member)
   - [Office.SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails): [itemType](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-itemtype-member)
+
   #### Examples
 
   ```TypeScript

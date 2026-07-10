@@ -7,7 +7,6 @@ summary: ''
 remarks: |-
 
 
-
   #### Used by
 
   - [OneNote](/javascript/api/onenote): [run](/javascript/api/onenote#onenote-onenote-run-function(1))
@@ -47,6 +46,7 @@ remarks: |-
   - [OneNote.TableCellCollection](/javascript/api/onenote/onenote.tablecellcollection): [context](/javascript/api/onenote/onenote.tablecellcollection#onenote-onenote-tablecellcollection-context-member)
   - [OneNote.TableRow](/javascript/api/onenote/onenote.tablerow): [context](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-context-member)
   - [OneNote.TableRowCollection](/javascript/api/onenote/onenote.tablerowcollection): [context](/javascript/api/onenote/onenote.tablerowcollection#onenote-onenote-tablerowcollection-context-member)
+
   #### Examples
 
   ```TypeScript
