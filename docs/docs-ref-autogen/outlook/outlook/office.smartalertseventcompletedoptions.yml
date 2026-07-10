@@ -66,6 +66,8 @@ properties:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
+      **Important**: In Outlook on iOS, the `allowEvent` property is available for preview starting in Version 5.2623.0.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,6 +193,8 @@ properties:
       - The error message must be 500 characters or less.
 
       - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "<!-- -->&lt;<!-- -->Add-in name<!-- -->&gt; is preventing this email from being sent."
+
+      - In Outlook on iOS, the `errorMessage` property is available for preview starting in Version 5.2623.0.
 
     isPreview: false
     isDeprecated: false

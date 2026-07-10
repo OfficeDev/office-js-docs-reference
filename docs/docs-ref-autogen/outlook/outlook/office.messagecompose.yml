@@ -1554,6 +1554,8 @@ methods:
 
       - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
+      - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
       **Errors**:
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
@@ -1623,6 +1625,8 @@ methods:
 
       - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
+      - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
       **Errors**:
 
       - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
@@ -1660,6 +1664,8 @@ methods:
       - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       #### Examples
 
@@ -1741,6 +1747,8 @@ methods:
       - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
     isPreview: false
     isDeprecated: false
