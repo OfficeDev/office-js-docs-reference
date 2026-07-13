@@ -43,7 +43,7 @@ methods:
 
       - Support for the decryption feature was introduced in Mailbox 1.16.
 
-      - In Outlook on iOS, the `OnMessageSend` event is available for preview starting in Version 5.2623.0.
+      - In Outlook on iOS, the `OnMessageSend` event is supported starting in Version 5.2623.0.
 
       #### Examples
 

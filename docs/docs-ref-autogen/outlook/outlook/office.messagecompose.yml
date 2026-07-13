@@ -1554,7 +1554,7 @@ methods:
 
       - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
-      - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on iOS, the `getAttachmentContentAsync` method is supported starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       **Errors**:
 
@@ -1625,7 +1625,7 @@ methods:
 
       - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
-      - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on iOS, the `getAttachmentContentAsync` method is supported starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       **Errors**:
 
@@ -1665,7 +1665,7 @@ methods:
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
-      - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on iOS, the `getAttachmentsAsync` method is supported starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
       #### Examples
 
@@ -1748,7 +1748,7 @@ methods:
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
-      - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      - In Outlook on iOS, the `getAttachmentsAsync` method is supported starting in Version 5.2623.0. For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
     isPreview: false
     isDeprecated: false
