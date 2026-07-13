@@ -10183,7 +10183,7 @@ export declare namespace Office {
          *
          * - Support for the decryption feature was introduced in Mailbox 1.16.
          *
-         * - In Outlook on iOS, the `OnMessageSend` event is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `OnMessageSend` event is supported starting in Version 5.2623.0.
          *
          * @param options - Optional. An object that specifies the behavior of an event-based, spam-reporting, or decryption add-in when it completes processing an event.
          */
@@ -11200,7 +11200,7 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
-         * - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `getAttachmentContentAsync` method is supported starting in Version 5.2623.0.
          * For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -11248,7 +11248,7 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
-         * - In Outlook on iOS, the `getAttachmentContentAsync` method is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `getAttachmentContentAsync` method is supported starting in Version 5.2623.0.
          * For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -11287,7 +11287,7 @@ export declare namespace Office {
          * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
-         * - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `getAttachmentsAsync` method is supported starting in Version 5.2623.0.
          * For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -11319,7 +11319,7 @@ export declare namespace Office {
          * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
-         * - In Outlook on iOS, the `getAttachmentsAsync` method is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `getAttachmentsAsync` method is supported starting in Version 5.2623.0.
          * For more information about APIs from later requirement sets that are supported in Outlook on mobile devices, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
@@ -15868,7 +15868,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on iOS, the `allowEvent` property is available for preview starting in Version 5.2623.0.
+         * **Important**: In Outlook on iOS, the `allowEvent` property is supported starting in Version 5.2623.0.
          */
         allowEvent?: boolean;
         /**
@@ -16003,7 +16003,7 @@ export declare namespace Office {
          *
          * - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "\<Add-in name\> is preventing this email from being sent."
          *
-         * - In Outlook on iOS, the `errorMessage` property is available for preview starting in Version 5.2623.0.
+         * - In Outlook on iOS, the `errorMessage` property is supported starting in Version 5.2623.0.
          */
         errorMessage?: string;
         /**
