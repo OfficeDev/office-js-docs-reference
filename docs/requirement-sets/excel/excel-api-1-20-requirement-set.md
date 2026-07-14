@@ -14,7 +14,7 @@ The ExcelApi 1.20 adds [undo support for Excel JavaScript APIs](/office/dev/add-
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.20. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.20 or earlier, see [Excel APIs in requirement set 1.20 or earlier](/javascript/api/excel?view=excel-js-1.20&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_20.md)]
+[!INCLUDE[API table](../../includes/excel-1-20.md)]
 
 ## See also
 

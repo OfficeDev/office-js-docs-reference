@@ -14,7 +14,7 @@ WordApi 1.9 mainly included support for additional types of content controls. Th
 
 The following table lists the APIs in Word JavaScript API requirement set 1.9. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.9 or earlier, see [Word APIs in requirement set 1.9 or earlier](/javascript/api/word?view=word-js-1.9&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_9.md)]
+[!INCLUDE[API table](../../includes/word-1-9.md)]
 
 ## See also
 

@@ -37,7 +37,7 @@ Mailbox requirement set 1.1 includes all of the [Common API requirement sets](..
 
 The following table lists the APIs introduced in Mailbox requirement set 1.1. To view API reference documentation for all APIs supported by Mailbox requirement set 1.1, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.1&preserve-view=true).
 
-[!INCLUDE [outlook-1_1](../../includes/outlook-1_1.md)]
+[!INCLUDE [outlook-1_1](../../includes/outlook-1-1.md)]
 
 ## See also
 

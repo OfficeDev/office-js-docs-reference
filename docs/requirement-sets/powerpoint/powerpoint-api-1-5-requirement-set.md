@@ -15,7 +15,7 @@ PowerPointApi 1.5 added APIs to select slides, text ranges, and shapes within pr
 The following table lists the PowerPoint JavaScript API requirement set 1.5. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_5.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-5.md)]
 
 ## See also
 

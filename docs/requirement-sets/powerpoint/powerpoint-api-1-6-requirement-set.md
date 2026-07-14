@@ -15,7 +15,7 @@ PowerPointApi 1.6 added APIs to get and manage existing hyperlinks in the presen
 The following table lists the PowerPoint JavaScript API requirement set 1.6. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_6.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-6.md)]
 
 ## See also
 
