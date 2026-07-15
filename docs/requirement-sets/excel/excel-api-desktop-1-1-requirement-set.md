@@ -34,7 +34,7 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 The following table lists the Excel JavaScript APIs currently included in the `ExcelApiDesktop 1.1` requirement set. For a complete list of all Excel JavaScript APIs (including `ExcelApiDesktop 1.1` APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/excel?view=excel-js-desktop-1.1&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-desktop-1_1.md)]
+[!INCLUDE[API table](../../includes/excel-desktop-1-1.md)]
 
 ## See also
 
