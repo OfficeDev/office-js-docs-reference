@@ -1,7 +1,7 @@
 ---
 title: Outlook Item object model
 description: Learn more about the Outlook Item object model and its APIs.
-ms.date: 06/23/2026
+ms.date: 07/17/2026
 ms.topic: overview
 ms.localizationpriority: high
 ---

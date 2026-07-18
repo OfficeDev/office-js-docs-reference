@@ -53,6 +53,8 @@ items:
                 uid: outlook!Office.MailboxEnums.OpenLocation:enum
               - name: OWAView
                 uid: outlook!Office.MailboxEnums.OWAView:enum
+              - name: PictureSourceType
+                uid: outlook!Office.MailboxEnums.PictureSourceType:enum
               - name: RecipientType
                 uid: outlook!Office.MailboxEnums.RecipientType:enum
               - name: RecurrenceTimeZone
@@ -145,6 +147,8 @@ items:
             uid: outlook!Office.InfobarDetails:interface
           - name: InitializationContextChangedEventArgs
             uid: outlook!Office.InitializationContextChangedEventArgs:interface
+          - name: InlinePictures
+            uid: outlook!Office.InlinePictures:interface
           - name: InternetHeaders
             uid: outlook!Office.InternetHeaders:interface
           - name: IsAllDayEvent
@@ -189,10 +193,14 @@ items:
             uid: outlook!Office.NotificationMessages:interface
           - name: OfficeThemeChangedEventArgs
             uid: outlook!Office.OfficeThemeChangedEventArgs:interface
+          - name: OnPicturesChangedEventArgs
+            uid: outlook!Office.OnPicturesChangedEventArgs:interface
           - name: Organizer
             uid: outlook!Office.Organizer:interface
           - name: PhoneNumber
             uid: outlook!Office.PhoneNumber:interface
+          - name: Picture
+            uid: outlook!Office.Picture:interface
           - name: Recipients
             uid: outlook!Office.Recipients:interface
           - name: RecipientsChangedEventArgs

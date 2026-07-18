@@ -219,6 +219,17 @@ fields:
       - The `OfficeThemeChanged` event isn't supported in add-ins that implement [event-based activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!-- -->.
 
       [API set: Mailbox 1.14](/office/dev/add-ins/reference/javascript-api-for-office)
+  - name: OnPicturesChanged
+    uid: office!Office.EventType.OnPicturesChanged:member
+    package: office!
+    summary: |-
+      Occurs when inline pictures are added or removed from a message or appointment in Outlook.
+
+      **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+
+      To add an event handler for the `OnPicturesChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type [Office.OnPicturesChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.onpictureschangedeventargs?view=outlook-js-preview)<!-- -->.
+
+      [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office)
   - name: RecipientsChanged
     uid: office!Office.EventType.RecipientsChanged:member
     package: office!

@@ -722,6 +722,36 @@ export declare namespace Office {
             ThreeColumns = "ThreeColumns"
         }
         /**
+         * Specifies the source of an inline picture in a message or appointment.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        enum PictureSourceType {
+            /**
+             * The inline picture is an attachment on the mail item. It's referenced using a content ID (`cid`) in the `src` attribute of the `<img>` element in the HTML body of the mail item.
+             *
+             * @beta
+             */
+            Cid = "cid",
+            /**
+             * The inline picture is an attachment embedded in a mail item that uses the Rich Text Format (RTF).
+             *
+             * @beta
+             */
+            Rtf = "rtf",
+            /**
+             * The inline picture is an externally linked attachment. It's referenced using a URL in the `src` attribute of the `<img>` element in the HTML body of the mail item.
+             *
+             * @beta
+             */
+            Url = "url",
+        }
+        /**
          * Specifies the type of recipient of a message or appointment.
          *
          * @remarks
@@ -4282,6 +4312,20 @@ export declare namespace Office {
      */
     export interface Body {
         /**
+         * Gets an object that provides methods to manage inline pictures in the body of the message or appointment.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        pictures: InlinePictures;
+
+        /**
          * Appends on send the specified content to the end of the item body, after any signature.
          *
          * To use `appendOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest.
@@ -6698,6 +6742,223 @@ export declare namespace Office {
          * [Api set: Mailbox 1.15]
          */
         type: "olkInitializationContextChanged";
+    }
+    /**
+     * Provides methods to manage inline pictures in the body of the message or appointment.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
+     */
+    export interface InlinePictures{
+        /**
+         * Removes the specified inline picture from the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         *
+         * **Important**: To get the ID of the inline picture, call the `getAllAsync` method.
+         *
+         * @beta
+         */
+        deleteAsync(id: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Removes the specified inline picture from the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         *
+         * **Important**: To get the ID of the inline picture, call the `getAllAsync` method.
+         *
+         * @beta
+         */
+        deleteAsync(id: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param options - An object literal that contains the following properties. `asyncContext`: Use the `asyncContext` property to specify any object you want to access in the callback function.
+         *                  `waitForContentId`: Optional. If true, indicates that an inline picture in Outlook on the web and the new Outlook on Windows must have a content ID assigned to it before the
+         *                  results of the `getAllAsync` method are returned. In Outlook on the web and the new Outlook on Windows, inline attachments are assigned a temporary ID prefixed with `addinId`
+         *                  while the attachments are uploaded to the server. Once the images are uploaded to the server, they're then assigned an Exchange Web Services (EWS) ID.
+         *                  If the `waitForContentId` option isn't specified, the method returns the inline pictures regardless of whether they have a content ID.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. An array of inline pictures is returned in the `asyncResult.value` property. The inline pictures are returned in the order of their
+         *                   appearance in the body of the mail item.
+         *
+         * @beta
+         */
+        getAllAsync(options: CommonAPI.AsyncContextOptions & { waitForContentId?: boolean }, callback: (asyncResult: CommonAPI.AsyncResult<Picture[]>) => void): void;
+        /**
+         * Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. An array of inline pictures is returned in the `asyncResult.value` property.
+         *                   The inline pictures are returned in the order of their appearance in the body of the mail item.
+         *
+         * @beta
+         */
+        getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<Picture[]>) => void): void;
+        /**
+         * Gets the Base64-encoded string of the inline picture.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - To get the ID of the inline picture, call the `getAllAsync` method.
+         *
+         * - The `getAsBase64Async` method doesn't support inline pictures that are externally linked (that is, pictures whose `sourceType` is `Office.MailboxEnums.PictureSourceType.Url`).
+         *
+         * @param id - The identifier of the inline picture.
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. The Base64-encoded string of the inline picture is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getAsBase64Async(id: string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the Base64-encoded string of the inline picture.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - To get the ID of the inline picture, call the `getAllAsync` method.
+         *
+         * - The `getAsBase64Async` method doesn't support inline pictures that are externally linked (that is, pictures whose `sourceType` is `Office.MailboxEnums.PictureSourceType.Url`).
+         *
+         * **Errors**:
+         *
+         * - `PermissionDenied`: A Base64-encoded string can't be generated for an externally linked inline picture.
+         *
+         * @param id - The identifier of the inline picture.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. The Base64-encoded string of the inline picture is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getAsBase64Async(id: string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the inline picture for the specified ID.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. The inline picture for the specified ID is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getByIdAsync(id: string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<Picture>) => void): void;
+        /**
+         * Gets the inline picture for the specified ID.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object. The inline picture for the specified ID is returned in the `asyncResult.value` property.
+         *
+         * @beta
+         */
+        getByIdAsync(id: string, callback: (asyncResult: CommonAPI.AsyncResult<Picture>) => void): void;
+        /**
+         * Brings the specified inline picture into view in the body of the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
+         *                  callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         *
+         * @beta
+         */
+        scrollToAsync(id: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Brings the specified inline picture into view in the body of the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param id - The identifier of the inline picture.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
+         *                   parameter is an `Office.AsyncResult` object.
+         *
+         * @beta
+         */
+        scrollToAsync(id: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
@@ -13958,6 +14219,46 @@ export declare namespace Office {
         type: "officeThemeChanged";
     }
     /**
+     * Provides information about the inline pictures that were added to or removed from the body of a message or appointment when the `Office.EventType.OnPicturesChanged` event occurs.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
+     */
+    export interface OnPicturesChangedEventArgs {
+        /**
+         * Specifies whether the inline pictures were added to or removed from the body of the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        changeType: "added" | "removed";
+        /**
+         * Gets the unique identifiers of the inline pictures that were added to or removed from the body of the mail item.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        pictureIds: string[];
+    }
+    /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment.
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
      *
@@ -14064,6 +14365,100 @@ export declare namespace Office {
          * @deprecated Use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins | regular expression rules} instead.
          */
         type: string;
+    }
+    /**
+     * Represents an inline picture in the body of a message or appointment.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
+     */
+    export interface Picture {
+        /**
+         * Gets the content ID (`cid`) of an inline picture that's in the body of a mail item. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid`.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        contentId?: string;
+        /**
+         * Gets the unique identifier of the inline picture.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        id: string;
+        /**
+         * Gets the name of the inline picture. Returns the file name and extension for `Cid` source types or the URL for `Url` source types.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        name?: string;
+        /**
+         * Gets the size of the inline picture in bytes. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid`.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        size?: number;
+        /**
+         * Gets the source of the inline picture.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: If an error occurs while getting the `Picture` object, the `sourceType` property returns `unknown`.
+         *
+         * @beta
+         */
+        sourceType: MailboxEnums.PictureSourceType;
+        /**
+         * Gets the source URL of an externally linked inline picture. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Url`.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @beta
+         */
+        sourceUrl?: string;
     }
     /**
      * Represents recipients of an item. Compose mode only.

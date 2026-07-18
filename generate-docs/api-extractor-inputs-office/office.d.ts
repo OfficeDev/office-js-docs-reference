@@ -740,6 +740,20 @@ export declare namespace Office {
          */
         OfficeThemeChanged,
         /**
+         * Occurs when inline pictures are added or removed from a message or appointment in Outlook.
+         *
+         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+         *
+         * To add an event handler for the `OnPicturesChanged` event, use the `addHandlerAsync` method of the `Item` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.onpictureschangedeventargs?view=outlook-js-preview | Office.OnPicturesChangedEventArgs}.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @beta
+         */
+        OnPicturesChanged,
+        /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
          *
          * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.

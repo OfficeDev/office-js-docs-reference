@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.PictureSourceType
+uid: outlook!Office.MailboxEnums.PictureSourceType:enum
+package: outlook!
+fullName: Office.MailboxEnums.PictureSourceType
+summary: Specifies the source of an inline picture in a message or appointment.
+remarks: |-
+  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+  #### Used by
+
+  - [Office.Picture](/javascript/api/outlook/office.picture): [sourceType](/javascript/api/outlook/office.picture#outlook-office-picture-sourcetype-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: Cid
+    uid: outlook!Office.MailboxEnums.PictureSourceType.Cid:member
+    package: outlook!
+    summary: The inline picture is an attachment on the mail item. It's referenced using a content ID (`cid`<!-- -->) in the `src` attribute of the `<img>` element in the HTML body of the mail item.
+    value: '"cid"'
+  - name: Rtf
+    uid: outlook!Office.MailboxEnums.PictureSourceType.Rtf:member
+    package: outlook!
+    summary: The inline picture is an attachment embedded in a mail item that uses the Rich Text Format (RTF).
+    value: '"rtf"'
+  - name: Url
+    uid: outlook!Office.MailboxEnums.PictureSourceType.Url:member
+    package: outlook!
+    summary: The inline picture is an externally linked attachment. It's referenced using a URL in the `src` attribute of the `<img>` element in the HTML body of the mail item.
+    value: '"url"'

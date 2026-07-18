@@ -1,0 +1,312 @@
+### YamlMime:TSType
+name: Office.InlinePictures
+uid: outlook!Office.InlinePictures:interface
+package: outlook!
+fullName: Office.InlinePictures
+summary: Provides methods to manage inline pictures in the body of the message or appointment.
+remarks: |-
+  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+  #### Used by
+
+  - [Office.Body](/javascript/api/outlook/office.body): [pictures](/javascript/api/outlook/office.body#outlook-office-body-pictures-member)
+
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: deleteAsync(id, options, callback)
+    uid: outlook!Office.InlinePictures#deleteAsync:member(1)
+    package: outlook!
+    fullName: deleteAsync(id, options, callback)
+    summary: Removes the specified inline picture from the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteAsync(id: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: options
+          description: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
+        - id: callback
+          description: |-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+
+            **Important**: To get the ID of the inline picture, call the `getAllAsync` method.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: deleteAsync(id, callback)
+    uid: outlook!Office.InlinePictures#deleteAsync:member(2)
+    package: outlook!
+    fullName: deleteAsync(id, callback)
+    summary: Removes the specified inline picture from the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'deleteAsync(id: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: callback
+          description: |-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+
+            **Important**: To get the ID of the inline picture, call the `getAllAsync` method.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAllAsync(options, callback)
+    uid: outlook!Office.InlinePictures#getAllAsync:member(1)
+    package: outlook!
+    fullName: getAllAsync(options, callback)
+    summary: Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAllAsync(options: Office.AsyncContextOptions & { waitForContentId?: boolean }, callback: (asyncResult: Office.AsyncResult<Picture[]>) => void): void;'
+      parameters:
+        - id: options
+          description: 'An object literal that contains the following properties. `asyncContext`<!-- -->: Use the `asyncContext` property to specify any object you want to access in the callback function. `waitForContentId`<!-- -->: Optional. If true, indicates that an inline picture in Outlook on the web and the new Outlook on Windows must have a content ID assigned to it before the results of the `getAllAsync` method are returned. In Outlook on the web and the new Outlook on Windows, inline attachments are assigned a temporary ID prefixed with `addinId` while the attachments are uploaded to the server. Once the images are uploaded to the server, they''re then assigned an Exchange Web Services (EWS) ID. If the `waitForContentId` option isn''t specified, the method returns the inline pictures regardless of whether they have a content ID.'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { waitForContentId?: boolean }'
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. An array of inline pictures is returned in the `asyncResult.value` property. The inline pictures are returned in the order of their appearance in the body of the mail item.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.Picture:interface" />[]&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAllAsync(callback)
+    uid: outlook!Office.InlinePictures#getAllAsync:member(2)
+    package: outlook!
+    fullName: getAllAsync(callback)
+    summary: Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAllAsync(callback: (asyncResult: Office.AsyncResult<Picture[]>) => void): void;'
+      parameters:
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. An array of inline pictures is returned in the `asyncResult.value` property. The inline pictures are returned in the order of their appearance in the body of the mail item.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.Picture:interface" />[]&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAsBase64Async(id, options, callback)
+    uid: outlook!Office.InlinePictures#getAsBase64Async:member(1)
+    package: outlook!
+    fullName: getAsBase64Async(id, options, callback)
+    summary: Gets the Base64-encoded string of the inline picture.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+      **Important**:
+
+      - To get the ID of the inline picture, call the `getAllAsync` method.
+
+      - The `getAsBase64Async` method doesn't support inline pictures that are externally linked (that is, pictures whose `sourceType` is `Office.MailboxEnums.PictureSourceType.Url`<!-- -->).
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAsBase64Async(id: string, options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: options
+          description: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. The Base64-encoded string of the inline picture is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAsBase64Async(id, callback)
+    uid: outlook!Office.InlinePictures#getAsBase64Async:member(2)
+    package: outlook!
+    fullName: getAsBase64Async(id, callback)
+    summary: Gets the Base64-encoded string of the inline picture.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+      **Important**:
+
+      - To get the ID of the inline picture, call the `getAllAsync` method.
+
+      - The `getAsBase64Async` method doesn't support inline pictures that are externally linked (that is, pictures whose `sourceType` is `Office.MailboxEnums.PictureSourceType.Url`<!-- -->).
+
+      **Errors**:
+
+      - `PermissionDenied`<!-- -->: A Base64-encoded string can't be generated for an externally linked inline picture.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAsBase64Async(id: string, callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. The Base64-encoded string of the inline picture is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getByIdAsync(id, options, callback)
+    uid: outlook!Office.InlinePictures#getByIdAsync:member(1)
+    package: outlook!
+    fullName: getByIdAsync(id, options, callback)
+    summary: Gets the inline picture for the specified ID.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByIdAsync(id: string, options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<Picture>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: options
+          description: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. The inline picture for the specified ID is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.Picture:interface" />&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getByIdAsync(id, callback)
+    uid: outlook!Office.InlinePictures#getByIdAsync:member(2)
+    package: outlook!
+    fullName: getByIdAsync(id, callback)
+    summary: Gets the inline picture for the specified ID.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByIdAsync(id: string, callback: (asyncResult: Office.AsyncResult<Picture>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object. The inline picture for the specified ID is returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.Picture:interface" />&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: scrollToAsync(id, options, callback)
+    uid: outlook!Office.InlinePictures#scrollToAsync:member(1)
+    package: outlook!
+    fullName: scrollToAsync(id, options, callback)
+    summary: Brings the specified inline picture into view in the body of the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scrollToAsync(id: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: options
+          description: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the callback function.
+          type: <xref uid="office!Office.AsyncContextOptions:interface" />
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: scrollToAsync(id, callback)
+    uid: outlook!Office.InlinePictures#scrollToAsync:member(2)
+    package: outlook!
+    fullName: scrollToAsync(id, callback)
+    summary: Brings the specified inline picture into view in the body of the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'scrollToAsync(id: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: id
+          description: The identifier of the inline picture.
+          type: string
+        - id: callback
+          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''

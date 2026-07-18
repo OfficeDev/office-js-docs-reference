@@ -1,0 +1,131 @@
+### YamlMime:TSType
+name: Office.Picture
+uid: outlook!Office.Picture:interface
+package: outlook!
+fullName: Office.Picture
+summary: Represents an inline picture in the body of a message or appointment.
+remarks: |-
+  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+  #### Used by
+
+  - [Office.InlinePictures](/javascript/api/outlook/office.inlinepictures): [getAllAsync](/javascript/api/outlook/office.inlinepictures#outlook-office-inlinepictures-getallasync-member(1)), [getByIdAsync](/javascript/api/outlook/office.inlinepictures#outlook-office-inlinepictures-getbyidasync-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: contentId
+    uid: outlook!Office.Picture#contentId:member
+    package: outlook!
+    fullName: contentId
+    summary: Gets the content ID (`cid`<!-- -->) of an inline picture that's in the body of a mail item. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid`<!-- -->.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentId?: string;'
+      return:
+        type: string
+  - name: id
+    uid: outlook!Office.Picture#id:member
+    package: outlook!
+    fullName: id
+    summary: Gets the unique identifier of the inline picture.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
+  - name: name
+    uid: outlook!Office.Picture#name:member
+    package: outlook!
+    fullName: name
+    summary: Gets the name of the inline picture. Returns the file name and extension for `Cid` source types or the URL for `Url` source types.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: size
+    uid: outlook!Office.Picture#size:member
+    package: outlook!
+    fullName: size
+    summary: Gets the size of the inline picture in bytes. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid`<!-- -->.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size?: number;'
+      return:
+        type: number
+  - name: sourceType
+    uid: outlook!Office.Picture#sourceType:member
+    package: outlook!
+    fullName: sourceType
+    summary: Gets the source of the inline picture.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+      **Important**: If an error occurs while getting the `Picture` object, the `sourceType` property returns `unknown`<!-- -->.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sourceType: MailboxEnums.PictureSourceType;'
+      return:
+        type: <xref uid="outlook!Office.MailboxEnums.PictureSourceType:enum" />
+  - name: sourceUrl
+    uid: outlook!Office.Picture#sourceUrl:member
+    package: outlook!
+    fullName: sourceUrl
+    summary: Gets the source URL of an externally linked inline picture. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Url`<!-- -->.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sourceUrl?: string;'
+      return:
+        type: string

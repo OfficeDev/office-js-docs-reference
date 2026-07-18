@@ -41,6 +41,7 @@ interfaces:
   - outlook!Office.InfobarClickedEventArgs:interface
   - outlook!Office.InfobarDetails:interface
   - outlook!Office.InitializationContextChangedEventArgs:interface
+  - outlook!Office.InlinePictures:interface
   - outlook!Office.InternetHeaders:interface
   - outlook!Office.IsAllDayEvent:interface
   - outlook!Office.Item:interface
@@ -66,8 +67,10 @@ interfaces:
   - outlook!Office.NotificationMessageDetails:interface
   - outlook!Office.NotificationMessages:interface
   - outlook!Office.OfficeThemeChangedEventArgs:interface
+  - outlook!Office.OnPicturesChangedEventArgs:interface
   - outlook!Office.Organizer:interface
   - outlook!Office.PhoneNumber:interface
+  - outlook!Office.Picture:interface
   - outlook!Office.Recipients:interface
   - outlook!Office.RecipientsChangedEventArgs:interface
   - outlook!Office.RecipientsChangedFields:interface
@@ -115,6 +118,7 @@ enums:
   - outlook!Office.MailboxEnums.MoveSpamItemTo:enum
   - outlook!Office.MailboxEnums.OpenLocation:enum
   - outlook!Office.MailboxEnums.OWAView:enum
+  - outlook!Office.MailboxEnums.PictureSourceType:enum
   - outlook!Office.MailboxEnums.RecipientType:enum
   - outlook!Office.MailboxEnums.RecurrenceTimeZone:enum
   - outlook!Office.MailboxEnums.RecurrenceType:enum

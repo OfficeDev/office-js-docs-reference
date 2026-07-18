@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Office.OnPicturesChangedEventArgs
+uid: outlook!Office.OnPicturesChangedEventArgs:interface
+package: outlook!
+fullName: Office.OnPicturesChangedEventArgs
+summary: Provides information about the inline pictures that were added to or removed from the body of a message or appointment when the `Office.EventType.OnPicturesChanged` event occurs.
+remarks: |-
+  [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: changeType
+    uid: outlook!Office.OnPicturesChangedEventArgs#changeType:member
+    package: outlook!
+    fullName: changeType
+    summary: Specifies whether the inline pictures were added to or removed from the body of the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeType: "added" | "removed";'
+      return:
+        type: '"added" | "removed"'
+  - name: pictureIds
+    uid: outlook!Office.OnPicturesChangedEventArgs#pictureIds:member
+    package: outlook!
+    fullName: pictureIds
+    summary: Gets the unique identifiers of the inline pictures that were added to or removed from the body of the mail item.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pictureIds: string[];'
+      return:
+        type: string[]

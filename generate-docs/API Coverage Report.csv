@@ -7526,6 +7526,7 @@ office,Office.EventType,"NodeDeleted",EnumField,Great,false
 office,Office.EventType,"NodeInserted",EnumField,Great,false
 office,Office.EventType,"NodeReplaced",EnumField,Great,false
 office,Office.EventType,"OfficeThemeChanged",EnumField,Great,false
+office,Office.EventType,"OnPicturesChanged",EnumField,Great,false
 office,Office.EventType,"RecipientsChanged",EnumField,Great,false
 office,Office.EventType,"RecurrenceChanged",EnumField,Great,false
 office,Office.EventType,"ResourceSelectionChanged",EnumField,Great,false
@@ -9261,6 +9262,7 @@ outlook,Office.AttachmentsChangedEventArgs,"attachmentDetails",Property,Excellen
 outlook,Office.AttachmentsChangedEventArgs,"attachmentStatus",Property,Excellent,false
 outlook,Office.AttachmentsChangedEventArgs,"type",Property,Excellent,false
 outlook,Office.Body,N/A,Interface,Good,true
+outlook,Office.Body,"pictures",Property,Excellent,false
 outlook,Office.Body,"appendOnSendAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.Body,"appendOnSendAsync(data, callback)",Method,Excellent,false
 outlook,Office.Body,"getAsync(coercionType, options, callback)",Method,Good,false
@@ -9395,6 +9397,17 @@ outlook,Office.InfobarDetails,"infobarType",Property,Good,false
 outlook,Office.InitializationContextChangedEventArgs,N/A,Interface,Excellent,true
 outlook,Office.InitializationContextChangedEventArgs,"initializationContextData",Property,Excellent,false
 outlook,Office.InitializationContextChangedEventArgs,"type",Property,Excellent,false
+outlook,Office.InlinePictures,N/A,Interface,Fine,false
+outlook,Office.InlinePictures,"deleteAsync(id, options, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"deleteAsync(id, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"getAllAsync(options, callback)",Method,Good,false
+outlook,Office.InlinePictures,"getAllAsync(callback)",Method,Good,false
+outlook,Office.InlinePictures,"getAsBase64Async(id, options, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"getAsBase64Async(id, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"getByIdAsync(id, options, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"getByIdAsync(id, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"scrollToAsync(id, options, callback)",Method,Fine,false
+outlook,Office.InlinePictures,"scrollToAsync(id, callback)",Method,Fine,false
 outlook,Office.InternetHeaders,N/A,Interface,Great,true
 outlook,Office.InternetHeaders,"getAsync(names, options, callback)",Method,Excellent,true
 outlook,Office.InternetHeaders,"getAsync(names, callback)",Method,Excellent,false
@@ -9680,6 +9693,10 @@ outlook,Office.MailboxEnums.OWAView,"OneColumnNarrow",EnumField,Excellent,false
 outlook,Office.MailboxEnums.OWAView,"OneColumn",EnumField,Excellent,false
 outlook,Office.MailboxEnums.OWAView,"TwoColumns",EnumField,Excellent,false
 outlook,Office.MailboxEnums.OWAView,"ThreeColumns",EnumField,Excellent,false
+outlook,Office.MailboxEnums.PictureSourceType,N/A,Enum,Great,false
+outlook,Office.MailboxEnums.PictureSourceType,"Cid",EnumField,Excellent,false
+outlook,Office.MailboxEnums.PictureSourceType,"Rtf",EnumField,Excellent,false
+outlook,Office.MailboxEnums.PictureSourceType,"Url",EnumField,Excellent,false
 outlook,Office.MailboxEnums.RecipientType,N/A,Enum,Good,true
 outlook,Office.MailboxEnums.RecipientType,"DistributionList",EnumField,Excellent,false
 outlook,Office.MailboxEnums.RecipientType,"User",EnumField,Great,false
@@ -10035,6 +10052,9 @@ outlook,Office.NotificationMessages,"replaceAsync(key, JSONmessage, callback)",M
 outlook,Office.OfficeThemeChangedEventArgs,N/A,Interface,Fine,true
 outlook,Office.OfficeThemeChangedEventArgs,"officeTheme",Property,Good,false
 outlook,Office.OfficeThemeChangedEventArgs,"type",Property,Excellent,false
+outlook,Office.OnPicturesChangedEventArgs,N/A,Interface,Great,false
+outlook,Office.OnPicturesChangedEventArgs,"changeType",Property,Excellent,false
+outlook,Office.OnPicturesChangedEventArgs,"pictureIds",Property,Excellent,false
 outlook,Office.Organizer,N/A,Interface,Excellent,false
 outlook,Office.Organizer,"getAsync(options, callback)",Method,Good,true
 outlook,Office.Organizer,"getAsync(callback)",Method,Good,false
@@ -10042,6 +10062,13 @@ outlook,Office.PhoneNumber,N/A,Interface,Deprecated,true
 outlook,Office.PhoneNumber,"originalPhoneString",Property,Deprecated,false
 outlook,Office.PhoneNumber,"phoneString",Property,Deprecated,false
 outlook,Office.PhoneNumber,"type",Property,Deprecated,false
+outlook,Office.Picture,N/A,Interface,Fine,false
+outlook,Office.Picture,"contentId",Property,Excellent,false
+outlook,Office.Picture,"id",Property,Great,false
+outlook,Office.Picture,"name",Property,Excellent,false
+outlook,Office.Picture,"size",Property,Excellent,false
+outlook,Office.Picture,"sourceType",Property,Good,false
+outlook,Office.Picture,"sourceUrl",Property,Excellent,false
 outlook,Office.Recipients,N/A,Interface,Fine,false
 outlook,Office.Recipients,"addAsync(recipients, options, callback)",Method,Fine,true
 outlook,Office.Recipients,"addAsync(recipients, callback)",Method,Fine,false
