@@ -20,12 +20,19 @@ properties:
     package: outlook!
     fullName: allowCopyPaste
     summary: If true, specifies that the decrypted contents of a message can be copied and pasted.
-    remarks: '[API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)'
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **Important**:
+
+      - In Outlook on the web, setting the `allowCopyPaste` property to `false` also prevents users from capturing their screen in the form of screenshots or recordings. The screen capture policy remains in effect until the user reloads the Outlook browser tab.
+
+      - In Outlook on the web and the new Outlook on Windows, setting the `allowCopyPaste` property to `true` allows the user to copy content by selecting **Copy** from the context menu or pressing `Ctrl+C`<!-- -->. However, if another access control is set to `false`<!-- -->, the context menu becomes unavailable. The user must use `Ctrl+C` instead.
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'allowCopyPaste: boolean;'
+      content: 'allowCopyPaste?: boolean;'
       return:
         type: boolean
   - name: allowPrint
@@ -38,7 +45,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'allowPrint: boolean;'
+      content: 'allowPrint?: boolean;'
       return:
         type: boolean
   - name: allowSave
@@ -51,6 +58,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'allowSave: boolean;'
+      content: 'allowSave?: boolean;'
       return:
         type: boolean

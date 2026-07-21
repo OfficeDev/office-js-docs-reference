@@ -163,7 +163,7 @@ excel,Excel.BasicCardLayout,N/A,Interface,Fine,false
 excel,Excel.BasicCardLayout,"layout",Property,Good,false
 excel,Excel.BasicCompactLayout,N/A,Interface,Fine,false
 excel,Excel.BasicCompactLayout,"icon",Property,Great,false
-excel,Excel.BasicDataValidation,N/A,Interface,Fine,false
+excel,Excel.BasicDataValidation,N/A,Interface,Fine,true
 excel,Excel.BasicDataValidation,"formula1",Property,Excellent,false
 excel,Excel.BasicDataValidation,"formula2",Property,Excellent,false
 excel,Excel.BasicDataValidation,"operator",Property,Great,false
@@ -2306,7 +2306,7 @@ excel,Excel.CustomConditionalFormat,"load(propertyNamesAndPaths)",Method,Great,f
 excel,Excel.CustomConditionalFormat,"set(properties, options)",Method,Good,false
 excel,Excel.CustomConditionalFormat,"set(properties)",Method,Fine,false
 excel,Excel.CustomConditionalFormat,"toJSON()",Method,Excellent,false
-excel,Excel.CustomDataValidation,N/A,Interface,Fine,false
+excel,Excel.CustomDataValidation,N/A,Interface,Fine,true
 excel,Excel.CustomDataValidation,"formula",Property,Excellent,false
 excel,Excel.CustomFunctionManager,N/A,Class,Fine,false
 excel,Excel.CustomFunctionManager,"context",Property,Excellent,false
@@ -2438,7 +2438,7 @@ excel,Excel.DataSourceType,N/A,Enum,Good,false
 excel,Excel.DataSourceType,"localRange",EnumField,Great,false
 excel,Excel.DataSourceType,"localTable",EnumField,Great,false
 excel,Excel.DataSourceType,"unknown",EnumField,Great,false
-excel,Excel.DataValidation,N/A,Class,Great,false
+excel,Excel.DataValidation,N/A,Class,Great,true
 excel,Excel.DataValidation,"context",Property,Excellent,false
 excel,Excel.DataValidation,"errorAlert",Property,Great,true
 excel,Excel.DataValidation,"ignoreBlanks",Property,Excellent,false
@@ -2478,14 +2478,14 @@ excel,Excel.DataValidationPrompt,"message",Property,Good,false
 excel,Excel.DataValidationPrompt,"showPrompt",Property,Great,false
 excel,Excel.DataValidationPrompt,"title",Property,Good,false
 excel,Excel.DataValidationRule,N/A,Interface,Good,false
-excel,Excel.DataValidationRule,"custom",Property,Good,false
-excel,Excel.DataValidationRule,"date",Property,Good,false
-excel,Excel.DataValidationRule,"decimal",Property,Good,false
+excel,Excel.DataValidationRule,"custom",Property,Good,true
+excel,Excel.DataValidationRule,"date",Property,Good,true
+excel,Excel.DataValidationRule,"decimal",Property,Good,true
 excel,Excel.DataValidationRule,"list",Property,Good,true
-excel,Excel.DataValidationRule,"textLength",Property,Good,false
-excel,Excel.DataValidationRule,"time",Property,Good,false
+excel,Excel.DataValidationRule,"textLength",Property,Good,true
+excel,Excel.DataValidationRule,"time",Property,Good,true
 excel,Excel.DataValidationRule,"wholeNumber",Property,Good,true
-excel,Excel.DataValidationType,N/A,Enum,Good,false
+excel,Excel.DataValidationType,N/A,Enum,Good,true
 excel,Excel.DataValidationType,"custom",EnumField,Great,false
 excel,Excel.DataValidationType,"date",EnumField,Great,false
 excel,Excel.DataValidationType,"decimal",EnumField,Great,false
@@ -2536,7 +2536,7 @@ excel,Excel.DateFilterCondition,"tomorrow",EnumField,Great,false
 excel,Excel.DateFilterCondition,"unknown",EnumField,Excellent,false
 excel,Excel.DateFilterCondition,"yearToDate",EnumField,Great,false
 excel,Excel.DateFilterCondition,"yesterday",EnumField,Great,false
-excel,Excel.DateTimeDataValidation,N/A,Interface,Fine,false
+excel,Excel.DateTimeDataValidation,N/A,Interface,Fine,true
 excel,Excel.DateTimeDataValidation,"formula1",Property,Excellent,false
 excel,Excel.DateTimeDataValidation,"formula2",Property,Excellent,false
 excel,Excel.DateTimeDataValidation,"operator",Property,Great,false
@@ -4569,7 +4569,7 @@ excel,Excel.LinkedWorkbookCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.LinkedWorkbookCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.LinkedWorkbookCollection,"refreshAll()",Method,Fine,false
 excel,Excel.LinkedWorkbookCollection,"toJSON()",Method,Excellent,false
-excel,Excel.ListDataValidation,N/A,Interface,Fine,false
+excel,Excel.ListDataValidation,N/A,Interface,Fine,true
 excel,Excel.ListDataValidation,"inCellDropDown",Property,Excellent,false
 excel,Excel.ListDataValidation,"source",Property,Excellent,false
 excel,Excel.LoadToType,N/A,Enum,Good,false

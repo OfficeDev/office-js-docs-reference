@@ -1571,9 +1571,18 @@ export declare namespace Office {
          * @remarks
          * [Api set: Mailbox preview]
          *
+         * **Important**:
+         *
+         * - In Outlook on the web, setting the `allowCopyPaste` property to `false` also prevents users from capturing their screen
+         * in the form of screenshots or recordings. The screen capture policy remains in effect until the user reloads the Outlook browser tab.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, setting the `allowCopyPaste` property to `true` allows the user to copy content by
+         * selecting **Copy** from the context menu or pressing `Ctrl+C`. However, if another access control is set to `false`, the context menu becomes unavailable.
+         * The user must use `Ctrl+C` instead.
+         *
          * @beta
          */
-        allowCopyPaste: boolean;
+        allowCopyPaste?: boolean;
         /**
          * If true, specifies that the decrypted contents of a message can be printed.
          *
@@ -1582,7 +1591,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        allowPrint: boolean;
+        allowPrint?: boolean;
         /**
          * If true, specifies that the decrypted contents of a message can be saved.
          *
@@ -1591,7 +1600,7 @@ export declare namespace Office {
          *
          * @beta
          */
-        allowSave: boolean;
+        allowSave?: boolean;
     }
     /**
      * The subclass of {@link Office.Item | Item} dealing with appointments.
@@ -5470,7 +5479,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
          * **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported in production. However, you can preview support for the `MailboxEnums.AttachmentType.Item` type
-         * in Outlook on the web and on Windows (new and classic). For classic Outlook on Windows, you must install Version //TODO or later. Then, join the
+         * in Outlook on the web and on Windows (new and classic). For classic Outlook on Windows, you must install Version 2606 (Build 20114.15110) or later. Then, join the
          * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748 | Microsoft 365 Insider program} and select the
          * **Beta Channel** option to access Office beta builds.
          */
@@ -12268,9 +12277,9 @@ export declare namespace Office {
          *
          * - The `errorMessage` property is only used when the `allowEvent` property is set to `false`. If you set the `allowEvent` property to `true`, the `errorMessage` property is ignored.
          *
-         * - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "Error from <add-in name>: Failed to decrypt your message."
+         * - If you don't specify a message in the `errorMessage` property, the following default message is shown instead: "Error from \<add-in name\>: Failed to decrypt your message."
          *
-         * - Your custom error message is automatically prepended with "Error from <add-in name>: " when displayed to the user.
+         * - Your custom error message is automatically prepended with "Error from \<add-in name\>: " when displayed to the user.
          *
          * @beta
          */

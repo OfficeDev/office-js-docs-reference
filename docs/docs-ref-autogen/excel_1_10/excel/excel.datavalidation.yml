@@ -12,6 +12,22 @@ remarks: |-
   - [Excel.Range](/javascript/api/excel/excel.range): [dataValidation](/javascript/api/excel/excel.range#excel-excel-range-datavalidation-member)
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [dataValidation](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-datavalidation-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+  function applyWholeNumber(sheet: Excel.Worksheet) {
+      // Only integers greater than 0 are allowed.
+      const basicRule: Excel.BasicDataValidation = {
+          formula1: 0,
+          operator: Excel.DataValidationOperator.greaterThan
+      };
+      const rule: Excel.DataValidationRule = { wholeNumber: basicRule };
+      sheet.getRange("B2").dataValidation.rule = rule;
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
