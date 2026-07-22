@@ -11,6 +11,17 @@ remarks: |-
 
   - [OfficeRuntime.Auth](/javascript/api/office-runtime/officeruntime.auth): [getAccessToken](/javascript/api/office-runtime/officeruntime.auth#office-runtime-officeruntime-auth-getaccesstoken-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  const options: OfficeRuntime.AuthOptions = {
+    allowSignInPrompt: true,
+    allowConsentPrompt: true,
+    forMSGraphAccess: true,
+  };
+  const accessToken = await OfficeRuntime.auth.getAccessToken(options);
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -8393,9 +8393,9 @@ office-runtime,OfficeRuntime.AuthOptions,"authChallenge",Property,Excellent,fals
 office-runtime,OfficeRuntime.AuthOptions,"forceAddAccount",Property,Deprecated,false
 office-runtime,OfficeRuntime.AuthOptions,"forceConsent",Property,Deprecated,false
 office-runtime,OfficeRuntime.AuthOptions,"forMSGraphAccess",Property,Excellent,false
-office-runtime,OfficeRuntime.Dialog,N/A,Interface,Fine,false
+office-runtime,OfficeRuntime.Dialog,N/A,Interface,Fine,true
 office-runtime,OfficeRuntime.Dialog,"close()",Method,Good,false
-office-runtime,OfficeRuntime.DisplayWebDialogOptions,N/A,Interface,Fine,false
+office-runtime,OfficeRuntime.DisplayWebDialogOptions,N/A,Interface,Fine,true
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"displayInIFrame",Property,Excellent,false
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"height",Property,Excellent,false
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"onClose",Property,Great,false

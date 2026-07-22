@@ -12,6 +12,26 @@ remarks: |-
   - [OfficeRuntime](/javascript/api/office-runtime): [displayWebDialog](/javascript/api/office-runtime#office-runtime-officeruntime-displaywebdialog-function(1))
   - [OfficeRuntime.DisplayWebDialogOptions](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions): [onMessage](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onmessage-member), [onRuntimeError](/javascript/api/office-runtime/officeruntime.displaywebdialogoptions#office-runtime-officeruntime-displaywebdialogoptions-onruntimeerror-member)
 
+  #### Examples
+
+  ```TypeScript
+  const dialogUrl = "https://your-addin-domain.com/dialog.html";
+  const dialogOptions: OfficeRuntime.DisplayWebDialogOptions = {
+    height: "50%",
+    width: "50%",
+    displayInIFrame: false,
+    onMessage: function (message: string, dialog?: OfficeRuntime.Dialog) {
+      dialog?.close();
+      console.log("Dialog result: " + message);
+    },
+    onRuntimeError: function (error: Error, dialog?: OfficeRuntime.Dialog) {
+      dialog?.close();
+      console.log("Dialog error: " + error.message);
+    },
+  }
+  OfficeRuntime.displayWebDialog(dialogUrl, dialogOptions);
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
