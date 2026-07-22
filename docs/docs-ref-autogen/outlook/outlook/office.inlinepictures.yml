@@ -270,14 +270,14 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'scrollToAsync(id: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'scrollToAsync(id: string, options: Office.AsyncContextOptions & { select?: boolean }, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: id
           description: The identifier of the inline picture.
           type: string
         - id: options
-          description: An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the callback function.
-          type: <xref uid="office!Office.AsyncContextOptions:interface" />
+          description: 'An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Any data you want to access in the callback function. `select`<!-- -->: Optional. If true, the inline picture is selected after it is scrolled into view. The default value is false.'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { select?: boolean }'
         - id: callback
           description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'

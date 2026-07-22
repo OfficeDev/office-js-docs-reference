@@ -6934,14 +6934,14 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param id - The identifier of the inline picture.
-         * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
-         *                  callback function.
+         * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Any data you want to access in the
+         *                  callback function. `select`: Optional. If true, the inline picture is selected after it is scrolled into view. The default value is false.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
          *                   parameter is an `Office.AsyncResult` object.
          *
          * @beta
          */
-        scrollToAsync(id: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        scrollToAsync(id: string, options: CommonAPI.AsyncContextOptions & { select?: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Brings the specified inline picture into view in the body of the mail item.
          *
