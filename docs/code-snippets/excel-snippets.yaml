@@ -676,7 +676,7 @@ Excel.LinkedEntityDataDomain:class:
         const dataDomains = context.workbook.linkedEntityDataDomains;
 
         // Get a specific data domain by ID and refresh it.
-        const productsDomain = dataDomains.getItem("products");
+        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
         productsDomain.refresh();
         await context.sync();
     });
@@ -727,7 +727,8 @@ Excel.LinkedEntityDataDomainCollection:class:
         };
 
         // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomain);
+        const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+        domains.add(productsDomain);
         await context.sync();
     });
 Excel.LinkedEntityDataDomainCollection#add:member(1):
