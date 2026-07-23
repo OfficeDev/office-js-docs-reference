@@ -8383,9 +8383,9 @@ office,N/A,"Office.select(expression, callback)",Method,Great,true
 office,N/A,"Office.useShortNamespace(useShortNamespace)",Method,Fine,true
 office-runtime,OfficeRuntime.ApiInformation,N/A,Interface,Deprecated,false
 office-runtime,OfficeRuntime.ApiInformation,"isSetSupported(name, minVersion)",Method,Deprecated,false
-office-runtime,OfficeRuntime.Auth,N/A,Interface,Fine,true
+office-runtime,OfficeRuntime.Auth,N/A,Interface,Deprecated,true
 office-runtime,OfficeRuntime.Auth,"getAccessToken(options)",Method,Excellent,true
-office-runtime,OfficeRuntime.AuthOptions,N/A,Interface,Great,true
+office-runtime,OfficeRuntime.AuthOptions,N/A,Interface,Deprecated,true
 office-runtime,OfficeRuntime.AuthOptions,"allowConsentPrompt",Property,Excellent,false
 office-runtime,OfficeRuntime.AuthOptions,"allowSignInPrompt",Property,Excellent,false
 office-runtime,OfficeRuntime.AuthOptions,"asyncContext",Property,Excellent,false

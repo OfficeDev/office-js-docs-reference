@@ -17,7 +17,8 @@ remarks: |-
   ```
 
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: Use the [Office.Auth](https://learn.microsoft.com/javascript/api/office/office.auth) interface instead.
 type: interface
 methods:
   - name: getAccessToken(options)

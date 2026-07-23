@@ -23,7 +23,8 @@ remarks: |-
   ```
 
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: Use the [Office.AuthOptions](https://learn.microsoft.com/javascript/api/office/office.authoptions) interface instead.
 type: interface
 properties:
   - name: allowConsentPrompt
