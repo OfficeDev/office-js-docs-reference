@@ -14,6 +14,27 @@ remarks: |-
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [loadLinkedEntityCellValue](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-loadlinkedentitycellvalue-member(1))
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Loads a linked entity cell value using a LinkedEntityId.
+  async function loadLinkedEntity(domainId: string, entityId: string) {
+      await Excel.run(async (context) => {
+          // Specify the linked entity ID to load.
+          const linkedEntityId: Excel.LinkedEntityId = {
+              entityId: entityId,
+              domainId: domainId,
+              serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
+              culture: "en-US",
+          };
+
+          // Load the linked entity cell value.
+          context.workbook.linkedEntityDataDomains.loadLinkedEntityCellValue(linkedEntityId);
+          await context.sync();
+      });
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

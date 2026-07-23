@@ -11,6 +11,32 @@ remarks: |-
 
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [linkedEntityDataDomains](/javascript/api/excel/excel.workbook#excel-excel-workbook-linkedentitydatadomains-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Registers linked entity data domains when the add-in loads.
+  await Excel.run(async (context) => {
+      const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+          dataProvider: "Contoso",
+          id: "products",
+          name: "Products",
+          // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
+          loadFunctionId: "CONTOSOLOADSERVICE",
+          // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
+          periodicRefreshInterval: 300,
+          // Manual refresh mode is always supported, even if unspecified.
+          supportedRefreshModes: [
+              Excel.LinkedEntityDataDomainRefreshMode.periodic,
+              Excel.LinkedEntityDataDomainRefreshMode.onLoad
+          ]
+      };
+
+      // Add the data domain to the collection to register it.
+      context.workbook.linkedEntityDataDomains.add(productsDomain);
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -47,7 +73,34 @@ methods:
     package: excel!
     fullName: add(options)
     summary: Adds a linked entity data domain object defined by the Office Add-in to the collection. Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Registers linked entity data domains when the add-in loads.
+      await Excel.run(async (context) => {
+          const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+              dataProvider: "Contoso",
+              id: "products",
+              name: "Products",
+              // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
+              loadFunctionId: "CONTOSOLOADSERVICE",
+              // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
+              periodicRefreshInterval: 300,
+              // Manual refresh mode is always supported, even if unspecified.
+              supportedRefreshModes: [
+                  Excel.LinkedEntityDataDomainRefreshMode.periodic,
+                  Excel.LinkedEntityDataDomainRefreshMode.onLoad
+              ]
+          };
+
+          // Add the data domain to the collection to register it.
+          context.workbook.linkedEntityDataDomains.add(productsDomain);
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +132,22 @@ methods:
     package: excel!
     fullName: getItem(id)
     summary: Gets a linked entity data domain by its `id`<!-- -->.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Refreshes all linked entity cell values for a specific data domain.
+      await Excel.run(async (context) => {
+          const dataDomains = context.workbook.linkedEntityDataDomains;
+
+          // Get a specific data domain by ID and refresh it.
+          const productsDomain = dataDomains.getItem("products");
+          productsDomain.refresh();
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -223,7 +291,21 @@ methods:
     package: excel!
     fullName: refreshAll()
     summary: Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection. The refresh request can fail if the data providers are busy or temporarily inaccessible.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Refreshes all linked entity cell values across all data domains.
+      await Excel.run(async (context) => {
+          const dataDomains = context.workbook.linkedEntityDataDomains;
+
+          // Refresh all linked entity cell values in all data domains.
+          dataDomains.refreshAll();
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -252,7 +334,27 @@ events:
     package: excel!
     fullName: onLinkedEntityDataDomainAdded
     summary: Occurs when a new linked entity data domain is added to the workbook.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Registers an event handler for the onLinkedEntityDataDomainAdded event.
+      await Excel.run(async (context) => {
+          const dataDomains = context.workbook.linkedEntityDataDomains;
+          dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
+
+          await context.sync();
+      });
+
+      async function onDataDomainAdded(eventArgs: Excel.LinkedEntityDataDomainAddedEventArgs): Promise<void> {
+          console.log(`Linked entity data domain added: ${eventArgs.id}`);
+          console.log(`Event type: ${eventArgs.type}`);
+          console.log(`Event source: ${eventArgs.source}`);
+          console.log(`Service ID: ${eventArgs.serviceId}`);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -265,7 +367,29 @@ events:
     package: excel!
     fullName: onRefreshCompleted
     summary: Occurs when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Registers an event handler for the onRefreshCompleted event.
+      await Excel.run(async (context) => {
+          const dataDomains = context.workbook.linkedEntityDataDomains;
+          dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
+
+          await context.sync();
+      });
+
+      async function onLinkedEntityDomainRefreshed(eventArgs: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs): Promise<void> {
+          console.log(`Linked entity domain refreshed: ${eventArgs.id}`);
+          console.log(`Event type: ${eventArgs.type}`);
+          console.log(`Event source: ${eventArgs.source}`);
+          console.log(`Service ID: ${eventArgs.serviceId}`);
+          console.log(`Refresh status: ${eventArgs.refreshed}`);
+          console.log(`Refresh errors: ${eventArgs.errors}`);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -278,7 +402,28 @@ events:
     package: excel!
     fullName: onRefreshModeChanged
     summary: Occurs when the `refreshMode` of a linked entity data domain is changed.
-    remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Registers an event handler for the onRefreshModeChanged event.
+      await Excel.run(async (context) => {
+          const dataDomains = context.workbook.linkedEntityDataDomains;
+          dataDomains.onRefreshModeChanged.add(onRefreshModeChanged);
+
+          await context.sync();
+      });
+
+      async function onRefreshModeChanged(eventArgs: Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs): Promise<void> {
+          console.log(`Linked entity domain refresh mode changed: ${eventArgs.id}`);
+          console.log(`Event type: ${eventArgs.type}`);
+          console.log(`Event source: ${eventArgs.source}`);
+          console.log(`Service ID: ${eventArgs.serviceId}`);
+          console.log(`New refresh mode: ${eventArgs.refreshMode}`);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false

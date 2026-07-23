@@ -13,6 +13,25 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onLinkedEntityDataDomainAdded](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onlinkedentitydatadomainadded-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Registers an event handler for the onLinkedEntityDataDomainAdded event.
+  await Excel.run(async (context) => {
+      const dataDomains = context.workbook.linkedEntityDataDomains;
+      dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
+
+      await context.sync();
+  });
+
+  async function onDataDomainAdded(eventArgs: Excel.LinkedEntityDataDomainAddedEventArgs): Promise<void> {
+      console.log(`Linked entity data domain added: ${eventArgs.id}`);
+      console.log(`Event type: ${eventArgs.type}`);
+      console.log(`Event source: ${eventArgs.source}`);
+      console.log(`Service ID: ${eventArgs.serviceId}`);
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
