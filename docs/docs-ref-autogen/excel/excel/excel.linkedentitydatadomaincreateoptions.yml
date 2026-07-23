@@ -18,7 +18,7 @@ remarks: |-
   ```TypeScript
   // Registers linked entity data domains when the add-in loads.
   await Excel.run(async (context) => {
-      const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+      const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
           dataProvider: "Contoso",
           id: "products",
           name: "Products",
@@ -34,7 +34,7 @@ remarks: |-
       };
 
       // Add the data domain to the collection to register it.
-      context.workbook.linkedEntityDataDomains.add(productsDomain);
+      context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
       await context.sync();
   });
   ```

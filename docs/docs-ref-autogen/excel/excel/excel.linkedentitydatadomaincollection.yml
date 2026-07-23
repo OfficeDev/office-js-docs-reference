@@ -18,7 +18,7 @@ remarks: |-
   ```TypeScript
   // Registers linked entity data domains when the add-in loads.
   await Excel.run(async (context) => {
-      const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+      const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
           dataProvider: "Contoso",
           id: "products",
           name: "Products",
@@ -34,7 +34,9 @@ remarks: |-
       };
 
       // Add the data domain to the collection to register it.
-      context.workbook.linkedEntityDataDomains.add(productsDomain);
+      const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      domains.add(productsDomainOptions);
       await context.sync();
   });
   ```
@@ -85,7 +87,7 @@ methods:
       ```TypeScript
       // Registers linked entity data domains when the add-in loads.
       await Excel.run(async (context) => {
-          const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+          const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
               dataProvider: "Contoso",
               id: "products",
               name: "Products",
@@ -101,7 +103,7 @@ methods:
           };
 
           // Add the data domain to the collection to register it.
-          context.workbook.linkedEntityDataDomains.add(productsDomain);
+          context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
           await context.sync();
       });
       ```
@@ -149,10 +151,10 @@ methods:
       ```TypeScript
       // Refreshes all linked entity cell values for a specific data domain.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
           // Get a specific data domain by ID and refresh it.
-          const productsDomain = dataDomains.getItem("products");
+          const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
           productsDomain.refresh();
           await context.sync();
       });
@@ -364,7 +366,7 @@ methods:
       ```TypeScript
       // Refreshes all linked entity cell values across all data domains.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
           // Refresh all linked entity cell values in all data domains.
           dataDomains.refreshAll();
@@ -454,7 +456,7 @@ events:
       ```TypeScript
       // Registers an event handler for the onLinkedEntityDataDomainAdded event.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
           dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
 
           await context.sync();
@@ -489,7 +491,7 @@ events:
       ```TypeScript
       // Registers an event handler for the onRefreshCompleted event.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
           dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
 
           await context.sync();
@@ -526,7 +528,7 @@ events:
       ```TypeScript
       // Registers an event handler for the onRefreshModeChanged event.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
           dataDomains.onRefreshModeChanged.add(onRefreshModeChanged);
 
           await context.sync();

@@ -18,7 +18,7 @@ remarks: |-
   ```TypeScript
   // Registers an event handler for the onLinkedEntityDataDomainAdded event.
   await Excel.run(async (context) => {
-      const dataDomains = context.workbook.linkedEntityDataDomains;
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
       dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
 
       await context.sync();

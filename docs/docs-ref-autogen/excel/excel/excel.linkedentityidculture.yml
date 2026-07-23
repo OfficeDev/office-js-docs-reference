@@ -35,7 +35,8 @@ remarks: |-
 
           // Identify the domainId of the request and call the corresponding function to create
           // linked entity cell values for that linked entity data domain.
-          for (const { entityId } of parsedRequest.entities) {
+          const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
+          for (const { entityId } of entities) {
               let linkedEntityResult = null;
               switch (parsedRequest.domainId) {
                   case "products": {

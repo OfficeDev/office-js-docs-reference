@@ -18,7 +18,7 @@ remarks: |-
   ```TypeScript
   // Registers an event handler for the onRefreshCompleted event.
   await Excel.run(async (context) => {
-      const dataDomains = context.workbook.linkedEntityDataDomains;
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
       dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
 
       await context.sync();
