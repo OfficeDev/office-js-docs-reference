@@ -13,6 +13,52 @@ remarks: |-
   - [Excel.PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue): [target](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-target-member)
   - [Excel.Workbook](/javascript/api/excel/excel.workbook): [getLinkedEntityCellValue](/javascript/api/excel/excel.workbook#excel-excel-workbook-getlinkedentitycellvalue-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Creates a linked entity cell value with properties and a card layout.
+  // This is typically returned from a linked entity load service function.
+  const productLinkedEntity: Excel.LinkedEntityCellValue = {
+      type: "LinkedEntity",
+      text: "Chai",
+      id: {
+          entityId: "P1",
+          domainId: "products",
+          serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
+          culture: "en-US"
+      },
+      properties: {
+          "Product Name": {
+              type: "String",
+              basicValue: "Chai"
+          },
+          "Unit Price": {
+              type: "FormattedNumber",
+              basicValue: 18,
+              numberFormat: "$* #,##0.00"
+          },
+          Discontinued: {
+              type: "Boolean",
+              basicValue: false
+          }
+      },
+      layouts: {
+          compact: {
+              icon: "ShoppingBag"
+          },
+          card: {
+              title: { property: "Product Name" },
+              sections: [
+                  {
+                      layout: "List",
+                      properties: ["Product Name", "Unit Price", "Discontinued"]
+                  }
+              ]
+          }
+      }
+  };
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

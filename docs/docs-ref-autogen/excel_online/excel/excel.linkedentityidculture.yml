@@ -13,6 +13,59 @@ remarks: |-
 
   - [Excel.LinkedEntityLoadServiceRequest](/javascript/api/excel/excel.linkedentityloadservicerequest): [entities](/javascript/api/excel/excel.linkedentityloadservicerequest#excel-excel-linkedentityloadservicerequest-entities-member)
 
+  #### Examples
+
+  ```TypeScript
+  /**
+   * Custom function that acts as the data provider for a LinkedEntityDataDomain.
+   * Called on demand by Excel to resolve and refresh LinkedEntityCellValue objects.
+   * @customfunction
+   * @linkedEntityLoadService
+   * @param {any} request Request to resolve and refresh LinkedEntityCellValue objects.
+   * @return {any} Resolved or refreshed LinkedEntityCellValue objects that were requested in the passed-in request.
+   */
+  function contosoLoadService(request: any): any {
+      const notAvailableError = new CustomFunctions.Error(CustomFunctions.ErrorCode.notAvailable);
+
+      try {
+          // Parse the request that was passed-in by Excel.
+          const parsedRequest: Excel.LinkedEntityLoadServiceRequest = JSON.parse(request);
+          // Initialize result to populate and return to Excel.
+          const result: Excel.LinkedEntityLoadServiceResult = { entities: [] };
+
+          // Identify the domainId of the request and call the corresponding function to create
+          // linked entity cell values for that linked entity data domain.
+          for (const { entityId } of parsedRequest.entities) {
+              let linkedEntityResult = null;
+              switch (parsedRequest.domainId) {
+                  case "products": {
+                      linkedEntityResult = makeProductLinkedEntity(entityId);
+                      break;
+                  }
+                  case "categories": {
+                      linkedEntityResult = makeCategoryLinkedEntity(entityId);
+                      break;
+                  }
+                  default:
+                      throw notAvailableError;
+              }
+
+              if (!linkedEntityResult) {
+                  // Throw an error to signify to Excel that the resolution or refresh of the requested linkedEntityId failed.
+                  throw notAvailableError;
+              }
+
+              result.entities.push(linkedEntityResult);
+          }
+
+          return result;
+      } catch (error) {
+          console.error(error);
+          throw notAvailableError;
+      }
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

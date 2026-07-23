@@ -13,6 +13,26 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onRefreshModeChanged](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshmodechanged-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Registers an event handler for the onRefreshModeChanged event.
+  await Excel.run(async (context) => {
+      const dataDomains = context.workbook.linkedEntityDataDomains;
+      dataDomains.onRefreshModeChanged.add(onRefreshModeChanged);
+
+      await context.sync();
+  });
+
+  async function onRefreshModeChanged(eventArgs: Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs): Promise<void> {
+      console.log(`Linked entity domain refresh mode changed: ${eventArgs.id}`);
+      console.log(`Event type: ${eventArgs.type}`);
+      console.log(`Event source: ${eventArgs.source}`);
+      console.log(`Service ID: ${eventArgs.serviceId}`);
+      console.log(`New refresh mode: ${eventArgs.refreshMode}`);
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

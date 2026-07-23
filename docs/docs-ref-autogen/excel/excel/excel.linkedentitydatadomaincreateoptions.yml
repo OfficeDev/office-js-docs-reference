@@ -13,6 +13,32 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [add](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-add-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Registers linked entity data domains when the add-in loads.
+  await Excel.run(async (context) => {
+      const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
+          dataProvider: "Contoso",
+          id: "products",
+          name: "Products",
+          // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
+          loadFunctionId: "CONTOSOLOADSERVICE",
+          // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
+          periodicRefreshInterval: 300,
+          // Manual refresh mode is always supported, even if unspecified.
+          supportedRefreshModes: [
+              Excel.LinkedEntityDataDomainRefreshMode.periodic,
+              Excel.LinkedEntityDataDomainRefreshMode.onLoad
+          ]
+      };
+
+      // Add the data domain to the collection to register it.
+      context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

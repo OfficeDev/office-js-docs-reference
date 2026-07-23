@@ -13,6 +13,27 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Registers an event handler for the onRefreshCompleted event.
+  await Excel.run(async (context) => {
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
+
+      await context.sync();
+  });
+
+  async function onLinkedEntityDomainRefreshed(eventArgs: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs): Promise<void> {
+      console.log(`Linked entity domain refreshed: ${eventArgs.id}`);
+      console.log(`Event type: ${eventArgs.type}`);
+      console.log(`Event source: ${eventArgs.source}`);
+      console.log(`Service ID: ${eventArgs.serviceId}`);
+      console.log(`Refresh status: ${eventArgs.refreshed}`);
+      console.log(`Refresh errors: ${eventArgs.errors}`);
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
