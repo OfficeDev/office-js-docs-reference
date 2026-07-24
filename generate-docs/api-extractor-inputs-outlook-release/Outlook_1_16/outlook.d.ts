@@ -2590,7 +2590,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
+         * **Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
          * To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
          * Use the {@link https://learn.microsoft.com/javascript/api/outlook/office.body | Office.Body} APIs to get and set the body of an item.
          *
@@ -2624,7 +2624,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
+         * **Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
          * To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
          * Use the {@link https://learn.microsoft.com/javascript/api/outlook/office.body | Office.Body} APIs to get and set the body of an item.
          *
@@ -11592,7 +11592,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
+         * **Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
          * To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
          * Use the {@link https://learn.microsoft.com/javascript/api/outlook/office.body | Office.Body} APIs to get and set the body of an item.
          *
@@ -11626,7 +11626,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
+         * **Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item.
          * To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents.
          * Use the {@link https://learn.microsoft.com/javascript/api/outlook/office.body | Office.Body} APIs to get and set the body of an item.
          *
