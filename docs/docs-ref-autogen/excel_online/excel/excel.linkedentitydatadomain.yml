@@ -18,10 +18,10 @@ remarks: |-
   ```TypeScript
   // Refreshes all linked entity cell values for a specific data domain.
   await Excel.run(async (context) => {
-      const dataDomains = context.workbook.linkedEntityDataDomains;
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
       // Get a specific data domain by ID and refresh it.
-      const productsDomain = dataDomains.getItem("products");
+      const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
       productsDomain.refresh();
       await context.sync();
   });
@@ -283,10 +283,10 @@ methods:
       ```TypeScript
       // Refreshes all linked entity cell values for a specific data domain.
       await Excel.run(async (context) => {
-          const dataDomains = context.workbook.linkedEntityDataDomains;
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
           // Get a specific data domain by ID and refresh it.
-          const productsDomain = dataDomains.getItem("products");
+          const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
           productsDomain.refresh();
           await context.sync();
       });

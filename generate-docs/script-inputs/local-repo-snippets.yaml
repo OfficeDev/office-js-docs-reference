@@ -840,10 +840,10 @@ Excel.LinkedEntityDataDomain:class:
   - |-
     // Refreshes all linked entity cell values for a specific data domain.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
         // Get a specific data domain by ID and refresh it.
-        const productsDomain = dataDomains.getItem("products");
+        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
         productsDomain.refresh();
         await context.sync();
     });
@@ -851,10 +851,10 @@ Excel.LinkedEntityDataDomain#refresh:member(1):
   - |-
     // Refreshes all linked entity cell values for a specific data domain.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
         // Get a specific data domain by ID and refresh it.
-        const productsDomain = dataDomains.getItem("products");
+        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
         productsDomain.refresh();
         await context.sync();
     });
@@ -862,7 +862,7 @@ Excel.LinkedEntityDataDomainAddedEventArgs:interface:
   - |-
     // Registers an event handler for the onLinkedEntityDataDomainAdded event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
 
         await context.sync();
@@ -878,7 +878,7 @@ Excel.LinkedEntityDataDomainCollection:class:
   - |-
     // Registers linked entity data domains when the add-in loads.
     await Excel.run(async (context) => {
-        const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+        const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
             dataProvider: "Contoso",
             id: "products",
             name: "Products",
@@ -894,14 +894,15 @@ Excel.LinkedEntityDataDomainCollection:class:
         };
 
         // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomain);
+        const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+        domains.add(productsDomainOptions);
         await context.sync();
     });
 Excel.LinkedEntityDataDomainCollection#add:member(1):
   - |-
     // Registers linked entity data domains when the add-in loads.
     await Excel.run(async (context) => {
-        const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+        const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
             dataProvider: "Contoso",
             id: "products",
             name: "Products",
@@ -917,17 +918,17 @@ Excel.LinkedEntityDataDomainCollection#add:member(1):
         };
 
         // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomain);
+        context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
         await context.sync();
     });
 Excel.LinkedEntityDataDomainCollection#getItem:member(1):
   - |-
     // Refreshes all linked entity cell values for a specific data domain.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
         // Get a specific data domain by ID and refresh it.
-        const productsDomain = dataDomains.getItem("products");
+        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
         productsDomain.refresh();
         await context.sync();
     });
@@ -981,7 +982,7 @@ Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member:
   - |-
     // Registers an event handler for the onLinkedEntityDataDomainAdded event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onLinkedEntityDataDomainAdded.add(onDataDomainAdded);
 
         await context.sync();
@@ -997,7 +998,7 @@ Excel.LinkedEntityDataDomainCollection#onRefreshCompleted:member:
   - |-
     // Registers an event handler for the onRefreshCompleted event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
 
         await context.sync();
@@ -1015,7 +1016,7 @@ Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member:
   - |-
     // Registers an event handler for the onRefreshModeChanged event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onRefreshModeChanged.add(onRefreshModeChanged);
 
         await context.sync();
@@ -1032,7 +1033,7 @@ Excel.LinkedEntityDataDomainCollection#refreshAll:member(1):
   - |-
     // Refreshes all linked entity cell values across all data domains.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
 
         // Refresh all linked entity cell values in all data domains.
         dataDomains.refreshAll();
@@ -1042,7 +1043,7 @@ Excel.LinkedEntityDataDomainCreateOptions:interface:
   - |-
     // Registers linked entity data domains when the add-in loads.
     await Excel.run(async (context) => {
-        const productsDomain: Excel.LinkedEntityDataDomainCreateOptions = {
+        const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
             dataProvider: "Contoso",
             id: "products",
             name: "Products",
@@ -1058,14 +1059,14 @@ Excel.LinkedEntityDataDomainCreateOptions:interface:
         };
 
         // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomain);
+        context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
         await context.sync();
     });
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface:
   - |-
     // Registers an event handler for the onRefreshCompleted event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
 
         await context.sync();
@@ -1083,7 +1084,7 @@ Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface:
   - |-
     // Registers an event handler for the onRefreshModeChanged event.
     await Excel.run(async (context) => {
-        const dataDomains = context.workbook.linkedEntityDataDomains;
+        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         dataDomains.onRefreshModeChanged.add(onRefreshModeChanged);
 
         await context.sync();
@@ -1135,7 +1136,8 @@ Excel.LinkedEntityIdCulture:interface:
 
             // Identify the domainId of the request and call the corresponding function to create
             // linked entity cell values for that linked entity data domain.
-            for (const { entityId } of parsedRequest.entities) {
+            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
+            for (const { entityId } of entities) {
                 let linkedEntityResult = null;
                 switch (parsedRequest.domainId) {
                     case "products": {
@@ -1185,7 +1187,8 @@ Excel.LinkedEntityLoadServiceRequest:interface:
 
             // Identify the domainId of the request and call the corresponding function to create
             // linked entity cell values for that linked entity data domain.
-            for (const { entityId } of parsedRequest.entities) {
+            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
+            for (const { entityId } of entities) {
                 let linkedEntityResult = null;
                 switch (parsedRequest.domainId) {
                     case "products": {
@@ -1235,7 +1238,8 @@ Excel.LinkedEntityLoadServiceResult:interface:
 
             // Identify the domainId of the request and call the corresponding function to create
             // linked entity cell values for that linked entity data domain.
-            for (const { entityId } of parsedRequest.entities) {
+            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
+            for (const { entityId } of entities) {
                 let linkedEntityResult = null;
                 switch (parsedRequest.domainId) {
                     case "products": {

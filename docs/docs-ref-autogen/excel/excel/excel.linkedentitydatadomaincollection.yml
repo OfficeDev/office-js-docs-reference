@@ -35,7 +35,6 @@ remarks: |-
 
       // Add the data domain to the collection to register it.
       const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-      const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
       domains.add(productsDomainOptions);
       await context.sync();
   });
