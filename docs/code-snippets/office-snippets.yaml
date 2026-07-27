@@ -5226,8 +5226,8 @@ OfficeExtension.LoadOption#top:member:
 
 OfficeExtension.TrackedObjects:class:
   - |-
-    // This sample inserts many ranges into an Excel worksheet, removing each
-    // cell proxy object from memory after it's used.
+    // This sample creates many one-cell ranges, then removes each
+    // cell proxy object from memory before the batch operation completes.
     await Excel.run(async (context) => {
         const largeRange = context.workbook.getSelectedRange();
         largeRange.load(["rowCount", "columnCount"]);
