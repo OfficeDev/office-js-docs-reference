@@ -13,6 +13,20 @@ remarks: |-
 
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [getItem](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemat-member(1)), [getItemByName](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembyname-member(1)), [getItemByNameOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitembynameornullobject-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Refreshes all linked entity cell values for a specific data domain.
+  await Excel.run(async (context) => {
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+
+      // Get a specific data domain by ID and refresh it.
+      const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
+      productsDomain.refresh();
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -263,6 +277,20 @@ methods:
       [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This method isn't supported in Excel on the web.
+
+      #### Examples
+
+      ```TypeScript
+      // Refreshes all linked entity cell values for a specific data domain.
+      await Excel.run(async (context) => {
+          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+
+          // Get a specific data domain by ID and refresh it.
+          const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
+          productsDomain.refresh();
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
