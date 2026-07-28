@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/23/2026
+ms.date: 07/30/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -29,7 +29,8 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
-- Extended support for the `errorMessageMarkdown` property of the `event.completed` method to [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins in Outlook on Mac.
+- Added a property to the `event.completed` method of [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins to resize the width of the task pane that opens from a button in the dialog.
+- Extended support for the `errorMessageMarkdown` property of the `event.completed` method to Smart Alerts add-ins in Outlook on Mac.
 - Added a property to get or set whether an appointment is an all-day event.
 - Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.
 - Added a property and objects to temporarily set the body or subject displayed in read mode.
