@@ -10164,6 +10164,7 @@ outlook,Office.SmartAlertsEventCompletedOptions,"commandId",Property,Excellent,f
 outlook,Office.SmartAlertsEventCompletedOptions,"contextData",Property,Excellent,false
 outlook,Office.SmartAlertsEventCompletedOptions,"errorMessage",Property,Excellent,false
 outlook,Office.SmartAlertsEventCompletedOptions,"errorMessageMarkdown",Property,Excellent,false
+outlook,Office.SmartAlertsEventCompletedOptions,"preferredWidth",Property,Excellent,false
 outlook,Office.SmartAlertsEventCompletedOptions,"sendModeOverride",Property,Excellent,false
 outlook,Office.SpamReportingEventArgs,N/A,Interface,Great,true
 outlook,Office.SpamReportingEventArgs,"freeText",Property,Excellent,false

@@ -226,6 +226,35 @@ properties:
       content: 'errorMessageMarkdown?: string;'
       return:
         type: string
+  - name: preferredWidth
+    uid: outlook!Office.SmartAlertsEventCompletedOptions#preferredWidth:member
+    package: outlook!
+    fullName: preferredWidth
+    summary: |-
+      When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property specifies the width of the task pane that opens from a button in the Smart Alerts dialog.
+
+      For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!-- -->.
+    remarks: |-
+      [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+
+      **[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **restricted**
+
+      **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+      **Important**:
+
+      - The `preferredWidth` property overrides the task pane width set by the user. The `preferredWidth` value isn't preserved when the task pane is reopened.
+
+      - We recommend that the specified task pane width not exceed 40% of the Reading Pane surface.
+
+      - If you specify a non-standard width, Outlook will automatically adjust the width to the nearest standard value.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'preferredWidth?: number;'
+      return:
+        type: number
   - name: sendModeOverride
     uid: outlook!Office.SmartAlertsEventCompletedOptions#sendModeOverride:member
     package: outlook!
