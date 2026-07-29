@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-The Ribbon API sets support programmatic control of custom add-in commands (that is, custom ribbon buttons and menu items) to:
+The Ribbon API requirement sets let add-ins programmatically control custom ribbon elements. Add-ins can:
 
-- Enable or disable commands.
-- Configure contextual tabs to appear on the ribbon.
-- Control visibility of commands in a custom tab.
+- Enable or disable add-in commands.
+- Show contextual tabs on the ribbon.
+- Show or hide commands on a custom tab.
 
 ## Support
 
