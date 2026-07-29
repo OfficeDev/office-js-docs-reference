@@ -50,7 +50,7 @@ Ribbon API 1.2 adds support for contextual tabs. For more information, see [Crea
 
 ## Ribbon API 1.3
 
-Ribbon API 1.3 adds support to programmatically control visibility of add-in commands in a custom tab.
+Ribbon API 1.3 adds support to dynamically show or hide add-in commands on a custom tab.
 
 ## See also
 
