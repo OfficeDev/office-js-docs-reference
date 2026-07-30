@@ -9120,6 +9120,10 @@ onenote,N/A,N/A,Package,Missing,false
 onenote,N/A,"OneNote.run(batch)",Method,Excellent,true
 onenote,N/A,"OneNote.run(object, batch)",Method,Great,false
 onenote,N/A,"OneNote.run(objects, batch)",Method,Great,false
+outlook,Office.AccessControls,N/A,Interface,Good,false
+outlook,Office.AccessControls,"allowCopyPaste",Property,Excellent,false
+outlook,Office.AccessControls,"allowPrint",Property,Great,false
+outlook,Office.AccessControls,"allowSave",Property,Great,false
 outlook,Office.Appointment,N/A,Interface,Great,false
 outlook,Office.AppointmentCompose,N/A,Interface,Great,false
 outlook,Office.AppointmentCompose,"body",Property,Great,true
@@ -9942,10 +9946,12 @@ outlook,Office.MessageCompose,"sendAsync(callback)",Method,Fine,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,N/A,Interface,Excellent,true
+outlook,Office.MessageDecryptEventCompletedOptions,"accessControls",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"emailBody",Property,Excellent,false
+outlook,Office.MessageDecryptEventCompletedOptions,"errorMessage",Property,Excellent,false
 outlook,Office.MessageForm,N/A,Interface,Fine,false
 outlook,Office.MessageForm,"attachments",Property,Excellent,false
 outlook,Office.MessageForm,"bccRecipients",Property,Great,false
@@ -14266,7 +14272,10 @@ word,Word.EventSource,N/A,Enum,Great,true
 word,Word.EventSource,"local",EnumField,Great,false
 word,Word.EventSource,"remote",EnumField,Great,false
 word,Word.EventType,N/A,Enum,Good,true
+word,Word.EventType,"annotationAdded",EnumField,Great,false
+word,Word.EventType,"annotationChanged",EnumField,Great,false
 word,Word.EventType,"annotationClicked",EnumField,Great,false
+word,Word.EventType,"annotationDeleted",EnumField,Great,false
 word,Word.EventType,"annotationHovered",EnumField,Great,false
 word,Word.EventType,"annotationInserted",EnumField,Great,false
 word,Word.EventType,"annotationPopupAction",EnumField,Great,false
@@ -17522,11 +17531,35 @@ word,Word.SensitivityLabel,"toJSON()",Method,Excellent,false
 word,Word.SensitivityLabel,"track()",Method,Excellent,false
 word,Word.SensitivityLabel,"tryToUpdate(LabelId, Justification)",Method,Fine,false
 word,Word.SensitivityLabel,"untrack()",Method,Excellent,false
+word,Word.SensitivityLabelAbacAttribute,N/A,Class,Fine,false
+word,Word.SensitivityLabelAbacAttribute,"context",Property,Excellent,false
+word,Word.SensitivityLabelAbacAttribute,"displayName",Property,Good,false
+word,Word.SensitivityLabelAbacAttribute,"displayOrder",Property,Great,false
+word,Word.SensitivityLabelAbacAttribute,"isActive",Property,Great,false
+word,Word.SensitivityLabelAbacAttribute,"isMultiValued",Property,Great,false
+word,Word.SensitivityLabelAbacAttribute,"values",Property,Great,false
+word,Word.SensitivityLabelAbacAttribute,"load(options)",Method,Great,false
+word,Word.SensitivityLabelAbacAttribute,"load(propertyNames)",Method,Great,false
+word,Word.SensitivityLabelAbacAttribute,"load(propertyNamesAndPaths)",Method,Great,false
+word,Word.SensitivityLabelAbacAttribute,"toJSON()",Method,Excellent,false
+word,Word.SensitivityLabelAbacAttributeValue,N/A,Class,Fine,false
+word,Word.SensitivityLabelAbacAttributeValue,"context",Property,Excellent,false
+word,Word.SensitivityLabelAbacAttributeValue,"displayName",Property,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"displayOrder",Property,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"id",Property,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"isActive",Property,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"load(options)",Method,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"load(propertyNames)",Method,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"load(propertyNamesAndPaths)",Method,Great,false
+word,Word.SensitivityLabelAbacAttributeValue,"toJSON()",Method,Excellent,false
 word,Word.SensitivityLabelDetails,N/A,Class,Fine,false
+word,Word.SensitivityLabelDetails,"abacAttributeValues",Property,Excellent,false
 word,Word.SensitivityLabelDetails,"children",Property,Excellent,false
 word,Word.SensitivityLabelDetails,"color",Property,Good,false
 word,Word.SensitivityLabelDetails,"context",Property,Excellent,false
 word,Word.SensitivityLabelDetails,"id",Property,Great,false
+word,Word.SensitivityLabelDetails,"isAbacAttributesRequired",Property,Excellent,false
+word,Word.SensitivityLabelDetails,"isAbacEnabled",Property,Excellent,false
 word,Word.SensitivityLabelDetails,"isEnabled",Property,Great,false
 word,Word.SensitivityLabelDetails,"name",Property,Good,false
 word,Word.SensitivityLabelDetails,"order",Property,Good,false
@@ -17558,6 +17591,7 @@ word,Word.SensitivityLabelProtectionType,"userDefined",EnumField,Great,false
 word,Word.SensitivityLabelsCatalog,N/A,Class,Great,false
 word,Word.SensitivityLabelsCatalog,"context",Property,Excellent,false
 word,Word.SensitivityLabelsCatalog,"getLabelingCapability",Property,Great,false
+word,Word.SensitivityLabelsCatalog,"getAttributes()",Method,Fine,false
 word,Word.SensitivityLabelsCatalog,"getLabels()",Method,Fine,false
 word,Word.SensitivityLabelsCatalog,"load(options)",Method,Great,false
 word,Word.SensitivityLabelsCatalog,"load(propertyNames)",Method,Great,false
@@ -17567,14 +17601,19 @@ word,Word.SensitivityLabelsCatalog,"toJSON()",Method,Excellent,false
 word,Word.SensitivityLabelsCatalog,"track()",Method,Excellent,false
 word,Word.SensitivityLabelsCatalog,"untrack()",Method,Excellent,false
 word,Word.SensitivityLabelUpdateResult,N/A,Enum,Great,false
+word,Word.SensitivityLabelUpdateResult,"abacAttributesNotAllowed",EnumField,Great,false
+word,Word.SensitivityLabelUpdateResult,"abacAttributesRequired",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"crossTenant",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"documentReadOnly",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"insufficientPermission",EnumField,Great,false
+word,Word.SensitivityLabelUpdateResult,"labelDisabled",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"labelingDisabled",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"labelNotFound",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"parentLabelNotSupported",EnumField,Great,false
+word,Word.SensitivityLabelUpdateResult,"removingLabelNotSupported",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"success",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"unspecifiedFailure",EnumField,Excellent,false
+word,Word.SensitivityLabelUpdateResult,"unsupportedAbac",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"unsupportedDoubleKeyEncryption",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"unsupportedUdp",EnumField,Great,false
 word,Word.SensitivityLabelUpdateResult,"userNotFound",EnumField,Great,false

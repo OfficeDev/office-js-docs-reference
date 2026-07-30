@@ -4,7 +4,10 @@ uid: word!Word.CoauthoringLockAddOptions:interface
 package: word!
 fullName: Word.CoauthoringLockAddOptions
 summary: Specifies the options for adding to a [Word.CoauthoringLockCollection](xref:word!Word.CoauthoringLockCollection:class) object.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: |-
+  \[Api set: WordApiDesktop 1.4\]
+
+  This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
 
 isPreview: false
 isDeprecated: false

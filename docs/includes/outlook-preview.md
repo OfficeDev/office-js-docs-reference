@@ -1,5 +1,8 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[AccessControls](/javascript/api/outlook/office.accesscontrols)|[allowCopyPaste](/javascript/api/outlook/office.accesscontrols#outlook-office-accesscontrols-allowcopypaste-member)|If true, specifies that the decrypted contents of a message can be copied and pasted.|
+||[allowPrint](/javascript/api/outlook/office.accesscontrols#outlook-office-accesscontrols-allowprint-member)|If true, specifies that the decrypted contents of a message can be printed.|
+||[allowSave](/javascript/api/outlook/office.accesscontrols#outlook-office-accesscontrols-allowsave-member)|If true, specifies that the decrypted contents of a message can be saved.|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[isAllDayEvent](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isalldayevent-member)|Gets or sets the Office.IsAllDayEvent property of an appointment.|
 |[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[isAllDayEvent](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-isalldayevent-member)|Returns a boolean value indicating whether the event is all day.|
 |[Display](/javascript/api/outlook/office.display)|[body](/javascript/api/outlook/office.display#outlook-office-display-body-member)|Gets an object to temporarily set the content displayed in the body of a message in read mode.|
@@ -12,4 +15,6 @@
 ||[getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<boolean\>) =\> void)](/javascript/api/outlook/office.isalldayevent#outlook-office-isalldayevent-getasync-member(1))|Gets the boolean value indicating whether the event is all day or not.|
 ||[setAsync(isAllDayEvent: boolean, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.isalldayevent#outlook-office-isalldayevent-setasync-member(1))|Sets the all-day event status of an appointment.|
 ||[setAsync(isAllDayEvent: boolean, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.isalldayevent#outlook-office-isalldayevent-setasync-member(1))|Sets the all-day event status of an appointment.|
+|[MessageDecryptEventCompletedOptions](/javascript/api/outlook/office.messagedecrypteventcompletedoptions)|[accessControls](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-accesscontrols-member)|When you use the completed method to signal completion of an event handler|
+||[errorMessage](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-errormessage-member)|When you use the completed method to signal completion of an event handler|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[display](/javascript/api/outlook/office.messageread#outlook-office-messageread-display-member)|Gets an object to temporarily set the content displayed in the body or subject of a message in read mode.|
