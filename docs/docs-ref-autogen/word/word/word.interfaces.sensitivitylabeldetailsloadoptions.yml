@@ -28,6 +28,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: abacAttributeValues
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#abacAttributeValues:member
+    package: word!
+    fullName: abacAttributeValues
+    summary: The ABAC attribute values associated with the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'abacAttributeValues?: boolean;'
+      return:
+        type: boolean
   - name: color
     uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#color:member
     package: word!
@@ -52,6 +65,32 @@ properties:
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacAttributesRequired
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacAttributesRequired:member
+    package: word!
+    fullName: isAbacAttributesRequired
+    summary: Indicates whether ABAC attributes are required when applying the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacAttributesRequired?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacEnabled
+    uid: word!Word.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacEnabled:member
+    package: word!
+    fullName: isAbacEnabled
+    summary: Indicates whether the sensitivity label supports ABAC attributes.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacEnabled?: boolean;'
       return:
         type: boolean
   - name: isEnabled

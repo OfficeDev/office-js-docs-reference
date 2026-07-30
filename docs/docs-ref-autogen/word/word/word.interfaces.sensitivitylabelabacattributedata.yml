@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelAbacAttributeData
+uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelAbacAttributeData
+summary: An interface describing the data returned by calling `sensitivityLabelAbacAttribute.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute): [toJSON](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#displayName:member
+    package: word!
+    fullName: displayName
+    summary: The display name of the ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: string;'
+      return:
+        type: string
+  - name: displayOrder
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#displayOrder:member
+    package: word!
+    fullName: displayOrder
+    summary: The display order of the ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayOrder?: number;'
+      return:
+        type: number
+  - name: isActive
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#isActive:member
+    package: word!
+    fullName: isActive
+    summary: Indicates whether the ABAC attribute is active.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
+      return:
+        type: boolean
+  - name: isMultiValued
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#isMultiValued:member
+    package: word!
+    fullName: isMultiValued
+    summary: Indicates whether the ABAC attribute can have multiple values.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMultiValued?: boolean;'
+      return:
+        type: boolean
+  - name: values
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#values:member
+    package: word!
+    fullName: values
+    summary: The values available for the ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'values?: Word.SensitivityLabelAbacAttributeValue[];'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:class" />[]

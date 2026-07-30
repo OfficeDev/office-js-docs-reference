@@ -56,7 +56,7 @@ properties:
     uid: excel!Excel.Interfaces.CollectionLoadOptions#$skip:member
     package: excel!
     fullName: $skip
-    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false

@@ -4,6 +4,7 @@ name: outlook
 type: package
 summary: ''
 interfaces:
+  - outlook!Office.AccessControls:interface
   - outlook!Office.Appointment:interface
   - outlook!Office.AppointmentCompose:interface
   - outlook!Office.AppointmentForm:interface
