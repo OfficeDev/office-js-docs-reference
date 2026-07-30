@@ -14272,10 +14272,7 @@ word,Word.EventSource,N/A,Enum,Great,true
 word,Word.EventSource,"local",EnumField,Great,false
 word,Word.EventSource,"remote",EnumField,Great,false
 word,Word.EventType,N/A,Enum,Good,true
-word,Word.EventType,"annotationAdded",EnumField,Great,false
-word,Word.EventType,"annotationChanged",EnumField,Great,false
 word,Word.EventType,"annotationClicked",EnumField,Great,false
-word,Word.EventType,"annotationDeleted",EnumField,Great,false
 word,Word.EventType,"annotationHovered",EnumField,Great,false
 word,Word.EventType,"annotationInserted",EnumField,Great,false
 word,Word.EventType,"annotationPopupAction",EnumField,Great,false
