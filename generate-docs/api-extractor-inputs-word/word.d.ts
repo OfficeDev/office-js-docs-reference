@@ -2446,6 +2446,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
+     *
+     * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
      */
     export class CoauthoringLock extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2484,6 +2486,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         unlock(): void;
         /**
@@ -2526,6 +2530,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
+     *
+     * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
      */
     export class CoauthoringLockCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2538,6 +2544,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiDesktop 1.4]
          *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
+         *
          * @param options - Optional. The options to further configure the coauthoring lock.
          */
         add(options?: Word.CoauthoringLockAddOptions): Word.CoauthoringLock;
@@ -2546,6 +2554,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         unlockEphemeralLocks(): void;
         /**
@@ -2585,6 +2595,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
+     *
+     * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
      */
     export interface CoauthoringLockAddOptions {
         /**
@@ -2616,6 +2628,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         readonly locks: Word.CoauthoringLockCollection;
         /**
@@ -2752,6 +2766,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         readonly locks: Word.CoauthoringLockCollection;
         /**
@@ -15211,6 +15227,14 @@ export declare namespace Word {
          */
         readonly getLabelingCapability: Word.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
         /**
+         * Gets the attribute-based access control (ABAC) attributes available for sensitivity labels.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getAttributes(): OfficeExtension.ClientResult<Word.SensitivityLabelAbacAttribute[]>;
+        /**
          * Gets all the sensitivity labels that are enabled in Word.
          *
          * @remarks
@@ -15256,6 +15280,152 @@ export declare namespace Word {
         * Whereas the original `Word.SensitivityLabelsCatalog` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SensitivityLabelsCatalogData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.SensitivityLabelsCatalogData;
+    }
+    /**
+     * Represents a single attribute-based access control (ABAC) attribute value for a sensitivity label.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelAbacAttributeValue extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The display name of the ABAC attribute value.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly displayName: string;
+        /**
+         * The display order of the ABAC attribute value.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly displayOrder: number;
+        /**
+         * The unique identifier of the ABAC attribute value.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Indicates whether the ABAC attribute value is active.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isActive: boolean;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions): Word.SensitivityLabelAbacAttributeValue;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.SensitivityLabelAbacAttributeValue;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.SensitivityLabelAbacAttributeValue;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.SensitivityLabelAbacAttributeValue` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SensitivityLabelAbacAttributeValueData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.SensitivityLabelAbacAttributeValueData;
+    }
+    /**
+     * Represents an attribute-based access control (ABAC) attribute for sensitivity labels.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelAbacAttribute extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * The display name of the ABAC attribute.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly displayName: string;
+        /**
+         * The display order of the ABAC attribute.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly displayOrder: number;
+        /**
+         * Indicates whether the ABAC attribute is active.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isActive: boolean;
+        /**
+         * Indicates whether the ABAC attribute can have multiple values.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isMultiValued: boolean;
+        /**
+         * The values available for the ABAC attribute.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly values: Word.SensitivityLabelAbacAttributeValue[];
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions): Word.SensitivityLabelAbacAttribute;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.SensitivityLabelAbacAttribute;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.SensitivityLabelAbacAttribute;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.SensitivityLabelAbacAttribute` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SensitivityLabelAbacAttributeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.SensitivityLabelAbacAttributeData;
     }
     /**
      * Represents the collection of {@link Word.SensitivityLabelDetails} objects.
@@ -15346,6 +15516,14 @@ export declare namespace Word {
          */
         readonly children: Word.SensitivityLabelDetailsCollection;
         /**
+         * The attribute-based access control (ABAC) attribute values associated with the sensitivity label.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly abacAttributeValues: Word.SensitivityLabelAbacAttributeValue[];
+        /**
          * The color of the sensitivity label.
          *
          * @remarks
@@ -15361,6 +15539,22 @@ export declare namespace Word {
          * @beta
          */
         readonly id: string;
+        /**
+         * Indicates whether attribute-based access control (ABAC) attributes are required when applying the sensitivity label.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isAbacAttributesRequired: boolean;
+        /**
+         * Indicates whether the sensitivity label supports attribute-based access control (ABAC) attributes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isAbacEnabled: boolean;
         /**
          * Gets a value indicating whether the label is enabled.
          *
@@ -47542,6 +47736,8 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApiDesktop 1.4]
+     *
+     * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
      */
     enum CoauthoringLockType {
         /**
@@ -47686,6 +47882,41 @@ export declare namespace Word {
          * @beta
          */
         crossTenant = "CrossTenant",
+        /**
+         * Attribute-based access control (ABAC) attribute values were supplied, but the target label is not ABAC-enabled.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        abacAttributesNotAllowed = "AbacAttributesNotAllowed",
+        /**
+         * The target label isn't enabled for attribute-based access controls and requires attribute selections, but no ABAC attribute values were supplied.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        abacAttributesRequired = "AbacAttributesRequired",
+        /**
+         * The label update failed due to unsupported attribute-based access control (ABAC).
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedAbac = "UnsupportedAbac",
+        /**
+         * The label update failed because the specified label is disabled or not applicable to the user.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelDisabled = "LabelDisabled",
+        /**
+         * The label update failed because removing the sensitivity label is not supported.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        removingLabelNotSupported = "RemovingLabelNotSupported",
     }
     /**
      * Represents the labeling capability status of the sensitivity label catalog.
@@ -54177,6 +54408,8 @@ export declare namespace Word {
             *
             * @remarks
             * [Api set: WordApiDesktop 1.4]
+            *
+            * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
             */
             locks?: Word.Interfaces.CoauthoringLockData[];
             /**
@@ -54233,6 +54466,8 @@ export declare namespace Word {
             *
             * @remarks
             * [Api set: WordApiDesktop 1.4]
+            *
+            * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
             */
             locks?: Word.Interfaces.CoauthoringLockData[];
             /**
@@ -57972,6 +58207,84 @@ export declare namespace Word {
              */
             getLabelingCapability?: Word.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
         }
+        /** An interface describing the data returned by calling `sensitivityLabelAbacAttributeValue.toJSON()`. */
+        export interface SensitivityLabelAbacAttributeValueData {
+            /**
+             * The display name of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: string;
+            /**
+             * The display order of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayOrder?: number;
+            /**
+             * The unique identifier of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * Indicates whether the ABAC attribute value is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+        }
+        /** An interface describing the data returned by calling `sensitivityLabelAbacAttribute.toJSON()`. */
+        export interface SensitivityLabelAbacAttributeData {
+            /**
+             * The display name of the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: string;
+            /**
+             * The display order of the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayOrder?: number;
+            /**
+             * Indicates whether the ABAC attribute is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+            /**
+             * Indicates whether the ABAC attribute can have multiple values.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMultiValued?: boolean;
+            /**
+             * The values available for the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            values?: Word.SensitivityLabelAbacAttributeValue[];
+        }
         /** An interface describing the data returned by calling `sensitivityLabelDetailsCollection.toJSON()`. */
         export interface SensitivityLabelDetailsCollectionData {
             items?: Word.Interfaces.SensitivityLabelDetailsData[];
@@ -57986,6 +58299,14 @@ export declare namespace Word {
             * @beta
             */
             children?: Word.Interfaces.SensitivityLabelDetailsData[];
+            /**
+             * The ABAC attribute values associated with the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            abacAttributeValues?: Word.SensitivityLabelAbacAttributeValue[];
             /**
              * The color of the sensitivity label.
              *
@@ -58002,6 +58323,22 @@ export declare namespace Word {
              * @beta
              */
             id?: string;
+            /**
+             * Indicates whether ABAC attributes are required when applying the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * Indicates whether the sensitivity label supports ABAC attributes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * Gets a value indicating whether the label is enabled.
              *
@@ -63107,6 +63444,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         export interface CoauthoringLockLoadOptions {
             /**
@@ -63140,6 +63479,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApiDesktop 1.4]
+         *
+         * This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
          */
         export interface CoauthoringLockCollectionLoadOptions {
             /**
@@ -69353,6 +69694,104 @@ export declare namespace Word {
             getLabelingCapability?: boolean;
         }
         /**
+         * Represents a single ABAC attribute value for a sensitivity label.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelAbacAttributeValueLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The display name of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: boolean;
+            /**
+             * The display order of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayOrder?: boolean;
+            /**
+             * The unique identifier of the ABAC attribute value.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * Indicates whether the ABAC attribute value is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+        }
+        /**
+         * Represents an ABAC attribute for sensitivity labels.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelAbacAttributeLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * The display name of the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: boolean;
+            /**
+             * The display order of the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayOrder?: boolean;
+            /**
+             * Indicates whether the ABAC attribute is active.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isActive?: boolean;
+            /**
+             * Indicates whether the ABAC attribute can have multiple values.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isMultiValued?: boolean;
+            /**
+             * The values available for the ABAC attribute.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            values?: boolean;
+        }
+        /**
          * Represents the collection of {@link Word.SensitivityLabelDetails} objects.
          *
          * @remarks
@@ -69364,6 +69803,14 @@ export declare namespace Word {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: The ABAC attribute values associated with the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            abacAttributeValues?: boolean;
             /**
              * For EACH ITEM in the collection: The color of the sensitivity label.
              *
@@ -69380,6 +69827,22 @@ export declare namespace Word {
              * @beta
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Indicates whether ABAC attributes are required when applying the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * For EACH ITEM in the collection: Indicates whether the sensitivity label supports ABAC attributes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.
              *
@@ -69442,6 +69905,14 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
+             * The ABAC attribute values associated with the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            abacAttributeValues?: boolean;
+            /**
              * The color of the sensitivity label.
              *
              * @remarks
@@ -69457,6 +69928,22 @@ export declare namespace Word {
              * @beta
              */
             id?: boolean;
+            /**
+             * Indicates whether ABAC attributes are required when applying the sensitivity label.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * Indicates whether the sensitivity label supports ABAC attributes.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * Gets a value indicating whether the label is enabled.
              *

@@ -14,6 +14,22 @@ remarks: |-
 isPreview: true
 isDeprecated: false
 fields:
+  - name: abacAttributesNotAllowed
+    uid: word!Word.SensitivityLabelUpdateResult.abacAttributesNotAllowed:member
+    package: word!
+    summary: |-
+      Attribute-based access control (ABAC) attribute values were supplied, but the target label is not ABAC-enabled.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"AbacAttributesNotAllowed"'
+  - name: abacAttributesRequired
+    uid: word!Word.SensitivityLabelUpdateResult.abacAttributesRequired:member
+    package: word!
+    summary: |-
+      The target label isn't enabled for attribute-based access controls and requires attribute selections, but no ABAC attribute values were supplied.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"AbacAttributesRequired"'
   - name: crossTenant
     uid: word!Word.SensitivityLabelUpdateResult.crossTenant:member
     package: word!
@@ -38,6 +54,14 @@ fields:
 
       * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"InsufficientPermission"'
+  - name: labelDisabled
+    uid: word!Word.SensitivityLabelUpdateResult.labelDisabled:member
+    package: word!
+    summary: |-
+      The label update failed because the specified label is disabled or not applicable to the user.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"LabelDisabled"'
   - name: labelingDisabled
     uid: word!Word.SensitivityLabelUpdateResult.labelingDisabled:member
     package: word!
@@ -62,6 +86,14 @@ fields:
 
       * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"ParentLabelNotSupported"'
+  - name: removingLabelNotSupported
+    uid: word!Word.SensitivityLabelUpdateResult.removingLabelNotSupported:member
+    package: word!
+    summary: |-
+      The label update failed because removing the sensitivity label is not supported.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"RemovingLabelNotSupported"'
   - name: success
     uid: word!Word.SensitivityLabelUpdateResult.success:member
     package: word!
@@ -78,6 +110,14 @@ fields:
 
       * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UnspecifiedFailure"'
+  - name: unsupportedAbac
+    uid: word!Word.SensitivityLabelUpdateResult.unsupportedAbac:member
+    package: word!
+    summary: |-
+      The label update failed due to unsupported attribute-based access control (ABAC).
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UnsupportedAbac"'
   - name: unsupportedDoubleKeyEncryption
     uid: word!Word.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
     package: word!

@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/23/2026
+ms.date: 07/30/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -29,6 +29,10 @@ The preview requirement set includes all of the features of [requirement set 1.1
 
 The following features are in preview.
 
+- Added the ability to decrypt Outlook item attachments (`Office.MailboxEnums.AttachmentType.Item`) in an encryption add-in. To learn more, see [Decrypt Outlook item attachments (preview)](/office/dev/add-ins/outlook/encryption-decryption#decrypt-outlook-item-attachments-preview).
+- Added a property to the `event.completed` method of encryption add-ins to display a custom error message when decryption fails. To learn more, see [Customize error messages for the decryption operation (preview)](/office/dev/add-ins/outlook/encryption-decryption#customize-error-messages-for-the-decryption-operation-preview).
+- Added a property to the `event.completed` method of encryption add-ins to restrict printing, copying, and saving of decrypted content. To learn more, see [Manage distribution of decrypted content (preview)](/office/dev/add-ins/outlook/encryption-decryption#manage-distribution-of-decrypted-content-preview).
+- Added a **Retry** action to the decryption timeout notification in encryption add-ins so recipients can retry a failed decryption operation without switching to another message.
 - Extended support for the `errorMessageMarkdown` property of the `event.completed` method to [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins in Outlook on Mac.
 - Added a property to get or set whether an appointment is an all-day event.
 - Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.

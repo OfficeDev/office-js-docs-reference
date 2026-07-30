@@ -141,6 +141,8 @@ remarks: |-
   - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [context](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-context-member)
   - [Word.Selection](/javascript/api/word/word.selection): [context](/javascript/api/word/word.selection#word-word-selection-context-member)
   - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [context](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-context-member)
+  - [Word.SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute): [context](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-context-member)
+  - [Word.SensitivityLabelAbacAttributeValue](/javascript/api/word/word.sensitivitylabelabacattributevalue): [context](/javascript/api/word/word.sensitivitylabelabacattributevalue#word-word-sensitivitylabelabacattributevalue-context-member)
   - [Word.SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails): [context](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-context-member)
   - [Word.SensitivityLabelDetailsCollection](/javascript/api/word/word.sensitivitylabeldetailscollection): [context](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-context-member)
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [context](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-context-member)

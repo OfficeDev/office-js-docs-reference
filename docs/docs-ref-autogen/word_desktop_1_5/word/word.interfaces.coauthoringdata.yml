@@ -67,7 +67,10 @@ properties:
     package: word!
     fullName: locks
     summary: Gets a `CoauthoringLockCollection` object that represents the locks in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: |-
+      \[Api set: WordApiDesktop 1.4\]
+
+      This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
 
     isPreview: false
     isDeprecated: false

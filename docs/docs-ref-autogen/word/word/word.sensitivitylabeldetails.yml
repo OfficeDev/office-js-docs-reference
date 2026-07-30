@@ -16,6 +16,19 @@ isPreview: true
 isDeprecated: false
 type: class
 properties:
+  - name: abacAttributeValues
+    uid: word!Word.SensitivityLabelDetails#abacAttributeValues:member
+    package: word!
+    fullName: abacAttributeValues
+    summary: The attribute-based access control (ABAC) attribute values associated with the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly abacAttributeValues: Word.SensitivityLabelAbacAttributeValue[];'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:class" />[]
   - name: children
     uid: word!Word.SensitivityLabelDetails#children:member
     package: word!
@@ -68,6 +81,32 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: isAbacAttributesRequired
+    uid: word!Word.SensitivityLabelDetails#isAbacAttributesRequired:member
+    package: word!
+    fullName: isAbacAttributesRequired
+    summary: Indicates whether attribute-based access control (ABAC) attributes are required when applying the sensitivity label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isAbacAttributesRequired: boolean;'
+      return:
+        type: boolean
+  - name: isAbacEnabled
+    uid: word!Word.SensitivityLabelDetails#isAbacEnabled:member
+    package: word!
+    fullName: isAbacEnabled
+    summary: Indicates whether the sensitivity label supports attribute-based access control (ABAC) attributes.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isAbacEnabled: boolean;'
+      return:
+        type: boolean
   - name: isEnabled
     uid: word!Word.SensitivityLabelDetails#isEnabled:member
     package: word!

@@ -354,6 +354,8 @@ classes:
   - word!Word.SectionCollection:class
   - word!Word.Selection:class
   - word!Word.SensitivityLabel:class
+  - word!Word.SensitivityLabelAbacAttribute:class
+  - word!Word.SensitivityLabelAbacAttributeValue:class
   - word!Word.SensitivityLabelDetails:class
   - word!Word.SensitivityLabelDetailsCollection:class
   - word!Word.SensitivityLabelsCatalog:class
@@ -806,6 +808,10 @@ interfaces:
   - word!Word.Interfaces.SelectionData:interface
   - word!Word.Interfaces.SelectionLoadOptions:interface
   - word!Word.Interfaces.SelectionUpdateData:interface
+  - word!Word.Interfaces.SensitivityLabelAbacAttributeData:interface
+  - word!Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
+  - word!Word.Interfaces.SensitivityLabelAbacAttributeValueData:interface
+  - word!Word.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions:interface
   - word!Word.Interfaces.SensitivityLabelDetailsCollectionData:interface
   - word!Word.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
   - word!Word.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface

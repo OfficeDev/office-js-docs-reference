@@ -7,6 +7,8 @@ summary: Represents a collection of coauthoring locks in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+  This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
+
   #### Used by
 
   - [Word.Coauthor](/javascript/api/word/word.coauthor): [locks](/javascript/api/word/word.coauthor#word-word-coauthor-locks-member)
@@ -74,6 +76,8 @@ methods:
     summary: Returns a `CoauthoringLock` object that represents a lock added to a specified range.
     remarks: |-
       [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
 
       #### Examples
 
@@ -198,7 +202,10 @@ methods:
     package: word!
     fullName: unlockEphemeralLocks()
     summary: Removes all ephemeral locks from the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
 
     isPreview: false
     isDeprecated: false
