@@ -905,7 +905,7 @@ export declare namespace Office {
          */
         Project,
         /**
-         * The Office application is Microsoft Access.
+         * The Office application is Microsoft Access. Warning: Microsoft Access is no longer supported.
          * 
          * @deprecated Microsoft Access is no longer supported.
          */
@@ -9614,15 +9614,17 @@ export declare namespace OfficeExtension {
          */
         add(objects: ClientObject[]): void;
         /**
-         * Release the memory associated with an object that was previously added to this collection.
-         * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
-         * You will need to call `context.sync()` before the memory release takes effect.
+         * If the given proxy object is already in this collection, this method releases the memory associated with the object.
+         * You need to call `context.sync()` before the memory release takes effect.
+         * If the given proxy object isn't in this collection, the proxy object won't be stored after `context.sync()` is called.
+         * This speeds up instances where many objects are created for single-use operations.
          */
         remove(object: ClientObject): void;
         /**
-         * Release the memory associated with an object that was previously added to this collection.
-         * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
-         * You will need to call `context.sync()` before the memory release takes effect.
+         * If the given proxy objects are already in this collection, this method releases the memory associated with the objects.
+         * You need to call `context.sync()` before the memory release takes effect.
+         * If the given proxy objects aren't in this collection, the proxy objects won't be stored after `context.sync()` is called.
+         * This speeds up instances where many objects are created for single-use operations.
          */
         remove(objects: ClientObject[]): void;
     }
