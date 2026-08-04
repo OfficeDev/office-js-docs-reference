@@ -152,6 +152,35 @@ Excel.BindingCollection#load:member(2):
             console.log(bindings.items[i].id);
         }
     });
+Excel.BindingDataChangesEventArgs:interface:
+  - |-
+    // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
+
+    async function registerDataChangedHandler() {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getItem("Sample");    
+            const salesTable = sheet.tables.getItem("SalesTable");
+            const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+            salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+            console.log("The data changed handler is registered.");
+
+            await context.sync();
+        });
+    }
+
+    async function onSalesDataChanged(eventArgs: Excel.BindingDataChangedEventArgs) {
+        await Excel.run(async (context) => {
+            console.log("Data was changed with binding " + eventArgs.binding.id);
+            
+            // Get the name of the table that's changed.
+            const table: Excel.Table = context.workbook.bindings.getItem(eventArgs.binding.id).getTable();
+            table.load("name");
+
+            await context.sync();
+            console.log("Name of the changed table: " + table.name);
+        });
+    } 
 Excel.Chart#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
