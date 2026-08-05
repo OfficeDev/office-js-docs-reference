@@ -7580,7 +7580,7 @@ office,Office.Group,N/A,Interface,Good,true
 office,Office.Group,"controls",Property,Excellent,false
 office,Office.Group,"id",Property,Great,false
 office,Office.HostType,N/A,Enum,Good,true
-office,Office.HostType,"Access",EnumField,Great,false
+office,Office.HostType,"Access",EnumField,Excellent,false
 office,Office.HostType,"Excel",EnumField,Great,false
 office,Office.HostType,"OneNote",EnumField,Great,false
 office,Office.HostType,"Outlook",EnumField,Great,false
@@ -8368,11 +8368,11 @@ office,OfficeExtension.RequestUrlAndHeaderInfo,"url",Property,Poor,false
 office,OfficeExtension.RunOptions,N/A,Interface,Fine,false
 office,OfficeExtension.RunOptions,"previousObjects",Property,Excellent,false
 office,OfficeExtension.RunOptions,"session",Property,Great,false
-office,OfficeExtension.TrackedObjects,N/A,Class,Great,false
-office,OfficeExtension.TrackedObjects,"add(object)",Method,Excellent,false
+office,OfficeExtension.TrackedObjects,N/A,Class,Great,true
+office,OfficeExtension.TrackedObjects,"add(object)",Method,Excellent,true
 office,OfficeExtension.TrackedObjects,"add(objects)",Method,Excellent,false
-office,OfficeExtension.TrackedObjects,"remove(object)",Method,Great,false
-office,OfficeExtension.TrackedObjects,"remove(objects)",Method,Great,false
+office,OfficeExtension.TrackedObjects,"remove(object)",Method,Excellent,true
+office,OfficeExtension.TrackedObjects,"remove(objects)",Method,Excellent,false
 office,OfficeExtension.UpdateOptions,N/A,Interface,Great,true
 office,OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Excellent,false
 office,N/A,N/A,Package,Missing,false

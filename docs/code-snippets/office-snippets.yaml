@@ -5223,6 +5223,72 @@ OfficeExtension.LoadOption#top:member:
                 }
             })
         });
+
+OfficeExtension.TrackedObjects:class:
+  - |-
+    // This sample creates many one-cell ranges, then removes each
+    // cell proxy object from memory before the batch operation completes.
+    await Excel.run(async (context) => {
+        const largeRange = context.workbook.getSelectedRange();
+        largeRange.load(["rowCount", "columnCount"]);
+        await context.sync();
+
+        const trackedObjects: OfficeExtension.TrackedObjects = context.trackedObjects;
+
+        for (let i = 0; i < largeRange.rowCount; i++) {
+            for (let j = 0; j < largeRange.columnCount; j++) {
+                const cell = largeRange.getCell(i, j);
+                cell.values = [[i *j]];
+
+                // Release the cell proxy object from memory now that we're
+                // done with it. The memory is freed on the next context.sync() call.
+                trackedObjects.remove(cell);
+            }
+        }
+
+        await context.sync();
+    });
+
+OfficeExtension.TrackedObjects#add:member(1):
+  - |-
+    // This sample shows how to track a Word proxy object so it can be used
+    // across multiple context.sync() calls.
+    await Word.run(async (context) => {
+        // Create a paragraph proxy object.
+        const paragraph = context.document.body.insertParagraph(
+            "This paragraph is tracked across sync calls.",
+            Word.InsertLocation.end
+        );
+
+        // Track the paragraph so it remains valid across sync calls.
+        context.trackedObjects.add(paragraph);
+        await context.sync();
+
+        // The tracked paragraph can still be used after the preceding sync.
+        paragraph.font.bold = true;
+        await context.sync();
+
+        // Remember to release the object from memory once you're done with it.
+        context.trackedObjects.remove(paragraph);
+        await context.sync();
+    });
+OfficeExtension.TrackedObjects#remove:member(1):
+  - |-
+    // This sample inserts many paragraphs into a Word document, removing each
+    // paragraph proxy object from memory after it's used.
+    await Word.run(async (context) => {
+        const body = context.document.body;
+
+        for (let i = 0; i < 500; i++) {
+            const paragraph = body.insertParagraph(`Paragraph ${i}`, Word.InsertLocation.end);
+
+            // Release the paragraph proxy object from memory now that we're
+            // done with it. The memory is freed on the next context.sync() call.
+            context.trackedObjects.remove(paragraph);
+        }
+
+        await context.sync();
+    });
 OfficeExtension.UpdateOptions:interface:
   - |-
     // Update a range in an Excel worksheet using the RangeUpdateData interface.
