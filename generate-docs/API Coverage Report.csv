@@ -200,7 +200,7 @@ excel,Excel.BindingCollection,"load(options)",Method,Great,false
 excel,Excel.BindingCollection,"load(propertyNames)",Method,Great,true
 excel,Excel.BindingCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.BindingCollection,"toJSON()",Method,Excellent,false
-excel,Excel.BindingDataChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.BindingDataChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.BindingDataChangedEventArgs,"binding",Property,Excellent,false
 excel,Excel.BindingSelectionChangedEventArgs,N/A,Interface,Excellent,false
 excel,Excel.BindingSelectionChangedEventArgs,"binding",Property,Excellent,false
@@ -5305,7 +5305,7 @@ excel,Excel.Range,"getColumnsBefore(count)",Method,Fine,false
 excel,Excel.Range,"getDependents()",Method,Excellent,true
 excel,Excel.Range,"getDirectDependents()",Method,Excellent,true
 excel,Excel.Range,"getDirectPrecedents()",Method,Excellent,true
-excel,Excel.Range,"getDisplayedCellProperties(cellPropertiesLoadOptions)",Method,Excellent,false
+excel,Excel.Range,"getDisplayedCellProperties(cellPropertiesLoadOptions)",Method,Excellent,true
 excel,Excel.Range,"getEntireColumn()",Method,Great,true
 excel,Excel.Range,"getEntireRow()",Method,Great,true
 excel,Excel.Range,"getExtendedRange(direction, activeCell)",Method,Excellent,true
@@ -5526,7 +5526,7 @@ excel,Excel.RangeFormat,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.RangeFormat,"set(properties, options)",Method,Good,false
 excel,Excel.RangeFormat,"set(properties)",Method,Fine,false
 excel,Excel.RangeFormat,"toJSON()",Method,Excellent,false
-excel,Excel.RangeHyperlink,N/A,Interface,Fine,false
+excel,Excel.RangeHyperlink,N/A,Interface,Fine,true
 excel,Excel.RangeHyperlink,"address",Property,Great,true
 excel,Excel.RangeHyperlink,"documentReference",Property,Great,true
 excel,Excel.RangeHyperlink,"screenTip",Property,Great,true
@@ -5538,7 +5538,7 @@ excel,Excel.RangeSort,"context",Property,Excellent,false
 excel,Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Poor,false
 excel,Excel.RangeSort,"apply(fields, matchCase, hasHeaders, orientation, method)",Method,Poor,false
 excel,Excel.RangeSort,"toJSON()",Method,Excellent,false
-excel,Excel.RangeTextRun,N/A,Interface,Great,false
+excel,Excel.RangeTextRun,N/A,Interface,Great,true
 excel,Excel.RangeTextRun,"font",Property,Excellent,false
 excel,Excel.RangeTextRun,"text",Property,Good,false
 excel,Excel.RangeUnderlineStyle,N/A,Enum,Missing,true
@@ -5767,11 +5767,11 @@ excel,Excel.SensitivityLabelUpdateResult,"unsupportedDoubleKeyEncryption",EnumFi
 excel,Excel.SensitivityLabelUpdateResult,"unsupportedUdp",EnumField,Great,false
 excel,Excel.SensitivityLabelUpdateResult,"userNotFound",EnumField,Great,false
 excel,Excel.Session,N/A,Interface,Missing,false
-excel,Excel.SettableCellProperties,N/A,Interface,Great,false
+excel,Excel.SettableCellProperties,N/A,Interface,Great,true
 excel,Excel.SettableCellProperties,"format",Property,Great,false
-excel,Excel.SettableCellProperties,"hyperlink",Property,Great,false
+excel,Excel.SettableCellProperties,"hyperlink",Property,Great,true
 excel,Excel.SettableCellProperties,"style",Property,Great,true
-excel,Excel.SettableCellProperties,"textRuns",Property,Good,false
+excel,Excel.SettableCellProperties,"textRuns",Property,Good,true
 excel,Excel.SettableColumnProperties,N/A,Interface,Great,false
 excel,Excel.SettableColumnProperties,"columnHidden",Property,Great,false
 excel,Excel.SettableColumnProperties,"format",Property,Great,false
