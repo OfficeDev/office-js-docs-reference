@@ -4,9 +4,12 @@ uid: excel!Excel.RefErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.RefErrorCellValueSubType
 summary: Represents types of \#REF! errors.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue): [errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,35 +17,24 @@ fields:
   - name: externalLinksCalculatedRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member
     package: excel!
-    summary: >-
-      An error caused by dynamic array references from the linked workbook.
-      Displays as error type \#REF! in Excel.
+    summary: |-
+      An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member
     package: excel!
-    summary: >-
-      An error caused by structured references from the linked workbook.
-      Displays as error type \#REF! in Excel.
+    summary: |-
+      An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: excel!Excel.RefErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#REF! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"Unknown"'

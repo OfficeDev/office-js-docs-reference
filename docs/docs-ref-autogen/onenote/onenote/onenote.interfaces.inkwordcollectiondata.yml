@@ -3,10 +3,11 @@ name: OneNote.Interfaces.InkWordCollectionData
 uid: onenote!OneNote.Interfaces.InkWordCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkWordCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `inkWordCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `inkWordCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.InkWordCollection](/javascript/api/onenote/onenote.inkwordcollection): [toJSON](/javascript/api/onenote/onenote.inkwordcollection#onenote-onenote-inkwordcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

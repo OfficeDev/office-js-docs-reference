@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.BindingCollectionData
 uid: powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `bindingCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `bindingCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [toJSON](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.BindingData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.BindingData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BindingData:interface" />[]

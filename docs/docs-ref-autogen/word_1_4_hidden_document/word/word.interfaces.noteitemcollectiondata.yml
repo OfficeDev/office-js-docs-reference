@@ -3,9 +3,7 @@ name: Word.Interfaces.NoteItemCollectionData
 uid: word!Word.Interfaces.NoteItemCollectionData:interface
 package: word!
 fullName: Word.Interfaces.NoteItemCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `noteItemCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `noteItemCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

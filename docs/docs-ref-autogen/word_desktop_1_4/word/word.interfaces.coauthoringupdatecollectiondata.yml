@@ -3,10 +3,11 @@ name: Word.Interfaces.CoauthoringUpdateCollectionData
 uid: word!Word.Interfaces.CoauthoringUpdateCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoringUpdateCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `coauthoringUpdateCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CoauthoringUpdateCollection](/javascript/api/word/word.coauthoringupdatecollection): [toJSON](/javascript/api/word/word.coauthoringupdatecollection#word-word-coauthoringupdatecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

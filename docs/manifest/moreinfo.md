@@ -21,7 +21,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.14](../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md)
+- [Mailbox 1.14](../requirement-sets/outlook/outlook-requirement-set-1-14.md)
 
 ## Contained in
 

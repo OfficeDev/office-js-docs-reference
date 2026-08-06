@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.TableCellCollectionData
 uid: powerpoint!PowerPoint.Interfaces.TableCellCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableCellCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableCellCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [toJSON](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,6 +25,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.TableCellData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.TableCellData:interface" />[]

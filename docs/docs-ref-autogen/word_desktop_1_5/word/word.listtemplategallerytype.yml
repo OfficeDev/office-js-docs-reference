@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Word.ListTemplateGalleryType
+uid: word!Word.ListTemplateGalleryType:enum
+package: word!
+fullName: Word.ListTemplateGalleryType
+summary: Describes the types of list template galleries available.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bullets
+    uid: word!Word.ListTemplateGalleryType.bullets:member
+    package: word!
+    summary: |-
+      Represents the bullet list gallery.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Bullets"'
+  - name: number
+    uid: word!Word.ListTemplateGalleryType.number:member
+    package: word!
+    summary: |-
+      Represents the number list gallery.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Number"'
+  - name: outlineNumbered
+    uid: word!Word.ListTemplateGalleryType.outlineNumbered:member
+    package: word!
+    summary: |-
+      Represents the outline number list gallery.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"OutlineNumbered"'

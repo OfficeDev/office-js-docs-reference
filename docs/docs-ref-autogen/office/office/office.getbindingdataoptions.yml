@@ -4,7 +4,12 @@ uid: office!Office.GetBindingDataOptions:interface
 package: office!
 fullName: Office.GetBindingDataOptions
 summary: Provides options for how to get the data in a binding.
-remarks: If the rows option is used, the value must be "thisRow".
+remarks: |-
+  If the rows option is used, the value must be "thisRow".
+
+  #### Used by
+
+  - [Office.Binding](/javascript/api/office/office.binding): [getDataAsync](/javascript/api/office/office.binding#office-office-binding-getdataasync-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +19,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#asyncContext:member
     package: office!
     fullName: asyncContext
-    summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+    summary: A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     remarks: ''
 
     isPreview: false
@@ -30,10 +32,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#coercionType:member
     package: office!
     fullName: coercionType
-    summary: >-
-      The expected shape of the selection. Use
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) or text value.
-      Default: The original, uncoerced type of the binding.
+    summary: 'The expected shape of the selection. Use [Office.CoercionType](xref:office!Office.CoercionType:enum) or text value. Default: The original, uncoerced type of the binding.'
     remarks: ''
 
     isPreview: false
@@ -46,9 +45,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#columnCount:member
     package: office!
     fullName: columnCount
-    summary: >-
-      For table or matrix bindings, specifies the number of columns offset from
-      the startColumn. Default is all subsequent columns.
+    summary: For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all subsequent columns.
     remarks: ''
 
     isPreview: false
@@ -61,10 +58,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#filterType:member
     package: office!
     fullName: filterType
-    summary: >-
-      Specify whether to get only the visible (filtered in) data or all the data
-      (default is all). Useful when filtering data. Use Office.FilterType or
-      text value.
+    summary: Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data. Use Office.FilterType or text value.
     remarks: ''
 
     isPreview: false
@@ -77,9 +71,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#rowCount:member
     package: office!
     fullName: rowCount
-    summary: >-
-      For table or matrix bindings, specifies the number of rows offset from the
-      startRow. Default is all subsequent rows.
+    summary: For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent rows.
     remarks: ''
 
     isPreview: false
@@ -92,9 +84,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#rows:member
     package: office!
     fullName: rows
-    summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the
-      pre-defined string "thisRow" to get data in the currently selected row.
+    summary: Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
     remarks: ''
 
     isPreview: false
@@ -108,9 +98,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#startColumn:member
     package: office!
     fullName: startColumn
-    summary: >-
-      For table or matrix bindings, specifies the zero-based starting column for
-      a subset of the data in the binding. Default is first column.
+    summary: For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding. Default is first column.
     remarks: ''
 
     isPreview: false
@@ -123,9 +111,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#startRow:member
     package: office!
     fullName: startRow
-    summary: >-
-      For table or matrix bindings, specifies the zero-based starting row for a
-      subset of the data in the binding. Default is first row.
+    summary: For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding. Default is first row.
     remarks: ''
 
     isPreview: false
@@ -138,10 +124,7 @@ properties:
     uid: office!Office.GetBindingDataOptions#valueFormat:member
     package: office!
     fullName: valueFormat
-    summary: >-
-      Specifies whether values, such as numbers and dates, are returned with
-      their formatting applied. Use Office.ValueFormat or text value. Default:
-      Unformatted data.
+    summary: 'Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value. Default: Unformatted data.'
     remarks: ''
 
     isPreview: false

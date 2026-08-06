@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
 uid: excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
-summary: >-
-  An interface for updating data on the `ChartPlotAreaFormat` object, for use in
-  `chartPlotAreaFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ChartPlotAreaFormat` object, for use in `chartPlotAreaFormat.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.TableStyleCollectionUpdateData
 uid: excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.TableStyleCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableStyleCollection` object, for use
-  in `tableStyleCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableStyleCollection` object, for use in `tableStyleCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

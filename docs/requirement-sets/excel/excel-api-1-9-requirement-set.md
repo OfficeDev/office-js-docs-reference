@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.9
 description: Details about the ExcelApi 1.9 requirement set.
-ms.date: 04/01/2021
+ms.date: 02/03/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -26,7 +26,7 @@ More than 500 new Excel APIs were introduced with the 1.9 requirement set. The f
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.9. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.9 or earlier, see [Excel APIs in requirement set 1.9 or earlier](/javascript/api/excel?view=excel-js-1.9&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_9.md)]
+[!INCLUDE[API table](../../includes/excel-1-9.md)]
 
 ## See also
 

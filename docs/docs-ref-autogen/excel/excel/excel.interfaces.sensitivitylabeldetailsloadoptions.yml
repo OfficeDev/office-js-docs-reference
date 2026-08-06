@@ -1,0 +1,147 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SensitivityLabelDetailsLoadOptions
+uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions:interface
+package: excel!
+fullName: Excel.Interfaces.SensitivityLabelDetailsLoadOptions
+summary: Represents the properties of available sensitivity labels in Excel.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [load](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#$all:member
+    package: excel!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: children
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#children:member
+    package: excel!
+    fullName: children
+    summary: Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'children?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#color:member
+    package: excel!
+    fullName: color
+    summary: Gets the color of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#id:member
+    package: excel!
+    fullName: id
+    summary: Gets the unique identifier (GUID) of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isEnabled
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#isEnabled:member
+    package: excel!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#name:member
+    package: excel!
+    fullName: name
+    summary: Gets the name of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: order
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#order:member
+    package: excel!
+    fullName: order
+    summary: Gets the priority of the sensitivity label, with 0 as lowest priority.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'order?: boolean;'
+      return:
+        type: boolean
+  - name: protectionType
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#protectionType:member
+    package: excel!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectionType?: boolean;'
+      return:
+        type: boolean
+  - name: siteId
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#siteId:member
+    package: excel!
+    fullName: siteId
+    summary: Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'siteId?: boolean;'
+      return:
+        type: boolean
+  - name: tooltip
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#tooltip:member
+    package: excel!
+    fullName: tooltip
+    summary: Gets the description of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tooltip?: boolean;'
+      return:
+        type: boolean

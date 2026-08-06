@@ -3,9 +3,7 @@ name: Word.Interfaces.FieldCollectionData
 uid: word!Word.Interfaces.FieldCollectionData:interface
 package: word!
 fullName: Word.Interfaces.FieldCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `fieldCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `fieldCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

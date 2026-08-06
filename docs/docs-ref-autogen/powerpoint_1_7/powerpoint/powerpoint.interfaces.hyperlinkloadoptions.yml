@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkLoadOptions
 summary: Represents a single hyperlink.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.Hyperlink](/javascript/api/powerpoint/powerpoint.hyperlink): [load](/javascript/api/powerpoint/powerpoint.hyperlink#powerpoint-powerpoint-hyperlink-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,13 +32,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions#address:member
     package: powerpoint!
     fullName: address
-    summary: >-
-      Specifies the address of the hyperlink, which can be a URL, a file name or
-      file path, or an email address with the `mailto` URI scheme.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the address of the hyperlink, which can be a URL, a file name or file path, or an email address with the `mailto` URI scheme.
+    remarks: '[API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -52,10 +46,7 @@ properties:
     package: powerpoint!
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

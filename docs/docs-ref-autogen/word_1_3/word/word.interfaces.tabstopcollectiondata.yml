@@ -3,9 +3,7 @@ name: Word.Interfaces.TabStopCollectionData
 uid: word!Word.Interfaces.TabStopCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TabStopCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tabStopCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tabStopCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

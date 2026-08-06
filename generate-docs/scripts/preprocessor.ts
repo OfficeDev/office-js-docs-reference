@@ -143,7 +143,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_16/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
         "outlook",
         forceRebuild
@@ -249,7 +249,8 @@ function cleanUpDts(localDtsPath: string): string {
 // Helper function to apply regular expressions to d.ts file contents
 // ----
 function applyRegularExpressions (definitionsIn) {
-    return definitionsIn.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+    return fixUnframedEmphasisCommentLines(definitionsIn)
+        .replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)(?!=)/gm, `$1export $2$3`)
         .replace(/^(\s*)(class)(\s+)(?!=)/gm, `$1export $2$3`)
@@ -259,6 +260,25 @@ function applyRegularExpressions (definitionsIn) {
         .replace(/^(\s*)(type)(\s+)(?!=)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+}
+
+// ----
+// Fixes JSDoc/TSDoc comment continuation lines that are missing the leading
+// framing asterisk and begin with Markdown emphasis (`**bold**` or `*italic*`).
+// Without a framing `*`, the API Extractor TSDoc parser consumes the leading `*`
+// of the emphasis as the (absent) comment delimiter: `**Note**` becomes `*Note**`
+// (italic) and `*Note*` becomes `Note*` (plain). Prepending `* ` restores the
+// frame so the emphasis renders correctly.
+//
+// The pattern matches an indented line whose first non-whitespace character is a
+// `*` glued to a non-space, non-`/` character. Legitimate comment frames are
+// always `* ` (asterisk + space), a bare `*`, or the `*/` / `**/` closers, so
+// they are excluded: the char class `[^\s/]` skips `* ` and ` */`, and the
+// `(?!\*\/\s*$)` lookahead skips `**/` closers. (Verified: no legitimately
+// framed line in the source d.ts files uses a space-less `*word` form.)
+// ----
+function fixUnframedEmphasisCommentLines(definitionsIn: string): string {
+    return definitionsIn.replace(/^([ \t]+)(\*(?!\*\/\s*$)[^\s/].*)$/gm, `$1* $2`);
 }
 
 function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other", isVersioned?: boolean): string {

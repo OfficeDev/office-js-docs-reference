@@ -1,0 +1,144 @@
+### YamlMime:TSEnum
+name: Word.SensitivityLabelUpdateResult
+uid: word!Word.SensitivityLabelUpdateResult:enum
+package: word!
+fullName: Word.SensitivityLabelUpdateResult
+summary: Represents the result of updating the sensitivity label on the document.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [tryToUpdate](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: abacAttributesNotAllowed
+    uid: word!Word.SensitivityLabelUpdateResult.abacAttributesNotAllowed:member
+    package: word!
+    summary: |-
+      Attribute-based access control (ABAC) attribute values were supplied, but the target label is not ABAC-enabled.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"AbacAttributesNotAllowed"'
+  - name: abacAttributesRequired
+    uid: word!Word.SensitivityLabelUpdateResult.abacAttributesRequired:member
+    package: word!
+    summary: |-
+      The target label isn't enabled for attribute-based access controls and requires attribute selections, but no ABAC attribute values were supplied.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"AbacAttributesRequired"'
+  - name: crossTenant
+    uid: word!Word.SensitivityLabelUpdateResult.crossTenant:member
+    package: word!
+    summary: |-
+      The label update failed because the document doesn't belong to the same tenant as the user.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"CrossTenant"'
+  - name: documentReadOnly
+    uid: word!Word.SensitivityLabelUpdateResult.documentReadOnly:member
+    package: word!
+    summary: |-
+      The document is read-only and cannot be modified.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"DocumentReadOnly"'
+  - name: insufficientPermission
+    uid: word!Word.SensitivityLabelUpdateResult.insufficientPermission:member
+    package: word!
+    summary: |-
+      The user does not have sufficient permissions to update the label.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"InsufficientPermission"'
+  - name: labelDisabled
+    uid: word!Word.SensitivityLabelUpdateResult.labelDisabled:member
+    package: word!
+    summary: |-
+      The label update failed because the specified label is disabled or not applicable to the user.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"LabelDisabled"'
+  - name: labelingDisabled
+    uid: word!Word.SensitivityLabelUpdateResult.labelingDisabled:member
+    package: word!
+    summary: |-
+      The label update failed because native labeling is not enabled for the user or installed SKU.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"LabelingDisabled"'
+  - name: labelNotFound
+    uid: word!Word.SensitivityLabelUpdateResult.labelNotFound:member
+    package: word!
+    summary: |-
+      The specified sensitivity label could not be found.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"LabelNotFound"'
+  - name: parentLabelNotSupported
+    uid: word!Word.SensitivityLabelUpdateResult.parentLabelNotSupported:member
+    package: word!
+    summary: |-
+      The label update failed because the specified label is a parent label, which cannot be applied.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"ParentLabelNotSupported"'
+  - name: removingLabelNotSupported
+    uid: word!Word.SensitivityLabelUpdateResult.removingLabelNotSupported:member
+    package: word!
+    summary: |-
+      The label update failed because removing the sensitivity label is not supported.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"RemovingLabelNotSupported"'
+  - name: success
+    uid: word!Word.SensitivityLabelUpdateResult.success:member
+    package: word!
+    summary: |-
+      The sensitivity label was successfully updated.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"Success"'
+  - name: unspecifiedFailure
+    uid: word!Word.SensitivityLabelUpdateResult.unspecifiedFailure:member
+    package: word!
+    summary: |-
+      The update failed due to an unspecified error.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UnspecifiedFailure"'
+  - name: unsupportedAbac
+    uid: word!Word.SensitivityLabelUpdateResult.unsupportedAbac:member
+    package: word!
+    summary: |-
+      The label update failed due to unsupported attribute-based access control (ABAC).
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UnsupportedAbac"'
+  - name: unsupportedDoubleKeyEncryption
+    uid: word!Word.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
+    package: word!
+    summary: |-
+      The label update failed due to unsupported Double Key Encryption (DKE).
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UnsupportedDoubleKeyEncryption"'
+  - name: unsupportedUdp
+    uid: word!Word.SensitivityLabelUpdateResult.unsupportedUdp:member
+    package: word!
+    summary: |-
+      The label update failed due to unsupported Universal Data Protection (UDP).
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UnsupportedUdp"'
+  - name: userNotFound
+    uid: word!Word.SensitivityLabelUpdateResult.userNotFound:member
+    package: word!
+    summary: |-
+      The label update failed because the user's identity is not valid for applying a label.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"UserNotFound"'

@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Word.TemplateType
+uid: word!Word.TemplateType:enum
+package: word!
+fullName: Word.TemplateType
+summary: Specifies the type of template.
+remarks: '\[Api set: WordApiDesktop 1.3\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: attached
+    uid: word!Word.TemplateType.attached:member
+    package: word!
+    summary: |-
+      Represents the attached template type.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Attached"'
+  - name: global
+    uid: word!Word.TemplateType.global:member
+    package: word!
+    summary: |-
+      Represents the global template type.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Global"'
+  - name: normal
+    uid: word!Word.TemplateType.normal:member
+    package: word!
+    summary: |-
+      Represents the normal template type.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Normal"'

@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.CustomPropertyCollectionData
 uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomPropertyCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customPropertyCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customPropertyCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,7 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.CustomPropertyData[];'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface" />[]

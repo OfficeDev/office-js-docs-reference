@@ -3,10 +3,11 @@ name: Word.Interfaces.ShapeCollectionData
 uid: word!Word.Interfaces.ShapeCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ShapeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [toJSON](/javascript/api/word/word.shapecollection#word-word-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

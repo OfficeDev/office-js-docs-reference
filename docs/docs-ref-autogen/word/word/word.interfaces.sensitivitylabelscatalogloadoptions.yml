@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelsCatalogLoadOptions
+uid: word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelsCatalogLoadOptions
+summary: Provides methods to check the status of the catalog of sensitivity labels in Word and retrieve all available sensitivity labels if the catalog is enabled.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [load](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: getLabelingCapability
+    uid: word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapability:member
+    package: word!
+    fullName: getLabelingCapability
+    summary: Gets the labeling capability status of the sensitivity label catalog in Word.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapability?: boolean;'
+      return:
+        type: boolean

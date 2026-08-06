@@ -3,10 +3,11 @@ name: Word.Interfaces.CommentCollectionData
 uid: word!Word.Interfaces.CommentCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CommentCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `commentCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `commentCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [toJSON](/javascript/api/word/word.commentcollection#word-word-commentcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

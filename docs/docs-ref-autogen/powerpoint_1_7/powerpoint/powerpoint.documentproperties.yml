@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.DocumentProperties:class
 package: powerpoint!
 fullName: PowerPoint.DocumentProperties
 summary: Represents presentation properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.Presentation](/javascript/api/powerpoint/powerpoint.presentation): [properties](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-properties-member)
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +20,7 @@ properties:
     package: powerpoint!
     fullName: author
     summary: The author of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: category
     summary: The category of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,13 +45,8 @@ properties:
     uid: powerpoint!PowerPoint.DocumentProperties#comments:member
     package: powerpoint!
     fullName: comments
-    summary: >-
-      The Comments field in the metadata of the presentation. These have no
-      connection to comments made in slides.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -68,10 +59,7 @@ properties:
     package: powerpoint!
     fullName: company
     summary: The company of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +71,7 @@ properties:
     uid: powerpoint!PowerPoint.DocumentProperties#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -99,10 +85,7 @@ properties:
     package: powerpoint!
     fullName: creationDate
     summary: The creation date of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -115,10 +98,7 @@ properties:
     package: powerpoint!
     fullName: customProperties
     summary: The collection of custom properties of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -131,10 +111,7 @@ properties:
     package: powerpoint!
     fullName: keywords
     summary: The keywords of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -147,10 +124,7 @@ properties:
     package: powerpoint!
     fullName: lastAuthor
     summary: The last author of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -163,10 +137,7 @@ properties:
     package: powerpoint!
     fullName: manager
     summary: The manager of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -179,10 +150,7 @@ properties:
     package: powerpoint!
     fullName: revisionNumber
     summary: The revision number of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -195,10 +163,7 @@ properties:
     package: powerpoint!
     fullName: subject
     summary: The subject of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -211,10 +176,7 @@ properties:
     package: powerpoint!
     fullName: title
     summary: The title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -227,24 +189,17 @@ methods:
     uid: powerpoint!PowerPoint.DocumentProperties#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions):
-        PowerPoint.DocumentProperties;
+      content: 'load(options?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions): PowerPoint.DocumentProperties;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.DocumentProperties:class" />
         description: ''
@@ -252,9 +207,7 @@ methods:
     uid: powerpoint!PowerPoint.DocumentProperties#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -263,9 +216,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.DocumentProperties;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.DocumentProperties:class" />
@@ -274,9 +225,7 @@ methods:
     uid: powerpoint!PowerPoint.DocumentProperties#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -289,11 +238,7 @@ methods:
                 }): PowerPoint.DocumentProperties;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -306,15 +251,7 @@ methods:
     uid: powerpoint!PowerPoint.DocumentProperties#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `PowerPoint.DocumentProperties` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.DocumentPropertiesData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.DocumentProperties` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false
@@ -322,9 +259,6 @@ methods:
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.DocumentPropertiesData;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

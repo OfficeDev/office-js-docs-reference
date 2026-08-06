@@ -3,9 +3,7 @@ name: Word.Interfaces.RangeScopedCollectionUpdateData
 uid: word!Word.Interfaces.RangeScopedCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RangeScopedCollectionUpdateData
-summary: >-
-  An interface for updating data on the `RangeScopedCollection` object, for use
-  in `rangeScopedCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `RangeScopedCollection` object, for use in `rangeScopedCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -4,7 +4,10 @@ uid: onenote!OneNote.Interfaces.PageData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [OneNote.Page](/javascript/api/onenote/onenote.page): [toJSON](/javascript/api/onenote/onenote.page#onenote-onenote-page-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -15,10 +18,7 @@ properties:
     package: onenote!
     fullName: classNotebookPageSource
     summary: Gets the ClassNotebookPageSource to the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,10 +31,7 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client url of the page. Read only
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,10 +44,7 @@ properties:
     package: onenote!
     fullName: contents
     summary: The collection of PageContent objects on the page. Read only
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -63,10 +57,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the page. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -78,13 +69,8 @@ properties:
     uid: onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member
     package: onenote!
     fullName: inkAnalysisOrNull
-    summary: >-
-      Text interpretation for the ink on the page. Returns null if there is no
-      ink analysis information. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read-only.
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -97,10 +83,7 @@ properties:
     package: onenote!
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +96,7 @@ properties:
     package: onenote!
     fullName: title
     summary: Gets or sets the title of the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -129,10 +109,7 @@ properties:
     package: onenote!
     fullName: webUrl
     summary: The web URL of the page. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

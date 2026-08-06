@@ -3,10 +3,11 @@ name: Word.Interfaces.DropDownListContentControlData
 uid: word!Word.Interfaces.DropDownListContentControlData:interface
 package: word!
 fullName: Word.Interfaces.DropDownListContentControlData
-summary: >-
-  An interface describing the data returned by calling
-  `dropDownListContentControl.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `dropDownListContentControl.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.DropDownListContentControl](/javascript/api/word/word.dropdownlistcontentcontrol): [toJSON](/javascript/api/word/word.dropdownlistcontentcontrol#word-word-dropdownlistcontentcontrol-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

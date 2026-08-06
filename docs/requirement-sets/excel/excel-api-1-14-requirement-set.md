@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.14
 description: Details about the ExcelApi 1.14 requirement set.
-ms.date: 12/08/2021
+ms.date: 06/08/2022
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -21,7 +21,7 @@ The ExcelApi 1.14 added objects to control the data table feature of a chart, a 
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.14. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.14 or earlier, see [Excel APIs in requirement set 1.14 or earlier](/javascript/api/excel?view=excel-js-1.14&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_14.md)]
+[!INCLUDE[API table](../../includes/excel-1-14.md)]
 
 ## See also
 

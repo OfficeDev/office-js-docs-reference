@@ -4,9 +4,12 @@ uid: excel!Excel.TableStyleCollection:class
 package: excel!
 fullName: Excel.TableStyleCollection
 summary: Represents a collection of table styles.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Workbook](/javascript/api/excel/excel.workbook): [tableStyles](/javascript/api/excel/excel.workbook#excel-excel-workbook-tablestyles-member)
 
 isPreview: false
 isDeprecated: false
@@ -16,9 +19,7 @@ properties:
     uid: excel!Excel.TableStyleCollection#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -46,10 +47,7 @@ methods:
     package: excel!
     fullName: add(name, makeUniqueName)
     summary: Creates a blank `TableStyle` with the specified name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -57,14 +55,10 @@ methods:
       content: 'add(name: string, makeUniqueName?: boolean): Excel.TableStyle;'
       parameters:
         - id: name
-          description: >-
-            The unique name for the new table style. Will throw an
-            `InvalidArgument` error if the name is already in use.
+          description: The unique name for the new table style. Will throw an `InvalidArgument` error if the name is already in use.
           type: string
         - id: makeUniqueName
-          description: >-
-            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will
-            append numbers to the name in order to make it unique, if needed.
+          description: Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make it unique, if needed.
           type: boolean
       return:
         type: <xref uid="excel!Excel.TableStyle:class" />
@@ -74,10 +68,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of table styles in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -91,10 +82,7 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: Gets the default table style for the parent object's scope.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -108,10 +96,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `TableStyle` by name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -128,16 +113,8 @@ methods:
     uid: excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: >-
-      Gets a `TableStyle` by name. If the table style does not exist, then this
-      method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets a `TableStyle` by name. If the table style does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -154,25 +131,17 @@ methods:
     uid: excel!Excel.TableStyleCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.TableStyleCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.TableStyleCollection;
+      content: 'load(options?: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableStyleCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: <xref uid="excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.TableStyleCollection:class" />
         description: ''
@@ -180,9 +149,7 @@ methods:
     uid: excel!Excel.TableStyleCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -191,9 +158,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.TableStyleCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableStyleCollection:class" />
@@ -202,24 +167,16 @@ methods:
     uid: excel!Excel.TableStyleCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.TableStyleCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableStyleCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.TableStyleCollection:class" />
@@ -229,10 +186,7 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: Sets the default table style for use in the parent object's scope.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -240,9 +194,7 @@ methods:
       content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: >-
-            The `TableStyle` object, or name of the `TableStyle` object, that
-            should be the new default.
+          description: The `TableStyle` object, or name of the `TableStyle` object, that should be the new default.
           type: <xref uid="excel!Excel.TableStyle:class" /> | string
       return:
         type: void
@@ -251,16 +203,7 @@ methods:
     uid: excel!Excel.TableStyleCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.TableStyleCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.TableStyleCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.TableStyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
 
     isPreview: false
@@ -268,8 +211,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.TableStyleCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.TableStyleCollectionData:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.TableStyleCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

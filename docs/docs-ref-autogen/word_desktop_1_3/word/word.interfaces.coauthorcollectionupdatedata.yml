@@ -3,9 +3,7 @@ name: Word.Interfaces.CoauthorCollectionUpdateData
 uid: word!Word.Interfaces.CoauthorCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorCollectionUpdateData
-summary: >-
-  An interface for updating data on the `CoauthorCollection` object, for use in
-  `coauthorCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CoauthorCollection` object, for use in `coauthorCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

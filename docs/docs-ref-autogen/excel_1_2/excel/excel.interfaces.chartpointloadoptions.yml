@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.ChartPointLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartPointLoadOptions
 summary: Represents a point of a series in a chart.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartPoint](/javascript/api/excel/excel.chartpoint): [load](/javascript/api/excel/excel.chartpoint#excel-excel-chartpoint-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.ChartPointLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,26 +33,20 @@ properties:
     package: excel!
     fullName: format
     summary: Encapsulates the format properties chart point.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />
+        type: <xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />
   - name: value
     uid: excel!Excel.Interfaces.ChartPointLoadOptions#value:member
     package: excel!
     fullName: value
     summary: Returns the value of a chart point.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

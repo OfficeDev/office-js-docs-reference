@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Word.PageColor
+uid: word!Word.PageColor:enum
+package: word!
+fullName: Word.PageColor
+summary: Specifies the page color options in a Word document.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: inverse
+    uid: word!Word.PageColor.inverse:member
+    package: word!
+    summary: |-
+      Inverse.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Inverse"'
+  - name: none
+    uid: word!Word.PageColor.none:member
+    package: word!
+    summary: |-
+      None.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"None"'
+  - name: sepia
+    uid: word!Word.PageColor.sepia:member
+    package: word!
+    summary: |-
+      Sepia.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Sepia"'

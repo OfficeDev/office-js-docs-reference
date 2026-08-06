@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.SortOrientation
+uid: excel!Excel.SortOrientation:enum
+package: excel!
+fullName: Excel.SortOrientation
+summary: ''
+remarks: '\[Api set: ExcelApi 1.2\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: columns
+    uid: excel!Excel.SortOrientation.columns:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.2\]'
+    value: '"Columns"'
+  - name: rows
+    uid: excel!Excel.SortOrientation.rows:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.2\]'
+    value: '"Rows"'

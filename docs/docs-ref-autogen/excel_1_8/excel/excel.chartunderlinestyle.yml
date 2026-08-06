@@ -4,9 +4,12 @@ uid: excel!Excel.ChartUnderlineStyle:enum
 package: excel!
 fullName: Excel.ChartUnderlineStyle
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartFont](/javascript/api/excel/excel.chartfont): [underline](/javascript/api/excel/excel.chartfont#excel-excel-chartfont-underline-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,14 +17,10 @@ fields:
   - name: none
     uid: excel!Excel.ChartUnderlineStyle.none:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"None"'
   - name: single
     uid: excel!Excel.ChartUnderlineStyle.single:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Single"'

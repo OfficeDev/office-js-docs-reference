@@ -3,10 +3,11 @@ name: OneNote.Interfaces.PageCollectionData
 uid: onenote!OneNote.Interfaces.PageCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pageCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pageCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.PageCollection](/javascript/api/onenote/onenote.pagecollection): [toJSON](/javascript/api/onenote/onenote.pagecollection#onenote-onenote-pagecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,10 +3,11 @@ name: Visio.Interfaces.PageViewUpdateData
 uid: visio!Visio.Interfaces.PageViewUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.PageViewUpdateData
-summary: >-
-  An interface for updating data on the PageView object, for use in
-  `pageView.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the PageView object, for use in `pageView.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.PageView](/javascript/api/visio/visio.pageview): [set](/javascript/api/visio/visio.pageview#visio-visio-pageview-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +17,8 @@ properties:
     uid: visio!Visio.Interfaces.PageViewUpdateData#zoom:member
     package: visio!
     fullName: zoom
-    summary: >-
-      Gets and sets the page's zoom level. The value can be between 10 and 400
-      and denotes the percentage of zoom.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: Gets and sets the page's zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

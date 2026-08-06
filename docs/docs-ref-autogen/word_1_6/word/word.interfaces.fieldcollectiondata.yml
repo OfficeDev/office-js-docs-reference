@@ -3,10 +3,11 @@ name: Word.Interfaces.FieldCollectionData
 uid: word!Word.Interfaces.FieldCollectionData:interface
 package: word!
 fullName: Word.Interfaces.FieldCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `fieldCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `fieldCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.FieldCollection](/javascript/api/word/word.fieldcollection): [toJSON](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.ReadabilityStatisticCollectionUpdateData
 uid: word!Word.Interfaces.ReadabilityStatisticCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticCollectionUpdateData
-summary: >-
-  An interface for updating data on the `ReadabilityStatisticCollection` object,
-  for use in `readabilityStatisticCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ReadabilityStatisticCollection` object, for use in `readabilityStatisticCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.ReadabilityStatisticData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface" />[]

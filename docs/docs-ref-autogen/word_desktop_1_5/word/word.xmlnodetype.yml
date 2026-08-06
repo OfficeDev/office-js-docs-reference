@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.XmlNodeType
+uid: word!Word.XmlNodeType:enum
+package: word!
+fullName: Word.XmlNodeType
+summary: Specifies the type of an XML node.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: attribute
+    uid: word!Word.XmlNodeType.attribute:member
+    package: word!
+    summary: |-
+      Attribute node.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Attribute"'
+  - name: element
+    uid: word!Word.XmlNodeType.element:member
+    package: word!
+    summary: |-
+      Element node.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Element"'

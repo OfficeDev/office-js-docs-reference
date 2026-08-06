@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
 summary: This object represents the attributes for a chart's error bars.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartErrorBars](/javascript/api/excel/excel.charterrorbars): [load](/javascript/api/excel/excel.charterrorbars#excel-excel-charterrorbars-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +33,7 @@ properties:
     package: excel!
     fullName: endStyleCap
     summary: Specifies if error bars have an end style cap.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -48,27 +46,20 @@ properties:
     package: excel!
     fullName: format
     summary: Specifies the formatting type of the error bars.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface" />
   - name: include
     uid: excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member
     package: excel!
     fullName: include
     summary: Specifies which parts of the error bars to include.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +72,7 @@ properties:
     package: excel!
     fullName: type
     summary: The type of range marked by the error bars.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +85,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies whether the error bars are displayed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

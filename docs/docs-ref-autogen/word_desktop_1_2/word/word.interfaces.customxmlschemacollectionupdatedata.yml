@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomXmlSchemaCollectionUpdateData
 uid: word!Word.Interfaces.CustomXmlSchemaCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlSchemaCollectionUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlSchemaCollection` object, for
-  use in `customXmlSchemaCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlSchemaCollection` object, for use in `customXmlSchemaCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

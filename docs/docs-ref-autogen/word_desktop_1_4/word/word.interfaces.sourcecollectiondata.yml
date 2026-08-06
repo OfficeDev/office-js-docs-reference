@@ -3,10 +3,11 @@ name: Word.Interfaces.SourceCollectionData
 uid: word!Word.Interfaces.SourceCollectionData:interface
 package: word!
 fullName: Word.Interfaces.SourceCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `sourceCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `sourceCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SourceCollection](/javascript/api/word/word.sourcecollection): [toJSON](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

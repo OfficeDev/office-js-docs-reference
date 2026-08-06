@@ -3,10 +3,11 @@ name: Excel.Interfaces.PivotTableCollectionData
 uid: excel!Excel.Interfaces.PivotTableCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotTableCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pivotTableCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pivotTableCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection): [toJSON](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

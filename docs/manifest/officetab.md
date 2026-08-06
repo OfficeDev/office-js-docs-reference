@@ -1,7 +1,7 @@
 ---
 title: OfficeTab element in the manifest file
 description: The OfficeTab element defines the ribbon tab where your add-in command appears.
-ms.date: 07/31/2024
+ms.date: 06/18/2026
 ms.localizationpriority: medium
 ---
 
@@ -22,8 +22,8 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
+- [Mailbox 1.3](../requirement-sets/outlook/outlook-requirement-set-1-3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1-5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Attributes
 
@@ -34,6 +34,9 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 ### id
 
 This attribute specifies the ID of the built-in Office tab. A list of valid `id` values is at [Find the IDs of built-in Office ribbon tabs](/office/dev/add-ins/develop/built-in-ui-ids).
+
+> [!NOTE]
+> In Outlook, only one OfficeTab element with the `TabDefault` ID is supported. Defining more than one OfficeTab element can lead to unsupported and inconsistent ribbon rendering behavior.
 
 ## Child elements
 

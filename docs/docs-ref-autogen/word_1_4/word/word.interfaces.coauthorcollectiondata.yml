@@ -3,9 +3,7 @@ name: Word.Interfaces.CoauthorCollectionData
 uid: word!Word.Interfaces.CoauthorCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthorCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `coauthorCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

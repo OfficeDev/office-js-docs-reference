@@ -3,9 +3,7 @@ name: Word.Interfaces.TableOfAuthoritiesUpdateData
 uid: word!Word.Interfaces.TableOfAuthoritiesUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesUpdateData
-summary: >-
-  An interface for updating data on the `TableOfAuthorities` object, for use in
-  `tableOfAuthorities.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableOfAuthorities` object, for use in `tableOfAuthorities.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

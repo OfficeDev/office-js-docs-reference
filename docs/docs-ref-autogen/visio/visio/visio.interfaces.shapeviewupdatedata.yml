@@ -3,10 +3,11 @@ name: Visio.Interfaces.ShapeViewUpdateData
 uid: visio!Visio.Interfaces.ShapeViewUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeViewUpdateData
-summary: >-
-  An interface for updating data on the ShapeView object, for use in
-  `shapeView.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the ShapeView object, for use in `shapeView.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.ShapeView](/javascript/api/visio/visio.shapeview): [set](/javascript/api/visio/visio.shapeview#visio-visio-shapeview-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: highlight
     summary: Represents the highlight around the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

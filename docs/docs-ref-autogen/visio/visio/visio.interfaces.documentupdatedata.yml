@@ -3,10 +3,11 @@ name: Visio.Interfaces.DocumentUpdateData
 uid: visio!Visio.Interfaces.DocumentUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentUpdateData
-summary: >-
-  An interface for updating data on the Document object, for use in
-  `document.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.Document](/javascript/api/visio/visio.document): [set](/javascript/api/visio/visio.document#visio-visio-document-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: visio!
     fullName: application
     summary: Represents a Visio application instance that contains this document.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the DocumentView object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

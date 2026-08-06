@@ -3,10 +3,11 @@ name: Word.Interfaces.ListCollectionData
 uid: word!Word.Interfaces.ListCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ListCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `listCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `listCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [toJSON](/javascript/api/word/word.listcollection#word-word-listcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

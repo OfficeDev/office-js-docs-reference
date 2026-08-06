@@ -3,10 +3,11 @@ name: Word.Interfaces.StyleCollectionData
 uid: word!Word.Interfaces.StyleCollectionData:interface
 package: word!
 fullName: Word.Interfaces.StyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `styleCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `styleCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.StyleCollection](/javascript/api/word/word.stylecollection): [toJSON](/javascript/api/word/word.stylecollection#word-word-stylecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

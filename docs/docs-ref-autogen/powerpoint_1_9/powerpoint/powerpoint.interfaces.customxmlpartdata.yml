@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.CustomXmlPartData
 uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomXmlPartData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPart.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.CustomXmlPart](/javascript/api/powerpoint/powerpoint.customxmlpart): [toJSON](/javascript/api/powerpoint/powerpoint.customxmlpart#powerpoint-powerpoint-customxmlpart-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: The ID of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: powerpoint!
     fullName: namespaceUri
     summary: The namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

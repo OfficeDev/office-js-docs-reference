@@ -3,10 +3,11 @@ name: Word.Interfaces.HyperlinkCollectionData
 uid: word!Word.Interfaces.HyperlinkCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `hyperlinkCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `hyperlinkCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [toJSON](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

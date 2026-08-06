@@ -4,9 +4,12 @@ uid: onenote!OneNote.Interfaces.RichTextLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.RichTextLoadOptions
 summary: Represents a RichText object in a Paragraph.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: |-
+  [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+
+  #### Used by
+
+  - [OneNote.RichText](/javascript/api/onenote/onenote.richtext): [load](/javascript/api/onenote/onenote.richtext#onenote-onenote-richtext-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member
     package: onenote!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,10 +33,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +46,7 @@ properties:
     package: onenote!
     fullName: languageId
     summary: The language ID of the text. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,28 +59,20 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Gets the Paragraph object that contains the RichText object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
+        type: <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />
   - name: style
     uid: onenote!OneNote.Interfaces.RichTextLoadOptions#style:member
     package: onenote!
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +85,7 @@ properties:
     package: onenote!
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.BreakCollectionData
 uid: word!Word.Interfaces.BreakCollectionData:interface
 package: word!
 fullName: Word.Interfaces.BreakCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `breakCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `breakCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

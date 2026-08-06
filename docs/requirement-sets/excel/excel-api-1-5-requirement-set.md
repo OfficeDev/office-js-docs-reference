@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.5
 description: Details about the ExcelApi 1.5 requirement set.
-ms.date: 03/19/2021
+ms.date: 09/22/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -27,7 +27,7 @@ ExcelApi 1.5 adds Custom XML parts. These are accessible through the [custom XML
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.5. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.5 or earlier, see [Excel APIs in requirement set 1.5 or earlier](/javascript/api/excel?view=excel-js-1.5&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_5.md)]
+[!INCLUDE[API table](../../includes/excel-1-5.md)]
 
 ## See also
 

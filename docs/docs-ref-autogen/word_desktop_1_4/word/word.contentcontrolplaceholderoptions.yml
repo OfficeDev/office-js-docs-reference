@@ -4,9 +4,16 @@ uid: word!Word.ContentControlPlaceholderOptions:interface
 package: word!
 fullName: Word.ContentControlPlaceholderOptions
 summary: The options that define what placeholder to be used in the content control.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.BuildingBlockGalleryContentControl](/javascript/api/word/word.buildingblockgallerycontentcontrol): [setPlaceholderText](/javascript/api/word/word.buildingblockgallerycontentcontrol#word-word-buildingblockgallerycontentcontrol-setplaceholdertext-member(1))
+  - [Word.DatePickerContentControl](/javascript/api/word/word.datepickercontentcontrol): [setPlaceholderText](/javascript/api/word/word.datepickercontentcontrol#word-word-datepickercontentcontrol-setplaceholdertext-member(1))
+  - [Word.GroupContentControl](/javascript/api/word/word.groupcontentcontrol): [setPlaceholderText](/javascript/api/word/word.groupcontentcontrol#word-word-groupcontentcontrol-setplaceholdertext-member(1))
+  - [Word.PictureContentControl](/javascript/api/word/word.picturecontentcontrol): [setPlaceholderText](/javascript/api/word/word.picturecontentcontrol#word-word-picturecontentcontrol-setplaceholdertext-member(1))
+  - [Word.RepeatingSectionContentControl](/javascript/api/word/word.repeatingsectioncontentcontrol): [setPlaceholderText](/javascript/api/word/word.repeatingsectioncontentcontrol#word-word-repeatingsectioncontentcontrol-setplaceholdertext-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +24,7 @@ properties:
     package: word!
     fullName: buildingBlock
     summary: If provided, specifies the `BuildingBlock` object to use as placeholder.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +37,7 @@ properties:
     package: word!
     fullName: range
     summary: If provided, specifies the `Range` object to use as placeholder.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +50,7 @@ properties:
     package: word!
     fullName: text
     summary: If provided, specifies the text to use as placeholder.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

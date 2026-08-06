@@ -3,10 +3,11 @@ name: OneNote.Interfaces.ApplicationUpdateData
 uid: onenote!OneNote.Interfaces.ApplicationUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ApplicationUpdateData
-summary: >-
-  An interface for updating data on the `Application` object, for use in
-  `application.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Application` object, for use in `application.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.Application](/javascript/api/onenote/onenote.application): [set](/javascript/api/onenote/onenote.application#onenote-onenote-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

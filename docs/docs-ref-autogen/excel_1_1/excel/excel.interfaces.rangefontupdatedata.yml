@@ -3,10 +3,11 @@ name: Excel.Interfaces.RangeFontUpdateData
 uid: excel!Excel.Interfaces.RangeFontUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeFontUpdateData
-summary: >-
-  An interface for updating data on the `RangeFont` object, for use in
-  `rangeFont.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `RangeFont` object, for use in `rangeFont.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.RangeFont](/javascript/api/excel/excel.rangefont): [set](/javascript/api/excel/excel.rangefont#excel-excel-rangefont-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the bold status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,12 +30,8 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontUpdateData#color:member
     package: excel!
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: HTML color code representation of the text color (e.g., \#FF0000 represents Red).
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +44,7 @@ properties:
     package: excel!
     fullName: italic
     summary: Specifies the italic status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -63,12 +56,8 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontUpdateData#name:member
     package: excel!
     fullName: name
-    summary: >-
-      Font name (e.g., "Calibri"). The name's length should not be greater than
-      31 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +70,7 @@ properties:
     package: excel!
     fullName: size
     summary: Font size.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -95,20 +82,12 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontUpdateData#underline:member
     package: excel!
     fullName: underline
-    summary: >-
-      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
-      details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
-        "SingleAccountant" | "DoubleAccountant";
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
-          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+        type: <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

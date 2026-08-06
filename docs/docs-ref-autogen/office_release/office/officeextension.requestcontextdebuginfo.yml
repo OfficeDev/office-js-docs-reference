@@ -4,7 +4,10 @@ uid: office!OfficeExtension.RequestContextDebugInfo:interface
 package: office!
 fullName: OfficeExtension.RequestContextDebugInfo
 summary: Contains debug information about the request context.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [debugInfo](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-debuginfo-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,12 +17,10 @@ properties:
     uid: office!OfficeExtension.RequestContextDebugInfo#pendingStatements:member
     package: office!
     fullName: pendingStatements
-    summary: >-
+    summary: |-
       The statements to be executed in the Office application.
 
-
-      These statements may not match the code exactly as written, but will be a
-      close approximation.
+      These statements may not match the code exactly as written, but will be a close approximation.
     remarks: ''
 
     isPreview: false

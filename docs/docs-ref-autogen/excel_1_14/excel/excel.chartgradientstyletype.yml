@@ -3,12 +3,13 @@ name: Excel.ChartGradientStyleType
 uid: excel!Excel.ChartGradientStyleType:enum
 package: excel!
 fullName: Excel.ChartGradientStyleType
-summary: >-
-  Represents the gradient style type of a chart series. This is only applicable
-  for region map charts.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Represents the gradient style type of a chart series. This is only applicable for region map charts.
+remarks: |-
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartSeries](/javascript/api/excel/excel.chartseries): [gradientMaximumType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientmaximumtype-member), [gradientMidpointType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientmidpointtype-member), [gradientMinimumType](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-gradientminimumtype-member)
 
 isPreview: false
 isDeprecated: false
@@ -16,21 +17,15 @@ fields:
   - name: extremeValue
     uid: excel!Excel.ChartGradientStyleType.extremeValue:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"ExtremeValue"'
   - name: number
     uid: excel!Excel.ChartGradientStyleType.number:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Number"'
   - name: percent
     uid: excel!Excel.ChartGradientStyleType.percent:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Percent"'

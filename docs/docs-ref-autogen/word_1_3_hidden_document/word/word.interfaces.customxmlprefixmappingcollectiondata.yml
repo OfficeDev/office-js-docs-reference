@@ -3,9 +3,7 @@ name: Word.Interfaces.CustomXmlPrefixMappingCollectionData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPrefixMappingCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlPrefixMappingCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -24,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.CustomXmlPrefixMappingData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.CustomXmlPrefixMappingData:interface" />[]

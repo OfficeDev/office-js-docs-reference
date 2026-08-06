@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: PowerPoint.LabelingCapability
+uid: powerpoint!PowerPoint.LabelingCapability:enum
+package: powerpoint!
+fullName: PowerPoint.LabelingCapability
+summary: Indicates the labeling capability.
+remarks: |-
+  [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [getLabelingCapability](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-getlabelingcapability-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: labelingDisabled
+    uid: powerpoint!PowerPoint.LabelingCapability.labelingDisabled:member
+    package: powerpoint!
+    summary: |-
+      Represents labeling being disabled.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"LabelingDisabled"'
+  - name: labelingEnabled
+    uid: powerpoint!PowerPoint.LabelingCapability.labelingEnabled:member
+    package: powerpoint!
+    summary: |-
+      Represents labeling being enabled.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"LabelingEnabled"'
+  - name: labelingPolicyNotFound
+    uid: powerpoint!PowerPoint.LabelingCapability.labelingPolicyNotFound:member
+    package: powerpoint!
+    summary: |-
+      Represents labeling policy not found.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"LabelingPolicyNotFound"'
+  - name: noLicense
+    uid: powerpoint!PowerPoint.LabelingCapability.noLicense:member
+    package: powerpoint!
+    summary: |-
+      Represents there's no valid licenses.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"NoLicense"'

@@ -259,11 +259,15 @@ export declare namespace OfficeRuntime {
   }
   /**
    * Contains authorization related APIs.
+   * 
+   * @deprecated Use `Office.auth` instead.
    */
   const auth: Auth;
     /**
      * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
-     *
+     * 
+     * @deprecated Use the {@link https://learn.microsoft.com/javascript/api/office/office.authoptions | Office.AuthOptions} interface instead.
+     * 
      * @remarks
      *
      * The methods in this interface are equivalent to those in the `Office.AuthOptions` interface.
@@ -324,6 +328,8 @@ export declare namespace OfficeRuntime {
   }
   /**
    * Interface that contains authorization related APIs.
+   * 
+   * @deprecated Use the {@link https://learn.microsoft.com/javascript/api/office/office.auth | Office.Auth} interface instead.
    *
    * @remarks
    *
@@ -343,6 +349,8 @@ export declare namespace OfficeRuntime {
      *
      * **Applications**: Excel, Outlook, PowerPoint, Word
      *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
+     * 
      * **Important**:
      *
      * - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
@@ -360,14 +368,21 @@ export declare namespace OfficeRuntime {
   }
   /**
    * Provides information about what Requirement Sets are supported in current environment.
+   * 
+   * @deprecated This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
    */
   const apiInformation: ApiInformation;
   /**
    * Interface that contains methods for checking API requirement-set support.
+   * 
+   * @deprecated This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
    */
   export interface ApiInformation {
     /**
      * Check if the specified requirement set is supported by the Office application.
+     * 
+     * @deprecated This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
+     * 
      * @param name - Set name; e.g., "MatrixBindings".
      * @param minVersion - The minimum required version; e.g., "1.4".
      */

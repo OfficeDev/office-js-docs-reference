@@ -3,10 +3,11 @@ name: Word.Interfaces.WindowData
 uid: word!Word.Interfaces.WindowData:interface
 package: word!
 fullName: Word.Interfaces.WindowData
-summary: >-
-  An interface describing the data returned by calling `window.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `window.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Window](/javascript/api/word/word.window): [toJSON](/javascript/api/word/word.window#word-word-window-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

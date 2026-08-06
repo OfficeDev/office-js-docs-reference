@@ -4,7 +4,24 @@ uid: powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.BindingCollection](/javascript/api/powerpoint/powerpoint.bindingcollection): [load](/javascript/api/powerpoint/powerpoint.bindingcollection#powerpoint-powerpoint-bindingcollection-load-member(1))
+  - [PowerPoint.CustomPropertyCollection](/javascript/api/powerpoint/powerpoint.custompropertycollection): [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
+  - [PowerPoint.CustomXmlPartCollection](/javascript/api/powerpoint/powerpoint.customxmlpartcollection): [load](/javascript/api/powerpoint/powerpoint.customxmlpartcollection#powerpoint-powerpoint-customxmlpartcollection-load-member(1))
+  - [PowerPoint.CustomXmlPartScopedCollection](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection): [load](/javascript/api/powerpoint/powerpoint.customxmlpartscopedcollection#powerpoint-powerpoint-customxmlpartscopedcollection-load-member(1))
+  - [PowerPoint.HyperlinkCollection](/javascript/api/powerpoint/powerpoint.hyperlinkcollection): [load](/javascript/api/powerpoint/powerpoint.hyperlinkcollection#powerpoint-powerpoint-hyperlinkcollection-load-member(1))
+  - [PowerPoint.ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection): [load](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-load-member(1))
+  - [PowerPoint.ShapeScopedCollection](/javascript/api/powerpoint/powerpoint.shapescopedcollection): [load](/javascript/api/powerpoint/powerpoint.shapescopedcollection#powerpoint-powerpoint-shapescopedcollection-load-member(1))
+  - [PowerPoint.SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection): [load](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-load-member(1))
+  - [PowerPoint.SlideLayoutCollection](/javascript/api/powerpoint/powerpoint.slidelayoutcollection): [load](/javascript/api/powerpoint/powerpoint.slidelayoutcollection#powerpoint-powerpoint-slidelayoutcollection-load-member(1))
+  - [PowerPoint.SlideMasterCollection](/javascript/api/powerpoint/powerpoint.slidemastercollection): [load](/javascript/api/powerpoint/powerpoint.slidemastercollection#powerpoint-powerpoint-slidemastercollection-load-member(1))
+  - [PowerPoint.SlideScopedCollection](/javascript/api/powerpoint/powerpoint.slidescopedcollection): [load](/javascript/api/powerpoint/powerpoint.slidescopedcollection#powerpoint-powerpoint-slidescopedcollection-load-member(1))
+  - [PowerPoint.TableCellCollection](/javascript/api/powerpoint/powerpoint.tablecellcollection): [load](/javascript/api/powerpoint/powerpoint.tablecellcollection#powerpoint-powerpoint-tablecellcollection-load-member(1))
+  - [PowerPoint.TableColumnCollection](/javascript/api/powerpoint/powerpoint.tablecolumncollection): [load](/javascript/api/powerpoint/powerpoint.tablecolumncollection#powerpoint-powerpoint-tablecolumncollection-load-member(1))
+  - [PowerPoint.TableRowCollection](/javascript/api/powerpoint/powerpoint.tablerowcollection): [load](/javascript/api/powerpoint/powerpoint.tablerowcollection#powerpoint-powerpoint-tablerowcollection-load-member(1))
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [load](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +31,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.CollectionLoadOptions#$skip:member
     package: powerpoint!
     fullName: $skip
-    summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If `top` is specified, the selection of result
-      will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -30,9 +44,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.CollectionLoadOptions#$top:member
     package: powerpoint!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
 
     isPreview: false

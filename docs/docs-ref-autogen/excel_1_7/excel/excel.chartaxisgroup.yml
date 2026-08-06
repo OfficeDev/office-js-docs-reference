@@ -4,9 +4,13 @@ uid: excel!Excel.ChartAxisGroup:enum
 package: excel!
 fullName: Excel.ChartAxisGroup
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ChartAxes](/javascript/api/excel/excel.chartaxes): [getItem](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-getitem-member(1))
+  - [Excel.ChartAxis](/javascript/api/excel/excel.chartaxis): [axisGroup](/javascript/api/excel/excel.chartaxis#excel-excel-chartaxis-axisgroup-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,14 +18,10 @@ fields:
   - name: primary
     uid: excel!Excel.ChartAxisGroup.primary:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Primary"'
   - name: secondary
     uid: excel!Excel.ChartAxisGroup.secondary:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"Secondary"'

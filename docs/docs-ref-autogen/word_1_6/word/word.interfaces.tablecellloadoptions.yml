@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.TableCellLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableCellLoadOptions
 summary: Represents a table cell in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.TableCell](/javascript/api/word/word.tablecell): [load](/javascript/api/word/word.tablecell#word-word-tablecell-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -33,9 +33,7 @@ properties:
     package: word!
     fullName: body
     summary: Gets the `Body` object of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +46,7 @@ properties:
     package: word!
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -62,12 +58,8 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#columnWidth:member
     package: word!
     fullName: columnWidth
-    summary: >-
-      Specifies the width of the cell's column in points. This is applicable to
-      uniform tables.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the width of the cell's column in points. This is applicable to uniform tables.
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -79,13 +71,8 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      Specifies the horizontal alignment of the cell. The value can be
-      `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the horizontal alignment of the cell. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +85,7 @@ properties:
     package: word!
     fullName: parentRow
     summary: Gets the parent row of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +98,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the parent table of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +111,7 @@ properties:
     package: word!
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -142,12 +123,8 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
-      format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -160,9 +137,7 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the text of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -174,12 +149,8 @@ properties:
     uid: word!Word.Interfaces.TableCellLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the cell. The value can be `top`<!--
-      -->, `center`<!-- -->, or `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the vertical alignment of the cell. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +163,7 @@ properties:
     package: word!
     fullName: width
     summary: Gets the width of the cell in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

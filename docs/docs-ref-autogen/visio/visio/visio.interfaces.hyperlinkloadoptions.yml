@@ -4,10 +4,12 @@ uid: visio!Visio.Interfaces.HyperlinkLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.HyperlinkLoadOptions
 summary: Represents the Hyperlink.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.Hyperlink](/javascript/api/visio/visio.hyperlink): [load](/javascript/api/visio/visio.hyperlink#visio-visio-hyperlink-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: visio!Visio.Interfaces.HyperlinkLoadOptions#$all:member
     package: visio!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+    summary: 'Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.: `Range.format.fill.color`<!-- -->).'
     remarks: ''
 
     isPreview: false
@@ -34,10 +33,7 @@ properties:
     package: visio!
     fullName: address
     summary: Gets the address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +46,7 @@ properties:
     package: visio!
     fullName: description
     summary: Gets the description of a hyperlink. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -65,13 +58,8 @@ properties:
     uid: visio!Visio.Interfaces.HyperlinkLoadOptions#extraInfo:member
     package: visio!
     fullName: extraInfo
-    summary: >-
-      Gets the extra URL request information used to resolve the hyperlink's
-      URL. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -84,10 +72,7 @@ properties:
     package: visio!
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.TableOfFiguresCollectionUpdateData
 uid: word!Word.Interfaces.TableOfFiguresCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfFiguresCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableOfFiguresCollection` object, for
-  use in `tableOfFiguresCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableOfFiguresCollection` object, for use in `tableOfFiguresCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

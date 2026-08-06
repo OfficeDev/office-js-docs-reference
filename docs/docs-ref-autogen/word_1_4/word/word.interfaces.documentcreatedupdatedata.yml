@@ -3,10 +3,11 @@ name: Word.Interfaces.DocumentCreatedUpdateData
 uid: word!Word.Interfaces.DocumentCreatedUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentCreatedUpdateData
-summary: >-
-  An interface for updating data on the `DocumentCreated` object, for use in
-  `documentCreated.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `DocumentCreated` object, for use in `documentCreated.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.DocumentCreated](/javascript/api/word/word.documentcreated): [set](/javascript/api/word/word.documentcreated#word-word-documentcreated-set-member(1))
 
 isPreview: false
 isDeprecated: false

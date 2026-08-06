@@ -3,12 +3,18 @@ name: OfficeExtension.ClientObject
 uid: office!OfficeExtension.ClientObject:class
 package: office!
 fullName: OfficeExtension.ClientObject
-summary: >-
-  An abstract proxy object that represents an object in an Office document. You
-  create proxy objects from the context (or from other proxy objects), add
-  commands to a queue to act on the object, and then synchronize the proxy
-  object state with the document by calling `context.sync()`<!-- -->.
-remarks: ''
+summary: An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling `context.sync()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel](/javascript/api/excel): [run](/javascript/api/excel#excel-excel-run-function(2))
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [load](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-load-member(1)), [loadRecursive](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-loadrecursive-member(1))
+  - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [previousObjects](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-previousobjects-member)
+  - [OfficeExtension.TrackedObjects](/javascript/api/office/officeextension.trackedobjects): [add](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-add-member(1)), [remove](/javascript/api/office/officeextension.trackedobjects#office-officeextension-trackedobjects-remove-member(1))
+  - [OneNote](/javascript/api/onenote): [run](/javascript/api/onenote#onenote-onenote-run-function(2))
+  - [PowerPoint](/javascript/api/powerpoint): [run](/javascript/api/powerpoint#powerpoint-powerpoint-run-function(2))
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(2))
+  - [Word](/javascript/api/word): [run](/javascript/api/word#word-word-run-function(1))
 
 isPreview: false
 isDeprecated: false
@@ -27,35 +33,26 @@ properties:
       content: 'context: ClientRequestContext;'
       return:
         type: <xref uid="office!OfficeExtension.ClientRequestContext:class" />
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // *.run methods automatically create an
-          OfficeExtension.ClientRequestContext
-
+          // *.run methods automatically create an OfficeExtension.ClientRequestContext
           // object to work with the Office file.
-
           await Excel.run(async (context: Excel.RequestContext) => {
             // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
             
             const workbook = context.workbook;
             // Interact with the Excel workbook...
           });
-
           ```
   - name: isNullObject
     uid: office!OfficeExtension.ClientObject#isNullObject:member
     package: office!
     fullName: isNullObject
-    summary: >-
-      Returns a boolean value for whether the corresponding object is a null
-      object. You must call `context.sync()` before reading the isNullObject
-      property.
+    summary: Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the isNullObject property.
     remarks: ''
 
     isPreview: false

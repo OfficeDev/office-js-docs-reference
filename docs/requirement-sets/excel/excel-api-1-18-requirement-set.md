@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.18
 description: Details about the ExcelApi 1.18 requirement set.
-ms.date: 02/06/2025
+ms.date: 07/17/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ The ExcelApi 1.18 adds support for creating, deleting, and managing [notes](http
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.18. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.18 or earlier, see [Excel APIs in requirement set 1.18 or earlier](/javascript/api/excel?view=excel-js-1.18&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_18.md)]
+[!INCLUDE[API table](../../includes/excel-1-18.md)]
 
 ## See also
 

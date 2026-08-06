@@ -984,6 +984,21 @@ OneNote.Section#copyToSectionGroup:member(1):
         
         console.log(newSection.id);
     });
+OneNote.Section#getRestApiId:member(1):
+  - |-
+    await OneNote.run(async (context) => {
+        // Get the current section.
+        const section = context.application.getActiveSection();
+        const restApiId = section.getRestApiId();
+    
+        await context.sync();
+        console.log("The REST API ID is " + restApiId.value);
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
+        // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+        // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
+        // OneNote REST API according to the OneNote Development Blog.
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+    });
 OneNote.Section#insertSectionAsSibling:member(2):
   - |-
     await OneNote.run(async (context) => {
@@ -1001,21 +1016,6 @@ OneNote.Section#insertSectionAsSibling:member(2):
         // Display the properties.
         console.log("Section name: " + section.name);
         console.log("Section ID: " + section.id);
-    });
-OneNote.Section#getRestApiId:member(1):
-  - |-
-    await OneNote.run(async (context) => {
-        // Get the current section.
-        const section = context.application.getActiveSection();
-        const restApiId = section.getRestApiId();
-    
-        await context.sync();
-        console.log("The REST API ID is " + restApiId.value);
-        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-        // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-        // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
-        // OneNote REST API according to the OneNote Development Blog.
-        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 OneNote.Section#load:member(2):
   - |-

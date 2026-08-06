@@ -3,9 +3,7 @@ name: Word.Interfaces.TabStopCollectionUpdateData
 uid: word!Word.Interfaces.TabStopCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TabStopCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TabStopCollection` object, for use in
-  `tabStopCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TabStopCollection` object, for use in `tabStopCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.DocumentTaskUpdateData
 uid: excel!Excel.Interfaces.DocumentTaskUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.DocumentTaskUpdateData
-summary: >-
-  An interface for updating data on the `DocumentTask` object, for use in
-  `documentTask.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `DocumentTask` object, for use in `documentTask.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -16,13 +14,8 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskUpdateData#percentComplete:member
     package: excel!
     fullName: percentComplete
-    summary: >-
-      Specifies the completion percentage of the task. This is a value between 0
-      and 100, where 100 represents a completed task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -34,13 +27,8 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskUpdateData#priority:member
     package: excel!
     fullName: priority
-    summary: >-
-      Specifies the priority of the task. This is a value between 0 and 10,
-      where 0 represents the highest priority.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -53,10 +41,7 @@ properties:
     package: excel!
     fullName: startAndDueDateTime
     summary: Specifies the date and time the task should start and is due.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -69,10 +54,7 @@ properties:
     package: excel!
     fullName: title
     summary: Specifies title of the task.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false

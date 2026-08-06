@@ -4,8 +4,6 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-
-
 export declare namespace Excel {
     
     
@@ -362,7 +360,7 @@ export declare namespace Excel {
     /**
      * Provides information about the selection that raised the selection changed event.
                 
-                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                 * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -1296,6 +1294,7 @@ export declare namespace Excel {
         /**
          * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                    Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1880,7 +1879,7 @@ export declare namespace Excel {
         /**
          * Occurs when the selected content in the binding is changed.
                     
-                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                     * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -5554,6 +5553,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -8167,7 +8167,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -10989,7 +10989,7 @@ export declare namespace Excel {
             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
         }
@@ -17727,7 +17727,6 @@ export declare namespace Excel {
         }
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////

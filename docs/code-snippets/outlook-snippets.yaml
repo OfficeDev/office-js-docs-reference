@@ -100,11 +100,6 @@ Office.AppointmentCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.AppointmentCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.AppointmentRead#addHandlerAsync:member(1):
   - |-
     function myHandlerFunction(eventarg) {
@@ -205,17 +200,6 @@ Office.AppointmentTimeChangedEventArgs:interface:
         console.log(`Start time: ${event.start}`);
         console.log(`End time: ${event.end}`);
     }
-Office.AttachmentsChangedEventArgs:interface:
-  - |-
-    // Handles the OnMessageAttachmentsChanged event.
-    function onMessageAttachmentsChangedHandler(event) {
-        console.log(`Event: ${event.type}`);
-
-        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-            const attachment = event.attachmentDetails;
-            // Perform operations on the attachment that was added.
-        }
-    }
 Office.AttachmentContent:interface:
   - |-
     Office.context.mailbox.item.getAttachmentsAsync((result) => {
@@ -252,26 +236,16 @@ Office.AttachmentContent:interface:
         // Log the content of the attachments as a string.
         console.log(result.value.content);
     }
-Office.Body#setAsync:member(1):
+Office.AttachmentsChangedEventArgs:interface:
   - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        { 
-            coercionType: Office.CoercionType.Html,
-            asyncContext: "This is passed to the callback"
-        },
-        (result) => {
-            // Process the result.
-        }
-    );
+    // Handles the OnMessageAttachmentsChanged event.
+    function onMessageAttachmentsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
 
-    // The following is an example of the result parameter passed to the callback function.
-    {
-        "value": null,
-        "status": "succeeded",
-        "asyncContext": "This is passed to the callback"
+        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = event.attachmentDetails;
+            // Perform operations on the attachment that was added.
+        }
     }
 Office.CategoryDetails:interface:
   - |-
@@ -311,8 +285,8 @@ Office.Contact:interface:
     */
 Office.DecryptedMessageAttachment:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -326,10 +300,6 @@ Office.DecryptedMessageAttachment:interface:
         // Decrypted content and properties of a file attachment.
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
-
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
 
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
@@ -346,12 +316,6 @@ Office.DecryptedMessageAttachment:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
@@ -379,8 +343,8 @@ Office.DecryptedMessageAttachment:interface:
     }
 Office.DecryptedMessageBody:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -394,10 +358,6 @@ Office.DecryptedMessageBody:interface:
         // Decrypted content and properties of a file attachment.
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
-
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
 
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
@@ -414,12 +374,6 @@ Office.DecryptedMessageBody:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
@@ -574,6 +528,36 @@ Office.InfobarClickedEventArgs:interface:
         const infobarDetails = event.infobarDetails;
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
+    }
+Office.InfobarDetails:interface:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
     }
 Office.InitializationContextChangedEventArgs:interface:
   - |-
@@ -861,36 +845,6 @@ Office.MailboxEnums.InfobarActionType:enum:
                 break;
         }
     }
-Office.InfobarDetails:interface:
-  - |-
-    /*
-    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-    * The event handler logs the custom action and notification type to the console.
-    */
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
-
-    function eventHandler(event) {
-        const infobarDetails = event.infobarDetails;
-
-        // Log the custom action type.
-        console.log(`Custom action type: ${infobarDetails.actionType}`);
-
-        // Log the notification type.
-        switch (infobarDetails.infobarType) {
-            case Office.MailboxEnums.InfobarType.Error:
-                console.log("Notification type: Error message");
-                break;
-            case Office.MailboxEnums.InfobarType.Informational:
-                console.log("Notification type: Informational message");
-                break;
-            case Office.MailboxEnums.InfobarType.Insight:
-                console.log("Notification type: Informational message with available actions from the task pane");
-                break;
-            case Office.MailboxEnums.InfobarType.ProgressIndicator:
-                console.log("Notification type: Progress indicator");
-                break;
-        }
-    }
 Office.MailboxEnums.InfobarType:enum:
   - |-
     /*
@@ -1143,15 +1097,10 @@ Office.MessageCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.MessageCompose#setSelectedDataAsync:member(1):
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-  - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageDecryptEventCompletedOptions:interface:
   - |-
-    // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
-    function onMessageReadHandler(event) {
+    // This sample handles the OnMessageDecrypt event to decrypt the body and attachments of a message.
+    function onMessageDecryptHandler(event) {
         // Your code to decrypt the contents of a message would appear here.
         ...
 
@@ -1328,28 +1277,6 @@ Office.Recipients#addAsync:member(1):
             console.log(result.error);
         } else {
             console.log("Recipients added");
-        }
-    });
-Office.Recipients#setAsync:member(2):
-  - |-
-    // The following example creates an array of EmailUser objects and
-    // replaces the CC recipients of the message with the array.
-    const newRecipients = [
-        {
-            "displayName": "Allie Bellew",
-            "emailAddress": "allieb@contoso.com"
-        },
-        {
-            "displayName": "Alex Darrow",
-            "emailAddress": "alexd@contoso.com"
-        }
-    ];
-
-    Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-        if (result.error) {
-            console.log(result.error);
-        } else {
-            console.log("Recipients overwritten");
         }
     });
 Office.RecipientsChangedEventArgs:interface:

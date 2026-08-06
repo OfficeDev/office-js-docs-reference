@@ -3,12 +3,11 @@ name: OfficeExtension.EmbeddedSession
 uid: office!OfficeExtension.EmbeddedSession:class
 package: office!
 fullName: OfficeExtension.EmbeddedSession
-summary: >-
-  Represents a session of a Visio diagram embedded in a SharePoint page. For
-  more information, see [Visio JavaScript API
-  overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!--
-  -->.
-remarks: ''
+summary: Represents a session of a Visio diagram embedded in a SharePoint page. For more information, see [Visio JavaScript API overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio](/javascript/api/visio): [run](/javascript/api/visio#visio-visio-run-function(2))
 
 isPreview: false
 isDeprecated: false

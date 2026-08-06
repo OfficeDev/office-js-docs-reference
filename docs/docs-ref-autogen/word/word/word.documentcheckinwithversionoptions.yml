@@ -3,12 +3,13 @@ name: Word.DocumentCheckInWithVersionOptions
 uid: word!Word.DocumentCheckInWithVersionOptions:interface
 package: word!
 fullName: Word.DocumentCheckInWithVersionOptions
-summary: >-
-  Provides configuration options for the
-  [Document.checkInWithVersion](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Provides configuration options for the [Document.checkInWithVersion](xref:word!Word.Document:class) method.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Document](/javascript/api/word/word.document): [checkInWithVersion](/javascript/api/word/word.document#word-word-document-checkinwithversion-member(1))
 
 isPreview: true
 isDeprecated: false
@@ -19,9 +20,7 @@ properties:
     package: word!
     fullName: comment
     summary: If provided, specifies a comment for the check-in operation.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -33,12 +32,8 @@ properties:
     uid: word!Word.DocumentCheckInWithVersionOptions#makePublic:member
     package: word!
     fullName: makePublic
-    summary: >-
-      If provided, specifies whether to make the document public after check-in.
-      The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether to make the document public after check-in. The default value is `false`<!-- -->.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -50,12 +45,8 @@ properties:
     uid: word!Word.DocumentCheckInWithVersionOptions#saveChanges:member
     package: word!
     fullName: saveChanges
-    summary: >-
-      If provided, specifies whether to save changes before checking in. The
-      default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies whether to save changes before checking in. The default value is `true`<!-- -->.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -67,18 +58,12 @@ properties:
     uid: word!Word.DocumentCheckInWithVersionOptions#versionType:member
     package: word!
     fullName: versionType
-    summary: >-
-      If provided, specifies the version type for the check-in. The default
-      value is `minorVersion`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: If provided, specifies the version type for the check-in. The default value is `minorVersion`<!-- -->.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'versionType?: Word.CheckInVersionType | "Minor" | "Major" | "Overwrite";'
       return:
-        type: >-
-          <xref uid="word!Word.CheckInVersionType:enum" /> | "Minor" | "Major" |
-          "Overwrite"
+        type: <xref uid="word!Word.CheckInVersionType:enum" /> | "Minor" | "Major" | "Overwrite"

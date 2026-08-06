@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Word.ChangeTrackingState
+uid: word!Word.ChangeTrackingState:enum
+package: word!
+fullName: Word.ChangeTrackingState
+summary: Specify the track state when ChangeTracking is on.
+remarks: '\[Api set: WordApi 1.5\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: added
+    uid: word!Word.ChangeTrackingState.added:member
+    package: word!
+    summary: '* \[Api set: WordApi 1.5\]'
+    value: '"Added"'
+  - name: deleted
+    uid: word!Word.ChangeTrackingState.deleted:member
+    package: word!
+    summary: '* \[Api set: WordApi 1.5\]'
+    value: '"Deleted"'
+  - name: normal
+    uid: word!Word.ChangeTrackingState.normal:member
+    package: word!
+    summary: '* \[Api set: WordApi 1.5\]'
+    value: '"Normal"'
+  - name: unknown
+    uid: word!Word.ChangeTrackingState.unknown:member
+    package: word!
+    summary: '* \[Api set: WordApi 1.5\]'
+    value: '"Unknown"'

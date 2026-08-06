@@ -3,9 +3,7 @@ name: Word.Interfaces.HeadingStyleCollectionUpdateData
 uid: word!Word.Interfaces.HeadingStyleCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleCollectionUpdateData
-summary: >-
-  An interface for updating data on the `HeadingStyleCollection` object, for use
-  in `headingStyleCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `HeadingStyleCollection` object, for use in `headingStyleCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

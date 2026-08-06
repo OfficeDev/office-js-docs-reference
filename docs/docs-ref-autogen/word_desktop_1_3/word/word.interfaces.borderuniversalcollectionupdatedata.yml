@@ -3,9 +3,7 @@ name: Word.Interfaces.BorderUniversalCollectionUpdateData
 uid: word!Word.Interfaces.BorderUniversalCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BorderUniversalCollectionUpdateData
-summary: >-
-  An interface for updating data on the `BorderUniversalCollection` object, for
-  use in `borderUniversalCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `BorderUniversalCollection` object, for use in `borderUniversalCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

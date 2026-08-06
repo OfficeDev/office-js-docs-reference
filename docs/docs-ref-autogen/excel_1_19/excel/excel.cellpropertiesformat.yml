@@ -3,14 +3,16 @@ name: Excel.CellPropertiesFormat
 uid: excel!Excel.CellPropertiesFormat:interface
 package: excel!
 fullName: Excel.CellPropertiesFormat
-summary: >-
-  Represents the returned format properties of getCellProperties or format input
-  parameter of setCellProperties.
+summary: |-
+  Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
 
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+remarks: |-
+  #### Used by
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: ''
+  - [Excel.SettableCellProperties](/javascript/api/excel/excel.settablecellproperties): [format](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-format-member)
+  - [Excel.SettableColumnProperties](/javascript/api/excel/excel.settablecolumnproperties): [format](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-format-member)
+  - [Excel.SettableRowProperties](/javascript/api/excel/excel.settablerowproperties): [format](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-format-member)
 
 isPreview: false
 isDeprecated: false
@@ -20,12 +22,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#autoIndent:member
     package: excel!
     fullName: autoIndent
-    summary: >-
+    summary: |-
       Represents the `autoIndent` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -38,12 +38,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#borders:member
     package: excel!
     fullName: borders
-    summary: >-
+    summary: |-
       Represents the `borders` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -56,12 +54,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#fill:member
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Represents the `fill` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -74,12 +70,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#font:member
     package: excel!
     fullName: font
-    summary: >-
+    summary: |-
       Represents the `font` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -92,36 +86,26 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
+    summary: |-
       Represents the `horizontalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" |
-        "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" |
-        "Distributed";
+      content: 'horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";'
       return:
-        type: >-
-          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
-          "Left" | "Center" | "Right" | "Fill" | "Justify" |
-          "CenterAcrossSelection" | "Distributed"
+        type: <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"
   - name: indentLevel
     uid: excel!Excel.CellPropertiesFormat#indentLevel:member
     package: excel!
     fullName: indentLevel
-    summary: >-
+    summary: |-
       Represents the `indentLevel` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -134,12 +118,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#protection:member
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Represents the `protection` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -152,34 +134,26 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#readingOrder:member
     package: excel!
     fullName: readingOrder
-    summary: >-
+    summary: |-
       Represents the `readingOrder` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" |
-        "RightToLeft";
+      content: 'readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
-          "LeftToRight" | "RightToLeft"
+        type: <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" | "LeftToRight" | "RightToLeft"
   - name: shrinkToFit
     uid: excel!Excel.CellPropertiesFormat#shrinkToFit:member
     package: excel!
     fullName: shrinkToFit
-    summary: >-
+    summary: |-
       Represents the `shrinkToFit` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -192,12 +166,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#textOrientation:member
     package: excel!
     fullName: textOrientation
-    summary: >-
+    summary: |-
       Represents the `textOrientation` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -210,12 +182,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#useStandardHeight:member
     package: excel!
     fullName: useStandardHeight
-    summary: >-
+    summary: |-
       Represents the `useStandardHeight` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -228,12 +198,10 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#useStandardWidth:member
     package: excel!
     fullName: useStandardWidth
-    summary: >-
+    summary: |-
       Represents the `useStandardWidth` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -246,34 +214,26 @@ properties:
     uid: excel!Excel.CellPropertiesFormat#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
-    summary: >-
+    summary: |-
       Represents the `verticalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" |
-        "Bottom" | "Justify" | "Distributed";
+      content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
       return:
-        type: >-
-          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
-          "Bottom" | "Justify" | "Distributed"
+        type: <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
   - name: wrapText
     uid: excel!Excel.CellPropertiesFormat#wrapText:member
     package: excel!
     fullName: wrapText
-    summary: >-
+    summary: |-
       Represents the `wrapText` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false

@@ -3,10 +3,11 @@ name: Word.Interfaces.ParagraphCollectionData
 uid: word!Word.Interfaces.ParagraphCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ParagraphCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `paragraphCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `paragraphCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [toJSON](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

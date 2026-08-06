@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API desktop-only requirement set 1.1
 description: Details about the ExcelApiDesktop 1.1 requirement set.
-ms.date: 10/27/2025
+ms.date: 06/30/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -13,7 +13,7 @@ The `ExcelApiDesktop` requirement set is a special requirement set that includes
 When APIs in the `ExcelApiDesktop` requirement set are supported across all platforms, they'll be added to the next released requirement set (`ExcelApi 1.[NEXT]`). Once that new requirement set is public, those APIs will also continue to be tagged in this `ExcelApiDesktop` requirement set. To learn more about platform-specific requirements in general, see [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets).
 
 > [!IMPORTANT]
-> `ExcelApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the ExcelApi 1.20.
+> `ExcelApiDesktop 1.1` is a desktop-only requirement set. It's a superset of the ExcelApi 1.21.
 
 ## Recommended usage
 
@@ -34,7 +34,7 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 The following table lists the Excel JavaScript APIs currently included in the `ExcelApiDesktop 1.1` requirement set. For a complete list of all Excel JavaScript APIs (including `ExcelApiDesktop 1.1` APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/excel?view=excel-js-desktop-1.1&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-desktop-1_1.md)]
+[!INCLUDE[API table](../../includes/excel-desktop-1-1.md)]
 
 ## See also
 

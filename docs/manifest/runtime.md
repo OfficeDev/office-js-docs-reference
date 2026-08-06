@@ -1,7 +1,7 @@
 ---
 title: Runtime in the manifest file
 description: The Runtime element configures your add-in to use a shared JavaScript runtime for its various components, for example, ribbon, task pane, custom functions.
-ms.date: 07/11/2025
+ms.date: 02/27/2026
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 - [SharedRuntime 1.1](../requirement-sets/common/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
 - [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/develop/event-based-activation).)
-- [Mailbox preview](/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview) (When used in an Outlook add-in that implements the [integrated spam reporting](/office/dev/add-ins/outlook/spam-reporting) feature.)
+- [Mailbox 1.14](../requirement-sets/outlook/outlook-requirement-set-1-14.md) (When used in an Outlook add-in that implements the [integrated spam reporting](/office/dev/add-ins/outlook/spam-reporting) feature.)
 
 [!include[Runtimes support](../includes/runtimes-note.md)]
 
@@ -48,7 +48,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
-|  **resid**  |  Yes  | Specifies the URL location of the HTML page for your add-in. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element. |
+|  **resid**  |  Yes  | Specifies the URL location of the HTML page for your add-in. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element.<br><br>**Important**: When specifying a `LaunchEvent` extension point or a `ReportPhishingCustomization` element in your manifest, ensure that the `resid` attribute of the child [\<SourceLocation\>](customfunctionssourcelocation.md) element matches the `resid` value of the **\<Runtime\>** element. For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>`. |
 |  [lifetime](#lifetime-attribute)  |  No  | The default value for `lifetime` is `short` and doesn't need to be specified. Event-based activation and spam-reporting add-ins use only the `short` value. If you want to use a shared runtime in an Excel add-in, explicitly set the value to `long`. |
 
 ### lifetime attribute

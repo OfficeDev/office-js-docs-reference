@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideBackgroundSolidFillUpdateData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundSolidFillUpdateData
-summary: >-
-  An interface for updating data on the `SlideBackgroundSolidFill` object, for
-  use in `slideBackgroundSolidFill.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `SlideBackgroundSolidFill` object, for use in `slideBackgroundSolidFill.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

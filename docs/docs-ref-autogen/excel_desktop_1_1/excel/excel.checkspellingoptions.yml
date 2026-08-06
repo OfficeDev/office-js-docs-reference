@@ -4,9 +4,14 @@ uid: excel!Excel.CheckSpellingOptions:interface
 package: excel!
 fullName: Excel.CheckSpellingOptions
 summary: Represents the options for checking spelling.
-remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Application](/javascript/api/excel/excel.application): [checkSpelling](/javascript/api/excel/excel.application#excel-excel-application-checkspelling-member(1))
+  - [Excel.Range](/javascript/api/excel/excel.range): [checkSpelling](/javascript/api/excel/excel.range#excel-excel-range-checkspelling-member(1))
+  - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [checkSpelling](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-checkspelling-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +21,8 @@ properties:
     uid: excel!Excel.CheckSpellingOptions#customDictionary:member
     package: excel!
     fullName: customDictionary
-    summary: >-
-      Optional. A string that indicates the file name of the custom dictionary
-      to be examined if the word isn't found in the main dictionary. If this
-      argument is omitted, Excel's currently specified dictionary is used.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Optional. A string that indicates the file name of the custom dictionary to be examined if the word isn't found in the main dictionary. If this argument is omitted, Excel's currently specified dictionary is used.
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,13 +34,8 @@ properties:
     uid: excel!Excel.CheckSpellingOptions#ignoreUppercase:member
     package: excel!
     fullName: ignoreUppercase
-    summary: >-
-      Optional. Set to `true` to ignore words that are all uppercase. Set to
-      `false` to check words that are all uppercase. If this argument is
-      omitted, Excel's current setting is used.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Optional. Set to `true` to ignore words that are all uppercase. Set to `false` to check words that are all uppercase. If this argument is omitted, Excel's current setting is used.
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,11 @@ name: Word.Interfaces.WindowUpdateData
 uid: word!Word.Interfaces.WindowUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowUpdateData
-summary: >-
-  An interface for updating data on the `Window` object, for use in
-  `window.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Window` object, for use in `window.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Window](/javascript/api/word/word.window): [set](/javascript/api/word/word.window#word-word-window-set-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -3,10 +3,11 @@ name: Excel.Interfaces.WorkbookCreatedData
 uid: excel!Excel.Interfaces.WorkbookCreatedData:interface
 package: excel!
 fullName: Excel.Interfaces.WorkbookCreatedData
-summary: >-
-  An interface describing the data returned by calling
-  `workbookCreated.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `workbookCreated.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.WorkbookCreated](/javascript/api/excel/excel.workbookcreated): [toJSON](/javascript/api/excel/excel.workbookcreated#excel-excel-workbookcreated-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

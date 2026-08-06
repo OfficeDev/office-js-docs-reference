@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ComposeType
+uid: outlook!Office.MailboxEnums.ComposeType:enum
+package: outlook!
+fullName: Office.MailboxEnums.ComposeType
+summary: Specifies a message's compose type.
+remarks: |-
+  \[Api set: Mailbox 1.10\]
+
+  **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Reply
+    uid: outlook!Office.MailboxEnums.ComposeType.Reply:member
+    package: outlook!
+    summary: Reply.
+    value: '"reply"'
+  - name: NewMail
+    uid: outlook!Office.MailboxEnums.ComposeType.NewMail:member
+    package: outlook!
+    summary: New mail.
+    value: '"newMail"'
+  - name: Forward
+    uid: outlook!Office.MailboxEnums.ComposeType.Forward:member
+    package: outlook!
+    summary: Forward.
+    value: '"forward"'

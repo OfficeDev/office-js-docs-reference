@@ -4,9 +4,12 @@ uid: excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.CellValueConditionalFormatLoadOptions
 summary: Represents a cell value conditional format.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat): [load](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,30 +32,21 @@ properties:
     uid: excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill,
-      borders, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface" />
   - name: rule
     uid: excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#rule:member
     package: excel!
     fullName: rule
     summary: Specifies the rule object on this conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

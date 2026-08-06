@@ -3,9 +3,7 @@ name: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
 uid: excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
-summary: >-
-  An interface for updating data on the `LinkedWorkbookCollection` object, for
-  use in `linkedWorkbookCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `LinkedWorkbookCollection` object, for use in `linkedWorkbookCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

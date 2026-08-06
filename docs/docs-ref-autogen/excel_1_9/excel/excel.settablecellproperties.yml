@@ -3,13 +3,62 @@ name: Excel.SettableCellProperties
 uid: excel!Excel.SettableCellProperties:interface
 package: excel!
 fullName: Excel.SettableCellProperties
-summary: >-
+summary: |-
   Represents the input parameter of setCellProperties.
 
+  [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+remarks: |-
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-remarks: ''
+
+  #### Used by
+
+  - [Excel.Range](/javascript/api/excel/excel.range): [setCellProperties](/javascript/api/excel/excel.range#excel-excel-range-setcellproperties-member(1))
+
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+      const detailedFormatProps: Excel.SettableCellProperties = {
+          format: {
+              borders: {
+                  diagonalDown: {
+                      color: "#C00000",
+                      style: Excel.BorderLineStyle.dash,
+                      weight: Excel.BorderWeight.medium
+                  }
+              },
+              fill: {
+                  color: "#D9EAF7",
+                  pattern: Excel.FillPattern.lightDown,
+                  patternColor: "#4472C4"
+              },
+              font: {
+                  bold: true,
+                  color: "#1F1F1F",
+                  name: "Arial",
+                  size: 12
+              },
+              horizontalAlignment: Excel.HorizontalAlignment.center,
+              protection: {
+                  formulaHidden: false,
+                  locked: false
+              },
+              textOrientation: 15,
+              verticalAlignment: Excel.VerticalAlignment.center,
+              wrapText: true
+          }
+      };
+
+      const cell = sheet.getRange("C7");
+      cell.setCellProperties([[detailedFormatProps]]);
+      cell.format.rowHeight = 45;
+      await context.sync();
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,12 +68,10 @@ properties:
     uid: excel!Excel.SettableCellProperties#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -37,12 +84,10 @@ properties:
     uid: excel!Excel.SettableCellProperties#hyperlink:member
     package: excel!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Represents the `hyperlink` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -51,16 +96,38 @@ properties:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type: <xref uid="excel!Excel.RangeHyperlink:interface" />
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              const hyperlinkDetails: Excel.RangeHyperlink = {
+                  address: "https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-set-get-values",
+                  screenTip: "Learn about working with ranges.",
+                  textToDisplay: "Range documentation",
+              };
+              const hyperlinkProps: Excel.SettableCellProperties = {
+                  hyperlink: hyperlinkDetails
+              };
+
+              sheet.getRange("B7").setCellProperties([[hyperlinkProps]]);
+              await context.sync();
+          });
+          ```
   - name: style
     uid: excel!Excel.SettableCellProperties#style:member
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Represents the `style` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     remarks: ''
 
     isPreview: false
@@ -69,33 +136,28 @@ properties:
       content: 'style?: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
-
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
 
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-              // Creating the SettableCellProperties objects to use for the range.
-              // In your add-in, these should be created once, outside the function.
+              // Create the SettableCellProperties objects for the range.
+              // Create these objects once, outside the function, in your add-in.
               const topHeaderProps: Excel.SettableCellProperties = {
-                  // The style property takes a string matching the name of an Excel style.
-                  // Built-in style names are listed in the `BuiltInStyle` enum.
-                  // Note that a style will overwrite any formatting,
-                  // so do not use the format property with the style property.
-                  style: "Heading1"
+                  // Set the style property to the name of an Excel style.
+                  // The `BuiltInStyle` enum lists the built-in style names.
+                  // A style overwrites formatting, so don't use style and format in the same object.
+                  style: Excel.BuiltInStyle.heading1
               };
 
               const headerProps: Excel.SettableCellProperties = {
-                  // Any subproperties of format that are not set will not be changed when these cell properties are set.
+                  // Setting these cell properties doesn't change unspecified format subproperties.
                   format: {
                       fill: {
                           color: "Blue"
@@ -134,13 +196,14 @@ properties:
                           top: {
                               style: Excel.BorderLineStyle.continuous
                           }
-                      }
+                      },
+                      horizontalAlignment: Excel.HorizontalAlignment.center
                   }
               };
 
               const range = sheet.getRange("A1:E5");
 
-              // You can use empty JSON objects to avoid changing a cell's properties.
+              // Use empty JSON objects to leave a cell's properties unchanged.
               range.setCellProperties([
                   [topHeaderProps, {}, {}, {}, {}],
                   [{}, {}, headerProps, headerProps, headerProps],
@@ -152,5 +215,4 @@ properties:
               sheet.getUsedRange().format.autofitColumns();
               await context.sync();
           });
-
           ```

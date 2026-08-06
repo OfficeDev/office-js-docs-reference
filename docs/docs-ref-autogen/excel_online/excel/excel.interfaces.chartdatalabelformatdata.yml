@@ -3,10 +3,11 @@ name: Excel.Interfaces.ChartDataLabelFormatData
 uid: excel!Excel.Interfaces.ChartDataLabelFormatData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartDataLabelFormat.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.ChartDataLabelFormat](/javascript/api/excel/excel.chartdatalabelformat): [toJSON](/javascript/api/excel/excel.chartdatalabelformat#excel-excel-chartdatalabelformat-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: excel!
     fullName: border
     summary: Represents the border format, which includes color, linestyle, and weight.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,12 +30,8 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelFormatData#font:member
     package: excel!
     fullName: font
-    summary: >-
-      Represents the font attributes (such as font name, font size, and color)
-      for a chart data label.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the font attributes (such as font name, font size, and color) for a chart data label.
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

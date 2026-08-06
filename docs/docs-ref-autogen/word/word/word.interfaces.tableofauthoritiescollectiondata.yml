@@ -3,10 +3,11 @@ name: Word.Interfaces.TableOfAuthoritiesCollectionData
 uid: word!Word.Interfaces.TableOfAuthoritiesCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfAuthoritiesCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableOfAuthoritiesCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [toJSON](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

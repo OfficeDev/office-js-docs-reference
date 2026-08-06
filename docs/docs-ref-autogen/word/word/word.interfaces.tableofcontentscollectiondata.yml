@@ -3,10 +3,11 @@ name: Word.Interfaces.TableOfContentsCollectionData
 uid: word!Word.Interfaces.TableOfContentsCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfContentsCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableOfContentsCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [toJSON](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

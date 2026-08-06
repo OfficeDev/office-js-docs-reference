@@ -3,9 +3,7 @@ name: Visio.Interfaces.HyperlinkCollectionUpdateData
 uid: visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface
 package: visio!
 fullName: Visio.Interfaces.HyperlinkCollectionUpdateData
-summary: >-
-  An interface for updating data on the HyperlinkCollection object, for use in
-  `hyperlinkCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the HyperlinkCollection object, for use in `hyperlinkCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

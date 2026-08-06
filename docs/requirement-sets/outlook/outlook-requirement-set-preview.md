@@ -1,0 +1,52 @@
+---
+title: Outlook add-in API preview requirement set
+description: Features and APIs that are currently in preview for Outlook add-ins.
+ms.date: 07/30/2026
+ms.topic: whats-new
+ms.localizationpriority: medium
+---
+
+# Outlook add-in API preview requirement set
+
+The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
+
+Preview APIs are subject to change and aren't intended for use in a production environment. We recommend that you try them out in test and development environments only. Don't use preview APIs in a production environment or within business-critical documents.
+
+To use preview APIs:
+
+- You must use the preview version of the Office JavaScript API library from the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/beta/hosted/office.js). The [type definition file](https://appsforoffice.microsoft.com/lib/beta/hosted/office.d.ts) for TypeScript compilation and IntelliSense is found at the CDN and [DefinitelyTyped](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts). You can install these types with `npm install --save-dev @types/office-js-preview` (be sure to remove the types for `@types/office-js` if you've previously installed them).
+
+- You may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join) for access to more recent Office builds in Outlook on Windows and on Mac.
+
+- You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
+
+The preview requirement set includes all of the features of [requirement set 1.15](outlook-requirement-set-1-15.md).
+
+> [!IMPORTANT]
+> This documentation is for a **preview** [requirement set](outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
+
+## Features in preview
+
+The following features are in preview.
+
+- Added the ability to decrypt Outlook item attachments (`Office.MailboxEnums.AttachmentType.Item`) in an encryption add-in. To learn more, see [Decrypt Outlook item attachments (preview)](/office/dev/add-ins/outlook/encryption-decryption#decrypt-outlook-item-attachments-preview).
+- Added a property to the `event.completed` method of encryption add-ins to display a custom error message when decryption fails. To learn more, see [Customize error messages for the decryption operation (preview)](/office/dev/add-ins/outlook/encryption-decryption#customize-error-messages-for-the-decryption-operation-preview).
+- Added a property to the `event.completed` method of encryption add-ins to restrict printing, copying, and saving of decrypted content. To learn more, see [Manage distribution of decrypted content (preview)](/office/dev/add-ins/outlook/encryption-decryption#manage-distribution-of-decrypted-content-preview).
+- Added a **Retry** action to the decryption timeout notification in encryption add-ins so recipients can retry a failed decryption operation without switching to another message.
+- Extended support for the `errorMessageMarkdown` property of the `event.completed` method to [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) add-ins in Outlook on Mac.
+- Added a property to get or set whether an appointment is an all-day event.
+- Added events to activate an [event-based add-in](/office/dev/add-ins/develop/event-based-activation) on a message in read mode when it contains certain attachment types or custom internet headers.
+- Added a property and objects to temporarily set the body or subject displayed in read mode.
+
+## API list
+
+The following table lists the Outlook JavaScript APIs currently in preview. To view API reference documentation for all Outlook JavaScript APIs (including preview APIs and previously released APIs), see [Outlook APIs](/javascript/api/outlook?view=outlook-js-preview&preserve-view=true).
+
+[!INCLUDE [outlook-preview](../../includes/outlook-preview.md)]
+
+## See also
+
+- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
+- [Requirement sets and supported clients](outlook-api-requirement-sets.md)
+- [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
+- [Build your first Outlook add-in](/office/dev/add-ins/quickstarts/outlook-quickstart)

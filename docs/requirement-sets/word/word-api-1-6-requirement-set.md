@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.6
 description: Details about the WordApi 1.6 requirement set.
-ms.date: 11/15/2023
+ms.date: 12/16/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ WordApi 1.6 mainly added enhanced support for management of styles and tracked c
 
 The following table lists the APIs in Word JavaScript API requirement set 1.6. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.6 or earlier, see [Word APIs in requirement set 1.6 or earlier](/javascript/api/word?view=word-js-1.6&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_6.md)]
+[!INCLUDE[API table](../../includes/word-1-6.md)]
 
 ## See also
 

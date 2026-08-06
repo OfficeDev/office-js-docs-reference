@@ -4,9 +4,9 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 20;
+const CURRENT_EXCEL_RELEASE = 21;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
-const CURRENT_OUTLOOK_RELEASE = 15;
+const CURRENT_OUTLOOK_RELEASE = 16;
 const CURRENT_WORD_RELEASE = 9;
 const CURRENT_POWERPOINT_RELEASE = 10;
 
@@ -204,6 +204,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.dump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_5/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_4/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_3/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_2/snippets.yaml", yaml.dump(wordSnippets), "word");
@@ -227,7 +228,7 @@ tryCatch(async () => {
     let filePath = `../../docs/includes/outlook-preview.md`;
     fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        filePath = `../../docs/includes/outlook-1_${i}.md`;
+        filePath = `../../docs/includes/outlook-1-${i}.md`;
         fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     }
 });
@@ -270,6 +271,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiDesktop 1.5 case.
+        console.log(`\nStarting ${host}_desktop_1_5...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_5/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_5/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_5`);
         // Handle WordApiDesktop 1.4 case.
         console.log(`\nStarting ${host}_desktop_1_4...`);
         json = fsx.readFileSync(`${jsonPath}_desktop_1_4/${fileName}`).toString();

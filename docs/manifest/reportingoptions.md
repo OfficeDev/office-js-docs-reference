@@ -21,7 +21,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.14](../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md)
+- [Mailbox 1.14](../requirement-sets/outlook/outlook-requirement-set-1-14.md)
 
 ## Contained in
 
@@ -31,7 +31,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 | Attribute | Required | Description |
 |:-----|:-----:|:-----|
-| **inputType** | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. You can only use one input type in the dialog.<br><br>**Important**: The **inputType** attribute was introduced in [requirement set 1.15](../requirement-sets/outlook/requirement-set-1.15/outlook-requirement-set-1.15.md). Learn more about its [supported clients and platforms](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets).<br><br>The **inputType** attribute is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this attribute, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the **Beta Channel** option to access Office beta builds. |
+| **inputType** | No | Specifies the input type of the reporting options in the preprocessing dialog. If the `inputType` attribute isn't included, the reporting options appear as checkboxes. To use radio buttons, set the `inputType` attribute to `Radio`. You can only use one input type in the dialog.<br><br>**Important**: The **inputType** attribute was introduced in [requirement set 1.15](../requirement-sets/outlook/outlook-requirement-set-1-15.md). Learn more about its [supported clients and platforms](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets).<br><br>The **inputType** attribute is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this attribute, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the **Beta Channel** option to access Office beta builds. |
 
 ## Child elements
 

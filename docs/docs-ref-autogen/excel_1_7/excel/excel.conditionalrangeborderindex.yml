@@ -4,9 +4,13 @@ uid: excel!Excel.ConditionalRangeBorderIndex:enum
 package: excel!
 fullName: Excel.ConditionalRangeBorderIndex
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.ConditionalRangeBorder](/javascript/api/excel/excel.conditionalrangeborder): [sideIndex](/javascript/api/excel/excel.conditionalrangeborder#excel-excel-conditionalrangeborder-sideindex-member)
+  - [Excel.ConditionalRangeBorderCollection](/javascript/api/excel/excel.conditionalrangebordercollection): [getItem](/javascript/api/excel/excel.conditionalrangebordercollection#excel-excel-conditionalrangebordercollection-getitem-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,28 +18,20 @@ fields:
   - name: edgeBottom
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeBottom:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"EdgeBottom"'
   - name: edgeLeft
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeLeft:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"EdgeLeft"'
   - name: edgeRight
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeRight:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"EdgeRight"'
   - name: edgeTop
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeTop:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
     value: '"EdgeTop"'

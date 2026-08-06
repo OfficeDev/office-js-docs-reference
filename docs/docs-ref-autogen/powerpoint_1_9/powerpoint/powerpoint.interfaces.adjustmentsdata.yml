@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.AdjustmentsData
 uid: powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.AdjustmentsData
-summary: >-
-  An interface describing the data returned by calling
-  `adjustments.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `adjustments.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

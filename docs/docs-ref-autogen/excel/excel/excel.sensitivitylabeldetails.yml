@@ -1,0 +1,226 @@
+### YamlMime:TSType
+name: Excel.SensitivityLabelDetails
+uid: excel!Excel.SensitivityLabelDetails:class
+package: excel!
+fullName: Excel.SensitivityLabelDetails
+summary: Represents the properties of available sensitivity labels in Excel.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [getCurrentOrNullObject](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-getcurrentornullobject-member(1))
+  - [Excel.SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection): [getFirst](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirst-member(1)), [items](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-items-member)
+
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: children
+    uid: excel!Excel.SensitivityLabelDetails#children:member
+    package: excel!
+    fullName: children
+    summary: Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly children: SensitivityLabelDetailsCollection | null;'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetailsCollection:class" /> | null
+  - name: color
+    uid: excel!Excel.SensitivityLabelDetails#color:member
+    package: excel!
+    fullName: color
+    summary: Gets the color of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly color: string;'
+      return:
+        type: string
+  - name: context
+    uid: excel!Excel.SensitivityLabelDetails#context:member
+    package: excel!
+    fullName: context
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: id
+    uid: excel!Excel.SensitivityLabelDetails#id:member
+    package: excel!
+    fullName: id
+    summary: Gets the unique identifier (GUID) of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: isEnabled
+    uid: excel!Excel.SensitivityLabelDetails#isEnabled:member
+    package: excel!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEnabled: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: excel!Excel.SensitivityLabelDetails#name:member
+    package: excel!
+    fullName: name
+    summary: Gets the name of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: order
+    uid: excel!Excel.SensitivityLabelDetails#order:member
+    package: excel!
+    fullName: order
+    summary: Gets the priority of the sensitivity label, with 0 as lowest priority.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly order: number;'
+      return:
+        type: number
+  - name: protectionType
+    uid: excel!Excel.SensitivityLabelDetails#protectionType:member
+    package: excel!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly protectionType: Excel.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelProtectionType:enum" /> | "NoProtection" | "AdminDefined" | "UserDefined"
+  - name: siteId
+    uid: excel!Excel.SensitivityLabelDetails#siteId:member
+    package: excel!
+    fullName: siteId
+    summary: Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly siteId: string;'
+      return:
+        type: string
+  - name: tooltip
+    uid: excel!Excel.SensitivityLabelDetails#tooltip:member
+    package: excel!
+    fullName: tooltip
+    summary: Gets the description of the sensitivity label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly tooltip: string;'
+      return:
+        type: string
+methods:
+  - name: load(options)
+    uid: excel!Excel.SensitivityLabelDetails#load:member(1)
+    package: excel!
+    fullName: load(options)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.SensitivityLabelDetailsLoadOptions): Excel.SensitivityLabelDetails;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions:interface" />
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: excel!Excel.SensitivityLabelDetails#load:member(2)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SensitivityLabelDetails;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.SensitivityLabelDetails#load:member(3)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.SensitivityLabelDetails;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.SensitivityLabelDetails#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.SensitivityLabelDetails` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelDetailsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.SensitivityLabelDetailsData;'
+      return:
+        type: <xref uid="excel!Excel.Interfaces.SensitivityLabelDetailsData:interface" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

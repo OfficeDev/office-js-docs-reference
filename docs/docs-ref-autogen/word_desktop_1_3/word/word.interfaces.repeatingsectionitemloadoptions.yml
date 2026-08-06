@@ -3,13 +3,13 @@ name: Word.Interfaces.RepeatingSectionItemLoadOptions
 uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionItemLoadOptions
-summary: >-
-  Represents a single item in a
-  [Word.RepeatingSectionContentControl](xref:word!Word.RepeatingSectionContentControl:class)<!--
-  -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents a single item in a [Word.RepeatingSectionContentControl](xref:word!Word.RepeatingSectionContentControl:class)<!-- -->.
+remarks: |-
+  [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.RepeatingSectionItem](/javascript/api/word/word.repeatingsectionitem): [load](/javascript/api/word/word.repeatingsectionitem#word-word-repeatingsectionitem-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -19,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -35,12 +32,8 @@ properties:
     uid: word!Word.Interfaces.RepeatingSectionItemLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns the range of this repeating section item, excluding the start and
-      end tags.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Returns the range of this repeating section item, excluding the start and end tags.
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -4,10 +4,12 @@ uid: visio!Visio.Position:interface
 package: visio!
 fullName: Visio.Position
 summary: Represents the Position of the object in the view.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: |-
+  [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+
+  #### Used by
+
+  - [Visio.PageView](/javascript/api/visio/visio.pageview): [getPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-getposition-member(1)), [setPosition](/javascript/api/visio/visio.pageview#visio-visio-pageview-setposition-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,14 +19,8 @@ properties:
     uid: visio!Visio.Position#x:member
     package: visio!
     fullName: x
-    summary: >-
-      An integer that specifies the x-coordinate of the object, which is the
-      signed value of the distance in pixels from the viewport's center to the
-      left boundary of the page.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the left boundary of the page.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false
@@ -32,18 +28,12 @@ properties:
       content: 'x: number;'
       return:
         type: number
-  - name: 'y'
+  - name: y
     uid: visio!Visio.Position#y:member
     package: visio!
-    fullName: 'y'
-    summary: >-
-      An integer that specifies the y-coordinate of the object, which is the
-      signed value of the distance in pixels from the viewport's center to the
-      top boundary of the page.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    fullName: y
+    summary: An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the top boundary of the page.
+    remarks: '[API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)'
 
     isPreview: false
     isDeprecated: false

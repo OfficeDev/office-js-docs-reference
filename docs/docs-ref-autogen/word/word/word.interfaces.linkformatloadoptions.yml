@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.LinkFormatLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.LinkFormatLoadOptions
 summary: Represents the linking characteristics for an OLE object or picture.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.LinkFormat](/javascript/api/word/word.linkformat): [load](/javascript/api/word/word.linkformat#word-word-linkformat-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,12 +32,8 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#isAutoUpdated:member
     package: word!
     fullName: isAutoUpdated
-    summary: >-
-      Specifies if the link is updated automatically when the container file is
-      opened or when the source file is changed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies if the link is updated automatically when the container file is opened or when the source file is changed.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,12 +45,8 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#isLocked:member
     package: word!
     fullName: isLocked
-    summary: >-
-      Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object
-      is locked to prevent automatic updating.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object is locked to prevent automatic updating.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -63,14 +55,11 @@ properties:
       return:
         type: boolean
   - name: isPictureSavedWithDocument
-    uid: >-
-      word!Word.Interfaces.LinkFormatLoadOptions#isPictureSavedWithDocument:member
+    uid: word!Word.Interfaces.LinkFormatLoadOptions#isPictureSavedWithDocument:member
     package: word!
     fullName: isPictureSavedWithDocument
     summary: Specifies if the linked picture is saved with the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -82,12 +71,8 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#sourceFullName:member
     package: word!
     fullName: sourceFullName
-    summary: >-
-      Specifies the path and name of the source file for the linked OLE object,
-      picture, or field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the path and name of the source file for the linked OLE object, picture, or field.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -99,12 +84,8 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#sourceName:member
     package: word!
     fullName: sourceName
-    summary: >-
-      Gets the name of the source file for the linked OLE object, picture, or
-      field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the name of the source file for the linked OLE object, picture, or field.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -116,12 +97,8 @@ properties:
     uid: word!Word.Interfaces.LinkFormatLoadOptions#sourcePath:member
     package: word!
     fullName: sourcePath
-    summary: >-
-      Gets the path of the source file for the linked OLE object, picture, or
-      field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the path of the source file for the linked OLE object, picture, or field.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -134,9 +111,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the link type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

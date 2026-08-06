@@ -1,0 +1,119 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SensitivityLabelDetailsData
+uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SensitivityLabelDetailsData
+summary: An interface describing the data returned by calling `sensitivityLabelDetails.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.SensitivityLabelDetails](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails): [toJSON](/javascript/api/powerpoint/powerpoint.sensitivitylabeldetails#powerpoint-powerpoint-sensitivitylabeldetails-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#color:member
+    package: powerpoint!
+    fullName: color
+    summary: Gets the color of the sensitivity label.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: id
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#id:member
+    package: powerpoint!
+    fullName: id
+    summary: Gets the unique ID of the sensitivity label.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isEnabled
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#isEnabled:member
+    package: powerpoint!
+    fullName: isEnabled
+    summary: Gets a value indicating whether the label is enabled.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#name:member
+    package: powerpoint!
+    fullName: name
+    summary: Gets the name of the sensitivity label.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: order
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#order:member
+    package: powerpoint!
+    fullName: order
+    summary: Gets the priority of the sensitivity label, with 0 as lowest priority.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'order?: number;'
+      return:
+        type: number
+  - name: protectionType
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#protectionType:member
+    package: powerpoint!
+    fullName: protectionType
+    summary: Gets a value indicating the protection type provided by this label.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'protectionType?: PowerPoint.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelProtectionType:enum" /> | "NoProtection" | "AdminDefined" | "UserDefined"
+  - name: siteId
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#siteId:member
+    package: powerpoint!
+    fullName: siteId
+    summary: Gets the unique ID of the tenant which the sensitivity label is belonged.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'siteId?: string;'
+      return:
+        type: string
+  - name: tooltip
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#tooltip:member
+    package: powerpoint!
+    fullName: tooltip
+    summary: Gets the description of the sensitivity label.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tooltip?: string;'
+      return:
+        type: string

@@ -3,9 +3,7 @@ name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
 uid: excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlPartScopedCollection` object,
-  for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member
+    uid: excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member
     package: excel!
     fullName: items
     summary: ''

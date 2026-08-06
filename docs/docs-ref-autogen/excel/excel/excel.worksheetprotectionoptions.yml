@@ -4,9 +4,12 @@ uid: excel!Excel.WorksheetProtectionOptions:interface
 package: excel!
 fullName: Excel.WorksheetProtectionOptions
 summary: Represents the options in sheet protection.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.WorksheetProtection](/javascript/api/excel/excel.worksheetprotection): [options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member), [protect](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1)), [savedOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-savedoptions-member), [updateOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-updateoptions-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +19,8 @@ properties:
     uid: excel!Excel.WorksheetProtectionOptions#allowAutoFilter:member
     package: excel!
     fullName: allowAutoFilter
-    summary: >-
-      Represents the worksheet protection option allowing use of the AutoFilter
-      feature.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the worksheet protection option allowing use of the AutoFilter feature.
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +33,7 @@ properties:
     package: excel!
     fullName: allowDeleteColumns
     summary: Represents the worksheet protection option allowing deleting of columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +46,7 @@ properties:
     package: excel!
     fullName: allowDeleteRows
     summary: Represents the worksheet protection option allowing deleting of rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +59,7 @@ properties:
     package: excel!
     fullName: allowEditObjects
     summary: Represents the worksheet protection option allowing editing of objects.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +72,7 @@ properties:
     package: excel!
     fullName: allowEditScenarios
     summary: Represents the worksheet protection option allowing editing of scenarios.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +85,7 @@ properties:
     package: excel!
     fullName: allowFormatCells
     summary: Represents the worksheet protection option allowing formatting of cells.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -109,9 +98,7 @@ properties:
     package: excel!
     fullName: allowFormatColumns
     summary: Represents the worksheet protection option allowing formatting of columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +111,7 @@ properties:
     package: excel!
     fullName: allowFormatRows
     summary: Represents the worksheet protection option allowing formatting of rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -139,9 +124,7 @@ properties:
     package: excel!
     fullName: allowInsertColumns
     summary: Represents the worksheet protection option allowing inserting of columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -153,12 +136,8 @@ properties:
     uid: excel!Excel.WorksheetProtectionOptions#allowInsertHyperlinks:member
     package: excel!
     fullName: allowInsertHyperlinks
-    summary: >-
-      Represents the worksheet protection option allowing inserting of
-      hyperlinks.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the worksheet protection option allowing inserting of hyperlinks.
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -171,9 +150,7 @@ properties:
     package: excel!
     fullName: allowInsertRows
     summary: Represents the worksheet protection option allowing inserting of rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -185,12 +162,8 @@ properties:
     uid: excel!Excel.WorksheetProtectionOptions#allowPivotTables:member
     package: excel!
     fullName: allowPivotTables
-    summary: >-
-      Represents the worksheet protection option allowing use of the PivotTable
-      feature.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the worksheet protection option allowing use of the PivotTable feature.
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -202,12 +175,8 @@ properties:
     uid: excel!Excel.WorksheetProtectionOptions#allowSort:member
     package: excel!
     fullName: allowSort
-    summary: >-
-      Represents the worksheet protection option allowing use of the sort
-      feature.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Represents the worksheet protection option allowing use of the sort feature.
+    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -220,17 +189,11 @@ properties:
     package: excel!
     fullName: selectionMode
     summary: Represents the worksheet protection option of selection mode.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        selectionMode?: Excel.ProtectionSelectionMode | "Normal" | "Unlocked" |
-        "None";
+      content: 'selectionMode?: Excel.ProtectionSelectionMode | "Normal" | "Unlocked" | "None";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ProtectionSelectionMode:enum" /> | "Normal" |
-          "Unlocked" | "None"
+        type: <xref uid="excel!Excel.ProtectionSelectionMode:enum" /> | "Normal" | "Unlocked" | "None"

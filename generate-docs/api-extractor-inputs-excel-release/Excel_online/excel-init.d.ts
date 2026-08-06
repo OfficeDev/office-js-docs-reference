@@ -9067,7 +9067,7 @@ export declare namespace Excel {
     /**
      * Provides information about the selection that raised the selection changed event.
                 
-                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                 * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -9546,6 +9546,9 @@ export declare namespace Excel {
     export interface WorksheetFormulaChangedEventArgs {
         /**
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
+                    
+                     If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails`
+                     returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -10563,7 +10566,7 @@ export declare namespace Excel {
         /**
          * Suspends screen updating until the next `context.sync()` is called.
                     
-                     **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+                     * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -11720,6 +11723,9 @@ export declare namespace Excel {
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
         /**
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
+
+                     The event is only triggered when the cell already contains a formula.
+                     The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12707,6 +12713,7 @@ export declare namespace Excel {
         /**
          * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                    Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -15306,7 +15313,7 @@ export declare namespace Excel {
         /**
          * Occurs when the selected content in the binding is changed.
                     
-                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                     * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -31677,6 +31684,49 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
     /**
+     * Provides information about the `LinkedEntityCellValue` that was requested given a specified `LinkedEntityId`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.21]
+     */
+    export interface LinkedEntityCellValueLoadedEventArgs {
+        /**
+         * Any error encountered during the request to load the `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        error?: string;
+        /**
+         * Gets the `LinkedEntityId` of the requested `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        id: LinkedEntityId;
+        /**
+         * Gets the `LinkedEntityCellValue` of the requested `LinkedEntityId`. If the load operation failed, this property is `null`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        linkedEntityCellValue?: LinkedEntityCellValue;
+        /**
+         * Gets the source of the event. See `Excel.EventSource` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         * Gets the type of the event. See `Excel.EventType` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        type: "LinkedEntityDataDomainLinkedEntityCellValueLoaded";
+    }
+    /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
                 A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
                 A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
@@ -31959,6 +32009,16 @@ export declare namespace Excel {
          */
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
+         * Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`.
+                    If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         *
+         * @param id - A specific `LinkedEntityId`
+         */
+        loadLinkedEntityCellValue(id: LinkedEntityId): void;
+        /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
                     The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
@@ -31984,6 +32044,17 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedEntityDataDomainCollection;
+        /**
+         * Occurs when the request to load a `LinkedEntityCellValue` is completed.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         * 
+         * This event isn't supported in Excel on the web.
+         *
+         * @eventproperty
+         */
+        readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;
         /**
          * Occurs when a new linked entity data domain is added to the workbook.
          *
@@ -41238,7 +41309,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -44060,7 +44131,7 @@ export declare namespace Excel {
             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
         }

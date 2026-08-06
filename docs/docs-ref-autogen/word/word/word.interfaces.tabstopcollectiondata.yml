@@ -3,10 +3,11 @@ name: Word.Interfaces.TabStopCollectionData
 uid: word!Word.Interfaces.TabStopCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TabStopCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tabStopCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tabStopCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.TabStopCollection](/javascript/api/word/word.tabstopcollection): [toJSON](/javascript/api/word/word.tabstopcollection#word-word-tabstopcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

@@ -1,7 +1,7 @@
 ---
 title: Nested app auth requirement sets
 description: Nested app auth requirement set information for Office Add-ins.
-ms.date: 11/17/2025
+ms.date: 03/31/2026
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -23,7 +23,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 ## Supported accounts and hosts
 
-NAA supports both Microsoft Accounts (MSA), such as peronal outlook.com accounts, and Microsoft Entra ID (work/school) identities. It doesn't support Azure Active Directory B2C for business-to-consumer identity management scenarios. The following table explains the current support by platform. Platforms listed as generally available (GA) are ready for production usage in your add-in.
+NAA supports both Microsoft Accounts (MSA), such as personal outlook.com accounts, and Microsoft Entra ID (work/school) identities. It doesn't support Azure Active Directory B2C for business-to-consumer identity management scenarios. The following table explains the current support by platform. Platforms listed as generally available (GA) are ready for production usage in your add-in.
 
 | Application | Web        | Windows                                              | Mac        | iOS/iPad           | Android        |
 |-------------|------------|------------------------------------------------------|------------|--------------------|----------------|

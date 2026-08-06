@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.GraphicLoadOptions
 summary: Represents a graphic object in PowerPoint.
-remarks: >-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.Graphic](/javascript/api/powerpoint/powerpoint.graphic): [load](/javascript/api/powerpoint/powerpoint.graphic#powerpoint-powerpoint-graphic-load-member(1))
 
 isPreview: true
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.GraphicLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: true
@@ -34,16 +33,11 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the graphic.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'shape?: PowerPoint.Interfaces.ShapeLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />

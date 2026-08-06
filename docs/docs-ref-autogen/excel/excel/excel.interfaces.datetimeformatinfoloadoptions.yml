@@ -3,12 +3,13 @@ name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
 uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.DatetimeFormatInfoLoadOptions
-summary: >-
-  Defines the culturally appropriate format of displaying numbers. This is based
-  on current system culture settings.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+remarks: |-
+  [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo): [load](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +19,7 @@ properties:
     uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,13 +32,8 @@ properties:
     uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member
     package: excel!
     fullName: dateSeparator
-    summary: >-
-      Gets the string used as the date separator. This is based on current
-      system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the string used as the date separator. This is based on current system settings.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,17 +42,11 @@ properties:
       return:
         type: boolean
   - name: longDatePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member
+    uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member
     package: excel!
     fullName: longDatePattern
-    summary: >-
-      Gets the format string for a long date value. This is based on current
-      system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the format string for a long date value. This is based on current system settings.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -68,17 +55,11 @@ properties:
       return:
         type: boolean
   - name: longTimePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member
+    uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member
     package: excel!
     fullName: longTimePattern
-    summary: >-
-      Gets the format string for a long time value. This is based on current
-      system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the format string for a long time value. This is based on current system settings.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -87,17 +68,11 @@ properties:
       return:
         type: boolean
   - name: shortDatePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member
+    uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member
     package: excel!
     fullName: shortDatePattern
-    summary: >-
-      Gets the format string for a short date value. This is based on current
-      system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the format string for a short date value. This is based on current system settings.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -106,17 +81,11 @@ properties:
       return:
         type: boolean
   - name: shortDateTimePattern
-    uid: >-
-      excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDateTimePattern:member
+    uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDateTimePattern:member
     package: excel!
     fullName: shortDateTimePattern
-    summary: >-
-      Gets the format string for a short date and time value. This is based on
-      current system settings.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the format string for a short date and time value. This is based on current system settings.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -128,13 +97,8 @@ properties:
     uid: excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member
     package: excel!
     fullName: timeSeparator
-    summary: >-
-      Gets the string used as the time separator. This is based on current
-      system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Gets the string used as the time separator. This is based on current system settings.
+    remarks: '[API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

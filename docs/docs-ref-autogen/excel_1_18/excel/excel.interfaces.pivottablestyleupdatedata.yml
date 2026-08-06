@@ -3,10 +3,11 @@ name: Excel.Interfaces.PivotTableStyleUpdateData
 uid: excel!Excel.Interfaces.PivotTableStyleUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotTableStyleUpdateData
-summary: >-
-  An interface for updating data on the `PivotTableStyle` object, for use in
-  `pivotTableStyle.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `PivotTableStyle` object, for use in `pivotTableStyle.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.PivotTableStyle](/javascript/api/excel/excel.pivottablestyle): [set](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the PivotTable style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

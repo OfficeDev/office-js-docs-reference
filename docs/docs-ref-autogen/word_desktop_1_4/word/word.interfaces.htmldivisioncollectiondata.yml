@@ -3,10 +3,11 @@ name: Word.Interfaces.HtmlDivisionCollectionData
 uid: word!Word.Interfaces.HtmlDivisionCollectionData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `htmlDivisionCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `htmlDivisionCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.HtmlDivisionCollection](/javascript/api/word/word.htmldivisioncollection): [toJSON](/javascript/api/word/word.htmldivisioncollection#word-word-htmldivisioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

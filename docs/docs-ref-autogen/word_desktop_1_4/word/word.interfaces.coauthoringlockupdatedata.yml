@@ -3,10 +3,11 @@ name: Word.Interfaces.CoauthoringLockUpdateData
 uid: word!Word.Interfaces.CoauthoringLockUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockUpdateData
-summary: >-
-  An interface for updating data on the `CoauthoringLock` object, for use in
-  `coauthoringLock.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `CoauthoringLock` object, for use in `coauthoringLock.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CoauthoringLock](/javascript/api/word/word.coauthoringlock): [set](/javascript/api/word/word.coauthoringlock#word-word-coauthoringlock-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Gets a `Range` object that represents the portion of the document that's
-      contained in the `CoauthoringLock` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

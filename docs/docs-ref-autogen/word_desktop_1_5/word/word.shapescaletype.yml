@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.ShapeScaleType
+uid: word!Word.ShapeScaleType:enum
+package: word!
+fullName: Word.ShapeScaleType
+summary: Specifies the scale size type of a shape.
+remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: currentSize
+    uid: word!Word.ShapeScaleType.currentSize:member
+    package: word!
+    summary: |-
+      Scale from current size of the shape.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"CurrentSize"'
+  - name: originalSize
+    uid: word!Word.ShapeScaleType.originalSize:member
+    package: word!
+    summary: |-
+      Scale from original size of the shape. It only works for pictures.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"OriginalSize"'

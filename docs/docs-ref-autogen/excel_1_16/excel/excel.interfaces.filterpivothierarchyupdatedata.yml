@@ -3,24 +3,22 @@ name: Excel.Interfaces.FilterPivotHierarchyUpdateData
 uid: excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
-summary: >-
-  An interface for updating data on the `FilterPivotHierarchy` object, for use
-  in `filterPivotHierarchy.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `FilterPivotHierarchy` object, for use in `filterPivotHierarchy.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.FilterPivotHierarchy](/javascript/api/excel/excel.filterpivothierarchy): [set](/javascript/api/excel/excel.filterpivothierarchy#excel-excel-filterpivothierarchy-set-member(1))
 
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: enableMultipleFilterItems
-    uid: >-
-      excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member
+    uid: excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member
     package: excel!
     fullName: enableMultipleFilterItems
     summary: Determines whether to allow multiple filter items.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the FilterPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +44,7 @@ properties:
     package: excel!
     fullName: position
     summary: Position of the FilterPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

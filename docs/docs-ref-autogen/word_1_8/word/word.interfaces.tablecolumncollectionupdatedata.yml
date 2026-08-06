@@ -3,9 +3,7 @@ name: Word.Interfaces.TableColumnCollectionUpdateData
 uid: word!Word.Interfaces.TableColumnCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableColumnCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableColumnCollection` object, for use
-  in `tableColumnCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: Word.Interfaces.SensitivityLabelsCatalogData
+uid: word!Word.Interfaces.SensitivityLabelsCatalogData:interface
+package: word!
+fullName: Word.Interfaces.SensitivityLabelsCatalogData
+summary: An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [toJSON](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-tojson-member(1))
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: getLabelingCapability
+    uid: word!Word.Interfaces.SensitivityLabelsCatalogData#getLabelingCapability:member
+    package: word!
+    fullName: getLabelingCapability
+    summary: Gets the labeling capability status of the sensitivity label catalog in Word.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapability?: Word.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      return:
+        type: <xref uid="word!Word.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"

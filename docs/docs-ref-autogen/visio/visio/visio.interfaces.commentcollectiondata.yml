@@ -3,10 +3,11 @@ name: Visio.Interfaces.CommentCollectionData
 uid: visio!Visio.Interfaces.CommentCollectionData:interface
 package: visio!
 fullName: Visio.Interfaces.CommentCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `commentCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `commentCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.CommentCollection](/javascript/api/visio/visio.commentcollection): [toJSON](/javascript/api/visio/visio.commentcollection#visio-visio-commentcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

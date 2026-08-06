@@ -3,9 +3,7 @@ name: Word.Interfaces.WindowCollectionData
 uid: word!Word.Interfaces.WindowCollectionData:interface
 package: word!
 fullName: Word.Interfaces.WindowCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `windowCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `windowCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

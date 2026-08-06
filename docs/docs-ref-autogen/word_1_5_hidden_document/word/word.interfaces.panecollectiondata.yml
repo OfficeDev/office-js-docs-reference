@@ -3,9 +3,7 @@ name: Word.Interfaces.PaneCollectionData
 uid: word!Word.Interfaces.PaneCollectionData:interface
 package: word!
 fullName: Word.Interfaces.PaneCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `paneCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `paneCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

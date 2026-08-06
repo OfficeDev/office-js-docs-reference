@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.2
 description: Details about the WordApi 1.2 requirement set.
-ms.date: 11/09/2020
+ms.date: 10/14/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ WordApi 1.2 added support for inline pictures.
 
 The following table lists the APIs in Word JavaScript API requirement set 1.2. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.2 or earlier, see [Word APIs in requirement set 1.2 or earlier](/javascript/api/word?view=word-js-1.2&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_2.md)]
+[!INCLUDE[API table](../../includes/word-1-2.md)]
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.2
 description: Details about the ExcelApi 1.2 requirement set.
-ms.date: 11/09/2020
+ms.date: 04/21/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ ExcelApi 1.2 added support for table filtering and access to built-in Excel func
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.2. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.2 or earlier, see [Excel APIs in requirement set 1.2 or earlier](/javascript/api/excel?view=excel-js-1.2&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_2.md)]
+[!INCLUDE[API table](../../includes/excel-1-2.md)]
 
 ## See also
 

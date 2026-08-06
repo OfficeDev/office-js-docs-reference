@@ -3,10 +3,11 @@ name: Word.Interfaces.TableOfAuthoritiesCategoryCollectionData
 uid: word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCategoryCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfAuthoritiesCategoryCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableOfAuthoritiesCategoryCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.TableOfAuthoritiesCategoryCollection](/javascript/api/word/word.tableofauthoritiescategorycollection): [toJSON](/javascript/api/word/word.tableofauthoritiescategorycollection#word-word-tableofauthoritiescategorycollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -24,7 +25,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.TableOfAuthoritiesCategoryData[];'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface" />[]

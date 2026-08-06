@@ -1,0 +1,124 @@
+### YamlMime:TSType
+name: Excel.CellPropertiesLoadOptions
+uid: excel!Excel.CellPropertiesLoadOptions:interface
+package: excel!
+fullName: Excel.CellPropertiesLoadOptions
+summary: |-
+  Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
+
+  \[Api set: ExcelApi 1.9\]
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: excel!Excel.CellPropertiesLoadOptions#address:member
+    package: excel!
+    fullName: address
+    summary: |-
+      Specifies whether to load on the `address` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type: boolean
+  - name: addressLocal
+    uid: excel!Excel.CellPropertiesLoadOptions#addressLocal:member
+    package: excel!
+    fullName: addressLocal
+    summary: |-
+      Specifies whether to load on the `addressLocal` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addressLocal?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: excel!Excel.CellPropertiesLoadOptions#format:member
+    package: excel!
+    fullName: format
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.CellPropertiesFormatLoadOptions;'
+      return:
+        type: <xref uid="excel!Excel.CellPropertiesFormatLoadOptions:interface" />
+  - name: hidden
+    uid: excel!Excel.CellPropertiesLoadOptions#hidden:member
+    package: excel!
+    fullName: hidden
+    summary: |-
+      Specifies whether to load on the `hidden` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
+  - name: hyperlink
+    uid: excel!Excel.CellPropertiesLoadOptions#hyperlink:member
+    package: excel!
+    fullName: hyperlink
+    summary: |-
+      Specifies whether to load on the `hyperlink` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: excel!Excel.CellPropertiesLoadOptions#style:member
+    package: excel!
+    fullName: style
+    summary: |-
+      Specifies whether to load on the `style` property.
+
+      \[Api set: ExcelApi 1.9\]
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: textRuns
+    uid: excel!Excel.CellPropertiesLoadOptions#textRuns:member
+    package: excel!
+    fullName: textRuns
+    summary: Specifies whether to load on the `textRuns` property.
+    remarks: '\[Api set: ExcelApi 1.18\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRuns?: boolean;'
+      return:
+        type: boolean

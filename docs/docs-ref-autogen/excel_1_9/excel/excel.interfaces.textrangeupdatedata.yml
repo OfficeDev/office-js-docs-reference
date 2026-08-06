@@ -3,10 +3,11 @@ name: Excel.Interfaces.TextRangeUpdateData
 uid: excel!Excel.Interfaces.TextRangeUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.TextRangeUpdateData
-summary: >-
-  An interface for updating data on the `TextRange` object, for use in
-  `textRange.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `TextRange` object, for use in `textRange.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.TextRange](/javascript/api/excel/excel.textrange): [set](/javascript/api/excel/excel.textrange#excel-excel-textrange-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,12 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.TextRangeUpdateData#font:member
     package: excel!
     fullName: font
-    summary: >-
-      Returns a `ShapeFont` object that represents the font attributes for the
-      text range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: Returns a `ShapeFont` object that represents the font attributes for the text range.
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +31,7 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

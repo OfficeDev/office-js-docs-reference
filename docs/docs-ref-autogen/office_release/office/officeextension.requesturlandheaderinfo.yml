@@ -4,7 +4,10 @@ uid: office!OfficeExtension.RequestUrlAndHeaderInfo:interface
 package: office!
 fullName: OfficeExtension.RequestUrlAndHeaderInfo
 summary: Request URL and headers
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [OfficeExtension.RunOptions](/javascript/api/office/officeextension.runoptions): [session](/javascript/api/office/officeextension.runoptions#office-officeextension-runoptions-session-member)
 
 isPreview: false
 isDeprecated: false

@@ -3,10 +3,11 @@ name: Word.Interfaces.BookmarkUpdateData
 uid: word!Word.Interfaces.BookmarkUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkUpdateData
-summary: >-
-  An interface for updating data on the `Bookmark` object, for use in
-  `bookmark.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Bookmark` object, for use in `bookmark.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Bookmark](/javascript/api/word/word.bookmark): [set](/javascript/api/word/word.bookmark#word-word-bookmark-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,12 +30,8 @@ properties:
     uid: word!Word.Interfaces.BookmarkUpdateData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the `Bookmark` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +44,7 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

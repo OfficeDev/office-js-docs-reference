@@ -3,9 +3,7 @@ name: Word.Interfaces.ConflictData
 uid: word!Word.Interfaces.ConflictData:interface
 package: word!
 fullName: Word.Interfaces.ConflictData
-summary: >-
-  An interface describing the data returned by calling `conflict.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `conflict.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -3,10 +3,11 @@ name: Excel.Interfaces.ChartAxesUpdateData
 uid: excel!Excel.Interfaces.ChartAxesUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartAxesUpdateData
-summary: >-
-  An interface for updating data on the `ChartAxes` object, for use in
-  `chartAxes.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `ChartAxes` object, for use in `chartAxes.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.ChartAxes](/javascript/api/excel/excel.chartaxes): [set](/javascript/api/excel/excel.chartaxes#excel-excel-chartaxes-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: excel!
     fullName: categoryAxis
     summary: Represents the category axis in a chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +31,7 @@ properties:
     package: excel!
     fullName: seriesAxis
     summary: Represents the series axis of a 3-D chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +44,7 @@ properties:
     package: excel!
     fullName: valueAxis
     summary: Represents the value axis in an axis.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

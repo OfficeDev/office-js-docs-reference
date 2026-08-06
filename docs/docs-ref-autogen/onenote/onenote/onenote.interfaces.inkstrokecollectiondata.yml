@@ -3,10 +3,11 @@ name: OneNote.Interfaces.InkStrokeCollectionData
 uid: onenote!OneNote.Interfaces.InkStrokeCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkStrokeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `inkStrokeCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `inkStrokeCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.InkStrokeCollection](/javascript/api/onenote/onenote.inkstrokecollection): [toJSON](/javascript/api/onenote/onenote.inkstrokecollection#onenote-onenote-inkstrokecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

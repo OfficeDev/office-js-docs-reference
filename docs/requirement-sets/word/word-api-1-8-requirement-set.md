@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.8
 description: Details about the WordApi 1.8 requirement set.
-ms.date: 01/31/2025
+ms.date: 10/14/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -17,7 +17,7 @@ WordApi 1.8 mainly added further support for writing assistance.
 
 The following table lists the APIs in Word JavaScript API requirement set 1.8. To view API reference documentation for all APIs supported by Word JavaScript API requirement set 1.8 or earlier, see [Word APIs in requirement set 1.8 or earlier](/javascript/api/word?view=word-js-1.8&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_8.md)]
+[!INCLUDE[API table](../../includes/word-1-8.md)]
 
 ## See also
 

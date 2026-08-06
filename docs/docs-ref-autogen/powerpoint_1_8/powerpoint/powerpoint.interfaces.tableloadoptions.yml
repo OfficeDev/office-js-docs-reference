@@ -4,10 +4,12 @@ uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableLoadOptions
 summary: Represents a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.Table](/javascript/api/powerpoint/powerpoint.table): [load](/javascript/api/powerpoint/powerpoint.table#powerpoint-powerpoint-table-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +19,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -34,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +46,7 @@ properties:
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +59,7 @@ properties:
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,12 @@ uid: word!Word.Interfaces.BorderLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BorderLoadOptions
 summary: Represents the `Border` object for text, a paragraph, or a table.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Border](/javascript/api/word/word.border): [load](/javascript/api/word/word.border#word-word-border-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,10 +19,7 @@ properties:
     uid: word!Word.Interfaces.BorderLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -32,12 +32,8 @@ properties:
     uid: word!Word.Interfaces.BorderLoadOptions#color:member
     package: word!
     fullName: color
-    summary: >-
-      Specifies the color for the border. Color is specified in ‘\#RRGGBB’
-      format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: location
     summary: Gets the location of the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the border type for the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +72,7 @@ properties:
     package: word!
     fullName: visible
     summary: Specifies whether the border is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +85,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width for the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

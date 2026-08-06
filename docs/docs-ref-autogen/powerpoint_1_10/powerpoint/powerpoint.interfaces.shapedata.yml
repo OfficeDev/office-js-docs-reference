@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.ShapeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeData
 summary: An interface describing the data returned by calling `shape.toJSON()`<!-- -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.Shape](/javascript/api/powerpoint/powerpoint.shape): [toJSON](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,18 +17,11 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#altTextDescription:member
     package: powerpoint!
     fullName: altTextDescription
-    summary: >-
+    summary: |-
       The alt text description of the Shape.
 
-
-      Alt text provides alternative, text-based representations of the
-      information contained in the Shape. This information is useful for people
-      with vision or cognitive impairments who may not be able to see or
-      understand the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      Alt text provides alternative, text-based representations of the information contained in the Shape. This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -37,20 +33,11 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#altTextTitle:member
     package: powerpoint!
     fullName: altTextTitle
-    summary: >-
+    summary: |-
       The alt text title of the Shape.
 
-
-      Alt text provides alternative, text-based representations of the
-      information contained in the Shape. This information is useful for people
-      with vision or cognitive impairments who may not be able to see or
-      understand the shape. A title can be read to a person with a disability
-      and is used to determine whether they wish to hear the description of the
-      content.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      Alt text provides alternative, text-based representations of the information contained in the Shape. This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape. A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -62,13 +49,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#creationId:member
     package: powerpoint!
     fullName: creationId
-    summary: >-
-      Gets the creation ID of the shape. Returns `null` if the shape has no
-      creation ID.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -80,13 +62,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#height:member
     package: powerpoint!
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +76,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -114,17 +88,11 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#isDecorative:member
     package: powerpoint!
     fullName: isDecorative
-    summary: >-
+    summary: |-
       Represents whether the shape is decorative or not.
 
-
-      Decorative objects add visual interest but aren't informative (e.g.
-      stylistic borders). People using screen readers will hear these are
-      decorative so they know they aren't missing any important information.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      Decorative objects add visual interest but aren't informative (e.g. stylistic borders). People using screen readers will hear these are decorative so they know they aren't missing any important information.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -136,13 +104,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#left:member
     package: powerpoint!
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the shape to the left side
-      of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: The distance, in points, from the left side of the shape to the left side of the slide.
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -162,10 +125,7 @@ properties:
       - A level of 1 means the shape is part of a top-level group.
 
       - A level greater than 1 indicates the shape is a nested group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -178,10 +138,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -193,14 +150,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#rotation:member
     package: powerpoint!
     fullName: rotation
-    summary: >-
-      Specifies the rotation, in degrees, of the shape around the z-axis. A
-      positive value indicates clockwise rotation, and a negative value
-      indicates counterclockwise rotation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the rotation, in degrees, of the shape around the z-axis. A positive value indicates clockwise rotation, and a negative value indicates counterclockwise rotation.
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -212,13 +163,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#top:member
     package: powerpoint!
     fullName: top
-    summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of
-      the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: The distance, in points, from the top edge of the shape to the top edge of the slide.
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -230,38 +176,21 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#type:member
     package: powerpoint!
     fullName: type
-    summary: >-
-      Returns the type of this shape. See
-      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
-      details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Returns the type of this shape. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details.
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape"
-        | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" |
-        "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole"
-        | "Placeholder" | "SmartArt" | "TextBox";
+      content: 'type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox";'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" |
-          "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" |
-          "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" |
-          "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox"
+        type: <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox"
   - name: visible
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#visible:member
     package: powerpoint!
     fullName: visible
     summary: Specifies if the shape is visible.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -273,13 +202,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#width:member
     package: powerpoint!
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+    remarks: '[API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -291,15 +215,8 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeData#zOrderPosition:member
     package: powerpoint!
     fullName: zOrderPosition
-    summary: >-
-      Returns the z-order position of the shape, with 0 representing the bottom
-      of the order stack. Every shape on a slide has a unique z-order, but each
-      slide also has a unique z-order stack, so two shapes on separate slides
-      could have the same z-order number.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: Returns the z-order position of the shape, with 0 representing the bottom of the order stack. Every shape on a slide has a unique z-order, but each slide also has a unique z-order stack, so two shapes on separate slides could have the same z-order number.
+    remarks: '[API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

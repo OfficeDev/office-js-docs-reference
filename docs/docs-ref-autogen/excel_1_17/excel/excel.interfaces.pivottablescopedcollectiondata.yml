@@ -3,10 +3,11 @@ name: Excel.Interfaces.PivotTableScopedCollectionData
 uid: excel!Excel.Interfaces.PivotTableScopedCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotTableScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pivotTableScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pivotTableScopedCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection): [toJSON](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

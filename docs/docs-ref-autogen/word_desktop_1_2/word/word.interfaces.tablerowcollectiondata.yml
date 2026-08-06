@@ -3,10 +3,11 @@ name: Word.Interfaces.TableRowCollectionData
 uid: word!Word.Interfaces.TableRowCollectionData:interface
 package: word!
 fullName: Word.Interfaces.TableRowCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableRowCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tableRowCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [toJSON](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

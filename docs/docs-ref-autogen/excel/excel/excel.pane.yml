@@ -4,9 +4,13 @@ uid: excel!Excel.Pane:class
 package: excel!
 fullName: Excel.Pane
 summary: Represents a pane, such as a frozen or split pane, in an Excel window.
-remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: |-
+  [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.PaneCollection](/javascript/api/excel/excel.panecollection): [getItemAt](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.panecollection#excel-excel-panecollection-items-member)
+  - [Excel.Window](/javascript/api/excel/excel.window): [activePane](/javascript/api/excel/excel.window#excel-excel-window-activepane-member)
 
 isPreview: false
 isDeprecated: false
@@ -16,9 +20,7 @@ properties:
     uid: excel!Excel.Pane#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
 
     isPreview: false
@@ -32,9 +34,7 @@ properties:
     package: excel!
     fullName: index
     summary: Returns index of the pane.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +47,7 @@ methods:
     uid: excel!Excel.Pane#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -67,9 +65,7 @@ methods:
     uid: excel!Excel.Pane#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -78,9 +74,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Pane;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Pane:class" />
@@ -89,9 +83,7 @@ methods:
     uid: excel!Excel.Pane#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
 
     isPreview: false
@@ -104,11 +96,7 @@ methods:
                 }): Excel.Pane;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -121,14 +109,7 @@ methods:
     uid: excel!Excel.Pane#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.Pane` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.PaneData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Pane` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PaneData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
 
     isPreview: false

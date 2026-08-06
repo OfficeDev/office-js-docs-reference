@@ -3,9 +3,7 @@ name: Word.Interfaces.HtmlDivisionCollectionUpdateData
 uid: word!Word.Interfaces.HtmlDivisionCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionCollectionUpdateData
-summary: >-
-  An interface for updating data on the `HtmlDivisionCollection` object, for use
-  in `htmlDivisionCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `HtmlDivisionCollection` object, for use in `htmlDivisionCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

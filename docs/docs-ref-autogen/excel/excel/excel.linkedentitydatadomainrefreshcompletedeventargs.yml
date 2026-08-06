@@ -3,15 +3,36 @@ name: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs
 uid: excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface
 package: excel!
 fullName: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs
-summary: >-
-  Provides information about the linked entity data domain whose
-  `LinkedEntityCellValue` objects were refreshed.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Provides information about the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
+remarks: |-
+  [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
   This interface isn't supported in Excel on the web.
+
+  #### Used by
+
+  - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [onRefreshCompleted](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-onrefreshcompleted-member)
+
+  #### Examples
+
+  ```TypeScript
+  // Registers an event handler for the onRefreshCompleted event.
+  await Excel.run(async (context) => {
+      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      dataDomains.onRefreshCompleted.add(onLinkedEntityDomainRefreshed);
+
+      await context.sync();
+  });
+
+  async function onLinkedEntityDomainRefreshed(eventArgs: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs): Promise<void> {
+      console.log(`Linked entity domain refreshed: ${eventArgs.id}`);
+      console.log(`Event type: ${eventArgs.type}`);
+      console.log(`Event source: ${eventArgs.source}`);
+      console.log(`Service ID: ${eventArgs.serviceId}`);
+      console.log(`Refresh status: ${eventArgs.refreshed}`);
+      console.log(`Refresh errors: ${eventArgs.errors}`);
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,14 +42,9 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#errors:member
     package: excel!
     fullName: errors
-    summary: >-
-      Gets any errors encountered during the request to refresh
-      `LinkedEntityCellValue` objects of the linked entity data domain.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets any errors encountered during the request to refresh `LinkedEntityCellValue` objects of the linked entity data domain.
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 
@@ -42,16 +58,9 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#id:member
     package: excel!
     fullName: id
-    summary: >-
-      Gets the ID of the linked entity data domain whose `LinkedEntityCellValue`
-      objects were refreshed. This ID is defined by Office Add-ins. This ID is
-      not applicable to linked entity data domains defined by service data
-      providers, such as Bing or Power BI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed. This ID is defined by Office Add-ins. This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 
@@ -62,19 +71,12 @@ properties:
       return:
         type: string
   - name: refreshed
-    uid: >-
-      excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#refreshed:member
+    uid: excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#refreshed:member
     package: excel!
     fullName: refreshed
-    summary: >-
-      Returns `true` if the `LinkedEntityCellValue` objects of the linked entity
-      data domain were refreshed successfully, otherwise returns `false`<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Returns `true` if the `LinkedEntityCellValue` objects of the linked entity data domain were refreshed successfully, otherwise returns `false`<!-- -->.
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 
@@ -85,18 +87,12 @@ properties:
       return:
         type: boolean
   - name: serviceId
-    uid: >-
-      excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#serviceId:member
+    uid: excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs#serviceId:member
     package: excel!
     fullName: serviceId
-    summary: >-
-      Gets the service ID of the linked entity data domain whose
-      `LinkedEntityCellValue` objects were refreshed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the service ID of the linked entity data domain whose `LinkedEntityCellValue` objects were refreshed.
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 
@@ -111,11 +107,8 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 
@@ -130,11 +123,8 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       This property isn't supported in Excel on the web.
 

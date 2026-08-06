@@ -3,10 +3,11 @@ name: Visio.Interfaces.ShapeCollectionData
 uid: visio!Visio.Interfaces.ShapeCollectionData:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Visio.ShapeCollection](/javascript/api/visio/visio.shapecollection): [toJSON](/javascript/api/visio/visio.shapecollection#visio-visio-shapecollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

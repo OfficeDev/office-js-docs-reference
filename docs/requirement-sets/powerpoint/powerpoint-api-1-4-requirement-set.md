@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement set 1.4
 description: Details about the PowerPointApi 1.4 requirement set.
-ms.date: 06/13/2022
+ms.date: 05/27/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -21,7 +21,7 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 The following table lists the PowerPoint JavaScript API requirement set 1.4. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_4.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-4.md)]
 
 ## See also
 

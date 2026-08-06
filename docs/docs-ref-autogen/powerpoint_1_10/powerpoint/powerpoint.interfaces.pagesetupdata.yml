@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.PageSetupData
 uid: powerpoint!PowerPoint.Interfaces.PageSetupData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PageSetupData
-summary: >-
-  An interface describing the data returned by calling `pageSetup.toJSON()`<!--
-  -->.
-remarks: ''
+summary: An interface describing the data returned by calling `pageSetup.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.PageSetup](/javascript/api/powerpoint/powerpoint.pagesetup): [toJSON](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +18,7 @@ properties:
     package: powerpoint!
     fullName: slideHeight
     summary: Specifies the height of the slides in the presentation, in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: powerpoint!
     fullName: slideWidth
     summary: Specifies the width of the slides in the presentation, in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '[API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

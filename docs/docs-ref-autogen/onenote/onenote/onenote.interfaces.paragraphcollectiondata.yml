@@ -3,10 +3,11 @@ name: OneNote.Interfaces.ParagraphCollectionData
 uid: onenote!OneNote.Interfaces.ParagraphCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ParagraphCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `paragraphCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `paragraphCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [OneNote.ParagraphCollection](/javascript/api/onenote/onenote.paragraphcollection): [toJSON](/javascript/api/onenote/onenote.paragraphcollection#onenote-onenote-paragraphcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

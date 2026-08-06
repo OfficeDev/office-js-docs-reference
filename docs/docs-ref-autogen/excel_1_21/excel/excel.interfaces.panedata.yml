@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PaneData
+uid: excel!Excel.Interfaces.PaneData:interface
+package: excel!
+fullName: Excel.Interfaces.PaneData
+summary: An interface describing the data returned by calling `pane.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

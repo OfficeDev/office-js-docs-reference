@@ -3,10 +3,11 @@ name: Word.Interfaces.ApplicationUpdateData
 uid: word!Word.Interfaces.ApplicationUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ApplicationUpdateData
-summary: >-
-  An interface for updating data on the `Application` object, for use in
-  `application.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Application` object, for use in `application.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Application](/javascript/api/word/word.application): [set](/javascript/api/word/word.application#word-word-application-set-member(1))
 
 isPreview: false
 isDeprecated: false

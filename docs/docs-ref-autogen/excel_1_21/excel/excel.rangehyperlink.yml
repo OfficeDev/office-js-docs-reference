@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.RangeHyperlink
+uid: excel!Excel.RangeHyperlink:interface
+package: excel!
+fullName: Excel.RangeHyperlink
+summary: Represents the necessary strings to get/set a hyperlink (XHL) object.
+remarks: '\[Api set: ExcelApi 1.7\]'
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: excel!Excel.RangeHyperlink#address:member
+    package: excel!
+    fullName: address
+    summary: Represents the URL target for the hyperlink.
+    remarks: '\[Api set: ExcelApi 1.7\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: documentReference
+    uid: excel!Excel.RangeHyperlink#documentReference:member
+    package: excel!
+    fullName: documentReference
+    summary: Represents the document reference target for the hyperlink.
+    remarks: '\[Api set: ExcelApi 1.7\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type: string
+  - name: screenTip
+    uid: excel!Excel.RangeHyperlink#screenTip:member
+    package: excel!
+    fullName: screenTip
+    summary: Represents the string displayed when hovering over the hyperlink.
+    remarks: '\[Api set: ExcelApi 1.7\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type: string
+  - name: textToDisplay
+    uid: excel!Excel.RangeHyperlink#textToDisplay:member
+    package: excel!
+    fullName: textToDisplay
+    summary: Represents the string that is displayed in the top left most cell in the range.
+    remarks: '\[Api set: ExcelApi 1.7\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type: string

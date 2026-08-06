@@ -3,9 +3,7 @@ name: Word.Interfaces.StyleCollectionData
 uid: word!Word.Interfaces.StyleCollectionData:interface
 package: word!
 fullName: Word.Interfaces.StyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `styleCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `styleCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

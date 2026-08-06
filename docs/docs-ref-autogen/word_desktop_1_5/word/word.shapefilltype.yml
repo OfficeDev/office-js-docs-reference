@@ -1,0 +1,67 @@
+### YamlMime:TSEnum
+name: Word.ShapeFillType
+uid: word!Word.ShapeFillType:enum
+package: word!
+fullName: Word.ShapeFillType
+summary: Specifies a [shape's](xref:word!Word.Shape:class) fill type.
+remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: gradient
+    uid: word!Word.ShapeFillType.gradient:member
+    package: word!
+    summary: |-
+      Gradient fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Gradient"'
+  - name: mixed
+    uid: word!Word.ShapeFillType.mixed:member
+    package: word!
+    summary: |-
+      Mixed fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Mixed"'
+  - name: noFill
+    uid: word!Word.ShapeFillType.noFill:member
+    package: word!
+    summary: |-
+      No fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"NoFill"'
+  - name: pattern
+    uid: word!Word.ShapeFillType.pattern:member
+    package: word!
+    summary: |-
+      Pattern fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Pattern"'
+  - name: picture
+    uid: word!Word.ShapeFillType.picture:member
+    package: word!
+    summary: |-
+      Picture fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Picture"'
+  - name: solid
+    uid: word!Word.ShapeFillType.solid:member
+    package: word!
+    summary: |-
+      Solid fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Solid"'
+  - name: texture
+    uid: word!Word.ShapeFillType.texture:member
+    package: word!
+    summary: |-
+      Texture fill.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Texture"'

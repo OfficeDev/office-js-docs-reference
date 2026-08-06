@@ -3,9 +3,7 @@ name: Word.Interfaces.DocumentLibraryVersionCollectionUpdateData
 uid: word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentLibraryVersionCollectionUpdateData
-summary: >-
-  An interface for updating data on the `DocumentLibraryVersionCollection`
-  object, for use in `documentLibraryVersionCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `DocumentLibraryVersionCollection` object, for use in `documentLibraryVersionCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -13,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member
+    uid: word!Word.Interfaces.DocumentLibraryVersionCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
@@ -25,6 +22,4 @@ properties:
     syntax:
       content: 'items?: Word.Interfaces.DocumentLibraryVersionData[];'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface"
-          />[]
+        type: <xref uid="word!Word.Interfaces.DocumentLibraryVersionData:interface" />[]

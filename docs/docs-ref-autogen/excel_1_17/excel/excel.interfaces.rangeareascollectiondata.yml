@@ -3,10 +3,11 @@ name: Excel.Interfaces.RangeAreasCollectionData
 uid: excel!Excel.Interfaces.RangeAreasCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeAreasCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `rangeAreasCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `rangeAreasCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.RangeAreasCollection](/javascript/api/excel/excel.rangeareascollection): [toJSON](/javascript/api/excel/excel.rangeareascollection#excel-excel-rangeareascollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

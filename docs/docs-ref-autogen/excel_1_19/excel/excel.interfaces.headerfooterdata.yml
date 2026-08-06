@@ -3,10 +3,11 @@ name: Excel.Interfaces.HeaderFooterData
 uid: excel!Excel.Interfaces.HeaderFooterData:interface
 package: excel!
 fullName: Excel.Interfaces.HeaderFooterData
-summary: >-
-  An interface describing the data returned by calling
-  `headerFooter.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `headerFooter.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.HeaderFooter](/javascript/api/excel/excel.headerfooter): [toJSON](/javascript/api/excel/excel.headerfooter#excel-excel-headerfooter-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -16,13 +17,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#centerFooter:member
     package: excel!
     fullName: centerFooter
-    summary: >-
-      The center footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#centerHeader:member
     package: excel!
     fullName: centerHeader
-    summary: >-
-      The center header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The center header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -52,13 +43,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#leftFooter:member
     package: excel!
     fullName: leftFooter
-    summary: >-
-      The left footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -70,13 +56,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#leftHeader:member
     package: excel!
     fullName: leftHeader
-    summary: >-
-      The left header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -88,13 +69,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#rightFooter:member
     package: excel!
     fullName: rightFooter
-    summary: >-
-      The right footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -106,13 +82,8 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterData#rightHeader:member
     package: excel!
     fullName: rightHeader
-    summary: >-
-      The right header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: 'The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

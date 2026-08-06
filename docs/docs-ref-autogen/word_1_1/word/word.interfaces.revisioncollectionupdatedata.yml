@@ -3,9 +3,7 @@ name: Word.Interfaces.RevisionCollectionUpdateData
 uid: word!Word.Interfaces.RevisionCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionCollectionUpdateData
-summary: >-
-  An interface for updating data on the `RevisionCollection` object, for use in
-  `revisionCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `RevisionCollection` object, for use in `revisionCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

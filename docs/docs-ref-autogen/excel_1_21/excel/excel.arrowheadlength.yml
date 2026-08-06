@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ArrowheadLength
+uid: excel!Excel.ArrowheadLength:enum
+package: excel!
+fullName: Excel.ArrowheadLength
+summary: ''
+remarks: '\[Api set: ExcelApi 1.9\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: long
+    uid: excel!Excel.ArrowheadLength.long:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.9\]'
+    value: '"Long"'
+  - name: medium
+    uid: excel!Excel.ArrowheadLength.medium:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.9\]'
+    value: '"Medium"'
+  - name: short
+    uid: excel!Excel.ArrowheadLength.short:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.9\]'
+    value: '"Short"'

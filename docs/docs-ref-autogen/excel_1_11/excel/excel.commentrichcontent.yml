@@ -3,13 +3,16 @@ name: Excel.CommentRichContent
 uid: excel!Excel.CommentRichContent:interface
 package: excel!
 fullName: Excel.CommentRichContent
-summary: >-
-  Represents the content contained within a comment or comment reply. Rich
-  content incudes the text string and any other objects contained within the
-  comment body, such as mentions.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other objects contained within the comment body, such as mentions.
+remarks: |-
+  [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.Comment](/javascript/api/excel/excel.comment): [updateMentions](/javascript/api/excel/excel.comment#excel-excel-comment-updatementions-member(1))
+  - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1))
+  - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [updateMentions](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-updatementions-member(1))
+  - [Excel.CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection): [add](/javascript/api/excel/excel.commentreplycollection#excel-excel-commentreplycollection-add-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -19,23 +22,14 @@ properties:
     uid: excel!Excel.CommentRichContent#mentions:member
     package: excel!
     fullName: mentions
-    summary: >-
-      An array containing all the entities (e.g., people) mentioned within the
-      comment.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: An array containing all the entities (e.g., people) mentioned within the comment.
+    remarks: |-
+      [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-mentions.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-mentions.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Comments");
@@ -56,7 +50,6 @@ properties:
           sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
           await context.sync();
       });
-
       ```
 
     isPreview: false
@@ -69,14 +62,8 @@ properties:
     uid: excel!Excel.CommentRichContent#richContent:member
     package: excel!
     fullName: richContent
-    summary: >-
-      Specifies the rich content of the comment (e.g., comment content with
-      mentions, the first mentioned entity has an ID attribute of 0, and the
-      second mentioned entity has an ID attribute of 1).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1).
+    remarks: '[API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

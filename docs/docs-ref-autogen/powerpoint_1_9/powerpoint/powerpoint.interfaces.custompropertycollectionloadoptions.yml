@@ -4,24 +4,22 @@ uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions:interf
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions
 summary: A collection of custom properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: |-
+  [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.CustomPropertyCollection](/javascript/api/powerpoint/powerpoint.custompropertycollection): [load](/javascript/api/powerpoint/powerpoint.custompropertycollection#powerpoint-powerpoint-custompropertycollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#$all:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: false
@@ -31,17 +29,11 @@ properties:
       return:
         type: boolean
   - name: key
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#key:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#key:member
     package: powerpoint!
     fullName: key
-    summary: >-
-      For EACH ITEM in the collection: The string that uniquely identifies the
-      custom property.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: 'For EACH ITEM in the collection: The string that uniquely identifies the custom property.'
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,17 +42,11 @@ properties:
       return:
         type: boolean
   - name: type
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#type:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#type:member
     package: powerpoint!
     fullName: type
-    summary: >-
-      For EACH ITEM in the collection: The type of the value used for the custom
-      property.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: 'For EACH ITEM in the collection: The type of the value used for the custom property.'
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -69,18 +55,11 @@ properties:
       return:
         type: boolean
   - name: value
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#value:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions#value:member
     package: powerpoint!
     fullName: value
-    summary: >-
-      For EACH ITEM in the collection: The value of the custom property. If the
-      value is a string, the maximum length 255 characters. Larger strings cause
-      the operation to fail with an `InvalidArgument` error.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    summary: 'For EACH ITEM in the collection: The value of the custom property. If the value is a string, the maximum length 255 characters. Larger strings cause the operation to fail with an `InvalidArgument` error.'
+    remarks: '[API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

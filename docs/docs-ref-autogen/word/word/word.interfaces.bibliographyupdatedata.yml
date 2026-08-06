@@ -3,10 +3,11 @@ name: Word.Interfaces.BibliographyUpdateData
 uid: word!Word.Interfaces.BibliographyUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BibliographyUpdateData
-summary: >-
-  An interface for updating data on the `Bibliography` object, for use in
-  `bibliography.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `Bibliography` object, for use in `bibliography.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.Bibliography](/javascript/api/word/word.bibliography): [set](/javascript/api/word/word.bibliography#word-word-bibliography-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: word!
     fullName: bibliographyStyle
     summary: Specifies the name of the active style to use for the bibliography.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

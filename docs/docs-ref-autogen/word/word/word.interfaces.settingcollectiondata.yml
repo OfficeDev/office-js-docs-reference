@@ -3,10 +3,11 @@ name: Word.Interfaces.SettingCollectionData
 uid: word!Word.Interfaces.SettingCollectionData:interface
 package: word!
 fullName: Word.Interfaces.SettingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `settingCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [toJSON](/javascript/api/word/word.settingcollection#word-word-settingcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

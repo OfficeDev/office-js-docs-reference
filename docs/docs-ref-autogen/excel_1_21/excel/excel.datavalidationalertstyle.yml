@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.DataValidationAlertStyle
+uid: excel!Excel.DataValidationAlertStyle:enum
+package: excel!
+fullName: Excel.DataValidationAlertStyle
+summary: Represents the data validation error alert style. The default is `Stop`<!-- -->.
+remarks: '\[Api set: ExcelApi 1.8\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: information
+    uid: excel!Excel.DataValidationAlertStyle.information:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.8\]'
+    value: '"Information"'
+  - name: stop
+    uid: excel!Excel.DataValidationAlertStyle.stop:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.8\]'
+    value: '"Stop"'
+  - name: warning
+    uid: excel!Excel.DataValidationAlertStyle.warning:member
+    package: excel!
+    summary: '* \[Api set: ExcelApi 1.8\]'
+    value: '"Warning"'

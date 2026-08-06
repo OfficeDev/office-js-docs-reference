@@ -3,10 +3,11 @@ name: Excel.Interfaces.CustomXmlPartScopedCollectionData
 uid: excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPartScopedCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.CustomXmlPartScopedCollection](/javascript/api/excel/excel.customxmlpartscopedcollection): [toJSON](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

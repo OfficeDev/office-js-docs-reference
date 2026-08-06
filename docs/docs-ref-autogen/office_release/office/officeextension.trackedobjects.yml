@@ -3,11 +3,40 @@ name: OfficeExtension.TrackedObjects
 uid: office!OfficeExtension.TrackedObjects:class
 package: office!
 fullName: OfficeExtension.TrackedObjects
-summary: >-
-  Collection of tracked objects, contained within a request context. See
-  [context.trackedObjects](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
-  for more information.
-remarks: ''
+summary: Collection of tracked objects, contained within a request context. See [context.trackedObjects](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member) for more information.
+remarks: |-
+
+
+  #### Used by
+
+  - [OfficeExtension.ClientRequestContext](/javascript/api/office/officeextension.clientrequestcontext): [trackedObjects](/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
+
+  #### Examples
+
+  ```TypeScript
+  // This sample creates many one-cell ranges, then removes each
+  // cell proxy object from memory before the batch operation completes.
+  await Excel.run(async (context) => {
+      const largeRange = context.workbook.getSelectedRange();
+      largeRange.load(["rowCount", "columnCount"]);
+      await context.sync();
+
+      const trackedObjects: OfficeExtension.TrackedObjects = context.trackedObjects;
+
+      for (let i = 0; i < largeRange.rowCount; i++) {
+          for (let j = 0; j < largeRange.columnCount; j++) {
+              const cell = largeRange.getCell(i, j);
+              cell.values = [[i *j]];
+
+              // Release the cell proxy object from memory now that we're
+              // done with it. The memory is freed on the next context.sync() call.
+              trackedObjects.remove(cell);
+          }
+      }
+
+      await context.sync();
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -17,15 +46,7 @@ methods:
     uid: office!OfficeExtension.TrackedObjects#add:member(1)
     package: office!
     fullName: add(object)
-    summary: >-
-      Track a new object for automatic adjustment based on surrounding changes
-      in the document. Only some object types require this. If you are using an
-      object across ".sync" calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created. If this
-      object is part of a collection in Word, you should also track the parent
-      collection.
+    summary: Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -38,20 +59,39 @@ methods:
           type: <xref uid="office!OfficeExtension.ClientObject:class" />
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // This sample shows how to track a Word proxy object so it can be used
+          // across multiple context.sync() calls.
+          await Word.run(async (context) => {
+              // Create a paragraph proxy object.
+              const paragraph = context.document.body.insertParagraph(
+                  "This paragraph is tracked across sync calls.",
+                  Word.InsertLocation.end
+              );
+
+              // Track the paragraph so it remains valid across sync calls.
+              context.trackedObjects.add(paragraph);
+              await context.sync();
+
+              // The tracked paragraph can still be used after the preceding sync.
+              paragraph.font.bold = true;
+              await context.sync();
+
+              // Remember to release the object from memory once you're done with it.
+              context.trackedObjects.remove(paragraph);
+              await context.sync();
+          });
+          ```
   - name: add(objects)
     uid: office!OfficeExtension.TrackedObjects#add:member(2)
     package: office!
     fullName: add(objects)
-    summary: >-
-      Track a set of objects for automatic adjustment based on surrounding
-      changes in the document. Only some object types require this. If you are
-      using an object across ".sync" calls and outside the sequential execution
-      of a ".run" batch, and get an "InvalidObjectPath" error when setting a
-      property or invoking a method on the object, you needed to have added the
-      object to the tracked object collection when the object was first created.
-      If this object is part of a collection in Word, you should also track the
-      parent collection.
+    summary: Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track the parent collection.
     remarks: ''
 
     isPreview: false
@@ -69,12 +109,7 @@ methods:
     uid: office!OfficeExtension.TrackedObjects#remove:member(1)
     package: office!
     fullName: remove(object)
-    summary: >-
-      Release the memory associated with an object that was previously added to
-      this collection. Having many tracked objects slows down the Office
-      application, so please remember to free any objects you add, once you're
-      done using them. You will need to call `context.sync()` before the memory
-      release takes effect.
+    summary: If the given proxy object is already in this collection, this method releases the memory associated with the object. You need to call `context.sync()` before the memory release takes effect. If the given proxy object isn't in this collection, the proxy object won't be stored after `context.sync()` is called. This speeds up instances where many objects are created for single-use operations.
     remarks: ''
 
     isPreview: false
@@ -87,17 +122,33 @@ methods:
           type: <xref uid="office!OfficeExtension.ClientObject:class" />
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // This sample inserts many paragraphs into a Word document, removing each
+          // paragraph proxy object from memory after it's used.
+          await Word.run(async (context) => {
+              const body = context.document.body;
+
+              for (let i = 0; i < 500; i++) {
+                  const paragraph = body.insertParagraph(`Paragraph ${i}`, Word.InsertLocation.end);
+
+                  // Release the paragraph proxy object from memory now that we're
+                  // done with it. The memory is freed on the next context.sync() call.
+                  context.trackedObjects.remove(paragraph);
+              }
+
+              await context.sync();
+          });
+          ```
   - name: remove(objects)
     uid: office!OfficeExtension.TrackedObjects#remove:member(2)
     package: office!
     fullName: remove(objects)
-    summary: >-
-      Release the memory associated with an object that was previously added to
-      this collection. Having many tracked objects slows down the Office
-      application, so please remember to free any objects you add, once you're
-      done using them. You will need to call `context.sync()` before the memory
-      release takes effect.
+    summary: If the given proxy objects are already in this collection, this method releases the memory associated with the objects. You need to call `context.sync()` before the memory release takes effect. If the given proxy objects aren't in this collection, the proxy objects won't be stored after `context.sync()` is called. This speeds up instances where many objects are created for single-use operations.
     remarks: ''
 
     isPreview: false

@@ -4,6 +4,7 @@ name: outlook
 type: package
 summary: ''
 interfaces:
+  - outlook!Office.AccessControls:interface
   - outlook!Office.Appointment:interface
   - outlook!Office.AppointmentCompose:interface
   - outlook!Office.AppointmentForm:interface
@@ -59,6 +60,8 @@ interfaces:
   - outlook!Office.Message:interface
   - outlook!Office.MessageCompose:interface
   - outlook!Office.MessageDecryptEventCompletedOptions:interface
+  - outlook!Office.MessageForm:interface
+  - outlook!Office.MessageFormAttachment:interface
   - outlook!Office.MessageRead:interface
   - outlook!Office.NotificationMessageAction:interface
   - outlook!Office.NotificationMessageDetails:interface

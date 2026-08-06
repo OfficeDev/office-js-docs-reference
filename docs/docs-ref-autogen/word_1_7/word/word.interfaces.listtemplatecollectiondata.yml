@@ -3,9 +3,7 @@ name: Word.Interfaces.ListTemplateCollectionData
 uid: word!Word.Interfaces.ListTemplateCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `listTemplateCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `listTemplateCollection.toJSON()`<!-- -->.
 remarks: ''
 
 isPreview: false

@@ -1,12 +1,9 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData
-uid: >-
-  powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
+uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlPartScopedCollection` object,
-  for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
@@ -14,8 +11,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
@@ -26,7 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.CustomXmlPartData[];'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface"
-          />[]
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface" />[]

@@ -3,10 +3,11 @@ name: Word.Interfaces.CoauthoringLockCollectionData
 uid: word!Word.Interfaces.CoauthoringLockCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `coauthoringLockCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `coauthoringLockCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection): [toJSON](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

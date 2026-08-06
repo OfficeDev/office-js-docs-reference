@@ -3,10 +3,11 @@ name: Word.Interfaces.IndexCollectionData
 uid: word!Word.Interfaces.IndexCollectionData:interface
 package: word!
 fullName: Word.Interfaces.IndexCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `indexCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `indexCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.IndexCollection](/javascript/api/word/word.indexcollection): [toJSON](/javascript/api/word/word.indexcollection#word-word-indexcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

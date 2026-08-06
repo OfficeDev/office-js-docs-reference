@@ -3,10 +3,11 @@ name: Excel.Interfaces.ChartLineFormatUpdateData
 uid: excel!Excel.Interfaces.ChartLineFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLineFormatUpdateData
-summary: >-
-  An interface for updating data on the `ChartLineFormat` object, for use in
-  `chartLineFormat.set({ ... })`<!-- -->.
-remarks: ''
+summary: An interface for updating data on the `ChartLineFormat` object, for use in `chartLineFormat.set({ ... })`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Excel.ChartLineFormat](/javascript/api/excel/excel.chartlineformat): [set](/javascript/api/excel/excel.chartlineformat#excel-excel-chartlineformat-set-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +18,7 @@ properties:
     package: excel!
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,48 @@ uid: word!Word.Interfaces.CollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CollectionLoadOptions
 summary: Provides ways to load properties of only a subset of members of a collection.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Word.AnnotationCollection](/javascript/api/word/word.annotationcollection): [load](/javascript/api/word/word.annotationcollection#word-word-annotationcollection-load-member(1))
+  - [Word.BorderCollection](/javascript/api/word/word.bordercollection): [load](/javascript/api/word/word.bordercollection#word-word-bordercollection-load-member(1))
+  - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [load](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-load-member(1))
+  - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [load](/javascript/api/word/word.breakcollection#word-word-breakcollection-load-member(1))
+  - [Word.CommentCollection](/javascript/api/word/word.commentcollection): [load](/javascript/api/word/word.commentcollection#word-word-commentcollection-load-member(1))
+  - [Word.CommentReplyCollection](/javascript/api/word/word.commentreplycollection): [load](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-load-member(1))
+  - [Word.ContentControlCollection](/javascript/api/word/word.contentcontrolcollection): [load](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-load-member(1))
+  - [Word.ContentControlListItemCollection](/javascript/api/word/word.contentcontrollistitemcollection): [load](/javascript/api/word/word.contentcontrollistitemcollection#word-word-contentcontrollistitemcollection-load-member(1))
+  - [Word.CustomPropertyCollection](/javascript/api/word/word.custompropertycollection): [load](/javascript/api/word/word.custompropertycollection#word-word-custompropertycollection-load-member(1))
+  - [Word.CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection): [load](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-load-member(1))
+  - [Word.CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection): [load](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-load-member(1))
+  - [Word.CustomXmlPartScopedCollection](/javascript/api/word/word.customxmlpartscopedcollection): [load](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-load-member(1))
+  - [Word.CustomXmlPrefixMappingCollection](/javascript/api/word/word.customxmlprefixmappingcollection): [load](/javascript/api/word/word.customxmlprefixmappingcollection#word-word-customxmlprefixmappingcollection-load-member(1))
+  - [Word.CustomXmlSchemaCollection](/javascript/api/word/word.customxmlschemacollection): [load](/javascript/api/word/word.customxmlschemacollection#word-word-customxmlschemacollection-load-member(1))
+  - [Word.DocumentLibraryVersionCollection](/javascript/api/word/word.documentlibraryversioncollection): [load](/javascript/api/word/word.documentlibraryversioncollection#word-word-documentlibraryversioncollection-load-member(1))
+  - [Word.FieldCollection](/javascript/api/word/word.fieldcollection): [load](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-load-member(1))
+  - [Word.FrameCollection](/javascript/api/word/word.framecollection): [load](/javascript/api/word/word.framecollection#word-word-framecollection-load-member(1))
+  - [Word.HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection): [load](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-load-member(1))
+  - [Word.InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection): [load](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-load-member(1))
+  - [Word.ListCollection](/javascript/api/word/word.listcollection): [load](/javascript/api/word/word.listcollection#word-word-listcollection-load-member(1))
+  - [Word.ListLevelCollection](/javascript/api/word/word.listlevelcollection): [load](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-load-member(1))
+  - [Word.NoteItemCollection](/javascript/api/word/word.noteitemcollection): [load](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-load-member(1))
+  - [Word.PageCollection](/javascript/api/word/word.pagecollection): [load](/javascript/api/word/word.pagecollection#word-word-pagecollection-load-member(1))
+  - [Word.PaneCollection](/javascript/api/word/word.panecollection): [load](/javascript/api/word/word.panecollection#word-word-panecollection-load-member(1))
+  - [Word.ParagraphCollection](/javascript/api/word/word.paragraphcollection): [load](/javascript/api/word/word.paragraphcollection#word-word-paragraphcollection-load-member(1))
+  - [Word.RangeCollection](/javascript/api/word/word.rangecollection): [load](/javascript/api/word/word.rangecollection#word-word-rangecollection-load-member(1))
+  - [Word.SectionCollection](/javascript/api/word/word.sectioncollection): [load](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-load-member(1))
+  - [Word.SettingCollection](/javascript/api/word/word.settingcollection): [load](/javascript/api/word/word.settingcollection#word-word-settingcollection-load-member(1))
+  - [Word.ShapeCollection](/javascript/api/word/word.shapecollection): [load](/javascript/api/word/word.shapecollection#word-word-shapecollection-load-member(1))
+  - [Word.SourceCollection](/javascript/api/word/word.sourcecollection): [load](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-load-member(1))
+  - [Word.StyleCollection](/javascript/api/word/word.stylecollection): [load](/javascript/api/word/word.stylecollection#word-word-stylecollection-load-member(1))
+  - [Word.TableCellCollection](/javascript/api/word/word.tablecellcollection): [load](/javascript/api/word/word.tablecellcollection#word-word-tablecellcollection-load-member(1))
+  - [Word.TableCollection](/javascript/api/word/word.tablecollection): [load](/javascript/api/word/word.tablecollection#word-word-tablecollection-load-member(1))
+  - [Word.TableColumnCollection](/javascript/api/word/word.tablecolumncollection): [load](/javascript/api/word/word.tablecolumncollection#word-word-tablecolumncollection-load-member(1))
+  - [Word.TableRowCollection](/javascript/api/word/word.tablerowcollection): [load](/javascript/api/word/word.tablerowcollection#word-word-tablerowcollection-load-member(1))
+  - [Word.TemplateCollection](/javascript/api/word/word.templatecollection): [load](/javascript/api/word/word.templatecollection#word-word-templatecollection-load-member(1))
+  - [Word.TextColumnCollection](/javascript/api/word/word.textcolumncollection): [load](/javascript/api/word/word.textcolumncollection#word-word-textcolumncollection-load-member(1))
+  - [Word.TrackedChangeCollection](/javascript/api/word/word.trackedchangecollection): [load](/javascript/api/word/word.trackedchangecollection#word-word-trackedchangecollection-load-member(1))
+  - [Word.WindowCollection](/javascript/api/word/word.windowcollection): [load](/javascript/api/word/word.windowcollection#word-word-windowcollection-load-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +55,7 @@ properties:
     uid: word!Word.Interfaces.CollectionLoadOptions#$skip:member
     package: word!
     fullName: $skip
-    summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If `top` is specified, the selection of result
-      will start after skipping the specified number of items.
+    summary: Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
 
     isPreview: false
@@ -30,9 +68,7 @@ properties:
     uid: word!Word.Interfaces.CollectionLoadOptions#$top:member
     package: word!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
 
     isPreview: false

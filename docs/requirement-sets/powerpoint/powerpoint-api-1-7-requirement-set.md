@@ -15,7 +15,7 @@ PowerPointApi 1.7 added APIs to manage custom and document properties in the pre
 The following table lists the PowerPoint JavaScript API requirement set 1.7. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_7.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-7.md)]
 
 ## See also
 

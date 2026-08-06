@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using [MSAL (Microsoft Authentication Library) and nested app authentication (NAA)](/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in). Exchange user identity tokens are still supported for Exchange on-premises.

@@ -3,27 +3,23 @@ name: Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions
 uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions
-summary: >-
-  Represents a collection of
-  [Word.CustomXmlValidationError](xref:word!Word.CustomXmlValidationError:class)
-  objects.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: Represents a collection of [Word.CustomXmlValidationError](xref:word!Word.CustomXmlValidationError:class) objects.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.CustomXmlValidationErrorCollection](/javascript/api/word/word.customxmlvalidationerrorcollection): [load](/javascript/api/word/word.customxmlvalidationerrorcollection#word-word-customxmlvalidationerrorcollection-load-member(1))
 
 isPreview: true
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#$all:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
     isPreview: true
@@ -33,16 +29,11 @@ properties:
       return:
         type: boolean
   - name: errorCode
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#errorCode:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#errorCode:member
     package: word!
     fullName: errorCode
-    summary: >-
-      For EACH ITEM in the collection: Gets an integer representing the
-      validation error in the `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets an integer representing the validation error in the `CustomXmlValidationError` object.'
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -51,17 +42,11 @@ properties:
       return:
         type: boolean
   - name: name
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#name:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#name:member
     package: word!
     fullName: name
-    summary: >-
-      For EACH ITEM in the collection: Gets the name of the error in the
-      `CustomXmlValidationError` object. If no errors exist, the property
-      returns `"Nothing"`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `"Nothing"`<!-- -->.'
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -70,17 +55,11 @@ properties:
       return:
         type: boolean
   - name: node
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#node:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#node:member
     package: word!
     fullName: node
-    summary: >-
-      For EACH ITEM in the collection: Gets the node associated with this
-      `CustomXmlValidationError` object, if any exist. If no nodes exist, the
-      property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`<!-- -->.'
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -89,16 +68,11 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions:interface" />
   - name: text
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#text:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#text:member
     package: word!
     fullName: text
-    summary: >-
-      For EACH ITEM in the collection: Gets the text in the
-      `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets the text in the `CustomXmlValidationError` object.'
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
@@ -107,16 +81,11 @@ properties:
       return:
         type: boolean
   - name: type
-    uid: >-
-      word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#type:member
+    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      For EACH ITEM in the collection: Gets the type of error generated from the
-      `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: 'For EACH ITEM in the collection: Gets the type of error generated from the `CustomXmlValidationError` object.'
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false

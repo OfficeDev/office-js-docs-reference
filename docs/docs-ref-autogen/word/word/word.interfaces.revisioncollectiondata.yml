@@ -3,10 +3,11 @@ name: Word.Interfaces.RevisionCollectionData
 uid: word!Word.Interfaces.RevisionCollectionData:interface
 package: word!
 fullName: Word.Interfaces.RevisionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `revisionCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `revisionCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [Word.RevisionCollection](/javascript/api/word/word.revisioncollection): [toJSON](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

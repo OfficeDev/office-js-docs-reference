@@ -4,7 +4,6 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-
 export declare namespace Excel {
     /**
      * Represents an unknown cell control.
@@ -9177,6 +9176,10 @@ export declare namespace Excel {
         * [Api set: ExcelApi 1.5]
         */
         readonly runtime: Runtime;
+        /**
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        readonly sensitivityLabelsCatalog: SensitivityLabelsCatalog;
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
         /**
@@ -9227,8 +9230,458 @@ export declare namespace Excel {
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
-    export function postprocessBindingDescriptor(response: any): any;
-    export function getDataCommonPostprocess(response: any, callArgs: any): any;
+    /**
+     * Represents the labeling capability status of the sensitivity label catalog.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum LabelingCapability {
+        /**
+         * No valid license is available for sensitivity labeling.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noLicense = "NoLicense",
+        /**
+         * Sensitivity labeling is disabled for the user or tenant.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingDisabled = "LabelingDisabled",
+        /**
+         * No labeling policy was found for the user.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingPolicyNotFound = "LabelingPolicyNotFound",
+        /**
+         * Sensitivity labeling is fully enabled.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingEnabled = "LabelingEnabled"
+    }
+    /**
+     * Represents the sensitivity label on the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabel extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the current label information that exists on the workbook for the user.
+                    If there's no sensitivity label on the current workbook, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The current `SensitivityLabelDetails` object.
+         */
+        getCurrentOrNullObject(): Excel.SensitivityLabelDetails;
+        /**
+         * Tries to update to the provided sensitivity label on the workbook for the user.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param labelId - The ID of the label to apply.
+         * @returns The `SensitivityLabelUpdateResult` object.
+         */
+        tryToUpdate(labelId: string): OfficeExtension.ClientResult<Excel.SensitivityLabelUpdateResult>;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.SensitivityLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): {
+            [key: string]: string;
+        };
+    }
+    /**
+     * Represents the properties of available sensitivity labels in Excel.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelDetails extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly children: SensitivityLabelDetailsCollection | null;
+        /**
+         * Gets the color of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly color: string;
+        /**
+         * Gets the unique identifier (GUID) of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Gets a value indicating whether the label is enabled.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isEnabled: boolean;
+        /**
+         * Gets the name of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        /**
+         * Gets the priority of the sensitivity label, with 0 as lowest priority.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly order: number;
+        /**
+         * Gets a value indicating the protection type provided by this label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly protectionType: Excel.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";
+        /**
+         * Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly siteId: string;
+        /**
+         * Gets the description of the sensitivity label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tooltip: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.SensitivityLabelDetailsLoadOptions): Excel.SensitivityLabelDetails;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.SensitivityLabelDetails;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.SensitivityLabelDetails;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.SensitivityLabelDetails` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelDetailsData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.SensitivityLabelDetailsData;
+    }
+    /**
+     * Represents the collection of {@link Excel.SensitivityLabelDetails} objects.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelDetailsCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.SensitivityLabelDetails[];
+        /**
+         * Gets the first `SensitivityLabelDetails` object in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns A new `SensitivityLabelDetails` object.
+         */
+        getFirst(): Excel.SensitivityLabelDetails;
+        /**
+         * Gets the first `SensitivityLabelDetails` object in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The new `SensitivityLabelDetails` object.
+         */
+        getFirstOrNullObject(): OfficeExtension.ClientResult<any>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.SensitivityLabelDetailsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SensitivityLabelDetailsCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.SensitivityLabelDetailsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelDetailsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.SensitivityLabelDetailsCollectionData;
+    }
+    /**
+     * Represents the protection type.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SensitivityLabelProtectionType {
+        /**
+         * No protection is applied by this label.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noProtection = "NoProtection",
+        /**
+         * Protection is defined by an administrator.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        adminDefined = "AdminDefined",
+        /**
+         * Protection is defined by the user.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userDefined = "UserDefined"
+    }
+    /**
+     * Represents the result of updating the sensitivity label on the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SensitivityLabelUpdateResult {
+        /**
+         * The sensitivity label was successfully updated.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        success = "Success",
+        /**
+         * The update failed due to an unspecified error.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unspecifiedFailure = "UnspecifiedFailure",
+        /**
+         * The specified sensitivity label could not be found.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelNotFound = "LabelNotFound",
+        /**
+         * The document is read-only and cannot be modified.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        documentReadOnly = "DocumentReadOnly",
+        /**
+         * The user does not have sufficient permissions to update the label.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insufficientPermission = "InsufficientPermission",
+        /**
+         * The label update failed due to unsupported Double Key Encryption (DKE).
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedDoubleKeyEncryption = "UnsupportedDoubleKeyEncryption",
+        /**
+         * The label update failed because native labeling is not enabled for the user or installed SKU.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelingDisabled = "LabelingDisabled",
+        /**
+         * The label update failed because the user's identity is not valid for applying a label.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userNotFound = "UserNotFound",
+        /**
+         * The label update failed due to unsupported User Defined Permissions (UDP).
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedUdp = "UnsupportedUdp",
+        /**
+         * The label update failed because the specified label is a parent label, which cannot be applied.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        parentLabelNotSupported = "ParentLabelNotSupported",
+        /**
+         * The label update failed because the document doesn't belong to the same tenant as the user.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        crossTenant = "CrossTenant"
+    }
+    /**
+     * Provides methods to check the status of the catalog of sensitivity labels in Excel and retrieve all available sensitivity labels if the catalog is enabled.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SensitivityLabelsCatalog extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets whether the catalog of sensitivity labels is enabled in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+        /**
+         * Gets sensitivity labels that are available to the current user.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns The current `SensitivityLabelDetailsCollection` object.
+         */
+        getLabels(): Excel.SensitivityLabelDetailsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.SensitivityLabelsCatalogLoadOptions): Excel.SensitivityLabelsCatalog;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.SensitivityLabelsCatalog;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.SensitivityLabelsCatalog;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Excel.SensitivityLabelsCatalog` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelsCatalogData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.SensitivityLabelsCatalogData;
+    }
+    /**
+     * Provides information about the ranges that raised the `onCalculationBusy` event, which triggers when the calculation is in progress in a worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WorksheetCalculationBusyEventArgs {
+        /**
+         * The address of the ranges that began calculation.
+                    If multiple ranges began calculation, the string is a comma-separated list of those range addresses.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address: string;
+        /**
+         * The source of the event. It can be local or remote (through co-authoring).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         * Gets the type of the event. See `Excel.EventType` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: "WorksheetCalculationBusy";
+        /**
+         * The ID of the worksheet within which the calculation occurred.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetId: string;
+    }
     /**
      * Provides information about the local image.
      *
@@ -9708,15 +10161,6 @@ export declare namespace Excel {
          * @beta
          */
         delete(): void;
-        /**
-         * Refreshes the query.
-                    This only starts the refresh.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        refresh(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -12551,7 +12995,7 @@ export declare namespace Excel {
     /**
      * Provides information about the selection that raised the selection changed event.
                 
-                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                 * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -13030,6 +13474,9 @@ export declare namespace Excel {
     export interface WorksheetFormulaChangedEventArgs {
         /**
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
+                    
+                    If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails`
+                    returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -14114,7 +14561,7 @@ export declare namespace Excel {
         /**
          * Suspends screen updating until the next `context.sync()` is called.
                     
-                     **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+                     * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -14473,6 +14920,14 @@ export declare namespace Excel {
          */
         readonly worksheets: Excel.WorksheetCollection;
         /**
+         * Returns the sensitivity label of the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly sensitivityLabel: Excel.SensitivityLabel;
+        /**
          * Specifies if the workbook is in AutoSave mode.
          *
          * @remarks
@@ -14686,6 +15141,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getSelectedRanges(): Excel.RangeAreas;
+        /**
+         * Returns whether the workbook is currently in preview mode.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        inPreviewMode(): OfficeExtension.ClientResult<boolean>;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
                     
@@ -15353,6 +15816,27 @@ export declare namespace Excel {
          */
         readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
         /**
+         * Occurs when cells in the worksheet are being calculated asynchronously.
+
+                    This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event.
+                    Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered.
+                    However, if the calculation places a transient pending value (such as "#BUSY!") in the
+                    cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed,
+                    although calculation of the final value is not yet complete. When a subsequent
+                    calculation cycle completes the calculation for that cell, the `onCalculated` event is
+                    then triggered.
+
+                    Formula features such as JavaScript User-Defined Functions and =PY formulas
+                    may trigger this event.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;
+        /**
          * Occurs when data changes in a specific worksheet.
          *
          * @remarks
@@ -15400,6 +15884,9 @@ export declare namespace Excel {
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
         /**
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
+
+                The event is only triggered when the cell already contains a formula.
+                The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -15525,7 +16012,7 @@ export declare namespace Excel {
         /**
          * Inserts the specified worksheets of a workbook into the current workbook.
                     
-                     **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
+                     * **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -15541,7 +16028,7 @@ export declare namespace Excel {
         /**
          * Inserts the specified worksheets of a workbook into the current workbook.
                     
-                     **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
+                     * **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -15653,6 +16140,27 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
+        /**
+         * Occurs when cells in the worksheet are being calculated asynchronously.
+
+                    This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event.
+                    Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered.
+                    However, if the calculation places a transient pending value (such as "#BUSY!") in the
+                    cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed,
+                    although calculation of the final value is not yet complete. When a subsequent
+                    calculation cycle completes the calculation for that cell, the `onCalculated` event is
+                    then triggered.
+
+                    Formula features such as JavaScript User-Defined Functions and =PY formulas
+                    may trigger this event.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;
         /**
          * Occurs when any worksheet in the workbook is changed.
          *
@@ -16428,7 +16936,8 @@ export declare namespace Excel {
         readonly valueTypes: Excel.RangeValueType[][];
         /**
          * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
-                    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -19048,7 +19557,7 @@ export declare namespace Excel {
         /**
          * Occurs when the selected content in the binding is changed.
                     
-                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                     * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -21259,7 +21768,7 @@ export declare namespace Excel {
          * @param sourceData - The `Range` object corresponding to the source data.
          * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          * Returns the number of charts in the worksheet.
          *
@@ -21442,7 +21951,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
         /**
          * Specifies the way that blank cells are plotted on a chart.
          *
@@ -22002,7 +22511,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
         /**
          * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                     Throws an `InvalidArgument` error on invalid charts.
@@ -35807,6 +36316,49 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
     /**
+     * Provides information about the `LinkedEntityCellValue` that was requested given a specified `LinkedEntityId`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.21]
+     */
+    export interface LinkedEntityCellValueLoadedEventArgs {
+        /**
+         * Any error encountered during the request to load the `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        error?: string;
+        /**
+         * Gets the `LinkedEntityId` of the requested `LinkedEntityCellValue`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        id: LinkedEntityId;
+        /**
+         * Gets the `LinkedEntityCellValue` of the requested `LinkedEntityId`. If the load operation failed, this property is `null`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        linkedEntityCellValue?: LinkedEntityCellValue;
+        /**
+         * Gets the source of the event. See `Excel.EventSource` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         * Gets the type of the event. See `Excel.EventType` for details.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         */
+        type: "LinkedEntityDataDomainLinkedEntityCellValueLoaded";
+    }
+    /**
      * Represents a specific category or field of information that shares some common characteristics or attributes.
                 A data domain is linked to a data provider, that acts as the data source for `LinkedEntityCellValue` objects in the workbook.
                 A data domain is a category of data, such as stocks, geography, or currencies. A data provider is a service, such as Bing, Power BI, or an Office Add-in.
@@ -36107,6 +36659,16 @@ export declare namespace Excel {
          */
         getItemOrNullObject(id: string): Excel.LinkedEntityDataDomain;
         /**
+         * Submits a request to load the `LinkedEntityCellValue` object with the specified `LinkedEntityId`.
+                    If found, the `LinkedEntityCellValue` object will be returned through the `LinkedEntityCellValueLoaded` event.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         *
+         * @param id - A specific `LinkedEntityId`
+         */
+        loadLinkedEntityCellValue(id: LinkedEntityId): void;
+        /**
          * Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection.
                     The refresh request can fail if the data providers are busy or temporarily inaccessible.
          *
@@ -36134,6 +36696,17 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedEntityDataDomainCollection;
+        /**
+         * Occurs when the request to load a `LinkedEntityCellValue` is completed.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.21]
+         * 
+         * This event isn't supported in Excel on the web.
+         *
+         * @eventproperty
+         */
+        readonly onLinkedEntityCellValueLoaded: OfficeExtension.EventHandlers<Excel.LinkedEntityCellValueLoadedEventArgs>;
         /**
          * Occurs when a new linked entity data domain is added to the workbook.
          *
@@ -37814,7 +38387,87 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        funnel = "Funnel"
+        funnel = "Funnel",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        columnClusteredEx = "ColumnClusteredEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        columnStackedEx = "ColumnStackedEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        columnStacked100Ex = "ColumnStacked100Ex",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        lineEx = "LineEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        lineStackedEx = "LineStackedEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        lineStacked100Ex = "LineStacked100Ex",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        pieEx = "PieEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        doughnutEx = "DoughnutEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        barClusteredEx = "BarClusteredEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        barStackedEx = "BarStackedEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        barStacked100Ex = "BarStacked100Ex",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        areaEx = "AreaEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        areaStackedEx = "AreaStackedEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        areaStacked100Ex = "AreaStacked100Ex",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        xyscatterEx = "XYScatterEx",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        bubbleEx = "BubbleEx"
     }
     /**
      * @remarks
@@ -40717,6 +41370,62 @@ export declare namespace Excel {
          */
         worksheetMoved = "WorksheetMoved",
         /**
+         * ShapeAdded represents the type of event registered when a shape has been added to a ShapeCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shapeAdded = "ShapeAdded",
+        /**
+         * ShapeDeleted represents the type of event registered when a shape has been deleted from a ShapeCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shapeDeleted = "ShapeDeleted",
+        /**
+         * PivotTableAdded represents the type of event registered when a PivotTable has been added to a PivotTableCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pivotTableAdded = "PivotTableAdded",
+        /**
+         * PivotTableDeleted represents the type of event registered when a PivotTable has been deleted from a PivotTableCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pivotTableDeleted = "PivotTableDeleted",
+        /**
+         * NamedItemAdded represents the type of event registered when a NamedItem has been added to a NamedItemCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namedItemAdded = "NamedItemAdded",
+        /**
+         * NamedItemDeleted represents the type of event registered when a NamedItem has been deleted from a NamedItemCollection.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        namedItemDeleted = "NamedItemDeleted",
+        /**
+         * WorksheetNavigationObjectChanged represents the type of event registered when a navigation object has changed on a worksheet.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetNavigationObjectChanged = "WorksheetNavigationObjectChanged",
+        /**
+         * WorkbookNavigationObjectChanged represents the type of event registered when a navigation object has changed on a workbook.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        workbookNavigationObjectChanged = "WorkbookNavigationObjectChanged",
+        /**
          * WorksheetRowHeightChanged represents the type of event registered when the height of a worksheet row is changed.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -40779,7 +41488,20 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          */
-        augmentationLoopUploadStatusChanged = "AugmentationLoopUploadStatusChanged"
+        augmentationLoopUploadStatusChanged = "AugmentationLoopUploadStatusChanged",
+        /**
+         * `WorksheetCalculationBusy` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when a cell enters a busy calculation state.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetCalculationBusy = "WorksheetCalculationBusy",
+        /**
+         * `WorkbookPreviewDirtied` represents the type of event registered when workbook preview mode has been dirtied.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        workbookPreviewDirtied = "WorkbookPreviewDirtied"
     }
     /**
      * @remarks
@@ -45507,7 +46229,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -48333,6 +49055,10 @@ export declare namespace Excel {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the `SensitivityLabelDetailsCollection` object, for use in `sensitivityLabelDetailsCollection.set({ ... })`. */
+        export interface SensitivityLabelDetailsCollectionUpdateData {
+            items?: Excel.Interfaces.SensitivityLabelDetailsData[];
+        }
         /** An interface for updating data on the `AllowEditRange` object, for use in `allowEditRange.set({ ... })`. */
         export interface AllowEditRangeUpdateData {
             /**
@@ -49474,7 +50200,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
             /**
              * Specifies the way that blank cells are plotted on a chart.
              *
@@ -49699,7 +50425,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
             /**
              * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                         Throws an `InvalidArgument` error on invalid charts.
@@ -53986,6 +54712,96 @@ export declare namespace Excel {
         export interface PaneCollectionUpdateData {
             items?: Excel.Interfaces.PaneData[];
         }
+        /** An interface describing the data returned by calling `sensitivityLabelDetails.toJSON()`. */
+        export interface SensitivityLabelDetailsData {
+            /**
+             * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            children?: SensitivityLabelDetailsCollection | null;
+            /**
+             * Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             * Gets the unique identifier (GUID) of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             * Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             * Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: number;
+            /**
+             * Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: Excel.SensitivityLabelProtectionType | "NoProtection" | "AdminDefined" | "UserDefined";
+            /**
+             * Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: string;
+            /**
+             * Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: string;
+        }
+        /** An interface describing the data returned by calling `sensitivityLabelDetailsCollection.toJSON()`. */
+        export interface SensitivityLabelDetailsCollectionData {
+            items?: Excel.Interfaces.SensitivityLabelDetailsData[];
+        }
+        /** An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`. */
+        export interface SensitivityLabelsCatalogData {
+            /**
+             * Gets whether the catalog of sensitivity labels is enabled in Excel.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             /**
@@ -56226,7 +57042,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
             /**
              * Specifies the way that blank cells are plotted on a chart.
              *
@@ -56472,7 +57288,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
             /**
              * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                         Throws an `InvalidArgument` error on invalid charts.
@@ -61777,6 +62593,197 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             value?: T;
+        }
+        /**
+         * Represents the properties of available sensitivity labels in Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelDetailsLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            children?: boolean;
+            /**
+             * Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             * Gets the unique identifier (GUID) of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: boolean;
+            /**
+             * Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: boolean;
+            /**
+             * Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: boolean;
+            /**
+             * Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: boolean;
+        }
+        /**
+         * Represents the collection of {@link Excel.SensitivityLabelDetails} objects.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelDetailsCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            children?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the color of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique identifier (GUID) of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEnabled?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the priority of the sensitivity label, with 0 as lowest priority.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            order?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating the protection type provided by this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            protectionType?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique identifier (GUID) of the tenant which the sensitivity label is belonged.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            siteId?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the description of the sensitivity label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tooltip?: boolean;
+        }
+        /**
+         * Provides methods to check the status of the catalog of sensitivity labels in Excel and retrieve all available sensitivity labels if the catalog is enabled.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SensitivityLabelsCatalogLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets whether the catalog of sensitivity labels is enabled in Excel.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapability?: boolean;
         }
         /**
          * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.

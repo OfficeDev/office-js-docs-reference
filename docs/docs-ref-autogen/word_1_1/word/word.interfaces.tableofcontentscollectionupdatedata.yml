@@ -3,9 +3,7 @@ name: Word.Interfaces.TableOfContentsCollectionUpdateData
 uid: word!Word.Interfaces.TableOfContentsCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfContentsCollectionUpdateData
-summary: >-
-  An interface for updating data on the `TableOfContentsCollection` object, for
-  use in `tableOfContentsCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableOfContentsCollection` object, for use in `tableOfContentsCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false

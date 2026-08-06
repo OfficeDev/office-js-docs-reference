@@ -4,7 +4,10 @@ uid: word!Word.Interfaces.RangeData:interface
 package: word!
 fullName: Word.Interfaces.RangeData
 summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-remarks: ''
+remarks: |-
+  #### Used by
+
+  - [Word.Range](/javascript/api/word/word.range): [toJSON](/javascript/api/word/word.range#word-word-range-tojson-member(1))
 
 isPreview: false
 isDeprecated: false
@@ -14,12 +17,8 @@ properties:
     uid: word!Word.Interfaces.RangeData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -31,13 +30,8 @@ properties:
     uid: word!Word.Interfaces.RangeData#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +44,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

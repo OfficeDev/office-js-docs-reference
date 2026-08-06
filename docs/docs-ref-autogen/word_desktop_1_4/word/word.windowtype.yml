@@ -4,9 +4,12 @@ uid: word!Word.WindowType:enum
 package: word!
 fullName: Word.WindowType
 summary: Specifies the type of the window.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.Window](/javascript/api/word/word.window): [type](/javascript/api/word/word.window#word-word-window-type-member)
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +17,16 @@ fields:
   - name: document
     uid: word!Word.WindowType.document:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies a document window.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Document"'
   - name: template
     uid: word!Word.WindowType.template:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies a template window.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Template"'

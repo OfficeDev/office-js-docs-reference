@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement set 1.10
 description: Details about the PowerPointApi 1.10 requirement set.
-ms.date: 12/16/2025
+ms.date: 02/03/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ PowerPointApi 1.10 added APIs to better manage accessibility, slide background, 
 The following table lists the PowerPoint JavaScript API requirement set 1.10. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../../includes/powerpoint-1_10.md)]
+[!INCLUDE[API table](../../includes/powerpoint-1-10.md)]
 
 ## See also
 

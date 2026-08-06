@@ -3,10 +3,11 @@ name: PowerPoint.Interfaces.TagCollectionData
 uid: powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tagCollection.toJSON()`<!-- -->.
-remarks: ''
+summary: An interface describing the data returned by calling `tagCollection.toJSON()`<!-- -->.
+remarks: |-
+  #### Used by
+
+  - [PowerPoint.TagCollection](/javascript/api/powerpoint/powerpoint.tagcollection): [toJSON](/javascript/api/powerpoint/powerpoint.tagcollection#powerpoint-powerpoint-tagcollection-tojson-member(1))
 
 isPreview: false
 isDeprecated: false

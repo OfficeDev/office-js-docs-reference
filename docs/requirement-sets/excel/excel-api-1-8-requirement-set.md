@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement set 1.8
 description: Details about the ExcelApi 1.8 requirement set.
-ms.date: 09/08/2025
+ms.date: 09/22/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -30,7 +30,7 @@ More [events](/office/dev/add-ins/excel/excel-add-ins-events) have been added fo
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.8. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.8 or earlier, see [Excel APIs in requirement set 1.8 or earlier](/javascript/api/excel?view=excel-js-1.8&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/excel-1_8.md)]
+[!INCLUDE[API table](../../includes/excel-1-8.md)]
 
 ## See also
 

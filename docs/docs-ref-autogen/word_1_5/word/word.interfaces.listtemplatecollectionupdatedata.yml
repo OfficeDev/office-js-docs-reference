@@ -3,9 +3,7 @@ name: Word.Interfaces.ListTemplateCollectionUpdateData
 uid: word!Word.Interfaces.ListTemplateCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateCollectionUpdateData
-summary: >-
-  An interface for updating data on the `ListTemplateCollection` object, for use
-  in `listTemplateCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ListTemplateCollection` object, for use in `listTemplateCollection.set({ ... })`<!-- -->.
 remarks: ''
 
 isPreview: false
