@@ -1214,25 +1214,24 @@ methods:
       await Excel.run(async (context) => {
           const cell = context.workbook.getActiveCell();
 
-          // Define the cell properties to get by setting the matching LoadOptions to true.
-          const propertiesToGet = cell.getCellProperties({
+          // Get only the properties requested in this load-options object.
+          const propertiesToGet: Excel.CellPropertiesLoadOptions = {
               address: true,
               format: {
                   fill: {
                       color: true
                   },
                   font: {
+                      bold: true,
                       color: true
                   }
               },
               style: true
-          });
+          };
+          const cellProperties = cell.getCellProperties(propertiesToGet);
 
-          // Sync to get the data from the workbook.
           await context.sync();
-          const cellProperties = propertiesToGet.value[0][0];
-          console.log(
-              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+          console.log(JSON.stringify(cellProperties.value[0][0], null, 2));
       });
       ```
 
@@ -2987,18 +2986,17 @@ methods:
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-          // Creating the SettableCellProperties objects to use for the range.
-          // In your add-in, these should be created once, outside the function.
+          // Create the SettableCellProperties objects for the range.
+          // Create these objects once, outside the function, in your add-in.
           const topHeaderProps: Excel.SettableCellProperties = {
-              // The style property takes a string matching the name of an Excel style.
-              // Built-in style names are listed in the `BuiltInStyle` enum.
-              // Note that a style will overwrite any formatting,
-              // so do not use the format property with the style property.
-              style: "Heading1"
+              // Set the style property to the name of an Excel style.
+              // The `BuiltInStyle` enum lists the built-in style names.
+              // A style overwrites formatting, so don't use style and format in the same object.
+              style: Excel.BuiltInStyle.heading1
           };
 
           const headerProps: Excel.SettableCellProperties = {
-              // Any subproperties of format that are not set will not be changed when these cell properties are set.
+              // Setting these cell properties doesn't change unspecified format subproperties.
               format: {
                   fill: {
                       color: "Blue"
@@ -3037,13 +3035,14 @@ methods:
                       top: {
                           style: Excel.BorderLineStyle.continuous
                       }
-                  }
+                  },
+                  horizontalAlignment: Excel.HorizontalAlignment.center
               }
           };
 
           const range = sheet.getRange("A1:E5");
 
-          // You can use empty JSON objects to avoid changing a cell's properties.
+          // Use empty JSON objects to leave a cell's properties unchanged.
           range.setCellProperties([
               [topHeaderProps, {}, {}, {}, {}],
               [{}, {}, headerProps, headerProps, headerProps],
