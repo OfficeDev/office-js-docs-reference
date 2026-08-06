@@ -319,7 +319,7 @@ Excel.BindingCollection#load:member(2):
             console.log(bindings.items[i].id);
         }
     });
-Excel.BindingDataChangesEventArgs:interface:
+Excel.BindingDataChangedEventArgs:interface:
   - |-
     // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
 
