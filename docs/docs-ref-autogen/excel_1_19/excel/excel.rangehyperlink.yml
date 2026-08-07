@@ -12,6 +12,28 @@ remarks: |-
   - [Excel.Range](/javascript/api/excel/excel.range): [hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)
   - [Excel.SettableCellProperties](/javascript/api/excel/excel.settablecellproperties): [hyperlink](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-hyperlink-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+      const hyperlinkDetails: Excel.RangeHyperlink = {
+          address: "https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-set-get-values",
+          screenTip: "Learn about working with ranges.",
+          textToDisplay: "Range documentation",
+      };
+      const hyperlinkProps: Excel.SettableCellProperties = {
+          hyperlink: hyperlinkDetails
+      };
+
+      sheet.getRange("B7").setCellProperties([[hyperlinkProps]]);
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
