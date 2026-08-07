@@ -1,13 +1,13 @@
 ### YamlMime:TSType
-name: Office.InlinePictures
-uid: outlook!Office.InlinePictures:interface
+name: Office.Pictures
+uid: outlook!Office.Pictures:interface
 package: outlook!
-fullName: Office.InlinePictures
+fullName: Office.Pictures
 summary: Provides methods to manage inline pictures in the body of the message or appointment.
 remarks: |-
   [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
+  **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
 
   **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
@@ -20,14 +20,14 @@ isDeprecated: false
 type: interface
 methods:
   - name: deleteAsync(id, options, callback)
-    uid: outlook!Office.InlinePictures#deleteAsync:member(1)
+    uid: outlook!Office.Pictures#deleteAsync:member(1)
     package: outlook!
     fullName: deleteAsync(id, options, callback)
     summary: Removes the specified inline picture from the mail item.
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
@@ -52,14 +52,14 @@ methods:
         type: void
         description: ''
   - name: deleteAsync(id, callback)
-    uid: outlook!Office.InlinePictures#deleteAsync:member(2)
+    uid: outlook!Office.Pictures#deleteAsync:member(2)
     package: outlook!
     fullName: deleteAsync(id, callback)
     summary: Removes the specified inline picture from the mail item.
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
-      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read item**
+      **[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**: **read/write item**
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Compose
 
@@ -81,7 +81,7 @@ methods:
         type: void
         description: ''
   - name: getAllAsync(options, callback)
-    uid: outlook!Office.InlinePictures#getAllAsync:member(1)
+    uid: outlook!Office.Pictures#getAllAsync:member(1)
     package: outlook!
     fullName: getAllAsync(options, callback)
     summary: Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
@@ -107,7 +107,7 @@ methods:
         type: void
         description: ''
   - name: getAllAsync(callback)
-    uid: outlook!Office.InlinePictures#getAllAsync:member(2)
+    uid: outlook!Office.Pictures#getAllAsync:member(2)
     package: outlook!
     fullName: getAllAsync(callback)
     summary: Gets all inline pictures in the body of the mail item. Inline pictures are returned in the order of their appearance in the body.
@@ -130,7 +130,7 @@ methods:
         type: void
         description: ''
   - name: getAsBase64Async(id, options, callback)
-    uid: outlook!Office.InlinePictures#getAsBase64Async:member(1)
+    uid: outlook!Office.Pictures#getAsBase64Async:member(1)
     package: outlook!
     fullName: getAsBase64Async(id, options, callback)
     summary: Gets the Base64-encoded string of the inline picture.
@@ -165,7 +165,7 @@ methods:
         type: void
         description: ''
   - name: getAsBase64Async(id, callback)
-    uid: outlook!Office.InlinePictures#getAsBase64Async:member(2)
+    uid: outlook!Office.Pictures#getAsBase64Async:member(2)
     package: outlook!
     fullName: getAsBase64Async(id, callback)
     summary: Gets the Base64-encoded string of the inline picture.
@@ -201,7 +201,7 @@ methods:
         type: void
         description: ''
   - name: getByIdAsync(id, options, callback)
-    uid: outlook!Office.InlinePictures#getByIdAsync:member(1)
+    uid: outlook!Office.Pictures#getByIdAsync:member(1)
     package: outlook!
     fullName: getByIdAsync(id, options, callback)
     summary: Gets the inline picture for the specified ID.
@@ -230,7 +230,7 @@ methods:
         type: void
         description: ''
   - name: getByIdAsync(id, callback)
-    uid: outlook!Office.InlinePictures#getByIdAsync:member(2)
+    uid: outlook!Office.Pictures#getByIdAsync:member(2)
     package: outlook!
     fullName: getByIdAsync(id, callback)
     summary: Gets the inline picture for the specified ID.
@@ -256,7 +256,7 @@ methods:
         type: void
         description: ''
   - name: scrollToAsync(id, options, callback)
-    uid: outlook!Office.InlinePictures#scrollToAsync:member(1)
+    uid: outlook!Office.Pictures#scrollToAsync:member(1)
     package: outlook!
     fullName: scrollToAsync(id, options, callback)
     summary: Brings the specified inline picture into view in the body of the mail item.
@@ -276,7 +276,7 @@ methods:
           description: The identifier of the inline picture.
           type: string
         - id: options
-          description: 'An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Any data you want to access in the callback function. `select`<!-- -->: Optional. If true, the inline picture is selected after it is scrolled into view. The default value is false.'
+          description: 'An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Any data you want to access in the callback function. `select`<!-- -->: Optional. If true, the inline picture is selected once it''s in view. The default value is false.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { select?: boolean }'
         - id: callback
           description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->. The `asyncResult` parameter is an `Office.AsyncResult` object.
@@ -285,7 +285,7 @@ methods:
         type: void
         description: ''
   - name: scrollToAsync(id, callback)
-    uid: outlook!Office.InlinePictures#scrollToAsync:member(2)
+    uid: outlook!Office.Pictures#scrollToAsync:member(2)
     package: outlook!
     fullName: scrollToAsync(id, callback)
     summary: Brings the specified inline picture into view in the body of the mail item.

@@ -1,8 +1,8 @@
 ### YamlMime:TSType
-name: Office.OnPicturesChangedEventArgs
-uid: outlook!Office.OnPicturesChangedEventArgs:interface
+name: Office.PicturesChangedEventArgs
+uid: outlook!Office.PicturesChangedEventArgs:interface
 package: outlook!
-fullName: Office.OnPicturesChangedEventArgs
+fullName: Office.PicturesChangedEventArgs
 summary: Provides information about the inline pictures that were added to or removed from the body of a message or appointment when the `Office.EventType.OnPicturesChanged` event occurs.
 remarks: |-
   [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -16,7 +16,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: changeType
-    uid: outlook!Office.OnPicturesChangedEventArgs#changeType:member
+    uid: outlook!Office.PicturesChangedEventArgs#changeType:member
     package: outlook!
     fullName: changeType
     summary: Specifies whether the inline pictures were added to or removed from the body of the mail item.
@@ -34,7 +34,7 @@ properties:
       return:
         type: '"added" | "removed"'
   - name: pictureIds
-    uid: outlook!Office.OnPicturesChangedEventArgs#pictureIds:member
+    uid: outlook!Office.PicturesChangedEventArgs#pictureIds:member
     package: outlook!
     fullName: pictureIds
     summary: Gets the unique identifiers of the inline pictures that were added to or removed from the body of the mail item.

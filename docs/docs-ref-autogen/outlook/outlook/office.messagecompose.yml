@@ -1661,6 +1661,8 @@ methods:
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
+      - In classic Outlook on Windows, `getAttachmentsAsync` doesn't return inline pictures added from the ribbon using the **Insert** &gt; **Pictures** option. To retrieve all the inline pictures in the body of the mail item, call `Office.context.mailbox.item.body.pictures.getAllAsync` instead (in preview starting in Version //TODO).
+
       #### Examples
 
       ```TypeScript
@@ -1741,6 +1743,8 @@ methods:
       - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - In classic Outlook on Windows, `getAttachmentsAsync` doesn't return inline pictures added from the ribbon using the **Insert** &gt; **Pictures** option. To retrieve all the inline pictures in the body of the mail item, call `Office.context.mailbox.item.body.pictures.getAllAsync` instead (in preview starting in Version //TODO).
 
     isPreview: false
     isDeprecated: false
@@ -2494,7 +2498,7 @@ methods:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item. Alternatively, test the `Office.context.mailbox.item.body.pictures.deleteAsync` method that's available for preview in Outlook on the web and on Windows (new and classic). To test the method in classic Outlook on Windows, install Version //TODO or later. Then, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the **Beta Channel** option to access Office beta builds.
 
       **Errors**:
 
@@ -2549,7 +2553,7 @@ methods:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Message Compose
 
-      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item.
+      *Important**: The `removeAttachmentAsync` method doesn't remove inline attachments from a mail item. To remove an inline attachment, first get the item's body, then remove any references of the attachment from its contents. Use the [Office.Body](https://learn.microsoft.com/javascript/api/outlook/office.body) APIs to get and set the body of an item. Alternatively, test the `Office.context.mailbox.item.body.pictures.deleteAsync` method that's available for preview in Outlook on the web and on Windows (new and classic). To test the method in classic Outlook on Windows, install Version //TODO or later. Then, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the **Beta Channel** option to access Office beta builds.
 
       **Errors**:
 

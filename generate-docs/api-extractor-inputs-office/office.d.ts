@@ -742,17 +742,21 @@ export declare namespace Office {
         /**
          * Occurs when inline pictures are added or removed from a message or appointment in Outlook.
          *
-         * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
+         * This event can only be handled in a task pane. Function commands can't register a handler for this event.
          *
-         * To add an event handler for the `OnPicturesChanged` event, use the `addHandlerAsync` method of the `Item` object.
+         * To add an event handler for the `PicturesChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.onpictureschangedeventargs?view=outlook-js-preview | Office.OnPicturesChangedEventArgs}.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.pictureschangedeventargs?view=outlook-js-preview | Office.PicturesChangedEventArgs}.
          *
          * [Api set: Mailbox preview]
          *
+         * **Important**: The `PicturesChanged` event is available for preview in Outlook on the web and on Windows (new and classic). To test the event in
+         * classic Outlook on Windows, install Version //TODO or later. Then, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
+         *
          * @beta
          */
-        OnPicturesChanged,
+        PicturesChanged,
         /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
          *

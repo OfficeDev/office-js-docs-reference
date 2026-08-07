@@ -147,8 +147,6 @@ items:
             uid: outlook!Office.InfobarDetails:interface
           - name: InitializationContextChangedEventArgs
             uid: outlook!Office.InitializationContextChangedEventArgs:interface
-          - name: InlinePictures
-            uid: outlook!Office.InlinePictures:interface
           - name: InternetHeaders
             uid: outlook!Office.InternetHeaders:interface
           - name: IsAllDayEvent
@@ -193,14 +191,16 @@ items:
             uid: outlook!Office.NotificationMessages:interface
           - name: OfficeThemeChangedEventArgs
             uid: outlook!Office.OfficeThemeChangedEventArgs:interface
-          - name: OnPicturesChangedEventArgs
-            uid: outlook!Office.OnPicturesChangedEventArgs:interface
           - name: Organizer
             uid: outlook!Office.Organizer:interface
           - name: PhoneNumber
             uid: outlook!Office.PhoneNumber:interface
           - name: Picture
             uid: outlook!Office.Picture:interface
+          - name: Pictures
+            uid: outlook!Office.Pictures:interface
+          - name: PicturesChangedEventArgs
+            uid: outlook!Office.PicturesChangedEventArgs:interface
           - name: Recipients
             uid: outlook!Office.Recipients:interface
           - name: RecipientsChangedEventArgs
