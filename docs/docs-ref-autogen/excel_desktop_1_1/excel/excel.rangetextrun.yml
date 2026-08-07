@@ -11,6 +11,41 @@ remarks: |-
 
   - [Excel.SettableCellProperties](/javascript/api/excel/excel.settablecellproperties): [textRuns](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-textruns-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+      const textRunFormats: Excel.RangeTextRun[] = [
+          {
+              text: "Rich ",
+              font: {
+                  bold: true,
+                  color: "#C00000",
+                  size: 14
+              }
+          },
+          {
+              text: "text",
+              font: {
+                  color: "#4472C4",
+                  italic: true,
+                  underline: Excel.RangeUnderlineStyle.single
+              }
+          }
+      ]
+      const richTextProps: Excel.SettableCellProperties = {
+          textRuns: textRunFormats
+      };
+
+      sheet.getRange("A7").setCellProperties([[richTextProps]]);
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
