@@ -15,7 +15,8 @@
 ||[setAsync(isAllDayEvent: boolean, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.isalldayevent#outlook-office-isalldayevent-setasync-member(1))|Sets the all-day event status of an appointment.|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[display](/javascript/api/outlook/office.messageread#outlook-office-messageread-display-member)|Gets an object to temporarily set the content displayed in the body or subject of a message in read mode.|
 |[PictureSourceType](/javascript/api/outlook/office.mailboxenums.picturesourcetype)|Cid|The inline picture is an attachment on the mail item.|
-||Rtf|The inline picture is an attachment embedded in a mail item that uses the Rich Text Format (RTF).|
+||Data|The inline picture is an attachment on a reply to a decrypted message.|
+||Rtf|The inline picture is an attachment on a mail item that uses the Rich Text Format (RTF).|
 ||Url|The inline picture is an externally linked attachment.|
 |[Picture](/javascript/api/outlook/office.picture)|[contentId](/javascript/api/outlook/office.picture#outlook-office-picture-contentid-member)|Gets the content ID (`cid`) of an inline picture that's in the body of a mail item.|
 ||[id](/javascript/api/outlook/office.picture#outlook-office-picture-id-member)|Gets the unique identifier of the inline picture.|

@@ -9684,6 +9684,7 @@ outlook,Office.MailboxEnums.OWAView,"TwoColumns",EnumField,Excellent,false
 outlook,Office.MailboxEnums.OWAView,"ThreeColumns",EnumField,Excellent,false
 outlook,Office.MailboxEnums.PictureSourceType,N/A,Enum,Great,false
 outlook,Office.MailboxEnums.PictureSourceType,"Cid",EnumField,Excellent,false
+outlook,Office.MailboxEnums.PictureSourceType,"Data",EnumField,Excellent,false
 outlook,Office.MailboxEnums.PictureSourceType,"Rtf",EnumField,Excellent,false
 outlook,Office.MailboxEnums.PictureSourceType,"Url",EnumField,Excellent,false
 outlook,Office.MailboxEnums.RecipientType,N/A,Enum,Good,true

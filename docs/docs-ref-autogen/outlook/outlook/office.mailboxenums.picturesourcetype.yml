@@ -21,10 +21,15 @@ fields:
     package: outlook!
     summary: The inline picture is an attachment on the mail item. It's referenced using a content ID (`cid`<!-- -->) in the `src` attribute of the `<img>` element in the HTML body of the mail item.
     value: '"cid"'
+  - name: Data
+    uid: outlook!Office.MailboxEnums.PictureSourceType.Data:member
+    package: outlook!
+    summary: The inline picture is an attachment on a reply to a decrypted message. This enum value only applies to Outlook on the web and the new Outlook on Windows.
+    value: '"data"'
   - name: Rtf
     uid: outlook!Office.MailboxEnums.PictureSourceType.Rtf:member
     package: outlook!
-    summary: The inline picture is an attachment embedded in a mail item that uses the Rich Text Format (RTF).
+    summary: The inline picture is an attachment on a mail item that uses the Rich Text Format (RTF).
     value: '"rtf"'
   - name: Url
     uid: outlook!Office.MailboxEnums.PictureSourceType.Url:member

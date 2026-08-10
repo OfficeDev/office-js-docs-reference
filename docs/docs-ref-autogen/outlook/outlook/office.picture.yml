@@ -79,7 +79,7 @@ properties:
     uid: outlook!Office.Picture#size:member
     package: outlook!
     fullName: size
-    summary: Gets the size of the inline picture in bytes. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid`<!-- -->.
+    summary: Gets the size of the inline picture in bytes. Applies to inline pictures with a source type of `Office.MailboxEnums.PictureSourceType.Cid` or `Office.MailboxEnums.PictureSourceType.Data`<!-- -->.
     remarks: |-
       [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
 
