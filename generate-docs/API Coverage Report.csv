@@ -9125,7 +9125,7 @@ outlook,Office.AccessControls,"allowCopyPaste",Property,Excellent,false
 outlook,Office.AccessControls,"allowPrint",Property,Great,false
 outlook,Office.AccessControls,"allowSave",Property,Great,false
 outlook,Office.Appointment,N/A,Interface,Great,false
-outlook,Office.AppointmentCompose,N/A,Interface,Great,false
+outlook,Office.AppointmentCompose,N/A,Interface,Great,true
 outlook,Office.AppointmentCompose,"body",Property,Great,true
 outlook,Office.AppointmentCompose,"categories",Property,Great,true
 outlook,Office.AppointmentCompose,"end",Property,Excellent,true
