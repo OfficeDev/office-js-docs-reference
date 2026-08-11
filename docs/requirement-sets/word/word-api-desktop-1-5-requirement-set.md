@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API desktop-only requirement set 1.5
 description: Details about the WordApiDesktop 1.5 requirement set.
-ms.date: 04/21/2026
+ms.date: 08/11/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -27,8 +27,7 @@ if (Office.context.requirements.isSetSupported("WordApiDesktop", "1.5")) {
 
 Once the API is in a cross-platform requirement set, you should remove or edit the `isSetSupported` check. This will enable your add-in's feature on other platforms. Be sure to test the feature on those platforms when making this change.
 
-> [!IMPORTANT]
-> Your manifest cannot specify `WordApiDesktop 1.5` as an activation requirement. It isn't a valid value to use in the [Set element](/javascript/api/manifest/set).
+[!INCLUDE[platform-specific-xml-support](../../includes/platform-specific-xml-support.md)]
 
 ## API list
 

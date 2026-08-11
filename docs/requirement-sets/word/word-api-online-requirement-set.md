@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API online-only requirement set
 description: Details about the WordApiOnline requirement set.
-ms.date: 08/29/2024
+ms.date: 08/11/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -36,8 +36,7 @@ if (Office.context.requirements.isSetSupported("WordApiOnline", "1.1")) {
 
 Once the API is in a cross-platform requirement set, you should remove or edit the `isSetSupported` check. This will enable your add-in's feature on other platforms. Be sure to test the feature on those platforms when making this change.
 
-> [!IMPORTANT]
-> Your manifest cannot specify `WordApiOnline 1.1` as an activation requirement. It isn't a valid value to use in the [Set element](/javascript/api/manifest/set).
+[!INCLUDE[platform-specific-xml-support](../../includes/platform-specific-xml-support.md)]
 
 ## API list
 

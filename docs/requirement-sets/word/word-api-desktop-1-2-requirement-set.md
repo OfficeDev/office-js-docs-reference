@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API desktop-only requirement set 1.2
 description: Details about the WordApiDesktop 1.2 requirement set.
-ms.date: 12/16/2025
+ms.date: 08/11/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -27,12 +27,11 @@ if (Office.context.requirements.isSetSupported("WordApiDesktop", "1.2")) {
 
 Once the API is in a cross-platform requirement set, you should remove or edit the `isSetSupported` check. This will enable your add-in's feature on other platforms. Be sure to test the feature on those platforms when making this change.
 
-> [!IMPORTANT]
-> Your manifest cannot specify `WordApiDesktop 1.2` as an activation requirement. It isn't a valid value to use in the [Set element](/javascript/api/manifest/set).
+[!INCLUDE[platform-specific-xml-support](../../includes/platform-specific-xml-support.md)]
 
 ## API list
 
-The following table lists the Word JavaScript APIs currently included in the `WordApiDesktop 1.2` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiDesktop 1.2` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-desktop-1.1&preserve-view=true).
+The following table lists the Word JavaScript APIs currently included in the `WordApiDesktop 1.2` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiDesktop 1.2` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-desktop-1.2&preserve-view=true).
 
 [!INCLUDE[API table](../../includes/word-desktop-1-2.md)]
 

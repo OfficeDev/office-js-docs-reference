@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The add-in only (XML) manifest can't specify desktop-only or online-only requirement sets as activation requirements. It isn't a valid value to use in the [Set element](/javascript/api/manifest/set). The unified manifest does support desktop-only requirement sets in the [`"requirements.capabilities"`](/microsoft-365/extensibility/schema/requirements-extension-element#capabilities) property.

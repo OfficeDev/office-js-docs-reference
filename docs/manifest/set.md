@@ -1,7 +1,7 @@
 ---
 title: Set element in the manifest file
 description: The Set element specifies an Office JavaScript API requirement set your Office Add-in requires in order to be activated by Office or to override base manifest settings.
-ms.date: 06/29/2022
+ms.date: 08/11/2026
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +52,11 @@ Certain requirement sets can't be declared in this element of the manifest; they
 
 |Requirement set|Affected hosts|
 |:---|:---|
+|[ExcelApiDesktop (all)](../requirement-sets/excel/excel-api-desktop-1-1-requirement-set.md#recommended-usage)|Excel|
 |[ExcelApiOnline 1.1](../requirement-sets/excel/excel-api-online-requirement-set.md#recommended-usage)|Excel|
 |[IdentityApi 1.3](../requirement-sets/common/identity-api-requirement-sets.md#outlook-and-identity-api-requirement-sets)|Outlook|
-|[WordApiHiddenDocument 1.3](../requirement-sets/word/word-api-1-3-hidden-document-requirement-set.md#recommended-usage)|Word|
+|[WordApiDesktop (all)](../requirement-sets/word/word-api-desktop-1-1-requirement-set.md#recommended-usage)|Word|
+|[WordApiHiddenDocument (all)](../requirement-sets/word/word-api-1-3-hidden-document-requirement-set.md#recommended-usage)|Word|
 |[WordApiOnline 1.1](../requirement-sets/word/word-api-online-requirement-set.md#recommended-usage)|Word|
 |[Preview APIs](/office/dev/add-ins/develop/referencing-the-javascript-api-for-office-library-from-its-cdn#preview-apis)|All hosts|
 
