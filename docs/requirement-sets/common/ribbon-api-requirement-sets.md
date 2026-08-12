@@ -1,7 +1,7 @@
 ---
 title: Ribbon API requirement sets
 description: Specifies which Office platforms and builds support the dynamic ribbon APIs.
-ms.date: 07/30/2026
+ms.date: 08/13/2026
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -50,7 +50,7 @@ Ribbon API 1.2 adds support for contextual tabs. For more information, see [Crea
 
 ## Ribbon API 1.3
 
-Ribbon API 1.3 adds support to dynamically show or hide add-in commands on a custom tab.
+Ribbon API 1.3 adds support to dynamically show or hide add-in commands on a custom tab. For more information, see [Show or hide add-in commands on a custom tab](/office/dev/add-ins/design/show-hide-controls-custom-tab).
 
 ## See also
 
