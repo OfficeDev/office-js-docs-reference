@@ -9122,7 +9122,7 @@ onenote,N/A,"OneNote.run(batch)",Method,Excellent,true
 onenote,N/A,"OneNote.run(object, batch)",Method,Great,false
 onenote,N/A,"OneNote.run(objects, batch)",Method,Great,false
 outlook,Office.Appointment,N/A,Interface,Great,false
-outlook,Office.AppointmentCompose,N/A,Interface,Great,false
+outlook,Office.AppointmentCompose,N/A,Interface,Great,true
 outlook,Office.AppointmentCompose,"body",Property,Great,true
 outlook,Office.AppointmentCompose,"categories",Property,Great,true
 outlook,Office.AppointmentCompose,"end",Property,Excellent,true
@@ -10070,6 +10070,7 @@ outlook,Office.Pictures,"scrollToAsync(id, callback)",Method,Fine,false
 outlook,Office.PicturesChangedEventArgs,N/A,Interface,Great,false
 outlook,Office.PicturesChangedEventArgs,"changeType",Property,Excellent,false
 outlook,Office.PicturesChangedEventArgs,"pictureIds",Property,Excellent,false
+outlook,Office.PicturesChangedEventArgs,"type",Property,Excellent,false
 outlook,Office.Recipients,N/A,Interface,Fine,false
 outlook,Office.Recipients,"addAsync(recipients, options, callback)",Method,Fine,true
 outlook,Office.Recipients,"addAsync(recipients, callback)",Method,Fine,false
