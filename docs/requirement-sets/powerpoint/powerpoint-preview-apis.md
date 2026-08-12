@@ -16,7 +16,6 @@ New PowerPoint JavaScript APIs are first introduced in "preview" and later becom
 
 The following table lists the PowerPoint JavaScript APIs currently in preview. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
-
 [!INCLUDE[API table](../../includes/powerpoint-preview.md)]
 
 ## See also

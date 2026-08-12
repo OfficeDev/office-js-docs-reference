@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API Hidden Document requirement set 1.4
 description: Details about the WordApiHiddenDocument 1.4 requirement set.
-ms.date: 08/29/2024
+ms.date: 08/11/2026
 ms.localizationpriority: medium
 ---
 
@@ -24,8 +24,7 @@ if (Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.4")) 
 
 Once the API is in a cross-platform requirement set, you should remove or edit the `isSetSupported` check. This will enable your add-in's feature on other platforms. Be sure to test the feature on those platforms when making this change.
 
-> [!IMPORTANT]
-> Your manifest cannot specify `WordApiHiddenDocument 1.4` as an activation requirement. It's not a valid value to use in the [Set element](../../manifest/set.md).
+[!INCLUDE[platform-specific-xml-support](../../includes/platform-specific-xml-support.md)]
 
 ## API list
 
