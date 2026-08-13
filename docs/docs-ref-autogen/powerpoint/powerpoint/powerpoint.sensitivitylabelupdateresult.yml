@@ -14,6 +14,14 @@ remarks: |-
 isPreview: true
 isDeprecated: false
 fields:
+  - name: abacNotSupported
+    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.abacNotSupported:member
+    package: powerpoint!
+    summary: |-
+      The label update failed because attribute-based access control (ABAC) is not supported in this context.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"AbacNotSupported"'
   - name: crossTenant
     uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.crossTenant:member
     package: powerpoint!
@@ -54,6 +62,14 @@ fields:
 
       * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"LabelNotFound"'
+  - name: missingRequiredAttributes
+    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.missingRequiredAttributes:member
+    package: powerpoint!
+    summary: |-
+      The label update failed because required ABAC attribute selections were not provided.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"MissingRequiredAttributes"'
   - name: parentLabelNotSupported
     uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.parentLabelNotSupported:member
     package: powerpoint!
@@ -62,6 +78,14 @@ fields:
 
       * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"ParentLabelNotSupported"'
+  - name: removingLabelNotSupported
+    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.removingLabelNotSupported:member
+    package: powerpoint!
+    summary: |-
+      The label update failed because removing the current label is not supported.
+
+      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+    value: '"RemovingLabelNotSupported"'
   - name: success
     uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.success:member
     package: powerpoint!

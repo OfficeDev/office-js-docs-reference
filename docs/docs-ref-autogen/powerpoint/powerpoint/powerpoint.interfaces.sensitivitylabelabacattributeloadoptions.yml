@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions
+summary: Represents an attribute-based access control (ABAC) attribute available for selection on an ABAC-enabled sensitivity label.
+remarks: |-
+  [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+  #### Used by
+
+  - [PowerPoint.SensitivityLabelAbacAttribute](/javascript/api/powerpoint/powerpoint.sensitivitylabelabacattribute): [load](/javascript/api/powerpoint/powerpoint.sensitivitylabelabacattribute#powerpoint-powerpoint-sensitivitylabelabacattribute-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: displayName
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#displayName:member
+    package: powerpoint!
+    fullName: displayName
+    summary: Gets the display name of the ABAC attribute. Add-ins are responsible for presenting localized user-facing UI.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: boolean;'
+      return:
+        type: boolean
+  - name: displayOrder
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#displayOrder:member
+    package: powerpoint!
+    fullName: displayOrder
+    summary: Gets the recommended ordering of this ABAC attribute when displayed to a user.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayOrder?: boolean;'
+      return:
+        type: boolean
+  - name: isActive
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#isActive:member
+    package: powerpoint!
+    fullName: isActive
+    summary: Gets whether this ABAC attribute is active. `true` if the attribute is active; otherwise, `false`<!-- -->.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
+      return:
+        type: boolean
+  - name: isMultiValued
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#isMultiValued:member
+    package: powerpoint!
+    fullName: isMultiValued
+    summary: Gets whether more than one value can be selected for this ABAC attribute. `true` if multi-select; otherwise, `false`<!-- -->.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMultiValued?: boolean;'
+      return:
+        type: boolean
+  - name: values
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions#values:member
+    package: powerpoint!
+    fullName: values
+    summary: Gets the values that are selectable for this ABAC attribute.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type: boolean
