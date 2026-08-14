@@ -28,6 +28,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: abacAttributeValues
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions#abacAttributeValues:member
+    package: powerpoint!
+    fullName: abacAttributeValues
+    summary: Gets the attribute-based access control (ABAC) attribute values currently applied to this sensitivity label. Returns an empty array when no ABAC attributes are applied or this label is not ABAC-enabled.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'abacAttributeValues?: boolean;'
+      return:
+        type: boolean
   - name: color
     uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions#color:member
     package: powerpoint!
@@ -52,6 +65,32 @@ properties:
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacAttributesRequired
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacAttributesRequired:member
+    package: powerpoint!
+    fullName: isAbacAttributesRequired
+    summary: Gets whether ABAC attribute selections are required to apply this label. If `true`<!-- -->, callers must supply attribute values when applying the label; otherwise the update returns `SensitivityLabelUpdateResult.MissingRequiredAttributes`<!-- -->.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacAttributesRequired?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacEnabled
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacEnabled:member
+    package: powerpoint!
+    fullName: isAbacEnabled
+    summary: Gets whether this label is attribute-based access control (ABAC) enabled. Returns `false` when the host's labeling capabilities don't include `attributeBasedAccessControlEnabled`<!-- -->.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacEnabled?: boolean;'
       return:
         type: boolean
   - name: isEnabled
