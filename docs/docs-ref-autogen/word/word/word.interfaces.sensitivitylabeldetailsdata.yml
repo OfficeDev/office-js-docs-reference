@@ -13,19 +13,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abacAttributeValues
-    uid: word!Word.Interfaces.SensitivityLabelDetailsData#abacAttributeValues:member
-    package: word!
-    fullName: abacAttributeValues
-    summary: The ABAC attribute values associated with the sensitivity label.
-    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'abacAttributeValues?: Word.SensitivityLabelAbacAttributeValue[];'
-      return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:class" />[]
   - name: children
     uid: word!Word.Interfaces.SensitivityLabelDetailsData#children:member
     package: word!
@@ -65,32 +52,6 @@ properties:
       content: 'id?: string;'
       return:
         type: string
-  - name: isAbacAttributesRequired
-    uid: word!Word.Interfaces.SensitivityLabelDetailsData#isAbacAttributesRequired:member
-    package: word!
-    fullName: isAbacAttributesRequired
-    summary: Indicates whether ABAC attributes are required when applying the sensitivity label.
-    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'isAbacAttributesRequired?: boolean;'
-      return:
-        type: boolean
-  - name: isAbacEnabled
-    uid: word!Word.Interfaces.SensitivityLabelDetailsData#isAbacEnabled:member
-    package: word!
-    fullName: isAbacEnabled
-    summary: Indicates whether the sensitivity label supports ABAC attributes.
-    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'isAbacEnabled?: boolean;'
-      return:
-        type: boolean
   - name: isEnabled
     uid: word!Word.Interfaces.SensitivityLabelDetailsData#isEnabled:member
     package: word!

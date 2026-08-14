@@ -7,8 +7,6 @@ summary: Represents a coauthoring lock in a Word document.
 remarks: |-
   [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
-  This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
-
   #### Used by
 
   - [Word.CoauthoringLockCollection](/javascript/api/word/word.coauthoringlockcollection): [add](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-add-member(1)), [items](/javascript/api/word/word.coauthoringlockcollection#word-word-coauthoringlockcollection-items-member)
@@ -231,8 +229,6 @@ methods:
     summary: Removes this lock, even if it belongs to a different user.
     remarks: |-
       [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      This API works only with legacy coauthoring locks. It doesn't apply to modern OneDrive or SharePoint coauthoring, where lock management is handled automatically by the service. Calls on a modern document will fail with a `GeneralException` error.
 
       #### Examples
 

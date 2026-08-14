@@ -41,10 +41,10 @@
   "docs/includes/outlook-1-9.md": "2b3cf1602710264855089058c5dd73d1403a2b54f80f559ed324336680e01582",
   "docs/includes/outlook-contextual-add-ins-retirement.md": "ff330abd9631bb0e53dc03e998282649f4963368955fba7da67b5cc5b9e290d4",
   "docs/includes/outlook-identity-13-note.md": "f9d6466261cdeca95933b748f1c0a7e663ebb9767cbd60733071a3fc32af27e8",
-  "docs/includes/outlook-item-object-model-events.md": "77fbc1c1eaf82723df75720de2dbf1e5586f6588f6cf48c63de54338e23f5093",
+  "docs/includes/outlook-item-object-model-events.md": "625f862f4632c976038e3a9f9c6d6137a01123dcc6308ff668ccbc4e5797d02b",
   "docs/includes/outlook-item-object-model-methods.md": "2e45ea490ce5259083318176ad54e469dcb6826a06e1342584d335af41667f91",
   "docs/includes/outlook-item-object-model-properties.md": "cc04ce9f1c0c8695f87ab0e72b910f922c2e34e2a9e94612c3e9e1d1bcd8fda7",
-  "docs/includes/outlook-preview.md": "bfccca5e1dfff185b6dd49259e78422ac04cb9bcefc5752100c2cf2f6c855855",
+  "docs/includes/outlook-preview.md": "9c5a80846a33af97944b788c8737a3ba6992a0712340ad91441bcfa00fee0a77",
   "docs/includes/powerpoint-1-1.md": "756aa6c31cd503f14d3ec2e9878644a3d89cd8a34b2f747c99ac52a260d3b7ac",
   "docs/includes/powerpoint-1-10.md": "bd9b06f837891744b4578277375d3be363cac946453f915af2ffe4f8f6dcf7c0",
   "docs/includes/powerpoint-1-2.md": "485c8d4520a52eb300698a7188f723cf911b37c23ccd34b172965af368a48456",
@@ -55,7 +55,7 @@
   "docs/includes/powerpoint-1-7.md": "deaa7ebfca248a46f30d491f83de7ec980ed211d307dec34389814190d25e6bc",
   "docs/includes/powerpoint-1-8.md": "362f235a8c908f2455edac34f7d8d118e6190fa2b170983cb228e1c2efcc8176",
   "docs/includes/powerpoint-1-9.md": "1218a0155af2bfe44bff3a145e63b738cbaf86542f9f39a09484cfbac05a93b1",
-  "docs/includes/powerpoint-preview.md": "8e7937ecc3b6555766874de0404ec3a7bcf24f03a6073cdddb58e3f21ec0f6fe",
+  "docs/includes/powerpoint-preview.md": "a94bad334b50aefdff73bfff305ba8bae9f4b2ebecc894e09a1038b8c18ee91e",
   "docs/includes/word-1-1.md": "d65499dda9d13278801af55f0ecbc5f06f0a594588314179311b43685062b3c4",
   "docs/includes/word-1-2.md": "a41039a7423c1804b8d74616ee03529691ea621c99a56913917425ab3d71318a",
   "docs/includes/word-1-3-hidden-document.md": "c61ec1cffe600be1f0b37f39c1644f5d424897c952fd2c9a99da8638352f9201",
@@ -74,5 +74,5 @@
   "docs/includes/word-desktop-1-4.md": "c5e4edd59b4ae08375f036aa6baec9651ba41c9fc44a5babc8ee86c8e06d9ae6",
   "docs/includes/word-desktop-1-5.md": "ad2b6656b6550fe41baeb535303256d2cf2b3b3643d6450820fb30e3f19f3e57",
   "docs/includes/word-online.md": "e645b476195fda983b442e3cc9a606eaf83e4ec837ffb32027e1eed326dc4814",
-  "docs/includes/word-preview.md": "c2970e2ab02b47c2c8b8927ed873fd71569b4329636f95f634dae46056d2988f"
+  "docs/includes/word-preview.md": "c5d4fe32fb16159648153c967120c50fcfa41534a3a4cdfb4898a934b23d0ef9"
 }

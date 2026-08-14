@@ -4,7 +4,6 @@ name: outlook
 type: package
 summary: ''
 interfaces:
-  - outlook!Office.AccessControls:interface
   - outlook!Office.Appointment:interface
   - outlook!Office.AppointmentCompose:interface
   - outlook!Office.AppointmentForm:interface
@@ -69,6 +68,9 @@ interfaces:
   - outlook!Office.OfficeThemeChangedEventArgs:interface
   - outlook!Office.Organizer:interface
   - outlook!Office.PhoneNumber:interface
+  - outlook!Office.Picture:interface
+  - outlook!Office.Pictures:interface
+  - outlook!Office.PicturesChangedEventArgs:interface
   - outlook!Office.Recipients:interface
   - outlook!Office.RecipientsChangedEventArgs:interface
   - outlook!Office.RecipientsChangedFields:interface
@@ -116,6 +118,7 @@ enums:
   - outlook!Office.MailboxEnums.MoveSpamItemTo:enum
   - outlook!Office.MailboxEnums.OpenLocation:enum
   - outlook!Office.MailboxEnums.OWAView:enum
+  - outlook!Office.MailboxEnums.PictureSourceType:enum
   - outlook!Office.MailboxEnums.RecipientType:enum
   - outlook!Office.MailboxEnums.RecurrenceTimeZone:enum
   - outlook!Office.MailboxEnums.RecurrenceType:enum

@@ -855,10 +855,6 @@ items:
             uid: word!Word.SelectSingleNodeOptions:interface
           - name: SensitivityLabel
             uid: word!Word.SensitivityLabel:class
-          - name: SensitivityLabelAbacAttribute
-            uid: word!Word.SensitivityLabelAbacAttribute:class
-          - name: SensitivityLabelAbacAttributeValue
-            uid: word!Word.SensitivityLabelAbacAttributeValue:class
           - name: SensitivityLabelDetails
             uid: word!Word.SensitivityLabelDetails:class
           - name: SensitivityLabelDetailsCollection

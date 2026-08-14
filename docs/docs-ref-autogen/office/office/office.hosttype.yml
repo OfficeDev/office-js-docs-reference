@@ -27,7 +27,7 @@ fields:
   - name: Access
     uid: office!Office.HostType.Access:member
     package: office!
-    summary: 'The Office application is Microsoft Access. Warning: Microsoft Access is no longer supported.'
+    summary: The Office application is Microsoft Access.
   - name: Excel
     uid: office!Office.HostType.Excel:member
     package: office!

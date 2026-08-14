@@ -135,10 +135,6 @@ items:
             uid: powerpoint!PowerPoint.RequestContext:class
           - name: SensitivityLabel
             uid: powerpoint!PowerPoint.SensitivityLabel:class
-          - name: SensitivityLabelAbacAttribute
-            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class
-          - name: SensitivityLabelAbacAttributeValue
-            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:class
           - name: SensitivityLabelDetails
             uid: powerpoint!PowerPoint.SensitivityLabelDetails:class
           - name: SensitivityLabelDetailsCollection

@@ -740,6 +740,22 @@ export declare namespace Office {
          */
         OfficeThemeChanged,
         /**
+         * Occurs when inline pictures are added or removed from a message or appointment in Outlook.
+         *
+         * This event can only be handled in a task pane. Function commands can't register a handler for this event.
+         *
+         * To add an event handler for the `PicturesChanged` event, use the `addHandlerAsync` method of the `Item` object.
+         * The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.pictureschangedeventargs?view=outlook-js-preview | Office.PicturesChangedEventArgs}.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * **Important**: The `PicturesChanged` event is available for preview in Outlook on the web and the new Outlook on Windows.
+         *
+         * @beta
+         */
+        PicturesChanged,
+        /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
          *
          * **Important**: This event can only be handled in a task pane. Function commands can't register a handler for this event.
@@ -905,7 +921,7 @@ export declare namespace Office {
          */
         Project,
         /**
-         * The Office application is Microsoft Access. Warning: Microsoft Access is no longer supported.
+         * The Office application is Microsoft Access.
          * 
          * @deprecated Microsoft Access is no longer supported.
          */
@@ -4956,19 +4972,9 @@ export declare namespace Office {
          */
         id: string;
         /**
-         * Indicates whether the control should be enabled or disabled. The default is `true`.
+         * Indicates whether the control should be enabled or disabled. The default is true.
          */
         enabled?: boolean;
-        /**
-         * Specifies whether the control is shown or hidden on a custom tab. The default is `true`.
-         *
-         * @remarks
-         *
-          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.3}
-          *
-          * **Important**: The visibility of buttons and menu controls can be configured, but the visibility of individual items within a menu can't be configured.
-         */
-        visible?: boolean;
     }
     /**
      * Represents an XML node in a tree in a document.
@@ -7508,14 +7514,6 @@ export declare namespace Office {
           * When the `Group` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is ignored. 
           */
          controls?: Control[];
-         /**
-          * Specifies whether the group of controls is shown or hidden on a custom tab.
-          *
-          * @remarks
-          *
-          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.3}
-          */
-         visible?: boolean;
     }
     /**
      * Represents a binding in two dimensions of rows and columns.

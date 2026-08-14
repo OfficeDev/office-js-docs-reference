@@ -211,21 +211,9 @@
 ||[separator](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-separator-member)|If provided, specifies the character used to separate text into cells.|
 |[SensitivityLabel](/javascript/api/word/word.sensitivitylabel)|[getCurrentOrNullObject()](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-getcurrentornullobject-member(1))|Gets the current label information that exists on the document for the user.|
 ||[tryToUpdate(LabelId: string, Justification?: string)](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))|Try to update to the provided sensitivity label on the document for the user.|
-|[SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute)|[displayName](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-displayname-member)|The display name of the ABAC attribute.|
-||[displayOrder](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-displayorder-member)|The display order of the ABAC attribute.|
-||[isActive](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-isactive-member)|Indicates whether the ABAC attribute is active.|
-||[isMultiValued](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-ismultivalued-member)|Indicates whether the ABAC attribute can have multiple values.|
-||[values](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-values-member)|The values available for the ABAC attribute.|
-|[SensitivityLabelAbacAttributeValue](/javascript/api/word/word.sensitivitylabelabacattributevalue)|[displayName](/javascript/api/word/word.sensitivitylabelabacattributevalue#word-word-sensitivitylabelabacattributevalue-displayname-member)|The display name of the ABAC attribute value.|
-||[displayOrder](/javascript/api/word/word.sensitivitylabelabacattributevalue#word-word-sensitivitylabelabacattributevalue-displayorder-member)|The display order of the ABAC attribute value.|
-||[id](/javascript/api/word/word.sensitivitylabelabacattributevalue#word-word-sensitivitylabelabacattributevalue-id-member)|The unique identifier of the ABAC attribute value.|
-||[isActive](/javascript/api/word/word.sensitivitylabelabacattributevalue#word-word-sensitivitylabelabacattributevalue-isactive-member)|Indicates whether the ABAC attribute value is active.|
-|[SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails)|[abacAttributeValues](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-abacattributevalues-member)|The attribute-based access control (ABAC) attribute values associated with the sensitivity label.|
-||[children](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-children-member)|The sublabels of the sensitivity label.|
+|[SensitivityLabelDetails](/javascript/api/word/word.sensitivitylabeldetails)|[children](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-children-member)|The sublabels of the sensitivity label.|
 ||[color](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-color-member)|The color of the sensitivity label.|
 ||[id](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-id-member)|The unique identifier (GUID) of the sensitivity label.|
-||[isAbacAttributesRequired](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-isabacattributesrequired-member)|Indicates whether attribute-based access control (ABAC) attributes are required when applying the sensitivity label.|
-||[isAbacEnabled](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-isabacenabled-member)|Indicates whether the sensitivity label supports attribute-based access control (ABAC) attributes.|
 ||[isEnabled](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-isenabled-member)|Gets a value indicating whether the label is enabled.|
 ||[name](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-name-member)|The name of the sensitivity label.|
 ||[order](/javascript/api/word/word.sensitivitylabeldetails#word-word-sensitivitylabeldetails-order-member)|The order of the sensitivity label.|
@@ -236,8 +224,7 @@
 ||[getFirstOrNullObject()](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-getfirstornullobject-member(1))|Gets the first `SensitivityLabelDetails` object in this collection.|
 ||[getItem(index: number)](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-getitem-member(1))|Gets a `SensitivityLabelDetails` object by its index in the collection.|
 ||[items](/javascript/api/word/word.sensitivitylabeldetailscollection#word-word-sensitivitylabeldetailscollection-items-member)|Gets the loaded child items in this collection.|
-|[SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog)|[getAttributes()](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getattributes-member(1))|Gets the attribute-based access control (ABAC) attributes available for sensitivity labels.|
-||[getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)|Gets the labeling capability status of the sensitivity label catalog in Word.|
+|[SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog)|[getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)|Gets the labeling capability status of the sensitivity label catalog in Word.|
 ||[getLabels()](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabels-member(1))|Gets all the sensitivity labels that are enabled in Word.|
 |[SourceCollection](/javascript/api/word/word.sourcecollection)|[getItem(index: number)](/javascript/api/word/word.sourcecollection#word-word-sourcecollection-getitem-member(1))|Gets a `Source` by its index in the collection.|
 |[Style](/javascript/api/word/word.style)|[description](/javascript/api/word/word.style#word-word-style-description-member)|Gets the description of the style.|

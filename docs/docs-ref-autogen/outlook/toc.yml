@@ -53,6 +53,8 @@ items:
                 uid: outlook!Office.MailboxEnums.OpenLocation:enum
               - name: OWAView
                 uid: outlook!Office.MailboxEnums.OWAView:enum
+              - name: PictureSourceType
+                uid: outlook!Office.MailboxEnums.PictureSourceType:enum
               - name: RecipientType
                 uid: outlook!Office.MailboxEnums.RecipientType:enum
               - name: RecurrenceTimeZone
@@ -73,8 +75,6 @@ items:
                 uid: outlook!Office.MailboxEnums.TokenStatus:enum
               - name: WeekNumber
                 uid: outlook!Office.MailboxEnums.WeekNumber:enum
-          - name: AccessControls
-            uid: outlook!Office.AccessControls:interface
           - name: AppointmentCompose
             uid: outlook!Office.AppointmentCompose:interface
           - name: AppointmentForm
@@ -195,6 +195,12 @@ items:
             uid: outlook!Office.Organizer:interface
           - name: PhoneNumber
             uid: outlook!Office.PhoneNumber:interface
+          - name: Picture
+            uid: outlook!Office.Picture:interface
+          - name: Pictures
+            uid: outlook!Office.Pictures:interface
+          - name: PicturesChangedEventArgs
+            uid: outlook!Office.PicturesChangedEventArgs:interface
           - name: Recipients
             uid: outlook!Office.Recipients:interface
           - name: RecipientsChangedEventArgs

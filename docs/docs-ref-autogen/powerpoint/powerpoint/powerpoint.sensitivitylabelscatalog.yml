@@ -37,20 +37,6 @@ properties:
       return:
         type: <xref uid="powerpoint!PowerPoint.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
 methods:
-  - name: getAttributes()
-    uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getAttributes:member(1)
-    package: powerpoint!
-    fullName: getAttributes()
-    summary: Gets the attribute-based access control (ABAC) attributes that are available to the current user.
-    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getAttributes(): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelAbacAttribute[]>;'
-      return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class" />[]&gt;
-        description: ''
   - name: getLabels()
     uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getLabels:member(1)
     package: powerpoint!

@@ -42,20 +42,6 @@ properties:
       return:
         type: <xref uid="word!Word.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
 methods:
-  - name: getAttributes()
-    uid: word!Word.SensitivityLabelsCatalog#getAttributes:member(1)
-    package: word!
-    fullName: getAttributes()
-    summary: Gets the attribute-based access control (ABAC) attributes available for sensitivity labels.
-    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getAttributes(): OfficeExtension.ClientResult<Word.SensitivityLabelAbacAttribute[]>;'
-      return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.SensitivityLabelAbacAttribute:class" />[]&gt;
-        description: ''
   - name: getLabels()
     uid: word!Word.SensitivityLabelsCatalog#getLabels:member(1)
     package: word!
