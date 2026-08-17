@@ -3420,7 +3420,7 @@ Office.Document#goToByIdAsync:member(2):
     //    which contains information about the selected slides, on the add-in's page.
     let firstSlideId = 0;
     function gotoSelectedSlide() {
-        // Get currently selected slide's ID
+        // Get currently selected slide's ID.
         Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 app.showNotification("Action failed with error: " + asyncResult.error.message);
