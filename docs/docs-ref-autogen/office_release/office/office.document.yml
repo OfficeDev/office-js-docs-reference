@@ -2642,17 +2642,17 @@ methods:
           });
       }
 
-      // Go to the currently selected slide by id (PowerPoint)
+      // Go to the currently selected slide by ID (PowerPoint)
       // The following example shows how to:
-      // 1. Get the id of the currently selected slides using the getSelectedDataAsync method.
-      // 2. Specify the returned id as the slide to go to.
+      // 1. Get the ID of the currently selected slides using the getSelectedDataAsync method.
+      // 2. Specify the returned ID as the slide to go to.
       // 3. Pass an anonymous callback function that returns the status of the operation
       //    to the callback parameter of the goToByIdAsync method.
       // 4. Display the value of the stringified JSON object returned by asyncResult.value,
       //    which contains information about the selected slides, on the add-in's page.
       let firstSlideId = 0;
       function gotoSelectedSlide() {
-          //Get currently selected slide's id
+          // Get currently selected slide's ID.
           Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   app.showNotification("Action failed with error: " + asyncResult.error.message);
@@ -2661,7 +2661,7 @@ methods:
                   app.showNotification(JSON.stringify(asyncResult.value));
               }
           });
-          //Go to slide by id.
+          // Go to slide by ID.
           Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   app.showNotification("Action failed with error: " + asyncResult.error.message);

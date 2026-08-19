@@ -8230,7 +8230,7 @@ office,Office.Slice,N/A,Interface,Good,true
 office,Office.Slice,"data",Property,Excellent,false
 office,Office.Slice,"index",Property,Great,false
 office,Office.Slice,"size",Property,Good,false
-office,Office.Slide,N/A,Interface,Excellent,false
+office,Office.Slide,N/A,Interface,Excellent,true
 office,Office.Slide,"id",Property,Good,false
 office,Office.Slide,"index",Property,Great,false
 office,Office.Slide,"title",Property,Good,false
