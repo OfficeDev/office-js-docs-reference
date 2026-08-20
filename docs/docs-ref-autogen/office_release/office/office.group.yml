@@ -77,7 +77,25 @@ properties:
     package: office!
     fullName: visible
     summary: Specifies whether the group of controls is shown or hidden on a custom tab.
-    remarks: '**Requirement set**: [RibbonApi 1.3](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)'
+    remarks: |-
+      **Requirement set**: [RibbonApi 1.3](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Hide the Reporting Group from the User Tools tab on the ribbon.
+      const group: Office.Group = {
+          id: "Contoso.ReportingGroup",
+          visible: false
+      };
+      const tab: Office.Tab = {
+          id: "Contoso.UserToolsTab",
+          groups: [group]
+      };
+      // Apply the change to the ribbon.
+      const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [tab] };
+      await Office.ribbon.requestUpdate(ribbonUpdater);
+      ```
 
     isPreview: false
     isDeprecated: false
