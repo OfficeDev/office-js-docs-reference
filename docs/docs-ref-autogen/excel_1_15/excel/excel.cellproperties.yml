@@ -8,9 +8,41 @@ summary: |-
 
   [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 remarks: |-
+
+
   #### Used by
 
   - [Excel.Range](/javascript/api/excel/excel.range): [getCellProperties](/javascript/api/excel/excel.range#excel-excel-range-getcellproperties-member(1))
+
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+  await Excel.run(async (context) => {
+      const cell = context.workbook.getActiveCell();
+
+      // Get only the properties requested in this load-options object.
+      const propertiesToGet: Excel.CellPropertiesLoadOptions = {
+          address: true,
+          format: {
+              fill: {
+                  color: true
+              },
+              font: {
+                  bold: true,
+                  color: true
+              }
+          },
+          style: true
+      };
+      const cellProperties = cell.getCellProperties(propertiesToGet);
+
+      await context.sync();
+      const activeCellProperties: Excel.CellProperties = cellProperties.value[0][0];
+      console.log(JSON.stringify(activeCellProperties, null, 2));
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
