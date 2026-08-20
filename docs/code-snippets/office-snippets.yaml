@@ -4246,7 +4246,7 @@ Office.Group#visible:member:
     // Hide the Reporting Group from the User Tools tab on the ribbon.
     const group: Office.Group = {
         id: "Contoso.ReportingGroup",
-        visible: visible
+        visible: false
     };
     const tab: Office.Tab = {
         id: "Contoso.UserToolsTab",
