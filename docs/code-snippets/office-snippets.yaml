@@ -129,6 +129,26 @@ Office.ActiveView:enum:
             showMessage("The current view is " + activeView);
         }
     });
+Office.AddBindingFromPromptOptions:interface:
+  - |-
+    // Add a binding to the document by prompting the user to select text in the document.
+    function addBinding() {
+        const bindings = Office.context.document.bindings;
+        const options: Office.AddBindingFromPromptOptions = { 
+            id: "prompt-binding",
+            promptText: "Select a cell" 
+        };
+        const callback = (asyncResult: Office.AsyncResult<Office.Binding>) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(asyncResult.error.message);
+                return;
+            }
+
+            console.log(`Created binding "${asyncResult.value.id}" of type "${asyncResult.value.type}".`);
+        };
+
+        bindings.addFromPromptAsync(Office.BindingType.Text, options, callback);
+    }
 Office.Addin#beforeDocumentCloseNotification:member:
   - |-
     // Enable the before document close modal notification dialog. 
