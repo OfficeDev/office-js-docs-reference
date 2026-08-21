@@ -123,10 +123,10 @@ Office.ActiveView:enum:
     // Get whether the current view is edit or read.
     Office.context.document.getActiveViewAsync(function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            showMessage("Action failed with error: " + asyncResult.error.message);
+            console.error("Action failed with error: " + asyncResult.error.message);
         } else {
             const activeView : Office.ActiveView = asyncResult.value;
-            showMessage("The current view is " + activeView);
+            console.log("The current view is " + activeView);
         }
     });
 Office.AddBindingFromPromptOptions:interface:
@@ -1117,9 +1117,9 @@ Office.BindingType:enum:
     // Create a new table binding for the selected table.
     Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            showMessage("Action failed with error: " + asyncResult.error.message);
+            console.error("Action failed with error: " + asyncResult.error.message);
         } else {
-            showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+            console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
         }
     });
 Office.CoercionType:enum:
@@ -2461,16 +2461,15 @@ Office.Document#getActiveViewAsync:member(2):
         // Get whether the current view is edit or read.
         Office.context.document.getActiveViewAsync(function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage(asyncResult.value);
+                console.log(asyncResult.value);
             }
         });
     }
 Office.Document#getFileAsync:member(1):
   - |-
     // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
-    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
     function getDocumentAsCompressed() {
         Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
             function (result) {
@@ -2481,12 +2480,12 @@ Office.Document#getFileAsync:member(1):
                     const sliceCount = myFile.sliceCount;
                     const docDataSlices = [];
                     let slicesReceived = 0, gotAllSlices = true;
-                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                    console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                     // Get the file slices.
                     getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 } else {
-                    app.showNotification("Error:", result.error.message);
+                    console.error("Error:", result.error.message);
                 }
         });
     }
@@ -2513,7 +2512,7 @@ Office.Document#getFileAsync:member(1):
             } else {
                 gotAllSlices = false;
                 file.closeAsync();
-                app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                console.error("getSliceAsync Error:", sliceResult.error.message);
             }
         });
     }
@@ -2539,7 +2538,7 @@ Office.Document#getFileAsync:member(1):
             if (result.status === Office.AsyncResultStatus.Succeeded) {
                 const myFile = result.value;
                 const sliceCount = myFile.sliceCount;
-                app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                 // Get the file slices.
                 const docDataSlices = [];
@@ -2548,7 +2547,7 @@ Office.Document#getFileAsync:member(1):
                 
                 myFile.closeAsync();
             } else {
-                app.showNotification("Error:", result.error.message);
+                console.error("Error:", result.error.message);
             }
         }
     );
@@ -2564,9 +2563,9 @@ Office.Document#getFilePropertiesAsync:member(2):
         Office.context.document.getFilePropertiesAsync(function (asyncResult) {
             const fileUrl = asyncResult.value.url;
             if (fileUrl === "") {
-                showMessage("The file hasn't been saved yet. Save the file and try again");
+                console.warn("The file hasn't been saved yet. Save the file and try again");
             } else {
-                showMessage(fileUrl);
+                console.log(fileUrl);
             }
         });
     }
@@ -2644,7 +2643,7 @@ Office.Document#getMaxResourceIndexAsync:member(2):
             }
         }
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#getMaxTaskIndexAsync:member(2):
@@ -2719,7 +2718,7 @@ Office.Document#getMaxTaskIndexAsync:member(2):
             }
         }
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#getProjectFieldAsync:member(2):
@@ -2856,7 +2855,7 @@ Office.Document#getResourceByIndexAsync:member(2):
             }
         }
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#getResourceFieldAsync:member(2):
@@ -3319,7 +3318,7 @@ Office.Document#getTaskByIndexAsync:member(2):
             }
         }
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#getTaskFieldAsync:member(2):
@@ -3419,18 +3418,18 @@ Office.Document#goToByIdAsync:member(2):
         // Create a new table binding for the selected table.
         Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+                console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
             }
         });
 
         // Go to binding by ID.
         Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -3444,9 +3443,9 @@ Office.Document#goToByIdAsync:member(2):
     function goToTable() {
         Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -3464,18 +3463,18 @@ Office.Document#goToByIdAsync:member(2):
         // Get currently selected slide's ID.
         Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                app.showNotification("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
                 firstSlideId = asyncResult.value.slides[0].id;
-                app.showNotification(JSON.stringify(asyncResult.value));
+                console.log(JSON.stringify(asyncResult.value));
             }
         });
         // Go to slide by ID.
         Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                app.showNotification("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                app.showNotification("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -3494,9 +3493,9 @@ Office.Document#goToByIdAsync:member(2):
 
         Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -3684,7 +3683,7 @@ Office.Document#setResourceFieldAsync:member(2):
         }
 
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#setSelectedDataAsync:member(1):
@@ -3876,7 +3875,7 @@ Office.Document#setTaskFieldAsync:member(2):
         }
 
         function onError(error) {
-            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+            console.error(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
 Office.Document#url:member:
@@ -4085,9 +4084,9 @@ Office.FileProperties:interface:
             const fileProperties: Office.FileProperties = asyncResult.value;
             const fileUrl = fileProperties.url;
             if (fileUrl === "") {
-                showMessage("The file hasn't been saved yet. Save the file and try again");
+                console.warn("The file hasn't been saved yet. Save the file and try again");
             } else {
-                showMessage(fileUrl);
+                console.log(fileUrl);
             }
         });
     }
@@ -4141,7 +4140,7 @@ Office.GetSelectedDataOptions:interface:
                 console.log(`The selected data is "${asyncResult.value}".`);
             }
     });
-Office.GoToType:enum:
+Office.GoToByIdOptions:interface:
   - |-
     // Go to a binding by ID (Word and Excel).
     // The following example shows how to:
@@ -4154,18 +4153,21 @@ Office.GoToType:enum:
         // Create a new table binding for the selected table.
         Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+                console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
             }
         });
 
-        // Go to binding by ID.
-        Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
+        // Go to binding by ID, setting option to ensure entire binding is selected.
+        let goToByIdOptions: Office.GoToByIdOptions = {
+            selectionMode: Office.SelectionMode.Selected
+        };
+        Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, goToByIdOptions, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -4179,9 +4181,9 @@ Office.GoToType:enum:
     function goToTable() {
         Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -4199,19 +4201,19 @@ Office.GoToType:enum:
         // Get currently selected slide's ID.
         Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                app.showNotification("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
                 firstSlideId = asyncResult.value.slides[0].id;
-                app.showNotification(JSON.stringify(asyncResult.value));
+                console.log(JSON.stringify(asyncResult.value));
             }
         });
         
         // Go to slide by ID.
         Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                app.showNotification("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                app.showNotification("Navigation successful");
+                console.log("Navigation successful");
             }
         });
     }
@@ -4230,9 +4232,104 @@ Office.GoToType:enum:
 
         Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                showMessage("Action failed with error: " + asyncResult.error.message);
+                console.error("Action failed with error: " + asyncResult.error.message);
             } else {
-                showMessage("Navigation successful");
+                console.log("Navigation successful");
+            }
+        });
+    }
+Office.GoToType:enum:
+  - |-
+    // Go to a binding by ID (Word and Excel).
+    // The following example shows how to:
+    // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
+    // 2. Specify that binding as the binding to go to.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 4. Display the value on the add-in's page.
+    function gotoBinding() {
+        // Create a new table binding for the selected table.
+        Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+            }
+        });
+
+        // Go to binding by ID.
+        Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to a table in a spreadsheet (Excel).
+    // The following example shows how to:
+    // 1. Specify a table by name as the table to go to.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 3. Display the value on the add-in's page.
+    function goToTable() {
+        Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to the currently selected slide by ID (PowerPoint).
+    // The following example shows how to:
+    // 1. Get the ID of the currently selected slides using the getSelectedDataAsync method.
+    // 2. Specify the returned ID as the slide to go to.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 4. Display the value of the stringified JSON object returned by asyncResult.value,
+    //    which contains information about the selected slides, on the add-in's page.
+    let firstSlideId = 0;
+    function gotoSelectedSlide() {
+        // Get currently selected slide's ID.
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                firstSlideId = asyncResult.value.slides[0].id;
+                console.log(JSON.stringify(asyncResult.value));
+            }
+        });
+        
+        // Go to slide by ID.
+        Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to slide by index (PowerPoint).
+    // The following example shows how to:
+    // 1. Specify the index of the first, last, previous, or next slide to go to.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 3. Display the value on the add-in's page.
+    function goToSlideByIndex() {
+        const goToFirst = Office.Index.First;
+        const goToLast = Office.Index.Last;
+        const goToPrevious = Office.Index.Previous;
+        const goToNext = Office.Index.Next;
+
+        Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
             }
         });
     }
@@ -4599,6 +4696,104 @@ Office.SaveSettingsOptions:interface:
                 console.log(asyncResult.error.message);
             } else {
                 console.log('Saved setting: ' + asyncResult.asyncContext.settingName);
+            }
+        });
+    }
+Office.SelectionMode:enum:
+  - |-
+    // Go to a binding by ID (Word and Excel).
+    // The following example shows how to:
+    // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
+    // 2. Specify that binding as the binding to go to.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 4. Display the value on the add-in's page.
+    function gotoBinding() {
+        // Create a new table binding for the selected table.
+        Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+            }
+        });
+
+        // Go to binding by ID, setting option to ensure entire binding is selected.
+        let goToByIdOptions: Office.GoToByIdOptions = {
+            selectionMode: Office.SelectionMode.Selected
+        };
+        Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, goToByIdOptions, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to a table in a spreadsheet (Excel).
+    // The following example shows how to:
+    // 1. Specify a table by name as the table to go to.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 3. Display the value on the add-in's page.
+    function goToTable() {
+        Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to the currently selected slide by ID (PowerPoint).
+    // The following example shows how to:
+    // 1. Get the ID of the currently selected slides using the getSelectedDataAsync method.
+    // 2. Specify the returned ID as the slide to go to.
+    // 3. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 4. Display the value of the stringified JSON object returned by asyncResult.value,
+    //    which contains information about the selected slides, on the add-in's page.
+    let firstSlideId = 0;
+    function gotoSelectedSlide() {
+        // Get currently selected slide's ID.
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                firstSlideId = asyncResult.value.slides[0].id;
+                console.log(JSON.stringify(asyncResult.value));
+            }
+        });
+        
+        // Go to slide by ID.
+        Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
+            }
+        });
+    }
+
+    // Go to slide by index (PowerPoint).
+    // The following example shows how to:
+    // 1. Specify the index of the first, last, previous, or next slide to go to.
+    // 2. Pass an anonymous callback function that returns the status of the operation
+    //    to the callback parameter of the goToByIdAsync method.
+    // 3. Display the value on the add-in's page.
+    function goToSlideByIndex() {
+        const goToFirst = Office.Index.First;
+        const goToLast = Office.Index.Last;
+        const goToPrevious = Office.Index.Previous;
+        const goToNext = Office.Index.Next;
+
+        Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Action failed with error: " + asyncResult.error.message);
+            } else {
+                console.log("Navigation successful");
             }
         });
     }
