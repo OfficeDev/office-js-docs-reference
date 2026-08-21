@@ -4055,7 +4055,6 @@ Office.File#getSliceAsync:member(1):
 Office.GetFileOptions:interface:
   - |-
     // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
-    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
     function getDocumentAsCompressed() {
         let fileOptions: Office.GetFileOptions = {
             sliceSize: 65536 /*64 KB*/
