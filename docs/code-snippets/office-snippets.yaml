@@ -131,7 +131,7 @@ Office.ActiveView:enum:
     });
 Office.AddBindingFromPromptOptions:interface:
   - |-
-    // Add a binding to the document by prompting the user to select text in the document.
+    // Add a binding to the document by prompting the user to select a cell in the document.
     function addBinding() {
         const bindings = Office.context.document.bindings;
         const options: Office.AddBindingFromPromptOptions = { 
