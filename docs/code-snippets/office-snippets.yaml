@@ -4068,12 +4068,12 @@ Office.GetFileOptions:interface:
                     const sliceCount = myFile.sliceCount;
                     const docDataSlices = [];
                     let slicesReceived = 0, gotAllSlices = true;
-                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                    console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                     // Get the file slices.
                     getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                 } else {
-                    app.showNotification("Error:", result.error.message);
+                    console.error("Error:", result.error.message);
                 }
         });
     }
@@ -4100,7 +4100,7 @@ Office.GetFileOptions:interface:
             } else {
                 gotAllSlices = false;
                 file.closeAsync();
-                app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                console.error("getSliceAsync Error:", sliceResult.error.message);
             }
         });
     }
@@ -4126,7 +4126,7 @@ Office.GetFileOptions:interface:
             if (result.status === Office.AsyncResultStatus.Succeeded) {
                 const myFile = result.value;
                 const sliceCount = myFile.sliceCount;
-                app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                 // Get the file slices.
                 const docDataSlices = [];
@@ -4135,7 +4135,7 @@ Office.GetFileOptions:interface:
                 
                 myFile.closeAsync();
             } else {
-                app.showNotification("Error:", result.error.message);
+                console.error("Error:", result.error.message);
             }
         }
     );
