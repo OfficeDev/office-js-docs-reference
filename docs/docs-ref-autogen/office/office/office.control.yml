@@ -68,6 +68,30 @@ properties:
 
       **Important**: The visibility of buttons and menu controls can be configured, but the visibility of individual items within a menu can't be configured.
 
+      #### Examples
+
+      ```TypeScript
+      // Hide the Export Report button from the ribbon.
+      const button: Office.Control = {
+          id: "Contoso.ExportReportButton",
+          visible: false
+      };
+
+      // Specify the button's parent group and tab.
+      const group: Office.Group = {
+          id: "Contoso.ReportingGroup",
+          controls: [button]
+      };
+      const tab: Office.Tab = {
+          id: "Contoso.UserToolsTab",
+          groups: [group]
+      };
+
+      // Apply the change to the ribbon.
+      const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [tab] };
+      await Office.ribbon.requestUpdate(ribbonUpdater);
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

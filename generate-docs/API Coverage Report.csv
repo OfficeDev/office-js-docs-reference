@@ -585,7 +585,7 @@ excel,Excel.CellControlType,"checkbox",EnumField,Great,false
 excel,Excel.CellControlType,"empty",EnumField,Great,false
 excel,Excel.CellControlType,"mixed",EnumField,Great,false
 excel,Excel.CellControlType,"unknown",EnumField,Great,false
-excel,Excel.CellProperties,N/A,Interface,Good,false
+excel,Excel.CellProperties,N/A,Interface,Good,true
 excel,Excel.CellProperties,"address",Property,Great,false
 excel,Excel.CellProperties,"addressLocal",Property,Great,false
 excel,Excel.CellProperties,"hidden",Property,Great,false
@@ -7360,7 +7360,7 @@ office,Office.ContextMenuUpdaterData,"controls",Property,Excellent,true
 office,Office.Control,N/A,Interface,Good,true
 office,Office.Control,"enabled",Property,Excellent,false
 office,Office.Control,"id",Property,Great,false
-office,Office.Control,"visible",Property,Excellent,false
+office,Office.Control,"visible",Property,Excellent,true
 office,Office.CustomXmlNode,N/A,Interface,Fine,false
 office,Office.CustomXmlNode,"baseName",Property,Great,true
 office,Office.CustomXmlNode,"namespaceUri",Property,Great,true
@@ -7580,7 +7580,7 @@ office,Office.GoToType,"Slide",EnumField,Good,false
 office,Office.Group,N/A,Interface,Good,true
 office,Office.Group,"controls",Property,Excellent,false
 office,Office.Group,"id",Property,Great,false
-office,Office.Group,"visible",Property,Great,false
+office,Office.Group,"visible",Property,Great,true
 office,Office.HostType,N/A,Enum,Good,true
 office,Office.HostType,"Access",EnumField,Excellent,false
 office,Office.HostType,"Excel",EnumField,Great,false

@@ -1449,6 +1449,27 @@ Office.Control:interface:
         const ribbonUpdater: RibbonUpdaterData = { tabs: [parentTab] };
         Office.ribbon.requestUpdate(ribbonUpdater);
     }
+Office.Control#visible:member:
+  - |-
+    // Hide the Export Report button from the ribbon.
+    const button: Office.Control = {
+        id: "Contoso.ExportReportButton",
+        visible: false
+    };
+
+    // Specify the button's parent group and tab.
+    const group: Office.Group = {
+        id: "Contoso.ReportingGroup",
+        controls: [button]
+    };
+    const tab: Office.Tab = {
+        id: "Contoso.UserToolsTab",
+        groups: [group]
+    };
+
+    // Apply the change to the ribbon.
+    const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [tab] };
+    await Office.ribbon.requestUpdate(ribbonUpdater);
 Office.CustomXmlNode#baseName:member:
   - |-
     function showXmlNodeBaseNames() {
@@ -4220,6 +4241,20 @@ Office.Group:interface:
             ],
         });
     }
+Office.Group#visible:member:
+  - |-
+    // Hide the Reporting Group from the User Tools tab on the ribbon.
+    const group: Office.Group = {
+        id: "Contoso.ReportingGroup",
+        visible: false
+    };
+    const tab: Office.Tab = {
+        id: "Contoso.UserToolsTab",
+        groups: [group]
+    };
+    // Apply the change to the ribbon.
+    const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [tab] };
+    await Office.ribbon.requestUpdate(ribbonUpdater);
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
