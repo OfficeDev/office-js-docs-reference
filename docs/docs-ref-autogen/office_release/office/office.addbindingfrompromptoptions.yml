@@ -5,9 +5,34 @@ package: office!
 fullName: Office.AddBindingFromPromptOptions
 summary: Provides options for configuring the prompt and identifying the binding that is created.
 remarks: |-
+
+
   #### Used by
 
   - [Office.Bindings](/javascript/api/office/office.bindings): [addFromPromptAsync](/javascript/api/office/office.bindings#office-office-bindings-addfrompromptasync-member(1))
+
+  #### Examples
+
+  ```TypeScript
+  // Add a binding to the document by prompting the user to select a cell in the document.
+  function addBinding() {
+      const bindings = Office.context.document.bindings;
+      const options: Office.AddBindingFromPromptOptions = { 
+          id: "prompt-binding",
+          promptText: "Select a cell" 
+      };
+      const callback = (asyncResult: Office.AsyncResult<Office.Binding>) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error(asyncResult.error.message);
+              return;
+          }
+
+          console.log(`Created binding "${asyncResult.value.id}" of type "${asyncResult.value.type}".`);
+      };
+
+      bindings.addFromPromptAsync(Office.BindingType.Text, options, callback);
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

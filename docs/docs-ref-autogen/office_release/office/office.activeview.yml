@@ -11,10 +11,10 @@ remarks: |-
   // Get whether the current view is edit or read.
   Office.context.document.getActiveViewAsync(function (asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          showMessage("Action failed with error: " + asyncResult.error.message);
+          console.error("Action failed with error: " + asyncResult.error.message);
       } else {
           const activeView : Office.ActiveView = asyncResult.value;
-          showMessage("The current view is " + activeView);
+          console.log("The current view is " + activeView);
       }
   });
   ```
