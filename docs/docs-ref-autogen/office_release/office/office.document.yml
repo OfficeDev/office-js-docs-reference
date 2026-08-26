@@ -522,9 +522,9 @@ methods:
           // Get whether the current view is edit or read.
           Office.context.document.getActiveViewAsync(function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  showMessage("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  showMessage(asyncResult.value);
+                  console.log(asyncResult.value);
               }
           });
       }
@@ -565,7 +565,6 @@ methods:
 
       ```TypeScript
       // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
-      // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
       function getDocumentAsCompressed() {
           Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
               function (result) {
@@ -576,12 +575,12 @@ methods:
                       const sliceCount = myFile.sliceCount;
                       const docDataSlices = [];
                       let slicesReceived = 0, gotAllSlices = true;
-                      app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                      console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                       // Get the file slices.
                       getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
                   } else {
-                      app.showNotification("Error:", result.error.message);
+                      console.error("Error:", result.error.message);
                   }
           });
       }
@@ -608,7 +607,7 @@ methods:
               } else {
                   gotAllSlices = false;
                   file.closeAsync();
-                  app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                  console.error("getSliceAsync Error:", sliceResult.error.message);
               }
           });
       }
@@ -634,7 +633,7 @@ methods:
               if (result.status === Office.AsyncResultStatus.Succeeded) {
                   const myFile = result.value;
                   const sliceCount = myFile.sliceCount;
-                  app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                  console.log("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                   // Get the file slices.
                   const docDataSlices = [];
@@ -643,7 +642,7 @@ methods:
                   
                   myFile.closeAsync();
               } else {
-                  app.showNotification("Error:", result.error.message);
+                  console.error("Error:", result.error.message);
               }
           }
       );
@@ -747,9 +746,9 @@ methods:
           Office.context.document.getFilePropertiesAsync(function (asyncResult) {
               const fileUrl = asyncResult.value.url;
               if (fileUrl === "") {
-                  showMessage("The file hasn't been saved yet. Save the file and try again");
+                  console.warn("The file hasn't been saved yet. Save the file and try again");
               } else {
-                  showMessage(fileUrl);
+                  console.log(fileUrl);
               }
           });
       }
@@ -888,7 +887,7 @@ methods:
                   }
               }
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```
@@ -1012,7 +1011,7 @@ methods:
                   }
               }
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```
@@ -1253,7 +1252,7 @@ methods:
                   }
               }
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```
@@ -2358,7 +2357,7 @@ methods:
                   }
               }
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```
@@ -2610,18 +2609,18 @@ methods:
           // Create a new table binding for the selected table.
           Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  showMessage("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+                  console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
               }
           });
 
           // Go to binding by ID.
           Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  showMessage("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  showMessage("Navigation successful");
+                  console.log("Navigation successful");
               }
           });
       }
@@ -2635,9 +2634,9 @@ methods:
       function goToTable() {
           Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  showMessage("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  showMessage("Navigation successful");
+                  console.log("Navigation successful");
               }
           });
       }
@@ -2655,18 +2654,18 @@ methods:
           // Get currently selected slide's ID.
           Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  app.showNotification("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
                   firstSlideId = asyncResult.value.slides[0].id;
-                  app.showNotification(JSON.stringify(asyncResult.value));
+                  console.log(JSON.stringify(asyncResult.value));
               }
           });
           // Go to slide by ID.
           Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  app.showNotification("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  app.showNotification("Navigation successful");
+                  console.log("Navigation successful");
               }
           });
       }
@@ -2685,9 +2684,9 @@ methods:
 
           Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  showMessage("Action failed with error: " + asyncResult.error.message);
+                  console.error("Action failed with error: " + asyncResult.error.message);
               } else {
-                  showMessage("Navigation successful");
+                  console.log("Navigation successful");
               }
           });
       }
@@ -2969,7 +2968,7 @@ methods:
               }
 
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```
@@ -3368,7 +3367,7 @@ methods:
               }
 
               function onError(error) {
-                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+                  console.error(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
           ```

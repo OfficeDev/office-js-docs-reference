@@ -11,6 +11,45 @@ remarks: |-
 
   - [Word.BorderUniversalCollection](/javascript/api/word/word.borderuniversalcollection): [getItem](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-getitem-member(1)), [items](/javascript/api/word/word.borderuniversalcollection#word-word-borderuniversalcollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/add-border-to-paragraph.yaml
+
+  if (!Office.context.requirements.isSetSupported("WordApiDesktop", "1.3")) {
+    console.error("This sample requires WordApiDesktop 1.3 or later.");
+    return;
+  }
+
+  await Word.run(async (context) => {
+    // Insert a paragraph at the beginning of the document.
+    const paragraph: Word.Paragraph =
+      context.document.body.insertParagraph(
+        "Note: Added a border to this paragraph.",
+        Word.InsertLocation.start
+      );
+
+    // Load the paragraph borders so they can be formatted.
+    const borders: Word.BorderUniversalCollection = paragraph.borders;
+    borders.load("items");
+    await context.sync();
+
+    // Apply a visible double blue line to every side of the paragraph.
+    borders.items.forEach((border: Word.BorderUniversal) => {
+      border.isVisible = true;
+      border.color = "#4472C4";
+      border.lineStyle = Word.BorderLineStyle.double;
+      border.lineWidth = Word.LineWidth.pt150;
+    });
+
+    await context.sync();
+
+    console.log(
+      `Applied the ${Word.BorderLineStyle.double} line style to ${borders.items.length} paragraph borders.`
+    );
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

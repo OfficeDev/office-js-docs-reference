@@ -25,18 +25,18 @@ remarks: |-
       // Create a new table binding for the selected table.
       Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Table, { id: "MyTableBinding" }, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              showMessage("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
-              showMessage("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
+              console.log("Added new binding with type: " + asyncResult.value.type + " and ID: " + asyncResult.value.id);
           }
       });
 
       // Go to binding by ID.
       Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              showMessage("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
-              showMessage("Navigation successful");
+              console.log("Navigation successful");
           }
       });
   }
@@ -50,9 +50,9 @@ remarks: |-
   function goToTable() {
       Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              showMessage("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
-              showMessage("Navigation successful");
+              console.log("Navigation successful");
           }
       });
   }
@@ -70,19 +70,19 @@ remarks: |-
       // Get currently selected slide's ID.
       Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              app.showNotification("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
               firstSlideId = asyncResult.value.slides[0].id;
-              app.showNotification(JSON.stringify(asyncResult.value));
+              console.log(JSON.stringify(asyncResult.value));
           }
       });
       
       // Go to slide by ID.
       Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              app.showNotification("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
-              app.showNotification("Navigation successful");
+              console.log("Navigation successful");
           }
       });
   }
@@ -101,9 +101,9 @@ remarks: |-
 
       Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              showMessage("Action failed with error: " + asyncResult.error.message);
+              console.error("Action failed with error: " + asyncResult.error.message);
           } else {
-              showMessage("Navigation successful");
+              console.log("Navigation successful");
           }
       });
   }

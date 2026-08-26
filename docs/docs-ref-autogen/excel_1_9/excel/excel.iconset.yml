@@ -39,8 +39,16 @@ remarks: |-
           cell that does not match the other two criteria always gets the low
           icon.            
       */
+      
+      const lowIcon: Excel.Icon = {
+          set: Excel.IconSet.threeFlags,
+          index: 0
+      };
+
       iconSetCF.criteria = [
-          {} as any,
+          {
+              customIcon: lowIcon
+          } as Excel.ConditionalIconCriterion,
           {
               type: Excel.ConditionalFormatIconRuleType.number,
               operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
@@ -52,7 +60,6 @@ remarks: |-
               formula: "=1000",
           }
       ];
-
       await context.sync();
   });
   ```
