@@ -1404,6 +1404,8 @@ methods:
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
 
+      - For attachments of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->, the size and serialized content returned by `getAttachmentsAsync` might differ between calls made from an `OnMessageSend` or `OnAppointmentSend` event handler. To reliably detect attachment changes, handle the `OnMessageAttachmentsChanged` or `OnAppointmentAttachmentsChanged` event instead.
+
       #### Examples
 
       ```TypeScript
@@ -1484,6 +1486,8 @@ methods:
       - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`<!-- -->. Once the images are uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see [Changes to attachment IDs for inline images in Outlook add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!-- -->.
 
       - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - For attachments of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->, the size and serialized content returned by `getAttachmentsAsync` might differ between calls made from an `OnMessageSend` or `OnAppointmentSend` event handler. To reliably detect attachment changes, handle the `OnMessageAttachmentsChanged` or `OnAppointmentAttachmentsChanged` event instead.
 
     isPreview: false
     isDeprecated: false

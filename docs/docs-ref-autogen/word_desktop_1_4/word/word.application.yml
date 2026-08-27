@@ -298,7 +298,7 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/get-external-styles.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/get-external-styles.yaml
 
       // Gets style info from another document passed in as a Base64-encoded string.
       await Word.run(async (context) => {

@@ -2363,6 +2363,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**: In classic Outlook on Windows, custom properties saved to a mail item in read mode remain accessible while the item is being forwarded.
+         *
          * @param name - The name of the custom property to be returned.
          */
         get(name: string): any;

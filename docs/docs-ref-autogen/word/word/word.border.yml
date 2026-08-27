@@ -14,7 +14,7 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
   // Updates border properties (e.g., type, width, color) of the specified style.
   await Word.run(async (context) => {
@@ -52,7 +52,23 @@ properties:
     package: word!
     fullName: color
     summary: Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.
-    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Sets the bottom border color to red.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+
+        border.color = "red";
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +94,24 @@ properties:
     package: word!
     fullName: location
     summary: Gets the location of the border.
-    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Gets the location of the border in its border collection.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+        border.load("location");
+        await context.sync();
+
+        console.log(`Border location: ${border.location}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -91,7 +124,23 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the border type for the border.
-    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Sets the bottom border type to a dashed line.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+
+        border.type = Word.BorderType.dashed;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +153,23 @@ properties:
     package: word!
     fullName: visible
     summary: Specifies whether the border is visible.
-    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Hides the bottom border.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+
+        border.visible = false;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -117,7 +182,23 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width for the border.
-    remarks: '[API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Sets the bottom border width to 4.5 points.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+
+        border.width = Word.BorderWidth.pt450;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -240,7 +321,24 @@ methods:
       content: 'toJSON(): Word.Interfaces.BorderData;'
       return:
         type: <xref uid="word!Word.Interfaces.BorderData:interface" />
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+          // Loads all scalar properties and returns them as a plain JavaScript object.
+          await Word.run(async (context) => {
+            const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+            const border: Word.Border = style.borders.getByLocation(Word.BorderLocation.bottom);
+            border.load("color, location, type, visible, width");
+            await context.sync();
+
+            console.log("Border properties:", border.toJSON());
+          });
+          ```
   - name: track()
     uid: word!Word.Border#track:member(1)
     package: word!

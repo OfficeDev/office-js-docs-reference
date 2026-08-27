@@ -908,7 +908,11 @@ methods:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Appointment Organizer
 
-      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+      **Important**:
+
+      - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - For attachments of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->, the size and serialized content returned by `getAttachmentsAsync` might differ between calls made from an `OnMessageSend` or `OnAppointmentSend` event handler. To reliably detect attachment changes, handle the `OnMessageAttachmentsChanged` or `OnAppointmentAttachmentsChanged` event instead.
 
     isPreview: false
     isDeprecated: false
@@ -936,7 +940,11 @@ methods:
 
       **[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Appointment Organizer
 
-      **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+      **Important**:
+
+      - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
+
+      - For attachments of type `Office.MailboxEnums.AttachmentType.Item`<!-- -->, the size and serialized content returned by `getAttachmentsAsync` might differ between calls made from an `OnMessageSend` or `OnAppointmentSend` event handler. To reliably detect attachment changes, handle the `OnMessageAttachmentsChanged` or `OnAppointmentAttachmentsChanged` event instead.
 
     isPreview: false
     isDeprecated: false
