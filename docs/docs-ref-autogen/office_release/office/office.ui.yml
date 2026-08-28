@@ -114,7 +114,7 @@ methods:
     fullName: closeContainer()
     summary: Closes the UI container where the JavaScript is executing.
     remarks: |-
-      **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
+      **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint
 
       **Requirement sets**:
 

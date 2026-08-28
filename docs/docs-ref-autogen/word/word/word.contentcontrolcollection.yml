@@ -459,10 +459,6 @@ methods:
                       '   ----- font color: ' + contentControls.items[0].font.color);
               }
           });
-
-          // The Silly stories add-in sample shows how the load method is used
-          // to load the content control collection with the tag and title properties.
-          // https://aka.ms/sillystorywordaddin
           ```
   - name: load(propertyNames)
     uid: word!Word.ContentControlCollection#load:member(2)
