@@ -12217,18 +12217,18 @@ word,Word.BookmarkCollection,"toJSON()",Method,Excellent,false
 word,Word.BookmarkCollection,"track()",Method,Excellent,false
 word,Word.BookmarkCollection,"untrack()",Method,Excellent,false
 word,Word.Border,N/A,Class,Fine,true
-word,Word.Border,"color",Property,Excellent,false
+word,Word.Border,"color",Property,Excellent,true
 word,Word.Border,"context",Property,Excellent,false
-word,Word.Border,"location",Property,Good,false
-word,Word.Border,"type",Property,Great,false
-word,Word.Border,"visible",Property,Great,false
-word,Word.Border,"width",Property,Good,false
+word,Word.Border,"location",Property,Good,true
+word,Word.Border,"type",Property,Great,true
+word,Word.Border,"visible",Property,Great,true
+word,Word.Border,"width",Property,Good,true
 word,Word.Border,"load(options)",Method,Great,false
 word,Word.Border,"load(propertyNames)",Method,Great,false
 word,Word.Border,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.Border,"set(properties, options)",Method,Good,false
 word,Word.Border,"set(properties)",Method,Fine,false
-word,Word.Border,"toJSON()",Method,Excellent,false
+word,Word.Border,"toJSON()",Method,Excellent,true
 word,Word.Border,"track()",Method,Excellent,false
 word,Word.Border,"untrack()",Method,Excellent,false
 word,Word.BorderCollection,N/A,Class,Fine,true
@@ -13685,7 +13685,7 @@ word,Word.Document,"noLineBreakAfter",Property,Great,false
 word,Word.Document,"noLineBreakBefore",Property,Great,false
 word,Word.Document,"openEncoding",Property,Great,false
 word,Word.Document,"originalDocumentTitle",Property,Great,false
-word,Word.Document,"pageSetup",Property,Great,false
+word,Word.Document,"pageSetup",Property,Great,true
 word,Word.Document,"paragraphs",Property,Excellent,false
 word,Word.Document,"password",Property,Great,false
 word,Word.Document,"passwordEncryptionAlgorithm",Property,Great,false
@@ -14966,7 +14966,7 @@ word,Word.GroupContentControl,"toJSON()",Method,Excellent,false
 word,Word.GroupContentControl,"track()",Method,Excellent,false
 word,Word.GroupContentControl,"ungroup()",Method,Good,false
 word,Word.GroupContentControl,"untrack()",Method,Excellent,false
-word,Word.GutterPosition,N/A,Enum,Good,false
+word,Word.GutterPosition,N/A,Enum,Good,true
 word,Word.GutterPosition,"left",EnumField,Great,false
 word,Word.GutterPosition,"right",EnumField,Great,false
 word,Word.GutterPosition,"top",EnumField,Great,false
@@ -16229,10 +16229,10 @@ word,Word.PageColor,"sepia",EnumField,Great,false
 word,Word.PageMovementType,N/A,Enum,Good,false
 word,Word.PageMovementType,"sideToSide",EnumField,Great,false
 word,Word.PageMovementType,"vertical",EnumField,Great,false
-word,Word.PageOrientation,N/A,Enum,Good,false
+word,Word.PageOrientation,N/A,Enum,Good,true
 word,Word.PageOrientation,"landscape",EnumField,Great,false
 word,Word.PageOrientation,"portrait",EnumField,Great,false
-word,Word.PageSetup,N/A,Class,Fine,false
+word,Word.PageSetup,N/A,Class,Fine,true
 word,Word.PageSetup,"bookFoldPrinting",Property,Great,false
 word,Word.PageSetup,"bookFoldPrintingSheets",Property,Great,false
 word,Word.PageSetup,"bookFoldReversePrinting",Property,Excellent,false
@@ -16271,7 +16271,7 @@ word,Word.PageSetup,"set(properties, options)",Method,Good,false
 word,Word.PageSetup,"set(properties)",Method,Fine,false
 word,Word.PageSetup,"setAsTemplateDefault()",Method,Good,false
 word,Word.PageSetup,"togglePortrait()",Method,Fine,false
-word,Word.PageSetup,"toJSON()",Method,Excellent,false
+word,Word.PageSetup,"toJSON()",Method,Excellent,true
 word,Word.PageSetup,"track()",Method,Excellent,false
 word,Word.PageSetup,"untrack()",Method,Excellent,false
 word,Word.PageSetupVerticalAlignment,N/A,Enum,Good,false
@@ -16303,7 +16303,7 @@ word,Word.PaneCollection,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.PaneCollection,"toJSON()",Method,Excellent,false
 word,Word.PaneCollection,"track()",Method,Excellent,false
 word,Word.PaneCollection,"untrack()",Method,Excellent,false
-word,Word.PaperSize,N/A,Enum,Fine,false
+word,Word.PaperSize,N/A,Enum,Fine,true
 word,Word.PaperSize,"a3",EnumField,Great,false
 word,Word.PaperSize,"a4",EnumField,Great,false
 word,Word.PaperSize,"a4Small",EnumField,Great,false
@@ -17297,7 +17297,7 @@ word,Word.Section,N/A,Class,Fine,true
 word,Word.Section,"body",Property,Excellent,false
 word,Word.Section,"borders",Property,Excellent,false
 word,Word.Section,"context",Property,Excellent,false
-word,Word.Section,"pageSetup",Property,Great,false
+word,Word.Section,"pageSetup",Property,Great,true
 word,Word.Section,"protectedForForms",Property,Great,false
 word,Word.Section,"getFooter(type)",Method,Fine,true
 word,Word.Section,"getFooter(type)",Method,Fine,true
@@ -17327,7 +17327,7 @@ word,Word.SectionCollection,"untrack()",Method,Excellent,false
 word,Word.SectionDirection,N/A,Enum,Great,false
 word,Word.SectionDirection,"leftToRight",EnumField,Great,false
 word,Word.SectionDirection,"rightToLeft",EnumField,Great,false
-word,Word.SectionStart,N/A,Enum,Good,false
+word,Word.SectionStart,N/A,Enum,Good,true
 word,Word.SectionStart,"continuous",EnumField,Great,false
 word,Word.SectionStart,"evenPage",EnumField,Great,false
 word,Word.SectionStart,"newColumn",EnumField,Great,false

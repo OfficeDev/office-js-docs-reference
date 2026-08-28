@@ -296,9 +296,6 @@ Word.ContentControl#insertText:member(1):
             console.log('Replaced text in the first content control.');
         }
     });  
-
-    // The Silly stories add-in sample shows how to use the insertText method.
-    // https://aka.ms/sillystorywordaddin
 Word.ContentControl#load:member(1):
   - |-
     // Load all of the content control properties
@@ -519,10 +516,6 @@ Word.ContentControlCollection#load:member(1):
                 '   ----- font color: ' + contentControls.items[0].font.color);
         }
     });
-
-    // The Silly stories add-in sample shows how the load method is used
-    // to load the content control collection with the tag and title properties.
-    // https://aka.ms/sillystorywordaddin
 Word.Document#getSelection:member(1):
   - |-
     // Run a batch operation against the Word object model.
