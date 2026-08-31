@@ -1135,9 +1135,6 @@ methods:
               console.log('Replaced text in the first content control.');
           }
       });  
-
-      // The Silly stories add-in sample shows how to use the insertText method.
-      // https://aka.ms/sillystorywordaddin
       ```
 
     isPreview: false
