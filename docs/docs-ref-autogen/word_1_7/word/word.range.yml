@@ -107,7 +107,31 @@ properties:
     package: word!
     fullName: font
     summary: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+      await Word.run(async (context) => {
+        // Insert the sentence, then adjust the formatting.
+        // Note that replace affects the calling object, in this case the entire document body.
+        // A similar method can also be used at the range level.
+        const sentence: Word.Range = context.document.body.insertText(
+          "This is some formatted text!",
+          "Replace"
+        );
+        sentence.font.set({
+          name: "Courier New",
+          bold: true,
+          size: 18
+        });
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -206,6 +230,33 @@ properties:
 
       Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
 
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+      // Accepts the first annotation found in the selected paragraph.
+      await Word.run(async (context) => {
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
+        annotations.load("id,state,critiqueAnnotation");
+
+        await context.sync();
+
+        for (let i = 0; i < annotations.items.length; i++) {
+          const annotation: Word.Annotation = annotations.items[i];
+
+          if (annotation.state === Word.AnnotationState.created) {
+            console.log(`Accepting ID ${annotation.id}...`);
+            annotation.critiqueAnnotation.accept();
+
+            await context.sync();
+            break;
+          }
+        }
+      });
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,7 +338,49 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: Gets the currently supported content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-date-picker-content-control.yaml
+
+      // Deletes the first date picker content control found in the selection.
+      await Word.run(async (context) => {
+        // First, look if the selection contains a date picker content control.
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.datePicker]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id");
+
+        await context.sync();
+
+        // The selection doesn't contain a date picker, but the cursor might be inside one.
+        // Check if the selection's parent content control is a date picker.
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControlOrNullObject;
+          parentContentControl.load("id,type");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.datePicker) {
+            console.warn("Please select a date picker content control before selecting Delete.");
+            return;
+          }
+          
+          selectedContentControl = parentContentControl;
+        }
+
+        console.log(`About to delete date picker content control with ID: ${selectedContentControl.id}`);
+        selectedContentControl.delete(false);
+        await context.sync();
+
+        console.log("Deleted date picker content control.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -406,7 +499,36 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/get-coauthoring-updates.yaml
+
+      // Gets the ranges affected by the most recent coauthoring updates merged into the document.
+      await Word.run(async (context) => {
+        const updates: Word.CoauthoringUpdateCollection = context.document.coauthoring.updates;
+        updates.load("items/range");
+        await context.sync();
+
+        if (updates.items.length === 0) {
+          console.log("No recent coauthoring updates found.");
+          return;
+        }
+
+        console.log(`Found ${updates.items.length} recent update(s).`);
+
+        const ranges = updates.items.map((u) => u.range);
+        ranges.forEach((r) => r.load("text"));
+        await context.sync();
+
+        ranges.forEach((range, i) => {
+          console.log(`  Update ${i + 1}: "${range.text}"`);
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1020,6 +1142,41 @@ methods:
       [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Note: The conditions of inserting a bookmark are similar to doing so in the Word UI. To learn more about managing bookmarks in the Word UI, see [Add or delete bookmarks in a Word document or Outlook message](https://support.microsoft.com/office/f68d781f-0150-4583-a90e-a4009d99c2a0)<!-- -->.
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        body.clear();
+
+        // Apply built-in heading styles so the Headings export mode can create PDF bookmarks.
+        const title: Word.Paragraph = body.insertParagraph("Extend Word with Office Add-ins", Word.InsertLocation.end);
+        title.styleBuiltIn = Word.BuiltInStyleName.heading1;
+
+        const overview: Word.Paragraph = body.insertParagraph(
+          "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
+          Word.InsertLocation.end,
+        );
+        overview.styleBuiltIn = Word.BuiltInStyleName.normal;
+
+        const detailsHeading: Word.Paragraph = body.insertParagraph("How Word add-ins work", Word.InsertLocation.end);
+        detailsHeading.styleBuiltIn = Word.BuiltInStyleName.heading2;
+        const details: Word.Paragraph = body.insertParagraph(
+          "Use add-in commands to extend the Word UI. Launch task panes that run JavaScript to interact with the content in a Word document. Any code that you can run in a browser can run in a Word add-in. Add-ins that interact with content in a Word document create requests to act on Word objects and synchronize object state.",
+          Word.InsertLocation.end,
+        );
+        details.styleBuiltIn = Word.BuiltInStyleName.normal;
+
+        // Add a named Word bookmark that the WordBookmarks export mode can include in the PDF.
+        details.getRange(Word.RangeLocation.whole).insertBookmark("named_bookmark");
+
+        await context.sync();
+        console.log("Sample document created with headings and bookmark 'named_bookmark'.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

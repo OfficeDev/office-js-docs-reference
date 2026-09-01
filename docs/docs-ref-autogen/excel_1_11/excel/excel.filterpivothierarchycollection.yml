@@ -47,7 +47,30 @@ methods:
     package: excel!
     fullName: add(pivotHierarchy)
     summary: Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter axis, it will be removed from that location.
-    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+      async function filter(functionType: Excel.AggregationFunction) {
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              const filters: Excel.FilterPivotHierarchyCollection = pivotTable.filterHierarchies;
+              const filter = filters.getItemOrNullObject("Classification");
+              filter.load();
+              await context.sync();
+
+              // Add the Classification hierarchy to the filter, if it's not already there.
+              if (filter.isNullObject) {
+                  filters.add(pivotTable.hierarchies.getItem("Classification"));
+                  await context.sync();
+              }
+          });
+      }
+      ```
 
     isPreview: false
     isDeprecated: false

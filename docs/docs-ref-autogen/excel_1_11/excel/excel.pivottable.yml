@@ -124,7 +124,7 @@ properties:
       async function filter(functionType: Excel.AggregationFunction) {
           await Excel.run(async (context) => {
               const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              const filters = pivotTable.filterHierarchies;
+              const filters: Excel.FilterPivotHierarchyCollection = pivotTable.filterHierarchies;
               const filter = filters.getItemOrNullObject("Classification");
               filter.load();
               await context.sync();

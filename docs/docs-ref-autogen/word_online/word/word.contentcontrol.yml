@@ -85,7 +85,32 @@ properties:
     package: word!
     fullName: appearance
     summary: Specifies the appearance of the content control. The value can be `boundingBox`<!-- -->, `tags`<!-- -->, or `hidden`<!-- -->.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/manage-watermark.yaml
+
+      // Adds a watermark to the document using OOXML.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        context.load(sections);
+        await context.sync();
+
+        const watermarkText: string = (document.getElementById("watermark-text") as HTMLInputElement).value;
+        const myWatermark: string = getOoxmlWatermark(watermarkText);
+        const myHeader: Word.Body = sections.items[0].getHeader("Primary");
+        const myRange: Word.Range = myHeader.insertOoxml(myWatermark, "Replace");
+        const myCC: Word.ContentControl = myRange.insertContentControl();
+        myCC.title = "myTempCC";
+        myCC.appearance = "Hidden";
+        await context.sync();
+
+        console.log("Watermark added successfully using OOXML.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -652,7 +677,38 @@ properties:
     package: word!
     fullName: title
     summary: Specifies the title for a content control.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
+      // then changes the format  of each search result,
+      // then wraps each search result within a content control,
+      // finally sets a tag and title property on each content control.
+      await Word.run(async (context) => {
+          const results: Word.RangeCollection = context.document.body.search("Contractor");
+          results.load("font/bold");
+
+          // Check to make sure these content controls haven't been added yet.
+          const customerContentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
+          customerContentControls.load("text");
+          await context.sync();
+
+        if (customerContentControls.items.length === 0) {
+          for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.bold = true;
+              let cc: Word.ContentControl = results.items[i].insertContentControl();
+              cc.tag = "customer";  // This value is used in the next step of this sample.
+              cc.title = "Customer Name " + i;
+          }
+        }
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

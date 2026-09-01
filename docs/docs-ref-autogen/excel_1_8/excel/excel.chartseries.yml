@@ -159,7 +159,36 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of a chart series, which includes fill and line formatting.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-formatting.yaml
+
+      await Excel.run(async (context) => {
+          const worksheet = context.workbook.worksheets.getActiveWorksheet();
+          const chart = worksheet.charts.getItem("SlopeChart");
+          chart.series.load("count");
+          await context.sync();
+
+          // Color everything gray before highlighting spokes.
+          for (let i = 0; i < chart.series.count; i++) {
+              chart.series.getItemAt(i).format.line.color = "#636363";
+              chart.series.getItemAt(i).dataLabels.format.font.color = "#636363";
+          }
+
+          const highlight: Excel.ChartSeries = chart.series.getItemAt(5);
+          highlight.format.line.color = "#4472C4";
+          highlight.dataLabels.format.font.color = "#D9D9D9";
+
+          highlight.load("name");
+          await context.sync();
+          highlight.name += " (Focus)";
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -579,7 +608,25 @@ properties:
     package: excel!
     fullName: trendlines
     summary: The collection of trendlines in the series.
-    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+
+           // Add a trendline.  
+          seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -839,12 +886,12 @@ methods:
       await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
-        let seriesCollection = sheet.charts.getItemAt(0);
+        const chart: Excel.Chart = sheet.charts.getItemAt(0);
         let rangeSelection = sheet.getRange("C2:C7");
         let xRangeSelection = sheet.getRange("A1:A7");
 
         // Add a series.
-        let newSeries = seriesCollection.series.add("Qtr2");
+        const newSeries: Excel.ChartSeries = chart.series.add("Qtr2");
         newSeries.setValues(rangeSelection);
         newSeries.setXAxisValues(xRangeSelection);
 
@@ -868,7 +915,33 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: Sets the values of the x-axis for a chart series.
-    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/create-doughnut-chart.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0);
+          let rangeSelection = sheet.getRange("C2:C7");
+          let xRangeSelection = sheet.getRange("A1:A7");
+
+          // Add a series.
+          const newSeries: Excel.ChartSeries = seriesCollection.series.add("Qtr2");
+          newSeries.setValues(rangeSelection);
+          newSeries.setXAxisValues(xRangeSelection);
+
+          // Set the size of the doughnut hole.
+          // The hole size is expressed as a percentage of the chart size.
+          newSeries.doughnutHoleSize = 80;
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

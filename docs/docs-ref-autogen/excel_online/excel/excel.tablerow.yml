@@ -49,7 +49,26 @@ properties:
     package: excel!
     fullName: values
     summary: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let randomResult = context.workbook.functions.randBetween(1, 3000).load("value");
+          await context.sync();
+
+          const row: Excel.TableRow = sheet.tables.getItem("SalesTable").rows.getItemAt(0);
+          let newValue = [["Frames", 5000, 7000, 6544, randomResult.value, "=SUM(B2:E2)"]];
+          row.values = newValue;
+          row.load("values");
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

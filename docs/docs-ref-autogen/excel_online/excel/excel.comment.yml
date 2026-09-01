@@ -139,7 +139,22 @@ properties:
     package: excel!
     fullName: replies
     summary: Represents a collection of reply objects associated with the comment.
-    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-replies.yaml
+
+      await Excel.run(async (context) => {
+          // Adds a reply to the first comment in this worksheet.
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          const comment: Excel.Comment = sheet.comments.getItemAt(0);
+          comment.replies.add("Add content to this worksheet.");
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

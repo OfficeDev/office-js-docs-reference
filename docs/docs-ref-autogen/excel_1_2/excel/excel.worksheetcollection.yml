@@ -105,7 +105,21 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a worksheet object using its name or ID.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis-formatting.yaml
+
+      function displayUnit(context: Excel.RequestContext) {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let chart = sheet.charts.getItem("SalesChart");
+          let axis = chart.axes.valueAxis;
+          axis.displayUnit = "Thousands";
+      }
+      ```
 
     isPreview: false
     isDeprecated: false

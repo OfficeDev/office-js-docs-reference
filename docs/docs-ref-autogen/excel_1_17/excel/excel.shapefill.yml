@@ -50,7 +50,25 @@ properties:
     package: excel!
     fullName: foregroundColor
     summary: Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape: Excel.Shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
+          shape.left = 300;
+          shape.top = 100;
+          shape.height = 100;
+          shape.width = 100;
+          shape.fill.foregroundColor = "yellow"
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

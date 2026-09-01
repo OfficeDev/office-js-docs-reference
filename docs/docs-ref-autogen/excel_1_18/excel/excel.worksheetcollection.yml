@@ -173,7 +173,21 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a worksheet object using its name or ID.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis-formatting.yaml
+
+      function displayUnit(context: Excel.RequestContext) {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let chart = sheet.charts.getItem("SalesChart");
+          let axis = chart.axes.valueAxis;
+          axis.displayUnit = "Thousands";
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -191,7 +205,21 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
+
+      /** Helper to create or recreate a worksheet. */
+      async function forceCreateSheet(workbook: Excel.Workbook, sheetName: string): Promise<Excel.Worksheet> {
+        workbook.worksheets.getItemOrNullObject(sheetName).delete();
+        await workbook.context.sync();
+        return workbook.worksheets.add(sheetName);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -596,7 +624,28 @@ events:
     package: excel!
     fullName: onVisibilityChanged
     summary: Occurs when the worksheet visibility is changed in the worksheet collection.
-    remarks: '[API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
+
+      await Excel.run(async (context) => {
+          // Register an event handler for visibility changes to any worksheet in the collection.
+          context.workbook.worksheets.onVisibilityChanged.add(onWorksheetCollectionVisibilityChanged);
+
+          await context.sync();
+          console.log("Registered the worksheet collection visibility changed event handler.");
+      });
+
+      ...
+
+      async function onWorksheetCollectionVisibilityChanged(args: Excel.WorksheetVisibilityChangedEventArgs) {
+          console.log(`Worksheet collection event: Worksheet ${args.worksheetId} visibility changed from ${args.visibilityBefore} to ${args.visibilityAfter}.`);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -46,7 +46,27 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+      await Excel.run(async (context) => {
+          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+          const wave = shapes.addGeometricShape(Excel.GeometricShapeType.wave);
+          wave.left = 100;
+          wave.top = 400;
+          wave.height = 50;
+          wave.width = 150;
+          wave.name = "Wave";
+          wave.fill.setSolidColor("lightblue");
+          wave.textFrame.textRange.text = "A geometric shape";
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

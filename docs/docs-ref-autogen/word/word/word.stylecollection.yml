@@ -57,13 +57,55 @@ properties:
       content: 'readonly items: Word.Style[];'
       return:
         type: <xref uid="word!Word.Style:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-styles.yaml
+
+          // Gets the available list styles stored with the document.
+          await Word.run(async (context) => {
+            const styles: Word.StyleCollection = context.document.getStyles();
+            const count = styles.getCount();
+
+            // Load object to log properties and their values in the console.
+            styles.load();
+            await context.sync();
+
+            for (let i = 0; i <= count.value; i++) {
+              if (styles.items[i] && styles.items[i].type == "List") {
+                console.log(`List style name: ${styles.items[i].nameLocal}`, styles.items[i]);
+              }
+            }
+          });
+          ```
 methods:
   - name: getByName(name)
     uid: word!Word.StyleCollection#getByName:member(1)
     package: word!
     fullName: getByName(name)
     summary: Get the `Style` object by its name.
-    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/border-properties.yaml
+
+      // Loads all scalar properties and returns them as a plain JavaScript object.
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByName("Bordered Text");
+        const borders: Word.BorderCollection = style.borders;
+        const border: Word.Border = borders.getByLocation(Word.BorderLocation.bottom);
+        border.load("color, location, type, visible, width");
+        await context.sync();
+
+        console.log("Border properties:", border.toJSON());
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

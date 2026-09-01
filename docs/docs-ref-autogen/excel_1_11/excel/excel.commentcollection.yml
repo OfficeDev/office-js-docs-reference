@@ -143,7 +143,20 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a comment from the collection based on its position.
-    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-resolution.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          sheet.comments.getItemAt(0).resolved = false;
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -161,7 +174,30 @@ methods:
     package: excel!
     fullName: getItemByCell(cellAddress)
     summary: Gets the comment from the specified cell. If there is no comment in the cell, an error is thrown.
-    remarks: '[API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-replies.yaml
+
+      await Excel.run(async (context) => {
+          const comment = context.workbook.comments.getItemByCell("Comments!A1");
+          const replyCount = comment.replies.getCount();
+          // Sync to get the current number of comment replies.
+          await context.sync();
+
+          // Get the last comment reply in the comment thread.
+          const reply = comment.replies.getItemAt(replyCount.value - 1);
+          reply.load(["authorEmail", "authorName", "creationDate"]);
+          // Sync to load the reply metadata.
+          await context.sync();
+
+          console.log(`Latest reply: ${reply.creationDate.toDateString()}: ${reply.authorName} ${reply.authorEmail})`);
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

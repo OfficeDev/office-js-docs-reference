@@ -410,7 +410,46 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
+
+      // Applies the specified style to a new table.
+      const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+      if (styleName == "") {
+        console.warn("Enter a style name to apply.");
+        return;
+      }
+
+      await Word.run(async (context) => {
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else if (style.type != Word.StyleType.table) {
+          console.warn(`The '${styleName}' style isn't a table style.`);
+        } else {
+          const body: Word.Body = context.document.body;
+          body.clear();
+          const data = [
+            ["Tokyo", "Beijing", "Seattle"],
+            ["Apple", "Orange", "Pineapple"]
+          ];
+          const table: Word.Table = body.insertTable(2, 3, "Start", data);
+          table.style = style.nameLocal;
+          table.styleFirstColumn = false;
+          await context.sync();
+
+          console.log(`'${styleName}' style applied to first table.`, style);
+        }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -449,7 +488,37 @@ properties:
     package: word!
     fullName: styleBuiltIn
     summary: Specifies the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        body.clear();
+
+        body.insertParagraph("Sales data", Word.InsertLocation.start);
+
+        // Create a table with numeric values and an empty total row.
+        const table: Word.Table = body.insertTable(5, 2, Word.InsertLocation.end, [
+          ["Item", "Amount"],
+          ["Product A", "1200"],
+          ["Product B", "3450"],
+          ["Product C", "870"],
+          ["Total", ""],
+        ]);
+        table.styleBuiltIn = Word.BuiltInStyleName.tableGrid;
+
+        await context.sync();
+
+        console.log(
+          "Setup complete. Place your cursor in the empty 'Total' cell (last row, second column), then try inserting a formula.",
+        );
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

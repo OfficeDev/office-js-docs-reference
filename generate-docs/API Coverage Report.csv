@@ -67,10 +67,10 @@ excel,Excel.AllowEditRangeOptions,"password",Property,Great,false
 excel,Excel.Application,N/A,Class,Fine,false
 excel,Excel.Application,"activeWindow",Property,Excellent,false
 excel,Excel.Application,"calculationEngineVersion",Property,Excellent,false
-excel,Excel.Application,"calculationMode",Property,Excellent,false
+excel,Excel.Application,"calculationMode",Property,Excellent,true
 excel,Excel.Application,"calculationState",Property,Excellent,false
 excel,Excel.Application,"context",Property,Excellent,false
-excel,Excel.Application,"cultureInfo",Property,Excellent,false
+excel,Excel.Application,"cultureInfo",Property,Excellent,true
 excel,Excel.Application,"decimalSeparator",Property,Excellent,true
 excel,Excel.Application,"formatStaleValues",Property,Excellent,false
 excel,Excel.Application,"iterativeCalculation",Property,Excellent,false
@@ -186,7 +186,7 @@ excel,Excel.BindingCollection,N/A,Class,Fine,false
 excel,Excel.BindingCollection,"context",Property,Excellent,false
 excel,Excel.BindingCollection,"count",Property,Great,false
 excel,Excel.BindingCollection,"items",Property,Great,false
-excel,Excel.BindingCollection,"add(range, bindingType, id)",Method,Fine,false
+excel,Excel.BindingCollection,"add(range, bindingType, id)",Method,Fine,true
 excel,Excel.BindingCollection,"add(range, bindingType, id)",Method,Fine,false
 excel,Excel.BindingCollection,"addFromNamedItem(name, bindingType, id)",Method,Excellent,false
 excel,Excel.BindingCollection,"addFromNamedItem(name, bindingType, id)",Method,Excellent,false
@@ -745,12 +745,12 @@ excel,Excel.Chart,"pivotOptions",Property,Great,false
 excel,Excel.Chart,"plotArea",Property,Good,false
 excel,Excel.Chart,"plotBy",Property,Great,false
 excel,Excel.Chart,"plotVisibleOnly",Property,Excellent,false
-excel,Excel.Chart,"series",Property,Great,false
+excel,Excel.Chart,"series",Property,Great,true
 excel,Excel.Chart,"seriesNameLevel",Property,Excellent,false
 excel,Excel.Chart,"showAllFieldButtons",Property,Great,false
 excel,Excel.Chart,"showDataLabelsOverMaximum",Property,Excellent,false
 excel,Excel.Chart,"style",Property,Great,false
-excel,Excel.Chart,"title",Property,Excellent,false
+excel,Excel.Chart,"title",Property,Excellent,true
 excel,Excel.Chart,"top",Property,Excellent,false
 excel,Excel.Chart,"width",Property,Great,false
 excel,Excel.Chart,"worksheet",Property,Great,false
@@ -854,7 +854,7 @@ excel,Excel.ChartAxis,"set(properties, options)",Method,Good,false
 excel,Excel.ChartAxis,"set(properties)",Method,Fine,false
 excel,Excel.ChartAxis,"setCategoryNames(sourceData)",Method,Fine,false
 excel,Excel.ChartAxis,"setCustomDisplayUnit(value)",Method,Fine,false
-excel,Excel.ChartAxis,"setPositionAt(value)",Method,Fine,false
+excel,Excel.ChartAxis,"setPositionAt(value)",Method,Fine,true
 excel,Excel.ChartAxis,"toJSON()",Method,Excellent,false
 excel,Excel.ChartAxisCategoryType,N/A,Enum,Good,false
 excel,Excel.ChartAxisCategoryType,"automatic",EnumField,Great,false
@@ -960,7 +960,7 @@ excel,Excel.ChartBinType,"category",EnumField,Great,false
 excel,Excel.ChartBorder,N/A,Class,Fine,false
 excel,Excel.ChartBorder,"color",Property,Great,false
 excel,Excel.ChartBorder,"context",Property,Excellent,false
-excel,Excel.ChartBorder,"lineStyle",Property,Excellent,false
+excel,Excel.ChartBorder,"lineStyle",Property,Excellent,true
 excel,Excel.ChartBorder,"weight",Property,Great,false
 excel,Excel.ChartBorder,"clear()",Method,Fine,false
 excel,Excel.ChartBorder,"load(options)",Method,Great,false
@@ -1092,7 +1092,7 @@ excel,Excel.ChartDataLabels,"context",Property,Excellent,false
 excel,Excel.ChartDataLabels,"format",Property,Excellent,false
 excel,Excel.ChartDataLabels,"geometricShapeType",Property,Excellent,false
 excel,Excel.ChartDataLabels,"horizontalAlignment",Property,Excellent,false
-excel,Excel.ChartDataLabels,"leaderLines",Property,Great,false
+excel,Excel.ChartDataLabels,"leaderLines",Property,Great,true
 excel,Excel.ChartDataLabels,"linkNumberFormat",Property,Excellent,false
 excel,Excel.ChartDataLabels,"numberFormat",Property,Great,false
 excel,Excel.ChartDataLabels,"position",Property,Excellent,false
@@ -1195,12 +1195,12 @@ excel,Excel.ChartFill,"getSolidColor()",Method,Fine,true
 excel,Excel.ChartFill,"setSolidColor(color)",Method,Fine,true
 excel,Excel.ChartFill,"toJSON()",Method,Excellent,false
 excel,Excel.ChartFont,N/A,Class,Good,true
-excel,Excel.ChartFont,"bold",Property,Good,false
+excel,Excel.ChartFont,"bold",Property,Good,true
 excel,Excel.ChartFont,"color",Property,Excellent,false
 excel,Excel.ChartFont,"context",Property,Excellent,false
 excel,Excel.ChartFont,"italic",Property,Great,false
 excel,Excel.ChartFont,"name",Property,Fine,false
-excel,Excel.ChartFont,"size",Property,Fine,false
+excel,Excel.ChartFont,"size",Property,Fine,true
 excel,Excel.ChartFont,"underline",Property,Excellent,false
 excel,Excel.ChartFont,"load(options)",Method,Great,false
 excel,Excel.ChartFont,"load(propertyNames)",Method,Great,false
@@ -1268,10 +1268,10 @@ excel,Excel.ChartLegend,"height",Property,Excellent,false
 excel,Excel.ChartLegend,"left",Property,Excellent,false
 excel,Excel.ChartLegend,"legendEntries",Property,Great,false
 excel,Excel.ChartLegend,"overlay",Property,Great,false
-excel,Excel.ChartLegend,"position",Property,Excellent,false
+excel,Excel.ChartLegend,"position",Property,Excellent,true
 excel,Excel.ChartLegend,"showShadow",Property,Great,false
 excel,Excel.ChartLegend,"top",Property,Good,false
-excel,Excel.ChartLegend,"visible",Property,Great,false
+excel,Excel.ChartLegend,"visible",Property,Great,true
 excel,Excel.ChartLegend,"width",Property,Excellent,false
 excel,Excel.ChartLegend,"load(options)",Method,Great,false
 excel,Excel.ChartLegend,"load(propertyNames)",Method,Great,true
@@ -1305,7 +1305,7 @@ excel,Excel.ChartLegendEntryCollection,"toJSON()",Method,Excellent,false
 excel,Excel.ChartLegendFormat,N/A,Class,Fine,false
 excel,Excel.ChartLegendFormat,"border",Property,Great,false
 excel,Excel.ChartLegendFormat,"context",Property,Excellent,false
-excel,Excel.ChartLegendFormat,"fill",Property,Excellent,false
+excel,Excel.ChartLegendFormat,"fill",Property,Excellent,true
 excel,Excel.ChartLegendFormat,"font",Property,Excellent,true
 excel,Excel.ChartLegendFormat,"load(options)",Method,Great,false
 excel,Excel.ChartLegendFormat,"load(propertyNames)",Method,Great,false
@@ -1322,9 +1322,9 @@ excel,Excel.ChartLegendPosition,"left",EnumField,Great,false
 excel,Excel.ChartLegendPosition,"right",EnumField,Great,false
 excel,Excel.ChartLegendPosition,"top",EnumField,Great,false
 excel,Excel.ChartLineFormat,N/A,Class,Fine,false
-excel,Excel.ChartLineFormat,"color",Property,Great,false
+excel,Excel.ChartLineFormat,"color",Property,Great,true
 excel,Excel.ChartLineFormat,"context",Property,Excellent,false
-excel,Excel.ChartLineFormat,"lineStyle",Property,Great,false
+excel,Excel.ChartLineFormat,"lineStyle",Property,Great,true
 excel,Excel.ChartLineFormat,"weight",Property,Great,false
 excel,Excel.ChartLineFormat,"clear()",Method,Fine,true
 excel,Excel.ChartLineFormat,"load(options)",Method,Great,false
@@ -1441,7 +1441,7 @@ excel,Excel.ChartPlotBy,"columns",EnumField,Great,false
 excel,Excel.ChartPlotBy,"rows",EnumField,Great,false
 excel,Excel.ChartPoint,N/A,Class,Fine,true
 excel,Excel.ChartPoint,"context",Property,Excellent,false
-excel,Excel.ChartPoint,"dataLabel",Property,Great,false
+excel,Excel.ChartPoint,"dataLabel",Property,Great,true
 excel,Excel.ChartPoint,"format",Property,Great,false
 excel,Excel.ChartPoint,"hasDataLabel",Property,Excellent,false
 excel,Excel.ChartPoint,"markerBackgroundColor",Property,Excellent,false
@@ -1487,7 +1487,7 @@ excel,Excel.ChartSeries,"doughnutHoleSize",Property,Excellent,false
 excel,Excel.ChartSeries,"explosion",Property,Excellent,false
 excel,Excel.ChartSeries,"filtered",Property,Great,false
 excel,Excel.ChartSeries,"firstSliceAngle",Property,Excellent,false
-excel,Excel.ChartSeries,"format",Property,Excellent,false
+excel,Excel.ChartSeries,"format",Property,Excellent,true
 excel,Excel.ChartSeries,"gapWidth",Property,Excellent,false
 excel,Excel.ChartSeries,"gradientMaximumColor",Property,Great,false
 excel,Excel.ChartSeries,"gradientMaximumType",Property,Great,false
@@ -1519,7 +1519,7 @@ excel,Excel.ChartSeries,"showShadow",Property,Good,false
 excel,Excel.ChartSeries,"smooth",Property,Great,false
 excel,Excel.ChartSeries,"splitType",Property,Excellent,false
 excel,Excel.ChartSeries,"splitValue",Property,Excellent,false
-excel,Excel.ChartSeries,"trendlines",Property,Great,false
+excel,Excel.ChartSeries,"trendlines",Property,Great,true
 excel,Excel.ChartSeries,"varyByCategories",Property,Excellent,false
 excel,Excel.ChartSeries,"xErrorBars",Property,Great,false
 excel,Excel.ChartSeries,"yErrorBars",Property,Great,false
@@ -1537,7 +1537,7 @@ excel,Excel.ChartSeries,"set(properties, options)",Method,Good,false
 excel,Excel.ChartSeries,"set(properties)",Method,Fine,false
 excel,Excel.ChartSeries,"setBubbleSizes(sourceData)",Method,Fine,true
 excel,Excel.ChartSeries,"setValues(sourceData)",Method,Fine,true
-excel,Excel.ChartSeries,"setXAxisValues(sourceData)",Method,Fine,false
+excel,Excel.ChartSeries,"setXAxisValues(sourceData)",Method,Fine,true
 excel,Excel.ChartSeries,"toJSON()",Method,Excellent,false
 excel,Excel.ChartSeriesBy,N/A,Enum,Excellent,true
 excel,Excel.ChartSeriesBy,"auto",EnumField,Great,false
@@ -1547,7 +1547,7 @@ excel,Excel.ChartSeriesCollection,N/A,Class,Fine,false
 excel,Excel.ChartSeriesCollection,"context",Property,Excellent,false
 excel,Excel.ChartSeriesCollection,"count",Property,Great,false
 excel,Excel.ChartSeriesCollection,"items",Property,Great,false
-excel,Excel.ChartSeriesCollection,"add(name, index)",Method,Good,false
+excel,Excel.ChartSeriesCollection,"add(name, index)",Method,Good,true
 excel,Excel.ChartSeriesCollection,"getCount()",Method,Good,false
 excel,Excel.ChartSeriesCollection,"getItemAt(index)",Method,Fine,true
 excel,Excel.ChartSeriesCollection,"load(options)",Method,Great,false
@@ -1600,7 +1600,7 @@ excel,Excel.ChartTitle,"left",Property,Excellent,false
 excel,Excel.ChartTitle,"overlay",Property,Great,false
 excel,Excel.ChartTitle,"position",Property,Excellent,false
 excel,Excel.ChartTitle,"showShadow",Property,Great,false
-excel,Excel.ChartTitle,"text",Property,Good,false
+excel,Excel.ChartTitle,"text",Property,Good,true
 excel,Excel.ChartTitle,"textOrientation",Property,Excellent,true
 excel,Excel.ChartTitle,"top",Property,Excellent,false
 excel,Excel.ChartTitle,"verticalAlignment",Property,Excellent,false
@@ -1854,7 +1854,7 @@ excel,Excel.Comment,"context",Property,Excellent,false
 excel,Excel.Comment,"creationDate",Property,Excellent,false
 excel,Excel.Comment,"id",Property,Good,false
 excel,Excel.Comment,"mentions",Property,Great,false
-excel,Excel.Comment,"replies",Property,Great,false
+excel,Excel.Comment,"replies",Property,Great,true
 excel,Excel.Comment,"resolved",Property,Excellent,true
 excel,Excel.Comment,"richContent",Property,Excellent,false
 excel,Excel.Comment,"assignTask(assignee)",Method,Great,false
@@ -1894,8 +1894,8 @@ excel,Excel.CommentCollection,"add(cellAddress, content, contentType)",Method,Ex
 excel,Excel.CommentCollection,"add(cellAddress, content, contentType)",Method,Excellent,false
 excel,Excel.CommentCollection,"getCount()",Method,Fine,false
 excel,Excel.CommentCollection,"getItem(commentId)",Method,Fine,false
-excel,Excel.CommentCollection,"getItemAt(index)",Method,Fine,false
-excel,Excel.CommentCollection,"getItemByCell(cellAddress)",Method,Great,false
+excel,Excel.CommentCollection,"getItemAt(index)",Method,Fine,true
+excel,Excel.CommentCollection,"getItemByCell(cellAddress)",Method,Great,true
 excel,Excel.CommentCollection,"getItemByReplyId(replyId)",Method,Fine,false
 excel,Excel.CommentCollection,"getItemOrNullObject(commentId)",Method,Excellent,false
 excel,Excel.CommentCollection,"load(options)",Method,Great,false
@@ -1955,7 +1955,7 @@ excel,Excel.CommentRichContent,N/A,Interface,Good,false
 excel,Excel.CommentRichContent,"mentions",Property,Excellent,true
 excel,Excel.CommentRichContent,"richContent",Property,Excellent,false
 excel,Excel.CompactLayout,N/A,TypeAlias,Great,false
-excel,Excel.ConditionalCellValueOperator,N/A,Enum,Good,false
+excel,Excel.ConditionalCellValueOperator,N/A,Enum,Good,true
 excel,Excel.ConditionalCellValueOperator,"between",EnumField,Great,false
 excel,Excel.ConditionalCellValueOperator,"equalTo",EnumField,Great,false
 excel,Excel.ConditionalCellValueOperator,"greaterThan",EnumField,Great,false
@@ -2041,7 +2041,7 @@ excel,Excel.ConditionalFormat,"changeRuleToDataBar()",Method,Fine,false
 excel,Excel.ConditionalFormat,"changeRuleToIconSet()",Method,Fine,false
 excel,Excel.ConditionalFormat,"changeRuleToPresetCriteria(properties)",Method,Fine,false
 excel,Excel.ConditionalFormat,"changeRuleToTopBottom(properties)",Method,Fine,false
-excel,Excel.ConditionalFormat,"delete()",Method,Good,false
+excel,Excel.ConditionalFormat,"delete()",Method,Good,true
 excel,Excel.ConditionalFormat,"getRange()",Method,Excellent,true
 excel,Excel.ConditionalFormat,"getRangeOrNullObject()",Method,Excellent,false
 excel,Excel.ConditionalFormat,"getRanges()",Method,Excellent,false
@@ -2190,7 +2190,7 @@ excel,Excel.ConditionalRangeBorderLineStyle,"dashDotDot",EnumField,Great,false
 excel,Excel.ConditionalRangeBorderLineStyle,"dot",EnumField,Great,false
 excel,Excel.ConditionalRangeBorderLineStyle,"none",EnumField,Great,false
 excel,Excel.ConditionalRangeFill,N/A,Class,Fine,false
-excel,Excel.ConditionalRangeFill,"color",Property,Excellent,false
+excel,Excel.ConditionalRangeFill,"color",Property,Excellent,true
 excel,Excel.ConditionalRangeFill,"context",Property,Excellent,false
 excel,Excel.ConditionalRangeFill,"clear()",Method,Fine,false
 excel,Excel.ConditionalRangeFill,"load(options)",Method,Great,false
@@ -2201,7 +2201,7 @@ excel,Excel.ConditionalRangeFill,"set(properties)",Method,Fine,false
 excel,Excel.ConditionalRangeFill,"toJSON()",Method,Excellent,false
 excel,Excel.ConditionalRangeFont,N/A,Class,Fine,false
 excel,Excel.ConditionalRangeFont,"bold",Property,Good,false
-excel,Excel.ConditionalRangeFont,"color",Property,Excellent,false
+excel,Excel.ConditionalRangeFont,"color",Property,Excellent,true
 excel,Excel.ConditionalRangeFont,"context",Property,Excellent,false
 excel,Excel.ConditionalRangeFont,"italic",Property,Good,false
 excel,Excel.ConditionalRangeFont,"strikethrough",Property,Great,false
@@ -2239,7 +2239,7 @@ excel,Excel.ConditionalTextOperator,"contains",EnumField,Great,false
 excel,Excel.ConditionalTextOperator,"endsWith",EnumField,Great,false
 excel,Excel.ConditionalTextOperator,"invalid",EnumField,Great,false
 excel,Excel.ConditionalTextOperator,"notContains",EnumField,Great,false
-excel,Excel.ConditionalTopBottomCriterionType,N/A,Enum,Great,false
+excel,Excel.ConditionalTopBottomCriterionType,N/A,Enum,Great,true
 excel,Excel.ConditionalTopBottomCriterionType,"bottomItems",EnumField,Great,false
 excel,Excel.ConditionalTopBottomCriterionType,"bottomPercent",EnumField,Great,false
 excel,Excel.ConditionalTopBottomCriterionType,"invalid",EnumField,Great,false
@@ -2335,7 +2335,7 @@ excel,Excel.CustomPropertyCollection,"context",Property,Excellent,false
 excel,Excel.CustomPropertyCollection,"items",Property,Great,false
 excel,Excel.CustomPropertyCollection,"add(key, value)",Method,Good,true
 excel,Excel.CustomPropertyCollection,"deleteAll()",Method,Fine,false
-excel,Excel.CustomPropertyCollection,"getCount()",Method,Fine,false
+excel,Excel.CustomPropertyCollection,"getCount()",Method,Fine,true
 excel,Excel.CustomPropertyCollection,"getItem(key)",Method,Excellent,false
 excel,Excel.CustomPropertyCollection,"getItemOrNullObject(key)",Method,Excellent,false
 excel,Excel.CustomPropertyCollection,"load(options)",Method,Great,false
@@ -2414,7 +2414,7 @@ excel,Excel.DataPivotHierarchy,"name",Property,Good,true
 excel,Excel.DataPivotHierarchy,"numberFormat",Property,Great,false
 excel,Excel.DataPivotHierarchy,"position",Property,Good,false
 excel,Excel.DataPivotHierarchy,"showAs",Property,Great,true
-excel,Excel.DataPivotHierarchy,"summarizeBy",Property,Great,false
+excel,Excel.DataPivotHierarchy,"summarizeBy",Property,Great,true
 excel,Excel.DataPivotHierarchy,"load(options)",Method,Great,false
 excel,Excel.DataPivotHierarchy,"load(propertyNames)",Method,Great,false
 excel,Excel.DataPivotHierarchy,"load(propertyNamesAndPaths)",Method,Great,false
@@ -2425,7 +2425,7 @@ excel,Excel.DataPivotHierarchy,"toJSON()",Method,Excellent,false
 excel,Excel.DataPivotHierarchyCollection,N/A,Class,Fine,false
 excel,Excel.DataPivotHierarchyCollection,"context",Property,Excellent,false
 excel,Excel.DataPivotHierarchyCollection,"items",Property,Great,false
-excel,Excel.DataPivotHierarchyCollection,"add(pivotHierarchy)",Method,Fine,false
+excel,Excel.DataPivotHierarchyCollection,"add(pivotHierarchy)",Method,Fine,true
 excel,Excel.DataPivotHierarchyCollection,"getCount()",Method,Fine,false
 excel,Excel.DataPivotHierarchyCollection,"getItem(name)",Method,Fine,false
 excel,Excel.DataPivotHierarchyCollection,"getItemOrNullObject(name)",Method,Excellent,false
@@ -3489,7 +3489,7 @@ excel,Excel.FillPattern,"vertical",EnumField,Great,false
 excel,Excel.Filter,N/A,Class,Fine,false
 excel,Excel.Filter,"context",Property,Excellent,false
 excel,Excel.Filter,"criteria",Property,Great,false
-excel,Excel.Filter,"apply(criteria)",Method,Fine,false
+excel,Excel.Filter,"apply(criteria)",Method,Fine,true
 excel,Excel.Filter,"applyBottomItemsFilter(count)",Method,Fine,false
 excel,Excel.Filter,"applyBottomPercentFilter(percent)",Method,Fine,false
 excel,Excel.Filter,"applyCellColorFilter(color)",Method,Fine,false
@@ -3558,7 +3558,7 @@ excel,Excel.FilterPivotHierarchy,"toJSON()",Method,Excellent,false
 excel,Excel.FilterPivotHierarchyCollection,N/A,Class,Fine,false
 excel,Excel.FilterPivotHierarchyCollection,"context",Property,Excellent,false
 excel,Excel.FilterPivotHierarchyCollection,"items",Property,Great,false
-excel,Excel.FilterPivotHierarchyCollection,"add(pivotHierarchy)",Method,Great,false
+excel,Excel.FilterPivotHierarchyCollection,"add(pivotHierarchy)",Method,Great,true
 excel,Excel.FilterPivotHierarchyCollection,"getCount()",Method,Fine,false
 excel,Excel.FilterPivotHierarchyCollection,"getItem(name)",Method,Fine,false
 excel,Excel.FilterPivotHierarchyCollection,"getItemOrNullObject(name)",Method,Excellent,false
@@ -3931,7 +3931,7 @@ excel,Excel.Functions,"quartile_Inc(array, quart)",Method,Good,false
 excel,Excel.Functions,"quotient(numerator, denominator)",Method,Good,false
 excel,Excel.Functions,"radians(angle)",Method,Poor,false
 excel,Excel.Functions,"rand()",Method,Great,false
-excel,Excel.Functions,"randBetween(bottom, top)",Method,Good,false
+excel,Excel.Functions,"randBetween(bottom, top)",Method,Good,true
 excel,Excel.Functions,"rank_Avg(number, ref, order)",Method,Great,false
 excel,Excel.Functions,"rank_Eq(number, ref, order)",Method,Great,false
 excel,Excel.Functions,"rate(nper, pmt, pv, fv, type, guess)",Method,Great,false
@@ -4950,7 +4950,7 @@ excel,Excel.PivotFieldCollection,N/A,Class,Fine,false
 excel,Excel.PivotFieldCollection,"context",Property,Excellent,false
 excel,Excel.PivotFieldCollection,"items",Property,Great,false
 excel,Excel.PivotFieldCollection,"getCount()",Method,Fine,false
-excel,Excel.PivotFieldCollection,"getItem(name)",Method,Fine,false
+excel,Excel.PivotFieldCollection,"getItem(name)",Method,Fine,true
 excel,Excel.PivotFieldCollection,"getItemOrNullObject(name)",Method,Excellent,false
 excel,Excel.PivotFieldCollection,"load(options)",Method,Great,false
 excel,Excel.PivotFieldCollection,"load(propertyNames)",Method,Great,false
@@ -4990,7 +4990,7 @@ excel,Excel.PivotHierarchyCollection,N/A,Class,Fine,false
 excel,Excel.PivotHierarchyCollection,"context",Property,Excellent,false
 excel,Excel.PivotHierarchyCollection,"items",Property,Great,false
 excel,Excel.PivotHierarchyCollection,"getCount()",Method,Fine,false
-excel,Excel.PivotHierarchyCollection,"getItem(name)",Method,Fine,false
+excel,Excel.PivotHierarchyCollection,"getItem(name)",Method,Fine,true
 excel,Excel.PivotHierarchyCollection,"getItemOrNullObject(name)",Method,Excellent,false
 excel,Excel.PivotHierarchyCollection,"load(options)",Method,Great,false
 excel,Excel.PivotHierarchyCollection,"load(propertyNames)",Method,Great,false
@@ -5171,7 +5171,7 @@ excel,Excel.Placement,"oneCell",EnumField,Great,false
 excel,Excel.Placement,"twoCell",EnumField,Great,false
 excel,Excel.PresetCriteriaConditionalFormat,N/A,Class,Excellent,false
 excel,Excel.PresetCriteriaConditionalFormat,"context",Property,Excellent,false
-excel,Excel.PresetCriteriaConditionalFormat,"format",Property,Excellent,false
+excel,Excel.PresetCriteriaConditionalFormat,"format",Property,Excellent,true
 excel,Excel.PresetCriteriaConditionalFormat,"rule",Property,Good,true
 excel,Excel.PresetCriteriaConditionalFormat,"load(options)",Method,Great,false
 excel,Excel.PresetCriteriaConditionalFormat,"load(propertyNames)",Method,Great,false
@@ -5244,13 +5244,13 @@ excel,Excel.Range,"cellCount",Property,Excellent,false
 excel,Excel.Range,"columnCount",Property,Great,false
 excel,Excel.Range,"columnHidden",Property,Excellent,false
 excel,Excel.Range,"columnIndex",Property,Great,false
-excel,Excel.Range,"conditionalFormats",Property,Great,false
+excel,Excel.Range,"conditionalFormats",Property,Great,true
 excel,Excel.Range,"context",Property,Excellent,false
 excel,Excel.Range,"control",Property,Excellent,true
-excel,Excel.Range,"dataValidation",Property,Good,false
-excel,Excel.Range,"format",Property,Excellent,false
+excel,Excel.Range,"dataValidation",Property,Good,true
+excel,Excel.Range,"format",Property,Excellent,true
 excel,Excel.Range,"formulaArray",Property,Excellent,false
-excel,Excel.Range,"formulas",Property,Excellent,false
+excel,Excel.Range,"formulas",Property,Excellent,true
 excel,Excel.Range,"formulasLocal",Property,Excellent,false
 excel,Excel.Range,"formulasR1C1",Property,Excellent,false
 excel,Excel.Range,"hasSpill",Property,Excellent,false
@@ -5339,7 +5339,7 @@ excel,Excel.Range,"getSurroundingRegion()",Method,Excellent,false
 excel,Excel.Range,"getTables(fullyContained)",Method,Fine,false
 excel,Excel.Range,"getUsedRange(valuesOnly)",Method,Excellent,true
 excel,Excel.Range,"getUsedRangeOrNullObject(valuesOnly)",Method,Excellent,true
-excel,Excel.Range,"getVisibleView()",Method,Fine,false
+excel,Excel.Range,"getVisibleView()",Method,Fine,true
 excel,Excel.Range,"group(groupOption)",Method,Fine,true
 excel,Excel.Range,"group(groupOption)",Method,Fine,false
 excel,Excel.Range,"hideGroupDetails(groupOption)",Method,Fine,false
@@ -5393,7 +5393,7 @@ excel,Excel.RangeAreas,"clear(applyTo)",Method,Good,false
 excel,Excel.RangeAreas,"clearOrResetContents()",Method,Excellent,false
 excel,Excel.RangeAreas,"convertDataTypeToText()",Method,Fine,false
 excel,Excel.RangeAreas,"convertToLinkedDataType(serviceID, languageCulture)",Method,Fine,false
-excel,Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Excellent,false
+excel,Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Excellent,true
 excel,Excel.RangeAreas,"copyFrom(sourceRange, copyType, skipBlanks, transpose)",Method,Excellent,false
 excel,Excel.RangeAreas,"getEntireColumn()",Method,Excellent,false
 excel,Excel.RangeAreas,"getEntireRow()",Method,Excellent,false
@@ -5468,7 +5468,7 @@ excel,Excel.RangeCopyType,"formulas",EnumField,Great,false
 excel,Excel.RangeCopyType,"link",EnumField,Great,false
 excel,Excel.RangeCopyType,"values",EnumField,Great,false
 excel,Excel.RangeFill,N/A,Class,Fine,false
-excel,Excel.RangeFill,"color",Property,Great,false
+excel,Excel.RangeFill,"color",Property,Great,true
 excel,Excel.RangeFill,"context",Property,Excellent,false
 excel,Excel.RangeFill,"pattern",Property,Excellent,false
 excel,Excel.RangeFill,"patternColor",Property,Excellent,false
@@ -5482,8 +5482,8 @@ excel,Excel.RangeFill,"set(properties, options)",Method,Good,false
 excel,Excel.RangeFill,"set(properties)",Method,Fine,false
 excel,Excel.RangeFill,"toJSON()",Method,Excellent,false
 excel,Excel.RangeFont,N/A,Class,Fine,false
-excel,Excel.RangeFont,"bold",Property,Good,false
-excel,Excel.RangeFont,"color",Property,Excellent,false
+excel,Excel.RangeFont,"bold",Property,Good,true
+excel,Excel.RangeFont,"color",Property,Excellent,true
 excel,Excel.RangeFont,"context",Property,Excellent,false
 excel,Excel.RangeFont,"italic",Property,Great,false
 excel,Excel.RangeFont,"name",Property,Excellent,true
@@ -5504,9 +5504,9 @@ excel,Excel.RangeFormat,"autoIndent",Property,Excellent,false
 excel,Excel.RangeFormat,"borders",Property,Great,false
 excel,Excel.RangeFormat,"columnWidth",Property,Excellent,false
 excel,Excel.RangeFormat,"context",Property,Excellent,false
-excel,Excel.RangeFormat,"fill",Property,Great,false
+excel,Excel.RangeFormat,"fill",Property,Great,true
 excel,Excel.RangeFormat,"font",Property,Great,false
-excel,Excel.RangeFormat,"horizontalAlignment",Property,Excellent,false
+excel,Excel.RangeFormat,"horizontalAlignment",Property,Excellent,true
 excel,Excel.RangeFormat,"indentLevel",Property,Great,false
 excel,Excel.RangeFormat,"protection",Property,Great,false
 excel,Excel.RangeFormat,"readingOrder",Property,Good,false
@@ -5515,11 +5515,11 @@ excel,Excel.RangeFormat,"shrinkToFit",Property,Great,false
 excel,Excel.RangeFormat,"textOrientation",Property,Excellent,true
 excel,Excel.RangeFormat,"useStandardHeight",Property,Excellent,false
 excel,Excel.RangeFormat,"useStandardWidth",Property,Excellent,false
-excel,Excel.RangeFormat,"verticalAlignment",Property,Excellent,false
+excel,Excel.RangeFormat,"verticalAlignment",Property,Excellent,true
 excel,Excel.RangeFormat,"wrapText",Property,Great,false
 excel,Excel.RangeFormat,"adjustIndent(amount)",Method,Good,false
-excel,Excel.RangeFormat,"autofitColumns()",Method,Good,false
-excel,Excel.RangeFormat,"autofitRows()",Method,Good,false
+excel,Excel.RangeFormat,"autofitColumns()",Method,Good,true
+excel,Excel.RangeFormat,"autofitRows()",Method,Good,true
 excel,Excel.RangeFormat,"load(options)",Method,Great,false
 excel,Excel.RangeFormat,"load(propertyNames)",Method,Great,true
 excel,Excel.RangeFormat,"load(propertyNamesAndPaths)",Method,Great,false
@@ -5666,14 +5666,14 @@ excel,Excel.RowColumnPivotHierarchy,"toJSON()",Method,Excellent,false
 excel,Excel.RowColumnPivotHierarchyCollection,N/A,Class,Fine,false
 excel,Excel.RowColumnPivotHierarchyCollection,"context",Property,Excellent,false
 excel,Excel.RowColumnPivotHierarchyCollection,"items",Property,Great,false
-excel,Excel.RowColumnPivotHierarchyCollection,"add(pivotHierarchy)",Method,Great,false
+excel,Excel.RowColumnPivotHierarchyCollection,"add(pivotHierarchy)",Method,Great,true
 excel,Excel.RowColumnPivotHierarchyCollection,"getCount()",Method,Fine,false
 excel,Excel.RowColumnPivotHierarchyCollection,"getItem(name)",Method,Fine,false
 excel,Excel.RowColumnPivotHierarchyCollection,"getItemOrNullObject(name)",Method,Excellent,false
 excel,Excel.RowColumnPivotHierarchyCollection,"load(options)",Method,Great,false
 excel,Excel.RowColumnPivotHierarchyCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.RowColumnPivotHierarchyCollection,"load(propertyNamesAndPaths)",Method,Great,false
-excel,Excel.RowColumnPivotHierarchyCollection,"remove(rowColumnPivotHierarchy)",Method,Fine,false
+excel,Excel.RowColumnPivotHierarchyCollection,"remove(rowColumnPivotHierarchy)",Method,Fine,true
 excel,Excel.RowColumnPivotHierarchyCollection,"toJSON()",Method,Excellent,false
 excel,Excel.RowHiddenChangeType,N/A,Enum,Missing,false
 excel,Excel.RowHiddenChangeType,"hidden",EnumField,Great,false
@@ -5812,7 +5812,7 @@ excel,Excel.Shape,"fill",Property,Great,true
 excel,Excel.Shape,"geometricShape",Property,Excellent,false
 excel,Excel.Shape,"geometricShapeType",Property,Excellent,false
 excel,Excel.Shape,"group",Property,Excellent,true
-excel,Excel.Shape,"height",Property,Excellent,false
+excel,Excel.Shape,"height",Property,Excellent,true
 excel,Excel.Shape,"id",Property,Good,false
 excel,Excel.Shape,"image",Property,Excellent,false
 excel,Excel.Shape,"left",Property,Excellent,false
@@ -5820,7 +5820,7 @@ excel,Excel.Shape,"level",Property,Excellent,false
 excel,Excel.Shape,"line",Property,Excellent,true
 excel,Excel.Shape,"lineFormat",Property,Great,true
 excel,Excel.Shape,"lockAspectRatio",Property,Great,true
-excel,Excel.Shape,"name",Property,Good,false
+excel,Excel.Shape,"name",Property,Good,true
 excel,Excel.Shape,"parentGroup",Property,Great,false
 excel,Excel.Shape,"placement",Property,Great,false
 excel,Excel.Shape,"rotation",Property,Great,true
@@ -5871,7 +5871,7 @@ excel,Excel.ShapeCollection,"addLocalImageReference(address)",Method,Good,false
 excel,Excel.ShapeCollection,"addSvg(xml)",Method,Excellent,false
 excel,Excel.ShapeCollection,"addTextBox(text)",Method,Great,true
 excel,Excel.ShapeCollection,"getCount()",Method,Good,false
-excel,Excel.ShapeCollection,"getItem(key)",Method,Fine,false
+excel,Excel.ShapeCollection,"getItem(key)",Method,Fine,true
 excel,Excel.ShapeCollection,"getItemAt(index)",Method,Fine,false
 excel,Excel.ShapeCollection,"getItemOrNullObject(key)",Method,Excellent,false
 excel,Excel.ShapeCollection,"load(options)",Method,Great,false
@@ -5884,7 +5884,7 @@ excel,Excel.ShapeDeactivatedEventArgs,"type",Property,Great,false
 excel,Excel.ShapeDeactivatedEventArgs,"worksheetId",Property,Great,false
 excel,Excel.ShapeFill,N/A,Class,Fine,true
 excel,Excel.ShapeFill,"context",Property,Excellent,false
-excel,Excel.ShapeFill,"foregroundColor",Property,Great,false
+excel,Excel.ShapeFill,"foregroundColor",Property,Great,true
 excel,Excel.ShapeFill,"transparency",Property,Excellent,false
 excel,Excel.ShapeFill,"type",Property,Great,false
 excel,Excel.ShapeFill,"clear()",Method,Fine,true
@@ -6295,19 +6295,19 @@ excel,Excel.Table,"highlightLastColumn",Property,Great,false
 excel,Excel.Table,"id",Property,Excellent,false
 excel,Excel.Table,"isActive",Property,Great,false
 excel,Excel.Table,"legacyId",Property,Good,false
-excel,Excel.Table,"name",Property,Excellent,false
-excel,Excel.Table,"rows",Property,Great,false
+excel,Excel.Table,"name",Property,Excellent,true
+excel,Excel.Table,"rows",Property,Great,true
 excel,Excel.Table,"showBandedColumns",Property,Excellent,false
 excel,Excel.Table,"showBandedRows",Property,Excellent,false
 excel,Excel.Table,"showFilterButton",Property,Excellent,false
 excel,Excel.Table,"showHeaders",Property,Excellent,false
 excel,Excel.Table,"showTotals",Property,Excellent,false
-excel,Excel.Table,"sort",Property,Good,false
+excel,Excel.Table,"sort",Property,Good,true
 excel,Excel.Table,"source",Property,Great,false
 excel,Excel.Table,"style",Property,Excellent,true
 excel,Excel.Table,"tableStyle",Property,Good,false
 excel,Excel.Table,"worksheet",Property,Great,false
-excel,Excel.Table,"clearFilters()",Method,Fine,false
+excel,Excel.Table,"clearFilters()",Method,Fine,true
 excel,Excel.Table,"clearStyle()",Method,Fine,false
 excel,Excel.Table,"convertToRange()",Method,Fine,true
 excel,Excel.Table,"delete()",Method,Poor,true
@@ -6354,7 +6354,7 @@ excel,Excel.TableCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.TableCollection,"toJSON()",Method,Excellent,false
 excel,Excel.TableColumn,N/A,Class,Fine,false
 excel,Excel.TableColumn,"context",Property,Excellent,false
-excel,Excel.TableColumn,"filter",Property,Great,false
+excel,Excel.TableColumn,"filter",Property,Great,true
 excel,Excel.TableColumn,"id",Property,Great,false
 excel,Excel.TableColumn,"index",Property,Excellent,false
 excel,Excel.TableColumn,"name",Property,Good,false
@@ -6399,7 +6399,7 @@ excel,Excel.TableFilteredEventArgs,"worksheetId",Property,Great,false
 excel,Excel.TableRow,N/A,Class,Excellent,false
 excel,Excel.TableRow,"context",Property,Excellent,false
 excel,Excel.TableRow,"index",Property,Excellent,false
-excel,Excel.TableRow,"values",Property,Excellent,false
+excel,Excel.TableRow,"values",Property,Excellent,true
 excel,Excel.TableRow,"valuesAsJson",Property,Excellent,false
 excel,Excel.TableRow,"valuesAsJsonLocal",Property,Excellent,false
 excel,Excel.TableRow,"delete()",Method,Fine,true
@@ -6520,7 +6520,7 @@ excel,Excel.TextFrame,"toJSON()",Method,Excellent,false
 excel,Excel.TextRange,N/A,Class,Good,false
 excel,Excel.TextRange,"context",Property,Excellent,false
 excel,Excel.TextRange,"font",Property,Excellent,false
-excel,Excel.TextRange,"text",Property,Great,false
+excel,Excel.TextRange,"text",Property,Great,true
 excel,Excel.TextRange,"getSubstring(start, length)",Method,Good,false
 excel,Excel.TextRange,"load(options)",Method,Great,false
 excel,Excel.TextRange,"load(propertyNames)",Method,Great,false
@@ -6604,7 +6604,7 @@ excel,Excel.TimeoutErrorCellValueSubType,"pythonTimeoutLimitReached",EnumField,E
 excel,Excel.TimeoutErrorCellValueSubType,"unknown",EnumField,Excellent,false
 excel,Excel.TopBottomConditionalFormat,N/A,Class,Fine,false
 excel,Excel.TopBottomConditionalFormat,"context",Property,Excellent,false
-excel,Excel.TopBottomConditionalFormat,"format",Property,Excellent,false
+excel,Excel.TopBottomConditionalFormat,"format",Property,Excellent,true
 excel,Excel.TopBottomConditionalFormat,"rule",Property,Great,false
 excel,Excel.TopBottomConditionalFormat,"load(options)",Method,Great,false
 excel,Excel.TopBottomConditionalFormat,"load(propertyNames)",Method,Great,false
@@ -6860,12 +6860,12 @@ excel,Excel.Workbook,"autoSave",Property,Great,false
 excel,Excel.Workbook,"bindings",Property,Great,false
 excel,Excel.Workbook,"calculationEngineVersion",Property,Great,false
 excel,Excel.Workbook,"chartDataPointTrack",Property,Excellent,false
-excel,Excel.Workbook,"comments",Property,Great,false
+excel,Excel.Workbook,"comments",Property,Great,true
 excel,Excel.Workbook,"context",Property,Excellent,false
-excel,Excel.Workbook,"customXmlParts",Property,Great,false
+excel,Excel.Workbook,"customXmlParts",Property,Great,true
 excel,Excel.Workbook,"dataConnections",Property,Great,false
 excel,Excel.Workbook,"externalCodeServiceTimeout",Property,Excellent,false
-excel,Excel.Workbook,"functions",Property,Excellent,false
+excel,Excel.Workbook,"functions",Property,Excellent,true
 excel,Excel.Workbook,"isDirty",Property,Excellent,false
 excel,Excel.Workbook,"linkedEntityDataDomains",Property,Excellent,false
 excel,Excel.Workbook,"linkedWorkbooks",Property,Excellent,false
@@ -6877,11 +6877,11 @@ excel,Excel.Workbook,"pivotTables",Property,Great,true
 excel,Excel.Workbook,"pivotTableStyles",Property,Great,false
 excel,Excel.Workbook,"previouslySaved",Property,Great,false
 excel,Excel.Workbook,"properties",Property,Good,true
-excel,Excel.Workbook,"protection",Property,Great,false
+excel,Excel.Workbook,"protection",Property,Great,true
 excel,Excel.Workbook,"queries",Property,Great,false
 excel,Excel.Workbook,"readOnly",Property,Great,false
 excel,Excel.Workbook,"sensitivityLabel",Property,Great,false
-excel,Excel.Workbook,"settings",Property,Great,false
+excel,Excel.Workbook,"settings",Property,Great,true
 excel,Excel.Workbook,"showPivotFieldList",Property,Excellent,false
 excel,Excel.Workbook,"slicers",Property,Great,false
 excel,Excel.Workbook,"slicerStyles",Property,Great,false
@@ -6892,7 +6892,7 @@ excel,Excel.Workbook,"tasks",Property,Great,false
 excel,Excel.Workbook,"timelineStyles",Property,Great,false
 excel,Excel.Workbook,"use1904DateSystem",Property,Great,false
 excel,Excel.Workbook,"usePrecisionAsDisplayed",Property,Excellent,false
-excel,Excel.Workbook,"worksheets",Property,Great,false
+excel,Excel.Workbook,"worksheets",Property,Great,true
 excel,Excel.Workbook,"autorunEventCompleted(AutorunEventCompletedOptions)",Method,Fine,false
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,true
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,false
@@ -6954,23 +6954,23 @@ excel,Excel.WorkbookRangeAreas,"track()",Method,Excellent,false
 excel,Excel.WorkbookRangeAreas,"untrack()",Method,Excellent,false
 excel,Excel.Worksheet,N/A,Class,Great,true
 excel,Excel.Worksheet,"autoFilter",Property,Great,true
-excel,Excel.Worksheet,"charts",Property,Great,false
-excel,Excel.Worksheet,"comments",Property,Great,false
+excel,Excel.Worksheet,"charts",Property,Great,true
+excel,Excel.Worksheet,"comments",Property,Great,true
 excel,Excel.Worksheet,"context",Property,Excellent,false
 excel,Excel.Worksheet,"customProperties",Property,Great,true
 excel,Excel.Worksheet,"enableCalculation",Property,Excellent,false
-excel,Excel.Worksheet,"freezePanes",Property,Great,false
+excel,Excel.Worksheet,"freezePanes",Property,Great,true
 excel,Excel.Worksheet,"horizontalPageBreaks",Property,Excellent,false
 excel,Excel.Worksheet,"id",Property,Excellent,false
-excel,Excel.Worksheet,"name",Property,Great,false
+excel,Excel.Worksheet,"name",Property,Great,true
 excel,Excel.Worksheet,"namedSheetViews",Property,Great,false
 excel,Excel.Worksheet,"names",Property,Great,false
-excel,Excel.Worksheet,"notes",Property,Great,false
-excel,Excel.Worksheet,"pageLayout",Property,Great,false
+excel,Excel.Worksheet,"notes",Property,Great,true
+excel,Excel.Worksheet,"pageLayout",Property,Great,true
 excel,Excel.Worksheet,"pivotTables",Property,Great,true
 excel,Excel.Worksheet,"position",Property,Great,true
 excel,Excel.Worksheet,"protection",Property,Great,true
-excel,Excel.Worksheet,"shapes",Property,Great,false
+excel,Excel.Worksheet,"shapes",Property,Great,true
 excel,Excel.Worksheet,"showDataTypeIcons",Property,Excellent,false
 excel,Excel.Worksheet,"showGridlines",Property,Great,true
 excel,Excel.Worksheet,"showHeadings",Property,Great,false
@@ -6982,7 +6982,7 @@ excel,Excel.Worksheet,"tabId",Property,Excellent,false
 excel,Excel.Worksheet,"tables",Property,Great,false
 excel,Excel.Worksheet,"tasks",Property,Great,false
 excel,Excel.Worksheet,"verticalPageBreaks",Property,Excellent,false
-excel,Excel.Worksheet,"visibility",Property,Good,false
+excel,Excel.Worksheet,"visibility",Property,Good,true
 excel,Excel.Worksheet,"activate()",Method,Fine,true
 excel,Excel.Worksheet,"calculate(markAllDirty)",Method,Fine,false
 excel,Excel.Worksheet,"checkSpelling(options)",Method,Good,false
@@ -7047,8 +7047,8 @@ excel,Excel.WorksheetCollection,"addFromBase64(base64File, sheetNamesToInsert, p
 excel,Excel.WorksheetCollection,"getActiveWorksheet()",Method,Fine,true
 excel,Excel.WorksheetCollection,"getCount(visibleOnly)",Method,Fine,false
 excel,Excel.WorksheetCollection,"getFirst(visibleOnly)",Method,Fine,true
-excel,Excel.WorksheetCollection,"getItem(key)",Method,Fine,false
-excel,Excel.WorksheetCollection,"getItemOrNullObject(key)",Method,Excellent,false
+excel,Excel.WorksheetCollection,"getItem(key)",Method,Fine,true
+excel,Excel.WorksheetCollection,"getItemOrNullObject(key)",Method,Excellent,true
 excel,Excel.WorksheetCollection,"getLast(visibleOnly)",Method,Fine,true
 excel,Excel.WorksheetCollection,"load(options)",Method,Great,false
 excel,Excel.WorksheetCollection,"load(propertyNames)",Method,Great,true
@@ -7197,7 +7197,7 @@ excel,Excel.WorksheetSingleClickedEventArgs,"offsetX",Property,Excellent,false
 excel,Excel.WorksheetSingleClickedEventArgs,"offsetY",Property,Excellent,false
 excel,Excel.WorksheetSingleClickedEventArgs,"type",Property,Good,false
 excel,Excel.WorksheetSingleClickedEventArgs,"worksheetId",Property,Great,false
-excel,Excel.WorksheetVisibilityChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetVisibilityChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetVisibilityChangedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetVisibilityChangedEventArgs,"type",Property,Good,false
 excel,Excel.WorksheetVisibilityChangedEventArgs,"visibilityAfter",Property,Great,false
@@ -12123,7 +12123,7 @@ word,Word.Bibliography,"toJSON()",Method,Excellent,false
 word,Word.Bibliography,"track()",Method,Excellent,false
 word,Word.Bibliography,"untrack()",Method,Excellent,false
 word,Word.Body,N/A,Class,Fine,true
-word,Word.Body,"contentControls",Property,Great,false
+word,Word.Body,"contentControls",Property,Great,true
 word,Word.Body,"context",Property,Excellent,false
 word,Word.Body,"endnotes",Property,Great,false
 word,Word.Body,"fields",Property,Great,true
@@ -12146,7 +12146,7 @@ word,Word.Body,"text",Property,Great,true
 word,Word.Body,"type",Property,Excellent,true
 word,Word.Body,"clear()",Method,Good,true
 word,Word.Body,"getComments()",Method,Fine,true
-word,Word.Body,"getContentControls(options)",Method,Fine,false
+word,Word.Body,"getContentControls(options)",Method,Fine,true
 word,Word.Body,"getHtml()",Method,Excellent,true
 word,Word.Body,"getOoxml()",Method,Fine,true
 word,Word.Body,"getRange(rangeLocation)",Method,Fine,true
@@ -12240,7 +12240,7 @@ word,Word.BorderCollection,"items",Property,Great,false
 word,Word.BorderCollection,"outsideBorderColor",Property,Excellent,true
 word,Word.BorderCollection,"outsideBorderType",Property,Great,true
 word,Word.BorderCollection,"outsideBorderWidth",Property,Great,true
-word,Word.BorderCollection,"getByLocation(borderLocation)",Method,Fine,false
+word,Word.BorderCollection,"getByLocation(borderLocation)",Method,Fine,true
 word,Word.BorderCollection,"getFirst()",Method,Excellent,false
 word,Word.BorderCollection,"getFirstOrNullObject()",Method,Excellent,false
 word,Word.BorderCollection,"getItem(index)",Method,Fine,false
@@ -12816,7 +12816,7 @@ word,Word.CoauthoringLockAddOptions,"range",Property,Excellent,false
 word,Word.CoauthoringLockAddOptions,"type",Property,Excellent,false
 word,Word.CoauthoringLockCollection,N/A,Class,Fine,true
 word,Word.CoauthoringLockCollection,"context",Property,Excellent,false
-word,Word.CoauthoringLockCollection,"items",Property,Great,false
+word,Word.CoauthoringLockCollection,"items",Property,Great,true
 word,Word.CoauthoringLockCollection,"add(options)",Method,Good,true
 word,Word.CoauthoringLockCollection,"load(options)",Method,Great,false
 word,Word.CoauthoringLockCollection,"load(propertyNames)",Method,Great,false
@@ -12832,7 +12832,7 @@ word,Word.CoauthoringLockType,"none",EnumField,Great,false
 word,Word.CoauthoringLockType,"reservation",EnumField,Great,false
 word,Word.CoauthoringUpdate,N/A,Class,Fine,false
 word,Word.CoauthoringUpdate,"context",Property,Excellent,false
-word,Word.CoauthoringUpdate,"range",Property,Excellent,false
+word,Word.CoauthoringUpdate,"range",Property,Excellent,true
 word,Word.CoauthoringUpdate,"load(options)",Method,Great,false
 word,Word.CoauthoringUpdate,"load(propertyNames)",Method,Great,false
 word,Word.CoauthoringUpdate,"load(propertyNamesAndPaths)",Method,Great,false
@@ -13067,7 +13067,7 @@ word,Word.ConflictCollection,"toJSON()",Method,Excellent,false
 word,Word.ConflictCollection,"track()",Method,Excellent,false
 word,Word.ConflictCollection,"untrack()",Method,Excellent,false
 word,Word.ContentControl,N/A,Class,Great,true
-word,Word.ContentControl,"appearance",Property,Excellent,false
+word,Word.ContentControl,"appearance",Property,Excellent,true
 word,Word.ContentControl,"buildingBlockGalleryContentControl",Property,Excellent,false
 word,Word.ContentControl,"cannotDelete",Property,Excellent,false
 word,Word.ContentControl,"cannotEdit",Property,Great,false
@@ -13104,7 +13104,7 @@ word,Word.ContentControl,"subtype",Property,Excellent,false
 word,Word.ContentControl,"tables",Property,Great,false
 word,Word.ContentControl,"tag",Property,Great,true
 word,Word.ContentControl,"text",Property,Good,false
-word,Word.ContentControl,"title",Property,Great,false
+word,Word.ContentControl,"title",Property,Great,true
 word,Word.ContentControl,"type",Property,Excellent,false
 word,Word.ContentControl,"xmlMapping",Property,Excellent,false
 word,Word.ContentControl,"clear()",Method,Good,true
@@ -13151,8 +13151,8 @@ word,Word.ContentControlAppearance,"hidden",EnumField,Great,false
 word,Word.ContentControlAppearance,"tags",EnumField,Great,false
 word,Word.ContentControlCollection,N/A,Class,Great,true
 word,Word.ContentControlCollection,"context",Property,Excellent,false
-word,Word.ContentControlCollection,"items",Property,Great,false
-word,Word.ContentControlCollection,"getByChangeTrackingStates(changeTrackingStates)",Method,Fine,false
+word,Word.ContentControlCollection,"items",Property,Great,true
+word,Word.ContentControlCollection,"getByChangeTrackingStates(changeTrackingStates)",Method,Fine,true
 word,Word.ContentControlCollection,"getById(id)",Method,Excellent,true
 word,Word.ContentControlCollection,"getByIdOrNullObject(id)",Method,Excellent,true
 word,Word.ContentControlCollection,"getByTag(tag)",Method,Fine,true
@@ -13209,7 +13209,7 @@ word,Word.ContentControlListItem,"track()",Method,Excellent,false
 word,Word.ContentControlListItem,"untrack()",Method,Excellent,false
 word,Word.ContentControlListItemCollection,N/A,Class,Good,true
 word,Word.ContentControlListItemCollection,"context",Property,Excellent,false
-word,Word.ContentControlListItemCollection,"items",Property,Great,false
+word,Word.ContentControlListItemCollection,"items",Property,Great,true
 word,Word.ContentControlListItemCollection,"getFirst()",Method,Excellent,false
 word,Word.ContentControlListItemCollection,"getFirstOrNullObject()",Method,Excellent,false
 word,Word.ContentControlListItemCollection,"load(options)",Method,Great,false
@@ -13606,7 +13606,7 @@ word,Word.Document,"autoHyphenation",Property,Great,false
 word,Word.Document,"autoSaveOn",Property,Great,false
 word,Word.Document,"background",Property,Great,false
 word,Word.Document,"bibliography",Property,Excellent,false
-word,Word.Document,"body",Property,Excellent,false
+word,Word.Document,"body",Property,Excellent,true
 word,Word.Document,"bookmarks",Property,Excellent,false
 word,Word.Document,"builtInDocumentProperties",Property,Excellent,false
 word,Word.Document,"changeTrackingMode",Property,Good,true
@@ -13617,11 +13617,11 @@ word,Word.Document,"comments",Property,Excellent,false
 word,Word.Document,"compatibilityMode",Property,Great,false
 word,Word.Document,"consecutiveHyphensLimit",Property,Great,false
 word,Word.Document,"content",Property,Great,false
-word,Word.Document,"contentControls",Property,Excellent,false
+word,Word.Document,"contentControls",Property,Excellent,true
 word,Word.Document,"context",Property,Excellent,false
 word,Word.Document,"currentRsid",Property,Great,false
 word,Word.Document,"customDocumentProperties",Property,Excellent,false
-word,Word.Document,"customXmlParts",Property,Great,false
+word,Word.Document,"customXmlParts",Property,Great,true
 word,Word.Document,"defaultTabStop",Property,Excellent,false
 word,Word.Document,"defaultTargetFrame",Property,Great,false
 word,Word.Document,"documentLibraryVersions",Property,Excellent,false
@@ -13705,7 +13705,7 @@ word,Word.Document,"revisions",Property,Excellent,false
 word,Word.Document,"saved",Property,Excellent,false
 word,Word.Document,"saveEncoding",Property,Great,false
 word,Word.Document,"saveFormat",Property,Good,false
-word,Word.Document,"sections",Property,Great,false
+word,Word.Document,"sections",Property,Great,true
 word,Word.Document,"selection",Property,Excellent,true
 word,Word.Document,"sensitivityLabel",Property,Great,false
 word,Word.Document,"sentences",Property,Excellent,false
@@ -14170,7 +14170,7 @@ word,Word.DocumentProperties,"comments",Property,Excellent,false
 word,Word.DocumentProperties,"company",Property,Good,false
 word,Word.DocumentProperties,"context",Property,Excellent,false
 word,Word.DocumentProperties,"creationDate",Property,Good,false
-word,Word.DocumentProperties,"customProperties",Property,Great,false
+word,Word.DocumentProperties,"customProperties",Property,Great,true
 word,Word.DocumentProperties,"format",Property,Good,false
 word,Word.DocumentProperties,"keywords",Property,Good,false
 word,Word.DocumentProperties,"lastAuthor",Property,Good,false
@@ -14638,7 +14638,7 @@ word,Word.Font,"load(propertyNames)",Method,Great,false
 word,Word.Font,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.Font,"reset()",Method,Fine,false
 word,Word.Font,"set(properties, options)",Method,Good,false
-word,Word.Font,"set(properties)",Method,Fine,false
+word,Word.Font,"set(properties)",Method,Fine,true
 word,Word.Font,"setAsTemplateDefault()",Method,Good,false
 word,Word.Font,"toJSON()",Method,Excellent,false
 word,Word.Font,"track()",Method,Excellent,false
@@ -16348,13 +16348,13 @@ word,Word.PaperSize,"statement",EnumField,Great,false
 word,Word.PaperSize,"tabloid",EnumField,Great,false
 word,Word.Paragraph,N/A,Class,Fine,true
 word,Word.Paragraph,"alignment",Property,Excellent,true
-word,Word.Paragraph,"borders",Property,Excellent,false
+word,Word.Paragraph,"borders",Property,Excellent,true
 word,Word.Paragraph,"contentControls",Property,Great,false
 word,Word.Paragraph,"context",Property,Excellent,false
 word,Word.Paragraph,"endnotes",Property,Great,false
 word,Word.Paragraph,"fields",Property,Great,false
 word,Word.Paragraph,"firstLineIndent",Property,Excellent,false
-word,Word.Paragraph,"font",Property,Excellent,false
+word,Word.Paragraph,"font",Property,Excellent,true
 word,Word.Paragraph,"footnotes",Property,Great,false
 word,Word.Paragraph,"inlinePictures",Property,Excellent,false
 word,Word.Paragraph,"isLastParagraph",Property,Great,false
@@ -16364,7 +16364,7 @@ word,Word.Paragraph,"lineSpacing",Property,Excellent,true
 word,Word.Paragraph,"lineUnitAfter",Property,Great,true
 word,Word.Paragraph,"lineUnitBefore",Property,Great,true
 word,Word.Paragraph,"list",Property,Excellent,false
-word,Word.Paragraph,"listItem",Property,Excellent,false
+word,Word.Paragraph,"listItem",Property,Excellent,true
 word,Word.Paragraph,"listItemOrNullObject",Property,Excellent,false
 word,Word.Paragraph,"listOrNullObject",Property,Excellent,false
 word,Word.Paragraph,"outlineLevel",Property,Great,false
@@ -16402,7 +16402,7 @@ word,Word.Paragraph,"getPreviousOrNullObject()",Method,Excellent,true
 word,Word.Paragraph,"getRange(rangeLocation)",Method,Fine,true
 word,Word.Paragraph,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 word,Word.Paragraph,"getReviewedText(changeTrackingVersion)",Method,Fine,false
-word,Word.Paragraph,"getText(options)",Method,Excellent,false
+word,Word.Paragraph,"getText(options)",Method,Excellent,true
 word,Word.Paragraph,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
 word,Word.Paragraph,"getTrackedChanges()",Method,Fine,false
 word,Word.Paragraph,"indent()",Method,Fine,false
@@ -16418,7 +16418,7 @@ word,Word.Paragraph,"insertGeometricShape(geometricShapeType, insertShapeOptions
 word,Word.Paragraph,"insertHtml(html, insertLocation)",Method,Fine,true
 word,Word.Paragraph,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 word,Word.Paragraph,"insertOoxml(ooxml, insertLocation)",Method,Fine,false
-word,Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,false
+word,Word.Paragraph,"insertParagraph(paragraphText, insertLocation)",Method,Fine,true
 word,Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOptions)",Method,Fine,false
 word,Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 word,Word.Paragraph,"insertText(text, insertLocation)",Method,Fine,true
@@ -16461,7 +16461,7 @@ word,Word.ParagraphAddedEventArgs,"uniqueLocalIds",Property,Excellent,false
 word,Word.ParagraphChangedEventArgs,N/A,Interface,Fine,true
 word,Word.ParagraphChangedEventArgs,"source",Property,Excellent,false
 word,Word.ParagraphChangedEventArgs,"type",Property,Great,false
-word,Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Excellent,false
+word,Word.ParagraphChangedEventArgs,"uniqueLocalIds",Property,Excellent,true
 word,Word.ParagraphCollection,N/A,Class,Fine,true
 word,Word.ParagraphCollection,"context",Property,Excellent,false
 word,Word.ParagraphCollection,"items",Property,Great,true
@@ -16853,7 +16853,7 @@ word,Word.Range,"end",Property,Great,false
 word,Word.Range,"endnotes",Property,Great,false
 word,Word.Range,"fields",Property,Great,false
 word,Word.Range,"fitTextWidth",Property,Excellent,false
-word,Word.Range,"font",Property,Excellent,false
+word,Word.Range,"font",Property,Excellent,true
 word,Word.Range,"footnotes",Property,Great,true
 word,Word.Range,"frames",Property,Great,false
 word,Word.Range,"grammarChecked",Property,Great,false
@@ -16876,11 +16876,11 @@ word,Word.Range,"languageIdFarEast",Property,Great,false
 word,Word.Range,"languageIdOther",Property,Excellent,false
 word,Word.Range,"listFormat",Property,Excellent,true
 word,Word.Range,"lists",Property,Great,false
-word,Word.Range,"pages",Property,Great,false
-word,Word.Range,"paragraphs",Property,Great,false
+word,Word.Range,"pages",Property,Great,true
+word,Word.Range,"paragraphs",Property,Great,true
 word,Word.Range,"parentBody",Property,Good,false
 word,Word.Range,"parentContentControl",Property,Excellent,true
-word,Word.Range,"parentContentControlOrNullObject",Property,Excellent,false
+word,Word.Range,"parentContentControlOrNullObject",Property,Excellent,true
 word,Word.Range,"parentTable",Property,Excellent,false
 word,Word.Range,"parentTableCell",Property,Excellent,false
 word,Word.Range,"parentTableCellOrNullObject",Property,Excellent,false
@@ -16898,7 +16898,7 @@ word,Word.Range,"style",Property,Excellent,false
 word,Word.Range,"styleBuiltIn",Property,Excellent,true
 word,Word.Range,"tableColumns",Property,Excellent,false
 word,Word.Range,"tables",Property,Great,false
-word,Word.Range,"text",Property,Good,false
+word,Word.Range,"text",Property,Good,true
 word,Word.Range,"twoLinesInOne",Property,Excellent,false
 word,Word.Range,"underline",Property,Great,false
 word,Word.Range,"clear()",Method,Good,true
@@ -16921,9 +16921,9 @@ word,Word.Range,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 word,Word.Range,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,true
 word,Word.Range,"getTrackedChanges()",Method,Fine,false
 word,Word.Range,"highlight()",Method,Good,false
-word,Word.Range,"insertBookmark(name)",Method,Great,false
+word,Word.Range,"insertBookmark(name)",Method,Great,true
 word,Word.Range,"insertBreak(breakType, insertLocation)",Method,Fine,true
-word,Word.Range,"insertCanvas(insertShapeOptions)",Method,Fine,false
+word,Word.Range,"insertCanvas(insertShapeOptions)",Method,Fine,true
 word,Word.Range,"insertComment(commentText)",Method,Fine,true
 word,Word.Range,"insertContentControl(contentControlType)",Method,Fine,true
 word,Word.Range,"insertEndnote(insertText)",Method,Fine,false
@@ -16958,8 +16958,8 @@ word,Word.Range,"track()",Method,Excellent,false
 word,Word.Range,"untrack()",Method,Excellent,false
 word,Word.RangeCollection,N/A,Class,Fine,true
 word,Word.RangeCollection,"context",Property,Excellent,false
-word,Word.RangeCollection,"items",Property,Great,false
-word,Word.RangeCollection,"getFirst()",Method,Excellent,false
+word,Word.RangeCollection,"items",Property,Great,true
+word,Word.RangeCollection,"getFirst()",Method,Excellent,true
 word,Word.RangeCollection,"getFirstOrNullObject()",Method,Excellent,false
 word,Word.RangeCollection,"load(options)",Method,Great,false
 word,Word.RangeCollection,"load(propertyNames)",Method,Great,false
@@ -17315,8 +17315,8 @@ word,Word.Section,"track()",Method,Excellent,false
 word,Word.Section,"untrack()",Method,Excellent,false
 word,Word.SectionCollection,N/A,Class,Fine,true
 word,Word.SectionCollection,"context",Property,Excellent,false
-word,Word.SectionCollection,"items",Property,Great,false
-word,Word.SectionCollection,"getFirst()",Method,Excellent,false
+word,Word.SectionCollection,"items",Property,Great,true
+word,Word.SectionCollection,"getFirst()",Method,Excellent,true
 word,Word.SectionCollection,"getFirstOrNullObject()",Method,Excellent,false
 word,Word.SectionCollection,"load(options)",Method,Great,false
 word,Word.SectionCollection,"load(propertyNames)",Method,Great,false
@@ -18087,7 +18087,7 @@ word,Word.Style,"paragraphFormat",Property,Excellent,true
 word,Word.Style,"priority",Property,Good,false
 word,Word.Style,"quickStyle",Property,Great,false
 word,Word.Style,"shading",Property,Excellent,true
-word,Word.Style,"tableStyle",Property,Excellent,false
+word,Word.Style,"tableStyle",Property,Excellent,true
 word,Word.Style,"type",Property,Good,false
 word,Word.Style,"unhideWhenUsed",Property,Excellent,false
 word,Word.Style,"visibility",Property,Excellent,false
@@ -18103,8 +18103,8 @@ word,Word.Style,"track()",Method,Excellent,false
 word,Word.Style,"untrack()",Method,Excellent,false
 word,Word.StyleCollection,N/A,Class,Fine,true
 word,Word.StyleCollection,"context",Property,Excellent,false
-word,Word.StyleCollection,"items",Property,Great,false
-word,Word.StyleCollection,"getByName(name)",Method,Fine,false
+word,Word.StyleCollection,"items",Property,Great,true
+word,Word.StyleCollection,"getByName(name)",Method,Fine,true
 word,Word.StyleCollection,"getByNameOrNullObject(name)",Method,Great,true
 word,Word.StyleCollection,"getCount()",Method,Good,true
 word,Word.StyleCollection,"getItem(index)",Method,Fine,false
@@ -18172,10 +18172,10 @@ word,Word.Table,"rowCount",Property,Good,false
 word,Word.Table,"rows",Property,Good,true
 word,Word.Table,"shading",Property,Great,false
 word,Word.Table,"shadingColor",Property,Excellent,false
-word,Word.Table,"style",Property,Excellent,false
+word,Word.Table,"style",Property,Excellent,true
 word,Word.Table,"styleBandedColumns",Property,Great,false
 word,Word.Table,"styleBandedRows",Property,Great,false
-word,Word.Table,"styleBuiltIn",Property,Excellent,false
+word,Word.Table,"styleBuiltIn",Property,Excellent,true
 word,Word.Table,"styleFirstColumn",Property,Great,false
 word,Word.Table,"styleLastColumn",Property,Great,false
 word,Word.Table,"styleTotalRow",Property,Great,false
@@ -18261,7 +18261,7 @@ word,Word.TableBorder,"toJSON()",Method,Excellent,false
 word,Word.TableBorder,"track()",Method,Excellent,false
 word,Word.TableBorder,"untrack()",Method,Excellent,false
 word,Word.TableCell,N/A,Class,Fine,true
-word,Word.TableCell,"body",Property,Good,false
+word,Word.TableCell,"body",Property,Good,true
 word,Word.TableCell,"cellIndex",Property,Good,false
 word,Word.TableCell,"column",Property,Excellent,false
 word,Word.TableCell,"columnWidth",Property,Excellent,false
