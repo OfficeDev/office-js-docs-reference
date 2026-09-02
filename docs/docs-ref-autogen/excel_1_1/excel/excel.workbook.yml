@@ -102,7 +102,30 @@ properties:
     package: excel!
     fullName: worksheets
     summary: Represents a collection of worksheets associated with the workbook.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/list-worksheets.yaml
+
+      await Excel.run(async (context) => {
+          const sheets: Excel.WorksheetCollection = context.workbook.worksheets;
+          sheets.load("items/name");
+          
+          await context.sync();
+
+          if (sheets.items.length > 1) {
+              console.log(`There are ${sheets.items.length} worksheets in the workbook:`);
+          } else {
+              console.log(`There is one worksheet in the workbook:`);
+          }
+          for (let i in sheets.items) {
+              console.log(sheets.items[i].name);
+          } 
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

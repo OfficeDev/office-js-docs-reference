@@ -158,7 +158,29 @@ properties:
     package: word!
     fullName: body
     summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+      // Inserts the body from the external document at the beginning of this document.
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert the Base64-encoded string representation of the body of the selected .docx file at the beginning of the current document.
+        body.insertFileFromBase64(externalDocument, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Added Base64-encoded text to the beginning of the document body.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -219,7 +241,47 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+      // Adds title and colors to odd and even content controls and changes their appearance.
+      await Word.run(async (context) => {
+        // Get the complete sentence (as range) associated with the insertion point.
+        let evenContentControls = context.document.contentControls.getByTag("even");
+        let oddContentControls = context.document.contentControls.getByTag("odd");
+        evenContentControls.load("length");
+        oddContentControls.load("length");
+
+        await context.sync();
+
+        for (let i = 0; i < evenContentControls.items.length; i++) {
+          // Change a few properties and append a paragraph.
+          evenContentControls.items[i].set({
+            color: "red",
+            title: "Odd ContentControl #" + (i + 1),
+            appearance: Word.ContentControlAppearance.tags
+          });
+          evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+        }
+
+        for (let j = 0; j < oddContentControls.items.length; j++) {
+          // Change a few properties and append a paragraph.
+          oddContentControls.items[j].set({
+            color: "green",
+            title: "Even ContentControl #" + (j + 1),
+            appearance: "Tags"
+          });
+          oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+        }
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -245,7 +307,34 @@ properties:
     package: word!
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
-    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
+
+      // Adds a custom XML part.
+      await Word.run(async (context) => {
+        const originalXml =
+          "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+        const customXmlPart: Word.CustomXmlPart = context.document.customXmlParts.add(originalXml);
+        customXmlPart.load("id");
+        const xmlBlob = customXmlPart.getXml();
+
+        await context.sync();
+
+        const readableXml = addLineBreaksToXML(xmlBlob.value);
+        console.log("Added custom XML part:", readableXml);
+
+        // Store the XML part's ID in a setting so the ID is available to other functions.
+        const settings: Word.SettingCollection = context.document.settings;
+        settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -417,7 +506,23 @@ properties:
     package: word!
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      await Word.run(async (context) => {
+        context.document.sections
+          .getFirst()
+          .getFooter("EvenPages")
+          .insertParagraph("This is an even-pages footer.", "End");
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

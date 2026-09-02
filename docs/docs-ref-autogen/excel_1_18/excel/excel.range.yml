@@ -151,7 +151,19 @@ properties:
     package: excel!
     fullName: conditionalFormats
     summary: The collection of `ConditionalFormats` that intersect the range.
-    remarks: '[API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
+      function queueCommandsToClearAllConditionalFormats(sheet: Excel.Worksheet) {
+              const range = sheet.getRange();
+              range.conditionalFormats.clearAll();
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -211,7 +223,23 @@ properties:
     package: excel!
     fullName: dataValidation
     summary: Returns a data validation object.
-    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation-types.yaml
+
+      function applyCustom(sheet: Excel.Worksheet) {
+          // Custom formula: Value in B8 must not duplicate any value already in B2:B7.
+          const customRule: Excel.CustomDataValidation = {
+              formula: "=COUNTIF($B$2:$B$7,B8)=0"
+          };
+          const rule: Excel.DataValidationRule = { custom: customRule };
+          sheet.getRange("B8").dataValidation.rule = rule;
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -224,7 +252,26 @@ properties:
     package: excel!
     fullName: format
     summary: Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/formatting.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const expensesTable = sheet.tables.getItem("ExpensesTable");
+
+          expensesTable.getHeaderRowRange().format.fill.color = "#C70039";
+          expensesTable.getDataBodyRange().format.fill.color = "#DAF7A6";
+          expensesTable.rows.getItemAt(1).getRange().format.fill.color = "#FFC300";
+          expensesTable.columns.getItemAt(0).getDataBodyRange().format.fill.color = "#FFA07A";
+          
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -237,7 +284,32 @@ properties:
     package: excel!
     fullName: formulas
     summary: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/set-get-values.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const data = [
+              ["Total Price"],
+              ["=C3 * D3"],
+              ["=C4 * D4"],
+              ["=C5 * D5"],
+              ["=SUM(E3:E5)"]
+          ];
+          
+          const range = sheet.getRange("E2:E6");
+          range.formulas = data;
+          range.format.autofitColumns();
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -844,6 +916,18 @@ methods:
           await context.sync(); 
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/insert-delete-clear-range.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range: Excel.Range = sheet.getRange("E2:E5");
+
+          range.clear();
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1031,6 +1115,16 @@ methods:
           const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.delete("Left");
           await context.sync(); 
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+      // This function deletes data from a range and sets the delete shift direction to "up".
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range: Excel.Range = sheet.getRange("A5:F5");
+          range.delete(Excel.DeleteShiftDirection.up);
       });
       ```
 
@@ -2583,7 +2677,25 @@ methods:
     package: excel!
     fullName: getVisibleView()
     summary: Represents the visible rows of the current range.
-    remarks: '[API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/get-visible-range-of-a-filtered-table.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const expensesTable = sheet.tables.getItem("ExpensesTable");                    
+          const visibleRange = expensesTable.getDataBodyRange().getVisibleView().load("values");
+          await sheet.context.sync();
+
+          const visibleValues = visibleRange.values;
+          console.log(visibleValues);
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

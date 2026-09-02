@@ -20,7 +20,25 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the bold status of the font.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const sumRange = sheet.getRange("F4");
+        sumRange.formulas = [["=SUM(B4:E4)"]];
+        sumRange.format.fill.color = "LightBlue";
+        sumRange.format.font.bold = true;
+        sheet.getRanges("K4,P4").copyFrom("F4", Excel.RangeCopyType.all);
+        sheet.getRanges("F4,K4,P4").format.autofitColumns();
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -33,7 +51,24 @@ properties:
     package: excel!
     fullName: color
     summary: HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/formatting.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const range = sheet.getRange("B2:E2");
+          range.format.fill.color = "#4472C4";;
+          range.format.font.color = "white";
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

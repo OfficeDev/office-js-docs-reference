@@ -57,7 +57,7 @@ methods:
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
       await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
+          const settings: Excel.SettingCollection = context.workbook.settings;
           settings.onSettingsChanged.add(onChangedSetting);
 
           await context.sync();
@@ -236,7 +236,7 @@ events:
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
       await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
+          const settings: Excel.SettingCollection = context.workbook.settings;
           settings.onSettingsChanged.add(onChangedSetting);
 
           await context.sync();

@@ -21,7 +21,22 @@ properties:
     package: excel!
     fullName: color
     summary: HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
+
+      await Excel.run(async (context) => {
+
+          const selectedRanges = context.workbook.getSelectedRanges();
+          selectedRanges.format.fill.color = "lightblue";
+
+          await context.sync();
+      })
+      ```
 
     isPreview: false
     isDeprecated: false

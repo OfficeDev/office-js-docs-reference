@@ -63,7 +63,29 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotField by its name or ID.
-    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+      await Excel.run(async (context) => {
+        // Clear all the PivotFilters.
+
+        // Get the PivotTable.
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+        pivotTable.hierarchies.load("name");
+        await context.sync();
+
+        // Clear the filters on each PivotField.
+        pivotTable.hierarchies.items.forEach((hierarchy) => {
+          hierarchy.fields.getItem(hierarchy.name).clearAllFilters();
+        });
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

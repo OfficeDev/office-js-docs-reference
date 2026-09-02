@@ -68,13 +68,75 @@ properties:
       content: 'readonly items: Word.Range[];'
       return:
         type: <xref uid="word!Word.Range:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+          await Word.run(async (context) => {
+            // Get the complete sentence (as range) associated with the insertion point.
+            const sentences: Word.RangeCollection = context.document
+              .getSelection()
+              .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+            sentences.load("$none");
+            await context.sync();
+
+            // Expand the range to the end of the paragraph to get all the complete sentences.
+            const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+              .getRange()
+              .expandTo(
+                context.document
+                  .getSelection()
+                  .paragraphs.getFirst()
+                  .getRange(Word.RangeLocation.end)
+              )
+              .getTextRanges(["."], false /* Don't trim spaces*/);
+            sentencesToTheEndOfParagraph.load("text");
+            await context.sync();
+
+            for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+              console.log(sentencesToTheEndOfParagraph.items[i].text);
+            }
+          });
+          ```
 methods:
   - name: getFirst()
     uid: word!Word.RangeCollection#getFirst:member(1)
     package: word!
     fullName: getFirst()
     summary: Gets the first range in this collection. Throws an `ItemNotFound` error if this collection is empty.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Updates the text and sets the font color to red.
+      await Word.run(async (context) => {
+        context.document.changeTrackingMode = Word.ChangeTrackingMode.off;
+
+        context.document.body.insertText("AAA BBB CCC DDD EEE FFF", "Replace");
+
+        context.document.changeTrackingMode = Word.ChangeTrackingMode.trackAll;
+        context.document.body
+          .search("BBB")
+          .getFirst()
+          .insertText("WWW", "Replace");
+        context.document.body
+          .search("DDD ")
+          .getFirst()
+          .delete();
+        context.document.body
+          .search("FFF")
+          .getFirst()
+          .insertText("XXX ", "Start");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

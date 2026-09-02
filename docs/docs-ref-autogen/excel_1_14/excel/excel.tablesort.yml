@@ -91,6 +91,25 @@ methods:
           await context.sync(); 
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/sort-data.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const expensesTable: Excel.Table = sheet.tables.getItem("ExpensesTable");
+
+          // Sort the table by the "Amount" column.
+          const sortFields = [
+              {
+              key: 3,
+              ascending: false
+              }
+          ];
+          expensesTable.sort.apply(sortFields);
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

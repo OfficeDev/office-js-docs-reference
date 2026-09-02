@@ -316,7 +316,25 @@ methods:
     package: excel!
     fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
     summary: Copies cell data or formatting from the source range or `RangeAreas` to the current `RangeAreas`<!-- -->. The destination `RangeAreas` can be a different size than the source range or `RangeAreas`<!-- -->. The destination will be expanded automatically if it is smaller than the source.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const sumRange = sheet.getRange("F4");
+        sumRange.formulas = [["=SUM(B4:E4)"]];
+        sumRange.format.fill.color = "LightBlue";
+        sumRange.format.font.bold = true;
+        sheet.getRanges("K4,P4").copyFrom("F4", Excel.RangeCopyType.all);
+        sheet.getRanges("F4,K4,P4").format.autofitColumns();
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

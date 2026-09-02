@@ -33,7 +33,29 @@ properties:
     package: excel!
     fullName: filter
     summary: Retrieves the filter applied to the column.
-    remarks: '[API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/get-visible-range-of-a-filtered-table.yaml
+
+      /** Filter the table*/
+      async function filterTable() {
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const expensesTable = sheet.tables.getItem("ExpensesTable");
+              const filter: Excel.Filter = expensesTable.columns.getItem("Amount").filter;
+
+              filter.apply({
+                  filterOn: Excel.FilterOn.dynamic,
+                  dynamicCriteria: Excel.DynamicFilterCriteria.belowAverage
+              });
+
+              await context.sync();
+          });
+      ```
 
     isPreview: false
     isDeprecated: false

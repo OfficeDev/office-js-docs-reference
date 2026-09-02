@@ -60,7 +60,25 @@ methods:
     package: excel!
     fullName: add(range, bindingType, id)
     summary: Add a new binding to a particular Range.
-    remarks: '[API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");    
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+          salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+          console.log("The data changed handler is registered.");
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

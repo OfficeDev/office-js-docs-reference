@@ -103,7 +103,22 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the count of custom properties.
-    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
+
+      await Excel.run(async (context) => {
+          let customDocProperties = context.workbook.properties.custom;
+          let count = customDocProperties.getCount();
+          await context.sync();
+
+          console.log("Count of custom document properties :" + count.value);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

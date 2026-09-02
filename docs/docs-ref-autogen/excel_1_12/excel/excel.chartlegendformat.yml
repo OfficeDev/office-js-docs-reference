@@ -46,7 +46,35 @@ properties:
     package: excel!
     fullName: fill
     summary: Represents the fill format of an object, which includes background formatting information.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-create-several-charts.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const salesTable = sheet.tables.getItem("SalesTable");
+        const dataRange = salesTable.getDataBodyRange();
+
+        let chart = sheet.charts.add(Excel.ChartType.radarFilled, dataRange, "Auto");
+
+        chart.setPosition("H17", "M35");
+        chart.title.text = "Quarterly sales chart";
+        chart.legend.position = "Bottom";
+        chart.legend.format.fill.setSolidColor("white");
+        chart.dataLabels.format.font.size = 15;
+        chart.dataLabels.format.font.color = "black";
+        chart.series.getItemAt(0).name = "Q1";
+        chart.series.getItemAt(1).name = "Q2";
+        chart.series.getItemAt(2).name = "Q3";
+        chart.series.getItemAt(3).name = "Q4";
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +102,7 @@ properties:
           chart.legend.visible = true;
 
           // Format the legend font.
-          let font = chart.legend.format.font;
+          const font: Excel.ChartFont = chart.legend.format.font;
           font.bold = true;
           font.color = "red";
           font.italic = true;

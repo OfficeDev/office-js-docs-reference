@@ -68,7 +68,36 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of a chart series, which includes fill and line formatting.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-formatting.yaml
+
+      await Excel.run(async (context) => {
+          const worksheet = context.workbook.worksheets.getActiveWorksheet();
+          const chart = worksheet.charts.getItem("SlopeChart");
+          chart.series.load("count");
+          await context.sync();
+
+          // Color everything gray before highlighting spokes.
+          for (let i = 0; i < chart.series.count; i++) {
+              chart.series.getItemAt(i).format.line.color = "#636363";
+              chart.series.getItemAt(i).dataLabels.format.font.color = "#636363";
+          }
+
+          const highlight: Excel.ChartSeries = chart.series.getItemAt(5);
+          highlight.format.line.color = "#4472C4";
+          highlight.dataLabels.format.font.color = "#D9D9D9";
+
+          highlight.load("name");
+          await context.sync();
+          highlight.name += " (Focus)";
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -163,7 +163,25 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+      await Excel.run(async (context) => {
+          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+          const textbox: Excel.Shape = shapes.addTextBox("A box with text");
+          textbox.left = 100;
+          textbox.top = 100;
+          textbox.height = 20;
+          textbox.width = 175;
+          textbox.name = "Textbox";
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -323,7 +341,29 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the shape.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-get-active.yaml
+
+      // This method groups the new chart title shape together with the existing chart.
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        
+        // Get the shapes to group.
+        const titleShape = sheet.shapes.getItem("ChartTitle");
+        const chartShape = sheet.shapes.getItem("SalesChart");
+        
+        // Create a group from the two shapes.
+        const shapeGroup = sheet.shapes.addGroup([titleShape, chartShape]);
+        shapeGroup.name = "GroupChart";
+        
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

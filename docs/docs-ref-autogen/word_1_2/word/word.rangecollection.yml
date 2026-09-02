@@ -65,6 +65,40 @@ properties:
       content: 'readonly items: Word.Range[];'
       return:
         type: <xref uid="word!Word.Range:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+          await Word.run(async (context) => {
+            // Get the complete sentence (as range) associated with the insertion point.
+            const sentences: Word.RangeCollection = context.document
+              .getSelection()
+              .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+            sentences.load("$none");
+            await context.sync();
+
+            // Expand the range to the end of the paragraph to get all the complete sentences.
+            const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+              .getRange()
+              .expandTo(
+                context.document
+                  .getSelection()
+                  .paragraphs.getFirst()
+                  .getRange(Word.RangeLocation.end)
+              )
+              .getTextRanges(["."], false /* Don't trim spaces*/);
+            sentencesToTheEndOfParagraph.load("text");
+            await context.sync();
+
+            for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+              console.log(sentencesToTheEndOfParagraph.items[i].text);
+            }
+          });
+          ```
 methods:
   - name: load(options)
     uid: word!Word.RangeCollection#load:member(1)

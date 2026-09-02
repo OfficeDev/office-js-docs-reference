@@ -43,7 +43,34 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/manage-watermark.yaml
+
+      // Removes the watermark from the document using OOXML.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        context.load(sections);
+        await context.sync();
+
+        const header: Word.Body = sections.items[0].getHeader("Primary");
+        const contentControls: Word.ContentControlCollection = header.contentControls.getByTitle("myTempCC");
+        context.load(contentControls);
+        await context.sync();
+
+        if (contentControls.items.length > 0) {
+          contentControls.items[0].delete(false);
+          await context.sync();
+          console.log("Watermark removed successfully using OOXML.");
+        } else {
+          console.warn("No watermark found in this document.");
+        }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -628,6 +655,22 @@ methods:
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Important: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/get-change-tracking-states.yaml
+
+      // Deletes the first content control found in the document body.
+      await Word.run(async (context) => {
+        context.document.body
+          .getContentControls()
+          .getFirst()
+          .delete(false);
+        await context.sync();
+        console.log("Deleted the first content control.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

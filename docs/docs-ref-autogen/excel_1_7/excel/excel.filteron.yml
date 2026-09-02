@@ -18,9 +18,7 @@ remarks: |-
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
-
       const expensesTable = sheet.tables.getItem("ExpensesTable");
-
       let filter = expensesTable.columns.getItem("Amount").filter;
       filter.apply({
           filterOn: Excel.FilterOn.dynamic,

@@ -46,7 +46,24 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/formatting.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const range = sheet.getRange("B2:E2");
+          range.format.fill.color = "#4472C4";;
+          range.format.font.color = "white";
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +89,26 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      await Excel.run(async (context) => {
+        // Set a default value for an empty cell in the PivotTable. This doesn't include cells left blank by the layout.
+        const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+        const pivotLayout = pivotTable.layout;
+
+        pivotLayout.emptyCellText = "--";
+
+        // Set the text alignment to match the rest of the PivotTable.
+        pivotLayout.getDataBodyRange().format.horizontalAlignment = Excel.HorizontalAlignment.right;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -85,7 +121,24 @@ properties:
     package: excel!
     fullName: verticalAlignment
     summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+      await Excel.run(async (context) => {
+          let worksheet = context.workbook.worksheets.getItem("Sample");
+          let range = worksheet.getRange("A1:E1");
+          // Apply new style.
+          range.style = ("Diagonal Orientation Style");
+          range.format.verticalAlignment = "Justify";
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

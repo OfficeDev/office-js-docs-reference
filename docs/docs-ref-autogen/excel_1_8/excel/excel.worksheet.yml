@@ -37,7 +37,28 @@ properties:
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-create-several-charts.yaml
+
+      await Excel.run(async (context) => {
+        let sheet = context.workbook.worksheets.getItem("Sample");
+        let salesTable = sheet.tables.getItem("SalesTable");
+
+        let dataRange = sheet.getRange("A1:E7");
+
+        // Create an XY scatter chart.
+        let chart = sheet.charts.add(Excel.ChartType.xyscatter, dataRange, "Auto");
+        chart.title.text = "Bicycle Parts Quarterly Sales";
+        chart.setPosition("A36", "F48");
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +84,21 @@ properties:
     package: excel!
     fullName: freezePanes
     summary: Gets an object that can be used to manipulate frozen panes on the worksheet.
-    remarks: '[API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.freezePanes.unfreeze();
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +124,23 @@ properties:
     package: excel!
     fullName: name
     summary: The display name of the worksheet. The name must be fewer than 32 characters.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/add-delete-rename-move-worksheet.yaml
+
+      await Excel.run(async (context) => {
+          const currentSheet = context.workbook.worksheets.getActiveWorksheet();
+
+          currentSheet.name = await uniqueWorksheetName(context);
+
+          await context.sync();
+          console.log(`Renamed worksheet to "${currentSheet.name}"`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -310,7 +361,25 @@ properties:
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: '[API set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("VisibilitySample");
+
+          // Load the visibility property so it can be read after context.sync().
+          sheet.load("name, visibility");
+
+          await context.sync();
+
+          console.log(`The visibility of worksheet "${sheet.name}" is ${sheet.visibility}.`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

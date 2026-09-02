@@ -68,6 +68,41 @@ properties:
       content: 'readonly items: Word.CoauthoringLock[];'
       return:
         type: <xref uid="word!Word.CoauthoringLock:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/05-coauthoring/manage-coauthors.yaml
+
+          // Gets the locks held by each coauthor in the document.
+          await Word.run(async (context) => {
+            const authors: Word.CoauthorCollection = context.document.coauthoring.authors;
+            authors.load("items/name");
+            await context.sync();
+
+            if (authors.items.length === 0) {
+              console.log("No coauthors are currently editing this document.");
+              return;
+            }
+
+            authors.items.forEach((author: Word.Coauthor) => {
+              author.locks.load("items/type");
+            });
+            await context.sync();
+
+            authors.items.forEach((author: Word.Coauthor) => {
+              const lockCount = author.locks.items.length;
+              if (lockCount === 0) {
+                console.log(`${author.name}: no locks`);
+              } else {
+                const types = author.locks.items.map((l) => l.type).join(", ");
+                console.log(`${author.name}: ${lockCount} lock(s) — ${types}`);
+              }
+            });
+          });
+          ```
 methods:
   - name: add(options)
     uid: word!Word.CoauthoringLockCollection#add:member(1)

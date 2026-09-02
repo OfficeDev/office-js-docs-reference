@@ -47,7 +47,22 @@ methods:
     package: excel!
     fullName: add(pivotHierarchy)
     summary: Adds the PivotHierarchy to the current axis.
-    remarks: '[API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+          pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+          pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

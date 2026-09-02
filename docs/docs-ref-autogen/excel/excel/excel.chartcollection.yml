@@ -81,6 +81,27 @@ methods:
           console.log("New Chart Added");
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chartcollection-added-activated.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const dataRange = salesTable.getDataBodyRange();
+
+          let chart = sheet.charts.add("Pie", dataRange, "Auto");
+
+          chart.name = "Pie";
+          chart.setPosition("A10", "F25");
+          chart.title.text = "1st Quarter sales chart";
+          chart.legend.position = "Bottom"
+          chart.legend.format.fill.setSolidColor("white");
+          chart.dataLabels.format.font.size = 15;
+          chart.dataLabels.format.font.color = "black";
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

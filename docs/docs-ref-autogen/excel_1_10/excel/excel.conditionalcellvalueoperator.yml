@@ -11,6 +11,26 @@ remarks: |-
 
   - [Excel.ConditionalCellValueRule](/javascript/api/excel/excel.conditionalcellvaluerule): [operator](/javascript/api/excel/excel.conditionalcellvaluerule#excel-excel-conditionalcellvaluerule-operator-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B21:E23");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.cellValue);
+      conditionalFormat.cellValue.format.font.color = "red";
+      conditionalFormat.cellValue.rule = { 
+          formula1: "=0",
+          operator: Excel.ConditionalCellValueOperator.lessThan
+      };
+
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

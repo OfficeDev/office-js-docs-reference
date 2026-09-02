@@ -64,6 +64,34 @@ properties:
       content: 'readonly items: Word.ContentControl[];'
       return:
         type: <xref uid="word!Word.ContentControl:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+          await Word.run(async (context) => {
+            const contentControls: Word.ContentControlCollection = context.document.contentControls;
+            contentControls.load("items");
+            await context.sync();
+
+            // Register the onDataChanged event handler on each content control.
+            if (contentControls.items.length === 0) {
+              console.log("There aren't any content controls in this document so can't register event handlers.");
+            } else {
+              for (let i = 0; i < contentControls.items.length; i++) {
+                eventContexts[i] = contentControls.items[i].onDataChanged.add(contentControlDataChanged);
+                contentControls.items[i].track();
+              }
+
+              await context.sync();
+
+              console.log("Added event handlers for when data is changed in content controls.");
+            }
+          });
+          ```
 methods:
   - name: getById(id)
     uid: word!Word.ContentControlCollection#getById:member(1)

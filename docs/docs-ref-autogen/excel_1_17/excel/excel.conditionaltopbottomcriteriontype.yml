@@ -11,6 +11,26 @@ remarks: |-
 
   - [Excel.ConditionalTopBottomRule](/javascript/api/excel/excel.conditionaltopbottomrule): [type](/javascript/api/excel/excel.conditionaltopbottomrule#excel-excel-conditionaltopbottomrule-type-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B21:E23");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.topBottom);
+      conditionalFormat.topBottom.format.fill.color = "green"
+      conditionalFormat.topBottom.rule = { 
+          rank: 1, 
+          type: Excel.ConditionalTopBottomCriterionType.topItems
+      };
+
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:
