@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 06/23/2026
+ms.date: 09/10/2026
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -173,7 +173,7 @@ For more details about your client version, see the update history page for [Mic
 
 ## Reference the Office JavaScript API production library
 
-To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
+To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://officeapis.public.onecdn.static.microsoft/1/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
 
 ## Test preview APIs
 

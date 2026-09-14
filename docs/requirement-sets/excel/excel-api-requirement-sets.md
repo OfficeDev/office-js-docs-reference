@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement sets
 description: Office Add-in requirement set information for Excel builds.
-ms.date: 06/30/2026
+ms.date: 09/10/2026
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -15,7 +15,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Excel add-ins run across multiple versions of Office, including Office 2021 or later on Windows, and Office on the web, Mac, and iPad. The following table lists the Excel requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets or `ExcelApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
+> To use APIs in any of the numbered requirement sets or `ExcelApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://officeapis.public.onecdn.static.microsoft/1/office.js).
 >
 > For information about using preview APIs, see the [Excel JavaScript preview APIs](excel-preview-apis.md) article.
 
