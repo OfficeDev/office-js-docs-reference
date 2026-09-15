@@ -269,6 +269,7 @@ enums:
   - powerpoint!PowerPoint.LabelingCapability:enum
   - powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum
   - powerpoint!PowerPoint.PlaceholderType:enum
+  - powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum
   - powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
   - powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
   - powerpoint!PowerPoint.ShapeAutoSize:enum

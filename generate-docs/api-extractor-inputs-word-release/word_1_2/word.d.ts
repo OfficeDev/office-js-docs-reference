@@ -154,12 +154,14 @@ export declare namespace Word {
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | Word.ContentControlType.buildingBlockGallery | Word.ContentControlType.datePicker | Word.ContentControlType.repeatingSection | Word.ContentControlType.picture | Word.ContentControlType.group | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" | "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" | "Group"): Word.ContentControl;
         /**
-         * Inserts a document into the body at the specified location.
+         * Inserts a document into the body at the specified location. The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
          * @param insertLocation - The value must be `replace`, `start`, or `end`.
@@ -423,7 +425,7 @@ export declare namespace Word {
          */
         color: string;
         /**
-         * Gets an integer that represents the content control identifier.
+         * Gets an integer that represents the content control identifier. This number is unique for each content control and doesn't change.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -453,7 +455,7 @@ export declare namespace Word {
         
         
         /**
-         * Specifies a tag to identify a content control.
+         * Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -536,12 +538,14 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): void;
         /**
-         * Inserts a document into the content control at the specified location.
+         * Inserts a document into the content control at the specified location. The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
          * @param insertLocation - The value must be `replace`, `start`, or `end`. `replace` cannot be used with `richTextTable` and `richTextTableRow` content controls.
@@ -1385,12 +1389,14 @@ export declare namespace Word {
          */
         insertContentControl(): Word.ContentControl;
         /**
-         * Inserts a document at the specified location.
+         * Inserts a document at the specified location. The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.2]
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
          * @param insertLocation - The value must be `before` or `after`.
@@ -1784,12 +1790,14 @@ export declare namespace Word {
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | Word.ContentControlType.buildingBlockGallery | Word.ContentControlType.datePicker | Word.ContentControlType.repeatingSection | Word.ContentControlType.picture | Word.ContentControlType.group | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox" | "BuildingBlockGallery" | "DatePicker" | "RepeatingSection" | "Picture" | "Group"): Word.ContentControl;
         /**
-         * Inserts a document into the paragraph at the specified location.
+         * Inserts a document into the paragraph at the specified location. The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
          * @param insertLocation - The value must be `replace`, `start`, or `end`.
@@ -2204,12 +2212,14 @@ export declare namespace Word {
         
         
         /**
-         * Inserts a document at the specified location.
+         * Inserts a document at the specified location. The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
          * @param insertLocation - The value must be `replace`, `start`, `end`, `before`, or `after`.
@@ -3715,7 +3725,7 @@ export declare namespace Word {
             style?: string;
             
             /**
-             * Specifies a tag to identify a content control.
+             * Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -5406,7 +5416,7 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Gets an integer that represents the content control identifier.
+             * Gets an integer that represents the content control identifier. This number is unique for each content control and doesn't change.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -5436,7 +5446,7 @@ export declare namespace Word {
             
             
             /**
-             * Specifies a tag to identify a content control.
+             * Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7294,7 +7304,7 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * Gets an integer that represents the content control identifier.
+             * Gets an integer that represents the content control identifier. This number is unique for each content control and doesn't change.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7324,7 +7334,7 @@ export declare namespace Word {
             
             
             /**
-             * Specifies a tag to identify a content control.
+             * Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7419,7 +7429,7 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier.
+             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. This number is unique for each content control and doesn't change.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7449,7 +7459,7 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Specifies a tag to identify a content control.
+             * For EACH ITEM in the collection: Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
              *
              * @remarks
              * [Api set: WordApi 1.1]

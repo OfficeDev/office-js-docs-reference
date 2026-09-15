@@ -397,7 +397,10 @@ properties:
     package: word!
     fullName: uniqueLocalId
     summary: 'For EACH ITEM in the collection: Gets a string that represents the paragraph identifier in the current session. ID is in standard 8-4-4-4-12 GUID format without curly braces and differs across sessions and coauthors.'
-    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      This API requires an active Microsoft 365 subscription. It doesn't work with single-purchase licenses.
 
     isPreview: false
     isDeprecated: false

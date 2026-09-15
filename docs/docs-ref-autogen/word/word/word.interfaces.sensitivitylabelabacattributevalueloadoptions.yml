@@ -3,7 +3,7 @@ name: Word.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions
 uid: word!Word.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions
-summary: Represents a single ABAC attribute value for a sensitivity label.
+summary: Represents a single attribute-based access control (ABAC) attribute value for a sensitivity label.
 remarks: |-
   [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 

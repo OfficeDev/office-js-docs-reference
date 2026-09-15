@@ -17,7 +17,7 @@ properties:
     uid: word!Word.Interfaces.SensitivityLabelDetailsData#abacAttributeValues:member
     package: word!
     fullName: abacAttributeValues
-    summary: The ABAC attribute values associated with the sensitivity label.
+    summary: The attribute-based access control (ABAC) attribute values associated with the sensitivity label.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
@@ -69,7 +69,7 @@ properties:
     uid: word!Word.Interfaces.SensitivityLabelDetailsData#isAbacAttributesRequired:member
     package: word!
     fullName: isAbacAttributesRequired
-    summary: Indicates whether ABAC attributes are required when applying the sensitivity label.
+    summary: Indicates whether attribute-based access control (ABAC) attributes are required when applying the sensitivity label.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
@@ -82,7 +82,7 @@ properties:
     uid: word!Word.Interfaces.SensitivityLabelDetailsData#isAbacEnabled:member
     package: word!
     fullName: isAbacEnabled
-    summary: Indicates whether the sensitivity label supports ABAC attributes.
+    summary: Indicates whether the sensitivity label supports attribute-based access control (ABAC) attributes.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true

@@ -499,7 +499,10 @@ properties:
     package: word!
     fullName: uniqueLocalId
     summary: Gets a string that represents the paragraph identifier in the current session. ID is in standard 8-4-4-4-12 GUID format without curly braces and differs across sessions and coauthors.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: |-
+      \[Api set: WordApi 1.6\]
+
+      This API requires an active Microsoft 365 subscription. It doesn't work with single-purchase licenses.
 
     isPreview: false
     isDeprecated: false
@@ -971,11 +974,13 @@ methods:
     uid: word!Word.Paragraph#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
-    summary: Inserts a document into the paragraph at the specified location.
+    summary: Inserts a document into the paragraph at the specified location. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       \[Api set: WordApi 1.1\]
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
     isPreview: false
     isDeprecated: false
@@ -1211,7 +1216,7 @@ methods:
     uid: word!Word.Paragraph#joinList:member(1)
     package: word!
     fullName: joinList()
-    summary: Joins a list paragraph with the closest list above or below this paragraph.
+    summary: Joins a list paragraph with the closest list above or below this paragraph. This method only works with bulleted lists, not numbered lists.
     remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false

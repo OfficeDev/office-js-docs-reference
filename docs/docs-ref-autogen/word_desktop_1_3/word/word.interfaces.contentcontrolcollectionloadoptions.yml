@@ -149,7 +149,7 @@ properties:
     uid: word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member
     package: word!
     fullName: id
-    summary: 'For EACH ITEM in the collection: Gets an integer that represents the content control identifier.'
+    summary: 'For EACH ITEM in the collection: Gets an integer that represents the content control identifier. This number is unique for each content control and doesn''t change.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
@@ -344,7 +344,7 @@ properties:
     uid: word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member
     package: word!
     fullName: tag
-    summary: 'For EACH ITEM in the collection: Specifies a tag to identify a content control.'
+    summary: 'For EACH ITEM in the collection: Specifies a tag to identify a content control. The tag is different from the title in that it isn''t displayed to the user. The tag can be used to identify a content control programmatically.'
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
