@@ -134,7 +134,7 @@ properties:
     uid: word!Word.Interfaces.ContentControlUpdateData#tag:member
     package: word!
     fullName: tag
-    summary: Specifies a tag to identify a content control.
+    summary: Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false

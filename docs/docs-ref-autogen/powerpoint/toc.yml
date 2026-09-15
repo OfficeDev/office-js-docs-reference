@@ -39,6 +39,9 @@ items:
                 uid: powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum
               - name: PlaceholderType
                 uid: powerpoint!PowerPoint.PlaceholderType:enum
+              - name: SensitivityLabelAbacAttributeDataType
+                uid: >-
+                  powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
               - name: SensitivityLabelUpdateResult

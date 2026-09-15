@@ -752,11 +752,13 @@ methods:
     uid: word!Word.Document#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
-    summary: Inserts a document into the target document at a specific location with additional properties. Headers, footers, watermarks, and other section properties are copied by default.
+    summary: Inserts a document into the target document at a specific location with additional properties. Headers, footers, watermarks, and other section properties are copied by default. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
       #### Examples
 

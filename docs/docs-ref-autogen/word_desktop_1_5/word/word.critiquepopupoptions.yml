@@ -4,7 +4,10 @@ uid: word!Word.CritiquePopupOptions:interface
 package: word!
 fullName: Word.CritiquePopupOptions
 summary: Properties defining the behavior of the pop-up menu for a given critique.
-remarks: '\[Api set: WordApi 1.8\]'
+remarks: |-
+  \[Api set: WordApi 1.8\]
+
+  Word critique annotation cards display a maximum of three suggestions. If more than three suggestions are provided, the rest aren't displayed in the pop-up menu.
 
 isPreview: false
 isDeprecated: false

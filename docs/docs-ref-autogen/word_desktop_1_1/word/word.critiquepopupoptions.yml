@@ -7,6 +7,8 @@ summary: Properties defining the behavior of the pop-up menu for a given critiqu
 remarks: |-
   [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+  Word critique annotation cards display a maximum of three suggestions. If more than three suggestions are provided, the rest aren't displayed in the pop-up menu.
+
   #### Used by
 
   - [Word.Critique](/javascript/api/word/word.critique): [popupOptions](/javascript/api/word/word.critique#word-word-critique-popupoptions-member)

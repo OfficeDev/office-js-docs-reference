@@ -2486,7 +2486,7 @@ methods:
     uid: word!Word.Document#compare:member(1)
     package: word!
     fullName: compare(filePath, documentCompareOptions)
-    summary: Displays revision marks that indicate where the specified document differs from another document.
+    summary: Displays revision marks that indicate where the current document differs from a specified document.
     remarks: |-
       [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
@@ -2519,10 +2519,10 @@ methods:
       content: 'compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
       parameters:
         - id: filePath
-          description: The path of the document with which the specified document is compared.
+          description: The path of the document with which the current document is compared.
           type: string
         - id: documentCompareOptions
-          description: Optional. The additional options that specifies the behavior of comparing document.
+          description: Optional. The additional options that specify the behavior when comparing the documents.
           type: <xref uid="word!Word.DocumentCompareOptions:interface" />
       return:
         type: void
@@ -2531,7 +2531,7 @@ methods:
     uid: word!Word.Document#compareFromBase64:member(1)
     package: word!
     fullName: compareFromBase64(base64File, documentCompareOptions)
-    summary: Displays revision marks that indicate where the specified document differs from another document.
+    summary: Displays revision marks that indicate where the current document differs from a specified document.
     remarks: '[API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
@@ -2540,7 +2540,7 @@ methods:
       content: 'compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;'
       parameters:
         - id: base64File
-          description: The Base64-encoded content of the document with which the specified document is compared.
+          description: The Base64-encoded content of the document with which the current document is compared.
           type: string
         - id: documentCompareOptions
           description: Optional. The additional options that specify the behavior for comparing the documents. Note that the `compareTarget` option isn't allowed to be `compareTargetSelected` in this API.
@@ -3118,11 +3118,13 @@ methods:
     uid: word!Word.Document#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation, insertFileOptions)
-    summary: Inserts a document into the target document at a specific location with additional properties. Headers, footers, watermarks, and other section properties are copied by default.
+    summary: Inserts a document into the target document at a specific location with additional properties. Headers, footers, watermarks, and other section properties are copied by default. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
       #### Examples
 

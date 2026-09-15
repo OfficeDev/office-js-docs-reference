@@ -28,6 +28,19 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: dataType
+    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#dataType:member
+    package: powerpoint!
+    fullName: dataType
+    summary: Gets the data type of this ABAC attribute.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly dataType: PowerPoint.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum" /> | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue"
   - name: displayName
     uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#displayName:member
     package: powerpoint!

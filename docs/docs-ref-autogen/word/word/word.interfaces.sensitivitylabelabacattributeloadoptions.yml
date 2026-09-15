@@ -3,7 +3,7 @@ name: Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions
 uid: word!Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions
-summary: Represents an ABAC attribute for sensitivity labels.
+summary: Represents an attribute-based access control (ABAC) attribute for sensitivity labels.
 remarks: |-
   [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
@@ -26,6 +26,19 @@ properties:
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: dataType
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions#dataType:member
+    package: word!
+    fullName: dataType
+    summary: The data type of values for this ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dataType?: boolean;'
       return:
         type: boolean
   - name: displayName

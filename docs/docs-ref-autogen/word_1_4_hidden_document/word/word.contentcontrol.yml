@@ -213,7 +213,7 @@ properties:
     uid: word!Word.ContentControl#id:member
     package: word!
     fullName: id
-    summary: Gets an integer that represents the content control identifier.
+    summary: Gets an integer that represents the content control identifier. This number is unique for each content control and doesn't change.
     remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
@@ -437,7 +437,7 @@ properties:
     uid: word!Word.ContentControl#tag:member
     package: word!
     fullName: tag
-    summary: Specifies a tag to identify a content control.
+    summary: Specifies a tag to identify a content control. The tag is different from the title in that it isn't displayed to the user. The tag can be used to identify a content control programmatically.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
@@ -865,11 +865,13 @@ methods:
     uid: word!Word.ContentControl#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
-    summary: Inserts a document into the content control at the specified location.
+    summary: Inserts a document into the content control at the specified location. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
     isPreview: false
     isDeprecated: false

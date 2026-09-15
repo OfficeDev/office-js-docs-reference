@@ -817,6 +817,8 @@ properties:
     remarks: |-
       [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+      This API requires an active Microsoft 365 subscription. It doesn't work with single-purchase licenses.
+
       #### Examples
 
       ```TypeScript
@@ -1621,11 +1623,13 @@ methods:
     uid: word!Word.Paragraph#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
-    summary: Inserts a document into the paragraph at the specified location.
+    summary: Inserts a document into the paragraph at the specified location. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
     isPreview: false
     isDeprecated: false
@@ -2023,7 +2027,7 @@ methods:
     uid: word!Word.Paragraph#joinList:member(1)
     package: word!
     fullName: joinList()
-    summary: Joins a list paragraph with the closest list above or below this paragraph.
+    summary: Joins a list paragraph with the closest list above or below this paragraph. This method only works with bulleted lists, not numbered lists.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
