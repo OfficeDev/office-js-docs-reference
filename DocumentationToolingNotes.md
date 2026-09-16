@@ -1,73 +1,187 @@
 # How the Office JavaScript API documentation is generated
 
-The Office JavaScript reference documentation pages are generated from type definition files and example snippets. This process uses a blend of open source tools and repository-specific scripts. This document aims to make the processes of this repository transparent so the community can better benefit from and contribute to this content.
+The Office JavaScript API reference documentation is generated from TypeScript definition files, code snippets, and repository configuration. The generation pipeline combines standard Rush Stack tools with repository-specific scripts that split and version the definitions, enrich the generated YAML, assemble the published table of contents, and validate the result.
+
+The generated reference files are written to `docs/docs-ref-autogen/`. Do not edit files in that folder directly because the next generation run will overwrite them.
 
 ## Content sources
 
-Two types of content are combined to create the Office-JS reference documentation: type definitions and code snippets. These ensure complete API coverage and give small, inline code samples.
-
 ### Type definition files
 
-The type definition files on [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) are the single source of truth for the documentation. Any Office Add-in that uses TypeScript compiles by using these type definition files. These also give JavaScript and TypeScript developers IntelliSense capabilities. By building the reference documentation from these definitions, we provide more accurate information.
+The API definitions and their TSDoc comments come primarily from these packages in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped):
 
-There are four relevant d.ts files that provide source content for different subsections of the docs.
+- [`office-js/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-js/index.d.ts): Release definitions for the Common API, Excel, OneNote, Outlook, PowerPoint, Visio, and Word.
+- [`office-js-preview/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-js-preview/index.d.ts): Preview definitions for the Common API, Excel, Outlook, PowerPoint, and Word.
+- [`custom-functions-runtime/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts): Excel Custom Functions runtime definitions.
+- [`office-runtime/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts): Office Runtime definitions.
 
-- [office-js/index.d.ts](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts) (The Release definitions.)
-  - [Excel (Release)](https://learn.microsoft.com/javascript/api/excel_release)
-  - [OneNote](https://learn.microsoft.com/javascript/api/onenote)
-  - [PowerPoint](https://learn.microsoft.com/javascript/api/powerpoint)
-  - [Visio](https://learn.microsoft.com/javascript/api/visio)
-  - [Word (Release)](https://learn.microsoft.com/javascript/api/word_release)
-  - [OfficeExtensions subsection of the Common API](https://learn.microsoft.com/javascript/api/office)
-- [office-js-preview/index.d.ts](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts) (The Preview definitions.)
-  - [Excel (Preview)](https://learn.microsoft.com/javascript/api/excel)
-  - [Outlook (Preview)](https://learn.microsoft.com/javascript/api/outlook)
-  - [Word (Preview)](https://learn.microsoft.com/javascript/api/word)
-  - [Common API](https://learn.microsoft.com/javascript/api/office)
-- [custom-functions-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts) (The Excel Custom Functions runtime definitions.)
-  - [Custom Functions](https://learn.microsoft.com/javascript/api/custom-functions-runtime)
-- [office-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts) (The office runtime definitions for the Custom Functions platform.)
-  - [Office Runtime](https://learn.microsoft.com/javascript/api/office-runtime)
+The preprocessor supports four source choices:
 
-Older versions of the APIs have their own d.ts files. These are preserved when a new API requirement set is released. They can also be generated using the [Version Remover tool](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/tools/VersionRemover.ts). These old d.ts files are maintained so that in the event APIs are patched or altered, the original behavior is still documented. This is useful if you have to target an older version of the API.
+| Choice | Behavior |
+|---|---|
+| `DT` | Downloads the DefinitelyTyped files and preserves unchanged API Extractor JSON and API Documenter YAML when possible. |
+| `DT+` | Downloads the DefinitelyTyped files and forces a full rebuild. This is the mode used by the scheduled GitHub Action. |
+| `CDN` | Downloads the Office.js release and preview definitions from the Office CDN. The Custom Functions and Office Runtime definitions still come from DefinitelyTyped. |
+| `Local` | Reads the definition files in `generate-docs/script-inputs/`. Use this mode to test definition changes before submitting them to DefinitelyTyped. |
 
-#### Testing type definition file changes
+To test local definitions, copy the modified files to `generate-docs/script-inputs/` using the names expected by the preprocessor, then run the following command from `generate-docs/`.
 
-Any documentation changes for the Office JavaScript API are done by editing the four d.ts files mentioned above. However, you can test a change before submitting a PR to DefinitelyTyped (if you need to, for example, test how your formatting will translate into markdown) by editing the corresponding file in [generate-docs/script-inputs](https://github.com/OfficeDev/office-js-docs-reference/tree/master/generate-docs/script-inputs) and running [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd). When prompted, select the "Local files" option.
+```bash
+./GenerateDocs.sh -b Local
+```
 
-Pushing changes to a remote branch of this repo causes the learn.microsoft.com platform to build a test branch. This branch is rendered on review.learn.microsoft.com, which is only accessible by internal Microsoft personnel. Anyone reviewing your PR will check the review site for accuracy.
+You can also run `./GenerateDocs.sh` without `-b` and select **Local files** at the prompt.
+
+### Version-specific definitions
+
+Release documentation is generated for individual API requirement sets. These version-specific definitions are not maintained as independent source files. During every generation run, the [`version-remover`](https://www.npmjs.com/package/versioned-d.ts-tools) command from the `versioned-d.ts-tools` package successively removes APIs associated with newer requirement sets.
+
+`GenerateDocs.sh` defines the version-removal chains for Excel, Outlook, PowerPoint, and Word. The JSON files in `generate-docs/configs/` configure the transformations for each release, online, desktop, and hidden-document variant.
+
+The pipeline also runs the `whats-new` command from the same package. It compares adjacent definition versions and generates the API tables in `docs/includes/` that are included by the requirement-set documentation.
 
 ### Code snippets
 
-Code example snippets are added to the reference pages from two sources:
+Code snippets come from two sources:
 
-- [Script Lab Samples](https://github.com/OfficeDev/office-js-snippets)
-- [Local Code Snippets](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/code-snippets)
+- The generated Script Lab snippet collection in [OfficeDev/office-js-snippets](https://github.com/OfficeDev/office-js-snippets/blob/prod/snippet-extractor-output/snippets.yaml).
+- Local host-specific YAML files in [`docs/code-snippets/`](https://github.com/OfficeDev/office-js-docs-reference/tree/main/docs/code-snippets).
 
-The local snippets are in host-specific yaml files. Their content is organized by class and field, so it can be mapped to the appropriate place in a reference page. The language of the snippet (JavaScript or TypeScript) is inferred by the use of await statements.
+The midprocessor downloads the Script Lab YAML, combines all local snippet files, and merges snippets that target the same API member. It then creates host-specific and version-specific `snippets.yaml` files under `generate-docs/json/`.
 
-The Script Lab snippets are pulled from working samples. Currently, Excel, Outlook, PowerPoint, and Word samples are mapped to reference document sections through [mapping files](https://github.com/OfficeDev/office-js-snippets/tree/prod/snippet-extractor-metadata). These match individual sample methods to properties or methods in the API. When the office-js-snippets repository's `yarn start` runs, [a yaml file](https://github.com/OfficeDev/office-js-snippets/blob/prod/snippet-extractor-output/snippets.yaml) containing all the mapped snippets is created. This yaml file is the input into the reference documentation tooling.
+Snippet keys use API member UIDs, for example:
 
-## Tooling pipeline
+```yaml
+Excel.Range#values:member:
+  - |-
+    await Excel.run(async (context) => {
+        // ...
+    });
+```
 
-![An image showing the control flow from Definitely Typed, to the preprocessor, API Extractor, midprocessor, API Documenter, and through to the postprocessor.](ToolingPipeline.png)
+The Office YAML processor inserts each snippet into the matching generated API item. Snippets are currently emitted in `TypeScript` code fences; the language is not inferred from the snippet contents.
 
-Between the content sources and the final pages, the documentation content goes through five tooling steps:
+## Running the generation pipeline
 
-1. [Preprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/preprocessor.ts)
-1. [API Extractor](https://api-extractor.com/)
-1. [Midprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/midprocessor.ts)
-1. [API Documenter](https://github.com/microsoft/rushstack/blob/master/apps/api-documenter/README.md)
-1. [Postprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/postprocessor.ts)
+Run all commands in this section from `generate-docs/`.
 
-The preprocessor takes the d.ts files and splits them into host-specific sections. It performs any cleanup necessary for the subsequent tools to properly process the data.
+```bash
+# Interactive source selection
+./GenerateDocs.sh
 
-API Extractor converts the d.ts files into JSON data. This tokenizes all the type data, allowing for easier parsing.
+# Optimized rebuild from DefinitelyTyped
+./GenerateDocs.sh -b DT
 
-The midprocessor retrieves the code snippets and pairs them with the proper hosts, and cleans up the crosslinking between Outlook and Common API objects.
+# Full rebuild from DefinitelyTyped
+./GenerateDocs.sh -b DT+
 
-API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to learn.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
+# Build from generate-docs/script-inputs/
+./GenerateDocs.sh -b Local
+```
 
-The postprocessor cleans up the table of contents and moves the .yml files into the [publishing folder](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/docs-ref-autogen).
+`GenerateDocs.sh` installs the root and script dependencies, compiles the TypeScript scripts, records output in `build-log.txt` and errors in `build-errors.txt`, and orchestrates the following stages.
 
-All five of these steps are performed when [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd) is run. That script also handles node module installation, cleans out old file sets, and versions Type Definition files for each requirement set.
+## Generation stages
+
+### 1. Preprocess the definitions
+
+`generate-docs/scripts/preprocessor.ts`:
+
+- Downloads or reads the four source definition files.
+- Extracts the Common API and host-specific sections into the corresponding `api-extractor-inputs-*` folders.
+- Creates separate preview and release inputs.
+- Makes declarations exportable for API Extractor.
+- Adds imports needed for Common API, Outlook, and OfficeExtension cross-references.
+- Applies targeted fixes needed by the downstream tools.
+- Removes affected JSON and YAML output when an input changed, or removes all applicable output during a forced rebuild.
+
+### 2. Generate requirement-set definitions and tables
+
+`GenerateDocs.sh` runs two commands from `versioned-d.ts-tools`:
+
+- `version-remover` creates the definition files for each supported requirement set and special platform variant.
+- `whats-new` compares adjacent definition files and writes generated requirement-set tables to `docs/includes/`.
+
+Adding a new requirement set requires updating this orchestration and its related API Extractor configuration, processor version constants, and publishing configuration.
+
+### 3. Run API Extractor
+
+[`@microsoft/api-extractor`](https://api-extractor.com/) reads each prepared `.d.ts` input and writes an API model JSON file under `generate-docs/json/`.
+
+The script skips a host or version when its JSON output folder already exists. The preprocessor and midprocessor remove output folders when changed definitions or snippets require that output to be regenerated.
+
+### 4. Prepare JSON and snippets
+
+`generate-docs/scripts/midprocessor.ts`:
+
+- Repairs canonical references between the Common API, Outlook, OfficeExtension, and the host APIs.
+- Cleans enum-member documentation that API Documenter cannot render correctly.
+- Downloads and combines Script Lab and local snippets.
+- Assigns snippets to the correct host and copies them into every applicable version.
+- Copies the Custom Functions API model into the supported Excel outputs.
+- Cleans generated Outlook requirement-set include files.
+
+### 5. Run API Documenter
+
+[`@microsoft/api-documenter`](https://api-extractor.com/pages/setup/generating_docs/) converts each API model JSON folder into DocFX YAML under `generate-docs/yaml/`.
+
+The repository uses the standard API Documenter YAML command. Office-specific behavior is applied by the scripts in the following stages rather than by a custom API Documenter extension.
+
+### 6. Apply Office-specific YAML enhancements
+
+`generate-docs/scripts/yaml-office-processor.ts` updates the YAML generated by API Documenter. It:
+
+- Inserts code snippets into matching API members.
+- Converts API requirement-set annotations into links to the applicable requirement-set documentation.
+- Builds a reverse index from the API Extractor JSON and adds **Used by** sections to referenced types.
+- Reports snippets that do not match an API member in the main preview outputs.
+
+### 7. Generate the Outlook item object model tables
+
+`generate-docs/scripts/generate-item-object-model.ts` reads the preview and versioned Outlook API model JSON and generates these include files:
+
+- `docs/includes/outlook-item-object-model-properties.md`
+- `docs/includes/outlook-item-object-model-methods.md`
+- `docs/includes/outlook-item-object-model-events.md`
+
+These files provide the tables used by the Outlook item object model conceptual page.
+
+### 8. Assemble the publishing output
+
+`generate-docs/scripts/postprocessor.ts`:
+
+- Removes the previous generated reference output, except for retained overview and image content.
+- Copies the generated YAML into `docs/docs-ref-autogen/`.
+- Combines the generated API Documenter TOCs with the repository's global TOC template.
+- Creates TOCs for preview, release, requirement-set, online, desktop, and hidden-document variants.
+- Reorganizes enums, OfficeExtension APIs, Office Runtime APIs, Custom Functions APIs, and other special categories.
+- Repairs namespace names and links in the generated output.
+- Adds links for types contained in type aliases.
+- Normalizes generated YAML that would otherwise be formatted incorrectly.
+
+The Open Publishing System uses the files in `docs/docs-ref-autogen/`, `docs/docfx.json`, and `.openpublishing.publish.config.json` to publish the YAML as Microsoft Learn reference pages with the appropriate API-set monikers.
+
+### 9. Update requirement-set page dates
+
+`generate-docs/scripts/update-requirement-set-dates.ts` hashes the generated requirement-set include files and compares them with `generate-docs/script-inputs/include-hashes.json`. When an include changes, the script updates `ms.date` on the requirement-set pages that use that include.
+
+### 10. Validate reference coverage
+
+The final pipeline command runs [`reference-coverage-tester`](https://www.npmjs.com/package/reference-coverage-tester) with `generate-docs/configs/reference-coverage-tester.json`. It checks the generated reference output for missing links or incomplete reference coverage.
+
+## Incremental and full builds
+
+The generated JSON and YAML folders are also the pipeline's incremental-build markers:
+
+- `DT` sets `forceRebuild` to false. If a preprocessed definition is unchanged, its existing output can be reused.
+- `DT+`, `CDN`, and `Local` force the preprocessor to invalidate the applicable output.
+- A changed host snippet file causes the midprocessor to remove the corresponding YAML output so API Documenter runs again.
+- API Extractor and API Documenter skip an output folder when it already exists.
+
+Use `DT+` when validating changes to the pipeline itself or when a complete rebuild is required.
+
+## Automation and preview builds
+
+`.github/workflows/autogen-docs.yml` runs `./GenerateDocs.sh -b DT+` on Tuesdays and Thursdays and when manually dispatched. If generation changes files, the workflow replaces the remote `autogen-docs` branch with the newly generated output for review.
+
+The Open Publishing configuration enables preview builds for pushed branches. Those builds are rendered on `review.learn.microsoft.com`, which is available only to internal Microsoft personnel.
