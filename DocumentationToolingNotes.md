@@ -176,7 +176,7 @@ The generated JSON and YAML folders are also the pipeline's incremental-build ma
 - `DT` sets `forceRebuild` to false. If a preprocessed definition is unchanged, its existing output can be reused.
 - `DT+`, `CDN`, and `Local` force the preprocessor to invalidate the applicable output.
 - A changed host snippet file causes the midprocessor to remove the corresponding YAML output so API Documenter runs again.
-- API Extractor and API Documenter skip an output folder when it already exists.
+- For host and version outputs, API Extractor and API Documenter skip an output folder when it already exists; the Custom Functions and Office Runtime API Extractor runs are unconditional.
 
 Use `DT+` when validating changes to the pipeline itself or when a complete rebuild is required.
 
