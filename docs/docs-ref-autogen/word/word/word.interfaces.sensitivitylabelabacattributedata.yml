@@ -13,6 +13,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: dataType
+    uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#dataType:member
+    package: word!
+    fullName: dataType
+    summary: The data type of values for this ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dataType?: Word.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeDataType:enum" /> | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue"
   - name: displayName
     uid: word!Word.Interfaces.SensitivityLabelAbacAttributeData#displayName:member
     package: word!

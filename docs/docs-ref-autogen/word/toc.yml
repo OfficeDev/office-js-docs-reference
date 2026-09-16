@@ -361,6 +361,8 @@ items:
                 uid: word!Word.SelectionMode:enum
               - name: SelectionType
                 uid: word!Word.SelectionType:enum
+              - name: SensitivityLabelAbacAttributeDataType
+                uid: word!Word.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: word!Word.SensitivityLabelProtectionType:enum
               - name: SensitivityLabelUpdateResult

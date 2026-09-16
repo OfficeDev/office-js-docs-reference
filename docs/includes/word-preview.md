@@ -211,7 +211,8 @@
 ||[separator](/javascript/api/word/word.selectionconverttotableoptions#word-word-selectionconverttotableoptions-separator-member)|If provided, specifies the character used to separate text into cells.|
 |[SensitivityLabel](/javascript/api/word/word.sensitivitylabel)|[getCurrentOrNullObject()](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-getcurrentornullobject-member(1))|Gets the current label information that exists on the document for the user.|
 ||[tryToUpdate(LabelId: string, Justification?: string)](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))|Try to update to the provided sensitivity label on the document for the user.|
-|[SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute)|[displayName](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-displayname-member)|The display name of the ABAC attribute.|
+|[SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute)|[dataType](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-datatype-member)|The data type of values for this ABAC attribute.|
+||[displayName](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-displayname-member)|The display name of the ABAC attribute.|
 ||[displayOrder](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-displayorder-member)|The display order of the ABAC attribute.|
 ||[isActive](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-isactive-member)|Indicates whether the ABAC attribute is active.|
 ||[isMultiValued](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-ismultivalued-member)|Indicates whether the ABAC attribute can have multiple values.|

@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: Word.SensitivityLabelAbacAttributeDataType
+uid: word!Word.SensitivityLabelAbacAttributeDataType:enum
+package: word!
+fullName: Word.SensitivityLabelAbacAttributeDataType
+summary: Represents the data type of an ABAC attribute's values.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabelAbacAttribute](/javascript/api/word/word.sensitivitylabelabacattribute): [dataType](/javascript/api/word/word.sensitivitylabelabacattribute#word-word-sensitivitylabelabacattribute-datatype-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: booleanValue
+    uid: word!Word.SensitivityLabelAbacAttributeDataType.booleanValue:member
+    package: word!
+    summary: |-
+      The attribute value is a boolean.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"BooleanValue"'
+  - name: dateValue
+    uid: word!Word.SensitivityLabelAbacAttributeDataType.dateValue:member
+    package: word!
+    summary: |-
+      The attribute value is a date.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"DateValue"'
+  - name: numberValue
+    uid: word!Word.SensitivityLabelAbacAttributeDataType.numberValue:member
+    package: word!
+    summary: |-
+      The attribute value is a number.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"NumberValue"'
+  - name: stringValue
+    uid: word!Word.SensitivityLabelAbacAttributeDataType.stringValue:member
+    package: word!
+    summary: |-
+      The attribute value is a string.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"StringValue"'
+  - name: unknown
+    uid: word!Word.SensitivityLabelAbacAttributeDataType.unknown:member
+    package: word!
+    summary: |-
+      The data type is not recognized or specified.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"Unknown"'

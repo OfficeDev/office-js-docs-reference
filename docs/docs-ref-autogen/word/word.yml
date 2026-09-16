@@ -175,6 +175,7 @@ enums:
   - word!Word.SeekView:enum
   - word!Word.SelectionMode:enum
   - word!Word.SelectionType:enum
+  - word!Word.SensitivityLabelAbacAttributeDataType:enum
   - word!Word.SensitivityLabelProtectionType:enum
   - word!Word.SensitivityLabelUpdateResult:enum
   - word!Word.ShadingTextureType:enum

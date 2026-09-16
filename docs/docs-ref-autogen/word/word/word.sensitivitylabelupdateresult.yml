@@ -26,7 +26,7 @@ fields:
     uid: word!Word.SensitivityLabelUpdateResult.abacAttributesRequired:member
     package: word!
     summary: |-
-      The target label isn't enabled for attribute-based access controls and requires attribute selections, but no ABAC attribute values were supplied.
+      The target label is enabled for attribute-based access control (ABAC) and requires attribute selections, but no ABAC attribute values were supplied.
 
       * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"AbacAttributesRequired"'
@@ -114,7 +114,7 @@ fields:
     uid: word!Word.SensitivityLabelUpdateResult.unsupportedAbac:member
     package: word!
     summary: |-
-      The label update failed due to unsupported attribute-based access control (ABAC).
+      The label update failed due to unsupported attribute-based access control (ABAC) attribute values.
 
       * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"UnsupportedAbac"'

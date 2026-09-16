@@ -28,6 +28,19 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="word!Word.RequestContext:class" />
+  - name: dataType
+    uid: word!Word.SensitivityLabelAbacAttribute#dataType:member
+    package: word!
+    fullName: dataType
+    summary: The data type of values for this ABAC attribute.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly dataType: Word.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeDataType:enum" /> | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue"
   - name: displayName
     uid: word!Word.SensitivityLabelAbacAttribute#displayName:member
     package: word!

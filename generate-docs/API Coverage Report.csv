@@ -10775,6 +10775,7 @@ powerpoint,PowerPoint.SensitivityLabel,"toJSON()",Method,Excellent,false
 powerpoint,PowerPoint.SensitivityLabel,"tryToUpdate(labelId)",Method,Fine,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,N/A,Class,Good,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"context",Property,Excellent,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"dataType",Property,Great,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"displayName",Property,Excellent,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"displayOrder",Property,Great,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"isActive",Property,Excellent,false
@@ -10784,6 +10785,12 @@ powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"load(options)",Method,Great
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttribute,"toJSON()",Method,Excellent,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,N/A,Enum,Great,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,"booleanValue",EnumField,Great,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,"dateValue",EnumField,Great,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,"numberValue",EnumField,Great,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,"stringValue",EnumField,Great,false
+powerpoint,PowerPoint.SensitivityLabelAbacAttributeDataType,"unknown",EnumField,Great,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttributeValue,N/A,Class,Good,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttributeValue,"context",Property,Excellent,false
 powerpoint,PowerPoint.SensitivityLabelAbacAttributeValue,"displayName",Property,Excellent,false
@@ -12155,7 +12162,7 @@ word,Word.Body,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 word,Word.Body,"getTrackedChanges()",Method,Fine,true
 word,Word.Body,"insertBreak(breakType, insertLocation)",Method,Fine,true
 word,Word.Body,"insertContentControl(contentControlType)",Method,Fine,true
-word,Word.Body,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
+word,Word.Body,"insertFileFromBase64(base64File, insertLocation)",Method,Good,true
 word,Word.Body,"insertHtml(html, insertLocation)",Method,Fine,true
 word,Word.Body,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
 word,Word.Body,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
@@ -13083,7 +13090,7 @@ word,Word.ContentControl,"fields",Property,Great,false
 word,Word.ContentControl,"font",Property,Excellent,false
 word,Word.ContentControl,"footnotes",Property,Great,false
 word,Word.ContentControl,"groupContentControl",Property,Excellent,false
-word,Word.ContentControl,"id",Property,Great,false
+word,Word.ContentControl,"id",Property,Excellent,false
 word,Word.ContentControl,"inlinePictures",Property,Excellent,false
 word,Word.ContentControl,"lists",Property,Great,false
 word,Word.ContentControl,"paragraphs",Property,Great,false
@@ -13102,7 +13109,7 @@ word,Word.ContentControl,"style",Property,Excellent,false
 word,Word.ContentControl,"styleBuiltIn",Property,Excellent,false
 word,Word.ContentControl,"subtype",Property,Excellent,false
 word,Word.ContentControl,"tables",Property,Great,false
-word,Word.ContentControl,"tag",Property,Great,true
+word,Word.ContentControl,"tag",Property,Excellent,true
 word,Word.ContentControl,"text",Property,Good,false
 word,Word.ContentControl,"title",Property,Great,true
 word,Word.ContentControl,"type",Property,Excellent,false
@@ -13119,7 +13126,7 @@ word,Word.ContentControl,"getReviewedText(changeTrackingVersion)",Method,Fine,fa
 word,Word.ContentControl,"getTextRanges(endingMarks, trimSpacing)",Method,Fine,false
 word,Word.ContentControl,"getTrackedChanges()",Method,Fine,false
 word,Word.ContentControl,"insertBreak(breakType, insertLocation)",Method,Good,true
-word,Word.ContentControl,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,false
+word,Word.ContentControl,"insertFileFromBase64(base64File, insertLocation)",Method,Good,false
 word,Word.ContentControl,"insertHtml(html, insertLocation)",Method,Fine,true
 word,Word.ContentControl,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
 word,Word.ContentControl,"insertOoxml(ooxml, insertLocation)",Method,Fine,true
@@ -13792,7 +13799,7 @@ word,Word.Document,"getStyles()",Method,Fine,true
 word,Word.Document,"goTo(options)",Method,Great,false
 word,Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehavior)",Method,Fine,true
 word,Word.Document,"importStylesFromJson(stylesJson, importedStylesConflictBehavior)",Method,Fine,false
-word,Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Good,true
+word,Word.Document,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Great,true
 word,Word.Document,"load(options)",Method,Great,true
 word,Word.Document,"load(propertyNames)",Method,Great,false
 word,Word.Document,"load(propertyNamesAndPaths)",Method,Great,false
@@ -13904,7 +13911,7 @@ word,Word.DocumentCreated,"getBookmarkRange(name)",Method,Great,false
 word,Word.DocumentCreated,"getBookmarkRangeOrNullObject(name)",Method,Excellent,false
 word,Word.DocumentCreated,"getContentControls(options)",Method,Fine,false
 word,Word.DocumentCreated,"getStyles()",Method,Fine,false
-word,Word.DocumentCreated,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Good,false
+word,Word.DocumentCreated,"insertFileFromBase64(base64File, insertLocation, insertFileOptions)",Method,Great,false
 word,Word.DocumentCreated,"load(options)",Method,Great,false
 word,Word.DocumentCreated,"load(propertyNames)",Method,Great,false
 word,Word.DocumentCreated,"load(propertyNamesAndPaths)",Method,Great,false
@@ -15202,7 +15209,7 @@ word,Word.InlinePicture,"getNextOrNullObject()",Method,Excellent,true
 word,Word.InlinePicture,"getRange(rangeLocation)",Method,Fine,false
 word,Word.InlinePicture,"insertBreak(breakType, insertLocation)",Method,Fine,false
 word,Word.InlinePicture,"insertContentControl()",Method,Fine,false
-word,Word.InlinePicture,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,false
+word,Word.InlinePicture,"insertFileFromBase64(base64File, insertLocation)",Method,Good,false
 word,Word.InlinePicture,"insertHtml(html, insertLocation)",Method,Fine,false
 word,Word.InlinePicture,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,false
 word,Word.InlinePicture,"insertOoxml(ooxml, insertLocation)",Method,Fine,false
@@ -16412,7 +16419,7 @@ word,Word.Paragraph,"insertAnnotations(annotations)",Method,Fine,true
 word,Word.Paragraph,"insertBreak(breakType, insertLocation)",Method,Fine,true
 word,Word.Paragraph,"insertCanvas(insertShapeOptions)",Method,Fine,false
 word,Word.Paragraph,"insertContentControl(contentControlType)",Method,Fine,true
-word,Word.Paragraph,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,false
+word,Word.Paragraph,"insertFileFromBase64(base64File, insertLocation)",Method,Good,false
 word,Word.Paragraph,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,true
 word,Word.Paragraph,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 word,Word.Paragraph,"insertHtml(html, insertLocation)",Method,Fine,true
@@ -16423,7 +16430,7 @@ word,Word.Paragraph,"insertPictureFromBase64(base64EncodedImage, insertShapeOpti
 word,Word.Paragraph,"insertTable(rowCount, columnCount, insertLocation, values)",Method,Fine,false
 word,Word.Paragraph,"insertText(text, insertLocation)",Method,Fine,true
 word,Word.Paragraph,"insertTextBox(text, insertShapeOptions)",Method,Fine,true
-word,Word.Paragraph,"joinList()",Method,Fine,false
+word,Word.Paragraph,"joinList()",Method,Good,false
 word,Word.Paragraph,"load(options)",Method,Great,false
 word,Word.Paragraph,"load(propertyNames)",Method,Great,false
 word,Word.Paragraph,"load(propertyNamesAndPaths)",Method,Great,false
@@ -16929,7 +16936,7 @@ word,Word.Range,"insertContentControl(contentControlType)",Method,Fine,true
 word,Word.Range,"insertEndnote(insertText)",Method,Fine,false
 word,Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)",Method,Fine,true
 word,Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)",Method,Fine,false
-word,Word.Range,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
+word,Word.Range,"insertFileFromBase64(base64File, insertLocation)",Method,Good,true
 word,Word.Range,"insertFootnote(insertText)",Method,Fine,true
 word,Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,true
 word,Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
@@ -17560,6 +17567,7 @@ word,Word.SensitivityLabel,"tryToUpdate(LabelId, Justification)",Method,Fine,fal
 word,Word.SensitivityLabel,"untrack()",Method,Excellent,false
 word,Word.SensitivityLabelAbacAttribute,N/A,Class,Fine,false
 word,Word.SensitivityLabelAbacAttribute,"context",Property,Excellent,false
+word,Word.SensitivityLabelAbacAttribute,"dataType",Property,Great,false
 word,Word.SensitivityLabelAbacAttribute,"displayName",Property,Good,false
 word,Word.SensitivityLabelAbacAttribute,"displayOrder",Property,Great,false
 word,Word.SensitivityLabelAbacAttribute,"isActive",Property,Great,false
@@ -17569,6 +17577,12 @@ word,Word.SensitivityLabelAbacAttribute,"load(options)",Method,Great,false
 word,Word.SensitivityLabelAbacAttribute,"load(propertyNames)",Method,Great,false
 word,Word.SensitivityLabelAbacAttribute,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.SensitivityLabelAbacAttribute,"toJSON()",Method,Excellent,false
+word,Word.SensitivityLabelAbacAttributeDataType,N/A,Enum,Good,false
+word,Word.SensitivityLabelAbacAttributeDataType,"booleanValue",EnumField,Great,false
+word,Word.SensitivityLabelAbacAttributeDataType,"dateValue",EnumField,Great,false
+word,Word.SensitivityLabelAbacAttributeDataType,"numberValue",EnumField,Great,false
+word,Word.SensitivityLabelAbacAttributeDataType,"stringValue",EnumField,Great,false
+word,Word.SensitivityLabelAbacAttributeDataType,"unknown",EnumField,Great,false
 word,Word.SensitivityLabelAbacAttributeValue,N/A,Class,Fine,false
 word,Word.SensitivityLabelAbacAttributeValue,"context",Property,Excellent,false
 word,Word.SensitivityLabelAbacAttributeValue,"displayName",Property,Great,false

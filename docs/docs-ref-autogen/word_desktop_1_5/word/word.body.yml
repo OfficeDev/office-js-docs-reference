@@ -481,11 +481,13 @@ methods:
     uid: word!Word.Body#insertFileFromBase64:member(1)
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
-    summary: Inserts a document into the body at the specified location.
+    summary: Inserts a document into the body at the specified location. The maximum size of the document being inserted is 4 MB.
     remarks: |-
       \[Api set: WordApi 1.1\]
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+
+      Document settings aren't preserved when inserting a document.
 
     isPreview: false
     isDeprecated: false

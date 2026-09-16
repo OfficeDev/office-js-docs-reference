@@ -122,7 +122,7 @@ properties:
     uid: office!Office.GetFileOptions#sliceSize:member
     package: office!
     fullName: sliceSize
-    summary: The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
+    summary: The size of the slices in bytes. The maximum (and the default) is 4194304 (4 MB).
     remarks: ''
 
     isPreview: false
