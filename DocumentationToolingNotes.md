@@ -2,13 +2,13 @@
 
 The Office JavaScript API reference documentation is generated from TypeScript definition files, code snippets, and repository configuration. The generation pipeline combines standard Rush Stack tools with repository-specific scripts that split and version the definitions, enrich the generated YAML, assemble the published table of contents, and validate the result.
 
-The generated reference files are written to `docs/docs-ref-autogen/`. Do not edit files in that folder directly because the next generation run will overwrite them.
+The generation process writes the generated reference files to `docs/docs-ref-autogen/`. Don't edit files in that folder directly because the next generation run overwrites them.
 
 ## Content sources
 
 ### Type definition files
 
-The API definitions and their TSDoc comments come primarily from these packages in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped):
+API definitions and their TSDoc comments come primarily from these packages in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped):
 
 - [`office-js/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-js/index.d.ts): Release definitions for the Common API, Excel, OneNote, Outlook, PowerPoint, Visio, and Word.
 - [`office-js-preview/index.d.ts`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-js-preview/index.d.ts): Preview definitions for the Common API, Excel, Outlook, PowerPoint, and Word.
@@ -20,11 +20,11 @@ The preprocessor supports four source choices:
 | Choice | Behavior |
 |---|---|
 | `DT` | Downloads the DefinitelyTyped files and preserves unchanged API Extractor JSON and API Documenter YAML when possible. |
-| `DT+` | Downloads the DefinitelyTyped files and forces a full rebuild. This is the mode used by the scheduled GitHub Action. |
+| `DT+` | Downloads the DefinitelyTyped files and forces a full rebuild. This mode is used by the scheduled GitHub Action. |
 | `CDN` | Downloads the Office.js release and preview definitions from the Office CDN. The Custom Functions and Office Runtime definitions still come from DefinitelyTyped. |
 | `Local` | Reads the definition files in `generate-docs/script-inputs/`. Use this mode to test definition changes before submitting them to DefinitelyTyped. |
 
-To test local definitions, copy the modified files to `generate-docs/script-inputs/` using the names expected by the preprocessor, then run the following command from `generate-docs/`.
+To test local definitions, copy the modified files to `generate-docs/script-inputs/` using the names expected by the preprocessor, and then run the following command from `generate-docs/`.
 
 ```bash
 ./GenerateDocs.sh -b Local
@@ -34,7 +34,7 @@ You can also run `./GenerateDocs.sh` without `-b` and select **Local files** at 
 
 ### Version-specific definitions
 
-Release documentation is generated for individual API requirement sets. These version-specific definitions are not maintained as independent source files. During every generation run, the [`version-remover`](https://www.npmjs.com/package/versioned-d.ts-tools) command from the `versioned-d.ts-tools` package successively removes APIs associated with newer requirement sets.
+Release documentation is generated for individual API requirement sets. The generation process doesn't maintain these version-specific definitions as independent source files. During every generation run, the [`version-remover`](https://www.npmjs.com/package/versioned-d.ts-tools) command from the `versioned-d.ts-tools` package successively removes APIs associated with newer requirement sets.
 
 `GenerateDocs.sh` defines the version-removal chains for Excel, Outlook, PowerPoint, and Word. The JSON files in `generate-docs/configs/` configure the transformations for each release, online, desktop, and hidden-document variant.
 
@@ -59,7 +59,7 @@ Excel.Range#values:member:
     });
 ```
 
-The Office YAML processor inserts each snippet into the matching generated API item. Snippets are currently emitted in `TypeScript` code fences; the language is not inferred from the snippet contents.
+The Office YAML processor inserts each snippet into the matching generated API item. The processor currently emits snippets in `TypeScript` code fences; the language isn't inferred from the snippet contents.
 
 ## Running the generation pipeline
 
@@ -102,7 +102,7 @@ Run all commands in this section from `generate-docs/`.
 - `version-remover` creates the definition files for each supported requirement set and special platform variant.
 - `whats-new` compares adjacent definition files and writes generated requirement-set tables to `docs/includes/`.
 
-Adding a new requirement set requires updating this orchestration and its related API Extractor configuration, processor version constants, and publishing configuration.
+To add a new requirement set, update this orchestration and its related API Extractor configuration, processor version constants, and publishing configuration.
 
 ### 3. Run API Extractor
 
@@ -115,7 +115,7 @@ The script skips a host or version when its JSON output folder already exists. T
 `generate-docs/scripts/midprocessor.ts`:
 
 - Repairs canonical references between the Common API, Outlook, OfficeExtension, and the host APIs.
-- Cleans enum-member documentation that API Documenter cannot render correctly.
+- Cleans enum-member documentation that API Documenter can't render correctly.
 - Downloads and combines Script Lab and local snippets.
 - Assigns snippets to the correct host and copies them into every applicable version.
 - Copies the Custom Functions API model into the supported Excel outputs.
@@ -125,7 +125,7 @@ The script skips a host or version when its JSON output folder already exists. T
 
 [`@microsoft/api-documenter`](https://api-extractor.com/pages/setup/generating_docs/) converts each API model JSON folder into DocFX YAML under `generate-docs/yaml/`.
 
-The repository uses the standard API Documenter YAML command. Office-specific behavior is applied by the scripts in the following stages rather than by a custom API Documenter extension.
+The repository uses the standard API Documenter YAML command. The scripts in the following stages apply Office-specific behavior rather than a custom API Documenter extension.
 
 ### 6. Apply Office-specific YAML enhancements
 
@@ -134,24 +134,24 @@ The repository uses the standard API Documenter YAML command. Office-specific be
 - Inserts code snippets into matching API members.
 - Converts API requirement-set annotations into links to the applicable requirement-set documentation.
 - Builds a reverse index from the API Extractor JSON and adds **Used by** sections to referenced types.
-- Reports snippets that do not match an API member in the main preview outputs.
+- Reports snippets that don't match an API member in the main preview outputs.
 
 ### 7. Generate the Outlook item object model tables
 
-`generate-docs/scripts/generate-item-object-model.ts` reads the preview and versioned Outlook API model JSON and generates these include files:
+The `generate-docs/scripts/generate-item-object-model.ts` script reads the preview and versioned Outlook API model JSON files and generates these include files:
 
 - `docs/includes/outlook-item-object-model-properties.md`
 - `docs/includes/outlook-item-object-model-methods.md`
 - `docs/includes/outlook-item-object-model-events.md`
 
-These files provide the tables used by the Outlook item object model conceptual page.
+These files contain the tables used by the Outlook item object model conceptual page.
 
 ### 8. Assemble the publishing output
 
-`generate-docs/scripts/postprocessor.ts`:
+The `generate-docs/scripts/postprocessor.ts` script:
 
-- Removes the previous generated reference output, except for retained overview and image content.
-- Copies the generated YAML into `docs/docs-ref-autogen/`.
+- Removes the previously generated reference output, except for retained overview and image content.
+- Copies the generated YAML files into `docs/docs-ref-autogen/`.
 - Combines the generated API Documenter TOCs with the repository's global TOC template.
 - Creates TOCs for preview, release, requirement-set, online, desktop, and hidden-document variants.
 - Reorganizes enums, OfficeExtension APIs, Office Runtime APIs, Custom Functions APIs, and other special categories.
@@ -163,7 +163,7 @@ The Open Publishing System uses the files in `docs/docs-ref-autogen/`, `docs/doc
 
 ### 9. Update requirement-set page dates
 
-`generate-docs/scripts/update-requirement-set-dates.ts` hashes the generated requirement-set include files and compares them with `generate-docs/script-inputs/include-hashes.json`. When an include changes, the script updates `ms.date` on the requirement-set pages that use that include.
+The `generate-docs/scripts/update-requirement-set-dates.ts` script hashes the generated requirement set include files and compares them with `generate-docs/script-inputs/include-hashes.json`. When an include changes, the script updates `ms.date` on the requirement set pages that use that include.
 
 ### 10. Validate reference coverage
 
@@ -173,10 +173,10 @@ The final pipeline command runs [`reference-coverage-tester`](https://www.npmjs.
 
 The generated JSON and YAML folders are also the pipeline's incremental-build markers:
 
-- `DT` sets `forceRebuild` to false. If a preprocessed definition is unchanged, its existing output can be reused.
+- `DT` sets `forceRebuild` to false. If a preprocessed definition is unchanged, the pipeline reuses its existing output.
 - `DT+`, `CDN`, and `Local` force the preprocessor to invalidate the applicable output.
 - A changed host snippet file causes the midprocessor to remove the corresponding YAML output so API Documenter runs again.
-- For host and version outputs, API Extractor and API Documenter skip an output folder when it already exists; the Custom Functions and Office Runtime API Extractor runs are unconditional.
+- For host and version outputs, API Extractor and API Documenter skip an output folder when it already exists. The Custom Functions and Office Runtime API Extractor runs are unconditional.
 
 Use `DT+` when validating changes to the pipeline itself or when a complete rebuild is required.
 
