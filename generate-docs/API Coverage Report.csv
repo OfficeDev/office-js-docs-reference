@@ -12069,7 +12069,7 @@ word,Word.Application,"retrieveStylesFromBase64(base64File)",Method,Fine,true
 word,Word.Application,"set(properties, options)",Method,Good,false
 word,Word.Application,"set(properties)",Method,Fine,false
 word,Word.Application,"toJSON()",Method,Excellent,false
-word,Word.ApplyQuickStyleSet,N/A,Enum,Good,false
+word,Word.ApplyQuickStyleSet,N/A,Enum,Good,true
 word,Word.ApplyQuickStyleSet,"sessionStart",EnumField,Excellent,false
 word,Word.ApplyQuickStyleSet,"template",EnumField,Excellent,false
 word,Word.ArrowheadLength,N/A,Enum,Good,false
@@ -13722,9 +13722,9 @@ word,Word.Document,"storyRanges",Property,Excellent,false
 word,Word.Document,"styles",Property,Great,false
 word,Word.Document,"tableOfAuthoritiesCategories",Property,Excellent,false
 word,Word.Document,"tables",Property,Great,false
-word,Word.Document,"tablesOfAuthorities",Property,Excellent,false
-word,Word.Document,"tablesOfContents",Property,Excellent,false
-word,Word.Document,"tablesOfFigures",Property,Excellent,false
+word,Word.Document,"tablesOfAuthorities",Property,Excellent,true
+word,Word.Document,"tablesOfContents",Property,Excellent,true
+word,Word.Document,"tablesOfFigures",Property,Excellent,true
 word,Word.Document,"textEncoding",Property,Great,false
 word,Word.Document,"textLineEnding",Property,Great,false
 word,Word.Document,"trackedChangesAreDateAndTimeRemoved",Property,Excellent,false
@@ -13745,7 +13745,7 @@ word,Word.Document,"activate()",Method,Fine,false
 word,Word.Document,"addStyle(name, type)",Method,Fine,true
 word,Word.Document,"addStyle(name, type)",Method,Fine,false
 word,Word.Document,"addToFavorites()",Method,Fine,false
-word,Word.Document,"applyQuickStyleSet(style)",Method,Fine,false
+word,Word.Document,"applyQuickStyleSet(style)",Method,Fine,true
 word,Word.Document,"applyQuickStyleSet(style)",Method,Fine,false
 word,Word.Document,"applyTheme(name)",Method,Fine,false
 word,Word.Document,"autoFormat()",Method,Fine,false
@@ -18456,11 +18456,11 @@ word,Word.TableFormatType,"threeDEffects3",EnumField,Great,false
 word,Word.TableFormatType,"web1",EnumField,Great,false
 word,Word.TableFormatType,"web2",EnumField,Great,false
 word,Word.TableFormatType,"web3",EnumField,Great,false
-word,Word.TableOfAuthorities,N/A,Class,Fine,false
+word,Word.TableOfAuthorities,N/A,Class,Fine,true
 word,Word.TableOfAuthorities,"bookmark",Property,Excellent,false
 word,Word.TableOfAuthorities,"category",Property,Excellent,false
 word,Word.TableOfAuthorities,"context",Property,Excellent,false
-word,Word.TableOfAuthorities,"entrySeparator",Property,Excellent,false
+word,Word.TableOfAuthorities,"entrySeparator",Property,Excellent,true
 word,Word.TableOfAuthorities,"isCategoryHeaderIncluded",Property,Excellent,false
 word,Word.TableOfAuthorities,"isEntryFormattingKept",Property,Excellent,false
 word,Word.TableOfAuthorities,"isPassimUsed",Property,Excellent,false
@@ -18470,7 +18470,7 @@ word,Word.TableOfAuthorities,"range",Property,Great,false
 word,Word.TableOfAuthorities,"sequenceName",Property,Excellent,false
 word,Word.TableOfAuthorities,"sequenceSeparator",Property,Excellent,false
 word,Word.TableOfAuthorities,"tabLeader",Property,Excellent,false
-word,Word.TableOfAuthorities,"delete()",Method,Fine,false
+word,Word.TableOfAuthorities,"delete()",Method,Fine,true
 word,Word.TableOfAuthorities,"load(options)",Method,Great,false
 word,Word.TableOfAuthorities,"load(propertyNames)",Method,Great,false
 word,Word.TableOfAuthorities,"load(propertyNamesAndPaths)",Method,Great,false
@@ -18479,7 +18479,7 @@ word,Word.TableOfAuthorities,"set(properties)",Method,Fine,false
 word,Word.TableOfAuthorities,"toJSON()",Method,Excellent,false
 word,Word.TableOfAuthorities,"track()",Method,Excellent,false
 word,Word.TableOfAuthorities,"untrack()",Method,Excellent,false
-word,Word.TableOfAuthoritiesAddOptions,N/A,Interface,Good,false
+word,Word.TableOfAuthoritiesAddOptions,N/A,Interface,Good,true
 word,Word.TableOfAuthoritiesAddOptions,"bookmark",Property,Excellent,false
 word,Word.TableOfAuthoritiesAddOptions,"category",Property,Excellent,false
 word,Word.TableOfAuthoritiesAddOptions,"entrySeparator",Property,Excellent,false
@@ -18513,35 +18513,35 @@ word,Word.TableOfAuthoritiesCategoryCollection,"untrack()",Method,Excellent,fals
 word,Word.TableOfAuthoritiesCollection,N/A,Class,Good,false
 word,Word.TableOfAuthoritiesCollection,"context",Property,Excellent,false
 word,Word.TableOfAuthoritiesCollection,"items",Property,Great,false
-word,Word.TableOfAuthoritiesCollection,"add(range, options)",Method,Fine,false
+word,Word.TableOfAuthoritiesCollection,"add(range, options)",Method,Fine,true
 word,Word.TableOfAuthoritiesCollection,"load(options)",Method,Great,false
 word,Word.TableOfAuthoritiesCollection,"load(propertyNames)",Method,Great,false
 word,Word.TableOfAuthoritiesCollection,"load(propertyNamesAndPaths)",Method,Great,false
-word,Word.TableOfAuthoritiesCollection,"markAllCitations(shortCitation, options)",Method,Good,false
+word,Word.TableOfAuthoritiesCollection,"markAllCitations(shortCitation, options)",Method,Good,true
 word,Word.TableOfAuthoritiesCollection,"markCitation(range, shortCitation, options)",Method,Good,false
 word,Word.TableOfAuthoritiesCollection,"selectNextCitation(shortCitation)",Method,Fine,false
 word,Word.TableOfAuthoritiesCollection,"toJSON()",Method,Excellent,false
 word,Word.TableOfAuthoritiesCollection,"track()",Method,Excellent,false
 word,Word.TableOfAuthoritiesCollection,"untrack()",Method,Excellent,false
-word,Word.TableOfAuthoritiesMarkCitationOptions,N/A,Interface,Good,false
+word,Word.TableOfAuthoritiesMarkCitationOptions,N/A,Interface,Good,true
 word,Word.TableOfAuthoritiesMarkCitationOptions,"category",Property,Excellent,false
 word,Word.TableOfAuthoritiesMarkCitationOptions,"longCitation",Property,Excellent,false
 word,Word.TableOfAuthoritiesMarkCitationOptions,"longCitationAutoText",Property,Excellent,false
-word,Word.TableOfContents,N/A,Class,Fine,false
+word,Word.TableOfContents,N/A,Class,Fine,true
 word,Word.TableOfContents,"additionalHeadingStyles",Property,Excellent,false
 word,Word.TableOfContents,"areBuiltInHeadingStylesUsed",Property,Great,false
 word,Word.TableOfContents,"areFieldsUsed",Property,Excellent,false
 word,Word.TableOfContents,"areHyperlinksUsedOnWeb",Property,Excellent,false
 word,Word.TableOfContents,"arePageNumbersHiddenOnWeb",Property,Excellent,false
 word,Word.TableOfContents,"arePageNumbersIncluded",Property,Great,false
-word,Word.TableOfContents,"arePageNumbersRightAligned",Property,Excellent,false
+word,Word.TableOfContents,"arePageNumbersRightAligned",Property,Excellent,true
 word,Word.TableOfContents,"context",Property,Excellent,false
 word,Word.TableOfContents,"lowerHeadingLevel",Property,Excellent,false
 word,Word.TableOfContents,"range",Property,Great,false
 word,Word.TableOfContents,"tabLeader",Property,Excellent,false
 word,Word.TableOfContents,"tableId",Property,Excellent,false
 word,Word.TableOfContents,"upperHeadingLevel",Property,Excellent,false
-word,Word.TableOfContents,"delete()",Method,Fine,false
+word,Word.TableOfContents,"delete()",Method,Fine,true
 word,Word.TableOfContents,"load(options)",Method,Great,false
 word,Word.TableOfContents,"load(propertyNames)",Method,Great,false
 word,Word.TableOfContents,"load(propertyNamesAndPaths)",Method,Great,false
@@ -18550,8 +18550,8 @@ word,Word.TableOfContents,"set(properties)",Method,Fine,false
 word,Word.TableOfContents,"toJSON()",Method,Excellent,false
 word,Word.TableOfContents,"track()",Method,Excellent,false
 word,Word.TableOfContents,"untrack()",Method,Excellent,false
-word,Word.TableOfContents,"updatePageNumbers()",Method,Fine,false
-word,Word.TableOfContentsAddOptions,N/A,Interface,Good,false
+word,Word.TableOfContents,"updatePageNumbers()",Method,Fine,true
+word,Word.TableOfContentsAddOptions,N/A,Interface,Good,true
 word,Word.TableOfContentsAddOptions,"addedStyles",Property,Excellent,false
 word,Word.TableOfContentsAddOptions,"hidePageNumbersOnWeb",Property,Excellent,false
 word,Word.TableOfContentsAddOptions,"includePageNumbers",Property,Excellent,false
@@ -18566,7 +18566,7 @@ word,Word.TableOfContentsAddOptions,"useOutlineLevels",Property,Excellent,false
 word,Word.TableOfContentsCollection,N/A,Class,Good,false
 word,Word.TableOfContentsCollection,"context",Property,Excellent,false
 word,Word.TableOfContentsCollection,"items",Property,Great,false
-word,Word.TableOfContentsCollection,"add(range, options)",Method,Fine,false
+word,Word.TableOfContentsCollection,"add(range, options)",Method,Fine,true
 word,Word.TableOfContentsCollection,"load(options)",Method,Great,false
 word,Word.TableOfContentsCollection,"load(propertyNames)",Method,Great,false
 word,Word.TableOfContentsCollection,"load(propertyNamesAndPaths)",Method,Great,false
@@ -18574,12 +18574,12 @@ word,Word.TableOfContentsCollection,"markTocEntry(range, options)",Method,Good,f
 word,Word.TableOfContentsCollection,"toJSON()",Method,Excellent,false
 word,Word.TableOfContentsCollection,"track()",Method,Excellent,false
 word,Word.TableOfContentsCollection,"untrack()",Method,Excellent,false
-word,Word.TableOfContentsMarkEntryOptions,N/A,Interface,Good,false
+word,Word.TableOfContentsMarkEntryOptions,N/A,Interface,Good,true
 word,Word.TableOfContentsMarkEntryOptions,"entry",Property,Excellent,false
 word,Word.TableOfContentsMarkEntryOptions,"entryAutoText",Property,Excellent,false
 word,Word.TableOfContentsMarkEntryOptions,"level",Property,Excellent,false
 word,Word.TableOfContentsMarkEntryOptions,"tableId",Property,Excellent,false
-word,Word.TableOfFigures,N/A,Class,Fine,false
+word,Word.TableOfFigures,N/A,Class,Fine,true
 word,Word.TableOfFigures,"additionalHeadingStyles",Property,Excellent,false
 word,Word.TableOfFigures,"areBuiltInHeadingStylesUsed",Property,Great,false
 word,Word.TableOfFigures,"areFieldsUsed",Property,Excellent,false
@@ -18589,13 +18589,13 @@ word,Word.TableOfFigures,"arePageNumbersIncluded",Property,Great,false
 word,Word.TableOfFigures,"arePageNumbersRightAligned",Property,Excellent,false
 word,Word.TableOfFigures,"captionLabel",Property,Excellent,false
 word,Word.TableOfFigures,"context",Property,Excellent,false
-word,Word.TableOfFigures,"isLabelIncluded",Property,Excellent,false
+word,Word.TableOfFigures,"isLabelIncluded",Property,Excellent,true
 word,Word.TableOfFigures,"lowerHeadingLevel",Property,Excellent,false
 word,Word.TableOfFigures,"range",Property,Great,false
 word,Word.TableOfFigures,"tabLeader",Property,Excellent,false
 word,Word.TableOfFigures,"tableId",Property,Excellent,false
 word,Word.TableOfFigures,"upperHeadingLevel",Property,Excellent,false
-word,Word.TableOfFigures,"delete()",Method,Fine,false
+word,Word.TableOfFigures,"delete()",Method,Fine,true
 word,Word.TableOfFigures,"load(options)",Method,Great,false
 word,Word.TableOfFigures,"load(propertyNames)",Method,Great,false
 word,Word.TableOfFigures,"load(propertyNamesAndPaths)",Method,Great,false
@@ -18604,8 +18604,8 @@ word,Word.TableOfFigures,"set(properties)",Method,Fine,false
 word,Word.TableOfFigures,"toJSON()",Method,Excellent,false
 word,Word.TableOfFigures,"track()",Method,Excellent,false
 word,Word.TableOfFigures,"untrack()",Method,Excellent,false
-word,Word.TableOfFigures,"updatePageNumbers()",Method,Fine,false
-word,Word.TableOfFiguresAddOptions,N/A,Interface,Good,false
+word,Word.TableOfFigures,"updatePageNumbers()",Method,Fine,true
+word,Word.TableOfFiguresAddOptions,N/A,Interface,Good,true
 word,Word.TableOfFiguresAddOptions,"addedStyles",Property,Excellent,false
 word,Word.TableOfFiguresAddOptions,"captionLabel",Property,Excellent,false
 word,Word.TableOfFiguresAddOptions,"hidePageNumbersOnWeb",Property,Excellent,false
@@ -18621,11 +18621,11 @@ word,Word.TableOfFiguresAddOptions,"useHyperlinksOnWeb",Property,Excellent,false
 word,Word.TableOfFiguresCollection,N/A,Class,Good,false
 word,Word.TableOfFiguresCollection,"context",Property,Excellent,false
 word,Word.TableOfFiguresCollection,"items",Property,Great,false
-word,Word.TableOfFiguresCollection,"add(range, options)",Method,Fine,false
+word,Word.TableOfFiguresCollection,"add(range, options)",Method,Fine,true
 word,Word.TableOfFiguresCollection,"load(options)",Method,Great,false
 word,Word.TableOfFiguresCollection,"load(propertyNames)",Method,Great,false
 word,Word.TableOfFiguresCollection,"load(propertyNamesAndPaths)",Method,Great,false
-word,Word.TableOfFiguresCollection,"markTocEntry(range, options)",Method,Good,false
+word,Word.TableOfFiguresCollection,"markTocEntry(range, options)",Method,Good,true
 word,Word.TableOfFiguresCollection,"toJSON()",Method,Excellent,false
 word,Word.TableOfFiguresCollection,"track()",Method,Excellent,false
 word,Word.TableOfFiguresCollection,"untrack()",Method,Excellent,false

@@ -11,6 +11,25 @@ remarks: |-
 
   - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [markAllCitations](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markallcitations-member(1)), [markCitation](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-markcitation-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-authorities.yaml
+
+  // Marks each matching case name as a citation.
+  await Word.run(async (context) => {
+      const tablesOfAuthorities: Word.TableOfAuthoritiesCollection = context.document.tablesOfAuthorities;
+      const citationOptions: Word.TableOfAuthoritiesMarkCitationOptions = {
+          category: 1,
+          longCitation: "Contoso v. Fabrikam, 2026",
+      };
+      tablesOfAuthorities.markAllCitations("Contoso v. Fabrikam", citationOptions);
+      await context.sync();
+
+      console.log("Marked every occurrence of Contoso v. Fabrikam as a citation.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

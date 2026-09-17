@@ -11,6 +11,39 @@ remarks: |-
 
   - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [add](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-add-member(1)), [items](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+  // Gets and logs properties from the first table of contents.
+  await Word.run(async (context) => {
+      const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+      tablesOfContents.load("items");
+      await context.sync();
+
+      if (tablesOfContents.items.length === 0) {
+          console.log("No table of contents found. Create one first.");
+          return;
+      }
+
+      const tableOfContents: Word.TableOfContents = tablesOfContents.items[0];
+      tableOfContents.load(
+          "areBuiltInHeadingStylesUsed,arePageNumbersIncluded,arePageNumbersRightAligned,lowerHeadingLevel,range/text,tabLeader,upperHeadingLevel"
+      );
+      await context.sync();
+
+      console.log("Table of contents:", tableOfContents.range.text);
+      console.log(
+          `Heading levels: ${tableOfContents.upperHeadingLevel}-${tableOfContents.lowerHeadingLevel}`
+      );
+      console.log(`Uses built-in heading styles: ${tableOfContents.areBuiltInHeadingStylesUsed}`);
+      console.log(`Includes page numbers: ${tableOfContents.arePageNumbersIncluded}`);
+      console.log(`Right-aligned page numbers: ${tableOfContents.arePageNumbersRightAligned}`);
+      console.log(`Tab leader: ${tableOfContents.tabLeader}`);
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -98,7 +131,33 @@ properties:
     package: word!
     fullName: arePageNumbersRightAligned
     summary: Specifies whether page numbers are aligned with the right margin in the table of contents.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+      // Changes the page number alignment and tab leader in the first table of contents.
+      await Word.run(async (context) => {
+          const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+          tablesOfContents.load("items");
+          await context.sync();
+
+          if (tablesOfContents.items.length === 0) {
+              console.log("No table of contents found. Create one first.");
+              return;
+          }
+
+          const tableOfContents: Word.TableOfContents = tablesOfContents.items[0];
+          tableOfContents.arePageNumbersRightAligned = false;
+          tableOfContents.tabLeader = Word.TabLeader.dashes;
+          await context.sync();
+
+          console.log("Updated the table of contents properties.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -190,7 +249,32 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes this table of contents.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+      // Deletes the first table of contents.
+      await Word.run(async (context) => {
+          const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+          tablesOfContents.load("items");
+          await context.sync();
+
+          if (tablesOfContents.items.length === 0) {
+              console.log("No table of contents found.");
+              return;
+          }
+
+          const tableOfContents: Word.TableOfContents = tablesOfContents.items[0];
+          tableOfContents.delete();
+          await context.sync();
+
+          console.log("Deleted the table of contents.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -347,7 +431,32 @@ methods:
     package: word!
     fullName: updatePageNumbers()
     summary: Updates the entire table of contents.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+      // Updates the page numbers in the first table of contents.
+      await Word.run(async (context) => {
+          const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+          tablesOfContents.load("items");
+          await context.sync();
+
+          if (tablesOfContents.items.length === 0) {
+              console.log("No table of contents found. Create one first.");
+              return;
+          }
+
+          const tableOfContents: Word.TableOfContents = tablesOfContents.items[0];
+          tableOfContents.updatePageNumbers();
+          await context.sync();
+
+          console.log("Updated the table of contents page numbers.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

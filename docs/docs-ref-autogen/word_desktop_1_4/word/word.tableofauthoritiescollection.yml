@@ -47,7 +47,31 @@ methods:
     package: word!
     fullName: add(range, options)
     summary: Adds a table of authorities to the document at the specified range.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-authorities.yaml
+
+      // Adds a table of authorities at the start of the document.
+      await Word.run(async (context) => {
+          const documentBody: Word.Body = context.document.body;
+          const tablesOfAuthorities: Word.TableOfAuthoritiesCollection = context.document.tablesOfAuthorities;
+          const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+          const tableOptions: Word.TableOfAuthoritiesAddOptions = {
+              category: 1,
+              entrySeparator: " ",
+              includeCategoryHeader: true,
+              keepEntryFormatting: true,
+          };
+          const tableOfAuthorities: Word.TableOfAuthorities = tablesOfAuthorities.add(insertionRange, tableOptions);
+          await context.sync();
+
+          console.log("Created a table of authorities.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -122,7 +146,27 @@ methods:
     package: word!
     fullName: markAllCitations(shortCitation, options)
     summary: Inserts a [Table of Authorities Entry (TA) field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c) after all instances of the specified citation text.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-authorities.yaml
+
+      // Marks each matching case name as a citation.
+      await Word.run(async (context) => {
+          const tablesOfAuthorities: Word.TableOfAuthoritiesCollection = context.document.tablesOfAuthorities;
+          const citationOptions: Word.TableOfAuthoritiesMarkCitationOptions = {
+              category: 1,
+              longCitation: "Contoso v. Fabrikam, 2026",
+          };
+          tablesOfAuthorities.markAllCitations("Contoso v. Fabrikam", citationOptions);
+          await context.sync();
+
+          console.log("Marked every occurrence of Contoso v. Fabrikam as a citation.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
