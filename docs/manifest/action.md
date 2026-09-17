@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 02/28/2025
+ms.date: 09/17/2026
 ms.localizationpriority: medium
 ---
 
@@ -115,7 +115,7 @@ The following example shows two actions that share the same **\<TaskpaneId\>**.
 </Action>
 ```  
 
-The following examples show two actions that use a different **\<TaskpaneId\>**. To see these examples in context, see [Simple Add-in Commands Sample](https://github.com/OfficeDev/Office-Add-in-Commands-Samples/blob/master/Simple/Manifest/SimpleAddin.xml).
+The following examples show two actions that use a different **\<TaskpaneId\>**.
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -131,8 +131,8 @@ The following examples show two actions that use a different **\<TaskpaneId\>**.
 
 ```xml
 <bt:Urls>
-   <bt:Url id="Contoso.Taskpane1.Url" DefaultValue="https://commandsimple.azurewebsites.net/Taskpane.html" />
-   <bt:Url id="Contoso.Taskpane2.Url" DefaultValue="https://commandsimple.azurewebsites.net/Taskpane2.html" />
+  <bt:Url id="Contoso.Taskpane1.Url" DefaultValue="https://localhost:3000/Taskpane.html" />
+  <bt:Url id="Contoso.Taskpane2.Url" DefaultValue="https://localhost:3000/Taskpane2.html" />
 </bt:Urls>
 ```  
 
