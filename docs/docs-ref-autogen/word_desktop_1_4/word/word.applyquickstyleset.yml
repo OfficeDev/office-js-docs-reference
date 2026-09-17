@@ -11,6 +11,23 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [applyQuickStyleSet](/javascript/api/word/word.document#word-word-document-applyquickstyleset-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-quick-style-sets.yaml
+
+  // Restores the Quick Style set that was active when the document was opened.
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+    const styleSet: Word.ApplyQuickStyleSet = Word.ApplyQuickStyleSet.sessionStart;
+
+    document.applyQuickStyleSet(styleSet);
+    await context.sync();
+
+    console.log("Restored the Quick Style set from the start of the session.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

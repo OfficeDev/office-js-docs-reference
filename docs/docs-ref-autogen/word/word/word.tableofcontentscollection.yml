@@ -47,7 +47,32 @@ methods:
     package: word!
     fullName: add(range, options)
     summary: Adds a table of contents to the document at the specified range.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+      // Adds a table of contents at the start of the document.
+      await Word.run(async (context) => {
+          const documentBody: Word.Body = context.document.body;
+          const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+          const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+          const tableOptions: Word.TableOfContentsAddOptions = {
+              includePageNumbers: true,
+              lowerHeadingLevel: 2,
+              rightAlignPageNumbers: true,
+              upperHeadingLevel: 1,
+              useBuiltInHeadingStyles: true,
+          };
+          const tableOfContents: Word.TableOfContents = tablesOfContents.add(insertionRange, tableOptions);
+          await context.sync();
+
+          console.log("Created a table of contents.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

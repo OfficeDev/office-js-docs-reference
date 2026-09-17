@@ -11,6 +11,38 @@ remarks: |-
 
   - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [add](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-add-member(1)), [items](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+  // Gets and logs properties from the first table of figures.
+  await Word.run(async (context) => {
+      const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+      tablesOfFigures.load("items");
+      await context.sync();
+
+      if (tablesOfFigures.items.length === 0) {
+          console.log("No table of figures found. Create one first.");
+          return;
+      }
+
+      const tableOfFigures: Word.TableOfFigures = tablesOfFigures.items[0];
+      tableOfFigures.load(
+          "areFieldsUsed,arePageNumbersIncluded,arePageNumbersRightAligned,captionLabel,isLabelIncluded,range/text,tabLeader"
+      );
+      await context.sync();
+
+      console.log("Table of figures:", tableOfFigures.range.text);
+      console.log(`Caption label: ${tableOfFigures.captionLabel}`);
+      console.log(`Uses TC fields: ${tableOfFigures.areFieldsUsed}`);
+      console.log(`Includes label: ${tableOfFigures.isLabelIncluded}`);
+      console.log(`Includes page numbers: ${tableOfFigures.arePageNumbersIncluded}`);
+      console.log(`Right-aligned page numbers: ${tableOfFigures.arePageNumbersRightAligned}`);
+      console.log(`Tab leader: ${tableOfFigures.tabLeader}`);
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -137,7 +169,33 @@ properties:
     package: word!
     fullName: isLabelIncluded
     summary: Specifies whether the caption label and caption number are included in the table of figures.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+      // Changes the label and tab leader in the first table of figures.
+      await Word.run(async (context) => {
+          const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+          tablesOfFigures.load("items");
+          await context.sync();
+
+          if (tablesOfFigures.items.length === 0) {
+              console.log("No table of figures found. Create one first.");
+              return;
+          }
+
+          const tableOfFigures: Word.TableOfFigures = tablesOfFigures.items[0];
+          tableOfFigures.isLabelIncluded = false;
+          tableOfFigures.tabLeader = Word.TabLeader.dashes;
+          await context.sync();
+
+          console.log("Updated the table of figures properties.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -216,7 +274,32 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes this table of figures.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+      // Deletes the first table of figures.
+      await Word.run(async (context) => {
+          const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+          tablesOfFigures.load("items");
+          await context.sync();
+
+          if (tablesOfFigures.items.length === 0) {
+              console.log("No table of figures found.");
+              return;
+          }
+
+          const tableOfFigures: Word.TableOfFigures = tablesOfFigures.items[0];
+          tableOfFigures.delete();
+          await context.sync();
+
+          console.log("Deleted the table of figures.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -373,7 +456,32 @@ methods:
     package: word!
     fullName: updatePageNumbers()
     summary: Updates the entire table of figures.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+      // Updates the page numbers in the first table of figures.
+      await Word.run(async (context) => {
+          const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+          tablesOfFigures.load("items");
+          await context.sync();
+
+          if (tablesOfFigures.items.length === 0) {
+              console.log("No table of figures found. Create one first.");
+              return;
+          }
+
+          const tableOfFigures: Word.TableOfFigures = tablesOfFigures.items[0];
+          tableOfFigures.updatePageNumbers();
+          await context.sync();
+
+          console.log("Updated the table of figures page numbers.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
