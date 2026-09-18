@@ -1951,7 +1951,31 @@ properties:
     package: word!
     fullName: tablesOfAuthorities
     summary: Returns a `TableOfAuthoritiesCollection` object that represents all the tables of authorities in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-authorities.yaml
+
+      // Adds a table of authorities at the start of the document.
+      await Word.run(async (context) => {
+          const documentBody: Word.Body = context.document.body;
+          const tablesOfAuthorities: Word.TableOfAuthoritiesCollection = context.document.tablesOfAuthorities;
+          const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+          const tableOptions: Word.TableOfAuthoritiesAddOptions = {
+              category: 1,
+              entrySeparator: " ",
+              includeCategoryHeader: true,
+              keepEntryFormatting: true,
+          };
+          const tableOfAuthorities: Word.TableOfAuthorities = tablesOfAuthorities.add(insertionRange, tableOptions);
+          await context.sync();
+
+          console.log("Created a table of authorities.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1964,7 +1988,32 @@ properties:
     package: word!
     fullName: tablesOfContents
     summary: Returns a `TableOfContentsCollection` object that represents all the tables of contents in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-contents.yaml
+
+      // Adds a table of contents at the start of the document.
+      await Word.run(async (context) => {
+          const documentBody: Word.Body = context.document.body;
+          const tablesOfContents: Word.TableOfContentsCollection = context.document.tablesOfContents;
+          const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+          const tableOptions: Word.TableOfContentsAddOptions = {
+              includePageNumbers: true,
+              lowerHeadingLevel: 2,
+              rightAlignPageNumbers: true,
+              upperHeadingLevel: 1,
+              useBuiltInHeadingStyles: true,
+          };
+          const tableOfContents: Word.TableOfContents = tablesOfContents.add(insertionRange, tableOptions);
+          await context.sync();
+
+          console.log("Created a table of contents.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1977,7 +2026,33 @@ properties:
     package: word!
     fullName: tablesOfFigures
     summary: Returns a `TableOfFiguresCollection` object that represents all the tables of figures in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+      // Adds a table of figures at the start of the document.
+      await Word.run(async (context) => {
+          const documentBody: Word.Body = context.document.body;
+          const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+          const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+          const tableOptions: Word.TableOfFiguresAddOptions = {
+              captionLabel: "Figure",
+              includeLabel: true,
+              includePageNumbers: true,
+              rightAlignPageNumbers: true,
+              tableId: "F",
+              useFields: true,
+          };
+          const tableOfFigures: Word.TableOfFigures = tablesOfFigures.add(insertionRange, tableOptions);
+          await context.sync();
+
+          console.log("Created a table of figures.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2321,7 +2396,25 @@ methods:
     package: word!
     fullName: applyQuickStyleSet(style)
     summary: Applies the specified Quick Style set to the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-quick-style-sets.yaml
+
+      // Applies the Quick Style set from the document's template, if one is available.
+      await Word.run(async (context) => {
+        const document: Word.Document = context.document;
+        const styleSet: Word.ApplyQuickStyleSet = Word.ApplyQuickStyleSet.template;
+
+        document.applyQuickStyleSet(styleSet);
+        await context.sync();
+
+        console.log("Applied the Quick Style set from the document template.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

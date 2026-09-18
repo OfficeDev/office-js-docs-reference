@@ -12,6 +12,37 @@ remarks: |-
   - [Word.TableOfContentsCollection](/javascript/api/word/word.tableofcontentscollection): [markTocEntry](/javascript/api/word/word.tableofcontentscollection#word-word-tableofcontentscollection-marktocentry-member(1))
   - [Word.TableOfFiguresCollection](/javascript/api/word/word.tableoffigurescollection): [markTocEntry](/javascript/api/word/word.tableoffigurescollection#word-word-tableoffigurescollection-marktocentry-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-figures.yaml
+
+  // Marks each figure paragraph as a table entry.
+  await Word.run(async (context) => {
+      const documentBody: Word.Body = context.document.body;
+      const tablesOfFigures: Word.TableOfFiguresCollection = context.document.tablesOfFigures;
+      const paragraphs: Word.ParagraphCollection = documentBody.paragraphs;
+      paragraphs.load("items/text");
+      await context.sync();
+
+      const figureParagraphs: Word.Paragraph[] = paragraphs.items.filter((paragraph: Word.Paragraph) =>
+          paragraph.text.startsWith("Figure ")
+      );
+      figureParagraphs.forEach((figureParagraph: Word.Paragraph) => {
+          const entryOptions: Word.TableOfContentsMarkEntryOptions = {
+              entry: figureParagraph.text,
+              level: 1,
+              tableId: "F",
+          };
+          const entryRange: Word.Range = figureParagraph.getRange();
+          tablesOfFigures.markTocEntry(entryRange, entryOptions);
+      });
+      await context.sync();
+
+      console.log(`Marked ${figureParagraphs.length} table of figures entries.`);
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

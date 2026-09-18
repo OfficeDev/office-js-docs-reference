@@ -11,6 +11,29 @@ remarks: |-
 
   - [Word.TableOfAuthoritiesCollection](/javascript/api/word/word.tableofauthoritiescollection): [add](/javascript/api/word/word.tableofauthoritiescollection#word-word-tableofauthoritiescollection-add-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/42-reference-tables/table-of-authorities.yaml
+
+  // Adds a table of authorities at the start of the document.
+  await Word.run(async (context) => {
+      const documentBody: Word.Body = context.document.body;
+      const tablesOfAuthorities: Word.TableOfAuthoritiesCollection = context.document.tablesOfAuthorities;
+      const insertionRange: Word.Range = documentBody.getRange(Word.RangeLocation.start);
+      const tableOptions: Word.TableOfAuthoritiesAddOptions = {
+          category: 1,
+          entrySeparator: " ",
+          includeCategoryHeader: true,
+          keepEntryFormatting: true,
+      };
+      const tableOfAuthorities: Word.TableOfAuthorities = tablesOfAuthorities.add(insertionRange, tableOptions);
+      await context.sync();
+
+      console.log("Created a table of authorities.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
