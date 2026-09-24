@@ -5481,7 +5481,7 @@ excel,Excel.RangeFill,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.RangeFill,"set(properties, options)",Method,Good,false
 excel,Excel.RangeFill,"set(properties)",Method,Fine,false
 excel,Excel.RangeFill,"toJSON()",Method,Excellent,false
-excel,Excel.RangeFont,N/A,Class,Fine,false
+excel,Excel.RangeFont,N/A,Class,Fine,true
 excel,Excel.RangeFont,"bold",Property,Good,true
 excel,Excel.RangeFont,"color",Property,Excellent,true
 excel,Excel.RangeFont,"context",Property,Excellent,false
@@ -12359,7 +12359,7 @@ word,Word.BorderWidth,"pt225",EnumField,Great,false
 word,Word.BorderWidth,"pt300",EnumField,Great,false
 word,Word.BorderWidth,"pt450",EnumField,Great,false
 word,Word.BorderWidth,"pt600",EnumField,Great,false
-word,Word.Break,N/A,Class,Fine,false
+word,Word.Break,N/A,Class,Fine,true
 word,Word.Break,"context",Property,Excellent,false
 word,Word.Break,"pageIndex",Property,Great,false
 word,Word.Break,"range",Property,Excellent,false
@@ -12371,7 +12371,7 @@ word,Word.Break,"set(properties)",Method,Fine,false
 word,Word.Break,"toJSON()",Method,Excellent,false
 word,Word.Break,"track()",Method,Excellent,false
 word,Word.Break,"untrack()",Method,Excellent,false
-word,Word.BreakCollection,N/A,Class,Fine,false
+word,Word.BreakCollection,N/A,Class,Fine,true
 word,Word.BreakCollection,"context",Property,Excellent,false
 word,Word.BreakCollection,"items",Property,Great,false
 word,Word.BreakCollection,"load(options)",Method,Great,false
@@ -16039,7 +16039,7 @@ word,Word.OutlineLevel,"outlineLevel8",EnumField,Great,false
 word,Word.OutlineLevel,"outlineLevel9",EnumField,Great,false
 word,Word.OutlineLevel,"outlineLevelBodyText",EnumField,Great,false
 word,Word.Page,N/A,Class,Fine,true
-word,Word.Page,"breaks",Property,Great,false
+word,Word.Page,"breaks",Property,Great,true
 word,Word.Page,"context",Property,Excellent,false
 word,Word.Page,"height",Property,Great,false
 word,Word.Page,"index",Property,Excellent,true

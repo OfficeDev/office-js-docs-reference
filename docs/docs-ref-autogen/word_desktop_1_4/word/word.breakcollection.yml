@@ -11,6 +11,34 @@ remarks: |-
 
   - [Word.Page](/javascript/api/word/word.page): [breaks](/javascript/api/word/word.page#word-word-page-breaks-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+  // Gets every page, column, and section break in the active document pane.
+  await Word.run(async (context) => {
+    const pages: Word.PageCollection = context.document.activeWindow.activePane.pages;
+    pages.load("items");
+    await context.sync();
+
+    const breakCollections: Word.BreakCollection[] = [];
+    pages.items.forEach((page: Word.Page) => {
+      const breaks: Word.BreakCollection = page.breaks;
+      breaks.load("items/pageIndex");
+      breakCollections.push(breaks);
+    });
+
+    await context.sync();
+
+    const documentBreaks: Word.Break[] = breakCollections.flatMap((breaks) => breaks.items);
+    console.log(`Breaks found: ${documentBreaks.length}`);
+    documentBreaks.forEach((documentBreak: Word.Break) => {
+      console.log(`Break on page ${documentBreak.pageIndex}.`);
+    });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
