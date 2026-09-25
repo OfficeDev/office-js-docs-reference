@@ -314,6 +314,19 @@ OneNote.Image#ocrData:member:
         console.log(image.ocrData.ocrText);
         console.log(image.ocrData.ocrLanguageId);
     });
+OneNote.InsertLocation:enum:
+  - |-
+    // Insert a new page as a sibling before the current page.
+    await OneNote.run(async (context) => {
+        const application = context.application;
+        const currentPage = application.getActivePage();
+
+        const insertedPage = currentPage.insertPageAsSibling(OneNote.InsertLocation.before, 'Rubric grading page');
+        await context.sync();
+
+        application.navigateToPage(insertedPage);
+        await context.sync();
+    });
 OneNote.Notebook#addSection:member(1):
   - |-
     await OneNote.run(async (context) => {
