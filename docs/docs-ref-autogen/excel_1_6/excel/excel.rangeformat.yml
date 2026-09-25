@@ -67,14 +67,15 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/formatting.yaml
 
+      // Set the fill color for the header range.
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const headerRange: Excel.Range = sheet.getRange("B2:E2");
 
-          const range = sheet.getRange("B2:E2");
-          range.format.fill.color = "#4472C4";;
-          range.format.font.color = "white";
+          headerRange.format.fill.color = "#D9EAF7";
 
           await context.sync();
+          console.log("The header fill color was updated.");
       });
       ```
 
