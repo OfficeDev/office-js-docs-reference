@@ -564,6 +564,19 @@ OneNote.Page#getRestApiId:member(1):
         // according to the OneNote Development Blog.
         // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
+OneNote.Page#insertPageAsSibling:member(1):
+  - |-
+    // Insert a new page as a sibling before the current page.
+    await OneNote.run(async (context) => {
+        const application = context.application;
+        const currentPage = application.getActivePage();
+
+        const insertedPage = currentPage.insertPageAsSibling(OneNote.InsertLocation.before, 'Rubric grading page');
+        await context.sync();
+
+        application.navigateToPage(insertedPage);
+        await context.sync();
+    });
 OneNote.Page#insertPageAsSibling:member(2):
   - |-
     await OneNote.run(async (context) => {
