@@ -13,7 +13,7 @@ remarks: |-
 
   **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
-  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage sensitivity labels in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/sensitivity-label)<!-- -->.
 
   #### Used by
 
@@ -38,7 +38,7 @@ methods:
 
       **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
-      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage sensitivity labels in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/sensitivity-label)<!-- -->.
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +68,7 @@ methods:
 
       **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
-      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage sensitivity labels in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/sensitivity-label)<!-- -->.
 
       #### Examples
 
@@ -122,7 +122,7 @@ methods:
 
       **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.
 
-      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage sensitivity labels in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/sensitivity-label)<!-- -->.
 
     isPreview: false
     isDeprecated: false
@@ -161,7 +161,7 @@ methods:
 
       **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.
 
-      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage sensitivity labels in Office Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/sensitivity-label)<!-- -->.
 
       #### Examples
 

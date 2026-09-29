@@ -16,14 +16,16 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
-  // Inserts a section break on the next page.
+  // Gets the first section and reads the text in its body.
   await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+    const sections: Word.SectionCollection = context.document.sections;
+    const firstSection: Word.Section = sections.getFirst();
+    const firstSectionBody: Word.Body = firstSection.body;
+    firstSectionBody.load("text");
 
     await context.sync();
 
-    console.log("Inserted section break on next page.");
+    console.log(`First section text: ${firstSectionBody.text}`);
   });
   ```
 

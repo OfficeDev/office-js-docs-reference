@@ -16,30 +16,16 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-  // Updates border properties (e.g., type, width, color) of the specified style.
+  // Gets the outside border properties of the sample style.
   await Word.run(async (context) => {
-    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-    if (styleName == "") {
-      console.warn("Enter a style name to update border properties.");
-      return;
-    }
-
-    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
+    const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+    const borders: Word.BorderCollection = sampleStyle.borders;
+    borders.load("outsideBorderColor, outsideBorderType, outsideBorderWidth");
     await context.sync();
 
-    if (style.isNullObject) {
-      console.warn(`There's no existing style with the name '${styleName}'.`);
-    } else {
-      const borders: Word.BorderCollection = style.borders;
-      borders.load("items");
-      await context.sync();
-
-      borders.outsideBorderType = Word.BorderType.dashed;
-      borders.outsideBorderWidth = Word.BorderWidth.pt025;
-      borders.outsideBorderColor = "green";
-      console.log("Updated outside borders.");
-    }
+    console.log("Outside border color:", borders.outsideBorderColor);
+    console.log("Outside border type:", borders.outsideBorderType);
+    console.log("Outside border width:", borders.outsideBorderWidth);
   });
   ```
 
@@ -125,30 +111,14 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates border properties (e.g., type, width, color) of the specified style.
+      // Sets the outside border color of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update border properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const borders: Word.BorderCollection = sampleStyle.borders;
+        borders.outsideBorderColor = "#4472C4";
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const borders: Word.BorderCollection = style.borders;
-          borders.load("items");
-          await context.sync();
-
-          borders.outsideBorderType = Word.BorderType.dashed;
-          borders.outsideBorderWidth = Word.BorderWidth.pt025;
-          borders.outsideBorderColor = "green";
-          console.log("Updated outside borders.");
-        }
+        console.log("Set the Sample Style outside border color to blue.");
       });
       ```
 
@@ -171,30 +141,14 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates border properties (e.g., type, width, color) of the specified style.
+      // Sets the outside border type of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update border properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const borders: Word.BorderCollection = sampleStyle.borders;
+        borders.outsideBorderType = Word.BorderType.dashed;
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const borders: Word.BorderCollection = style.borders;
-          borders.load("items");
-          await context.sync();
-
-          borders.outsideBorderType = Word.BorderType.dashed;
-          borders.outsideBorderWidth = Word.BorderWidth.pt025;
-          borders.outsideBorderColor = "green";
-          console.log("Updated outside borders.");
-        }
+        console.log("Set the Sample Style outside border type to dashed.");
       });
       ```
 
@@ -217,30 +171,15 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates border properties (e.g., type, width, color) of the specified style.
+      // Sets the outside border width of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update border properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const borders: Word.BorderCollection = sampleStyle.borders;
+        const borderWidth: Word.BorderWidth = Word.BorderWidth.pt225;
+        borders.outsideBorderWidth = borderWidth;
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const borders: Word.BorderCollection = style.borders;
-          borders.load("items");
-          await context.sync();
-
-          borders.outsideBorderType = Word.BorderType.dashed;
-          borders.outsideBorderWidth = Word.BorderWidth.pt025;
-          borders.outsideBorderColor = "green";
-          console.log("Updated outside borders.");
-        }
+        console.log("Set the Sample Style outside border width to 2.25 points.");
       });
       ```
 

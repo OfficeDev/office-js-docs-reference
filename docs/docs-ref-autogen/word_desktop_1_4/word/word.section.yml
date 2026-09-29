@@ -17,14 +17,16 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
-  // Inserts a section break on the next page.
+  // Gets the first section and reads the text in its body.
   await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+    const sections: Word.SectionCollection = context.document.sections;
+    const firstSection: Word.Section = sections.getFirst();
+    const firstSectionBody: Word.Body = firstSection.body;
+    firstSectionBody.load("text");
 
     await context.sync();
 
-    console.log("Inserted section break on next page.");
+    console.log(`First section text: ${firstSectionBody.text}`);
   });
   ```
 
@@ -329,7 +331,31 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: Gets the next section. If this section is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+      // Navigates from the first section to the next section when one exists.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        const firstSection: Word.Section = sections.getFirst();
+        const nextSection: Word.Section = firstSection.getNextOrNullObject();
+        nextSection.load("isNullObject, body/text");
+
+        await context.sync();
+
+        if (nextSection.isNullObject) {
+          console.log("The document doesn't have another section.");
+          return;
+        }
+
+        console.log(`Next section text: ${nextSection.body.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

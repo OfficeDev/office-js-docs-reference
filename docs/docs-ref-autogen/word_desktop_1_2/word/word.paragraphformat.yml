@@ -14,27 +14,30 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
 
-  // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+  // Gets the paragraph format properties of a custom paragraph style.
   await Word.run(async (context) => {
-    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-    if (styleName == "") {
-      console.warn("Enter a style name to update its paragraph format.");
-      return;
-    }
-
-    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
+    const styleName = "SampleParagraphFormat";
+    const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+    const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+    const loadOptions: Word.Interfaces.ParagraphFormatLoadOptions = {
+      alignment: true,
+      firstLineIndent: true,
+      keepTogether: true,
+      keepWithNext: true,
+      leftIndent: true,
+      lineSpacing: true,
+      rightIndent: true,
+      spaceAfter: true,
+      spaceBefore: true,
+      widowControl: true
+    };
+    paragraphFormat.load(loadOptions);
     await context.sync();
 
-    if (style.isNullObject) {
-      console.warn(`There's no existing style with the name '${styleName}'.`);
-    } else {
-      style.paragraphFormat.leftIndent = 30;
-      style.paragraphFormat.alignment = Word.Alignment.centered;
-      console.log(`Successfully the paragraph format of the '${styleName}' style.`);
-    }
+    const formatData: Word.Interfaces.ParagraphFormatData = paragraphFormat.toJSON();
+    console.log("SampleParagraphFormat properties:", formatData);
   });
   ```
 
@@ -53,27 +56,17 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
 
-      // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+      // Sets the alignment of a custom paragraph style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update its paragraph format.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const styleName = "SampleParagraphFormat";
+        const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+        const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+        paragraphFormat.alignment = Word.Alignment.justified;
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          style.paragraphFormat.leftIndent = 30;
-          style.paragraphFormat.alignment = Word.Alignment.centered;
-          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
-        }
+        console.log("Set the SampleParagraphFormat alignment to justified.");
       });
       ```
 
@@ -114,7 +107,27 @@ properties:
     package: word!
     fullName: keepTogether
     summary: Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
-    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
+
+      // Keeps styled paragraphs together and controls page breaks around them.
+      await Word.run(async (context) => {
+        const styleName = "SampleParagraphFormat";
+        const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+        const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+        paragraphFormat.keepTogether = true;
+        paragraphFormat.keepWithNext = true;
+        paragraphFormat.widowControl = true;
+        await context.sync();
+
+        console.log("Updated the SampleParagraphFormat pagination settings.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -146,27 +159,19 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
 
-      // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+      // Sets the first-line, left, and right indents of a custom paragraph style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update its paragraph format.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const styleName = "SampleParagraphFormat";
+        const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+        const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+        paragraphFormat.firstLineIndent = 18;
+        paragraphFormat.leftIndent = 24;
+        paragraphFormat.rightIndent = 12;
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          style.paragraphFormat.leftIndent = 30;
-          style.paragraphFormat.alignment = Word.Alignment.centered;
-          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
-        }
+        console.log("Updated the SampleParagraphFormat indents.");
       });
       ```
 
@@ -181,7 +186,27 @@ properties:
     package: word!
     fullName: lineSpacing
     summary: Specifies the line spacing (in points) for the specified paragraphs.
-    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
+
+      // Sets the line and paragraph spacing of a custom paragraph style.
+      await Word.run(async (context) => {
+        const styleName = "SampleParagraphFormat";
+        const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+        const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+        paragraphFormat.lineSpacing = 18;
+        paragraphFormat.spaceAfter = 12;
+        paragraphFormat.spaceBefore = 6;
+        await context.sync();
+
+        console.log("Updated the SampleParagraphFormat spacing.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

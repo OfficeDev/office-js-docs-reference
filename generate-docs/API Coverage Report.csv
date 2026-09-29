@@ -6410,13 +6410,13 @@ excel,Excel.TableRow,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.TableRow,"set(properties, options)",Method,Good,false
 excel,Excel.TableRow,"set(properties)",Method,Fine,false
 excel,Excel.TableRow,"toJSON()",Method,Excellent,false
-excel,Excel.TableRowCollection,N/A,Class,Excellent,false
+excel,Excel.TableRowCollection,N/A,Class,Excellent,true
 excel,Excel.TableRowCollection,"context",Property,Excellent,false
 excel,Excel.TableRowCollection,"count",Property,Great,false
 excel,Excel.TableRowCollection,"items",Property,Great,false
 excel,Excel.TableRowCollection,"add(index, values, alwaysInsert)",Method,Excellent,true
 excel,Excel.TableRowCollection,"addAsJson(index, values, alwaysInsert)",Method,Excellent,false
-excel,Excel.TableRowCollection,"deleteRows(rows)",Method,Excellent,false
+excel,Excel.TableRowCollection,"deleteRows(rows)",Method,Excellent,true
 excel,Excel.TableRowCollection,"deleteRowsAt(index, count)",Method,Great,false
 excel,Excel.TableRowCollection,"getCount()",Method,Fine,false
 excel,Excel.TableRowCollection,"getItemAt(index)",Method,Excellent,true
@@ -8627,7 +8627,7 @@ onenote,OneNote.InkWordCollection,"load(propertyNamesAndPaths)",Method,Great,fal
 onenote,OneNote.InkWordCollection,"toJSON()",Method,Excellent,false
 onenote,OneNote.InkWordCollection,"track()",Method,Excellent,false
 onenote,OneNote.InkWordCollection,"untrack()",Method,Excellent,false
-onenote,OneNote.InsertLocation,N/A,Enum,Missing,false
+onenote,OneNote.InsertLocation,N/A,Enum,Missing,true
 onenote,OneNote.InsertLocation,"after",EnumField,Great,false
 onenote,OneNote.InsertLocation,"before",EnumField,Great,false
 onenote,OneNote.ListType,N/A,Enum,Missing,false
@@ -8794,7 +8794,7 @@ onenote,OneNote.Page,"copyToSection(destinationSection)",Method,Fine,true
 onenote,OneNote.Page,"copyToSectionAndSetClassNotebookPageSource(destinationSection)",Method,Fine,false
 onenote,OneNote.Page,"getRestApiId()",Method,Poor,true
 onenote,OneNote.Page,"hasTitleContent()",Method,Fine,false
-onenote,OneNote.Page,"insertPageAsSibling(location, title)",Method,Fine,false
+onenote,OneNote.Page,"insertPageAsSibling(location, title)",Method,Fine,true
 onenote,OneNote.Page,"insertPageAsSibling(location, title)",Method,Fine,true
 onenote,OneNote.Page,"load(options)",Method,Great,false
 onenote,OneNote.Page,"load(propertyNames)",Method,Great,true
@@ -16508,10 +16508,10 @@ word,Word.ParagraphFormat,N/A,Class,Fine,true
 word,Word.ParagraphFormat,"alignment",Property,Great,true
 word,Word.ParagraphFormat,"context",Property,Excellent,false
 word,Word.ParagraphFormat,"firstLineIndent",Property,Excellent,false
-word,Word.ParagraphFormat,"keepTogether",Property,Excellent,false
+word,Word.ParagraphFormat,"keepTogether",Property,Excellent,true
 word,Word.ParagraphFormat,"keepWithNext",Property,Excellent,false
 word,Word.ParagraphFormat,"leftIndent",Property,Good,true
-word,Word.ParagraphFormat,"lineSpacing",Property,Great,false
+word,Word.ParagraphFormat,"lineSpacing",Property,Great,true
 word,Word.ParagraphFormat,"lineUnitAfter",Property,Great,false
 word,Word.ParagraphFormat,"lineUnitBefore",Property,Great,false
 word,Word.ParagraphFormat,"mirrorIndents",Property,Great,false
@@ -16903,7 +16903,7 @@ word,Word.Range,"storyLength",Property,Great,false
 word,Word.Range,"storyType",Property,Good,false
 word,Word.Range,"style",Property,Excellent,false
 word,Word.Range,"styleBuiltIn",Property,Excellent,true
-word,Word.Range,"tableColumns",Property,Excellent,false
+word,Word.Range,"tableColumns",Property,Excellent,true
 word,Word.Range,"tables",Property,Great,false
 word,Word.Range,"text",Property,Good,true
 word,Word.Range,"twoLinesInOne",Property,Excellent,false
@@ -17311,7 +17311,7 @@ word,Word.Section,"getFooter(type)",Method,Fine,true
 word,Word.Section,"getHeader(type)",Method,Fine,true
 word,Word.Section,"getHeader(type)",Method,Fine,true
 word,Word.Section,"getNext()",Method,Great,false
-word,Word.Section,"getNextOrNullObject()",Method,Excellent,false
+word,Word.Section,"getNextOrNullObject()",Method,Excellent,true
 word,Word.Section,"load(options)",Method,Great,false
 word,Word.Section,"load(propertyNames)",Method,Great,false
 word,Word.Section,"load(propertyNamesAndPaths)",Method,Great,false
@@ -17686,10 +17686,10 @@ word,Word.SettingCollection,"toJSON()",Method,Excellent,false
 word,Word.SettingCollection,"track()",Method,Excellent,false
 word,Word.SettingCollection,"untrack()",Method,Excellent,false
 word,Word.Shading,N/A,Class,Fine,true
-word,Word.Shading,"backgroundPatternColor",Property,Excellent,false
+word,Word.Shading,"backgroundPatternColor",Property,Excellent,true
 word,Word.Shading,"context",Property,Excellent,false
-word,Word.Shading,"foregroundPatternColor",Property,Excellent,false
-word,Word.Shading,"texture",Property,Excellent,false
+word,Word.Shading,"foregroundPatternColor",Property,Excellent,true
+word,Word.Shading,"texture",Property,Excellent,true
 word,Word.Shading,"load(options)",Method,Great,false
 word,Word.Shading,"load(propertyNames)",Method,Great,false
 word,Word.Shading,"load(propertyNamesAndPaths)",Method,Great,false
@@ -18285,8 +18285,8 @@ word,Word.TableCell,"parentRow",Property,Good,false
 word,Word.TableCell,"parentTable",Property,Good,false
 word,Word.TableCell,"rowIndex",Property,Great,false
 word,Word.TableCell,"shading",Property,Excellent,false
-word,Word.TableCell,"shadingColor",Property,Excellent,false
-word,Word.TableCell,"value",Property,Good,false
+word,Word.TableCell,"shadingColor",Property,Excellent,true
+word,Word.TableCell,"value",Property,Good,true
 word,Word.TableCell,"verticalAlignment",Property,Excellent,true
 word,Word.TableCell,"width",Property,Good,false
 word,Word.TableCell,"autoSum()",Method,Great,false
@@ -18360,7 +18360,7 @@ word,Word.TableCollection,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.TableCollection,"toJSON()",Method,Excellent,false
 word,Word.TableCollection,"track()",Method,Excellent,false
 word,Word.TableCollection,"untrack()",Method,Excellent,false
-word,Word.TableColumn,N/A,Class,Fine,false
+word,Word.TableColumn,N/A,Class,Fine,true
 word,Word.TableColumn,"borders",Property,Excellent,false
 word,Word.TableColumn,"columnIndex",Property,Great,false
 word,Word.TableColumn,"context",Property,Excellent,false
@@ -18370,7 +18370,7 @@ word,Word.TableColumn,"nestingLevel",Property,Great,false
 word,Word.TableColumn,"preferredWidth",Property,Excellent,false
 word,Word.TableColumn,"preferredWidthType",Property,Excellent,false
 word,Word.TableColumn,"shading",Property,Excellent,false
-word,Word.TableColumn,"width",Property,Great,false
+word,Word.TableColumn,"width",Property,Great,true
 word,Word.TableColumn,"autoFit()",Method,Good,false
 word,Word.TableColumn,"delete()",Method,Poor,false
 word,Word.TableColumn,"load(options)",Method,Great,false
@@ -18385,7 +18385,7 @@ word,Word.TableColumn,"sort()",Method,Poor,false
 word,Word.TableColumn,"toJSON()",Method,Excellent,false
 word,Word.TableColumn,"track()",Method,Excellent,false
 word,Word.TableColumn,"untrack()",Method,Excellent,false
-word,Word.TableColumnCollection,N/A,Class,Good,false
+word,Word.TableColumnCollection,N/A,Class,Good,true
 word,Word.TableColumnCollection,"context",Property,Excellent,false
 word,Word.TableColumnCollection,"items",Property,Great,false
 word,Word.TableColumnCollection,"add(beforeColumn)",Method,Good,false
@@ -18644,12 +18644,12 @@ word,Word.TableRow,"preferredHeight",Property,Great,false
 word,Word.TableRow,"range",Property,Great,false
 word,Word.TableRow,"rowIndex",Property,Great,false
 word,Word.TableRow,"shading",Property,Excellent,false
-word,Word.TableRow,"shadingColor",Property,Excellent,false
-word,Word.TableRow,"values",Property,Great,false
+word,Word.TableRow,"shadingColor",Property,Excellent,true
+word,Word.TableRow,"values",Property,Great,true
 word,Word.TableRow,"verticalAlignment",Property,Excellent,false
 word,Word.TableRow,"clear()",Method,Fine,false
 word,Word.TableRow,"convertToText(options)",Method,Fine,false
-word,Word.TableRow,"delete()",Method,Poor,false
+word,Word.TableRow,"delete()",Method,Poor,true
 word,Word.TableRow,"getBorder(borderLocation)",Method,Fine,true
 word,Word.TableRow,"getBorder(borderLocation)",Method,Fine,false
 word,Word.TableRow,"getCellPadding(cellPaddingLocation)",Method,Poor,true
@@ -18657,7 +18657,7 @@ word,Word.TableRow,"getCellPadding(cellPaddingLocation)",Method,Poor,false
 word,Word.TableRow,"getNext()",Method,Great,false
 word,Word.TableRow,"getNextOrNullObject()",Method,Excellent,false
 word,Word.TableRow,"insertContentControl()",Method,Fine,false
-word,Word.TableRow,"insertRows(insertLocation, rowCount, values)",Method,Great,false
+word,Word.TableRow,"insertRows(insertLocation, rowCount, values)",Method,Great,true
 word,Word.TableRow,"load(options)",Method,Great,false
 word,Word.TableRow,"load(propertyNames)",Method,Great,false
 word,Word.TableRow,"load(propertyNamesAndPaths)",Method,Great,false

@@ -14,6 +14,22 @@ remarks: |-
   - [OneNote.Section](/javascript/api/onenote/onenote.section): [insertSectionAsSibling](/javascript/api/onenote/onenote.section#onenote-onenote-section-insertsectionassibling-member(1))
   - [OneNote.TableRow](/javascript/api/onenote/onenote.tablerow): [insertRowAsSibling](/javascript/api/onenote/onenote.tablerow#onenote-onenote-tablerow-insertrowassibling-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Insert a new page as a sibling before the current page.
+  await OneNote.run(async (context) => {
+      const application = context.application;
+      const currentPage = application.getActivePage();
+
+      const insertedPage = currentPage.insertPageAsSibling(OneNote.InsertLocation.before, 'Rubric grading page');
+      await context.sync();
+
+      application.navigateToPage(insertedPage);
+      await context.sync();
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

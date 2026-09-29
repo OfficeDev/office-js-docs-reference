@@ -359,7 +359,24 @@ methods:
     package: onenote!
     fullName: insertPageAsSibling(location, title)
     summary: Inserts a new page before or after the current page.
-    remarks: '[API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)'
+    remarks: |-
+      [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Insert a new page as a sibling before the current page.
+      await OneNote.run(async (context) => {
+          const application = context.application;
+          const currentPage = application.getActivePage();
+
+          const insertedPage = currentPage.insertPageAsSibling(OneNote.InsertLocation.before, 'Rubric grading page');
+          await context.sync();
+
+          application.navigateToPage(insertedPage);
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

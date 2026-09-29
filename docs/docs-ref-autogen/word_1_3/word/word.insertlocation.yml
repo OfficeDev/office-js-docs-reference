@@ -18,14 +18,16 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
-  // Inserts a section without an associated page break.
+  // Adds a section at the current position without adding a page break.
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
+    const insertLocation: Word.InsertLocation = Word.InsertLocation.end;
+    body.insertBreak(Word.BreakType.sectionContinuous, insertLocation);
+    body.insertParagraph("Continuous section", insertLocation);
 
     await context.sync();
 
-    console.log("Inserted section without an associated page break.");
+    console.log("Added a section without adding a page break.");
   });
   ```
 

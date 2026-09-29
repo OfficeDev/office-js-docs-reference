@@ -16,31 +16,16 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-  // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+  // Gets the pattern colors and texture of the sample style.
   await Word.run(async (context) => {
-    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-    if (styleName == "") {
-      console.warn("Enter a style name to update shading properties.");
-      return;
-    }
-
-    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
+    const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+    const shading: Word.Shading = sampleStyle.shading;
+    shading.load("backgroundPatternColor, foregroundPatternColor, texture");
     await context.sync();
 
-    if (style.isNullObject) {
-      console.warn(`There's no existing style with the name '${styleName}'.`);
-    } else {
-      const shading: Word.Shading = style.shading;
-      shading.load();
-      await context.sync();
-
-      shading.backgroundPatternColor = "blue";
-      shading.foregroundPatternColor = "yellow";
-      shading.texture = Word.ShadingTextureType.darkTrellis;
-
-      console.log("Updated shading.");
-    }
+    console.log("Background pattern color:", shading.backgroundPatternColor);
+    console.log("Foreground pattern color:", shading.foregroundPatternColor);
+    console.log("Texture:", shading.texture);
   });
   ```
 
@@ -53,7 +38,24 @@ properties:
     package: word!
     fullName: backgroundPatternColor
     summary: Specifies the color for the background of the object. You can provide the value in the '\#RRGGBB' format or the color name.
-    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
+
+      // Sets the background pattern color of the sample style.
+      await Word.run(async (context) => {
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const shading: Word.Shading = sampleStyle.shading;
+        shading.backgroundPatternColor = "#D9EAF7";
+        await context.sync();
+
+        console.log("Set the Sample Style background pattern color to light blue.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

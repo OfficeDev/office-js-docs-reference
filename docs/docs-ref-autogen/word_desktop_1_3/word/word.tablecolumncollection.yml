@@ -11,6 +11,30 @@ remarks: |-
 
   - [Word.Range](/javascript/api/word/word.range): [tableColumns](/javascript/api/word/word.range#word-word-range-tablecolumns-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+  // Gets properties of the first column in the sample table.
+  await Word.run(async (context) => {
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    const tableRange: Word.Range = firstTable.getRange();
+    const tableColumns: Word.TableColumnCollection = tableRange.tableColumns;
+    tableColumns.load("items/columnIndex,items/isFirst,items/isLast,items/width");
+    await context.sync();
+
+    const firstColumn: Word.TableColumn = tableColumns.items[0];
+    console.log(
+      "First table column:",
+      `- Index: ${firstColumn.columnIndex}`,
+      `- Is first: ${firstColumn.isFirst}`,
+      `- Is last: ${firstColumn.isLast}`,
+      `- Width: ${firstColumn.width} points`
+    );
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

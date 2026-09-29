@@ -26,7 +26,7 @@ remarks: |-
     }
 
     const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
+    style.load("isNullObject, nameLocal, type");
     await context.sync();
 
     if (style.isNullObject) {
@@ -36,13 +36,14 @@ remarks: |-
     } else {
       const body: Word.Body = context.document.body;
       body.clear();
-      body.insertParagraph(
-        "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-        "Start"
+      const paragraph: Word.Paragraph = body.insertParagraph(
+        "This paragraph uses a custom style.",
+        Word.InsertLocation.start
       );
-      const paragraph: Word.Paragraph = body.paragraphs.getFirst();
       paragraph.style = style.nameLocal;
-      console.log(`'${styleName}' style applied to first paragraph.`);
+      await context.sync();
+
+      console.log(`Applied '${styleName}' to the sample paragraph.`);
     }
   });
   ```
@@ -80,30 +81,16 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates border properties (e.g., type, width, color) of the specified style.
+      // Gets the outside border properties of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update border properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const borders: Word.BorderCollection = sampleStyle.borders;
+        borders.load("outsideBorderColor, outsideBorderType, outsideBorderWidth");
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const borders: Word.BorderCollection = style.borders;
-          borders.load("items");
-          await context.sync();
-
-          borders.outsideBorderType = Word.BorderType.dashed;
-          borders.outsideBorderWidth = Word.BorderWidth.pt025;
-          borders.outsideBorderColor = "green";
-          console.log("Updated outside borders.");
-        }
+        console.log("Outside border color:", borders.outsideBorderColor);
+        console.log("Outside border type:", borders.outsideBorderType);
+        console.log("Outside border width:", borders.outsideBorderWidth);
       });
       ```
 
@@ -152,26 +139,15 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates font properties (e.g., color, size) of the specified style.
+      // Sets the font color and size of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update font properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const font: Word.Font = sampleStyle.font;
+        font.color = "#C00000";
+        font.size = 20;
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const font: Word.Font = style.font;
-          font.color = "#FF0000";
-          font.size = 20;
-          console.log(`Successfully updated font properties of the '${styleName}' style.`);
-        }
+        console.log("Set the Sample Style font color to red and size to 20 points.");
       });
       ```
 
@@ -279,7 +255,7 @@ properties:
         }
 
         const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        style.load("isNullObject, nameLocal, type");
         await context.sync();
 
         if (style.isNullObject) {
@@ -289,13 +265,14 @@ properties:
         } else {
           const body: Word.Body = context.document.body;
           body.clear();
-          body.insertParagraph(
-            "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-            "Start"
+          const paragraph: Word.Paragraph = body.insertParagraph(
+            "This paragraph uses a custom style.",
+            Word.InsertLocation.start
           );
-          const paragraph: Word.Paragraph = body.paragraphs.getFirst();
           paragraph.style = style.nameLocal;
-          console.log(`'${styleName}' style applied to first paragraph.`);
+          await context.sync();
+
+          console.log(`Applied '${styleName}' to the sample paragraph.`);
         }
       });
       ```
@@ -333,27 +310,30 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/paragraph-format.yaml
 
-      // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+      // Gets the paragraph format properties of a custom paragraph style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update its paragraph format.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const styleName = "SampleParagraphFormat";
+        const sampleStyle: Word.Style = context.document.getStyles().getByName(styleName);
+        const paragraphFormat: Word.ParagraphFormat = sampleStyle.paragraphFormat;
+        const loadOptions: Word.Interfaces.ParagraphFormatLoadOptions = {
+          alignment: true,
+          firstLineIndent: true,
+          keepTogether: true,
+          keepWithNext: true,
+          leftIndent: true,
+          lineSpacing: true,
+          rightIndent: true,
+          spaceAfter: true,
+          spaceBefore: true,
+          widowControl: true
+        };
+        paragraphFormat.load(loadOptions);
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          style.paragraphFormat.leftIndent = 30;
-          style.paragraphFormat.alignment = Word.Alignment.centered;
-          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
-        }
+        const formatData: Word.Interfaces.ParagraphFormatData = paragraphFormat.toJSON();
+        console.log("SampleParagraphFormat properties:", formatData);
       });
       ```
 
@@ -402,31 +382,16 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+      // Gets the pattern colors and texture of the sample style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to update shading properties.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+        const shading: Word.Shading = sampleStyle.shading;
+        shading.load("backgroundPatternColor, foregroundPatternColor, texture");
         await context.sync();
 
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else {
-          const shading: Word.Shading = style.shading;
-          shading.load();
-          await context.sync();
-
-          shading.backgroundPatternColor = "blue";
-          shading.foregroundPatternColor = "yellow";
-          shading.texture = Word.ShadingTextureType.darkTrellis;
-
-          console.log("Updated shading.");
-        }
+        console.log("Background pattern color:", shading.backgroundPatternColor);
+        console.log("Foreground pattern color:", shading.foregroundPatternColor);
+        console.log("Texture:", shading.texture);
       });
       ```
 
@@ -536,23 +501,25 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-      // Deletes the custom style.
+      // Deletes the specified custom style.
       await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        const styleName = (document.getElementById("style-name-to-delete") as HTMLInputElement).value;
         if (styleName == "") {
           console.warn("Enter a style name to delete.");
           return;
         }
 
         const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        style.load("isNullObject");
         await context.sync();
 
         if (style.isNullObject) {
           console.warn(`There's no existing style with the name '${styleName}'.`);
         } else {
           style.delete();
-          console.log(`Successfully deleted custom style '${styleName}'.`);
+          await context.sync();
+
+          console.log(`Deleted the custom style '${styleName}'.`);
         }
       });
       ```
