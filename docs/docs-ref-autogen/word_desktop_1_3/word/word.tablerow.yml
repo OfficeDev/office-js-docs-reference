@@ -15,20 +15,21 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
 
-  // Gets content alignment details about the first cell of the first table in the document.
+  // Gets properties of the first data row in the first table.
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
-    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-    const firstCell: Word.TableCell = firstTableRow.cells.getFirst();
-    firstCell.load(["horizontalAlignment", "verticalAlignment"]);
+    const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+    firstDataRow.load(["cellCount", "isHeader", "rowIndex", "values"]);
     await context.sync();
 
     console.log(
-      `Details about the alignment of the first table's first cell:`,
-      `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
-      `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      "First data row:",
+      `- Index: ${firstDataRow.rowIndex}`,
+      `- Cell count: ${firstDataRow.cellCount}`,
+      `- Is header: ${firstDataRow.isHeader}`,
+      `- Values: ${firstDataRow.values[0].join(", ")}`
     );
   });
   ```
@@ -220,7 +221,32 @@ properties:
     package: word!
     fullName: shadingColor
     summary: Specifies the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Updates the formatting of the first data row.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+        const rowFont: Word.Font = firstDataRow.font;
+        const horizontalAlignment: Word.Alignment = Word.Alignment.centered;
+        const verticalAlignment: Word.VerticalAlignment = Word.VerticalAlignment.center;
+
+        firstDataRow.shadingColor = "#E2F0D9";
+        firstDataRow.preferredHeight = 24;
+        firstDataRow.horizontalAlignment = horizontalAlignment;
+        firstDataRow.verticalAlignment = verticalAlignment;
+        rowFont.color = "#000000";
+
+        await context.sync();
+        console.log("Updated the formatting of the first data row.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -233,7 +259,25 @@ properties:
     package: word!
     fullName: values
     summary: Specifies the text values in the row, as a 2D JavaScript array.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Updates the values of the first data row.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+
+        firstDataRow.values = [["North", "$132,000", "Above target"]];
+
+        await context.sync();
+        console.log("Updated the values of the first data row.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -274,7 +318,24 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the entire row.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Deletes the first data row from the first table.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+        firstDataRow.delete();
+
+        await context.sync();
+        console.log("Deleted the first data row.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -446,7 +507,28 @@ methods:
     package: word!
     fullName: insertRows(insertLocation, rowCount, values)
     summary: Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Inserts a new row after the first data row.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+        const insertLocation: Word.InsertLocation = Word.InsertLocation.after;
+        const insertedRows: Word.TableRowCollection = firstDataRow.insertRows(insertLocation, 1, [
+          ["Central", "$117,000", "On track"]
+        ]);
+
+        insertedRows.load("items");
+        await context.sync();
+        console.log("Inserted a new data row.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

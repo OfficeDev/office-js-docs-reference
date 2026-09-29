@@ -19,20 +19,22 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
 
-  // Gets content alignment details about the first cell of the first table in the document.
+  // Gets properties of the first data cell in the sample table.
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
-    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-    const firstCell: Word.TableCell = firstTableRow.cells.getFirst();
-    firstCell.load(["horizontalAlignment", "verticalAlignment"]);
+    const firstDataCell: Word.TableCell = firstTable.getCell(1, 0);
+    firstDataCell.load(["cellIndex", "columnWidth", "rowIndex", "value", "width"]);
     await context.sync();
 
     console.log(
-      `Details about the alignment of the first table's first cell:`,
-      `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
-      `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+      "First data cell:",
+      `- Row index: ${firstDataCell.rowIndex}`,
+      `- Cell index: ${firstDataCell.cellIndex}`,
+      `- Value: ${firstDataCell.value}`,
+      `- Cell width: ${firstDataCell.width} points`,
+      `- Column width: ${firstDataCell.columnWidth} points`
     );
   });
   ```
@@ -188,7 +190,31 @@ properties:
     package: word!
     fullName: shadingColor
     summary: Specifies the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Updates the formatting of the first data cell in the sample table.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataCell: Word.TableCell = firstTable.getCell(1, 0);
+        const cellFont: Word.Font = firstDataCell.body.font;
+        const horizontalAlignment: Word.Alignment = Word.Alignment.centered;
+        const verticalAlignment: Word.VerticalAlignment = Word.VerticalAlignment.center;
+
+        firstDataCell.shadingColor = "#FFF2CC";
+        firstDataCell.horizontalAlignment = horizontalAlignment;
+        firstDataCell.verticalAlignment = verticalAlignment;
+        cellFont.color = "#000000";
+
+        await context.sync();
+        console.log("Updated the formatting of the first data cell.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -201,7 +227,24 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the text of the cell.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Updates the value of the first data cell in the sample table.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataCell: Word.TableCell = firstTable.getCell(1, 0);
+        firstDataCell.value = "Northeast";
+
+        await context.sync();
+        console.log("Updated the value of the first data cell.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
