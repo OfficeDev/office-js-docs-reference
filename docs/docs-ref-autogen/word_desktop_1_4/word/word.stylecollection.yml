@@ -139,12 +139,12 @@ methods:
         }
 
         const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
-        style.load();
+        style.load("isNullObject");
         await context.sync();
 
         if (!style.isNullObject) {
           console.warn(
-            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+            `There's an existing style with the same name '${newStyleName}'. Enter another style name.`
           );
           return;
         }
@@ -153,7 +153,7 @@ methods:
         context.document.addStyle(newStyleName, newStyleType);
         await context.sync();
 
-        console.log(newStyleName + " has been added to the style list.");
+        console.log(`${newStyleName} was added to the style list.`);
       });
       ```
 

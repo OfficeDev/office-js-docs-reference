@@ -33,6 +33,27 @@ remarks: |-
       console.log('The font color of the selection has been changed.');
   });
   ```
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+  // Updates the formatting of the first data row.
+  await Word.run(async (context) => {
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+    const rowFont: Word.Font = firstDataRow.font;
+    const horizontalAlignment: Word.Alignment = Word.Alignment.centered;
+    const verticalAlignment: Word.VerticalAlignment = Word.VerticalAlignment.center;
+
+    firstDataRow.shadingColor = "#E2F0D9";
+    firstDataRow.preferredHeight = 24;
+    firstDataRow.horizontalAlignment = horizontalAlignment;
+    firstDataRow.verticalAlignment = verticalAlignment;
+    rowFont.color = "#000000";
+
+    await context.sync();
+    console.log("Updated the formatting of the first data row.");
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -97,6 +118,26 @@ properties:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('The font color of the selection has been changed.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
+
+      // Updates the formatting of the first data cell in the sample table.
+      await Word.run(async (context) => {
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstDataCell: Word.TableCell = firstTable.getCell(1, 0);
+        const cellFont: Word.Font = firstDataCell.body.font;
+        const horizontalAlignment: Word.Alignment = Word.Alignment.centered;
+        const verticalAlignment: Word.VerticalAlignment = Word.VerticalAlignment.center;
+
+        firstDataCell.shadingColor = "#FFF2CC";
+        firstDataCell.horizontalAlignment = horizontalAlignment;
+        firstDataCell.verticalAlignment = verticalAlignment;
+        cellFont.color = "#000000";
+
+        await context.sync();
+        console.log("Updated the formatting of the first data cell.");
       });
       ```
 

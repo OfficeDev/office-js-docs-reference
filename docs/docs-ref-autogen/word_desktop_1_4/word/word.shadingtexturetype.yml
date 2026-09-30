@@ -17,31 +17,15 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-styles.yaml
 
-  // Updates shading properties (e.g., texture, pattern colors) of the specified style.
+  // Sets the shading texture of the sample style.
   await Word.run(async (context) => {
-    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
-    if (styleName == "") {
-      console.warn("Enter a style name to update shading properties.");
-      return;
-    }
-
-    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-    style.load();
+    const sampleStyle: Word.Style = context.document.getStyles().getByName("Sample Style");
+    const shading: Word.Shading = sampleStyle.shading;
+    const texture: Word.ShadingTextureType = Word.ShadingTextureType.darkTrellis;
+    shading.texture = texture;
     await context.sync();
 
-    if (style.isNullObject) {
-      console.warn(`There's no existing style with the name '${styleName}'.`);
-    } else {
-      const shading: Word.Shading = style.shading;
-      shading.load();
-      await context.sync();
-
-      shading.backgroundPatternColor = "blue";
-      shading.foregroundPatternColor = "yellow";
-      shading.texture = Word.ShadingTextureType.darkTrellis;
-
-      console.log("Updated shading.");
-    }
+    console.log("Set the Sample Style shading texture to dark trellis.");
   });
   ```
 

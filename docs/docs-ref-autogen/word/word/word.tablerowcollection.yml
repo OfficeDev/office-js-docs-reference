@@ -16,20 +16,20 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-rows-columns-cells.yaml
 
-  // Gets content alignment details about the first row of the first table in the document.
+  // Inserts a new row after the first data row.
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
-    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-    firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
-    await context.sync();
+    const firstDataRow: Word.TableRow = firstTable.rows.getFirst().getNext();
+    const insertLocation: Word.InsertLocation = Word.InsertLocation.after;
+    const insertedRows: Word.TableRowCollection = firstDataRow.insertRows(insertLocation, 1, [
+      ["Central", "$117,000", "On track"]
+    ]);
 
-    console.log(
-      `Details about the alignment of the first table's first row:`,
-      `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`,
-      `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`,
-    );
+    insertedRows.load("items");
+    await context.sync();
+    console.log("Inserted a new data row.");
   });
   ```
 

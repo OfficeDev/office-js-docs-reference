@@ -370,7 +370,7 @@ properties:
         }
 
         const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
+        style.load("isNullObject, nameLocal, type");
         await context.sync();
 
         if (style.isNullObject) {
@@ -380,13 +380,14 @@ properties:
         } else {
           const body: Word.Body = context.document.body;
           body.clear();
-          body.insertParagraph(
-            "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-            "Start"
+          const paragraph: Word.Paragraph = body.insertParagraph(
+            "This paragraph uses a custom style.",
+            Word.InsertLocation.start
           );
-          const paragraph: Word.Paragraph = body.paragraphs.getFirst();
           paragraph.style = style.nameLocal;
-          console.log(`'${styleName}' style applied to first paragraph.`);
+          await context.sync();
+
+          console.log(`Applied '${styleName}' to the sample paragraph.`);
         }
       });
       ```
