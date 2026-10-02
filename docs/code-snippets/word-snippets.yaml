@@ -6,6 +6,16 @@ Word.run:function(1):
         const document = context.document;
         // Interact with the Word document...
     });
+Word.AutoMacro:enum:
+  - |-
+    await Word.run(async (context) => {
+        const wordDocument: Word.Document = context.document;
+        const autoMacro: Word.AutoMacro = Word.AutoMacro.open;
+        wordDocument.runAutoMacro(autoMacro);
+        await context.sync();
+
+        console.log("Requested the AutoOpen macro.");
+    });
 Word.Body:class:
   - |-
     // Get the body object and read its font size.
@@ -561,6 +571,16 @@ Word.Document#load:member(1):
         } else {
             console.log('No content controls in this document.');
         }
+    });
+Word.Document.runAutoMacro:member(1):
+  - |-
+    await Word.run(async (context) => {
+        const wordDocument: Word.Document = context.document;
+        const autoMacro: Word.AutoMacro = Word.AutoMacro.open;
+        wordDocument.runAutoMacro(autoMacro);
+        await context.sync();
+
+        console.log("Requested the AutoOpen macro.");
     });
 Word.DocumentCreated#open:member(1):
   - |-
