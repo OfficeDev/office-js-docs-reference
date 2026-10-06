@@ -11,6 +11,19 @@ remarks: |-
 
   - [Word.Document](/javascript/api/word/word.document): [runAutoMacro](/javascript/api/word/word.document#word-word-document-runautomacro-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  await Word.run(async (context) => {
+      const wordDocument: Word.Document = context.document;
+      const autoMacro: Word.AutoMacro = Word.AutoMacro.open;
+      wordDocument.runAutoMacro(autoMacro);
+      await context.sync();
+
+      console.log("Requested the AutoOpen macro.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

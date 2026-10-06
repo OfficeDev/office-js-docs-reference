@@ -24637,7 +24637,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         worksheetMoved = "WorksheetMoved",
-                            }
+                                    }
     /**
      * @remarks
      * [Api set: ExcelApi 1.7]
@@ -28230,7 +28230,7 @@ export declare namespace Excel {
          *
          * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
-        datevalue(dateText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+        datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          * Returns the day of the month, a number from 1 to 31.
          *
@@ -31011,6 +31011,7 @@ export declare namespace Excel {
         accessDenied = "AccessDenied",
         apiNotFound = "ApiNotFound",
         conflict = "Conflict",
+        dirtySupportingFormula = "DirtySupportingFormula",
         emptyChartSeries = "EmptyChartSeries",
         filteredRangeConflict = "FilteredRangeConflict",
         formulaLengthExceedsLimit = "FormulaLengthExceedsLimit",
@@ -31326,6 +31327,7 @@ export declare namespace Excel {
             /**
              * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                        Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -36535,6 +36537,7 @@ export declare namespace Excel {
             /**
              * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                        Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -42842,6 +42845,7 @@ export declare namespace Excel {
             /**
              * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                        Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -50579,6 +50583,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                        Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

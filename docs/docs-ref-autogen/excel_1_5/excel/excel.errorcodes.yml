@@ -24,6 +24,11 @@ fields:
     package: excel!
     summary: ''
     value: '"Conflict"'
+  - name: dirtySupportingFormula
+    uid: excel!Excel.ErrorCodes.dirtySupportingFormula:member
+    package: excel!
+    summary: ''
+    value: '"DirtySupportingFormula"'
   - name: emptyChartSeries
     uid: excel!Excel.ErrorCodes.emptyChartSeries:member
     package: excel!

@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: Excel.SensitivityLabelAbacAttributeDataType
+uid: excel!Excel.SensitivityLabelAbacAttributeDataType:enum
+package: excel!
+fullName: Excel.SensitivityLabelAbacAttributeDataType
+summary: Represents the data type of an attribute-based access control (ABAC) attribute.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelAbacAttribute](/javascript/api/excel/excel.sensitivitylabelabacattribute): [dataType](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-datatype-member)
+
+isPreview: true
+isDeprecated: false
+fields:
+  - name: booleanValue
+    uid: excel!Excel.SensitivityLabelAbacAttributeDataType.booleanValue:member
+    package: excel!
+    summary: |-
+      The attribute value is a boolean.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"BooleanValue"'
+  - name: dateValue
+    uid: excel!Excel.SensitivityLabelAbacAttributeDataType.dateValue:member
+    package: excel!
+    summary: |-
+      The attribute value is a date.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"DateValue"'
+  - name: numberValue
+    uid: excel!Excel.SensitivityLabelAbacAttributeDataType.numberValue:member
+    package: excel!
+    summary: |-
+      The attribute value is a number.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"NumberValue"'
+  - name: stringValue
+    uid: excel!Excel.SensitivityLabelAbacAttributeDataType.stringValue:member
+    package: excel!
+    summary: |-
+      The attribute value is a string.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"StringValue"'
+  - name: unknown
+    uid: excel!Excel.SensitivityLabelAbacAttributeDataType.unknown:member
+    package: excel!
+    summary: |-
+      The data type is unknown or not mapped.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"Unknown"'

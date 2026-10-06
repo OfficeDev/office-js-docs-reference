@@ -16,11 +16,13 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
+  // Inserts a primary header by using the HeaderFooterType enum.
   await Word.run(async (context) => {
-    context.document.sections
-      .getFirst()
-      .getHeader(Word.HeaderFooterType.primary)
-      .insertParagraph("This is a primary header.", "End");
+    const sections: Word.SectionCollection = context.document.sections;
+    const firstSection: Word.Section = sections.getFirst();
+    const headerType: Word.HeaderFooterType = Word.HeaderFooterType.primary;
+    const primaryHeader: Word.Body = firstSection.getHeader(headerType);
+    primaryHeader.insertParagraph("This is a primary header.", Word.InsertLocation.end);
 
     await context.sync();
   });

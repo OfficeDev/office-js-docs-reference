@@ -10,6 +10,7 @@ remarks: |-
   #### Used by
 
   - [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue): [elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)
+  - [Excel.BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue): [previousValue](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-previousvalue-member)
   - [Excel.ChangedEventDetail](/javascript/api/excel/excel.changedeventdetail): [valueAsJsonAfter](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonafter-member), [valueAsJsonBefore](/javascript/api/excel/excel.changedeventdetail#excel-excel-changedeventdetail-valueasjsonbefore-member)
   - [Excel.ExternalCodeServiceObjectCellValue](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue): [preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)
   - [Excel.NamedItem](/javascript/api/excel/excel.nameditem): [valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member), [valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)

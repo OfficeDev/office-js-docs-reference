@@ -28,6 +28,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: abacAttributeValues
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#abacAttributeValues:member
+    package: excel!
+    fullName: abacAttributeValues
+    summary: Gets the ABAC (attribute-based access control) attribute values associated with this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'abacAttributeValues?: boolean;'
+      return:
+        type: boolean
   - name: children
     uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#children:member
     package: excel!
@@ -65,6 +78,32 @@ properties:
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacAttributesRequired
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacAttributesRequired:member
+    package: excel!
+    fullName: isAbacAttributesRequired
+    summary: Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacAttributesRequired?: boolean;'
+      return:
+        type: boolean
+  - name: isAbacEnabled
+    uid: excel!Excel.Interfaces.SensitivityLabelDetailsLoadOptions#isAbacEnabled:member
+    package: excel!
+    fullName: isAbacEnabled
+    summary: Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isAbacEnabled?: boolean;'
       return:
         type: boolean
   - name: isEnabled

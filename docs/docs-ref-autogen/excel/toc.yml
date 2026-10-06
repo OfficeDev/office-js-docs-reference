@@ -336,6 +336,8 @@ items:
                 uid: excel!Excel.ScrollWorkbookTabPosition:enum
               - name: SearchDirection
                 uid: excel!Excel.SearchDirection:enum
+              - name: SensitivityLabelAbacAttributeDataType
+                uid: excel!Excel.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: excel!Excel.SensitivityLabelProtectionType:enum
               - name: SensitivityLabelUpdateResult
@@ -1055,6 +1057,10 @@ items:
             uid: excel!Excel.SelectionChangedEventArgs:interface
           - name: SensitivityLabel
             uid: excel!Excel.SensitivityLabel:class
+          - name: SensitivityLabelAbacAttribute
+            uid: excel!Excel.SensitivityLabelAbacAttribute:class
+          - name: SensitivityLabelAbacAttributeValue
+            uid: excel!Excel.SensitivityLabelAbacAttributeValue:class
           - name: SensitivityLabelDetails
             uid: excel!Excel.SensitivityLabelDetails:class
           - name: SensitivityLabelDetailsCollection
