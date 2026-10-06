@@ -62,6 +62,19 @@ properties:
       content: 'errorType?: ErrorCellValueType.busy | "Busy";'
       return:
         type: <xref uid="excel!Excel.ErrorCellValueType.busy:member" /> | "Busy"
+  - name: previousValue
+    uid: excel!Excel.BusyErrorCellValue#previousValue:member
+    package: excel!
+    fullName: previousValue
+    summary: Optionally, a \#BUSY! error may store the previous value stored in the cell, before the current transient operation began.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'previousValue?: CellValue;'
+      return:
+        type: <xref uid="excel!Excel.CellValue:type" />
   - name: type
     uid: excel!Excel.BusyErrorCellValue#type:member
     package: excel!

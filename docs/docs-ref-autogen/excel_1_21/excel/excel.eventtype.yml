@@ -65,6 +65,14 @@ fields:
 
       * \[Api set: ExcelApi 1.7\]
     value: '"CommentDeleted"'
+  - name: linkedEntityDataDomainLinkedEntityCellValueLoaded
+    uid: excel!Excel.EventType.linkedEntityDataDomainLinkedEntityCellValueLoaded:member
+    package: excel!
+    summary: |-
+      LinkedEntityCellValueLoaded represents the type of event registered when the `LinkedEntityCellValue` object requested by `LoadLinkedEntityCellValue` method is loaded.
+
+      * \[Api set: ExcelApi 1.21\]
+    value: '"LinkedEntityDataDomainLinkedEntityCellValueLoaded"'
   - name: linkedEntityDataDomainLinkedEntityDataDomainAdded
     uid: excel!Excel.EventType.linkedEntityDataDomainLinkedEntityDataDomainAdded:member
     package: excel!

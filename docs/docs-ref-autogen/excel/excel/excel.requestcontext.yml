@@ -164,6 +164,8 @@ remarks: |-
   - [Excel.RowColumnPivotHierarchyCollection](/javascript/api/excel/excel.rowcolumnpivothierarchycollection): [context](/javascript/api/excel/excel.rowcolumnpivothierarchycollection#excel-excel-rowcolumnpivothierarchycollection-context-member)
   - [Excel.Runtime](/javascript/api/excel/excel.runtime): [context](/javascript/api/excel/excel.runtime#excel-excel-runtime-context-member)
   - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [context](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-context-member)
+  - [Excel.SensitivityLabelAbacAttribute](/javascript/api/excel/excel.sensitivitylabelabacattribute): [context](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-context-member)
+  - [Excel.SensitivityLabelAbacAttributeValue](/javascript/api/excel/excel.sensitivitylabelabacattributevalue): [context](/javascript/api/excel/excel.sensitivitylabelabacattributevalue#excel-excel-sensitivitylabelabacattributevalue-context-member)
   - [Excel.SensitivityLabelDetails](/javascript/api/excel/excel.sensitivitylabeldetails): [context](/javascript/api/excel/excel.sensitivitylabeldetails#excel-excel-sensitivitylabeldetails-context-member)
   - [Excel.SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection): [context](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-context-member)
   - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [context](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-context-member)

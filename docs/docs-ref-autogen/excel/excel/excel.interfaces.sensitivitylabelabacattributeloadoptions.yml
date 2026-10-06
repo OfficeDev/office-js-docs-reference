@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions
+uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
+package: excel!
+fullName: Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions
+summary: Represents an ABAC (attribute-based access control) attribute.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabelAbacAttribute](/javascript/api/excel/excel.sensitivitylabelabacattribute): [load](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-load-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#$all:member
+    package: excel!
+    fullName: $all
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: dataType
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#dataType:member
+    package: excel!
+    fullName: dataType
+    summary: Gets the data type of the attribute.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dataType?: boolean;'
+      return:
+        type: boolean
+  - name: displayName
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#displayName:member
+    package: excel!
+    fullName: displayName
+    summary: Gets the display name of the attribute.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: boolean;'
+      return:
+        type: boolean
+  - name: displayOrder
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#displayOrder:member
+    package: excel!
+    fullName: displayOrder
+    summary: Gets the display order of the attribute.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayOrder?: boolean;'
+      return:
+        type: boolean
+  - name: isActive
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#isActive:member
+    package: excel!
+    fullName: isActive
+    summary: Gets a value indicating whether the attribute is active.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
+      return:
+        type: boolean
+  - name: isMultiValued
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#isMultiValued:member
+    package: excel!
+    fullName: isMultiValued
+    summary: Gets a value indicating whether the attribute supports multiple values.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isMultiValued?: boolean;'
+      return:
+        type: boolean
+  - name: values
+    uid: excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions#values:member
+    package: excel!
+    fullName: values
+    summary: Gets the values of the attribute.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type: boolean

@@ -42,6 +42,20 @@ properties:
       return:
         type: <xref uid="excel!Excel.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
 methods:
+  - name: getAttributes()
+    uid: excel!Excel.SensitivityLabelsCatalog#getAttributes:member(1)
+    package: excel!
+    fullName: getAttributes()
+    summary: Gets the ABAC (attribute-based access control) attributes that are available to the current user.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAttributes(): OfficeExtension.ClientResult<SensitivityLabelAbacAttribute[]>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.SensitivityLabelAbacAttribute:class" />[]&gt;
+        description: An array of `SensitivityLabelAbacAttribute` objects.
   - name: getLabels()
     uid: excel!Excel.SensitivityLabelsCatalog#getLabels:member(1)
     package: excel!
