@@ -16,6 +16,19 @@ isPreview: true
 isDeprecated: false
 type: class
 properties:
+  - name: abacAttributeValues
+    uid: excel!Excel.SensitivityLabelDetails#abacAttributeValues:member
+    package: excel!
+    fullName: abacAttributeValues
+    summary: Gets the ABAC (attribute-based access control) attribute values associated with this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly abacAttributeValues: SensitivityLabelAbacAttributeValue[];'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelAbacAttributeValue:class" />[]
   - name: children
     uid: excel!Excel.SensitivityLabelDetails#children:member
     package: excel!
@@ -68,6 +81,32 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: isAbacAttributesRequired
+    uid: excel!Excel.SensitivityLabelDetails#isAbacAttributesRequired:member
+    package: excel!
+    fullName: isAbacAttributesRequired
+    summary: Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isAbacAttributesRequired: boolean;'
+      return:
+        type: boolean
+  - name: isAbacEnabled
+    uid: excel!Excel.SensitivityLabelDetails#isAbacEnabled:member
+    package: excel!
+    fullName: isAbacEnabled
+    summary: Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isAbacEnabled: boolean;'
+      return:
+        type: boolean
   - name: isEnabled
     uid: excel!Excel.SensitivityLabelDetails#isEnabled:member
     package: excel!

@@ -14,6 +14,14 @@ remarks: |-
 isPreview: true
 isDeprecated: false
 fields:
+  - name: abacAttributesRequired
+    uid: excel!Excel.SensitivityLabelUpdateResult.abacAttributesRequired:member
+    package: excel!
+    summary: |-
+      The label update failed because required ABAC (attribute-based access control) attributes are missing.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"AbacAttributesRequired"'
   - name: crossTenant
     uid: excel!Excel.SensitivityLabelUpdateResult.crossTenant:member
     package: excel!
@@ -62,6 +70,14 @@ fields:
 
       * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"ParentLabelNotSupported"'
+  - name: removingLabelNotSupported
+    uid: excel!Excel.SensitivityLabelUpdateResult.removingLabelNotSupported:member
+    package: excel!
+    summary: |-
+      The label update failed because removing the label is not supported.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"RemovingLabelNotSupported"'
   - name: success
     uid: excel!Excel.SensitivityLabelUpdateResult.success:member
     package: excel!
@@ -78,6 +94,14 @@ fields:
 
       * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"UnspecifiedFailure"'
+  - name: unsupportedAbac
+    uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedAbac:member
+    package: excel!
+    summary: |-
+      The label update failed because ABAC (attribute-based access control) is not supported.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"UnsupportedAbac"'
   - name: unsupportedDoubleKeyEncryption
     uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
     package: excel!

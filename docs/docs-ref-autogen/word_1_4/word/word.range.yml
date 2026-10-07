@@ -223,7 +223,28 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+      // Gets the section after the current selection when another section is expected.
+      await Word.run(async (context) => {
+        const selection: Word.Range = context.document.getSelection();
+        const selectedBody: Word.Body = selection.parentBody;
+        const selectedSection: Word.Section = selectedBody.parentSection;
+        const nextSection: Word.Section = selectedSection.getNext();
+        const nextSectionBody: Word.Body = nextSection.body;
+        nextSectionBody.load("text");
+
+        await context.sync();
+
+        console.log(`Next section text: ${nextSectionBody.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

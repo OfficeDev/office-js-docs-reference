@@ -38,7 +38,29 @@ properties:
     package: word!
     fullName: body
     summary: Gets the `Body` object of the section. This doesn't include the header, footer, and other section metadata.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+      // Gets the body of the second section and reads its text.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        sections.load("items");
+        await context.sync();
+
+        const secondSection: Word.Section = sections.items[1];
+        const secondSectionBody: Word.Body = secondSection.body;
+        secondSectionBody.load("text");
+
+        await context.sync();
+
+        console.log(`Second section text: ${secondSectionBody.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -100,6 +122,20 @@ methods:
           console.log("Added a footer to the first section.");   
       });  
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      // Inserts a first-page footer by using the HeaderFooterType enum.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        const firstSection: Word.Section = sections.getFirst();
+        const footerType: Word.HeaderFooterType = Word.HeaderFooterType.firstPage;
+        const firstPageFooter: Word.Body = firstSection.getFooter(footerType);
+        firstPageFooter.insertParagraph("This is a first-page footer.", Word.InsertLocation.end);
+
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -125,11 +161,12 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
+      // Inserts a primary footer by using the string overload.
       await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getFooter("Primary")
-          .insertParagraph("This is a primary footer.", "End");
+        const sections: Word.SectionCollection = context.document.sections;
+        const firstSection: Word.Section = sections.getFirst();
+        const primaryFooter: Word.Body = firstSection.getFooter("Primary");
+        primaryFooter.insertParagraph("This is a primary footer.", Word.InsertLocation.end);
 
         await context.sync();
       });
@@ -159,11 +196,13 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
+      // Inserts a primary header by using the HeaderFooterType enum.
       await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getHeader(Word.HeaderFooterType.primary)
-          .insertParagraph("This is a primary header.", "End");
+        const sections: Word.SectionCollection = context.document.sections;
+        const firstSection: Word.Section = sections.getFirst();
+        const headerType: Word.HeaderFooterType = Word.HeaderFooterType.primary;
+        const primaryHeader: Word.Body = firstSection.getHeader(headerType);
+        primaryHeader.insertParagraph("This is a primary header.", Word.InsertLocation.end);
 
         await context.sync();
       });
@@ -219,6 +258,19 @@ methods:
           await context.sync();
           console.log("Added a header to the first section.");
       });  
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      // Inserts a first-page header by using the string overload.
+      await Word.run(async (context) => {
+        const sections: Word.SectionCollection = context.document.sections;
+        const firstSection: Word.Section = sections.getFirst();
+        const firstPageHeader: Word.Body = firstSection.getHeader("FirstPage");
+        firstPageHeader.insertParagraph("This is a first-page header.", Word.InsertLocation.end);
+
+        await context.sync();
+      });
       ```
 
     isPreview: false

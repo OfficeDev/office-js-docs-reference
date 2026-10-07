@@ -36,6 +36,19 @@ properties:
       content: 'basicValue?: "#PYTHON!" | string;'
       return:
         type: '"#PYTHON!" | string'
+  - name: duringInitialization
+    uid: excel!Excel.PythonErrorCellValue#duringInitialization:member
+    package: excel!
+    fullName: duringInitialization
+    summary: Indicates that this `#PYTHON!` error originated from the workbook's initialization Python code (rather than from a worksheet cell formula).
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'duringInitialization?: boolean;'
+      return:
+        type: boolean
   - name: errorType
     uid: excel!Excel.PythonErrorCellValue#errorType:member
     package: excel!

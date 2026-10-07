@@ -609,6 +609,7 @@ methods:
           ```TypeScript
           // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-section-starts.yaml
 
+          // Reads the document page setup and the start type for every section.
           await Word.run(async (context) => {
             const pageSetup: Word.PageSetup = context.document.pageSetup;
             pageSetup.load();
