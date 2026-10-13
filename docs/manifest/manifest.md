@@ -4,7 +4,7 @@ description: The elements of the XML-based Office Add-ins add-in only manifest.
 author: o365devx
 ms.author: o365devx
 ms.localizationpriority: medium
-ms.date: 08/05/2024
+ms.date: 10/13/2026
 ms.topic: overview
 ---
 
@@ -22,7 +22,6 @@ This section contains information about every element used by an Office Add-in's
 |[AlternateId](alternateid.md)| General |
 |[AppDomain](appdomain.md)| General |
 |[AppDomains](appdomains.md)| General |
-|[CitationText](citationtext.md)| General |
 |[Control](control.md)| VersionOverrides |
 |[Control (Button)](control-button.md)| VersionOverrides |
 |[Control (Menu)](control-menu.md)| VersionOverrides |
@@ -33,8 +32,6 @@ This section contains information about every element used by an Office Add-in's
 |[Description](description.md)| General |
 |[DesktopFormFactor](desktopformfactor.md)| VersionOverrides |
 |[DesktopSettings](desktopsettings.md)| General |
-|[Dictionary](dictionary.md)| General |
-|[DictionaryHomePage](dictionaryhomepage.md)| General |
 |[DisableEntityHighlighting](disableentityhighlighting.md)| General |
 |[DisplayName](displayname.md)| General |
 |[Enabled](enabled.md)| VersionOverrides |
@@ -79,7 +76,6 @@ This section contains information about every element used by an Office Add-in's
 |[PhoneSettings](phonesettings.md)| General |
 |[ProgId](progid.md)| General |
 |[ProviderName](providername.md)| General |
-|[QueryUri](queryuri.md)| General |
 |[RequestedHeight](requestedheight.md)| General |
 |[RequestedWidth](requestedwidth.md)| General |
 |[Requirements](requirements.md)| General |
@@ -99,8 +95,6 @@ This section contains information about every element used by an Office Add-in's
 |[SupportsSharedFolders](supportssharedfolders.md)| VersionOverrides |
 |[SupportUrl](supporturl.md)| General |
 |[TabletSettings](tabletsettings.md)| General |
-|[TargetDialect](targetdialect.md)| General |
-|[TargetDialects](targetdialects.md)| General |
 |[Tokens](tokens.md)| General |
 |[Token](token.md)| General |
 |[Type](type.md)| General |

@@ -1,7 +1,7 @@
 ---
 title: OfficeApp element in the manifest file
 description: The OfficeApp element is the root element of an Office Add-in manifest.
-ms.date: 09/08/2025
+ms.date: 10/13/2026
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +59,6 @@ The **\<OfficeApp\>** element can contain the following child elements depending
 |[AllowSnapshot](allowsnapshot.md)|Yes|No|No|
 |[Permissions](permissions.md)|No|Yes|No|
 |[DisableEntityHighlighting](disableentityhighlighting.md)|No|Yes|No|
-|[Dictionary](dictionary.md)|No|No|Yes|
 |[VersionOverrides](versionoverrides.md)|Yes|Yes|Yes|
 |[ExtendedOverrides](extendedoverrides.md)|No|No|Yes|
 
