@@ -1,6 +1,34 @@
 { 
     "redirections": [
         {
+            "source_path": "docs/manifest/citationtext.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/dictionary.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/dictionaryhomepage.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/dictionaryname.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/queryuri.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/targetdialect.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
+            "source_path": "docs/manifest/targetdialects.md",
+            "redirect_url": "/javascript/api/manifest"
+        },
+        {
             "source_path": "docs/docs-ref-conceptual/javascript-api-for-office.md",
             "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office"
         },
@@ -42,7 +70,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/citationtext.md",
-            "redirect_url": "/javascript/api/manifest/citationtext"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/control.md",
@@ -78,15 +106,15 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/dictionary.md",
-            "redirect_url": "/javascript/api/manifest/dictionary"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/dictionaryhomepage.md",
-            "redirect_url": "/javascript/api/manifest/dictionaryhomepage"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/dictionaryname.md",
-            "redirect_url": "/javascript/api/manifest/dictionaryname"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/disableentityhighlighting.md",
@@ -202,7 +230,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/queryuri.md",
-            "redirect_url": "/javascript/api/manifest/queryuri"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/requestedheight.md",
@@ -258,11 +286,11 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/targetdialect.md",
-            "redirect_url": "/javascript/api/manifest/targetdialect"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/targetdialects.md",
-            "redirect_url": "/javascript/api/manifest/targetdialects"
+            "redirect_url": "/javascript/api/manifest"
         },
         {
             "source_path": "docs/docs-ref-conceptual/manifest/version.md",
