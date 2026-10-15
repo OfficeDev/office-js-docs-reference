@@ -9,6 +9,7 @@ remarks: |-
 
   #### Used by
 
+  - [PowerPoint.SensitivityLabelTryUpdateOptions](/javascript/api/powerpoint/powerpoint.sensitivitylabeltryupdateoptions): [abacAttributes](/javascript/api/powerpoint/powerpoint.sensitivitylabeltryupdateoptions#powerpoint-powerpoint-sensitivitylabeltryupdateoptions-abacattributes-member)
   - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [getAttributes](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-getattributes-member(1))
 
 isPreview: true

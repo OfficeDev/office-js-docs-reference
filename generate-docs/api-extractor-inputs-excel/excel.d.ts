@@ -6533,7 +6533,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceRequest {
@@ -6542,7 +6542,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         domainId: string;
@@ -6551,7 +6551,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityIdCulture[];
@@ -6561,7 +6561,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityLoadServiceResult {
@@ -6570,7 +6570,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         entities: LinkedEntityCellValue[];
@@ -6616,7 +6616,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityIdCulture {
@@ -6625,7 +6625,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         entityId: string;
@@ -6634,7 +6634,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         culture: string;
@@ -9281,7 +9281,31 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        labelingEnabled = "LabelingEnabled"
+        labelingEnabled = "LabelingEnabled",
+        /**
+         * Attribute-based access control (ABAC) is supported by the host.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        attributeBasedAccessControlEnabled = "AttributeBasedAccessControlEnabled"
+    }
+    /**
+     * Provides options for `SensitivityLabel.tryToUpdate`.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SensitivityLabelTryUpdateOptions {
+        /**
+         * If provided, specifies the ABAC attributes to apply with the label.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        abacAttributes?: Excel.SensitivityLabelAbacAttribute[];
     }
     /**
      * Represents the sensitivity label on the workbook.
@@ -9312,9 +9336,10 @@ export declare namespace Excel {
          * @beta
          *
          * @param labelId - The ID of the label to apply.
+         * @param options - Optional. Additional inputs such as ABAC attributes.
          * @returns The `SensitivityLabelUpdateResult` object.
          */
-        tryToUpdate(labelId: string): OfficeExtension.ClientResult<Excel.SensitivityLabelUpdateResult>;
+        tryToUpdate(labelId: string, options?: Excel.SensitivityLabelTryUpdateOptions): OfficeExtension.ClientResult<Excel.SensitivityLabelUpdateResult>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.SensitivityLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9702,13 +9727,21 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets the labeling capabilities supported by Excel.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly getLabelingCapabilities: Excel.LabelingCapability[];
+        /**
          * Gets whether the catalog of sensitivity labels is enabled in Excel.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+        readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         /**
          * Gets the ABAC (attribute-based access control) attributes that are available to the current user.
          *
@@ -9753,77 +9786,6 @@ export declare namespace Excel {
         * Whereas the original `Excel.SensitivityLabelsCatalog` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelsCatalogData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.SensitivityLabelsCatalogData;
-    }
-    /**
-     * Provides information about the ranges that raised the `onCalculationBusy` event, which triggers when the calculation is in progress in a worksheet.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface WorksheetCalculationBusyEventArgs {
-        /**
-         * The address of the ranges that began calculation.
-                    If multiple ranges began calculation, the string is a comma-separated list of those range addresses.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        address: string;
-        /**
-         * The source of the event. It can be local or remote (through co-authoring).
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Excel.EventSource | "Local" | "Remote";
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "WorksheetCalculationBusy";
-        /**
-         * The ID of the worksheet within which the calculation occurred.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        worksheetId: string;
-    }
-    /**
-     * Provides information about the local image.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class LocalImage extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param cacheUid - Represents the unique identifier (UID) of the image as it appears in the cache. The cache UID can be obtained from JSON representation of the values in the cell.
-         * @returns The Base64-encoded image data.
-         */
-        getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.LocalImage` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LocalImageData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): {
-            [key: string]: string;
-        };
     }
     /**
      * Represents a single value of an ABAC (attribute-based access control) attribute.
@@ -10201,7 +10163,7 @@ export declare namespace Excel {
     }
     /**
      * Notifies when a worksheet is moved within a workbook.
-                
+
                  If a worksheet is moved from one position within the workbook to another
                  via the Excel UI, then this API will trigger an event. Note that if
                  the position of a worksheet changes as a result of moving a different worksheet,
@@ -10421,15 +10383,6 @@ export declare namespace Excel {
          */
         readonly rowsLoadedCount: number;
         /**
-         * Deletes the query and associated connection.
-                    Tables associated with the query will no longer be connected.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        delete(): void;
-        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -10484,14 +10437,6 @@ export declare namespace Excel {
          * @returns The query with the given name. If there is no query by that name, then an error is thrown.
          */
         getItem(key: string): Excel.Query;
-        /**
-         * Refresh all queries.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        refreshAll(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10720,618 +10665,6 @@ export declare namespace Excel {
         automatic = "Automatic"
     }
     /**
-     * Represents the type of change recorded in the task change record.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum DocumentTaskChangeAction {
-        /**
-         * Represents an unknown change type. This value will be returned when the version of Excel running doesn't understand the type of the change record that is in the loaded file.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        unknown = "unknown",
-        /**
-         * Represents the creation of a new task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        create = "create",
-        /**
-         * Represents a user being assigned to a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        assign = "assign",
-        /**
-         * Represents a user being unassigned from a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        unassign = "unassign",
-        /**
-         * Represents all users being unassigned from a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        unassignAll = "unassignAll",
-        /**
-         * Represents an update to a task's `startDateTime` or `dueDateTime`.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        setSchedule = "setSchedule",
-        /**
-         * Represents an update to a task's percentage complete.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        setPercentComplete = "setPercentComplete",
-        /**
-         * Represents an update to a task's priority.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        setPriority = "setPriority",
-        /**
-         * Represents the deletion of a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        remove = "remove",
-        /**
-         * Represents the restoration of a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        restore = "restore",
-        /**
-         * Represents a change in the title of a task.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        setTitle = "setTitle",
-        /**
-         * Represents a previous task action being undone.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        undo = "undo"
-    }
-    /**
-     * Represents a recorded change to the task.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTaskChange extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly assignee: Excel.EmailIdentity;
-        /**
-         * Represents the identity of the user who made the task change.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly changedBy: Excel.EmailIdentity;
-        /**
-         * Represents the ID of the comment or comment reply to which the task change is anchored.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly commentId: string;
-        /**
-         * Represents the creation date and time of the task change record. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly createdDateTime: Date;
-        /**
-         * Represents the task's due date and time. It is used for the `setSchedule` change action.
-                    It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly dueDateTime: Date;
-        /**
-         * The unique GUID of the task change.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly id: string;
-        /**
-         * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
-                    This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly percentComplete: number;
-        /**
-         * Represents the task's priority. It is used for the `setPriority` change action.
-                    This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly priority: number;
-        /**
-         * Represents the task's start date and time. It is used for the `setSchedule` change action.
-                    It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly startDateTime: Date;
-        /**
-         * Represents the task's title. It is used for the `setTitle` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly title: string;
-        /**
-         * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
-        /**
-         * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly undoChangeId: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskChangeLoadOptions): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DocumentTaskChange;
-        /**
-         * Create a new instance of the `Excel.DocumentTaskChange` object.
-         */
-        static newObject(context: OfficeExtension.ClientRequestContext): Excel.DocumentTaskChange;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.DocumentTaskChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskChangeData;
-    }
-    /**
-     * Represents a collection of change records for a task.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTaskChangeCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.DocumentTaskChange[];
-        /**
-         * Gets the number of change records in the collection for the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a task change record by using its index in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The records are stored in chronological order from when the changes were recorded by Excel and are not necessarily ordered by `CreatedDateTime`. The `create` record is always at index 0.
-         * @returns The change record with the given index.
-         */
-        getItemAt(index: number): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskChangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTaskChangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskChangeCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.DocumentTaskChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskChangeCollectionData;
-    }
-    /**
-     * Represents information about a user's identity.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface Identity {
-        /**
-         * Represents the user's display name.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        displayName?: string;
-        /**
-         * Represents the user's unique ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-    }
-    /**
-     * Represents information about a user's identity.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface EmailIdentity {
-        /**
-         * Represents the user's display name.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        displayName?: string;
-        /**
-         * Represents the user's email.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        email?: string;
-        /**
-         * Represents the user's unique ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-    }
-    /**
-     * Represents information about a task's schedule.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface DocumentTaskSchedule {
-        /**
-         * Gets the date and time that the task is due. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dueDateTime: Date;
-        /**
-         * Gets the date and time that the task should start. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        startDateTime: Date;
-    }
-    /**
-     * Represents a task.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTask extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Gets the change records of the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly changes: Excel.DocumentTaskChangeCollection;
-        /**
-         * Gets the comment associated with the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly comment: Excel.Comment;
-        /**
-         * Returns a collection of assignees of the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly assignees: Excel.EmailIdentity[];
-        /**
-         * Gets the most recent user to have completed the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly completedBy: Excel.EmailIdentity;
-        /**
-         * Gets the date and time that the task was completed. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly completedDateTime: Date;
-        /**
-         * Gets the user who created the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly createdBy: Excel.EmailIdentity;
-        /**
-         * Gets the date and time that the task was created. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly createdDateTime: Date;
-        /**
-         * Gets the ID of the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly id: string;
-        /**
-         * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        percentComplete: number;
-        /**
-         * Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        priority: number;
-        /**
-         * Specifies the date and time the task should start and is due.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        startAndDueDateTime: Excel.DocumentTaskSchedule;
-        /**
-         * Specifies title of the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        title: string;
-        /**
-         * Adds the given user to the list of assignees attached to the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The identity of the user to add to the assignee list.
-         */
-        assign(assignee: Excel.EmailIdentity): void;
-        /**
-         * Removes the given user from the list of assignees attached to the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The identity of the user to remove from the assignee list.
-         */
-        unassign(assignee: Excel.EmailIdentity): void;
-        /**
-         * Removes all users from the list of assignees attached to the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        unassignAll(): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskLoadOptions): Excel.DocumentTask;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTask;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DocumentTask;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.DocumentTask` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskData;
-    }
-    /**
-     * Represents a collection of tasks.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTaskCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.DocumentTask[];
-        /**
-         * Gets the number of tasks in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a task using its ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param key - The ID of the task.
-         * @returns The task with the given ID. If there is no task with the given ID, then an `ItemNotFound` exception is thrown.
-         */
-        getItem(key: string): Excel.DocumentTask;
-        /**
-         * Gets a task by its index in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The index of the task in the collection.
-         * @returns The task with the given index.
-         */
-        getItemAt(index: number): Excel.DocumentTask;
-        /**
-         * Gets a task using its ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param key - The ID of the task.
-         * @returns The task with the given ID.
-                    If there is no task with the given ID, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         */
-        getItemOrNullObject(key: string): Excel.DocumentTask;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTaskCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.DocumentTaskCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskCollectionData;
-    }
-    /**
      * Represents a command type of `DataConnection`.
      *
      * @remarks
@@ -11373,7 +10706,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
@@ -11382,7 +10715,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Date is before comparator date.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -11391,7 +10724,7 @@ export declare namespace Excel {
         before = "Before",
         /**
          * Date is before or equal to comparator date.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -11400,7 +10733,7 @@ export declare namespace Excel {
         beforeOrEqualTo = "BeforeOrEqualTo",
         /**
          * Date is after comparator date.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -11409,7 +10742,7 @@ export declare namespace Excel {
         after = "After",
         /**
          * Date is after or equal to comparator date.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -11418,7 +10751,7 @@ export declare namespace Excel {
         afterOrEqualTo = "AfterOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` dates.
-                    
+
                      Required Criteria: {`lowerBound`, `upperBound`}.
                      Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
@@ -11635,7 +10968,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11644,7 +10977,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Label begins with substring criterion.
-                    
+
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11653,7 +10986,7 @@ export declare namespace Excel {
         beginsWith = "BeginsWith",
         /**
          * Label ends with substring criterion.
-                    
+
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11662,7 +10995,7 @@ export declare namespace Excel {
         endsWith = "EndsWith",
         /**
          * Label contains substring criterion.
-                    
+
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11671,7 +11004,7 @@ export declare namespace Excel {
         contains = "Contains",
         /**
          * Greater than comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11679,7 +11012,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11687,7 +11020,7 @@ export declare namespace Excel {
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11695,7 +11028,7 @@ export declare namespace Excel {
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-                    
+
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11703,7 +11036,7 @@ export declare namespace Excel {
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-                    
+
                      Required Criteria: {`lowerBound`, `upperBound`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -12017,7 +11350,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                      Required Criteria: {`value`, `comparator`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -12026,7 +11359,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Greater than comparator criterion.
-                    
+
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12034,7 +11367,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-                    
+
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12042,7 +11375,7 @@ export declare namespace Excel {
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-                    
+
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12050,7 +11383,7 @@ export declare namespace Excel {
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-                    
+
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12058,7 +11391,7 @@ export declare namespace Excel {
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-                    
+
                      Required Criteria: {`value`, `lowerBound`, `upperBound`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -12067,7 +11400,7 @@ export declare namespace Excel {
         between = "Between",
         /**
          * In top N (`threshold`) [items, percent, sum] of value category.
-                    
+
                      Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -12075,1152 +11408,12 @@ export declare namespace Excel {
         topN = "TopN",
         /**
          * In bottom N (`threshold`) [items, percent, sum] of value category.
-                    
+
                      Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
         bottomN = "BottomN"
-    }
-    /**
-     * Represents a built-in PivotTable style
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum BuiltInPivotTableStyle {
-        /**
-         * None
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        none = "None",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light1 = "Light1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light2 = "Light2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light3 = "Light3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light4 = "Light4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light5 = "Light5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light6 = "Light6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with header borders and footer borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light7 = "Light7",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light8 = "Light8",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light9 = "Light9",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light10 = "Light10",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light11 = "Light11",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light12 = "Light12",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light13 = "Light13",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with header borders, footer borders, first column border, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light14 = "Light14",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light15 = "Light15",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light16 = "Light16",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light17 = "Light17",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light18 = "Light18",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light19 = "Light19",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light20 = "Light20",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header and striped bordered rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light21 = "Light21",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light22 = "Light22",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light23 = "Light23",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light24 = "Light24",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light25 = "Light25",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light26 = "Light26",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light27 = "Light27",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with header borders, footer borders, and bordered columns.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light28 = "Light28",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium1 = "Medium1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium2 = "Medium2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium3 = "Medium3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium4 = "Medium4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium5 = "Medium5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium6 = "Medium6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and footer border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium7 = "Medium7",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium8 = "Medium8",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium9 = "Medium9",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium10 = "Medium10",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium11 = "Medium11",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium12 = "Medium12",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium13 = "Medium13",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and total row border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium14 = "Medium14",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium15 = "Medium15",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium16 = "Medium16",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium17 = "Medium17",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium18 = "Medium18",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium19 = "Medium19",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium20 = "Medium20",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, filled footer, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium21 = "Medium21",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium22 = "Medium22",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium23 = "Medium23",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium24 = "Medium24",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium25 = "Medium25",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium26 = "Medium26",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium27 = "Medium27",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled first column, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium28 = "Medium28",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark1 = "Dark1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark2 = "Dark2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark3 = "Dark3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark4 = "Dark4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark5 = "Dark5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark6 = "Dark6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and shaded body.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark7 = "Dark7",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark8 = "Dark8",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark9 = "Dark9",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark10 = "Dark10",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark11 = "Dark11",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark12 = "Dark12",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark13 = "Dark13",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and outside border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark14 = "Dark14",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark15 = "Dark15",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark16 = "Dark16",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark17 = "Dark17",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark18 = "Dark18",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark19 = "Dark19",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark20 = "Dark20",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, filled footer, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark21 = "Dark21",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark22 = "Dark22",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark23 = "Dark23",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark24 = "Dark24",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark25 = "Dark25",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark26 = "Dark26",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark27 = "Dark27",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with shaded body, and white borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark28 = "Dark28"
-    }
-    /**
-     * Represents a built-in slicer style.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum BuiltInSlicerStyle {
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light1 = "Light1",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light2 = "Light2",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light3 = "Light3",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light4 = "Light4",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light5 = "Light5",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light6 = "Light6",
-        /**
-         * Dark gray with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        other1 = "Other1",
-        /**
-         * Medium blue with light shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        other2 = "Other2",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark1 = "Dark1",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark2 = "Dark2",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark3 = "Dark3",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark4 = "Dark4",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark5 = "Dark5",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with dark shading.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark6 = "Dark6"
-    }
-    /**
-     * Represents a built-in table style.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum BuiltInTableStyle {
-        /**
-         * "Dark 1" (black in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light1 = "Light1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light2 = "Light2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light3 = "Light3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light4 = "Light4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light5 = "Light5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light6 = "Light6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with header borders and bottom border.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light7 = "Light7",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light8 = "Light8",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light9 = "Light9",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light10 = "Light10",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light11 = "Light11",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light12 = "Light12",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light13 = "Light13",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light14 = "Light14",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light15 = "Light15",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light16 = "Light16",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light17 = "Light17",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light18 = "Light18",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light19 = "Light19",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light20 = "Light20",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        light21 = "Light21",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium1 = "Medium1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium2 = "Medium2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium3 = "Medium3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium4 = "Medium4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium5 = "Medium5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium6 = "Medium6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium7 = "Medium7",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium8 = "Medium8",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium9 = "Medium9",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium10 = "Medium10",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium11 = "Medium11",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium12 = "Medium12",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium13 = "Medium13",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, and striped rows.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium14 = "Medium14",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium15 = "Medium15",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium16 = "Medium16",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium17 = "Medium17",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium18 = "Medium18",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium19 = "Medium19",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium20 = "Medium20",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium21 = "Medium21",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium22 = "Medium22",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium23 = "Medium23",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium24 = "Medium24",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium25 = "Medium25",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium26 = "Medium26",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium27 = "Medium27",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with striped rows, and cell borders.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        medium28 = "Medium28",
-        /**
-         * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark1 = "Dark1",
-        /**
-         * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark2 = "Dark2",
-        /**
-         * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark3 = "Dark3",
-        /**
-         * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark4 = "Dark4",
-        /**
-         * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark5 = "Dark5",
-        /**
-         * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark6 = "Dark6",
-        /**
-         * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and dark.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark7 = "Dark7",
-        /**
-         * Black with filled header, striped rows, light
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark8 = "Dark8",
-        /**
-         * Orange with filled header, striped rows, light
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark9 = "Dark9",
-        /**
-         * Yellow with filled header, striped rows, light
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark10 = "Dark10",
-        /**
-         * Green with filled header, striped rows, light
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dark11 = "Dark11"
     }
     /**
      * Represents the dimensions when getting values from chart series.
@@ -13262,7 +11455,7 @@ export declare namespace Excel {
     }
     /**
      * Provides information about the selection that raised the selection changed event.
-                
+
                  * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
@@ -13742,7 +11935,7 @@ export declare namespace Excel {
     export interface WorksheetFormulaChangedEventArgs {
         /**
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
-                    
+
                     If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails`
                     returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
          *
@@ -13848,64 +12041,6 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
-         */
-        worksheetId: string;
-    }
-    /**
-     * Provides information about the table that raised the filter applied event.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface TableFilteredEventArgs {
-        /**
-         * Gets the ID of the table in which the filter is applied.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        tableId: string;
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "TableFiltered";
-        /**
-         * Gets the ID of the worksheet which contains the table.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        worksheetId: string;
-    }
-    /**
-     * Provides information about the worksheet that raised the filter applied event.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface WorksheetFilteredEventArgs {
-        /**
-         * Gets the type of the event. See `Excel.EventType` for details.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: "WorksheetFiltered";
-        /**
-         * Gets the ID of the worksheet in which the filter is applied.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
          */
         worksheetId: string;
     }
@@ -14752,15 +12887,6 @@ export declare namespace Excel {
          */
         readonly decimalSeparator: string;
         /**
-         * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
-                    The stale formulas are rendered with stale formatting if the option is enabled.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        formatStaleValues: boolean;
-        /**
          * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
          *
          * @remarks
@@ -14828,7 +12954,7 @@ export declare namespace Excel {
         suspendApiCalculationUntilNextSync(): void;
         /**
          * Suspends screen updating until the next `context.sync()` is called.
-                    
+
                      * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * @remarks
@@ -14941,66 +13067,6 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.IterativeCalculationData;
     }
     /**
-     * Specifies the type of autorun event.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum AutorunEventType {
-        /**
-         * The autorun event type is unknown.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        unknown = "Unknown",
-        /**
-         * The autorun event type is triggered when the document is saved.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        onDocumentSave = "OnDocumentSave",
-        /**
-         * The autorun event type is triggered when the document is saved as a new file.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        onDocumentSaveAs = "OnDocumentSaveAs"
-    }
-    /**
-     * Specifies the options for completing an autorun event.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface AutorunEventCompletedOptions {
-        /**
-         * Specifies whether to allow the event to proceed. The default value is `false`.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        allowEvent: boolean;
-        /**
-         * Specifies the type of autorun event to be completed if allowed. The default value is `unknown`.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        autorunEventType: Excel.AutorunEventType | "Unknown" | "OnDocumentSave" | "OnDocumentSaveAs";
-        /**
-         * If provided, specifies an optional error message if the event isn't allowed to proceed. The default value is "" (empty string).
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        message?: string;
-    }
-    /**
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
                 To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
@@ -15066,14 +13132,6 @@ export declare namespace Excel {
          * [Api set: ExcelApiOnline 1.1]
          */
         readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;
-        /**
-         * Returns the `LocalImage` object associated with the workbook.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly localImage: Excel.LocalImage;
         /**
          * Represents a collection of workbook-scoped named items (named ranges and constants).
          *
@@ -15166,14 +13224,6 @@ export declare namespace Excel {
          */
         readonly tables: Excel.TableCollection;
         /**
-         * Returns a collection of tasks that are present in the workbook.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly tasks: Excel.DocumentTaskCollection;
-        /**
          * Represents a collection of TimelineStyles associated with the workbook.
          *
          * @remarks
@@ -15218,15 +13268,6 @@ export declare namespace Excel {
          */
         chartDataPointTrack: boolean;
         /**
-         * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
-                    The valid range is 1 to 86400, inclusive.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        externalCodeServiceTimeout: number;
-        /**
          * Specifies if changes have been made since the workbook was last saved.
                     You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
          *
@@ -15256,22 +13297,6 @@ export declare namespace Excel {
          */
         readonly readOnly: boolean;
         /**
-         * Specifies whether the PivotTable's field list pane is shown at the workbook level.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        showPivotFieldList: boolean;
-        /**
-         * True if the workbook uses the 1904 date system.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        use1904DateSystem: boolean;
-        /**
          * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
                     Data will permanently lose accuracy when switching this property from `false` to `true`.
          *
@@ -15287,16 +13312,6 @@ export declare namespace Excel {
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
-        /**
-         * Notifies the host application that the add-in's code has finished running in an autorun event.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param AutorunEventCompletedOptions - Required. Options for completing the autorun event.
-         */
-        autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions): void;
         /**
          * Close current workbook.
          *
@@ -15410,21 +13425,13 @@ export declare namespace Excel {
          */
         getSelectedRanges(): Excel.RangeAreas;
         /**
-         * Returns whether the workbook is currently in preview mode.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        inPreviewMode(): OfficeExtension.ClientResult<boolean>;
-        /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-                    
+
                      The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
-         * 
+         *
          * This API is currently only supported for Office on Windows, Mac, and the web.
          * In Excel on the web, this API doesn't support inserting charts, comments, PivotTables, or slicers.
          *
@@ -15711,14 +13718,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly tables: Excel.TableCollection;
-        /**
-         * Returns a collection of tasks that are present in the worksheet.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly tasks: Excel.DocumentTaskCollection;
         /**
          * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
          *
@@ -16084,27 +14083,6 @@ export declare namespace Excel {
          */
         readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
         /**
-         * Occurs when cells in the worksheet are being calculated asynchronously.
-
-                    This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event.
-                    Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered.
-                    However, if the calculation places a transient pending value (such as "#BUSY!") in the
-                    cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed,
-                    although calculation of the final value is not yet complete. When a subsequent
-                    calculation cycle completes the calculation for that cell, the `onCalculated` event is
-                    then triggered.
-
-                    Formula features such as JavaScript User-Defined Functions and =PY formulas
-                    may trigger this event.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;
-        /**
          * Occurs when data changes in a specific worksheet.
          *
          * @remarks
@@ -16131,16 +14109,6 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;
-        /**
-         * Occurs when a filter is applied on a specific worksheet.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;
         /**
          * Occurs when format changed on a specific worksheet.
          *
@@ -16278,38 +14246,6 @@ export declare namespace Excel {
          */
         add(name?: string): Excel.Worksheet;
         /**
-         * Inserts the specified worksheets of a workbook into the current workbook.
-                    
-                     * **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
-         * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
-         * @param positionType - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
-         * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
-         * @returns An array of IDs corresponding to each newly inserted worksheet.
-         */
-        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
-        /**
-         * Inserts the specified worksheets of a workbook into the current workbook.
-                    
-                     * **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param base64File - Required. The Base64-encoded string representing the source workbook file.
-         * @param sheetNamesToInsert - Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
-         * @param positionType - Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
-         * @param relativeTo - Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`, it will insert worksheets at the start or end of the current workbook.
-         * @returns An array of IDs corresponding to each newly inserted worksheet.
-         */
-        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
-        /**
          * Gets the currently active worksheet in the workbook.
          *
          * @remarks
@@ -16409,27 +14345,6 @@ export declare namespace Excel {
          */
         readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;
         /**
-         * Occurs when cells in the worksheet are being calculated asynchronously.
-
-                    This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event.
-                    Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered.
-                    However, if the calculation places a transient pending value (such as "#BUSY!") in the
-                    cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed,
-                    although calculation of the final value is not yet complete. When a subsequent
-                    calculation cycle completes the calculation for that cell, the `onCalculated` event is
-                    then triggered.
-
-                    Formula features such as JavaScript User-Defined Functions and =PY formulas
-                    may trigger this event.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;
-        /**
          * Occurs when any worksheet in the workbook is changed.
          *
          * @remarks
@@ -16465,16 +14380,6 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;
-        /**
-         * Occurs when any worksheet's filter is applied in the workbook.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;
         /**
          * Occurs when any worksheet in the workbook has a format changed.
          *
@@ -17248,7 +15153,7 @@ export declare namespace Excel {
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be `null` or can extend the source range either horizontally or vertically.
                      Discontiguous ranges are not supported.
-                    
+
                      For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
@@ -17262,7 +15167,7 @@ export declare namespace Excel {
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be `null` or can extend the source range either horizontally or vertically.
                      Discontiguous ranges are not supported.
-                    
+
                      For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
@@ -17727,7 +15632,7 @@ export declare namespace Excel {
          * @param cellType - The type of cells to include.
          * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
                     If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
@@ -17751,7 +15656,7 @@ export declare namespace Excel {
          * @param cellType - The type of cells to include.
          * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell.
          *
@@ -18014,26 +15919,6 @@ export declare namespace Excel {
          * @param remove - Optional. Set to `true` to remove one level of tracer arrows to direct precedents. Set to `false` to expand one level of tracer arrows. The default value is `false`.
          */
         showPrecedents(remove?: boolean): void;
-        /**
-         * Sets the marshaling mode of the Python in Excel formula =PY.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
-         */
-        togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;
-        /**
-         * Sets the marshaling mode of the Python in Excel formula =PY.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param marshalMode - The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
-         */
-        togglePythonMarshalMode(marshalMode?: "PythonObject" | "ExcelValue"): void;
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -18389,7 +16274,7 @@ export declare namespace Excel {
          * @param cellType - The type of cells to include.
          * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Returns a `RangeAreas` object that represents all the cells that match the specified type and value.
                     If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
@@ -18413,7 +16298,7 @@ export declare namespace Excel {
          * @param cellType - The type of cells to include.
          * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
          */
-        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Returns a scoped collection of tables that overlap with any range in this `RangeAreas` object.
          *
@@ -19824,7 +17709,7 @@ export declare namespace Excel {
         readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
         /**
          * Occurs when the selected content in the binding is changed.
-                    
+
                      * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
@@ -20095,16 +17980,6 @@ export declare namespace Excel {
          */
         readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;
         /**
-         * Occurs when a filter is applied on any table in a workbook, or a worksheet.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;
-        /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `Excel.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
@@ -20218,44 +18093,12 @@ export declare namespace Excel {
          */
         readonly sort: Excel.TableSort;
         /**
-         * The style applied to the table.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly tableStyle: Excel.TableStyle;
-        /**
          * The worksheet containing the current table.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
          */
         readonly worksheet: Excel.Worksheet;
-        /**
-         * Specifies the alternative text for accessibility.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        altTextDescription: string;
-        /**
-         * Specifies a summary for the table, such as one used by screen readers.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        altTextTitle: string;
-        /**
-         * Specifies a comment associated with the table.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        comment: string;
         /**
          * Specifies if the first column contains special formatting.
          *
@@ -20278,14 +18121,6 @@ export declare namespace Excel {
          */
         readonly id: string;
         /**
-         * Retrieves whether the table is currently active.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly isActive: boolean;
-        /**
          * Returns a numeric ID.
          *
          * @remarks
@@ -20294,7 +18129,7 @@ export declare namespace Excel {
         readonly legacyId: string;
         /**
          * Name of the table.
-                    
+
                      The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
@@ -20337,14 +18172,6 @@ export declare namespace Excel {
          */
         showTotals: boolean;
         /**
-         * Retrieves the data source type from which the table originates.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly source: Excel.TableSource | "External" | "Range" | "Xml" | "Query" | "Model";
-        /**
          * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
          * @remarks
@@ -20366,14 +18193,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         clearFilters(): void;
-        /**
-         * Changes the table to use the default table style.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        clearStyle(): void;
         /**
          * Converts the table into a normal range of cells. All data is preserved.
          *
@@ -20433,16 +18252,6 @@ export declare namespace Excel {
          */
         resize(newRange: Range | string): void;
         /**
-         * Sets the style applied to the table.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param style - The style to apply to the table. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
-         */
-        setStyle(style: string | TableStyle | BuiltInTableStyle): void;
-        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -20473,16 +18282,6 @@ export declare namespace Excel {
          */
         readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;
         /**
-         * Occurs when a filter is applied on a specific table.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;
-        /**
          * Occurs when the selection changes on a specific table.
          *
          * @remarks
@@ -20496,50 +18295,6 @@ export declare namespace Excel {
         * Whereas the original `Excel.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.TableData;
-    }
-    /**
-     * Specifies the data source type for a table.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum TableSource {
-        /**
-         * An external data source, such as Microsoft SharePoint Foundation.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        external = "External",
-        /**
-         * A range object in this worksheet.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        range = "Range",
-        /**
-         * An XML data source.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        xml = "Xml",
-        /**
-         * A Power Query query data source.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        query = "Query",
-        /**
-         * A Power Pivot model.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        model = "Model"
     }
     /**
      * Represents a collection of all the columns that are part of the table.
@@ -20777,7 +18532,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a collection of all the rows that are part of the table.
-                
+
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -20800,7 +18555,7 @@ export declare namespace Excel {
         readonly count: number;
         /**
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -20817,7 +18572,7 @@ export declare namespace Excel {
         /**
          * Adds one or more rows to the table. The returned object will be the top row of the newly added row or rows.
                      Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -20862,7 +18617,7 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a row based on its position in the collection.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -20900,7 +18655,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a row in a table.
-                
+
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -22036,7 +19791,7 @@ export declare namespace Excel {
          * @param sourceData - The `Range` object corresponding to the source data.
          * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.
          */
-        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          * Returns the number of charts in the worksheet.
          *
@@ -22219,7 +19974,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
         /**
          * Specifies the way that blank cells are plotted on a chart.
          *
@@ -22779,7 +20534,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
         /**
          * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                     Throws an `InvalidArgument` error on invalid charts.
@@ -27205,7 +24960,7 @@ export declare namespace Excel {
         /**
          * The first criterion used to filter data. Used as an operator in the case of `custom` filtering.
                      For example ">50" for numbers greater than 50, or "=*s" for values ending in "s".
-                    
+
                      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to `topItems`).
          *
          * @remarks
@@ -27552,14 +25307,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.12]
          */
         readonly shortDatePattern: string;
-        /**
-         * Gets the format string for a short date and time value. This is based on current system settings.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly shortDateTimePattern: string;
         /**
          * Gets the string used as the time separator. This is based on current system settings.
          *
@@ -28010,55 +25757,6 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.PivotTableCollectionData;
     }
     /**
-     * Represents the DateTime Grouping condition.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum PivotTableDateGroupBy {
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        invalid = "Invalid",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        bySeconds = "BySeconds",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byMinutes = "ByMinutes",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byHours = "ByHours",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byDays = "ByDays",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byMonths = "ByMonths",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byQuarters = "ByQuarters",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        byYears = "ByYears"
-    }
-    /**
      * Represents an Excel PivotTable.
                 To learn more about the PivotTable object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
      *
@@ -28124,14 +25822,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.12]
          */
         allowMultipleFiltersPerField: boolean;
-        /**
-         * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        autoRefresh: boolean;
         /**
          * Specifies if the PivotTable allows values in the data body to be edited by the user.
          *
@@ -28242,16 +25932,8 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * The style applied to the PivotTable.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly pivotStyle: Excel.PivotTableStyle;
-        /**
          * The alt text description of the PivotTable.
-                    
+
                      Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                      This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                      A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -28262,7 +25944,7 @@ export declare namespace Excel {
         altTextDescription: string;
         /**
          * The alt text title of the PivotTable.
-                    
+
                      Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                      This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                      A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -28365,21 +26047,6 @@ export declare namespace Excel {
          */
         displayBlankLineAfterEachItem(display: boolean): void;
         /**
-         * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.
-                    The returned cell is the intersection of the given row and column that contains the data from the given hierarchy.
-                    This method is the inverse of calling `getPivotItems` and `getDataHierarchy` on a particular cell.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param dataHierarchy - The `dataHierarchy` that provides the data item to find.
-         * @param rowItems - The PivotItems from the row axis that make up the value to find.
-         * @param columnItems - The PivotItems from the column axis that make up the value to find.
-         * @returns A range specifying a single cell that contains the value specified.
-         */
-        getCell(dataHierarchy: DataPivotHierarchy | string, rowItems: Array<PivotItem | string>, columnItems: Array<PivotItem | string>): Excel.Range;
-        /**
          * Returns the range where the PivotTable's column labels reside.
          *
          * @remarks
@@ -28475,16 +26142,6 @@ export declare namespace Excel {
          * @param sortBy - The direction of the sort.
          */
         setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" | "Descending"): void;
-        /**
-         * Sets the style applied to the PivotTable.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param style - The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
-         */
-        setStyle(style: string | PivotTableStyle | BuiltInPivotTableStyle): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -34290,16 +31947,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Comment): void;
         /**
-         * Assigns the task attached to the comment to the given user as an assignee. If there is no task, one will be created.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The assignee's user identity information.
-         */
-        assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;
-        /**
          * Deletes the comment and all the connected replies.
          *
          * @remarks
@@ -34313,24 +31960,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         getLocation(): Excel.Range;
-        /**
-         * Gets the task associated with this comment. If there is no task for the comment thread, an `ItemNotFound` exception is thrown.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getTask(): Excel.DocumentTask;
-        /**
-         * Gets the task associated with this comment.
-                    If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getTaskOrNullObject(): Excel.DocumentTask;
         /**
          * Updates the comment content with a specially formatted string and a list of mentions.
          *
@@ -34539,16 +32168,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.CommentReply): void;
         /**
-         * Assigns the task attached to the comment to the given user as the sole assignee. If there is no task, one will be created.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The assignee's user identity information.
-         */
-        assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;
-        /**
          * Deletes the comment reply.
          *
          * @remarks
@@ -34569,24 +32188,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         getParentComment(): Excel.Comment;
-        /**
-         * Gets the task associated with this comment reply's thread. If there is no task for the comment thread, an `ItemNotFound` exception is thrown.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getTask(): Excel.DocumentTask;
-        /**
-         * Gets the task associated with this comment reply's thread.
-                    If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
-                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getTaskOrNullObject(): Excel.DocumentTask;
         /**
          * Updates the comment content with a specially formatted string and a list of mentions.
          *
@@ -34696,27 +32297,6 @@ export declare namespace Excel {
          * @param connectorType - Represents the connector type. See `Excel.ConnectorType` for details.
          */
         addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
-        /**
-         * Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param address - The address of the cell that contains the local image.
-         * @returns The `Shape` object associated with the floating shape.
-         */
-        addLocalImageReference(address: string): Excel.Shape;
-        /**
-         * Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet. Returns a `Shape` object that represents the new image.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param xml - An XML string that represents the SVG.
-         */
-        addSvg(xml: string): Excel.Shape;
         /**
          * Adds a text box to the worksheet with the provided text as the content. Returns a `Shape` object that represents the new text box.
          *
@@ -36084,45 +33664,6 @@ export declare namespace Excel {
          */
         size: number;
         /**
-         * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        strikethrough: boolean;
-        /**
-         * Specifies the subscript status of font.
-                    Returns `true` if all the fonts of the range are subscript.
-                    Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
-                    Returns `null` otherwise.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        subscript: boolean;
-        /**
-         * Specifies the superscript status of font.
-                    Returns `true` if all the fonts of the range are superscript.
-                    Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
-                    Returns `null` otherwise.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        superscript: boolean;
-        /**
-         * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-                    A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        tintAndShade: number;
-        /**
          * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
          *
          * @remarks
@@ -36181,14 +33722,6 @@ export declare namespace Excel {
          */
         readonly slicerItems: Excel.SlicerItemCollection;
         /**
-         * The style applied to the slicer.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly slicerStyle: Excel.SlicerStyle;
-        /**
          * Represents the worksheet containing the slicer.
          *
          * @remarks
@@ -36239,14 +33772,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         name: string;
-        /**
-         * Specifies the slicer name used in the formula.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        nameInFormula: string;
         /**
          * Specifies the sort order of the items in the slicer.
                     Possible values are: "DataSourceOrder", "Ascending", "Descending".
@@ -36318,16 +33843,6 @@ export declare namespace Excel {
          * @param items - Optional. The specified slicer item names to be selected.
          */
         selectItems(items?: string[]): void;
-        /**
-         * Sets the style applied to the slicer.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param style - The style to apply to the slicer. An `InvalidArgument` error is thrown if a string is provided that does not match the name of any style.
-         */
-        setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -36633,7 +34148,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomain extends OfficeExtension.ClientObject {
@@ -36645,7 +34160,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly dataProvider: string;
@@ -36655,7 +34170,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly id: string;
@@ -36665,7 +34180,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly lastRefreshed: Date;
@@ -36676,7 +34191,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly loadFunctionId: string;
@@ -36686,7 +34201,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly name: string;
@@ -36696,7 +34211,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly periodicRefreshInterval: number;
@@ -36707,7 +34222,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
@@ -36718,7 +34233,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly serviceId: number;
@@ -36728,7 +34243,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         readonly supportedRefreshModes: Excel.LinkedEntityDataDomainRefreshMode[];
@@ -36739,7 +34254,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          */
         delete(): void;
@@ -36749,7 +34264,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          */
         refresh(): void;
@@ -36785,7 +34300,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainAddedEventArgs {
@@ -36795,7 +34310,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         id?: string;
@@ -36804,7 +34319,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         serviceId: number;
@@ -36813,7 +34328,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
@@ -36822,7 +34337,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainLinkedEntityDataDomainAdded";
@@ -36833,7 +34348,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This class isn't supported in Excel on the web.
      */
     export class LinkedEntityDataDomainCollection extends OfficeExtension.ClientObject {
@@ -36847,7 +34362,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param options - Options that are used to create the linked entity data domain to be added.
@@ -36858,7 +34373,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -36867,7 +34382,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
@@ -36879,7 +34394,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param index - The index of the linked entity data domain in the collection.
@@ -36891,7 +34406,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
@@ -36905,7 +34420,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param name - The `name` of the `LinkedEntityDataDomain` object to be retrieved.
@@ -36919,7 +34434,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          *
          * @param id - The `id` of the `LinkedEntityDataDomain` object to be retrieved.
@@ -36942,7 +34457,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This method isn't supported in Excel on the web.
          */
         refreshAll(): void;
@@ -36969,7 +34484,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.21]
-         * 
+         *
          * This event isn't supported in Excel on the web.
          *
          * @eventproperty
@@ -36980,7 +34495,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This event isn't supported in Excel on the web.
          *
          * @eventproperty
@@ -36991,7 +34506,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This event isn't supported in Excel on the web.
          *
          * @eventproperty
@@ -37002,7 +34517,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This event isn't supported in Excel on the web.
          *
          * @eventproperty
@@ -37019,7 +34534,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainCreateOptions {
@@ -37028,7 +34543,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         dataProvider: string;
@@ -37038,7 +34553,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         id: string;
@@ -37048,7 +34563,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         loadFunctionId: string;
@@ -37058,7 +34573,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         name: string;
@@ -37069,7 +34584,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         periodicRefreshInterval?: number;
@@ -37082,7 +34597,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
@@ -37092,7 +34607,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshCompletedEventArgs {
@@ -37101,7 +34616,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         errors?: string[];
@@ -37111,7 +34626,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         id?: string;
@@ -37120,7 +34635,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         refreshed: boolean;
@@ -37129,7 +34644,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         serviceId: number;
@@ -37138,7 +34653,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
@@ -37147,7 +34662,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshCompleted";
@@ -37157,7 +34672,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This enum isn't supported in Excel on the web.
      */
     enum LinkedEntityDataDomainRefreshMode {
@@ -37165,7 +34680,7 @@ export declare namespace Excel {
          * Refresh mode is unknown or unsupported.
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This field isn't supported in Excel on the web.
          */
         unknown = "Unknown",
@@ -37174,7 +34689,7 @@ export declare namespace Excel {
                     Refresh is not triggered automatically.
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This field isn't supported in Excel on the web.
          */
         manual = "Manual",
@@ -37183,7 +34698,7 @@ export declare namespace Excel {
                     Refresh on add-in load, applicable to linked entity data domains defined by Office Add-ins.
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This field isn't supported in Excel on the web.
          */
         onLoad = "OnLoad",
@@ -37193,7 +34708,7 @@ export declare namespace Excel {
                     For linked entity data domains defined by Office Add-ins, this value also initiates a refresh each time the add-in loads.
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This field isn't supported in Excel on the web.
          */
         periodic = "Periodic"
@@ -37203,7 +34718,7 @@ export declare namespace Excel {
      *
      * @remarks
      * [Api set: ExcelApi 1.19]
-     * 
+     *
      * This interface isn't supported in Excel on the web.
      */
     export interface LinkedEntityDataDomainRefreshModeChangedEventArgs {
@@ -37213,7 +34728,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         id?: string;
@@ -37222,7 +34737,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         refreshMode: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
@@ -37231,7 +34746,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         serviceId: number;
@@ -37240,7 +34755,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         source: Excel.EventSource | "Local" | "Remote";
@@ -37249,7 +34764,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
-         * 
+         *
          * This property isn't supported in Excel on the web.
          */
         type: "LinkedEntityDataDomainRefreshModeChanged";
@@ -38656,86 +36171,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         funnel = "Funnel",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        columnClusteredEx = "ColumnClusteredEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        columnStackedEx = "ColumnStackedEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        columnStacked100Ex = "ColumnStacked100Ex",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        lineEx = "LineEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        lineStackedEx = "LineStackedEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        lineStacked100Ex = "LineStacked100Ex",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        pieEx = "PieEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        doughnutEx = "DoughnutEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        barClusteredEx = "BarClusteredEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        barStackedEx = "BarStackedEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        barStacked100Ex = "BarStacked100Ex",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        areaEx = "AreaEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        areaStackedEx = "AreaStackedEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        areaStacked100Ex = "AreaStacked100Ex",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        xyscatterEx = "XYScatterEx",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        bubbleEx = "BubbleEx"
     }
     /**
      * @remarks
@@ -38942,29 +36377,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         power = "Power"
-    }
-    /**
-     * Specifies what an =PY formula returns, such as an Excel value or a Python object.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    enum PythonMarshalMode {
-        /**
-         * Specifies that the result of an =PY formula should be a reference to an object in the Python service.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        pythonObject = "PythonObject",
-        /**
-         * Specifies that the result of an =PY formula should be an Excel value.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        excelValue = "ExcelValue"
     }
     /**
      * Specifies where in the z-order a shape should be moved relative to other shapes.
@@ -41638,88 +39050,6 @@ export declare namespace Excel {
          */
         worksheetMoved = "WorksheetMoved",
         /**
-         * ShapeAdded represents the type of event registered when a shape has been added to a ShapeCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        shapeAdded = "ShapeAdded",
-        /**
-         * ShapeDeleted represents the type of event registered when a shape has been deleted from a ShapeCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        shapeDeleted = "ShapeDeleted",
-        /**
-         * PivotTableAdded represents the type of event registered when a PivotTable has been added to a PivotTableCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        pivotTableAdded = "PivotTableAdded",
-        /**
-         * PivotTableDeleted represents the type of event registered when a PivotTable has been deleted from a PivotTableCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        pivotTableDeleted = "PivotTableDeleted",
-        /**
-         * NamedItemAdded represents the type of event registered when a NamedItem has been added to a NamedItemCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        namedItemAdded = "NamedItemAdded",
-        /**
-         * NamedItemDeleted represents the type of event registered when a NamedItem has been deleted from a NamedItemCollection.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        namedItemDeleted = "NamedItemDeleted",
-        /**
-         * WorksheetNavigationObjectChanged represents the type of event registered when a navigation object has changed on a worksheet.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        worksheetNavigationObjectChanged = "WorksheetNavigationObjectChanged",
-        /**
-         * WorkbookNavigationObjectChanged represents the type of event registered when a navigation object has changed on a workbook.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        workbookNavigationObjectChanged = "WorkbookNavigationObjectChanged",
-        /**
-         * WorksheetRowHeightChanged represents the type of event registered when the height of a worksheet row is changed.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        worksheetRowHeightChanged = "WorksheetRowHeightChanged",
-        /**
-         * WorkbookFormulaReferenceStyleChanged represents the type of event registered when the formula reference style has changed on a workbook.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        workbookFormulaReferenceStyleChanged = "WorkbookFormulaReferenceStyleChanged",
-        /**
-         * RangeValuesPreviewDismissed represents the type of event registered when a RangeValuePreview is dismissed.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        rangeValuesPreviewDismissed = "RangeValuesPreviewDismissed",
-        /**
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        annotationAdded = "AnnotationAdded",
-        /**
          * LinkedEntityDataDomainAdded represents the type of event registered when a new linked entity data domain is added to the workbook.
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -41743,39 +39073,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          */
         linkedEntityDataDomainLinkedEntityCellValueLoaded = "LinkedEntityDataDomainLinkedEntityCellValueLoaded",
-        /**
-         * TableQueryRefreshCompleted represents the type of event registered when a table query refresh is completed.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        queryQueryRefreshCompleted = "QueryQueryRefreshCompleted",
-        /**
-         * ExternalCodeServiceDiffResultReceived represents the type of event registered when the diff result is received from the external code service.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        externalCodeServiceDiffResultReceived = "ExternalCodeServiceDiffResultReceived",
-        /**
-         * AugmentationLoopUploadStatusChanged represents the type of event registered when the upload status of the augmentation loop changes.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        augmentationLoopUploadStatusChanged = "AugmentationLoopUploadStatusChanged",
-        /**
-         * `WorksheetCalculationBusy` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when a cell enters a busy calculation state.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        worksheetCalculationBusy = "WorksheetCalculationBusy",
-        /**
-         * `WorkbookPreviewDirtied` represents the type of event registered when workbook preview mode has been dirtied.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        workbookPreviewDirtied = "WorkbookPreviewDirtied"
     }
     /**
      * @remarks
@@ -43759,13 +41056,6 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         visible = "Visible",
-        /**
-         * Cells contain formulas which don't have up-to-date results.
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dirtyFormulas = "DirtyFormulas"
     }
     /**
      * @remarks
@@ -44798,21 +42088,21 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the active cell in the window.
+         * Gets the active cell in the window.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activeCell: Excel.Range;
         /**
-         * Specifies the active pane in the window.
+         * Gets the active pane in the window.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
          */
         readonly activePane: Excel.Pane;
         /**
-         * Specifies the active sheet in the window.
+         * Gets the active worksheet in the window.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
@@ -45044,14 +42334,14 @@ export declare namespace Excel {
          */
         readonly type: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
         /**
-         * Specifies the usable height of the window.
+         * Gets the usable height of the window.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
          */
         readonly usableHeight: number;
         /**
-         * Specifies the usable width of the window.
+         * Gets the usable width of the window.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
@@ -49378,49 +46668,6 @@ export declare namespace Excel {
             workbookLinksRefreshMode?: Excel.WorkbookLinksRefreshMode | "Manual" | "Automatic";
             items?: Excel.Interfaces.LinkedWorkbookData[];
         }
-        /** An interface for updating data on the `DocumentTaskChangeCollection` object, for use in `documentTaskChangeCollection.set({ ... })`. */
-        export interface DocumentTaskChangeCollectionUpdateData {
-            items?: Excel.Interfaces.DocumentTaskChangeData[];
-        }
-        /** An interface for updating data on the `DocumentTask` object, for use in `documentTask.set({ ... })`. */
-        export interface DocumentTaskUpdateData {
-            /**
-             * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: number;
-            /**
-             * Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: number;
-            /**
-             * Specifies the date and time the task should start and is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startAndDueDateTime?: Excel.DocumentTaskSchedule;
-            /**
-             * Specifies title of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: string;
-        }
-        /** An interface for updating data on the `DocumentTaskCollection` object, for use in `documentTaskCollection.set({ ... })`. */
-        export interface DocumentTaskCollectionUpdateData {
-            items?: Excel.Interfaces.DocumentTaskData[];
-        }
         /** An interface for updating data on the `Runtime` object, for use in `runtime.set({ ... })`. */
         export interface RuntimeUpdateData {
             /**
@@ -49457,15 +46704,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
              */
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
-            /**
-             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
-                        The stale formulas are rendered with stale formatting if the option is enabled.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            formatStaleValues?: boolean;
         }
         /** An interface for updating data on the `IterativeCalculation` object, for use in `iterativeCalculation.set({ ... })`. */
         export interface IterativeCalculationUpdateData {
@@ -49509,15 +46747,6 @@ export declare namespace Excel {
              */
             chartDataPointTrack?: boolean;
             /**
-             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
-                        The valid range is 1 to 86400, inclusive.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            externalCodeServiceTimeout?: number;
-            /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
              *
@@ -49525,22 +46754,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             isDirty?: boolean;
-            /**
-             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            showPivotFieldList?: boolean;
-            /**
-             * True if the workbook uses the 1904 date system.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            use1904DateSystem?: boolean;
             /**
              * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
                         Data will permanently lose accuracy when switching this property from `false` to `true`.
@@ -49900,38 +47113,6 @@ export declare namespace Excel {
         /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             /**
-            * The style applied to the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            tableStyle?: Excel.Interfaces.TableStyleUpdateData;
-            /**
-             * Specifies the alternative text for accessibility.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextDescription?: string;
-            /**
-             * Specifies a summary for the table, such as one used by screen readers.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextTitle?: string;
-            /**
-             * Specifies a comment associated with the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            comment?: string;
-            /**
              * Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -49947,7 +47128,7 @@ export declare namespace Excel {
             highlightLastColumn?: boolean;
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -50476,7 +47657,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              * Specifies the way that blank cells are plotted on a chart.
              *
@@ -50701,7 +47882,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                         Throws an `InvalidArgument` error on invalid charts.
@@ -52518,14 +49699,6 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
-             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            autoRefresh?: boolean;
-            /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -52557,16 +49730,8 @@ export declare namespace Excel {
         /** An interface for updating data on the `PivotLayout` object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
             /**
-            * The style applied to the PivotTable.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            pivotStyle?: Excel.Interfaces.PivotTableStyleUpdateData;
-            /**
              * The alt text description of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -52577,7 +49742,7 @@ export declare namespace Excel {
             altTextDescription?: string;
             /**
              * The alt text title of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -54520,45 +51685,6 @@ export declare namespace Excel {
              */
             size?: number;
             /**
-             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            strikethrough?: boolean;
-            /**
-             * Specifies the subscript status of font.
-                        Returns `true` if all the fonts of the range are subscript.
-                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            subscript?: boolean;
-            /**
-             * Specifies the superscript status of font.
-                        Returns `true` if all the fonts of the range are superscript.
-                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            superscript?: boolean;
-            /**
-             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            tintAndShade?: number;
-            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -54568,14 +51694,6 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `Slicer` object, for use in `slicer.set({ ... })`. */
         export interface SlicerUpdateData {
-            /**
-            * The style applied to the slicer.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            slicerStyle?: Excel.Interfaces.SlicerStyleUpdateData;
             /**
             * Represents the worksheet containing the slicer.
             *
@@ -54613,14 +51731,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             name?: string;
-            /**
-             * Specifies the slicer name used in the formula.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            nameInFormula?: string;
             /**
              * Specifies the sort order of the items in the slicer.
                         Possible values are: "DataSourceOrder", "Ascending", "Descending".
@@ -54683,7 +51793,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
@@ -54748,14 +51858,14 @@ export declare namespace Excel {
         /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
         export interface WindowUpdateData {
             /**
-            * Specifies the active cell in the window.
+            * Gets the active cell in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeUpdateData;
             /**
-            * Specifies the active sheet in the window.
+            * Gets the active worksheet in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
@@ -55094,13 +52204,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`. */
         export interface SensitivityLabelsCatalogData {
             /**
+             * Gets the labeling capabilities supported by Excel.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapabilities?: Excel.LabelingCapability[];
+            /**
              * Gets whether the catalog of sensitivity labels is enabled in Excel.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+            getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         }
         /** An interface describing the data returned by calling `sensitivityLabelAbacAttributeValue.toJSON()`. */
         export interface SensitivityLabelAbacAttributeValueData {
@@ -55286,200 +52404,6 @@ export declare namespace Excel {
         export interface LinkedWorkbookCollectionData {
             items?: Excel.Interfaces.LinkedWorkbookData[];
         }
-        /** An interface describing the data returned by calling `documentTaskChange.toJSON()`. */
-        export interface DocumentTaskChangeData {
-            /**
-             * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignee?: Excel.EmailIdentity;
-            /**
-             * Represents the identity of the user who made the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            changedBy?: Excel.EmailIdentity;
-            /**
-             * Represents the ID of the comment or comment reply to which the task change is anchored.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            commentId?: string;
-            /**
-             * Represents the creation date and time of the task change record. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: Date;
-            /**
-             * Represents the task's due date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: Date;
-            /**
-             * The unique GUID of the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-            /**
-             * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
-                        This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: number;
-            /**
-             * Represents the task's priority. It is used for the `setPriority` change action.
-                        This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: number;
-            /**
-             * Represents the task's start date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startDateTime?: Date;
-            /**
-             * Represents the task's title. It is used for the `setTitle` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: string;
-            /**
-             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            type?: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
-            /**
-             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            undoChangeId?: string;
-        }
-        /** An interface describing the data returned by calling `documentTaskChangeCollection.toJSON()`. */
-        export interface DocumentTaskChangeCollectionData {
-            items?: Excel.Interfaces.DocumentTaskChangeData[];
-        }
-        /** An interface describing the data returned by calling `documentTask.toJSON()`. */
-        export interface DocumentTaskData {
-            /**
-             * Returns a collection of assignees of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignees?: Excel.EmailIdentity[];
-            /**
-             * Gets the most recent user to have completed the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedBy?: Excel.EmailIdentity;
-            /**
-             * Gets the date and time that the task was completed. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedDateTime?: Date;
-            /**
-             * Gets the user who created the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdBy?: Excel.EmailIdentity;
-            /**
-             * Gets the date and time that the task was created. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: Date;
-            /**
-             * Gets the ID of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-            /**
-             * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: number;
-            /**
-             * Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: number;
-            /**
-             * Specifies the date and time the task should start and is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startAndDueDateTime?: Excel.DocumentTaskSchedule;
-            /**
-             * Specifies title of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: string;
-        }
-        /** An interface describing the data returned by calling `documentTaskCollection.toJSON()`. */
-        export interface DocumentTaskCollectionData {
-            items?: Excel.Interfaces.DocumentTaskData[];
-        }
         /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
             /**
@@ -55551,15 +52475,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.11]
              */
             decimalSeparator?: string;
-            /**
-             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
-                        The stale formulas are rendered with stale formatting if the option is enabled.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            formatStaleValues?: boolean;
             /**
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
              *
@@ -55744,15 +52659,6 @@ export declare namespace Excel {
              */
             chartDataPointTrack?: boolean;
             /**
-             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
-                        The valid range is 1 to 86400, inclusive.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            externalCodeServiceTimeout?: number;
-            /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
              *
@@ -55781,22 +52687,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             readOnly?: boolean;
-            /**
-             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            showPivotFieldList?: boolean;
-            /**
-             * True if the workbook uses the 1904 date system.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            use1904DateSystem?: boolean;
             /**
              * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
                         Data will permanently lose accuracy when switching this property from `false` to `true`.
@@ -56756,38 +53646,6 @@ export declare namespace Excel {
             */
             sort?: Excel.Interfaces.TableSortData;
             /**
-            * The style applied to the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            tableStyle?: Excel.Interfaces.TableStyleData;
-            /**
-             * Specifies the alternative text for accessibility.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextDescription?: string;
-            /**
-             * Specifies a summary for the table, such as one used by screen readers.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextTitle?: string;
-            /**
-             * Specifies a comment associated with the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            comment?: string;
-            /**
              * Specifies if the first column contains special formatting.
              *
              * @remarks
@@ -56809,14 +53667,6 @@ export declare namespace Excel {
              */
             id?: string;
             /**
-             * Retrieves whether the table is currently active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
              * Returns a numeric ID.
              *
              * @remarks
@@ -56825,7 +53675,7 @@ export declare namespace Excel {
             legacyId?: string;
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -56867,14 +53717,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
-            /**
-             * Retrieves the data source type from which the table originates.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            source?: Excel.TableSource | "External" | "Range" | "Xml" | "Query" | "Model";
             /**
              * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -57429,7 +54271,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              * Specifies the way that blank cells are plotted on a chart.
              *
@@ -57675,7 +54517,7 @@ export declare namespace Excel {
              * @remarks
              * [Api set: ExcelApi 1.7]
              */
-            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx";
+            chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
                         Throws an `InvalidArgument` error on invalid charts.
@@ -59770,14 +56612,6 @@ export declare namespace Excel {
              */
             shortDatePattern?: string;
             /**
-             * Gets the format string for a short date and time value. This is based on current system settings.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            shortDateTimePattern?: string;
-            /**
              * Gets the string used as the time separator. This is based on current system settings.
              *
              * @remarks
@@ -59863,14 +56697,6 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
-             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            autoRefresh?: boolean;
-            /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -59909,16 +56735,8 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
             /**
-            * The style applied to the PivotTable.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            pivotStyle?: Excel.Interfaces.PivotTableStyleData;
-            /**
              * The alt text description of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -59929,7 +56747,7 @@ export declare namespace Excel {
             altTextDescription?: string;
             /**
              * The alt text title of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -62292,45 +59110,6 @@ export declare namespace Excel {
              */
             size?: number;
             /**
-             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            strikethrough?: boolean;
-            /**
-             * Specifies the subscript status of font.
-                        Returns `true` if all the fonts of the range are subscript.
-                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            subscript?: boolean;
-            /**
-             * Specifies the superscript status of font.
-                        Returns `true` if all the fonts of the range are superscript.
-                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            superscript?: boolean;
-            /**
-             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            tintAndShade?: number;
-            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -62347,14 +59126,6 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.10]
             */
             slicerItems?: Excel.Interfaces.SlicerItemData[];
-            /**
-            * The style applied to the slicer.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            slicerStyle?: Excel.Interfaces.SlicerStyleData;
             /**
             * Represents the worksheet containing the slicer.
             *
@@ -62406,14 +59177,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             name?: string;
-            /**
-             * Specifies the slicer name used in the formula.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            nameInFormula?: string;
             /**
              * Specifies the sort order of the items in the slicer.
                         Possible values are: "DataSourceOrder", "Ascending", "Descending".
@@ -62496,7 +59259,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             dataProvider?: string;
@@ -62506,7 +59269,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             id?: string;
@@ -62516,7 +59279,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             lastRefreshed?: Date;
@@ -62527,7 +59290,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             loadFunctionId?: string;
@@ -62537,7 +59300,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             name?: string;
@@ -62547,7 +59310,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             periodicRefreshInterval?: number;
@@ -62558,7 +59321,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";
@@ -62569,7 +59332,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             serviceId?: number;
@@ -62579,7 +59342,7 @@ export declare namespace Excel {
              *
              * @remarks
              * [Api set: ExcelApi 1.19]
-             * 
+             *
              * This property isn't supported in Excel on the web.
              */
             supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];
@@ -62651,21 +59414,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `window.toJSON()`. */
         export interface WindowData {
             /**
-            * Specifies the active cell in the window.
+            * Gets the active cell in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeData;
             /**
-            * Specifies the active pane in the window.
+            * Gets the active pane in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneData;
             /**
-            * Specifies the active sheet in the window.
+            * Gets the active worksheet in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
@@ -62897,14 +59660,14 @@ export declare namespace Excel {
              */
             type?: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";
             /**
-             * Specifies the usable height of the window.
+             * Gets the usable height of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: number;
             /**
-             * Specifies the usable width of the window.
+             * Gets the usable width of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
@@ -63187,6 +59950,14 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Gets the labeling capabilities supported by Excel.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            getLabelingCapabilities?: boolean;
             /**
              * Gets whether the catalog of sensitivity labels is enabled in Excel.
              *
@@ -63533,434 +60304,6 @@ export declare namespace Excel {
             id?: boolean;
         }
         /**
-         * Represents a recorded change to the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface DocumentTaskChangeLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignee?: boolean;
-            /**
-             * Represents the identity of the user who made the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            changedBy?: boolean;
-            /**
-             * Represents the ID of the comment or comment reply to which the task change is anchored.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            commentId?: boolean;
-            /**
-             * Represents the creation date and time of the task change record. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: boolean;
-            /**
-             * Represents the task's due date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: boolean;
-            /**
-             * The unique GUID of the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
-                        This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: boolean;
-            /**
-             * Represents the task's priority. It is used for the `setPriority` change action.
-                        This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: boolean;
-            /**
-             * Represents the task's start date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startDateTime?: boolean;
-            /**
-             * Represents the task's title. It is used for the `setTitle` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: boolean;
-            /**
-             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            type?: boolean;
-            /**
-             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            undoChangeId?: boolean;
-        }
-        /**
-         * Represents a collection of change records for a task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface DocumentTaskChangeCollectionLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignee?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the identity of the user who made the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            changedBy?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the ID of the comment or comment reply to which the task change is anchored.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            commentId?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the creation date and time of the task change record. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the task's due date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: The unique GUID of the task change.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
-                        This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the task's priority. It is used for the `setPriority` change action.
-                        This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the task's start date and time. It is used for the `setSchedule` change action.
-                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the task's title. It is used for the `setTitle` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            type?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            undoChangeId?: boolean;
-        }
-        /**
-         * Represents a task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface DocumentTaskLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-            * Gets the comment associated with the task.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            comment?: Excel.Interfaces.CommentLoadOptions;
-            /**
-             * Returns a collection of assignees of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignees?: boolean;
-            /**
-             * Gets the most recent user to have completed the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedBy?: boolean;
-            /**
-             * Gets the date and time that the task was completed. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedDateTime?: boolean;
-            /**
-             * Gets the user who created the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdBy?: boolean;
-            /**
-             * Gets the date and time that the task was created. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: boolean;
-            /**
-             * Gets the ID of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: boolean;
-            /**
-             * Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: boolean;
-            /**
-             * Specifies the date and time the task should start and is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startAndDueDateTime?: boolean;
-            /**
-             * Specifies title of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: boolean;
-        }
-        /**
-         * Represents a collection of tasks.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface DocumentTaskCollectionLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-            * For EACH ITEM in the collection: Gets the comment associated with the task.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            comment?: Excel.Interfaces.CommentLoadOptions;
-            /**
-             * For EACH ITEM in the collection: Returns a collection of assignees of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignees?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the most recent user to have completed the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedBy?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the date and time that the task was completed. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            completedDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the user who created the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdBy?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the date and time that the task was created. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the ID of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the date and time the task should start and is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startAndDueDateTime?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies title of the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: boolean;
-        }
-        /**
          * Represents the Excel Runtime class.
          *
          * @remarks
@@ -64042,15 +60385,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.11]
              */
             decimalSeparator?: boolean;
-            /**
-             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
-                        The stale formulas are rendered with stale formatting if the option is enabled.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            formatStaleValues?: boolean;
             /**
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
              *
@@ -64177,15 +60511,6 @@ export declare namespace Excel {
              */
             chartDataPointTrack?: boolean;
             /**
-             * Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.
-                        The valid range is 1 to 86400, inclusive.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            externalCodeServiceTimeout?: boolean;
-            /**
              * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
              *
@@ -64214,22 +60539,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             readOnly?: boolean;
-            /**
-             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            showPivotFieldList?: boolean;
-            /**
-             * True if the workbook uses the 1904 date system.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            use1904DateSystem?: boolean;
             /**
              * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
                         Data will permanently lose accuracy when switching this property from `false` to `true`.
@@ -65583,44 +61892,12 @@ export declare namespace Excel {
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
             /**
-            * For EACH ITEM in the collection: The style applied to the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            tableStyle?: Excel.Interfaces.TableStyleLoadOptions;
-            /**
             * For EACH ITEM in the collection: The worksheet containing the current table.
             *
             * @remarks
             * [Api set: ExcelApi 1.2]
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             * For EACH ITEM in the collection: Specifies the alternative text for accessibility.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextDescription?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies a summary for the table, such as one used by screen readers.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextTitle?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies a comment associated with the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            comment?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
@@ -65643,14 +61920,6 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Retrieves whether the table is currently active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
              * For EACH ITEM in the collection: Returns a numeric ID.
              *
              * @remarks
@@ -65659,7 +61928,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * For EACH ITEM in the collection: Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -65701,14 +61970,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
-            /**
-             * For EACH ITEM in the collection: Retrieves the data source type from which the table originates.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            source?: boolean;
             /**
              * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -65757,44 +62018,12 @@ export declare namespace Excel {
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
             /**
-            * For EACH ITEM in the collection: The style applied to the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            tableStyle?: Excel.Interfaces.TableStyleLoadOptions;
-            /**
             * For EACH ITEM in the collection: The worksheet containing the current table.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             * For EACH ITEM in the collection: Specifies the alternative text for accessibility.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextDescription?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies a summary for the table, such as one used by screen readers.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextTitle?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies a comment associated with the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            comment?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
@@ -65817,14 +62046,6 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Retrieves whether the table is currently active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
              * For EACH ITEM in the collection: Returns a numeric ID.
              *
              * @remarks
@@ -65833,7 +62054,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * For EACH ITEM in the collection: Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -65875,14 +62096,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
-            /**
-             * For EACH ITEM in the collection: Retrieves the data source type from which the table originates.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            source?: boolean;
             /**
              * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -65932,44 +62145,12 @@ export declare namespace Excel {
             */
             sort?: Excel.Interfaces.TableSortLoadOptions;
             /**
-            * The style applied to the table.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            tableStyle?: Excel.Interfaces.TableStyleLoadOptions;
-            /**
             * The worksheet containing the current table.
             *
             * @remarks
             * [Api set: ExcelApi 1.2]
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             * Specifies the alternative text for accessibility.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextDescription?: boolean;
-            /**
-             * Specifies a summary for the table, such as one used by screen readers.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            altTextTitle?: boolean;
-            /**
-             * Specifies a comment associated with the table.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            comment?: boolean;
             /**
              * Specifies if the first column contains special formatting.
              *
@@ -65992,14 +62173,6 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * Retrieves whether the table is currently active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
              * Returns a numeric ID.
              *
              * @remarks
@@ -66008,7 +62181,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -66050,14 +62223,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             showTotals?: boolean;
-            /**
-             * Retrieves the data source type from which the table originates.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            source?: boolean;
             /**
              * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
@@ -66200,7 +62365,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a collection of all the rows that are part of the table.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -66250,7 +62415,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a row in a table.
-                    
+
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -70323,14 +66488,6 @@ export declare namespace Excel {
              */
             shortDatePattern?: boolean;
             /**
-             * Gets the format string for a short date and time value. This is based on current system settings.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            shortDateTimePattern?: boolean;
-            /**
              * Gets the string used as the time separator. This is based on current system settings.
              *
              * @remarks
@@ -70451,14 +66608,6 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            autoRefresh?: boolean;
-            /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -70526,14 +66675,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.12]
              */
             allowMultipleFiltersPerField?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            autoRefresh?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
@@ -70604,14 +66745,6 @@ export declare namespace Excel {
              */
             allowMultipleFiltersPerField?: boolean;
             /**
-             * Specifies whether the PivotTable auto refreshes when the source data changes. Corresponds to "Auto Refresh" setting in the UI.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            autoRefresh?: boolean;
-            /**
              * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * @remarks
@@ -70659,16 +66792,8 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * The style applied to the PivotTable.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            pivotStyle?: Excel.Interfaces.PivotTableStyleLoadOptions;
-            /**
              * The alt text description of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -70679,7 +66804,7 @@ export declare namespace Excel {
             altTextDescription?: boolean;
             /**
              * The alt text title of the PivotTable.
-                        
+
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -75124,45 +71249,6 @@ export declare namespace Excel {
              */
             size?: boolean;
             /**
-             * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            strikethrough?: boolean;
-            /**
-             * Specifies the subscript status of font.
-                        Returns `true` if all the fonts of the range are subscript.
-                        Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            subscript?: boolean;
-            /**
-             * Specifies the superscript status of font.
-                        Returns `true` if all the fonts of the range are superscript.
-                        Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
-                        Returns `null` otherwise.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            superscript?: boolean;
-            /**
-             * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-                        A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            tintAndShade?: boolean;
-            /**
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
              *
              * @remarks
@@ -75181,14 +71267,6 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
-            /**
-            * The style applied to the slicer.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;
             /**
             * Represents the worksheet containing the slicer.
             *
@@ -75241,14 +71319,6 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Specifies the slicer name used in the formula.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            nameInFormula?: boolean;
-            /**
              * Specifies the sort order of the items in the slicer.
                         Possible values are: "DataSourceOrder", "Ascending", "Descending".
              *
@@ -75292,14 +71362,6 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
-            /**
-            * For EACH ITEM in the collection: The style applied to the slicer.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;
             /**
             * For EACH ITEM in the collection: Represents the worksheet containing the slicer.
             *
@@ -75351,14 +71413,6 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             name?: boolean;
-            /**
-             * For EACH ITEM in the collection: Specifies the slicer name used in the formula.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            nameInFormula?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the sort order of the items in the slicer.
                         Possible values are: "DataSourceOrder", "Ascending", "Descending".
@@ -75803,21 +71857,21 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * Specifies the active cell in the window.
+            * Gets the active cell in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeLoadOptions;
             /**
-            * Specifies the active pane in the window.
+            * Gets the active pane in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneLoadOptions;
             /**
-            * Specifies the active sheet in the window.
+            * Gets the active worksheet in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
@@ -76042,14 +72096,14 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * Specifies the usable height of the window.
+             * Gets the usable height of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: boolean;
             /**
-             * Specifies the usable width of the window.
+             * Gets the usable width of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
@@ -76103,21 +72157,21 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Specifies the active cell in the window.
+            * For EACH ITEM in the collection: Gets the active cell in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activeCell?: Excel.Interfaces.RangeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Specifies the active pane in the window.
+            * For EACH ITEM in the collection: Gets the active pane in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
             */
             activePane?: Excel.Interfaces.PaneLoadOptions;
             /**
-            * For EACH ITEM in the collection: Specifies the active sheet in the window.
+            * For EACH ITEM in the collection: Gets the active worksheet in the window.
             *
             * @remarks
             * [Api set: ExcelApiDesktop 1.1]
@@ -76342,14 +72396,14 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the usable height of the window.
+             * For EACH ITEM in the collection: Gets the usable height of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
              */
             usableHeight?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the usable width of the window.
+             * For EACH ITEM in the collection: Gets the usable width of the window.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]

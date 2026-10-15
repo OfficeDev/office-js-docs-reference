@@ -22,7 +22,7 @@
   "docs/includes/excel-1-9.md": "56b9861503dbfb184ea037024b5898f18a208742b26fa610626e4a121f3056b7",
   "docs/includes/excel-desktop-1-1.md": "591413e2368a42df07c084517952d31b1cd9d0918a858604330607be00a50354",
   "docs/includes/excel-online.md": "199bb50b3b7e587aee3ef861c9e4918bacea6973f01663952ad5a64f329d613c",
-  "docs/includes/excel-preview.md": "c1dd8ae118451e070fb81c05bc309222f0023784e3fadb9eb6ba4cf1e0f77845",
+  "docs/includes/excel-preview.md": "341c1d2824322c8ce4f53d033ce2912fbe51b72b7bcb9980039bb58c3de8a5e1",
   "docs/includes/outlook-1-1.md": "aa79adb10745dbfd377f510a31f82968e63ca5e55307427c3b1b052cf7c97b4e",
   "docs/includes/outlook-1-10.md": "c3bf50e150cacb94f2b58a032050943a4e094a0b89b7f96462780f9e051d038e",
   "docs/includes/outlook-1-11.md": "57d4a4eddd23cf3732aa5f33492720060e1d378a9ac2cff637794ffbfa4cb70d",
@@ -55,7 +55,7 @@
   "docs/includes/powerpoint-1-7.md": "deaa7ebfca248a46f30d491f83de7ec980ed211d307dec34389814190d25e6bc",
   "docs/includes/powerpoint-1-8.md": "362f235a8c908f2455edac34f7d8d118e6190fa2b170983cb228e1c2efcc8176",
   "docs/includes/powerpoint-1-9.md": "1218a0155af2bfe44bff3a145e63b738cbaf86542f9f39a09484cfbac05a93b1",
-  "docs/includes/powerpoint-preview.md": "b68f316a589b22efd0b8c86a5c4cf4176f8b4ffcc7ea4799b7e500ee834eebae",
+  "docs/includes/powerpoint-preview.md": "67841eded14c8e095a89489abc1b70c8e9231c38fc7da675e93ddb9a3790c820",
   "docs/includes/word-1-1.md": "d65499dda9d13278801af55f0ecbc5f06f0a594588314179311b43685062b3c4",
   "docs/includes/word-1-2.md": "a41039a7423c1804b8d74616ee03529691ea621c99a56913917425ab3d71318a",
   "docs/includes/word-1-3-hidden-document.md": "c61ec1cffe600be1f0b37f39c1644f5d424897c952fd2c9a99da8638352f9201",
@@ -74,5 +74,5 @@
   "docs/includes/word-desktop-1-4.md": "c5e4edd59b4ae08375f036aa6baec9651ba41c9fc44a5babc8ee86c8e06d9ae6",
   "docs/includes/word-desktop-1-5.md": "ad2b6656b6550fe41baeb535303256d2cf2b3b3643d6450820fb30e3f19f3e57",
   "docs/includes/word-online.md": "e645b476195fda983b442e3cc9a606eaf83e4ec837ffb32027e1eed326dc4814",
-  "docs/includes/word-preview.md": "27a50d1e6c9c9c78d1d521fdb58d52c0e0bfe6ab34021911f10d2e08df48b44b"
+  "docs/includes/word-preview.md": "e8b6979a2b0df51e67f2fe6993159a78ebfa82a1d6f36835f1b6fded8b2a9a7a"
 }

@@ -11,7 +11,6 @@ remarks: |-
 
   - [Excel.CommentCollection](/javascript/api/excel/excel.commentcollection): [add](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-add-member(1)), [getItem](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemat-member(1)), [getItemByCell](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembycell-member(1)), [getItemByReplyId](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitembyreplyid-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.commentcollection#excel-excel-commentcollection-items-member)
   - [Excel.CommentReply](/javascript/api/excel/excel.commentreply): [getParentComment](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-getparentcomment-member(1))
-  - [Excel.DocumentTask](/javascript/api/excel/excel.documenttask): [comment](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-comment-member)
 
 isPreview: false
 isDeprecated: false
@@ -203,24 +202,6 @@ properties:
       return:
         type: string
 methods:
-  - name: assignTask(assignee)
-    uid: excel!Excel.Comment#assignTask:member(1)
-    package: excel!
-    fullName: assignTask(assignee)
-    summary: Assigns the task attached to the comment to the given user as an assignee. If there is no task, one will be created.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;'
-      parameters:
-        - id: assignee
-          description: The assignee's user identity information.
-          type: <xref uid="excel!Excel.EmailIdentity:interface" />
-      return:
-        type: <xref uid="excel!Excel.DocumentTask:class" />
-        description: ''
   - name: delete()
     uid: excel!Excel.Comment#delete:member(1)
     package: excel!
@@ -260,34 +241,6 @@ methods:
       content: 'getLocation(): Excel.Range;'
       return:
         type: <xref uid="excel!Excel.Range:class" />
-        description: ''
-  - name: getTask()
-    uid: excel!Excel.Comment#getTask:member(1)
-    package: excel!
-    fullName: getTask()
-    summary: Gets the task associated with this comment. If there is no task for the comment thread, an `ItemNotFound` exception is thrown.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getTask(): Excel.DocumentTask;'
-      return:
-        type: <xref uid="excel!Excel.DocumentTask:class" />
-        description: ''
-  - name: getTaskOrNullObject()
-    uid: excel!Excel.Comment#getTaskOrNullObject:member(1)
-    package: excel!
-    fullName: getTaskOrNullObject()
-    summary: Gets the task associated with this comment. If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getTaskOrNullObject(): Excel.DocumentTask;'
-      return:
-        type: <xref uid="excel!Excel.DocumentTask:class" />
         description: ''
   - name: load(options)
     uid: excel!Excel.Comment#load:member(1)

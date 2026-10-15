@@ -20,7 +20,7 @@ properties:
     uid: excel!Excel.Window#activeCell:member
     package: excel!
     fullName: activeCell
-    summary: Specifies the active cell in the window.
+    summary: Gets the active cell in the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     uid: excel!Excel.Window#activePane:member
     package: excel!
     fullName: activePane
-    summary: Specifies the active pane in the window.
+    summary: Gets the active pane in the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -46,7 +46,7 @@ properties:
     uid: excel!Excel.Window#activeWorksheet:member
     package: excel!
     fullName: activeWorksheet
-    summary: Specifies the active sheet in the window.
+    summary: Gets the active worksheet in the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -475,7 +475,7 @@ properties:
     uid: excel!Excel.Window#usableHeight:member
     package: excel!
     fullName: usableHeight
-    summary: Specifies the usable height of the window.
+    summary: Gets the usable height of the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -488,7 +488,7 @@ properties:
     uid: excel!Excel.Window#usableWidth:member
     package: excel!
     fullName: usableWidth
-    summary: Specifies the usable width of the window.
+    summary: Gets the usable width of the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false

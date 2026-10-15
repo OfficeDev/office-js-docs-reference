@@ -63,21 +63,24 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-  - name: tryToUpdate(labelId)
+  - name: tryToUpdate(labelId, options)
     uid: powerpoint!PowerPoint.SensitivityLabel#tryToUpdate:member(1)
     package: powerpoint!
-    fullName: tryToUpdate(labelId)
+    fullName: tryToUpdate(labelId, options)
     summary: Tries to update to the provided sensitivity label on the presentation for the user.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'tryToUpdate(labelId: string): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult>;'
+      content: 'tryToUpdate(labelId: string, options?: PowerPoint.SensitivityLabelTryUpdateOptions): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult>;'
       parameters:
         - id: labelId
           description: The ID of the label to apply.
           type: string
+        - id: options
+          description: Options for updating the sensitivity label.
+          type: <xref uid="powerpoint!PowerPoint.SensitivityLabelTryUpdateOptions:interface" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum" />&gt;
         description: The `SensitivityLabelUpdateResult` object.

@@ -107,19 +107,6 @@ properties:
       content: 'name: string;'
       return:
         type: string
-  - name: nameInFormula
-    uid: excel!Excel.Slicer#nameInFormula:member
-    package: excel!
-    fullName: nameInFormula
-    summary: Specifies the slicer name used in the formula.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nameInFormula: string;'
-      return:
-        type: string
   - name: slicerItems
     uid: excel!Excel.Slicer#slicerItems:member
     package: excel!
@@ -133,19 +120,6 @@ properties:
       content: 'readonly slicerItems: Excel.SlicerItemCollection;'
       return:
         type: <xref uid="excel!Excel.SlicerItemCollection:class" />
-  - name: slicerStyle
-    uid: excel!Excel.Slicer#slicerStyle:member
-    package: excel!
-    fullName: slicerStyle
-    summary: The style applied to the slicer.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly slicerStyle: Excel.SlicerStyle;'
-      return:
-        type: <xref uid="excel!Excel.SlicerStyle:class" />
   - name: sortBy
     uid: excel!Excel.Slicer#sortBy:member
     package: excel!
@@ -422,24 +396,6 @@ methods:
         - id: properties
           description: ''
           type: <xref uid="excel!Excel.Slicer:class" />
-      return:
-        type: void
-        description: ''
-  - name: setStyle(style)
-    uid: excel!Excel.Slicer#setStyle:member(1)
-    package: excel!
-    fullName: setStyle(style)
-    summary: Sets the style applied to the slicer.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'setStyle(style: string | SlicerStyle | BuiltInSlicerStyle): void;'
-      parameters:
-        - id: style
-          description: The style to apply to the slicer. An `InvalidArgument` error is thrown if a string is provided that does not match the name of any style.
-          type: string | <xref uid="excel!Excel.SlicerStyle:class" /> | <xref uid="excel!Excel.BuiltInSlicerStyle:enum" />
       return:
         type: void
         description: ''

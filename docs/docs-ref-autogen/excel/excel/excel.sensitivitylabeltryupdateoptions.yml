@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: Excel.SensitivityLabelTryUpdateOptions
+uid: excel!Excel.SensitivityLabelTryUpdateOptions:interface
+package: excel!
+fullName: Excel.SensitivityLabelTryUpdateOptions
+summary: Provides options for `SensitivityLabel.tryToUpdate`<!-- -->.
+remarks: |-
+  [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Used by
+
+  - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [tryToUpdate](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: abacAttributes
+    uid: excel!Excel.SensitivityLabelTryUpdateOptions#abacAttributes:member
+    package: excel!
+    fullName: abacAttributes
+    summary: If provided, specifies the ABAC attributes to apply with the label.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'abacAttributes?: Excel.SensitivityLabelAbacAttribute[];'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelAbacAttribute:class" />[]

@@ -65,32 +65,6 @@ properties:
       content: 'name?: string;'
       return:
         type: string
-  - name: nameInFormula
-    uid: excel!Excel.Interfaces.SlicerUpdateData#nameInFormula:member
-    package: excel!
-    fullName: nameInFormula
-    summary: Specifies the slicer name used in the formula.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nameInFormula?: string;'
-      return:
-        type: string
-  - name: slicerStyle
-    uid: excel!Excel.Interfaces.SlicerUpdateData#slicerStyle:member
-    package: excel!
-    fullName: slicerStyle
-    summary: The style applied to the slicer.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'slicerStyle?: Excel.Interfaces.SlicerStyleUpdateData;'
-      return:
-        type: <xref uid="excel!Excel.Interfaces.SlicerStyleUpdateData:interface" />
   - name: sortBy
     uid: excel!Excel.Interfaces.SlicerUpdateData#sortBy:member
     package: excel!

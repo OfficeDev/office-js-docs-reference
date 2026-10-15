@@ -38,13 +38,14 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+         * Gets the host capabilities for sensitivity labels in PowerPoint.
          *
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly getLabelingCapability: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+        readonly getLabelingCapabilities: PowerPoint.LabelingCapability[];
+        readonly getLabelingCapability: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         /**
          * Gets the attribute-based access control (ABAC) attributes that are available to the current user.
          *
@@ -8961,6 +8962,13 @@ export declare namespace PowerPoint {
          * @beta
          */
         labelingEnabled = "LabelingEnabled",
+        /**
+         * Represents attribute-based access control (ABAC) being supported by the host. When returned with `labelingEnabled`, an add-in may use ABAC-specific APIs, such as `SensitivityLabelsCatalog.getAttributes`.
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        attributeBasedAccessControlEnabled = "AttributeBasedAccessControlEnabled",
     }
     /**
      * Represents the page setup information for the presentation.
@@ -9559,6 +9567,23 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SensitivityLabelAbacAttributeData;
     }
     /**
+     * Provides options for `SensitivityLabel.tryToUpdate`.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SensitivityLabelTryUpdateOptions {
+        /**
+         * If provided, specifies the ABAC attributes to apply with the label.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        abacAttributes?: PowerPoint.SensitivityLabelAbacAttribute[];
+    }
+    /**
      * Represents the sensitivity label on the presentation.
      *
      * @remarks
@@ -9587,9 +9612,10 @@ export declare namespace PowerPoint {
          * @beta
          *
          * @param labelId - The ID of the label to apply.
+         * @param options - Options for updating the sensitivity label.
          * @returns The `SensitivityLabelUpdateResult` object.
          */
-        tryToUpdate(labelId: string): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult>;
+        tryToUpdate(labelId: string, options?: PowerPoint.SensitivityLabelTryUpdateOptions): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `PowerPoint.SensitivityLabel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10745,13 +10771,14 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`. */
         export interface SensitivityLabelsCatalogData {
             /**
-             * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+             * Gets the host capabilities for sensitivity labels in PowerPoint.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            getLabelingCapability?: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";
+            getLabelingCapabilities?: PowerPoint.LabelingCapability[];
+            getLabelingCapability?: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
@@ -12157,12 +12184,13 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             * Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+             * Gets the host capabilities for sensitivity labels in PowerPoint.
              *
              * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
+            getLabelingCapabilities?: boolean;
             getLabelingCapability?: boolean;
         }
         /**

@@ -9,17 +9,13 @@ enums:
   - excel!Excel.ArrowheadStyle:enum
   - excel!Excel.ArrowheadWidth:enum
   - excel!Excel.AutoFillType:enum
-  - excel!Excel.AutorunEventType:enum
   - excel!Excel.Base64EncodingType:enum
   - excel!Excel.BindingType:enum
   - excel!Excel.BlockedErrorCellValueSubType:enum
   - excel!Excel.BorderIndex:enum
   - excel!Excel.BorderLineStyle:enum
   - excel!Excel.BorderWeight:enum
-  - excel!Excel.BuiltInPivotTableStyle:enum
-  - excel!Excel.BuiltInSlicerStyle:enum
   - excel!Excel.BuiltInStyle:enum
-  - excel!Excel.BuiltInTableStyle:enum
   - excel!Excel.BusyErrorCellValueSubType:enum
   - excel!Excel.CalcErrorCellValueSubType:enum
   - excel!Excel.CalculationMode:enum
@@ -95,7 +91,6 @@ enums:
   - excel!Excel.DeleteShiftDirection:enum
   - excel!Excel.DocumentPropertyItem:enum
   - excel!Excel.DocumentPropertyType:enum
-  - excel!Excel.DocumentTaskChangeAction:enum
   - excel!Excel.DynamicFilterCriteria:enum
   - excel!Excel.EntityCardLayoutType:enum
   - excel!Excel.EntityCompactLayoutIcons:enum
@@ -138,14 +133,12 @@ enums:
   - excel!Excel.PivotFilterTopBottomCriterion:enum
   - excel!Excel.PivotFilterType:enum
   - excel!Excel.PivotLayoutType:enum
-  - excel!Excel.PivotTableDateGroupBy:enum
   - excel!Excel.Placement:enum
   - excel!Excel.PrintComments:enum
   - excel!Excel.PrintErrorType:enum
   - excel!Excel.PrintMarginUnit:enum
   - excel!Excel.PrintOrder:enum
   - excel!Excel.ProtectionSelectionMode:enum
-  - excel!Excel.PythonMarshalMode:enum
   - excel!Excel.QueryError:enum
   - excel!Excel.RangeCopyType:enum
   - excel!Excel.RangeUnderlineStyle:enum
@@ -188,7 +181,6 @@ enums:
   - excel!Excel.SpecialCellValueType:enum
   - excel!Excel.SpillErrorCellValueSubType:enum
   - excel!Excel.SubtotalLocationType:enum
-  - excel!Excel.TableSource:enum
   - excel!Excel.TimeoutErrorCellValueSubType:enum
   - excel!Excel.TopBottomSelectionType:enum
   - excel!Excel.ValueErrorCellValueSubType:enum
@@ -285,10 +277,6 @@ classes:
   - excel!Excel.DataValidation:class
   - excel!Excel.DatetimeFormatInfo:class
   - excel!Excel.DocumentProperties:class
-  - excel!Excel.DocumentTask:class
-  - excel!Excel.DocumentTaskChange:class
-  - excel!Excel.DocumentTaskChangeCollection:class
-  - excel!Excel.DocumentTaskCollection:class
   - excel!Excel.Filter:class
   - excel!Excel.FilterPivotHierarchy:class
   - excel!Excel.FilterPivotHierarchyCollection:class
@@ -308,7 +296,6 @@ classes:
   - excel!Excel.LinkedEntityDataDomainCollection:class
   - excel!Excel.LinkedWorkbook:class
   - excel!Excel.LinkedWorkbookCollection:class
-  - excel!Excel.LocalImage:class
   - excel!Excel.NamedItem:class
   - excel!Excel.NamedItemArrayValues:class
   - excel!Excel.NamedItemCollection:class
@@ -407,7 +394,6 @@ classes:
 interfaces:
   - excel!Excel.AllowEditRangeOptions:interface
   - excel!Excel.ArrayCellValue:interface
-  - excel!Excel.AutorunEventCompletedOptions:interface
   - excel!Excel.Base64EncodedImage:interface
   - excel!Excel.BasicCardLayout:interface
   - excel!Excel.BasicCompactLayout:interface
@@ -474,9 +460,7 @@ interfaces:
   - excel!Excel.DataValidationRule:interface
   - excel!Excel.DateTimeDataValidation:interface
   - excel!Excel.Div0ErrorCellValue:interface
-  - excel!Excel.DocumentTaskSchedule:interface
   - excel!Excel.DoubleCellValue:interface
-  - excel!Excel.EmailIdentity:interface
   - excel!Excel.EmptyCellControl:interface
   - excel!Excel.EmptyCellValue:interface
   - excel!Excel.EntityArrayCardLayout:interface
@@ -505,7 +489,6 @@ interfaces:
   - excel!Excel.GettingDataErrorCellValue:interface
   - excel!Excel.Icon:interface
   - excel!Excel.IconCollections:interface
-  - excel!Excel.Identity:interface
   - excel!Excel.InsertWorksheetOptions:interface
   - excel!Excel.Interfaces.AllowEditRangeCollectionData:interface
   - excel!Excel.Interfaces.AllowEditRangeCollectionLoadOptions:interface
@@ -750,17 +733,6 @@ interfaces:
   - excel!Excel.Interfaces.DocumentPropertiesData:interface
   - excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface
   - excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface
-  - excel!Excel.Interfaces.DocumentTaskChangeCollectionData:interface
-  - excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions:interface
-  - excel!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData:interface
-  - excel!Excel.Interfaces.DocumentTaskChangeData:interface
-  - excel!Excel.Interfaces.DocumentTaskChangeLoadOptions:interface
-  - excel!Excel.Interfaces.DocumentTaskCollectionData:interface
-  - excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions:interface
-  - excel!Excel.Interfaces.DocumentTaskCollectionUpdateData:interface
-  - excel!Excel.Interfaces.DocumentTaskData:interface
-  - excel!Excel.Interfaces.DocumentTaskLoadOptions:interface
-  - excel!Excel.Interfaces.DocumentTaskUpdateData:interface
   - excel!Excel.Interfaces.FilterData:interface
   - excel!Excel.Interfaces.FilterLoadOptions:interface
   - excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface
@@ -1108,6 +1080,7 @@ interfaces:
   - excel!Excel.RunOptions:interface
   - excel!Excel.SearchCriteria:interface
   - excel!Excel.SelectionChangedEventArgs:interface
+  - excel!Excel.SensitivityLabelTryUpdateOptions:interface
   - excel!Excel.Session:interface
   - excel!Excel.SettableCellProperties:interface
   - excel!Excel.SettableColumnProperties:interface
@@ -1123,7 +1096,6 @@ interfaces:
   - excel!Excel.TableAddedEventArgs:interface
   - excel!Excel.TableChangedEventArgs:interface
   - excel!Excel.TableDeletedEventArgs:interface
-  - excel!Excel.TableFilteredEventArgs:interface
   - excel!Excel.TableSelectionChangedEventArgs:interface
   - excel!Excel.ThreeArrowsGraySet:interface
   - excel!Excel.ThreeArrowsSet:interface
@@ -1145,12 +1117,10 @@ interfaces:
   - excel!Excel.WorksheetActivatedEventArgs:interface
   - excel!Excel.WorksheetAddedEventArgs:interface
   - excel!Excel.WorksheetCalculatedEventArgs:interface
-  - excel!Excel.WorksheetCalculationBusyEventArgs:interface
   - excel!Excel.WorksheetChangedEventArgs:interface
   - excel!Excel.WorksheetColumnSortedEventArgs:interface
   - excel!Excel.WorksheetDeactivatedEventArgs:interface
   - excel!Excel.WorksheetDeletedEventArgs:interface
-  - excel!Excel.WorksheetFilteredEventArgs:interface
   - excel!Excel.WorksheetFormatChangedEventArgs:interface
   - excel!Excel.WorksheetFormulaChangedEventArgs:interface
   - excel!Excel.WorksheetMovedEventArgs:interface

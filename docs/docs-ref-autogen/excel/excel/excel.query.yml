@@ -158,20 +158,6 @@ properties:
       return:
         type: number
 methods:
-  - name: delete()
-    uid: excel!Excel.Query#delete:member(1)
-    package: excel!
-    fullName: delete()
-    summary: Deletes the query and associated connection. Tables associated with the query will no longer be connected.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
   - name: load(options)
     uid: excel!Excel.Query#load:member(1)
     package: excel!

@@ -183,19 +183,6 @@ properties:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type: <xref uid="excel!Excel.DataConnectionCollection:class" />
-  - name: externalCodeServiceTimeout
-    uid: excel!Excel.Workbook#externalCodeServiceTimeout:member
-    package: excel!
-    fullName: externalCodeServiceTimeout
-    summary: Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete. The valid range is 1 to 86400, inclusive.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'externalCodeServiceTimeout: number;'
-      return:
-        type: number
   - name: functions
     uid: excel!Excel.Workbook#functions:member
     package: excel!
@@ -273,19 +260,6 @@ properties:
       content: 'readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;'
       return:
         type: <xref uid="excel!Excel.LinkedWorkbookCollection:class" />
-  - name: localImage
-    uid: excel!Excel.Workbook#localImage:member
-    package: excel!
-    fullName: localImage
-    summary: Returns the `LocalImage` object associated with the workbook.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly localImage: Excel.LocalImage;'
-      return:
-        type: <xref uid="excel!Excel.LocalImage:class" />
   - name: name
     uid: excel!Excel.Workbook#name:member
     package: excel!
@@ -521,19 +495,6 @@ properties:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
         type: <xref uid="excel!Excel.SettingCollection:class" />
-  - name: showPivotFieldList
-    uid: excel!Excel.Workbook#showPivotFieldList:member
-    package: excel!
-    fullName: showPivotFieldList
-    summary: Specifies whether the PivotTable's field list pane is shown at the workbook level.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'showPivotFieldList: boolean;'
-      return:
-        type: boolean
   - name: slicers
     uid: excel!Excel.Workbook#slicers:member
     package: excel!
@@ -627,19 +588,6 @@ properties:
       content: 'readonly tableStyles: Excel.TableStyleCollection;'
       return:
         type: <xref uid="excel!Excel.TableStyleCollection:class" />
-  - name: tasks
-    uid: excel!Excel.Workbook#tasks:member
-    package: excel!
-    fullName: tasks
-    summary: Returns a collection of tasks that are present in the workbook.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly tasks: Excel.DocumentTaskCollection;'
-      return:
-        type: <xref uid="excel!Excel.DocumentTaskCollection:class" />
   - name: timelineStyles
     uid: excel!Excel.Workbook#timelineStyles:member
     package: excel!
@@ -653,19 +601,6 @@ properties:
       content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
       return:
         type: <xref uid="excel!Excel.TimelineStyleCollection:class" />
-  - name: use1904DateSystem
-    uid: excel!Excel.Workbook#use1904DateSystem:member
-    package: excel!
-    fullName: use1904DateSystem
-    summary: True if the workbook uses the 1904 date system.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'use1904DateSystem: boolean;'
-      return:
-        type: boolean
   - name: usePrecisionAsDisplayed
     uid: excel!Excel.Workbook#usePrecisionAsDisplayed:member
     package: excel!
@@ -716,24 +651,6 @@ properties:
       return:
         type: <xref uid="excel!Excel.WorksheetCollection:class" />
 methods:
-  - name: autorunEventCompleted(AutorunEventCompletedOptions)
-    uid: excel!Excel.Workbook#autorunEventCompleted:member(1)
-    package: excel!
-    fullName: autorunEventCompleted(AutorunEventCompletedOptions)
-    summary: Notifies the host application that the add-in's code has finished running in an autorun event.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions): void;'
-      parameters:
-        - id: AutorunEventCompletedOptions
-          description: Required. Options for completing the autorun event.
-          type: <xref uid="excel!Excel.AutorunEventCompletedOptions:interface" />
-      return:
-        type: void
-        description: ''
   - name: close(closeBehavior)
     uid: excel!Excel.Workbook#close:member(1)
     package: excel!
@@ -1025,20 +942,6 @@ methods:
       content: 'getSelectedRanges(): Excel.RangeAreas;'
       return:
         type: <xref uid="excel!Excel.RangeAreas:class" />
-        description: ''
-  - name: inPreviewMode()
-    uid: excel!Excel.Workbook#inPreviewMode:member(1)
-    package: excel!
-    fullName: inPreviewMode()
-    summary: Returns whether the workbook is currently in preview mode.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'inPreviewMode(): OfficeExtension.ClientResult<boolean>;'
-      return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: ''
   - name: insertWorksheetsFromBase64(base64File, options)
     uid: excel!Excel.Workbook#insertWorksheetsFromBase64:member(1)

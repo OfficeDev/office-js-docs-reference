@@ -38,8 +38,6 @@ items:
                 uid: excel!Excel.ArrowheadWidth:enum
               - name: AutoFillType
                 uid: excel!Excel.AutoFillType:enum
-              - name: AutorunEventType
-                uid: excel!Excel.AutorunEventType:enum
               - name: Base64EncodingType
                 uid: excel!Excel.Base64EncodingType:enum
               - name: BindingType
@@ -52,14 +50,8 @@ items:
                 uid: excel!Excel.BorderLineStyle:enum
               - name: BorderWeight
                 uid: excel!Excel.BorderWeight:enum
-              - name: BuiltInPivotTableStyle
-                uid: excel!Excel.BuiltInPivotTableStyle:enum
-              - name: BuiltInSlicerStyle
-                uid: excel!Excel.BuiltInSlicerStyle:enum
               - name: BuiltInStyle
                 uid: excel!Excel.BuiltInStyle:enum
-              - name: BuiltInTableStyle
-                uid: excel!Excel.BuiltInTableStyle:enum
               - name: BusyErrorCellValueSubType
                 uid: excel!Excel.BusyErrorCellValueSubType:enum
               - name: CalcErrorCellValueSubType
@@ -210,8 +202,6 @@ items:
                 uid: excel!Excel.DocumentPropertyItem:enum
               - name: DocumentPropertyType
                 uid: excel!Excel.DocumentPropertyType:enum
-              - name: DocumentTaskChangeAction
-                uid: excel!Excel.DocumentTaskChangeAction:enum
               - name: DynamicFilterCriteria
                 uid: excel!Excel.DynamicFilterCriteria:enum
               - name: EntityCardLayoutType
@@ -296,8 +286,6 @@ items:
                 uid: excel!Excel.PivotFilterType:enum
               - name: PivotLayoutType
                 uid: excel!Excel.PivotLayoutType:enum
-              - name: PivotTableDateGroupBy
-                uid: excel!Excel.PivotTableDateGroupBy:enum
               - name: Placement
                 uid: excel!Excel.Placement:enum
               - name: PrintComments
@@ -310,8 +298,6 @@ items:
                 uid: excel!Excel.PrintOrder:enum
               - name: ProtectionSelectionMode
                 uid: excel!Excel.ProtectionSelectionMode:enum
-              - name: PythonMarshalMode
-                uid: excel!Excel.PythonMarshalMode:enum
               - name: QueryError
                 uid: excel!Excel.QueryError:enum
               - name: RangeCopyType
@@ -396,8 +382,6 @@ items:
                 uid: excel!Excel.SpillErrorCellValueSubType:enum
               - name: SubtotalLocationType
                 uid: excel!Excel.SubtotalLocationType:enum
-              - name: TableSource
-                uid: excel!Excel.TableSource:enum
               - name: TimeoutErrorCellValueSubType
                 uid: excel!Excel.TimeoutErrorCellValueSubType:enum
               - name: TopBottomSelectionType
@@ -475,8 +459,6 @@ items:
             uid: excel!Excel.ArrayCellValue:interface
           - name: AutoFilter
             uid: excel!Excel.AutoFilter:class
-          - name: AutorunEventCompletedOptions
-            uid: excel!Excel.AutorunEventCompletedOptions:interface
           - name: Base64EncodedImage
             uid: excel!Excel.Base64EncodedImage:interface
           - name: BasicCardLayout
@@ -783,20 +765,8 @@ items:
             uid: excel!Excel.Div0ErrorCellValue:interface
           - name: DocumentProperties
             uid: excel!Excel.DocumentProperties:class
-          - name: DocumentTask
-            uid: excel!Excel.DocumentTask:class
-          - name: DocumentTaskChange
-            uid: excel!Excel.DocumentTaskChange:class
-          - name: DocumentTaskChangeCollection
-            uid: excel!Excel.DocumentTaskChangeCollection:class
-          - name: DocumentTaskCollection
-            uid: excel!Excel.DocumentTaskCollection:class
-          - name: DocumentTaskSchedule
-            uid: excel!Excel.DocumentTaskSchedule:interface
           - name: DoubleCellValue
             uid: excel!Excel.DoubleCellValue:interface
-          - name: EmailIdentity
-            uid: excel!Excel.EmailIdentity:interface
           - name: EmptyCellControl
             uid: excel!Excel.EmptyCellControl:interface
           - name: EmptyCellValue
@@ -861,8 +831,6 @@ items:
             uid: excel!Excel.Icon:interface
           - name: IconSetConditionalFormat
             uid: excel!Excel.IconSetConditionalFormat:class
-          - name: Identity
-            uid: excel!Excel.Identity:interface
           - name: Image
             uid: excel!Excel.Image:class
           - name: InsertWorksheetOptions
@@ -905,8 +873,6 @@ items:
             uid: excel!Excel.LinkedWorkbookCollection:class
           - name: ListDataValidation
             uid: excel!Excel.ListDataValidation:interface
-          - name: LocalImage
-            uid: excel!Excel.LocalImage:class
           - name: LocalImageCellValue
             uid: excel!Excel.LocalImageCellValue:interface
           - name: LocalImageCellValueCacheId
@@ -1067,6 +1033,8 @@ items:
             uid: excel!Excel.SensitivityLabelDetailsCollection:class
           - name: SensitivityLabelsCatalog
             uid: excel!Excel.SensitivityLabelsCatalog:class
+          - name: SensitivityLabelTryUpdateOptions
+            uid: excel!Excel.SensitivityLabelTryUpdateOptions:interface
           - name: Session
             uid: excel!Excel.Session:interface
           - name: SettableCellProperties
@@ -1137,8 +1105,6 @@ items:
             uid: excel!Excel.TableColumnCollection:class
           - name: TableDeletedEventArgs
             uid: excel!Excel.TableDeletedEventArgs:interface
-          - name: TableFilteredEventArgs
-            uid: excel!Excel.TableFilteredEventArgs:interface
           - name: TableRow
             uid: excel!Excel.TableRow:class
           - name: TableRowCollection
@@ -1199,8 +1165,6 @@ items:
             uid: excel!Excel.WorksheetAddedEventArgs:interface
           - name: WorksheetCalculatedEventArgs
             uid: excel!Excel.WorksheetCalculatedEventArgs:interface
-          - name: WorksheetCalculationBusyEventArgs
-            uid: excel!Excel.WorksheetCalculationBusyEventArgs:interface
           - name: WorksheetChangedEventArgs
             uid: excel!Excel.WorksheetChangedEventArgs:interface
           - name: WorksheetCollection
@@ -1215,8 +1179,6 @@ items:
             uid: excel!Excel.WorksheetDeactivatedEventArgs:interface
           - name: WorksheetDeletedEventArgs
             uid: excel!Excel.WorksheetDeletedEventArgs:interface
-          - name: WorksheetFilteredEventArgs
-            uid: excel!Excel.WorksheetFilteredEventArgs:interface
           - name: WorksheetFormatChangedEventArgs
             uid: excel!Excel.WorksheetFormatChangedEventArgs:interface
           - name: WorksheetFormulaChangedEventArgs
@@ -1526,8 +1488,6 @@ items:
         href: ../../manifest/appdomain.md
       - name: AppDomains
         href: ../../manifest/appdomains.md
-      - name: CitationText
-        href: ../../manifest/citationtext.md
       - name: DefaultLocale
         href: ../../manifest/defaultlocale.md
       - name: DefaultSettings
@@ -1536,10 +1496,6 @@ items:
         href: ../../manifest/description.md
       - name: DesktopSettings
         href: ../../manifest/desktopsettings.md
-      - name: Dictionary
-        href: ../../manifest/dictionary.md
-      - name: DictionaryHomePage
-        href: ../../manifest/dictionaryhomepage.md
       - name: DisableEntityHighlighting
         href: ../../manifest/disableentityhighlighting.md
       - name: DisplayName
@@ -1582,8 +1538,6 @@ items:
         href: ../../manifest/progid.md
       - name: ProviderName
         href: ../../manifest/providername.md
-      - name: QueryUri
-        href: ../../manifest/queryuri.md
       - name: RequestedHeight
         href: ../../manifest/requestedheight.md
       - name: RequestedWidth
@@ -1602,10 +1556,6 @@ items:
         href: ../../manifest/supporturl.md
       - name: TabletSettings
         href: ../../manifest/tabletsettings.md
-      - name: TargetDialect
-        href: ../../manifest/targetdialect.md
-      - name: TargetDialects
-        href: ../../manifest/targetdialects.md
       - name: Tokens
         href: ../../manifest/tokens.md
       - name: Token

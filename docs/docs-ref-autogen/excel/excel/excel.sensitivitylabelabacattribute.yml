@@ -9,6 +9,7 @@ remarks: |-
 
   #### Used by
 
+  - [Excel.SensitivityLabelTryUpdateOptions](/javascript/api/excel/excel.sensitivitylabeltryupdateoptions): [abacAttributes](/javascript/api/excel/excel.sensitivitylabeltryupdateoptions#excel-excel-sensitivitylabeltryupdateoptions-abacattributes-member)
   - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [getAttributes](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getattributes-member(1))
 
 isPreview: true

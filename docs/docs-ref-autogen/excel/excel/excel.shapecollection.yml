@@ -249,42 +249,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.Shape:class" />
         description: ''
-  - name: addLocalImageReference(address)
-    uid: excel!Excel.ShapeCollection#addLocalImageReference:member(1)
-    package: excel!
-    fullName: addLocalImageReference(address)
-    summary: Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'addLocalImageReference(address: string): Excel.Shape;'
-      parameters:
-        - id: address
-          description: The address of the cell that contains the local image.
-          type: string
-      return:
-        type: <xref uid="excel!Excel.Shape:class" />
-        description: The `Shape` object associated with the floating shape.
-  - name: addSvg(xml)
-    uid: excel!Excel.ShapeCollection#addSvg:member(1)
-    package: excel!
-    fullName: addSvg(xml)
-    summary: Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet. Returns a `Shape` object that represents the new image.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'addSvg(xml: string): Excel.Shape;'
-      parameters:
-        - id: xml
-          description: An XML string that represents the SVG.
-          type: string
-      return:
-        type: <xref uid="excel!Excel.Shape:class" />
-        description: ''
   - name: addTextBox(text)
     uid: excel!Excel.ShapeCollection#addTextBox:member(1)
     package: excel!

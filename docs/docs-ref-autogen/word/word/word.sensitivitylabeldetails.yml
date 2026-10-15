@@ -28,7 +28,7 @@ properties:
     syntax:
       content: 'readonly abacAttributeValues: Word.SensitivityLabelAbacAttributeValue[];'
       return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:class" />[]
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:interface" />[]
   - name: children
     uid: word!Word.SensitivityLabelDetails#children:member
     package: word!

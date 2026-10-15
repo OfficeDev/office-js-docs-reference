@@ -115,25 +115,31 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
-      // Updates the text and sets the font color to red.
+      // Replaces the document body and creates three tracked changes.
       await Word.run(async (context) => {
-        context.document.changeTrackingMode = Word.ChangeTrackingMode.off;
+        const document: Word.Document = context.document;
+        const body: Word.Body = document.body;
 
-        context.document.body.insertText("AAA BBB CCC DDD EEE FFF", "Replace");
+        document.changeTrackingMode = Word.ChangeTrackingMode.off;
+        body.clear();
+        body.insertParagraph("The quick brown fox jumps over the lazy dog.", Word.InsertLocation.start);
+        await context.sync();
 
-        context.document.changeTrackingMode = Word.ChangeTrackingMode.trackAll;
-        context.document.body
-          .search("BBB")
-          .getFirst()
-          .insertText("WWW", "Replace");
-        context.document.body
-          .search("DDD ")
-          .getFirst()
-          .delete();
-        context.document.body
-          .search("FFF")
-          .getFirst()
-          .insertText("XXX ", "Start");
+        document.changeTrackingMode = Word.ChangeTrackingMode.trackAll;
+        await context.sync();
+
+        const adjective: Word.Range = body.search("quick").getFirst();
+        const animal: Word.Range = body.search("fox").getFirst();
+        const ending: Word.Range = body.search("dog").getFirst();
+        adjective.insertText("swift", Word.InsertLocation.replace);
+        animal.delete();
+        ending.insertText("hound", Word.InsertLocation.replace);
+        await context.sync();
+
+        document.changeTrackingMode = Word.ChangeTrackingMode.off;
+        await context.sync();
+
+        console.log("Created three tracked changes.");
       });
       ```
 

@@ -9,11 +9,19 @@ remarks: |-
 
   #### Used by
 
-  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)
+  - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getLabelingCapabilities](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapabilities-member), [getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)
 
 isPreview: true
 isDeprecated: false
 fields:
+  - name: attributeBasedAccessControlEnabled
+    uid: word!Word.LabelingCapability.attributeBasedAccessControlEnabled:member
+    package: word!
+    summary: |-
+      Attribute-based access control is enabled for sensitivity labeling.
+
+      * [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+    value: '"AttributeBasedAccessControlEnabled"'
   - name: labelingDisabled
     uid: word!Word.LabelingCapability.labelingDisabled:member
     package: word!
