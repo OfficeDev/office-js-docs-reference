@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 02/27/2026
+ms.date: 10/14/2026
 ms.localizationpriority: medium
 ---
 
@@ -313,10 +313,14 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 
 ### Module
 
-This extension point adds a module extension add-in to the Outlook navigation bar. It also adds buttons to a custom tab on the ribbon for the module extension. To learn how to create module extensions, see [Module extension Outlook add-ins](/office/dev/add-ins/outlook/extension-module-outlook-add-ins).
+This extension point adds a module extension add-in to the Outlook navigation bar. It also adds buttons to a custom tab on the ribbon for the module extension.
 
 > [!IMPORTANT]
-> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
+>
+> - We recommend that you don't create new **Module** extension points. To provide a more modern solution that's available on various platforms, create [personal tab apps that open in Outlook](/microsoftteams/platform/m365-apps/extend-m365-teams-personal-tab) instead. With personal tab apps, your users will have access to business critical data and productivity tools not just in Outlook, but across Microsoft 365 applications, including Microsoft Teams, and various platforms.
+> - Module extension points are supported only in classic Outlook on Windows. 
+> - Module extension points aren't supported in the unified manifest for Microsoft 365.
+> - Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 #### Child elements
 
