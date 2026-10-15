@@ -121,24 +121,24 @@ methods:
       return:
         type: <xref uid="word!Word.SensitivityLabel:class" />
         description: ''
-  - name: tryToUpdate(LabelId, Justification)
+  - name: tryToUpdate(LabelId, Options)
     uid: word!Word.SensitivityLabel#tryToUpdate:member(1)
     package: word!
-    fullName: tryToUpdate(LabelId, Justification)
-    summary: Try to update to the provided sensitivity label on the document for the user.
+    fullName: tryToUpdate(LabelId, Options)
+    summary: Tries to update to the provided sensitivity label on the document for the user.
     remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'tryToUpdate(LabelId: string, Justification?: string): OfficeExtension.ClientResult<Word.SensitivityLabelUpdateResult>;'
+      content: 'tryToUpdate(LabelId: string, Options?: Word.SensitivityLabelTryUpdateOptions): OfficeExtension.ClientResult<Word.SensitivityLabelUpdateResult>;'
       parameters:
         - id: LabelId
-          description: The label information that needs to be set on the document.
+          description: The ID of the label to apply.
           type: string
-        - id: Justification
-          description: Optional. The justification of changing the label.
-          type: string
+        - id: Options
+          description: Optional. Additional inputs such as ABAC attributes.
+          type: <xref uid="word!Word.SensitivityLabelTryUpdateOptions:interface" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.SensitivityLabelUpdateResult:enum" />&gt;
         description: ''

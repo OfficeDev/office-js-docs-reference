@@ -909,14 +909,26 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
-      // Gets all tracked changes.
+      // Gets the tracked changes and logs their details.
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-        trackedChanges.load();
+        trackedChanges.load("items/author, items/date, items/text, items/type");
         await context.sync();
 
-        console.log(trackedChanges);
+        if (trackedChanges.items.length === 0) {
+          console.warn("No tracked changes were found.");
+          return;
+        }
+
+        trackedChanges.items.forEach((trackedChange: Word.TrackedChange, index: number) => {
+          console.log(`Tracked change ${index + 1}:`, {
+            author: trackedChange.author,
+            date: trackedChange.date,
+            text: trackedChange.text,
+            type: trackedChange.type,
+          });
+        });
       });
       ```
 

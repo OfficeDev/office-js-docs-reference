@@ -32,7 +32,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#activeCell:member
     package: excel!
     fullName: activeCell
-    summary: 'For EACH ITEM in the collection: Specifies the active cell in the window.'
+    summary: 'For EACH ITEM in the collection: Gets the active cell in the window.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -45,7 +45,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#activePane:member
     package: excel!
     fullName: activePane
-    summary: 'For EACH ITEM in the collection: Specifies the active pane in the window.'
+    summary: 'For EACH ITEM in the collection: Gets the active pane in the window.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -58,7 +58,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#activeWorksheet:member
     package: excel!
     fullName: activeWorksheet
-    summary: 'For EACH ITEM in the collection: Specifies the active sheet in the window.'
+    summary: 'For EACH ITEM in the collection: Gets the active worksheet in the window.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -461,7 +461,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#usableHeight:member
     package: excel!
     fullName: usableHeight
-    summary: 'For EACH ITEM in the collection: Specifies the usable height of the window.'
+    summary: 'For EACH ITEM in the collection: Gets the usable height of the window.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -474,7 +474,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#usableWidth:member
     package: excel!
     fullName: usableWidth
-    summary: 'For EACH ITEM in the collection: Specifies the usable width of the window.'
+    summary: 'For EACH ITEM in the collection: Gets the usable width of the window.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false

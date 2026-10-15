@@ -11,7 +11,6 @@ remarks: |-
 
   - [Excel.PivotField](/javascript/api/excel/excel.pivotfield): [sortByValues](/javascript/api/excel/excel.pivotfield#excel-excel-pivotfield-sortbyvalues-member(1))
   - [Excel.PivotItemCollection](/javascript/api/excel/excel.pivotitemcollection): [getItem](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.pivotitemcollection#excel-excel-pivotitemcollection-items-member)
-  - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [getCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))
   - [Excel.PivotManualFilter](/javascript/api/excel/excel.pivotmanualfilter): [selectedItems](/javascript/api/excel/excel.pivotmanualfilter#excel-excel-pivotmanualfilter-selecteditems-member)
   - [Excel.ShowAsRule](/javascript/api/excel/excel.showasrule): [baseItem](/javascript/api/excel/excel.showasrule#excel-excel-showasrule-baseitem-member)
 

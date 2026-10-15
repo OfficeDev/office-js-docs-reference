@@ -54,7 +54,10 @@ properties:
     package: word!
     fullName: hasText
     summary: Returns `true` if the text frame contains text, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: |-
+      \[Api set: WordApiDesktop 1.2\]
+
+      Note: Getting this property doesn't modify the document. Unlike the `body` property of [Word.Shape](xref:word!Word.Shape:class)<!-- -->, it doesn't create a text story on a shape that doesn't already contain text.
 
     isPreview: false
     isDeprecated: false

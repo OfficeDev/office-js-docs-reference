@@ -28,6 +28,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: getLabelingCapabilities
+    uid: excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapabilities:member
+    package: excel!
+    fullName: getLabelingCapabilities
+    summary: Gets the labeling capabilities supported by Excel.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapabilities?: boolean;'
+      return:
+        type: boolean
   - name: getLabelingCapability
     uid: excel!Excel.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapability:member
     package: excel!

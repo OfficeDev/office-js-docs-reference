@@ -13,6 +13,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: getLabelingCapabilities
+    uid: excel!Excel.Interfaces.SensitivityLabelsCatalogData#getLabelingCapabilities:member
+    package: excel!
+    fullName: getLabelingCapabilities
+    summary: Gets the labeling capabilities supported by Excel.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapabilities?: Excel.LabelingCapability[];'
+      return:
+        type: <xref uid="excel!Excel.LabelingCapability:enum" />[]
   - name: getLabelingCapability
     uid: excel!Excel.Interfaces.SensitivityLabelsCatalogData#getLabelingCapability:member
     package: excel!
@@ -23,6 +36,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      content: 'getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";'
       return:
-        type: <xref uid="excel!Excel.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
+        type: <xref uid="excel!Excel.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled"

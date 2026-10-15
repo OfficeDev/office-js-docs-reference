@@ -93,19 +93,6 @@ properties:
       content: 'chartDataPointTrack?: boolean;'
       return:
         type: boolean
-  - name: externalCodeServiceTimeout
-    uid: excel!Excel.Interfaces.WorkbookLoadOptions#externalCodeServiceTimeout:member
-    package: excel!
-    fullName: externalCodeServiceTimeout
-    summary: Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete. The valid range is 1 to 86400, inclusive.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'externalCodeServiceTimeout?: boolean;'
-      return:
-        type: boolean
   - name: isDirty
     uid: excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member
     package: excel!
@@ -197,19 +184,6 @@ properties:
       content: 'readOnly?: boolean;'
       return:
         type: boolean
-  - name: showPivotFieldList
-    uid: excel!Excel.Interfaces.WorkbookLoadOptions#showPivotFieldList:member
-    package: excel!
-    fullName: showPivotFieldList
-    summary: Specifies whether the PivotTable's field list pane is shown at the workbook level.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'showPivotFieldList?: boolean;'
-      return:
-        type: boolean
   - name: tables
     uid: excel!Excel.Interfaces.WorkbookLoadOptions#tables:member
     package: excel!
@@ -223,19 +197,6 @@ properties:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type: <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
-  - name: use1904DateSystem
-    uid: excel!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member
-    package: excel!
-    fullName: use1904DateSystem
-    summary: True if the workbook uses the 1904 date system.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'use1904DateSystem?: boolean;'
-      return:
-        type: boolean
   - name: usePrecisionAsDisplayed
     uid: excel!Excel.Interfaces.WorkbookLoadOptions#usePrecisionAsDisplayed:member
     package: excel!

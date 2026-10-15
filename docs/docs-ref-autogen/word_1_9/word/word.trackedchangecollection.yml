@@ -19,18 +19,26 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
-  // Gets the range of the first tracked change.
+  // Gets the tracked changes and logs their details.
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-    const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
+    trackedChanges.load("items/author, items/date, items/text, items/type");
     await context.sync();
 
-    const range: Word.Range = trackedChange.getRange();
-    range.load();
-    await context.sync();
+    if (trackedChanges.items.length === 0) {
+      console.warn("No tracked changes were found.");
+      return;
+    }
 
-    console.log("range.text: " + range.text);
+    trackedChanges.items.forEach((trackedChange: Word.TrackedChange, index: number) => {
+      console.log(`Tracked change ${index + 1}:`, {
+        author: trackedChange.author,
+        date: trackedChange.date,
+        text: trackedChange.text,
+        type: trackedChange.type,
+      });
+    });
   });
   ```
 
@@ -83,6 +91,8 @@ methods:
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.acceptAll();
+        await context.sync();
+
         console.log("Accepted all tracked changes.");
       });
       ```
@@ -134,7 +144,34 @@ methods:
     package: word!
     fullName: getFirstOrNullObject()
     summary: Gets the first TrackedChange in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Safely gets the first tracked change without throwing an error when the collection is empty.
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        const firstTrackedChange: Word.TrackedChange = trackedChanges.getFirstOrNullObject();
+        firstTrackedChange.load(["author", "isNullObject", "text", "type"]);
+        await context.sync();
+
+        if (firstTrackedChange.isNullObject) {
+          console.warn("No tracked changes were found.");
+          return;
+        }
+
+        console.log("First tracked change:", {
+          author: firstTrackedChange.author,
+          text: firstTrackedChange.text,
+          type: firstTrackedChange.type,
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -215,6 +252,8 @@ methods:
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         trackedChanges.rejectAll();
+        await context.sync();
+
         console.log("Rejected all tracked changes.");
       });
       ```

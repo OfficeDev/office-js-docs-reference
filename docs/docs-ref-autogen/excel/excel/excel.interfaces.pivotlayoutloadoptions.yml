@@ -125,19 +125,6 @@ properties:
       content: 'layoutType?: boolean;'
       return:
         type: boolean
-  - name: pivotStyle
-    uid: excel!Excel.Interfaces.PivotLayoutLoadOptions#pivotStyle:member
-    package: excel!
-    fullName: pivotStyle
-    summary: The style applied to the PivotTable.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'pivotStyle?: Excel.Interfaces.PivotTableStyleLoadOptions;'
-      return:
-        type: <xref uid="excel!Excel.Interfaces.PivotTableStyleLoadOptions:interface" />
   - name: preserveFormatting
     uid: excel!Excel.Interfaces.PivotLayoutLoadOptions#preserveFormatting:member
     package: excel!

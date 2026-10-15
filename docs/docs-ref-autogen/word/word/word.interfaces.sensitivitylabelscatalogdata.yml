@@ -13,6 +13,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: getLabelingCapabilities
+    uid: word!Word.Interfaces.SensitivityLabelsCatalogData#getLabelingCapabilities:member
+    package: word!
+    fullName: getLabelingCapabilities
+    summary: Gets the labeling capabilities of the sensitivity label catalog in Word.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapabilities?: Word.LabelingCapability[];'
+      return:
+        type: <xref uid="word!Word.LabelingCapability:enum" />[]
   - name: getLabelingCapability
     uid: word!Word.Interfaces.SensitivityLabelsCatalogData#getLabelingCapability:member
     package: word!
@@ -23,6 +36,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getLabelingCapability?: Word.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      content: 'getLabelingCapability?: Word.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";'
       return:
-        type: <xref uid="word!Word.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
+        type: <xref uid="word!Word.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled"

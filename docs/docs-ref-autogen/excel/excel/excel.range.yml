@@ -32,7 +32,7 @@ remarks: |-
   - [Excel.PageBreak](/javascript/api/excel/excel.pagebreak): [getCellAfterBreak](/javascript/api/excel/excel.pagebreak#excel-excel-pagebreak-getcellafterbreak-member(1))
   - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [add](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-add-member(1))
   - [Excel.PageLayout](/javascript/api/excel/excel.pagelayout): [getPrintTitleColumns](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprinttitlecolumns-member(1)), [getPrintTitleColumnsOrNullObject](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprinttitlecolumnsornullobject-member(1)), [getPrintTitleRows](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprinttitlerows-member(1)), [getPrintTitleRowsOrNullObject](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-getprinttitlerowsornullobject-member(1)), [setPrintArea](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-setprintarea-member(1)), [setPrintTitleColumns](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-setprinttitlecolumns-member(1)), [setPrintTitleRows](/javascript/api/excel/excel.pagelayout#excel-excel-pagelayout-setprinttitlerows-member(1))
-  - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [getCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1)), [getColumnLabelRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcolumnlabelrange-member(1)), [getDataBodyRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatabodyrange-member(1)), [getDataHierarchy](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatahierarchy-member(1)), [getFilterAxisRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getfilteraxisrange-member(1)), [getPivotItems](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getpivotitems-member(1)), [getRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getrange-member(1)), [getRowLabelRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getrowlabelrange-member(1)), [setAutoSortOnCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))
+  - [Excel.PivotLayout](/javascript/api/excel/excel.pivotlayout): [getColumnLabelRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcolumnlabelrange-member(1)), [getDataBodyRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatabodyrange-member(1)), [getDataHierarchy](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getdatahierarchy-member(1)), [getFilterAxisRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getfilteraxisrange-member(1)), [getPivotItems](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getpivotitems-member(1)), [getRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getrange-member(1)), [getRowLabelRange](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getrowlabelrange-member(1)), [setAutoSortOnCell](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))
   - [Excel.PivotTableCollection](/javascript/api/excel/excel.pivottablecollection): [add](/javascript/api/excel/excel.pivottablecollection#excel-excel-pivottablecollection-add-member(1))
   - [Excel.RangeAreas](/javascript/api/excel/excel.rangeareas): [copyFrom](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-copyfrom-member(1)), [getIntersection](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getintersection-member(1)), [getIntersectionOrNullObject](/javascript/api/excel/excel.rangeareas#excel-excel-rangeareas-getintersectionornullobject-member(1))
   - [Excel.RangeCollection](/javascript/api/excel/excel.rangecollection): [getItemAt](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-getitemat-member(1)), [items](/javascript/api/excel/excel.rangecollection#excel-excel-rangecollection-items-member)
@@ -2456,11 +2456,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;'
+      content: 'getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;'
       parameters:
         - id: cellType
           description: The type of cells to include.
-          type: '"ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas"'
+          type: '"ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible"'
         - id: cellValueType
           description: If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
           type: '"All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"'
@@ -2498,11 +2498,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;'
+      content: 'getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;'
       parameters:
         - id: cellType
           description: The type of cells to include.
-          type: '"ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible" | "DirtyFormulas"'
+          type: '"ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible"'
         - id: cellValueType
           description: If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
           type: '"All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"'
@@ -3470,42 +3470,6 @@ methods:
         - id: remove
           description: Optional. Set to `true` to remove one level of tracer arrows to direct precedents. Set to `false` to expand one level of tracer arrows. The default value is `false`<!-- -->.
           type: boolean
-      return:
-        type: void
-        description: ''
-  - name: togglePythonMarshalMode(marshalMode)
-    uid: excel!Excel.Range#togglePythonMarshalMode:member(1)
-    package: excel!
-    fullName: togglePythonMarshalMode(marshalMode)
-    summary: Sets the marshaling mode of the Python in Excel formula =PY.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode): void;'
-      parameters:
-        - id: marshalMode
-          description: The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
-          type: <xref uid="excel!Excel.PythonMarshalMode:enum" />
-      return:
-        type: void
-        description: ''
-  - name: togglePythonMarshalMode(marshalMode)
-    uid: excel!Excel.Range#togglePythonMarshalMode:member(2)
-    package: excel!
-    fullName: togglePythonMarshalMode(marshalMode)
-    summary: Sets the marshaling mode of the Python in Excel formula =PY.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'togglePythonMarshalMode(marshalMode?: "PythonObject" | "ExcelValue"): void;'
-      parameters:
-        - id: marshalMode
-          description: The mode to set. If not specified, switches from `ExcelValue` to `PythonObject` or vice versa.
-          type: '"PythonObject" | "ExcelValue"'
       return:
         type: void
         description: ''

@@ -74,66 +74,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.Worksheet:class" />
         description: ''
-  - name: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
-    uid: excel!Excel.WorksheetCollection#addFromBase64:member(1)
-    package: excel!
-    fullName: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
-    summary: |-
-      Inserts the specified worksheets of a workbook into the current workbook.
-
-      **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;'
-      parameters:
-        - id: base64File
-          description: Required. The Base64-encoded string representing the source workbook file.
-          type: string
-        - id: sheetNamesToInsert
-          description: Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
-          type: string[]
-        - id: positionType
-          description: Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
-          type: <xref uid="excel!Excel.WorksheetPositionType:enum" />
-        - id: relativeTo
-          description: Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`<!-- -->, it will insert worksheets at the start or end of the current workbook.
-          type: <xref uid="excel!Excel.Worksheet:class" /> | string
-      return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
-        description: An array of IDs corresponding to each newly inserted worksheet.
-  - name: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
-    uid: excel!Excel.WorksheetCollection#addFromBase64:member(2)
-    package: excel!
-    fullName: addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)
-    summary: |-
-      Inserts the specified worksheets of a workbook into the current workbook.
-
-      **Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please use `Workbook.insertWorksheetFromBase64` instead.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;'
-      parameters:
-        - id: base64File
-          description: Required. The Base64-encoded string representing the source workbook file.
-          type: string
-        - id: sheetNamesToInsert
-          description: Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
-          type: string[]
-        - id: positionType
-          description: Optional. Where in the current workbook the new worksheets will be inserted. See `Excel.WorksheetPositionType` for details. Default is "Start".
-          type: '"None" | "Before" | "After" | "Beginning" | "End"'
-        - id: relativeTo
-          description: Optional. The worksheet in the current workbook that is referenced for the `positionType` parameter. Default is `null` and, based on `positionType`<!-- -->, it will insert worksheets at the start or end of the current workbook.
-          type: <xref uid="excel!Excel.Worksheet:class" /> | string
-      return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
-        description: An array of IDs corresponding to each newly inserted worksheet.
   - name: getActiveWorksheet()
     uid: excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)
     package: excel!
@@ -495,24 +435,6 @@ events:
       content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
-  - name: onCalculationBusy
-    uid: excel!Excel.WorksheetCollection#onCalculationBusy:member
-    package: excel!
-    fullName: onCalculationBusy
-    summary: |-
-      Occurs when cells in the worksheet are being calculated asynchronously.
-
-      This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event. Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered. However, if the calculation places a transient pending value (such as "\#BUSY!") in the cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed, although calculation of the final value is not yet complete. When a subsequent calculation cycle completes the calculation for that cell, the `onCalculated` event is then triggered.
-
-      Formula features such as JavaScript User-Defined Functions and =PY formulas may trigger this event.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;'
-      return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetCalculationBusyEventArgs:interface" />&gt;
   - name: onChanged
     uid: excel!Excel.WorksheetCollection#onChanged:member
     package: excel!
@@ -580,19 +502,6 @@ events:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
       return:
         type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetDeletedEventArgs:interface" />&gt;
-  - name: onFiltered
-    uid: excel!Excel.WorksheetCollection#onFiltered:member
-    package: excel!
-    fullName: onFiltered
-    summary: Occurs when any worksheet's filter is applied in the workbook.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;'
-      return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetFilteredEventArgs:interface" />&gt;
   - name: onFormatChanged
     uid: excel!Excel.WorksheetCollection#onFormatChanged:member
     package: excel!

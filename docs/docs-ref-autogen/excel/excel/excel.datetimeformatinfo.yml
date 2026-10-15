@@ -80,19 +80,6 @@ properties:
       content: 'readonly shortDatePattern: string;'
       return:
         type: string
-  - name: shortDateTimePattern
-    uid: excel!Excel.DatetimeFormatInfo#shortDateTimePattern:member
-    package: excel!
-    fullName: shortDateTimePattern
-    summary: Gets the format string for a short date and time value. This is based on current system settings.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly shortDateTimePattern: string;'
-      return:
-        type: string
   - name: timeSeparator
     uid: excel!Excel.DatetimeFormatInfo#timeSeparator:member
     package: excel!

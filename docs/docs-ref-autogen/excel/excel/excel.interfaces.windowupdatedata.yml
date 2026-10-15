@@ -17,7 +17,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowUpdateData#activeCell:member
     package: excel!
     fullName: activeCell
-    summary: Specifies the active cell in the window.
+    summary: Gets the active cell in the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -30,7 +30,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowUpdateData#activeWorksheet:member
     package: excel!
     fullName: activeWorksheet
-    summary: Specifies the active sheet in the window.
+    summary: Gets the active worksheet in the window.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
