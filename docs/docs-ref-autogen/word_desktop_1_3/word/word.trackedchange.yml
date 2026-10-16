@@ -123,11 +123,9 @@ methods:
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        trackedChange.load();
+        trackedChange.accept();
         await context.sync();
 
-        console.log("First tracked change:", trackedChange);
-        trackedChange.accept();
         console.log("Accepted the first tracked change.");
       });
       ```
@@ -311,11 +309,9 @@ methods:
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
         const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        trackedChange.load();
+        trackedChange.reject();
         await context.sync();
 
-        console.log("First tracked change:", trackedChange);
-        trackedChange.reject();
         console.log("Rejected the first tracked change.");
       });
       ```

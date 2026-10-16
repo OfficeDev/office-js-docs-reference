@@ -28,6 +28,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: getLabelingCapabilities
+    uid: word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapabilities:member
+    package: word!
+    fullName: getLabelingCapabilities
+    summary: Gets the labeling capabilities of the sensitivity label catalog in Word.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapabilities?: boolean;'
+      return:
+        type: boolean
   - name: getLabelingCapability
     uid: word!Word.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapability:member
     package: word!

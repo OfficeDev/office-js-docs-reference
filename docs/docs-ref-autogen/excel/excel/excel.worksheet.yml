@@ -20,7 +20,7 @@ remarks: |-
   - [Excel.SlicerCollection](/javascript/api/excel/excel.slicercollection): [add](/javascript/api/excel/excel.slicercollection#excel-excel-slicercollection-add-member(1))
   - [Excel.Table](/javascript/api/excel/excel.table): [worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)
   - [Excel.Window](/javascript/api/excel/excel.window): [activeWorksheet](/javascript/api/excel/excel.window#excel-excel-window-activeworksheet-member)
-  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [addFromBase64](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1)), [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
+  - [Excel.WorksheetCollection](/javascript/api/excel/excel.worksheetcollection): [add](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-add-member(1)), [getActiveWorksheet](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getactiveworksheet-member(1)), [getFirst](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getfirst-member(1)), [getItem](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitem-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getitemornullobject-member(1)), [getLast](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-getlast-member(1)), [items](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-items-member)
 
   #### Examples
 
@@ -638,19 +638,6 @@ properties:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type: <xref uid="excel!Excel.TableCollection:class" />
-  - name: tasks
-    uid: excel!Excel.Worksheet#tasks:member
-    package: excel!
-    fullName: tasks
-    summary: Returns a collection of tasks that are present in the worksheet.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly tasks: Excel.DocumentTaskCollection;'
-      return:
-        type: <xref uid="excel!Excel.DocumentTaskCollection:class" />
   - name: verticalPageBreaks
     uid: excel!Excel.Worksheet#verticalPageBreaks:member
     package: excel!
@@ -1525,24 +1512,6 @@ events:
       content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
-  - name: onCalculationBusy
-    uid: excel!Excel.Worksheet#onCalculationBusy:member
-    package: excel!
-    fullName: onCalculationBusy
-    summary: |-
-      Occurs when cells in the worksheet are being calculated asynchronously.
-
-      This event is triggered at the end of a calculation cycle, similar to the `onCalculated` event. Ordinarily, when calculation completes for a cell, the `onCalculated` event is triggered. However, if the calculation places a transient pending value (such as "\#BUSY!") in the cell, then `onCalculationBusy` is triggered instead to indicate that the cell's state has changed, although calculation of the final value is not yet complete. When a subsequent calculation cycle completes the calculation for that cell, the `onCalculated` event is then triggered.
-
-      Formula features such as JavaScript User-Defined Functions and =PY formulas may trigger this event.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onCalculationBusy: OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;'
-      return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetCalculationBusyEventArgs:interface" />&gt;
   - name: onChanged
     uid: excel!Excel.Worksheet#onChanged:member
     package: excel!
@@ -1641,19 +1610,6 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
-  - name: onFiltered
-    uid: excel!Excel.Worksheet#onFiltered:member
-    package: excel!
-    fullName: onFiltered
-    summary: Occurs when a filter is applied on a specific worksheet.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;'
-      return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorksheetFilteredEventArgs:interface" />&gt;
   - name: onFormatChanged
     uid: excel!Excel.Worksheet#onFormatChanged:member
     package: excel!

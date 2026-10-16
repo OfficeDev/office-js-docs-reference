@@ -22,8 +22,6 @@ remarks: |-
   - [Excel.CustomXmlPartCollection](/javascript/api/excel/excel.customxmlpartcollection): [load](/javascript/api/excel/excel.customxmlpartcollection#excel-excel-customxmlpartcollection-load-member(1))
   - [Excel.CustomXmlPartScopedCollection](/javascript/api/excel/excel.customxmlpartscopedcollection): [load](/javascript/api/excel/excel.customxmlpartscopedcollection#excel-excel-customxmlpartscopedcollection-load-member(1))
   - [Excel.DataPivotHierarchyCollection](/javascript/api/excel/excel.datapivothierarchycollection): [load](/javascript/api/excel/excel.datapivothierarchycollection#excel-excel-datapivothierarchycollection-load-member(1))
-  - [Excel.DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection): [load](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-load-member(1))
-  - [Excel.DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection): [load](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-load-member(1))
   - [Excel.FilterPivotHierarchyCollection](/javascript/api/excel/excel.filterpivothierarchycollection): [load](/javascript/api/excel/excel.filterpivothierarchycollection#excel-excel-filterpivothierarchycollection-load-member(1))
   - [Excel.GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection): [load](/javascript/api/excel/excel.groupshapecollection#excel-excel-groupshapecollection-load-member(1))
   - [Excel.LinkedEntityDataDomainCollection](/javascript/api/excel/excel.linkedentitydatadomaincollection): [load](/javascript/api/excel/excel.linkedentitydatadomaincollection#excel-excel-linkedentitydatadomaincollection-load-member(1))

@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: Word.SensitivityLabelTryUpdateOptions
+uid: word!Word.SensitivityLabelTryUpdateOptions:interface
+package: word!
+fullName: Word.SensitivityLabelTryUpdateOptions
+summary: Provides options for `SensitivityLabel.tryToUpdate`<!-- -->.
+remarks: |-
+  [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Used by
+
+  - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [tryToUpdate](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))
+
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: abacAttributes
+    uid: word!Word.SensitivityLabelTryUpdateOptions#abacAttributes:member
+    package: word!
+    fullName: abacAttributes
+    summary: If provided, specifies the ABAC attributes to apply with the label.
+    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'abacAttributes?: SensitivityLabelAbacAttribute[];'
+      return:
+        type: <xref uid="word!Word.SensitivityLabelAbacAttribute:interface" />[]

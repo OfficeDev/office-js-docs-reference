@@ -73,6 +73,8 @@ properties:
     remarks: |-
       [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 
+      Important: If the shape doesn't already contain text, getting this property creates a text story on the shape. This modifies the document, marks it as having unsaved changes, and adds an entry to the undo stack. To determine whether a shape contains text without modifying the document, get the `hasText` property of [Word.TextFrame](xref:word!Word.TextFrame:class) instead.
+
       #### Examples
 
       ```TypeScript

@@ -211,19 +211,6 @@ properties:
       content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type: <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"
-  - name: pivotStyle
-    uid: excel!Excel.PivotLayout#pivotStyle:member
-    package: excel!
-    fullName: pivotStyle
-    summary: The style applied to the PivotTable.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly pivotStyle: Excel.PivotTableStyle;'
-      return:
-        type: <xref uid="excel!Excel.PivotTableStyle:class" />
   - name: preserveFormatting
     uid: excel!Excel.PivotLayout#preserveFormatting:member
     package: excel!
@@ -420,30 +407,6 @@ methods:
       return:
         type: void
         description: ''
-  - name: getCell(dataHierarchy, rowItems, columnItems)
-    uid: excel!Excel.PivotLayout#getCell:member(1)
-    package: excel!
-    fullName: getCell(dataHierarchy, rowItems, columnItems)
-    summary: Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling `getPivotItems` and `getDataHierarchy` on a particular cell.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'getCell(dataHierarchy: DataPivotHierarchy | string, rowItems: Array<PivotItem | string>, columnItems: Array<PivotItem | string>): Excel.Range;'
-      parameters:
-        - id: dataHierarchy
-          description: The `dataHierarchy` that provides the data item to find.
-          type: <xref uid="excel!Excel.DataPivotHierarchy:class" /> | string
-        - id: rowItems
-          description: The PivotItems from the row axis that make up the value to find.
-          type: Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;
-        - id: columnItems
-          description: The PivotItems from the column axis that make up the value to find.
-          type: Array&lt;<xref uid="excel!Excel.PivotItem:class" /> | string&gt;
-      return:
-        type: <xref uid="excel!Excel.Range:class" />
-        description: A range specifying a single cell that contains the value specified.
   - name: getColumnLabelRange()
     uid: excel!Excel.PivotLayout#getColumnLabelRange:member(1)
     package: excel!
@@ -774,24 +737,6 @@ methods:
         - id: sortBy
           description: The direction of the sort.
           type: '"Ascending" | "Descending"'
-      return:
-        type: void
-        description: ''
-  - name: setStyle(style)
-    uid: excel!Excel.PivotLayout#setStyle:member(1)
-    package: excel!
-    fullName: setStyle(style)
-    summary: Sets the style applied to the PivotTable.
-    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'setStyle(style: string | PivotTableStyle | BuiltInPivotTableStyle): void;'
-      parameters:
-        - id: style
-          description: The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
-          type: string | <xref uid="excel!Excel.PivotTableStyle:class" /> | <xref uid="excel!Excel.BuiltInPivotTableStyle:enum" />
       return:
         type: void
         description: ''

@@ -23,19 +23,32 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
-  - name: getLabelingCapability
-    uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getLabelingCapability:member
+  - name: getLabelingCapabilities
+    uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getLabelingCapabilities:member
     package: powerpoint!
-    fullName: getLabelingCapability
-    summary: Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
+    fullName: getLabelingCapabilities
+    summary: Gets the host capabilities for sensitivity labels in PowerPoint.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly getLabelingCapability: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled";'
+      content: 'readonly getLabelingCapabilities: PowerPoint.LabelingCapability[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled"
+        type: <xref uid="powerpoint!PowerPoint.LabelingCapability:enum" />[]
+  - name: getLabelingCapability
+    uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getLabelingCapability:member
+    package: powerpoint!
+    fullName: getLabelingCapability
+    summary: ''
+    remarks: ''
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly getLabelingCapability: PowerPoint.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.LabelingCapability:enum" /> | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled"
 methods:
   - name: getAttributes()
     uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getAttributes:member(1)

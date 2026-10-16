@@ -258,7 +258,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
+        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense" | "XlmDisabledInTrustCenter" | "XlmNotSupportedOnPlatform" | "ImageDownloadBlocked" | "ImageInvalidUrlNonHttps" | "ImageExceedsSizeLimit" | "ImageExceedsTotalSizeLimit" | "EnvironmentExceedsQuota" | "EnvironmentExceedsQuotaDaily" | "EnvironmentExceedsQuotaMonthly" | "EnvironmentExceedsTakerQuotaMonthly" | "WrongAccountType" | "EnvironmentExceedsComputeResourceEver" | "EnvironmentExceedsComputeResourceCountDaily" | "PythonUnsupportedOnThisPlatform" | "UnmetRequirements" | "PythonFunction" | "EnvironmentConnectionExceedQuota" | "UnsupportedEnvironment" | "UnsupportedInCalculationMode";
     }
     /**
      * Represents the value of a cell containing a Boolean.
@@ -392,7 +392,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage";
+        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage" | "PlaceholderInFormula";
     }
     /**
      * Represents types of #CALC! errors.
@@ -518,7 +518,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow";
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow" | "RequestTooLarge" | "PythonGridQuery" | "PythonPowerQueryDataUploadEtagChanged" | "PythonPowerQueryDataUploadSizeLimitExceeded" | "InvalidPythonObject" | "QueryInCell" | "UninitializedPythonObject" | "ExternalQueryRef" | "ERegexReplaceCharLimit" | "UnexpectedReturnValue" | "FunctionInCell" | "ImageExceedsSizeLimit";
         /**
          * Represents the name of the function causing the error.
          *
@@ -5251,7 +5251,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
+        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError" | "ImageUnableToRetrieve" | "ExternalCodeServiceEnvironmentNotFound" | "ExternalCodeServiceRuntimeNotFound" | "ExternalCodeServiceEnvironmentBadState" | "ExternalCodeServiceRuntimeBadState" | "ExternalCodeServiceComputeResourceNotAvailable" | "PythonPowerQueryDataUploadHasNotStarted" | "ExcelClientMisconfigurationError";
     }
     /**
      * Represents the value of a cell containing a #DIV/0! error.
@@ -6318,7 +6318,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef" | "CorruptCellRef";
     }
     /**
      * Represents types of #SPILL! errors.
@@ -6687,7 +6687,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount" | "ImageFormulaTooManyArgs" | "ImageFormulaInvalidImageFormat" | "ImageFormulaInvalidSource" | "ImageFormulaInvalidAltText" | "ImageFormulaInvalidSizing" | "ImageFormulaNotEnoughArgs" | "ImageFormulaInvalidHeight" | "ImageFormulaInvalidWidth" | "InvalidCellValueTypeCoercion" | "CRegexErrorGeneric" | "CRegexEndBackslash" | "CRegexEndBackslashC" | "CRegexUnknownEscape" | "CRegexQuantifierOutOfOrder" | "CRegexQuantifierTooBig" | "CRegexMissingSquareBracket" | "CRegexEscapeInvalidInClass" | "CRegexQuantifierInvalid" | "CRegexInvalidAfterParensQuery" | "CRegexPosixClassNotInClass" | "CRegexPosixNoSupportCollating" | "CRegexMissingClosingParenthesis" | "CRegexBadSubpatternReference" | "CRegexMissingCommentClosing" | "CRegexParenthesesNestTooDeep" | "CRegexPatternTooLarge" | "CRegexUnmatchedClosingParenthesis" | "CRegexMissingConditionClosing" | "CRegexLookbehindNotFixedLength" | "CRegexZeroRelativeReference" | "CRegexTooManyConditionBranches" | "CRegexBadRelativeReference" | "CRegexUnknownPosixClass" | "CRegexCodePointTooBig" | "CRegexLookbehindTooComplicated" | "CRegexUnsupportedEscapeSequence" | "CRegexCalloutNumberTooBig" | "CRegexMissingCalloutClosing" | "CRegexEscapeInvalidInVerb" | "CRegexUnrecognizedAfterQueryP" | "CRegexMissingNameTerminator" | "CRegexDuplicateSubpatternName" | "CRegexInvalidSubpatternName" | "CRegexUnicodePropertiesUnavailable" | "CRegexMalformedUnicodeProperty" | "CRegexUnknownUnicodeProperty" | "CRegexSubpatternNameTooLong" | "CRegexTooManyNamedSubpatterns" | "CRegexClassInvalidRange" | "CRegexDefineTooManyBranches" | "CRegexBackslashOMissingBrace" | "CRegexBackslashGSyntax" | "CRegexParensQueryRMissingClosing" | "CRegexVerbUnknown" | "CRegexSubpatternNumberTooBig" | "CRegexSubpatternNameExpected" | "CRegexInvalidOctal" | "CRegexSubpatternNamesMismatch" | "CRegexMarkMissingArgument" | "CRegexInvalidHexadecimal" | "CRegexBackslashCSyntax" | "CRegexBackslashNInClass" | "CRegexCalloutStringTooLong" | "CRegexUnicodeDisallowedCodePoint" | "CRegexVerbNameTooLong" | "CRegexBackslashUCodePointTooBig" | "CRegexMissingOctalOrHexDigits" | "CRegexVersionConditionSyntax" | "CRegexCalloutNoStringDelimiter" | "CRegexCalloutBadStringDelimiter" | "CRegexQueryBarjxNestTooDeep" | "CRegexPatternTooComplicated" | "CRegexLookbehindTooLong" | "CRegexPatternStringTooLong" | "CRegexInvalidHyphenInOptions" | "CRegexAlphaAssertionUnknown" | "CRegexTooManyCaptures" | "CRegexConditionAtomicAssertionExpected" | "CRegexBackslashKInLookaround" | "MRegexErrorGeneric" | "MRegexBadReplacement" | "MRegexMatchLimit" | "MRegexNoSubstring" | "MRegexDepthLimit" | "MRegexBadReplacementEscape" | "MRegexReplacementMissingBrace" | "MRegexBadSubstitution" | "MRegexRecursiveLoop" | "ERegexErrorGeneric" | "ERegexNoCaptureGroups" | "TranslateStringTooLong" | "TranslateUnsupportedSrcLanguage" | "TranslateUnsupportedTargetLanguage";
     }
     /**
      * Represents the value of a cell containing a type of value which cannot be serialized.

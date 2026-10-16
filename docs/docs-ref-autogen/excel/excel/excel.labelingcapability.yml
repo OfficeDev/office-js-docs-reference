@@ -9,11 +9,19 @@ remarks: |-
 
   #### Used by
 
-  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [getLabelingCapability](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapability-member)
+  - [Excel.SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog): [getLabelingCapabilities](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapabilities-member), [getLabelingCapability](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapability-member)
 
 isPreview: true
 isDeprecated: false
 fields:
+  - name: attributeBasedAccessControlEnabled
+    uid: excel!Excel.LabelingCapability.attributeBasedAccessControlEnabled:member
+    package: excel!
+    summary: |-
+      Attribute-based access control (ABAC) is supported by the host.
+
+      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+    value: '"AttributeBasedAccessControlEnabled"'
   - name: labelingDisabled
     uid: excel!Excel.LabelingCapability.labelingDisabled:member
     package: excel!

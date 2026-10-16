@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: Word.SensitivityLabelAbacAttribute
-uid: word!Word.SensitivityLabelAbacAttribute:class
+uid: word!Word.SensitivityLabelAbacAttribute:interface
 package: word!
 fullName: Word.SensitivityLabelAbacAttribute
 summary: Represents an attribute-based access control (ABAC) attribute for sensitivity labels.
@@ -9,25 +9,13 @@ remarks: |-
 
   #### Used by
 
+  - [Word.SensitivityLabelTryUpdateOptions](/javascript/api/word/word.sensitivitylabeltryupdateoptions): [abacAttributes](/javascript/api/word/word.sensitivitylabeltryupdateoptions#word-word-sensitivitylabeltryupdateoptions-abacattributes-member)
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getAttributes](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getattributes-member(1))
 
 isPreview: true
 isDeprecated: false
-type: class
+type: interface
 properties:
-  - name: context
-    uid: word!Word.SensitivityLabelAbacAttribute#context:member
-    package: word!
-    fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: <xref uid="word!Word.RequestContext:class" />
   - name: dataType
     uid: word!Word.SensitivityLabelAbacAttribute#dataType:member
     package: word!
@@ -38,7 +26,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly dataType: Word.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
+      content: 'dataType: Word.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
       return:
         type: <xref uid="word!Word.SensitivityLabelAbacAttributeDataType:enum" /> | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue"
   - name: displayName
@@ -51,7 +39,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly displayName: string;'
+      content: 'displayName: string;'
       return:
         type: string
   - name: displayOrder
@@ -64,7 +52,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly displayOrder: number;'
+      content: 'displayOrder: number;'
       return:
         type: number
   - name: isActive
@@ -77,7 +65,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly isActive: boolean;'
+      content: 'isActive: boolean;'
       return:
         type: boolean
   - name: isMultiValued
@@ -90,7 +78,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly isMultiValued: boolean;'
+      content: 'isMultiValued: boolean;'
       return:
         type: boolean
   - name: values
@@ -103,84 +91,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly values: Word.SensitivityLabelAbacAttributeValue[];'
+      content: 'values: Word.SensitivityLabelAbacAttributeValue[];'
       return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:class" />[]
-methods:
-  - name: load(options)
-    uid: word!Word.SensitivityLabelAbacAttribute#load:member(1)
-    package: word!
-    fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'load(options?: Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions): Word.SensitivityLabelAbacAttribute;'
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type: <xref uid="word!Word.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface" />
-      return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: load(propertyNames)
-    uid: word!Word.SensitivityLabelAbacAttribute#load:member(2)
-    package: word!
-    fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'load(propertyNames?: string | string[]): Word.SensitivityLabelAbacAttribute;'
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: string | string[]
-      return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: word!Word.SensitivityLabelAbacAttribute#load:member(3)
-    package: word!
-    fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): Word.SensitivityLabelAbacAttribute;
-      parameters:
-        - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: <xref uid="word!Word.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: toJSON()
-    uid: word!Word.SensitivityLabelAbacAttribute#toJSON:member(1)
-    package: word!
-    fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.SensitivityLabelAbacAttribute` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SensitivityLabelAbacAttributeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'toJSON(): Word.Interfaces.SensitivityLabelAbacAttributeData;'
-      return:
-        type: <xref uid="word!Word.Interfaces.SensitivityLabelAbacAttributeData:interface" />
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+        type: <xref uid="word!Word.SensitivityLabelAbacAttributeValue:interface" />[]

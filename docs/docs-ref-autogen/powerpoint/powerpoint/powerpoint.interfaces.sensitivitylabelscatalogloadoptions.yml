@@ -28,12 +28,25 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: getLabelingCapabilities
+    uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapabilities:member
+    package: powerpoint!
+    fullName: getLabelingCapabilities
+    summary: Gets the host capabilities for sensitivity labels in PowerPoint.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getLabelingCapabilities?: boolean;'
+      return:
+        type: boolean
   - name: getLabelingCapability
     uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelsCatalogLoadOptions#getLabelingCapability:member
     package: powerpoint!
     fullName: getLabelingCapability
-    summary: Gets whether the catalog of sensitivity labels is enabled in PowerPoint.
-    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    summary: ''
+    remarks: ''
 
     isPreview: true
     isDeprecated: false

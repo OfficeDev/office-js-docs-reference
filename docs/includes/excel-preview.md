@@ -1,61 +1,10 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
-|[AutorunEventCompletedOptions](/javascript/api/excel/excel.autoruneventcompletedoptions)|[allowEvent](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-allowevent-member)|Specifies whether to allow the event to proceed.|
-||[autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-autoruneventtype-member)|Specifies the type of autorun event to be completed if allowed.|
-||[message](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-message-member)|If provided, specifies an optional error message if the event isn't allowed to proceed.|
 |[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
 |[BusyErrorCellValue](/javascript/api/excel/excel.busyerrorcellvalue)|[previousValue](/javascript/api/excel/excel.busyerrorcellvalue#excel-excel-busyerrorcellvalue-previousvalue-member)|Optionally, a #BUSY! error may store the previous value stored in the cell, before the current transient operation began.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
-|[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
-||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
-||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
-|[CommentReply](/javascript/api/excel/excel.commentreply)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))|Assigns the task attached to the comment to the given user as the sole assignee.|
-||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
-||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
-|[DatetimeFormatInfo](/javascript/api/excel/excel.datetimeformatinfo)|[shortDateTimePattern](/javascript/api/excel/excel.datetimeformatinfo#excel-excel-datetimeformatinfo-shortdatetimepattern-member)|Gets the format string for a short date and time value.|
-|[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
-||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|
-||[changes](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-changes-member)|Gets the change records of the task.|
-||[comment](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-comment-member)|Gets the comment associated with the task.|
-||[completedBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completedby-member)|Gets the most recent user to have completed the task.|
-||[completedDateTime](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-completeddatetime-member)|Gets the date and time that the task was completed.|
-||[createdBy](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createdby-member)|Gets the user who created the task.|
-||[createdDateTime](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-createddatetime-member)|Gets the date and time that the task was created.|
-||[id](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-id-member)|Gets the ID of the task.|
-||[percentComplete](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-percentcomplete-member)|Specifies the completion percentage of the task.|
-||[priority](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-priority-member)|Specifies the priority of the task.|
-||[startAndDueDateTime](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-startandduedatetime-member)|Specifies the date and time the task should start and is due.|
-||[title](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-title-member)|Specifies title of the task.|
-||[unassign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassign-member(1))|Removes the given user from the list of assignees attached to the task.|
-||[unassignAll()](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-unassignall-member(1))|Removes all users from the list of assignees attached to the task.|
-|[DocumentTaskChange](/javascript/api/excel/excel.documenttaskchange)|[assignee](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-assignee-member)|Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.|
-||[changedBy](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-changedby-member)|Represents the identity of the user who made the task change.|
-||[commentId](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-commentid-member)|Represents the ID of the comment or comment reply to which the task change is anchored.|
-||[createdDateTime](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-createddatetime-member)|Represents the creation date and time of the task change record.|
-||[dueDateTime](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-duedatetime-member)|Represents the task's due date and time.|
-||[id](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-id-member)|The unique GUID of the task change.|
-||[percentComplete](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-percentcomplete-member)|Represents the task's completion percentage.|
-||[priority](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-priority-member)|Represents the task's priority.|
-||[startDateTime](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-startdatetime-member)|Represents the task's start date and time.|
-||[title](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-title-member)|Represents the task's title.|
-||[type](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-type-member)|Represents the action type of the task change record.|
-||[undoChangeId](/javascript/api/excel/excel.documenttaskchange#excel-excel-documenttaskchange-undochangeid-member)|Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.|
-|[DocumentTaskChangeCollection](/javascript/api/excel/excel.documenttaskchangecollection)|[getCount()](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getcount-member(1))|Gets the number of change records in the collection for the task.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-getitemat-member(1))|Gets a task change record by using its index in the collection.|
-||[items](/javascript/api/excel/excel.documenttaskchangecollection#excel-excel-documenttaskchangecollection-items-member)|Gets the loaded child items in this collection.|
-|[DocumentTaskCollection](/javascript/api/excel/excel.documenttaskcollection)|[getCount()](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getcount-member(1))|Gets the number of tasks in the collection.|
-||[getItem(key: string)](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitem-member(1))|Gets a task using its ID.|
-||[getItemAt(index: number)](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemat-member(1))|Gets a task by its index in the collection.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-getitemornullobject-member(1))|Gets a task using its ID.|
-||[items](/javascript/api/excel/excel.documenttaskcollection#excel-excel-documenttaskcollection-items-member)|Gets the loaded child items in this collection.|
-|[DocumentTaskSchedule](/javascript/api/excel/excel.documenttaskschedule)|[dueDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-duedatetime-member)|Gets the date and time that the task is due.|
-||[startDateTime](/javascript/api/excel/excel.documenttaskschedule#excel-excel-documenttaskschedule-startdatetime-member)|Gets the date and time that the task should start.|
-|[EmailIdentity](/javascript/api/excel/excel.emailidentity)|[displayName](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-displayname-member)|Represents the user's display name.|
-||[email](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-email-member)|Represents the user's email.|
-||[id](/javascript/api/excel/excel.emailidentity#excel-excel-emailidentity-id-member)|Represents the user's unique ID.|
 |[EntityArrayCardLayout](/javascript/api/excel/excel.entityarraycardlayout)|[arrayProperty](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-arrayproperty-member)|Represents name of the property that contains the array shown in the card.|
 ||[columnsToReport](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-columnstoreport-member)|Represents the count of columns which the card claims are in the array.|
 ||[displayName](/javascript/api/excel/excel.entityarraycardlayout#excel-excel-entityarraycardlayout-displayname-member)|Represents name of the property that contains the array shown in the card.|
@@ -71,9 +20,6 @@
 ||[preview](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-preview-member)|Represents the preview value shown in the cell.|
 ||[provider](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-provider-member)|Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`.|
 ||[type](/javascript/api/excel/excel.externalcodeserviceobjectcellvalue#excel-excel-externalcodeserviceobjectcellvalue-type-member)|Represents the type of this cell value.|
-|[Identity](/javascript/api/excel/excel.identity)|[displayName](/javascript/api/excel/excel.identity#excel-excel-identity-displayname-member)|Represents the user's display name.|
-||[id](/javascript/api/excel/excel.identity#excel-excel-identity-id-member)|Represents the user's unique ID.|
-|[LocalImage](/javascript/api/excel/excel.localimage)|[getBase64EncodedImageData(cacheUid: string)](/javascript/api/excel/excel.localimage#excel-excel-localimage-getbase64encodedimagedata-member(1))|Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).|
 |[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
 ||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
 ||[basicType](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
@@ -85,22 +31,15 @@
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errorsubtype-member)|Represents the type of `NameErrorCellValue`.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[errorSubType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-errorsubtype-member)|Represents the type of `NotAvailableErrorCellValue`.|
-|[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array\<PivotItem \| string\>, columnItems: Array\<PivotItem \| string\>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
-||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
-||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
-|[PivotTable](/javascript/api/excel/excel.pivottable)|[autoRefresh](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-autorefresh-member)|Specifies whether the PivotTable auto refreshes when the source data changes.|
 |[PythonErrorCellValue](/javascript/api/excel/excel.pythonerrorcellvalue)|[basicType](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[duringInitialization](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-duringinitialization-member)|Indicates that this `#PYTHON!` error originated from the workbook's initialization Python code (rather than from a worksheet cell formula).|
 ||[errorType](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.pythonerrorcellvalue#excel-excel-pythonerrorcellvalue-type-member)|Represents the type of this cell value.|
-|[Query](/javascript/api/excel/excel.query)|[delete()](/javascript/api/excel/excel.query#excel-excel-query-delete-member(1))|Deletes the query and associated connection.|
-|[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
-|[Range](/javascript/api/excel/excel.range)|[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
 |[RequestContext](/javascript/api/excel/excel.requestcontext)|[sensitivityLabelsCatalog](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-sensitivitylabelscatalog-member)|[Api set: ExcelApi BETA (PREVIEW ONLY)]|
 ||[setInvocation(invocation: { invocationId: number isInSyncExecution: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
 |[SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel)|[getCurrentOrNullObject()](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-getcurrentornullobject-member(1))|Gets the current label information that exists on the workbook for the user.|
-||[tryToUpdate(labelId: string)](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))|Tries to update to the provided sensitivity label on the workbook for the user.|
+||[tryToUpdate(labelId: string, options?: Excel.SensitivityLabelTryUpdateOptions)](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-trytoupdate-member(1))|Tries to update to the provided sensitivity label on the workbook for the user.|
 |[SensitivityLabelAbacAttribute](/javascript/api/excel/excel.sensitivitylabelabacattribute)|[dataType](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-datatype-member)|Gets the data type of the attribute.|
 ||[displayName](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-displayname-member)|Gets the display name of the attribute.|
 ||[displayOrder](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-displayorder-member)|Gets the display order of the attribute.|
@@ -126,54 +65,15 @@
 |[SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection)|[getFirst()](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirst-member(1))|Gets the first `SensitivityLabelDetails` object in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirstornullobject-member(1))|Gets the first `SensitivityLabelDetails` object in this collection.|
 ||[items](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-items-member)|Gets the loaded child items in this collection.|
+|[SensitivityLabelTryUpdateOptions](/javascript/api/excel/excel.sensitivitylabeltryupdateoptions)|[abacAttributes](/javascript/api/excel/excel.sensitivitylabeltryupdateoptions#excel-excel-sensitivitylabeltryupdateoptions-abacattributes-member)|If provided, specifies the ABAC attributes to apply with the label.|
 |[SensitivityLabelsCatalog](/javascript/api/excel/excel.sensitivitylabelscatalog)|[getAttributes()](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getattributes-member(1))|Gets the ABAC (attribute-based access control) attributes that are available to the current user.|
+||[getLabelingCapabilities](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapabilities-member)|Gets the labeling capabilities supported by Excel.|
 ||[getLabelingCapability](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabelingcapability-member)|Gets whether the catalog of sensitivity labels is enabled in Excel.|
 ||[getLabels()](/javascript/api/excel/excel.sensitivitylabelscatalog#excel-excel-sensitivitylabelscatalog-getlabels-member(1))|Gets sensitivity labels that are available to the current user.|
-|[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
-||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
-|[ShapeFont](/javascript/api/excel/excel.shapefont)|[strikethrough](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-strikethrough-member)|Specifies the strikethrough status of font.|
-||[subscript](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-subscript-member)|Specifies the subscript status of font.|
-||[superscript](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-superscript-member)|Specifies the superscript status of font.|
-||[tintAndShade](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-tintandshade-member)|Specifies a double that lightens or darkens a color for the range font.|
-|[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Specifies the slicer name used in the formula.|
-||[setStyle(style: string \| SlicerStyle \| BuiltInSlicerStyle)](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))|Sets the style applied to the slicer.|
-||[slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)|The style applied to the slicer.|
-|[Table](/javascript/api/excel/excel.table)|[altTextDescription](/javascript/api/excel/excel.table#excel-excel-table-alttextdescription-member)|Specifies the alternative text for accessibility.|
-||[altTextTitle](/javascript/api/excel/excel.table#excel-excel-table-alttexttitle-member)|Specifies a summary for the table, such as one used by screen readers.|
-||[clearStyle()](/javascript/api/excel/excel.table#excel-excel-table-clearstyle-member(1))|Changes the table to use the default table style.|
-||[comment](/javascript/api/excel/excel.table#excel-excel-table-comment-member)|Specifies a comment associated with the table.|
-||[isActive](/javascript/api/excel/excel.table#excel-excel-table-isactive-member)|Retrieves whether the table is currently active.|
-||[onFiltered](/javascript/api/excel/excel.table#excel-excel-table-onfiltered-member)|Occurs when a filter is applied on a specific table.|
-||[setStyle(style: string \| TableStyle \| BuiltInTableStyle)](/javascript/api/excel/excel.table#excel-excel-table-setstyle-member(1))|Sets the style applied to the table.|
-||[source](/javascript/api/excel/excel.table#excel-excel-table-source-member)|Retrieves the data source type from which the table originates.|
-||[tableStyle](/javascript/api/excel/excel.table#excel-excel-table-tablestyle-member)|The style applied to the table.|
-|[TableCollection](/javascript/api/excel/excel.tablecollection)|[onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)|Occurs when a filter is applied on any table in a workbook, or a worksheet.|
-|[TableFilteredEventArgs](/javascript/api/excel/excel.tablefilteredeventargs)|[tableId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-tableid-member)|Gets the ID of the table in which the filter is applied.|
-||[type](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-type-member)|Gets the type of the event.|
-||[worksheetId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-worksheetid-member)|Gets the ID of the worksheet which contains the table.|
 |[TimeoutErrorCellValue](/javascript/api/excel/excel.timeouterrorcellvalue)|[basicType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errorsubtype-member)|Represents the type of `TimeoutErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
 |[Window](/javascript/api/excel/excel.window)|[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions)](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))|Notifies the host application that the add-in's code has finished running in an autorun event.|
-||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
-||[inPreviewMode()](/javascript/api/excel/excel.workbook#excel-excel-workbook-inpreviewmode-member(1))|Returns whether the workbook is currently in preview mode.|
-||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
-||[sensitivityLabel](/javascript/api/excel/excel.workbook#excel-excel-workbook-sensitivitylabel-member)|Returns the sensitivity label of the workbook.|
-||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
-||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
-||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member)|Occurs when cells in the worksheet are being calculated asynchronously.|
-||[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
-||[tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)|Returns a collection of tasks that are present in the worksheet.|
-|[WorksheetCalculationBusyEventArgs](/javascript/api/excel/excel.worksheetcalculationbusyeventargs)|[address](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-address-member)|The address of the ranges that began calculation.|
-||[source](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-type-member)|Gets the type of the event.|
-||[worksheetId](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-worksheetid-member)|The ID of the worksheet within which the calculation occurred.|
-|[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))|Inserts the specified worksheets of a workbook into the current workbook.|
-||[onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member)|Occurs when cells in the worksheet are being calculated asynchronously.|
-||[onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)|Occurs when any worksheet's filter is applied in the workbook.|
-|[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|[type](/javascript/api/excel/excel.worksheetfilteredeventargs#excel-excel-worksheetfilteredeventargs-type-member)|Gets the type of the event.|
-||[worksheetId](/javascript/api/excel/excel.worksheetfilteredeventargs#excel-excel-worksheetfilteredeventargs-worksheetid-member)|Gets the ID of the worksheet in which the filter is applied.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[sensitivityLabel](/javascript/api/excel/excel.workbook#excel-excel-workbook-sensitivitylabel-member)|Returns the sensitivity label of the workbook.|
