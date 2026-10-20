@@ -4,7 +4,23 @@ uid: word!Word.CharacterWidth:enum
 package: word!
 fullName: Word.CharacterWidth
 summary: Specifies the character width of the text in the specified range.
-remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+remarks: |-
+  [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+
+  // Converts the first paragraph's characters to full width.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const characterWidth: Word.CharacterWidth = Word.CharacterWidth.full;
+      paragraphRange.characterWidth = characterWidth;
+      await context.sync();
+      console.log("Applied full-width characters.");
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

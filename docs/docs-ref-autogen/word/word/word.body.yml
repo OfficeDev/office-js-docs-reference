@@ -209,7 +209,7 @@ properties:
         footnotes.load("length");
         await context.sync();
 
-        console.log("Number of footnotes in the document body: " + footnotes.items.length);
+        console.log(`Number of footnotes in the document body: ${footnotes.items.length}`);
       });
       ```
 
@@ -363,7 +363,7 @@ properties:
         allSearchResults.forEach((result) => {
           let length = result.hits.items.length;
 
-          console.log("Search term: " + result.searchTerm + " => Count: " + length);
+          console.log(`Search term: ${result.searchTerm} => Count: ${length}`);
         });
       });
       ```

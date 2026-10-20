@@ -11,6 +11,37 @@ remarks: |-
 
   - [Excel.PageBreakCollection](/javascript/api/excel/excel.pagebreakcollection): [add](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-add-member(1)), [getItem](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-getitem-member(1)), [items](/javascript/api/excel/excel.pagebreakcollection#excel-excel-pagebreakcollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+  // Inspect the first horizontal break and locate the cell immediately after it.
+  await Excel.run(async (context) => {
+      const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+      const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+      const horizontalCount: OfficeExtension.ClientResult<number> = horizontalBreaks.getCount();
+      await context.sync();
+
+      if (horizontalCount.value === 0) {
+          console.warn("No horizontal page breaks. Choose Add page breaks first.");
+          return;
+      }
+
+      const firstBreak: Excel.PageBreak = horizontalBreaks.getItem(0);
+      const cellAfterBreak: Excel.Range = firstBreak.getCellAfterBreak();
+      firstBreak.load("rowIndex, columnIndex");
+      cellAfterBreak.load("address");
+
+      await context.sync();
+      console.log("First horizontal page break (zero-based indexes):", {
+          rowIndex: firstBreak.rowIndex,
+          columnIndex: firstBreak.columnIndex,
+          cellAfterBreak: cellAfterBreak.address
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -60,7 +91,32 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes a page break object.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Delete a single horizontal break while leaving the other breaks unchanged.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const horizontalCount: OfficeExtension.ClientResult<number> = horizontalBreaks.getCount();
+          await context.sync();
+
+          if (horizontalCount.value === 0) {
+              console.warn("No horizontal page breaks. Choose Add page breaks first.");
+              return;
+          }
+
+          const firstBreak: Excel.PageBreak = horizontalBreaks.getItem(0);
+          firstBreak.delete();
+          await context.sync();
+          console.log("Deleted the first horizontal page break. Choose List page breaks to inspect the remaining breaks.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

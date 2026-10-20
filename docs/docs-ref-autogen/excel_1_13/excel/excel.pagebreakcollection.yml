@@ -11,6 +11,37 @@ remarks: |-
 
   - [Excel.Worksheet](/javascript/api/excel/excel.worksheet): [horizontalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-horizontalpagebreaks-member), [verticalPageBreaks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-verticalpagebreaks-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+  // Load and inspect the page breaks in both worksheet collections.
+  await Excel.run(async (context) => {
+      const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+      const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+      const verticalBreaks: Excel.PageBreakCollection = sheet.verticalPageBreaks;
+      horizontalBreaks.load("items/rowIndex, items/columnIndex");
+      verticalBreaks.load("items/rowIndex, items/columnIndex");
+
+      await context.sync();
+      console.log(`Horizontal page breaks: ${horizontalBreaks.items.length}`);
+      horizontalBreaks.items.forEach((pageBreak: Excel.PageBreak) => {
+          console.log("Horizontal break (zero-based indexes):", {
+              rowIndex: pageBreak.rowIndex,
+              columnIndex: pageBreak.columnIndex
+          });
+      });
+      console.log(`Vertical page breaks: ${verticalBreaks.items.length}`);
+      verticalBreaks.items.forEach((pageBreak: Excel.PageBreak) => {
+          console.log("Vertical break (zero-based indexes):", {
+              rowIndex: pageBreak.rowIndex,
+              columnIndex: pageBreak.columnIndex
+          });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -55,10 +86,13 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
+      // Add a horizontal page break before the next group of farm sales.
       await Excel.run(async (context) => {
-          const farmSheet = context.workbook.worksheets.getItem("Print");
-          farmSheet.horizontalPageBreaks.add("A21:E21");
+          const farmSheet: Excel.Worksheet = context.workbook.worksheets.getItem("Print");
+          const horizontalBreaks: Excel.PageBreakCollection = farmSheet.horizontalPageBreaks;
+          horizontalBreaks.add("A21:E21");
           await context.sync();
+          console.log("Added a horizontal page break before row 21.");
       });
       ```
 
@@ -78,7 +112,27 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of page breaks in the collection.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Count page breaks without loading the collection's items.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const verticalBreaks: Excel.PageBreakCollection = sheet.verticalPageBreaks;
+          const horizontalCount: OfficeExtension.ClientResult<number> = horizontalBreaks.getCount();
+          const verticalCount: OfficeExtension.ClientResult<number> = verticalBreaks.getCount();
+
+          await context.sync();
+          console.log(`Horizontal page breaks: ${horizontalCount.value}`);
+          console.log(`Vertical page breaks: ${verticalCount.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -92,7 +146,39 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a page break object via the index.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Inspect the first horizontal break and locate the cell immediately after it.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const horizontalCount: OfficeExtension.ClientResult<number> = horizontalBreaks.getCount();
+          await context.sync();
+
+          if (horizontalCount.value === 0) {
+              console.warn("No horizontal page breaks. Choose Add page breaks first.");
+              return;
+          }
+
+          const firstBreak: Excel.PageBreak = horizontalBreaks.getItem(0);
+          const cellAfterBreak: Excel.Range = firstBreak.getCellAfterBreak();
+          firstBreak.load("rowIndex, columnIndex");
+          cellAfterBreak.load("address");
+
+          await context.sync();
+          console.log("First horizontal page break (zero-based indexes):", {
+              rowIndex: firstBreak.rowIndex,
+              columnIndex: firstBreak.columnIndex,
+              cellAfterBreak: cellAfterBreak.address
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -164,7 +250,26 @@ methods:
     package: excel!
     fullName: removePageBreaks()
     summary: Resets all manual page breaks in the collection.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Reset all manual page breaks in both worksheet collections.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const verticalBreaks: Excel.PageBreakCollection = sheet.verticalPageBreaks;
+          horizontalBreaks.removePageBreaks();
+          verticalBreaks.removePageBreaks();
+
+          await context.sync();
+          console.log("Removed all manual page breaks. Choose Count page breaks to verify the collections.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

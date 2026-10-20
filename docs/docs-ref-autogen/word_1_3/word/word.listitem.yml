@@ -34,7 +34,8 @@ remarks: |-
     const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
     // Set up list level for the list item.
-    paragraph.listItem.level = 4;
+    const listItem: Word.ListItem = paragraph.listItem;
+    listItem.level = 4;
 
     // To add paragraphs outside the list, use Before or After.
     list.insertParagraph("New paragraph goes after (not part of the list)", "After");
@@ -71,32 +72,16 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
 
-      // This example starts a new list with the second paragraph.
+      // Moves the last list item to the third level of the hierarchy.
       await Word.run(async (context) => {
-        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-        paragraphs.load("$none");
+          const lastParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getLast();
+          const listItem: Word.ListItem = lastParagraph.listItem;
+          listItem.level = 2;
+          await context.sync();
 
-        await context.sync();
-
-        // Start new list using the second paragraph.
-        const list: Word.List = paragraphs.items[1].startNewList();
-        list.load("$none");
-
-        await context.sync();
-
-        // To add new items to the list, use Start or End on the insertLocation parameter.
-        list.insertParagraph("New list item at the start of the list", "Start");
-        const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
-
-        // Set up list level for the list item.
-        paragraph.listItem.level = 4;
-
-        // To add paragraphs outside the list, use Before or After.
-        list.insertParagraph("New paragraph goes after (not part of the list)", "After");
-
-        await context.sync();
+          console.log("The last list item is now at level 2 (the third level).");
       });
       ```
 
@@ -111,7 +96,24 @@ properties:
     package: word!
     fullName: listString
     summary: Gets the list item bullet, number, or picture as a string.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
+
+      // Reads the number or bullet displayed before the last list item.
+      await Word.run(async (context) => {
+          const lastParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getLast();
+          const listItem: Word.ListItem = lastParagraph.listItem;
+          listItem.load("listString");
+          await context.sync();
+
+          console.log(`Last list item marker: ${listItem.listString}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -124,7 +126,24 @@ properties:
     package: word!
     fullName: siblingIndex
     summary: Gets the list item order number in relation to its siblings.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
+
+      // Reads the last list item's position among items at the same level.
+      await Word.run(async (context) => {
+          const lastParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getLast();
+          const listItem: Word.ListItem = lastParagraph.listItem;
+          listItem.load("siblingIndex");
+          await context.sync();
+
+          console.log(`Last list item sibling index: ${listItem.siblingIndex}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +157,25 @@ methods:
     package: word!
     fullName: getAncestor(parentOnly)
     summary: Gets the list item parent, or the closest ancestor if the parent doesn't exist. Throws an `ItemNotFound` error if the list item has no ancestor.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
+
+      // Gets the parent paragraph of the last list item.
+      await Word.run(async (context) => {
+          const lastParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getLast();
+          const listItem: Word.ListItem = lastParagraph.listItem;
+          const parentParagraph: Word.Paragraph = listItem.getAncestor(true);
+          parentParagraph.load("text");
+          await context.sync();
+
+          console.log(`Parent of the last list item: ${parentParagraph.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +193,29 @@ methods:
     package: word!
     fullName: getAncestorOrNullObject(parentOnly)
     summary: Gets the list item parent, or the closest ancestor if the parent doesn't exist. If the list item has no ancestor, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
+
+      // Checks whether the top-level list item has an ancestor without throwing an error.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getFirst();
+          const listItem: Word.ListItem = firstParagraph.listItem;
+          const ancestorParagraph: Word.Paragraph = listItem.getAncestorOrNullObject();
+          ancestorParagraph.load("text");
+          await context.sync();
+
+          if (ancestorParagraph.isNullObject) {
+              console.log("The first list item has no ancestor because it is at the top level.");
+          } else {
+              console.log(`Ancestor of the first list item: ${ancestorParagraph.text}`);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -174,7 +233,34 @@ methods:
     package: word!
     fullName: getDescendants(directChildrenOnly)
     summary: Gets all descendant list items of the list item.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-items.yaml
+
+      // Compares direct children with all descendants of the first list item.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.lists.getFirst().paragraphs.getFirst();
+          const listItem: Word.ListItem = firstParagraph.listItem;
+          const children: Word.ParagraphCollection = listItem.getDescendants(true);
+          const descendants: Word.ParagraphCollection = listItem.getDescendants(false);
+          children.load("items/text");
+          descendants.load("items/text");
+          await context.sync();
+
+          console.log(`Direct children (${children.items.length}):`);
+          for (const childParagraph of children.items) {
+              console.log(`- ${childParagraph.text}`);
+          }
+          console.log(`All descendants (${descendants.items.length}):`);
+          for (const descendantParagraph of descendants.items) {
+              console.log(`- ${descendantParagraph.text}`);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

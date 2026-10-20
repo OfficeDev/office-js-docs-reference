@@ -12,6 +12,38 @@ remarks: |-
   - [Word.Conflict](/javascript/api/word/word.conflict): [type](/javascript/api/word/word.conflict#word-word-conflict-type-member)
   - [Word.Revision](/javascript/api/word/word.revision): [type](/javascript/api/word/word.revision#word-word-revision-type-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/track-moved-text.yaml
+
+  // Reads and selects the text associated with a tracked move.
+  await Word.run(async (context) => {
+      const document: Word.Document = context.document;
+      const revisions: Word.RevisionCollection = document.revisions;
+      revisions.load("items/type");
+      await context.sync();
+
+      const movedFrom: Word.RevisionType = Word.RevisionType.movedFrom;
+      const movedTo: Word.RevisionType = Word.RevisionType.movedTo;
+      const movedRevision: Word.Revision | undefined = revisions.items.find(
+          (revision: Word.Revision) => revision.type === movedFrom || revision.type === movedTo
+      );
+      if (!movedRevision) {
+          console.log("Revision types found:", revisions.items.map((revision: Word.Revision) => revision.type));
+          console.warn("No tracked move was found. Move an entire paragraph as described in the task pane; moving a phrase may produce insertion and deletion revisions instead.");
+          return;
+      }
+
+      const movedRange: Word.Range = movedRevision.movedRange;
+      movedRange.load("text");
+      movedRange.select();
+      await context.sync();
+
+      console.log(`Moved revision range text: ${movedRange.text}`);
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

@@ -12,6 +12,32 @@ remarks: |-
   - [Excel.Range](/javascript/api/excel/excel.range): [valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)
   - [Excel.RangeView](/javascript/api/excel/excel.rangeview): [valueTypes](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuetypes-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-change-event-details.yaml
+
+  async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
+      // Inspect the values and basic types of an edited table cell, and identify errors.
+      await Excel.run(async (context) => {
+          const details: Excel.ChangedEventDetail = eventArgs.details;
+          const address = eventArgs.address;
+          if (!details) {
+              console.log("Edit one table cell at a time to inspect its value and type.");
+              return;
+          }
+
+          console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+            + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+
+          const errorType: Excel.RangeValueType = Excel.RangeValueType.error;
+          if (details.valueTypeAfter === errorType) {
+              console.log("The updated cell contains an error:", details.valueAfter);
+          }
+      });
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

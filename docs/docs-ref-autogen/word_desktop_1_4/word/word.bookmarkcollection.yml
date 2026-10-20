@@ -12,6 +12,32 @@ remarks: |-
   - [Word.Document](/javascript/api/word/word.document): [bookmarks](/javascript/api/word/word.document#word-word-document-bookmarks-member)
   - [Word.Range](/javascript/api/word/word.range): [bookmarks](/javascript/api/word/word.range#word-word-range-bookmarks-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+  // Read bookmark properties and the text enclosed by each bookmark.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+      bookmarks.load("items/name,items/start,items/end,items/isEmpty,items/isColumn,items/storyType,items/range/text");
+      await context.sync();
+      console.log(`Bookmarks found: ${bookmarks.items.length}`);
+      bookmarks.items.forEach((bookmark: Word.Bookmark) => {
+          console.log("Bookmark details:", {
+              name: bookmark.name,
+              start: bookmark.start,
+              end: bookmark.end,
+              isEmpty: bookmark.isEmpty,
+              isColumn: bookmark.isColumn,
+              storyType: bookmark.storyType,
+              text: bookmark.range.text
+          });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -48,7 +74,23 @@ methods:
     package: word!
     fullName: exists(name)
     summary: Determines whether the specified bookmark exists.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Check whether the copied bookmark exists within the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          const copyExists: OfficeExtension.ClientResult<boolean> = bookmarks.exists("RangeSampleCopy");
+          await context.sync();
+          console.log(`RangeSampleCopy exists: ${copyExists.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

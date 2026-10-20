@@ -657,7 +657,23 @@ methods:
     package: word!
     fullName: addColumns(insertLocation, columnCount, values)
     summary: Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Adds a column to the end of the first table.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        salesTable.addColumns(Word.InsertLocation.end, 1);
+
+        await context.sync();
+        console.log("Added a column to the end of the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -681,7 +697,23 @@ methods:
     package: word!
     fullName: addRows(insertLocation, rowCount, values)
     summary: Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Adds a row to the end of the first table.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        salesTable.addRows(Word.InsertLocation.end, 1);
+
+        await context.sync();
+        console.log("Added a row to the end of the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -837,7 +869,31 @@ methods:
     package: word!
     fullName: deleteColumns(columnIndex, columnCount)
     summary: Deletes specific columns. This is applicable to uniform tables.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Deletes the last column while keeping at least one column in the table.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        const firstRow: Word.TableRow = salesTable.rows.getFirst();
+        firstRow.load("cellCount");
+        await context.sync();
+
+        if (firstRow.cellCount <= 1) {
+          console.warn("Keep at least one column. Add a column or choose Set up to reset the sample.");
+          return;
+        }
+
+        salesTable.deleteColumns(firstRow.cellCount - 1, 1);
+        await context.sync();
+        console.log("Deleted the last column of the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -858,7 +914,30 @@ methods:
     package: word!
     fullName: deleteRows(rowIndex, rowCount)
     summary: Deletes specific rows.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Deletes the last row while keeping the table's header row.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        salesTable.load("rowCount");
+        await context.sync();
+
+        if (salesTable.rowCount <= 1) {
+          console.warn("Keep the header row. Add a row or choose Set up to reset the sample.");
+          return;
+        }
+
+        salesTable.deleteRows(salesTable.rowCount - 1, 1);
+        await context.sync();
+        console.log("Deleted the last row of the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1181,7 +1260,24 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Inserts a heading before the first table.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        const heading: Word.Paragraph = salesTable.insertParagraph("Quarterly sales", Word.InsertLocation.before);
+        heading.font.bold = true;
+
+        await context.sync();
+        console.log("Inserted a heading before the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1202,7 +1298,27 @@ methods:
     package: word!
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-table-structure.yaml
+
+      // Inserts a notes table after the first table.
+      await Word.run(async (context) => {
+        const salesTable: Word.Table = context.document.body.tables.getFirst();
+        const notesTable: Word.Table = salesTable.insertTable(2, 2, Word.InsertLocation.after, [
+          ["Item", "Note"],
+          ["Sales", "Review quarterly totals."]
+        ]);
+        notesTable.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
+
+        await context.sync();
+        console.log("Inserted a notes table after the sales table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

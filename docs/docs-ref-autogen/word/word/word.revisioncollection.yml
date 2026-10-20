@@ -12,6 +12,30 @@ remarks: |-
   - [Word.Document](/javascript/api/word/word.document): [revisions](/javascript/api/word/word.document#word-word-document-revisions-member)
   - [Word.Range](/javascript/api/word/word.range): [revisions](/javascript/api/word/word.range#word-word-range-revisions-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+  // Reads revision metadata for the first paragraph on desktop Word.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      const revisions: Word.RevisionCollection = paragraphRange.revisions;
+      revisions.load("items/author,items/date,items/type,items/index,items/formatDescription");
+      await context.sync();
+      console.log(`Revisions in the first paragraph: ${revisions.items.length}`);
+      revisions.items.forEach((revision: Word.Revision) => {
+          console.log("Revision properties:", {
+              author: revision.author,
+              date: revision.date,
+              type: revision.type,
+              index: revision.index,
+              formatDescription: revision.formatDescription,
+          });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

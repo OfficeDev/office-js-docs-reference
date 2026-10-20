@@ -15,33 +15,27 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
+  // Reads the index and text of each page intersecting the selection.
   await Word.run(async (context) => {
-    // Gets pages of the selection.
-    const pages: Word.PageCollection = context.document.getSelection().pages;
-    pages.load();
+    const selectedRange: Word.Range = context.document.getSelection();
+    const pages: Word.PageCollection = selectedRange.pages;
+    pages.load("items/index");
     await context.sync();
 
-    // Log info for pages included in selection.
-    console.log(pages);
-    const pagesIndexes = [];
-    const pagesText = [];
+    console.log(`Pages in the selection: ${pages.items.length}`);
+    const pageRanges: Word.Range[] = [];
+    pages.items.forEach((page: Word.Page) => {
+      const pageRange: Word.Range = page.getRange(Word.RangeLocation.whole);
+      pageRange.load("text");
+      pageRanges.push(pageRange);
+    });
+
+    await context.sync();
+
     for (let i = 0; i < pages.items.length; i++) {
-      const page = pages.items[i];
-      page.load("index");
-      pagesIndexes.push(page);
-
-      const range = page.getRange();
-      range.load("text");
-      pagesText.push(range);
-    }
-
-    await context.sync();
-
-    for (let i = 0; i < pagesIndexes.length; i++) {
-      console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
-      console.log("Text of that page in the selection:", pagesText[i].text);
+      console.log(`Page ${pages.items[i].index} text: ${pageRanges[i].text}`);
     }
   });
   ```

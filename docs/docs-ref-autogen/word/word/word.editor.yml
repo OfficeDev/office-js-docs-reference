@@ -11,6 +11,29 @@ remarks: |-
 
   - [Word.EditorCollection](/javascript/api/word/word.editorcollection): [addById](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbyid-member(1)), [addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1)), [getItemAt](/javascript/api/word/word.editorcollection#word-word-editorcollection-getitemat-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-editing-permissions-desktop.yaml
+
+  // Reads editing-permission entries for the first paragraph range.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const editors: Word.EditorCollection = paragraphRange.editors;
+      const editorCount: OfficeExtension.ClientResult<number> = editors.getCount();
+      await context.sync();
+      const editorEntries: Word.Editor[] = [];
+      for (let index = 0; index < editorCount.value; index++) {
+          const editor: Word.Editor = editors.getItemAt(index);
+          editor.load("name,id");
+          editorEntries.push(editor);
+      }
+      await context.sync();
+      console.log(`Editing-permission entries: ${editorCount.value}`);
+      editorEntries.forEach((editor: Word.Editor) => console.log({ name: editor.name, id: editor.id }));
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

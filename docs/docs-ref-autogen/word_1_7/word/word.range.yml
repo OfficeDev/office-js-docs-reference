@@ -25,24 +25,14 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
-  // Gets the range of the first comment in the selected content.
+  // Reads the text and checks whether the first paragraph range is empty.
   await Word.run(async (context) => {
-    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-    comment.load("contentRange");
-    const range: Word.Range = comment.getRange();
-    range.load("text");
-    await context.sync();
-
-    if (comment.isNullObject) {
-      console.warn("No comments in the selection, so no range to get.");
-      return;
-    }
-
-    console.log(`Comment location: ${range.text}`);
-    const contentRange: Word.CommentContentRange = comment.contentRange;
-    console.log("Comment content range:", contentRange);
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      paragraphRange.load("text,isEmpty,style");
+      await context.sync();
+      console.log("First paragraph's properties:", { text: paragraphRange.text, isEmpty: paragraphRange.isEmpty, style: paragraphRange.style });
   });
   ```
 
@@ -55,7 +45,26 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the range.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Gets the content controls contained in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const contentControls: Word.ContentControlCollection = bodyRange.contentControls;
+          contentControls.load("items/tag,items/title,items/text");
+          await context.sync();
+          console.log(`Content controls found: ${contentControls.items.length}`);
+          contentControls.items.forEach((control: Word.ContentControl) => {
+              console.log({ tag: control.tag, title: control.title, text: control.text });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +90,24 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the range.
-    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+      // Gets the text of every endnote in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const endnotes: Word.NoteItemCollection = bodyRange.endnotes;
+          endnotes.load("items/body/text");
+          await context.sync();
+          console.log(`Endnotes found: ${endnotes.items.length}`);
+          endnotes.items.forEach((endnote: Word.NoteItem) => console.log(endnote.body.text));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +120,24 @@ properties:
     package: word!
     fullName: fields
     summary: Gets the collection of `Field` objects in the range.
-    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Gets field codes and displayed results in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const fields: Word.FieldCollection = bodyRange.fields;
+          fields.load("items/code,items/result/text");
+          await context.sync();
+          console.log(`Fields found: ${fields.items.length}`);
+          fields.items.forEach((field: Word.Field) => console.log({ code: field.code, text: field.result.text }));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -158,7 +201,7 @@ properties:
         footnotes.load("length");
         await context.sync();
 
-        console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+        console.log(`Number of footnotes in the selected range: ${footnotes.items.length}`);
       });
       ```
 
@@ -173,7 +216,22 @@ properties:
     package: word!
     fullName: hyperlink
     summary: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location part.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Links the first paragraph's text to the Word add-in documentation.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          paragraphRange.hyperlink = "https://learn.microsoft.com/office/dev/add-ins/word/";
+          await context.sync();
+          console.log("Linked the summary text to the Word add-in documentation.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -186,7 +244,24 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: Gets the collection of `InlinePicture` objects in the range.
-    remarks: '[API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Reads the dimensions of inline pictures in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const pictures: Word.InlinePictureCollection = bodyRange.inlinePictures;
+          pictures.load("items/width,items/height");
+          await context.sync();
+          console.log(`Inline pictures found: ${pictures.items.length}`);
+          pictures.items.forEach((picture: Word.InlinePicture) => console.log({ width: picture.width, height: picture.height }));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -212,7 +287,24 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of `List` objects in the range.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Reads the identifiers of lists in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const lists: Word.ListCollection = bodyRange.lists;
+          lists.load("items/id");
+          await context.sync();
+          console.log(`Lists found: ${lists.items.length}`);
+          lists.items.forEach((list: Word.List) => console.log(`List ID: ${list.id}`));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -414,7 +506,23 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Reads the table containing the first table cell's range.
+      await Word.run(async (context) => {
+          const cellRange: Word.Range = context.document.body.tables.getFirst().getCell(0, 0).body.getRange();
+          const parentTable: Word.Table = cellRange.parentTable;
+          parentTable.load("rowCount,values");
+          await context.sync();
+          console.log("Parent table:", { rowCount: parentTable.rowCount, values: parentTable.values });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -427,7 +535,23 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Reads the cell containing the first table cell's range.
+      await Word.run(async (context) => {
+          const cellRange: Word.Range = context.document.body.tables.getFirst().getCell(0, 0).body.getRange();
+          const parentCell: Word.TableCell = cellRange.parentTableCell;
+          parentCell.load("rowIndex,cellIndex,value");
+          await context.sync();
+          console.log("Parent cell:", { rowIndex: parentCell.rowIndex, cellIndex: parentCell.cellIndex, value: parentCell.value });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -440,7 +564,27 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: Gets the table cell that contains the range. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Checks whether the first paragraph is inside a table cell.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const parentCell: Word.TableCell = paragraphRange.parentTableCellOrNullObject;
+          parentCell.load("value");
+          await context.sync();
+          if (parentCell.isNullObject) {
+              console.warn("The first paragraph is not inside a table cell.");
+              return;
+          }
+          console.log(`Parent cell text: ${parentCell.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -453,7 +597,27 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: Gets the table that contains the range. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Checks whether the first paragraph is inside a table.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const parentTable: Word.Table = paragraphRange.parentTableOrNullObject;
+          parentTable.load("rowCount");
+          await context.sync();
+          if (parentTable.isNullObject) {
+              console.warn("The first paragraph is not inside a table.");
+              return;
+          }
+          console.log(`Parent table rows: ${parentTable.rowCount}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -466,7 +630,22 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Applies the sample's custom paragraph style to the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.style = "RangeSampleStyle";
+          await context.sync();
+          console.log("Applied the sample's custom style.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -585,6 +764,17 @@ methods:
           console.log('Cleared the selection (range object)');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Removes the first paragraph's text while preserving the paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          paragraphRange.clear();
+          await context.sync();
+          console.log("Cleared the summary text. The paragraph remains.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -616,7 +806,8 @@ methods:
         const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
         const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
 
-        const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
+        const comparedLocation: OfficeExtension.ClientResult<Word.LocationRelation> =
+          firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
 
         await context.sync();
 
@@ -663,6 +854,17 @@ methods:
           console.log('Deleted the selection (range object)');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Deletes the first paragraph range, including its paragraph mark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.delete();
+          await context.sync();
+          console.log("Deleted the first paragraph range.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -682,32 +884,16 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
+      // Gets the text spanning the first two paragraphs.
       await Word.run(async (context) => {
-        // Get the complete sentence (as range) associated with the insertion point.
-        const sentences: Word.RangeCollection = context.document
-          .getSelection()
-          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
-        sentences.load("$none");
-        await context.sync();
-
-        // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
-          .getRange()
-          .expandTo(
-            context.document
-              .getSelection()
-              .paragraphs.getFirst()
-              .getRange(Word.RangeLocation.end)
-          )
-          .getTextRanges(["."], false /* Don't trim spaces*/);
-        sentencesToTheEndOfParagraph.load("text");
-        await context.sync();
-
-        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
-          console.log(sentencesToTheEndOfParagraph.items[i].text);
-        }
+          const firstRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const secondRange: Word.Range = context.document.body.paragraphs.getFirst().getNext().getRange();
+          const expandedRange: Word.Range = firstRange.expandTo(secondRange);
+          expandedRange.load("text");
+          await context.sync();
+          console.log(`Expanded text: ${expandedRange.text}`);
       });
       ```
 
@@ -727,7 +913,28 @@ methods:
     package: word!
     fullName: expandToOrNullObject(range)
     summary: Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. If the two ranges don't have a union, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
+
+      // Expands to the selection when both ranges belong to the same story.
+      await Word.run(async (context) => {
+          const firstRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const selection: Word.Range = context.document.getSelection();
+          const expandedRange: Word.Range = firstRange.expandToOrNullObject(selection);
+          expandedRange.load("text");
+          await context.sync();
+          if (expandedRange.isNullObject) {
+              console.warn("The ranges cannot be combined. Select text in the main document body.");
+              return;
+          }
+          console.log(`Expanded text: ${expandedRange.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -745,7 +952,22 @@ methods:
     package: word!
     fullName: getBookmarks(includeHidden, includeAdjacent)
     summary: Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character.
-    remarks: '[API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Gets the names of bookmarks within or overlapping the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const bookmarkNames: OfficeExtension.ClientResult<string[]> = paragraphRange.getBookmarks(false, true);
+          await context.sync();
+          console.log("Bookmark names:", bookmarkNames.value);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -879,6 +1101,17 @@ methods:
           console.log('The HTML read from the document was: ' + html.value);
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Reads an HTML representation of the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const html: OfficeExtension.ClientResult<string> = paragraphRange.getHtml();
+          await context.sync();
+          console.log(`Range HTML: ${html.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -913,6 +1146,21 @@ methods:
           });
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Reads the text and destinations of hyperlinks in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const hyperlinkRanges: Word.RangeCollection = bodyRange.getHyperlinkRanges();
+          hyperlinkRanges.load("items/text,items/hyperlink");
+          await context.sync();
+          console.log(`Hyperlinks found: ${hyperlinkRanges.items.length}`);
+          hyperlinkRanges.items.forEach((hyperlinkRange: Word.Range) => {
+              console.log({ text: hyperlinkRange.text, hyperlink: hyperlinkRange.hyperlink });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -926,7 +1174,24 @@ methods:
     package: word!
     fullName: getNextTextRange(endingMarks, trimSpacing)
     summary: Gets the next text range by using punctuation marks and other ending marks. Throws an `ItemNotFound` error if this text range is the last one.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+
+      // Gets the sentence following the first sentence in the document.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const firstSentence: Word.Range = paragraphRange.getTextRanges(["?", "."], true).getFirst();
+          const nextSentence: Word.Range = firstSentence.getNextTextRange(["?", "."], true);
+          nextSentence.load("text");
+          await context.sync();
+          console.log(`Next sentence: ${nextSentence.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -947,7 +1212,27 @@ methods:
     package: word!
     fullName: getNextTextRangeOrNullObject(endingMarks, trimSpacing)
     summary: Gets the next text range by using punctuation marks and other ending marks. If this text range is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+
+      // Checks for a sentence after the end of the document without throwing.
+      await Word.run(async (context) => {
+          const endRange: Word.Range = context.document.body.getRange(Word.RangeLocation.end);
+          const nextSentence: Word.Range = endRange.getNextTextRangeOrNullObject([".", "?"], true);
+          nextSentence.load("text");
+          await context.sync();
+          if (nextSentence.isNullObject) {
+              console.warn("There is no sentence after the end of the document.");
+              return;
+          }
+          console.log(`Next sentence: ${nextSentence.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -988,6 +1273,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('The OOXML read from the document was:  ' + ooxml.value);
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Reads the OOXML representation of the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const ooxml: OfficeExtension.ClientResult<string> = paragraphRange.getOoxml();
+          await context.sync();
+          console.log(`Range OOXML: ${ooxml.value}`);
       });
       ```
 
@@ -1099,27 +1395,21 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+      // Gets complete sentences from the insertion point to the end of its paragraph.
       await Word.run(async (context) => {
-        // Get the complete sentence (as range) associated with the insertion point.
-        const sentences: Word.RangeCollection = context.document
-          .getSelection()
-          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        const selection: Word.Range = context.document.getSelection();
+        const sentences: Word.RangeCollection = selection.getTextRanges(["."], false);
         sentences.load("$none");
         await context.sync();
 
-        // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
-          .getRange()
-          .expandTo(
-            context.document
-              .getSelection()
-              .paragraphs.getFirst()
-              .getRange(Word.RangeLocation.end)
-          )
-          .getTextRanges(["."], false /* Don't trim spaces*/);
+        const firstSentence: Word.Range = sentences.items[0];
+        const paragraphEnd: Word.Range = selection.paragraphs.getFirst().getRange(Word.RangeLocation.end);
+        const remainingRange: Word.Range = firstSentence.expandTo(paragraphEnd);
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = remainingRange.getTextRanges(["."], false);
         sentencesToTheEndOfParagraph.load("text");
         await context.sync();
 
+        console.log("Sentences from the current sentence to the paragraph end:");
         for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
           console.log(sentencesToTheEndOfParagraph.items[i].text);
         }
@@ -1145,7 +1435,26 @@ methods:
     package: word!
     fullName: getTrackedChanges()
     summary: Gets the collection of the `TrackedChange` objects in the range.
-    remarks: '[API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Gets the tracked changes inside the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const trackedChanges: Word.TrackedChangeCollection = paragraphRange.getTrackedChanges();
+          trackedChanges.load("items/author,items/text,items/type");
+          await context.sync();
+          console.log(`Tracked changes in the first paragraph: ${trackedChanges.items.length}`);
+          trackedChanges.items.forEach((change: Word.TrackedChange) => {
+              console.log({ author: change.author, text: change.text, type: change.type });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1167,35 +1476,14 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/export.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
 
+      // Names the first paragraph range, replacing any existing bookmark with this name.
       await Word.run(async (context) => {
-        const body: Word.Body = context.document.body;
-        body.clear();
-
-        // Apply built-in heading styles so the Headings export mode can create PDF bookmarks.
-        const title: Word.Paragraph = body.insertParagraph("Extend Word with Office Add-ins", Word.InsertLocation.end);
-        title.styleBuiltIn = Word.BuiltInStyleName.heading1;
-
-        const overview: Word.Paragraph = body.insertParagraph(
-          "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-          Word.InsertLocation.end,
-        );
-        overview.styleBuiltIn = Word.BuiltInStyleName.normal;
-
-        const detailsHeading: Word.Paragraph = body.insertParagraph("How Word add-ins work", Word.InsertLocation.end);
-        detailsHeading.styleBuiltIn = Word.BuiltInStyleName.heading2;
-        const details: Word.Paragraph = body.insertParagraph(
-          "Use add-in commands to extend the Word UI. Launch task panes that run JavaScript to interact with the content in a Word document. Any code that you can run in a browser can run in a Word add-in. Add-ins that interact with content in a Word document create requests to act on Word objects and synchronize object state.",
-          Word.InsertLocation.end,
-        );
-        details.styleBuiltIn = Word.BuiltInStyleName.normal;
-
-        // Add a named Word bookmark that the WordBookmarks export mode can include in the PDF.
-        details.getRange(Word.RangeLocation.whole).insertBookmark("named_bookmark");
-
-        await context.sync();
-        console.log("Sample document created with headings and bookmark 'named_bookmark'.");
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          paragraphRange.insertBookmark("RangeSampleSummary");
+          await context.sync();
+          console.log("Inserted the RangeSampleSummary bookmark. Get bookmark names to verify it.");
       });
       ```
 
@@ -1235,6 +1523,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Inserted a page break after the selected text.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Inserts a page break after the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+          await context.sync();
+          console.log("Inserted a page break after the summary.");
       });
       ```
 
@@ -1345,7 +1644,22 @@ methods:
     package: word!
     fullName: insertEndnote(insertText)
     summary: Inserts an endnote. The endnote reference is placed after the range.
-    remarks: '[API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+      // Adds an endnote to the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const endnote: Word.NoteItem = paragraphRange.insertEndnote("Source: the sample document.");
+          await context.sync();
+          console.log("Inserted an endnote. Its text appears at the end of the document.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1472,6 +1786,19 @@ methods:
           console.log('Added base64 encoded text to the beginning of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph with the contents of a small embedded DOCX file.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          // The DOCX contains one paragraph: "Imported project update."
+          const base64File: string = "UEsDBBQAAAAIAAAAIVD3S4B1wgAAAHYBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbH2QuQ7CMAyGX6XKiqgRAwOiLMAKDLyAlbptRC7FLsfbk3INCBjt//gsLw7XSFxcnPVcqU4kzgFYd+SQyxDJZ6UJyaHkMbUQUR+xJZhOJjPQwQt5GcvQoZaLNTXYWyk2l7xmE3ylEllWxephHFiVwhit0ShZh5OvPyjjJ6HMybuHOxN5lA0KvhIG5TfgmdudKCVTU7HHJFt02QXnkGqog+5dTpb/a77cGZrGaHrnh7aYgiZm41tny7fi0PjX/XB/9/IGUEsDBBQAAAAIAAAAIVBhey9DiQAAAPIAAAALAAAAX3JlbHMvLnJlbHONzzsOAiEQBuCrEA6ws1pYGKCy2dZ4AQLDIy6PDBj19lJYrMbCcuaffH9GnHHVPZbcQqyNPdKam+Sh93oEaCZg0m0qFfNIXKGk+xjJQ9Xmqj3Cfp4PQFuDK7E12WIlp8XuOLs8K/5jF+eiwVMxt4S5/6j4uhiyJo9d8nshC/a9ngbLQQn4eFG9AFBLAwQUAAAACAAAACFQZhg8uIUAAAC1AAAAEQAAAHdvcmQvZG9jdW1lbnQueG1sRY47DsIwDIavUvUAdcXAEIXubFwhJKYtquPIcZVye5IysHyW/T9kW0xgvxNG7Q7aYjbl1i+qyQBkvyC5PHDCWLUXCzmtq8xQWEIS9pjzGmfa4DKOVyC3xn6yxTw5fNpMDdKg050Si2Loau6NXrs9Bac4WGhqo5w8M7kaHgLn4VcG/0enL1BLAQIUABQAAAAIAAAAIVD3S4B1wgAAAHYBAAATAAAAAAAAAAAAAACAAQAAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAhQAFAAAAAgAAAAhUGF7L0OJAAAA8gAAAAsAAAAAAAAAAAAAAIAB8wAAAF9yZWxzLy5yZWxzUEsBAhQAFAAAAAgAAAAhUGYYPLiFAAAAtQAAABEAAAAAAAAAAAAAAIABpQEAAHdvcmQvZG9jdW1lbnQueG1sUEsFBgAAAAADAAMAuQAAAFkCAAAAAA==";
+          const insertedRange: Word.Range = paragraphRange.insertFileFromBase64(base64File, Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted the embedded document's project update.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1548,6 +1875,17 @@ methods:
           console.log('HTML added to the beginning of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph's content with formatted HTML.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const insertedRange: Word.Range = paragraphRange.insertHtml("<b>Project update:</b> <i>ready for review.</i>", Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted bold and italic text from HTML.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1594,13 +1932,6 @@ methods:
 
         console.log("New inline picture properties:", newPic);
       });
-
-      ...
-
-      // Returns Base64-encoded image data for a sample picture.
-      const pictureBase64 =
-        "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";
-      return pictureBase64;
       ```
 
     isPreview: false
@@ -1647,6 +1978,30 @@ methods:
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
       // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph with a bold paragraph from an OOXML package.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const ooxml: string =
+              `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+                  <pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+                      <pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                          <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+                      </Relationships></pkg:xmlData>
+                  </pkg:part>
+                  <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
+                      <pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+                          <w:body><w:p><w:r><w:rPr><w:b/></w:rPr><w:t>Project update from OOXML.</w:t></w:r></w:p></w:body>
+                      </w:document></pkg:xmlData>
+                  </pkg:part>
+              </pkg:package>`;
+          const insertedRange: Word.Range = paragraphRange.insertOoxml(ooxml, Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted a bold paragraph from OOXML.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1689,6 +2044,17 @@ methods:
           console.log('Paragraph added to the end of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Adds a paragraph after the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const newParagraph: Word.Paragraph = paragraphRange.insertParagraph("Additional project details.", Word.InsertLocation.after);
+          await context.sync();
+          console.log("Inserted a paragraph after the summary.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1709,7 +2075,25 @@ methods:
     package: word!
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Adds a project status table after the last paragraph range.
+      await Word.run(async (context) => {
+          const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+          const projectTable: Word.Table = lastRange.insertTable(2, 2, Word.InsertLocation.after, [
+              ["Task", "Status"],
+              ["Review", "Ready"]
+          ]);
+          await context.sync();
+          console.log("Inserted a project status table.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1758,6 +2142,17 @@ methods:
           console.log('Text added to the end of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Replaces the first paragraph's text without replacing its paragraph mark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const insertedRange: Word.Range = paragraphRange.insertText("Updated project summary.", Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Replaced the first paragraph's text.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1778,7 +2173,24 @@ methods:
     package: word!
     fullName: intersectWith(range)
     summary: Returns a new range as the intersection of this range with another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges aren't overlapped or adjacent.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
+
+      // Gets the overlap between the document body and its first paragraph.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const firstRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const overlap: Word.Range = bodyRange.intersectWith(firstRange);
+          overlap.load("text");
+          await context.sync();
+          console.log(`Overlapping text: ${overlap.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1796,7 +2208,28 @@ methods:
     package: word!
     fullName: intersectWithOrNullObject(range)
     summary: Returns a new range as the intersection of this range with another range. This range isn't changed. If the two ranges aren't overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
+
+      // Checks whether the selection overlaps the first paragraph.
+      await Word.run(async (context) => {
+          const firstRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const selection: Word.Range = context.document.getSelection();
+          const overlap: Word.Range = firstRange.intersectWithOrNullObject(selection);
+          overlap.load("text");
+          await context.sync();
+          if (overlap.isNullObject) {
+              console.warn("The selection does not overlap or adjoin the first paragraph.");
+              return;
+          }
+          console.log(`Overlapping text: ${overlap.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1876,7 +2309,27 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: Performs a search with the specified search options on the scope of the `Range` object. The search results are a collection of `Range` objects.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Finds whole-word matches within the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const searchOptions: Word.SearchOptions = Word.SearchOptions.newObject(context);
+          searchOptions.matchCase = false;
+          searchOptions.matchWholeWord = true;
+          const matches: Word.RangeCollection = paragraphRange.search("project", searchOptions);
+          matches.load("items/text");
+          await context.sync();
+          console.log(`Matches found: ${matches.items.length}`);
+          matches.items.forEach((match: Word.Range) => console.log(match.text));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1938,6 +2391,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Selected the range.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+      // Selects the final paragraph and scrolls it into view.
+      await Word.run(async (context) => {
+        const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+        lastRange.select();
+
+        await context.sync();
       });
       ```
 
@@ -2014,7 +2478,33 @@ methods:
     package: word!
     fullName: split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)
     summary: Splits the range into child ranges by using delimiters.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+
+      // Splits the first paragraph into words and highlights them in sequence.
+      await Word.run(async (context) => {
+        const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+        const words: Word.RangeCollection = paragraphRange.split([" "], false, true, true);
+        words.load("text");
+
+        await context.sync();
+
+        for (let i = 0; i < words.items.length; i++) {
+          if (i >= 1) {
+            words.items[i - 1].font.highlightColor = "#FFFFFF";
+          }
+          words.items[i].font.highlightColor = "#FFFF00";
+
+          await context.sync();
+          await new Promise((resolve) => setTimeout(resolve, 200));
+        }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

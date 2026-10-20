@@ -11,6 +11,21 @@ remarks: |-
 
   - [Word.Range](/javascript/api/word/word.range): [twoLinesInOne](/javascript/api/word/word.range#word-word-range-twolinesinone-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+
+  // Displays the first paragraph's text as two lines enclosed in parentheses.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const twoLineLayout: Word.TwoLinesInOneType = Word.TwoLinesInOneType.parentheses;
+      paragraphRange.twoLinesInOne = twoLineLayout;
+      await context.sync();
+      console.log("Applied two-line text with parentheses.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

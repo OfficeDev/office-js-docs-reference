@@ -21,13 +21,15 @@ remarks: |-
   // This function sets the value of cell A1 to a #BUSY! error using data types.
   await Excel.run(async (context) => {
     // Retrieve the Sample worksheet and cell A1 on that sheet.
-    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
-    const range = sheet.getRange("A1");
+    const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+    const range: Excel.Range = sheet.getRange("A1");
 
     // Get the error data type and set its type to `busy`.
+    const valueType: Excel.CellValueType = Excel.CellValueType.error;
+    const errorType: Excel.ErrorCellValueType = Excel.ErrorCellValueType.busy;
     const error: Excel.ErrorCellValue = {
-      type: Excel.CellValueType.error,
-      errorType: Excel.ErrorCellValueType.busy
+      type: valueType,
+      errorType: errorType
     };
 
     // Set cell A1 as the busy error.
