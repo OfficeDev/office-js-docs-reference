@@ -11,6 +11,32 @@ remarks: |-
 
   - [Word.BookmarkCollection](/javascript/api/word/word.bookmarkcollection): [items](/javascript/api/word/word.bookmarkcollection#word-word-bookmarkcollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+  // Read bookmark properties and the text enclosed by each bookmark.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+      bookmarks.load("items/name,items/start,items/end,items/isEmpty,items/isColumn,items/storyType,items/range/text");
+      await context.sync();
+      console.log(`Bookmarks found: ${bookmarks.items.length}`);
+      bookmarks.items.forEach((bookmark: Word.Bookmark) => {
+          console.log("Bookmark details:", {
+              name: bookmark.name,
+              start: bookmark.start,
+              end: bookmark.end,
+              isEmpty: bookmark.isEmpty,
+              isColumn: bookmark.isColumn,
+              storyType: bookmark.storyType,
+              text: bookmark.range.text
+          });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,7 +59,39 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the bookmark.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Move the bookmark's end before the summary's final period.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          bookmarks.load("items/name,items/start");
+          paragraphRange.load("end");
+          await context.sync();
+
+          const summaryBookmark: Word.Bookmark = bookmarks.items.find((bookmark) => bookmark.name === "RangeSampleSummary");
+          if (!summaryBookmark) {
+              console.warn("RangeSampleSummary was not found. Choose Insert bookmark first.");
+              return;
+          }
+
+          const newEnd = paragraphRange.end - 1;
+          if (newEnd <= summaryBookmark.start) {
+              console.warn("The bookmark is too short. Run Set up and Insert bookmark again.");
+              return;
+          }
+
+          summaryBookmark.end = newEnd;
+          await context.sync();
+          console.log("Moved the bookmark end before the final period. Get bookmark details to verify the enclosed text.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +156,39 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the bookmark.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Move the bookmark's start past the word "Project" without changing the document text.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          bookmarks.load("items/name,items/end");
+          paragraphRange.load("start");
+          await context.sync();
+
+          const summaryBookmark: Word.Bookmark = bookmarks.items.find((bookmark) => bookmark.name === "RangeSampleSummary");
+          if (!summaryBookmark) {
+              console.warn("RangeSampleSummary was not found. Choose Insert bookmark first.");
+              return;
+          }
+
+          const newStart = paragraphRange.start + "Project ".length;
+          if (newStart >= summaryBookmark.end) {
+              console.warn("The bookmark is too short. Run Set up and Insert bookmark again.");
+              return;
+          }
+
+          summaryBookmark.start = newStart;
+          await context.sync();
+          console.log("Moved the bookmark start past 'Project '. Get bookmark details to verify the enclosed text.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +215,36 @@ methods:
     package: word!
     fullName: copyTo(name)
     summary: Copies this bookmark to the new bookmark specified in the `name` argument and returns a `Bookmark` object.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Create another named bookmark over the same text as the summary bookmark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          bookmarks.load("items/name");
+          await context.sync();
+
+          const summaryBookmark: Word.Bookmark = bookmarks.items.find((bookmark) => bookmark.name === "RangeSampleSummary");
+          if (!summaryBookmark) {
+              console.warn("RangeSampleSummary was not found. Choose Insert bookmark first.");
+              return;
+          }
+          if (bookmarks.items.some((bookmark) => bookmark.name === "RangeSampleCopy")) {
+              console.warn("RangeSampleCopy already exists. Delete the copied bookmark before copying again.");
+              return;
+          }
+
+          summaryBookmark.copyTo("RangeSampleCopy");
+          await context.sync();
+          console.log("Created RangeSampleCopy over the same text. Get bookmark details to inspect both names.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -143,7 +262,32 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the bookmark.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Delete the copied bookmark without deleting its text or the original bookmark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          bookmarks.load("items/name");
+          await context.sync();
+
+          const copiedBookmark: Word.Bookmark = bookmarks.items.find((bookmark) => bookmark.name === "RangeSampleCopy");
+          if (!copiedBookmark) {
+              console.warn("RangeSampleCopy was not found. Choose Copy bookmark first.");
+              return;
+          }
+
+          copiedBookmark.delete();
+          await context.sync();
+          console.log("Deleted RangeSampleCopy. Its text and RangeSampleSummary remain. Check copied bookmark to verify.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -219,7 +363,32 @@ methods:
     package: word!
     fullName: select()
     summary: Selects the bookmark.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-bookmarks.yaml
+
+      // Select the summary bookmark's current text in the document.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const bookmarks: Word.BookmarkCollection = paragraphRange.bookmarks;
+          bookmarks.load("items/name");
+          await context.sync();
+
+          const summaryBookmark: Word.Bookmark = bookmarks.items.find((bookmark) => bookmark.name === "RangeSampleSummary");
+          if (!summaryBookmark) {
+              console.warn("RangeSampleSummary was not found. Choose Insert bookmark first.");
+              return;
+          }
+
+          summaryBookmark.select();
+          await context.sync();
+          console.log("Selected RangeSampleSummary in the document.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

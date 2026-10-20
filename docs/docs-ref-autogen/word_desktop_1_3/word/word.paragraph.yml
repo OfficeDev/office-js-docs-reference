@@ -22,15 +22,14 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
 
+  // Reads the first paragraph's text.
   await Word.run(async (context) => {
-    // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-    paragraph.load("text");
-
-    await context.sync();
-    console.log(paragraph.text);
+      const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+      firstParagraph.load("text");
+      await context.sync();
+      console.log(`First paragraph: ${firstParagraph.text}`);
   });
   ```
 
@@ -51,9 +50,11 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Centers the last paragraph between the document margins.
       await Word.run(async (context) => {
-        // Center last paragraph alignment.
-        context.document.body.paragraphs.getLast().alignment = "Centered";
+        const lastParagraph: Word.Paragraph = context.document.body.paragraphs.getLast();
+        const alignment: Word.Alignment = Word.Alignment.centered;
+        lastParagraph.alignment = alignment;
 
         await context.sync();
       });
@@ -175,7 +176,21 @@ properties:
     package: word!
     fullName: firstLineIndent
     summary: Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+      // Indents only the first line of the first paragraph.
+      await Word.run(async (context) => {
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.firstLineIndent = 36;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -297,11 +312,12 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Indents the first paragraph from the left margin.
       await Word.run(async (context) => {
-        // Indent the first paragraph.
-        context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.leftIndent = 75;
 
-        return context.sync();
+        await context.sync();
       });
       ```
 
@@ -324,9 +340,10 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Adjusts the spacing between lines in the first paragraph.
       await Word.run(async (context) => {
-        // Adjust line spacing.
-        context.document.body.paragraphs.getFirst().lineSpacing = 20;
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.lineSpacing = 20;
 
         await context.sync();
       });
@@ -351,9 +368,10 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Adds space after the first paragraph, measured in grid lines.
       await Word.run(async (context) => {
-        // Set the space (in line units) after the first paragraph.
-        context.document.body.paragraphs.getFirst().lineUnitAfter = 1;
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.lineUnitAfter = 1;
 
         await context.sync();
       });
@@ -378,9 +396,10 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Adds space before the last paragraph, measured in grid lines.
       await Word.run(async (context) => {
-        // Set the space (in line units) before the first paragraph.
-        context.document.body.paragraphs.getFirst().lineUnitBefore = 1;
+        const lastParagraph: Word.Paragraph = context.document.body.paragraphs.getLast();
+        lastParagraph.lineUnitBefore = 1;
 
         await context.sync();
       });
@@ -591,7 +610,21 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent value, in points, for the paragraph.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+      // Narrows the first paragraph by adding a right indent.
+      await Word.run(async (context) => {
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.rightIndent = 72;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -641,9 +674,10 @@ properties:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
+      // Adds space after the first paragraph, measured in points.
       await Word.run(async (context) => {
-        // Set the space (in points) after the first paragraph.
-        context.document.body.paragraphs.getFirst().spaceAfter = 20;
+        const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+        firstParagraph.spaceAfter = 20;
 
         await context.sync();
       });
@@ -660,7 +694,21 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing, in points, before the paragraph.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+      // Adds space before the last paragraph, measured in points.
+      await Word.run(async (context) => {
+        const lastParagraph: Word.Paragraph = context.document.body.paragraphs.getLast();
+        lastParagraph.spaceBefore = 24;
+        await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -800,7 +848,7 @@ properties:
         paragraph.load("text");
 
         await context.sync();
-        console.log(paragraph.text);
+        console.log(`The first paragraph of the selected text: ${paragraph.text}`);
       });
       ```
 
@@ -923,6 +971,17 @@ methods:
           console.log('Cleared the contents of the first paragraph.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Removes the first paragraph's content but keeps the paragraph.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          firstParagraph.clear();
+          await context.sync();
+          console.log("Cleared the first paragraph. Its empty paragraph remains.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -962,6 +1021,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Deleted the first paragraph.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Removes the first paragraph and its content from the document.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          firstParagraph.delete();
+          await context.sync();
+          console.log("Deleted the first paragraph and its content.");
       });
       ```
 
@@ -1071,6 +1141,17 @@ methods:
           console.log('Paragraph HTML: ' + html.value);
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
+
+      // Reads an HTML representation of the first paragraph.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const html: OfficeExtension.ClientResult<string> = firstParagraph.getHtml();
+          await context.sync();
+          console.log(`Paragraph HTML: ${html.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1084,7 +1165,23 @@ methods:
     package: word!
     fullName: getNext()
     summary: Gets the next paragraph. Throws an `ItemNotFound` error if the paragraph is the last one.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Reads the paragraph immediately after the first paragraph.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const nextParagraph: Word.Paragraph = firstParagraph.getNext();
+          nextParagraph.load("text");
+          await context.sync();
+          console.log(`Next paragraph: ${nextParagraph.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1098,7 +1195,27 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: Gets the next paragraph. If the paragraph is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Checks for a following paragraph without throwing at the end of the body.
+      await Word.run(async (context) => {
+          const lastParagraph: Word.Paragraph = context.document.body.paragraphs.getLast();
+          const nextParagraph: Word.Paragraph = lastParagraph.getNextOrNullObject();
+          nextParagraph.load("text");
+          await context.sync();
+          if (nextParagraph.isNullObject) {
+              console.log("There is no paragraph after the last paragraph.");
+          } else {
+              console.log(`Next paragraph: ${nextParagraph.text}`);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1140,6 +1257,17 @@ methods:
           console.log('Paragraph OOXML: ' + ooxml.value);
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
+
+      // Reads the first paragraph's Office Open XML representation.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const ooxml: OfficeExtension.ClientResult<string> = firstParagraph.getOoxml();
+          await context.sync();
+          console.log(`Paragraph OOXML: ${ooxml.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1153,7 +1281,23 @@ methods:
     package: word!
     fullName: getPrevious()
     summary: Gets the previous paragraph. Throws an `ItemNotFound` error if the paragraph is the first one.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Reads the paragraph immediately before the last paragraph.
+      await Word.run(async (context) => {
+          const lastParagraph: Word.Paragraph = context.document.body.paragraphs.getLast();
+          const previousParagraph: Word.Paragraph = lastParagraph.getPrevious();
+          previousParagraph.load("text");
+          await context.sync();
+          console.log(`Previous paragraph: ${previousParagraph.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1203,6 +1347,22 @@ methods:
           }
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Checks for a preceding paragraph without throwing at the start of the body.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const previousParagraph: Word.Paragraph = firstParagraph.getPreviousOrNullObject();
+          previousParagraph.load("text");
+          await context.sync();
+          if (previousParagraph.isNullObject) {
+              console.log("There is no paragraph before the first paragraph.");
+          } else {
+              console.log(`Previous paragraph: ${previousParagraph.text}`);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1224,27 +1384,21 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+      // Gets complete sentences from the insertion point to the end of its paragraph.
       await Word.run(async (context) => {
-        // Get the complete sentence (as range) associated with the insertion point.
-        const sentences: Word.RangeCollection = context.document
-          .getSelection()
-          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        const selection: Word.Range = context.document.getSelection();
+        const sentences: Word.RangeCollection = selection.getTextRanges(["."], false);
         sentences.load("$none");
         await context.sync();
 
-        // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
-          .getRange()
-          .expandTo(
-            context.document
-              .getSelection()
-              .paragraphs.getFirst()
-              .getRange(Word.RangeLocation.end)
-          )
-          .getTextRanges(["."], false /* Don't trim spaces*/);
+        const firstSentence: Word.Range = sentences.items[0];
+        const paragraphEnd: Word.Range = selection.paragraphs.getFirst().getRange(Word.RangeLocation.end);
+        const remainingRange: Word.Range = firstSentence.expandTo(paragraphEnd);
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = remainingRange.getTextRanges(["."], false);
         sentencesToTheEndOfParagraph.load("text");
         await context.sync();
 
+        console.log("Sentences from the current sentence to the paragraph end:");
         for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
           console.log(sentencesToTheEndOfParagraph.items[i].text);
         }
@@ -1320,7 +1474,9 @@ methods:
 
         await context.sync();
 
-        console.log("Text:- " + text.value, "Including hidden text:- " + textIncludingHidden.value, "Including text marked as deleted:- " + textIncludingDeleted.value);
+        console.log(`Text: ${text.value}`);
+        console.log(`Including hidden text: ${textIncludingHidden.value}`);
+        console.log(`Including text marked as deleted: ${textIncludingDeleted.value}`);
       });
       ```
 
@@ -1348,7 +1504,26 @@ methods:
     package: word!
     fullName: getTextRanges(endingMarks, trimSpacing)
     summary: Gets the text ranges in the paragraph by using punctuation marks and other ending marks.
-    remarks: '[API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
+
+      // Reads sentence ranges delimited by periods in the first paragraph.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const sentences: Word.RangeCollection = firstParagraph.getTextRanges(["."], true);
+          sentences.load("items/text");
+          await context.sync();
+          console.log(`Sentences found: ${sentences.items.length}`);
+          for (const sentence of sentences.items) {
+              console.log(`Sentence: ${sentence.text}`);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1472,7 +1647,7 @@ methods:
         context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
 
         await context.sync();
-        console.log("success");
+        console.log("Inserted a line break after the first paragraph.");
       });
       ```
 
@@ -1702,6 +1877,20 @@ methods:
           console.log('Inserted HTML content at the end of the first paragraph.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
+
+      // Replaces the first paragraph's content with bold and italic text from HTML.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const insertedRange: Word.Range = firstParagraph.insertHtml(
+              "<b>Project update:</b> <i>ready for review.</i>",
+              Word.InsertLocation.replace
+          );
+          await context.sync();
+          console.log("Replaced the first paragraph's content with formatted HTML.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1775,7 +1964,35 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML into the paragraph at the specified location.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
+
+      // Replaces the first paragraph's content with a bold update from an OOXML package.
+      await Word.run(async (context) => {
+          const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+          const ooxml: string =
+              `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+                  <pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+                      <pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                          <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+                      </Relationships></pkg:xmlData>
+                  </pkg:part>
+                  <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
+                      <pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+                          <w:body><w:p><w:r><w:rPr><w:b/></w:rPr><w:t>Project update from OOXML.</w:t></w:r></w:p></w:body>
+                      </w:document></pkg:xmlData>
+                  </pkg:part>
+              </pkg:package>`;
+          const insertedRange: Word.Range = firstParagraph.insertOoxml(ooxml, Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Replaced the first paragraph's content with a bold OOXML update.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2074,18 +2291,21 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
+      // Selects the final paragraph and scrolls it into view.
       await Word.run(async (context) => {
-        // If select is called with no parameters, it selects the object.
-        context.document.body.paragraphs.getLast().select();
+        const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+        lastRange.select();
 
         await context.sync();
       });
 
       ...
 
+      // Moves the insertion point to the end of the final paragraph.
       await Word.run(async (context) => {
-        // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-        context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+        const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+        const selectionMode: Word.SelectionMode = Word.SelectionMode.end;
+        lastRange.select(selectionMode);
 
         await context.sync();
       });
@@ -2206,9 +2426,10 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
+      // Splits the first paragraph into words and highlights them in sequence.
       await Word.run(async (context) => {
-        const paragraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
-        const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+        const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+        const words: Word.RangeCollection = paragraphRange.split([" "], false, true, true);
         words.load("text");
 
         await context.sync();
@@ -2220,7 +2441,7 @@ methods:
           words.items[i].font.highlightColor = "#FFFF00";
 
           await context.sync();
-          await pause(200);
+          await new Promise((resolve) => setTimeout(resolve, 200));
         }
       });
       ```
@@ -2273,7 +2494,8 @@ methods:
         const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
         // Set up list level for the list item.
-        paragraph.listItem.level = 4;
+        const listItem: Word.ListItem = paragraph.listItem;
+        listItem.level = 4;
 
         // To add paragraphs outside the list, use Before or After.
         list.insertParagraph("New paragraph goes after (not part of the list)", "After");

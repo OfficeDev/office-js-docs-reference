@@ -11,6 +11,21 @@ remarks: |-
 
   - [Word.Range](/javascript/api/word/word.range): [case](/javascript/api/word/word.range#word-word-range-case-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+
+  // Converts the first paragraph's text to uppercase.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const characterCase: Word.CharacterCase = Word.CharacterCase.upper;
+      paragraphRange.case = characterCase;
+      await context.sync();
+      console.log("Converted the text to uppercase.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

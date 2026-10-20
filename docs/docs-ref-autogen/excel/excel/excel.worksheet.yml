@@ -226,7 +226,39 @@ properties:
     package: excel!
     fullName: horizontalPageBreaks
     summary: Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Load and inspect the page breaks in both worksheet collections.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const verticalBreaks: Excel.PageBreakCollection = sheet.verticalPageBreaks;
+          horizontalBreaks.load("items/rowIndex, items/columnIndex");
+          verticalBreaks.load("items/rowIndex, items/columnIndex");
+
+          await context.sync();
+          console.log(`Horizontal page breaks: ${horizontalBreaks.items.length}`);
+          horizontalBreaks.items.forEach((pageBreak: Excel.PageBreak) => {
+              console.log("Horizontal break (zero-based indexes):", {
+                  rowIndex: pageBreak.rowIndex,
+                  columnIndex: pageBreak.columnIndex
+              });
+          });
+          console.log(`Vertical page breaks: ${verticalBreaks.items.length}`);
+          verticalBreaks.items.forEach((pageBreak: Excel.PageBreak) => {
+              console.log("Vertical break (zero-based indexes):", {
+                  rowIndex: pageBreak.rowIndex,
+                  columnIndex: pageBreak.columnIndex
+              });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -643,7 +675,29 @@ properties:
     package: excel!
     fullName: verticalPageBreaks
     summary: Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
-    remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/manage-page-breaks.yaml
+
+      // Add horizontal and vertical breaks before the specified cells.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const horizontalBreaks: Excel.PageBreakCollection = sheet.horizontalPageBreaks;
+          const verticalBreaks: Excel.PageBreakCollection = sheet.verticalPageBreaks;
+
+          horizontalBreaks.add("A12");
+          horizontalBreaks.add("A22");
+          const columnBoundary: Excel.Range = sheet.getRange("E1");
+          verticalBreaks.add(columnBoundary);
+
+          await context.sync();
+          console.log("Added horizontal breaks before rows 12 and 22, and a vertical break before column E.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

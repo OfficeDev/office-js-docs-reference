@@ -32,6 +32,19 @@ remarks: |-
       console.log('The selection now has an underline style.');
   });
   ```
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/read-range-underline.yaml
+
+  // Reads the underline applied to the first paragraph range.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      paragraphRange.load("underline");
+      await context.sync();
+      const singleUnderline: Word.UnderlineType = Word.UnderlineType.single;
+      console.log(`Underline type: ${paragraphRange.underline}`);
+      console.log(`Has a single underline: ${paragraphRange.underline === singleUnderline}`);
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

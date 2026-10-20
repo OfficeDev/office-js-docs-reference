@@ -4,7 +4,44 @@ uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
 package: excel!
 fullName: Excel.JavaScriptCustomFunctionReferenceCellValue
 summary: Represents a reference to a JavaScript custom function.
-remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+remarks: |-
+  [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-function-references.yaml
+
+  // Attach a reference to a JavaScript custom function as a method on a math entity.
+  await Excel.run(async (context) => {
+      const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+      const entityRange: Excel.Range = sheet.getRange("A2");
+      const referenceType: Excel.FunctionCellValueType = Excel.FunctionCellValueType.javaScriptReference;
+      const customFunctionReference: Excel.JavaScriptCustomFunctionReferenceCellValue = {
+          type: Excel.CellValueType.function,
+          functionType: referenceType,
+          namespace: "CONTOSO",
+          id: "GET27"
+      };
+
+      // The namespace and ID identify a function; this value doesn't register its implementation.
+      const mathEntity: Excel.EntityCellValue = {
+          type: Excel.CellValueType.entity,
+          text: "Math value",
+          properties: {
+              Value: {
+                  type: Excel.CellValueType.double,
+                  basicValue: 10
+              },
+              Get27: customFunctionReference
+          }
+      };
+      entityRange.valuesAsJson = [[mathEntity]];
+      entityRange.format.autofitColumns();
+      await context.sync();
+      console.log("Created the Math value entity in Sample!A2. Read the reference to inspect its metadata.");
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

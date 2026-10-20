@@ -17,7 +17,7 @@ remarks: |-
 
   It's also supported in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
 
-  **Requirement set**: [DevicePermission 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
+  **Requirement set**: [DevicePermissionService 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/device-permission-service-requirement-sets)
 
   #### Used by
 

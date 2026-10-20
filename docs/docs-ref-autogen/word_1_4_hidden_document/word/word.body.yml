@@ -319,7 +319,7 @@ properties:
         allSearchResults.forEach((result) => {
           let length = result.hits.items.length;
 
-          console.log("Search term: " + result.searchTerm + " => Count: " + length);
+          console.log(`Search term: ${result.searchTerm} => Count: ${length}`);
         });
       });
       ```

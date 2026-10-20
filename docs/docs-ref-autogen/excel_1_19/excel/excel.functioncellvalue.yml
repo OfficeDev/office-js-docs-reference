@@ -7,9 +7,40 @@ summary: Represents a cell value which can be evaluated as a function.
 remarks: |-
   [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
+
+
   Learn more about the types in this type alias through the following links. 
 
   [Excel.JavaScriptCustomFunctionReferenceCellValue](/javascript/api/excel/excel.javascriptcustomfunctionreferencecellvalue)
+
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-function-references.yaml
+
+  // Read the custom-function identity stored in an entity's method property.
+  await Excel.run(async (context) => {
+      const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+      const entityRange: Excel.Range = sheet.getRange("A2");
+      entityRange.load("valuesAsJson");
+      await context.sync();
+
+      const cellValue: Excel.CellValue = entityRange.valuesAsJson[0][0];
+      if (cellValue.type !== Excel.CellValueType.entity) {
+          throw new Error("Create the function reference in Sample!A2 first.");
+      }
+
+      const methodValue: Excel.CellValue = cellValue.properties["Get27"];
+      if (!methodValue || methodValue.type !== Excel.CellValueType.function) {
+          throw new Error("The entity in Sample!A2 doesn't contain a Get27 function reference.");
+      }
+
+      const functionReference: Excel.FunctionCellValue = methodValue;
+      console.log("Function type:", functionReference.functionType);
+      console.log("Custom-function namespace:", functionReference.namespace);
+      console.log("Custom-function ID:", functionReference.id);
+  });
+  ```
 
 isPreview: false
 isDeprecated: false

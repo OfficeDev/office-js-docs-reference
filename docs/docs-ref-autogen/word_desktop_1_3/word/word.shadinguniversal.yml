@@ -14,6 +14,21 @@ remarks: |-
   - [Word.Range](/javascript/api/word/word.range): [shading](/javascript/api/word/word.range#word-word-range-shading-member)
   - [Word.TableColumn](/javascript/api/word/word.tablecolumn): [shading](/javascript/api/word/word.tablecolumn#word-word-tablecolumn-shading-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+
+  // Adds a pale blue background to the first paragraph's text.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const shading: Word.ShadingUniversal = paragraphRange.shading;
+      shading.backgroundPatternColor = "#DDEBF7";
+      await context.sync();
+      console.log("Applied pale blue shading.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

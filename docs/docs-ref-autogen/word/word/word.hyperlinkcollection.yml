@@ -12,6 +12,24 @@ remarks: |-
   - [Word.Document](/javascript/api/word/word.document): [hyperlinks](/javascript/api/word/word.document#word-word-document-hyperlinks-member)
   - [Word.Range](/javascript/api/word/word.range): [hyperlinks](/javascript/api/word/word.range#word-word-range-hyperlinks-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+
+  // Reads hyperlink objects and their destinations in the document body range.
+  await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const hyperlinks: Word.HyperlinkCollection = bodyRange.hyperlinks;
+      hyperlinks.load("items/address,items/range/text");
+      await context.sync();
+      console.log(`Hyperlinks found: ${hyperlinks.items.length}`);
+      hyperlinks.items.forEach((hyperlink: Word.Hyperlink) => {
+          console.log({ address: hyperlink.address, text: hyperlink.range.text });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

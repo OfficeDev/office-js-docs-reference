@@ -74,7 +74,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets the first paragraph of each page.
@@ -104,7 +104,7 @@ properties:
           pagesIndexes.push(page);
 
           const paragraphs = page.getRange().paragraphs;
-          paragraphs.load("items/length");
+          paragraphs.load("items");
           pagesNumberOfParagraphs.push(paragraphs);
 
           const firstParagraph = paragraphs.getFirst();
@@ -117,7 +117,7 @@ properties:
         for (let i = 0; i < pagesIndexes.length; i++) {
           console.log(`Page index: ${pagesIndexes[i].index}`);
           console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
-          console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+          console.log(`First paragraph's text: ${pagesFirstParagraphText[i].text}`);
         }
       });
       ```
@@ -412,9 +412,9 @@ properties:
         coauthoring.load("canCoauthor,canMerge,pendingUpdates");
         await context.sync();
 
-        console.log("Can coauthor:", coauthoring.canCoauthor);
-        console.log("Can merge:", coauthoring.canMerge);
-        console.log("Pending updates:", coauthoring.pendingUpdates);
+        console.log(`Can coauthor: ${coauthoring.canCoauthor}`);
+        console.log(`Can merge: ${coauthoring.canMerge}`);
+        console.log(`Pending updates: ${coauthoring.pendingUpdates}`);
       });
       ```
 
@@ -1708,7 +1708,40 @@ properties:
     package: word!
     fullName: revisions
     summary: Gets the collection of revisions that represents the tracked changes in the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/track-moved-text.yaml
+
+      // Reads and selects the text associated with a tracked move.
+      await Word.run(async (context) => {
+          const document: Word.Document = context.document;
+          const revisions: Word.RevisionCollection = document.revisions;
+          revisions.load("items/type");
+          await context.sync();
+
+          const movedFrom: Word.RevisionType = Word.RevisionType.movedFrom;
+          const movedTo: Word.RevisionType = Word.RevisionType.movedTo;
+          const movedRevision: Word.Revision | undefined = revisions.items.find(
+              (revision: Word.Revision) => revision.type === movedFrom || revision.type === movedTo
+          );
+          if (!movedRevision) {
+              console.log("Revision types found:", revisions.items.map((revision: Word.Revision) => revision.type));
+              console.warn("No tracked move was found. Move an entire paragraph as described in the task pane; moving a phrase may produce insertion and deletion revisions instead.");
+              return;
+          }
+
+          const movedRange: Word.Range = movedRevision.movedRange;
+          movedRange.load("text");
+          movedRange.select();
+          await context.sync();
+
+          console.log(`Moved revision range text: ${movedRange.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2178,7 +2211,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets the document windows.

@@ -11,34 +11,6 @@ remarks: |-
 
   - [Word.BreakCollection](/javascript/api/word/word.breakcollection): [items](/javascript/api/word/word.breakcollection#word-word-breakcollection-items-member)
 
-  #### Examples
-
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-  // Gets every page, column, and section break in the active document pane.
-  await Word.run(async (context) => {
-    const pages: Word.PageCollection = context.document.activeWindow.activePane.pages;
-    pages.load("items");
-    await context.sync();
-
-    const breakCollections: Word.BreakCollection[] = [];
-    pages.items.forEach((page: Word.Page) => {
-      const breaks: Word.BreakCollection = page.breaks;
-      breaks.load("items/pageIndex");
-      breakCollections.push(breaks);
-    });
-
-    await context.sync();
-
-    const documentBreaks: Word.Break[] = breakCollections.flatMap((breaks) => breaks.items);
-    console.log(`Breaks found: ${documentBreaks.length}`);
-    documentBreaks.forEach((documentBreak: Word.Break) => {
-      console.log(`Break on page ${documentBreak.pageIndex}.`);
-    });
-  });
-  ```
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -61,7 +33,36 @@ properties:
     package: word!
     fullName: pageIndex
     summary: Returns the page number on which the break occurs.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
+
+      // Gets the page number of every break in the active document pane.
+      await Word.run(async (context) => {
+        const pages: Word.PageCollection = context.document.activeWindow.activePane.pages;
+        pages.load("items");
+        await context.sync();
+
+        const breakCollections: Word.BreakCollection[] = [];
+        pages.items.forEach((page: Word.Page) => {
+          const breaks: Word.BreakCollection = page.breaks;
+          breaks.load("items/pageIndex");
+          breakCollections.push(breaks);
+        });
+
+        await context.sync();
+
+        const documentBreaks: Word.Break[] = breakCollections.flatMap((breaks) => breaks.items);
+        console.log(`Breaks found: ${documentBreaks.length}`);
+        documentBreaks.forEach((documentBreak: Word.Break) => {
+          console.log(`Break on page ${documentBreak.pageIndex}.`);
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +75,42 @@ properties:
     package: word!
     fullName: range
     summary: Returns a `Range` object that represents the portion of the document that's contained in the break.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
+
+      // Gets the text of each break's range in the active document pane.
+      await Word.run(async (context) => {
+        const pages: Word.PageCollection = context.document.activeWindow.activePane.pages;
+        pages.load("items");
+        await context.sync();
+
+        const breakCollections: Word.BreakCollection[] = [];
+        pages.items.forEach((page: Word.Page) => {
+          const breaks: Word.BreakCollection = page.breaks;
+          breaks.load("items");
+          breakCollections.push(breaks);
+        });
+        await context.sync();
+
+        const documentBreaks: Word.Break[] = breakCollections.flatMap((breaks) => breaks.items);
+        const breakRanges: Word.Range[] = documentBreaks.map((documentBreak: Word.Break) => {
+          const breakRange: Word.Range = documentBreak.range;
+          breakRange.load("text");
+          return breakRange;
+        });
+        await context.sync();
+
+        console.log(`Break ranges found: ${breakRanges.length}`);
+        breakRanges.forEach((breakRange: Word.Range, index: number) => {
+          console.log(`Break ${index + 1} range text (escaped): ${JSON.stringify(breakRange.text)}`);
+        });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

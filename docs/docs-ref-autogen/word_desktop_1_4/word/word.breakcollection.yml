@@ -14,9 +14,9 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
-  // Gets every page, column, and section break in the active document pane.
+  // Gets the page number of every break in the active document pane.
   await Word.run(async (context) => {
     const pages: Word.PageCollection = context.document.activeWindow.activePane.pages;
     pages.load("items");

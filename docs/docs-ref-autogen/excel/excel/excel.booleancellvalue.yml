@@ -40,7 +40,7 @@ properties:
     uid: excel!Excel.BooleanCellValue#layouts:member
     package: excel!
     fullName: layouts
-    summary: Represents layout information for views of this boolean value.
+    summary: Represents layout information for views of this Boolean value.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
     uid: excel!Excel.BooleanCellValue#properties:member
     package: excel!
     fullName: properties
-    summary: Represents additional properties of this boolean value.
+    summary: Represents additional properties of this Boolean value.
     remarks: '[API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false

@@ -60302,6 +60302,8 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
+             *
+             * Note: Getting this property doesn't modify the document. Unlike the `body` property of {@link Word.Shape}, it doesn't create a text story on a shape that doesn't already contain text.
              */
             hasText?: boolean;
             /**
@@ -73519,6 +73521,8 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
+             *
+             * Note: Getting this property doesn't modify the document. Unlike the `body` property of {@link Word.Shape}, it doesn't create a text story on a shape that doesn't already contain text.
              */
             hasText?: boolean;
             /**

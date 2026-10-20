@@ -26,7 +26,8 @@ remarks: |-
     const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
     const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
 
-    const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
+    const comparedLocation: OfficeExtension.ClientResult<Word.LocationRelation> =
+      firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
 
     await context.sync();
 
