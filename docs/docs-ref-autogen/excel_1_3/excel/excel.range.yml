@@ -443,16 +443,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Clear the format and contents of the range.
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "D:F";
-          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          range.clear();
-          await context.sync(); 
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/insert-delete-clear-range.yaml
 
       await Excel.run(async (context) => {
@@ -504,15 +494,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "D:F";
-          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          range.delete("Left");
-          await context.sync(); 
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
 

@@ -94,36 +94,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-          
-          // Create a proxy sectionsCollection object.
-          const mySections = context.document.sections;
-          
-          // Queue a command to load the sections.
-          mySections.load('body/style');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-              
-          // Create a proxy object the primary footer of the first section.
-          // Note that the footer is a body object.
-          const myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
-          
-          // Queue a command to insert text at the end of the footer.
-          myFooter.insertText("This is a footer.", Word.InsertLocation.end);
-          
-          // Queue a command to wrap the header in a content control.
-          myFooter.insertContentControl();
-                                  
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log("Added a footer to the first section.");   
-      });  
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
       // Inserts a first-page footer by using the HeaderFooterType enum.
@@ -230,36 +200,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-          
-          // Create a proxy sectionsCollection object.
-          const mySections = context.document.sections;
-          
-          // Queue a command to load the sections.
-          mySections.load('body/style');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          
-          // Create a proxy object the primary header of the first section.
-          // Note that the header is a body object.
-          const myHeader = mySections.items[0].getHeader("Primary");
-          
-          // Queue a command to insert text at the end of the header.
-          myHeader.insertText("This is a header.", Word.InsertLocation.end);
-          
-          // Queue a command to wrap the header in a content control.
-          myHeader.insertContentControl();
-                                  
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log("Added a header to the first section.");
-      });  
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 

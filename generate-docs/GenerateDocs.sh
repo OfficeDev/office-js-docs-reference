@@ -33,10 +33,10 @@ if [ ! -d "yaml" ]; then
     mkdir yaml
 fi
 
-npm install
+npm ci || exit $?
 
 pushd scripts
-npm install
+npm ci || exit $?
 npm run build
 node preprocessor.js $bypassPrompt
 popd
