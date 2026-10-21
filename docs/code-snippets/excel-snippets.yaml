@@ -304,22 +304,6 @@ Excel.ChartAxisTitle#textOrientation:member:
       chart.axes.valueAxis.title.textOrientation = 0;
       await context.sync();
     });
-Excel.ChartCollection#add:member(1):
-  - |-
-    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-    // with sourceData from range "A1:B4" and seriesBy set to "auto".
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sheet1");
-        const rangeSelection = "A1:B4";
-        const range = sheet.getRange(rangeSelection);
-        const chart = sheet.charts.add(
-        Excel.ChartType.columnClustered, 
-        range, 
-        Excel.ChartSeriesBy.auto);
-        await context.sync();
-
-        console.log("New Chart Added");
-    });
 Excel.ChartCollection#getItem:member(1):
   - |-
     // Get the number of charts.
@@ -1251,25 +1235,6 @@ Excel.Range:class:
         
         console.log(cell.address);
     });
-Excel.Range#clear:member(1):
-  - |-
-    // Clear the format and contents of the range.
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "D:F";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.clear();
-        await context.sync(); 
-    });
-Excel.Range#delete:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "D:F";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.delete("Left");
-        await context.sync(); 
-    });
 Excel.Range#getBoundingRect:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1897,25 +1862,6 @@ Excel.TableRow#load:member(2):
         
         console.log(row.index);
     });
-Excel.TableRowCollection#add:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tables = context.workbook.tables;
-        const values = [["Sample", "Values", "For", "New", "Row"]];
-        const row = tables.getItem("Table1").rows.add(null, values);
-        row.load('index');
-        await context.sync();
-        
-        console.log(row.index);
-    });
-Excel.TableRowCollection#getItemAt:member(1):
-  - |-
-    await Excel.run(async (context) => {
-        const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
-        tablerow.load('values');
-        await context.sync();
-        console.log(tablerow.values);
-    });
 Excel.TableRowCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
@@ -1927,19 +1873,6 @@ Excel.TableRowCollection#load:member(2):
         for (let i = 0; i < tablerows.items.length; i++) {
             console.log(tablerows.items[i].index);
         }
-    });
-Excel.TableSort#apply:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const table = context.workbook.tables.getItem(tableName);
-        table.sort.apply([ 
-                {
-                    key: 2,
-                    ascending: true
-                },
-            ], true);
-        await context.sync(); 
     });
 Excel.Workbook#getSelectedRange:member(1):
   - |-

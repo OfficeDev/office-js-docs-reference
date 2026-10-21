@@ -746,23 +746,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to clear the contents of the proxy range object.
-          range.clear();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Cleared the selection (range object)');
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
       // Removes the first paragraph's text while preserving the paragraph.
@@ -835,23 +818,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to delete the range object.
-          range.delete();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Deleted the selection (range object)');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
@@ -1083,23 +1049,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to get the HTML of the current selection.
-          const html = range.getHtml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The HTML read from the document was: ' + html.value);
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
 
       // Reads an HTML representation of the first paragraph range.
@@ -1128,22 +1077,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      await Word.run(async (context) => {
-          // Get the entire document body.
-          const bodyRange = context.document.body.getRange(Word.RangeLocation.whole);
-
-          // Get all the ranges that only consist of hyperlinks.
-          const hyperLinks = bodyRange.getHyperlinkRanges();
-          hyperLinks.load("hyperlink");
-          await context.sync();
-
-          // Log each hyperlink.
-          hyperLinks.items.forEach((linkRange) => {
-              console.log(linkRange.hyperlink);
-          });
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
 
@@ -1256,23 +1189,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to get the OOXML of the current selection.
-          const ooxml = range.getOoxml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('The OOXML read from the document was:  ' + ooxml.value);
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
 
@@ -1473,23 +1389,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert a page break after the selected text.
-          range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Inserted a page break after the selected text.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
@@ -1734,24 +1633,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert base64 encoded .docx at the beginning of the range.
-          // You'll need to implement getBase64() to make this work.
-          range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Added base64 encoded text to the beginning of the range.');
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
 
       // Replaces the first paragraph with the contents of a small embedded DOCX file.
@@ -1823,23 +1704,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert HTML in to the beginning of the range.
-          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('HTML added to the beginning of the range.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
 
@@ -1924,26 +1788,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert OOXML in to the beginning of the range.
-          range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('OOXML added to the beginning of the range.');
-      });
-
-      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-      // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
 
       // Replaces the first paragraph with a bold paragraph from an OOXML package.
@@ -1992,23 +1836,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert the paragraph after the range.
-          range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Paragraph added to the end of the range.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
@@ -2090,23 +1917,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert the paragraph at the end of the range.
-          range.insertText('New text inserted into the range.', Word.InsertLocation.end);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Text added to the end of the range.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
@@ -2338,26 +2148,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Queue a command to get the current selection and then
-          // create a proxy range object with the results.
-          const range = context.document.getSelection();
-
-          // Queue a command to insert HTML in to the beginning of the range.
-          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
-
-          // Queue a command to select the HTML that was inserted.
-          range.select();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Selected the range.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 

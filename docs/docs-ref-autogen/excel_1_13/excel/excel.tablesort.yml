@@ -79,19 +79,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          table.sort.apply([ 
-                  {
-                      key: 2,
-                      ascending: true
-                  },
-              ], true);
-          await context.sync(); 
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/sort-data.yaml
 
       await Excel.run(async (context) => {
