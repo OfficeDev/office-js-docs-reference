@@ -524,7 +524,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowData#windowNumber:member
     package: excel!
     fullName: windowNumber
-    summary: Specifies the window number.
+    summary: Gets the window number.
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false

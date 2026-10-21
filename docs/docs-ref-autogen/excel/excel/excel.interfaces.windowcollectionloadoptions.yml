@@ -526,7 +526,7 @@ properties:
     uid: excel!Excel.Interfaces.WindowCollectionLoadOptions#windowNumber:member
     package: excel!
     fullName: windowNumber
-    summary: 'For EACH ITEM in the collection: Specifies the window number.'
+    summary: 'For EACH ITEM in the collection: Gets the window number.'
     remarks: '[API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false

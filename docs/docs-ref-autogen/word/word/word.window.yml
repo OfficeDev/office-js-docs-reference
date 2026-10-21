@@ -15,7 +15,7 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
   await Word.run(async (context) => {
     // Gets the first paragraph of each page.
@@ -45,7 +45,7 @@ remarks: |-
       pagesIndexes.push(page);
 
       const paragraphs = page.getRange().paragraphs;
-      paragraphs.load("items/length");
+      paragraphs.load("items");
       pagesNumberOfParagraphs.push(paragraphs);
 
       const firstParagraph = paragraphs.getFirst();
@@ -58,7 +58,7 @@ remarks: |-
     for (let i = 0; i < pagesIndexes.length; i++) {
       console.log(`Page index: ${pagesIndexes[i].index}`);
       console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
-      console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+      console.log(`First paragraph's text: ${pagesFirstParagraphText[i].text}`);
     }
   });
   ```
@@ -78,7 +78,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets the pages enclosing the viewport.
@@ -407,7 +407,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/36-pages/get-pages.yaml
 
       await Word.run(async (context) => {
         // Gets all the panes in the active document window.

@@ -31,7 +31,12 @@ remarks: |-
     nextTrackedChange.load(["author", "date", "text", "type"]);
     await context.sync();
 
-    console.log(nextTrackedChange);
+    console.log("Next tracked change:", {
+      author: nextTrackedChange.author,
+      date: nextTrackedChange.date,
+      text: nextTrackedChange.text,
+      type: nextTrackedChange.type,
+    });
   });
   ```
 

@@ -12,6 +12,24 @@ remarks: |-
   - [Word.Document](/javascript/api/word/word.document): [frames](/javascript/api/word/word.document#word-word-document-frames-member)
   - [Word.Range](/javascript/api/word/word.range): [frames](/javascript/api/word/word.range#word-word-range-frames-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+
+  // Reads the text and dimensions of frames in the document body range.
+  await Word.run(async (context) => {
+      const bodyRange: Word.Range = context.document.body.getRange();
+      const frames: Word.FrameCollection = bodyRange.frames;
+      frames.load("items/width,items/height,items/range/text");
+      await context.sync();
+      console.log(`Frames found: ${frames.items.length}`);
+      frames.items.forEach((frame: Word.Frame) => {
+          console.log({ width: frame.width, height: frame.height, text: frame.range.text });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

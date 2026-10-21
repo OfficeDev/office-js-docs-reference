@@ -23,9 +23,11 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
+  // Moves the insertion point to the end of the final paragraph.
   await Word.run(async (context) => {
-    // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-    context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+    const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+    const selectionMode: Word.SelectionMode = Word.SelectionMode.end;
+    lastRange.select(selectionMode);
 
     await context.sync();
   });

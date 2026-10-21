@@ -11,6 +11,30 @@ remarks: |-
 
   - [Word.RevisionCollection](/javascript/api/word/word.revisioncollection): [getItem](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-getitem-member(1)), [items](/javascript/api/word/word.revisioncollection#word-word-revisioncollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+  // Reads revision metadata for the first paragraph on desktop Word.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      const revisions: Word.RevisionCollection = paragraphRange.revisions;
+      revisions.load("items/author,items/date,items/type,items/index,items/formatDescription");
+      await context.sync();
+      console.log(`Revisions in the first paragraph: ${revisions.items.length}`);
+      revisions.items.forEach((revision: Word.Revision) => {
+          console.log("Revision properties:", {
+              author: revision.author,
+              date: revision.date,
+              type: revision.type,
+              index: revision.index,
+              formatDescription: revision.formatDescription,
+          });
+      });
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -85,7 +109,40 @@ properties:
     package: word!
     fullName: movedRange
     summary: Gets a `Range` object that represents the range of text that was moved from one place to another in the document with tracked changes.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/track-moved-text.yaml
+
+      // Reads and selects the text associated with a tracked move.
+      await Word.run(async (context) => {
+          const document: Word.Document = context.document;
+          const revisions: Word.RevisionCollection = document.revisions;
+          revisions.load("items/type");
+          await context.sync();
+
+          const movedFrom: Word.RevisionType = Word.RevisionType.movedFrom;
+          const movedTo: Word.RevisionType = Word.RevisionType.movedTo;
+          const movedRevision: Word.Revision | undefined = revisions.items.find(
+              (revision: Word.Revision) => revision.type === movedFrom || revision.type === movedTo
+          );
+          if (!movedRevision) {
+              console.log("Revision types found:", revisions.items.map((revision: Word.Revision) => revision.type));
+              console.warn("No tracked move was found. Move an entire paragraph as described in the task pane; moving a phrase may produce insertion and deletion revisions instead.");
+              return;
+          }
+
+          const movedRange: Word.Range = movedRevision.movedRange;
+          movedRange.load("text");
+          movedRange.select();
+          await context.sync();
+
+          console.log(`Moved revision range text: ${movedRange.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +155,35 @@ properties:
     package: word!
     fullName: range
     summary: Gets a `Range` object that represents the portion of the document that's contained within a revision mark.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Reads and selects the text affected by the first revision.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const revisions: Word.RevisionCollection = paragraphRange.revisions;
+          revisions.load("items");
+          await context.sync();
+
+          if (revisions.items.length === 0) {
+              console.warn("No revisions were found. Run Set up to create tracked changes.");
+              return;
+          }
+
+          const firstRevision: Word.Revision = revisions.items[0];
+          const revisionRange: Word.Range = firstRevision.range;
+          revisionRange.load("text");
+          revisionRange.select();
+          await context.sync();
+
+          console.log(`First revision range text: ${revisionRange.text}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +210,33 @@ methods:
     package: word!
     fullName: accept()
     summary: Accepts the tracked change, removes the revision mark, and incorporates the change into the document.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Incorporates the first revision into the document.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const revisions: Word.RevisionCollection = paragraphRange.revisions;
+          revisions.load("items");
+          await context.sync();
+
+          if (revisions.items.length === 0) {
+              console.warn("No revisions were found. Run Set up to create tracked changes.");
+              return;
+          }
+
+          const firstRevision: Word.Revision = revisions.items[0];
+          firstRevision.accept();
+          await context.sync();
+
+          console.log("Accepted the first revision. Get revision metadata to inspect the remaining revisions.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -201,7 +312,33 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the tracked change. The revision marks are removed, leaving the original text intact.
-    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+      // Removes the first revision and restores the original content.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const revisions: Word.RevisionCollection = paragraphRange.revisions;
+          revisions.load("items");
+          await context.sync();
+
+          if (revisions.items.length === 0) {
+              console.warn("No revisions were found. Run Set up to create tracked changes.");
+              return;
+          }
+
+          const firstRevision: Word.Revision = revisions.items[0];
+          firstRevision.reject();
+          await context.sync();
+
+          console.log("Rejected the first revision. Get revision metadata to inspect the remaining revisions.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -11,6 +11,21 @@ remarks: |-
 
   - [Word.Range](/javascript/api/word/word.range): [kana](/javascript/api/word/word.range#word-word-range-kana-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+
+  // Converts the Japanese sample paragraph to hiragana.
+  await Word.run(async (context) => {
+      const japaneseRange: Word.Range = context.document.body.paragraphs.getLast().getRange(Word.RangeLocation.content);
+      const kana: Word.Kana = Word.Kana.hiragana;
+      japaneseRange.kana = kana;
+      await context.sync();
+      console.log("Converted the Japanese text to hiragana.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

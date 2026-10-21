@@ -18,24 +18,14 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
 
-  // Gets the range of the first comment in the selected content.
+  // Reads the text and checks whether the first paragraph range is empty.
   await Word.run(async (context) => {
-    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-    comment.load("contentRange");
-    const range: Word.Range = comment.getRange();
-    range.load("text");
-    await context.sync();
-
-    if (comment.isNullObject) {
-      console.warn("No comments in the selection, so no range to get.");
-      return;
-    }
-
-    console.log(`Comment location: ${range.text}`);
-    const contentRange: Word.CommentContentRange = comment.contentRange;
-    console.log("Comment content range:", contentRange);
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+      paragraphRange.load("text,isEmpty,style");
+      await context.sync();
+      console.log("First paragraph's properties:", { text: paragraphRange.text, isEmpty: paragraphRange.isEmpty, style: paragraphRange.style });
   });
   ```
 
@@ -48,7 +38,26 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the range.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-structure.yaml
+
+      // Gets the content controls contained in the document body range.
+      await Word.run(async (context) => {
+          const bodyRange: Word.Range = context.document.body.getRange();
+          const contentControls: Word.ContentControlCollection = bodyRange.contentControls;
+          contentControls.load("items/tag,items/title,items/text");
+          await context.sync();
+          console.log(`Content controls found: ${contentControls.items.length}`);
+          contentControls.items.forEach((control: Word.ContentControl) => {
+              console.log({ tag: control.tag, title: control.title, text: control.text });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -211,7 +220,22 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Applies the sample's custom paragraph style to the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.style = "RangeSampleStyle";
+          await context.sync();
+          console.log("Applied the sample's custom style.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -289,6 +313,17 @@ methods:
           console.log('Cleared the selection (range object)');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Removes the first paragraph's text while preserving the paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          paragraphRange.clear();
+          await context.sync();
+          console.log("Cleared the summary text. The paragraph remains.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -322,6 +357,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Deleted the selection (range object)');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Deletes the first paragraph range, including its paragraph mark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.delete();
+          await context.sync();
+          console.log("Deleted the first paragraph range.");
       });
       ```
 
@@ -359,6 +405,17 @@ methods:
           console.log('The HTML read from the document was: ' + html.value);
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Reads an HTML representation of the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const html: OfficeExtension.ClientResult<string> = paragraphRange.getHtml();
+          await context.sync();
+          console.log(`Range HTML: ${html.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -394,6 +451,17 @@ methods:
           console.log('The OOXML read from the document was:  ' + ooxml.value);
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Reads the OOXML representation of the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const ooxml: OfficeExtension.ClientResult<string> = paragraphRange.getOoxml();
+          await context.sync();
+          console.log(`Range OOXML: ${ooxml.value}`);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -427,6 +495,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Inserted a page break after the selected text.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Inserts a page break after the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          paragraphRange.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+          await context.sync();
+          console.log("Inserted a page break after the summary.");
       });
       ```
 
@@ -527,6 +606,19 @@ methods:
           console.log('Added base64 encoded text to the beginning of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph with the contents of a small embedded DOCX file.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          // The DOCX contains one paragraph: "Imported project update."
+          const base64File: string = "UEsDBBQAAAAIAAAAIVD3S4B1wgAAAHYBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbH2QuQ7CMAyGX6XKiqgRAwOiLMAKDLyAlbptRC7FLsfbk3INCBjt//gsLw7XSFxcnPVcqU4kzgFYd+SQyxDJZ6UJyaHkMbUQUR+xJZhOJjPQwQt5GcvQoZaLNTXYWyk2l7xmE3ylEllWxephHFiVwhit0ShZh5OvPyjjJ6HMybuHOxN5lA0KvhIG5TfgmdudKCVTU7HHJFt02QXnkGqog+5dTpb/a77cGZrGaHrnh7aYgiZm41tny7fi0PjX/XB/9/IGUEsDBBQAAAAIAAAAIVBhey9DiQAAAPIAAAALAAAAX3JlbHMvLnJlbHONzzsOAiEQBuCrEA6ws1pYGKCy2dZ4AQLDIy6PDBj19lJYrMbCcuaffH9GnHHVPZbcQqyNPdKam+Sh93oEaCZg0m0qFfNIXKGk+xjJQ9Xmqj3Cfp4PQFuDK7E12WIlp8XuOLs8K/5jF+eiwVMxt4S5/6j4uhiyJo9d8nshC/a9ngbLQQn4eFG9AFBLAwQUAAAACAAAACFQZhg8uIUAAAC1AAAAEQAAAHdvcmQvZG9jdW1lbnQueG1sRY47DsIwDIavUvUAdcXAEIXubFwhJKYtquPIcZVye5IysHyW/T9kW0xgvxNG7Q7aYjbl1i+qyQBkvyC5PHDCWLUXCzmtq8xQWEIS9pjzGmfa4DKOVyC3xn6yxTw5fNpMDdKg050Si2Loau6NXrs9Bac4WGhqo5w8M7kaHgLn4VcG/0enL1BLAQIUABQAAAAIAAAAIVD3S4B1wgAAAHYBAAATAAAAAAAAAAAAAACAAQAAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAhQAFAAAAAgAAAAhUGF7L0OJAAAA8gAAAAsAAAAAAAAAAAAAAIAB8wAAAF9yZWxzLy5yZWxzUEsBAhQAFAAAAAgAAAAhUGYYPLiFAAAAtQAAABEAAAAAAAAAAAAAAIABpQEAAHdvcmQvZG9jdW1lbnQueG1sUEsFBgAAAAADAAMAuQAAAFkCAAAAAA==";
+          const insertedRange: Word.Range = paragraphRange.insertFileFromBase64(base64File, Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted the embedded document's project update.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -567,6 +659,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('HTML added to the beginning of the range.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph's content with formatted HTML.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const insertedRange: Word.Range = paragraphRange.insertHtml("<b>Project update:</b> <i>ready for review.</i>", Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted bold and italic text from HTML.");
       });
       ```
 
@@ -614,6 +717,30 @@ methods:
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
       // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/insert-and-read-formatted-content.yaml
+
+      // Replaces the first paragraph with a bold paragraph from an OOXML package.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const ooxml: string =
+              `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+                  <pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+                      <pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                          <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+                      </Relationships></pkg:xmlData>
+                  </pkg:part>
+                  <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml">
+                      <pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+                          <w:body><w:p><w:r><w:rPr><w:b/></w:rPr><w:t>Project update from OOXML.</w:t></w:r></w:p></w:body>
+                      </w:document></pkg:xmlData>
+                  </pkg:part>
+              </pkg:package>`;
+          const insertedRange: Word.Range = paragraphRange.insertOoxml(ooxml, Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Inserted a bold paragraph from OOXML.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -656,6 +783,17 @@ methods:
           console.log('Paragraph added to the end of the range.');
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Adds a paragraph after the first paragraph range.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const newParagraph: Word.Paragraph = paragraphRange.insertParagraph("Additional project details.", Word.InsertLocation.after);
+          await context.sync();
+          console.log("Inserted a paragraph after the summary.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -696,6 +834,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Text added to the end of the range.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Replaces the first paragraph's text without replacing its paragraph mark.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+          const insertedRange: Word.Range = paragraphRange.insertText("Updated project summary.", Word.InsertLocation.replace);
+          await context.sync();
+          console.log("Replaced the first paragraph's text.");
       });
       ```
 
@@ -780,7 +929,27 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: Performs a search with the specified search options on the scope of the `Range` object. The search results are a collection of `Range` objects.
-    remarks: '[API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
+
+      // Finds whole-word matches within the first paragraph.
+      await Word.run(async (context) => {
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const searchOptions: Word.SearchOptions = Word.SearchOptions.newObject(context);
+          searchOptions.matchCase = false;
+          searchOptions.matchWholeWord = true;
+          const matches: Word.RangeCollection = paragraphRange.search("project", searchOptions);
+          matches.load("items/text");
+          await context.sync();
+          console.log(`Matches found: ${matches.items.length}`);
+          matches.items.forEach((match: Word.Range) => console.log(match.text));
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -842,6 +1011,17 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           console.log('Selected the range.');
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+      // Selects the final paragraph and scrolls it into view.
+      await Word.run(async (context) => {
+        const lastRange: Word.Range = context.document.body.paragraphs.getLast().getRange();
+        lastRange.select();
+
+        await context.sync();
       });
       ```
 

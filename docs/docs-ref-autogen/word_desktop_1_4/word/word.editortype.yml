@@ -11,6 +11,22 @@ remarks: |-
 
   - [Word.EditorCollection](/javascript/api/word/word.editorcollection): [addByType](/javascript/api/word/word.editorcollection#word-word-editorcollection-addbytype-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/manage-range-editing-permissions-desktop.yaml
+
+  // Grants everyone permission to edit the first paragraph when editing restrictions apply.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const editors: Word.EditorCollection = paragraphRange.editors;
+      const editorType: Word.EditorType = Word.EditorType.everyone;
+      const editor: Word.Editor = editors.addByType(editorType);
+      await context.sync();
+      console.log("Granted Everyone permission on the summary. Get editors to verify it.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

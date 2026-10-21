@@ -76,27 +76,21 @@ properties:
           ```TypeScript
           // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
+          // Gets complete sentences from the insertion point to the end of its paragraph.
           await Word.run(async (context) => {
-            // Get the complete sentence (as range) associated with the insertion point.
-            const sentences: Word.RangeCollection = context.document
-              .getSelection()
-              .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+            const selection: Word.Range = context.document.getSelection();
+            const sentences: Word.RangeCollection = selection.getTextRanges(["."], false);
             sentences.load("$none");
             await context.sync();
 
-            // Expand the range to the end of the paragraph to get all the complete sentences.
-            const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
-              .getRange()
-              .expandTo(
-                context.document
-                  .getSelection()
-                  .paragraphs.getFirst()
-                  .getRange(Word.RangeLocation.end)
-              )
-              .getTextRanges(["."], false /* Don't trim spaces*/);
+            const firstSentence: Word.Range = sentences.items[0];
+            const paragraphEnd: Word.Range = selection.paragraphs.getFirst().getRange(Word.RangeLocation.end);
+            const remainingRange: Word.Range = firstSentence.expandTo(paragraphEnd);
+            const sentencesToTheEndOfParagraph: Word.RangeCollection = remainingRange.getTextRanges(["."], false);
             sentencesToTheEndOfParagraph.load("text");
             await context.sync();
 
+            console.log("Sentences from the current sentence to the paragraph end:");
             for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
               console.log(sentencesToTheEndOfParagraph.items[i].text);
             }
@@ -116,7 +110,7 @@ methods:
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
-      // Replaces the document body and creates three tracked changes.
+      // Replaces the document body and tracks text and formatting edits.
       await Word.run(async (context) => {
         const document: Word.Document = context.document;
         const body: Word.Body = document.body;
@@ -135,12 +129,14 @@ methods:
         adjective.insertText("swift", Word.InsertLocation.replace);
         animal.delete();
         ending.insertText("hound", Word.InsertLocation.replace);
+        const description: Word.Range = body.search("lazy").getFirst();
+        description.font.bold = true;
         await context.sync();
 
         document.changeTrackingMode = Word.ChangeTrackingMode.off;
         await context.sync();
 
-        console.log("Created three tracked changes.");
+        console.log("Created tracked text edits and applied bold formatting.");
       });
       ```
 

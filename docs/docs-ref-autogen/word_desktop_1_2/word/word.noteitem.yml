@@ -217,7 +217,7 @@ methods:
         const mark = Number.parseInt(referenceNumber, 10) - 1;
         const reference: Word.Range = footnotes.items[mark].getNext().reference;
         reference.select();
-        console.log("Selected is the next footnote: " + (mark + 2));
+        console.log(`Selected the next footnote: ${mark + 2}`);
       });
       ```
 

@@ -11,6 +11,21 @@ remarks: |-
 
   - [Word.Range](/javascript/api/word/word.range): [horizontalInVertical](/javascript/api/word/word.range#word-word-range-horizontalinvertical-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+
+  // Keeps the first paragraph's characters horizontal when the document uses vertical text.
+  await Word.run(async (context) => {
+      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
+      const horizontalLayout: Word.HorizontalInVerticalType = Word.HorizontalInVerticalType.fitInLine;
+      paragraphRange.horizontalInVertical = horizontalLayout;
+      await context.sync();
+      console.log("Enabled horizontal text within vertical text. Get formatting to verify the setting.");
+  });
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:

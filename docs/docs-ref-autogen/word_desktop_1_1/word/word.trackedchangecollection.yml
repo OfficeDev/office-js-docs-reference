@@ -128,7 +128,7 @@ methods:
         range.load();
         await context.sync();
 
-        console.log("range.text: " + range.text);
+        console.log(`Tracked change range text: ${range.text}`);
       });
       ```
 

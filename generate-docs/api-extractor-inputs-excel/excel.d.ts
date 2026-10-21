@@ -586,7 +586,7 @@ export declare namespace Excel {
          */
         basicType?: RangeValueType.boolean | "Boolean";
         /**
-         * Represents additional properties of this boolean value.
+         * Represents additional properties of this Boolean value.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -595,7 +595,7 @@ export declare namespace Excel {
             [key: string]: EntityPropertyType;
         };
         /**
-         * Represents layout information for views of this boolean value.
+         * Represents layout information for views of this Boolean value.
          *
          * @remarks
          * [Api set: ExcelApi 1.19]
@@ -10688,7 +10688,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.15]
          */
-        localTable = "LocalTable",
+        localTable = "LocalTable"
     }
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
@@ -36170,7 +36170,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        funnel = "Funnel",
+        funnel = "Funnel"
     }
     /**
      * @remarks
@@ -39072,7 +39072,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          */
-        linkedEntityDataDomainLinkedEntityCellValueLoaded = "LinkedEntityDataDomainLinkedEntityCellValueLoaded",
+        linkedEntityDataDomainLinkedEntityCellValueLoaded = "LinkedEntityDataDomainLinkedEntityCellValueLoaded"
     }
     /**
      * @remarks
@@ -41055,7 +41055,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
-        visible = "Visible",
+        visible = "Visible"
     }
     /**
      * @remarks
@@ -46649,9 +46649,6 @@ export declare namespace Excel {
         /** An interface for updating data on the `AllowEditRangeCollection` object, for use in `allowEditRangeCollection.set({ ... })`. */
         export interface AllowEditRangeCollectionUpdateData {
             items?: Excel.Interfaces.AllowEditRangeData[];
-        }
-        /** An interface for updating data on the `Query` object, for use in `query.set({ ... })`. */
-        export interface QueryUpdateData {
         }
         /** An interface for updating data on the `QueryCollection` object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
@@ -59688,7 +59685,7 @@ export declare namespace Excel {
              */
             width?: number;
             /**
-             * Specifies the window number.
+             * Gets the window number.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
@@ -59866,6 +59863,14 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets the ABAC (attribute-based access control) attribute values associated with this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            abacAttributeValues?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
              *
              * @remarks
@@ -59889,6 +59894,22 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * For EACH ITEM in the collection: Gets a value indicating whether the label is enabled.
              *
@@ -72124,7 +72145,7 @@ export declare namespace Excel {
              */
             width?: boolean;
             /**
-             * Specifies the window number.
+             * Gets the window number.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
@@ -72424,7 +72445,7 @@ export declare namespace Excel {
              */
             width?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the window number.
+             * For EACH ITEM in the collection: Gets the window number.
              *
              * @remarks
              * [Api set: ExcelApiDesktop 1.1]
