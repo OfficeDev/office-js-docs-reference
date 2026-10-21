@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.3
 description: Lists the APIs introduced in Mailbox requirement set 1.3 for Outlook add-ins.
-ms.date: 10/20/2026
+ms.date: 08/06/2026
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
