@@ -66,6 +66,43 @@ remarks: |-
       }
   }
   ```
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entity-load-service.yaml
+
+  /**
+   * Loads the Contoso entities used by the Data types: Linked entities sample.
+   * @customfunction
+   * @linkedEntityLoadService
+   * @param {unknown} request JSON containing the domain and entity identities requested by Excel.
+   * @returns {any} Linked entities in the same order as the request.
+   */
+  function contosoLoadService(request: unknown) {
+      // Resolve a batch of identities while preserving each requested culture and the request order.
+      try {
+          if (typeof request !== "string") {
+              throw new Error("The linked entity load service request must be JSON text.");
+          }
+          const parsedRequest: Excel.LinkedEntityLoadServiceRequest = JSON.parse(request);
+          if (!parsedRequest || typeof parsedRequest.domainId !== "string" || !Array.isArray(parsedRequest.entities)) {
+              throw new Error("The linked entity request must contain a domain ID and an entities array.");
+          }
+          const response: Excel.LinkedEntityLoadServiceResult = { entities: [] };
+          for (const identity of parsedRequest.entities) {
+              const entityIdentity: Excel.LinkedEntityIdCulture = identity;
+              if (!entityIdentity || typeof entityIdentity.entityId !== "string" ||
+                  typeof entityIdentity.culture !== "string") {
+                  throw new Error("Each linked entity identity must contain an entity ID and culture.");
+              }
+              response.entities.push(makeLinkedEntity(parsedRequest.domainId, entityIdentity.entityId, entityIdentity.culture));
+          }
+          console.log(`Loaded ${response.entities.length} linked entities from ${parsedRequest.domainId}.`);
+          return response;
+      } catch (error) {
+          console.error("Unable to load linked entities:", error);
+          throw new CustomFunctions.Error(CustomFunctions.ErrorCode.notAvailable, "Unable to load the requested Contoso entity.");
+      }
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

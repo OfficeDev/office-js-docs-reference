@@ -33,6 +33,20 @@ remarks: |-
       console.log(`Refresh errors: ${eventArgs.errors}`);
   }
   ```
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
+
+  async function onDomainRefreshed(event: Excel.LinkedEntityDataDomainRefreshCompletedEventArgs) {
+      // Report whether Excel successfully refreshed a sample data domain.
+      if (event.serviceId !== 268436224 || !["products", "categories", "suppliers"].includes(event.id)) {
+          return;
+      }
+      console.log(`Domain refreshed: ${event.id}; succeeded: ${event.refreshed}`);
+      if (!event.refreshed || (event.errors && event.errors.length > 0)) {
+          console.error("Linked entity refresh errors:", event.errors || ["The refresh did not succeed."]);
+      }
+  }
+  ```
 
 isPreview: false
 isDeprecated: false

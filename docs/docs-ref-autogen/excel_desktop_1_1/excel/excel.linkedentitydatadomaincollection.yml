@@ -102,6 +102,59 @@ methods:
           await context.sync();
       });
       ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
+
+      // Register the product, category, and supplier data sources with Excel.
+      await Excel.run(async (context) => {
+          const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+          const refreshModes: Excel.LinkedEntityDataDomainRefreshMode[] = [
+              Excel.LinkedEntityDataDomainRefreshMode.manual,
+              Excel.LinkedEntityDataDomainRefreshMode.onLoad,
+              Excel.LinkedEntityDataDomainRefreshMode.periodic
+          ];
+          // Script Lab prefixes the function ID with the companion sample's name, without spaces.
+          const loadFunctionId = "LINKEDENTITYLOADSERVICE.CONTOSOLOADSERVICE";
+          const options: Excel.LinkedEntityDataDomainCreateOptions[] = [
+              {
+                  dataProvider: "Contoso",
+                  id: "products",
+                  name: "Products",
+                  loadFunctionId,
+                  periodicRefreshInterval: 300,
+                  supportedRefreshModes: refreshModes
+              },
+              {
+                  dataProvider: "Contoso",
+                  id: "categories",
+                  name: "Categories",
+                  loadFunctionId,
+                  periodicRefreshInterval: 300,
+                  supportedRefreshModes: refreshModes
+              },
+              {
+                  dataProvider: "Contoso",
+                  id: "suppliers",
+                  name: "Suppliers",
+                  loadFunctionId
+              }
+          ];
+
+          // Replace only this sample's domains so registration is repeatable.
+          const existingDomains: Excel.LinkedEntityDataDomain[] = options.map((options) =>
+              domains.getItemOrNullObject(options.id)
+          );
+          await context.sync();
+          existingDomains.forEach((domain) => {
+              if (!domain.isNullObject) {
+                  domain.delete();
+              }
+          });
+          options.forEach((options) => domains.add(options));
+          await context.sync();
+          console.log("Registered Products, Categories, and Suppliers. Manual refresh is the default.");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -347,6 +400,17 @@ methods:
           // Refresh all linked entity cell values in all data domains.
           dataDomains.refreshAll();
           await context.sync();
+      });
+      ```
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
+
+      // Request updated values for every linked entity data domain in the workbook.
+      await Excel.run(async (context) => {
+          const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+          domains.refreshAll();
+          await context.sync();
+          console.log("Requested a refresh of all domains, including domains not created by this sample.");
       });
       ```
 
