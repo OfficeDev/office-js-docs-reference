@@ -14,14 +14,21 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/close-document-window.yaml
+
+  // Closes the active document window with Word's prompt-to-save option.
+  if (!Office.context.requirements.isSetSupported("WordApiDesktop", "1.4")) {
+      console.error("This sample requires WordApiDesktop 1.4 or later.");
+      return;
+  }
 
   await Word.run(async (context) => {
-    // Closes the document window, prompting to save if this is a new document.
-    const window: Word.Window = context.document.activeWindow;
-    const closeOptions: Word.WindowCloseOptions = { saveChanges: Word.SaveConfiguration.promptToSaveChanges };
-    console.log("About to close the document window...");
-    window.close(closeOptions);
+      const window: Word.Window = context.document.activeWindow;
+      const saveChanges: Word.SaveConfiguration = Word.SaveConfiguration.promptToSaveChanges;
+      const closeOptions: Word.WindowCloseOptions = { saveChanges };
+      console.log("About to close the document window...");
+      window.close(closeOptions);
+      await context.sync();
   });
   ```
 

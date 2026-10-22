@@ -16,23 +16,21 @@ remarks: |-
   ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
 
-  // Sets the state of the first content control.
+  // Marks the sample content control with a warning.
   await Word.run(async (context) => {
-    const state = ((document.getElementById("state-to-set") as HTMLSelectElement)
-      .value as unknown) as Word.ContentControlState;
-    let firstContentControl = context.document.contentControls.getFirstOrNullObject();
-    await context.sync();
+      const sampleControl: Word.ContentControl = context.document.contentControls
+          .getByTag("ContentControlStateSample").getFirstOrNullObject();
+      await context.sync();
 
-    if (firstContentControl.isNullObject) {
-      console.warn("There are no content controls in this document.");
-      return;
-    }
+      if (sampleControl.isNullObject) {
+          console.warn("Run Set up to create the sample content control.");
+          return;
+      }
 
-    firstContentControl.setState(state);
-    firstContentControl.load("id");
-    await context.sync();
-
-    console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
+      const state: Word.ContentControlState = Word.ContentControlState.warning;
+      sampleControl.setState(state);
+      await context.sync();
+      console.log(`Set sample content control state to ${state}.`);
   });
   ```
 

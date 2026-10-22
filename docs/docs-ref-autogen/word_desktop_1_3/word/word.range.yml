@@ -270,14 +270,14 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-language-and-proofing-desktop.yaml
 
       // Disables spelling and grammar checking for the first paragraph.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           paragraphRange.hasNoProofing = true;
           await context.sync();
-          console.log("Disabled proofing. Get proofing settings to verify it.");
+          console.log("Disabled spelling and grammar checking for the English paragraph. Get language and proofing settings to verify it.");
       });
       ```
 
@@ -401,14 +401,14 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-language-and-proofing-desktop.yaml
 
       // Marks the first paragraph's language as not yet detected.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           paragraphRange.languageDetected = false;
           await context.sync();
-          console.log("Reset language detection. Get proofing settings to inspect the flag.");
+          console.log("Reset the English paragraph's language-detected flag. Get language and proofing settings to inspect it.");
       });
       ```
 
@@ -429,7 +429,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-language-and-proofing-desktop.yaml
 
       // Sets the first paragraph's proofing language to US English.
       await Word.run(async (context) => {
@@ -437,7 +437,7 @@ properties:
           const language: Word.LanguageId = Word.LanguageId.englishUS;
           paragraphRange.languageId = language;
           await context.sync();
-          console.log("Set the proofing language to US English.");
+          console.log("Set the English paragraph's proofing language to US English.");
       });
       ```
 
@@ -458,7 +458,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-language-and-proofing-desktop.yaml
 
       // Sets the Japanese paragraph's East Asian language.
       await Word.run(async (context) => {
@@ -466,7 +466,7 @@ properties:
           const language: Word.LanguageId = Word.LanguageId.japanese;
           japaneseRange.languageIdFarEast = language;
           await context.sync();
-          console.log("Set the East Asian language to Japanese.");
+          console.log("Set the Japanese paragraph's East Asian language to Japanese.");
       });
       ```
 
@@ -487,7 +487,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/manage-language-and-proofing-desktop.yaml
 
       // Sets the first paragraph's non-East-Asian language to US English.
       await Word.run(async (context) => {
@@ -495,7 +495,7 @@ properties:
           const language: Word.LanguageId = Word.LanguageId.englishUS;
           paragraphRange.languageIdOther = language;
           await context.sync();
-          console.log("Set the non-East-Asian language to US English.");
+          console.log("Set the English paragraph's non-East-Asian language to US English.");
       });
       ```
 
@@ -1275,22 +1275,7 @@ methods:
     package: word!
     fullName: detectLanguage()
     summary: Analyzes the range text to determine the language that it's written in.
-    remarks: |-
-      [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
-
-      // Detects the language of the first paragraph's text.
-      await Word.run(async (context) => {
-          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
-          const detection: OfficeExtension.ClientResult<boolean> = paragraphRange.detectLanguage();
-          await context.sync();
-          console.log(`Language detected: ${detection.value}`);
-      });
-      ```
+    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false

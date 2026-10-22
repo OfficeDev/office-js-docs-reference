@@ -59,6 +59,33 @@ remarks: |-
       }
   };
   ```
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
+
+  // Insert a product identity that Excel resolves through the companion load service.
+  await Excel.run(async (context) => {
+      const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+      const productId: Excel.LinkedEntityId = {
+          entityId: "P1",
+          domainId: "products",
+          serviceId: 268436224,
+          culture: "en-US"
+      };
+      const product: Excel.LinkedEntityCellValue = {
+          type: Excel.CellValueType.linkedEntity,
+          id: productId,
+          text: "Chai",
+          basicType: "Error",
+          basicValue: "#VALUE!"
+      };
+      const productRange: Excel.Range = sheet.getRange("A2");
+      productRange.valuesAsJson = [[product]];
+      sheet.getRange("B2:D2").formulas = [["=A2.[Unit Price]", "=A2.Category", "=A2.Supplier"]];
+      sheet.getRange("B2").numberFormat = [["$0.00"]];
+      await context.sync();
+      console.log("Inserted Chai in A2. Excel loads its properties asynchronously; open its card to explore.");
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
