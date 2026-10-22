@@ -17,24 +17,6 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Loads a linked entity cell value using a LinkedEntityId.
-  async function loadLinkedEntity(domainId: string, entityId: string) {
-      await Excel.run(async (context) => {
-          // Specify the linked entity ID to load.
-          const linkedEntityId: Excel.LinkedEntityId = {
-              entityId: entityId,
-              domainId: domainId,
-              serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
-              culture: "en-US",
-          };
-
-          // Load the linked entity cell value.
-          context.workbook.linkedEntityDataDomains.loadLinkedEntityCellValue(linkedEntityId);
-          await context.sync();
-      });
-  }
-  ```
-  ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
   // Insert a product identity that Excel resolves through the companion load service.
