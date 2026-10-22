@@ -84,29 +84,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Registers linked entity data domains when the add-in loads.
-      await Excel.run(async (context) => {
-          const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
-              dataProvider: "Contoso",
-              id: "products",
-              name: "Products",
-              // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
-              loadFunctionId: "CONTOSOLOADSERVICE",
-              // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
-              periodicRefreshInterval: 300,
-              // Manual refresh mode is always supported, even if unspecified.
-              supportedRefreshModes: [
-                  Excel.LinkedEntityDataDomainRefreshMode.periodic,
-                  Excel.LinkedEntityDataDomainRefreshMode.onLoad
-              ]
-          };
-
-          // Add the data domain to the collection to register it.
-          context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
-          await context.sync();
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
       // Register the product, category, and supplier data sources with Excel.
@@ -415,16 +392,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Refreshes all linked entity cell values across all data domains.
-      await Excel.run(async (context) => {
-          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-          // Refresh all linked entity cell values in all data domains.
-          dataDomains.refreshAll();
-          await context.sync();
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 

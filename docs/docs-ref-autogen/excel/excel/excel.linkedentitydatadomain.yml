@@ -16,17 +16,6 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Refreshes all linked entity cell values for a specific data domain.
-  await Excel.run(async (context) => {
-      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-      // Get a specific data domain by ID and refresh it.
-      const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
-      productsDomain.refresh();
-      await context.sync();
-  });
-  ```
-  ```TypeScript
   // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
   // Inspect the registered sample domains and their refresh settings.
@@ -302,17 +291,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Refreshes all linked entity cell values for a specific data domain.
-      await Excel.run(async (context) => {
-          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-          // Get a specific data domain by ID and refresh it.
-          const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
-          productsDomain.refresh();
-          await context.sync();
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
