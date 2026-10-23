@@ -66,22 +66,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-      // with sourceData from range "A1:B4" and seriesBy set to "auto".
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sheet1");
-          const rangeSelection = "A1:B4";
-          const range = sheet.getRange(rangeSelection);
-          const chart = sheet.charts.add(
-          Excel.ChartType.columnClustered, 
-          range, 
-          Excel.ChartSeriesBy.auto);
-          await context.sync();
-
-          console.log("New Chart Added");
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chartcollection-added-activated.yaml
 
       await Excel.run(async (context) => {

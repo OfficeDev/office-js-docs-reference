@@ -488,29 +488,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for all of the paragraphs.
-          paragraphs.load('style');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to clear the contents of the first paragraph.
-          paragraphs.items[0].clear();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Cleared the contents of the first paragraph.');
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
 
       // Removes the first paragraph's content but keeps the paragraph.
@@ -539,29 +516,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the text property for all of the paragraphs.
-          paragraphs.load('text');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to delete the first paragraph.
-          paragraphs.items[0].delete();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Deleted the first paragraph.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/basic-paragraph-operations.yaml
 
@@ -592,29 +546,6 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for all of the paragraphs.
-          paragraphs.load('style');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a set of commands to get the HTML of the first paragraph.
-          const html = paragraphs.items[0].getHtml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Paragraph HTML: ' + html.value);
-      });
-      ```
-      ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
 
       // Reads an HTML representation of the first paragraph.
@@ -643,29 +574,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a set of commands to get the OOXML of the first paragraph.
-          const ooxml = paragraphs.items[0].getOoxml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Paragraph OOXML: ' + ooxml.value);
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
 
@@ -804,33 +712,6 @@ methods:
 
       #### Examples
 
-      ```TypeScript
-      // Run a batch operation against the Word object model.
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          // We never perform an empty load. We always must request a property.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to get the first paragraph.
-          const paragraph = paragraphs.items[0];
-
-          // Queue a command to insert HTML content at the end of the first paragraph.
-          paragraph.insertHtml('<strong>Inserted HTML.</strong>', Word.InsertLocation.end);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Inserted HTML content at the end of the first paragraph.');
-      });
-      ```
       ```TypeScript
       // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-and-read-paragraph-markup.yaml
 

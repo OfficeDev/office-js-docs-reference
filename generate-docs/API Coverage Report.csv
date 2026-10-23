@@ -4234,7 +4234,7 @@ excel,Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"refreshed",Property
 excel,Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"serviceId",Property,Excellent,false
 excel,Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"source",Property,Great,false
 excel,Excel.LinkedEntityDataDomainRefreshCompletedEventArgs,"type",Property,Great,false
-excel,Excel.LinkedEntityDataDomainRefreshMode,N/A,Enum,Great,false
+excel,Excel.LinkedEntityDataDomainRefreshMode,N/A,Enum,Great,true
 excel,Excel.LinkedEntityDataDomainRefreshMode,"manual",EnumField,Excellent,false
 excel,Excel.LinkedEntityDataDomainRefreshMode,"onLoad",EnumField,Excellent,false
 excel,Excel.LinkedEntityDataDomainRefreshMode,"periodic",EnumField,Excellent,false
@@ -16598,7 +16598,7 @@ word,Word.Range,"underline",Property,Great,true
 word,Word.Range,"clear()",Method,Good,true
 word,Word.Range,"compareLocationWith(range)",Method,Fine,true
 word,Word.Range,"delete()",Method,Fine,true
-word,Word.Range,"detectLanguage()",Method,Fine,true
+word,Word.Range,"detectLanguage()",Method,Fine,false
 word,Word.Range,"expandTo(range)",Method,Excellent,true
 word,Word.Range,"expandToOrNullObject(range)",Method,Excellent,true
 word,Word.Range,"getBookmarks(includeHidden, includeAdjacent)",Method,Great,true

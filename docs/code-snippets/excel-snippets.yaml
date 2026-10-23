@@ -304,22 +304,6 @@ Excel.ChartAxisTitle#textOrientation:member:
       chart.axes.valueAxis.title.textOrientation = 0;
       await context.sync();
     });
-Excel.ChartCollection#add:member(1):
-  - |-
-    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-    // with sourceData from range "A1:B4" and seriesBy set to "auto".
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sheet1");
-        const rangeSelection = "A1:B4";
-        const range = sheet.getRange(rangeSelection);
-        const chart = sheet.charts.add(
-        Excel.ChartType.columnClustered, 
-        range, 
-        Excel.ChartSeriesBy.auto);
-        await context.sync();
-
-        console.log("New Chart Added");
-    });
 Excel.ChartCollection#getItem:member(1):
   - |-
     // Get the number of charts.
@@ -698,28 +682,6 @@ Excel.LinkedEntityCellValueLoadedEventArgs:interface:
             await context.sync();
         });
     }
-Excel.LinkedEntityDataDomain:class:
-  - |-
-    // Refreshes all linked entity cell values for a specific data domain.
-    await Excel.run(async (context) => {
-        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-        // Get a specific data domain by ID and refresh it.
-        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
-        productsDomain.refresh();
-        await context.sync();
-    });
-Excel.LinkedEntityDataDomain#refresh:member(1):
-  - |-
-    // Refreshes all linked entity cell values for a specific data domain.
-    await Excel.run(async (context) => {
-        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-        // Get a specific data domain by ID and refresh it.
-        const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
-        productsDomain.refresh();
-        await context.sync();
-    });
 Excel.LinkedEntityDataDomainAddedEventArgs:interface:
   - |-
     // Registers an event handler for the onLinkedEntityDataDomainAdded event.
@@ -758,29 +720,6 @@ Excel.LinkedEntityDataDomainCollection:class:
         // Add the data domain to the collection to register it.
         const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
         domains.add(productsDomainOptions);
-        await context.sync();
-    });
-Excel.LinkedEntityDataDomainCollection#add:member(1):
-  - |-
-    // Registers linked entity data domains when the add-in loads.
-    await Excel.run(async (context) => {
-        const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
-            dataProvider: "Contoso",
-            id: "products",
-            name: "Products",
-            // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
-            loadFunctionId: "CONTOSOLOADSERVICE",
-            // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
-            periodicRefreshInterval: 300,
-            // Manual refresh mode is always supported, even if unspecified.
-            supportedRefreshModes: [
-                Excel.LinkedEntityDataDomainRefreshMode.periodic,
-                Excel.LinkedEntityDataDomainRefreshMode.onLoad
-            ]
-        };
-
-        // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
         await context.sync();
     });
 Excel.LinkedEntityDataDomainCollection#getItem:member(1):
@@ -891,39 +830,6 @@ Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member:
         console.log(`Service ID: ${eventArgs.serviceId}`);
         console.log(`New refresh mode: ${eventArgs.refreshMode}`);
     }
-Excel.LinkedEntityDataDomainCollection#refreshAll:member(1):
-  - |-
-    // Refreshes all linked entity cell values across all data domains.
-    await Excel.run(async (context) => {
-        const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
-
-        // Refresh all linked entity cell values in all data domains.
-        dataDomains.refreshAll();
-        await context.sync();
-    });
-Excel.LinkedEntityDataDomainCreateOptions:interface:
-  - |-
-    // Registers linked entity data domains when the add-in loads.
-    await Excel.run(async (context) => {
-        const productsDomainOptions: Excel.LinkedEntityDataDomainCreateOptions = {
-            dataProvider: "Contoso",
-            id: "products",
-            name: "Products",
-            // ID of the custom function called by Excel to resolve or refresh linked entity cell values.
-            loadFunctionId: "CONTOSOLOADSERVICE",
-            // periodicRefreshInterval is only required when supportedRefreshModes contains "Periodic".
-            periodicRefreshInterval: 300,
-            // Manual refresh mode is always supported, even if unspecified.
-            supportedRefreshModes: [
-                Excel.LinkedEntityDataDomainRefreshMode.periodic,
-                Excel.LinkedEntityDataDomainRefreshMode.onLoad
-            ]
-        };
-
-        // Add the data domain to the collection to register it.
-        context.workbook.linkedEntityDataDomains.add(productsDomainOptions);
-        await context.sync();
-    });
 Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface:
   - |-
     // Registers an event handler for the onRefreshCompleted event.
@@ -958,177 +864,6 @@ Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface:
         console.log(`Event source: ${eventArgs.source}`);
         console.log(`Service ID: ${eventArgs.serviceId}`);
         console.log(`New refresh mode: ${eventArgs.refreshMode}`);
-    }
-Excel.LinkedEntityId:interface:
-  - |-
-    // Loads a linked entity cell value using a LinkedEntityId.
-    async function loadLinkedEntity(domainId: string, entityId: string) {
-        await Excel.run(async (context) => {
-            // Specify the linked entity ID to load.
-            const linkedEntityId: Excel.LinkedEntityId = {
-                entityId: entityId,
-                domainId: domainId,
-                serviceId: 268436224, // Service ID used by Excel to identify linked entity cell values associated with an add-in.
-                culture: "en-US",
-            };
-
-            // Load the linked entity cell value.
-            context.workbook.linkedEntityDataDomains.loadLinkedEntityCellValue(linkedEntityId);
-            await context.sync();
-        });
-    }
-Excel.LinkedEntityIdCulture:interface:
-  - |-
-    /**
-     * Custom function that acts as the data provider for a LinkedEntityDataDomain.
-     * Called on demand by Excel to resolve and refresh LinkedEntityCellValue objects.
-     * @customfunction
-     * @linkedEntityLoadService
-     * @param {any} request Request to resolve and refresh LinkedEntityCellValue objects.
-     * @return {any} Resolved or refreshed LinkedEntityCellValue objects that were requested in the passed-in request.
-     */
-    function contosoLoadService(request: any): any {
-        const notAvailableError = new CustomFunctions.Error(CustomFunctions.ErrorCode.notAvailable);
-
-        try {
-            // Parse the request that was passed-in by Excel.
-            const parsedRequest: Excel.LinkedEntityLoadServiceRequest = JSON.parse(request);
-            // Initialize result to populate and return to Excel.
-            const result: Excel.LinkedEntityLoadServiceResult = { entities: [] };
-
-            // Identify the domainId of the request and call the corresponding function to create
-            // linked entity cell values for that linked entity data domain.
-            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
-            for (const { entityId } of entities) {
-                let linkedEntityResult = null;
-                switch (parsedRequest.domainId) {
-                    case "products": {
-                        linkedEntityResult = makeProductLinkedEntity(entityId);
-                        break;
-                    }
-                    case "categories": {
-                        linkedEntityResult = makeCategoryLinkedEntity(entityId);
-                        break;
-                    }
-                    default:
-                        throw notAvailableError;
-                }
-
-                if (!linkedEntityResult) {
-                    // Throw an error to signify to Excel that the resolution or refresh of the requested linkedEntityId failed.
-                    throw notAvailableError;
-                }
-
-                result.entities.push(linkedEntityResult);
-            }
-
-            return result;
-        } catch (error) {
-            console.error(error);
-            throw notAvailableError;
-        }
-    }
-Excel.LinkedEntityLoadServiceRequest:interface:
-  - |-
-    /**
-     * Custom function that acts as the data provider for a LinkedEntityDataDomain.
-     * Called on demand by Excel to resolve and refresh LinkedEntityCellValue objects.
-     * @customfunction
-     * @linkedEntityLoadService
-     * @param {any} request Request to resolve and refresh LinkedEntityCellValue objects.
-     * @return {any} Resolved or refreshed LinkedEntityCellValue objects that were requested in the passed-in request.
-     */
-    function contosoLoadService(request: any): any {
-        const notAvailableError = new CustomFunctions.Error(CustomFunctions.ErrorCode.notAvailable);
-
-        try {
-            // Parse the request that was passed-in by Excel.
-            const parsedRequest: Excel.LinkedEntityLoadServiceRequest = JSON.parse(request);
-            // Initialize result to populate and return to Excel.
-            const result: Excel.LinkedEntityLoadServiceResult = { entities: [] };
-
-            // Identify the domainId of the request and call the corresponding function to create
-            // linked entity cell values for that linked entity data domain.
-            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
-            for (const { entityId } of entities) {
-                let linkedEntityResult = null;
-                switch (parsedRequest.domainId) {
-                    case "products": {
-                        linkedEntityResult = makeProductLinkedEntity(entityId);
-                        break;
-                    }
-                    case "categories": {
-                        linkedEntityResult = makeCategoryLinkedEntity(entityId);
-                        break;
-                    }
-                    default:
-                        throw notAvailableError;
-                }
-
-                if (!linkedEntityResult) {
-                    // Throw an error to signify to Excel that the resolution or refresh of the requested linkedEntityId failed.
-                    throw notAvailableError;
-                }
-
-                result.entities.push(linkedEntityResult);
-            }
-
-            return result;
-        } catch (error) {
-            console.error(error);
-            throw notAvailableError;
-        }
-    }
-Excel.LinkedEntityLoadServiceResult:interface:
-  - |-
-    /**
-     * Custom function that acts as the data provider for a LinkedEntityDataDomain.
-     * Called on demand by Excel to resolve and refresh LinkedEntityCellValue objects.
-     * @customfunction
-     * @linkedEntityLoadService
-     * @param {any} request Request to resolve and refresh LinkedEntityCellValue objects.
-     * @return {any} Resolved or refreshed LinkedEntityCellValue objects that were requested in the passed-in request.
-     */
-    function contosoLoadService(request: any): any {
-        const notAvailableError = new CustomFunctions.Error(CustomFunctions.ErrorCode.notAvailable);
-
-        try {
-            // Parse the request that was passed-in by Excel.
-            const parsedRequest: Excel.LinkedEntityLoadServiceRequest = JSON.parse(request);
-            // Initialize result to populate and return to Excel.
-            const result: Excel.LinkedEntityLoadServiceResult = { entities: [] };
-
-            // Identify the domainId of the request and call the corresponding function to create
-            // linked entity cell values for that linked entity data domain.
-            const entities: Excel.LinkedEntityIdCulture[] = parsedRequest.entities;
-            for (const { entityId } of entities) {
-                let linkedEntityResult = null;
-                switch (parsedRequest.domainId) {
-                    case "products": {
-                        linkedEntityResult = makeProductLinkedEntity(entityId);
-                        break;
-                    }
-                    case "categories": {
-                        linkedEntityResult = makeCategoryLinkedEntity(entityId);
-                        break;
-                    }
-                    default:
-                        throw notAvailableError;
-                }
-
-                if (!linkedEntityResult) {
-                    // Throw an error to signify to Excel that the resolution or refresh of the requested linkedEntityId failed.
-                    throw notAvailableError;
-                }
-
-                result.entities.push(linkedEntityResult);
-            }
-
-            return result;
-        } catch (error) {
-            console.error(error);
-            throw notAvailableError;
-        }
     }
 Excel.NamedItem#getRange:member(1):
   - |-
@@ -1250,25 +985,6 @@ Excel.Range:class:
         await context.sync();
         
         console.log(cell.address);
-    });
-Excel.Range#clear:member(1):
-  - |-
-    // Clear the format and contents of the range.
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "D:F";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.clear();
-        await context.sync(); 
-    });
-Excel.Range#delete:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "D:F";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.delete("Left");
-        await context.sync(); 
     });
 Excel.Range#getBoundingRect:member(1):
   - |-
@@ -1897,25 +1613,6 @@ Excel.TableRow#load:member(2):
         
         console.log(row.index);
     });
-Excel.TableRowCollection#add:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tables = context.workbook.tables;
-        const values = [["Sample", "Values", "For", "New", "Row"]];
-        const row = tables.getItem("Table1").rows.add(null, values);
-        row.load('index');
-        await context.sync();
-        
-        console.log(row.index);
-    });
-Excel.TableRowCollection#getItemAt:member(1):
-  - |-
-    await Excel.run(async (context) => {
-        const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
-        tablerow.load('values');
-        await context.sync();
-        console.log(tablerow.values);
-    });
 Excel.TableRowCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
@@ -1927,19 +1624,6 @@ Excel.TableRowCollection#load:member(2):
         for (let i = 0; i < tablerows.items.length; i++) {
             console.log(tablerows.items[i].index);
         }
-    });
-Excel.TableSort#apply:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const table = context.workbook.tables.getItem(tableName);
-        table.sort.apply([ 
-                {
-                    key: 2,
-                    ascending: true
-                },
-            ], true);
-        await context.sync(); 
     });
 Excel.Workbook#getSelectedRange:member(1):
   - |-

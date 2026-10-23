@@ -16,14 +16,25 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Refreshes all linked entity cell values for a specific data domain.
-  await Excel.run(async (context) => {
-      const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
-      // Get a specific data domain by ID and refresh it.
-      const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
-      productsDomain.refresh();
+  // Inspect the registered sample domains and their refresh settings.
+  await Excel.run(async (context) => {
+      const domains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      domains.load("items/id,items/name,items/dataProvider,items/loadFunctionId,items/refreshMode,items/lastRefreshed");
       await context.sync();
+      console.log("Contoso linked entity data domains:");
+      domains.items.forEach((domain: Excel.LinkedEntityDataDomain) => {
+          if (domain.dataProvider === "Contoso") {
+              console.log("Domain settings:", {
+                  id: domain.id,
+                  name: domain.name,
+                  loadFunctionId: domain.loadFunctionId,
+                  refreshMode: domain.refreshMode,
+                  lastRefreshed: domain.lastRefreshed
+              });
+          }
+      });
   });
   ```
 
@@ -281,14 +292,15 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Refreshes all linked entity cell values for a specific data domain.
-      await Excel.run(async (context) => {
-          const dataDomains: Excel.LinkedEntityDataDomainCollection = context.workbook.linkedEntityDataDomains;
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-linked-entities.yaml
 
-          // Get a specific data domain by ID and refresh it.
-          const productsDomain: Excel.LinkedEntityDataDomain = dataDomains.getItem("products");
+      // Request updated values for all products in the workbook.
+      await Excel.run(async (context) => {
+          const productsDomain: Excel.LinkedEntityDataDomain =
+              context.workbook.linkedEntityDataDomains.getItem("products");
           productsDomain.refresh();
           await context.sync();
+          console.log("Requested a Products refresh. The refresh event reports completion or errors.");
       });
       ```
 
