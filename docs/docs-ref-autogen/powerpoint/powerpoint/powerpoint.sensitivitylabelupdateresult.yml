@@ -1,9 +1,9 @@
-### YamlMime:TSEnum
+### YamlMime:TSType
 name: PowerPoint.SensitivityLabelUpdateResult
-uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
+uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult:interface
 package: powerpoint!
 fullName: PowerPoint.SensitivityLabelUpdateResult
-summary: Represents the result of updating the sensitivity label on the presentation.
+summary: Represents the result of an attempt to update the sensitivity label on the presentation. Carries the outcome status plus diagnostic information about why the update succeeded or failed.
 remarks: |-
   [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
@@ -13,116 +13,18 @@ remarks: |-
 
 isPreview: true
 isDeprecated: false
-fields:
-  - name: abacNotSupported
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.abacNotSupported:member
+type: interface
+properties:
+  - name: status
+    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult#status:member
     package: powerpoint!
-    summary: |-
-      The label update failed because attribute-based access control (ABAC) is not supported in this context.
+    fullName: status
+    summary: Gets the outcome status of the update attempt.
+    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"AbacNotSupported"'
-  - name: crossTenant
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.crossTenant:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because the document doesn't belong to the same tenant as the user.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"CrossTenant"'
-  - name: documentReadOnly
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.documentReadOnly:member
-    package: powerpoint!
-    summary: |-
-      The presentation is read-only and cannot be modified.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"DocumentReadOnly"'
-  - name: insufficientPermission
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.insufficientPermission:member
-    package: powerpoint!
-    summary: |-
-      The user does not have sufficient permissions to update the label.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"InsufficientPermission"'
-  - name: labelingDisabled
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.labelingDisabled:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because native labeling is not enabled for the user or installed SKU.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"LabelingDisabled"'
-  - name: labelNotFound
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.labelNotFound:member
-    package: powerpoint!
-    summary: |-
-      The specified sensitivity label could not be found.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"LabelNotFound"'
-  - name: missingRequiredAttributes
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.missingRequiredAttributes:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because required ABAC attribute selections were not provided.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"MissingRequiredAttributes"'
-  - name: parentLabelNotSupported
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.parentLabelNotSupported:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because the specified label is a parent label, which cannot be applied.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"ParentLabelNotSupported"'
-  - name: removingLabelNotSupported
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.removingLabelNotSupported:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because removing the current label is not supported.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"RemovingLabelNotSupported"'
-  - name: success
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.success:member
-    package: powerpoint!
-    summary: |-
-      The sensitivity label was successfully updated.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"Success"'
-  - name: unspecifiedFailure
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.unspecifiedFailure:member
-    package: powerpoint!
-    summary: |-
-      The update failed due to an unspecified error.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"UnspecifiedFailure"'
-  - name: unsupportedDoubleKeyEncryption
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
-    package: powerpoint!
-    summary: |-
-      The label update failed due to unsupported Double Key Encryption (DKE).
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"UnsupportedDoubleKeyEncryption"'
-  - name: unsupportedUdp
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.unsupportedUdp:member
-    package: powerpoint!
-    summary: |-
-      The label update failed due to unsupported User Defined Permissions (UDP).
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"UnsupportedUdp"'
-  - name: userNotFound
-    uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult.userNotFound:member
-    package: powerpoint!
-    summary: |-
-      The label update failed because the user's identity is not valid for applying a label.
-
-      * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-    value: '"UserNotFound"'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'status: PowerPoint.SensitivityLabelUpdateStatus | "Success" | "UnspecifiedFailure" | "LabelNotFound" | "DocumentReadOnly" | "InsufficientPermission" | "UnsupportedDoubleKeyEncryption" | "LabelingDisabled" | "UserNotFound" | "UnsupportedUdp" | "ParentLabelNotSupported" | "CrossTenant" | "AbacAttributesNotAllowed" | "AbacAttributesRequired" | "UnsupportedAbac" | "LabelDisabled" | "RemovingLabelNotSupported";'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelUpdateStatus:enum" /> | "Success" | "UnspecifiedFailure" | "LabelNotFound" | "DocumentReadOnly" | "InsufficientPermission" | "UnsupportedDoubleKeyEncryption" | "LabelingDisabled" | "UserNotFound" | "UnsupportedUdp" | "ParentLabelNotSupported" | "CrossTenant" | "AbacAttributesNotAllowed" | "AbacAttributesRequired" | "UnsupportedAbac" | "LabelDisabled" | "RemovingLabelNotSupported"

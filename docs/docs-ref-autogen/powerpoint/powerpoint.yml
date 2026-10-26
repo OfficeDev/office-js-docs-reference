@@ -67,10 +67,6 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.PlaceholderFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.PresentationData:interface
   - powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface
-  - powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeData:interface
-  - powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
-  - powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeValueData:interface
-  - powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
@@ -174,7 +170,10 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface
   - powerpoint!PowerPoint.PictureAddOptions:interface
+  - powerpoint!PowerPoint.SensitivityLabelAbacAttribute:interface
+  - powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:interface
   - powerpoint!PowerPoint.SensitivityLabelTryUpdateOptions:interface
+  - powerpoint!PowerPoint.SensitivityLabelUpdateResult:interface
   - powerpoint!PowerPoint.ShapeAddOptions:interface
   - powerpoint!PowerPoint.ShapeGetImageOptions:interface
   - powerpoint!PowerPoint.SlideBackgroundGradientFillOptions:interface
@@ -217,8 +216,6 @@ classes:
   - powerpoint!PowerPoint.Presentation:class
   - powerpoint!PowerPoint.RequestContext:class
   - powerpoint!PowerPoint.SensitivityLabel:class
-  - powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class
-  - powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:class
   - powerpoint!PowerPoint.SensitivityLabelDetails:class
   - powerpoint!PowerPoint.SensitivityLabelDetailsCollection:class
   - powerpoint!PowerPoint.SensitivityLabelsCatalog:class
@@ -272,7 +269,7 @@ enums:
   - powerpoint!PowerPoint.PlaceholderType:enum
   - powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum
   - powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
-  - powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
+  - powerpoint!PowerPoint.SensitivityLabelUpdateStatus:enum
   - powerpoint!PowerPoint.ShapeAutoSize:enum
   - powerpoint!PowerPoint.ShapeFillType:enum
   - powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum

@@ -67,7 +67,7 @@ methods:
     uid: excel!Excel.SensitivityLabel#tryToUpdate:member(1)
     package: excel!
     fullName: tryToUpdate(labelId, options)
-    summary: Tries to update to the provided sensitivity label on the workbook for the user.
+    summary: Tries to update to the provided sensitivity label on the workbook for the user. For ABAC-enabled labels, pass the desired attribute selections via `options.abacAttributes`<!-- -->.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
@@ -79,9 +79,9 @@ methods:
           description: The ID of the label to apply.
           type: string
         - id: options
-          description: Optional. Additional inputs such as ABAC attributes.
+          description: Optional. Additional inputs that influence the update, such as ABAC attribute selections for ABAC-enabled labels.
           type: <xref uid="excel!Excel.SensitivityLabelTryUpdateOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.SensitivityLabelUpdateResult:enum" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.SensitivityLabelUpdateResult:interface" />&gt;
         description: The `SensitivityLabelUpdateResult` object.
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

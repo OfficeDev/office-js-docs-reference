@@ -9283,7 +9283,7 @@ export declare namespace Excel {
          */
         labelingEnabled = "LabelingEnabled",
         /**
-         * Attribute-based access control (ABAC) is supported by the host.
+         * Represents attribute-based access control (ABAC) being supported by the host. When returned with `labelingEnabled`, an add-in may use ABAC-specific APIs, such as `SensitivityLabelsCatalog.getAttributes`.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9299,7 +9299,7 @@ export declare namespace Excel {
      */
     export interface SensitivityLabelTryUpdateOptions {
         /**
-         * If provided, specifies the ABAC attributes to apply with the label.
+         * If provided, specifies the attribute-based access control (ABAC) attributes to apply with the label. Must be omitted or empty for labels that are not ABAC-enabled; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesNotAllowed`. Required when the target label is ABAC-enabled and `SensitivityLabelDetails.isAbacAttributesRequired` is `true`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -9329,14 +9329,14 @@ export declare namespace Excel {
          */
         getCurrentOrNullObject(): Excel.SensitivityLabelDetails;
         /**
-         * Tries to update to the provided sensitivity label on the workbook for the user.
+         * Tries to update to the provided sensitivity label on the workbook for the user. For ABAC-enabled labels, pass the desired attribute selections via `options.abacAttributes`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param labelId - The ID of the label to apply.
-         * @param options - Optional. Additional inputs such as ABAC attributes.
+         * @param options - Optional. Additional inputs that influence the update, such as ABAC attribute selections for ABAC-enabled labels.
          * @returns The `SensitivityLabelUpdateResult` object.
          */
         tryToUpdate(labelId: string, options?: Excel.SensitivityLabelTryUpdateOptions): OfficeExtension.ClientResult<Excel.SensitivityLabelUpdateResult>;
@@ -9359,37 +9359,21 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the ABAC (attribute-based access control) attribute values associated with this label.
+         * Gets the sublabels of the sensitivity label. The collection is empty if a label doesn't have any sublabels.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly children: Excel.SensitivityLabelDetailsCollection;
+        /**
+         * Gets the attribute-based access control (ABAC) attribute values currently applied to this sensitivity label. Returns an empty array when no ABAC attributes are applied or this label is not ABAC-enabled.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly abacAttributeValues: SensitivityLabelAbacAttributeValue[];
-        /**
-         * Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly isAbacAttributesRequired: boolean;
-        /**
-         * Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly isAbacEnabled: boolean;
-        /**
-         * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly children: SensitivityLabelDetailsCollection | null;
         /**
          * Gets the color of the sensitivity label.
          *
@@ -9406,6 +9390,22 @@ export declare namespace Excel {
          * @beta
          */
         readonly id: string;
+        /**
+         * Gets whether ABAC attribute selections are required to apply this label. If `true`, callers must supply attribute values when applying the label; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesRequired`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isAbacAttributesRequired: boolean;
+        /**
+         * Gets whether this label is attribute-based access control (ABAC) enabled. Returns `false` when the host's labeling capabilities don't include `attributeBasedAccessControlEnabled`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isAbacEnabled: boolean;
         /**
          * Gets a value indicating whether the label is enabled.
          *
@@ -9510,7 +9510,7 @@ export declare namespace Excel {
          * @beta
          * @returns The new `SensitivityLabelDetails` object.
          */
-        getFirstOrNullObject(): OfficeExtension.ClientResult<any>;
+        getFirstOrNullObject(): Excel.SensitivityLabelDetails;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -9610,13 +9610,13 @@ export declare namespace Excel {
         dateValue = "DateValue"
     }
     /**
-     * Represents the result of updating the sensitivity label on the workbook.
+     * Represents the outcome status of an attempt to update the sensitivity label on the workbook.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
      */
-    enum SensitivityLabelUpdateResult {
+    enum SensitivityLabelUpdateStatus {
         /**
          * The sensitivity label was successfully updated.
          * @remarks
@@ -9639,7 +9639,7 @@ export declare namespace Excel {
          */
         labelNotFound = "LabelNotFound",
         /**
-         * The document is read-only and cannot be modified.
+         * The workbook is read-only and can't be modified.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9667,14 +9667,14 @@ export declare namespace Excel {
          */
         labelingDisabled = "LabelingDisabled",
         /**
-         * The label update failed because the user's identity is not valid for applying a label.
+         * The label update failed because the user's identity could not be found to validate for applying a label.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         userNotFound = "UserNotFound",
         /**
-         * The label update failed due to unsupported User Defined Permissions (UDP).
+         * The label update failed due to unsupported User-defined Permissions (UDP).
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9695,26 +9695,57 @@ export declare namespace Excel {
          */
         crossTenant = "CrossTenant",
         /**
-         * The label update failed because ABAC (attribute-based access control) is not supported.
+         * ABAC attribute values were supplied, but the target label is not ABAC-enabled.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        unsupportedAbac = "UnsupportedAbac",
+        abacAttributesNotAllowed = "AbacAttributesNotAllowed",
         /**
-         * The label update failed because required ABAC (attribute-based access control) attributes are missing.
+         * The target label is ABAC-enabled and requires attribute selections, but no ABAC attribute values were supplied.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         abacAttributesRequired = "AbacAttributesRequired",
         /**
-         * The label update failed because removing the label is not supported.
+         * The label update failed due to unsupported attribute-based access control (ABAC).
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unsupportedAbac = "UnsupportedAbac",
+        /**
+         * The label update failed because the specified label is disabled or not applicable to the user.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        labelDisabled = "LabelDisabled",
+        /**
+         * The label update failed because removing the sensitivity label is not supported.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         removingLabelNotSupported = "RemovingLabelNotSupported"
+    }
+    /**
+     * Represents the result of an attempt to update the sensitivity label on the workbook. Carries the outcome status plus diagnostic information about why the update succeeded or failed.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SensitivityLabelUpdateResult {
+        /**
+         * Gets the outcome status of the update attempt.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        status: Excel.SensitivityLabelUpdateStatus | "Success" | "UnspecifiedFailure" | "LabelNotFound" | "DocumentReadOnly" | "InsufficientPermission" | "UnsupportedDoubleKeyEncryption" | "LabelingDisabled" | "UserNotFound" | "UnsupportedUdp" | "ParentLabelNotSupported" | "CrossTenant" | "AbacAttributesNotAllowed" | "AbacAttributesRequired" | "UnsupportedAbac" | "LabelDisabled" | "RemovingLabelNotSupported";
     }
     /**
      * Provides methods to check the status of the catalog of sensitivity labels in Excel and retrieve all available sensitivity labels if the catalog is enabled.
@@ -9727,7 +9758,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the labeling capabilities supported by Excel.
+         * Gets the labeling capabilities for Excel. Use `Array.includes` to determine whether a capability is available.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -9743,12 +9774,12 @@ export declare namespace Excel {
          */
         readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         /**
-         * Gets the ABAC (attribute-based access control) attributes that are available to the current user.
+         * Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify that the host's labeling capabilities include `attributeBasedAccessControlEnabled`; otherwise this method fails with an error.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
-         * @returns An array of `SensitivityLabelAbacAttribute` objects.
+         * @returns The available ABAC attributes for the current user.
          */
         getAttributes(): OfficeExtension.ClientResult<SensitivityLabelAbacAttribute[]>;
         /**
@@ -9788,158 +9819,102 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.SensitivityLabelsCatalogData;
     }
     /**
-     * Represents a single value of an ABAC (attribute-based access control) attribute.
+     * Represents a single selectable value of an attribute-based access control (ABAC) attribute that can be applied to a sensitivity label.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
      */
-    export class SensitivityLabelAbacAttributeValue extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
+    export interface SensitivityLabelAbacAttributeValue {
         /**
-         * Gets the display name of the attribute value.
+         * Gets the display name of the ABAC attribute value. Add-ins are responsible for presenting localized user-facing UI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly displayName: string;
+        displayName: string;
         /**
-         * Gets the display order of the attribute value.
+         * Gets the recommended ordering of this ABAC value within its attribute when displayed to a user.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly displayOrder: number;
+        displayOrder: number;
         /**
-         * Gets the unique identifier of the attribute value.
+         * Gets the unique identifier of the ABAC attribute value. This identifier is used when applying or updating the label's ABAC attribute selections.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly id: string;
+        id: string;
         /**
-         * Gets a value indicating whether the attribute value is active.
+         * Gets whether this ABAC attribute value is active. `true` if the value is active; otherwise, `false`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly isActive: boolean;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions): Excel.SensitivityLabelAbacAttributeValue;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.SensitivityLabelAbacAttributeValue;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.SensitivityLabelAbacAttributeValue;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.SensitivityLabelAbacAttributeValue` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelAbacAttributeValueData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.SensitivityLabelAbacAttributeValueData;
+        isActive: boolean;
     }
     /**
-     * Represents an ABAC (attribute-based access control) attribute.
+     * Represents an attribute-based access control (ABAC) attribute available for selection on an ABAC-enabled sensitivity label.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
      */
-    export class SensitivityLabelAbacAttribute extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
+    export interface SensitivityLabelAbacAttribute {
         /**
-         * Gets the data type of the attribute.
+         * Gets the data type of the ABAC attribute.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly dataType: Excel.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";
+        dataType: Excel.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";
         /**
-         * Gets the display name of the attribute.
+         * Gets the display name of the ABAC attribute. Add-ins are responsible for presenting localized user-facing UI.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly displayName: string;
+        displayName: string;
         /**
-         * Gets the display order of the attribute.
+         * Gets the recommended ordering of this ABAC attribute when displayed to a user.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly displayOrder: number;
+        displayOrder: number;
         /**
-         * Gets a value indicating whether the attribute is active.
+         * Gets whether this ABAC attribute is active. `true` if the attribute is active; otherwise, `false`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly isActive: boolean;
+        isActive: boolean;
         /**
-         * Gets a value indicating whether the attribute supports multiple values.
+         * Gets whether more than one value can be selected for this ABAC attribute. `true` if multi-select; otherwise, `false`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly isMultiValued: boolean;
+        isMultiValued: boolean;
         /**
-         * Gets the values of the attribute.
+         * Gets the values that are selectable for this ABAC attribute.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly values: SensitivityLabelAbacAttributeValue[];
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions): Excel.SensitivityLabelAbacAttribute;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.SensitivityLabelAbacAttribute;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.SensitivityLabelAbacAttribute;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-        * Whereas the original `Excel.SensitivityLabelAbacAttribute` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SensitivityLabelAbacAttributeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.SensitivityLabelAbacAttributeData;
+        values: SensitivityLabelAbacAttributeValue[];
     }
     /**
      * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
@@ -20858,20 +20833,22 @@ export declare namespace Excel {
          * Sets the values for a chart series. For scatter charts, it refers to y-axis values.
          *
          * @remarks
-         * [Api set: ExcelApi 1.7]
+         * [Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a literal value or array. An empty string or `=` is invalid.
          */
-        setValues(sourceData: Range): void;
+        setValues(sourceData: Range | string): void;
         /**
          * Sets the values of the x-axis for a chart series.
          *
          * @remarks
-         * [Api set: ExcelApi 1.7]
+         * [Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a literal value or array. An empty string or `=` clears the categories.
          */
-        setXAxisValues(sourceData: Range): void;
+        setXAxisValues(sourceData: Range | string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -52098,37 +52075,21 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `sensitivityLabelDetails.toJSON()`. */
         export interface SensitivityLabelDetailsData {
             /**
-             * Gets the ABAC (attribute-based access control) attribute values associated with this label.
+            * Gets the sublabels of the sensitivity label. The collection is empty if a label doesn't have any sublabels.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            children?: Excel.Interfaces.SensitivityLabelDetailsData[];
+            /**
+             * Gets the attribute-based access control (ABAC) attribute values currently applied to this sensitivity label. Returns an empty array when no ABAC attributes are applied or this label is not ABAC-enabled.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             abacAttributeValues?: SensitivityLabelAbacAttributeValue[];
-            /**
-             * Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isAbacAttributesRequired?: boolean;
-            /**
-             * Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isAbacEnabled?: boolean;
-            /**
-             * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            children?: SensitivityLabelDetailsCollection | null;
             /**
              * Gets the color of the sensitivity label.
              *
@@ -52145,6 +52106,22 @@ export declare namespace Excel {
              * @beta
              */
             id?: string;
+            /**
+             * Gets whether ABAC attribute selections are required to apply this label. If `true`, callers must supply attribute values when applying the label; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesRequired`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * Gets whether this label is attribute-based access control (ABAC) enabled. Returns `false` when the host's labeling capabilities don't include `attributeBasedAccessControlEnabled`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * Gets a value indicating whether the label is enabled.
              *
@@ -52201,7 +52178,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `sensitivityLabelsCatalog.toJSON()`. */
         export interface SensitivityLabelsCatalogData {
             /**
-             * Gets the labeling capabilities supported by Excel.
+             * Gets the labeling capabilities for Excel. Use `Array.includes` to determine whether a capability is available.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52216,92 +52193,6 @@ export declare namespace Excel {
              * @beta
              */
             getLabelingCapability?: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
-        }
-        /** An interface describing the data returned by calling `sensitivityLabelAbacAttributeValue.toJSON()`. */
-        export interface SensitivityLabelAbacAttributeValueData {
-            /**
-             * Gets the display name of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: string;
-            /**
-             * Gets the display order of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayOrder?: number;
-            /**
-             * Gets the unique identifier of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-            /**
-             * Gets a value indicating whether the attribute value is active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-        }
-        /** An interface describing the data returned by calling `sensitivityLabelAbacAttribute.toJSON()`. */
-        export interface SensitivityLabelAbacAttributeData {
-            /**
-             * Gets the data type of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dataType?: Excel.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";
-            /**
-             * Gets the display name of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: string;
-            /**
-             * Gets the display order of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayOrder?: number;
-            /**
-             * Gets a value indicating whether the attribute is active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
-             * Gets a value indicating whether the attribute supports multiple values.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isMultiValued?: boolean;
-            /**
-             * Gets the values of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            values?: SensitivityLabelAbacAttributeValue[];
         }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
@@ -59754,37 +59645,13 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the ABAC (attribute-based access control) attribute values associated with this label.
+             * Gets the attribute-based access control (ABAC) attribute values currently applied to this sensitivity label. Returns an empty array when no ABAC attributes are applied or this label is not ABAC-enabled.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             abacAttributeValues?: boolean;
-            /**
-             * Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isAbacAttributesRequired?: boolean;
-            /**
-             * Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isAbacEnabled?: boolean;
-            /**
-             * Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            children?: boolean;
             /**
              * Gets the color of the sensitivity label.
              *
@@ -59801,6 +59668,22 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             * Gets whether ABAC attribute selections are required to apply this label. If `true`, callers must supply attribute values when applying the label; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesRequired`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacAttributesRequired?: boolean;
+            /**
+             * Gets whether this label is attribute-based access control (ABAC) enabled. Returns `false` when the host's labeling capabilities don't include `attributeBasedAccessControlEnabled`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isAbacEnabled?: boolean;
             /**
              * Gets a value indicating whether the label is enabled.
              *
@@ -59863,21 +59746,13 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the ABAC (attribute-based access control) attribute values associated with this label.
+             * For EACH ITEM in the collection: Gets the attribute-based access control (ABAC) attribute values currently applied to this sensitivity label. Returns an empty array when no ABAC attributes are applied or this label is not ABAC-enabled.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             abacAttributeValues?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the sublabels of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            children?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the color of the sensitivity label.
              *
@@ -59895,7 +59770,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets a value indicating whether ABAC (attribute-based access control) attributes are required for this label.
+             * For EACH ITEM in the collection: Gets whether ABAC attribute selections are required to apply this label. If `true`, callers must supply attribute values when applying the label; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesRequired`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -59903,7 +59778,7 @@ export declare namespace Excel {
              */
             isAbacAttributesRequired?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets a value indicating whether ABAC (attribute-based access control) is enabled for this label.
+             * For EACH ITEM in the collection: Gets whether this label is attribute-based access control (ABAC) enabled. Returns `false` when the host's labeling capabilities don't include `attributeBasedAccessControlEnabled`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -59972,7 +59847,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the labeling capabilities supported by Excel.
+             * Gets the labeling capabilities for Excel. Use `Array.includes` to determine whether a capability is available.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -59987,112 +59862,6 @@ export declare namespace Excel {
              * @beta
              */
             getLabelingCapability?: boolean;
-        }
-        /**
-         * Represents a single value of an ABAC (attribute-based access control) attribute.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface SensitivityLabelAbacAttributeValueLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Gets the display name of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: boolean;
-            /**
-             * Gets the display order of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayOrder?: boolean;
-            /**
-             * Gets the unique identifier of the attribute value.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-            /**
-             * Gets a value indicating whether the attribute value is active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-        }
-        /**
-         * Represents an ABAC (attribute-based access control) attribute.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface SensitivityLabelAbacAttributeLoadOptions {
-            /**
-              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Gets the data type of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dataType?: boolean;
-            /**
-             * Gets the display name of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: boolean;
-            /**
-             * Gets the display order of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayOrder?: boolean;
-            /**
-             * Gets a value indicating whether the attribute is active.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isActive?: boolean;
-            /**
-             * Gets a value indicating whether the attribute supports multiple values.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            isMultiValued?: boolean;
-            /**
-             * Gets the values of the attribute.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            values?: boolean;
         }
         /**
          * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.

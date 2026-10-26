@@ -868,16 +868,16 @@ methods:
     package: excel!
     fullName: setValues(sourceData)
     summary: Sets the values for a chart series. For scatter charts, it refers to y-axis values.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: '\[Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setValues(sourceData: Range): void;'
+      content: 'setValues(sourceData: Range | string): void;'
       parameters:
         - id: sourceData
-          description: The `Range` object corresponding to the source data.
-          type: <xref uid="excel!Excel.Range:class" />
+          description: A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference, a defined name, or a literal value or array. An empty string or `=` is invalid.
+          type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: void
         description: ''
@@ -886,16 +886,16 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: Sets the values of the x-axis for a chart series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: '\[Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.\]'
 
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setXAxisValues(sourceData: Range): void;'
+      content: 'setXAxisValues(sourceData: Range | string): void;'
       parameters:
         - id: sourceData
-          description: The `Range` object corresponding to the source data.
-          type: <xref uid="excel!Excel.Range:class" />
+          description: A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference, a defined name, or a literal value or array. An empty string or `=` clears the categories.
+          type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: void
         description: ''

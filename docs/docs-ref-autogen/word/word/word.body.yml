@@ -1034,6 +1034,8 @@ methods:
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
+      Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+
       Document settings aren't preserved when inserting a document.
 
       #### Examples
@@ -1168,6 +1170,8 @@ methods:
     summary: Inserts OOXML at the specified location.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
 
       #### Examples
 
