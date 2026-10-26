@@ -62,7 +62,7 @@ methods:
     syntax:
       content: 'getAttributes(): OfficeExtension.ClientResult<PowerPoint.SensitivityLabelAbacAttribute[]>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class" />[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:interface" />[]&gt;
         description: ''
   - name: getLabels()
     uid: powerpoint!PowerPoint.SensitivityLabelsCatalog#getLabels:member(1)

@@ -17,7 +17,7 @@ properties:
     uid: excel!Excel.Interfaces.SensitivityLabelsCatalogData#getLabelingCapabilities:member
     package: excel!
     fullName: getLabelingCapabilities
-    summary: Gets the labeling capabilities supported by Excel.
+    summary: Gets the labeling capabilities for Excel. Use `Array.includes` to determine whether a capability is available.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true

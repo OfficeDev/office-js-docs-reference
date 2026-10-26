@@ -25,7 +25,7 @@ properties:
     syntax:
       content: 'abacAttributeValues?: PowerPoint.SensitivityLabelAbacAttributeValue[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:class" />[]
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:interface" />[]
   - name: children
     uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#children:member
     package: powerpoint!
@@ -69,7 +69,7 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SensitivityLabelDetailsData#isAbacAttributesRequired:member
     package: powerpoint!
     fullName: isAbacAttributesRequired
-    summary: Gets whether ABAC attribute selections are required to apply this label. If `true`<!-- -->, callers must supply attribute values when applying the label; otherwise the update returns `SensitivityLabelUpdateResult.MissingRequiredAttributes`<!-- -->.
+    summary: Gets whether ABAC attribute selections are required to apply this label. If `true`<!-- -->, callers must supply attribute values when applying the label; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesRequired`<!-- -->.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true

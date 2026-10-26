@@ -1,9 +1,9 @@
-### YamlMime:TSEnum
+### YamlMime:TSType
 name: Excel.SensitivityLabelUpdateResult
-uid: excel!Excel.SensitivityLabelUpdateResult:enum
+uid: excel!Excel.SensitivityLabelUpdateResult:interface
 package: excel!
 fullName: Excel.SensitivityLabelUpdateResult
-summary: Represents the result of updating the sensitivity label on the workbook.
+summary: Represents the result of an attempt to update the sensitivity label on the workbook. Carries the outcome status plus diagnostic information about why the update succeeded or failed.
 remarks: |-
   [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
@@ -13,116 +13,18 @@ remarks: |-
 
 isPreview: true
 isDeprecated: false
-fields:
-  - name: abacAttributesRequired
-    uid: excel!Excel.SensitivityLabelUpdateResult.abacAttributesRequired:member
+type: interface
+properties:
+  - name: status
+    uid: excel!Excel.SensitivityLabelUpdateResult#status:member
     package: excel!
-    summary: |-
-      The label update failed because required ABAC (attribute-based access control) attributes are missing.
+    fullName: status
+    summary: Gets the outcome status of the update attempt.
+    remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"AbacAttributesRequired"'
-  - name: crossTenant
-    uid: excel!Excel.SensitivityLabelUpdateResult.crossTenant:member
-    package: excel!
-    summary: |-
-      The label update failed because the document doesn't belong to the same tenant as the user.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"CrossTenant"'
-  - name: documentReadOnly
-    uid: excel!Excel.SensitivityLabelUpdateResult.documentReadOnly:member
-    package: excel!
-    summary: |-
-      The document is read-only and cannot be modified.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"DocumentReadOnly"'
-  - name: insufficientPermission
-    uid: excel!Excel.SensitivityLabelUpdateResult.insufficientPermission:member
-    package: excel!
-    summary: |-
-      The user does not have sufficient permissions to update the label.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"InsufficientPermission"'
-  - name: labelingDisabled
-    uid: excel!Excel.SensitivityLabelUpdateResult.labelingDisabled:member
-    package: excel!
-    summary: |-
-      The label update failed because native labeling is not enabled for the user or installed SKU.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"LabelingDisabled"'
-  - name: labelNotFound
-    uid: excel!Excel.SensitivityLabelUpdateResult.labelNotFound:member
-    package: excel!
-    summary: |-
-      The specified sensitivity label could not be found.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"LabelNotFound"'
-  - name: parentLabelNotSupported
-    uid: excel!Excel.SensitivityLabelUpdateResult.parentLabelNotSupported:member
-    package: excel!
-    summary: |-
-      The label update failed because the specified label is a parent label, which cannot be applied.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"ParentLabelNotSupported"'
-  - name: removingLabelNotSupported
-    uid: excel!Excel.SensitivityLabelUpdateResult.removingLabelNotSupported:member
-    package: excel!
-    summary: |-
-      The label update failed because removing the label is not supported.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"RemovingLabelNotSupported"'
-  - name: success
-    uid: excel!Excel.SensitivityLabelUpdateResult.success:member
-    package: excel!
-    summary: |-
-      The sensitivity label was successfully updated.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"Success"'
-  - name: unspecifiedFailure
-    uid: excel!Excel.SensitivityLabelUpdateResult.unspecifiedFailure:member
-    package: excel!
-    summary: |-
-      The update failed due to an unspecified error.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"UnspecifiedFailure"'
-  - name: unsupportedAbac
-    uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedAbac:member
-    package: excel!
-    summary: |-
-      The label update failed because ABAC (attribute-based access control) is not supported.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"UnsupportedAbac"'
-  - name: unsupportedDoubleKeyEncryption
-    uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedDoubleKeyEncryption:member
-    package: excel!
-    summary: |-
-      The label update failed due to unsupported Double Key Encryption (DKE).
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"UnsupportedDoubleKeyEncryption"'
-  - name: unsupportedUdp
-    uid: excel!Excel.SensitivityLabelUpdateResult.unsupportedUdp:member
-    package: excel!
-    summary: |-
-      The label update failed due to unsupported User Defined Permissions (UDP).
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"UnsupportedUdp"'
-  - name: userNotFound
-    uid: excel!Excel.SensitivityLabelUpdateResult.userNotFound:member
-    package: excel!
-    summary: |-
-      The label update failed because the user's identity is not valid for applying a label.
-
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-    value: '"UserNotFound"'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'status: Excel.SensitivityLabelUpdateStatus | "Success" | "UnspecifiedFailure" | "LabelNotFound" | "DocumentReadOnly" | "InsufficientPermission" | "UnsupportedDoubleKeyEncryption" | "LabelingDisabled" | "UserNotFound" | "UnsupportedUdp" | "ParentLabelNotSupported" | "CrossTenant" | "AbacAttributesNotAllowed" | "AbacAttributesRequired" | "UnsupportedAbac" | "LabelDisabled" | "RemovingLabelNotSupported";'
+      return:
+        type: <xref uid="excel!Excel.SensitivityLabelUpdateStatus:enum" /> | "Success" | "UnspecifiedFailure" | "LabelNotFound" | "DocumentReadOnly" | "InsufficientPermission" | "UnsupportedDoubleKeyEncryption" | "LabelingDisabled" | "UserNotFound" | "UnsupportedUdp" | "ParentLabelNotSupported" | "CrossTenant" | "AbacAttributesNotAllowed" | "AbacAttributesRequired" | "UnsupportedAbac" | "LabelDisabled" | "RemovingLabelNotSupported"

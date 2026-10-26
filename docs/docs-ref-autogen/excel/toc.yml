@@ -326,8 +326,8 @@ items:
                 uid: excel!Excel.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: excel!Excel.SensitivityLabelProtectionType:enum
-              - name: SensitivityLabelUpdateResult
-                uid: excel!Excel.SensitivityLabelUpdateResult:enum
+              - name: SensitivityLabelUpdateStatus
+                uid: excel!Excel.SensitivityLabelUpdateStatus:enum
               - name: ShapeAutoSize
                 uid: excel!Excel.ShapeAutoSize:enum
               - name: ShapeFillType
@@ -1024,9 +1024,9 @@ items:
           - name: SensitivityLabel
             uid: excel!Excel.SensitivityLabel:class
           - name: SensitivityLabelAbacAttribute
-            uid: excel!Excel.SensitivityLabelAbacAttribute:class
+            uid: excel!Excel.SensitivityLabelAbacAttribute:interface
           - name: SensitivityLabelAbacAttributeValue
-            uid: excel!Excel.SensitivityLabelAbacAttributeValue:class
+            uid: excel!Excel.SensitivityLabelAbacAttributeValue:interface
           - name: SensitivityLabelDetails
             uid: excel!Excel.SensitivityLabelDetails:class
           - name: SensitivityLabelDetailsCollection
@@ -1035,6 +1035,8 @@ items:
             uid: excel!Excel.SensitivityLabelsCatalog:class
           - name: SensitivityLabelTryUpdateOptions
             uid: excel!Excel.SensitivityLabelTryUpdateOptions:interface
+          - name: SensitivityLabelUpdateResult
+            uid: excel!Excel.SensitivityLabelUpdateResult:interface
           - name: Session
             uid: excel!Excel.Session:interface
           - name: SettableCellProperties

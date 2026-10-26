@@ -67,9 +67,9 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getFirstOrNullObject(): OfficeExtension.ClientResult<any>;'
+      content: 'getFirstOrNullObject(): Excel.SensitivityLabelDetails;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;any&gt;
+        type: <xref uid="excel!Excel.SensitivityLabelDetails:class" />
         description: The new `SensitivityLabelDetails` object.
   - name: load(options)
     uid: excel!Excel.SensitivityLabelDetailsCollection#load:member(1)
