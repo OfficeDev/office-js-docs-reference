@@ -47,22 +47,6 @@ remarks: |-
       await context.sync();
   }); 
   ```
-  ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/basic-range-operations.yaml
-
-  // Finds whole-word matches within the first paragraph.
-  await Word.run(async (context) => {
-      const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
-      const searchOptions: Word.SearchOptions = Word.SearchOptions.newObject(context);
-      searchOptions.matchCase = false;
-      searchOptions.matchWholeWord = true;
-      const matches: Word.RangeCollection = paragraphRange.search("project", searchOptions);
-      matches.load("items/text");
-      await context.sync();
-      console.log(`Matches found: ${matches.items.length}`);
-      matches.items.forEach((match: Word.Range) => console.log(match.text));
-  });
-  ```
 
 isPreview: false
 isDeprecated: false

@@ -14,7 +14,7 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
   // Displays the first paragraph's text as two lines enclosed in parentheses.
   await Word.run(async (context) => {
@@ -22,7 +22,7 @@ remarks: |-
       const twoLineLayout: Word.TwoLinesInOneType = Word.TwoLinesInOneType.parentheses;
       paragraphRange.twoLinesInOne = twoLineLayout;
       await context.sync();
-      console.log("Applied two-line text with parentheses.");
+      console.log("Applied two-line text with parentheses to the first paragraph.");
   });
   ```
 

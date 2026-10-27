@@ -10,15 +10,15 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
-  // Converts the first paragraph's characters to full width.
+  // Converts the first paragraph's Latin characters and digits to full width.
   await Word.run(async (context) => {
       const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
       const characterWidth: Word.CharacterWidth = Word.CharacterWidth.full;
       paragraphRange.characterWidth = characterWidth;
       await context.sync();
-      console.log("Applied full-width characters.");
+      console.log("Converted the first paragraph's Latin characters and digits to full width.");
   });
   ```
 
