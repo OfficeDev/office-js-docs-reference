@@ -16571,7 +16571,7 @@ word,Word.Range,"revisions",Property,Excellent,true
 word,Word.Range,"sections",Property,Great,true
 word,Word.Range,"shading",Property,Excellent,true
 word,Word.Range,"shapes",Property,Excellent,true
-word,Word.Range,"showAll",Property,Excellent,true
+word,Word.Range,"showAll",Property,Excellent,false
 word,Word.Range,"spellingChecked",Property,Great,true
 word,Word.Range,"start",Property,Great,true
 word,Word.Range,"storyLength",Property,Great,false
