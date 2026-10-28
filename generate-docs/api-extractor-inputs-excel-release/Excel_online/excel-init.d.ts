@@ -18443,20 +18443,22 @@ export declare namespace Excel {
          * Sets the values for a chart series. For scatter charts, it refers to y-axis values.
          *
          * @remarks
-         * [Api set: ExcelApi 1.7]
+         * [Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a literal value or array. An empty string or `=` is invalid.
          */
-        setValues(sourceData: Range): void;
+        setValues(sourceData: Range | string): void;
         /**
          * Sets the values of the x-axis for a chart series.
          *
          * @remarks
-         * [Api set: ExcelApi 1.7]
+         * [Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a literal value or array. An empty string or `=` clears the categories.
          */
-        setXAxisValues(sourceData: Range): void;
+        setXAxisValues(sourceData: Range | string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *

@@ -67,7 +67,7 @@ methods:
     uid: powerpoint!PowerPoint.SensitivityLabel#tryToUpdate:member(1)
     package: powerpoint!
     fullName: tryToUpdate(labelId, options)
-    summary: Tries to update to the provided sensitivity label on the presentation for the user.
+    summary: Tries to update to the provided sensitivity label on the presentation for the user. For ABAC-enabled labels, pass the desired attribute selections via `options.abacAttributes`<!-- -->.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true
@@ -79,9 +79,9 @@ methods:
           description: The ID of the label to apply.
           type: string
         - id: options
-          description: Options for updating the sensitivity label.
+          description: Optional. Additional inputs that influence the update, such as ABAC attribute selections for ABAC-enabled labels.
           type: <xref uid="powerpoint!PowerPoint.SensitivityLabelTryUpdateOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="powerpoint!PowerPoint.SensitivityLabelUpdateResult:interface" />&gt;
         description: The `SensitivityLabelUpdateResult` object.
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

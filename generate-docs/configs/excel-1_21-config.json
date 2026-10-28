@@ -1,4 +1,27 @@
 {
+    "replacements":  [
+                         {
+                             "find":  "setValues(sourceData: Range | string): void;",
+                             "replace":  "setValues(sourceData: Range): void;",
+                             "description":  "Remove formula string input from ChartSeries.setValues when removing ExcelApi 1.21"
+                         },
+                         {
+                             "find":  "setXAxisValues(sourceData: Range | string): void;",
+                             "replace":  "setXAxisValues(sourceData: Range): void;",
+                             "description":  "Remove formula string input from ChartSeries.setXAxisValues when removing ExcelApi 1.21"
+                         },
+                         {
+                             "find":  "[Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]",
+                             "replace":  "[Api set: ExcelApi 1.7]",
+                             "description":  "Restore Range-only requirement set notes when removing ExcelApi 1.21"
+                         },
+                         {
+                             "find":  "/@param sourceData (?:- )?A `Range` or, in ApiSet 1\\.21, a string in en-US chart data-reference syntax\\. The string can contain a cell or table reference,\\r?\\n[ \\t]*\\* a defined name, or a literal value or array\\. An empty string or `=` (?:is invalid|clears the categories)\\./g",
+                             "replace":  "@param sourceData - The `Range` object corresponding to the source data.",
+                             "isRegex":  true,
+                             "description":  "Restore Range-only sourceData documentation when removing ExcelApi 1.21"
+                         }
+                     ],
     "excludedFieldPatterns":  [
                                   "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
                               ],

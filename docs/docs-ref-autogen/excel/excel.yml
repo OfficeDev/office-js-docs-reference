@@ -153,7 +153,7 @@ enums:
   - excel!Excel.SearchDirection:enum
   - excel!Excel.SensitivityLabelAbacAttributeDataType:enum
   - excel!Excel.SensitivityLabelProtectionType:enum
-  - excel!Excel.SensitivityLabelUpdateResult:enum
+  - excel!Excel.SensitivityLabelUpdateStatus:enum
   - excel!Excel.ShapeAutoSize:enum
   - excel!Excel.ShapeFillType:enum
   - excel!Excel.ShapeFontUnderlineStyle:enum
@@ -342,8 +342,6 @@ classes:
   - excel!Excel.RowColumnPivotHierarchyCollection:class
   - excel!Excel.Runtime:class
   - excel!Excel.SensitivityLabel:class
-  - excel!Excel.SensitivityLabelAbacAttribute:class
-  - excel!Excel.SensitivityLabelAbacAttributeValue:class
   - excel!Excel.SensitivityLabelDetails:class
   - excel!Excel.SensitivityLabelDetailsCollection:class
   - excel!Excel.SensitivityLabelsCatalog:class
@@ -906,10 +904,6 @@ interfaces:
   - excel!Excel.Interfaces.RuntimeData:interface
   - excel!Excel.Interfaces.RuntimeLoadOptions:interface
   - excel!Excel.Interfaces.RuntimeUpdateData:interface
-  - excel!Excel.Interfaces.SensitivityLabelAbacAttributeData:interface
-  - excel!Excel.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface
-  - excel!Excel.Interfaces.SensitivityLabelAbacAttributeValueData:interface
-  - excel!Excel.Interfaces.SensitivityLabelAbacAttributeValueLoadOptions:interface
   - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionData:interface
   - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionLoadOptions:interface
   - excel!Excel.Interfaces.SensitivityLabelDetailsCollectionUpdateData:interface
@@ -1079,7 +1073,10 @@ interfaces:
   - excel!Excel.RunOptions:interface
   - excel!Excel.SearchCriteria:interface
   - excel!Excel.SelectionChangedEventArgs:interface
+  - excel!Excel.SensitivityLabelAbacAttribute:interface
+  - excel!Excel.SensitivityLabelAbacAttributeValue:interface
   - excel!Excel.SensitivityLabelTryUpdateOptions:interface
+  - excel!Excel.SensitivityLabelUpdateResult:interface
   - excel!Excel.Session:interface
   - excel!Excel.SettableCellProperties:interface
   - excel!Excel.SettableColumnProperties:interface

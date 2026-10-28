@@ -32,7 +32,7 @@ properties:
     uid: excel!Excel.SensitivityLabelsCatalog#getLabelingCapabilities:member
     package: excel!
     fullName: getLabelingCapabilities
-    summary: Gets the labeling capabilities supported by Excel.
+    summary: Gets the labeling capabilities for Excel. Use `Array.includes` to determine whether a capability is available.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
@@ -59,7 +59,7 @@ methods:
     uid: excel!Excel.SensitivityLabelsCatalog#getAttributes:member(1)
     package: excel!
     fullName: getAttributes()
-    summary: Gets the ABAC (attribute-based access control) attributes that are available to the current user.
+    summary: Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify that the host's labeling capabilities include `attributeBasedAccessControlEnabled`<!-- -->; otherwise this method fails with an error.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
@@ -67,8 +67,8 @@ methods:
     syntax:
       content: 'getAttributes(): OfficeExtension.ClientResult<SensitivityLabelAbacAttribute[]>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.SensitivityLabelAbacAttribute:class" />[]&gt;
-        description: An array of `SensitivityLabelAbacAttribute` objects.
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.SensitivityLabelAbacAttribute:interface" />[]&gt;
+        description: The available ABAC attributes for the current user.
   - name: getLabels()
     uid: excel!Excel.SensitivityLabelsCatalog#getLabels:member(1)
     package: excel!

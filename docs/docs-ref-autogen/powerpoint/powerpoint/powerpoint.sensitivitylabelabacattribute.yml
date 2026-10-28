@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: PowerPoint.SensitivityLabelAbacAttribute
-uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class
+uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute:interface
 package: powerpoint!
 fullName: PowerPoint.SensitivityLabelAbacAttribute
 summary: Represents an attribute-based access control (ABAC) attribute available for selection on an ABAC-enabled sensitivity label.
@@ -14,32 +14,19 @@ remarks: |-
 
 isPreview: true
 isDeprecated: false
-type: class
+type: interface
 properties:
-  - name: context
-    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#context:member
-    package: powerpoint!
-    fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
   - name: dataType
     uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#dataType:member
     package: powerpoint!
     fullName: dataType
-    summary: Gets the data type of this ABAC attribute.
+    summary: Gets the data type of the ABAC attribute.
     remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly dataType: PowerPoint.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
+      content: 'dataType: PowerPoint.SensitivityLabelAbacAttributeDataType | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue";'
       return:
         type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum" /> | "Unknown" | "StringValue" | "BooleanValue" | "NumberValue" | "DateValue"
   - name: displayName
@@ -52,7 +39,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly displayName: string;'
+      content: 'displayName: string;'
       return:
         type: string
   - name: displayOrder
@@ -65,7 +52,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly displayOrder: number;'
+      content: 'displayOrder: number;'
       return:
         type: number
   - name: isActive
@@ -78,7 +65,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly isActive: boolean;'
+      content: 'isActive: boolean;'
       return:
         type: boolean
   - name: isMultiValued
@@ -91,7 +78,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly isMultiValued: boolean;'
+      content: 'isMultiValued: boolean;'
       return:
         type: boolean
   - name: values
@@ -104,84 +91,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly values: PowerPoint.SensitivityLabelAbacAttributeValue[];'
+      content: 'values: PowerPoint.SensitivityLabelAbacAttributeValue[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:class" />[]
-methods:
-  - name: load(options)
-    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#load:member(1)
-    package: powerpoint!
-    fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'load(options?: PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions): PowerPoint.SensitivityLabelAbacAttribute;'
-      parameters:
-        - id: options
-          description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeLoadOptions:interface" />
-      return:
-        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: load(propertyNames)
-    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#load:member(2)
-    package: powerpoint!
-    fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'load(propertyNames?: string | string[]): PowerPoint.SensitivityLabelAbacAttribute;'
-      parameters:
-        - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
-          type: string | string[]
-      return:
-        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: load(propertyNamesAndPaths)
-    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#load:member(3)
-    package: powerpoint!
-    fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: |-
-        load(propertyNamesAndPaths?: {
-                    select?: string;
-                    expand?: string;
-                }): PowerPoint.SensitivityLabelAbacAttribute;
-      parameters:
-        - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
-          type: |-
-            {
-                        select?: string;
-                        expand?: string;
-                    }
-      return:
-        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class" />
-        description: ''
-  - name: toJSON()
-    uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute#toJSON:member(1)
-    package: powerpoint!
-    fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SensitivityLabelAbacAttribute` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SensitivityLabelAbacAttributeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
-    remarks: ''
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'toJSON(): PowerPoint.Interfaces.SensitivityLabelAbacAttributeData;'
-      return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.SensitivityLabelAbacAttributeData:interface" />
-        description: ''
-extends: <xref uid="office!OfficeExtension.ClientObject:class" />
+        type: <xref uid="powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:interface" />[]

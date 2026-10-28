@@ -18,7 +18,7 @@ fields:
     uid: excel!Excel.LabelingCapability.attributeBasedAccessControlEnabled:member
     package: excel!
     summary: |-
-      Attribute-based access control (ABAC) is supported by the host.
+      Represents attribute-based access control (ABAC) being supported by the host. When returned with `labelingEnabled`<!-- -->, an add-in may use ABAC-specific APIs, such as `SensitivityLabelsCatalog.getAttributes`<!-- -->.
 
       * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"AttributeBasedAccessControlEnabled"'

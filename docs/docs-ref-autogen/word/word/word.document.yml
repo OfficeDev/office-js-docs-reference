@@ -3636,6 +3636,8 @@ methods:
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
+      Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+
       Document settings aren't preserved when inserting a document.
 
       #### Examples

@@ -44,8 +44,8 @@ items:
                   powerpoint!PowerPoint.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: powerpoint!PowerPoint.SensitivityLabelProtectionType:enum
-              - name: SensitivityLabelUpdateResult
-                uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult:enum
+              - name: SensitivityLabelUpdateStatus
+                uid: powerpoint!PowerPoint.SensitivityLabelUpdateStatus:enum
               - name: ShapeAutoSize
                 uid: powerpoint!PowerPoint.ShapeAutoSize:enum
               - name: ShapeFillType
@@ -139,9 +139,9 @@ items:
           - name: SensitivityLabel
             uid: powerpoint!PowerPoint.SensitivityLabel:class
           - name: SensitivityLabelAbacAttribute
-            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute:class
+            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttribute:interface
           - name: SensitivityLabelAbacAttributeValue
-            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:class
+            uid: powerpoint!PowerPoint.SensitivityLabelAbacAttributeValue:interface
           - name: SensitivityLabelDetails
             uid: powerpoint!PowerPoint.SensitivityLabelDetails:class
           - name: SensitivityLabelDetailsCollection
@@ -150,6 +150,8 @@ items:
             uid: powerpoint!PowerPoint.SensitivityLabelsCatalog:class
           - name: SensitivityLabelTryUpdateOptions
             uid: powerpoint!PowerPoint.SensitivityLabelTryUpdateOptions:interface
+          - name: SensitivityLabelUpdateResult
+            uid: powerpoint!PowerPoint.SensitivityLabelUpdateResult:interface
           - name: Shape
             uid: powerpoint!PowerPoint.Shape:class
           - name: ShapeAddOptions

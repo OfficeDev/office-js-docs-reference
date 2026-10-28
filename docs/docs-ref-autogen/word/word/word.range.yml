@@ -92,29 +92,21 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/character-formatting-and-case-desktop.yaml
 
-      // Reads character formatting and layout settings on the first paragraph.
+      // Reads character formatting on the first paragraph.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
-          paragraphRange.load("bold,italic,boldBidirectional,italicBidirectional,case,characterWidth,combineCharacters,disableCharacterSpaceGrid,emphasisMark,fitTextWidth,highlightColorIndex,horizontalInVertical,kana,twoLinesInOne,showAll");
+          paragraphRange.load("text,bold,italic,boldBidirectional,italicBidirectional,case,highlightColorIndex");
           await context.sync();
           console.log("First paragraph's formatting:", {
+              text: paragraphRange.text,
               bold: paragraphRange.bold,
               italic: paragraphRange.italic,
               boldBidirectional: paragraphRange.boldBidirectional,
               italicBidirectional: paragraphRange.italicBidirectional,
               case: paragraphRange.case,
-              characterWidth: paragraphRange.characterWidth,
-              combineCharacters: paragraphRange.combineCharacters,
-              disableCharacterSpaceGrid: paragraphRange.disableCharacterSpaceGrid,
-              emphasisMark: paragraphRange.emphasisMark,
-              fitTextWidth: paragraphRange.fitTextWidth,
-              highlightColorIndex: paragraphRange.highlightColorIndex,
-              horizontalInVertical: paragraphRange.horizontalInVertical,
-              kana: paragraphRange.kana,
-              twoLinesInOne: paragraphRange.twoLinesInOne,
-              showAll: paragraphRange.showAll
+              highlightColorIndex: paragraphRange.highlightColorIndex
           });
       });
       ```
@@ -221,7 +213,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/character-formatting-and-case-desktop.yaml
 
       // Converts the first paragraph's text to uppercase.
       await Word.run(async (context) => {
@@ -229,7 +221,7 @@ properties:
           const characterCase: Word.CharacterCase = Word.CharacterCase.upper;
           paragraphRange.case = characterCase;
           await context.sync();
-          console.log("Converted the text to uppercase.");
+          console.log("Converted the first paragraph's text to uppercase.");
       });
       ```
 
@@ -250,15 +242,15 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
-      // Converts the first paragraph's characters to full width.
+      // Converts the first paragraph's Latin characters and digits to full width.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           const characterWidth: Word.CharacterWidth = Word.CharacterWidth.full;
           paragraphRange.characterWidth = characterWidth;
           await context.sync();
-          console.log("Applied full-width characters.");
+          console.log("Converted the first paragraph's Latin characters and digits to full width.");
       });
       ```
 
@@ -279,14 +271,14 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
-      // Combines the characters in the first paragraph.
+      // Combines the first paragraph's short group of characters.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           paragraphRange.combineCharacters = true;
           await context.sync();
-          console.log("Enabled combined characters. Get formatting to inspect the setting.");
+          console.log("Enabled combined characters on the first paragraph. Get layout settings to inspect the flag.");
       });
       ```
 
@@ -445,7 +437,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-and-adjust-range-boundaries-desktop.yaml
 
       // Selects the first paragraph's text except its last character.
       await Word.run(async (context) => {
@@ -540,14 +532,14 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
       // Fits the first paragraph's text into a specified width.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           paragraphRange.fitTextWidth = 100;
           await context.sync();
-          console.log("Fitted the text into 100 current measurement units.");
+          console.log("Fitted the first paragraph's text into 100 current measurement units.");
       });
       ```
 
@@ -735,15 +727,15 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
-      // Keeps the first paragraph's characters horizontal when the document uses vertical text.
+      // Keeps the first paragraph's characters horizontal within vertical text.
       await Word.run(async (context) => {
           const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           const horizontalLayout: Word.HorizontalInVerticalType = Word.HorizontalInVerticalType.fitInLine;
           paragraphRange.horizontalInVertical = horizontalLayout;
           await context.sync();
-          console.log("Enabled horizontal text within vertical text. Get formatting to verify the setting.");
+          console.log("Enabled horizontal-in-vertical layout on the first paragraph. Get layout settings to verify it.");
       });
       ```
 
@@ -824,7 +816,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-and-adjust-range-boundaries-desktop.yaml
 
       // Reads the range's character positions and the story containing it.
       await Word.run(async (context) => {
@@ -955,15 +947,15 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/convert-japanese-kana-desktop.yaml
 
-      // Converts the Japanese sample paragraph to hiragana.
+      // Converts the sample paragraph's Japanese katakana text to hiragana.
       await Word.run(async (context) => {
-          const japaneseRange: Word.Range = context.document.body.paragraphs.getLast().getRange(Word.RangeLocation.content);
+          const japaneseRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           const kana: Word.Kana = Word.Kana.hiragana;
           japaneseRange.kana = kana;
           await context.sync();
-          console.log("Converted the Japanese text to hiragana.");
+          console.log("Converted the Japanese paragraph's text to hiragana.");
       });
       ```
 
@@ -1644,22 +1636,7 @@ properties:
     package: word!
     fullName: showAll
     summary: Specifies if all nonprinting characters (such as hidden text, tab marks, space marks, and paragraph marks) are displayed.
-    remarks: |-
-      [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-
-      #### Examples
-
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
-
-      // Displays nonprinting characters such as spaces and paragraph marks.
-      await Word.run(async (context) => {
-          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
-          paragraphRange.showAll = true;
-          await context.sync();
-          console.log("Enabled nonprinting characters. Get formatting to inspect the setting.");
-      });
-      ```
+    remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false
     isDeprecated: false
@@ -1706,7 +1683,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-and-adjust-range-boundaries-desktop.yaml
 
       // Selects the first paragraph's text except its first character.
       await Word.run(async (context) => {
@@ -1916,7 +1893,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/format-range-text-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/apply-character-layout-desktop.yaml
 
       // Displays the first paragraph's text as two lines enclosed in parentheses.
       await Word.run(async (context) => {
@@ -1924,7 +1901,7 @@ properties:
           const twoLineLayout: Word.TwoLinesInOneType = Word.TwoLinesInOneType.parentheses;
           paragraphRange.twoLinesInOne = twoLineLayout;
           await context.sync();
-          console.log("Applied two-line text with parentheses.");
+          console.log("Applied two-line text with parentheses to the first paragraph.");
       });
       ```
 
@@ -2975,6 +2952,8 @@ methods:
 
       Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
 
+      Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+
       Document settings aren't preserved when inserting a document.
 
       #### Examples
@@ -3194,6 +3173,8 @@ methods:
     summary: Inserts OOXML at the specified location.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
 
       #### Examples
 

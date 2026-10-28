@@ -1161,6 +1161,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -1192,6 +1194,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
          * @param ooxml - The OOXML to be inserted.
          * @param insertLocation - The value must be `replace`, `start`, or `end`.
@@ -4749,6 +4753,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -4780,6 +4786,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
          * @param ooxml - The OOXML to be inserted in to the content control.
          * @param insertLocation - The value must be `replace`, `start`, or `end`. `replace` cannot be used with `richTextTable` and `richTextTableRow` content controls.
@@ -7337,6 +7345,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -9664,6 +9674,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -9695,6 +9707,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.2]
+         *
+         * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
          * @param ooxml - The OOXML to be inserted.
          * @param insertLocation - The value must be `before` or `after`.
@@ -12220,6 +12234,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -12271,6 +12287,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
          * @param ooxml - The OOXML to be inserted in the paragraph.
          * @param insertLocation - The value must be `replace`, `start`, or `end`.
@@ -13641,6 +13659,8 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
+         * Insertion isn't supported if the document being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
+         *
          * Document settings aren't preserved when inserting a document.
          *
          * @param base64File - The Base64-encoded content of a .docx file.
@@ -13701,6 +13721,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
          * @param ooxml - The OOXML to be inserted.
          * @param insertLocation - The value must be `replace`, `start`, `end`, `before`, or `after`.

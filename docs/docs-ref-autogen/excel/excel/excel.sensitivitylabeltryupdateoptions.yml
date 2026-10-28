@@ -19,7 +19,7 @@ properties:
     uid: excel!Excel.SensitivityLabelTryUpdateOptions#abacAttributes:member
     package: excel!
     fullName: abacAttributes
-    summary: If provided, specifies the ABAC attributes to apply with the label.
+    summary: If provided, specifies the attribute-based access control (ABAC) attributes to apply with the label. Must be omitted or empty for labels that are not ABAC-enabled; otherwise the update result has a `status` of `SensitivityLabelUpdateStatus.abacAttributesNotAllowed`<!-- -->. Required when the target label is ABAC-enabled and `SensitivityLabelDetails.isAbacAttributesRequired` is `true`<!-- -->.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true
@@ -27,4 +27,4 @@ properties:
     syntax:
       content: 'abacAttributes?: Excel.SensitivityLabelAbacAttribute[];'
       return:
-        type: <xref uid="excel!Excel.SensitivityLabelAbacAttribute:class" />[]
+        type: <xref uid="excel!Excel.SensitivityLabelAbacAttribute:interface" />[]
