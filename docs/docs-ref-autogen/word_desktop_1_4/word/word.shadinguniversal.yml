@@ -22,7 +22,7 @@ remarks: |-
   #### Examples
 
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/range-borders-and-shading-desktop.yaml
 
   // Adds a pale blue background to the first paragraph's text.
   await Word.run(async (context) => {
