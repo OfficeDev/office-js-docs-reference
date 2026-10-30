@@ -179,17 +179,22 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/range-borders-and-shading-desktop.yaml
 
-      // Reads the border formatting of the first paragraph range.
+      // Reads the border formatting of the first paragraph's text.
       await Word.run(async (context) => {
-          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange();
+          const paragraphRange: Word.Range = context.document.body.paragraphs.getFirst().getRange(Word.RangeLocation.content);
           const borders: Word.BorderUniversalCollection = paragraphRange.borders;
           borders.load("items/color,items/lineStyle,items/lineWidth,items/isVisible");
           await context.sync();
           console.log("First paragraph's border formatting:");
           borders.items.forEach((border: Word.BorderUniversal) => {
-              console.log({ color: border.color, lineStyle: border.lineStyle, lineWidth: border.lineWidth, isVisible: border.isVisible });
+              console.log("Border:", {
+                  color: border.color,
+                  lineStyle: border.lineStyle,
+                  lineWidth: border.lineWidth,
+                  isVisible: border.isVisible
+              });
           });
       });
       ```
@@ -1577,7 +1582,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/28-formatting/range-borders-and-shading-desktop.yaml
 
       // Adds a pale blue background to the first paragraph's text.
       await Word.run(async (context) => {
@@ -1608,7 +1613,7 @@ properties:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-inspect-floating-pictures-desktop.yaml
 
       // Reads shapes anchored within the first paragraph range.
       await Word.run(async (context) => {
@@ -1616,9 +1621,9 @@ properties:
           const shapes: Word.ShapeCollection = paragraphRange.shapes;
           shapes.load("items/name,items/type,items/width,items/height");
           await context.sync();
-          console.log(`Shapes found: ${shapes.items.length}`);
+          console.log(`Shapes anchored in the first paragraph: ${shapes.items.length}`);
           shapes.items.forEach((shape: Word.Shape) => {
-              console.log({ name: shape.name, type: shape.type, width: shape.width, height: shape.height });
+              console.log("Anchored shape:", { name: shape.name, type: shape.type, width: shape.width, height: shape.height });
           });
       });
       ```
@@ -3232,7 +3237,7 @@ methods:
       #### Examples
 
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/inspect-range-layout-desktop.yaml
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-inspect-floating-pictures-desktop.yaml
 
       // Anchors a floating picture at the start of the first paragraph.
       await Word.run(async (context) => {
@@ -3242,9 +3247,9 @@ methods:
               "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC",
               pictureOptions
           );
-          picture.name = "RangeSamplePicture";
+          picture.name = "FloatingPictureSample";
           await context.sync();
-          console.log("Inserted a floating picture. Get shapes to inspect it.");
+          console.log("Inserted a floating picture anchored to the first paragraph. Get anchored shapes to inspect it.");
       });
       ```
 
