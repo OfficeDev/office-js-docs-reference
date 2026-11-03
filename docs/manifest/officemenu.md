@@ -1,7 +1,7 @@
 ---
 title: OfficeMenu element in the manifest file
 description: The OfficeMenu element defines a collection of controls to be added to the Office context menu.
-ms.date: 03/11/2025
+ms.date: 11/02/2026
 ms.localizationpriority: medium
 ---
 
@@ -33,6 +33,9 @@ Although its official data type is string, this attribute effectively functions 
 
 - `ContextMenuText` - Displays the item on the context menu when text is selected and the user opens that menu (e.g., right-clicks) on the selected text. Applies to Word, Excel, PowerPoint, and OneNote.
 - `ContextMenuCell` - Displays the item on the context menu when the user opens that menu (e.g., right-clicks) on a cell on the spreadsheet. Applies to Excel.
+
+> [!NOTE]
+> In Word on Windows, custom commands in a `ContextMenuText` menu aren't available when the menu is opened on text formatted with heading styles, such as **Heading 1** or **Heading 2**.
 
 ## Child elements
 
