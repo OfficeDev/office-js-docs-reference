@@ -804,7 +804,10 @@ methods:
     uid: excel!Excel.Worksheet#findAll:member(1)
     package: excel!
     fullName: findAll(text, criteria)
-    summary: Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges. Content in hidden worksheets is not returned.
+    summary: |-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+
+      Content in hidden worksheets is not returned.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -825,7 +828,10 @@ methods:
     uid: excel!Excel.Worksheet#findAllOrNullObject:member(1)
     package: excel!
     fullName: findAllOrNullObject(text, criteria)
-    summary: Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges. Content in hidden worksheets is not returned.
+    summary: |-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+
+      Content in hidden worksheets is not returned.
     remarks: |-
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 

@@ -9998,7 +9998,7 @@ export declare namespace Excel {
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
-         * 
+         *
          * This API is currently only supported for Office on Windows, Mac, and the web.
          * In Excel on the web, this API doesn't support inserting charts, comments, PivotTables, or slicers.
          *
@@ -10420,7 +10420,8 @@ export declare namespace Excel {
         
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
-         * Content in hidden worksheets is not returned.
+                    
+                    Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -10432,7 +10433,8 @@ export declare namespace Excel {
         findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
-         * Content in hidden worksheets is not returned.
+                    
+                    Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -10649,6 +10651,7 @@ export declare namespace Excel {
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
 
                      The event is only triggered when the cell already contains a formula.
+
                      The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
          *
          * @remarks
@@ -17106,9 +17109,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a numeric literal or array. An empty string or `=` is invalid.
          */
-        setBubbleSizes(sourceData: Range): void;
+        setBubbleSizes(sourceData: Range | string): void;
         /**
          * Sets the values for a chart series. For scatter charts, it refers to y-axis values.
          *
