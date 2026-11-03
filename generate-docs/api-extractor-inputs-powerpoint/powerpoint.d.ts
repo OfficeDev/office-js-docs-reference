@@ -9360,7 +9360,7 @@ export declare namespace PowerPoint {
          */
         labelingDisabled = "LabelingDisabled",
         /**
-         * The label update failed because the user's identity could not be found to validate for applying a label.
+         * The label update failed because the user's identity couldn't be found during label application.
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9449,7 +9449,7 @@ export declare namespace PowerPoint {
      */
     enum SensitivityLabelAbacAttributeDataType {
         /**
-         * The data type is not recognized or specified.
+         * The data type is unknown or not recognized.
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9463,7 +9463,7 @@ export declare namespace PowerPoint {
          */
         stringValue = "StringValue",
         /**
-         * The attribute value is a boolean.
+         * The attribute value is Boolean.
          * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta

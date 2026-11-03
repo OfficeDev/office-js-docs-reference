@@ -2651,8 +2651,8 @@ export declare namespace Word {
         
         /**
          * Inserts a document into the target document at a specific location with additional properties.
-                    Headers, footers, watermarks, and other section properties are copied by default.
-                    The maximum size of the document being inserted is 4 MB.
+                     Headers, footers, watermarks, and other section properties are copied by default.
+                     The maximum size of the document being inserted is 4 MB.
          *
          * @remarks
          * [Api set: WordApi 1.5]

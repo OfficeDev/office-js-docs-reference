@@ -71,7 +71,7 @@
 ||[markerSize](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-markersize-member)|Specifies the marker size of a chart series.|
 ||[markerStyle](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-markerstyle-member)|Specifies the marker style of a chart series.|
 ||[plotOrder](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-plotorder-member)|Specifies the plot order of a chart series within the chart group.|
-||[setBubbleSizes(sourceData: Range)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-setbubblesizes-member(1))|Sets the bubble sizes for a chart series.|
+||[setBubbleSizes(sourceData: Range \| string)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-setbubblesizes-member(1))|Sets the bubble sizes for a chart series.|
 ||[setValues(sourceData: Range)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-setvalues-member(1))|Sets the values for a chart series.|
 ||[setXAxisValues(sourceData: Range)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-setxaxisvalues-member(1))|Sets the values of the x-axis for a chart series.|
 ||[showShadow](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-showshadow-member)|Specifies if the series has a shadow.|

@@ -138,7 +138,7 @@ fields:
     uid: powerpoint!PowerPoint.SensitivityLabelUpdateStatus.userNotFound:member
     package: powerpoint!
     summary: |-
-      The label update failed because the user's identity could not be found to validate for applying a label.
+      The label update failed because the user's identity couldn't be found during label application.
 
       * [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
     value: '"UserNotFound"'

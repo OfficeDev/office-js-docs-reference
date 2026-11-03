@@ -9667,7 +9667,7 @@ export declare namespace Excel {
          */
         labelingDisabled = "LabelingDisabled",
         /**
-         * The label update failed because the user's identity could not be found to validate for applying a label.
+         * The label update failed because the user's identity couldn't be found during label application.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -9774,7 +9774,7 @@ export declare namespace Excel {
          */
         readonly getLabelingCapability: Excel.LabelingCapability | "NoLicense" | "LabelingDisabled" | "LabelingPolicyNotFound" | "LabelingEnabled" | "AttributeBasedAccessControlEnabled";
         /**
-         * Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify that the host's labeling capabilities include `attributeBasedAccessControlEnabled`; otherwise this method fails with an error.
+         * Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify the host's labeling capabilities include `attributeBasedAccessControlEnabled`; otherwise this method fails with an error.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -10138,7 +10138,7 @@ export declare namespace Excel {
     }
     /**
      * Notifies when a worksheet is moved within a workbook.
-
+                
                  If a worksheet is moved from one position within the workbook to another
                  via the Excel UI, then this API will trigger an event. Note that if
                  the position of a worksheet changes as a result of moving a different worksheet,
@@ -10681,7 +10681,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
@@ -10690,7 +10690,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Date is before comparator date.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -10699,7 +10699,7 @@ export declare namespace Excel {
         before = "Before",
         /**
          * Date is before or equal to comparator date.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -10708,7 +10708,7 @@ export declare namespace Excel {
         beforeOrEqualTo = "BeforeOrEqualTo",
         /**
          * Date is after comparator date.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -10717,7 +10717,7 @@ export declare namespace Excel {
         after = "After",
         /**
          * Date is after or equal to comparator date.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`wholeDays`}.
          * @remarks
@@ -10726,7 +10726,7 @@ export declare namespace Excel {
         afterOrEqualTo = "AfterOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` dates.
-
+                    
                      Required Criteria: {`lowerBound`, `upperBound`}.
                      Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
@@ -10943,7 +10943,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -10952,7 +10952,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Label begins with substring criterion.
-
+                    
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -10961,7 +10961,7 @@ export declare namespace Excel {
         beginsWith = "BeginsWith",
         /**
          * Label ends with substring criterion.
-
+                    
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -10970,7 +10970,7 @@ export declare namespace Excel {
         endsWith = "EndsWith",
         /**
          * Label contains substring criterion.
-
+                    
                      Required Criteria: {`substring`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -10979,7 +10979,7 @@ export declare namespace Excel {
         contains = "Contains",
         /**
          * Greater than comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -10987,7 +10987,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -10995,7 +10995,7 @@ export declare namespace Excel {
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11003,7 +11003,7 @@ export declare namespace Excel {
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-
+                    
                      Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11011,7 +11011,7 @@ export declare namespace Excel {
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-
+                    
                      Required Criteria: {`lowerBound`, `upperBound`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11325,7 +11325,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-
+                    
                      Required Criteria: {`value`, `comparator`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11334,7 +11334,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Greater than comparator criterion.
-
+                    
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11342,7 +11342,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-
+                    
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11350,7 +11350,7 @@ export declare namespace Excel {
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-
+                    
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11358,7 +11358,7 @@ export declare namespace Excel {
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-
+                    
                      Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11366,7 +11366,7 @@ export declare namespace Excel {
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-
+                    
                      Required Criteria: {`value`, `lowerBound`, `upperBound`}.
                      Optional Criteria: {`exclusive`}.
          * @remarks
@@ -11375,7 +11375,7 @@ export declare namespace Excel {
         between = "Between",
         /**
          * In top N (`threshold`) [items, percent, sum] of value category.
-
+                    
                      Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11383,7 +11383,7 @@ export declare namespace Excel {
         topN = "TopN",
         /**
          * In bottom N (`threshold`) [items, percent, sum] of value category.
-
+                    
                      Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -11430,7 +11430,7 @@ export declare namespace Excel {
     }
     /**
      * Provides information about the selection that raised the selection changed event.
-
+                
                  * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * @remarks
@@ -11910,9 +11910,10 @@ export declare namespace Excel {
     export interface WorksheetFormulaChangedEventArgs {
         /**
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
-
-                    If the number of changed formulas or the size of the changed formula text exceeds a size limit, `formulaDetails`
-                    returns undefined. This indicates that something on the sheet has changed, but the details cannot be reported.
+                    
+                     If the number of changed formulas or the size of the changed formula text exceeds a size limit, the `formulaDetails`
+                     will be undefined, which indicates that something on the sheet has changed, but the details cannot be reported due to
+                     these limits.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -12929,7 +12930,7 @@ export declare namespace Excel {
         suspendApiCalculationUntilNextSync(): void;
         /**
          * Suspends screen updating until the next `context.sync()` is called.
-
+                    
                      * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * @remarks
@@ -13401,7 +13402,7 @@ export declare namespace Excel {
         getSelectedRanges(): Excel.RangeAreas;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-
+                    
                      The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
          *
          * @remarks
@@ -14096,8 +14097,9 @@ export declare namespace Excel {
         /**
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
 
-                The event is only triggered when the cell already contains a formula.
-                The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
+                     The event is only triggered when the cell already contains a formula.
+
+                     The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -15084,8 +15086,8 @@ export declare namespace Excel {
         readonly valueTypes: Excel.RangeValueType[][];
         /**
          * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
-                If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
-                Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
+                    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
+                    Locale-shaped strings (such as the date "19-8-2025" in nl-NL or fr-FR, format DD-MM-YYYY) are stored as text instead of as dates. To ensure dates are stored as dates, use a locale-aware API like `formulasLocal` or use a locale-neutral format like ISO (YYYY-MM-DD) or a numeric date serial.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -15128,7 +15130,7 @@ export declare namespace Excel {
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be `null` or can extend the source range either horizontally or vertically.
                      Discontiguous ranges are not supported.
-
+                    
                      For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
@@ -15142,7 +15144,7 @@ export declare namespace Excel {
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be `null` or can extend the source range either horizontally or vertically.
                      Discontiguous ranges are not supported.
-
+                    
                      For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
@@ -17684,7 +17686,7 @@ export declare namespace Excel {
         readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
         /**
          * Occurs when the selected content in the binding is changed.
-
+                    
                      * **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * @remarks
@@ -18104,7 +18106,7 @@ export declare namespace Excel {
         readonly legacyId: string;
         /**
          * Name of the table.
-
+                    
                      The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
@@ -18507,7 +18509,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a collection of all the rows that are part of the table.
-
+                
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -18530,7 +18532,7 @@ export declare namespace Excel {
         readonly count: number;
         /**
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -18547,7 +18549,7 @@ export declare namespace Excel {
         /**
          * Adds one or more rows to the table. The returned object will be the top row of the newly added row or rows.
                      Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -18592,7 +18594,7 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a row based on its position in the collection.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -18630,7 +18632,7 @@ export declare namespace Excel {
     }
     /**
      * Represents a row in a table.
-
+                
                  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                  a `TableRow` object represents the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -20824,11 +20826,12 @@ export declare namespace Excel {
          * Sets the bubble sizes for a chart series. Only works for bubble charts.
          *
          * @remarks
-         * [Api set: ExcelApi 1.7]
+         * [Api set: ExcelApi 1.7 for the Range overload; 1.21 for the formula string overload.]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a numeric literal or array. An empty string or `=` is invalid.
          */
-        setBubbleSizes(sourceData: Range): void;
+        setBubbleSizes(sourceData: Range | string): void;
         /**
          * Sets the values for a chart series. For scatter charts, it refers to y-axis values.
          *
@@ -24937,7 +24940,7 @@ export declare namespace Excel {
         /**
          * The first criterion used to filter data. Used as an operator in the case of `custom` filtering.
                      For example ">50" for numbers greater than 50, or "=*s" for values ending in "s".
-
+                    
                      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to `topItems`).
          *
          * @remarks
@@ -25910,7 +25913,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          * The alt text description of the PivotTable.
-
+                    
                      Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                      This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                      A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -25921,7 +25924,7 @@ export declare namespace Excel {
         altTextDescription: string;
         /**
          * The alt text title of the PivotTable.
-
+                    
                      Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                      This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                      A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -47102,7 +47105,7 @@ export declare namespace Excel {
             highlightLastColumn?: boolean;
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -49705,7 +49708,7 @@ export declare namespace Excel {
         export interface PivotLayoutUpdateData {
             /**
              * The alt text description of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -49716,7 +49719,7 @@ export declare namespace Excel {
             altTextDescription?: string;
             /**
              * The alt text title of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -53563,7 +53566,7 @@ export declare namespace Excel {
             legacyId?: string;
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -56624,7 +56627,7 @@ export declare namespace Excel {
         export interface PivotLayoutData {
             /**
              * The alt text description of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -56635,7 +56638,7 @@ export declare namespace Excel {
             altTextDescription?: string;
             /**
              * The alt text title of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -61718,7 +61721,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * For EACH ITEM in the collection: Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -61844,7 +61847,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * For EACH ITEM in the collection: Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -61971,7 +61974,7 @@ export declare namespace Excel {
             legacyId?: boolean;
             /**
              * Name of the table.
-
+                        
                          The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
@@ -62155,7 +62158,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a collection of all the rows that are part of the table.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -62205,7 +62208,7 @@ export declare namespace Excel {
         }
         /**
          * Represents a row in a table.
-
+                    
                      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
                      a `TableRow` object represents the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -66583,7 +66586,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              * The alt text description of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -66594,7 +66597,7 @@ export declare namespace Excel {
             altTextDescription?: boolean;
             /**
              * The alt text title of the PivotTable.
-
+                        
                          Alt text provides alternative, text-based representations of the information contained in the PivotTable.
                          This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                          A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
@@ -72301,7 +72304,6 @@ export declare namespace Excel {
         }
     }
 }
-
 
 
 ////////////////////////////////////////////////////////////////

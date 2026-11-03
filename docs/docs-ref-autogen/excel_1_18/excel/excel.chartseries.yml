@@ -1345,11 +1345,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setBubbleSizes(sourceData: Range): void;'
+      content: 'setBubbleSizes(sourceData: Range | string): void;'
       parameters:
         - id: sourceData
-          description: The `Range` object corresponding to the source data.
-          type: <xref uid="excel!Excel.Range:class" />
+          description: A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference, a defined name, or a numeric literal or array. An empty string or `=` is invalid.
+          type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: void
         description: ''
