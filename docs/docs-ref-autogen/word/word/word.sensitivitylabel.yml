@@ -140,7 +140,7 @@ methods:
           description: Optional. Additional inputs such as ABAC attributes.
           type: <xref uid="word!Word.SensitivityLabelTryUpdateOptions:interface" />
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.SensitivityLabelUpdateResult:enum" />&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.SensitivityLabelUpdateResult:interface" />&gt;
         description: ''
   - name: untrack()
     uid: word!Word.SensitivityLabel#untrack:member(1)

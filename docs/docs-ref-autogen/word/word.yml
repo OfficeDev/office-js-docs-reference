@@ -177,7 +177,7 @@ enums:
   - word!Word.SelectionType:enum
   - word!Word.SensitivityLabelAbacAttributeDataType:enum
   - word!Word.SensitivityLabelProtectionType:enum
-  - word!Word.SensitivityLabelUpdateResult:enum
+  - word!Word.SensitivityLabelUpdateStatus:enum
   - word!Word.ShadingTextureType:enum
   - word!Word.ShadowStyle:enum
   - word!Word.ShadowType:enum
@@ -979,6 +979,7 @@ interfaces:
   - word!Word.SensitivityLabelAbacAttribute:interface
   - word!Word.SensitivityLabelAbacAttributeValue:interface
   - word!Word.SensitivityLabelTryUpdateOptions:interface
+  - word!Word.SensitivityLabelUpdateResult:interface
   - word!Word.TableAutoFormatOptions:interface
   - word!Word.TableCellCollectionSplitOptions:interface
   - word!Word.TableCellFormulaOptions:interface

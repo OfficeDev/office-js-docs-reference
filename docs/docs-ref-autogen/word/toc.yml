@@ -365,8 +365,8 @@ items:
                 uid: word!Word.SensitivityLabelAbacAttributeDataType:enum
               - name: SensitivityLabelProtectionType
                 uid: word!Word.SensitivityLabelProtectionType:enum
-              - name: SensitivityLabelUpdateResult
-                uid: word!Word.SensitivityLabelUpdateResult:enum
+              - name: SensitivityLabelUpdateStatus
+                uid: word!Word.SensitivityLabelUpdateStatus:enum
               - name: ShadingTextureType
                 uid: word!Word.ShadingTextureType:enum
               - name: ShadowStyle
@@ -869,6 +869,8 @@ items:
             uid: word!Word.SensitivityLabelsCatalog:class
           - name: SensitivityLabelTryUpdateOptions
             uid: word!Word.SensitivityLabelTryUpdateOptions:interface
+          - name: SensitivityLabelUpdateResult
+            uid: word!Word.SensitivityLabelUpdateResult:interface
           - name: Setting
             uid: word!Word.Setting:class
           - name: SettingCollection

@@ -59,7 +59,7 @@ methods:
     uid: excel!Excel.SensitivityLabelsCatalog#getAttributes:member(1)
     package: excel!
     fullName: getAttributes()
-    summary: Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify that the host's labeling capabilities include `attributeBasedAccessControlEnabled`<!-- -->; otherwise this method fails with an error.
+    summary: Gets the attribute-based access control (ABAC) attribute catalog metadata for ABAC-enabled labels. Verify the host's labeling capabilities include `attributeBasedAccessControlEnabled`<!-- -->; otherwise this method fails with an error.
     remarks: '[API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: true

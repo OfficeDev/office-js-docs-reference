@@ -2495,7 +2495,8 @@ export declare namespace Excel {
         
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
-         * Content in hidden worksheets is not returned.
+                    
+                    Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -2507,7 +2508,8 @@ export declare namespace Excel {
         findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
-         * Content in hidden worksheets is not returned.
+                    
+                    Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -8503,9 +8505,10 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData - The `Range` object corresponding to the source data.
+         * @param sourceData - A `Range` or, in ApiSet 1.21, a string in en-US chart data-reference syntax. The string can contain a cell or table reference,
+         * a defined name, or a numeric literal or array. An empty string or `=` is invalid.
          */
-        setBubbleSizes(sourceData: Range): void;
+        setBubbleSizes(sourceData: Range | string): void;
         /**
          * Sets the values for a chart series. For scatter charts, it refers to y-axis values.
          *

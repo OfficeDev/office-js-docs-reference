@@ -847,7 +847,10 @@ methods:
     uid: excel!Excel.Worksheet#findAll:member(1)
     package: excel!
     fullName: findAll(text, criteria)
-    summary: Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges. Content in hidden worksheets is not returned.
+    summary: |-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+
+      Content in hidden worksheets is not returned.
     remarks: '[API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
 
     isPreview: false
@@ -868,7 +871,10 @@ methods:
     uid: excel!Excel.Worksheet#findAllOrNullObject:member(1)
     package: excel!
     fullName: findAllOrNullObject(text, criteria)
-    summary: Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges. Content in hidden worksheets is not returned.
+    summary: |-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+
+      Content in hidden worksheets is not returned.
     remarks: |-
       [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
@@ -1607,7 +1613,9 @@ events:
     summary: |-
       Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
 
-      The event is only triggered when the cell already contains a formula. The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
+      The event is only triggered when the cell already contains a formula.
+
+      The new cell value may not include a formula. This event is not triggered when a formula is entered into a cell that did not previously contain a formula.
     remarks: |-
       [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
 
