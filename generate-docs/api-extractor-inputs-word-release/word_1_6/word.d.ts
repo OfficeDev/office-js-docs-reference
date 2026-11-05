@@ -13907,14 +13907,6 @@ export declare namespace Word {
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
         }
         /** An interface for updating data on the `ReflectionFormat` object, for use in `reflectionFormat.set({ ... })`. */
         export interface ReflectionFormatUpdateData {
@@ -16996,14 +16988,6 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `lineFormat.toJSON()`. */
         export interface LineFormatData {
-            
-            
-            
-            
-            
-            
-            
-            
             
             
             

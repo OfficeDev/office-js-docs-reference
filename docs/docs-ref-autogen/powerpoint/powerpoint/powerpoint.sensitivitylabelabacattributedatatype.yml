@@ -11,6 +11,84 @@ remarks: |-
 
   - [PowerPoint.SensitivityLabelAbacAttribute](/javascript/api/powerpoint/powerpoint.sensitivitylabelabacattribute): [dataType](/javascript/api/powerpoint/powerpoint.sensitivitylabelabacattribute#powerpoint-powerpoint-sensitivitylabelabacattribute-datatype-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-sensitivity-labels.yaml
+
+  // Get available ABAC attributes and describe the kind of value each attribute accepts.
+  const container = document.getElementById("abac-attributes");
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  await PowerPoint.run(async (context) => {
+    const labelCatalog: PowerPoint.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+    if (!labelCatalog) {
+      console.warn("The sensitivity label catalog isn't available.");
+      return;
+    }
+
+    labelCatalog.load("getLabelingCapabilities");
+    await context.sync();
+
+    const capabilities: PowerPoint.LabelingCapability[] = labelCatalog.getLabelingCapabilities;
+    if (capabilities.indexOf(PowerPoint.LabelingCapability.attributeBasedAccessControlEnabled) === -1) {
+      console.warn("ABAC attributes aren't enabled or available for the current user.");
+      return;
+    }
+
+    const catalogAttributes: OfficeExtension.ClientResult<PowerPoint.SensitivityLabelAbacAttribute[]> =
+      labelCatalog.getAttributes();
+    await context.sync();
+
+    if (catalogAttributes.value.length === 0) {
+      console.log("No ABAC attributes are available in the sensitivity label catalog.");
+      return;
+    }
+
+    console.log("Available ABAC attributes:");
+    catalogAttributes.value.forEach((attribute: PowerPoint.SensitivityLabelAbacAttribute) => {
+      let dataTypeDescription: string;
+      switch (attribute.dataType) {
+        case PowerPoint.SensitivityLabelAbacAttributeDataType.booleanValue:
+          dataTypeDescription = "Boolean";
+          break;
+        case PowerPoint.SensitivityLabelAbacAttributeDataType.dateValue:
+          dataTypeDescription = "Date";
+          break;
+        case PowerPoint.SensitivityLabelAbacAttributeDataType.numberValue:
+          dataTypeDescription = "Number";
+          break;
+        case PowerPoint.SensitivityLabelAbacAttributeDataType.stringValue:
+          dataTypeDescription = "String";
+          break;
+        case PowerPoint.SensitivityLabelAbacAttributeDataType.unknown:
+          dataTypeDescription = "Unknown";
+          break;
+        default:
+          dataTypeDescription = `Unrecognized (${attribute.dataType})`;
+          break;
+      }
+
+      console.log(`ABAC attribute: ${attribute.displayName}`, {
+        dataType: attribute.dataType,
+        dataTypeDescription,
+        displayOrder: attribute.displayOrder,
+        isActive: attribute.isActive,
+        isMultiValued: attribute.isMultiValued,
+        values: attribute.values.map((attributeValue: PowerPoint.SensitivityLabelAbacAttributeValue) => ({
+          displayName: attributeValue.displayName,
+          displayOrder: attributeValue.displayOrder,
+          id: attributeValue.id,
+          isActive: attributeValue.isActive
+        }))
+      });
+    });
+
+    addAttributeOptions(catalogAttributes.value);
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:

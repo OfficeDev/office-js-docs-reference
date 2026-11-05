@@ -28,58 +28,6 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: backgroundColor
-    uid: word!Word.Interfaces.LineFormatLoadOptions#backgroundColor:member
-    package: word!
-    fullName: backgroundColor
-    summary: Gets a `ColorFormat` object that represents the background color for a patterned line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;'
-      return:
-        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
-  - name: beginArrowheadLength
-    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadLength:member
-    package: word!
-    fullName: beginArrowheadLength
-    summary: Specifies the length of the arrowhead at the beginning of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'beginArrowheadLength?: boolean;'
-      return:
-        type: boolean
-  - name: beginArrowheadStyle
-    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadStyle:member
-    package: word!
-    fullName: beginArrowheadStyle
-    summary: Specifies the style of the arrowhead at the beginning of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'beginArrowheadStyle?: boolean;'
-      return:
-        type: boolean
-  - name: beginArrowheadWidth
-    uid: word!Word.Interfaces.LineFormatLoadOptions#beginArrowheadWidth:member
-    package: word!
-    fullName: beginArrowheadWidth
-    summary: Specifies the width of the arrowhead at the beginning of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'beginArrowheadWidth?: boolean;'
-      return:
-        type: boolean
   - name: dashStyle
     uid: word!Word.Interfaces.LineFormatLoadOptions#dashStyle:member
     package: word!
@@ -91,45 +39,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'dashStyle?: boolean;'
-      return:
-        type: boolean
-  - name: endArrowheadLength
-    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadLength:member
-    package: word!
-    fullName: endArrowheadLength
-    summary: Specifies the length of the arrowhead at the end of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endArrowheadLength?: boolean;'
-      return:
-        type: boolean
-  - name: endArrowheadStyle
-    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadStyle:member
-    package: word!
-    fullName: endArrowheadStyle
-    summary: Specifies the style of the arrowhead at the end of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endArrowheadStyle?: boolean;'
-      return:
-        type: boolean
-  - name: endArrowheadWidth
-    uid: word!Word.Interfaces.LineFormatLoadOptions#endArrowheadWidth:member
-    package: word!
-    fullName: endArrowheadWidth
-    summary: Specifies the width of the arrowhead at the end of the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endArrowheadWidth?: boolean;'
       return:
         type: boolean
   - name: foregroundColor
@@ -169,19 +78,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'isVisible?: boolean;'
-      return:
-        type: boolean
-  - name: pattern
-    uid: word!Word.Interfaces.LineFormatLoadOptions#pattern:member
-    package: word!
-    fullName: pattern
-    summary: Specifies the pattern applied to the line.
-    remarks: '[API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
-
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pattern?: boolean;'
       return:
         type: boolean
   - name: style

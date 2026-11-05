@@ -11,6 +11,42 @@ remarks: |-
 
   - [PowerPoint.SensitivityLabelsCatalog](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog): [getLabelingCapabilities](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-getlabelingcapabilities-member), [getLabelingCapability](/javascript/api/powerpoint/powerpoint.sensitivitylabelscatalog#powerpoint-powerpoint-sensitivitylabelscatalog-getlabelingcapability-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-sensitivity-labels.yaml
+
+  await PowerPoint.run(async (context) => {
+    // Check whether sensitivity labeling is available for the current user.
+    const labelCatalog: PowerPoint.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+    if (!labelCatalog) {
+      console.warn("The sensitivity label catalog isn't available.");
+      return;
+    }
+
+    labelCatalog.load("getLabelingCapability");
+    await context.sync();
+
+    switch (labelCatalog.getLabelingCapability) {
+      case PowerPoint.LabelingCapability.labelingEnabled:
+        console.log("Sensitivity labeling is enabled.");
+        break;
+      case PowerPoint.LabelingCapability.labelingDisabled:
+        console.log("Sensitivity labeling is disabled.");
+        break;
+      case PowerPoint.LabelingCapability.labelingPolicyNotFound:
+        console.log("No sensitivity labeling policy was found.");
+        break;
+      case PowerPoint.LabelingCapability.noLicense:
+        console.log("The current user doesn't have a valid sensitivity labeling license.");
+        break;
+      default:
+        console.log(`Unknown labeling capability: ${labelCatalog.getLabelingCapability}`);
+        break;
+    }
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:
