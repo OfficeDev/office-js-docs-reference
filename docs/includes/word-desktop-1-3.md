@@ -330,18 +330,10 @@
 ||[textToDisplay](/javascript/api/word/word.hyperlinkaddoptions#word-word-hyperlinkaddoptions-texttodisplay-member)|If provided, specifies the visible text of the hyperlink.|
 |[HyperlinkCollection](/javascript/api/word/word.hyperlinkcollection)|[add(anchor: Word.Range, options?: Word.HyperlinkAddOptions)](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-add-member(1))|Returns a `Hyperlink` object that represents a new hyperlink added to a range, selection, or document.|
 ||[items](/javascript/api/word/word.hyperlinkcollection#word-word-hyperlinkcollection-items-member)|Gets the loaded child items in this collection.|
-|[LineFormat](/javascript/api/word/word.lineformat)|[backgroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-backgroundcolor-member)|Gets a `ColorFormat` object that represents the background color for a patterned line.|
-||[beginArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadlength-member)|Specifies the length of the arrowhead at the beginning of the line.|
-||[beginArrowheadStyle](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadstyle-member)|Specifies the style of the arrowhead at the beginning of the line.|
-||[beginArrowheadWidth](/javascript/api/word/word.lineformat#word-word-lineformat-beginarrowheadwidth-member)|Specifies the width of the arrowhead at the beginning of the line.|
-||[dashStyle](/javascript/api/word/word.lineformat#word-word-lineformat-dashstyle-member)|Specifies the dash style for the line.|
-||[endArrowheadLength](/javascript/api/word/word.lineformat#word-word-lineformat-endarrowheadlength-member)|Specifies the length of the arrowhead at the end of the line.|
-||[endArrowheadStyle](/javascript/api/word/word.lineformat#word-word-lineformat-endarrowheadstyle-member)|Specifies the style of the arrowhead at the end of the line.|
-||[endArrowheadWidth](/javascript/api/word/word.lineformat#word-word-lineformat-endarrowheadwidth-member)|Specifies the width of the arrowhead at the end of the line.|
+|[LineFormat](/javascript/api/word/word.lineformat)|[dashStyle](/javascript/api/word/word.lineformat#word-word-lineformat-dashstyle-member)|Specifies the dash style for the line.|
 ||[foregroundColor](/javascript/api/word/word.lineformat#word-word-lineformat-foregroundcolor-member)|Gets a `ColorFormat` object that represents the foreground color for the line.|
 ||[insetPen](/javascript/api/word/word.lineformat#word-word-lineformat-insetpen-member)|Specifies if to draw lines inside a shape.|
 ||[isVisible](/javascript/api/word/word.lineformat#word-word-lineformat-isvisible-member)|Specifies if the object, or the formatting applied to it, is visible.|
-||[pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)|Specifies the pattern applied to the line.|
 ||[style](/javascript/api/word/word.lineformat#word-word-lineformat-style-member)|Specifies the line format style.|
 ||[transparency](/javascript/api/word/word.lineformat#word-word-lineformat-transparency-member)|Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).|
 ||[weight](/javascript/api/word/word.lineformat#word-word-lineformat-weight-member)|Specifies the thickness of the line in points.|

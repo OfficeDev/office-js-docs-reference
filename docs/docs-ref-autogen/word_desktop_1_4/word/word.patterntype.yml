@@ -10,7 +10,6 @@ remarks: |-
   #### Used by
 
   - [Word.FillFormat](/javascript/api/word/word.fillformat): [pattern](/javascript/api/word/word.fillformat#word-word-fillformat-pattern-member), [setPatterned](/javascript/api/word/word.fillformat#word-word-fillformat-setpatterned-member(1))
-  - [Word.LineFormat](/javascript/api/word/word.lineformat): [pattern](/javascript/api/word/word.lineformat#word-word-lineformat-pattern-member)
 
 isPreview: false
 isDeprecated: false

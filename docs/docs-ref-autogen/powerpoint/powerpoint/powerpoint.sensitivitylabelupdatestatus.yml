@@ -11,6 +11,34 @@ remarks: |-
 
   - [PowerPoint.SensitivityLabelUpdateResult](/javascript/api/powerpoint/powerpoint.sensitivitylabelupdateresult): [status](/javascript/api/powerpoint/powerpoint.sensitivitylabelupdateresult#powerpoint-powerpoint-sensitivitylabelupdateresult-status-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-sensitivity-labels.yaml
+
+  await PowerPoint.run(async (context) => {
+    // Apply the selected sensitivity label to the presentation.
+    const labelId = (document.getElementById("label-id") as HTMLSelectElement).value;
+    if (!labelId) {
+      console.warn("Get the available labels, and then select a label to apply.");
+      return;
+    }
+
+    const presentation: PowerPoint.Presentation = context.presentation;
+    const presentationLabel: PowerPoint.SensitivityLabel = presentation.sensitivityLabel;
+
+    const updateResult: OfficeExtension.ClientResult<PowerPoint.SensitivityLabelUpdateResult> =
+      presentationLabel.tryToUpdate(labelId);
+    await context.sync();
+
+    if (updateResult.value.status === PowerPoint.SensitivityLabelUpdateStatus.success) {
+      console.log("Applied the sensitivity label to the presentation.");
+    } else {
+      console.error(`The sensitivity label wasn't applied. Status: ${updateResult.value.status}`);
+    }
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:
