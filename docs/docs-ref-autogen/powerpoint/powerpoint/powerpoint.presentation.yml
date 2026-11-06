@@ -155,7 +155,81 @@ properties:
     package: powerpoint!
     fullName: sensitivityLabel
     summary: Returns the sensitivity label of the presentation.
-    remarks: '[API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)'
+    remarks: |-
+      [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/manage-sensitivity-labels.yaml
+
+      await PowerPoint.run(async (context) => {
+        // Get the sensitivity label currently applied to the presentation.
+        const presentation: PowerPoint.Presentation = context.presentation;
+        const presentationLabel: PowerPoint.SensitivityLabel = presentation.sensitivityLabel;
+
+        const currentLabel: PowerPoint.SensitivityLabelDetails = presentationLabel.getCurrentOrNullObject();
+        // Load the properties of the label currently applied to the presentation.
+        currentLabel.load(
+          "color,id,isAbacAttributesRequired,isAbacEnabled,isEnabled,name,order,protectionType,siteId,tooltip"
+        );
+        await context.sync();
+
+        if (currentLabel.isNullObject) {
+          console.log("The presentation doesn't have a sensitivity label.");
+          return;
+        }
+
+        // Get ABAC values when enabled for the label.
+        let abacAttributeValues: PowerPoint.SensitivityLabelAbacAttributeValue[] = [];
+        if (currentLabel.isAbacEnabled) {
+          currentLabel.load("abacAttributeValues");
+          await context.sync();
+
+          abacAttributeValues = currentLabel.abacAttributeValues;
+        }
+
+        // Display the loaded properties of the current label.
+        const attributeValues = abacAttributeValues.length
+          ? abacAttributeValues
+              .map(
+                (attributeValue: PowerPoint.SensitivityLabelAbacAttributeValue) =>
+                  `${attributeValue.displayName} (ID: ${attributeValue.id}, order: ${attributeValue.displayOrder}, active: ${attributeValue.isActive ? "Yes" : "No"})`
+              )
+              .join(", ")
+          : "None";
+
+        let protectionDescription: string;
+        switch (currentLabel.protectionType) {
+          case PowerPoint.SensitivityLabelProtectionType.adminDefined:
+            protectionDescription = "Defined by an administrator";
+            break;
+          case PowerPoint.SensitivityLabelProtectionType.userDefined:
+            protectionDescription = "Defined by the user";
+            break;
+          case PowerPoint.SensitivityLabelProtectionType.noProtection:
+            protectionDescription = "No protection";
+            break;
+          default:
+            protectionDescription = `Unknown (${currentLabel.protectionType})`;
+            break;
+        }
+
+        console.log(
+          `Current presentation sensitivity label:\n\n${currentLabel.name}\n` +
+          `  ID: ${currentLabel.id}\n` +
+          `  Site ID: ${currentLabel.siteId}\n` +
+          `  Tooltip: ${currentLabel.tooltip}\n` +
+          `  Color: ${currentLabel.color}\n` +
+          `  Enabled: ${currentLabel.isEnabled ? "Yes" : "No"}\n` +
+          `  Display order: ${currentLabel.order}\n` +
+          `  ABAC enabled: ${currentLabel.isAbacEnabled ? "Yes" : "No"}\n` +
+          `  ABAC attributes required: ${currentLabel.isAbacAttributesRequired ? "Yes" : "No"}\n` +
+          `  ABAC attribute values: ${attributeValues}\n` +
+          `  Protection type: ${protectionDescription}`
+        );
+      });
+      ```
 
     isPreview: true
     isDeprecated: false

@@ -25685,13 +25685,6 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets a `ColorFormat` object that represents the background color for a patterned line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        readonly backgroundColor: Word.ColorFormat;
-        /**
          * Gets a `ColorFormat` object that represents the foreground color for the line.
          *
          * @remarks
@@ -25699,54 +25692,12 @@ export declare namespace Word {
          */
         readonly foregroundColor: Word.ColorFormat;
         /**
-         * Specifies the length of the arrowhead at the beginning of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        beginArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-        /**
-         * Specifies the style of the arrowhead at the beginning of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        beginArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-        /**
-         * Specifies the width of the arrowhead at the beginning of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        beginArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
-        /**
          * Specifies the dash style for the line.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.3]
          */
         dashStyle: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
-        /**
-         * Specifies the length of the arrowhead at the end of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        endArrowheadLength: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-        /**
-         * Specifies the style of the arrowhead at the end of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        endArrowheadStyle: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-        /**
-         * Specifies the width of the arrowhead at the end of the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        endArrowheadWidth: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
         /**
          * Specifies if to draw lines inside a shape.
          *
@@ -25761,13 +25712,6 @@ export declare namespace Word {
          * [Api set: WordApiDesktop 1.3]
          */
         isVisible: boolean;
-        /**
-         * Specifies the pattern applied to the line.
-         *
-         * @remarks
-         * [Api set: WordApiDesktop 1.3]
-         */
-        pattern: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
         /**
          * Specifies the line format style.
          *
@@ -35115,13 +35059,6 @@ export declare namespace Word {
         /** An interface for updating data on the `LineFormat` object, for use in `lineFormat.set({ ... })`. */
         export interface LineFormatUpdateData {
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.3]
-            */
-            backgroundColor?: Word.Interfaces.ColorFormatUpdateData;
-            /**
             * Gets a `ColorFormat` object that represents the foreground color for the line.
             *
             * @remarks
@@ -35129,54 +35066,12 @@ export declare namespace Word {
             */
             foregroundColor?: Word.Interfaces.ColorFormatUpdateData;
             /**
-             * Specifies the length of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-            /**
-             * Specifies the style of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-            /**
-             * Specifies the width of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
-            /**
              * Specifies the dash style for the line.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
              */
             dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
-            /**
-             * Specifies the length of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-            /**
-             * Specifies the style of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-            /**
-             * Specifies the width of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
             /**
              * Specifies if to draw lines inside a shape.
              *
@@ -35191,13 +35086,6 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.3]
              */
             isVisible?: boolean;
-            /**
-             * Specifies the pattern applied to the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
             /**
              * Specifies the line format style.
              *
@@ -41230,13 +41118,6 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `lineFormat.toJSON()`. */
         export interface LineFormatData {
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.3]
-            */
-            backgroundColor?: Word.Interfaces.ColorFormatData;
-            /**
             * Gets a `ColorFormat` object that represents the foreground color for the line.
             *
             * @remarks
@@ -41244,54 +41125,12 @@ export declare namespace Word {
             */
             foregroundColor?: Word.Interfaces.ColorFormatData;
             /**
-             * Specifies the length of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-            /**
-             * Specifies the style of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-            /**
-             * Specifies the width of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
-            /**
              * Specifies the dash style for the line.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
              */
             dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
-            /**
-             * Specifies the length of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";
-            /**
-             * Specifies the style of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
-            /**
-             * Specifies the width of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";
             /**
              * Specifies if to draw lines inside a shape.
              *
@@ -41306,13 +41145,6 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.3]
              */
             isVisible?: boolean;
-            /**
-             * Specifies the pattern applied to the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";
             /**
              * Specifies the line format style.
              *
@@ -50696,13 +50528,6 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets a `ColorFormat` object that represents the background color for a patterned line.
-            *
-            * @remarks
-            * [Api set: WordApiDesktop 1.3]
-            */
-            backgroundColor?: Word.Interfaces.ColorFormatLoadOptions;
-            /**
             * Gets a `ColorFormat` object that represents the foreground color for the line.
             *
             * @remarks
@@ -50710,54 +50535,12 @@ export declare namespace Word {
             */
             foregroundColor?: Word.Interfaces.ColorFormatLoadOptions;
             /**
-             * Specifies the length of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadLength?: boolean;
-            /**
-             * Specifies the style of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadStyle?: boolean;
-            /**
-             * Specifies the width of the arrowhead at the beginning of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            beginArrowheadWidth?: boolean;
-            /**
              * Specifies the dash style for the line.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.3]
              */
             dashStyle?: boolean;
-            /**
-             * Specifies the length of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadLength?: boolean;
-            /**
-             * Specifies the style of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadStyle?: boolean;
-            /**
-             * Specifies the width of the arrowhead at the end of the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            endArrowheadWidth?: boolean;
             /**
              * Specifies if to draw lines inside a shape.
              *
@@ -50772,13 +50555,6 @@ export declare namespace Word {
              * [Api set: WordApiDesktop 1.3]
              */
             isVisible?: boolean;
-            /**
-             * Specifies the pattern applied to the line.
-             *
-             * @remarks
-             * [Api set: WordApiDesktop 1.3]
-             */
-            pattern?: boolean;
             /**
              * Specifies the line format style.
              *
