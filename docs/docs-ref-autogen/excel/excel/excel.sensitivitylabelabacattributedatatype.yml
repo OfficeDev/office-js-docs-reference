@@ -11,6 +11,84 @@ remarks: |-
 
   - [Excel.SensitivityLabelAbacAttribute](/javascript/api/excel/excel.sensitivitylabelabacattribute): [dataType](/javascript/api/excel/excel.sensitivitylabelabacattribute#excel-excel-sensitivitylabelabacattribute-datatype-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/98-preview-apis/manage-sensitivity-labels.yaml
+
+  // Get available ABAC attributes and describe the kind of value each attribute accepts.
+  const container = document.getElementById("abac-attributes");
+  while (container.firstChild) {
+      container.removeChild(container.firstChild);
+  }
+  await Excel.run(async (context) => {
+      const labelCatalog: Excel.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+      if (!labelCatalog) {
+          console.warn("The sensitivity label catalog isn't available in this version of Excel.");
+          return;
+      }
+
+      labelCatalog.load("getLabelingCapabilities");
+      await context.sync();
+
+      const capabilities: Excel.LabelingCapability[] = labelCatalog.getLabelingCapabilities;
+      if (capabilities.indexOf(Excel.LabelingCapability.attributeBasedAccessControlEnabled) === -1) {
+          console.warn("ABAC attributes aren't enabled or available for the current user.");
+          return;
+      }
+
+      const catalogAttributes: OfficeExtension.ClientResult<Excel.SensitivityLabelAbacAttribute[]> =
+          labelCatalog.getAttributes();
+      await context.sync();
+
+      if (catalogAttributes.value.length === 0) {
+          console.log("No ABAC attributes are available in the sensitivity label catalog.");
+          return;
+      }
+
+      console.log("Available ABAC attributes:");
+      catalogAttributes.value.forEach((attribute: Excel.SensitivityLabelAbacAttribute) => {
+          let dataTypeDescription: string;
+          switch (attribute.dataType) {
+              case Excel.SensitivityLabelAbacAttributeDataType.booleanValue:
+                  dataTypeDescription = "Boolean";
+                  break;
+              case Excel.SensitivityLabelAbacAttributeDataType.dateValue:
+                  dataTypeDescription = "Date";
+                  break;
+              case Excel.SensitivityLabelAbacAttributeDataType.numberValue:
+                  dataTypeDescription = "Number";
+                  break;
+              case Excel.SensitivityLabelAbacAttributeDataType.stringValue:
+                  dataTypeDescription = "String";
+                  break;
+              case Excel.SensitivityLabelAbacAttributeDataType.unknown:
+                  dataTypeDescription = "Unknown";
+                  break;
+              default:
+                  dataTypeDescription = `Unrecognized (${attribute.dataType})`;
+                  break;
+          }
+
+          console.log(`ABAC attribute: ${attribute.displayName}`, {
+              dataType: attribute.dataType,
+              dataTypeDescription,
+              displayOrder: attribute.displayOrder,
+              isActive: attribute.isActive,
+              isMultiValued: attribute.isMultiValued,
+              values: attribute.values.map((attributeValue: Excel.SensitivityLabelAbacAttributeValue) => ({
+                  displayName: attributeValue.displayName,
+                  displayOrder: attributeValue.displayOrder,
+                  id: attributeValue.id,
+                  isActive: attributeValue.isActive
+              }))
+          });
+      });
+
+      addAttributeOptions(catalogAttributes.value);
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:

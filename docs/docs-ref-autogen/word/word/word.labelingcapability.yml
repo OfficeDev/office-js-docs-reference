@@ -11,6 +11,42 @@ remarks: |-
 
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getLabelingCapabilities](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapabilities-member), [getLabelingCapability](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getlabelingcapability-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-sensitivity-labels.yaml
+
+  // Check whether sensitivity labeling is available for the current user.
+  await Word.run(async (context) => {
+    const labelCatalog: Word.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+    if (!labelCatalog) {
+      console.warn("The sensitivity label catalog isn't available.");
+      return;
+    }
+
+    labelCatalog.load("getLabelingCapability");
+    await context.sync();
+
+    switch (labelCatalog.getLabelingCapability) {
+      case Word.LabelingCapability.labelingEnabled:
+        console.log("Sensitivity labeling is enabled.");
+        break;
+      case Word.LabelingCapability.labelingDisabled:
+        console.log("Sensitivity labeling is disabled.");
+        break;
+      case Word.LabelingCapability.labelingPolicyNotFound:
+        console.log("No sensitivity labeling policy was found.");
+        break;
+      case Word.LabelingCapability.noLicense:
+        console.log("The current user doesn't have a valid sensitivity labeling license.");
+        break;
+      default:
+        console.log(`Unknown labeling capability: ${labelCatalog.getLabelingCapability}`);
+        break;
+    }
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:
