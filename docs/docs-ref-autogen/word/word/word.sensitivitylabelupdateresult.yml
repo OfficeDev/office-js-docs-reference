@@ -11,6 +11,34 @@ remarks: |-
 
   - [Word.SensitivityLabel](/javascript/api/word/word.sensitivitylabel): [tryToUpdate](/javascript/api/word/word.sensitivitylabel#word-word-sensitivitylabel-trytoupdate-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-sensitivity-labels.yaml
+
+  // Apply the selected sensitivity label to the document.
+  await Word.run(async (context) => {
+    const labelId = (document.getElementById("label-id") as HTMLSelectElement).value;
+    if (!labelId) {
+      console.warn("Get the available labels, and then select a label to apply.");
+      return;
+    }
+
+    const wordDocument: Word.Document = context.document;
+    const documentLabel: Word.SensitivityLabel = wordDocument.sensitivityLabel;
+
+    const updateResult: OfficeExtension.ClientResult<Word.SensitivityLabelUpdateResult> =
+      documentLabel.tryToUpdate(labelId);
+    await context.sync();
+
+    if (updateResult.value.status === Word.SensitivityLabelUpdateStatus.success) {
+      console.log("Applied the sensitivity label to the document.");
+    } else {
+      console.error(`The sensitivity label wasn't applied. Status: ${updateResult.value.status}`);
+    }
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 type: interface

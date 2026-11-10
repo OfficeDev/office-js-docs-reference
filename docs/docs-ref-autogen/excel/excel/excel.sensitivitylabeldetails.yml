@@ -12,6 +12,75 @@ remarks: |-
   - [Excel.SensitivityLabel](/javascript/api/excel/excel.sensitivitylabel): [getCurrentOrNullObject](/javascript/api/excel/excel.sensitivitylabel#excel-excel-sensitivitylabel-getcurrentornullobject-member(1))
   - [Excel.SensitivityLabelDetailsCollection](/javascript/api/excel/excel.sensitivitylabeldetailscollection): [getFirst](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirst-member(1)), [getFirstOrNullObject](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-getfirstornullobject-member(1)), [items](/javascript/api/excel/excel.sensitivitylabeldetailscollection#excel-excel-sensitivitylabeldetailscollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/98-preview-apis/manage-sensitivity-labels.yaml
+
+  // Get the sensitivity label currently applied to the workbook.
+  await Excel.run(async (context) => {
+      const workbook: Excel.Workbook = context.workbook;
+      const workbookLabel: Excel.SensitivityLabel = workbook.sensitivityLabel;
+      const currentLabel: Excel.SensitivityLabelDetails = workbookLabel.getCurrentOrNullObject();
+      currentLabel.load(
+          "color,id,isAbacAttributesRequired,isAbacEnabled,isEnabled,name,order,protectionType,siteId,tooltip"
+      );
+      await context.sync();
+
+      if (currentLabel.isNullObject) {
+          console.log("The workbook doesn't have a sensitivity label.");
+          return;
+      }
+
+      // Get ABAC values only when enabled for the label.
+      let abacAttributeValues: Excel.SensitivityLabelAbacAttributeValue[] = [];
+      if (currentLabel.isAbacEnabled) {
+          currentLabel.load("abacAttributeValues");
+          await context.sync();
+
+          abacAttributeValues = currentLabel.abacAttributeValues;
+      }
+
+      const attributeValues = abacAttributeValues.length
+          ? abacAttributeValues
+              .map((attributeValue: Excel.SensitivityLabelAbacAttributeValue) =>
+                  `${attributeValue.displayName} (ID: ${attributeValue.id}, ` +
+                  `order: ${attributeValue.displayOrder}, active: ${attributeValue.isActive ? "Yes" : "No"})`)
+              .join(", ")
+          : "None";
+
+      let protectionDescription: string;
+      switch (currentLabel.protectionType) {
+          case Excel.SensitivityLabelProtectionType.adminDefined:
+              protectionDescription = "Defined by an administrator";
+              break;
+          case Excel.SensitivityLabelProtectionType.userDefined:
+              protectionDescription = "Defined by the user";
+              break;
+          case Excel.SensitivityLabelProtectionType.noProtection:
+              protectionDescription = "No protection";
+              break;
+          default:
+              protectionDescription = `Unknown (${currentLabel.protectionType})`;
+              break;
+      }
+
+      console.log(
+          `Current workbook sensitivity label:\n\n${currentLabel.name}\n` +
+          `  ID: ${currentLabel.id}\n` +
+          `  Site ID: ${currentLabel.siteId}\n` +
+          `  Tooltip: ${currentLabel.tooltip}\n` +
+          `  Color: ${currentLabel.color}\n` +
+          `  Enabled: ${currentLabel.isEnabled ? "Yes" : "No"}\n` +
+          `  Display order: ${currentLabel.order}\n` +
+          `  ABAC enabled: ${currentLabel.isAbacEnabled ? "Yes" : "No"}\n` +
+          `  ABAC attributes required: ${currentLabel.isAbacAttributesRequired ? "Yes" : "No"}\n` +
+          `  ABAC attribute values: ${attributeValues}\n` +
+          `  Protection type: ${protectionDescription}`
+      );
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 type: class
