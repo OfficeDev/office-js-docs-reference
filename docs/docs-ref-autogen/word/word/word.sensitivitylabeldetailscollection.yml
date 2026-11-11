@@ -42,6 +42,70 @@ properties:
       content: 'readonly items: Word.SensitivityLabelDetails[];'
       return:
         type: <xref uid="word!Word.SensitivityLabelDetails:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-sensitivity-labels.yaml
+
+          await Word.run(async (context) => {
+            const labelSelect = document.getElementById("label-id") as HTMLSelectElement;
+            labelSelect.options.length = 0;
+            const placeholder = document.createElement("option");
+            placeholder.textContent = "Select a label";
+            placeholder.value = "";
+            labelSelect.add(placeholder);
+
+            // Get the sensitivity labels that the organization published for the current user.
+            const labelCatalog: Word.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+            if (!labelCatalog) {
+              console.warn("The sensitivity label catalog isn't available.");
+              return;
+            }
+
+            const availableLabels: Word.SensitivityLabelDetailsCollection = labelCatalog.getLabels();
+            // Load the properties for every label in the catalog.
+            availableLabels.load(
+              "items/color,items/id,items/isAbacAttributesRequired,items/isAbacEnabled,items/isEnabled," +
+              "items/name,items/order,items/protectionType,items/siteId,items/tooltip," +
+              "items/children/items/id,items/children/items/name,items/children/items/isEnabled"
+            );
+            await context.sync();
+
+            if (availableLabels.items.length === 0) {
+              console.log("No sensitivity labels are available for the current user.");
+              return;
+            }
+
+            // Display the loaded properties for each available label.
+            console.log("Available sensitivity labels:");
+            availableLabels.items.forEach((labelDetails: Word.SensitivityLabelDetails) => {
+              const childLabels = labelDetails.children && labelDetails.children.items.length
+                ? labelDetails.children.items
+                    .map((childLabel: Word.SensitivityLabelDetails) => `${childLabel.name} (${childLabel.id})`)
+                    .join(", ")
+                : "None";
+
+              console.log(
+                `\n${labelDetails.name}\n` +
+                  `  ID: ${labelDetails.id}\n` +
+                  `  Site ID: ${labelDetails.siteId}\n` +
+                  `  Tooltip: ${labelDetails.tooltip}\n` +
+                  `  Color: ${labelDetails.color}\n` +
+                  `  Enabled: ${labelDetails.isEnabled ? "Yes" : "No"}\n` +
+                  `  Display order: ${labelDetails.order}\n` +
+                  `  ABAC enabled: ${labelDetails.isAbacEnabled ? "Yes" : "No"}\n` +
+                  `  ABAC attributes required: ${labelDetails.isAbacAttributesRequired ? "Yes" : "No"}\n` +
+                  `  Sublabels: ${childLabels}\n` +
+                  `  Protection type: ${labelDetails.protectionType}`
+              );
+            });
+
+            addLabelOptions(availableLabels);
+          });
+          ```
 methods:
   - name: getFirst()
     uid: word!Word.SensitivityLabelDetailsCollection#getFirst:member(1)

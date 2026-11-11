@@ -12,6 +12,84 @@ remarks: |-
   - [Word.SensitivityLabelTryUpdateOptions](/javascript/api/word/word.sensitivitylabeltryupdateoptions): [abacAttributes](/javascript/api/word/word.sensitivitylabeltryupdateoptions#word-word-sensitivitylabeltryupdateoptions-abacattributes-member)
   - [Word.SensitivityLabelsCatalog](/javascript/api/word/word.sensitivitylabelscatalog): [getAttributes](/javascript/api/word/word.sensitivitylabelscatalog#word-word-sensitivitylabelscatalog-getattributes-member(1))
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-sensitivity-labels.yaml
+
+  // Get available ABAC attributes and describe the kind of value each attribute accepts.
+  const container = document.getElementById("abac-attributes");
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  await Word.run(async (context) => {
+    const labelCatalog: Word.SensitivityLabelsCatalog = context.sensitivityLabelsCatalog;
+    if (!labelCatalog) {
+      console.warn("The sensitivity label catalog isn't available.");
+      return;
+    }
+
+    labelCatalog.load("getLabelingCapabilities");
+    await context.sync();
+
+    const capabilities: Word.LabelingCapability[] = labelCatalog.getLabelingCapabilities;
+    if (capabilities.indexOf(Word.LabelingCapability.attributeBasedAccessControlEnabled) === -1) {
+      console.warn("ABAC attributes aren't enabled or available for the current user.");
+      return;
+    }
+
+    const catalogAttributes: OfficeExtension.ClientResult<Word.SensitivityLabelAbacAttribute[]> =
+      labelCatalog.getAttributes();
+    await context.sync();
+
+    if (catalogAttributes.value.length === 0) {
+      console.log("No ABAC attributes are available in the sensitivity label catalog.");
+      return;
+    }
+
+    console.log("Available ABAC attributes:");
+    catalogAttributes.value.forEach((attribute: Word.SensitivityLabelAbacAttribute) => {
+      let dataTypeDescription: string;
+      switch (attribute.dataType) {
+        case Word.SensitivityLabelAbacAttributeDataType.booleanValue:
+          dataTypeDescription = "Boolean";
+          break;
+        case Word.SensitivityLabelAbacAttributeDataType.dateValue:
+          dataTypeDescription = "Date";
+          break;
+        case Word.SensitivityLabelAbacAttributeDataType.numberValue:
+          dataTypeDescription = "Number";
+          break;
+        case Word.SensitivityLabelAbacAttributeDataType.stringValue:
+          dataTypeDescription = "String";
+          break;
+        case Word.SensitivityLabelAbacAttributeDataType.unknown:
+          dataTypeDescription = "Unknown";
+          break;
+        default:
+          dataTypeDescription = `Unrecognized (${attribute.dataType})`;
+          break;
+      }
+
+      console.log(`ABAC attribute: ${attribute.displayName}`, {
+        dataType: attribute.dataType,
+        dataTypeDescription,
+        displayOrder: attribute.displayOrder,
+        isActive: attribute.isActive,
+        isMultiValued: attribute.isMultiValued,
+        values: attribute.values.map((attributeValue: Word.SensitivityLabelAbacAttributeValue) => ({
+          displayName: attributeValue.displayName,
+          displayOrder: attributeValue.displayOrder,
+          id: attributeValue.id,
+          isActive: attributeValue.isActive
+        }))
+      });
+    });
+
+    addAttributeOptions(catalogAttributes.value);
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 type: interface

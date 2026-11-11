@@ -11,6 +11,33 @@ remarks: |-
 
   - [Excel.SensitivityLabelUpdateResult](/javascript/api/excel/excel.sensitivitylabelupdateresult): [status](/javascript/api/excel/excel.sensitivitylabelupdateresult#excel-excel-sensitivitylabelupdateresult-status-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/98-preview-apis/manage-sensitivity-labels.yaml
+
+  // Apply the selected sensitivity label to the entire workbook.
+  await Excel.run(async (context) => {
+      const labelId = (document.getElementById("label-id") as HTMLSelectElement).value;
+      if (!labelId) {
+          console.warn("Get available labels and select a label first.");
+          return;
+      }
+
+      const workbook: Excel.Workbook = context.workbook;
+      const workbookLabel: Excel.SensitivityLabel = workbook.sensitivityLabel;
+      const updateResult: OfficeExtension.ClientResult<Excel.SensitivityLabelUpdateResult> =
+          workbookLabel.tryToUpdate(labelId);
+      await context.sync();
+
+      if (updateResult.value.status === Excel.SensitivityLabelUpdateStatus.success) {
+          console.log("Applied the sensitivity label to the workbook.");
+      } else {
+          console.error(`The sensitivity label wasn't applied. Status: ${updateResult.value.status}`);
+      }
+  });
+  ```
+
 isPreview: true
 isDeprecated: false
 fields:

@@ -1860,7 +1860,81 @@ properties:
     package: word!
     fullName: sensitivityLabel
     summary: Returns the sensitivity label of the document.
-    remarks: '[API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
+    remarks: |-
+      [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-sensitivity-labels.yaml
+
+      await Word.run(async (context) => {
+        // Get the sensitivity label currently applied to the document.
+        const wordDocument: Word.Document = context.document;
+        const documentLabel: Word.SensitivityLabel = wordDocument.sensitivityLabel;
+
+        const currentLabel: Word.SensitivityLabelDetails = documentLabel.getCurrentOrNullObject();
+        // Load the properties of the label currently applied to the document.
+        currentLabel.load(
+          "color,id,isAbacAttributesRequired,isAbacEnabled,isEnabled,name,order,protectionType,siteId,tooltip"
+        );
+
+        await context.sync();
+        if (currentLabel.isNullObject) {
+          console.log("The document doesn't have a sensitivity label.");
+          return;
+        }
+
+        // Load ABAC values when supported.
+        let abacAttributeValues: Word.SensitivityLabelAbacAttributeValue[] = [];
+        const isAbacEnabled = currentLabel.isAbacEnabled;
+        if (isAbacEnabled) {
+          currentLabel.load("abacAttributeValues");
+          await context.sync();
+
+          abacAttributeValues = currentLabel.abacAttributeValues;
+        }
+
+        // Display the loaded properties of the current label.
+        const attributeValues = abacAttributeValues.length
+          ? abacAttributeValues
+              .map(
+                (attributeValue: Word.SensitivityLabelAbacAttributeValue) =>
+                  `${attributeValue.displayName} (ID: ${attributeValue.id}, order: ${attributeValue.displayOrder}, active: ${attributeValue.isActive ? "Yes" : "No"})`
+              )
+              .join(", ")
+          : "None";
+        let protectionDescription: string;
+        switch (currentLabel.protectionType) {
+          case Word.SensitivityLabelProtectionType.adminDefined:
+            protectionDescription = "Defined by an administrator";
+            break;
+          case Word.SensitivityLabelProtectionType.userDefined:
+            protectionDescription = "Defined by the user";
+            break;
+          case Word.SensitivityLabelProtectionType.noProtection:
+            protectionDescription = "No protection";
+            break;
+          default:
+            protectionDescription = `Unknown (${currentLabel.protectionType})`;
+            break;
+        }
+
+        console.log(
+          `Current document sensitivity label:\n\n${currentLabel.name}\n` +
+          `  ID: ${currentLabel.id}\n` +
+          `  Site ID: ${currentLabel.siteId}\n` +
+          `  Tooltip: ${currentLabel.tooltip}\n` +
+          `  Color: ${currentLabel.color}\n` +
+          `  Enabled: ${currentLabel.isEnabled ? "Yes" : "No"}\n` +
+          `  Display order: ${currentLabel.order}\n` +
+          `  ABAC enabled: ${currentLabel.isAbacEnabled ? "Yes" : "No"}\n` +
+          `  ABAC attributes required: ${currentLabel.isAbacAttributesRequired ? "Yes" : "No"}\n` +
+          `  ABAC attribute values: ${attributeValues}\n` +
+          `  Protection type: ${protectionDescription}`
+        );
+      });
+      ```
 
     isPreview: true
     isDeprecated: false

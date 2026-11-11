@@ -5877,7 +5877,7 @@ export declare namespace Office {
          *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
          *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
          *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -5912,7 +5912,7 @@ export declare namespace Office {
          *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
          *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
          *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
