@@ -71,7 +71,7 @@ fields:
     summary: |-
       LinkedEntityCellValueLoaded represents the type of event registered when the `LinkedEntityCellValue` object requested by `LoadLinkedEntityCellValue` method is loaded.
 
-      * [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * [API set: ExcelApi 1.21](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
     value: '"LinkedEntityDataDomainLinkedEntityCellValueLoaded"'
   - name: linkedEntityDataDomainLinkedEntityDataDomainAdded
     uid: excel!Excel.EventType.linkedEntityDataDomainLinkedEntityDataDomainAdded:member
