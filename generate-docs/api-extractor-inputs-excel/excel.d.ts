@@ -39050,7 +39050,7 @@ export declare namespace Excel {
         /**
          * LinkedEntityCellValueLoaded represents the type of event registered when the `LinkedEntityCellValue` object requested by `LoadLinkedEntityCellValue` method is loaded.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.21]
          */
         linkedEntityDataDomainLinkedEntityCellValueLoaded = "LinkedEntityDataDomainLinkedEntityCellValueLoaded"
     }
