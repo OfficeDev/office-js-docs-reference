@@ -74,6 +74,32 @@ properties:
       content: 'readonly items: Excel.TableColumn[];'
       return:
         type: <xref uid="excel!Excel.TableColumn:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/track-table-column-ids.yaml
+
+          // Read each column's table-scoped ID alongside its name and current position.
+          await Excel.run(async (context) => {
+              const inventoryTable: Excel.Table = context.workbook.worksheets
+                  .getItem("Sample").tables.getItem("InventoryTable");
+              const columns: Excel.TableColumnCollection = inventoryTable.columns;
+              columns.load("items/id,items/name,items/index");
+              await context.sync();
+
+              console.log("InventoryTable columns (indexes are zero-based):");
+              columns.items.forEach((column: Excel.TableColumn) => {
+                  console.log("Column:", {
+                      id: column.id,
+                      name: column.name,
+                      index: column.index
+                  });
+              });
+          });
+          ```
 methods:
   - name: add(index, values, name)
     uid: excel!Excel.TableColumnCollection#add:member(1)
