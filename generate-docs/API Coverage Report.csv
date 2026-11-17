@@ -6685,7 +6685,7 @@ excel,Excel.Worksheet,"getRange(address)",Method,Good,true
 excel,Excel.Worksheet,"getRangeByIndexes(startRow, startColumn, rowCount, columnCount)",Method,Good,false
 excel,Excel.Worksheet,"getRanges(address)",Method,Good,true
 excel,Excel.Worksheet,"getUsedRange(valuesOnly)",Method,Excellent,true
-excel,Excel.Worksheet,"getUsedRangeOrNullObject(valuesOnly)",Method,Excellent,false
+excel,Excel.Worksheet,"getUsedRangeOrNullObject(valuesOnly)",Method,Excellent,true
 excel,Excel.Worksheet,"load(options)",Method,Great,false
 excel,Excel.Worksheet,"load(propertyNames)",Method,Great,true
 excel,Excel.Worksheet,"load(propertyNamesAndPaths)",Method,Great,false

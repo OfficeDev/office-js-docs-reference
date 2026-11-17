@@ -1141,7 +1141,52 @@ methods:
     package: excel!
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '[API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-used-range.yaml
+
+      // Compare cells with values or formatting against cells with values only.
+      await Excel.run(async (context) => {
+          const sheet: Excel.Worksheet = context.workbook.worksheets.getItem("Sample");
+          const usedRange: Excel.Range = sheet.getUsedRangeOrNullObject();
+          const valuesRange: Excel.Range = sheet.getUsedRangeOrNullObject(true);
+
+          // Synchronize before checking isNullObject, which is loaded automatically.
+          await context.sync();
+
+          if (!usedRange.isNullObject) {
+              usedRange.load("address,rowCount,columnCount");
+          }
+          if (!valuesRange.isNullObject) {
+              valuesRange.load("address,rowCount,columnCount");
+          }
+          await context.sync();
+
+          if (usedRange.isNullObject) {
+              console.log("Values or formatting: no used cells. The worksheet is blank.");
+          } else {
+              console.log("Values or formatting:", {
+                  address: usedRange.address,
+                  rows: usedRange.rowCount,
+                  columns: usedRange.columnCount
+              });
+          }
+
+          if (valuesRange.isNullObject) {
+              console.log("Values only: no cells with values.");
+          } else {
+              console.log("Values only:", {
+                  address: valuesRange.address,
+                  rows: valuesRange.rowCount,
+                  columns: valuesRange.columnCount
+              });
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
