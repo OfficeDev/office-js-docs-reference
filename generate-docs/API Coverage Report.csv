@@ -6053,12 +6053,12 @@ excel,Excel.TableCollection,"load(options)",Method,Great,false
 excel,Excel.TableCollection,"load(propertyNames)",Method,Great,true
 excel,Excel.TableCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.TableCollection,"toJSON()",Method,Excellent,false
-excel,Excel.TableColumn,N/A,Class,Fine,false
+excel,Excel.TableColumn,N/A,Class,Fine,true
 excel,Excel.TableColumn,"context",Property,Excellent,false
 excel,Excel.TableColumn,"filter",Property,Great,true
-excel,Excel.TableColumn,"id",Property,Great,false
+excel,Excel.TableColumn,"id",Property,Great,true
 excel,Excel.TableColumn,"index",Property,Excellent,false
-excel,Excel.TableColumn,"name",Property,Good,false
+excel,Excel.TableColumn,"name",Property,Good,true
 excel,Excel.TableColumn,"values",Property,Excellent,false
 excel,Excel.TableColumn,"valuesAsJson",Property,Excellent,false
 excel,Excel.TableColumn,"valuesAsJsonLocal",Property,Excellent,false
@@ -6076,13 +6076,13 @@ excel,Excel.TableColumn,"toJSON()",Method,Excellent,false
 excel,Excel.TableColumnCollection,N/A,Class,Fine,true
 excel,Excel.TableColumnCollection,"context",Property,Excellent,false
 excel,Excel.TableColumnCollection,"count",Property,Great,false
-excel,Excel.TableColumnCollection,"items",Property,Great,false
+excel,Excel.TableColumnCollection,"items",Property,Great,true
 excel,Excel.TableColumnCollection,"add(index, values, name)",Method,Fine,true
 excel,Excel.TableColumnCollection,"addAsJson(index, values, name)",Method,Good,false
 excel,Excel.TableColumnCollection,"getCount()",Method,Fine,false
 excel,Excel.TableColumnCollection,"getItem(key)",Method,Fine,true
 excel,Excel.TableColumnCollection,"getItemAt(index)",Method,Fine,true
-excel,Excel.TableColumnCollection,"getItemOrNullObject(key)",Method,Excellent,false
+excel,Excel.TableColumnCollection,"getItemOrNullObject(key)",Method,Excellent,true
 excel,Excel.TableColumnCollection,"load(options)",Method,Great,false
 excel,Excel.TableColumnCollection,"load(propertyNames)",Method,Great,true
 excel,Excel.TableColumnCollection,"load(propertyNamesAndPaths)",Method,Great,false

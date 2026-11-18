@@ -11,6 +11,36 @@ remarks: |-
 
   - [Excel.TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection): [add](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1)), [getItem](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1)), [getItemAt](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1)), [getItemOrNullObject](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemornullobject-member(1)), [items](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-items-member)
 
+  #### Examples
+
+  ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/track-table-column-ids.yaml
+
+  async function getColumnById(columnId: number) {
+      // Retrieve a column by its numeric ID, which is not its collection index.
+      await Excel.run(async (context) => {
+          const inventoryTable: Excel.Table = context.workbook.worksheets
+              .getItem("Sample").tables.getItem("InventoryTable");
+          const columns: Excel.TableColumnCollection = inventoryTable.columns;
+          const column: Excel.TableColumn = columns.getItemOrNullObject(columnId);
+
+          await context.sync();
+          if (column.isNullObject) {
+              console.warn(`No column with ID ${columnId} exists in InventoryTable.`);
+              return;
+          }
+
+          column.load("id,name,index");
+          await context.sync();
+          console.log("Column found by ID:", {
+              id: column.id,
+              name: column.name,
+              index: column.index
+          });
+      });
+  }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -68,7 +98,32 @@ properties:
     package: excel!
     fullName: id
     summary: Returns a unique key that identifies the column within the table.
-    remarks: '[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/track-table-column-ids.yaml
+
+      // Read each column's table-scoped ID alongside its name and current position.
+      await Excel.run(async (context) => {
+          const inventoryTable: Excel.Table = context.workbook.worksheets
+              .getItem("Sample").tables.getItem("InventoryTable");
+          const columns: Excel.TableColumnCollection = inventoryTable.columns;
+          columns.load("items/id,items/name,items/index");
+          await context.sync();
+
+          console.log("InventoryTable columns (indexes are zero-based):");
+          columns.items.forEach((column: Excel.TableColumn) => {
+              console.log("Column:", {
+                  id: column.id,
+                  name: column.name,
+                  index: column.index
+              });
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +149,33 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the table column.
-    remarks: '[API set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)'
+    remarks: |-
+      [API set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+
+      #### Examples
+
+      ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/track-table-column-ids.yaml
+
+      async function renameColumn(columnId: number) {
+          // Change the selected column's name without assigning a new ID.
+          await Excel.run(async (context) => {
+              const inventoryTable: Excel.Table = context.workbook.worksheets
+                  .getItem("Sample").tables.getItem("InventoryTable");
+              const column: Excel.TableColumn = inventoryTable.columns.getItemOrNullObject(columnId);
+
+              await context.sync();
+              if (column.isNullObject) {
+                  console.warn(`No column with ID ${columnId} exists in InventoryTable.`);
+                  return;
+              }
+
+              column.name = "Units";
+              await context.sync();
+              console.log("Renamed the selected column to Units. Get the column by ID again to inspect it.");
+          });
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
