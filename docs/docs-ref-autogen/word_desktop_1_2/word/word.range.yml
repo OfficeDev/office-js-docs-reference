@@ -1121,7 +1121,7 @@ methods:
     uid: word!Word.Range#getHtml:member(1)
     package: word!
     fullName: getHtml()
-    summary: Gets an HTML representation of the `Range` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+    summary: Gets an HTML representation of the `Range` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     remarks: |-
       [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets)
 

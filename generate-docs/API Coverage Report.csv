@@ -848,6 +848,7 @@ excel,Excel.ChartColorScheme,"monochromaticPalette7",EnumField,Great,false
 excel,Excel.ChartColorScheme,"monochromaticPalette8",EnumField,Great,false
 excel,Excel.ChartColorScheme,"monochromaticPalette9",EnumField,Great,false
 excel,Excel.ChartDataLabel,N/A,Class,Fine,true
+excel,Excel.ChartDataLabel,"allowTextToOverflow",Property,Great,false
 excel,Excel.ChartDataLabel,"autoText",Property,Excellent,false
 excel,Excel.ChartDataLabel,"context",Property,Excellent,false
 excel,Excel.ChartDataLabel,"format",Property,Great,false
@@ -917,6 +918,7 @@ excel,Excel.ChartDataLabelPosition,"outsideEnd",EnumField,Great,false
 excel,Excel.ChartDataLabelPosition,"right",EnumField,Great,false
 excel,Excel.ChartDataLabelPosition,"top",EnumField,Great,false
 excel,Excel.ChartDataLabels,N/A,Class,Fine,false
+excel,Excel.ChartDataLabels,"allowTextToOverflow",Property,Great,false
 excel,Excel.ChartDataLabels,"autoText",Property,Excellent,false
 excel,Excel.ChartDataLabels,"context",Property,Excellent,false
 excel,Excel.ChartDataLabels,"format",Property,Excellent,false
@@ -6057,7 +6059,7 @@ excel,Excel.TableColumn,N/A,Class,Fine,true
 excel,Excel.TableColumn,"context",Property,Excellent,false
 excel,Excel.TableColumn,"filter",Property,Great,true
 excel,Excel.TableColumn,"id",Property,Great,true
-excel,Excel.TableColumn,"index",Property,Excellent,false
+excel,Excel.TableColumn,"index",Property,Excellent,true
 excel,Excel.TableColumn,"name",Property,Good,true
 excel,Excel.TableColumn,"values",Property,Excellent,false
 excel,Excel.TableColumn,"valuesAsJson",Property,Excellent,false

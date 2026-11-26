@@ -4212,6 +4212,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
          *
@@ -11850,6 +11851,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -11912,6 +11914,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `ChartDataLabel` object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
+            
             
             
             
@@ -14092,6 +14095,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -14155,6 +14159,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `chartDataLabel.toJSON()`. */
         export interface ChartDataLabelData {
+            
             
             
             
@@ -17194,6 +17199,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            
             
             
             

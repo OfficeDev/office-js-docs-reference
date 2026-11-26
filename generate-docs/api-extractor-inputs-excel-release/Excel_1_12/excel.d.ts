@@ -11020,6 +11020,7 @@ export declare namespace Excel {
          */
         readonly format: Excel.ChartDataLabelFormat;
         
+        
         /**
          * Specifies if data labels automatically generate appropriate text based on context.
          *
@@ -11174,6 +11175,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly format: Excel.ChartDataLabelFormat;
+        
         /**
          * Specifies if the data label automatically generates appropriate text based on context.
          *
@@ -34815,6 +34817,7 @@ export declare namespace Excel {
             */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             
+            
             /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
@@ -34927,6 +34930,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
+            
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *
@@ -40512,6 +40516,7 @@ export declare namespace Excel {
             */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             
+            
             /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
@@ -40625,6 +40630,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
+            
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *
@@ -48438,6 +48444,7 @@ export declare namespace Excel {
             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
             
+            
             /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
@@ -48560,6 +48567,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *

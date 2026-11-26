@@ -18921,6 +18921,13 @@ export declare namespace Excel {
          */
         readonly leaderLines: Excel.ChartLeaderLines;
         /**
+         * Specifies if the data label text is allowed to overflow the label box.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        allowTextToOverflow: boolean;
+        /**
          * Specifies if data labels automatically generate appropriate text based on context.
          *
          * @remarks
@@ -19095,6 +19102,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         readonly format: Excel.ChartDataLabelFormat;
+        /**
+         * Specifies if the data label text is allowed to overflow the label box.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.20]
+         */
+        allowTextToOverflow: boolean;
         /**
          * Specifies if the data label automatically generates appropriate text based on context.
          *
@@ -45347,6 +45361,13 @@ export declare namespace Excel {
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesUpdateData;
             /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
+            /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
              * @remarks
@@ -45471,6 +45492,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
+            /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *
@@ -51759,6 +51787,13 @@ export declare namespace Excel {
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesData;
             /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
+            /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
              * @remarks
@@ -51892,6 +51927,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
+            /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *
@@ -60684,6 +60726,13 @@ export declare namespace Excel {
             */
             leaderLines?: Excel.Interfaces.ChartLeaderLinesLoadOptions;
             /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
+            /**
              * Specifies if data labels automatically generate appropriate text based on context.
              *
              * @remarks
@@ -60826,6 +60875,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            /**
+             * Specifies if the data label text is allowed to overflow the label box.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.20]
+             */
+            allowTextToOverflow?: boolean;
             /**
              * Specifies if the data label automatically generates appropriate text based on context.
              *

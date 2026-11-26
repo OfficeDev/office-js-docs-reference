@@ -181,7 +181,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -223,7 +223,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -276,7 +276,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -324,13 +324,13 @@ methods:
           description: XML content to be inserted.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
                     }
         - id: index
-          description: Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as the last child of this parent.
+          description: Optional. Zero-based position at which the new XML is to be inserted. If omitted, the XML will be appended as the last child of this parent.
           type: number
       return:
         type: void
@@ -446,7 +446,7 @@ methods:
           description: An XPath query.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -620,7 +620,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -668,7 +668,7 @@ methods:
           description: New XML content to be stored.
           type: string
         - id: namespaceMappings
-          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t use reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;

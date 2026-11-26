@@ -358,7 +358,7 @@
 ||[listString](/javascript/api/word/word.listformat#word-word-listformat-liststring-member)|Gets the string representation of the list value of the first paragraph in the range for the `ListFormat` object.|
 ||[listTemplate](/javascript/api/word/word.listformat#word-word-listformat-listtemplate-member)|Gets the list template associated with the `ListFormat` object.|
 ||[listType](/javascript/api/word/word.listformat#word-word-listformat-listtype-member)|Gets the type of the list for the `ListFormat` object.|
-||[listValue](/javascript/api/word/word.listformat#word-word-listformat-listvalue-member)|Gets the numeric value of the the first paragraph in the range for the `ListFormat` object.|
+||[listValue](/javascript/api/word/word.listformat#word-word-listformat-listvalue-member)|Gets the numeric value of the first paragraph in the range for the `ListFormat` object.|
 ||[removeNumbers(numberType: Word.NumberType)](/javascript/api/word/word.listformat#word-word-listformat-removenumbers-member(1))|Removes numbering from the list.|
 |[ListFormatCountNumberedItemsOptions](/javascript/api/word/word.listformatcountnumbereditemsoptions)|[level](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-level-member)|If provided, specifies the level to count.|
 ||[numberType](/javascript/api/word/word.listformatcountnumbereditemsoptions#word-word-listformatcountnumbereditemsoptions-numbertype-member)|If provided, specifies the type of number to count.|

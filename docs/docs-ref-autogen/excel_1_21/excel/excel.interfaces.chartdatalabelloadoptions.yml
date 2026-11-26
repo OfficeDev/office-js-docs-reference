@@ -23,6 +23,19 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: allowTextToOverflow
+    uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#allowTextToOverflow:member
+    package: excel!
+    fullName: allowTextToOverflow
+    summary: Specifies if the data label text is allowed to overflow the label box.
+    remarks: '\[Api set: ExcelApi 1.20\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowTextToOverflow?: boolean;'
+      return:
+        type: boolean
   - name: autoText
     uid: excel!Excel.Interfaces.ChartDataLabelLoadOptions#autoText:member
     package: excel!

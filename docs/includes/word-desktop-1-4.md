@@ -752,7 +752,7 @@
 |[TableStyle](/javascript/api/word/word.tablestyle)|[borders](/javascript/api/word/word.tablestyle#word-word-tablestyle-borders-member)|Returns a `BorderUniversalCollection` that represents all the borders for the table.|
 ||[columnStripe](/javascript/api/word/word.tablestyle#word-word-tablestyle-columnstripe-member)|Specifies the number of columns in the banding when a style specifies odd- or even-column banding.|
 ||[condition(conditionCode: Word.ConditionCode)](/javascript/api/word/word.tablestyle#word-word-tablestyle-condition-member(1))|Returns a `ConditionalStyle` object that represents special style formatting for a portion of a table.|
-||[isBreakAcrossPagesAllowed](/javascript/api/word/word.tablestyle#word-word-tablestyle-isbreakacrosspagesallowed-member)|Specifies whether Microsoft Word allows to break the specified table across pages.|
+||[isBreakAcrossPagesAllowed](/javascript/api/word/word.tablestyle#word-word-tablestyle-isbreakacrosspagesallowed-member)|Specifies whether Microsoft Word allows the specified table to break across pages.|
 ||[leftIndent](/javascript/api/word/word.tablestyle#word-word-tablestyle-leftindent-member)|Specifies the left indent value (in points) for the rows in the table style.|
 ||[rowStripe](/javascript/api/word/word.tablestyle#word-word-tablestyle-rowstripe-member)|Specifies the number of rows to include in the banding when the style specifies odd- or even-row banding.|
 ||[shading](/javascript/api/word/word.tablestyle#word-word-tablestyle-shading-member)|Returns a `ShadingUniversal` object that refers to the shading formatting for the table style.|

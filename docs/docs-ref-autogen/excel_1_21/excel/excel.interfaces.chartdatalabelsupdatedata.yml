@@ -10,6 +10,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: allowTextToOverflow
+    uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#allowTextToOverflow:member
+    package: excel!
+    fullName: allowTextToOverflow
+    summary: Specifies if the data label text is allowed to overflow the label box.
+    remarks: '\[Api set: ExcelApi 1.20\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowTextToOverflow?: boolean;'
+      return:
+        type: boolean
   - name: autoText
     uid: excel!Excel.Interfaces.ChartDataLabelsUpdateData#autoText:member
     package: excel!

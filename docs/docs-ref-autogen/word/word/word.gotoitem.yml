@@ -43,7 +43,7 @@ fields:
     uid: word!Word.GoToItem.endnote:member
     package: word!
     summary: |-
-      Moves to a endnote.
+      Moves to an endnote.
 
       * [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)
     value: '"Endnote"'

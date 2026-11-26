@@ -97,7 +97,7 @@ properties:
     uid: word!Word.Interfaces.TableStyleLoadOptions#isBreakAcrossPagesAllowed:member
     package: word!
     fullName: isBreakAcrossPagesAllowed
-    summary: Specifies whether Microsoft Word allows to break the specified table across pages.
+    summary: Specifies whether Microsoft Word allows the specified table to break across pages.
     remarks: '[API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets)'
 
     isPreview: false

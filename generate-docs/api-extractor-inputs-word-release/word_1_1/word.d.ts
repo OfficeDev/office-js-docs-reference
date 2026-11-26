@@ -114,7 +114,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the `Body` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the `Body` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -504,7 +504,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the `ContentControl` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the `ContentControl` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -554,7 +554,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param html - The HTML to be inserted in to the content control.
+         * @param html - The HTML to be inserted into the content control.
          * @param insertLocation - The value must be `replace`, `start`, or `end`. `replace` cannot be used with `richTextTable` and `richTextTableRow` content controls.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -567,7 +567,7 @@ export declare namespace Word {
          *
          * Insertion isn't supported if the content being inserted contains linked or external content. If it does, this method returns an `InvalidArgument` error.
          *
-         * @param ooxml - The OOXML to be inserted in to the content control.
+         * @param ooxml - The OOXML to be inserted into the content control.
          * @param insertLocation - The value must be `replace`, `start`, or `end`. `replace` cannot be used with `richTextTable` and `richTextTableRow` content controls.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -588,7 +588,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param text - The text to be inserted in to the content control.
+         * @param text - The text to be inserted into the content control.
          * @param insertLocation - The value must be `replace`, `start`, or `end`. `replace` cannot be used with `richTextTable` and `richTextTableRow` content controls.
          */
         insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -2054,7 +2054,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets an HTML representation of the `Range` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the `Range` object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for the formatting of the document. This method doesn't return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
          * [Api set: WordApi 1.1]

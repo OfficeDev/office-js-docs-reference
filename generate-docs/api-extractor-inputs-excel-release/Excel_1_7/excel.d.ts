@@ -6166,6 +6166,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
          *
@@ -6270,6 +6271,7 @@ export declare namespace Excel {
     export class ChartDataLabel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         
         
         
@@ -19309,6 +19311,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -19371,6 +19374,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `ChartDataLabel` object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
+            
             
             
             
@@ -22938,6 +22942,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -23001,6 +23006,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `chartDataLabel.toJSON()`. */
         export interface ChartDataLabelData {
+            
             
             
             
@@ -27881,6 +27887,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
              *
@@ -27953,6 +27960,7 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             
             
             
